@@ -1,0 +1,243 @@
+guiTypes = {
+
+	windowType = {
+		name = "faction_view"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+		iconType =
+		{
+			name ="faction_bg"
+			spriteType = "GFX_MNG_bg"
+			position = { x= -290 y = -323 }
+			Orientation = "CENTER"
+		}
+
+
+		textBoxType = {
+			name = "faction_label"
+			position = { x = 0 y =-301 }
+			format = centre
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = "FACTIONS_TITLE"	
+			maxWidth = 400
+			maxHeight = 32	
+			
+			Orientation = "CENTER"
+
+			
+		}
+		
+		### EUNUCH
+		iconType = 
+			{
+				name ="enuchs_icon"
+				spriteType = "GFX_china_eunuch"
+				position = { x= -82 y = -259 }
+				Orientation = "CENTER"
+			}
+			
+			iconType = 
+			{
+				name ="enuchs_circle"
+				spriteType = "GFX_china_circle_bg"
+				position = { x= 10 y = -227 }
+				Orientation = "CENTER"
+			}
+			
+		textBoxType = {
+			name = "enuchs_value"
+			position = { x = 11 y = -205 }
+			font = "Main_24"
+			borderSize = {x = 1 y = 1}
+			text = "11"	
+			maxWidth = 50
+			maxHeight = 30
+
+			Orientation = "CENTER"	
+			format = right
+		}
+		iconType = 
+			{
+				name ="enuchs_arrow"
+				spriteType = "GFX_china_arrow"
+				position = { x= 61 y = -200 }
+				Orientation = "CENTER"
+			}
+		textBoxType = {
+			name = "enuchs_label"
+			position = { x = -1 y = -161 }
+			font = "Main_16"
+			borderSize = {x = 1 y = 1}
+			text = "enuchs"	
+			maxWidth = 225
+			maxHeight = 30
+
+			Orientation = "CENTER"	
+			format = centre
+		}
+		textBoxType = {
+			name = "enuchs_info"
+			position = { x = -97 y = -137 }
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = "Info"	
+			maxWidth = 210
+			maxHeight = 200
+
+			Orientation = "CENTER"	
+			format = left
+		}
+		
+
+		### TEMPLE
+		iconType = 
+			{
+				name ="temples_icon"
+				spriteType = "GFX_china_temple"
+				position = { x= -222 y = -19 }
+				Orientation = "CENTER"
+			}
+			iconType = 
+			{
+				name ="temples_circle"
+				spriteType = "GFX_china_circle_bg"
+				position = { x= -123 y = 2 }
+				Orientation = "CENTER"
+			}
+			
+		textBoxType = {
+			name = "temples_value"
+			position = { x = -123 y = 24 }
+			font = "Main_24"
+			borderSize = {x = 1 y = 1}
+			text = "22"	
+			maxWidth = 50
+			maxHeight = 30
+
+			Orientation = "CENTER"	
+			format = right
+		}
+		iconType = 
+			{
+				name ="temples_arrow"
+				spriteType = "GFX_china_arrow"
+				position = { x= -72 y = 28 }
+				Orientation = "CENTER"
+			}
+		textBoxType = {
+			name = "temples_label"
+			position = { x = -134 y = 68 }
+			font = "Main_16"
+			borderSize = {x = 1 y = 1}
+			text = "temples"	
+			maxWidth = 225
+			maxHeight = 30
+
+			Orientation = "CENTER"	
+			format = centre
+		}
+		textBoxType = {
+			name = "temples_info"
+			position = { x = -230 y = 92 }
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = "Info"	
+			maxWidth = 210
+			maxHeight = 200
+
+			Orientation = "CENTER"	
+			format = left
+		}	
+		
+		
+
+		### BUREAUCRAT
+		
+		iconType = 
+			{
+				name ="bureaucrats_icon"
+				spriteType = "GFX_china_bureaucrat"
+				position = { x= 42 y = -30 }
+				Orientation = "CENTER"
+			}
+			iconType = 
+			{
+				name ="bureaucrats_circle"
+				spriteType = "GFX_china_circle_bg"
+				position = { x= 142 y = 2 }
+				Orientation = "CENTER"
+			}
+		textBoxType = {
+			name = "bureaucrats_value"
+			position = { x = 140 y = 24 }
+			font = "Main_24"
+			borderSize = {x = 1 y = 1}
+			text = "22"	
+			maxWidth = 50
+			maxHeight = 30
+
+			Orientation = "CENTER"	
+			format = right
+		}
+		iconType = 
+			{
+				name ="bureaucrats_arrow"
+				spriteType = "GFX_china_arrow"
+				position = { x= 193 y = 28 }
+				Orientation = "CENTER"
+			}
+		textBoxType = {
+			name = "bureaucrats_label"
+			position = { x = 131 y = 68 }
+			font = "Main_16"
+			borderSize = {x = 1 y = 1}
+			text = "bureaucrats"	
+			maxWidth = 225
+			maxHeight = 30
+
+			Orientation = "CENTER"	
+			format = centre
+		}
+		textBoxType = {
+			name = "bureaucrats_info"
+			position = { x = 35 y = 92 }
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = "Info"	
+			maxWidth = 210
+			maxHeight = 200
+
+			Orientation = "CENTER"	
+			format = left
+		}
+		########
+		
+		guiButtonType = {
+				name = "close_button"
+				position = { x=-62 y =208}
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "HRE_CLOSE"
+				buttonFont = "Main_14_black"
+
+				Orientation = "CENTER"
+				clicksound = close_window
+				shortcut = "ESCAPE"
+			}
+
+		
+	}
+	
+
+}

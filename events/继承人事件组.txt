@@ -1,0 +1,1237 @@
+#无继承人
+country_event = {
+
+	id = 4110
+
+	trigger =
+	{
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		has_heir = no
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		#君主统治手腕强则民心安定
+		modifier = {
+			factor = 1.1
+			ADM = 8
+		}
+		modifier = {
+			factor = 1.1
+			ADM = 9
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { ADM = 6 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { ADM = 4 }
+		}
+		#国家威望高则民心安定
+		modifier = {
+			factor = 1.1
+			prestige = 0.8
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { prestige = -0.5 }
+		}
+	}
+
+	title = "EVTNAME4110"
+	desc = "EVTDESC4110"
+	
+	option = {
+		name = "EVTOPTA4110"		
+		ai_chance = { factor = 100 }
+		stability = -1
+	}
+}
+
+#庶出之子
+country_event = {
+
+	id = 4111
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		has_heir = no
+	}
+
+	mean_time_to_happen =
+	{
+		months = 60
+		modifier = {
+			factor = 1.5
+			has_country_flag = zongfazhidu
+		}
+	}
+
+	title = "EVTNAME4111"
+	desc = "EVTDESC4111"
+	
+	#立庶子为储君
+	option =
+	{
+		name = "EVTOPTA4111"		
+		ai_chance =
+		{
+			factor = 10
+			#根据国家大小判断，大国回稳难对付叛军容易
+			modifier =
+			{
+				factor = 0.5
+				NOT = { num_of_cities = 5 }
+			}
+			modifier =
+			{
+				factor = 2
+				num_of_cities = 20
+			}
+			modifier =
+			{
+				factor = 3
+				num_of_cities = 50
+			}
+			#根据国家现有稳定度判断
+			modifier =
+			{
+				factor = 1.2
+				NOT = { stability = 1 }
+			}
+		}
+		define_heir =
+		{
+			dynasty = THIS
+			claim = 30
+		}
+	}
+
+	#等待嫡子
+	option = {
+		name = "EVTOPTB4111"		
+		ai_chance =
+		{
+			factor = 10
+			modifier =
+			{
+				factor = 1.5
+				NOT = { legitimacy = 0.5	}
+			}
+			modifier =
+			{
+				factor = 0.9
+				legitimacy = 0.9 
+			}
+		}
+		legitimacy = 0.1
+	}
+}
+
+#获得胡女
+country_event = {
+
+	id = 4112
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		has_heir = no
+	}
+
+	mean_time_to_happen =
+	{
+		months = 240
+		#和蛮夷相邻是容易触发
+		modifier =
+		{
+			factor = 0.8
+			any_neighbor_country = { religion_group = pagan } 
+		}
+	}
+
+	title = "EVTNAME4112"
+	desc = "EVTDESC4112"
+	
+	#收为己用
+	option =
+	{
+		name = "EVTOPTA4112"		
+		ai_chance =
+		{
+			factor = 10
+			#根据国家大小判断，大国回稳难对付叛军容易
+			modifier =
+			{
+				factor = 0.5
+				NOT = { num_of_cities = 5 }
+			}
+			modifier =
+			{
+				factor = 2
+				num_of_cities = 20
+			}
+			modifier =
+			{
+				factor = 3
+				num_of_cities = 50
+			}
+			#根据国家现有稳定度判断
+			modifier =
+			{
+				factor = 1.2
+				NOT = { stability = 1 }
+			}
+		}
+		define_heir =
+		{ 
+			dynasty = THIS
+			claim = 60
+			DIP = 7
+			MIL = 7
+			ADM = 7
+		}
+	}
+
+	#赏赐大臣
+	option =
+	{
+		name = "EVTOPTB4112"		
+		ai_chance =
+		{
+			factor = 10
+			#根据恶名判断
+			modifier =
+			{
+				factor = 1.1
+				badboy = 5
+			}
+			modifier =
+			{
+				factor = 1.5
+				badboy = 10
+			}
+			modifier =
+			{
+				factor = 2
+				badboy = 15
+			}
+			modifier =
+			{
+				factor = 3
+				badboy = 20
+			}
+			#根据威望判断
+			modifier =
+			{
+				factor = 1.5
+				NOT = { prestige = 0 }
+			}
+		}
+		badboy = -2
+		prestige = 0.05
+	}
+}
+
+#摄政议会
+
+#母强子弱
+country_event = {
+
+	id = 4113
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = yes
+		NOT = { has_country_modifier = dachenfuzheng }
+		NOT = { heir_age = 9 }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 36
+	}
+
+	title = "EVTNAME4113"
+	desc = "EVTDESC4113"
+	
+	#太后掌权
+	option =
+	{
+		name = "EVTOPTA4113"		
+		ai_chance =
+		{
+			factor = 20
+			#根据国家大小判断，大国回稳难对付叛军容易
+			modifier =
+			{
+				factor = 0.5
+				NOT = { num_of_cities = 5 }
+			}
+			modifier =
+			{
+				factor = 2
+				num_of_cities = 20
+			}
+			modifier =
+			{
+				factor = 3
+				num_of_cities = 50
+			}
+			#根据国家现有稳定度判断
+			modifier =
+			{
+				factor = 1.5
+				NOT = { stability = 0 }
+			}
+			#根据正统判断
+			modifier =
+			{
+				factor = 0.5
+				NOT = { legitimacy = 0.5 }
+			}
+		}
+		stability = 1
+		legitimacy = -0.2
+	}
+
+	#大臣辅政
+	option =
+	{
+		name = "EVTOPTB4113"		
+		ai_chance =
+		{
+			factor = 10
+			#根据正统判断
+			modifier =
+			{
+				factor = 0.5
+				legitimacy = 0.8
+			}
+		}
+		add_country_modifier =
+		{
+			name = "dachenfuzheng"
+			duration = 3650
+		}
+	}
+}
+
+#天才幼主
+country_event = {
+
+	id = 4114
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = yes
+		NOT = { has_country_modifier = dachenfuzheng }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 240
+	}
+
+	title = "EVTNAME4114"
+	desc = "EVTDESC4114"
+	
+	#人心所向
+	option =
+	{
+		name = "EVTOPTA4114"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		stability = 1
+		prestige = 0.1
+		legitimacy = 0.1
+	}
+}
+
+#昏聩幼主
+country_event = {
+
+	id = 4115
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = yes
+		NOT = { has_country_modifier = dachenfuzheng }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 240
+	}
+
+	title = "EVTNAME4115"
+	desc = "EVTDESC4115"
+	
+	#拥立庶子
+	option =
+	{
+		name = "EVTOPTA4115"		
+		ai_chance =
+		{
+			factor = 100
+			#根据正统判断
+			modifier =
+			{
+				factor = 2
+				NOT = { legitimacy = 0.3 }
+			}
+			modifier =
+			{
+				factor = 1.2
+				legitimacy = 0.8
+			}
+		}
+		legitimacy = -0.3
+		kill_heir = THIS
+		define_ruler = { dynasty = THIS }
+	}
+	
+	#继续拥戴
+	option =
+	{
+		name = "EVTOPTB4115"		
+		ai_chance =
+		{
+			factor = 10
+			#根据恶名判断
+			modifier =
+			{
+				factor = 0.5
+				badboy = 10
+			}
+			#根据威望判断
+			modifier =
+			{
+				factor = 0.8
+				NOT = { prestige = 0.30 }
+			}
+		}
+		add_country_modifier =
+		{
+			name = "hunkuijunzhu"
+			duration = -1
+		}
+	}
+
+	#大臣辅政
+	option =
+	{
+		name = "EVTOPTC4115"		
+		ai_chance =
+		{
+			factor = 30
+			#根据正统判断
+			modifier =
+			{
+				factor = 0.8
+				legitimacy = 0.8
+			}
+			#根据稳定判断
+			modifier =
+			{
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		add_country_modifier =
+		{
+			name = "dachenfuzheng"
+			duration = 3650
+		}
+	}
+}
+
+#君主在位
+
+#君主无道
+country_event = {
+
+	id = 4116
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = no
+		badboy = 10
+		NOT = { has_country_modifier = junzhuwudao }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 600
+	}
+
+	title = "EVTNAME4116"
+	desc = "EVTDESC4116"
+	
+	#君主无道
+	option =
+	{
+		name = "EVTOPTA4116"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		add_country_modifier =
+		{
+			name = "junzhuwudao"
+			duration = -1
+		}
+	}
+}
+
+#君主怠政
+country_event = {
+
+	id = 4117
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = no
+		NOT = { prestige = 0.30 }
+		NOT = { has_country_modifier = junzhudaizheng }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 600
+	}
+
+	title = "EVTNAME4117"
+	desc = "EVTDESC4117"
+	
+	#君主怠政
+	option =
+	{
+		name = "EVTOPTA4117"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		add_country_modifier =
+		{
+			name = "junzhudaizheng"
+			duration = -1
+		}
+	}
+}
+
+#一代雄主
+country_event = {
+
+	id = 4118
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = no
+		army_tradition = 0.3
+		NOT = { has_country_modifier = yidaixiongzhu }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 600
+	}
+
+	title = "EVTNAME4118"
+	desc = "EVTDESC4118"
+	
+	#一代雄主
+	option =
+	{
+		name = "EVTOPTA4118"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		add_country_modifier =
+		{
+			name = "yidaixiongzhu"
+			duration = -1
+		}
+	}
+}
+
+#贤明君主
+country_event = {
+
+	id = 4119
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = no
+		prestige = 0.4
+		NOT = { has_country_modifier = junzhuxianming }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 600
+	}
+
+	title = "EVTNAME4119"
+	desc = "EVTDESC4119"
+	
+	#君主贤明
+	option =
+	{
+		name = "EVTOPTA4119"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		add_country_modifier =
+		{
+			name = "junzhuxianming"
+			duration = -1
+		}
+	}
+}
+
+#君主死亡
+country_event = {
+
+	id = 4120
+
+	is_triggered_only = yes
+
+	trigger = { }
+
+	title = "EVTNAME4120"
+	desc = "EVTDESC4120"
+	
+	#君主死亡
+	option =
+	{
+		name = "EVTOPTA4120"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		remove_country_modifier = dachenfuzheng
+		remove_country_modifier = hunkuijunzhu
+		remove_country_modifier = junzhuwudao
+		remove_country_modifier = junzhudaizheng
+		remove_country_modifier = yidaixiongzhu
+		remove_country_modifier = junzhuxianming
+		clr_country_flag = fenfenggongjia
+		clr_country_flag = monarch_character
+		remove_country_modifier = conghuiguoren
+		remove_country_modifier = yudunwuzhi
+		remove_country_modifier = leilifengxing
+		remove_country_modifier = jinxiaoshenwei
+		remove_country_modifier = qinjianzichi
+		remove_country_modifier = qiongshejiyu
+		remove_country_modifier = zhirenshanren
+		remove_country_modifier = jixianduneng
+		remove_country_modifier = bujinnvse
+		remove_country_modifier = huangyinwudu
+		remove_country_modifier = renaiqinxia
+		remove_country_modifier = gaoaolengku
+		remove_country_modifier = gongzhengyanming
+		remove_country_modifier = piansixiaai
+		remove_country_modifier = kuakuaqitan
+		remove_country_modifier = shoukouruping
+		remove_country_modifier = jianyibuqu
+		remove_country_modifier = nuoruodanqie
+		remove_country_modifier = yongwuhaodou
+		remove_country_modifier = qianrangrennai
+		remove_country_modifier = xiongxinwanzhang
+		remove_country_modifier = zhizuchangle
+		remove_country_modifier = xinjinance
+		remove_country_modifier = chengshitanran
+		any_owned = { 
+			limit = { 
+				tag = this
+				has_country_modifier = mibazi
+			}
+			set_country_flag = 2_renwuxian1
+			remove_country_modifier = mibazi
+			random_owned = {
+				pretender_rebels = 10
+			}
+			random_owned = {
+				pretender_rebels = 8
+			}
+			random_owned = {
+				pretender_rebels = 6
+			}
+			random_owned = {
+				pretender_rebels = 4
+			}
+			random_owned = {
+				pretender_rebels = 4
+			}
+			random_owned = {
+				pretender_rebels = 2
+			}
+			random_owned = {
+				pretender_rebels = 2
+			}
+			random_owned = {
+				pretender_rebels = 2
+			}
+			random_owned = {
+				pretender_rebels = 2
+			}
+			random_owned = {
+				pretender_rebels = 2
+			}
+		}
+	}
+}
+
+#有未成年继承人
+
+#庶子夺位
+country_event = {
+
+	id = 4121
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = no
+		has_heir = yes
+		NOT = { heir_age = 10 }
+	}
+
+	mean_time_to_happen =
+	{
+		months = 900
+		modifier = {
+			factor = 1.75
+			idea = grand_navy
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = zongfazhidu
+		}
+	}
+
+	title = "EVTNAME4121"
+	desc = "EVTDESC4121"
+	
+	#默认
+	option =
+	{
+		name = "EVTOPTA4121"		
+		ai_chance =
+		{
+			factor = 10
+		}
+		kill_heir = THIS
+		define_heir =
+		{
+			dynasty = THIS
+			claim = 60
+		}
+		stability = -1
+	}
+
+	#不可饶恕
+	option =
+	{
+		name = "EVTOPTB4121"		
+		ai_chance =
+		{
+			factor = 10
+			modifier =
+			{
+				factor = 1.5
+				NOT = { prestige = 0 }
+			}
+			modifier =
+			{
+				factor = 1.5
+				NOT = { badboy = 2 }
+			}
+			modifier =
+			{
+				factor = 0.8
+				badboy = 5
+			}
+			modifier =
+			{
+				factor = 0.7
+				badboy = 10
+			}
+			modifier =
+			{
+				factor = 0.5
+				badboy = 15
+			}
+			modifier =
+			{
+				factor = 0.5
+				badboy = 20
+			}
+		}
+		kill_heir = THIS
+		define_heir =
+		{
+			dynasty = THIS
+			claim = 100
+		}
+		prestige = 0.10
+		badboy = 2
+		stability = -1
+	}
+}
+
+#突发急症
+country_event =
+{
+	id = 4122
+	
+	title = "EVTNAME4122"
+	desc = "EVTDESC4122"
+	
+	trigger =
+	{
+		has_heir = yes
+		government = monarchy
+		is_lesser_in_union = no
+	}
+	
+	mean_time_to_happen =
+	{
+		months = 600
+	}
+	option =
+	{
+		name = "EVTOPTA4122"
+		treasury = -25
+		random_list =
+		{
+			15 = { kill_heir = THIS }
+			85 = { legitimacy = 0.05 }
+		}
+	}
+	
+	option =
+	{
+		name = "EVTOPTB4122"
+		random_list =
+		{
+			33 = { kill_heir = THIS }
+			66 = { legitimacy = 0.1 }
+		}
+		
+	}
+}
+
+#有成年继承人
+
+#宠爱幼子
+country_event = {
+
+	id = 4123
+
+	trigger =
+	{
+		government = monarchy
+		NOT = { religion_group = pagan }
+		is_lesser_in_union = no
+		nomad = no
+		regency = no
+		has_heir = yes
+		heir_age = 12
+	}
+
+	mean_time_to_happen =
+	{
+		months = 900
+		modifier = {
+			factor = 1.75
+			idea = grand_navy
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = zongfazhidu
+		}
+	}
+
+	title = "EVTNAME4123"
+	desc = "EVTDESC4123"
+	
+	#废长立幼
+	option =
+	{
+		name = "EVTOPTA4123"		
+		ai_chance =
+		{
+			factor = 30
+			#根据国家现有稳定度判断
+			modifier =
+			{
+				factor = 0.8
+				NOT = { stability = 1 }
+			}
+		}
+		define_heir =
+		{
+			dynasty = THIS
+		}
+		stability = -1
+		random_owned =
+		{
+			create_revolt = 3
+		}
+	}
+
+	#维护嫡长
+	option =
+	{
+		name = "EVTOPTB4123"		
+		ai_chance =
+		{
+			factor = 10
+			#根据国家大小判断，大国回稳难对付叛军容易
+			modifier =
+			{
+				factor = 0.5
+				NOT = { num_of_cities = 5 }
+			}
+			modifier =
+			{
+				factor = 2
+				num_of_cities = 20
+			}
+			modifier =
+			{
+				factor = 3
+				num_of_cities = 50
+			}
+			#根据国家现有稳定度判断
+			modifier =
+			{
+				factor = 1.2
+				NOT = { stability = 0 }
+			}
+		}
+		stability = 1
+		add_country_modifier =
+		{
+			name = "chongjibuman"
+			duration = 1825
+		}
+	}
+}
+
+#绝代佳人
+country_event = {
+
+	id = 4124
+
+	trigger =
+	{
+		government = monarchy
+		is_lesser_in_union = no
+		regency = no
+		has_heir = yes
+		heir_age = 12
+	}
+
+	mean_time_to_happen =
+	{
+		months = 900
+	}
+
+	title = "EVTNAME4124"
+	desc = "EVTDESC4124"
+	
+	#自己纳妾
+	option =
+	{
+		name = "EVTOPTA4124"		
+		ai_chance =
+		{
+			factor = 10
+			#根据威望判断
+			modifier =
+			{
+				factor = 1.5
+				NOT = { prestige = 0 }
+			}
+			#根据正统判断
+			modifier =
+			{
+				factor = 1.5
+				NOT = { legitimacy = 0.5 }
+			}
+		}
+		prestige = 0.10
+		legitimacy = 0.1
+		add_country_modifier =
+		{
+			name = "taiziyinmouzuoluan"
+			duration = 1825
+		}
+	}
+
+	#赏赐太子
+	option =
+	{
+		name = "EVTOPTB4124"		
+		ai_chance =
+		{
+			factor = 30
+			#根据恶名判断
+			modifier =
+			{
+				factor = 0.8
+				NOT = { badboy = 0.5 }
+			}
+			modifier =
+			{
+				factor = 1.2
+				badboy = 5
+			}
+			modifier =
+			{
+				factor = 1.5
+				badboy = 10
+			}
+			modifier =
+			{
+				factor = 2
+				badboy = 15
+			}
+			modifier =
+			{
+				factor = 3
+				badboy = 20
+			}
+		}
+		badboy = -1
+	}
+}
+
+#大阴谋
+country_event = {
+
+	id = 4125
+
+	trigger =
+	{
+		government = monarchy
+		is_lesser_in_union = no
+		OR =
+		{
+			has_country_modifier = chongjibuman
+			has_country_modifier = taiziyinmouzuoluan
+			has_country_modifier = taihoubuman
+		}
+	}
+
+	mean_time_to_happen =
+	{
+		months = 180
+		modifier = {
+			factor = 1.35
+			idea = grand_navy
+		}
+	}
+
+	title = "EVTNAME4125"
+	desc = "EVTDESC4125"
+	
+	#大阴谋
+	option =
+	{
+		name = "EVTOPTA4125"		
+		ai_chance =
+		{
+			factor = 100
+		}
+		stability = -2
+		any_owned =
+		{
+			limit = { is_capital = yes }
+			pretender_rebels = 3
+		}
+		random_owned =
+		{
+			limit = { is_capital = no }
+			noble_rebels = 3
+		}
+		random_owned =
+		{
+			limit = { is_capital = no }
+			noble_rebels = 2
+		}
+	}
+}
+
+#新继承人
+country_event = {
+
+	id = 4126
+
+	trigger =
+	{
+		government = monarchy
+		is_lesser_in_union = no
+		has_heir = no
+	}
+
+	mean_time_to_happen =
+	{
+		months = 24
+	}
+
+	title = "EVTNAME4126"
+	desc = "EVTDESC4126"
+	
+	#获得新的继承人
+	option =
+	{
+		name = "EVTOPTA4126"		
+		ai_chance =
+		{
+			factor = 25
+			modifier =
+			{
+				factor = 0.1
+				NOT = { stability = 0 }
+			}
+		}
+		define_heir =
+		{
+			dynasty = THIS
+			claim = 75
+		}
+		badboy = -1
+		random_list = { 
+			50 = { 
+				stability = -1
+			}
+			50 = {
+			}
+		}
+	}
+	option =
+	{
+		name = "EVTOPTB4126"		
+		ai_chance =
+		{
+			factor = 75
+		}
+		define_heir =
+		{
+			dynasty = THIS
+			claim = 75
+		}
+		prestige = 0.05
+		random_list = { 
+			50 = { 
+				treasury = -50
+			}
+			50 = {
+			}
+		}
+	}
+}
+
+#吴国天赋-季札让国
+country_event = { 
+	id = 4127
+	trigger = { 
+		government = monarchy
+		tag = WUG
+		regency = yes
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4127"
+	desc = "EVTDESC4127"
+	option = { 
+		name = "EVTOPTA4127"
+		define_ruler = { 
+			dynasty = "姬"
+			female = no
+			DIP = 3
+			MIL = 3
+			ADM = 3
+		}
+	}
+}
+
+#越国天赋-千年国祚
+country_event = { 
+	id = 4128
+	trigger = { 
+		government = monarchy
+		tag = YGO
+		NOT = { dynasty = "姒" }
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4128"
+	desc = "EVTDESC4128"
+	option = { 
+		name = "EVTOPTA4128"
+		define_ruler = { 
+			dynasty = "姒"
+			female = no
+			DIP = 4
+			MIL = 4
+			ADM = 4
+		}
+	}
+}

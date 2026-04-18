@@ -1,0 +1,102 @@
+tutorial =
+{
+	title = "TUTORIAL_7"
+	desc = "TUTORIAL_7_DESC"
+	tutorial_window = "TUTORIAL_WINDOW_1"	# default window
+	interactive = yes
+	country = SWE
+
+	start_date = 1453.5.29
+
+	page =
+	{
+
+		effect = {
+			treasury = 10000
+			war = DAN
+			war = NOR
+			land_tech = 10000
+		}
+
+		args = { 
+			nation = "Denmark & Norway"
+			#nation = "Denmark"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_11_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_11_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_11_conc"
+
+		trigger = {
+
+			NOT = {
+				war_with = DAN
+				war_with = NOR
+			}
+		}
+
+	}
+
+
+
+	page =	
+	{
+
+		args = { 
+			tech = "Government"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_13_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_13_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_13_conc"
+
+		trigger = {
+			SWE = {
+				government_tech = 9
+			}
+		}
+
+	}
+
+
+	page =
+	{
+
+		args = { 
+			idea = "Military Drill"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_14_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_14_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_14_conc"
+
+		trigger = {
+			SWE = {
+				idea = military_drill
+			}
+		}
+
+	}
+
+}
+
+# new triggers..
+
+## galleys_in_province
+## infantry_in_province
+## war_with
+## unit_in_battle
+## unit_in_siege
+## unit_has_leader

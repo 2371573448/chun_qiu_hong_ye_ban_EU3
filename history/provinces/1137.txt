@@ -1,0 +1,13 @@
+culture = chaoxian
+religion = animism
+capital = "¹úÄÚ³Ç"
+trade_goods = fur
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 60
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = JSG
+}

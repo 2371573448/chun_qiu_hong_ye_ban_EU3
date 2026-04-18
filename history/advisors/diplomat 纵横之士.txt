@@ -1,0 +1,73 @@
+#在外交中改变政治形势的人
+
+advisor ={
+name ="鲁仲连" 
+location =267
+skill =4
+type =diplomat
+date =2418.1.1
+death_date =2448.1.1
+}
+
+advisor ={
+name ="苏代" 
+location =32
+skill =3
+type =diplomat
+date =2365.1.1
+death_date =2400.1.1
+}
+
+advisor ={
+name ="苏代" 
+location =32
+skill =3
+type =diplomat
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="张仪" 
+location =197
+skill =6
+type =diplomat
+date =2350.1.1
+death_date =2389.1.1
+}
+
+advisor ={
+name ="张仪" 
+location =197
+skill =6
+type =diplomat
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="苏秦" 
+location =351
+skill =5
+type =diplomat
+date =2345.1.1
+death_date =2381.1.1
+}
+
+advisor ={
+name ="虞卿" 
+location =54
+skill =4
+type =diplomat
+date =2400.1.1
+death_date =2430.1.1
+}
+
+advisor ={
+name ="姬肸" 
+location =75
+skill =3
+type =diplomat
+date =2130.1.1
+death_date =2170.1.1
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<language code="en_US">
+		<string key="btn-close" value="CLOSE" />
+		<string key="error-service-unavailable" value="Service temporarily unavaliable.\n\nPlease try again a little later." />
+	</language>
+	<language code="sv_SE">
+		<string key="btn-close" value="STÄNG" />
+		<string key="error-service-unavailable" value="Tjänsten är tyvärr otillgänglig för närvarande. Var god försök igen lite senare." />
+	</language>
+</translations>

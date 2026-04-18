@@ -1,0 +1,28 @@
+country_decisions = { 
+	guanji = { 
+		potential = { 
+			NOT = { 
+				has_country_modifier = guanji
+			}
+		}
+		allow = { 
+			government_tech = 15
+			capital_scope = { 
+				has_building = shipyard
+			}
+			officials = 5
+			treasury = 300
+		}
+		effect = { 
+			officials = -5
+			treasury = -300
+			add_country_modifier = { 
+				name = "guanji"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,85 @@
+
+owner = ZHL
+controller = ZHL
+culture = huaiyi
+religion = ancestor
+capital = "½¨Ñô"
+trade_goods = chinaware
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 5000
+fort1 = yes
+add_core = ZHL
+cot = no
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = YXU }
+2100.1.1 = { discovered_by = CHU }
+2180.1.1 = { owner = WUG
+              controller = WUG
+	    }
+2210.1.1 = { add_core = WUG }
+2220.1.1 = { religion = liyuebadao 
+             culture=gouwu }
+2222.1.1 = { citysize = 12000 }
+2225.1.1 = { owner = YGO
+             controller = YGO
+             add_core = YGO
+             religion = liyuebadao
+           }
+2244.1.1 = { 
+	owner = ZHL
+	controller = ZHL
+	add_core = ZHL
+	remove_core = YGO
+}
+2244.1.2 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+	remove_core = ZHL
+}
+2246.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = YGO
+}
+2246.1.2 = { 
+	owner = ZHL
+	controller = ZHL
+	add_core = ZHL
+	remove_core = WUG
+}
+2247.1.1 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+	remove_core = WUG
+}
+2364.1.1  = {	owner = CHU
+		controller = CHU
+                culture = nanchu
+            }
+2370.1.1 = { religion = daojia }
+2394.1.1 = {    add_core = CHU  }
+2475.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.7.1={
+    owner=CHU
+    controller=CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

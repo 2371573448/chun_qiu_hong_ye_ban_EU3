@@ -1,0 +1,66 @@
+owner = GUI
+controller = GUI
+culture = xirong
+religion = animism
+capital = "…œﬂû"
+trade_goods = cotton
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 24000
+fort1 = yes
+add_core = GUI
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2010.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2040.1.1 = { 
+	add_core = QIN
+}
+2070.1.1 = { 
+	culture = guanzhong
+	religion = liyuebadao
+}
+2222.1.1 = { 
+	citysize = 32000
+}
+2246.1.1 = { 
+	owner = HUR
+	controller = HUR
+	add_core = HUR
+}
+2246.1.2 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = HUR
+}
+2360.1.1 = { 
+	religion = mojia
+}
+2492.2.1 = { 
+	owner = YOW
+	controller = YOW
+	add_core = YOW
+}
+2492.11.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

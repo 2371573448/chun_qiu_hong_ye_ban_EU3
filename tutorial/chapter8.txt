@@ -1,0 +1,160 @@
+tutorial =
+{
+	title = "TUTORIAL_7"
+	desc = "TUTORIAL_7_DESC"
+	tutorial_window = "TUTORIAL_WINDOW_1"	# default window
+	interactive = yes
+	country = POR
+
+	start_date = 1427.1.1
+
+	page =
+	{
+
+		effect = {
+			treasury = 5000
+			navy_tradition = 100
+			367 = { discover = yes }
+		}
+
+
+		args = { 
+			province = "The Azores"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_18_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_18_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_18_conc"
+
+		trigger = {
+			POR = {
+				owns = 367
+			}
+			367 = {
+				is_colony = yes
+			}
+		}
+
+	}
+
+	page =
+	{
+	
+		args = { 
+			tech = "Government"
+		}
+	
+	
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_13_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_13_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_13_conc"
+	
+		trigger = {
+			POR = {
+				government_tech = 6
+			}
+		}
+	
+	}
+
+	page =
+	{
+		effect = {
+			remove_idea = divine_supremacy
+		}
+
+		args = { 
+			idea = "'Quest For The New World'"
+		}
+	
+	
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_14_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_14_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_14_conc"
+	
+		trigger = {
+			POR = {
+				idea = quest_for_the_new_world
+			}
+		}
+	
+	}
+
+	page =
+	{
+		effect = {
+			colonists = 5
+		}
+
+		args = { 
+			province = "Cuba"
+			provinces = "Cuba"	
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_17_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_17_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_17_conc"
+
+		trigger = {
+			POR = {
+				OR = {
+					has_discovered = 484 # Havana
+					has_discovered = 485 # Moron
+					has_discovered = 486 # Guantanamo
+				}
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			province = "Havana, Moron & Guantanamo."
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_18_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_18_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_18_conc"
+
+		trigger = {
+			POR = {
+				owns = 484 # Havana
+				owns = 485 # Moron
+				owns = 486 # Guantanamo
+			}
+			
+
+		}
+
+	}
+
+}
+
+# new triggers..
+
+## galleys_in_province
+## infantry_in_province
+## war_with
+## unit_in_battle
+## unit_in_siege
+## unit_has_leader

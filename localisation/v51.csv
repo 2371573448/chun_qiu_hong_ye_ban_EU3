@@ -1,0 +1,119 @@
+Tag;汉语;;;;;;;;;;;;;
+FE_PLAYERS;玩家;Menschliche Spieler;Joueurs humains;Jugadores humanos;;;;;;;;;;x;;
+TRADE_THROUGH_TT;$GOODS$ 通过 $WHERE$;$GOODS$ durch $WHERE$;$GOODS$ via $WHERE$;$GOODS$ a trav閟 de $WHERE$;;;;;;;;;;x;;
+SHOGUNATEDEAD_SETUP;当幕府被外国人解散.;Wenn das Shogunat von Ausl鋘dern aufgel鰏t wurde.;Lorsque le shogunat a 閠?d閙antel?par des 閠rangers.;Cuando el shogunato ha sido eliminado por extranjeros.;;;;;;;;;;x;;
+SHOGUNATEDEAD_HEADER;$MESSENGER$;$MESSENGER$;$MESSENGER$;$MESSENGER$;;;;;;;;;;x;;
+SHOGUNATEDEAD_1;幕府解散!;Shogunat aufgel鰏t!;Shogunat d閙antel?!;hogunato eliminado!;;;;;;;;;;x;;
+SHOGUNATEDEAD_2;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;$MONARCHTITLE$;;;;;;;;;;x;;
+SHOGUNATEDEAD_3;幕府被$EVIL_ADJ$的军队强行解散了.;Das Shogunat wurden von den $EVIL_ADJ$ Armeen auf ihrem Vernichtungsfeldzug durch die japanischen Provinzen aufgel鰏t.;Le shogunat a 閠?d閙antel?par les arm閑s $EVIL_ADJ$ alors qu抏lles rasaient la campagne japonaise.;El shogunato ha sido eliminado por los ej閞citos de $EVIL_ADJ$ mientras arrasaban el campo japon閟.;;;;;;;;;;x;;
+SHOGUNATEDEAD_4;*;*;*;*;*;*;*;*;*;*;*;*;*;x;;
+SHOGUNATEDEAD_5;*;*;*;*;*;*;*;*;*;*;*;*;*;x;;
+SHOGUNATEDEAD_6;*;*;*;*;*;*;*;*;*;*;*;*;*;x;;
+SHOGUNATEDEAD_LOG;$EVIL_ADJ$用武力解散了幕府!;Die $EVIL_ADJ$ haben das Shogunat mit Waffengewalt aufgel鰏t!;Les $EVIL_ADJ$ ont d閙antel?le shogunat sous la menace d抋rmes ?feu !;l $EVIL_ADJ$ ha eliminado al shogunato a punta de pistola!;;;;;;;;;;x;;
+SHOGUNATEDEAD_BTN1;混帐!;Diese Bastarde!;Les ordures !;astardos!;;;;;;;;;;x;;
+SHOGUNATEDEAD_BTN2;混帐!;Diese Bastarde!;Les ordures !;astardos!;;;;;;;;;;x;;
+SHOGUNATEDEAD_BTN3;转到;Gehe zu;Afficher;Ir a;;;;;;;;;;x;;
+SHOGUNATEDEAD_MAP;*;*;*;*;*;*;*;*;*;*;*;*;*;x;;
+NOMAD_BUILDING_LEFT;再拆毁$NUM$座建筑我们才能征服这个省份.;;;;;;;;;;X
+UNIT_SPLIT_HALF;分成两队;;;;;;;;;;X
+UNIT_ENABLE_REBEL_HUNT;猎杀叛军;;;;;;;;;;X
+UNIT_DISABLE_REBEL_HUNT;(正在猎杀叛军);;;;;;;;;;X
+ENABLE_REBEL_SUPPRESSION;允许主动镇压叛乱;;;;;;;;;;X
+DISABLE_REBEL_SUPPRESSION;不允许主动镇压叛乱;;;;;;;;;;X
+REBEL_SUPPRESSION_DESC;受命镇压叛乱的军队将主动追击叛军部队并围攻叛乱省份, 但不会进攻敌国军队.;;;;;;;;;;X
+MAPMODE_ECONOMY;经济地图模式;;;;;;;;;;X
+MAPMODE_MANPOWER;人力地图模式;;;;;;;;;;X
+MAPMODE_FORTLEVEL;要塞等级地图模式;;;;;;;;;;X
+MAPMODE_STABILITY;稳定花费地图模式;;;;;;;;;;X
+MAPMODE_TECH_COST;科技地图模式;;;;;;;;;;X
+MAPMODE_TRADE_VALUE;贸易价值地图模式;;;;;;;;;;X
+MAPMODE_SUPPLY_LIMIT;补给上限地图模式;;;;;;;;;;X
+MAPMODE_BUILDINGS;建筑地图模式;;;;;;;;;;X
+MAPMODE_TROOP_BUILD_SPEED;征募地图模式;;;;;;;;;;X
+MAPMODE_SHIP_BUILD_SPEED;造船地图模式;;;;;;;;;;X
+MAPMODE_MISSIONARY;传教地图模式;;;;;;;;;;X
+PW_STAB_COST;稳定花费;;;;;;;;;;X
+MISSIONARY_IN_PROGRESS;正在传教;;;;;;;;;;X
+MISSIONARY_MAP_TOOLTIP;$CHANCE$%几率改变信仰为 $RELIGION$.;;;;;;;;;;X
+BMP_MAX;最多可造$NUM$座建筑.;;;;;;;;;;X
+BMP_CAN;你可以再造$NUM$座建筑.;;;;;;;;;;X
+BMP_UNIQUE;这个省份现在叫$NAME$.;;;;;;;;;;X
+POS_CAP_TT;由于舰队拥有的火炮数量, 战斗中的部署值不能超过$VAL$%.;;;;;;;;;;X
+LOSE_CORE_EFFECT2;$WHO$ 失去了 $PROV$ 的核心.\n;;;;;;;;;;X
+SPHERE_OTHER_VASSAL;他们是 $ADJ$ 附庸国, 所以我们不能将其纳入势力范围.;;;;;;;;;;X
+CAV_TO_INF_RATIO;在战斗中你的骑兵不能超过步兵的$MAX$%, 否则你会失去合成兵种奖励.;;;;;;;;;;X
+EVTNAME9001;发现京都!;;;;;;;;;;X
+EVTDESC9001;$MONARCHTITLE$!远东传来消息. 我国的一位探险家到达了日本的首都. 我们要赶在其他欧洲国家之前利用这一优势.;;;;;;;;;;X
+EVTOPTA9001;很好!;;;;;;;;;;X
+SHORTCUT;快捷键: ;;;;;;;;;;X
+SM_SHORTCUT;快捷键工具提示;;;;;;;;;;X
+unlawful_territory;非法领土;;;;;;;;;;X
+desc_unlawful_territory;根据华夏传统,这个省份正被非法占有.;;;;;;;;;;X
+NO;否;;;;;;;;;;X
+YES;是;;;;;;;;;;X
+yijianhexin_nottt_title;核心;;;;;;;;;;X
+yijianhexin_nottt_desc;一键核心;;;;;;;;;;X
+return_unlawful_territory_title;归还非法领土;;;;;;;;;;X
+return_unlawful_territory_desc;根据华夏传统,这个省份正被非法占有.;;;;;;;;;;X
+NOMADSRAZEUS_SETUP;当建筑被游牧民族拆毁;;;;;;;;;;X
+NOMADSRAZEUS_HEADER;$MESSENGER$;;;;;;;;;;X
+NOMADSRAZEUS_1;建筑被强拆!;;;;;;;;;;X
+NOMADSRAZEUS_2;$MONARCHTITLE$, $PROVINCE$的;;;;;;;;;;X
+NOMADSRAZEUS_3;$BUILDING$;;;;;;;;;;X
+NOMADSRAZEUS_4;被拆毁了!;;;;;;;;;;X
+NOMADSRAZEUS_5;*;;;;;;;;;;X
+NOMADSRAZEUS_6;*;;;;;;;;;;X
+NOMADSRAZEUS_LOG;我们在$PROVINCE$的$BUILDING$被游牧民族拆毁!;;;;;;;;;;X
+NOMADSRAZEUS_BTN1;混帐东西!;;;;;;;;;;X
+NOMADSRAZEUS_BTN2;混帐东西!;;;;;;;;;;X
+NOMADSRAZEUS_BTN3;转到;;;;;;;;;;X
+NOMADSRAZEUS_MAP;*;;;;;;;;;;X
+NOMADSFLIPFROMUS_SETUP;当我国被占领省份转投游牧民族;;;;;;;;;;X
+NOMADSFLIPFROMUS_HEADER;$MESSENGER$;;;;;;;;;;X
+NOMADSFLIPFROMUS_1;$PROVINCE$沦陷!;;;;;;;;;;X
+NOMADSFLIPFROMUS_2;$MONARCHTITLE$,;;;;;;;;;;X
+NOMADSFLIPFROMUS_3;$PROVINCE$;;;;;;;;;;X
+NOMADSFLIPFROMUS_4;被迫屈服于;;;;;;;;;;X
+NOMADSFLIPFROMUS_5;$HORDE$;;;;;;;;;;X
+NOMADSFLIPFROMUS_6;*;;;;;;;;;;X
+NOMADSFLIPFROMUS_LOG;$PROVINCE$被$HORDE$占领!;;;;;;;;;;X
+NOMADSFLIPFROMUS_BTN1;这群蛮夷!;;;;;;;;;;X
+NOMADSFLIPFROMUS_BTN2;这群蛮夷!;;;;;;;;;;X
+NOMADSFLIPFROMUS_BTN3;转到;;;;;;;;;;X
+NOMADSFLIPFROMUS_MAP;*;;;;;;;;;;X
+NOMADSFLIPTOUS_SETUP;当一个占领省份转投我们部落;;;;;;;;;;X
+NOMADSFLIPTOUS_HEADER;$MESSENGER$;;;;;;;;;;X
+NOMADSFLIPTOUS_1;$PROVINCE$投降!;;;;;;;;;;X
+NOMADSFLIPTOUS_2;$MONARCHTITLE$,;;;;;;;;;;X
+NOMADSFLIPTOUS_3;$PROVINCE$;;;;;;;;;;X
+NOMADSFLIPTOUS_4;已宣布投降并脱离了;;;;;;;;;;X
+NOMADSFLIPTOUS_5;$OWNER$;;;;;;;;;;X
+NOMADSFLIPTOUS_6;*;;;;;;;;;;X
+NOMADSFLIPTOUS_LOG;我国占领了$OWNER$的$PROVINCE$.;;;;;;;;;;X
+NOMADSFLIPTOUS_BTN1;哈!一群懦夫...;;;;;;;;;;X
+NOMADSFLIPTOUS_BTN2;哈!一群懦夫...;;;;;;;;;;X
+NOMADSFLIPTOUS_BTN3;转到;;;;;;;;;;X
+NOMADSFLIPTOUS_MAP;*;;;;;;;;;;X
+HAVE_A_NAVY_SMALLER_THAN2;海军规模少于上限的 $PERC$% . (Less than $SHIPS$ ships);;;;;;;;;;
+HAVE_A_NAVY_LARGER_THAN2;海军规模至少为上限的 $PERC$% . (At least $SHIPS$ ships);;;;;;;;;;
+HAVE_A_ARMY_SMALLER_THAN2;陆军规模少于上限的 $PERC$% . (Less than $REGIMENTS$ regiments);;;;;;;;;;
+HAVE_A_ARMY_LARGER_THAN2;陆军规模至少为上限的 $PERC$% . (At least $REGIMENTS$ regiments);;;;;;;;;;
+UW_NOT_POSSIBLE_TO_ATTACH;附近没有可以跟随的友军单位.;;;;;;;;;;;;;x
+UW_UNITS_ATTACHED;以下单位已经跟随.;;;;;;;;;;;;;x
+UW_ATTACH_TO;一直跟随 $NAME$.;;;;;;;;;;;;;x
+UW_DETACH_FROM;从 $NAME$ 分离.;;;;;;;;;;;;;x
+UNIT_DETACH;分离;;;;;;;;;;;;;x
+UNIT_ATTACH;跟随;;;;;;;;;;;;;x
+DIPRELCH_STRAINED_UNION;联盟中的文化差异;;;;;;;;;;;;;x;;
+"NO_NOMAD_COLONY_AS_VASSAL;当你是附庸时,你无法移民游牧民族的疆域.;;;;;;;;;;;;;x"
+SHOGUN_DIPLOMACY;因为你是将军，你将以 $EMPEROR$? 的名义作出这项举动并且这项举动仅仅会影响 $EMPEROR$? 的外交关系.;;;;;;;;;;;;;x
+HAVE_LESS_THAN_CAVALRY_IN;在 $Province$ 拥有少于 $UNITS$ 的骑兵;;;;;;;;;;;;;x
+HAVE_MORE_THAN_CAVALRY_IN;在 $Province$ 拥有至少 $UNITS$ 的骑兵;;;;;;;;;;;;;x
+HAVE_LESS_THAN_ARTILLERY_IN;在 $Province$ 拥有少于 $UNITS$ 的战车;;;;;;;;;;;;;x
+HAVE_MORE_THAN_ARTILLERY_IN;在 $Province$ 拥有至少 $UNITS$ 的战车;;;;;;;;;;;;;x
+HAVE_LESS_THAN_BIG_SHIPS_IN;在 $Province$ 拥有少于 $UNITS$ 的大型船只;;;;;;;;;;;;;x
+HAVE_MORE_THAN_BIG_SHIPS_IN;在 $Province$ 拥有至少 $UNITS$ 的大型船只;;;;;;;;;;;;;x
+HAVE_LESS_THAN_LIGHT_SHIPS_IN;在 $Province$ 拥有少于 $UNITS$ 的轻型船只;;;;;;;;;;;;;x
+HAVE_MORE_THAN_LIGHT_SHIPS_IN;在 $Province$ 拥有至少 $UNITS$ 的轻型船只;;;;;;;;;;;;;x
+HAVE_LESS_THAN_TRANSPORTS_IN;在 $Province$ 拥有少于 $UNITS$ 的运输船;;;;;;;;;;;;;x
+HAVE_MORE_THAN_TRANSPORTS_IN;在 $Province$ 拥有至少 $UNITS$ 的轻型船只;;;;;;;;;;;;;x

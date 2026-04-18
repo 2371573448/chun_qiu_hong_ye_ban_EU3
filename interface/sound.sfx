@@ -1,0 +1,475 @@
+mergearmynavy =
+{
+	file = "mergearmynavy.wav"
+}
+transferregimentship =
+{
+	file = "transferregimentship.wav"
+}
+seizecolony =
+{
+	file = "seizecolony.wav"
+}
+attacknatives =
+{
+	file = "attacknatives.wav"
+}
+burncolony =
+{
+	file = "burncolony.wav"
+}
+reinforce_navy =
+{
+	file = "reinforce_navy.wav"
+}
+reinforce_army =
+{
+	file = "reinforce_army.wav"
+}
+court_click =
+{
+	file = "court_click.wav"
+}
+click =
+{
+	file = "click.wav"
+}
+
+temple_africangfx =
+{
+	file = "temple_african.wav"
+}
+temple_southamericangfx =
+{
+	file = "temple_southamerican.wav"
+}
+temple_muslimgfx =
+{
+	file = "temple_muslim.wav"
+}
+temple_indiangfx =
+{
+	file = "temple_indian.wav"
+}
+declarewar =
+{
+	file = "declarewar.wav"
+}
+declarewar_onus =
+{
+	file = "declarewar_onus.wav"
+}
+newmonarch =
+{
+	file = "newmonarch.wav"
+}
+revolt =
+{
+	file = "revolt.wav"
+}
+spiesuccess =
+{
+	file = "spiesuccess.wav"
+}
+spiefailure =
+{
+	file = "spiefailure.wav"
+}
+colonisationsuccess =
+{
+	file = "colonisationsuccess.wav"
+}
+colonisationfailure =
+{
+	file = "colonisationfailure.wav"
+}
+diplomaticsuccess =
+{
+	file = "diplomaticsuccess.wav"
+}
+
+diplomaticfailure =
+{
+	file = "diplomaticfailure.wav"
+}
+
+build_building =
+{
+	file = "build_building.wav"
+}
+
+cityambience =
+{
+	file = "cityambiens_small.wav"
+	volume = 95
+}
+
+courthouse =
+{
+	file = "courtroom.wav"
+}
+
+customs_office =
+{
+	file = "customsoffice.wav"
+}
+
+marketplace =
+{
+	file = "marketplace.wav"
+}
+
+menu_forward =
+{
+	file = "menu_forward.wav"
+}
+
+moneyin =
+{
+	file = "moneyin.wav"
+}
+
+moneyout =
+{
+	file = "moneyout.wav"
+}
+
+plantation =
+{
+	file = "plantation.wav"
+}
+
+regimental_camp =
+{
+	file = "regimental_camp.wav"
+}
+
+shipyard =
+{
+	file = "shipyard.wav"
+}
+
+switch_tab =
+{
+	file = "switch_tab.wav"
+}
+
+tax_assesor =
+{
+	file = "taxassesor.wav"
+}
+
+temple_latingfx =
+{
+	file = "temple_western.wav"
+}
+
+temple_chinesegfx =
+{
+	file = "temple_chinese.wav"
+}
+
+desert =
+{
+	file = "desert.wav"
+}
+
+forest =
+{
+	file = "forest.wav"
+}
+
+jungle =
+{
+	file = "jungle.wav"
+}
+
+mountainranges =
+{
+	file = "mountainranges.wav"
+}
+
+opensea =
+{
+	file = "opensea.wav"
+}
+
+plains =
+{
+	file = "planes.wav"
+}
+
+shoresea =
+{
+	file = "shoresea.wav"
+}
+
+forest_event_1 =
+{
+	file = "forest_event1.wav"
+}
+
+forest_event_2 =
+{
+	file = "forest_event2.wav"
+}
+
+forest_event_3 =
+{
+	file = "forest_event3.wav"
+}
+
+forest_event_4 =
+{
+	file = "forest_event4.wav"
+}
+
+forest_event_5 =
+{
+	file = "forest_event5.wav"
+}
+
+battle_event_cannon_1 =
+{
+	file = "battle_event_cannon1.wav"
+}
+
+battle_event_cannon_2 =
+{
+	file = "battle_event_cannon2.wav"
+}
+
+battle_event_musket_1 =
+{
+	file = "battle_event_musket1.wav"
+}
+
+battle_event_musket_2 =
+{
+	file = "battle_event_musket2.wav"
+}
+
+battle_event_musket_3 =
+{
+	file = "battle_event_musket3.wav"
+}
+
+battle_event_musket_4 =
+{
+	file = "battle_event_musket4.wav"
+}
+
+battle_event_swordhit_1 =
+{
+	file = "battle_event_swordhit1.wav"
+}
+
+battle_event_swordhit_2 =
+{
+	file = "battle_event_swordhit2.wav"
+}
+
+battle_event_swordhit_3 =
+{
+	file = "battle_event_swordhit3.wav"
+}
+
+battle_event_swordhit_4 =
+{
+	file = "battle_event_swordhit4.wav"
+}
+
+battle_event_swordhit_5 =
+{
+	file = "battle_event_swordhit5.wav"
+}
+
+battle_event_swordhit_6 =
+{
+	file = "battle_event_swordhit6.wav"
+}
+
+boat_click =
+{
+	file = "boat_click.wav"
+}
+
+army_click =
+{
+	file = "army_click.wav"
+}
+
+build_army =
+{
+	file = "build_army.wav"
+}
+
+build_navy =
+{
+	file = "build_navy.wav"
+}
+
+plains_event_1 =
+{
+	file = "plains_event1.wav"
+}
+
+plains_event_2 =
+{
+	file = "plains_event2.wav"
+}
+
+plains_event_3 =
+{
+	file = "plains_event3.wav"
+}
+
+plains_event_4 =
+{
+	file = "plains_event4.wav"
+}
+
+battle_background =
+{
+	file = "battle_backgroundloop.wav"
+}
+
+battle_background_naval =
+{
+	file = "seabattle_loop.wav"
+}
+
+cavallry_click = 
+{
+	file = "cavallery.wav"
+}
+
+shoresea_event_1 =
+{
+	file = "shoresea_event1.wav"
+}
+
+shoresea_event_2 =
+{
+	file = "shoresea_event2.wav"
+}
+
+shoresea_event_3 =
+{
+	file = "shoresea_event3.wav"
+}
+
+events_general =
+{
+	file = "events_general.wav"
+}
+
+
+admiralty =
+{
+	file = "admiralty.wav"
+}
+constable =
+{
+	file = "constable.wav"
+}
+fine_arts_academy =
+{
+	file = "fineartsacademy.wav"
+}
+refinery =
+{
+	file = "refinery_manuf.wav"
+}
+
+textile =
+{
+	file = "textile_manuf.wav"
+}
+university =
+{
+	file = "university.wav"
+}
+war_college =
+{
+	file = "warcollege.wav"
+}
+weapons =
+{
+	file = "weapon_manuf.wav"
+}
+wharf =
+{
+	file = "wharf.wav"
+}
+
+
+
+
+
+army_move =
+{
+	file = "army_move.wav"
+}
+click_enemyprovince =
+{
+	file = "click_enemyprovince.wav"
+}
+close_window =
+{
+	file = "close_window.wav"
+}
+connecting =
+{
+	file = "connecting.wav"
+}
+country_select =
+{
+	file = "click.wav"
+}
+
+start_game =
+{
+	file = "country_select.wav"
+}
+
+diplomaticoffer =
+{
+	file = "diplomaticoffer.wav"
+}
+disband_unit =
+{
+	file = "disband_unit.wav"
+}
+illegal_moveorder =
+{
+	file = "illegal_moveorder.wav"
+}
+navy_move =
+{
+	file = "navy_move.wav"
+}
+stabilitydown =
+{
+	file = "stabilitydown.wav"
+}
+stabilityup =
+{
+	file = "stabilityup.wav"
+}
+techadvance =
+{
+	file = "techadvance.wav"
+}
+time_back =
+{
+	file = "time_back.wav"
+}
+time_forward =
+{
+	file = "time_forward.wav"
+}
+call_to_arms =
+{
+	file = "warcollege.wav"
+}

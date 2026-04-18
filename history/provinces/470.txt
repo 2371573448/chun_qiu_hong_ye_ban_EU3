@@ -1,0 +1,63 @@
+
+owner = YUN
+controller = YUN
+culture = nanchu
+religion = liyuejiaohua
+capital = "ิว"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 18000
+fort1 = yes
+add_core = YUN
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+1997.2.1  = {	owner = CHU
+		controller = CHU
+	    }
+2027.2.1 = { add_core = CHU }
+2057.1.1 = { religion = ancestor }
+2085.1.1 = { religion = liyuebadao  culture=nanchu remove_core=YUN }
+2192.11.1  = {	owner = WUG
+		controller = WUG
+	    }
+2193.7.1  = {	owner = CHU
+		controller = CHU
+	    }
+2222.1.1 = { citysize = 26000 }
+
+2244.1.1 = { 
+	owner = YUN
+	controller = YUN
+	add_core = YUN
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = YUN
+}
+2246.1.2 = {    owner = YUN
+		controller = YUN
+	        add_core = YUN
+ }
+
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2475.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}

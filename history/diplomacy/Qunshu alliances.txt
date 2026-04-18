@@ -1,0 +1,50 @@
+#ÈºÊæ
+alliance= {
+	first=SHU
+	second=SLG
+	start_date=1928.1.1
+	end_date=2083.5.1
+}
+alliance= {
+	first=SHU
+	second=SYG
+	start_date=1928.1.1
+	end_date=2083.5.1
+}
+alliance= {
+	first=SHU
+	second=CHO
+	start_date=1928.1.1
+	end_date=2083.5.1
+}
+alliance= {
+	first=SHU
+	second=SJG
+	start_date=1928.1.1
+	end_date=2083.5.1
+}
+#Ó¢ÁùÞ¤
+alliance= {
+	first=LIU
+	second=YIC
+	start_date=1928.1.1
+	end_date=2056.1.1
+}
+alliance= {
+	first=LIU
+	second=YIC
+	start_date=1928.1.1
+	end_date=2056.1.1
+}
+alliance= {
+	first=LIU
+	second=LAO
+	start_date=1928.1.1
+	end_date=2076.9.1
+}
+alliance= {
+	first=LIU
+	second=JNG
+	start_date=1928.1.1
+	end_date=2076.9.1
+}

@@ -1,0 +1,6 @@
+vassal = {
+	first=YQU
+	second=WUS
+	start_date=2246.1.2
+	end_date=2246.1.3
+}

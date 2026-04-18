@@ -1,0 +1,106 @@
+owner = YUA
+controller = YUA
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "ÇúÑô"
+trade_goods = cloth
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 24000
+fort1 = yes
+add_core = PAP
+add_core = YUA
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2063.4.4 = { 
+	owner = JIN
+	controller = JIN
+}
+2063.4.4 = { 
+	add_core = JIN
+	remove_core = YUA
+	remove_core = PAP
+}
+2222.1.1 = { 
+	citysize = 34000
+}
+2244.1.1 = { 
+	owner = FAS
+	controller = FAS
+	add_core = FAS
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = FAS
+}
+2245.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2245.1.1 = { 
+	hre = no
+	religion = fajia
+}
+2246.1.1 = { 
+	add_core = HAN
+}
+2246.1.2 = { 
+	owner = FAS
+	controller = FAS
+        add_core = FAS
+	remove_core = HAN
+	remove_core = JIN
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2380.1.1 = { 
+	religion = fajia
+}
+2411.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2441.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = YNW
+	controller = YNW
+	add_core = YNW
+}
+2493.3.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2493.11.1 = { 
+	owner = HNW
+	controller = HNW
+}

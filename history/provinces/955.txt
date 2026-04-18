@@ -1,0 +1,70 @@
+owner = BER
+controller = BER
+culture = baidi
+religion = animism
+capital = "ЪЏви"
+trade_goods = iron
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 6000
+fort1 = yes
+add_core = BER
+cot = no
+1827.1.1 = { 
+	discovered_by = CHA
+}
+2157.1.1 = { 
+	owner = QIY
+	controller = QIY
+	add_core = QIY
+}
+2222.1.1 = { 
+	citysize = 12000
+	fort2 = yes
+}
+2226.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	add_core = ZHS
+}
+2245.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = ZHS
+	culture = hebei
+}
+2246.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	add_core = ZHS
+	remove_core = ZHO
+	religion = liyuebadao
+}
+2247.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = ZHS
+}
+2270.1.1 = { 
+	religion = liyuejiaohua
+}
+2470.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2492.2.1 = { 
+	owner = CSW
+	controller = CSW
+	add_core = CSW
+}
+2492.11.1 = { 
+	owner = ZHO
+	controller = ZHO
+}

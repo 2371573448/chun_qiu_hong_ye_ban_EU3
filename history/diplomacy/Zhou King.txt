@@ -1,0 +1,21 @@
+alliance = {
+	first=PAP
+	second=GUO
+	start_date=1958.1.1
+	end_date =2036.1.1
+}
+
+
+alliance = {
+	first=ZHU
+	second=XZG
+	start_date=1928.1.1
+	end_date =2439.1.1
+}
+alliance = {
+	first = PAP
+	second = SHE
+	start_date = 1928.1.1
+	end_date = 1939.1.1
+}
+

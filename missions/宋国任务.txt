@@ -1,0 +1,566 @@
+#征服戴国
+SON_annex_DAG = { 
+	type = country
+	allow = { 
+		OR = { 
+			tag = SON
+			tag = ZGO
+		}
+		is_lesser_in_union = no
+		is_subject = no
+		exists = DAG
+		DAG = { 
+			owns = 347
+			neighbour = this
+			not = { 
+				vassal_of = SON
+			}
+		}
+		year = 1971
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = DAG
+				}
+				not = { 
+					owns = 347
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = { 
+		owns = 347
+		owns = 933
+	}
+	chance = { 
+		factor = 200
+	}
+	immediate = { 
+		add_temp_claim = 347
+		add_temp_claim = 933
+	}
+	abort_effect = { 
+		remove_temp_claim = 347
+		remove_temp_claim = 933
+		prestige = -0.05
+	}
+	effect = { 
+		add_core = 347
+		add_core = 933
+	}
+}
+
+#征服萧国
+SON_annex_XIA = {
+	type = country
+	allow = { 
+		tag = SON
+		is_lesser_in_union = no
+		is_subject = no
+		exists = XIA
+		XIA = { 
+			owns = 327
+			neighbour = this
+			not = { 
+				vassal_of = SON
+			}
+		}
+		year = 1914
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = XIA
+				}
+				not = { 
+					owns = 327
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 327
+		owns = 922
+		not = { exists = XIA }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+    		add_temp_claim = 327
+    		add_temp_claim = 922
+	}
+	abort_effect = {
+       		remove_temp_claim = 327
+       		remove_temp_claim = 922
+	  	prestige = -0.05
+	}
+	effect = {
+	 	add_core = 327
+	 	add_core = 922
+	}
+}
+
+#陶朱公
+taozhugong = {
+	type = country
+	allow = {
+		tag = SON
+		owns = 302
+		302 = { is_core = SON }
+		302 = { cot = no }
+	}
+	abort = {
+	  	not = { owns = 302 }
+	}
+	success = {
+		owns = 302
+	  	treasury = 400
+		302 = { cot = yes }
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	treasury = 100
+	  	badboy = -2
+	  	merchants = 5
+	}
+} 
+
+#征服逼阳
+SON_annex_BIY = {
+	type = country
+	allow = { 
+		tag = SON
+		is_lesser_in_union = no
+		is_subject = no
+		exists = BIY
+		BIY = { 
+			owns = 319
+			neighbour = this
+			not = { 
+				vassal_of = SON
+			}
+		}
+		
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = BIY
+				}
+				not = { 
+					owns = 319
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 319
+		owns = 910
+		not = { exists = BIY }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+    		add_temp_claim = 319
+    		add_temp_claim = 910
+	}
+	abort_effect = {
+       		remove_temp_claim = 319
+       		remove_temp_claim = 910
+	  	prestige = -0.05
+	}
+	effect = {
+	 	add_core = 319
+	 	add_core = 910
+	}
+}
+
+#开拓泗上
+kaituosishang = {
+	type = country
+	allow = {
+		tag = SON
+		or = {
+			342 = { empty = yes }
+			328 = { empty = yes }
+			919 = { empty = yes }
+			920 = { empty = yes }
+			921 = { empty = yes }
+		}
+		or = {
+			342 = { any_neighbor_province = { owned_by = this } }
+			328 = { any_neighbor_province = { owned_by = this } }
+			919 = { any_neighbor_province = { owned_by = this } }
+			920 = { any_neighbor_province = { owned_by = this } }
+			921 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+			342 = { empty = no }
+			not = { owns = 348 }
+			328 = { empty = no }
+			not = { owns = 328 }
+			919 = { empty = no }
+			not = { owns = 919 }
+			920 = { empty = no }
+			not = { owns = 920 }
+			921 = { empty = no }
+			not = { owns = 921 }
+	}
+	success = {
+	  	342 = { owned_by = this }
+		328 = { owned_by = this }
+		919 = { owned_by = this }
+		920 = { owned_by = this }
+		921 = { owned_by = this }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	328 = { add_core = this }
+		342 = { add_core = this }
+	  	919 = { add_core = this }
+		920 = { add_core = this }
+		921 = { add_core = this }
+	}
+}
+
+#征服缗邑
+SON_annex_JII = {
+	type = country
+	allow = { 
+		tag = SON
+		is_lesser_in_union = no
+		is_subject = no
+		NOT = { owns = 314 }
+	    	314 = { any_neighbor_province = { owned_by = this } }
+		year = 1937
+
+	}
+	abort = { 
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 314
+		owns = 895
+		owns = 896
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+    		add_temp_claim = 314
+    		add_temp_claim = 895
+    		add_temp_claim = 896
+	}
+	abort_effect = {
+       		remove_temp_claim = 314
+       		remove_temp_claim = 895
+       		remove_temp_claim = 896
+	  	prestige = -0.05
+	}
+	effect = {
+	 	add_core = 314
+	 	add_core = 895
+	 	add_core = 896
+	}
+}
+
+#征服郜国
+SON_annex_GAO = {
+	type = country
+	allow = { 
+		tag = SON
+		is_lesser_in_union = no
+		is_subject = no
+		exists = GAO
+		GAO = { 
+			owns = 321
+			neighbour = this
+			not = { 
+				vassal_of = SON
+			}
+		}
+		year = 1840
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = GAO
+				}
+				not = { 
+					owns = 321
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 321
+		owns = 894
+
+	}
+	chance = {
+		factor = 200
+	}
+	immediate = {
+    		add_temp_claim = 321
+    		add_temp_claim = 894
+	}
+	abort_effect = {
+       		remove_temp_claim = 321
+       		remove_temp_claim = 894
+	  	prestige = -0.05
+	}
+	effect = {
+	 	add_core = 321
+	 	add_core = 894
+	}
+}
+#征服滕薛
+client_ten = {
+	type = country
+	allow = {
+		tag = SON
+		is_subject = no
+		is_lesser_in_union = no
+	  	TEN = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = TEN
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		TEN = { is_subject = yes }
+	    		TEN = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+    		owns = 296
+    		owns = 297  
+    		owns = 899
+    		owns = 911
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	add_temp_claim = 296
+	 	add_temp_claim = 297
+	 	add_temp_claim = 899
+	 	add_temp_claim = 911
+	}
+	abort_effect = {
+	 	remove_temp_claim = 296
+	 	remove_temp_claim = 297
+	 	remove_temp_claim = 299
+	 	remove_temp_claim = 911
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.10
+		add_core = 296
+		add_core = 297
+                                        add_core = 899
+		add_core = 911
+	}
+}
+#征服东海郡
+
+SON_annex_donghai = {
+	
+	type = country
+
+	allow = {
+		tag = SON
+		OR = {
+			any_owned_province  = {
+			region = donghai
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = donghai }
+			}
+		}
+		NOT = { has_country_flag = zhengfudonghaijun }
+		year = 2260
+	}
+	abort = {
+
+	}
+	success = {  
+    		owns = 301    
+    		owns = 305 
+    		owns = 319 
+    		owns = 329 
+    		owns = 330 
+    		owns = 331
+    		owns = 334
+    		owns = 336  
+    		owns = 337
+    		owns = 343
+    		owns = 908    
+    		owns = 909 
+    		owns = 910 
+    		owns = 991 
+    		owns = 992 
+    		owns = 995
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+		add_temp_claim = 301	 
+		add_temp_claim = 305
+	 	add_temp_claim = 319
+	 	add_temp_claim = 329
+	 	add_temp_claim = 330
+	 	add_temp_claim = 331
+	 	add_temp_claim = 334
+	 	add_temp_claim = 336
+	 	add_temp_claim = 337
+	 	add_temp_claim = 343
+	 	add_temp_claim = 908
+	 	add_temp_claim = 909
+	 	add_temp_claim = 910
+	 	add_temp_claim = 991
+	 	add_temp_claim = 992
+	 	add_temp_claim = 995
+	}
+	abort_effect = {
+	}
+	effect = {
+		donghai = { add_core = SON }
+	set_country_flag = zhengfudonghaijun
+	}
+}
+
+#征服陈郡
+zhengfuchenguo = {
+	
+	type = country
+
+	allow = {
+		OR = {
+			any_owned_province  = {
+			region = chenjun
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = chenjun }
+			}
+		}
+		NOT = { has_country_flag = songzhengfuchenguo }
+		tag = SON
+		year = 2260
+		NOT = { year = 2543 }
+	}
+	abort = {
+
+	}
+	success = {
+    		owns = 385
+    		owns = 392
+    		owns = 393
+    		owns = 997
+    		owns = 998
+    		owns = 999
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+    		add_temp_claim = 344
+    		add_temp_claim = 326
+    		add_temp_claim = 931
+    		add_temp_claim = 1000
+    		add_temp_claim = 394
+    		add_temp_claim = 385
+    		add_temp_claim = 392
+    		add_temp_claim = 393
+    		add_temp_claim = 396
+    		add_temp_claim = 397
+    		add_temp_claim = 997
+    		add_temp_claim = 998
+    		add_temp_claim = 999
+    		add_temp_claim = 1001
+    		add_temp_claim = 1002
+    		add_temp_claim = 1003
+    		add_temp_claim = 1004
+	}
+	abort_effect = {
+    		remove_temp_claim = 344
+    		remove_temp_claim = 326
+    		remove_temp_claim = 931
+    		remove_temp_claim = 1000
+    		remove_temp_claim = 394
+    		remove_temp_claim = 385
+    		remove_temp_claim = 392
+    		remove_temp_claim = 393
+    		remove_temp_claim = 396
+    		remove_temp_claim = 397
+    		remove_temp_claim = 997
+    		remove_temp_claim = 998
+    		remove_temp_claim = 999
+    		remove_temp_claim = 1001
+    		remove_temp_claim = 1002
+    		remove_temp_claim = 1003
+    		remove_temp_claim = 1004
+	  	prestige = -0.05
+	}
+	effect = {
+    		add_core = 344
+    		add_core = 326
+    		add_core = 931
+    		add_core = 1000
+    		add_core = 394
+    		add_core = 385
+    		add_core = 392
+    		add_core = 393
+    		add_core = 396
+    		add_core = 397
+    		add_core = 997
+    		add_core = 998
+    		add_core = 999
+    		add_core = 1001
+    		add_core = 1002
+    		add_core = 1003
+    		add_core = 1004
+	set_country_flag = songzhengfuchenguo
+	}	
+}

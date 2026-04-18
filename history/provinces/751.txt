@@ -1,0 +1,21 @@
+culture = donghu
+religion = animism
+capital = "¶«ºú¾Û¼¯µØ4"
+trade_goods = coffee
+hre = no
+base_tax = 1
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = XNU
+}
+1928.1.1 = { 
+	discovered_by = DHU
+	owner = DHU
+	controller = DHU
+	citysize = 4000
+	add_core = DHU
+	fort1 = yes
+}

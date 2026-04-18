@@ -1,0 +1,108 @@
+owner = JIN
+controller = JIN
+culture = shanxi
+religion = liyuejiaohua
+capital = "¿à³É"
+trade_goods = copper
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 27600
+fort1 = yes
+add_core = JIN
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+1953.1.1 = { 
+	owner = QUW
+	controller = QUW
+	add_core = QUW
+}
+2020.12.1 = { 
+	owner = JIN
+	controller = JIN
+	remove_core = QUW
+}
+2222.1.1 = { 
+	citysize = 38000
+	fort2 = yes
+	fort3 = yes
+}
+2244.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = WEI
+}
+2245.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2245.1.1 = { 
+	hre = no
+	religion = fajia
+}
+2246.1.2 = { 
+	religion = liyuejiaohua
+	remove_core = JIN
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2 = {
+        citysize = 33000
+    }
+2246.1.3 = {
+        citysize = 38000
+    }
+2247.1.1 = { 
+	hre = no
+}
+2300.1.1 = { 
+	religion = fajia
+}
+2346.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2348.1.1 = { 
+	owner = WEI
+	controller = WEI
+}
+2412.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2442.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2493.8.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

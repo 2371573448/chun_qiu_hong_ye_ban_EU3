@@ -1,0 +1,13 @@
+owner = GXY
+controller = GXY
+culture = xiyu
+religion = animism
+capital = "¾è¶¾"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = GXY
+1827.1.1 = { discovered_by = XYR }

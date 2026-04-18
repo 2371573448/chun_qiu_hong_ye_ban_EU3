@@ -1,0 +1,15 @@
+
+culture = boliao
+religion = ancestor
+capital = "“π¿…"
+trade_goods = gold
+hre = no
+base_tax = 6
+manpower = 0
+owner = YLG
+controller = YLG
+citysize = 28000
+fort1 = yes
+add_core = YLG
+
+1928.1.1 = { discovered_by = YLG }

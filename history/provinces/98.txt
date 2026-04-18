@@ -1,0 +1,102 @@
+owner = FEI
+controller = FEI
+culture = baidi
+religion = animism
+capital = "·Ê"
+trade_goods = cloth
+hre = no
+base_tax = 6
+manpower = 0
+citysize = 22000
+fort1 = yes
+add_core = FEI
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2168.8.10 = { 
+	owner = JIN
+	controller = JIN
+}
+2198.1.1 = { 
+	add_core = JIN
+}
+2222.1.1 = { 
+	citysize = 32000
+}
+2226.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	add_core = ZHS
+	remove_core = JIN
+}
+2244.1.1 = { 
+	owner = FEI
+	controller = FEI
+	add_core = FEI
+	remove_core = ZHS
+}
+2244.1.2 = { 
+	owner = ZHS
+	controller = ZHS
+	add_core = ZHS
+	remove_core = FEI
+}
+2246.1.1 = { religion = liyuebadao }
+2246.1.2 = { 
+	religion = liyuebadao
+}
+2246.1.2 = { 
+	religion = liyuebadao
+}
+2246.1.2 = { 
+	owner = FEI
+	controller = FEI
+	add_core = FEI
+	remove_core = ZHS
+}
+2247.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	add_core = ZHS
+}
+2292.10.1 = { 
+	owner = WEI
+	controller = WEI
+}
+2318.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+}
+2380.1.1 = { 
+	religion = rujia
+}
+2393.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	culture = hebei
+}
+2470.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2492.2.1 = { 
+	owner = CSW
+	controller = CSW
+	add_core = CSW
+}
+2492.11.1 = { 
+	owner = ZHO
+	controller = ZHO
+}

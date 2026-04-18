@@ -1,0 +1,105 @@
+#灭亡楼烦
+loufan1 =  {
+	type = country
+                    allow = {
+                                   tag = DAI
+                                   ai = no
+                                   is_subject = no
+	               is_lesser_in_union = no
+		or = { 
+			not = { 
+				owns = 47
+			}
+			not = { 
+				owns = 48
+			}
+			not = { 
+				owns = 49
+			}
+			not = { 
+				owns = 50
+			}
+		}
+		exists = LOU
+		LOU = {
+			owns = 50
+			neighbour = this
+			not = { vassal_of = DAI }
+		}
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = SHE }
+				not = { owns = 47 }
+				not = { owns = 48 }
+				not = { owns = 49 }
+				not = { owns = 50 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+    		owns = 47
+    		owns = 48
+                                        owns = 49
+                                        owns = 50
+
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	add_temp_claim = 47
+	 	add_temp_claim = 48
+	 	add_temp_claim = 49
+	 	add_temp_claim = 50
+	}
+	abort_effect = {
+	 	remove_temp_claim = 47
+	 	remove_temp_claim = 48
+	 	remove_temp_claim = 49
+	 	remove_temp_claim = 50
+	  	prestige = -0.05
+	}
+	effect = {
+		add_core = 47
+		add_core = 48
+		add_core = 49
+                                        add_core = 50
+	}
+}
+
+#开拓剧阳
+yangmadi1 = {
+	
+	type = country
+
+	allow = {
+		tag = DAI
+		or = {
+			52 = { empty = yes }
+		}
+		or = {
+			52 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+			52 = { empty = no }
+			not = { owns = 52 }
+	}
+	success = {
+	  	52 = { owned_by = this }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	52 = { add_core = this }
+	}
+}

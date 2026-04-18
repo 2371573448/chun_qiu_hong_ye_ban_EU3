@@ -1,0 +1,67 @@
+alliance= {
+	first=JIN
+	second=QIG
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=LUG
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=WEG
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=BAI
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=YAN
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=QIO
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=ZGO
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=JIN
+	second=SON
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+
+alliance= {
+	first=CHU
+	second=CHE
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=CHU
+	second=CAI
+	start_date=2151.10.1
+	end_date=2169.10.1
+}
+alliance= {
+	first=CHU
+	second=XUG
+	start_date=2151.10.1
+	end_date=2169.10.1
+}

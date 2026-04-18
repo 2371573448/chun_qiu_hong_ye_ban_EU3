@@ -1,0 +1,2499 @@
+######################################
+#百家出现
+######################################
+#儒家的出现
+country_event = { 
+	id = 887
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			any_country = { 
+				any_owned_province = { 
+					religion = rujia
+				}
+			}
+		}
+		NOT = { 
+			has_global_flag = rujiachuanbo
+		}
+		year = 2150
+		religion = liyuejiaohua
+	}
+	mean_time_to_happen = { 
+		months = 120
+		modifier = { 
+			factor = 0.6
+			year = 2170
+		}
+		modifier = { 
+			factor = 0.6
+			year = 2190
+		}
+		modifier = { 
+			factor = 0.6
+			year = 2210
+		}
+		modifier = { 
+			factor = 1.1
+			NOT = { 
+				innovative_narrowminded = -1
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			NOT = { 
+				innovative_narrowminded = -2
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			NOT = { 
+				innovative_narrowminded = -3
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			innovative_narrowminded = 2
+		}
+		modifier = { 
+			factor = 0.95
+			innovative_narrowminded = 3
+		}
+		modifier = { 
+			factor = 0.95
+			innovative_narrowminded = 4
+		}
+		modifier = { 
+			factor = 0.9
+			idea = grand_navy
+		}
+		modifier = { 
+			factor = 1.1
+			idea = battlefield_commisions
+		}
+		modifier = { 
+			factor = 0.9
+			idea = vetting
+		}
+		modifier = { 
+			factor = 1.1
+			idea = liberty_egalite_fraternity
+		}
+		modifier = { 
+			factor = 1.1
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 0.85
+			idea = divine_supremacy
+		}
+		modifier = { 
+			factor = 0.8
+			relation = { 
+				who = PAP
+				value = 100
+			}
+		}
+		modifier = { 
+			factor = 0.25
+			tag = LUG
+		}
+		modifier = { 
+			factor = 0.75
+			primary_culture = qilu
+		}
+		modifier = { 
+			factor = 5
+			NOT = { 
+				culture_group = huaxia
+			}
+		}
+	}
+	title = "EVTNAME887"
+	desc = "EVTDESC887"
+	option = { 
+		name = "EVTOPTA887"
+		set_global_flag = rujiachuanbo
+		random_owned = { 
+			religion = rujia
+		}
+		capital_scope = { 
+			religion = rujia
+		}
+	}
+}
+
+#法家的出现
+country_event = { 
+	id = 888
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			any_country = { 
+				any_owned_province = { 
+					religion = fajia
+				}
+			}
+		}
+		NOT = { 
+			has_global_flag = fajiachuanbo
+		}
+		year = 2250
+		OR = { 
+			religion = liyuebadao
+			religion = rujia
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.75
+			year = 2275
+		}
+		modifier = { 
+			factor = 0.75
+			year = 2300
+		}
+		modifier = { 
+			factor = 0.5
+			year = 2350
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				innovative_narrowminded = -1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				innovative_narrowminded = -2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				innovative_narrowminded = -3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			innovative_narrowminded = 2
+		}
+		modifier = { 
+			factor = 1.1
+			innovative_narrowminded = 3
+		}
+		modifier = { 
+			factor = 1.1
+			innovative_narrowminded = 4
+		}
+		modifier = { 
+			factor = 1.15
+			idea = patron_of_art
+		}
+		modifier = { 
+			factor = 1.15
+			idea = deus_vult
+		}
+		modifier = { 
+			factor = 1.15
+			idea = cabinet
+		}
+		modifier = { 
+			factor = 1.1
+			idea = land_of_opportunity
+		}
+		modifier = { 
+			factor = 1.1
+			idea = shrewd_commerce_practise
+		}
+		modifier = { 
+			factor = 1.15
+			idea = vetting
+		}
+		modifier = { 
+			factor = 0.85
+			idea = national_bank
+		}
+		modifier = { 
+			factor = 0.85
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 0.65
+			idea = liberty_egalite_fraternity
+		}
+		modifier = { 
+			factor = 0.5
+			tag = WEI
+		}
+		modifier = { 
+			factor = 0.6
+			primary_culture = zhongyuan
+		}
+		modifier = { 
+			factor = 0.6
+			primary_culture = shanxi
+		}
+		modifier = { 
+			factor = 0.25
+			tag = HAN
+		}
+		modifier = { 
+			factor = 5
+			NOT = { 
+				culture_group = huaxia
+			}
+		}
+	}
+	title = "EVTNAME888"
+	desc = "EVTDESC888"
+	option = { 
+		name = "EVTOPTA888"
+		set_global_flag = fajiachuanbo
+		random_owned = { 
+			religion = fajia
+		}
+		capital_scope = { 
+			religion = fajia
+		}
+	}
+}
+
+#墨家的出现
+country_event = { 
+	id = 889
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			any_country = { 
+				any_owned_province = { 
+					religion = mojia
+				}
+			}
+		}
+		NOT = { 
+			has_global_flag = mojiachuanbo
+		}
+		year = 2250
+		OR = {
+			religion = liyuejiaohua
+			religion = rujia
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.75
+			year = 2275
+		}
+		modifier = { 
+			factor = 0.75
+			year = 2300
+		}
+		modifier = { 
+			factor = 0.5
+			year = 2350
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				innovative_narrowminded = -1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				innovative_narrowminded = -2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				innovative_narrowminded = -3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			innovative_narrowminded = 2
+		}
+		modifier = { 
+			factor = 1.1
+			innovative_narrowminded = 3
+		}
+		modifier = { 
+			factor = 1.1
+			innovative_narrowminded = 4
+		}
+		modifier = { 
+			factor = 1.25
+			idea = patron_of_art
+		}
+		modifier = { 
+			factor = 0.50
+			idea = deus_vult
+		}
+		modifier = { 
+			factor = 1.25
+			idea = humanist_tolerance
+		}
+		modifier = { 
+			factor = 1.25
+			idea = liberty_egalite_fraternity
+		}
+		modifier = { 
+			factor = 0.90
+			idea = bureaucracy
+		}
+		modifier = { 
+			factor = 0.90
+			idea = improved_foraging
+		}
+		modifier = { 
+			factor = 1.15
+			idea = glorious_arms
+		}
+		modifier = { 
+			factor = 1.25
+			idea = military_drill
+		}
+		modifier = { 
+			factor = 1.35
+			idea = naval_fighting_instruction
+		}
+		modifier = { 
+			factor = 0.25
+			tag = SON
+		}
+		modifier = { 
+			factor = 0.6
+			primary_culture = zhongyuan
+		}
+		modifier = { 
+			factor = 0.5
+			primary_culture = yinyi
+		}
+	}
+	title = "EVTNAME889"
+	desc = "EVTDESC889"
+	option = { 
+		name = "EVTOPTA889"
+		set_global_flag = mojiachuanbo
+		random_owned = { 
+			religion = mojia
+		}
+		capital_scope = { 
+			religion = mojia
+		}
+	}
+}
+
+#道家的出现
+country_event = { 
+	id = 890
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			any_country = { 
+				any_owned_province = { 
+					religion = daojia
+				}
+			}
+		}
+		NOT = { 
+			has_global_flag = daojiachuanbo
+		}
+		year = 2180
+		OR = {
+			religion = liyuejiaohua
+			religion = liyuebadao
+		}
+	}
+	mean_time_to_happen = { 
+		months = 120
+		modifier = { 
+			factor = 0.5
+			year = 2220
+		}
+		modifier = { 
+			factor = 0.5
+			year = 2240
+		}
+		modifier = { 
+			factor = 0.5
+			year = 2260
+		}
+		modifier = { 
+			factor = 0.65
+			idea = patron_of_art
+		}
+		modifier = { 
+			factor = 0.65
+			idea = cabinet
+		}
+		modifier = { 
+			factor = 0.5
+			tag = PAP
+		}
+		modifier = { 
+			factor = 0.75
+			tag = CHU
+		}
+		modifier = { 
+			factor = 0.5
+			primary_culture = zhongyuan
+		}
+		modifier = { 
+			factor = 0.75
+			primary_culture = jianghan
+		}
+		modifier = { 
+			factor = 4
+			NOT = { 
+				culture_group = huaxia
+			}
+		}
+	}
+	title = "EVTNAME890"
+	desc = "EVTDESC890"
+	option = { 
+		name = "EVTOPTA890"
+		set_global_flag = daojiachuanbo
+		random_owned = { 
+			religion = daojia
+		}
+		capital_scope = { 
+			religion = daojia
+		}
+	}
+}
+
+######################################
+#   百家争鸣   #
+######################################
+#儒家传播
+province_event = { 
+	id = 60000
+	trigger = { 
+		year = 2150
+		has_global_flag = rujiachuanbo
+		not = { 
+			year = 2450
+		}
+		religion_group = christian
+		NOT = { religion = rujia }
+	}
+	mean_time_to_happen = { 
+		months = 3300
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = bachubaijia
+				NOT = { religion = rujia }
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				has_country_modifier = rujiajijiu
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				has_country_modifier = rujiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = daojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = fajiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = mojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 6
+			NOT = { 
+				religion = liyuejiaohua
+			}
+		}
+		modifier = { 
+			factor = 0.55
+			religion = liyuebadao
+		}
+		modifier = { 
+			factor = 3
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.65
+			owner = { 
+				religion = rujia
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			has_global_flag = zhanguokaishi
+		}
+		modifier = {
+			factor = 0.65
+			any_neighbor_province = {
+				religion = rujia
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				not = { 
+					centralization_decentralization = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				centralization_decentralization = 3
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				not = { 
+					serfdom_freesubjects = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				serfdom_freesubjects = 3
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				innovative_narrowminded = 3
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				not = { 
+					innovative_narrowminded = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				idea = cabinet
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				idea = deus_vult
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				idea = excellent_shipwrights
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				idea = vetting
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				idea = scientific_revolution
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				idea = grand_navy
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				idea = national_bank
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			region = jiaodong
+		}
+		modifier = { 
+			factor = 0.90
+			region = linzi
+		}
+		modifier = { 
+			factor = 0.90
+			region = jibei
+		}
+		modifier = { 
+			factor = 0.40
+			region = xuejun
+		}
+		modifier = { 
+			factor = 0.55
+			region = dongjun
+		}
+		modifier = { 
+			factor = 0.70
+			region = langya
+		}
+		modifier = { 
+			factor = 0.70
+			region = donghai
+		}
+		modifier = { 
+			factor = 0.75
+			region = yuzhou
+		}
+		modifier = { 
+			factor = 0.70
+			region = henan
+		}
+		modifier = { 
+			factor = 0.75
+			region = henei
+		}
+		modifier = { 
+			factor = 0.75
+			region = guangyang
+		}
+		modifier = { 
+			factor = 0.85
+			region = julu
+		}
+	}
+	title = "EVTNAME60000"
+	desc = "EVTDESC60000"
+	option = { 
+		name = "EVTOPTA60000"
+		religion = rujia
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+#法家传播
+province_event = { 
+	id = 60001
+	trigger = { 
+		year = 2250
+		not = { 
+			year = 2450
+		}
+		religion_group = christian
+		NOT = { religion = fajia }
+	}
+	mean_time_to_happen = { 
+		months = 4000
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = bachubaijia
+				NOT = { religion = fajia }
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				has_country_modifier = fajiajijiu
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = rujiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = daojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				has_country_modifier = fajiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = mojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			religion = liyuebadao
+		}
+		modifier = { 
+			factor = 0.50
+			religion = liyuejiaohua
+		}
+		modifier = { 
+			factor = 1.75
+			religion = rujia
+		}
+		modifier = { 
+			factor = 1.75
+			religion = mojia
+		}
+		modifier = { 
+			factor = 1.75
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+
+		modifier = { 
+			factor = 0.6
+			and={
+				owner = { 
+					has_country_modifier = zongjiaozhuanbian
+				}
+				owner = { 
+					religion = fajia
+				}
+			}
+		}
+
+		modifier = { 
+			factor = 0.60
+			owner = { 
+				religion = fajia
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			year = 2325
+		}
+		modifier = { 
+			factor = 1.15
+			year = 2400
+		}
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				religion = fajia
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				not = { 
+					centralization_decentralization = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				not = { 
+					centralization_decentralization = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				centralization_decentralization = 1
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				centralization_decentralization = 3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				not = { 
+					serfdom_freesubjects = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				not = { 
+					serfdom_freesubjects = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				serfdom_freesubjects = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				serfdom_freesubjects = 3
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = cabinet
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = deus_vult
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = patron_of_art
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = divine_supremacy
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				idea = liberty_egalite_fraternity
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				idea = smithian_economics
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				idea = national_bank
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				idea = grand_navy
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				idea = naval_fighting_instruction
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				idea = bureaucracy
+			}
+		}
+		modifier = { 
+			factor = 0.90
+			region = sishui
+		}
+		modifier = { 
+			factor = 0.80
+			region = chenjun
+		}
+		modifier = { 
+			factor = 0.55
+			region = yingchuan
+		}
+		modifier = { 
+			factor = 0.85
+			region = dangjun
+		}
+		modifier = { 
+			factor = 0.70
+			region = dongjun
+		}
+		modifier = { 
+			factor = 0.75
+			region = hanzhong
+		}
+		modifier = { 
+			factor = 0.85
+			region = bajun
+		}
+		modifier = { 
+			factor = 0.85
+			region = shujun
+		}
+		modifier = { 
+			factor = 0.75
+			region = longxi
+		}
+		modifier = { 
+			factor = 0.75
+			region = henei
+		}
+		modifier = { 
+			factor = 0.70
+			region = henan
+		}
+		modifier = { 
+			factor = 0.50
+			region = fengyi
+		}
+		modifier = { 
+			factor = 0.50
+			region = fufeng
+		}
+		modifier = { 
+			factor = 0.45
+			region = shangjun
+		}
+		modifier = { 
+			factor = 0.85
+			region = handan
+		}
+		modifier = { 
+			factor = 0.55
+			region = shangdang
+		}
+		modifier = { 
+			factor = 0.40
+			region = hedong
+		}
+		modifier = { 
+			factor = 0.85
+			region = taiyuan
+		}
+		modifier = { 
+			factor = 0.33
+			owner = {
+				tag = HAN
+				religion = fajia
+			}
+		}
+	}
+	title = "EVTNAME60001"
+	desc = "EVTDESC60001"
+	option = { 
+		name = "EVTOPTA60000"
+		religion = fajia
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+#墨家传播
+province_event = { 
+	id = 60002
+	trigger = { 
+		year = 2240
+		not = { 
+			year = 2430
+		}
+		religion_group = christian
+		NOT = { religion = mojia }
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = bachubaijia
+				NOT = { religion = mojia }
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				has_country_modifier = mojiajijiu
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = rujiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = daojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = fajiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				has_country_modifier = mojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				religion = mojia
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			year = 2350
+		}
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				religion = mojia
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				idea = cabinet
+			}
+		}
+		modifier = { 
+			factor = 0.50
+			owner = { 
+				idea = deus_vult
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				idea = grand_navy
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				badboy = 0.9
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				badboy = 0.6
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				badboy = 0.3
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			revolt_risk = 4
+		}
+		modifier = { 
+			factor = 0.75
+			revolt_risk = 8
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { revolt_percentage = 0.30 }
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { revolt_percentage = 0.60 }
+		}
+		modifier = { 
+			factor = 0.45
+			region = dangjun
+		}
+		modifier = { 
+			factor = 0.45
+			region = sishui
+		}
+	}
+	title = "EVTNAME60002"
+	desc = "EVTDESC60002"
+	option = { 
+		name = "EVTOPTA60000"
+		religion = mojia
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+#道家传播
+province_event = { 
+	id = 60003
+	trigger = { 
+		year = 2180
+		not = { 
+			year = 2410
+		}
+		religion_group = christian
+		NOT = { religion = daojia }
+	}
+	mean_time_to_happen = { 
+		months = 4000
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = bachubaijia
+				NOT = { religion = daojia }
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				has_country_modifier = daojiajijiu
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = rujiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				has_country_modifier = daojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = fajiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = mojiajijiu
+				has_country_modifier = bachubaijia
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			owner = { 
+				religion = daojia
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2380
+		}
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				religion = daojia
+			}
+		}
+		modifier = { 
+			factor = 0.65
+			owner = { 
+				idea = cabinet
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				idea = deus_vult
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = naval_fighting_instruction
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				ADM = 8
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				not = { 
+					ADM = 5
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				stability = 2
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				NOT = { stability = -1 }
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				num_of_cities = 11
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				NOT = { num_of_cities = 5 }
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			region = jingzhou
+		}
+		modifier = { 
+			factor = 0.85
+			region = yangzhou
+		}
+	}
+	title = "EVTNAME60003"
+	desc = "EVTDESC60003"
+	option = { 
+		name = "EVTOPTA60000"
+		religion = daojia
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+#蛮夷入主中原
+country_event = { 
+	id = 60006
+	trigger = { 
+		OR = { 
+			and = { 
+				tag = QIN
+				year = 2000
+			}
+			and = { 
+				tag = CHU
+				year = 2060
+			}
+			and = { 
+				tag = WUG
+				year = 2100
+			}
+			and = { 
+				tag = YGO
+				year = 2140
+			}
+			and = { 
+				tag = CHU
+				is_emperor = yes
+			}
+			and = { 
+				tag = WUG
+				is_emperor = yes
+			}
+			and = { 
+				tag = YGO
+				is_emperor = yes
+			}
+		}
+		ai = yes
+		NOT = { 
+			religion_group = christian
+		}
+	}
+	mean_time_to_happen = { 
+		months = 24
+	}
+	title = "EVTNAME60006"
+	desc = "EVTDESC60006"
+	option = { 
+		name = "EVTOPTA60006"
+		religion = liyuebadao
+		technology_group = chinese
+		capital_scope = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+	}
+}
+
+#秦晋霸道
+country_event = { 
+	id = 60009
+	trigger = { 
+		year = 2100
+		not = { 
+			year = 2250
+		}
+		ai = yes
+		OR = { 
+			tag = JIN
+			tag = QIN
+		}
+		religion = liyuejiaohua
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME60009"
+	desc = "EVTDESC60009"
+	option = { 
+		name = "EVTOPTA60009"
+		stability = -1
+		religion = liyuebadao
+		capital_scope = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+		random_owned = { 
+			religion = liyuebadao
+		}
+	}
+}
+
+#最终法家化
+country_event = { 
+	id = 60010
+	trigger = { 
+		OR = { 
+			tag = QIN
+			tag = WEI
+			tag = HAN
+		}
+		ai = yes
+		year = 2360
+		has_global_flag = zhanguokaishi
+		or = { 
+			religion = liyuejiaohua
+			religion = liyuebadao
+		}
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME60010"
+	desc = "EVTDESC60010"
+	option = { 
+		name = "EVTOPTA60010"
+		stability = -1
+		religion = fajia
+		capital_scope = { 
+			religion = fajia
+		}
+		random_owned = { 
+			religion = fajia
+		}
+		random_owned = { 
+			religion = fajia
+		}
+		random_owned = { 
+			religion = fajia
+		}
+		random_owned = { 
+			religion = fajia
+		}
+		random_owned = { 
+			religion = fajia
+		}
+		random_owned = { 
+			religion = fajia
+		}
+	}
+}
+country_event = { 
+	# 儒家改宗
+	id = 60060
+	trigger = { 
+		NOT = { 
+			religion = rujia
+		}
+		OR = { 
+			has_country_modifier = xiushenzhongyong
+			has_country_modifier = renzhengwangdao
+			has_country_modifier = wangzhezhifa
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60060"
+	desc = "EVTDESC60060"
+	option = { 
+		name = "EVTOPTA60060"
+		remove_country_modifier = xiushenzhongyong
+		remove_country_modifier = renzhengwangdao
+		remove_country_modifier = wangzhezhifa
+	}
+}
+country_event = { 
+	# 道家改宗
+	id = 60061
+	trigger = { 
+		NOT = { 
+			religion = daojia
+		}
+		OR = { 
+			has_country_modifier = daojiaxiyinliumin
+			has_country_modifier = daojianongju
+			has_country_modifier = daojianongtian
+			has_country_modifier = daojiafangwu
+			#道家流民
+			has_country_modifier = huangdixingde
+			has_country_modifier = xujingzhifa
+			has_country_modifier = qingzhongjiufu
+			has_country_modifier = daodewuwei
+			has_country_modifier = yiroukegang
+			has_country_modifier = xiuyangshengxi
+			has_country_flag = huanglao
+			has_country_flag = laozhuang
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60061"
+	desc = "EVTDESC60061"
+	option = { 
+		name = "EVTOPTA60061"
+		remove_country_modifier = daojiaxiyinliumin
+		remove_country_modifier = daojianongju
+		remove_country_modifier = daojianongtian
+		remove_country_modifier = daojiafangwu
+		#道家流民
+		remove_country_modifier = huangdixingde
+		remove_country_modifier = xujingzhifa
+		remove_country_modifier = qingzhongjiufu
+		remove_country_modifier = daodewuwei
+		remove_country_modifier = yiroukegang
+		remove_country_modifier = xiuyangshengxi
+		clr_country_flag = laozhuang
+		clr_country_flag = huanglao
+	}
+}
+country_event = { 
+	# 法家改宗
+	id = 60062
+	trigger = { 
+		NOT = { 
+			religion = fajia
+		}
+		OR = { 
+			has_country_modifier = baofa
+			has_country_modifier = shuzhi
+			has_country_modifier = chushi
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60062"
+	desc = "EVTDESC60062"
+	option = { 
+		name = "EVTOPTA60062"
+		remove_country_modifier = baofa
+		remove_country_modifier = shuzhi
+		remove_country_modifier = chushi
+	}
+}
+#医家的出现
+country_event = { 
+	id = 1891
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = yijiachuxian
+			year = 2350
+		}
+		year = 2250
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1891"
+	desc = "EVTDESC1891"
+	option = { 
+		name = "EVTOPTA1891"
+		set_global_flag = yijiachuxian
+	}
+}
+#医家
+country_event = { 
+	id = 2891
+	trigger = { 
+		religion_group = christian
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		not = { 
+			has_country_modifier = YIJ_buff1
+		}
+		OR = { 
+			has_global_flag = yijiachuxian
+			year = 2350
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.1
+			any_owned_province = { 
+				has_province_modifier = wenyihengxing
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			and = {
+				advisor = navigator
+				navigator = 2
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			and = {
+				advisor = navigator
+				navigator = 4
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			and = {
+				advisor = navigator
+				navigator = 6
+			}
+		}
+	}
+	title = "EVTNAME2891"
+	desc = "EVTDESC2891"
+	option = { 
+		name = "EVTOPTA2891"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = navigator
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "YIJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.1
+	}
+	option = {
+		ai_chance = { 
+			factor = 35
+		}
+		name = "EVTOPTB2891"
+		prestige = -0.10
+	}
+}
+#纵横家的出现
+country_event = { 
+	id = 1892
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = zonghengjiachuxian
+			year = 2240
+		}
+		year = 2200
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1892"
+	desc = "EVTDESC1892"
+	option = { 
+		name = "EVTOPTA1892"
+		set_global_flag = zonghengjiachuxian
+	}
+}
+#纵横家
+country_event = { 
+	id = 2892
+	trigger = { 
+		not = { 
+			has_country_modifier = ZHJ_buff1
+		}
+		religion_group = christian
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		OR = { 
+			has_global_flag = zonghengjiachuxian
+			year = 2240
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME2892"
+	desc = "EVTDESC2892"
+	option = { 
+		name = "EVTOPTA2892"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = diplomat
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "ZHJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.1
+	}
+	option = {
+		name = "EVTOPTB2892"
+		ai_chance = { 
+			factor = 35
+		}
+		prestige = -0.10
+	}
+}
+#纵横之能
+country_event = { 
+	id = 3892
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		has_country_modifier = ZHJ_buff2
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME3892"
+	desc = "EVTDESC3892"
+	option = { 
+		name = "EVTOPTA3892"
+		random_country = { 
+			limit = { 
+				num_of_cities = 2
+				any_neighbor_country = { tag = THIS }
+			}
+			random_owned = { 
+				limit = { 
+					is_capital = no
+					any_neighbor_province = { 
+						owned_by = THIS
+					}
+				}
+				add_core = THIS
+			}
+		}
+	}
+}
+#阴阳家的出现
+country_event = { 
+	id = 1893
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = yinyangjiachuxian
+			year = 2447
+		}
+		year = 2363
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1893"
+	desc = "EVTDESC1893"
+	option = { 
+		name = "EVTOPTA1893"
+		set_global_flag = yinyangjiachuxian
+	}
+}
+country_event = { 
+	id = 2893
+	trigger = { 
+		not = { 
+			has_country_modifier = YYJ_buff1
+		}
+		religion_group = christian
+		idea = ecumenism
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		OR = { 
+			has_global_flag = yinyangjiachuxian
+			year = 2447
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME2893"
+	desc = "EVTDESC2893"
+	option = { 
+		name = "EVTOPTA2893"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = privateer
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "YYJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.1
+	}
+	option = {
+		name = "EVTOPTB2893"
+		ai_chance = { 
+			factor = 35
+		}
+		prestige = -0.10
+	}
+}
+#杂家的出现
+country_event = { 
+	id = 1894
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = zajiachuxian
+			year = 2367
+		}
+		year = 2307
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1894"
+	desc = "EVTDESC1894"
+	option = { 
+		name = "EVTOPTA1894"
+		set_global_flag = zajiachuxian
+	}
+}
+country_event = { 
+	id = 2894
+	trigger = { 
+		not = { 
+			has_country_modifier = ZAJ_buff1
+		}
+		religion_group = christian
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = zajiachuxian
+		}
+		OR = { 
+			has_global_flag = zajiachuxian
+			year = 2367
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME2894"
+	desc = "EVTDESC2894"
+	option = { 
+		name = "EVTOPTA2894"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = philosopher
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "ZAJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.1
+	}
+	option = {
+		name = "EVTOPTB2894"
+		ai_chance = { 
+			factor = 35
+		}
+		prestige = -0.10
+	}
+}
+#农家的出现
+country_event = { 
+	id = 1895
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = nongjiachuxian
+			year = 2408
+		}
+		year = 2325
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1895"
+	desc = "EVTDESC1895"
+	option = { 
+		name = "EVTOPTA1895"
+		set_global_flag = nongjiachuxian
+	}
+}
+country_event = { 
+	id = 2895
+	trigger = { 
+		not = { 
+			has_country_modifier = NOJ_buff1
+		}
+		religion_group = christian
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		OR = { 
+			has_global_flag = nongjiachuxian
+			year = 2408
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME2895"
+	desc = "EVTDESC2895"
+	option = { 
+		name = "EVTOPTA2895"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = natural_scientist
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "NOJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.1
+	}
+	option = {
+		name = "EVTOPTB2895"
+		ai_chance = { 
+			factor = 35
+		}
+		prestige = -0.10
+	}
+}
+#名家的出现
+country_event = { 
+	id = 1896
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = mingjiachuxian
+			year = 2387
+		}
+		year = 2327
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1896"
+	desc = "EVTDESC1896"
+	option = { 
+		name = "EVTOPTA1896"
+		set_global_flag = mingjiachuxian
+	}
+}
+country_event = { 
+	id = 2896
+	trigger = { 
+		not = { 
+			has_country_modifier = MIJ_buff1
+		}
+		religion_group = christian
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		OR = { 
+			has_global_flag = mingjiachuxian
+			year = 2387
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME2896"
+	desc = "EVTDESC2896"
+	option = { 
+		name = "EVTOPTA2896"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = ambassador
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "MIJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.1
+	}
+	option = {
+		name = "EVTOPTB2896"
+		ai_chance = { 
+			factor = 35
+		}
+		prestige = -0.10
+	}
+}
+#兵家的出现
+country_event = { 
+	id = 1897
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = bingjiachuxian
+			year = 2227
+		}
+		year = 2152
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1897"
+	desc = "EVTDESC1897"
+	option = { 
+		name = "EVTOPTA1897"
+		set_global_flag = bingjiachuxian
+	}
+}
+#小说家的出现
+country_event = { 
+	id = 1898
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { 
+			has_global_flag = xiaoshuojiachuxian
+			year = 2290
+		}
+		year = 2245
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1898"
+	desc = "EVTDESC1898"
+	option = { 
+		name = "EVTOPTA1898"
+		set_global_flag = xiaoshuojiachuxian
+	}
+}
+country_event = { 
+	id = 2898
+	trigger = { 
+		not = { 
+			has_country_modifier = XSJ_buff1
+		}
+		religion_group = christian
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		OR = { 
+			has_global_flag = xiaoshuojiachuxian
+			year = 2290
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME2898"
+	desc = "EVTDESC2898"
+	option = { 
+		name = "EVTOPTA2898"
+		ai_chance = { 
+			factor = 65
+		}
+		define_advisor = { 
+			type = collector
+			skill = 5
+		}
+		add_country_modifier = { 
+			name = "XSJ_buff1"
+			duration = 3650
+		}
+		years_of_income = -0.15
+	}
+	option = {
+		name = "EVTOPTB2898"
+		ai_chance = { 
+			factor = 35
+		}
+		prestige = -0.10
+	}
+}
+country_event = { 
+	id = 2899
+	trigger = { 
+		religion = fajia
+		idea = espionage
+	}
+	mean_time_to_happen = { 
+		months = 60
+	}
+	title = "EVTNAME2899"
+	desc = "EVTDESC2899"
+	option = { 
+		name = "EVTOPTA2899"
+		stability = 1
+	}
+}
+country_event = { 
+	id = 2910
+	trigger = { 
+		not = { 
+			has_country_modifier = lianzuobuff
+		}
+		religion = fajia
+		idea = espionage
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2899"
+	desc = "EVTDESC2899"
+	option = { 
+		name = "EVTOPTA2899"
+		add_country_modifier = { 
+			name = "lianzuobuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2900
+	trigger = { 
+		not = { 
+			has_country_modifier = zhongnongbuff
+		}
+		OR = { 
+			religion = fajia
+			religion = rujia
+		}
+		idea = land_of_opportunity
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2900"
+	desc = "EVTDESC2900"
+	option = { 
+		name = "EVTOPTA2900"
+		add_country_modifier = { 
+			name = "zhongnongbuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2901
+	trigger = { 
+		not = { 
+			has_country_modifier = dingxingbuff
+		}
+		religion = fajia
+		idea = bill_of_rights
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2901"
+	desc = "EVTDESC2901"
+	option = { 
+		name = "EVTOPTA2901"
+		add_country_modifier = { 
+			name = "dingxingbuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2902
+	trigger = { 
+		not = { 
+			has_country_modifier = zhongfabuff
+		}
+		religion = fajia
+		idea = liberty_egalite_fraternity
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2902"
+	desc = "EVTDESC2902"
+	option = { 
+		name = "EVTOPTA2902"
+		stability = 1
+		add_country_modifier = { 
+			name = "zhongfabuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2903
+	trigger = { 
+		not = { 
+			has_country_modifier = jueshengbuff
+		}
+		religion = daojia
+		idea = patron_of_art
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2903"
+	desc = "EVTDESC2903"
+	option = { 
+		name = "EVTOPTA2903"
+		add_country_modifier = { 
+			name = "jueshengbuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2904
+	trigger = { 
+		not = { 
+			has_country_modifier = wuweibuff1
+		}
+		religion = daojia
+		idea = cabinet
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2904"
+	desc = "EVTDESC2904"
+	option = { 
+		name = "EVTOPTA2904"
+		stability = 1
+		add_country_modifier = { 
+			name = "wuweibuff1"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2905
+	trigger = { 
+		not = { 
+			has_country_modifier = youjiaobuff
+		}
+		religion = rujia
+		idea = divine_supremacy
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2905"
+	desc = "EVTDESC2905"
+	option = { 
+		name = "EVTOPTA2905"
+		add_country_modifier = { 
+			name = "youjiaobuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2906
+	trigger = { 
+		not = { 
+			has_country_modifier = zongfabuff
+		}
+		religion = rujia
+		idea = vetting
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2906"
+	desc = "EVTDESC2906"
+	option = { 
+		name = "EVTOPTA2906"
+		stability = 1
+		add_country_modifier = { 
+			name = "zongfabuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2907
+	trigger = { 
+		not = { 
+			has_country_modifier = jianaibuff
+		}
+		religion = mojia
+		idea = deus_vult
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2907"
+	desc = "EVTDESC2907"
+	option = { 
+		name = "EVTOPTA2907"
+		add_country_modifier = { 
+			name = "jianaibuff"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 2908
+	trigger = { 
+		not = { 
+			has_country_modifier = feigongbuff
+		}
+		religion = mojia
+		idea = deus_vult
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME2908"
+	desc = "EVTDESC2908"
+	option = { 
+		name = "EVTOPTA2908"
+		add_country_modifier = { 
+			name = "feigongbuff"
+			duration = 3650
+		}
+	}
+}
+province_event = { 
+	id = 2909
+	trigger = { 
+		owner = {
+			has_country_modifier = qingzhongjiufu
+		}
+		religion = daojia
+		not = { has_province_modifier = qingzhongjiufubuff2 }
+		or = { 
+			had_country_flag = { 
+				flag = qingzhongjiufujishiqi
+				days = 365
+			}
+			not = { has_country_flag = qingzhongjiufujishiqi }
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME2909"
+	desc = "EVTDESC2909"
+	option = {
+		name = "EVTOPTA2909"
+		set_country_flag = qingzhongjiufujishiqi
+		owner = {
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 1
+					NOT = { base_tax = 2 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff2"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 2
+					NOT = { base_tax = 3 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff3"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 3
+					NOT = { base_tax = 4 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff4"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 4
+					NOT = { base_tax = 5 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff5"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 5
+					NOT = { base_tax = 6 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff6"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 6
+					NOT = { base_tax = 7 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff7"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 7
+					NOT = { base_tax = 8 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff8"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 8
+					NOT = { base_tax = 9 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff9"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 9
+					NOT = { base_tax = 10 }
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff10"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+					base_tax = 10
+				}
+				add_province_modifier = { 
+					name = "qingzhongjiufubuff11"
+					duration = 3650
+				}
+			}
+		}
+	}
+}

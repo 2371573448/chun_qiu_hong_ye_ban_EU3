@@ -1,0 +1,439 @@
+country_event = {
+#公族逼迫退位事件
+	
+	id = 3200
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+		random_owned = {
+			noble_rebels = 2
+		}
+	}
+	
+	title = "EVTNAME3200"
+	desc = 	"EVTDESC3200"
+	
+	option = {
+		name = "EVTOPTA3200"
+	}
+}
+
+#士卿要求重新分配权力
+country_event = {
+	
+	id = 3201
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+		random_owned = {
+			limit = {
+				capital = no 
+				has_province_modifier = monarch_territory
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = {
+				name = "vassal_territory"
+				duration = -1
+			}
+		}
+		add_country_modifier = {
+			name = "noble_government" #士卿专政
+			duration = 1800
+		}
+	}
+	
+	title = "EVTNAME3201"
+	desc = 	"EVTDESC3201"
+	
+	option = {
+		name = "EVTOPTA3201"
+	}
+}
+
+#王弟在忠臣拥护下谋反
+country_event = {
+	
+	id = 3202
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+		capital_scope = { pretender_rebels = 2 }
+	}
+	
+	title = "EVTNAME3202"
+	desc = 	"EVTDESC3202"
+	
+	option = {
+		name = "EVTOPTA3202"
+	}
+}
+
+#太子逼迫国君退位
+country_event = {
+	
+	id = 3203
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+		heir_age = 15 #成年
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	title = "EVTNAME3203"
+	desc = 	"EVTDESC3203"
+	
+	option = {
+		name = "EVTOPTA3203" #同意
+		kill_ruler = THIS
+	}
+	option = {
+		name = "EVTOPTB3203" #不同意
+		kill_heir = THIS
+		stability = -1
+	}
+}
+
+#周天子下令调查国君
+country_event = {
+	
+	id = 3204
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+		not = { tag = PAP }
+		capital_scope = { hre = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+		prestige = -0.1
+		legitimacy = -0.05
+	}
+	
+	title = "EVTNAME3204"
+	desc = 	"EVTDESC3204"
+	
+	option = {
+		name = "EVTOPTA3204" 	
+	}
+}
+
+#邻国质疑我国正统性
+country_event = {
+	
+	id = 3205
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+		random_country = {
+			limit = { neighbour = THIS }
+			add_casus_belli = {
+				type = cb_insult
+				months = 36
+				target = THIS
+			}
+			relation = { who = THIS value = -50 }
+		}
+	}
+	
+	title = "EVTNAME3205"
+	desc = 	"EVTDESC3205"
+	
+	option = {
+		name = "EVTOPTA3205" 	
+	}
+}
+
+#闪电击中宫殿大门
+country_event = {
+	
+	id = 3206
+	
+	trigger = {
+		not = { legitimacy = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			not = { legitimacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			not = { legitimacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.2 }
+		}	
+		modifier = {
+			factor = 0.5
+			not = { legitimacy = 0.1 }
+		}
+	}
+	
+	immediate = {
+	}
+	
+	title = "EVTNAME3206"
+	desc = 	"EVTDESC3206"
+	
+	option = {
+		name = "EVTOPTA3206"  #天谴之兆
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB3206"  #我行我素
+		stability = -2
+		prestige = 0.1
+		legitimacy = 0.1
+		treasury = 50
+	}
+	option = {
+		name = "EVTOPTC3206"  #我行我素
+		prestige = -0.2
+		treasury = -50
+	}
+}
+
+#######################################################
+
+#查阅族谱
+country_event = {
+	
+	id = 3207
+	
+	trigger = {
+		has_heir = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	title = "EVTNAME3207"
+	desc = 	"EVTDESC3207"
+	
+	option = {
+		name = "EVTOPTA3207" 	
+		random_list = {
+			50 = {
+				legitimacy = 0.05
+			}
+			50 = {
+				legitimacy = -0.05
+			}
+		}
+	}
+}
+
+#海内生平
+country_event = {
+	
+	id = 3208
+	
+	trigger = {
+		stability = 3
+		prestige = 0.5
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	title = "EVTNAME3208"
+	desc = 	"EVTDESC3208"
+	
+	option = {
+		name = "EVTOPTA3208" 	
+		legitimacy = 0.05
+	}
+}
+
+#坦诚接受一切
+country_event = {
+	
+	id = 3209
+	
+	trigger = {
+		not = { stability = 0 }
+		not = { prestige = 0.3 }
+		not = { legitimacy = 0.6 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.25
+			ai = yes
+		}
+		modifier = {
+			factor = 0.75
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+		modifier = {
+			factor = 0.95
+			not = { prestige = 0 }
+		}
+		modifier = {
+			factor = 0.90
+			not = { prestige = -0.5 }
+		}
+		modifier = {
+			factor = 0.90
+			not = { legitimacy = 0.3 }
+		}
+	}
+	
+	immediate = {	
+		legitimacy = 0.05
+		prestige = 0.05
+		stability = 1
+	}
+	
+	title = "EVTNAME3209"
+	desc = 	"EVTDESC3209"
+	
+	option = {
+		name = "EVTOPTA3209" 	
+	}
+}

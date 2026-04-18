@@ -1,0 +1,263 @@
+guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_culture"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+		iconType = {
+				name = "bg_culture"
+				spriteType ="GFX_bg_culture"	
+				position = { x=13 y =147}
+				orientation = "UPPER_LEFT"
+			}		
+
+		instantTextBoxType = {
+			name = "cultural_label"
+			position = { x = 80 y = 150 }
+		
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "CULTURAL_LABEL"	
+			maxWidth = 140
+			maxHeight = 32	
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "naval_label"
+			position = { x = 80 y = 170 }
+		
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "NAVAL_LABEL"	
+			maxWidth = 140
+			maxHeight = 32
+			format = left			
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "army_label"
+			position = { x = 80 y = 190 }
+		
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "ARMY_LABEL"	
+			maxWidth = 140
+			maxHeight = 32
+			format = left			
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "culturaltradition_value"
+			position = { x = 268 y = 150 }
+		
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 65
+			maxHeight = 32
+			format = right
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "navaltradition_value"
+			position = { x = 268 y = 170 }
+		
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 65
+			maxHeight = 32
+			format = right
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "landtradition_value"
+			position = { x = 268 y = 190 }
+		
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 65
+			maxHeight = 32
+			format = right
+			Orientation = "UPPER_LEFT"
+		}
+		
+		## DECISIONS
+		windowType = {
+			name = "cultural_decisions_window"
+			backGround=""
+			position = { x=0 y=395 }
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+
+			iconType = {
+				name = "mission_effect"
+				spriteType ="GFX_banner_culture"	
+				position = { x=110 y =9}
+				orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "decisions_label"
+				position = { x = 0 y =15 }
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 0}
+				text = "CULTURAL_DECISIONS"	
+				maxWidth = 420
+				maxHeight = 16	
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name = "greatmen_banner"
+				spriteType ="GFX_banner_culture"	
+				position = { x=110 y =-167}
+				orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "greatmen_label"
+				position = { x = 0 y =-161 }
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 0}
+				text = "CULTURAL_GREATMEN"	
+				maxWidth = 420
+				maxHeight = 16	
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = 
+			{
+				name ="decisions_listbox"
+				position = { x=45 y =40}
+				backGround=""
+				size = { x=320 y =120}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+			
+		}
+		
+	}
+	
+	OverlappingElementsBoxType = {
+			name = "advisors_box"
+			position = { x = 0 y = 0 }
+			size = { x=400 y= 65 }
+			Orientation = "CENTER"
+			format = left
+			spacing = 1.0
+	}
+	# use these to control the overlapping list box table
+	positionType = {
+		name = "categories_start_pos"
+		position = { x = 62 y = 256 }
+	}
+	positionType = {
+		name = "categories_size"
+		position = { x = 400 y = 33 }
+	}
+#entry for listbox
+
+	windowType = {
+		name = "recruit_advisor_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=32 y= 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =
+		{
+			name ="greatmen_button"
+			quadTextureSprite= "GFX_greatmen_button"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			size = { x=32 y= 32 }
+		
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+	}
+
+	windowType = {
+		name = "cultural_decision_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "cultural_decisions_banner"
+			spriteType ="GFX_culture_decision_banner"	
+			position = { x= -26 y = -23 }
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=0 y =-10}
+			name = "name"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_info_decision"	
+			position = { x=240 y =-13}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=280 y =-14}
+			quadTextureSprite ="GFX_execute_decision"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+	}
+	
+}

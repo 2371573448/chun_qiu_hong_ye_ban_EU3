@@ -1,0 +1,60 @@
+
+culture = jingman
+religion = ancestor
+capital = "É½´¨Æ½Ô­"
+trade_goods = copper
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+
+1928.1.1 = { discovered_by = CHU }
+2070.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 3000
+	fort1 = yes
+}
+2100.1.1 = { 
+	add_core = CHU
+	religion = liyuebadao
+	culture = nanchu
+}
+2222.1.1 = { 
+	citysize = 18000
+}
+2244.1.1 = { 
+	owner = ZOU
+	controller = ZOU
+	add_core = ZOU
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = ZOU
+}
+2246.1.2 = { 
+	owner = ZOU
+	controller = ZOU
+	add_core = ZOU
+}
+2246.1.3 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}
+

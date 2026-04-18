@@ -1,0 +1,25 @@
+
+culture = qiongzuo
+religion = ancestor
+capital = "ม้นุ"
+trade_goods = spices
+hre = no
+base_tax = 2
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2246.1.1 = { religion = liyuebadao
+	owner = SGU
+	controller = SGU
+	add_core = SGU
+        fort1 = yes
+        citysize = 9000 }
+2246.1.2 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}

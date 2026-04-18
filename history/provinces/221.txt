@@ -1,0 +1,60 @@
+culture = xirong
+religion = ancestor
+capital = "Œ‰∂º"
+trade_goods = tobacco
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { 
+	discovered_by = QIN
+}
+2246.1.1 = { religion = liyuebadao
+	citysize = 12000
+	add_core = HNW
+}
+2247.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 12000
+	fort1 = yes
+}
+2257.1.1 = { 
+	citysize = 0
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+}
+2267.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 18000
+}
+2297.1.1 = { 
+	add_core = QIN
+	culture = guanzhong
+}
+2311.1.1 = { 
+	owner = SGU
+	controller = SGU
+}
+2321.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2420.1.1 = { 
+	religion = fajia
+}
+2492.2.1 = { 
+	owner = XXX
+	controller = XXX
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	remove_core = QIN
+}

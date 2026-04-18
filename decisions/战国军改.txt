@@ -1,0 +1,1067 @@
+country_decisions = { 
+	# 李悝变法
+	likuibianfa1 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = WEI
+					tag = FAS
+				}
+			}
+		}
+		allow = { 
+			land_tech = 38
+			government_tech = 38
+			NOT = { 
+				quality_quantity = -2
+			}
+			NOT = { 
+				centralization_decentralization = 0
+			}
+			NOT = { 
+				innovative_narrowminded = -1
+			}
+			idea = battlefield_commisions
+			advisor = army_reformer
+			army_reformer = 4
+			ADM = 5
+			treasury = 500
+		}
+		effect = { 
+			unit_type = weiguo
+			stability = -2
+			treasury = -500
+			quality_quantity = -2
+			centralization_decentralization = -1
+			serfdom_freesubjects = 2
+			add_country_modifier = { 
+				name = "likuibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 李悝变法
+	likuibianfa2 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = WEI
+				tag = FAS
+			}
+		}
+		allow = { 
+			treasury = 500
+		}
+		effect = { 
+			unit_type = weiguo
+			stability = -1
+			treasury = -250
+			quality_quantity = -2
+			centralization_decentralization = -1
+			serfdom_freesubjects = 2
+			add_country_modifier = { 
+				name = "likuibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# AI李悝变法
+	likuibianfa3 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = WEI
+			ai = yes
+		}
+		allow = { 
+			land_tech = 39
+		}
+		effect = { 
+			unit_type = weiguo
+			quality_quantity = -2
+			centralization_decentralization = -1
+			serfdom_freesubjects = 2
+			add_country_modifier = { 
+				name = "likuibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 吴起变法
+	wuqibianfa1 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = CHU
+					tag = FAS
+				}
+			}
+		}
+		allow = { 
+			government_tech = 38
+			land_tech = 39
+			NOT = { 
+				centralization_decentralization = 0
+			}
+			NOT = { 
+				aristocracy_plutocracy = 0
+			}
+			and = { 
+				quality_quantity = 2
+			}
+			idea = glorious_arms
+			or={
+				and={
+					advisor = colonial_governor
+					colonial_governor = 5
+				}
+				and={
+					advisor = army_organiser
+					army_organiser = 4
+				}	
+				stability = 3
+				is_monarch_leader = yes
+				army_tradition = 0.25
+			}
+		}
+		effect = { 
+			stability = -4
+			unit_type = jingchu
+			centralization_decentralization = -1
+			add_country_modifier = { 
+				name = "wuqibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 吴起变法
+	wuqibianfa2 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = CHU
+				tag = FAS
+			}
+		}
+		allow = { 
+			government_tech = 38
+			land_tech = 39
+			NOT = { 
+				centralization_decentralization = 0
+			}
+			NOT = { 
+				aristocracy_plutocracy = 1
+			}
+			and = { 
+				quality_quantity = 1
+			}
+			idea = glorious_arms
+			or={
+			and={
+			advisor = colonial_governor
+			colonial_governor = 5
+			}
+			and={
+			advisor = army_organiser
+			army_organiser = 4
+			}
+			stability = 3
+			is_monarch_leader = yes
+			army_tradition = 0.25
+		}
+		}
+		effect = { 
+			stability = -2
+			unit_type = jingchu
+			centralization_decentralization = -1
+			add_country_modifier = { 
+				name = "wuqibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# AI吴起变法
+	wuqibianfa3 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = CHU
+			ai = yes
+		}
+		allow = { 
+			government_tech = 39
+		}
+		effect = { 
+			stability = -2
+			unit_type = jingchu
+			centralization_decentralization = -1
+			add_country_modifier = { 
+				name = "wuqibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 孙膑治军
+	sunbinzhijun1 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = FAS
+					tag = QIG
+				}
+			}
+		}
+		allow = { 
+			land_tech = 41
+			idea = napoleonic_warfare
+			idea = national_conscripts
+			advisor = sergeant_major_general
+			sergeant_major_general = 5
+			general = 2
+			stability = 3
+		}
+		effect = { 
+			unit_type = qiguo
+			stability = -1
+			centralization_decentralization = -1
+			create_general = 15
+			army_tradition = 0.30
+			add_country_modifier = { 
+				name = "sunbinzhijun"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 孙膑治军
+	sunbinzhijun2 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = FAS
+				tag = QIG
+			}
+		}
+		allow = { 
+			land_tech = 40
+			idea = napoleonic_warfare
+			advisor = sergeant_major_general
+			sergeant_major_general = 5
+			general = 2
+			stability = 2
+		}
+		effect = { 
+			unit_type = qiguo
+			stability = -1
+			centralization_decentralization = -1
+			create_general = 15
+			army_tradition = 0.30
+			add_country_modifier = { 
+				name = "sunbinzhijun"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# AI孙膑治军
+	sunbinzhijun3 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = QIG
+			ai = yes
+		}
+		allow = { 
+			land_tech = 39
+		}
+		effect = { 
+			unit_type = qiguo
+			stability = -1
+			centralization_decentralization = -1
+			create_general = 15
+			army_tradition = 0.30
+			add_country_modifier = { 
+				name = "sunbinzhijun"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 申不害变法
+	shenbuhaibianfa1 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = FAS
+					tag = HAN
+				}
+			}
+		}
+		allow = { 
+			production_tech = 41
+			idea = naval_fighting_instruction
+			NOT = { 
+				centralization_decentralization = -2
+			}
+			advisor = alderman
+			alderman = 5
+			ADM = 6
+		}
+		effect = { 
+			unit_type = hanguo
+			centralization_decentralization = -1
+			officials = 5
+			stability = 2
+			add_country_modifier = { 
+				name = "shenbuhaibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 申不害变法
+	shenbuhaibianfa2 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = HAN
+				tag = FAS
+			}
+		}
+		allow = { 
+			production_tech = 39
+			idea = naval_fighting_instruction
+			NOT = { 
+				centralization_decentralization = -2
+			}
+			ADM = 5
+		}
+		effect = { 
+			unit_type = hanguo
+			centralization_decentralization = -1
+			officials = 5
+			stability = 2
+			add_country_modifier = { 
+				name = "shenbuhaibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# AI申不害变法
+	shenbuhaibianfa3 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = HAN
+			ai = yes
+		}
+		allow = { 
+			land_tech = 39
+		}
+		effect = { 
+			unit_type = hanguo
+			centralization_decentralization = -1
+			officials = 5
+			stability = 2
+			add_country_modifier = { 
+				name = "shenbuhaibianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 商鞅变法
+	shangyangbianfa1 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = FAS
+					tag = QIN
+				}
+			}
+		}
+		allow = { 
+			land_tech = 42
+			government_tech = 42
+			idea = engineer_corps
+			idea = national_bank
+		or = {
+			and = {
+			advisor = rear_admiral
+			rear_admiral = 5
+			cultural_tradition = 0.99
+			}
+			and = {
+			advisor = rear_admiral
+			rear_admiral = 6
+			}
+		}
+			NOT = { 
+				centralization_decentralization = -2
+			}
+			ADM = 6
+			stability = 3
+			religion = fajia
+		}
+		effect = { 
+			unit_type = qinguo
+			stability = -4
+			add_country_modifier = { 
+				name = "shangyangbianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 商鞅变法
+	shangyangbianfa2 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = FAS
+				tag = QIN
+			}
+		}
+		allow = { 
+			land_tech = 41
+			government_tech = 41
+			idea = engineer_corps
+			idea = national_bank
+		or = {
+			and = {
+			advisor = rear_admiral
+			rear_admiral = 5
+			cultural_tradition = 0.99
+			}
+			and = {
+			advisor = rear_admiral
+			rear_admiral = 6
+			}
+		}
+			NOT = { 
+				centralization_decentralization = -2
+			}
+			ADM = 6
+			stability = 3
+			religion = fajia
+		}
+		effect = { 
+			unit_type = qinguo
+			stability = -3
+			add_country_modifier = { 
+				name = "shangyangbianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# AI商鞅变法
+	shangyangbianfa3 = {
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = QIN
+			ai = yes
+		}
+		allow = {
+			government_tech = 39
+		}
+		effect = {
+			unit_type = qinguo
+			add_country_modifier = {
+				name = "shangyangbianfa"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 胡服骑射
+	hufuqishe1 = {
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = FAS
+					tag = ZHO
+				}
+			}
+		}
+		allow = {
+			land_tech = 45
+			MIL = 6
+			DIP = 6
+			prestige = 0.40
+			army_tradition = 0.30
+			NOT = { innovative_narrowminded = -2 }
+			OR = { 
+				any_neighbor_country = { 
+					primary_culture = donghu
+				}
+				any_neighbor_country = { 
+					primary_culture = shanrong
+				}
+				any_neighbor_country = { 
+					primary_culture = beidi
+				}
+				any_neighbor_country = { 
+					primary_culture = chidi
+				}
+				any_neighbor_country = { 
+					primary_culture = changdi
+				}
+			advisor = pioneer
+			pioneer = 5
+		}
+		}
+		effect = {
+			unit_type = zhaoguo
+			stability = -3
+			innovative_narrowminded = -1
+			add_accepted_culture = donghu
+			add_accepted_culture = shanrong
+			add_accepted_culture = beidi
+			add_country_modifier = {
+				name = "hufuqishe"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 胡服骑射
+	hufuqishe2 = {
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = FAS
+				tag = ZHO
+			}
+		}
+		allow = {
+			land_tech = 43
+			MIL = 7
+			prestige = 0.40
+			army_tradition = 0.30
+			NOT = { innovative_narrowminded = -2 }
+			OR = { 
+				any_neighbor_country = { 
+					primary_culture = donghu
+				}
+				any_neighbor_country = { 
+					primary_culture = shanrong
+				}
+				any_neighbor_country = { 
+					primary_culture = beidi
+				}
+				any_neighbor_country = { 
+					primary_culture = chidi
+				}
+				any_neighbor_country = { 
+					primary_culture = changdi
+				}
+			advisor = pioneer
+			pioneer = 5
+		}
+		}
+		effect = {
+			unit_type = zhaoguo
+			stability = -3
+			innovative_narrowminded = -1
+			add_accepted_culture = donghu
+			add_accepted_culture = shanrong
+			add_accepted_culture = beidi
+			add_country_modifier = {
+				name = "hufuqishe"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# AI胡服骑射
+	hufuqishe3 = {
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = ZHO
+			ai = yes
+		}
+		allow = {
+			land_tech = 39
+		}
+		effect = {
+			unit_type = zhaoguo
+			stability = -3
+			innovative_narrowminded = -1
+			add_accepted_culture = donghu
+			add_accepted_culture = shanrong
+			add_accepted_culture = beidi
+			add_country_modifier = {
+				name = "hufuqishe"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 昭王图强
+	zhaowangtuqiang1 ={
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { 
+				or = {
+					tag = YAN
+					tag = FAS
+				}
+			}
+		}
+		allow = {
+			government_tech = 37
+			idea = sea_hawks
+			idea = bureaucracy
+			advisor = diplomat
+			diplomat = 5
+			prestige = 0.50
+			NOT = { innovative_narrowminded = -1 }
+			cultural_tradition = 0.70
+			ADM = 6
+		}
+		effect = {
+			unit_type = yanguo
+			stability = -1
+			add_country_modifier = {
+				name = "zhaowangtuqiang"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 昭王图强
+	zhaowangtuqiang2 ={
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			or = {
+				tag = FAS
+				tag = YAN
+			}
+		}
+		allow = {
+			advisor = diplomat
+			diplomat = 5
+			prestige = 0.25
+			NOT = { innovative_narrowminded = 1 }
+			cultural_tradition = 0.70
+                        ADM = 6
+		}
+		effect = {
+			unit_type = yanguo
+			stability = -1
+			add_country_modifier = {
+				name = "zhaowangtuqiang"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 昭王图强
+	zhaowangtuqiang3 ={
+		potential = {
+			has_global_flag = zhanguokaishi
+			has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			tag = YAN
+			ai = yes
+		}
+		allow = {
+			land_tech = 39
+		}
+		effect = {
+			unit_type = yanguo
+			stability = -1
+			add_country_modifier = {
+				name = "zhaowangtuqiang"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+			remove_country_modifier = zhanguojungai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 卧薪尝胆
+	woxinchangdan1 ={
+		potential = {
+			has_global_flag = zhanguokaishi
+			#has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { tag = XNU }
+			NOT= {  
+			OR =  {   government = tribal_federation
+		                             government = tribal_despotism
+			         }
+		          	 }
+		}
+		allow = {
+
+			idea = grand_army
+			idea = national_conscripts
+			land_tech = 41
+			ADM=6
+			MTL=6
+			NOT={infamy = 0.5}
+		}
+		effect = {
+			unit_type = wuyue1
+			stability = -2
+			add_country_modifier = {
+				name = "yiyidailao"
+				duration = -1
+			}
+			set_country_flag = mil_reform3
+			remove_country_modifier=xicezhan
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	tongzhougongji = { 
+		potential = {
+			has_country_modifier = yiyidailao
+			not = { has_country_modifier = tongzhougongji }
+		}
+		allow = {
+			navy_size_percentage = 0.8
+		}
+		effect = {
+			add_country_modifier = {
+				name = "tongzhougongji"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	shuangyonggongjian = { 
+		potential = {
+			has_country_modifier = yiyidailao
+		}
+		allow = {
+			navy_tradition = 0.10
+		}
+		effect = {
+			treasury = -100
+			navy_tradition = -0.10
+			army_tradition = 0.05
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 殷商军改
+	fuguyinshang ={
+		potential = {
+			has_global_flag = zhanguokaishi
+			#has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+			NOT = { tag = XNU }
+			NOT= {  
+			OR =  {   government = tribal_federation
+		                             government = tribal_despotism
+			         }
+		          	 }
+		}
+		allow = {
+			idea=scientific_revolution
+			not={serfdom_freesubjects=2}
+			innovative_narrowminded=0
+			or = {
+				and = {
+					trade_tech = 40
+					land_tech = 39
+				}
+				and = {
+					or = {
+						tag = SON
+						tag = FAS
+					}
+					trade_tech = 39
+					land_tech = 38
+				}
+			}
+			ADM=5
+		}
+		effect = {
+			unit_type = yinshang
+			stability = -1
+			add_country_modifier = {
+				name = "yinshanggaige"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 墨家军改
+	mojiajungai ={
+		potential = {
+			has_global_flag = zhanguokaishi
+			#has_country_flag = sitianzhidu
+			NOT = { 
+				has_country_flag = mil_reform3
+			}
+		}
+		allow = {
+			religion = mojia
+			idea = deus_vult
+			government_tech = 43
+			land_tech = 41
+			and = {
+				advisor = fortification_expert
+				fortification_expert = 5
+			}
+		}
+		effect = {
+			unit_type = mojia
+			stability = -1
+			add_country_modifier = {
+				name = "mozhetianxia"
+				duration = -1
+			}
+			remove_country_modifier=xicezhan
+			set_country_flag = mil_reform3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 总动员
+	total_war = { 
+		potential = { 
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_modifier = total_war
+			}
+			NOT = { has_country_modifier = zhiyejundui }
+		}
+		allow = { 
+			stability = 1
+			war = yes
+			NOT = { 
+				manpower_percentage = 0.50
+			}
+		}
+		effect = { 
+			stability = -1
+			legitimacy = -0.25
+			prestige = 0.10
+			any_owned = { 
+				multiply_citysize = 0.9
+			}
+			manpower = 0.5
+			add_country_modifier = {
+				name = "total_war"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,46 @@
+# 在国家治理上掌控全局、统筹规划的人
+
+advisor ={
+name ="孙叔敖" 
+location =458
+skill =5
+type =statesman
+date =2088.1.1
+death_date =2105.1.1
+}
+
+advisor ={
+name ="范雎" 
+location =178
+skill =5
+type =statesman
+date =2422.1.1
+death_date =2443.1.1
+}
+
+advisor ={
+name ="子产" 
+location =356
+skill =6
+type =statesman
+date =2144.1.1
+death_date =2176.1.1
+}
+
+advisor ={
+name ="子产" 
+location =356
+skill =6
+type =statesman
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="萧何"
+location =232
+skill =6
+type =statesman
+date =2489.1.1
+death_date =2505.7.8
+}

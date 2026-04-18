@@ -1,0 +1,636 @@
+#征服许国
+annex_XUG = {
+	type = country
+	allow = {
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		exists = XUG
+		XUG = {
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = XUG
+				}
+				not = { 
+					owns = 365
+				}
+				not = { 
+					owns = 378
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 378
+		owns = 365
+		owns = 1024
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	  	add_temp_claim = 378
+	  	add_temp_claim = 365
+	  	add_temp_claim = 1024
+	}
+	abort_effect = {
+	  	remove_temp_claim = 378
+	  	remove_temp_claim = 365
+	  	remove_temp_claim = 1024
+	}
+	effect = {
+	  	prestige = 0.05
+	 	add_core = 378
+	 	add_core = 365
+	 	add_core = 1024
+	}
+}
+
+#征服戴国
+ZGO_annex_DAG = {
+	type = country
+	allow = { 
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		exists = DAG
+		DAG = { 
+			owns = 347
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+		year = 1971
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = DAG
+				}
+				not = { 
+					owns = 347
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 347
+		owns = 933
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	  	add_temp_claim = 347
+	  	add_temp_claim = 933
+	}
+	abort_effect = {
+	  	remove_temp_claim = 347
+	  	remove_temp_claim = 933
+	}
+	effect = {
+	 	add_core = 347
+	 	add_core = 933
+	}
+}
+
+#征服郐国
+ZGO_annex_KUA = {
+	type = country
+	allow = { 
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		exists = KUA
+		KUA = {
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = KUA
+				}
+				not = { 
+					owns = 356
+				}
+				not = { 
+					owns = 358
+				}
+				not = { 
+					owns = 380
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 356
+		owns = 380
+		owns = 358
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 356
+		add_temp_claim = 380
+		add_temp_claim = 358
+	}
+	abort_effect = {
+		remove_temp_claim = 356
+		remove_temp_claim = 380
+		remove_temp_claim = 358
+	}
+	effect = {
+		add_core = 356
+		add_core = 380
+		add_core = 358
+		prestige = 0.10
+	}
+}
+
+#征服东虢
+ZGO_annex_DGG = {
+	type = country
+	allow = { 
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		exists = DGG
+		DGG = {
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = DGG
+				}
+				not = { 
+					owns = 357
+				}
+				not = { 
+					owns = 363
+				}
+				not = { 
+					owns = 364
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 357
+		owns = 364
+		owns = 363
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 357
+		add_temp_claim = 364
+		add_temp_claim = 363
+	}
+	abort_effect = {
+		remove_temp_claim = 357
+		remove_temp_claim = 364
+		remove_temp_claim = 363
+	}
+	effect = {
+		add_core = 357
+		add_core = 364
+		add_core = 363
+		prestige = 0.05
+	}
+}
+
+#与齐国交好
+improve_relations_with_QIG = {
+	type = country
+	allow = {
+		tag = ZGO
+		exists = QIG
+		not = { war_with = QIG }
+		not = { relation = { who = QIG value = 100 } }
+	}
+	abort = {
+		or = {
+			not = { exists = QIG }
+			war_with = QIG
+		}
+	}
+	success = {
+		relation = { who = QIG value = 100 }
+	}
+	chance = {
+		factor = 50
+	}
+	effect = {
+		relation = { who = QIG value = 50 }
+		prestige = 0.05
+	}
+}
+
+#与霸主交好
+improve_relations_with_emperor = {
+	type = country
+	allow = {
+		any_country = { 
+			is_emperor = yes
+		}
+		tag = ZGO
+		is_emperor = no
+		emperor = {  
+			not = { war_with = ZGO }
+			not = { relation = { who = ZGO value = 50 } }
+		}
+	}
+	abort = {
+		
+		or = {
+			is_emperor = yes
+			emperor = {
+				war_with = ZGO
+			}
+		}
+	}
+	success = {
+		emperor = {  
+			relation = { who = ZGO value = 100 }
+		}
+	}
+	chance = {
+		factor = 50
+	}
+	effect = {
+		stability = 1
+		emperor = {
+			relation = { who = ZGO value = 50 }
+		}
+	}
+}
+#收回韩窃颍川之地
+shouhuiyingchuan = {
+	
+	type = country
+
+	allow = {
+		tag = ZGO
+		OR = {
+			any_owned_province  = {
+			region = yingchuan
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = yingchuan }
+			}
+		}
+		year = 2246
+		NOT = { year = 2543 }
+	}
+	abort = {
+
+	}
+	success = {
+		owns = 376
+	 	owns = 373
+	 	owns = 1027
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	add_temp_claim = 376
+	 	add_temp_claim = 373
+	 	add_temp_claim = 1027
+	}
+	abort_effect = {
+		remove_temp_claim = 376
+	 	remove_temp_claim = 373
+	 	remove_temp_claim = 1027
+	  	prestige = -0.05
+	}
+	effect = {
+		add_core = 376
+	 	add_core = 373
+	 	add_core = 1027
+	}
+}
+
+#附庸祭国
+fuyongzha = {
+	type = country
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	ZZI = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = ZZI
+	  	tag = ZGO
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		ZZI = { is_subject = yes }
+	    		ZZI = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+		overlord_of = ZZI
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = ZZI
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ZZI
+		}
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.10
+		badboy = -1
+	}
+}
+#附庸密国
+fuyongmi = {
+	type = country
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	ZMI = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = ZMI
+	  	tag = ZGO
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		ZMI = { is_subject = yes }
+	    		ZMI = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+		overlord_of = ZMI
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = ZMI
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ZMI
+		}
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.10
+		badboy = -1
+	}
+}
+
+#谢西之九州 夹
+zhengfuying = {
+	type = country
+	allow = {
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		exists = YIN
+		YIN = {
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = YIN
+				}
+				not = { 
+					owns = 377
+				}
+				not = { 
+					owns = 376
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 1026
+		owns = 1028
+		owns = 377
+		owns = 1029
+		owns = 376
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	  	add_temp_claim = 1026
+	  	add_temp_claim = 1028
+	  	add_temp_claim = 377
+	  	add_temp_claim = 1029
+	  	add_temp_claim = 376
+	}
+	abort_effect = {
+	  	remove_temp_claim = 1026
+	  	remove_temp_claim = 1028
+	  	remove_temp_claim = 377
+	  	remove_temp_claim = 1029
+	  	remove_temp_claim = 376
+	}
+	effect = {
+	  	prestige = 0.05
+	 	add_core = 1026
+	 	add_core = 1028
+	 	add_core = 1029
+	 	add_core = 376
+	 	add_core = 377
+	}
+}
+#谢西之九州 郦
+zhengfushen = {
+	type = country
+	allow = {
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		exists = SHE
+		SHE = {
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = SHE
+				}
+				not = { owns = 1077 }
+				not = { owns = 1076 }
+				not = { owns = 390 }
+				not = { owns = 387 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 1076
+		owns = 1077
+		owns = 387
+		owns = 390
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 1076
+		add_temp_claim = 1077
+		add_temp_claim = 387
+		add_temp_claim = 390
+	}
+	abort_effect = {
+		remove_temp_claim = 1076
+		remove_temp_claim = 1077
+		remove_temp_claim = 387
+		remove_temp_claim = 390
+	}
+	effect = {
+	  	prestige = 0.05
+		add_core = 1076
+		add_core = 1077
+		add_core = 387
+		add_core = 390
+	}
+}
+#谢西之九州 申
+zhengfushen2 = {
+	type = country
+	allow = {
+		tag = ZGO
+		is_lesser_in_union = no
+		is_subject = no
+		ZGO = {
+				owns = 1077
+		  		owns = 390
+				owns = 1076
+				owns = 387
+		}
+		exists = SHE
+		SHE = {
+			neighbour = this
+			not = { 
+				vassal_of = ZGO
+			}
+		}
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = SHE
+				}
+				not = { 
+					owns = 382
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 1072
+		owns = 1073
+		owns = 1074
+		owns = 1075
+		owns = 382
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 1072
+		add_temp_claim = 1073
+		add_temp_claim = 1074
+		add_temp_claim = 1075
+		add_temp_claim = 382
+	}
+	abort_effect = {
+		remove_temp_claim = 1072
+		remove_temp_claim = 1073
+		remove_temp_claim = 1074
+		remove_temp_claim = 1075
+		remove_temp_claim = 382
+	}
+	effect = {
+	  	prestige = 0.05
+		add_core = 1072
+		add_core = 1073
+		add_core = 1074
+		add_core = 1075
+		add_core = 382
+	}
+}

@@ -1,0 +1,696 @@
+country_event = { 
+	id = 62001
+	major = yes
+	trigger = { 
+		OR = { 
+			has_global_flag = zhanguokaishi
+			capital_scope = { 
+				hre = no
+			}
+		}
+		NOT = { 
+			has_global_flag = liyuebenghuai1
+		}
+		NOT = { 
+			has_country_modifier = chengwang
+		}
+		OR = { 
+			religion = liyuebadao
+			religion = fajia
+			has_global_flag = zhanguokaishi
+		}
+		check_variable = {
+			which = junshinenglijisuan
+			value = 400
+		}
+		check_variable = {
+			which = jingjinenglijisuan
+			value = 8000
+		}
+	}
+	mean_time_to_happen = { 
+		months = 60
+	}
+	title = "EVTNAME62001"
+	desc = "EVTDESC62001"
+	option = { 
+		name = "EVTOPTA62001"
+		set_global_flag = liyuebenghuai1
+		prestige = 0.25
+		badboy = 2
+		any_owned_province = {
+			hre = no
+		}
+		add_country_modifier = { 
+			name = "chengwang"
+			duration = -1
+		}
+		ai_chance =
+		{
+			factor = 75
+		}
+	}
+	option = { 
+		name = "EVTOPTB62001"
+		prestige = -0.05
+		badboy = -1
+		add_country_modifier = { 
+			name = "jujuechengwang"
+			duration = 1825
+		}
+		ai_chance =
+		{
+			factor = 25
+		}
+	}
+}
+
+country_event = { 
+	id = 62002
+	major = yes
+	trigger = { 
+		OR = { 
+			has_global_flag = zhanguokaishi
+			capital_scope = { 
+				hre = no
+			}
+		}
+		has_global_flag = liyuebenghuai1
+		NOT = { 
+			has_global_flag = liyuebenghuai2
+		}
+		NOT = { 
+			has_country_modifier = chengwang
+		}
+		OR = { 
+			religion = liyuebadao
+			religion = fajia
+			has_global_flag = zhanguokaishi
+		}
+		check_variable = {
+			which = junshinenglijisuan
+			value = 300
+		}
+		check_variable = {
+			which = jingjinenglijisuan
+			value = 6000
+		}
+	}
+	mean_time_to_happen = { 
+		months = 60
+	}
+	title = "EVTNAME62001"
+	desc = "EVTDESC62001"
+	option = { 
+		name = "EVTOPTA62001"
+		set_global_flag = liyuebenghuai2
+		prestige = 0.25
+		badboy = 2
+		any_owned_province = {
+			hre = no
+		}
+		add_country_modifier = { 
+			name = "chengwang"
+			duration = -1
+		}
+		ai_chance =
+		{
+			factor = 75
+		}
+	}
+	option = { 
+		name = "EVTOPTB62001"
+		prestige = -0.05
+		badboy = -1
+		add_country_modifier = { 
+			name = "jujuechengwang"
+			duration = 1825
+		}
+		ai_chance =
+		{
+			factor = 25
+		}
+	}
+}
+
+country_event = { 
+	id = 62003
+	major = yes
+	trigger = { 
+		OR = { 
+			has_global_flag = zhanguokaishi
+			capital_scope = { 
+				hre = no
+			}
+		}
+		has_global_flag = liyuebenghuai2
+		NOT = { 
+			has_global_flag = liyuebenghuai3
+		}
+		NOT = { 
+			has_country_modifier = chengwang
+		}
+		OR = { 
+			religion = liyuebadao
+			religion = fajia
+			has_global_flag = zhanguokaishi
+		}
+		check_variable = {
+			which = junshinenglijisuan
+			value = 250
+		}
+		check_variable = {
+			which = jingjinenglijisuan
+			value = 5000
+		}
+	}
+	mean_time_to_happen = { 
+		months = 48
+	}
+	title = "EVTNAME62001"
+	desc = "EVTDESC62001"
+	option = { 
+		name = "EVTOPTA62001"
+		set_global_flag = liyuebenghuai3
+		prestige = 0.25
+		badboy = 2
+		any_owned_province = {
+			hre = no
+		}
+		add_country_modifier = { 
+			name = "chengwang"
+			duration = -1
+		}
+		ai_chance =
+		{
+			factor = 75
+		}
+	}
+	option = { 
+		name = "EVTOPTB62001"
+		prestige = -0.05
+		badboy = -1
+		add_country_modifier = { 
+			name = "jujuechengwang"
+			duration = 1825
+		}
+		ai_chance =
+		{
+			factor = 25
+		}
+	}
+}
+
+country_event = { 
+	id = 62004
+	major = yes
+	trigger = { 
+		OR = { 
+			has_global_flag = zhanguokaishi
+			capital_scope = { 
+				hre = no
+			}
+		}
+		has_global_flag = liyuebenghuai3
+		NOT = { 
+			has_global_flag = liyuebenghuai4
+		}
+		NOT = { 
+			has_country_modifier = chengwang
+		}
+		OR = { 
+			religion = liyuebadao
+			religion = fajia
+			has_global_flag = zhanguokaishi
+		}
+		check_variable = {
+			which = junshinenglijisuan
+			value = 200
+		}
+		check_variable = {
+			which = jingjinenglijisuan
+			value = 4000
+		}
+	}
+	mean_time_to_happen = { 
+		months = 48
+	}
+	title = "EVTNAME62001"
+	desc = "EVTDESC62001"
+	option = { 
+		name = "EVTOPTA62001"
+		set_global_flag = liyuebenghuai4
+		prestige = 0.25
+		badboy = 2
+		add_country_modifier = { 
+			name = "chengwang"
+			duration = -1
+		}
+		dismantle_hre = yes
+		any_country = { 
+			limit = { 
+				has_country_modifier = rival_for_by
+			}
+			remove_country_modifier = rival_for_by
+		}
+		ai_chance = { 
+			factor = 90
+		}
+	}
+	option = { 
+		name = "EVTOPTB62001"
+		prestige = -0.05
+		badboy = -1
+		add_country_modifier = { 
+			name = "jujuechengwang"
+			duration = 1825
+		}
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = { 
+	id = 62005
+	major = yes
+	trigger = { 
+		OR = { 
+			has_global_flag = zhanguokaishi
+			capital_scope = { 
+				hre = no
+			}
+		}
+		has_global_flag = liyuebenghuai4
+		NOT = { 
+			has_country_modifier = chengwang
+		}
+		check_variable = {
+			which = junshinenglijisuan
+			value = 150
+		}
+		check_variable = {
+			which = jingjinenglijisuan
+			value = 3000
+		}
+	}
+	mean_time_to_happen = { 
+		months = 48
+	}
+	title = "EVTNAME62001"
+	desc = "EVTDESC62005"
+	option = { 
+		name = "EVTOPTA62001"
+		prestige = 0.10
+		add_country_modifier = { 
+			name = "chengwang"
+			duration = -1
+		}
+		ai_chance =
+		{
+			factor = 80
+		}
+	}
+	option = { 
+		name = "EVTOPTB62001"
+		prestige = -0.10
+		add_country_modifier = { 
+			name = "jujuechengwang"
+			duration = 1825
+		}
+		ai_chance =
+		{
+			factor = 20
+		}
+	}
+}
+country_event = { 
+	id = 62006
+	major = yes
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 2
+	}
+	title = "EVTNAME62001"
+	desc = "EVTDESC62005"
+	option = { 
+		name = "EVTOPTA62001"
+		any_country = { 
+			set_variable = {
+				which = jingjinenglijisuan
+				value = 0
+			}
+			set_variable = {
+				which = junshinenglijisuan
+				value = 0
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 1
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 2
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 3
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 4
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 5
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 6
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 7
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_monopolys = 8
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 1
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 2
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 3
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 4
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 5
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 6
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 7
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				num_of_cots = 8
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 40
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 80
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 120
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 160
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 200
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 240
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 280
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 320
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 360
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				monthly_income = 400
+			}
+			change_variable = {
+				which = jingjinenglijisuan
+				value = 500
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 10
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 20
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 30
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 40
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 50
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 60
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 70
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 80
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 90
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				army = 100
+			}
+			change_variable = {
+				which = junshinenglijisuan
+				value = 10
+			}
+		}
+		any_country = { 
+			limit = {
+				is_subject = yes
+			}
+			overlord = { 
+				change_variable = {
+					which = junshinenglijisuan
+					value = 10
+				}
+			}
+		}
+		any_country = { 
+			any_owned = { 
+				owner = { 
+					change_variable = {
+						which = junshinenglijisuan
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}

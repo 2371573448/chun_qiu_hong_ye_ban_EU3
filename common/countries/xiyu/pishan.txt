@@ -1,0 +1,6 @@
+#Country Name: Please see filename.
+
+graphical_culture = chinesegfx
+
+
+color = { 84  64  128 }

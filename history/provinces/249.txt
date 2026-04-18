@@ -1,0 +1,70 @@
+
+culture = shu
+religion = ancestor
+capital = "ãÏÖÐ"
+trade_goods = grain
+hre = no
+base_tax = 6
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+
+1928.1.1 = { discovered_by = BAG }
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { discovered_by = QIN }
+2244.1.1 = { 
+	owner = JUU
+	controller = JUU
+	add_core = JUU
+}
+2244.1.2 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+	remove_core = JUU
+}
+2246.1.1 = { religion = liyuebadao 
+        owner = BAG
+	controller = BAG
+	add_core = BAG	
+        citysize = 14000
+        fort1 = yes }
+2246.1.2 = { 
+	owner = JUU
+	controller = JUU
+	add_core = JUU
+	religion = liyuebadao
+	remove_core = SGU
+}
+2247.1.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+	remove_core = HNW
+}
+2330.1.1  = {	owner = JUU
+		controller = JUU
+                add_core = JUU
+                add_core = SGU
+                fort1 = yes
+                citysize = 28000
+	    }
+2382.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2412.1.1 = { add_core = QIN  }
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+	citysize = 34000
+}

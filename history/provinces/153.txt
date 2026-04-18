@@ -1,0 +1,45 @@
+
+culture = baidi
+religion = animism
+capital = "—Ù÷‹"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2246.1.1 = { religion = liyuebadao }
+2247.1.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+	remove_core = BAI
+}
+2300.1.1 = { discovered_by = QIN }
+2370.1.1  = { owner = QIN
+              controller = QIN
+              citysize = 16000 
+              fort1 = yes
+	    }
+2400.1.1 = { 
+	add_core = QIN
+	culture = guanzhong
+}
+2492.2.1 = { 
+	owner = DIW
+	controller = DIW
+	add_core = DIW
+}
+2492.8.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

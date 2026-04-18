@@ -1,0 +1,576 @@
+country_event = { 
+	id = 1300
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1300"
+	desc = "EVTDESC1300"
+	option = { 
+		name = "EVTOPTA1300"
+		centralization_decentralization = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1300"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1301
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1301"
+	desc = "EVTDESC1301"
+	option = { 
+		name = "EVTOPTA1301"
+		centralization_decentralization = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1301"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1302
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1302"
+	desc = "EVTDESC1302"
+	option = { 
+		name = "EVTOPTA1302"
+		aristocracy_plutocracy = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1302"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1303
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1303"
+	desc = "EVTDESC1303"
+	option = { 
+		name = "EVTOPTA1303"
+		aristocracy_plutocracy = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1303"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1304
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1304"
+	desc = "EVTDESC1304"
+	option = { 
+		name = "EVTOPTA1304"
+		serfdom_freesubjects = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1304"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1305
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1305"
+	desc = "EVTDESC1305"
+	option = { 
+		name = "EVTOPTA1305"
+		serfdom_freesubjects = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1305"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1306
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1306"
+	desc = "EVTDESC1306"
+	option = { 
+		name = "EVTOPTA1306"
+		innovative_narrowminded = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1306"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1307
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1307"
+	desc = "EVTDESC1307"
+	option = { 
+		name = "EVTOPTA1307"
+		innovative_narrowminded = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1307"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1308
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1308"
+	desc = "EVTDESC1308"
+	option = { 
+		name = "EVTOPTA1308"
+		mercantilism_freetrade = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1308"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1309
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1309"
+	desc = "EVTDESC1309"
+	option = { 
+		name = "EVTOPTA1309"
+		mercantilism_freetrade = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1309"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1310
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1310"
+	desc = "EVTDESC1310"
+	option = { 
+		name = "EVTOPTA1310"
+		offensive_defensive = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1310"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1311
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1311"
+	desc = "EVTDESC1311"
+	option = { 
+		name = "EVTOPTA1310"
+		offensive_defensive = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1311"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1312
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1312"
+	desc = "EVTDESC1312"
+	option = { 
+		name = "EVTOPTA1312"
+		land_naval = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1312"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1313
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1313"
+	desc = "EVTDESC1313"
+	option = { 
+		name = "EVTOPTA1313"
+		land_naval = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1313"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1314
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1314"
+	desc = "EVTDESC1314"
+	option = { 
+		name = "EVTOPTA1314"
+		quality_quantity = -1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1314"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}
+country_event = { 
+	id = 1315
+	trigger = { 
+		not = { 
+			tag = SZG
+		}
+	}
+	mean_time_to_happen = { 
+		months = 4800
+		modifier = { 
+			factor = 0.5
+			idea = smithian_economics
+		}
+		modifier = { 
+			factor = 2.5
+			ai = yes
+		}
+	}
+	title = "EVTNAME1315"
+	desc = "EVTDESC1315"
+	option = { 
+		name = "EVTOPTA1315"
+		quality_quantity = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1315"
+		prestige = 0.05
+		legitimacy = -0.04
+	}
+}

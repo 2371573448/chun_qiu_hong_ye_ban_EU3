@@ -1,0 +1,155 @@
+[systemsettings.cpp:180]: System memory:   2048MB
+[systemsettings.cpp:182]: CPU speed:       3599MHz
+[systemsettings.cpp:189]: Number of processors: 8
+[systemsettings.cpp:200]: CPU type: x86
+[systemsettings.cpp:232]: OS: Unknown     Build: 9200
+[graphicssettings.cpp:130]: Graphic Adapters: 
+[graphicssettings.cpp:135]: 	0: Intel(R) UHD Graphics 630
+[graphicssettings.cpp:152]: Checking for multi-sampling support:
+[graphicssettings.cpp:163]: 	2 samples supported.
+[graphicssettings.cpp:163]: 	4 samples supported.
+[graphicssettings.cpp:163]: 	8 samples supported.
+[graphicssettings.cpp:163]: 	16 samples supported.
+[graphicssettings.cpp:178]: Using Adapter [0]:
+[graphicssettings.cpp:184]: Succeeded to create a device [D3DCREATE_HARDWARE_VERTEXPROCESSING].
+[graphicssettings.cpp:226]: Graphics device: Intel(R) UHD Graphics 630
+[graphicssettings.cpp:227]: Graphics driver: igdumdim32.dll
+[graphicssettings.cpp:232]:  Driver version: 2115
+[graphicssettings.cpp:249]: 
+
+
+Dumping all gfx info:
+DeviceIdentifier:	{D7B78E66-D888-11CF-B07B-F1A6ACC2D235}
+VendorId:	32902
+DeviceId:	39880
+SubSysId:	-2037116861
+Revision:	3
+DriverVersion.HighPart:	2031616
+DriverVersion.LowPart:	6621251
+
+
+[graphicssettings.cpp:299]: Instancing supported.
+[graphicssettings.cpp:317]: Video memory amount: 1342MB
+[graphicssettings.cpp:320]: Support for T&L found.
+[graphicssettings.cpp:323]: MaxSimultaneousTextures: 8
+[graphicssettings.cpp:324]: MaxVertexBlendMatrices: 4
+[graphicssettings.cpp:325]: MaxVertexBlendMatrixIndex: 8
+[graphicssettings.cpp:327]: MaxSimultaneousTextures: 8
+[graphicssettings.cpp:328]: MaxTextureBlendStages: 8
+[graphicssettings.cpp:329]: Support for Anisotropic filtering found.
+[graphicssettings.cpp:332]: 	Max Anisotropic filtering: 16
+[graphicssettings.cpp:333]: 	Anisotropic filtering set to: 0
+[graphicssettings.cpp:337]: Vertex Shader version: 3.0
+[graphicssettings.cpp:342]: Pixel Shader version: 3.0
+[main.cpp:240]: Eu3 Version Aug  3 2012 : 15:02:37
+[main.cpp:296]: Collecting files (GAME_REPLACE)
+[main.cpp:318]: Blobing files
+[main.cpp:324]: localisation\0快捷菜单.csv
+[main.cpp:324]: localisation\1专属任务.csv
+[main.cpp:324]: localisation\1九州鼎.csv
+[main.cpp:324]: localisation\1人口相关.csv
+[main.cpp:324]: localisation\1修正.csv
+[main.cpp:324]: localisation\1兵种.csv
+[main.cpp:324]: localisation\1决议.csv
+[main.cpp:324]: localisation\1剧本.csv
+[main.cpp:324]: localisation\1历史事件.csv
+[main.cpp:324]: localisation\1叛军.csv
+[main.cpp:324]: localisation\1君主性格事件.csv
+[main.cpp:324]: localisation\1君主顾问.csv
+[main.cpp:324]: localisation\1国家.csv
+[main.cpp:324]: localisation\1国家天赋.csv
+[main.cpp:324]: localisation\1国策理念.csv
+[main.cpp:324]: localisation\1国策理念事件.csv
+[main.cpp:324]: localisation\1宗教相关.csv
+[main.cpp:324]: localisation\1建筑.csv
+[main.cpp:324]: localisation\1弭兵征贡.csv
+[main.cpp:324]: localisation\1恶名事件.csv
+[main.cpp:324]: localisation\1战争理由.csv
+[main.cpp:324]: localisation\1战争相关.csv
+[main.cpp:324]: localisation\1改革体系.csv
+[main.cpp:324]: localisation\1政体.csv
+[main.cpp:324]: localisation\1文化科技.csv
+[main.cpp:324]: localisation\1新随机事件.csv
+[main.cpp:324]: localisation\1晋国派系.csv
+[main.cpp:324]: localisation\1殖民与蛮族侵袭.csv
+[main.cpp:324]: localisation\1殷商相关.csv
+[main.cpp:324]: localisation\1物产.csv
+[main.cpp:324]: localisation\1省份地区.csv
+[main.cpp:324]: localisation\1秦国相关.csv
+[main.cpp:324]: localisation\1继承正统.csv
+[main.cpp:324]: localisation\1载入贴士.csv
+[main.cpp:324]: localisation\1通用任务.csv
+[main.cpp:324]: localisation\1部落相关.csv
+[main.cpp:324]: localisation\1间谍.csv
+[main.cpp:324]: localisation\1随机事件.csv
+[main.cpp:324]: localisation\1霸主体系.csv
+[main.cpp:324]: localisation\1领地与派系.csv
+[main.cpp:324]: localisation\2nd_inn.csv
+[main.cpp:324]: localisation\DLC.csv
+[main.cpp:324]: localisation\dw_gold.csv
+[main.cpp:324]: localisation\extra.csv
+[main.cpp:324]: localisation\hotfix.csv
+[main.cpp:324]: localisation\httt.csv
+[main.cpp:324]: localisation\in_nomine_text.csv
+[main.cpp:324]: localisation\napoleontext.csv
+[main.cpp:324]: localisation\newtext.csv
+[main.cpp:324]: localisation\rotw.csv
+[main.cpp:324]: localisation\text.csv
+[main.cpp:324]: localisation\text112.csv
+[main.cpp:324]: localisation\v41.csv
+[main.cpp:324]: localisation\v51.csv
+[main.cpp:324]: localisation\兵家派系.csv
+[main.cpp:324]: localisation\千秋朝会.csv
+[main.cpp:324]: localisation\精细化种田.csv
+[main.cpp:324]: localisation\翻译扩展.csv
+[main.cpp:338]: Init Text Database
+[internationalizedtext.cpp:1237]: Create table
+[internationalizedtext.cpp:1239]: Create text database
+[main.cpp:340]: Text Database Done
+[main.cpp:368]: Creating application...
+[main.cpp:424]: Init Application...
+[eu3application.cpp:308]: Initialise Defines
+[eu3application.cpp:315]: App Init
+[eu3application.cpp:337]: Cursors Defines
+[eu3application.cpp:363]: Sound...
+[dxmusic.cpp:40]: Init Music
+[dxmusic.cpp:46]: Graph done 0
+[dxmusic.cpp:52]: Control done 0
+[dxmusic.cpp:58]: Seeking done 0
+[dxmusic.cpp:63]: Event done 0
+[dxmusic.cpp:68]: Music done 0
+[DirectSound.cpp:37]: Init DirectSound
+[DirectSound.cpp:55]: Sound initialised with result 0
+[DirectSound.cpp:65]: Coop Level Set. Result: 0
+[DirectSound.cpp:88]: Sound Init Done
+[eu3application.cpp:390]: Initialise Graphics...
+[graphics.cpp:155]: Direct3D Created
+[graphicssettings.cpp:651]: Usable res: 1024 768 60
+[graphicssettings.cpp:651]: Usable res: 1024 768 75
+[graphicssettings.cpp:651]: Usable res: 1152 864 75
+[graphicssettings.cpp:651]: Usable res: 1152 864 60
+[graphicssettings.cpp:651]: Usable res: 1280 768 60
+[graphicssettings.cpp:651]: Usable res: 1280 800 60
+[graphicssettings.cpp:651]: Usable res: 1280 960 60
+[graphicssettings.cpp:651]: Usable res: 1280 1024 60
+[graphicssettings.cpp:651]: Usable res: 1280 1024 75
+[graphicssettings.cpp:651]: Usable res: 1360 768 60
+[graphicssettings.cpp:651]: Usable res: 1366 768 60
+[graphicssettings.cpp:651]: Usable res: 1400 1050 60
+[graphicssettings.cpp:651]: Usable res: 1440 900 60
+[graphicssettings.cpp:651]: Usable res: 1600 900 60
+[graphicssettings.cpp:651]: Usable res: 1680 1050 60
+[graphicssettings.cpp:651]: Usable res: 1920 1080 60
+[graphics.cpp:256]: Using multisampling: 4
+[graphics.cpp:286]: Creating device with: D3DCREATE_HARDWARE_VERTEXPROCESSING
+	Fullscreen=no
+	Resolution=1400x800
+[graphics.cpp:367]: Done creating device.
+[eu3application.cpp:392]: Graphics Done
+[main.cpp:426]: Run Application...
+[provincemanager.cpp:1524]: Creating province data
+[provincemanager.cpp:1606]: Creating meshes
+[provincemanager.cpp:1665]: vertex declarations done
+[provincemanager.cpp:1755]: done quads
+[provincemanager.cpp:1787]: border adjacencies done
+[provincemanager.cpp:1833]: Create meshes done

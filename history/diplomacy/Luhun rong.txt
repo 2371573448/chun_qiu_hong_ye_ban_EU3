@@ -1,0 +1,12 @@
+alliance= {
+	first=JIN
+	second=LHR
+	start_date=2060.6.1
+	end_date=2173.9.24
+}
+vassal= {
+	first=JIN
+	second=LHR
+	start_date=2070.6.1
+	end_date=2173.9.24
+}

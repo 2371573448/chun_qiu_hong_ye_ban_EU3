@@ -1,0 +1,619 @@
+country_decisions = { 
+	#兵权谋
+	bingquanmoujueyi = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			army_tradition = 0.9
+			NOT = { 
+				centralization_decentralization = 2
+			}
+		}
+		effect = { 
+			army_tradition = -0.9
+			add_country_modifier = { 
+				name = "bingquanmou1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingquanmoujueyiwu = { 
+		potential = { 
+			tag = WUG
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			NOT = { 
+				centralization_decentralization = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "bingquanmou1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#兵形势
+	bingxingshijueyi = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			army_tradition = 0.8
+			NOT = { 
+				offensive_defensive = 2
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			add_country_modifier = { 
+				name = "bingxingshi1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingxingshijueyiwu = { 
+		potential = {
+			tag = XCW
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			NOT = { 
+				offensive_defensive = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "bingxingshi1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#兵技巧
+	bingjiqiaojueyi = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			army_tradition = 0.8
+			NOT = { 
+				quality_quantity = 2
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			add_country_modifier = { 
+				name = "bingjiqiao1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiqiaojueyiwu = { 
+		potential = { 
+			tag = QIG
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			NOT = { 
+				quality_quantity = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "bingjiqiao1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#兵阴阳
+	bingyinyangjueyi = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			army_tradition = 0.8
+			innovative_narrowminded = 1
+		}
+		effect = { 
+			army_tradition = -0.8
+			add_country_modifier = { 
+				name = "bingyinyang1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingyinyangjueyiwu = { 
+		potential = { 
+			tag = HNW
+			has_global_flag = zhanguokaishi
+			idea = napoleonic_warfare
+			NOT = { 
+				has_country_flag = bingjiasipai
+			}
+		}
+		allow = { 
+			innovative_narrowminded = 1
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "bingyinyang1"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#兵家迭代
+	bingjiadiedai1 = { 
+		potential = {
+			has_country_modifier = bingquanmou1
+		}
+		allow = { 
+			army_tradition = 0.9
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.9
+			any_country = {
+				limit = {
+					tag = this
+					tag = WUG
+				}
+				years_of_income = 0.125
+				army_tradition = 0.45
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingquanmou1
+			add_country_modifier = { 
+				name = "bingquanmou2"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai2 = { 
+		potential = {
+			has_country_modifier = bingquanmou2
+		}
+		allow = { 
+			army_tradition = 0.9
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.9
+			any_country = {
+				limit = {
+					tag = this
+					tag = WUG
+				}
+				years_of_income = 0.125
+				army_tradition = 0.45
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingquanmou2
+			add_country_modifier = { 
+				name = "bingquanmou3"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai3 = { 
+		potential = {
+			tag = WUG
+			has_country_modifier = bingquanmou3
+		}
+		allow = { 
+			army_tradition = 0.9
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.9
+			any_country = {
+				limit = {
+					tag = this
+					tag = WUG
+				}
+				years_of_income = 0.125
+				army_tradition = 0.45
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingquanmou3
+			add_country_modifier = { 
+				name = "bingquanmou4"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai4 = { 
+		potential = {
+			has_country_modifier = bingxingshi1
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = XCW
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingxingshi1
+			add_country_modifier = { 
+				name = "bingxingshi2"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai5 = { 
+		potential = {
+			has_country_modifier = bingxingshi2
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = XCW
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingxingshi2
+			add_country_modifier = { 
+				name = "bingxingshi3"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai6 = { 
+		potential = {
+			tag = WUG
+			has_country_modifier = bingxingshi3
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = XCW
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingxingshi3
+			add_country_modifier = { 
+				name = "bingxingshi4"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai7 = { 
+		potential = {
+			has_country_modifier = bingjiqiao1
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = QIG
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingjiqiao1
+			add_country_modifier = { 
+				name = "bingjiqiao2"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai8 = { 
+		potential = {
+			has_country_modifier = bingjiqiao2
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = QIG
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingjiqiao2
+			add_country_modifier = { 
+				name = "bingjiqiao3"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai9 = { 
+		potential = {
+			tag = WUG
+			has_country_modifier = bingjiqiao3
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = QIG
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingjiqiao3
+			add_country_modifier = { 
+				name = "bingjiqiao4"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai10 = { 
+		potential = {
+			has_country_modifier = bingyinyang1
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = HNW
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingyinyang1
+			add_country_modifier = { 
+				name = "bingyinyang2"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai11 = { 
+		potential = {
+			has_country_modifier = bingyinyang2
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = HNW
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingyinyang2
+			add_country_modifier = { 
+				name = "bingyinyang3"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bingjiadiedai12 = { 
+		potential = {
+			tag = WUG
+			has_country_modifier = bingyinyang3
+		}
+		allow = { 
+			army_tradition = 0.8
+			years_of_income = 0.25
+			had_country_flag = { 
+				flag = bingjiasipai
+				days = 3650
+			}
+		}
+		effect = { 
+			army_tradition = -0.8
+			any_country = {
+				limit = {
+					tag = this
+					tag = HNW
+				}
+				years_of_income = 0.125
+				army_tradition = 0.4
+			}
+			years_of_income = -0.25
+			remove_country_modifier = bingyinyang3
+			add_country_modifier = { 
+				name = "bingyinyang4"
+				duration = -1
+			}
+			set_country_flag = bingjiasipai
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

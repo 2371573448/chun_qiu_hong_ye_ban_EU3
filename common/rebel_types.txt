@@ -1,0 +1,2122 @@
+##############################################
+# The five rebel types used by the game engine
+##############################################
+# Valid arguments:
+#
+# area = [nation/culture/nation_culture/nation_religion/religion/all]
+# government = [monarchy/republic/theocracy/anti/any]
+# defection = [culture/culture_group/religion/any/none]
+# independence = [culture/culture_group/religion/colonial/any/none]
+#
+##############################################
+
+###################################
+#奴隶起义军
+###################################
+anti_tax_rebels = {
+	
+	area = all 				#这种叛军会全世界到处跑
+	government = monarchy		# 君主政体
+	defection = none			# 不会叛逃
+	independence = none		# 绝对不会寻求独立
+	defect_delay = 60			#必须在60月里消灭敌军
+	unit_transfer = yes
+				
+	resilient = yes		
+	reinforcing = no				
+	general = no					
+	smart = yes						
+
+	artillery = 0.05
+	infantry = 0.9
+	cavalry = 0.05
+
+	spawn_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			owner = {
+				wartax = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				war_exhaustion = 4
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				war_exhaustion = 8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { serfdom_freesubjects = -1 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { serfdom_freesubjects = -3 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				serfdom_freesubjects = 1
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				serfdom_freesubjects = 3
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				NOT = { primary_culture = THIS } # We want other types instead
+			}
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.4
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.2
+			units_in_province = 5
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		NOT = { has_province_modifier = "tax_revolt" }
+ 	}
+	siege_won_effect = {
+		add_province_modifier = {
+			name = "tax_revolt"
+			duration = 730
+		}
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		any_owned_province = { controlled_by = REB }
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	demands_accepted_effect = {
+		prestige = -0.1
+		serfdom_freesubjects = 1
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "severe_tax_reduction"
+				duration = 3650
+			}
+		}
+	}
+	
+	# Country scope
+	demands_enforced_effect = {
+		prestige = -0.5
+		serfdom_freesubjects = 1
+		random = {
+			chance = 33
+			government = REB
+		}
+	}
+}
+
+#######################################
+#士卿叛军
+#######################################
+particularist_rebels = {
+	
+	area = nation 				# Stays within the nation
+	government = monarchy			# Don't care about gov type				
+	defection = any				# Will not defect
+	independence = culture_group	
+	defect_delay = 60
+	unit_transfer = yes				# Units do not remain after enforcing demands.
+	
+	resilient = yes				# Can retreat
+	reinforcing = yes				# Can reinforce
+	general = yes				# Does use generals
+	smart = yes				# Do assault forts, tactically withdraw from battle, etc.
+	
+	artillery = 0.25
+	infantry = 0.55
+	cavalry = 0.20
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			owner = { 
+				NOT = { num_of_cities = 3 }
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				centralization_decentralization = 4
+			}
+		}
+		modifier = {
+			factor = 0.9
+			is_core = THIS
+		}
+		modifier = {
+			factor = 0.9
+			primary_culture = THIS
+		}
+		modifier = {
+			factor = 0.8
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				aristocracy_plutocracy = 3
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				aristocracy_plutocracy = 2
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = {
+				aristocracy_plutocracy = 1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				NOT = { aristocracy_plutocracy =-1 }
+			}
+		}
+		modifier = {
+			factor = 0.66
+			owner = {
+				NOT = { aristocracy_plutocracy =-2 }
+			}
+		}
+		modifier = {
+			factor = 0.66
+			owner = {
+				NOT = { aristocracy_plutocracy =-3 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 20
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 30
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 40
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 50
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 60
+			}
+		}
+		modifier = {
+			factor = 3
+			has_province_modifier = vassal_territory
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					government = tribal_despotism
+					government = tribal_federation
+				}
+			}
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.01
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 2.0
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	demands_accepted_effect = {
+		prestige = -0.15
+		aristocracy_plutocracy = 1
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "vassal_territory"
+				duration = -1
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = noble_territory
+		}
+	}
+	
+	# Country scope
+	demands_enforced_effect = {
+		prestige = -0.35
+		aristocracy_plutocracy = 2
+		random = {
+			chance = 33
+			government = zhizheng
+		}
+               		random = {
+			chance = 33
+			government = yuanshuai
+		}
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "vassal_territory"
+				duration = -1
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = noble_territory
+		}
+	}
+}
+
+####################################
+#XX国遗民
+####################################
+nationalist_rebels = {
+
+	area = culture 	
+	government = monarchy
+	defection = culture
+	independence = culture 	
+	defect_delay = 36
+	unit_transfer = yes	
+	
+	resilient = yes
+	reinforcing = yes
+	general = yes				
+	smart = yes
+	
+	artillery = 0.2
+	infantry = 0.65
+	cavalry = 0.15
+
+	spawn_chance = {
+		factor = 6
+		modifier = {
+			factor = 0.05
+			owner = {
+				primary_culture = THIS
+			}
+			is_core = THIS
+		}
+		modifier = {
+			factor = 0.05
+			NOT = {
+				any_core = {
+					primary_culture = THIS
+					exists = no
+		 		}
+		 	}
+		 	OR = {
+				any_neighbor_province = {
+					culture = THIS
+					has_owner_culture = yes
+		 		}
+		 		any_core = {
+					primary_culture = THIS
+					exists = yes
+	 			}
+	 		}
+	 	}
+	 	modifier = {
+			factor = 25
+			any_core = {
+				primary_culture = THIS
+				exists = no
+	 		}
+		}
+	 	modifier = {
+			factor = 0.05
+			is_colony = yes
+		}
+		modifier = {
+			factor = 2
+			has_province_modifier = "suppress_minority"
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { is_core = THIS }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { stability = -2 }
+			}
+		}
+		modifier = {
+			factor = 2
+			nationalism = 10
+		}
+		modifier = {
+			factor = 1.75
+			nationalism = 5
+		}
+		modifier = {
+			factor = 1.5
+			nationalism = 1
+		}
+		modifier = {
+			factor = 2.5
+			owner = {
+				NOT = { primary_culture = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				accepted_culture = THIS
+			}
+		}
+		modifier = {
+			factor = 1.5
+			year = 2245
+		}
+		modifier = {
+			factor = 2
+			year = 2400
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.1
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		culture = REB
+ 	}
+	siege_won_effect = {
+		add_core = REB
+		nationalism = 10 
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		war = no
+		any_owned_province = { controlled_by = REB }
+
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	demands_accepted_effect = {
+		prestige = -0.25
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "local_autonomy"
+				duration = 7200
+			}
+		}
+	}
+	
+	# Country scope
+	demands_enforced_effect = {
+		prestige = -0.25
+		release_vassal = REB
+	}
+}
+
+##########################################################
+#民族叛军
+##########################################################
+patriot_rebels = {
+
+	area = all	
+	government = monarchy
+	defection = religion
+	defect_delay = 36	
+	independence = culture	
+	unit_transfer = yes
+	
+	resilient = yes	
+	reinforcing = yes		
+	general = yes				
+	smart = yes
+	
+	artillery = 0.05
+	infantry = 0.65
+	cavalry = 0.3
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 3
+		modifier = {
+			factor = 0.1
+			controller = {
+				primary_culture = THIS
+			}
+			OR = {
+				is_core = THIS
+				NOT = {
+					any_core = { 
+						NOT = { tag = THIS }
+					}
+				}
+				NOT = {
+					any_neighbor_province = {
+						culture = THIS
+						NOT = { owned_by = THIS }
+						has_owner_culture = yes
+			 		}
+			 	}
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				culture = THIS
+				has_owner_culture = yes
+	 		}
+	 	}
+	 	modifier = {
+			factor = 2
+			any_core = {
+				primary_culture = THIS
+				exists = yes
+	 		}
+	 	}
+		modifier = {
+			factor = 2
+			has_province_modifier = "suppress_minority"
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { is_core = THIS }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { stability = -2 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			nationalism = 20
+		}
+		modifier = {
+			factor = 1.5
+			nationalism = 10
+		}
+		modifier = {
+			factor = 1.5
+			nationalism = 1
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { primary_culture = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				NOT = { religion_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				accepted_culture = THIS
+			}
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.0
+			controller = { primary_culture = REB }
+		}
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		culture = REB
+ 	}
+	siege_won_effect = {
+		nationalism = 10 # Add ten extra years of nationalism
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		any_owned_province = { controlled_by = REB }
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	demands_accepted_effect = {
+		prestige = -0.15
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "local_autonomy"
+				duration = 7200
+			}
+		}
+	}
+
+	# Country scope
+	demands_enforced_effect = {
+		random_owned = {
+			limit = { culture = REB }
+			secede_province = REB
+		}
+		random_owned = {
+			limit = { culture = REB }
+			secede_province = REB
+		}
+		random_owned = {
+			limit = { religion = REB }
+			secede_province = REB
+		}
+		random_owned = {
+			limit = { religion = REB }
+			secede_province = REB
+		}
+	}
+}
+
+####################################
+#地方豪强
+####################################
+colonial_rebels = {
+
+	area = all 			
+	government = anti	
+	defection = any
+	independence = none	
+	defect_delay = 48
+	unit_transfer = yes
+	
+	resilient = yes
+	reinforcing = no
+	general = yes
+	smart = yes
+	
+	artillery = 0.1
+	infantry = 0.7
+	cavalry = 0.2
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 2
+		modifier = {
+			factor = 2.5
+			NOT = { is_core = THIS }
+		}
+		modifier = {
+			factor = 2.5
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = {
+			factor = 2.5
+			owner = {
+				NOT = { stability = -2 }
+			}
+		}
+		modifier = {
+			factor = 3
+			NOT = { citysize = 10000 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { citysize = 5000 }
+		}
+		modifier = {
+			factor = 5
+			is_overseas = yes
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 4
+			culture = REB
+		}
+		modifier = {
+			factor = 2
+			religion = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 	}
+	siege_won_effect = {
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		any_owned_province = { controlled_by = REB }
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	demands_accepted_effect = {
+		prestige = -0.15
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "local_autonomy"
+				duration = 7200
+			}
+		}
+	}
+	
+	# Country scope
+	demands_enforced_effect = {
+		prestige = -0.25
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "local_autonomy"
+				duration = 7200
+			}
+		}
+	}
+}
+
+##############################################
+#公家叛军
+##############################################
+noble_rebels = {
+
+
+	area = nation 				# Stays within the nation
+	government = monarchy		# Likes monarchy
+	defection = any		# Does not defect
+	defect_delay = 120
+	independence = none		# Does not strive for independence
+	unit_transfer = yes
+	
+	resilient = yes
+	reinforcing = yes
+	general = yes
+	smart = yes
+	
+	artillery = 0.3
+	infantry = 0.4
+	cavalry = 0.3
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.0
+			owner = {
+				NOT = { government = monarchy }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { aristocracy_plutocracy = -1 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { aristocracy_plutocracy = -3 }
+			}
+		}
+		modifier = {
+			factor = 0.7
+			owner = {
+				aristocracy_plutocracy = 1
+			}
+		}
+		modifier = {
+			factor = 0.7
+			owner = {
+				aristocracy_plutocracy = 3
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				NOT = { centralization_decentralization = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				serfdom_freesubjects = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				serfdom_freesubjects = 3
+			}
+		}
+		modifier = {
+			factor = 3
+			has_province_modifier = noble_territory
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+	}
+	siege_won_effect = {
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		war = no
+		any_owned_province = { controlled_by = REB }
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country Scope	
+	demands_accepted_effect = {
+		prestige = -0.33
+		legitimacy = -0.33
+		years_of_income = -0.5
+		aristocracy_plutocracy = -3
+		serfdom_freesubjects = -1
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "noble_territory"
+				duration = -1
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = vassal_territory
+		}
+	}
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		aristocracy_plutocracy = -5
+		serfdom_freesubjects = -3
+		innovative_narrowminded = 2
+		any_owned = {
+			limit = {
+				controlled_by = REB
+			}
+			add_province_modifier = {
+				name = "noble_territory"
+				duration = -1
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = vassal_territory
+		}
+	}
+}
+
+############################################
+#墨者
+############################################
+religious_rebels = {
+
+	area = all 
+	government = theocracy
+	defection = religion		
+	defect_delay = 24		
+	independence = religion	
+	unit_transfer = yes
+	
+	resilient = yes
+	reinforcing = yes
+	general = yes
+	smart = yes
+	
+	artillery = 0.2
+	infantry = 0.6
+	cavalry = 0.2
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0.001
+			NOT = { has_global_flag = mojiachuanbo }
+		}
+		modifier = {
+			factor = 0.01
+			NOT = { year = 2250 }
+		}
+		modifier = {
+			factor = 1.75
+			year = 2300
+		}
+		modifier = {
+			factor = 1.75
+			year = 2350
+		}
+		modifier = {
+			factor = 2
+			year = 2400
+		}
+		modifier = {
+			factor = 0.33
+			owner = { religion = mojia }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { idea = deus_vult }
+		}
+		modifier = {
+			factor = 0.1
+			tolerance_to_this = 5
+		}
+		modifier = {
+			factor = 0.5
+			tolerance_to_this = 3
+		}
+		modifier = {
+			factor = 0.5
+			tolerance_to_this = 1
+		}
+		modifier = {
+			factor = 5
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 5
+			NOT = { religion = mojia }
+			any_neighbor_province = { religion = mojia }
+			NOT ={ owner = { religion = mojia } }
+		}
+		modifier = {
+			factor = 8
+			religion = mojia
+			NOT ={ owner = { religion = mojia } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { tolerance_to_this = -1 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { tolerance_to_this = -2 }
+		}
+               	modifier = {
+			factor = 0.01
+			NOT = { has_global_flag = zhanguokaishi }
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 0.0
+			religion = REB
+			NOT = { owner = { religion =mojia } }
+		}
+		modifier = {
+			factor = 2.0
+			religion = mojia
+	 	}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		NOT = { religion = mojia }
+ 	}
+	siege_won_effect = {
+		religion = mojia 
+		add_province_modifier = {
+			name = "forced_conversion"
+			duration = 730
+		}
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		war = no
+		any_owned_province = { controlled_by = REB }
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country Scope	
+	demands_accepted_effect = {
+		prestige = -0.25
+		religion = mojia 
+		stability = -3
+		force_converted = yes
+	}
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		prestige = -0.5
+		religion = mojia 			
+		force_converted = yes
+		stability = -2
+		government = REB
+	}
+}
+
+############
+#异端人士
+############
+heretic_rebels = {
+
+	area = religion 	
+	government = monarchy
+	defection = religion	
+	defect_delay = 120
+	independence = none	
+	unit_transfer = yes
+	
+	resilient = yes
+	reinforcing = no
+	general = yes
+	smart = yes
+	
+	artillery = 0.1
+	infantry = 0.75
+	cavalry = 0.15
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.25
+			NOT = { owner = { religion = THIS } }
+		}
+		modifier = {
+			factor = 0
+			owner = { has_country_modifier = "heretic_country" }
+		}
+		modifier = {
+			factor = 3
+			year = 2350
+		}
+		modifier = {
+			factor = 5
+			has_province_modifier = "heresy"
+		}
+		modifier = {
+			factor = 2
+			owner = { religion = liyuejiaohua }
+			
+		}
+		modifier = {
+			factor = 2
+			owner = { religion = liyuebadao }
+			
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion_group = christian }
+			
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				innovative_narrowminded = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				innovative_narrowminded = 3
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				innovative_narrowminded = 5
+			}
+		}
+		
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.001
+			has_province_modifier = "heresy"
+		}
+		modifier = {
+			factor = 0.001
+			owner = { has_country_modifier = "heretic_country" }
+		}
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		NOT = { 
+ 			has_province_modifier = "heresy" 
+ 		}
+ 		NOT = { 
+ 			owner = {
+ 				has_country_modifier = "heretic_country" 
+ 			}
+ 		}
+	}
+	siege_won_effect = {
+		add_province_modifier = {
+			name = "heresy"
+			duration = 730
+		}
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		war = no
+		any_owned_province = { controlled_by = REB }
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country Scope	
+	demands_accepted_effect = {
+		prestige = -0.25
+		any_owned = {
+			limit = { has_province_modifier = "heresy" }
+			remove_province_modifier = "heresy"
+		}
+		add_country_modifier = {
+			name = "heretic_country"
+			duration = 1825
+		}
+		random = {
+			chance = 25
+			 religion = rujia  
+		}
+		random = {
+			chance = 25
+			 religion = fajia 
+		}
+		random = {
+			chance = 25
+			 religion = daojia
+		}
+		random = {
+			chance = 25
+			 religion = mojia
+		}
+	}
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		prestige = -0.25
+		any_owned = {
+			limit = { has_province_modifier = "heresy" }
+			remove_province_modifier = "heresy"
+		}
+		add_country_modifier = {
+			name = "heretic_country"
+			duration = 3650
+		}
+		random = {
+			chance = 25
+			 religion = rujia  
+		}
+		random = {
+			chance = 25
+			 religion = fajia 
+		}
+		random = {
+			chance = 25
+			 religion = daojia
+		}
+		random = {
+			chance = 25
+			 religion = mojia
+		}
+	}
+}
+
+##############################################
+#篡位叛军
+##############################################
+pretender_rebels = {
+	
+	area = nation
+	government = monarchy
+	defection = none
+	independence = none	
+	unit_transfer = yes
+	
+	resilient = yes				
+	reinforcing = yes		
+	general = yes	
+	smart = yes
+	disband_on_leader_death = yes 	
+	
+	artillery = 0.25
+	infantry = 0.5
+	cavalry = 0.25
+	
+	spawn_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0.25
+			owner = {
+				government = republic
+				NOT = { serfdom_freesubjects = 2 }
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				government = monarchy
+				regency = yes
+				has_heir = no
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				government = monarchy
+				regency = yes
+				has_heir = yes
+				NOT = { heir_claim = 33 }
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				government = monarchy
+				regency = yes
+				has_heir = yes
+				NOT = { heir_claim = 66 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				government = monarchy
+				regency = yes
+				has_heir = yes
+				NOT = { heir_claim = 85 }
+			}
+		}
+		modifier = {
+			factor = 2.5
+			owner = {
+				is_lesser_in_union = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { aristocracy_plutocracy = 0 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { aristocracy_plutocracy = -2 }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				NOT = { primary_culture = THIS }
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_core = THIS }
+			any_core = {
+				primary_culture = THIS
+	 		}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				government = monarchy
+				legitimacy = 66
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				government = monarchy
+				legitimacy = 75
+			}
+		}
+		modifier = {
+			factor = 4
+			owner = { has_country_flag = time_of_troubles }
+		}
+		modifier = {
+			factor = 10
+			owner = { has_country_modifier = "tribal_succession_crisis" }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				OR = {
+					government = tribal_despotism
+					government = tribal_federation
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 4.0
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 	}
+	siege_won_effect = {
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		always = no
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+	# Country Scope	
+	demands_accepted_effect = {
+		prestige = -0.75
+		government = REB
+		define_ruler = {
+			rebel = yes
+		}
+		stability = -2
+		aristocracy_plutocracy = -1
+	}
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		government = REB
+		define_ruler = {
+			rebel = yes
+		}
+		aristocracy_plutocracy = -2
+		serfdom_freesubjects = -1
+		stability = -2
+	}
+}
+
+
+#######################################
+#反动叛军
+#######################################
+reactionary_rebels = {
+	
+	area = nation 				
+	government = monarchy						
+	defection = none			
+	independence = none		
+	unit_transfer = no		
+
+	resilient = yes				
+	reinforcing = yes		
+	general = yes				
+	smart = yes	
+
+	artillery = 0.1
+	infantry = 0.6
+	cavalry = 0.3
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.0
+			owner = { 
+				NOT = { has_country_modifier = western_influences }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_core = THIS
+		}
+		modifier = {
+			factor = 2.0
+			primary_culture = THIS
+		}
+		modifier = {
+			factor = 0.5
+			is_overseas = yes # Prefer other types overseas
+		}
+		modifier = {
+			factor = 0.5
+			owner = { 
+				NOT = { num_of_cities = 3 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { 
+				num_of_cities = 12
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { 
+				num_of_cities = 24
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { 
+				num_of_cities = 48
+			}
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 2.0
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 8
+		}
+	}
+
+	# Country scope
+	can_negotiate_trigger = {
+		war = no
+		any_owned_province = { controlled_by = REB }
+	}
+
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+
+	# Country scope
+	demands_accepted_effect = {
+		prestige = -0.5
+		#From western
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = chinese
+					has_country_flag = chinese_from_eastern
+				}
+			}
+			owner = { technology_group = jingchu }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = jingchu
+					has_country_flag = jingchu_from_ottoman
+				}
+			}
+			owner = { technology_group = chinese }
+		}
+		#From eastern
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = baiyue
+					has_country_flag = baiyue_from_muslim
+				}
+			}
+			owner = { technology_group = jingchu }
+		}
+		#From muslim
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = nomad_group
+			has_country_flag = nomad_group_from_sub_saharan
+				}
+			}
+			owner = { technology_group = chinese }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = qiguo
+					has_country_flag = qiguo_from_new_world
+				}
+			}
+			owner = { technology_group = yanguo }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = yanguo
+					has_country_flag = yanguo_from_indian
+				}
+			}
+			owner = { technology_group = qiguo }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = zhaoguo
+					has_country_flag = zhaoguo_from_chinese
+				}
+			}
+			owner = { technology_group = qinguo }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = qinguo
+					has_country_flag = qinguo_from_nomad_group
+				}
+			}
+			owner = { technology_group = zhaoguo }
+		}
+	}
+
+	# Country scope
+	demands_enforced_effect = {
+		#From western
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = chinese
+					has_country_flag = chinese_from_eastern
+				}
+			}
+			owner = { technology_group = jingchu }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = jingchu
+					has_country_flag = jingchu_from_ottoman
+				}
+			}
+			owner = { technology_group = chinese }
+		}
+		#From eastern
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = baiyue
+					has_country_flag = baiyue_from_muslim
+				}
+			}
+			owner = { technology_group = jingchu }
+		}
+		#From muslim
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = nomad_group
+			has_country_flag = nomad_group_from_sub_saharan
+				}
+			}
+			owner = { technology_group = chinese }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = qiguo
+					has_country_flag = qiguo_from_new_world
+				}
+			}
+			owner = { technology_group = yanguo }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = yanguo
+					has_country_flag = yanguo_from_indian
+				}
+			}
+			owner = { technology_group = qiguo }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = zhaoguo
+					has_country_flag = zhaoguo_from_chinese
+				}
+			}
+			owner = { technology_group = qinguo }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					technology_group = qinguo
+					has_country_flag = qinguo_from_nomad_group
+				}
+			}
+			owner = { technology_group = zhaoguo }
+		}
+	}
+}
+
+##############################################
+# 蛮族
+##############################################
+barbarian_rebels = {
+
+	area = all 				# Stays within the nation
+	government = monarchy			
+	defection = any				# Does not defect
+	defect_delay = 90                              #必须在90月里消灭敌军
+	independence = none				# Does not strive for independence
+	unit_transfer = no
+	
+	resilient = yes
+	reinforcing = no
+	general = yes
+	smart = yes
+	
+	artillery = 0.0
+	infantry = 0.5
+	cavalry = 0.5
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.0
+			is_core = yes
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.60
+			is_colonial = yes
+		}
+		modifier = {
+			factor = 2.00
+			NOT = { is_core = THIS }
+		}
+		modifier = {
+			factor = 0.45
+			is_capital = yes
+			owner = {
+			 	ai = yes
+		 		}
+		}
+		modifier = {
+			factor = 0.70
+			owner = {
+			 	tag = QIN
+		 		}
+		}
+		modifier = {
+			factor = 0.00
+			has_province_modifier = youmuminjielue
+		}
+		modifier = {
+			factor = 1.25
+			citysize = 25000
+		}
+		modifier = {
+			factor = 1.35
+			citysize = 30000
+		}
+		modifier = {
+			factor = 1.50
+			citysize = 40000
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				tribal = yes
+			}
+		}
+		modifier = {
+			factor = 0.2
+			owner = {
+				tribal = yes
+				NOT = { num_of_cities = 15 }
+				NOT = { monthly_income = 5 }
+			}
+		}
+		modifier = {
+			factor = 0.0
+			NOT = { citysize = 20000 }
+			owner = {
+				tribal = yes
+				NOT = { num_of_cities = 15 }
+				NOT = { monthly_income = 5 }
+			}
+		}
+		modifier = {
+			factor = 2.00
+			has_province_modifier = hejieshibai
+		}
+		modifier = {
+			factor = 0.50
+			has_province_modifier = hejiechenggong
+		}
+		modifier = {
+			factor = 0.85
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.55
+			units_in_province = 5
+		}
+		modifier = {
+			factor = 0.1
+			units_in_province = 10
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+	}
+ 
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		NOT = { has_province_modifier = "youmuminjielue" }
+		or = {
+			owner = {
+				tribal = yes
+				num_of_cities = 15
+			}
+			owner = {
+				tribal = no
+			}
+			owner = {
+				tribal = yes
+				monthly_income = 5
+			}
+			AND = {
+				owner = {
+					tribal = yes
+				}
+				citysize = 20000
+			}
+		}
+ 	}
+	siege_won_effect = {
+		#remove_building = constable 
+		native_hostileness = 2
+		native_size = 1
+		remove_province_modifier = kaishizhunbei
+		remove_province_modifier = afangyumanzu
+		add_province_modifier = {
+			name = "youmuminjielue"
+			duration = 1460
+		}
+	}
+
+	# Country scope
+	can_negotiate_trigger = {
+		any_owned_province = { controlled_by = REB }
+		treasury = 200	
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+ 			NOT = { has_country_modifier = "fanduimanzu" }
+			tribal = no
+			capital_scope = {
+				controlled_by = REB
+			}
+	}
+	
+	# Country Scope	
+	demands_accepted_effect = {
+		prestige = -0.5
+		stability = -1
+		years_of_income = -0.25
+		random_list = {
+				50 = { 
+				 }
+				50 = { 
+						religion = animism
+						force_converted = yes
+						add_country_modifier = {
+							name = "fanduimanzu"
+							duration = 730
+						}
+				 }
+			}
+	}
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		random_list = {
+				60 = { 
+						force_converted = yes
+						add_country_modifier = {
+							name = "fanduimanzu"
+							duration = 1825
+						}
+				 }
+				20 = { 
+						religion = ancestor
+						force_converted = yes
+						add_country_modifier = {
+							name = "fanduimanzu"
+							duration = 3650
+						}
+				 }
+				20 = { 
+						religion = ancestor
+						force_converted = yes
+						add_country_modifier = {
+							name = "fanduimanzu"
+							duration = 3650
+						}
+						kill_heir = yes
+						kill_ruler = yes
+				 }
+			}
+	}
+}

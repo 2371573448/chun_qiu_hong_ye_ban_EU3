@@ -1,0 +1,4328 @@
+guiTypes = {
+
+	windowType = {
+		name = "queue_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =	{
+				name ="qband_regiment"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				quadTextureSprite = "GFX_band_regiment"
+			}
+
+
+		iconType =
+			{
+				name ="icon_type"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= -40 y = -12 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		instantTextBoxType = {
+			name = "subunit_date"
+			position = { x = 270 y =12 }
+			format = left
+
+			textureFile = ""
+			font = "Micro_white"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 160
+			maxHeight = 24	
+		}
+		
+		instantTextBoxType = {
+			position = { x = 10 y = 4 }
+			name = "unit_name"
+			font = "Main_14"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+	}
+
+
+	windowType = {
+		name = "province_decision_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType ={
+			name ="prov_decisions_banner"
+			spriteType = "GFX_prov_decisions_banner"
+			position = { x= -43 y = -23 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=0 y =-10}
+			name = "name"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_info_decision"	
+			position = { x=240 y =-13}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=290 y =-14}
+			quadTextureSprite ="GFX_execute_decision"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+	}
+
+	windowType = {
+		name = "provincepanel"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+
+		iconType =
+		{
+			name ="provincepanel_bg"
+			spriteType = "GFX_provincepanel_bg"
+			position = { x= 0 y = -472 }
+			Orientation = "LOWER_LEFT"
+		}
+		
+	
+		
+		guiButtonType =
+		{
+			name ="move_capital"
+			quadTextureSprite = "GFX_move_capital"
+			position = { x = 525 y = -292 }
+			Orientation = "LOWER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="have_capital"
+			spriteType = "GFX_have_capital"
+			position = { x = 525 y = -293 }
+			Orientation = "LOWER_LEFT"
+		}
+		
+		guiButtonType =
+		{
+			name ="move_focus"
+			quadTextureSprite = "GFX_move_focus"
+			position = { x = 550 y = -292 }
+			Orientation = "LOWER_LEFT"
+		}
+		iconType =
+		{
+			name ="have_focus"
+			spriteType = "GFX_have_focus"
+			position = { x = 550 y = -293 }
+			Orientation = "LOWER_LEFT"
+		}
+		
+		
+		editBoxType = {
+			name = "provincetext_provincename"
+			position = { x = 575 y = -292 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			size = { x=140 y=32}
+			text = ""	
+			maxWidth = 140
+			maxHeight = 32	
+			Orientation = "LOWER_LEFT"
+		}
+
+		guiButtonType = {
+				name = "closebutton"
+				position = { x = 926 y = -294 }
+				quadTextureSprite ="GFX_closebutton"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_LEFT"
+				shortcut = "ESCAPE"
+				clicksound = close_window
+			}
+
+
+
+
+
+#### Standard Province View
+
+
+		
+		windowType = {
+		name = "province_info_window"
+		backGround=""
+		position = { x=560 y=-250 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		
+		
+#		textBoxType = {
+#			name = "siege_text"
+#			position = { x = 81 y = -35 }
+#			textureFile = ""
+#			font = "Main_16"
+#			borderSize = {x = 0 y = 0}	
+#			text = "XXX OCCUPIED BY XXXX"	
+#			maxWidth = 277
+#			maxHeight = 32		
+#			format = right
+#		}
+
+			
+			iconType =
+			{
+				name ="strait_indicator"
+				spriteType = "GFX_strait"
+				position = { x= 360 y = 190 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			
+
+
+
+			### end of general info
+
+			iconType =
+			{
+				name ="vertical_divider_type_2"
+				spriteType = "GFX_vertical_divider_type_2"
+				position = { x= -36 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="cash_picture"
+				spriteType = "GFX_cash_picture"
+				position = { x= 230 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="resource_icon"
+				spriteType = "GFX_resource_icon"
+				position = { x= 230 y = 64 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="province_religion_icon"
+				spriteType = "GFX_icon_religion"
+				position = { x= 155 y = 00 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			textBoxType = {
+				name = "provincetext_centeroftrade_label"
+				position = { x = 246 y = 126 }
+				textureFile = ""
+				font = "Main_14"	
+				borderSize = {x = 4 y = 4}	
+				text = "PW_CENTER_OF_TRADE"	
+				maxWidth = 128
+				maxHeight = 32	
+
+				format = centre	
+				
+			}
+
+
+			guiButtonType = {
+				name = "Center_of_trade_button"
+				position = { x=246 y =140}
+				quadTextureSprite ="largefloaterbutton"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+#				shortcut = "c"
+			}
+
+			guiButtonType = {
+				name = "create_cot"
+				position = { x=358 y =120}
+				quadTextureSprite ="create_cot_gfx"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "destroy_cot"
+				position = { x=358 y =120}
+				quadTextureSprite ="destroy_cot_gfx"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+			
+			### Income
+
+			textBoxType = {
+				name = "provincetext_tax_label"
+				position = { x = 295 y = -1 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_TAX"	
+				maxWidth = 64
+				maxHeight = 32	
+
+				format = left	
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_tax_value"
+				position = { x = 295 y = -1 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format = right	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_tariff_label"
+				position = { x = 295 y = 12 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_TARIFF"	
+				maxWidth = 64
+				maxHeight = 32	
+
+				format = left	
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_tariff_value"
+				position = { x = 295 y = 12 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format = right	
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_production_label"
+				position = { x = 295 y = 25 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_PRODUCTION"	
+				maxWidth = 72
+				maxHeight = 32	
+
+				format = left	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_production_value"
+				position = { x = 295 y = 25 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format = right	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_totalincome_label"
+				position = { x = 295 y = 38 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_TOTAL"	
+				maxWidth = 128
+				maxHeight = 32	
+
+				format = left
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_totalincome_value"
+				position = { x = 295 y = 38 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format = right
+				
+			}
+		
+			
+			textBoxType = {
+				name = "provincetext_resource_units"
+				position = { x = 295 y = 73 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 0}	
+				text = ""	
+				maxWidth = 128
+				maxHeight = 32	
+
+				format = left	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_resource_price_label"
+				position = { x = 295 y = 89 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 0}	
+				text = "PW_PRICE"	
+				maxWidth = 128
+				maxHeight = 32	
+
+				format = left	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_resource_price_value"
+				position = { x = 295 y = 89}
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 0}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format = right	
+				
+			}
+			
+			textBoxType = {
+				name = "provincetext_resource_trade_label"
+				position = { x = 295 y = 105 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 0}	
+				text = "PW_TRADE_VALUE"	
+				maxWidth = 128
+				maxHeight = 16	
+
+				format = left	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_resource_trade_value"
+				position = { x = 295 y = 105 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 0}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 16
+
+				format = right	
+				
+			}
+
+
+			guiButtonType =
+			{
+				name ="province_history"
+				quadTextureSprite = "GFX_province_history_button"
+				position = { x = -23 y = -102 }
+				Orientation = "LOWER_LEFT"
+			}
+			
+			##### Build buttons
+			
+			guiButtonType = {
+				name = "decision_button"
+				quadTextureSprite ="GFX_province_decision"	
+				position = { x=-35 y =192}
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = " "
+				buttonFont = "Main_14_black"
+#				shortcut = "d"
+			}
+
+
+
+
+			guiButtonType = {
+				name = "build_landunit_button"
+				position = { x=15 y =192}
+				quadTextureSprite ="GFX_build_army"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = " "
+				buttonFont = "Main_14_black"
+				clicksound = build_army
+#				shortcut = "a"
+			}
+
+			guiButtonType = {
+				name = "build_merc_button"
+				position = { x=65 y =192}
+				quadTextureSprite ="GFX_build_merc"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = " "
+				buttonFont = "Main_14_black"
+				clicksound = build_army
+#				shortcut = "m"
+			}
+			
+			guiButtonType = {
+				name = "build_navy_button"
+				position = { x = 115 y = 192}
+				quadTextureSprite ="GFX_build_navy"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = " "
+				buttonFont = "Main_14_black"
+				clicksound = build_navy
+#				shortcut = "n"
+			}
+			
+			
+			
+	
+
+			#guiButtonType = {
+			#	name = "send_spy_button"
+			#	position = { x=0 y =150}
+			#	quadTextureSprite ="button_envoy"	
+			#	tooltip = ""
+			#	tooltipText =""
+			#	delayedTooltipText = ""
+			#	buttonText = "Send"
+			#	buttonFont = "Main_14_black"
+			#}
+
+			#iconType =
+			#{
+			#	name ="icon_spy"
+			#	spriteType = "GFX_icon_spy"
+			#	position = { x= 17 y = 158 }
+			#	Orientation = "UPPER_LEFT"
+			#}
+
+
+			iconType =
+				{
+					name ="frame_horde_colonize"
+					spriteType = "GFX_frame_missionary"
+					position = { x= 150 y = 65 }
+					Orientation = "UPPER_LEFT"
+				}
+			
+			guiButtonType = {
+				name = "colonize_button"
+				position = { x=155 y =79 }
+				quadTextureSprite ="button_envoy_colonist"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "PW_SEND"
+				buttonFont = "Main_14_black"
+			}
+			
+			instantTextBoxType = {
+				name = "provincetext_colonists_value"
+				position = { x = 184 y = 145 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}	
+				text = "0"	
+				maxWidth = 64
+				maxHeight = 32		
+
+				format = left			
+			}
+			
+			iconType =
+			{
+				name ="colonist_shield"
+				spriteType = "GFX_minishield"
+				position = { x= 155 y = 140 }
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+			
+			instantTextBoxType = {
+				name = "provincetext_myprovince_colonists_value"
+				position = { x = 184 y = 190 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}	
+				text = "0"	
+				maxWidth = 64
+				maxHeight = 32		
+
+				format = left			
+			}
+			
+			iconType =
+			{
+				name ="colonist_myprovince_shield"
+				spriteType = "GFX_minishield"
+				position = { x= 155 y = 190 }
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+
+
+			windowType = {
+				name = "send_missionary_window"
+				backGround=""
+				position = { x=150 y=65 }	
+				size = { x=128 y=128 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="frame"
+					spriteType = "GFX_frame_missionary"
+					position = { x= 0 y = 0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "send_envoy_button"
+					position = { x=5 y = 5}
+					quadTextureSprite ="button_envoy_missionary"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "PW_SEND"
+					buttonFont = "Main_14_black"
+				}
+
+				#iconType =
+				#{
+				#	name ="icon_missionary"
+				#	spriteType = "GFX_icon_missionary"
+				#	position = { x= 22 y = 13 }
+				#	Orientation = "UPPER_LEFT"
+				#}
+
+				iconType =
+				{
+					name ="icon_gold"
+					spriteType = "GFX_icon_gold"
+					position = { x= 50 y = 64 }
+					Orientation = "UPPER_LEFT"
+					scale = 0.5
+				}
+
+				instantTextBoxType = {
+					name = "missionary_cost"
+					position = { x = 12 y = 64 }
+					textureFile = ""
+					font = "Main_16"
+					borderSize = {x = 1 y = 1}
+					text = ""	
+					maxWidth = 46
+					maxHeight = 30
+			
+					Orientation = "UPPER_LEFT"	
+					format = left
+		
+				}
+
+				instantTextBoxType = {
+					name = "missionary_successchance"
+					position = { x = 0 y = 86 }
+					textureFile = ""
+					font = "Main_14"
+					borderSize = {x = 1 y = 1}
+					text = ""	
+					maxWidth = 72
+					maxHeight = 30
+			
+					Orientation = "UPPER_LEFT"	
+					format = centre
+		
+				}
+
+			}
+
+			editBoxType = {
+				name = "provincetext_capital"
+				position = { x = -4 y = -6 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}	
+				size = { x=140 y=32}
+				text = ""	
+				maxWidth = 140
+				maxHeight = 24	
+			}
+
+			textBoxType = {
+				name = "provincetext_generalinfo"
+				position = { x = 0 y = 14 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 128
+				maxHeight = 32	
+			}
+			
+
+			textBoxType = {
+				name = "provincetext_growth_label"
+				position = { x = 0 y = 30 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_GROWTH"	
+				maxWidth = 128
+				maxHeight = 32	
+				
+			}
+			
+			textBoxType = {
+				name = "provincetext_growth"
+				position = { x = 50 y = 30 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32
+
+				format = right		
+				
+			}
+			
+
+			textBoxType = {
+				name = "provincetext_supplylimit_label"
+				position = { x = 0 y = 45 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_SUPPLY_LIMIT"	
+				maxWidth = 128
+				maxHeight = 32		
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_supplylimit_value"
+				position = { x = 50 y = 45 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32
+
+				format = right		
+				
+			}
+
+						
+			textBoxType = {
+				name = "provincetext_maxattrition_label"
+					position = { x = 0 y = 60 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_MAX_ATTRITION"	
+				maxWidth = 128
+				maxHeight = 32		
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_maxattrition_value"
+				position = { x = 50 y = 60 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32		
+				
+
+				format = right	
+			}
+
+			textBoxType = {
+				name = "provincetext_revoltrisk_label"
+				position = { x = 0 y = 75 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_REVOLT_RISK"	
+				maxWidth = 100
+				maxHeight = 32		
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_revoltrisk_value"
+				position = { x = 50 y = 75 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32		
+
+				format = right	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_culture_label"
+				position = { x = 0 y = 90 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_CULTURE"	
+				maxWidth = 128
+				maxHeight = 32		
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_culture_value"
+				position = { x = 50 y = 90 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32
+
+				format = right			
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_manpower_label"
+				position = { x = 0 y = 105 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_MANPOWER"	
+				maxWidth = 128
+				maxHeight = 32		
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_manpower_value"
+				position = { x = 50 y = 105 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32		
+
+				format = right	
+				
+			}
+			
+			textBoxType = {
+				name = "provincetext_stab_cost_label"
+				position = { x = 0 y = 120 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_STAB_COST"	
+				maxWidth = 128
+				maxHeight = 32		
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_stab_cost_value"
+				position = { x = 50 y = 120 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32		
+
+				format = right	
+				
+			}			
+
+			textBoxType = {
+				name = "provincetext_garrison_label"
+				position = { x = 55 y = 148 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}	
+				text = "PW_GARRISON"	
+				maxWidth = 100
+				maxHeight = 32		
+				
+			}
+
+
+			textBoxType = {
+				name = "provincetext_garrison_value"
+				position = { x = 45 y = 148}
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 100
+				maxHeight = 32		
+
+				format = right	
+				
+			}
+
+			textBoxType = {
+				name = "provincetext_fortification_value"
+				position = { x = 25 y = 148 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}	
+				text = ""	
+				maxWidth = 32
+				maxHeight = 32		
+
+				format = left	
+				
+			}
+			
+			iconType =
+			{
+				name ="siege_indicator"
+				spriteType = "GFX_siege_indicator"
+				position = { x= -9956 y = 104 }
+			}
+			
+			textBoxType = {
+				name = "siege_text"
+				position = { x = 0 y = 176 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}	
+				text = "XXX OCCUPIED BY XXXX"	
+				maxWidth = 178
+				maxHeight = 32
+
+				format = left	
+				
+			}
+
+		}
+
+###### HISTORY
+	windowType = {
+		name = "province_history_window"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		upsound = court_click
+
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_bg_province_history"
+				position = { x= 16 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}	
+
+		guiButtonType = {
+			name = "back_button"
+			position = { x=294 y =-30}
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+		listboxType = {
+			name = "history_list"
+			position = { x = 16 y = 0 }
+			backGround=""
+			size = { x=400 y = 250}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+	}
+
+
+
+###### CENTER OF TRADE
+
+	windowType = {
+		name = "marketplace"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		upsound = marketplace
+
+		iconType =
+			{
+				name ="COT_bg"
+				spriteType = "GFX_COT_bg"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	
+
+		textBoxType = {
+			name = "provincetext_info"
+			position = { x = 540 y = 240 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 128
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+
+		guiButtonType = {
+			name = "Back_Button"
+			position = { x=294 y =-30}
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+	
+			
+
+			guiButtonType = {
+				name = "send_merchant_button"
+				position = { x=116 y = 163}
+				quadTextureSprite ="button_envoy_merchant"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "SEND_OFFER"
+				buttonFont = "Main_14_black"
+			}
+
+	guiButtonType = {
+				name = "ledger_shortcut"
+				position = { x=396 y = 150}
+				quadTextureSprite ="GFX_ledger_shortcut"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+			
+			guiButtonType = {
+				name = "autosend_priorities"
+				position = { x=142 y = 50}
+				quadTextureSprite ="GFX_autosend_priorities"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+			
+			textBoxType = {
+				name = "autosend_label"
+				position = { x = 115 y = 10 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}
+				text = "Autosend Priority"	
+				maxWidth = 64
+				maxHeight = 40
+				Orientation = "UPPER_LEFT"
+			}	
+
+
+
+	
+			#iconType =
+			#{
+			#	name ="icon_merchant"
+			#	spriteType = "GFX_icon_merchant"
+			#	position = { x= 132 y = 191 }
+			#	Orientation = "UPPER_LEFT"
+			#}
+
+		iconType =
+		{
+			name ="icon_gold_cot"
+			spriteType = "GFX_icon_gold"
+			position = { x= 95 y = 165 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+
+		instantTextBoxType = {
+			name = "merchant_cost"
+			position = { x = 70 y = 175 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 1 y = 1}
+			text = ""	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = left
+	
+		}
+
+		instantTextBoxType = {
+			name = "merchant_successchance"
+			position = { x = 55 y = 200 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = ""	
+			maxWidth = 62
+			maxHeight = 20
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+		}
+
+		instantTextBoxType = {
+			name = "free_slots"
+			position = { x = 5 y = 220 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 1 y = 1}
+			text = ""	
+			maxWidth = 170
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+		}
+
+
+			guiButtonType = {
+				name = "abandon_merchants"
+				position = { x=-24 y =208}
+				quadTextureSprite ="largefloaterbutton"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "ABANDON_MERCHANT"
+				buttonFont = "Main_14_black"
+			}
+
+
+		instantTextBoxType = {
+			name = "monopoly_label"
+			position = { x = 200 y = 14 }
+			textureFile = ""
+			font = "Main_14_plain"
+			borderSize = {x = 1 y = 1}
+			text = "PW_MONOPOLY"	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = left
+	
+	
+		}
+
+			
+		instantTextBoxType = {
+			name = "totalvalueoftrade_label"
+			position = { x = 270 y = 14 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = "PW_VALUE_OF_TRADE"	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+	
+		}
+
+
+		iconType =
+		{
+			name ="icon_gold2"
+			spriteType = "GFX_icon_gold"
+			position = { x= 400 y = 28 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		iconType =
+		{
+			name ="icon_gold3"
+			spriteType = "GFX_icon_gold"
+			position = { x= 400 y = 70 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		instantTextBoxType = {
+			name = "totalvalueoftrade_value"
+			position = { x = 250 y = 28 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 1 y = 1}
+			text = ""	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+	
+		}
+
+		instantTextBoxType = {
+			name = "valueofourtrade_label"
+			position = { x = 270 y = 56 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = "PW_VALUE_OF_OUR_TRADE"	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+	
+		}
+
+		instantTextBoxType = {
+			name = "valueofourtrade_value"
+			position = { x = 250 y = 70 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 1 y = 1}
+			text = ""	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+	
+		}
+
+		instantTextBoxType = {
+			name = "merchantsenroute_label"
+			position = { x = 270 y = 98 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 1 y = 1}
+			text = "PW_MERCHANT_ENROUTE"	
+			maxWidth = 150
+			maxHeight = 30
+	
+			Orientation = "UPPER_LEFT"	
+			format = right
+	
+	
+		}
+
+
+		}
+		
+
+
+
+
+
+###### BUILD UNIT
+
+windowType = {
+		name = "regimental_camp"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		upsound = regimental_camp
+
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_build_army_bg"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}	
+
+		guiButtonType = {
+			name = "Back_Button"
+			position = { x=294 y =-30}
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		textBoxType = {
+			name = "label_type"
+			position = { x = 24 y = 2 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "PW_PREGIMENTS"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+
+		textBoxType = {
+			name = "label_fire"
+			position = { x = 196 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_FIRE"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_shock"
+			position = { x = 232 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_SHOCK"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_morale"
+			position = { x = 268 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_MORALE"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_buildq"
+			position = { x = 60 y = 142 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "Build Queue has x"	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		listboxType = {
+			name = "buildqueue"
+			position = { x = 40 y = 156 }
+			backGround=""
+			size = { x=360 y = 96}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+
+
+
+
+
+
+}
+		
+
+
+###### BUILD MERC
+
+windowType = {
+		name = "mercenary_camp"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		upsound = regimental_camp
+
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_build_army_bg"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}	
+
+		guiButtonType = {
+			name = "Back_Button"
+			position = { x=294 y =-30}
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+
+
+
+		textBoxType = {
+			name = "label_merc"
+			position = { x = 24 y = 2 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "PW_MERCENARY_REGIMENTS"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+
+		textBoxType = {
+			name = "label_merc_fire"
+			position = { x = 196 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_FIRE"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_merc_shock"
+			position = { x = 232 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_SHOCK"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_merc_morale"
+			position = { x = 268 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_MORALE"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		textBoxType = {
+			name = "label_buildq"
+			position = { x = 60 y = 142 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "Build Queue has x"	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		listboxType = {
+			name = "buildqueue"
+			position = { x = 40 y = 156 }
+			backGround=""
+			size = { x=360 y = 96}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+
+
+
+
+
+}
+
+
+
+
+###### BUILD Navy
+
+windowType = {
+		name = "shipyard"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		upsound = shipyard
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_build_navy_bg"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}	
+
+		guiButtonType = {
+			name = "Back_Button"
+			position = { x=294 y =-30}
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		textBoxType = {
+			name = "label_type"
+			position = { x = 24 y = 2 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "PW_PREGIMENTS"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+
+
+		textBoxType = {
+			name = "label_size"
+			position = { x = 196 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_SIZE"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_cannons"
+			position = { x = 232 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_CANNONS"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_speed"
+			position = { x = 268 y = 2 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_SPEED"	
+			maxWidth = 52
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		textBoxType = {
+			name = "label_buildq"
+			position = { x = 60 y = 142 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "Build Queue has x"	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		listboxType = {
+			name = "buildqueue"
+			position = { x = 40 y = 156 }
+			backGround=""
+			size = { x=360 y = 96}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+
+
+
+
+}
+
+
+###### PROVINCE DECISIONS
+
+windowType = {
+		name = "decisions_view"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		upsound = court_click
+
+
+		iconType =
+		{
+			name ="background"
+			spriteType = "GFX_prov_decisions_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		textBoxType = {
+			name = "label_prov_decisions"
+			position = { x = 10 y = 2 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PROV_DECISION_BUTTON"	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		listboxType = 
+		{
+			name ="decisions_listbox"
+			position = { x = 40 y = 34 }
+			backGround=""
+			size = { x=370 y = 210}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+
+		guiButtonType = {
+			name = "Back_Button"
+			position = { x=294 y =-30}
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+}
+
+##### Building interface
+windowType = {
+		name = "buildings_window"
+		backGround=""
+		position = { x=18 y=-448 }	
+		size = { x=500 y=320 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+	
+		iconType =
+			{
+				name ="building_bg"
+				spriteType = "GFX_building_bg2"
+				position = { x= -18 y = -11 }
+				Orientation = "UPPER_LEFT"
+			}
+	
+		
+		
+		listboxType = {
+			name = "buildings"
+			position = { x = -58 y = -4 }
+			backGround=""
+			size = { x=529 y = 363} 
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		instantTextBoxType = {
+			name = "one_per_country_label"
+			position = { x = 15 y = 360 }
+			textureFile = ""
+			font = "Main_14_bold"	
+			borderSize = {x = 0 y = 0}	
+			text = "PROV_UNIQUE_BUILDINGS"	
+			maxWidth = 370
+			maxHeight = 32	
+
+			format = left	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "manufactory_label"
+			position = { x = 370 y = 360 }
+			textureFile = ""
+			font = "Main_14_bold"	
+			borderSize = {x = 0 y = 0}	
+			text = "MANUFACTORY"	
+			maxWidth = 130
+			maxHeight = 32	
+
+			format = centre	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+	
+			
+		guiButtonType = {
+				name = "build_building_button"
+				position = { x=411 y =378 }
+				quadTextureSprite ="GFX_building_manufactory_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = " "
+				buttonFont = "Main_14_black"
+#				shortcut = "b"
+		}
+		iconType =
+		{
+			name ="manufactory_status"
+			spriteType = "GFX_building_status_strip"
+			position = { x= 411 y = 424 }
+		}
+		iconType =
+		{
+			name ="manufactory_progress"
+			spriteType = "GFX_building_progress"
+			position = { x= 411 y = 424 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType =
+		{
+			name ="manufactory_destroy"
+			quadTextureSprite = "GFX_building_destroy"
+			position = { x= 459 y = 390 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+}
+
+
+		
+##### Diplomatic interface
+
+windowType = {
+		name = "diplomacy"
+		backGround=""
+		position = { x=18 y=-448 }	
+		size = { x=500 y=320 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_diplomacy_bg"
+				position = { x= 3 y = 2 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+		iconType =
+			{
+				name ="countryshield"
+				spriteType = "GFX_thinshield"
+				position = { x= 222 y = 6 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="stability_icon"
+				spriteType = "GFX_icon_stability"
+				position = { x= 290 y = 46 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="religion_icon"
+				spriteType = "GFX_icon_religion"
+				position = { x= 0 y = 110 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}
+
+		textBoxType = {
+			name = "label_nation"
+			position = { x = 290 y = 0 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PW_NATION_NAMES"	
+			maxWidth = 150
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+
+		textBoxType = {
+			name = "value_stability"
+			position = { x = 320 y = 50 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 150
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+		textBoxType = {
+			name = "value_rank"
+			position = { x = 380 y = 43 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+
+		textBoxType = {
+			name = "value_prestige"
+			position = { x = 380 y = 55 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+
+
+		textBoxType = {
+			name = "label_prestige"
+			position = { x = 330 y = 55 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_PRESTIGE"	
+			maxWidth = 125
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+
+		textBoxType = {
+			name = "label_rank"
+			position = { x = 330 y = 43 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_RANK"	
+			maxWidth = 125
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+
+
+		
+
+		textBoxType = {
+			name = "label_relation"
+			position = { x = 4 y = 64 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_WE_NEUTRAL"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_relation_value"
+			position = { x = 4 y = 52 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_RELATION"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_reputation"
+			position = { x = 4  y =  76 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_REP"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}	
+		
+		textBoxType = {
+			name = "label_trust"
+			position = { x = 4  y =  88 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_TRUST"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}	
+
+		textBoxType = {
+			name = "label_ruler"
+			position = { x = 10  y =  6 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 212
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_administration"
+			position = { x = 68  y =  20 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_Administration"	
+			maxWidth = 98
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "label_diplomacy"
+			position = { x = -6  y =  20 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_DIPLOMACY"	
+			maxWidth = 98
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+
+
+		textBoxType = {
+			name = "label_warfare"
+			position = { x = 144  y =  20 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_WARFARE"	
+			maxWidth = 98
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}		
+
+		iconType =
+			{
+				name ="administration_stars"
+				spriteType = "GFX_stars"
+				position = { x= 100 y = 40 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}
+
+		iconType =
+			{
+				name ="diplomacy_stars"
+				spriteType = "GFX_stars"
+				position = { x= 30 y = 40 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}
+
+		iconType =
+			{
+				name ="warfare_stars"
+				spriteType = "GFX_stars"
+				position = { x= 170 y = 40 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+
+		textBoxType = {
+			name = "label_culture"
+			position = { x = 30  y =  105 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_CULTURE"	
+			maxWidth = 200
+			maxHeight = 64	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}	
+
+		textBoxType = {
+			name = "land_tech"
+			position = { x = 30  y =  123 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 64	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}	
+
+		textBoxType = {
+			name = "naval_tech"
+			position = { x = 110  y =  123 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 64	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}	
+
+		textBoxType = {
+			name = "label_fog"
+			position = { x = 290 y = 16 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PW_FOG"	
+			maxWidth = 180
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}		
+
+		#textBoxType = {
+		#	name = "label_diplostatus"
+		#	position = { x = 6 y = 150 }
+		#	textureFile = ""
+		#	font = "Main_14_bold"
+		#	borderSize = {x = 4 y = 4}
+		#	text = ""	
+		#	maxWidth = 220
+		#	maxHeight = 100	
+		#	Orientation = "UPPER_LEFT"
+		#	fixedsize = no
+		#	format = left
+		#}
+
+
+		listboxType = 
+			{
+			name ="label_diplostatus_list"
+			position = { x = 26 y = 150 }
+			backGround=""
+			size = { x= 173 y =217}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 4 y = 4 }
+			offset = { x=0 y = 0 }
+		}
+		
+		windowType = {
+			name = "relation_list_window"
+			backGround=""
+			position = { x=26 y=150 }	
+			size = { x=400 y=400 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			guiButtonType = {
+					name = "sortby_nation_button"
+					position = { x=0 y =0}
+					quadTextureSprite ="mini_button"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "DOMESTIC_NATION"
+					buttonFont = "Main_14_plain"
+				}
+	
+			guiButtonType = {
+					name = "sortby_relation_button"
+					position = { x=90 y =0}
+					quadTextureSprite ="mini_button"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "DOMESTIC_RELATION"
+					buttonFont = "Main_14_plain"
+				}
+	
+	
+			listboxType = 
+				{
+				name ="domestictext_relationlist"
+				position = { x = 4 y = 16 }
+				backGround=""
+				size = { x=130 y =202 }
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0}
+			}
+		}
+
+		listboxType = 
+			{
+			name ="diploaction_list"
+			position = { x = 254 y = 87 }
+			backGround=""
+			size = { x= 210 y = 338}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		guiButtonType = {
+			name = "send_spy_button"
+			position = { x=15 y =368}
+			quadTextureSprite ="button_envoy_spy"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_SEND"
+			buttonFont = "Main_14_black"
+		}
+
+		guiButtonType = {
+				name = "toggle_diploview_button"
+				position = { x=200 y = 146}
+				quadTextureSprite ="GFX_toggle"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+
+
+		
+
+		#iconType =
+		#{
+		#	name ="icon_spy"
+		#	spriteType = "GFX_icon_spy"
+		#	position = { x= 32 y = 266 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+
+		iconType =	{
+			name ="advisor_1"
+			spriteType = "GFX_greatmen"
+			###position = { x= 0 y = 280}
+			position = { x= 100 y = 387 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+
+		iconType =	{
+			name ="advisor_2"
+			spriteType = "GFX_greatmen"
+			###position = { x= 0 y = 280}
+			position = { x= 140 y = 387 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+
+		iconType =	{
+			name ="advisor_3"
+			spriteType = "GFX_greatmen"
+			###position = { x= 0 y = 280}
+			position = { x= 180 y = 387 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+
+
+}
+
+
+
+
+#### Spies
+
+windowType = {
+	name = "spies"
+	backGround=""
+	position = { x=18 y=-452 }	
+	size = { x=500 y=320 }
+	moveable = 0
+	dontRender = ""
+	horizontalBorder= ""
+	verticalBorder= ""
+	fullScreen = no
+	Orientation = "LOWER_LEFT"	
+		
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_spies_bg"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+		iconType =
+			{
+				name ="countryshield"
+				spriteType = "GFX_thinshield"
+				position = { x= 10 y = 20 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+		textBoxType = {
+			name = "label_sendspyto"
+			position = { x = 95 y = 10 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PW_SEND_SPY_TO"	
+			maxWidth = 420
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			fixedsize = no
+			format = left
+		}
+
+
+		listboxType = 
+			{
+			name ="spies_action_list"
+			position = { x = 84 y = 40 }
+			backGround=""
+			size = { x= 360 y = 352}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+	
+	textBoxType = {
+		name = "label_our_spy_eff"
+		position = { x = 30 y = 396 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = "PW_OUR_SPY_EFF"	
+		maxWidth = 100
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = left
+	}
+	textBoxType = {
+		name = "value_our_spy_eff"
+		position = { x = 120 y = 396 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = ""	
+		maxWidth = 60
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = right
+	}
+	textBoxType = {
+		name = "label_our_spy_def"
+		position = { x = 30 y = 410 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = "PW_OUR_SPY_DEF"	
+		maxWidth = 100
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = left
+	}
+	textBoxType = {
+		name = "value_our_spy_def"
+		position = { x = 120 y = 410 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = ""	
+		maxWidth = 60
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = right
+	}
+	
+	
+	
+	textBoxType = {
+		name = "label_their_spy_eff"
+		position = { x = 190 y = 396 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = "PW_THEIR_SPY_EFF"	
+		maxWidth = 100
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = left
+	}
+	textBoxType = {
+		name = "value_their_spy_eff"
+		position = { x = 280 y = 396 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = ""	
+		maxWidth = 60
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = right
+	}
+	textBoxType = {
+		name = "label_their_spy_def"
+		position = { x = 190 y = 410 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = "PW_THEIR_SPY_DEF"	
+		maxWidth = 100
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = left
+	}
+	textBoxType = {
+		name = "value_their_spy_def"
+		position = { x = 280 y = 410 }
+		textureFile = ""
+		font = "Main_16"
+		borderSize = {x = 0 y = 0}
+		text = ""	
+		maxWidth = 60
+		maxHeight = 16
+		Orientation = "UPPER_LEFT"
+		fixedsize = no
+		format = right
+	}
+		
+	guiButtonType = {
+		name = "back_button"
+		position = { x=390 y = 392}
+		quadTextureSprite ="button_type_2"	
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = "CANCEL"
+		buttonFont = "Main_14_black"
+		shortcut = "ESCAPE"
+	}
+
+}
+
+
+
+#### BUILD BUILDING
+
+
+windowType = {
+		name = "build_buildings"
+		backGround=""
+		position = { x=528 y=-258 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"	
+		
+		guiButtonType = {
+			name = "Back_Button"
+			position = { x=-353 y = 223 }
+			quadTextureSprite ="GFX_province_back_button"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			buttonText = "PW_BACK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+
+		textBoxType = {
+			name = "Text_ffff"
+			position = { x = 10 y = 2 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PW_BUILDINGS"	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format=centre
+		}
+
+		textBoxType = {
+			name = "Text_ffdfsdffdsfsdff"
+			position = { x = 10 y = 146 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PW_MANUFACTORIES"	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format=centre
+		}
+
+}
+
+   windowType = {
+		name = "building_info_window"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+	
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_building_bg"
+				position = { x= 490 y = -260 }
+				Orientation = "LOWER_LEFT"
+			}
+
+		textBoxType = {
+			name = "name"
+			position = { x = 560 y = -240 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 380
+			maxHeight = 32	
+			Orientation = "LOWER_LEFT"
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "build_year"
+			position = { x = 560 y = -200 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 380
+			maxHeight = 32	
+			Orientation = "LOWER_LEFT"
+			format = centre
+			
+		}
+		
+		textBoxType = {
+			name = "effect"
+			position = { x = 560 y = -160 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 380
+			maxHeight = 128	
+			Orientation = "LOWER_LEFT"
+			format = centre
+			
+		}
+		}
+
+
+		
+
+		
+		windowType = {
+		name = "not_defined"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+			textBoxType = {
+				name = "provincetext_info"
+				position = { x = 560 y = -240 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 1024
+				maxHeight = 32	
+				Orientation = "LOWER_LEFT"
+			}
+		
+
+
+		}
+
+
+		
+		
+		
+	}
+
+positionType = {
+name = "merchants_level_0"
+position = { x = 210 y = 30 }
+}
+
+positionType = {
+name = "merchants_level_5"
+position = { x = 200 y =201 }
+}
+
+positionType = {
+name = "merchants_level_4"
+position = { x = 200 y =171 }
+}
+
+positionType = {
+name = "merchants_level_3"
+position = { x = 200 y = 141 }
+}
+
+positionType = {
+name = "merchants_level_2"
+position = { x = 200 y =111 }
+}
+
+positionType = {
+name = "merchants_level_1"
+position = { x = 200 y =81 }
+}
+
+positionType = {
+name = "core_pos"
+position = { x=214 y = 190}
+}
+
+
+
+positionType = {
+	name = "province_modifier_offset"
+	position = { x=-32 y = 0}
+}
+
+positionType = {
+	name = "province_modifier_start"
+	position = { x = 330 y = -40 }
+}
+
+iconType =
+			{
+				name ="province_modifier"
+				spriteType = "GFX_modifier_icons"
+				position = { x = 330 y = -40 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+iconType =
+{
+	name ="MarketShield"
+	spriteType = "GFX_minishield"
+	position = { x= 200 y = 203 }
+	Orientation = "UPPER_LEFT"
+}
+
+guiButtonType =
+{
+	name ="CoreShield"
+	position = { x= 200 y = 203 }
+	quadTextureSprite = "GFX_minishield"
+	tooltip = ""
+	tooltipText =""
+	delayedTooltipText = ""
+	buttonText = ""
+	buttonFont = "Main_14_black"
+	Orientation = "UPPER_LEFT"
+}
+
+guiButtonType = {
+		name = "build_building_button"
+		position = { x=0 y =0 }
+		quadTextureSprite ="GFX_building_latingfx"	
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = "Main_14_black"
+		clicksound = build_building
+	}
+	
+iconType =
+	# Status indicator over buidling button... 1 = insufficient tech 2 = built  3 = in progress 4 = clear
+	{
+		name ="building_overlay"
+		spriteType = "GFX_ledger_building_overlay"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}
+
+positionType = {
+			name = "unique_building_start"
+			position = { x = -18 y =390 }
+}
+
+positionType = {
+			name = "unique_building_offset"
+			position = { x = 47 y =0 }
+}
+
+positionType = {
+			name = "buildingbutton_row_1"
+			position = { x = 48 y =25 }
+		}
+
+		positionType = {
+			name = "buildingbutton_row_2"
+			position = { x = 48 y =81 }
+		}
+
+		positionType = {
+			name = "buildingbutton_row_3"
+			position = { x = 48 y =168 }
+		}
+
+		positionType = {
+			name = "buildingbutton_horizontal_offset"
+			position = { x = 56 y = 0 }
+		}
+
+
+		positionType = {
+			name = "build_unit"
+			position = { x = 0 y = 24 }
+		}
+
+		positionType = {
+			name = "build_unit_offset"
+			position = { x = 0 y = 32 }
+		}
+		
+		positionType = {
+			name = "build_merc_offset"
+			position = { x = 0 y = 22 }
+		}
+
+windowType = {
+		name = "unit"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		guiButtonType = {
+				name = "build_unit_banner"
+				position = { x=4 y = 0}
+				quadTextureSprite ="GFX_band_blue"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+
+		
+		
+		iconType =
+			{
+				name ="fire_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 206 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="fire_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 206 y = 15 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="shock_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 242 y = 7}
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="shock_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 242 y = 15}
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="morale_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 278 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="morale_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 278 y = 15 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="icon_type"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 20 y = -12 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+
+		textBoxType = {
+				name = "unit_name"
+				position = { x = 60 y = 2 }
+				textureFile = ""
+				font = "Main_14_plain"
+				borderSize = {x = 4 y = 4}
+				text = "PW_UNIT_TYPE"	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				fixedsize = yes
+			}	
+
+
+		textBoxType = {
+				name = "unit_cost"
+				position = { x = 318 y = 2 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+				name = "unit_buildtime"
+				position = { x = 364 y = 2 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}	
+
+
+
+
+
+
+		}
+
+
+windowType = {
+		name = "merc"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		#iconType =
+		#	{
+		#		name ="band_green"
+		#		spriteType = "GFX_band_green"
+		#		position = { x= 14 y = 0 }
+		#		Orientation = "UPPER_LEFT"
+		#	}
+
+		guiButtonType = {
+				name = "build_unit_banner"
+				position = { x=4 y = 0}
+				quadTextureSprite ="GFX_band_green"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+
+		
+		
+		iconType =
+			{
+				name ="fire_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 206 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="fire_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 206 y = 14 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="shock_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 242 y = 7}
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="shock_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 242 y = 14}
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="morale_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 278 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="morale_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 278 y = 14 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="icon_type"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 20 y = -12 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+
+		textBoxType = {
+				name = "unit_name"
+				position = { x = 60 y = 2 }
+				textureFile = ""
+				font = "Main_14_plain"
+				borderSize = {x = 4 y = 4}
+				text = "PW_UNIT_TYPE"	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+				name = "unit_cost"
+				position = { x = 318 y = 2 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+				name = "unit_buildtime"
+				position = { x = 364 y = 2 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}	
+
+
+
+
+
+		}
+
+
+windowType = {
+		name = "naval_unit"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		guiButtonType = {
+				name = "build_unit_banner"
+				position = { x=4 y = 0}
+				quadTextureSprite ="GFX_band_blue"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+
+		
+		
+		iconType =
+			{
+				name ="size_value"
+				spriteType = "GFX_stars_small"
+				position = { x= 206 y = 11 }
+				Orientation = "UPPER_LEFT"
+			}
+
+	
+
+		iconType =
+			{
+				name ="cannons_value"
+				spriteType = "GFX_stars_small"
+				position = { x= 242 y = 11}
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="speed_value"
+				spriteType = "GFX_stars_small"
+				position = { x= 278 y = 11 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="icon_type"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 20 y = -12 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+
+		textBoxType = {
+				name = "unit_name"
+				position = { x = 60 y = 2 }
+				textureFile = ""
+				font = "Main_14_plain"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}	
+
+
+		textBoxType = {
+				name = "unit_cost"
+				position = { x = 318 y = 2 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+				name = "unit_buildtime"
+				position = { x = 364 y = 2 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 150
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}	
+
+
+
+
+
+
+		}
+
+windowType = 
+	{
+		name = "diploactionentry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=26 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType = {
+			name = "button_diploaction"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_DIPLOMACY_ACTION"
+			buttonFont = "Main_14_black"
+		}
+
+	}
+
+windowType = 
+	{
+		name = "actionentry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_spies_banner"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		guiButtonType = {
+			name = "button_diploaction"
+			position = { x=16 y =2 }
+			quadTextureSprite ="GFX_list_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_DIPLOMACY_ACTION"
+			buttonFont = "Main_14_black"
+		}
+
+		textBoxType = {
+				name = "Cost"
+				position = { x = 220 y = 5 }
+				textureFile = ""
+				font = "garamond_14_bold"
+				borderSize = {x = 4 y = 3}
+				text = ""	
+				maxWidth = 120
+				maxHeight = 32
+
+				format = cleft
+		}
+
+		textBoxType = {
+				name = "Chance"
+				position = { x = 270 y = 5 }
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 4 y = 3}
+				text = ""	
+				maxWidth = 120
+				maxHeight = 32
+
+				format = left
+		}
+	}
+
+
+##########
+##########
+
+eu3dialogtype = {
+		name = "DefaultDiplomacyDialog"
+		backGround="Background"
+		position = { x=300 y=0 }	
+		size = { x=520 y=476 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_diploconfirm_banner"
+			position = { x= 3 y = 22 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+
+		
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="opaque_blue"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		textBoxType = {
+				name = "Title"
+				position = { x = 0 y = 30 }
+				textureFile = ""
+				font = "Main_24"
+				borderSize = {x = 4 y = 6}
+				text = ""	
+				maxWidth = 520
+				maxHeight = 40
+
+				format = centre
+			}
+		
+		textBoxType = {
+				name = "Description"
+				position = { x = 110 y = 80 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 300
+				maxHeight = 200	
+
+			#	format = centre
+			}
+
+		textBoxType = {
+				name = "chance_string"
+				position = { x = 100 y = 330 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 320
+				maxHeight = 200	
+
+				format = centre
+			}
+		
+		shieldtype = 
+		{
+			name ="LeftShield"
+			spriteType = "standarddialogshield"
+			position = { x= 32 y = 80 }
+		}
+		
+		shieldtype = 
+		{
+			name ="RightShield"
+			spriteType = "standarddialogshield"
+			position = { x= 420 y = 80 }
+		}
+		
+		
+		guiButtonType = {
+			name = "AgreeButton"
+			position = { x=264 y =400}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_I_DO"
+			buttonFont = "Main_14_black"
+		}
+
+
+		guiButtonType = {
+			name = "DeclineButton"
+			position = { x=34 y =400}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_RUN_AWAY"
+			buttonFont = "Main_14_black"
+		}
+		
+		
+	}
+
+#############
+#############
+	
+eu3dialogtype = {
+		name = "DeclareWarDialog"
+		backGround="Background"
+		position = { x=300 y=0 }	
+		size = { x=520 y=476 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType =
+		{
+			name ="bg_declarewar"
+			spriteType = "GFX_bg_declarewar"
+			position = { x= 21 y = 68 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_diploconfirm_banner"
+			position = { x= 3 y = 18 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+
+		
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="opaque_blue"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		textBoxType = {
+				name = "Title"
+				position = { x = 0 y = 26 }
+				textureFile = ""
+				font = "Main_24"
+				borderSize = {x = 4 y = 6}
+				text = ""	
+				maxWidth = 520
+				maxHeight = 32
+
+				format = centre
+			}
+		
+		textBoxType = {
+				name = "Description"
+				position = { x = 26 y = 75 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 290
+				maxHeight = 225	
+
+				format = centre
+			}
+
+		listboxType = {
+			name ="casus_bellis"
+			position = { x = 335 y = 90 }
+			backGround=""
+			size = { x= 147 y = 300 }
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		textBoxType = {
+				name = "chance_string"
+				position = { x = 0 y = 500 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 320
+				maxHeight = 200	
+
+				format = centre
+			}
+		
+		shieldtype = 
+		{
+			name ="LeftShield"
+			spriteType = "standarddialogshield"
+			position = { x= 32 y = 15 }
+		}
+		
+		shieldtype = 
+		{
+			name ="RightShield"
+			spriteType = "standarddialogshield"
+			position = { x= 420 y =15 }
+		}
+		
+#		OverlappingElementsBoxType = {
+#			name = "casus_bellis"
+#			position = { x = 260 y = 290 }
+#			size = { x = 260 y = 32 }
+#			format = centre
+#		}
+		
+		textBoxType = {
+				name = "call_ally_label"
+				position = { x =104 y = 385 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = "CALL_ALL_ALLIES"	
+				maxWidth = 320
+				maxHeight = 200	
+
+				format = left
+			}
+		
+		checkboxType = {
+			name = "call_ally_check"
+			position = { x= 69 y = 381 }
+			quadTextureSprite ="GFX_checkbox"
+		}
+		
+		guiButtonType = {
+			name = "AgreeButton"
+			position = { x=264 y =426}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_I_DO"
+			buttonFont = "Main_14_black"
+		}
+
+		guiButtonType = {
+			name = "DeclineButton"
+			position = { x=34 y =426}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_RUN_AWAY"
+			buttonFont = "Main_14_black"
+		}
+		
+	}
+	
+	eu3dialogtype = {
+		name = "TradeRightsDialog"
+		backGround="Background"
+		position = { x=300 y=0 }	
+		size = { x=520 y=476 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_diploconfirm_banner"
+			position = { x= 3 y = 18 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="opaque_blue"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		iconType = {
+			name ="bg_traderights"
+			spriteType = "GFX_bg_traderights"
+			position = {  x = 316 y = 70 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_traderights2"
+			spriteType = "GFX_bg_traderights"
+			position = {  x = 316 y = 170 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		textBoxType = {
+				name = "Title"
+				position = { x = 0 y = 26 }
+				textureFile = ""
+				font = "Main_24"
+				borderSize = { x = 4 y = 6 }
+				text = ""	
+				maxWidth = 520
+				maxHeight = 48
+
+				format = centre
+			}
+		
+		textBoxType = {
+				name = "Description"
+				position = { x = 26 y = 80 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 295
+				maxHeight = 225	
+
+				format = centre
+			}
+			
+		iconType = {
+			name ="goods_icon"
+			spriteType = "GFX_resource_icon"
+			position = {  x = 26 y = 305 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		listboxType = {
+			name ="trade_goods"
+			position = { x = 335 y = 90 }
+			backGround=""
+			size = { x= 150 y = 300 }
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		textBoxType = {
+				name = "chance_string"
+				position = { x = 26 y = 320 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 295
+				maxHeight = 200	
+
+				format = centre
+			}
+		
+		shieldtype = 
+		{
+			name ="LeftShield"
+			spriteType = "standarddialogshield"
+			position = { x= 32 y = 15 }
+		}
+		
+		shieldtype = 
+		{
+			name ="RightShield"
+			spriteType = "standarddialogshield"
+			position = { x= 420 y =15 }
+		}
+		
+		guiButtonType = {
+			name = "AgreeButton"
+			position = { x=264 y =412}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_I_DO"
+			buttonFont = "Main_14_black"
+		}
+
+		guiButtonType = {
+			name = "DeclineButton"
+			position = { x=34 y =412}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_RUN_AWAY"
+			buttonFont = "Main_14_black"
+		}
+		
+	}
+	
+	
+eu3dialogtype = {
+		name = "DefaultSpyDialog"
+		backGround="Background"
+		position = { x=300 y=0 }	
+		size = { x=520 y=476 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_diploconfirm_banner"
+			position = { x= 3 y = 22 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+
+		
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="opaque_blue"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		textBoxType = {
+				name = "Title"
+				position = { x = 0 y = 30 }
+				textureFile = ""
+				font = "Main_24"
+				borderSize = {x = 4 y = 6}
+				text = ""	
+				maxWidth = 520
+				maxHeight = 48
+
+				format = centre
+			}
+		
+		textBoxType = {
+				name = "Description"
+				position = { x = 110 y = 80 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 300
+				maxHeight = 200	
+
+				format = centre
+			}
+		
+		shieldtype = 
+		{
+			name ="LeftShield"
+			spriteType = "standarddialogshield"
+			position = { x= 32 y = 80 }
+		}
+		
+		shieldtype = 
+		{
+			name ="RightShield"
+			spriteType = "standarddialogshield"
+			position = { x= 420 y = 80 }
+		}
+		
+		
+		
+		guiButtonType = {
+			name = "AgreeButton"
+			position = { x=264 y =390}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_I_DO"
+			buttonFont = "Main_14_black"
+		}
+
+
+		guiButtonType = {
+			name = "DeclineButton"
+			position = { x=34 y =390}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_RUN_AWAY"
+			buttonFont = "Main_14_black"
+		}
+		
+		
+	}
+	
+
+	iconType =	{
+		name ="ideas_small"
+		spriteType = "GFX_idea_empty"
+		###position = { x= 0 y = 0}
+		position = { x= 42 y = 242 }
+		Orientation = "UPPER_LEFT"
+		scale = 0.5
+	}
+
+	positionType = {
+		name = "foreign_idea_start"
+#		position = { x = 227 y = 4	 }
+		position = { x = 227 y = 91	 }
+	}
+
+	positionType = {
+		name = "foreign_idea_offset"
+		position = { x = 0 y = 27	 }
+#		position = { x = 0 y = 31	 }
+	}
+
+	iconType =	{
+		name ="merchant_en_route"
+		spriteType = "GFX_icon_merchant"
+		position = { x= 42 y = 238 }
+		Orientation = "UPPER_LEFT"
+		scale = 0.5
+	}
+	
+	positionType = {
+		name = "merchant_en_route_start"
+		position = { x = 407 y = 117 }
+	}
+
+	positionType = {
+		name = "merchant_en_route_offset"
+		position = { x = -14 y = 0 }
+	}
+
+	windowType = {
+		name = "diplo_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=128 y= 24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+	#checkboxType = {
+	#		name = "game"
+	#		position = { x=-20 y =0}
+	#		quadTextureSprite ="GFX_list_button"
+	#		tooltip = ""
+	#		tooltipText =""
+	#		delayedTooltipText = ""
+	#		buttonText = ""
+	#		buttonFont = "Main_14_black"
+	#	}
+
+
+
+		instantTextBoxType={
+			position = { x=-20 y =0}
+			name = "text"
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 210
+			maxHeight = 1
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+	}
+	
+	### UNIQUE BUILDING ENTRY
+	windowType = {
+		name = "building_unique_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=47 y= 59 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		guiButtonType =
+			{
+			name ="unique"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 15 y = -71 }
+			Orientation = "LOWER_LEFT"
+			}
+		iconType =
+			{
+				name ="unique_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 15 y = -28 }
+				Orientation = "LOWER_LEFT"
+			}
+		iconType =
+			{
+				name ="unique_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 16 y = -22 }
+				Orientation = "LOWER_LEFT"
+			}
+		iconType =
+			{
+				name ="unique_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 16 y = -51 }
+				Orientation = "LOWER_LEFT"
+			}
+		guiButtonType =
+			{
+			name ="unique_destroy"
+			quadTextureSprite = "GFX_building_destroy"
+			position = { x = 45 y = -69 }
+			Orientation = "LOWER_LEFT"
+			}
+		
+	}
+
+	### BUILDING ENTRY
+	windowType = {
+		name = "building_progress_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 59 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+	
+			instantTextBoxType = {
+				name = "building_category"
+				position = { x = 54 y = 5 }
+				font = "Main_14_bold"	
+				borderSize = {x = 0 y = 0}	
+				text = "Category"	
+				fixedsize = yes
+				maxWidth = 140
+				maxHeight = 18	
+
+				format = left	
+				
+			}
+			iconType =
+			{
+				name ="building_category_icon"
+				spriteType = "GFX_building_category_strip"
+				position = { x= 59 y = 18 }
+			}
+			instantTextBoxType = {
+				name = "building_current_level"
+				position = { x = 159 y = 37 }
+				font = "Main_16"	
+				borderSize = {x = 0 y = 0}	
+				text = "6"	
+				maxWidth = 30
+				maxHeight = 18	
+
+				format = centre	
+				
+			}
+			
+			guiButtonType =
+			{
+			name ="building_01"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 198 y = 2 }
+			}
+			iconType =
+			{
+				name ="building_01_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 198 y = 45 }
+			}
+			iconType =
+			{
+				name ="building_01_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 199 y = 51 }
+			}
+			iconType =
+			{
+				name ="building_01_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 199 y = 22 }
+			}
+			guiButtonType =
+			{
+			name ="building_02"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 247 y = 2 }
+			}
+			iconType =
+			{
+				name ="building_02_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 247 y = 45 }
+			}
+			iconType =
+			{
+				name ="building_02_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 248 y = 51 }
+			}
+			iconType =
+			{
+				name ="building_02_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 248 y = 22 }
+			}
+			guiButtonType =
+			{
+			name ="building_03"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 296 y = 2 }
+			}
+			iconType =
+			{
+				name ="building_03_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 296 y = 45 }
+			}
+			iconType =
+			{
+				name ="building_03_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 297 y = 51 }
+			}
+			iconType =
+			{
+				name ="building_03_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 297 y = 22 }
+			}
+			guiButtonType =
+			{
+			name ="building_04"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 345 y = 2 }
+			}
+			iconType =
+			{
+				name ="building_04_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 345 y = 45 }
+			}
+			iconType =
+			{
+				name ="building_04_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 346 y = 51 }
+			}
+			iconType =
+			{
+				name ="building_04_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 346 y = 22 }
+			}
+			guiButtonType =
+			{
+			name ="building_05"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 403 y = 2 }
+			}
+			iconType =
+			{
+				name ="building_05_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 403 y = 45 }
+			}
+			iconType =
+			{
+				name ="building_05_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 404 y = 51 }
+			}
+			iconType =
+			{
+				name ="building_05_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 404 y = 22 }
+			}
+			guiButtonType =
+			{
+			name ="building_06"
+			quadTextureSprite = "GFX_building_default"
+			position = { x = 452 y = 2 }
+			}
+			iconType =
+			{
+				name ="building_06_status"
+				spriteType = "GFX_building_status_strip"
+				position = { x= 452 y = 45 }
+			}
+			iconType =
+			{
+				name ="building_06_progress"
+				spriteType = "GFX_building_progress"
+				position = { x= 453 y = 51 }
+			}
+			iconType =
+			{
+				name ="building_06_currentlybuilding"
+				spriteType = "GFX_building_currentlybuilding"
+				position = { x= 453 y = 22 }
+			}
+			
+			
+			iconType =
+			{
+				name ="building_redline"
+				spriteType = "GFX_building_redline"
+				position = { x= 390 y = 4 }
+			}
+			
+			guiButtonType =
+			{
+			name ="building_destroy"
+			quadTextureSprite = "GFX_building_destroy"
+			position = { x = 506 y = 5 }
+			}
+
+
+	}
+	
+	### Manufactory build screen
+		windowType = {
+			name = "manufactory_window"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=500 y=320 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			iconType =
+			{
+				name ="background"
+				spriteType = "GFX_building_manufactory_bg"
+				position = { x= -18 y = 357 }
+				Orientation = "UPPER_LEFT"
+			}
+				
+			guiButtonType =
+			{
+				name ="manufactory_01"
+				quadTextureSprite = "GFX_building_default"
+				position = { x = 37 y = 360 }
+			}
+			guiButtonType =
+			{
+				name ="manufactory_02"
+				quadTextureSprite = "GFX_building_default"
+				position = { x = 91 y = 360 }
+			}
+			guiButtonType =
+			{
+				name ="manufactory_03"
+				quadTextureSprite = "GFX_building_default"
+				position = { x = 145 y = 360 }
+			}
+			guiButtonType =
+			{
+				name ="manufactory_04"
+				quadTextureSprite = "GFX_building_default"
+				position = { x = 199 y = 360 }
+			}
+			guiButtonType =
+			{
+				name ="manufactory_05"
+				quadTextureSprite = "GFX_building_default"
+				position = { x = 253 y = 360 }
+			}
+			guiButtonType =
+			{
+				name ="manufactory_06"
+				quadTextureSprite = "GFX_building_default"
+				position = { x = 308 y = 360 }
+			}
+			guiButtonType = {
+				name = "back_button"
+				position = { x=270 y = 406}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CANCEL"
+				buttonFont = "Main_14_black"
+				shortcut = "ESCAPE"
+			}
+		}
+
+	################
+	windowType = {
+		name = "queue_entry_merc"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+		guiButtonType =
+			{
+				name ="qband_regiment"
+#				spriteType = "GFX_band_mercenary_regiment"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				quadTextureSprite = "GFX_band_mercenary_regiment"
+
+			}
+
+
+		iconType =
+			{
+				name ="icon_type"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= -40 y = -12 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		instantTextBoxType = {
+			name = "subunit_date"
+			position = { x = 270 y =12 }
+			format = left
+
+			textureFile = ""
+			font = "Micro_white"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 160
+			maxHeight = 24	
+
+			
+		}
+		instantTextBoxType = {
+			position = { x = 10 y = 4 }
+			name = "unit_name"
+			font = "Main_14"
+			borderSize = {x = 4 y = 2}
+			size = { x=150 y=32}
+			text = ""	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+
+
+
+
+	}
+	
+
+}

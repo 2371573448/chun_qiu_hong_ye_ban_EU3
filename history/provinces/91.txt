@@ -1,0 +1,66 @@
+
+culture = baidi
+religion = animism
+capital = "Äæ®‡"
+trade_goods = spices
+hre = no
+base_tax = 6
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2090.1.1 = { 
+	discovered_by = YAN
+}
+2226.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	citysize = 32000
+	add_core = ZHS
+	fort1 = yes
+	fort2 = yes
+}
+2246.1.1 = { religion = liyuebadao }
+2246.1.2 = { 
+	religion = liyuebadao
+}
+2292.10.1 = { 
+	owner = WEI
+	controller = WEI
+}
+2318.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	religion = liyuebadao
+}
+2403.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2410.1.1 = { 
+	religion = liyuejiaohua
+}
+2433.1.1 = { 
+	add_core = ZHO
+	culture = hebei
+}
+2470.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2492.2.1 = { 
+	owner = CSW
+	controller = CSW
+	add_core = CSW
+}
+2492.11.1 = { 
+	owner = ZHO
+	controller = ZHO
+}

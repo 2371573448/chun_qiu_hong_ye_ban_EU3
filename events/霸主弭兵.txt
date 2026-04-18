@@ -1,0 +1,1164 @@
+######################################
+#   events 60069   #
+######################################
+#千乘大国
+country_event = { 
+	id = 60069
+	trigger = { 
+		not = { 
+			has_country_modifier = qianshengdaguo
+		}
+		OR = {
+			religion_group = christian
+			tag = CHU
+			tag = QIN
+			tag = WUG
+			tag = YGO
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		# 春秋时期
+		OR = { 
+			and = { 
+				army = 30
+				emperor = { 
+					not = { 
+						army = 60
+					}
+				}
+			}
+			and = { 
+				army = 40
+				emperor = { 
+					not = { 
+						army = 80
+					}
+				}
+			}
+			and = { 
+				army = 50
+				emperor = { 
+					not = { 
+						army = 100
+					}
+				}
+			}
+			and = { 
+				army = 60
+				emperor = { 
+					not = { 
+						army = 120
+					}
+				}
+			}
+			and = { 
+				army = 70
+				emperor = { 
+					not = { 
+						army = 140
+					}
+				}
+			}
+			army = 80
+		}
+	}
+	mean_time_to_happen = { 
+		months = 6
+	}
+	title = "EVTNAME60069"
+	desc = "EVTDESC60069"
+	option = { 
+		name = "EVTOPTA60069"
+		add_country_modifier = { 
+			name = "qianshengdaguo"
+			duration = -1
+		}
+	}
+}
+
+country_event = { 
+	id = 60070
+	trigger = { 
+		war = no
+		has_country_modifier = qianshengdaguo
+		OR = { 
+			has_global_flag = zhanguokaishi
+			# 春秋结束
+			not = { 
+				army = 30
+			}
+			and = { 
+				not = { 
+					army = 40
+				}
+				emperor = { 
+					army = 80
+				}
+			}
+			and = { 
+				not = { 
+					army = 50
+				}
+				emperor = { 
+					army = 100
+				}
+			}
+			and = { 
+				not = { 
+					army = 60
+				}
+				emperor = { 
+					army = 120
+				}
+			}
+			and = { 
+				not = { 
+					army = 70
+				}
+				emperor = { 
+					army = 140
+				}
+			}
+			and = { 
+				not = { 
+					army = 80
+				}
+				emperor = { 
+					army = 160
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 6
+	}
+	title = "EVTNAME60070"
+	desc = "EVTDESC60070"
+	option = { 
+		name = "EVTOPTA60070"
+		remove_country_modifier = qianshengdaguo
+	}
+}
+
+country_event = { 
+	id = 60071
+	trigger = { 
+		has_global_flag = aspire_to_bazhu
+		# 有谋夺霸位
+		is_subject = yes
+		# 是附庸
+		overlord = { 
+			is_emperor = yes
+		}
+		# 宗主是霸主
+		elector = yes
+		# 是选侯
+		any_country = { 
+			has_country_modifier = campaign_to_bazhu
+			relation = { 
+				who = THIS
+				value = 1
+			}
+			# 和其关系大于0
+		}
+	}
+	mean_time_to_happen = { 
+		months = 12
+	}
+	title = "EVTNAME60071"
+	desc = "EVTDESC60071"
+	option = { 
+		name = "EVTOPTA60071"
+		any_country = { 
+			limit = { 
+				has_country_modifier = campaign_to_bazhu
+			}
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 60072
+	trigger = { 
+		has_global_flag = aspire_to_bazhu
+		# 有谋夺霸位
+		is_emperor = yes
+		any_country = { 
+			has_country_modifier = campaign_to_bazhu
+			relation = { 
+				who = THIS
+				value = -150
+			}
+			# 和其关系大于-200
+		}
+	}
+	mean_time_to_happen = { 
+		months = 12
+	}
+	title = "EVTNAME60072"
+	desc = "EVTDESC60072"
+	option = { 
+		name = "EVTOPTA60072"
+		any_country = { 
+			limit = { 
+				has_country_modifier = campaign_to_bazhu
+			}
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 60073
+	trigger = { 
+		has_global_flag = aspire_to_bazhu
+		# 有谋夺霸位
+		is_subject = yes
+		# 是附庸
+		overlord = { 
+			has_country_modifier = campaign_to_bazhu
+		}
+		# 宗主是谋霸位者
+		elector = yes
+		# 是选侯
+		any_country = { 
+			is_emperor = yes
+			relation = { 
+				who = THIS
+				value = 1
+			}
+			# 和其关系大于0
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60073"
+	desc = "EVTDESC60073"
+	option = { 
+		name = "EVTOPTA60073"
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = -400
+			}
+			relation = { 
+				who = THIS
+				value = 200
+			}
+		}
+	}
+}
+country_event = { 
+	id = 60074
+	trigger = { 
+		has_country_modifier = campaign_to_bazhu
+		has_global_flag = aspire_to_bazhu
+		# 有谋夺霸位
+		OR = { 
+			has_global_flag = zhanguokaishi
+			# 春秋结束
+			not = { 
+				has_country_modifier = qianshengdaguo
+			}
+			# 没有千乘buff
+			not = { 
+				stability = -1
+			}
+			# 稳定低于等于2
+			not = { 
+				legitimacy = 0.25
+			}
+			# 正统低于25%
+			and = { 
+				not = { 
+					any_country = { 
+						preferred_emperor = THIS
+						not = { 
+							tag = THIS
+						}
+					}
+				}
+				# 没有任何选侯支持你
+				had_global_flag = { 
+					flag = aspire_to_bazhu
+					days = 7300
+				}
+				# 谋夺霸位超20年
+			}
+			and = { 
+				emperor = { 
+					or = { 
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 1
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 2
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 2
+								}
+							}
+						}
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 2
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 3
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 3
+								}
+							}
+						}
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 3
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 4
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 4
+								}
+							}
+						}
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 4
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 5
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 5
+								}
+							}
+						}
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 5
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 6
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 6
+								}
+							}
+						}
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 6
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 7
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 7
+								}
+							}
+						}
+						and = { 
+							check_variable = { 
+								which = advocated_bazhu
+								value = 7
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_bazhu
+									value = 8
+								}
+							}
+							not = { 
+								check_variable = { 
+									which = advocated_mouweizhe
+									value = 8
+								}
+							}
+						}
+					}
+				}
+				had_global_flag = { 
+					flag = aspire_to_bazhu
+					days = 10950
+				}
+				# 谋夺霸位超30年
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 6
+		modifier = { 
+			factor = 0.5
+			had_global_flag = { 
+				flag = aspire_to_bazhu
+				days = 7300
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			had_global_flag = { 
+				flag = aspire_to_bazhu
+				days = 10950
+			}
+		}
+	}
+	title = "EVTNAME60074"
+	desc = "EVTDESC60074"
+	option = { 
+		name = "EVTOPTA60074"
+		clr_global_flag = aspire_to_bazhu
+		remove_country_modifier = campaign_to_bazhu
+		prestige = -0.3
+		any_country = { 
+			set_variable = { 
+				which = advocated_bazhu
+				value = 0
+			}
+			set_variable = { 
+				which = advocated_mouweizhe
+				value = 0
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 60075
+	trigger = { 
+		has_global_flag = aspire_to_bazhu
+		# 有谋夺霸位
+		is_emperor = yes
+		OR = { 
+			not = { 
+				has_global_flag = jianceyonghuzhe
+			}
+			had_global_flag = { 
+				flag = jianceyonghuzhe
+				days = 730
+			}
+			# 一年检测一次
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60075"
+	desc = "EVTDESC60075"
+	option = { 
+		name = "EVTOPTA60075"
+		set_global_flag = jianceyonghuzhe
+		any_country = { 
+			limit = { 
+				preferred_emperor = THIS
+				elector = yes
+				not = { 
+					tag = THIS
+				}
+			}
+			# 支持霸主者
+			emperor = { 
+				change_variable = { 
+					which = advocated_bazhu
+					value = +1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = campaign_to_bazhu
+			}
+			# 是谋位者
+			country_event = 60076
+		}
+	}
+}
+
+country_event = { 
+	id = 60076
+	is_triggered_only = yes
+	title = "EVTNAME60075"
+	desc = "EVTDESC60075"
+	option = { 
+		name = "EVTOPTA60075"
+		set_global_flag = jianceyonghuzhe
+		any_country = { 
+			limit = { 
+				preferred_emperor = THIS
+				elector = yes
+				not = { 
+					tag = THIS
+				}
+			}
+			# 支持谋位者
+			emperor = { 
+				change_variable = { 
+					which = advocated_mouweizhe
+					value = +1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 60077
+	major = yes
+	trigger = { 
+		has_global_flag = aspire_to_bazhu
+		# 有谋夺霸位
+		has_country_modifier = campaign_to_bazhu
+		is_emperor = yes
+		# 是霸主
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60077"
+	desc = "EVTDESC60077"
+	option = { 
+		name = "EVTOPTA60077"
+		clr_global_flag = aspire_to_bazhu
+		remove_country_modifier = campaign_to_bazhu
+		remove_country_modifier = rival_for_by
+		prestige = 0.50
+		legitimacy = 0.25
+		any_country = { 
+			set_variable = { 
+				which = advocated_bazhu
+				value = 0
+			}
+			set_variable = { 
+				which = advocated_mouweizhe
+				value = 0
+			}
+		}
+	}
+}
+
+#弭兵失败
+country_event = { 
+	id = 60081
+	trigger = { 
+		has_global_flag = campaign_to_peace
+		not = { 
+			has_global_flag = mibingdahui
+		}
+		or = { 
+			not = { 
+				has_country_modifier = campaign_to_peace
+			}
+			has_global_flag = zhanguokaishi
+			# 春秋结束
+			has_global_flag = daizhou_lv4
+			# 决议点到4步后
+			has_global_flag = fuzhou_lv4
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME60081"
+	desc = "EVTDESC60081"
+	option = { 
+		name = "EVTOPTA60081"
+		clr_global_flag = campaign_to_peace
+		clr_global_flag = campaign_to_peace2
+		clr_global_flag = campaign_to_peace3
+		clr_global_flag = campaign_to_peace4
+		clr_global_flag = campaign_to_peace5
+		clr_country_flag = campaign_to_peace
+		remove_country_modifier = campaign_to_peace
+		prestige = -0.1
+		any_country = { 
+			limit = { 
+				has_country_modifier = rival_for_by
+			}
+			remove_country_modifier = rival_for_by
+		}
+		add_country_modifier = { 
+			name = "failure_to_make_peace"
+			duration = 3650
+		}
+	}
+}
+
+country_event = { 
+	id = 60082
+	major = yes
+	trigger = { 
+		is_emperor = no
+		ai = yes
+		capital_scope = { 
+			hre = yes
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		# 春秋时期
+		not = { 
+			has_global_flag = mibingdahui
+		}
+		# 没有弭兵大会
+		not = { 
+			has_country_modifier = qianshengdaguo
+		}
+		# 不是大国
+		not = { 
+			has_country_modifier = failure_to_make_peace
+		}
+		# 没有弭兵失败
+		any_country = { 
+			has_country_modifier = campaign_to_bazhu
+		}
+		war_exhaustion = 4
+		hre_size = 15
+		not = { 
+			has_global_flag = daizhou_lv4
+		}
+		# 决议4步前
+		not = { 
+			has_global_flag = fuzhou_lv4
+		}
+		year = 2140
+		# 2140年以后
+		not = { 
+			has_global_flag = vote_if_peace
+		}
+		# 没有正在投票
+		OR = { 
+			not = { 
+				has_global_flag = campaign_to_peace
+			}
+			# 无弭兵计划
+			and = { 
+				had_global_flag = { 
+					flag = campaign_to_peace
+					days = 7300
+				}
+				not = { 
+					has_global_flag = campaign_to_peace3
+				}
+				# 没有第3步
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 120
+		modifier = { 
+			factor = 0.8
+			year = 2150
+		}
+		modifier = { 
+			factor = 0.8
+			year = 2160
+		}
+		modifier = { 
+			factor = 0.8
+			year = 2170
+		}
+		modifier = { 
+			factor = 0.8
+			year = 2180
+		}
+		modifier = { 
+			factor = 0.6
+			year = 2200
+		}
+		modifier = { 
+			factor = 0.4
+			year = 2250
+		}
+		modifier = { 
+			factor = 0.8
+			prestige = 0.1
+		}
+		modifier = { 
+			factor = 0.8
+			prestige = 0.2
+		}
+		modifier = { 
+			factor = 0.8
+			prestige = 0.3
+		}
+		modifier = { 
+			factor = 0.6
+			prestige = 0.5
+		}
+	}
+	title = "EVTNAME60082"
+	desc = "EVTDESC60082"
+	option = { 
+		name = "EVTOPTA60082"
+		set_global_flag = vote_if_peace
+		set_country_flag = vote_to_peace
+		emperor = { 
+			set_variable = { 
+				which = support_peace
+				value = 0
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = campaign_to_bazhu
+			}
+			add_country_modifier = { 
+				name = "rival_for_by"
+				duration = -1
+			}
+		}
+		any_country = { 
+			limit = { 
+				capital_scope = { 
+					hre = yes
+				}
+				manpower = 9
+				is_emperor = no
+			}
+			country_event = 60084
+		}
+	}
+}
+
+country_event = { 
+	id = 60084
+	is_triggered_only = yes
+	title = "EVTNAME60084"
+	desc = "EVTDESC60084"
+	option = { 
+		name = "EVTOPTA60084"
+		ai_chance = { 
+			factor = 50
+			modifier = { 
+				factor = 2
+				war_exhaustion = 6
+			}
+		}
+		set_country_flag = support_peace
+		emperor = { 
+			change_variable = { 
+				which = support_peace
+				value = +1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB60084"
+		ai_chance = { 
+			factor = 50
+			modifier = { 
+				factor = 2
+				has_country_modifier = qianshengdaguo
+				not = { 
+					war_exhaustion = 6
+				}
+			}
+		}
+		emperor = { 
+			change_variable = { 
+				which = support_peace
+				value = -1
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 60085
+	major = yes
+	trigger = { 
+		has_global_flag = vote_if_peace
+		is_emperor = yes
+		check_variable = { 
+			which = support_peace
+			value = 8
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3
+	}
+	title = "EVTNAME60085"
+	desc = "EVTDESC60085"
+	option = { 
+		name = "EVTOPTA60085"
+		ai_chance = { 
+			factor = 80
+			modifier = { 
+				factor = 0.7
+				or = { 
+					has_global_flag = daizhou_lv2
+					has_global_flag = fuzhou_lv2
+				}
+			}
+			modifier = { 
+				factor = 0.7
+				or = { 
+					has_global_flag = daizhou_lv3
+					has_global_flag = fuzhou_lv3
+				}
+			}
+		}
+		clr_global_flag = vote_if_peace
+		clr_global_flag = campaign_to_peace
+		clr_global_flag = campaign_to_peace2
+		clr_global_flag = campaign_to_peace3
+		clr_global_flag = campaign_to_peace4
+		clr_global_flag = campaign_to_peace5
+		any_country = { 
+			clr_country_flag = campaign_to_peace
+			remove_country_modifier = campaign_to_peace
+		}
+		set_global_flag = mibingdahui
+		# 弭兵大会
+		add_imperial_influence = 25
+		prestige = 0.1
+		badboy = -2
+		any_country = { 
+			limit = { 
+				has_country_flag = vote_to_peace
+			}
+			clr_country_flag = vote_to_peace
+			relation = { 
+				who = THIS
+				value = 50
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = support_peace
+			}
+			clr_country_flag = support_peace
+			relation = { 
+				who = THIS
+				value = 50
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB60085"
+		ai_chance = { 
+			factor = 20
+		}
+		clr_global_flag = vote_if_peace
+		clr_global_flag = campaign_to_peace
+		clr_global_flag = campaign_to_peace2
+		clr_global_flag = campaign_to_peace3
+		clr_global_flag = campaign_to_peace4
+		clr_global_flag = campaign_to_peace5
+		any_country = { 
+			clr_country_flag = campaign_to_peace
+			remove_country_modifier = campaign_to_peace
+		}
+		# 移除国家flagbuff
+		prestige = 0.1
+		add_imperial_influence = 25
+		badboy = 2
+		any_country = { 
+			limit = { 
+				has_country_flag = vote_to_peace
+			}
+			clr_country_flag = vote_to_peace
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = support_peace
+			}
+			clr_country_flag = support_peace
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = rival_for_by
+			}
+			remove_country_modifier = rival_for_by
+		}
+	}
+}
+
+country_event = { 
+	id = 60086
+	major = yes
+	trigger = { 
+		has_global_flag = vote_if_peace
+		has_country_flag = vote_to_peace
+		emperor = { 
+			not = { 
+				check_variable = { 
+					which = support_peace
+					value = 8
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3
+	}
+	title = "EVTNAME60086"
+	desc = "EVTDESC60086"
+	option = { 
+		name = "EVTOPTA60086"
+		clr_global_flag = vote_if_peace
+		clr_global_flag = campaign_to_peace
+		clr_global_flag = campaign_to_peace2
+		clr_global_flag = campaign_to_peace3
+		clr_global_flag = campaign_to_peace4
+		clr_global_flag = campaign_to_peace5
+		any_country = { 
+			clr_country_flag = campaign_to_peace
+			remove_country_modifier = campaign_to_peace
+		}
+		# 移除国家flagbuff
+		prestige = -0.1
+		clr_country_flag = vote_to_peace
+		any_country = { 
+			limit = { 
+				has_country_flag = support_peace
+			}
+			clr_country_flag = support_peace
+		}
+		add_country_modifier = { 
+			name = "failure_to_make_peace"
+			duration = 3650
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = rival_for_by
+			}
+			remove_country_modifier = rival_for_by
+		}
+	}
+}
+
+country_event = { 
+	id = 60087
+	is_triggered_only = yes
+	title = "EVTNAME60087"
+	desc = "EVTDESC60087"
+	option = { 
+		name = "EVTOPTA60087"
+		ai_chance = { 
+			factor = 70
+			modifier = { 
+				factor = 0.8
+				FROM = { 
+					not = { 
+						religion = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.8
+				FROM = { 
+					badboy = 0.5
+				}
+			}
+			modifier = { 
+				factor = 0.8
+				FROM = { 
+					badboy = 1
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				imperial_influence = 50
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = daizhou_lv3
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = daizhou_lv5
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = daizhou_lv6
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 3
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 6
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 10
+				}
+			}
+		}
+		FROM = { 
+			relation = { 
+				who = THIS
+				value = 25
+			}
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+			}
+			FROM = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 10
+			}
+			FROM = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 20
+			}
+			FROM = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 30
+			}
+			FROM = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 60
+			}
+			FROM = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+	}
+	option = { 
+		name = "EVTOPTB60087"
+		ai_chance = { 
+			factor = 30
+			modifier = { 
+				factor = 1.5
+				FROM = { 
+					not = { 
+						num_of_cities = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				FROM = { 
+					not = { 
+						army = 30
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				FROM = { 
+					not = { 
+						army = 20
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.35
+				FROM = { 
+					not = { 
+						army = 10
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				FROM = { 
+					not = { 
+						army = THIS
+					}
+				}
+			}
+		}
+		prestige = 0.05
+		FROM = { 
+			relation = { 
+				who = THIS
+				value = -50
+			}
+			casus_belli = { 
+				target = THIS
+				type = cb_insult_mbng
+				months = 60
+			}
+		}
+	}
+}

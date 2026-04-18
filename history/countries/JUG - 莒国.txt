@@ -1,0 +1,30 @@
+government =fengjian
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = dongyi1
+religion = animism 
+primary_culture = dongyi
+capital = 298
+
+1928.1.1={monarch={name="伯" dynasty="己" adm=4 dip=5 mil=4}}
+2030.1.1={leader={name="公子挐" type=general rank=1 fire=1 shock=4 manuever=5 siege=1 death_date=2040.1.1}}
+2048.1.1={monarch={name="期" dynasty="己" adm=4 dip=5 mil=4}}
+2068.1.1={monarch={name="庶其" dynasty="己" adm=3 dip=3 mil=3}}
+2089.1.1={monarch={name="季佗" dynasty="己" adm=5 dip=2 mil=5}}
+2090.1.1={monarch={name="朱" dynasty="己" adm=4 dip=6 mil=4}}
+2121.1.1={monarch={name="密州" dynasty="己" adm=3 dip=2 mil=3}}
+2156.1.1={monarch={name="舆" dynasty="己" adm=6 dip=3 mil=4}}
+2157.1.1={monarch={name="去疾" dynasty="己" adm=3 dip=4 mil=6}}
+2170.1.1={monarch={name="狂" dynasty="己" adm=2 dip=2 mil=2}}
+2175.1.1={monarch={name="庚舆" dynasty="己" adm=6 dip=5 mil=6}}
+2180.1.1={monarch={name="狂" dynasty="己" adm=3 dip=3 mil=4}}
+2246.1.2={monarch={name="晚" dynasty="己" adm=7 dip=7 mil=7}}
+2246.1.2={religion = liyuebadao}
+
+

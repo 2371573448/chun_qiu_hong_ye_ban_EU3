@@ -1,0 +1,38 @@
+government =fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = -2
+offensive_defensive = 2
+land_naval = -1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = ancestor
+primary_culture = nanchu
+capital = 464
+
+1928.1.1 = {
+	monarch = {
+		name = "×Ú"
+               dynasty = "ØÂ"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+1935.1.1 = {
+	monarch = {
+		name = "ÔÆ"
+               dynasty = "ØÂ"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+2246.1.2 = { 
+	religion = liyuebadao
+}
+2246.1.3 = { 
+	religion = animism
+}

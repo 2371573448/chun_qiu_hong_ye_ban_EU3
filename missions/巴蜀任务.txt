@@ -1,0 +1,210 @@
+#开拓北道
+
+kaituobeidao = {
+	
+	type = country
+
+	allow = {
+		tag = SGU
+		239 = { empty = yes }
+		239 = { any_neighbor_province = { owned_by = this } }
+	}
+	abort = {
+			239 = { empty = no }
+			not = { owns = 239 }
+	}
+	success = {
+	  	230 = { owned_by = this }
+		239 = { owned_by = this }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	230 = { add_core = this }
+		239 = { add_core = this }
+	}
+}
+
+
+#开拓西部
+
+kaituoxibu = {
+	
+	type = country
+
+	allow = {
+		tag = BAG
+		249 = { empty = yes }
+		249 = { any_neighbor_province = { owned_by = this } }
+	}
+	abort = {
+			249 = { empty = no }
+			not = { owns = 249 }
+	}
+	success = {
+	  	249 = { owned_by = this }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	249 = { add_core = this }
+	}
+}
+#巴蜀合并
+bashuhebing = {
+	
+	type = country
+
+	allow = {
+		tag = SGU
+		OR = {
+			any_owned_province  = {
+			region = bajun
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = bajun }
+			}
+		}
+		Not = { owns = 245 }
+		year = 2246
+		NOT = { year = 2543 }
+	}
+	abort = {
+		any_country = { 
+	    		NOT = { tag = this }
+	    		OR = { 
+				owns = 250
+				owns = 246
+				owns = 245
+				owns = 248 
+				owns = 247
+			}
+	    		OR = {
+	    			alliance_with = this
+				vassal_of = this
+                                                            }
+        		}
+	}
+	success = {
+		owns = 250
+		owns = 245
+		owns = 248
+		owns = 247
+		owns = 244
+		owns = 253	
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	add_temp_claim = 250
+		add_temp_claim = 245
+		add_temp_claim = 248
+		add_temp_claim = 247
+		add_temp_claim = 253
+	}
+	abort_effect = {
+		remove_temp_claim = 250
+		remove_temp_claim = 245
+		remove_temp_claim = 248
+		remove_temp_claim = 247
+		remove_temp_claim = 253
+	  	prestige = -0.05
+	}
+	effect = {
+		add_core = 250
+	 	add_core = 248
+		add_core = 247
+		add_core = 245
+		add_core = 244
+		add_core = 246
+		add_core = 253
+		manpower = 10
+	}
+}
+#征服汉中
+SGU_annex_hanzhong = {
+	
+	type = country
+
+	allow = {
+		tag = SGU
+		or = {
+			not = { owns = 219 }
+			not = { owns = 1116 }
+			not = { owns = 1177 }
+			not = { owns = 1180 }
+		}
+	}
+	abort = {
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+		add_temp_claim = 219
+		add_temp_claim = 1116
+		add_temp_claim = 1177
+		add_temp_claim = 1180
+	}
+	abort_effect = {
+		remove_temp_claim = 219
+		remove_temp_claim = 1116
+		remove_temp_claim = 1177
+		remove_temp_claim = 1180
+	}
+	success = {
+		owns = 219
+		owns = 1116
+		owns = 1177
+		owns = 1180
+	}
+	effect = {
+		hanzhong = { add_core = this }
+	}
+}
+#征服益州
+SGU_annex_yizhou = {
+	
+	type = country
+
+	allow = {
+		tag = SGU
+		or = {
+			not = { owns = 490 }
+			not = { owns = 548 }
+			not = { owns = 554 }
+			not = { owns = 555 }
+			not = { owns = 567 }
+		}
+	}
+	abort = {
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	success = {
+		owns = 490
+		owns = 548
+		owns = 554
+		owns = 555
+		owns = 567
+	}
+	effect = {
+		yizhou = { add_core = this }
+	}
+}

@@ -1,0 +1,152 @@
+government = tribal_despotism
+aristocracy_plutocracy = -4
+centralization_decentralization = 5
+innovative_narrowminded = 4
+mercantilism_freetrade = -1
+offensive_defensive = 2
+land_naval = 0
+quality_quantity = 3
+serfdom_freesubjects = 3
+technology_group = chinese
+unit_type = nomad_group
+religion = animism
+primary_culture = chidi
+capital = 94
+1927.1.1 = { 
+	monarch = { 
+		name = "孟狄"
+		dynasty = "姬"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2246.1.1 = { 
+	monarch = { 
+		name = "孟狄"
+		dynasty = "姬"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2246.1.2 = { 	
+	government = absolute_monarchy
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+	religion = liyuebadao
+	monarch = { 
+		name = "错"
+		dynasty = "姬"
+		adm = 6
+		dip = 7
+		mil = 8
+	}
+}
+2246.1.3 = { 	
+	government = tribal_despotism
+}
+2273.1.1 = { 
+	monarch = { 
+		name = "文"
+		dynasty = "姬"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+2284.1.1 = { 
+	# 中山武公继位，初仿华夏之制
+	monarch = { 
+		name = "窟"
+		dynasty = "姬"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+2284.1.1 = { 
+	religion = liyuebadao
+	government = absolute_monarchy
+	aristocracy_plutocracy = -3
+	centralization_decentralization = 3
+	innovative_narrowminded = 2
+}
+2292.1.1 = { 
+	monarch = { 
+		name = "恒"
+		dynasty = "姬"
+		adm = 7
+		dip = 5
+		mil = 7
+	}
+}
+
+2300.1.1 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+}
+2318.1.1 = { 
+	# 中山复国
+	centralization_decentralization = 2
+	innovative_narrowminded = 1
+	primary_culture = hebei
+}
+2349.1.1 = { 
+	monarch = { 
+		name = "成"
+		dynasty = "姬"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+2350.1.1 = { 
+	set_country_flag = fengjunzhidu
+	set_country_flag = hujizhidu
+}
+2371.1.1 = { 
+	monarch = { 
+		name = "错"
+		dynasty = "姬"
+		adm = 6
+		dip = 7
+		mil = 8
+	}
+}
+2375.1.1 = { 
+	# 五国相王，从此中山“错处六国之间，纵横捭阖，交相控引，争衡天下”
+	centralization_decentralization = -1
+	innovative_narrowminded = -1
+	offensive_defensive = -2
+}
+2389.1.1 = { 
+	monarch = { 
+		name = "妾次"
+		dynasty = "姬"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+2391.1.1 = { 
+	# 赵武灵王胡服骑射，自此赵连年伐中山，中山不敌而日衰，最终亡于赵
+	government = enlightened_despotism
+	centralization_decentralization = 4
+	offensive_defensive = 2
+}
+2400.1.1 = { 
+	set_country_flag = guanliaozhidu
+}

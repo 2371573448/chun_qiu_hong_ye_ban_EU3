@@ -1,0 +1,18 @@
+name = "繻葛之战"
+casus_belli = cb_core #收复失地
+
+1991.1.1 = {
+	add_attacker = PAP
+	add_attacker = CHE
+	add_attacker = CAI
+	add_attacker = WEG
+	add_defender = ZGO
+}
+
+1991.5.1 = {
+	rem_attacker = PAP
+	rem_attacker = CHE
+	rem_attacker = CAI
+	rem_attacker = WEG
+	rem_defender = ZGO
+}

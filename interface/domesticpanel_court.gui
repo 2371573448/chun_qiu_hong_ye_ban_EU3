@@ -1,0 +1,740 @@
+guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_court"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+
+
+
+		iconType =
+		{
+			name ="court_bg"
+			spriteType = "GFX_court_bg"
+			position = { x= 0 y = 120 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_rulername"
+			position = { x = 6 y = 183 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "domestictext_Administrationskill"
+			position = { x = 64 y = 205 }
+			format = centre
+			textureFile = ""
+
+#			font = "Main_14_grey"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = "DOMESTIC_ADMIN"	
+			maxWidth = 96
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_diplomacyskill"
+			position = { x = 160 y = 205 }
+			format = centre
+
+			textureFile = ""
+#			font = "Main_14_grey"
+			font = "garamond_14"
+			borderSize = {x = 0 y = 0}
+			text = "DOMESTIC_DIPLOMACY"	
+			maxWidth = 96
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+		instantTextBoxType = {
+			name = "domestictext_militaryskill"
+			position = { x = 256 y = 205 }
+			format = centre
+
+			textureFile = ""
+#			font = "Main_14_grey"
+			font = "garamond_14"
+			borderSize = {x = 0 y = 0}
+			text = "DOMESTIC_MILITARY"	
+			maxWidth = 96
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+		iconType =
+		{
+			name ="administration_skill"
+			spriteType = "GFX_stars"
+			position = { x= 72 y = 227 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="diplomatic_skill"
+			spriteType = "GFX_stars"
+			position = { x= 172 y = 227 }
+			Orientation = "UPPER_LEFT"
+		}	
+
+		iconType =
+		{
+			name ="military_skill"
+			spriteType = "GFX_stars"
+			position = { x= 272 y = 227 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		#TODO: hide for republics etc.
+		iconType =
+		{
+			name ="court_heir_bg"
+			spriteType = "GFX_court_heir_bg"
+			position = { x= 76 y = 248 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "heir_name"
+			position = { x = 6 y = 250 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = { x = 4 y = 4 }
+			text = ""	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "heir_info"
+			position = { x = 6 y = 268 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = { x = 4 y = 4 }
+			text = ""	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+#		instantTextBoxType = {
+#			name = "domestictext_greatmenofthecourt"
+#			position = { x = 64 y = 320 }
+#			format = left
+#
+#			textureFile = ""
+#			font = "Main_14"
+#			font = "garamond_14"
+#			borderSize = {x = 0 y = 0}
+#			text = "DOMESTIC_GREAT_MEN"	
+#			maxWidth = 300
+#			maxHeight = 32	
+#			Orientation = "UPPER_LEFT"
+#
+#			
+#		}
+
+
+
+
+
+# Select great man interface
+#
+
+
+		windowType = {
+			name = "domesticpanel_court_select"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = yes
+	
+	
+			iconType =
+			{
+				name ="domesticpanel_overlay"
+				spriteType = "GFX_domesticpanel_overlay"
+				position = { x= 0 y = -1 }
+				Orientation = "UPPER_LEFT"
+			}
+
+	
+			iconType =
+			{
+				name ="court_selection_frame"
+				spriteType = "GFX_court_selection_frame"
+				position = { x= 42 y = 90 }
+				Orientation = "UPPER_LEFT"
+			}
+	
+	
+	
+			iconType =
+			{
+				name ="greatmen_selection_current"
+				spriteType = "GFX_greatmen"
+				position = { x= 68 y = 123 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+			guiButtonType = {
+				name = "dismiss_button"
+				position = { x=288 y =182}
+				quadTextureSprite ="button_type_6"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_SACK"
+				buttonFont = "Main_14_black"
+			}
+	
+	
+	
+			instantTextBoxType = {
+				name = "domestictext_greatmen_selection_name_current"
+				position = { x = 69 y =194 }
+	
+				format = left
+	
+				textureFile = ""
+
+#				font = "Main_14_bold"
+				font = "garamond_14_bold"
+
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 200
+				maxHeight = 16
+				fixedsize = yes	
+				Orientation = "UPPER_LEFT"
+			}
+	
+			instantTextBoxType = {
+				name = "domestictext_greatmen_selection_cost_title"
+				position = { x = 169 y =173 }
+				format = left
+				textureFile = ""
+
+#				font = "Main_14"
+				font = "garamond_14"
+
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 124
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "domestictext_greatmen_selection_cost_value"
+				position = { x = 149 y =173 }
+				format = left
+				textureFile = ""
+
+#				font = "Main_14"
+				font = "garamond_14"
+
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 124
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "domestictext_greatmen_selection_desc"
+				position = { x = 211 y =194 }
+				format = left
+				textureFile = ""
+
+#				font = "Main_14"
+				font = "garamond_14"
+
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 124
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+	
+
+			iconType =
+			{
+				name ="greatman_skill"
+				spriteType = "GFX_stars"
+				position = { x= 280 y = 154 }
+				Orientation = "UPPER_LEFT"
+			}
+							
+			instantTextBoxType = {
+				name = "domestictext_greatmen_selection_name_effect"
+				position = { x = 148 y =123 }
+				format = left
+				textureFile = ""
+
+#				font = "Main_14_bold"
+				font = "garamond_14_bold"
+
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 240
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "no_advisors_label"
+				position = { x = 58 y =254 }
+	
+				format = left
+	
+				textureFile = ""
+
+#				font = "Main_14_bold"
+				font = "garamond_14_bold"
+
+				borderSize = {x = 0 y = 0}
+				text = "NO_ADVISORS"	
+				maxWidth = 200
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = 
+				{
+				name ="domesticpanel_court_select_slider"
+				position = { x=58 y =224}
+				backGround=""
+				size = { x=300 y =377}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+			
+			guiButtonType = {
+				name = "back_button"
+				position = { x=172 y =585}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_BACK"
+				buttonFont = "Main_14_black"
+			}
+			
+		}
+	}
+	
+	
+
+#entry for one 3 currently selected
+	
+	positionType = {
+		name = "domestic_advisor_start"
+		position = { x = 64 y =323 }
+	}
+	positionType = {
+		name = "domestic_advisor_offset"
+		position = { x = 0 y =93 }
+	}
+	
+	windowType = {
+		name = "domesticpanel_greatmenentry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y=150 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_advisor_banner"
+			position = { x= -64 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="greatman_skill"
+			spriteType = "GFX_stars"
+			position = { x= 250 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+
+		guiButtonType =
+		{
+			name ="greatmen_button"
+			quadTextureSprite= "GFX_greatmen_button"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+
+
+		
+
+
+		
+	
+
+
+		instantTextBoxType = {
+			name = "domestictext_greatmen_name"
+			position = { x = 75 y = 0 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 16	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+
+			
+		}
+		instantTextBoxType = {
+			name = "domestictext_greatmen_title"
+			position = { x = 280 y =36 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 332	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		instantTextBoxType = {
+			name = "domestictext_greatmen_value"
+			position = { x = 235 y =36 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 332	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		instantTextBoxType = {
+			name = "domestictext_greatmen_desc"
+			position = { x = 0 y =65 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 332	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		
+		instantTextBoxType = {
+			name = "domestictext_greatmen_home"
+			position = { x = 0 y =78 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 332	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_greatmen_effect"
+			position = { x = 72 y =20 }
+			format = left
+			textureFile = ""
+
+	#		font = "Main_14_bold"
+			font = "garamond_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 240
+			maxHeight = 332
+			Orientation = "UPPER_LEFT"
+			scrollbartype = "standardlistbox_slider"
+			
+		}
+	}
+
+
+
+#entry for listbox when selecting new...
+
+	windowType = {
+		name = "domesticpanel_greatmen_selection_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 110 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		#iconType =
+		#{
+		#	name ="divider"
+		#	spriteType = "GFX_divider"
+		#	position = { x= -70 y = 70 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+
+		
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_advisor_banner"
+			position = { x= -64 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+			
+
+
+
+
+		guiButtonType =
+		{
+			name ="greatmen_button"
+			quadTextureSprite= "GFX_greatmen_button"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+		
+
+
+
+		iconType =
+		{
+			name ="great_men_exclusive_overlay"
+			spriteType = "GFX_great_men_exclusive_overlay"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 75 y =0 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 16	
+			Orientation = "UPPER_LEFT"
+
+			fixedsize = yes
+		
+		}
+
+		iconType =
+		{
+			name ="greatman_skill"
+			spriteType = "GFX_stars"
+			position = { x= 230 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 200 y =95 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "value"
+			position = { x = 180 y =95 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14_bold"
+			font = "garamond_14_bold"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 0 y =67 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "home"
+			position = { x = 0 y =83 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14"
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "purchase"
+			position = { x = 75 y =95 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "purchase_cost"
+			position = { x = 120 y =95 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "effect"
+			position = { x = 72 y =16 }
+			format = left
+			textureFile = ""
+
+#			font = "Main_14_bold"
+			font = "garamond_14_bold"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 240
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		
+
+
+	}
+
+
+}

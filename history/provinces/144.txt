@@ -1,0 +1,34 @@
+
+culture = xiongnu
+religion = animism
+capital = "มูศึ"
+trade_goods = fur
+hre = no
+base_tax = 3
+manpower = 0
+owner = HZS
+controller = HZS
+citysize = 5000
+fort1 = yes
+add_core = HZS
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2300.1.1 = { discovered_by = ZHO }
+2397.1.1  = {	owner = ZHO
+		controller = ZHO
+                citysize = 4000
+            }
+2427.1.1  = {   add_core = ZHO   remove_core=HZS }
+2464.1.1  = {	owner = LHU
+		controller = LHU
+	    }
+2489.10.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+

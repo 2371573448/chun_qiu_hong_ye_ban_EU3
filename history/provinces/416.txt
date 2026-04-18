@@ -1,0 +1,96 @@
+owner = SHU
+controller = SHU
+culture = huaiyi
+religion = ancestor
+capital = "Êæ"
+trade_goods = fur
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 18000
+fort1 = yes
+add_core = SHU
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2083.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2113.1.1 = { 
+	add_core = CHU
+}
+2143.1.1 = { 
+	religion = liyuebadao
+	culture = nanchu
+}
+2222.1.1 = { 
+	citysize = 24000
+}
+2244.1.1 = { 
+	owner = SHU
+	controller = SHU
+	add_core = SHU
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = SHU
+}
+2246.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = CHU
+}
+2246.1.2 = { 
+	owner = SHU
+	controller = SHU
+	add_core = SHU
+	remove_core = WUG
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = WUG
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	revolt = { 
+		type = patriot_rebels
+		size = 0
+	}
+	controller = REB
+}
+2490.6.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	citysize = 28000
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

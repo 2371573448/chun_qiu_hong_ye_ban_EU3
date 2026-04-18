@@ -1,0 +1,48 @@
+vassal={
+	first=CHU
+	second=XUG
+	start_date=2122.1.1
+	end_date=2194.1.1
+}
+vassal={
+	first=CHU
+	second=SUI
+	start_date=2034.1.1
+	end_date=2238.1.1
+}
+vassal={
+	first=CHU
+	second=ANG
+	start_date=2034.1.1
+	end_date=2191.12.1
+}
+vassal={
+	first=CHE
+	second=DUN
+	start_date=1928.1.1
+	end_date=2061.1.1
+}
+vassal={
+	first=CHU
+	second=DUN
+	start_date=2063.1.1
+	end_date=2191.12.1
+}
+alliance={
+	first=CHU
+	second=DUN
+	start_date=2063.1.1
+	end_date=2191.12.1
+}
+alliance={
+	first=CHU
+	second=SHN
+	start_date=2066.1.1
+	end_date=2193.1.1
+}
+alliance={
+	first=CHU
+	second=HUG
+	start_date=2066.1.1
+	end_date=2193.1.1
+}

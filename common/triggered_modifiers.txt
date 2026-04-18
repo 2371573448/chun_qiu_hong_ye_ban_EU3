@@ -1,0 +1,10679 @@
+###############################################
+#理念
+###############################################
+#宗法制度
+zongfazhi = { 
+	potential = { 
+		idea = grand_navy
+	}
+	trigger = { 
+		has_country_flag = zongfazhidu
+		NOT = { 
+			legitimacy = 0.5
+		}
+	}
+	legitimacy = 0.04
+	icon = 3
+}
+
+#天命所归
+the_mandate_of_heaven = { 
+	potential = { 
+		idea = superior_seamanship
+		OR = {
+			government = celestial_empire
+			government = feudal_empire
+		}
+	}
+	trigger = { 
+		stability = 0
+		legitimacy = 0.75
+	}
+	stability_investment = 15
+	stability_cost_modifier = -0.1
+	global_revolt_risk = -2
+	global_tax_modifier = 0.08
+	production_efficiency = 0.02
+	icon = 3
+}
+
+#威震华夏
+weizhenhuaxia = { 
+	potential = { 
+		idea = press_gangs
+	}
+	trigger = { 
+		prestige = 0.50
+		legitimacy = 0.5
+	}
+	global_revolt_risk = -0.5
+	global_tax_modifier = 0.10
+	war_exhaustion = -0.02
+	icon = 3
+}
+
+#逐鹿中原
+zhuluzhongyuan1 = { 
+	potential = { 
+		idea = naval_fighting_instruction
+		num_of_cities = 8
+		NOT = { num_of_cities = 16 }
+	}
+	trigger = { 
+		any_owned_province = { 
+			hre = yes
+			NOT = { 
+				is_core = THIS
+			}
+		}
+		num_of_cities = 8
+		NOT = { num_of_cities = 16 }
+	}
+	badboy = -0.15
+	icon = 13
+}
+
+zhuluzhongyuan2 = { 
+	potential = { 
+		idea = naval_fighting_instruction
+		num_of_cities = 16
+		NOT = { num_of_cities = 40 }
+	}
+	trigger = { 
+		any_owned_province = { 
+			hre = yes
+			NOT = { 
+				is_core = THIS
+			}
+		}
+		num_of_cities = 16
+		NOT = { num_of_cities = 40 }
+	}
+	badboy = -0.25
+	icon = 13
+}
+
+zhuluzhongyuan3 = { 
+	potential = { 
+		idea = naval_fighting_instruction
+		num_of_cities = 40
+	}
+	trigger = { 
+		any_owned_province = { 
+			hre = yes
+			NOT = { 
+				is_core = THIS
+			}
+		}
+		num_of_cities = 40
+	}
+	badboy = -0.35
+	icon = 13
+}
+
+#千乘之国
+qianshengzhiguo1 = { 
+	potential = { 
+		idea = glorious_arms
+	}
+	trigger = { 
+		artillery = 2
+		NOT = { artillery = 6 }
+	}
+	land_morale = 0.2
+	land_forcelimit = 1
+	prestige_from_land = 0.1
+	icon = 7
+}
+qianshengzhiguo2 = { 
+	potential = { 
+		idea = glorious_arms
+	}
+	trigger = { 
+		artillery = 6
+		NOT = { artillery = 18 }
+	}
+	land_morale = 0.4
+	land_forcelimit = 3
+	prestige_from_land = 0.3
+	icon = 7
+}
+qianshengzhiguo3 = { 
+	potential = { 
+		idea = glorious_arms
+	}
+	trigger = { 
+		artillery = 18
+	}
+	land_morale = 0.6
+	land_forcelimit = 5
+	prestige_from_land = 0.5
+	icon = 7
+}
+###############################################
+#物产开发#
+###############################################
+####
+#盐#
+####
+yan_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		salt = 1
+		NOT = { 
+			salt = 6
+		}
+	}
+	trade_efficiency = 0.02
+	production_efficiency = 0.01
+	icon = 5
+}
+yan_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		salt = 6
+		NOT = { 
+			salt = 13
+		}
+	}
+	trade_efficiency = 0.04
+	production_efficiency = 0.02
+	icon = 5
+}
+yan_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		salt = 13
+	}
+	trade_efficiency = 0.06
+	production_efficiency = 0.03
+	icon = 5
+}
+####
+#马#
+####
+ma_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		spices = 1
+		NOT = { 
+			spices = 7
+		}
+	}
+	cavalry_cost = -0.05
+	trade_efficiency = 0.02
+	icon = 5
+}
+ma_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		spices = 7
+		NOT = { 
+			spices = 14
+		}
+	}
+	cavalry_cost = -0.10
+	trade_efficiency = 0.04
+	icon = 5
+}
+ma_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		spices = 14
+	}
+	cavalry_cost = -0.15
+	trade_efficiency = 0.06
+	icon = 5
+}
+####
+#铁#
+####
+tie_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		iron = 1
+		NOT = { 
+			iron = 7
+		}
+	}
+	discipline = 0.03
+	production_efficiency = 0.01
+	icon = 5
+}
+tie_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		iron = 7
+		NOT = { 
+			iron = 14
+		}
+	}
+	discipline = 0.05
+	production_efficiency = 0.02
+	icon = 5
+}
+tie_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		iron = 14
+	}
+	discipline = 0.08
+	production_efficiency = 0.03
+	icon = 5
+}
+####
+#木#
+####
+mu_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		slaves = 1
+		NOT = { 
+			slaves = 9
+		}
+	}
+	build_cost = -0.05
+	global_ship_cost = -0.05
+	icon = 5
+}
+mu_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		slaves = 9
+		NOT = { 
+			slaves = 17
+		}
+	}
+	build_cost = -0.10
+	global_ship_cost = -0.10
+	icon = 5
+}
+mu_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		slaves = 17
+	}
+	build_cost = -0.15
+	global_ship_cost = -0.15
+	icon = 5
+}
+####
+#玉#
+####
+yu_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		sugar = 1
+		NOT = { 
+			sugar = 5
+		}
+	}
+	diplomatic_skill = 0.5
+	legitimacy = 0.005
+	icon = 5
+}
+yu_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		sugar = 5
+		NOT = { 
+			sugar = 10
+		}
+	}
+	diplomatic_skill = 1
+	legitimacy = 0.01
+	icon = 5
+}
+yu_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		sugar = 10
+	}
+	diplomatic_skill = 1.5
+	legitimacy = 0.015
+	icon = 5
+}
+######
+#布匹#
+######
+cloth_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		cloth = 1
+		NOT = { 
+			cloth = 11
+		}
+	}
+	land_morale = 0.15
+	icon = 5
+}
+cloth_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		cloth = 11
+		NOT = { 
+			cloth = 21
+		}
+	}
+	land_morale = 0.30
+	icon = 5
+}
+cloth_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		cloth = 21
+	}
+	land_morale = 0.45
+	icon = 5
+}
+####
+#酒#
+####
+wine_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		wine = 1
+		NOT = { 
+			wine = 10
+		}
+	}
+	stability_cost_modifier = -0.04
+	icon = 5
+}
+wine_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		wine = 10
+		NOT = { 
+			wine = 18
+		}
+	}
+	stability_cost_modifier = -0.08
+	icon = 5
+}
+wine_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		wine = 18
+	}
+	stability_cost_modifier = -0.12
+	icon = 5
+}
+######
+#茶叶#
+######
+tea_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		tea = 1
+		NOT = { 
+			tea = 7
+		}
+	}
+	spy_efficiency = 0.02
+	icon = 5
+}
+tea_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		tea = 7
+		NOT = { 
+			tea = 14
+		}
+	}
+	spy_efficiency = 0.04
+	icon = 5
+}
+tea_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		tea = 14
+	}
+	spy_efficiency = 0.06
+	icon = 5
+}
+######
+#牛羊#
+######
+coffee_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		coffee = 1
+		NOT = { 
+			coffee = 8
+		}
+	}
+	mercenary_cost = -0.05
+	icon = 5
+}
+coffee_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		coffee = 8
+		NOT = { 
+			coffee = 16
+		}
+	}
+	mercenary_cost = -0.1
+	icon = 5
+}
+coffee_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		coffee = 16
+	}
+	mercenary_cost = -0.15
+	icon = 5
+}
+######
+#药材#
+######
+ivory_one = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		ivory = 1
+		NOT = { 
+			ivory = 8
+		}
+	}
+	reinforce_speed = 0.04
+	icon = 5
+}
+ivory_two = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		ivory = 8
+		NOT = { 
+			ivory = 15
+		}
+	}
+	reinforce_speed = 0.08
+	icon = 5
+}
+ivory_three = { 
+	potential = { 
+		idea = quest_for_the_new_world
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+	}
+	trigger = { 
+		ivory = 15
+	}
+	reinforce_speed = 0.12
+	icon = 5
+}
+###############################################
+#物产开发#
+###############################################
+####
+#盐#
+####
+yan_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		salt = 1
+		NOT = { 
+			salt = 6
+		}
+	}
+	trade_efficiency = 0.02
+	production_efficiency = 0.01
+	icon = 5
+}
+yan_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		salt = 6
+		NOT = { 
+			salt = 13
+		}
+	}
+	trade_efficiency = 0.04
+	production_efficiency = 0.02
+	icon = 5
+}
+yan_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		salt = 13
+	}
+	trade_efficiency = 0.06
+	production_efficiency = 0.03
+	icon = 5
+}
+####
+#马#
+####
+ma_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		spices = 1
+		NOT = { 
+			spices = 7
+		}
+	}
+	cavalry_cost = -0.05
+	trade_efficiency = 0.02
+	icon = 5
+}
+ma_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		spices = 7
+		NOT = { 
+			spices = 14
+		}
+	}
+	cavalry_cost = -0.10
+	trade_efficiency = 0.04
+	icon = 5
+}
+ma_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		spices = 14
+	}
+	cavalry_cost = -0.15
+	trade_efficiency = 0.06
+	icon = 5
+}
+####
+#铁#
+####
+tie_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		iron = 1
+		NOT = { 
+			iron = 7
+		}
+	}
+	discipline = 0.03
+	production_efficiency = 0.01
+	icon = 5
+}
+tie_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		iron = 7
+		NOT = { 
+			iron = 14
+		}
+	}
+	discipline = 0.05
+	production_efficiency = 0.02
+	icon = 5
+}
+tie_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		iron = 14
+	}
+	discipline = 0.08
+	production_efficiency = 0.03
+	icon = 5
+}
+####
+#木#
+####
+mu_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		slaves = 1
+		NOT = { 
+			slaves = 9
+		}
+	}
+	build_cost = -0.05
+	global_ship_cost = -0.05
+	icon = 5
+}
+mu_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		slaves = 9
+		NOT = { 
+			slaves = 17
+		}
+	}
+	build_cost = -0.10
+	global_ship_cost = -0.10
+	icon = 5
+}
+mu_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		slaves = 17
+	}
+	build_cost = -0.15
+	global_ship_cost = -0.15
+	icon = 5
+}
+####
+#玉#
+####
+yu_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		sugar = 1
+		NOT = { 
+			sugar = 5
+		}
+	}
+	diplomatic_skill = 0.5
+	legitimacy = 0.005
+	icon = 5
+}
+yu_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		sugar = 5
+		NOT = { 
+			sugar = 10
+		}
+	}
+	diplomatic_skill = 1
+	legitimacy = 0.01
+	icon = 5
+}
+yu_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		sugar = 10
+	}
+	diplomatic_skill = 1.5
+	legitimacy = 0.015
+	icon = 5
+}
+######
+#布匹#
+######
+cloth_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		cloth = 1
+		NOT = { 
+			cloth = 11
+		}
+	}
+	land_morale = 0.15
+	icon = 5
+}
+cloth_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		cloth = 11
+		NOT = { 
+			cloth = 21
+		}
+	}
+	land_morale = 0.30
+	icon = 5
+}
+cloth_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		cloth = 21
+	}
+	land_morale = 0.45
+	icon = 5
+}
+####
+#酒#
+####
+wine_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		wine = 1
+		NOT = { 
+			wine = 10
+		}
+	}
+	stability_cost_modifier = -0.04
+	icon = 5
+}
+wine_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		wine = 10
+		NOT = { 
+			wine = 18
+		}
+	}
+	stability_cost_modifier = -0.08
+	icon = 5
+}
+wine_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		wine = 18
+	}
+	stability_cost_modifier = -0.12
+	icon = 5
+}
+######
+#茶叶#
+######
+tea_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		tea = 1
+		NOT = { 
+			tea = 7
+		}
+	}
+	spy_efficiency = 0.02
+	icon = 5
+}
+tea_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		tea = 7
+		NOT = { 
+			tea = 14
+		}
+	}
+	spy_efficiency = 0.04
+	icon = 5
+}
+tea_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		tea = 14
+	}
+	spy_efficiency = 0.06
+	icon = 5
+}
+######
+#牛羊#
+######
+coffee_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		coffee = 1
+		NOT = { 
+			coffee = 8
+		}
+	}
+	mercenary_cost = -0.05
+	icon = 5
+}
+coffee_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		coffee = 8
+		NOT = { 
+			coffee = 16
+		}
+	}
+	mercenary_cost = -0.1
+	icon = 5
+}
+coffee_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		coffee = 16
+	}
+	mercenary_cost = -0.15
+	icon = 5
+}
+######
+#药材#
+######
+ivory_one = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		ivory = 1
+		NOT = { 
+			ivory = 8
+		}
+	}
+	reinforce_speed = 0.04
+	icon = 5
+}
+ivory_two = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		ivory = 8
+		NOT = { 
+			ivory = 15
+		}
+	}
+	reinforce_speed = 0.08
+	icon = 5
+}
+ivory_three = { 
+	potential = { 
+		has_country_flag = shanheguangmao
+	}
+	trigger = { 
+		ivory = 15
+	}
+	reinforce_speed = 0.12
+	icon = 5
+}
+############################################
+#过度集权#
+############################################
+guodujiquan = { 
+	potential = { 
+		ai = no
+	}
+	trigger = { 
+		or = { 
+			and = { 
+				not = { 
+					idea = national_bank
+				} # 郡县制度
+				or = { 
+					and = { 
+						not = { 
+							ADM = 7
+						}
+						not = { 
+							centralization_decentralization = -4
+						}
+					}
+					and = { 
+						not = { 
+							ADM = 6
+						}
+						not = { 
+							centralization_decentralization = -3
+						}
+					}
+					and = { 
+						not = { 
+							ADM = 5
+						}
+						not = { 
+							centralization_decentralization = -2
+						}
+					}
+					and = { 
+						not = { 
+							ADM = 4
+						}
+						not = { 
+							centralization_decentralization = -1
+						}
+					}
+				}
+			}
+			and = { 
+				idea = national_bank # 郡县制度
+				or = { 
+					and = { 
+						not = { 
+							ADM = 5
+						}
+						not = { 
+							centralization_decentralization = -4
+						}
+					}
+					and = { 
+						not = { 
+							ADM = 4
+						}
+						not = { 
+							centralization_decentralization = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	global_revolt_risk = 2 # 全国叛乱风险+2
+	stability_cost_modifier = 0.2 # 全国稳定花费+20%
+	icon = 4
+}
+###########################
+#三军限制#
+###########################
+chunqiu_mil_1 = { 
+	potential = { 
+		hre = yes
+		not = { 
+			has_country_flag = mil_reform1
+		}
+	}
+	trigger = { 
+		hre = yes
+		is_emperor = no
+		not = { 
+			tag = PAP
+		}
+	}
+	land_forcelimit_modifier = -0.35
+	land_maintenance_modifier = -0.05
+	icon = 8
+}
+###################################
+##########
+#不习车战#
+##########
+buxichezhan = { 
+	potential = { 
+		OR = { 
+			unit_type = wuyue1
+			unit_type = bashu1
+			unit_type = baiyue
+		}
+		NOT = { 
+			has_country_modifier = xichezhan
+		}
+	}
+	artillery_cost = 0.8
+	cavalry_cost = 0.4
+	icon = 8
+}
+####################
+#少量进口粮食—和平#
+####################
+shaoliangliangshi_one = { 
+	potential = { 
+		num_of_cities = 10
+		war = no
+		NOT = { 
+			has_country_flag = nanxiyu
+		}
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 2
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 2
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 4
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 3
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 4
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 7
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 5
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 8
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 6
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 11
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 7
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 13
+					}
+				}
+			}
+		}
+	}
+	land_maintenance_modifier = 0.15
+	stability_cost_modifier = 0.15
+	global_revolt_risk = 0.5
+	icon = 6
+}
+####################
+#少量进口粮食—战时#
+####################
+shaoliangliangshi_two = { 
+	potential = { 
+		num_of_cities = 10
+		war = yes
+		NOT = { 
+			has_country_flag = nanxiyu
+		}
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 2
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 3
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 4
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 4
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 6
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 5
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 8
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 7
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 11
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 9
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 14
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 11
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 17
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 14
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 21
+					}
+				}
+			}
+		}
+	}
+	land_maintenance_modifier = 0.15
+	stability_cost_modifier = 0.15
+	global_revolt_risk = 0.5
+	icon = 6
+}
+####################
+#大量进口粮食—和平#
+####################
+daliangliangshi_one = { 
+	potential = { 
+		num_of_cities = 10
+		war = no
+		NOT = { tag = XNU }
+		NOT = { 
+			has_country_flag = nanxiyu
+		}
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 1
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 4
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 6
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 7
+					}
+				}
+			}
+		}
+	}
+	land_maintenance_modifier = 0.30
+	stability_cost_modifier = 0.30
+	global_revolt_risk = 1
+	icon = 6
+}
+####################
+#大量进口粮食—战时#
+####################
+daliangliangshi_two = { 
+	potential = { 
+		num_of_cities = 10
+		war = yes
+		NOT = { tag = XNU }
+		NOT = { 
+			has_country_flag = nanxiyu
+		}
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 4
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 7
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 9
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 11
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 14
+					}
+				}
+			}
+		}
+	}
+	land_maintenance_modifier = 0.30
+	stability_cost_modifier = 0.30
+	global_revolt_risk = 1
+	icon = 6
+}
+####################
+#少量出口粮食—和平#
+####################
+shaoliangjinkouliangshi_one = { 
+	potential = { 
+		num_of_cities = 10
+		war = no
+		NOT = { tag = XNU }
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 2
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 4
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 6
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 7
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 8
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 10
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 11
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 14
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 14
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 18
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 17
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 22
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 20
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 25
+					}
+				}
+			}
+		}
+	}
+	global_tax_modifier = 0.06
+	badboy = -0.1
+	prestige = 0.01
+	land_forcelimit_modifier = 0.04
+	icon = 5
+}
+####################
+#少量出口粮食—战时#
+####################
+shaoliangjinkouliangshi_two = { 
+	potential = { 
+		num_of_cities = 10
+		war = yes
+		NOT = { tag = XNU }
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 3
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 5
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 8
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 7
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 11
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 10
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 15
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 14
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 21
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 18
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 27
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 22
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 33
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 27
+				}
+				not = { 
+					check_variable = {
+						which = liangshishuliang
+						value = 38
+					}
+				}
+			}
+		}
+	}
+	global_tax_modifier = 0.06
+	badboy = -0.1
+	prestige = 0.01
+	land_forcelimit_modifier = 0.04
+	icon = 5
+}
+####################
+#大量出口粮食—和平#
+####################
+daliangjinkouliangshi_one = { 
+	potential = { 
+		num_of_cities = 10
+		war = no
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 3
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 5
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 7
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 10
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 14
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 18
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 22
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 25
+				}
+			}
+		}
+	}
+	global_tax_modifier = 0.12
+	badboy = -0.2
+	prestige = 0.02
+	land_forcelimit_modifier = 0.08
+	icon = 5
+}
+####################
+#大量出口粮食—战时#
+####################
+daliangjinkouliangshi_two = { 
+	potential = { 
+		num_of_cities = 10
+		war = yes
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 20
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 5
+				}
+			}
+			AND = { 
+				num_of_cities = 20
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 8
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 40
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 11
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 15
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 80
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 21
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				not = { 
+					num_of_cities = 100
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 27
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 33
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = liangshishuliang
+					value = 38
+				}
+			}
+		}
+	}
+	global_tax_modifier = 0.12
+	badboy = -0.2
+	prestige = 0.02
+	land_forcelimit_modifier = 0.08
+	icon = 5
+}
+####################
+#严重缺乏铜矿#
+####################
+lack_of_copper1 = { 
+	potential = { 
+		num_of_cities = 10
+		NOT = { 
+			has_country_flag = nanxiyu
+		}
+		NOT = { 
+			has_country_flag = zhuzaozhigong
+		}
+	}
+	trigger = { 
+		num_of_cities = 30
+		not = { 
+			check_variable = {
+				which = tongtieshuliang
+				value = 1
+			}
+		}
+	}
+	global_tax_modifier = -0.10
+	trade_efficiency = -0.04
+	discipline = -0.04
+	land_forcelimit_modifier = -0.12
+	icon = 6
+}
+####################
+#少量缺乏铜矿#
+####################
+lack_of_copper2 = { 
+	potential = { 
+		num_of_cities = 10
+		NOT = { 
+			has_country_flag = nanxiyu
+		}
+		NOT = { 
+			has_country_flag = zhuzaozhigong
+		}
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 15
+				not = { 
+					num_of_cities = 30
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 1
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 90
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 90
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 4
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 150
+				not = { 
+					num_of_cities = 180
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 6
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 180
+				not = { 
+					num_of_cities = 210
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 7
+					}
+				}
+			}
+		}
+	}
+	global_tax_modifier = -0.05
+	trade_efficiency = -0.02
+	discipline = -0.02
+	land_forcelimit_modifier = -0.06
+	icon = 6
+}
+####################
+#适量铜矿出产#
+####################
+appropriate_amount_of_copper = { 
+	potential = { 
+		num_of_cities = 10
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 1
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 2
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 3
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 90
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 3
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 5
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 90
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 4
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 7
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 5
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 9
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 150
+				not = { 
+					num_of_cities = 180
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 6
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 11
+					}
+				}
+			}
+			AND = { 
+				num_of_cities = 180
+				not = { 
+					num_of_cities = 210
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 7
+				}
+				not = { 
+					check_variable = {
+						which = tongtieshuliang
+						value = 13
+					}
+				}
+			}
+		}
+	}
+	global_tax_modifier = 0.05
+	trade_efficiency = 0.02
+	discipline = 0.02
+	land_forcelimit_modifier = 0.06
+	icon = 5
+}
+####################
+#大量铜矿出产#
+####################
+large_amount_of_copper = { 
+	potential = { 
+		num_of_cities = 10
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 10
+				not = { 
+					num_of_cities = 30
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 2
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				not = { 
+					num_of_cities = 60
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 3
+				}
+			}
+			AND = { 
+				num_of_cities = 60
+				not = { 
+					num_of_cities = 90
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 5
+				}
+			}
+			AND = { 
+				num_of_cities = 90
+				not = { 
+					num_of_cities = 120
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 7
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				not = { 
+					num_of_cities = 150
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 9
+				}
+			}
+			AND = { 
+				num_of_cities = 150
+				not = { 
+					num_of_cities = 200
+				}
+				check_variable = {
+					which = tongtieshuliang
+					value = 11
+				}
+			}
+			AND = { 
+				num_of_cities = 200
+				check_variable = {
+					which = tongtieshuliang
+					value = 13
+				}
+			}
+		}
+	}
+	global_tax_modifier = 0.1
+	trade_efficiency = 0.04
+	discipline = 0.04
+	land_forcelimit_modifier = 0.12
+	icon = 5
+}
+############################################
+#    争霸战争    #
+############################################
+zhengbazhanzheng = { 
+	potential = { 
+		capital_scope = { 
+			hre = yes
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		not = { 
+			has_global_flag = mibingdahui
+		}
+		any_country = { 
+			has_country_flag = campaign_to_bazhu
+		}
+	}
+	trigger = { 
+		year = 2080
+	}
+	trade_efficiency = -0.04
+	global_tax_modifier = -0.10
+	production_efficiency = -0.04
+	icon = 13
+}
+############################################
+#    弭兵纳贡    #
+############################################
+states_MBNG = { 
+	potential = { 
+		capital_scope = { 
+			hre = yes
+		}
+		not = { 
+			tag = PAP
+		}
+		not = { 
+			has_country_modifier = qianshengdaguo
+		}
+		not = { 
+			has_country_modifier = rival_for_by
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		has_global_flag = mibingdahui # 弭兵纳贡
+	}
+	trade_efficiency = 0.03
+	global_tax_modifier = 0.10
+	production_efficiency = 0.03
+	global_manpower = -0.05
+	icon = 3
+}
+############################################
+#    与天子交恶    #
+############################################
+war_with_ZHOU = { 
+	potential = { 
+		not = { 
+			tag = ZGO
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		not = { 
+			government = celestial_empire
+		}
+		not = { 
+			exists = ZHG
+		}
+		hre = yes
+		OR = { 
+			religion = liyuejiaohua
+			religion = rujia
+		}
+	}
+	trigger = { 
+		war_with = PAP
+	}
+	global_revolt_risk = 1
+	badboy = 0.15
+	badboy_limit = -4
+	legitimacy = -0.02
+	icon = 4
+}
+illegal_control_ZHOU = { 
+	potential = { 
+		not = { 
+			tag = ZGO
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		not = { 
+			has_global_flag = liyuebenghuai3
+		}
+		not = { 
+			tag = PAP
+		}
+		hre = yes
+		religion_group = christian
+	}
+	trigger = {
+		owns = 351
+		OR = {
+			NOT = { is_core = 351 }
+			exists = PAP
+		}
+	}
+	global_revolt_risk = 3
+	badboy = 1
+	legitimacy = -0.025
+	icon = 4
+}
+############################################
+#    劫掠战争    #
+############################################
+manyijieluezhanzheng = { 
+	potential = { 
+		religion_group = pagan
+		hre = no
+	}
+	trigger = { 
+		war = yes
+	}
+	legitimacy = 0.01
+	global_revolt_risk = 0.5
+	stability_cost_modifier = -0.10
+	land_maintenance_modifier = -0.10
+	war_exhaustion = -0.015
+	icon = 7
+}
+##################################################
+#    华夏诸侯    #
+##################################################
+chinese_hre = { 
+	potential = { 
+		hre = yes
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+	}
+	trigger = { 
+		hre = yes
+		hre_size = 20
+		is_emperor = no
+	}
+	technology_cost = -0.03
+	global_revolt_risk = -0.5
+	cultural_tradition = 0.0025
+	badboy_limit = -4
+	icon = 3
+}
+############################################
+#蛮族骑兵
+############################################
+helpnomad_group = { 
+	potential = { 
+		technology_group = nomad_group
+	}
+	trigger = { 
+		spices = 1
+	}
+	cavalry_cost = -0.15
+	leader_shock = 0.5
+	icon = 7
+}
+########################################
+# 过度扩张
+########################################
+overextension1 = { 
+	potential = { 
+		NOT = { tag = CHU }
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 200
+				NOT = { 
+					government_tech = 50
+				}
+			}
+			AND = { 
+				num_of_cities = 150
+				NOT = { 
+					government_tech = 42
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				NOT = { 
+					government_tech = 36
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				NOT = { 
+					government_tech = 30
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				NOT = { 
+					government_tech = 25
+				}
+			}
+			AND = { 
+				num_of_cities = 65
+				NOT = { 
+					government_tech = 20
+				}
+			}
+			AND = { 
+				num_of_cities = 50
+				NOT = { 
+					government_tech = 15
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				NOT = { 
+					government_tech = 10
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				NOT = { 
+					government_tech = 5
+				}
+			}
+		}
+	}
+	global_revolt_risk = 2.75
+	stability_cost_modifier = 0.20
+	icon = 4
+}
+overextension2 = { 
+	potential = { 
+		tag = CHU
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				num_of_cities = 200
+				NOT = { 
+					government_tech = 42
+				}
+			}
+			AND = { 
+				num_of_cities = 150
+				NOT = { 
+					government_tech = 36
+				}
+			}
+			AND = { 
+				num_of_cities = 120
+				NOT = { 
+					government_tech = 30
+				}
+			}
+			AND = { 
+				num_of_cities = 100
+				NOT = { 
+					government_tech = 25
+				}
+			}
+			AND = { 
+				num_of_cities = 80
+				NOT = { 
+					government_tech = 20
+				}
+			}
+			AND = { 
+				num_of_cities = 65
+				NOT = { 
+					government_tech = 16
+				}
+			}
+			AND = { 
+				num_of_cities = 50
+				NOT = { 
+					government_tech = 12
+				}
+			}
+			AND = { 
+				num_of_cities = 40
+				NOT = { 
+					government_tech = 8
+				}
+			}
+			AND = { 
+				num_of_cities = 30
+				NOT = { 
+					government_tech = 4
+				}
+			}
+		}
+	}
+	global_revolt_risk = 2.25
+	stability_cost_modifier = 0.15
+	icon = 4
+}
+###################################
+#扩张过快
+###################################
+fastextension1 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+		OR = { 
+			AND = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				NOT = { 
+					core_percentage = 0.30
+				}
+			}
+			AND = { 
+				NOT = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				NOT = { 
+					core_percentage = 0.20
+				}
+			}
+		}
+	}
+	global_revolt_risk = 6
+	stability_cost_modifier = 0.30
+	global_tax_modifier = -0.50
+	inflation_reduction = -0.05
+	prestige = -0.04
+	badboy_limit = -4
+	badboy = 0.75
+	build_cost = 0.50
+	icon = 4
+}
+fastextension2 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+		OR = { 
+			AND = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.30
+				NOT = { 
+					core_percentage = 0.40
+				}
+			}
+			AND = { 
+				NOT = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.20
+				NOT = { 
+					core_percentage = 0.30
+				}
+			}
+		}
+	}
+	global_revolt_risk = 4
+	stability_cost_modifier = 0.25
+	global_tax_modifier = -0.40
+	inflation_reduction = -0.02
+	prestige = -0.02
+	badboy_limit = -4
+	badboy = 0.5
+	build_cost = 0.35
+	icon = 4
+}
+fastextension3 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+		OR = { 
+			AND = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.40
+				NOT = { 
+					core_percentage = 0.50
+				}
+			}
+			AND = { 
+				NOT = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.30
+				NOT = { 
+					core_percentage = 0.40
+				}
+			}
+		}
+	}
+	global_revolt_risk = 3
+	stability_cost_modifier = 0.20
+	global_tax_modifier = -0.30
+	prestige = -0.01
+	badboy_limit = -2
+	badboy = 0.35
+	build_cost = 0.25
+	icon = 4
+}
+fastextension4 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+		OR = { 
+			AND = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.50
+				NOT = { 
+					core_percentage = 0.60
+				}
+			}
+			AND = { 
+				NOT = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.40
+				NOT = { 
+					core_percentage = 0.50
+				}
+			}
+		}
+	}
+	global_revolt_risk = 2
+	stability_cost_modifier = 0.15
+	global_tax_modifier = -0.25
+	badboy_limit = -1
+	badboy = 0.2
+	build_cost = 0.15
+	icon = 4
+}
+fastextension5 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+		OR = { 
+			AND = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.60
+				NOT = { 
+					core_percentage = 0.70
+				}
+			}
+			AND = { 
+				NOT = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.50
+				NOT = { 
+					core_percentage = 0.60
+				}
+			}
+		}
+	}
+	global_revolt_risk = 1
+	stability_cost_modifier = 0.10
+	global_tax_modifier = -0.15
+	badboy = 0.1
+	build_cost = 0.05
+	icon = 4
+}
+fastextension6 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { 
+			ADM = 7
+			DIP = 7
+		}
+		OR = { 
+			AND = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.70
+				NOT = { 
+					core_percentage = 0.80
+				}
+			}
+			AND = { 
+				NOT = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = small_city
+					government = fengjian
+				}
+				core_percentage = 0.60
+				NOT = { 
+					core_percentage = 0.70
+				}
+			}
+		}
+	}
+	stability_cost_modifier = 0.05
+	global_tax_modifier = -0.05
+	badboy = 0.05
+	icon = 4
+}
+
+########################################### 
+#战国时代
+############################################
+zhanguoshidai = { 
+	potential = { 
+		has_global_flag = zhanguokaishi
+	}
+	trigger = { 
+		religion_group = christian
+	}
+	badboy = -0.6
+	missionary_placement_chance = 0.015
+	icon = 1
+}
+#############################################
+#历史幸运国家
+#############################################
+luck_QIG = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = QIG
+		OR = { 
+			NOT = { 
+				year = 2055
+			}
+			AND = { 
+				year = 2150
+				NOT = { 
+					year = 2200
+				}
+			}
+			AND = { 
+				year = 2280
+				NOT = { 
+					year = 2420
+				}
+			}
+		}
+	}
+	merc_maintenance_modifier = -0.25
+	global_tax_modifier = 0.15
+	trade_efficiency = 0.06
+	cultural_tradition = 0.015
+	prestige = 0.02
+	diplomatic_skill = 2
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_QIN = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = QIN
+		OR = { 
+			NOT = { 
+				year = 2080
+			}
+			AND = { 
+				year = 2280
+				NOT = { 
+					year = 2490
+				}
+			}
+		}
+	}
+	prestige_from_land = 0.50
+	discipline = 0.05
+	land_morale = 0.50
+	global_manpower = 0.25
+	land_forcelimit = 0.25
+	war_exhaustion = -0.08
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_JIN = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = JIN
+		OR = { 
+			NOT = { 
+				year = 1960
+			}
+			AND = { 
+				year = 2020
+				NOT = { 
+					year = 2090
+				}
+			}
+			AND = { 
+				year = 2110
+				NOT = { 
+					year = 2200
+				}
+			}
+		}
+	}
+	prestige = 0.02
+	build_cost = -0.15
+	production_efficiency = 0.05
+	inflation_reduction = 0.06
+	army_tradition = 0.02
+	global_colonial_growth = 0.33
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.05
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_CHU = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = CHU
+		OR = { 
+			NOT = { 
+				year = 2160
+			}
+			AND = { 
+				year = 2240
+				NOT = { 
+					year = 2400
+				}
+			}
+			AND = { 
+				year = 2490
+				NOT = { 
+					year = 2500
+				}
+			}
+		}
+	}
+	colonists = 0.5
+	colonist_cost = -0.33
+	land_maintenance_modifier = -0.15
+	naval_maintenance_modifier = -0.15
+	badboy_limit = 8
+	tolerance_heathen = 2
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_WUG = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = WUG
+		year = 2110
+		NOT = { 
+			year = 2220
+		}
+	}
+	colonists = 0.25
+	colonist_cost = -0.50
+	naval_morale = 0.50
+	discipline = 0.10
+	transport_cost = -0.33
+	naval_tech_cost_modifier = -0.05
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_YGO = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = YGO
+		year = 2200
+		NOT = { 
+			year = 2300
+		}
+	}
+	colonist_cost = -0.33
+	land_maintenance_modifier = -0.25
+	mercenary_cost = -0.25
+	spy_efficiency = 0.08
+	badboy = -0.5
+	max_war_exhaustion = -6
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_ZGO = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = ZGO
+		NOT = {  year = 2000 }
+	}
+	global_tax_modifier = 0.20
+	diplomats = 1.5
+	land_morale = 0.50
+	land_forcelimit = 0.25
+	badboy_limit =6
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_WEI = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = WEI
+		year = 2245
+		NOT = { 
+			year = 2350
+		}
+	}
+	global_revolt_risk = -1.5
+	production_efficiency = 0.05
+	discipline = 0.08
+	global_manpower = 0.25
+	army_tradition = 0.02
+	reinforce_speed = 0.25
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_ZHO = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = ZHO
+		year = 2370
+		NOT = { 
+			year = 2470
+		}
+	}
+	inflation_reduction = 0.08
+	colonist_cost = -0.25
+	land_morale = 0.33
+	cavalry_cost = -0.33
+	army_tradition = 0.03
+	global_regiment_recruit_speed = -0.30
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+luck_YAN = { 
+	potential = { 
+		OR = { 
+			AND = { 
+				has_global_flag = history_lucky2
+				ai = yes
+			}
+			has_global_flag = history_lucky1
+		}
+	}
+	trigger = { 
+		tag = YAN
+		year = 2385
+		NOT = { 
+			year = 2430
+		}
+	}
+	trade_efficiency = 0.05
+	colonists = 0.50
+	land_morale = 0.25
+	land_forcelimit = 0.25
+	land_attrition = -0.33
+	cultural_tradition = 0.03
+	merchant_compete_chance = 0.05
+	colonist_placement_chance = 0.05
+	missionary_placement_chance = 0.01
+	leader_fire = 1
+	leader_shock = 1
+	technology_cost = -0.02
+	stability_cost_modifier = -0.25
+	defensiveness = 0.25
+	icon = 1
+}
+#############################################
+#科技加成
+#############################################
+#########
+#政治科技
+#########
+goverment_tech_5 = { 
+	potential = { 
+		government_tech = 5
+		NOT = { government_tech = 10 }
+	}
+	trigger = { 
+		government_tech = 5
+		NOT = { government_tech = 10 }
+	}
+	global_tax_modifier = 0.03
+	officials = 0.1
+	icon = 3
+}
+goverment_tech_10 = { 
+	potential = { 
+		government_tech = 10
+		NOT = { government_tech = 15 }
+	}
+	trigger = { 
+		government_tech = 10
+		NOT = { government_tech = 15 }
+	}
+	global_tax_modifier = 0.06
+	officials = 0.2
+	icon = 3
+}
+goverment_tech_15 = { 
+	potential = { 
+		government_tech = 15
+		NOT = { government_tech = 20 }
+	}
+	trigger = { 
+		government_tech = 15
+		NOT = { government_tech = 20 }
+	}
+	global_tax_modifier = 0.09
+	officials = 0.3
+	icon = 3
+}
+goverment_tech_20 = { 
+	potential = { 
+		government_tech = 20
+		NOT = { government_tech = 25 }
+	}
+	trigger = { 
+		government_tech = 20
+		NOT = { government_tech = 25 }
+	}
+	global_tax_modifier = 0.12
+	officials = 0.4
+	icon = 3
+}
+goverment_tech_25 = { 
+	potential = { 
+		government_tech = 25
+		NOT = { government_tech = 30 }
+	}
+	trigger = { 
+		government_tech = 25
+		NOT = { government_tech = 30 }
+	}
+	global_tax_modifier = 0.15
+	officials = 0.5
+	icon = 3
+}
+goverment_tech_30 = { 
+	potential = { 
+		government_tech = 30
+		NOT = { government_tech = 35 }
+	}
+	trigger = { 
+		government_tech = 30
+		NOT = { government_tech = 35 }
+	}
+	global_tax_modifier = 0.18
+	officials = 0.6
+	icon = 3
+}
+goverment_tech_35 = { 
+	potential = { 
+		government_tech = 35
+		NOT = { government_tech = 40 }
+	}
+	trigger = { 
+		government_tech = 35
+		NOT = { government_tech = 40 }
+	}
+	global_tax_modifier = 0.21
+	officials = 0.7
+	icon = 3
+}
+goverment_tech_40 = { 
+	potential = { 
+		government_tech = 40
+		NOT = { government_tech = 45 }
+	}
+	trigger = { 
+		government_tech = 40
+		NOT = { government_tech = 45 }
+	}
+	global_tax_modifier = 0.24
+	officials = 0.8
+	icon = 3
+}
+goverment_tech_45 = { 
+	potential = { 
+		government_tech = 45
+		NOT = { government_tech = 50 }
+	}
+	trigger = { 
+		government_tech = 45
+		NOT = { government_tech = 50 }
+	}
+	global_tax_modifier = 0.27
+	officials = 0.9
+	icon = 3
+}
+goverment_tech_50 = { 
+	potential = { 
+		government_tech = 50
+		NOT = { government_tech = 55 }
+	}
+	trigger = { 
+		government_tech = 50
+		NOT = { government_tech = 55 }
+	}
+	global_tax_modifier = 0.30
+	officials = 1.0
+	icon = 3
+}
+goverment_tech_55 = { 
+	potential = { 
+		government_tech = 55
+		NOT = { government_tech = 60 }
+	}
+	trigger = { 
+		government_tech = 55
+		NOT = { government_tech = 60 }
+	}
+	global_tax_modifier = 0.33
+	officials = 1.1
+	icon = 3
+}
+goverment_tech_60 = { 
+	potential = { 
+		government_tech = 60
+		NOT = { government_tech = 65 }
+	}
+	trigger = { 
+		government_tech = 60
+		NOT = { government_tech = 65 }
+	}
+	global_tax_modifier = 0.36
+	officials = 1.2
+	icon = 3
+}
+goverment_tech_65 = { 
+	potential = { 
+		government_tech = 65
+		NOT = { government_tech = 70 }
+	}
+	trigger = { 
+		government_tech = 65
+		NOT = { government_tech = 70 }
+	}
+	global_tax_modifier = 0.39
+	officials = 1.3
+	icon = 3
+}
+goverment_tech_70 = { 
+	potential = { 
+		government_tech = 70
+		NOT = { government_tech = 75 }
+	}
+	trigger = { 
+		government_tech = 70
+		NOT = { government_tech = 75 }
+	}
+	global_tax_modifier = 0.42
+	officials = 1.4
+	icon = 3
+}
+goverment_tech_75 = { 
+	potential = { 
+		government_tech = 75
+		NOT = { government_tech = 80 }
+	}
+	trigger = { 
+		government_tech = 75
+		NOT = { government_tech = 80 }
+	}
+	global_tax_modifier = 0.45
+	officials = 1.5
+	icon = 3
+}
+goverment_tech_80 = { 
+	potential = { 
+		government_tech = 80
+	}
+	trigger = { 
+		government_tech = 80
+	}
+	global_tax_modifier = 0.48
+	officials = 1.6
+	icon = 3
+}
+###############
+#军事科技
+###############
+land_tech_5 = { 
+	potential = { 
+		land_tech = 5
+		NOT = { land_tech = 10 }
+	}
+	trigger = { 
+		land_tech = 5
+		NOT = { land_tech = 10 }
+	}
+	land_forcelimit = 0.5
+	land_maintenance_modifier = 0.025
+	infantry_cost = 0.015
+	discipline = 0.005
+	land_tech_cost_modifier = 0.006
+	icon = 7
+}
+land_tech_10 = { 
+	potential = { 
+		land_tech = 10
+		NOT = { land_tech = 15 }
+	}
+	trigger = { 
+		land_tech = 10
+		NOT = { land_tech = 15 }
+	}
+	land_forcelimit = 1.0
+	land_maintenance_modifier = 0.050
+	infantry_cost = 0.030
+	discipline = 0.010
+	land_tech_cost_modifier = 0.012
+	icon = 7
+}
+land_tech_15 = { 
+	potential = { 
+		land_tech = 15
+		NOT = { land_tech = 20 }
+	}
+	trigger = { 
+		land_tech = 15
+		NOT = { land_tech = 20 }
+	}
+	land_forcelimit = 1.5
+	land_maintenance_modifier = 0.075
+	infantry_cost = 0.045
+	discipline = 0.015
+	land_tech_cost_modifier = 0.018
+	icon = 7
+}
+land_tech_20 = { 
+	potential = { 
+		land_tech = 20
+		NOT = { land_tech = 25 }
+	}
+	trigger = { 
+		land_tech = 20
+		NOT = { land_tech = 25 }
+	}
+	land_forcelimit = 2.0
+	land_maintenance_modifier = 0.10
+	infantry_cost = 0.06
+	discipline = 0.020
+	land_tech_cost_modifier = 0.024
+	icon = 7
+}
+land_tech_25 = { 
+	potential = { 
+		land_tech = 25
+		NOT = { land_tech = 30 }
+	}
+	trigger = { 
+		land_tech = 25
+		NOT = { land_tech = 30 }
+	}
+	land_forcelimit = 2.5
+	land_maintenance_modifier = 0.125
+	infantry_cost = 0.075
+	discipline = 0.025
+	land_tech_cost_modifier = 0.03
+	icon = 7
+}
+land_tech_30 = { 
+	potential = { 
+		land_tech = 30
+		NOT = { land_tech = 35 }
+	}
+	trigger = { 
+		land_tech = 30
+		NOT = { land_tech = 35 }
+	}
+	land_forcelimit = 3.0
+	land_maintenance_modifier = 0.15
+	infantry_cost = 0.09
+	discipline = 0.03
+	land_tech_cost_modifier = 0.036
+	icon = 7
+}
+land_tech_35 = { 
+	potential = { 
+		land_tech = 35
+		NOT = { land_tech = 40 }
+	}
+	trigger = { 
+		land_tech = 35
+		NOT = { land_tech = 40 }
+	}
+	land_forcelimit = 3.5
+	land_maintenance_modifier = 0.175
+	infantry_cost = 0.105
+	discipline = 0.035
+	land_tech_cost_modifier = 0.042
+	icon = 7
+}
+land_tech_40 = { 
+	potential = { 
+		land_tech = 40
+		NOT = { land_tech = 45 }
+	}
+	trigger = { 
+		land_tech = 40
+		NOT = { land_tech = 45 }
+	}
+	land_forcelimit = 4.0
+	land_maintenance_modifier = 0.20
+	infantry_cost = 0.12
+	discipline = 0.04
+	land_tech_cost_modifier = 0.048
+	icon = 7
+}
+land_tech_45 = { 
+	potential = { 
+		land_tech = 45
+		NOT = { land_tech = 50 }
+	}
+	trigger = { 
+		land_tech = 45
+		NOT = { land_tech = 50 }
+	}
+	land_forcelimit = 4.5
+	land_maintenance_modifier = 0.225
+	infantry_cost = 0.135
+	discipline = 0.045
+	land_tech_cost_modifier = 0.054
+	icon = 7
+}
+land_tech_50 = { 
+	potential = { 
+		land_tech = 50
+		NOT = { land_tech = 55 }
+	}
+	trigger = { 
+		land_tech = 50
+		NOT = { land_tech = 55 }
+	}
+	land_forcelimit = 5.0
+	land_maintenance_modifier = 0.25
+	infantry_cost = 0.15
+	discipline = 0.05
+	land_tech_cost_modifier = 0.06
+	icon = 7
+}
+land_tech_55 = { 
+	potential = { 
+		land_tech = 55
+		NOT = { land_tech = 60 }
+	}
+	trigger = { 
+		land_tech = 55
+		NOT = { land_tech = 60 }
+	}
+	land_forcelimit = 5.5
+	land_maintenance_modifier = 0.275
+	infantry_cost = 0.165
+	discipline = 0.055
+	land_tech_cost_modifier = 0.066
+	icon = 7
+}
+land_tech_60 = { 
+	potential = { 
+		land_tech = 60
+		NOT = { land_tech = 65 }
+	}
+	trigger = { 
+		land_tech = 60
+		NOT = { land_tech = 65 }
+	}
+	land_forcelimit = 6.0
+	land_maintenance_modifier = 0.30
+	infantry_cost = 0.18
+	discipline = 0.06
+	land_tech_cost_modifier = 0.072
+	icon = 7
+}
+land_tech_65 = { 
+	potential = { 
+		land_tech = 65
+		NOT = { land_tech = 70 }
+	}
+	trigger = { 
+		land_tech = 65
+		NOT = { land_tech = 70 }
+	}
+	land_forcelimit = 6.5
+	land_maintenance_modifier = 0.325
+	infantry_cost = 0.195
+	discipline = 0.065
+	land_tech_cost_modifier = 0.078
+	icon = 7
+}
+land_tech_70 = { 
+	potential = { 
+		land_tech = 70
+		NOT = { land_tech = 75 }
+	}
+	trigger = { 
+		land_tech = 70
+		NOT = { land_tech = 75 }
+	}
+	land_forcelimit = 7.0
+	land_maintenance_modifier = 0.35
+	infantry_cost = 0.21
+	discipline = 0.07
+	land_tech_cost_modifier = 0.084
+	icon = 7
+}
+land_tech_75 = { 
+	potential = { 
+		land_tech = 75
+		NOT = { land_tech = 80 }
+	}
+	trigger = { 
+		land_tech = 75
+		NOT = { land_tech = 80 }
+	}
+	land_forcelimit = 7.5
+	land_maintenance_modifier = 0.375
+	infantry_cost = 0.225
+	discipline = 0.075
+	land_tech_cost_modifier = 0.09
+	icon = 7
+}
+land_tech_80 = { 
+	potential = { 
+		land_tech = 80
+	}
+	trigger = { 
+		land_tech = 80
+	}
+	land_forcelimit = 8.0
+	land_maintenance_modifier = 0.40
+	infantry_cost = 0.24
+	discipline = 0.08
+	land_tech_cost_modifier = 0.1
+	icon = 7
+}
+###############
+#文化科技
+###############
+naval_tech_5 = { 
+	potential = { 
+		naval_tech = 5
+		NOT = { naval_tech = 10 }
+	}
+	trigger = { 
+		naval_tech = 5
+		NOT = { naval_tech = 10 }
+	}
+	missionary_placement_chance = 0.002
+	cultural_tradition_decay = -0.001
+	diplomats = 0.05
+	icon = 9
+}
+naval_tech_10 = { 
+	potential = { 
+		naval_tech = 10
+		NOT = { naval_tech = 15 }
+	}
+	trigger = { 
+		naval_tech = 10
+		NOT = { naval_tech = 15 }
+	}
+	missionary_placement_chance = 0.004
+	cultural_tradition_decay = -0.002
+	diplomats = 0.10
+	icon = 9
+}
+naval_tech_15 = { 
+	potential = { 
+		naval_tech = 15
+		NOT = { naval_tech = 20 }
+	}
+	trigger = { 
+		naval_tech = 15
+		NOT = { naval_tech = 20 }
+	}
+	missionary_placement_chance = 0.006
+	cultural_tradition_decay = -0.003
+	diplomats = 0.15
+	icon = 9
+}
+naval_tech_20 = { 
+	potential = { 
+		naval_tech = 20
+		NOT = { naval_tech = 25 }
+	}
+	trigger = { 
+		naval_tech = 20
+		NOT = { naval_tech = 25 }
+	}
+	missionary_placement_chance = 0.008
+	cultural_tradition_decay = -0.004
+	diplomats = 0.20
+	icon = 9
+}
+naval_tech_25 = { 
+	potential = { 
+		naval_tech = 25
+		NOT = { naval_tech = 30 }
+	}
+	trigger = { 
+		naval_tech = 25
+		NOT = { naval_tech = 30 }
+	}
+	missionary_placement_chance = 0.010
+	cultural_tradition_decay = -0.005
+	diplomats = 0.25
+	icon = 9
+}
+naval_tech_30 = { 
+	potential = { 
+		naval_tech = 30
+		NOT = { naval_tech = 35 }
+	}
+	trigger = { 
+		naval_tech = 30
+		NOT = { naval_tech = 35 }
+	}
+	missionary_placement_chance = 0.012
+	cultural_tradition_decay = -0.006
+	diplomats = 0.30
+	icon = 9
+}
+naval_tech_35 = { 
+	potential = { 
+		naval_tech = 35
+		NOT = { naval_tech = 40 }
+	}
+	trigger = { 
+		naval_tech = 35
+		NOT = { naval_tech = 40 }
+	}
+	missionary_placement_chance = 0.014
+	cultural_tradition_decay = -0.007
+	diplomats = 0.35
+	icon = 9
+}
+naval_tech_40 = { 
+	potential = { 
+		naval_tech = 40
+		NOT = { naval_tech = 45 }
+	}
+	trigger = { 
+		naval_tech = 40
+		NOT = { naval_tech = 45 }
+	}
+	missionary_placement_chance = 0.016
+	cultural_tradition_decay = -0.008
+	diplomats = 0.40
+	icon = 9
+}
+naval_tech_45 = { 
+	potential = { 
+		naval_tech = 45
+		NOT = { naval_tech = 50 }
+	}
+	trigger = { 
+		naval_tech = 45
+		NOT = { naval_tech = 50 }
+	}
+	missionary_placement_chance = 0.018
+	cultural_tradition_decay = -0.009
+	diplomats = 0.45
+	icon = 9
+}
+naval_tech_50 = { 
+	potential = { 
+		naval_tech = 50
+		NOT = { naval_tech = 55 }
+	}
+	trigger = { 
+		naval_tech = 50
+		NOT = { naval_tech = 55 }
+	}
+	missionary_placement_chance = 0.020
+	cultural_tradition_decay = -0.010
+	diplomats = 0.50
+	icon = 9
+}
+naval_tech_55 = { 
+	potential = { 
+		naval_tech = 55
+		NOT = { naval_tech = 60 }
+	}
+	trigger = { 
+		naval_tech = 55
+		NOT = { naval_tech = 60 }
+	}
+	missionary_placement_chance = 0.022
+	cultural_tradition_decay = -0.011
+	diplomats = 0.55
+	icon = 9
+}
+naval_tech_60 = { 
+	potential = { 
+		naval_tech = 60
+		NOT = { naval_tech = 65 }
+	}
+	trigger = { 
+		naval_tech = 60
+		NOT = { naval_tech = 65 }
+	}
+	missionary_placement_chance = 0.024
+	cultural_tradition_decay = -0.012
+	diplomats = 0.60
+	icon = 9
+}
+naval_tech_65 = { 
+	potential = { 
+		naval_tech = 65
+		NOT = { naval_tech = 70 }
+	}
+	trigger = { 
+		naval_tech = 65
+		NOT = { naval_tech = 70 }
+	}
+	missionary_placement_chance = 0.026
+	cultural_tradition_decay = -0.013
+	diplomats = 0.65
+	icon = 9
+}
+naval_tech_70 = { 
+	potential = { 
+		naval_tech = 70
+		NOT = { naval_tech = 75 }
+	}
+	trigger = { 
+		naval_tech = 70
+		NOT = { naval_tech = 75 }
+	}
+	missionary_placement_chance = 0.028
+	cultural_tradition_decay = -0.014
+	diplomats = 0.70
+	icon = 9
+}
+naval_tech_75 = { 
+	potential = { 
+		naval_tech = 75
+		NOT = { naval_tech = 80 }
+	}
+	trigger = { 
+		naval_tech = 75
+		NOT = { naval_tech = 80 }
+	}
+	missionary_placement_chance = 0.030
+	cultural_tradition_decay = -0.015
+	diplomats = 0.75
+	icon = 9
+}
+naval_tech_80 = { 
+	potential = { 
+		naval_tech = 80
+	}
+	trigger = { 
+		naval_tech = 80
+	}
+	missionary_placement_chance = 0.032
+	cultural_tradition_decay = -0.016
+	diplomats = 0.80
+	icon = 9
+}
+###############
+#商业科技
+###############
+trade_tech_5 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 5
+		NOT = { trade_tech = 10 }
+	}
+	trigger = { 
+		trade_tech = 5
+		NOT = { trade_tech = 10 }
+	}
+	interest = -0.002
+	merchant_cost = -0.01
+	global_tax_modifier = 0.02
+	icon = 5
+}
+trade_tech_10 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 10
+		NOT = { trade_tech = 15 }
+	}
+	trigger = { 
+		trade_tech = 10
+		NOT = { trade_tech = 15 }
+	}
+	interest = -0.004
+	merchant_cost = -0.02
+	global_tax_modifier = 0.04
+	icon = 5
+}
+trade_tech_15 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 15
+		NOT = { trade_tech = 20 }
+	}
+	trigger = { 
+		trade_tech = 15
+		NOT = { trade_tech = 20 }
+	}
+	interest = -0.006
+	merchant_cost = -0.03
+	global_tax_modifier = 0.06
+	icon = 5
+}
+trade_tech_20 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 20
+		NOT = { trade_tech = 25 }
+	}
+	trigger = { 
+		trade_tech = 20
+		NOT = { trade_tech = 25 }
+	}
+	interest = -0.008
+	merchant_cost = -0.04
+	global_tax_modifier = 0.08
+	icon = 5
+}
+trade_tech_25 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 25
+		NOT = { trade_tech = 30 }
+	}
+	trigger = { 
+		trade_tech = 25
+		NOT = { trade_tech = 30 }
+	}
+	interest = -0.01
+	merchant_cost = -0.05
+	global_tax_modifier = 0.1
+	icon = 5
+}
+trade_tech_30 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 30
+		NOT = { trade_tech = 35 }
+	}
+	trigger = { 
+		trade_tech = 30
+		NOT = { trade_tech = 35 }
+	}
+	interest = -0.012
+	merchant_cost = -0.06
+	global_tax_modifier = 0.12
+	icon = 5
+}
+trade_tech_35 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 35
+		NOT = { trade_tech = 40 }
+	}
+	trigger = { 
+		trade_tech = 35
+		NOT = { trade_tech = 40 }
+	}
+	interest = -0.014
+	merchant_cost = -0.07
+	global_tax_modifier = 0.14
+	icon = 5
+}
+trade_tech_40 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 40
+		NOT = { trade_tech = 45 }
+	}
+	trigger = { 
+		trade_tech = 40
+		NOT = { trade_tech = 45 }
+	}
+	interest = -0.016
+	merchant_cost = -0.08
+	global_tax_modifier = 0.16
+	icon = 5
+}
+trade_tech_45 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 45
+		NOT = { trade_tech = 50 }
+	}
+	trigger = { 
+		trade_tech = 45
+		NOT = { trade_tech = 50 }
+	}
+	interest = -0.018
+	merchant_cost = -0.09
+	global_tax_modifier = 0.18
+	icon = 5
+}
+trade_tech_50 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 50
+		NOT = { trade_tech = 55 }
+	}
+	trigger = { 
+		trade_tech = 50
+		NOT = { trade_tech = 55 }
+	}
+	interest = -0.02
+	merchant_cost = -0.1
+	global_tax_modifier = 0.2
+	icon = 5
+}
+trade_tech_55 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 55
+		NOT = { trade_tech = 60 }
+	}
+	trigger = { 
+		trade_tech = 55
+		NOT = { trade_tech = 60 }
+	}
+	interest = -0.022
+	merchant_cost = -0.11
+	global_tax_modifier = 0.22
+	icon = 5
+}
+trade_tech_60 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 60
+		NOT = { trade_tech = 65 }
+	}
+	trigger = { 
+		trade_tech = 60
+		NOT = { trade_tech = 65 }
+	}
+	interest = -0.024
+	merchant_cost = -0.12
+	global_tax_modifier = 0.24
+	icon = 5
+}
+trade_tech_65 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 65
+		NOT = { trade_tech = 70 }
+	}
+	trigger = { 
+		trade_tech = 65
+		NOT = { trade_tech = 70 }
+	}
+	interest = -0.026
+	merchant_cost = -0.13
+	global_tax_modifier = 0.26
+	icon = 5
+}
+trade_tech_70 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 70
+		NOT = { trade_tech = 75 }
+	}
+	trigger = { 
+		trade_tech = 70
+		NOT = { trade_tech = 75 }
+	}
+	interest = -0.028
+	merchant_cost = -0.14
+	global_tax_modifier = 0.28
+	icon = 5
+}
+trade_tech_75 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 75
+		NOT = { trade_tech = 80 }
+	}
+	trigger = { 
+		trade_tech = 75
+		NOT = { trade_tech = 80 }
+	}
+	interest = -0.03
+	merchant_cost = -0.15
+	global_tax_modifier = 0.3
+	icon = 5
+}
+trade_tech_80 = { 
+	potential = { 
+		has_country_flag = tianfuzhidu
+		trade_tech = 80
+	}
+	trigger = { 
+		trade_tech = 80
+	}
+	interest = -0.032
+	merchant_cost = -0.16
+	global_tax_modifier = 0.32
+	icon = 5
+}
+####################################
+#尚武传统
+####################################
+shangwuchuantong = { 
+	potential = { 
+		OR = { 
+			technology_group = nomad_group
+			technology_group = dongyi1
+		}
+	}
+	trigger = { 
+		OR = { 
+			government = tribal_federation
+			government = tribal_despotism
+			government = steppe_horde
+		}
+	}
+	land_tech_cost_modifier = -0.20
+	infantry_cost = -0.18
+	cavalry_cost = -0.24
+	icon = 7
+}
+###################################
+#维持现有外交关系
+###################################
+waijiaoguanxi_1a = { 
+	potential = { 
+		num_of_allies = 1
+		NOT = { 
+			num_of_allies = 2
+		}
+	}
+	trigger = { 
+		num_of_allies = 1
+		NOT = { 
+			num_of_allies = 1
+		}
+	}
+	diplomats = -0.15
+	icon = 4
+}
+waijiaoguanxi_2a = { 
+	potential = { 
+		num_of_allies = 2
+		NOT = { 
+			num_of_allies = 3
+		}
+	}
+	trigger = { 
+		num_of_allies = 2
+		NOT = { 
+			num_of_allies = 3
+		}
+	}
+	diplomats = -0.30
+	icon = 4
+}
+waijiaoguanxi_3a = { 
+	potential = { 
+		num_of_allies = 3
+		NOT = { 
+			num_of_allies = 4
+		}
+	}
+	trigger = { 
+		num_of_allies = 3
+		NOT = { 
+			num_of_allies = 4
+		}
+	}
+	diplomats = -0.45
+	icon = 4
+}
+waijiaoguanxi_4a = { 
+	potential = { 
+		num_of_allies = 4
+		NOT = { 
+			num_of_allies = 5
+		}
+	}
+	trigger = { 
+		num_of_allies = 4
+		NOT = { 
+			num_of_allies = 5
+		}
+	}
+	diplomats = -0.60
+	icon = 4
+}
+waijiaoguanxi_5a = { 
+	potential = { 
+		num_of_allies = 5
+		NOT = { 
+			num_of_allies = 6
+		}
+	}
+	trigger = { 
+		num_of_allies = 5
+		NOT = { 
+			num_of_allies = 6
+		}
+	}
+	diplomats = -0.75
+	icon = 4
+}
+waijiaoguanxi_6a = { 
+	potential = { 
+		num_of_allies = 6
+		NOT = { 
+			num_of_allies = 7
+		}
+	}
+	trigger = { 
+		num_of_allies = 6
+		NOT = { 
+			num_of_allies = 7
+		}
+	}
+	diplomats = -0.90
+	icon = 4
+}
+waijiaoguanxi_7a = { 
+	potential = { 
+		num_of_allies = 7
+		NOT = { 
+			num_of_allies = 8
+		}
+	}
+	trigger = { 
+		num_of_allies = 7
+		NOT = { 
+			num_of_allies = 8
+		}
+	}
+	diplomats = -1.05
+	icon = 4
+}
+waijiaoguanxi_8a = { 
+	potential = { 
+		num_of_allies = 8
+		NOT = { 
+			num_of_allies = 9
+		}
+	}
+	trigger = { 
+		num_of_allies = 8
+		NOT = { 
+			num_of_allies = 9
+		}
+	}
+	diplomats = -1.20
+	icon = 4
+}
+waijiaoguanxi_9a = { 
+	potential = { 
+		num_of_allies = 9
+		NOT = { 
+			num_of_allies = 10
+		}
+	}
+	trigger = { 
+		num_of_allies = 9
+		NOT = { 
+			num_of_allies = 10
+		}
+	}
+	diplomats = -1.30
+	icon = 4
+}
+waijiaoguanxi_10a = { 
+	potential = { 
+		num_of_allies = 10
+		NOT = { 
+			num_of_allies = 12
+		}
+	}
+	trigger = { 
+		num_of_allies = 10
+		NOT = { 
+			num_of_allies = 12
+		}
+	}
+	diplomats = -1.40
+	icon = 4
+}
+waijiaoguanxi_12a = { 
+	potential = { 
+		num_of_allies = 12
+		NOT = { 
+			num_of_allies = 14
+		}
+	}
+	trigger = { 
+		num_of_allies = 12
+		NOT = { 
+			num_of_allies = 14
+		}
+	}
+	diplomats = -1.60
+	icon = 4
+}
+waijiaoguanxi_14a = { 
+	potential = { 
+		num_of_allies = 14
+		NOT = { 
+			num_of_allies = 16
+		}
+	}
+	trigger = { 
+		num_of_allies = 14
+		NOT = { 
+			num_of_allies = 16
+		}
+	}
+	diplomats = -1.80
+	icon = 4
+}
+waijiaoguanxi_16a = { 
+	potential = { 
+		num_of_allies = 16
+		NOT = { 
+			num_of_allies = 18
+		}
+	}
+	trigger = { 
+		num_of_allies = 16
+		NOT = { 
+			num_of_allies = 18
+		}
+	}
+	diplomats = -2.00
+	icon = 4
+}
+waijiaoguanxi_18a = { 
+	potential = { 
+		num_of_allies = 18
+		NOT = { 
+			num_of_allies = 20
+		}
+	}
+	trigger = { 
+		num_of_allies = 18
+		NOT = { 
+			num_of_allies = 20
+		}
+	}
+	diplomats = -2.20
+	icon = 4
+}
+waijiaoguanxi_20a = { 
+	potential = { 
+		num_of_allies = 20
+	}
+	trigger = { 
+		num_of_allies = 20
+	}
+	diplomats = -2.40
+	icon = 4
+}
+waijiaoguanxi_1b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 1
+		NOT = { 
+			num_of_vassals = 2
+		}
+	}
+	trigger = { 
+		num_of_vassals = 1
+		NOT = { 
+			num_of_vassals = 2
+		}
+	}
+	diplomats = -0.2
+	icon = 4
+}
+waijiaoguanxi_2b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 2
+		NOT = { 
+			num_of_vassals = 3
+		}
+	}
+	trigger = { 
+		num_of_vassals = 2
+		NOT = { 
+			num_of_vassals = 3
+		}
+	}
+	diplomats = -0.4
+	icon = 4
+}
+waijiaoguanxi_3b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 3
+		NOT = { 
+			num_of_vassals = 4
+		}
+	}
+	trigger = { 
+		num_of_vassals = 3
+		NOT = { 
+			num_of_vassals = 4
+		}
+	}
+	diplomats = -0.6
+	icon = 4
+}
+waijiaoguanxi_4b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 4
+		NOT = { 
+			num_of_vassals = 5
+		}
+	}
+	trigger = { 
+		num_of_vassals = 4
+		NOT = { 
+			num_of_vassals = 5
+		}
+	}
+	diplomats = -0.8
+	icon = 4
+}
+waijiaoguanxi_5b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 5
+		NOT = { 
+			num_of_vassals = 6
+		}
+	}
+	trigger = { 
+		num_of_vassals = 5
+		NOT = { 
+			num_of_vassals = 6
+		}
+	}
+	diplomats = -1.0
+	icon = 4
+}
+waijiaoguanxi_6b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 6
+		NOT = { 
+			num_of_vassals = 7
+		}
+	}
+	trigger = { 
+		num_of_vassals = 6
+		NOT = { 
+			num_of_vassals = 7
+		}
+	}
+	diplomats = -1.2
+	icon = 4
+}
+waijiaoguanxi_7b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 7
+		NOT = { 
+			num_of_vassals = 8
+		}
+	}
+	trigger = { 
+		num_of_vassals = 7
+		NOT = { 
+			num_of_vassals = 8
+		}
+	}
+	diplomats = -1.4
+	icon = 4
+}
+waijiaoguanxi_8b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 8
+		NOT = { 
+			num_of_vassals = 9
+		}
+	}
+	trigger = { 
+		num_of_vassals = 8
+		NOT = { 
+			num_of_vassals = 9
+		}
+	}
+	diplomats = -1.6
+	icon = 4
+}
+waijiaoguanxi_9b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 9
+		NOT = { 
+			num_of_vassals = 10
+		}
+	}
+	trigger = { 
+		num_of_vassals = 9
+		NOT = { 
+			num_of_vassals = 10
+		}
+	}
+	diplomats = -1.8
+	icon = 4
+}
+waijiaoguanxi_10b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 10
+		NOT = { 
+			num_of_vassals = 12
+		}
+	}
+	trigger = { 
+		num_of_vassals = 10
+		NOT = { 
+			num_of_vassals = 12
+		}
+	}
+	diplomats = -2.0
+	icon = 4
+}
+waijiaoguanxi_12b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 12
+		NOT = { 
+			num_of_vassals = 14
+		}
+	}
+	trigger = { 
+		num_of_vassals = 12
+		NOT = { 
+			num_of_vassals = 14
+		}
+	}
+	diplomats = -2.4
+	icon = 4
+}
+waijiaoguanxi_14b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 14
+		NOT = { 
+			num_of_vassals = 16
+		}
+	}
+	trigger = { 
+		num_of_vassals = 14
+		NOT = { 
+			num_of_vassals = 16
+		}
+	}
+	diplomats = -2.8
+	icon = 4
+}
+waijiaoguanxi_16b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 16
+		NOT = { 
+			num_of_vassals = 18
+		}
+	}
+	trigger = { 
+		num_of_vassals = 16
+		NOT = { 
+			num_of_vassals = 18
+		}
+	}
+	diplomats = -3.2
+	icon = 4
+}
+waijiaoguanxi_18b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 18
+		NOT = { 
+			num_of_vassals = 20
+		}
+	}
+	trigger = { 
+		num_of_vassals = 18
+		NOT = { 
+			num_of_vassals = 20
+		}
+	}
+	diplomats = -3.6
+	icon = 4
+}
+waijiaoguanxi_20b = { 
+	potential = { 
+		NOT = { government = celestial_empire }
+		num_of_vassals = 20
+	}
+	trigger = { 
+		num_of_vassals = 20
+	}
+	diplomats = -4.0
+	icon = 4
+}
+################################
+#宋国buff
+################################
+fengkuangguodu = { 
+	trigger = { 
+		has_country_modifier = jiesong
+		war = yes
+	}
+	discipline = 0.10
+	leader_fire = 0.3
+	leader_shock = 0.3
+	leader_siege = 0.3
+	icon = 7
+}
+xianggongzhiren = { 
+	trigger = { 
+		has_country_modifier = rensong
+		war = yes
+	}
+	prestige = 0.02
+	badboy = -0.1
+	icon = 8
+}
+####################################
+#附庸国限制
+####################################
+vassal_morale_limit = { 
+	potential = { 
+		is_subject = yes
+	}
+	trigger = { 
+		is_subject = yes
+	}
+	land_morale = -0.5
+	war_exhaustion = 0.01
+	land_forcelimit_modifier = -0.25
+	global_tax_modifier = -0.30
+	global_manpower_modifier = -0.20
+	icon = 8
+}
+####################################
+#国家大小平衡
+####################################
+country_size_1_6 = { 
+	potential = { 
+		num_of_cities = 1
+		NOT = { num_of_cities = 6 }
+	}
+	trigger = { 
+		num_of_cities = 1
+		NOT = { num_of_cities = 6 }
+	}
+	global_tax_modifier = 0.08
+	officials = 0.05
+	icon = 1
+}
+country_size_6_12 = { 
+	potential = { 
+		num_of_cities = 6
+		NOT = { num_of_cities = 12 }
+	}
+	trigger = { 
+		num_of_cities = 6
+		NOT = { num_of_cities = 12 }
+	}
+	land_forcelimit = -0.8
+	global_tax_modifier = 0.04
+	officials = 0.1
+	icon = 1
+}
+country_size_12_20 = { 
+	potential = { 
+		num_of_cities = 12
+		NOT = { num_of_cities = 20 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 12
+		NOT = { num_of_cities = 20 }
+	}
+	land_forcelimit = -3.6
+	officials = 0.2
+	icon = 1
+}
+
+country_size_12_20 = { 
+	potential = { 
+		num_of_cities = 12
+		NOT = { num_of_cities = 20 
+                                                       year = 2246
+                                        }
+	}
+	trigger = { 
+		num_of_cities = 12
+		NOT = { num_of_cities = 20 
+                                        }
+                                        
+	}
+	land_forcelimit = -1.8
+	officials = 0.2
+	icon = 1
+}
+
+country_size_20_30 = { 
+	potential = { 
+		num_of_cities = 20
+		NOT = { num_of_cities = 30 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 20
+		NOT = { num_of_cities = 30 }
+	}
+	land_forcelimit = -6
+	global_tax_modifier = -0.02
+	officials = 0.3
+	icon = 1
+}
+country_size_20_30 = { 
+	potential = { 
+		num_of_cities = 20
+		NOT = { num_of_cities = 30
+                                                        year = 2246
+                                         }
+	}
+	trigger = { 
+		num_of_cities = 20
+		NOT = { num_of_cities = 30
+                                          
+                                        }
+	}
+	land_forcelimit = -3
+	global_tax_modifier = -0.02
+	officials = 0.3
+	icon = 1
+}
+country_size_30_45 = { 
+	potential = { 
+		num_of_cities = 30
+		NOT = { num_of_cities = 45 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 30
+		NOT = { num_of_cities = 45 }
+	}
+	land_forcelimit = -9
+	global_tax_modifier = -0.04
+	officials = 0.4
+	land_forcelimit_modifier = -0.20
+	icon = 1
+}
+country_size_30_45 = { 
+	potential = { 
+		num_of_cities = 30
+		NOT = { num_of_cities = 45
+                                         year = 2246
+                                        }
+	}
+	trigger = { 
+		num_of_cities = 30
+		NOT = { num_of_cities = 45 
+                                 
+                                        }
+	}
+	land_forcelimit = -4.5
+	global_tax_modifier = -0.04
+	officials = 0.4
+	icon = 1
+}
+country_size_45_60 = { 
+	potential = { 
+		num_of_cities = 45
+		NOT = { num_of_cities = 60 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 45
+		NOT = { num_of_cities = 60 }
+	}
+	land_forcelimit = -12
+	global_tax_modifier = -0.06
+	officials = 0.45
+	land_forcelimit_modifier = -0.25
+	icon = 1
+}
+country_size_45_60 = { 
+	potential = { 
+		num_of_cities = 45
+		NOT = { num_of_cities = 60 
+                                                         year = 2246
+                                         }
+	}
+	trigger = { 
+		num_of_cities = 45
+		NOT = { num_of_cities = 60
+                                    
+                                        }
+	}
+	land_forcelimit = -6
+	global_tax_modifier = -0.06
+	officials = 0.45
+	icon = 1
+}
+country_size_60_80 = { 
+	potential = { 
+		num_of_cities = 60
+		NOT = { num_of_cities = 80 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 60
+		NOT = { num_of_cities = 80 }
+	}
+	land_forcelimit = -16
+	global_tax_modifier = -0.08
+	officials = 0.5
+	land_forcelimit_modifier = -0.30
+	icon = 1
+}
+country_size_60_80 = { 
+	potential = { 
+		num_of_cities = 60
+		NOT = { num_of_cities = 80 
+                                          year = 2246
+                                        }
+	}
+	trigger = { 
+		num_of_cities = 60
+		NOT = { num_of_cities = 80
+                                     
+                                        }
+	}
+	land_forcelimit = -8
+	global_tax_modifier = -0.08
+	officials = 0.5
+	icon = 1
+}
+country_size_80_100 = { 
+	potential = { 
+		num_of_cities = 80
+		NOT = { num_of_cities = 100 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 80
+		NOT = { num_of_cities = 100 }
+	}
+	land_forcelimit = -20
+	global_tax_modifier = -0.09
+	officials = 0.55
+	land_forcelimit_modifier = -0.35
+	icon = 1
+}
+country_size_80_100 = { 
+	potential = { 
+		num_of_cities = 80
+		NOT = { num_of_cities = 100 
+                                         year = 2246
+                                        }
+	}
+	trigger = { 
+		num_of_cities = 80
+		NOT = { num_of_cities = 100 
+                                        }
+	}
+	land_forcelimit = -10
+	global_tax_modifier = -0.09
+	officials = 0.55
+	icon = 1
+}
+country_size_100_150 = { 
+	potential = { 
+		num_of_cities = 100
+		NOT = { num_of_cities = 150 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 100
+		NOT = { num_of_cities = 150 }
+	}
+	land_forcelimit = -24
+	global_tax_modifier = -0.10
+	officials = 0.6
+	land_forcelimit_modifier = -0.40
+	icon = 1
+}
+country_size_100_150 = { 
+	potential = { 
+		num_of_cities = 100
+		NOT = { num_of_cities = 150 
+                                        year = 2246
+                                        }
+	}
+	trigger = { 
+		num_of_cities = 100
+		NOT = { num_of_cities = 150
+                                        }
+	}
+	land_forcelimit = -12
+	global_tax_modifier = -0.10
+	officials = 0.6
+	icon = 1
+}
+country_size_150_200 = { 
+	potential = { 
+		num_of_cities = 150
+		NOT = { num_of_cities = 200 }
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 150
+		NOT = { num_of_cities = 200 }
+	}
+	land_forcelimit = -30
+	global_tax_modifier = -0.11
+	officials = 0.6
+	land_forcelimit_modifier = -0.40
+	icon = 1
+}
+country_size_150_200 = { 
+	potential = { 
+		num_of_cities = 150
+		NOT = { num_of_cities = 200 
+                                                       year = 2246
+                                         }
+	}
+	trigger = { 
+		num_of_cities = 150
+		NOT = { num_of_cities = 200 
+                                        
+                                        }
+	}
+	land_forcelimit = -15
+	global_tax_modifier = -0.11
+	officials = 0.6
+	icon = 1
+}
+country_size_200 = { 
+	potential = { 
+		num_of_cities = 200
+                                        year = 2246
+	}
+	trigger = { 
+		num_of_cities = 200
+	}
+	land_forcelimit = -40
+	global_tax_modifier = -0.12
+	officials = 0.6
+	land_forcelimit_modifier = -0.40
+	icon = 1
+}
+country_size_200 = { 
+	potential = { 
+		num_of_cities = 200
+                                        NOT = { year = 2246 }
+	}
+	trigger = { 
+		num_of_cities = 200
+	}
+	land_forcelimit = -20
+	global_tax_modifier = -0.12
+	officials = 0.6
+	icon = 1
+}
+###################################
+#改革相关
+###################################
+zongfazhidu = { 
+	potential = {
+		has_country_flag = zongfazhidu
+	}
+	trigger = { 
+		has_country_flag = zongfazhidu
+	}
+	legitimacy = 0.005
+	global_revolt_risk = 0.25
+	icon = 3
+}
+hujizhidu = { 
+	potential = {
+		has_country_flag = hujizhidu
+	}
+	trigger = { 
+		has_country_flag = hujizhidu
+	}
+	global_revolt_risk = -0.5
+	stability_cost_modifier = -0.05
+	global_tax_modifier = -0.1
+	icon = 3
+}
+shiguanzhidu = { 
+	potential = {
+		has_country_flag = shiguanzhidu
+	}
+	trigger = { 
+		NOT ={ has_country_flag = zhongjieshiguanzhidu }
+	}
+	global_tax_modifier = -0.15
+	diplomats = -0.75
+	icon = 4
+}
+junqishuzuishixin = {
+	potential = {
+		has_country_modifier = junqishuzui
+	}
+	trigger = { 
+		NOT ={ ADM = 6 }
+	}
+	legitimacy = -0.05
+	prestige = -0.05
+	stability_cost_modifier = 0.50
+	icon = 7
+}
+
+junqishuzuitanwu = {
+	potential = {
+		has_country_modifier = junqishuzui
+	}
+	trigger = { 
+		NOT ={ MIL = 6 }
+	}
+	inflation = 0.03
+	global_regiment_cost = 0.10
+	discipline = -0.02
+	icon = 7
+}
+
+###################################
+#顾问buff
+###################################
+####################################
+#时代修正
+####################################
+age_1900 = { 
+	potential = {
+		NOT = { year = 2000}
+	}
+	trigger = { 
+		NOT = { year = 2000}
+	}
+	inflation_reduction = 0.02
+	build_cost = -0.06
+	technology_cost = -0.03
+	land_maintenance_modifier = -0.06
+	icon = 5
+}
+age_2000 = { 
+	potential = {
+		year = 2000
+		NOT = { year = 2100}
+	}
+	trigger = { 
+		year = 2000
+		NOT = { year = 2100}
+	}
+	inflation_reduction = 0.01
+	build_cost = -0.04
+	technology_cost = -0.01
+	land_maintenance_modifier = -0.03
+	icon = 5
+}
+age_2200 = { 
+	potential = {
+		year = 2200
+		NOT = { year = 2300}
+	}
+	trigger = { 
+		year = 2200
+		NOT = { year = 2300}
+	}
+	inflation_reduction = -0.01
+	technology_cost = 0.02
+	land_maintenance_modifier = 0.02
+	icon = 5
+}
+age_2300 = { 
+	potential = {
+		year = 2300
+		NOT = { year = 2400}
+	}
+	trigger = { 
+		year = 2300
+		NOT = { year = 2400}
+	}
+	inflation_reduction = -0.018
+	technology_cost = 0.04
+	land_maintenance_modifier = 0.06
+	icon = 5
+}
+age_2400 = { 
+	potential = {
+		year = 2400
+	}
+	trigger = { 
+		year = 2400
+	}
+	inflation_reduction = -0.024
+	technology_cost = 0.06
+	land_maintenance_modifier = 0.08
+	icon = 5
+}
+###################################
+# 落后时代的改革
+###################################
+late_reform1 = { 
+	potential = {
+		year = 2300
+	}
+	trigger = { 
+		NOT ={ has_country_flag = falvzhidu }
+		NOT ={ DIP = 7 }
+	}
+	global_revolt_risk = 1.5
+	icon = 4
+}
+late_reform2 = { 
+	potential = {
+		year = 2200
+	}
+	trigger = { 
+		NOT ={ has_country_flag = dubizhidu }
+		NOT ={ ADM = 7 }
+	}
+	global_revolt_risk = 1.5
+	icon = 4
+}
+late_reform3 = { 
+	potential = {
+		year = 2350
+	}
+	trigger = { 
+		NOT ={ has_country_flag = junxianzhidu }
+		NOT ={ centralization_decentralization = 3 }
+	}
+	global_revolt_risk = 1.5
+	icon = 4
+}
+late_reform4 = { 
+	potential = {
+		year = 2250
+	}
+	trigger = { 
+		NOT ={ has_country_flag = tianfuzhidu }
+		serfdom_freesubjects = -2
+	}
+	global_revolt_risk = 1.5
+	icon = 4
+}
+########################################
+#专属天赋
+########################################
+QIN_gift = { 
+	potential = { 
+		tag = QIN
+		
+	}
+	trigger = { 
+		NOT =  {  has_global_flag = zhanguokaishi  }
+		any_country = { 
+			OR = { 
+				government = tribal_federation
+				government = tribal_despotism
+			}
+			primary_culture = xirong
+			war_with = QIN
+		}
+	}
+	land_morale = 0.5
+	war_exhaustion = -0.025
+	icon = 7
+}
+WUG_gift1 = { 
+	potential = { 
+		tag = WUG
+		has_country_flag = wuyuanbenwu
+		NOT = { has_global_flag = zhanguokaishi }
+	}
+	trigger = { 
+		any_neighbor_country = {
+			num_of_cities = 15
+			tech_difference = 10
+		}
+	}
+	technology_cost = -0.15
+	icon = 1
+}
+WUG_gift2 = { 
+	potential = { 
+		tag = WUG
+		has_country_flag = wuyuanbenwu
+		NOT = { has_global_flag = zhanguokaishi }
+	}
+	trigger = { 
+		CHU = { 
+			army = THIS
+		}
+		war_with = CHU
+	}
+	reinforce_speed = 0.50
+	attrition = -0.33
+	land_morale = 0.5
+	icon = 7
+}
+LUG_gift1 = {
+	potential = { 
+		tag = LUG
+		has_country_flag = lubanmugong
+	}
+	trigger = { 
+	}
+	build_cost = -0.15
+	icon = 7
+}
+ZHO_gift1 = {
+	potential = { 
+		tag = ZHO
+		has_country_flag = jiangxianghe
+		advisor = statesman
+		statesman = 3
+		advisor = commandant
+		commandant = 3
+		war = yes
+	}
+	trigger = { 
+	}
+	global_manpower_modifier = 0.15
+	land_morale = 0.3
+	discipline = 0.05
+	war_exhaustion = -0.05
+	icon = 7
+}
+ZHO_gift2 = {
+	potential = { 
+		tag = ZHO
+		has_country_flag = jiangxianghe
+		advisor = statesman
+		statesman = 3
+		advisor = commandant
+		commandant = 3
+		war = no
+	}
+	trigger = { 
+	}
+	production_efficiency = 0.04
+	trade_efficiency = 0.04
+	stability_cost_modifier = -0.15
+	global_revolt_risk = -2
+	icon = 7
+}
+HAN_iron1 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 1
+		NOT = { iron = 2 }
+	}
+	trigger = { 
+		iron = 1
+		NOT = { iron = 2 }
+	}
+	discipline = 0.01
+	icon = 7
+}
+HAN_iron2 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 2
+		NOT = { iron = 3 }
+	}
+	trigger = { 
+		iron = 2
+		NOT = { iron = 3 }
+	}
+	discipline = 0.02
+	icon = 7
+}
+HAN_iron3 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 3
+		NOT = { iron = 4 }
+	}
+	trigger = { 
+		iron = 3
+		NOT = { iron = 4 }
+	}
+	discipline = 0.03
+	icon = 7
+}
+HAN_iron4 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 4
+		NOT = { iron = 5 }
+	}
+	trigger = { 
+		iron = 4
+		NOT = { iron = 5 }
+	}
+	discipline = 0.04
+	icon = 7
+}
+HAN_iron5 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 5
+		NOT = { iron = 6 }
+	}
+	trigger = { 
+		iron = 5
+		NOT = { iron = 6 }
+	}
+	discipline = 0.05
+	icon = 7
+}
+HAN_iron6 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 6
+		NOT = { iron = 7 }
+	}
+	trigger = { 
+		iron = 6
+		NOT = { iron = 7 }
+	}
+	discipline = 0.06
+	icon = 7
+}
+HAN_iron7 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 7
+		NOT = { iron = 8 }
+	}
+	trigger = { 
+		iron = 7
+		NOT = { iron = 8 }
+	}
+	discipline = 0.07
+	icon = 7
+}
+HAN_iron8 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 8
+		NOT = { iron = 9 }
+	}
+	trigger = { 
+		iron = 8
+		NOT = { iron = 9 }
+	}
+	discipline = 0.08
+	icon = 7
+}
+HAN_iron9 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 9
+		NOT = { iron = 10 }
+	}
+	trigger = { 
+		iron = 9
+		NOT = { iron = 10 }
+	}
+	discipline = 0.09
+	icon = 7
+}
+HAN_iron10 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 10
+		NOT = { iron = 11 }
+	}
+	trigger = { 
+		iron = 10
+		NOT = { iron = 11 }
+	}
+	discipline = 0.10
+	icon = 7
+}
+HAN_iron11 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 11
+		NOT = { iron = 12 }
+	}
+	trigger = { 
+		iron = 11
+		NOT = { iron = 12 }
+	}
+	discipline = 0.11
+	icon = 7
+}
+HAN_iron12 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 12
+		NOT = { iron = 13 }
+	}
+	trigger = { 
+		iron = 12
+		NOT = { iron = 13 }
+	}
+	discipline = 0.12
+	icon = 7
+}
+HAN_iron13 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 13
+		NOT = { iron = 14 }
+	}
+	trigger = { 
+		iron = 13
+		NOT = { iron = 14 }
+	}
+	discipline = 0.14
+	icon = 7
+}
+HAN_iron14 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 14
+		NOT = { iron = 15 }
+	}
+	trigger = { 
+		iron = 14
+		NOT = { iron = 15 }
+	}
+	discipline = 0.14
+	icon = 7
+}
+HAN_iron15 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 15
+		NOT = { iron = 16 }
+	}
+	trigger = { 
+		iron = 15
+		NOT = { iron = 16 }
+	}
+	discipline = 0.15
+	icon = 7
+}
+HAN_iron16 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 16
+		NOT = { iron = 17 }
+	}
+	trigger = { 
+		iron = 16
+		NOT = { iron = 17 }
+	}
+	discipline = 0.16
+	icon = 7
+}
+HAN_iron17 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 17
+		NOT = { iron = 18 }
+	}
+	trigger = { 
+		iron = 17
+		NOT = { iron = 18 }
+	}
+	discipline = 0.17
+	icon = 7
+}
+HAN_iron18 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 18
+		NOT = { iron = 19 }
+	}
+	trigger = { 
+		iron = 18
+		NOT = { iron = 19 }
+	}
+	discipline = 0.18
+	icon = 7
+}
+HAN_iron19 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 19
+		NOT = { iron = 20 }
+	}
+	trigger = { 
+		iron = 19
+		NOT = { iron = 20 }
+	}
+	discipline = 0.19
+	icon = 7
+}
+HAN_iron20 = {
+	potential = { 
+		tag = HAN
+		has_country_flag = gongqiangjianli
+		iron = 20
+	}
+	trigger = { 
+		iron = 20
+	}
+	discipline = 0.20
+	icon = 7
+}
+WUG_buff3 = { 
+	potential = { 
+		tag = WUG
+		has_country_flag = sunzibingfa
+	}
+	trigger = { 
+	}
+	leader_fire = 1
+	leader_siege = 1
+	icon = 7
+}
+WEG_buff = { 
+	potential = { 
+		tag = WEG
+		cloth = 1
+		NOT = { cloth = 2 }
+	}
+	trigger = { 
+	}
+	cultural_tradition = 0.005
+	icon = 7
+}
+CHE_cotton = {
+	potential = { 
+		tag = CHE
+		cotton = 1
+		NOT = { cotton = 2 }
+	}
+	trigger = { 
+		cotton = 1
+		NOT = { cotton = 2 }
+	}
+	prestige = 0.01
+	icon = 7
+}
+CHE_cotton = {
+	potential = { 
+		tag = CHE
+		cotton = 2
+		NOT = { cotton = 3 }
+	}
+	trigger = { 
+		cotton = 2
+		NOT = { cotton = 3 }
+	}
+	prestige = 0.02
+	icon = 7
+}
+CHE_cotton = {
+	potential = { 
+		tag = CHE
+		cotton = 3
+		NOT = { cotton = 4 }
+	}
+	trigger = { 
+		cotton = 3
+		NOT = { cotton = 4 }
+	}
+	prestige = 0.03
+	icon = 7
+}
+CHE_cotton = {
+	potential = { 
+		tag = CHE
+		cotton = 4
+		NOT = { iron = 5 }
+	}
+	trigger = { 
+		cotton = 4
+		NOT = { cotton = 5 }
+	}
+	prestige = 0.04
+	icon = 7
+}
+CHE_cotton = {
+	potential = { 
+		tag = CHE
+		cotton = 5
+	}
+	trigger = { 
+		cotton = 5
+	}
+	prestige = 0.05
+	icon = 7
+}
+SGU_buff = {
+	potential = { 
+		tag = SGU
+		has_country_flag = shanchuanxianyao
+	}
+	trigger = { 
+		has_country_flag = shanchuanxianyao
+	}
+	land_attrition = -0.05
+	icon = 7
+}
+ZHI_buff2 = {
+	potential = { 
+		tag = ZHI
+		NOT = { 
+			aristocracy_plutocracy = -3
+		}
+		not = { prestige = 0.4 }
+		prestige = 0.2
+	}
+	trigger = { 
+		not = { prestige = 0.4 }
+		prestige = 0.2
+	}
+	land_morale = 0.1
+	icon = 1
+}
+ZHI_buff2 = {
+	potential = { 
+		tag = ZHI
+		NOT = { 
+			aristocracy_plutocracy = -3
+		}
+		not = { prestige = 0.5 }
+		prestige = 0.4
+	}
+	trigger = { 
+		not = { prestige = 0.5 }
+		prestige = 0.4
+	}
+	land_morale = 0.2
+	icon = 1
+}
+ZHI_buff2 = {
+	potential = { 
+		tag = ZHI
+		NOT = { 
+			aristocracy_plutocracy = -3
+		}
+		not = { prestige = 0.6 }
+		prestige = 0.5
+	}
+	trigger = { 
+		not = { prestige = 0.6 }
+		prestige = 0.5
+	}
+	land_morale = 0.3
+	icon = 1
+}
+ZHI_buff2 = {
+	potential = { 
+		tag = ZHI
+		NOT = { 
+			aristocracy_plutocracy = -3
+		}
+		not = { prestige = 0.8 }
+		prestige = 0.6
+	}
+	trigger = { 
+		not = { prestige = 0.8 }
+		prestige = 0.6
+	}
+	land_morale = 0.4
+	icon = 1
+}
+ZHI_buff2 = {
+	potential = { 
+		tag = ZHI
+		NOT = { 
+			aristocracy_plutocracy = -3
+		}
+		prestige = 0.8
+	}
+	trigger = { 
+		prestige = 0.50
+	}
+	land_morale = 0.5
+	icon = 1
+}
+ZHI_buff3 = {
+	potential = { 
+		tag = ZHI
+		NOT = { 
+			aristocracy_plutocracy = -3
+		}
+		idea = grand_navy
+		has_country_flag = zhengzaisimen
+	}
+	trigger = { 
+		idea = grand_navy
+	}
+	diplomatic_skill = 6
+	badboy = -0.5
+	global_tax_modifier = 0.15
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 1
+		not = {
+			placed_merchants = 2
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.01
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 2
+		not = {
+			placed_merchants = 3
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.02
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 3
+		not = {
+			placed_merchants = 4
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.03
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 4
+		not = {
+			placed_merchants = 5
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.04
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 5
+		not = {
+			placed_merchants = 6
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.05
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 6
+		not = {
+			placed_merchants = 7
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.06
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 7
+		not = {
+			placed_merchants = 8
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.07
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 8
+		not = {
+			placed_merchants = 9
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.08
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 9
+		not = {
+			placed_merchants = 10
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.09
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 10
+		not = {
+			placed_merchants = 11
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.1
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 11
+		not = {
+			placed_merchants = 12
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.11
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 12
+		not = {
+			placed_merchants = 13
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.12
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 13
+		not = {
+			placed_merchants = 14
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.13
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 14
+		not = {
+			placed_merchants = 15
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.14
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 15
+		not = {
+			placed_merchants = 16
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.15
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 16
+		not = {
+			placed_merchants = 17
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.16
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 17
+		not = {
+			placed_merchants = 18
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.17
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 18
+		not = {
+			placed_merchants = 19
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.18
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 19
+		not = {
+			placed_merchants = 20
+		}
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.19
+	icon = 1
+}
+ZGO_buff1 = {
+	potential = { 
+		tag = ZGO
+		placed_merchants = 20
+	}
+	trigger = { 
+		tag = ZGO
+	}
+	spy_efficiency = 0.2
+	icon = 1
+}
+YGO_buff3 = {
+	potential = { 
+		has_country_flag = zhuzaozhigong
+	}
+	trigger = { 
+		has_country_flag = zhuzaozhigong
+	}
+	discipline = 0.1
+	icon = 1
+}
+PAP_buff1 = {
+	potential = { 
+		tag = PAP
+	}
+	trigger = { 
+		tag = PAP
+	}
+	diplomatic_skill = 3
+	legitimacy = 0.03
+	prestige = 0.03
+	icon = 1
+}
+PAP_buff2 = {
+	potential = { 
+		has_country_flag = tianziliushi
+		idea = press_gangs
+	}
+	trigger = { 
+		has_country_flag = tianziliushi
+	}
+	land_morale = 0.5
+	land_attrition = -0.10
+	discipline = 0.05
+	icon = 1
+}
+ZHS_buff1 = {
+	potential = { 
+		tag = ZHS
+	}
+	trigger = { 
+	}
+	defensiveness = 0.5
+	icon = 1
+}
+YQU_buff1 = {
+	potential = { 
+		tag = YQU
+		war = yes
+	}
+	trigger = { 
+	}
+	war_exhaustion = -0.12
+	icon = 1
+}
+YQU_buff2 = {
+	potential = { 
+		has_country_flag = mabeiminzu
+	}
+	trigger = { 
+	}
+	leader_shock = 1
+	icon = 1
+}
+YQU_buff2 = {
+	potential = { 
+		has_country_flag = mabeiminzu
+		spices = 1
+		NOT = { spices = 2 }
+	}
+	trigger = { 
+	}
+	land_morale = 0.1
+	icon = 1
+}
+YQU_buff2 = {
+	potential = { 
+		has_country_flag = mabeiminzu
+		spices = 2
+		NOT = { spices = 3 }
+	}
+	trigger = { 
+	}
+	land_morale = 0.2
+	icon = 1
+}
+YQU_buff2 = {
+	potential = { 
+		has_country_flag = mabeiminzu
+		spices = 3
+		NOT = { spices = 4 }
+	}
+	trigger = { 
+	}
+	land_morale = 0.3
+	icon = 1
+}
+YQU_buff2 = {
+	potential = { 
+		has_country_flag = mabeiminzu
+		spices = 4
+		NOT = { spices = 5 }
+	}
+	trigger = { 
+	}
+	land_morale = 0.4
+	icon = 1
+}
+YQU_buff2 = {
+	potential = { 
+		has_country_flag = mabeiminzu
+		spices = 5
+	}
+	trigger = { 
+	}
+	land_morale = 0.5
+	icon = 1
+}
+LAI_buff1 = {
+	potential = { 
+		tag = LAI
+		gold = 1
+		NOT = { gold = 2 }
+	}
+	trigger = { 
+	}
+	inflation_reduction = 0.02
+	icon = 1
+}
+LAI_buff1 = {
+	potential = { 
+		tag = LAI
+		gold = 2
+		NOT = { gold = 3 }
+	}
+	trigger = { 
+	}
+	inflation_reduction = 0.04
+	icon = 1
+}
+LAI_buff1 = {
+	potential = { 
+		tag = LAI
+		gold = 3
+		NOT = { gold = 4 }
+	}
+	trigger = { 
+	}
+	inflation_reduction = 0.06
+	icon = 1
+}
+LAI_buff1 = {
+	potential = { 
+		tag = LAI
+		gold = 4
+		NOT = { gold = 5 }
+	}
+	trigger = { 
+	}
+	inflation_reduction = 0.08
+	icon = 1
+}
+LAI_buff1 = {
+	potential = { 
+		tag = LAI
+		gold = 5
+	}
+	trigger = { 
+	}
+	inflation_reduction = 0.10
+	icon = 1
+}
+LAI_buff2 = {
+	potential = { 
+		tag = LAI
+		has_country_flag = dongyiguguo
+	}
+	trigger = { 
+	}
+	naval_tech_investment = 20
+	icon = 1
+}
+yumizhixiangmaoyi = {
+	potential = { 
+		tag = WUG
+		or = {
+			grain = 1
+			fish = 1
+		}
+	}
+	trigger = { 
+		or = {
+			grain = 1
+			fish = 1
+		}
+	}
+	merchant_compete_chance = 0.01
+	icon = 1
+}
+yumizhixiangmaoyi = {
+	potential = { 
+		tag = WUG
+		or = {
+			and = {
+				grain = 1
+				fish = 1
+			}
+			grain = 2
+			fish = 2
+		}
+	}
+	trigger = { 
+		or = {
+			and = {
+				grain = 1
+				fish = 1
+			}
+			grain = 2
+			fish = 2
+		}
+	}
+	merchant_compete_chance = 0.02
+	icon = 1
+}
+yumizhixiangmaoyi = {
+	potential = { 
+		tag = WUG
+		or = {
+			and = {
+				grain = 1
+				fish = 2
+			}
+			and = {
+				grain = 2
+				fish = 1
+			}
+			grain = 3
+			fish = 3
+		}
+	}
+	trigger = { 
+		or = {
+			and = {
+				grain = 1
+				fish = 2
+			}
+			and = {
+				grain = 2
+				fish = 1
+			}
+			grain = 3
+			fish = 3
+		}
+	}
+	merchant_compete_chance = 0.03
+	icon = 1
+}
+yumizhixiangmaoyi = {
+	potential = { 
+		tag = WUG
+		or = {
+			and = {
+				grain = 1
+				fish = 3
+			}
+			and = {
+				grain = 3
+				fish = 1
+			}
+			and = {
+				grain = 2
+				fish = 2
+			}
+			grain = 4
+			fish = 4
+		}
+	}
+	trigger = { 
+		or = {
+			and = {
+				grain = 1
+				fish = 3
+			}
+			and = {
+				grain = 3
+				fish = 1
+			}
+			and = {
+				grain = 2
+				fish = 2
+			}
+			grain = 4
+			fish = 4
+		}
+	}
+	merchant_compete_chance = 0.04
+	icon = 1
+}
+yumizhixiangmaoyi = {
+	potential = { 
+		tag = WUG
+		or = {
+			and = {
+				grain = 1
+				fish = 4
+			}
+			and = {
+				grain = 4
+				fish = 1
+			}
+			and = {
+				grain = 3
+				fish = 2
+			}
+			and = {
+				grain = 2
+				fish = 3
+			}
+			grain = 5
+			fish = 5
+		}
+	}
+	trigger = { 
+		or = {
+			and = {
+				grain = 1
+				fish = 4
+			}
+			and = {
+				grain = 4
+				fish = 1
+			}
+			and = {
+				grain = 3
+				fish = 2
+			}
+			and = {
+				grain = 2
+				fish = 3
+			}
+			grain = 5
+			fish = 5
+		}
+	}
+	merchant_compete_chance = 0.05
+	icon = 1
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 1
+		not = { num_of_vassals = 2 }
+	}
+	trigger = { 
+		num_of_vassals = 1
+		not = { num_of_vassals = 2 }
+	}
+	land_forcelimit_modifier = 0.03
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 2
+		not = { num_of_vassals = 3 }
+	}
+	trigger = { 
+		num_of_vassals = 2
+		not = { num_of_vassals = 3 }
+	}
+	land_forcelimit_modifier = 0.06
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 3
+		not = { num_of_vassals = 4 }
+	}
+	trigger = { 
+		num_of_vassals = 3
+		not = { num_of_vassals = 4 }
+	}
+	land_forcelimit_modifier = 0.09
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 4
+		not = { num_of_vassals = 3 }
+	}
+	trigger = { 
+		num_of_vassals = 4
+		not = { num_of_vassals = 5 }
+	}
+	land_forcelimit_modifier = 0.12
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 5
+		not = { num_of_vassals = 6 }
+	}
+	trigger = { 
+		num_of_vassals = 5
+		not = { num_of_vassals = 6 }
+	}
+	land_forcelimit_modifier = 0.15
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 6
+		not = { num_of_vassals = 7 }
+	}
+	trigger = { 
+		num_of_vassals = 6
+		not = { num_of_vassals = 7 }
+	}
+	land_forcelimit_modifier = 0.18
+}
+bozhangzhifuyong = {
+	potential = { 
+		has_country_flag = jiuhezhuhou
+		has_country_flag = jiuhezhuhou2
+		num_of_vassals = 7
+		not = { num_of_vassals = 8 }
+	}
+	trigger = { 
+		num_of_vassals = 7
+		not = { num_of_vassals = 8 }
+	}
+	land_forcelimit_modifier = 0.20
+}
+#科技落后40级前修正
+SHI_gift1 = { 
+	potential = { 
+
+		not={land_tech = 40}
+	}
+	trigger = { 
+		any_neighbor_country = {
+			tech_difference = 5
+		}
+	}
+	technology_cost = -0.05
+	icon = 1
+}
+SHI_gift1 = { 
+	potential = { 
+
+		not={land_tech = 40}
+	}
+	trigger = { 
+		any_neighbor_country = {
+			tech_difference = 10
+		}
+	}
+	technology_cost = -0.05
+	icon = 1
+}
+SHI_gift1 = { 
+	potential = { 
+
+		not={land_tech = 40}
+	}
+	trigger = { 
+		any_neighbor_country = {
+			tech_difference = 15
+		}
+	}
+	technology_cost = -0.05
+	icon = 1
+}
+SHI_gift1 = { 
+	potential = { 
+
+		not={land_tech = 40}
+	}
+	trigger = { 
+		any_neighbor_country = {
+			tech_difference = 20
+		}
+	}
+	technology_cost = -0.05
+	icon = 1
+}
+#科技落后40级后修正
+SHI_gift1 = { 
+	potential = { 
+
+		land_tech = 40
+	}
+	trigger = { 
+		any_neighbor_country = {
+			tech_difference = 5
+		}
+	}
+	technology_cost = -0.05
+	icon = 1
+}
+SHI_gift1 = { 
+	potential = { 
+
+		land_tech = 40
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 10
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 10
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.05
+	land_tech_cost_modifier = 0.05
+	icon = 1
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech = 40
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 15
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 15
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.05
+	land_tech_cost_modifier = 0.05
+	icon = 1
+}
+SHI_gift1 = { 
+	potential = { 
+
+		land_tech = 40
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 20
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 20
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.05
+	land_tech_cost_modifier = 0.05
+	icon = 1
+}
+
+#科技落后阴阳五行修正
+SHI_gift2 = { 
+	potential = { 
+		idea=revolution_and_counter
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 5
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 5
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.02
+	icon = 1
+}
+SHI_gift2 = { 
+	potential = { 
+		idea=revolution_and_counter
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 10
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 10
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.04
+	land_tech_cost_modifier = 0.02
+	icon = 1
+}
+SHI_gift2 = { 
+	potential = { 
+		idea=revolution_and_counter
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 15
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 15
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.08
+	land_tech_cost_modifier = 0.04
+	icon = 1
+}
+SHI_gift2 = { 
+	potential = { 
+		idea=revolution_and_counter
+	}
+	trigger = { 
+		or={
+			and={
+				any_neighbor_country = {
+					tech_difference = 20
+					ai=yes
+				}
+			}
+			and={
+				any_country = {
+					tech_difference = 20
+					ai=no
+				}
+			}
+		}
+	}
+	technology_cost = -0.16
+	land_tech_cost_modifier = 0.06
+	icon = 1
+}
+
+#科技不平衡
+SHI_gift1 = { 
+	potential = { 
+		land_tech=43
+		or={
+			not={naval_tech=40}
+			not={trade_tech=40}
+			not={production_tech=40}
+			not={government_tech=40}
+		}
+	}
+	trigger = { 
+		land_tech=43
+		or={
+			not={naval_tech=40}
+			not={trade_tech=40}
+			not={production_tech=40}
+			not={government_tech=40}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=44
+		or={
+			not={naval_tech=41}
+			not={trade_tech=41}
+			not={production_tech=41}
+			not={government_tech=41}
+		}
+	}
+	trigger = { 
+		land_tech=44
+		or={
+			not={naval_tech=41}
+			not={trade_tech=41}
+			not={production_tech=41}
+			not={government_tech=41}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=45
+		or={
+			not={naval_tech=42}
+			not={trade_tech=42}
+			not={production_tech=42}
+			not={government_tech=42}
+		}
+	}
+	trigger = { 
+		land_tech=45
+		or={
+			not={naval_tech=42}
+			not={trade_tech=42}
+			not={production_tech=42}
+			not={government_tech=42}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=46
+		or={
+			not={naval_tech=43}
+			not={trade_tech=43}
+			not={production_tech=43}
+			not={government_tech=43}
+		}
+	}
+	trigger = { 
+		land_tech=46
+		or={
+			not={naval_tech=43}
+			not={trade_tech=43}
+			not={production_tech=43}
+			not={government_tech=43}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=47
+		or={
+			not={naval_tech=44}
+			not={trade_tech=44}
+			not={production_tech=44}
+			not={government_tech=44}
+		}
+	}
+	trigger = { 
+		land_tech=47
+		or={
+			not={naval_tech=44}
+			not={trade_tech=44}
+			not={production_tech=44}
+			not={government_tech=44}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=48
+		or={
+			not={naval_tech=45}
+			not={trade_tech=45}
+			not={production_tech=45}
+			not={government_tech=45}
+		}
+	}
+	trigger = { 
+		land_tech=48
+		or={
+			not={naval_tech=45}
+			not={trade_tech=45}
+			not={production_tech=45}
+			not={government_tech=45}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=49
+		or={
+			not={naval_tech=46}
+			not={trade_tech=46}
+			not={production_tech=46}
+			not={government_tech=46}
+		}
+	}
+	trigger = { 
+		land_tech=49
+		or={
+			not={naval_tech=46}
+			not={trade_tech=46}
+			not={production_tech=46}
+			not={government_tech=46}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=50
+		or={
+			not={naval_tech=47}
+			not={trade_tech=47}
+			not={production_tech=47}
+			not={government_tech=47}
+		}
+	}
+	trigger = { 
+		land_tech=50
+		or={
+			not={naval_tech=47}
+			not={trade_tech=47}
+			not={production_tech=47}
+			not={government_tech=47}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=51
+		or={
+			not={naval_tech=48}
+			not={trade_tech=48}
+			not={production_tech=48}
+			not={government_tech=48}
+		}
+	}
+	trigger = { 
+		land_tech=51
+		or={
+			not={naval_tech=48}
+			not={trade_tech=48}
+			not={production_tech=48}
+			not={government_tech=48}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=52
+		or={
+			not={naval_tech=49}
+			not={trade_tech=49}
+			not={production_tech=49}
+			not={government_tech=49}
+		}
+	}
+	trigger = { 
+		land_tech=52
+		or={
+			not={naval_tech=49}
+			not={trade_tech=49}
+			not={production_tech=49}
+			not={government_tech=49}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=53
+		or={
+			not={naval_tech=50}
+			not={trade_tech=50}
+			not={production_tech=50}
+			not={government_tech=50}
+		}
+	}
+	trigger = { 
+		land_tech=53
+		or={
+			not={naval_tech=50}
+			not={trade_tech=50}
+			not={production_tech=50}
+			not={government_tech=50}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=54
+		or={
+			not={naval_tech=51}
+			not={trade_tech=51}
+			not={production_tech=51}
+			not={government_tech=51}
+		}
+	}
+	trigger = { 
+		land_tech=54
+		or={
+			not={naval_tech=51}
+			not={trade_tech=51}
+			not={production_tech=51}
+			not={government_tech=51}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=55
+		or={
+			not={naval_tech=52}
+			not={trade_tech=52}
+			not={production_tech=52}
+			not={government_tech=52}
+		}
+	}
+	trigger = { 
+		land_tech=55
+		or={
+			not={naval_tech=52}
+			not={trade_tech=52}
+			not={production_tech=52}
+			not={government_tech=52}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=56
+		or={
+			not={naval_tech=53}
+			not={trade_tech=53}
+			not={production_tech=53}
+			not={government_tech=53}
+		}
+	}
+	trigger = { 
+		land_tech=56
+		or={
+			not={naval_tech=53}
+			not={trade_tech=53}
+			not={production_tech=53}
+			not={government_tech=53}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=57
+		or={
+			not={naval_tech=54}
+			not={trade_tech=54}
+			not={production_tech=54}
+			not={government_tech=54}
+		}
+	}
+	trigger = { 
+		land_tech=57
+		or={
+			not={naval_tech=54}
+			not={trade_tech=54}
+			not={production_tech=54}
+			not={government_tech=54}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=58
+		or={
+			not={naval_tech=55}
+			not={trade_tech=55}
+			not={production_tech=55}
+			not={government_tech=55}
+		}
+	}
+	trigger = { 
+		land_tech=58
+		or={
+			not={naval_tech=55}
+			not={trade_tech=55}
+			not={production_tech=55}
+			not={government_tech=55}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=59
+		or={
+			not={naval_tech=56}
+			not={trade_tech=56}
+			not={production_tech=56}
+			not={government_tech=56}
+		}
+	}
+	trigger = { 
+		land_tech=59
+		or={
+			not={naval_tech=56}
+			not={trade_tech=56}
+			not={production_tech=56}
+			not={government_tech=56}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=60
+		or={
+			not={naval_tech=57}
+			not={trade_tech=57}
+			not={production_tech=57}
+			not={government_tech=57}
+		}
+	}
+	trigger = { 
+		land_tech=60
+		or={
+			not={naval_tech=57}
+			not={trade_tech=57}
+			not={production_tech=57}
+			not={government_tech=57}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+SHI_gift1 = { 
+	potential = { 
+		land_tech=61
+		or={
+			not={naval_tech=58}
+			not={trade_tech=58}
+			not={production_tech=58}
+			not={government_tech=58}
+		}
+	}
+	trigger = { 
+		land_tech=61
+		or={
+			not={naval_tech=58}
+			not={trade_tech=58}
+			not={production_tech=58}
+			not={government_tech=58}
+		}
+	}
+	land_tech_cost_modifier = 0.15
+	icon = 2
+}
+
+#######################################################################################3
+
+ZHJ_buff2 = {
+	potential = { 
+		has_country_modifier = ZHJ_buff1
+	}
+	trigger = { 
+		advisor = diplomat
+		privateer = 5
+	}
+	prestige = 0.05
+	icon = 3
+}
+YYJ_buff2 = {
+	potential = { 
+		has_country_modifier = YYJ_buff1
+	}
+	trigger = { 
+		advisor = privateer
+		privateer = 5
+	}
+	technology_cost = -0.05
+	production_tech_investment = 8
+	government_tech_investment = 8
+	trade_tech_investment = 8
+	naval_tech_investment = 8
+	land_tech_investment = 8
+	legitimacy = 0.02
+	icon = 3
+}
+ZAJ_buff2 = {
+	potential = { 
+		has_country_modifier = ZAJ_buff1
+	}
+	trigger = { 
+		advisor = philosopher
+		philosopher = 5
+	}
+	tolerance_heretic = 1
+	production_tech_investment = 5
+	government_tech_investment = 5
+	trade_tech_investment = 5
+	naval_tech_investment = 5
+	land_tech_investment = 5
+	icon = 3
+}
+NOJ_buff2 = {
+	potential = { 
+		has_country_modifier = NOJ_buff1
+	}
+	trigger = { 
+		advisor = natural_scientist
+		natural_scientist = 5
+	}
+	inflation_reduction = 0.02
+	inflation_reduction = 0.03
+	global_tax_modifier = 0.1
+	icon = 3
+}
+MIJ_buff2 = {
+	potential = { 
+		has_country_modifier = MIJ_buff1
+	}
+	trigger = { 
+		advisor = ambassador
+		ambassador = 5
+	}
+	legitimacy = 0.05
+	badboy = -0.8
+	prestige = 0.03
+	icon = 3
+}
+XSJ_buff2 = {
+	potential = { 
+		has_country_modifier = XSJ_buff1
+	}
+	trigger = { 
+		advisor = collector
+		collector = 5
+	}
+	cultural_tradition = 0.02
+	army_tradition = 0.02
+	navy_tradition = 0.02
+	icon = 3
+}
+JIN_buff2 = {
+	potential = { 
+		tag = JIN
+		NOT = { 
+			aristocracy_plutocracy = 2 
+		}
+		aristocracy_plutocracy = 1
+	}
+	trigger = { 
+	}
+	legitimacy = 0.004
+	icon = 1
+}
+JIN_buff2 = {
+	potential = { 
+		tag = JIN
+		NOT = { 
+			aristocracy_plutocracy = 3
+		}
+		aristocracy_plutocracy = 2
+	}
+	trigger = { 
+	}
+	legitimacy = 0.008
+	icon = 1
+}
+JIN_buff2 = {
+	potential = { 
+		tag = JIN
+		NOT = { 
+			aristocracy_plutocracy = 4
+		}
+		aristocracy_plutocracy = 3
+	}
+	trigger = { 
+	}
+	legitimacy = 0.012
+	icon = 1
+}
+JIN_buff2 = {
+	potential = { 
+		tag = JIN
+		NOT = { 
+			aristocracy_plutocracy = 5
+		}
+		aristocracy_plutocracy = 4
+	}
+	trigger = { 
+	}
+	legitimacy = 0.016
+	icon = 1
+}
+JIN_buff2 = {
+	potential = { 
+		tag = JIN
+		aristocracy_plutocracy = 5
+	}
+	trigger = { 
+	}
+	legitimacy = 0.02
+	icon = 1
+}
+dizhangbuff = {
+	potential = { 
+		religion = rujia
+		idea = grand_navy
+		legitimacy = 1
+	}
+	trigger = { 
+	}
+	global_revolt_risk = -1.8
+	stability_cost_modifier = -0.075
+	diplomats = 0.3
+	missionary_placement_chance = 0.05
+	land_morale = 0.15
+	naval_morale = 0.15
+	badboy_limit = 3
+	tolerance_own = 0.5
+	tolerance_heretic = 0.3
+	tolerance_heathen = 0.3 
+	icon = 1
+}
+dizhangbuff = {
+	potential = { 
+		religion = rujia
+		idea = grand_navy
+		legitimacy = 0.9
+		NOT = { 
+			legitimacy = 1
+		}
+	}
+	trigger = { 
+	}
+	global_revolt_risk = -1.44
+	stability_cost_modifier = -0.06
+	diplomats = 0.24
+	missionary_placement_chance = 0.04
+	land_morale = 0.12
+	naval_morale = 0.12
+	badboy_limit = 2.4
+	tolerance_own = 0.4
+	tolerance_heretic = 0.24
+	tolerance_heathen = 0.24
+	icon = 1
+}
+dizhangbuff = {
+	potential = { 
+		religion = rujia
+		idea = grand_navy
+		legitimacy = 0.8
+		NOT = { 
+			legitimacy = 0.9
+		}
+	}
+	trigger = { 
+	}
+	global_revolt_risk = -1.28
+	stability_cost_modifier = -0.045
+	diplomats = 0.18
+	missionary_placement_chance = 0.03
+	land_morale = 0.09
+	naval_morale = 0.09
+	badboy_limit = 1.8
+	tolerance_own = 0.3
+	tolerance_heretic = 0.18
+	tolerance_heathen = 0.18
+	icon = 1
+}
+dizhangbuff = {
+	potential = { 
+		religion = rujia
+		idea = grand_navy
+		legitimacy = 0.7
+		NOT = { 
+			legitimacy = 0.8
+		}
+	}
+	trigger = { 
+	}
+	global_revolt_risk = -1.12
+	stability_cost_modifier = -0.03
+	diplomats = 0.12
+	missionary_placement_chance = 0.02
+	land_morale = 0.06
+	naval_morale = 0.06
+	badboy_limit = 1.2
+	tolerance_own = 0.2
+	tolerance_heretic = 0.12
+	tolerance_heathen = 0.12
+	icon = 1
+}
+dizhangbuff = {
+	potential = { 
+		religion = rujia
+		idea = grand_navy
+		legitimacy = 0.6
+		NOT = { 
+			legitimacy = 0.7
+		}
+	}
+	trigger = { 
+	}
+	global_revolt_risk = -0.98
+	stability_cost_modifier = -0.005
+	diplomats = 0.06
+	missionary_placement_chance = 0.01
+	land_morale = 0.03
+	naval_morale = 0.03
+	badboy_limit = 0.6
+	tolerance_own = 0.1
+	tolerance_heretic = 0.06
+	tolerance_heathen = 0.06
+	icon = 1
+}
+fajiayunji_buff1 = {
+	potential = { 
+		tag = HAN
+		religion =  fajia
+	}
+	trigger = { 
+	}
+	missionaries = 0.5
+	missionary_placement_chance = 0.05 
+	icon = 1
+}
+####殷商军改buff#####
+yinshangbuzhanbu={
+
+	potential = { 
+			has_country_modifier = yinshanggaige
+
+	}
+	trigger = { 
+			war=yes
+			not={has_country_modifier = yinshangzhanbu1}
+			not={has_country_modifier = yinshangzhanbu2}
+			not={has_country_modifier = yinshangzhanbu3}
+			not={has_country_modifier = yinshangzhanbu4}
+			not={has_country_modifier = yinshangzhanbu5}
+			not={has_country_modifier = yinshangzhanbu6}
+			not={has_country_modifier = yinshangzhanbu7}
+
+	}
+	legitimacy=-0.05
+	icon = 1
+
+}
+
+####曹国天赋#####
+CAO_buff1 = {
+	potential = { 
+		tag = CAO
+                                        cotton = 1
+                                        NOT = { cotton = 2 }
+	}
+	trigger = { 
+                                        tag = CAO
+                                        cotton = 1
+                                        NOT = { cotton = 2 }
+	}
+	trade_efficiency = 0.05
+                    trade_range_modifier = 0.05
+                    merchant_compete_chance = 0.05
+	merchants = 0.3
+                    interest = -0.01
+	icon = 1
+}
+CAO_buff1 = {
+	potential = { 
+		tag = CAO          
+		cotton = 2
+                                        NOT = { cotton = 3 }                  
+	}
+	trigger = { 
+		tag = CAO
+		cotton = 2
+                                        NOT = { cotton = 3 }
+	}
+	trade_efficiency = 0.1
+                     trade_range_modifier = 0.1
+                    merchant_compete_chance = 0.1
+	merchants = 0.6
+                    interest = -0.02
+	icon = 1
+}
+CAO_buff1 = {
+	potential = { 
+		tag = CAO            
+		cotton = 3
+                                        NOT = { cotton = 4 }
+	}
+	trigger = { 
+		tag = CAO
+		cotton = 3
+                                        NOT = { cotton = 4 }
+	}
+	trade_efficiency = 0.15
+                     trade_range_modifier = 0.15
+                    merchant_compete_chance = 0.15
+	merchants = 0.9
+                    interest = -0.03
+	icon = 1
+}
+CAO_buff1 = {
+	potential = { 
+		tag = CAO  
+		cotton = 4
+                                        NOT = { cotton = 5 }
+	}
+	trigger = { 
+		tag = CAO
+		cotton = 4
+                                        NOT = { cotton = 5 }
+	}
+	trade_efficiency = 0.2
+                     trade_range_modifier = 0.2
+                    merchant_compete_chance = 0.2
+	merchants = 1.2
+                    interest = -0.04
+	icon = 1
+}
+CAO_buff1 = {
+	potential = { 
+		tag = CAO           
+                                        cotton = 5   
+	}
+	trigger = { 
+		tag = CAO
+                                        cotton = 5
+	}
+	trade_efficiency = 0.25
+                     trade_range_modifier = 0.25
+                    merchant_compete_chance = 0.25
+	merchants = 1.5
+                    interest = -0.05
+	icon = 1
+}
+####徐国天赋#####
+YXU_buff1 = {
+	potential = { 
+		tag = YXU
+                                         has_country_flag = dongyibazhu
+	}
+	trigger = { 
+                                       tag = YXU
+                                       has_country_flag = dongyibazhu 
+	}
+	trade_efficiency = 0.025
+	interest = -0.05
+                    artillery_cost = -0.125
+                    cavalry_cost = -0.25	
+	icon = 1
+}
+####代国天赋#####
+DAI_buff1 = {
+	potential = { 
+		tag = DAI
+                                        spices = 1
+		NOT = { spices = 2 }
+	}
+	trigger = { 
+		tag = DAI
+                                        spices = 1
+		NOT = { spices = 2 }
+	}
+                    leader_shock = 0.4
+	artillery_cost = -0.04
+                    cavalry_cost = -0.05
+	icon = 1
+}
+DAI_buff1 = {
+	potential = { 
+		tag = DAI
+                                        spices = 2
+		NOT = { spices = 3 }
+	}
+	trigger = { 
+                                        tag = DAI
+                                        spices = 2
+		NOT = { spices = 3 }
+	}
+                    leader_shock = 0.8
+	artillery_cost = -0.08
+                    cavalry_cost = -0.10
+	icon = 1
+}
+DAI_buff1 = {
+	potential = { 
+		tag = DAI
+		spices = 3
+		NOT = { spices = 4 }
+	}
+	trigger = { 
+                                        tag = DAI
+		spices = 3
+		NOT = { spices = 4 }
+	}
+                    leader_shock = 1.2
+	artillery_cost = -0.12
+                    cavalry_cost = -0.15
+	icon = 1
+}
+DAI_buff1 = {
+	potential = { 
+		tag =DAI
+		spices = 4
+		NOT = { spices = 5 }
+	}
+	trigger = { 
+                                        tag =DAI
+		spices = 4
+		NOT = { spices = 5 }
+	}
+                    leader_shock = 1.6
+	artillery_cost = -0.16
+                    cavalry_cost = -0.20
+	icon = 1
+}
+DAI_buff1 = {
+	potential = { 
+		tag = DAI
+		spices = 5
+	}
+	trigger = { 
+                                        tag = DAI
+                                        spices = 5
+	}
+                    leader_shock = 2
+	artillery_cost = -0.2
+                    cavalry_cost = -0.25
+	icon = 1
+}
+####莒国天赋#####
+JUG_buff1 = {
+	potential = { 
+		tag = JUG
+		wine = 1
+                                      
+	}
+	trigger = {  
+                                         tag = JUG
+                                         war = no
+	}
+	cultural_tradition = 0.1
+                    stability_investment = 20
+	icon = 1
+}
+JUG_buff2 = {
+	potential = { 
+		tag = JUG
+		wine = 1
+                                      
+	}
+	trigger = {   
+                                          tag = JUG
+                                          war = yes
+	}
+	land_attrition = -0.15
+                     infantry_cost = -0.15
+	icon = 1
+}
+JUG_buff3 = {
+	potential = { 
+		tag = JUG
+		wine = 1
+                                      
+	}
+	trigger = {   
+                                          tag = JUG
+                                      num_of_cities = 20
+                                      wine = 1
+	}
+	tolerance_heretic = 2
+                    tolerance_heathen = 1
+	icon = 1
+}
+####庸国天赋#####
+YON_buff1 = {
+	potential = { 
+		tag = YON
+		sugar = 1
+                    }
+	trigger = { 
+		tag = YON
+                                         sugar = 1
+	}
+	trade_efficiency = 0.05
+                     trade_range_modifier = 0.05
+	icon = 1
+}
+YON_buff2 = {
+	potential = { 
+		tag = YON
+                                        sugar = 1
+                    }
+	trigger = { 
+		tag = YON
+                         innovative_narrowminded = 4
+	}
+	global_manpower_modifier = 0.30
+                    global_manpower = 1
+                    land_forcelimit_modifier = 0.1
+	reinforce_speed = 0.05
+	icon = 1
+}
+
+####吴越buff#####
+WY_buff1 = {
+	potential = { 
+		tag = WUG
+                                      grain = 1
+	}
+	trigger = {  
+		tag = WUG
+                                        ai = no
+	}
+	range = 1
+	may_explore = yes
+	global_colonial_growth = 0.50
+	colonists = 0.30
+}
+
+WY_buff2 = {
+	potential = { 
+		tag = YGO
+                                      grain = 1
+	}
+	trigger = {  
+		tag = YGO
+                                        ai = no
+	}
+	range = 1
+	may_explore = yes
+	global_colonial_growth = 0.50
+	colonists = 0.30
+}
+
+#儒家理念专属buff
+JUNZILIUYI_buff = {
+	potential = { 
+		religion = rujia    
+	}
+	trigger = {   idea = vetting
+                                          religion = rujia  
+	}
+                    legitimacy = 0.02
+	stability_investment = 10
+                    discipline = 0.05
+                    leader_shock = 0.5
+                    cultural_tradition = 0.01
+                    global_tax_modifier = 0.05
+                    production_tech_cost_modifier = +0.03
+                    government_tech_cost_modifier = +0.03
+                    trade_tech_cost_modifier = +0.03
+                    naval_tech_cost_modifier = +0.03
+                    land_tech_cost_modifier = +0.015
+	icon = 1
+}
+
+#申国天赋
+
+SHE_buff1 = {
+	potential = { 
+		tag = SHE
+	}
+	trigger = {  
+		tag = SHE
+                                        offensive_defensive = 1
+	}
+                    defensiveness = 0.08
+}
+
+SHE_buff1 = {
+	potential = { 
+		tag = SHE
+	}
+	trigger = {  
+		tag = SHE
+                                        offensive_defensive = 2
+	}
+                    defensiveness = 0.08
+}
+
+SHE_buff1 = {
+	potential = { 
+		tag = SHE
+	}
+	trigger = {  
+		tag = SHE
+                                        offensive_defensive = 3
+	}
+                    defensiveness = 0.08
+}
+
+SHE_buff1 = {
+	potential = { 
+		tag = SHE
+	}
+	trigger = {  
+		tag = SHE
+                                        offensive_defensive = 4
+	}
+                    defensiveness = 0.08
+}
+
+SHE_buff1 = {
+	potential = { 
+		tag = SHE
+	}
+	trigger = {  
+		tag = SHE
+                                        offensive_defensive = 5
+	}
+                    defensiveness = 0.08
+}
+#宋天赋
+SON_buff1 = {
+	potential = { 
+		tag = SON
+                                        cloth = 1
+		NOT = { cloth = 2 }
+	}
+	trigger = { 
+		tag = SON
+                                        cloth = 1
+		NOT = { cloth = 2 }
+	}
+                    trade_efficiency = 0.01    
+	icon = 1
+}
+SON_buff1 = {
+	potential = { 
+		tag = SON
+                                        cloth = 2
+		NOT = { cloth = 3 }
+	}
+	trigger = { 
+                                        tag = SON
+                                        cloth = 2
+		NOT = { cloth = 3 }
+	}
+                    trade_efficiency = 0.02    
+	icon = 1
+}
+SON_buff1 = {
+	potential = { 
+		tag = SON
+		cloth = 3
+		NOT = { cloth = 4 }
+	}
+	trigger = { 
+                                        tag = SON
+		cloth = 3
+		NOT = { cloth = 4 }
+	}
+                    trade_efficiency = 0.03    
+	icon = 1
+}
+SON_buff1 = {
+	potential = { 
+		tag =SON
+		cloth = 4
+		NOT = { cloth = 5 }
+	}
+	trigger = { 
+                                        tag =SON
+		cloth = 4
+		NOT = { cloth = 5 }
+	}
+                    trade_efficiency = 0.04    
+	icon = 1
+}
+SON_buff1 = {
+	potential = { 
+		tag = SON
+		cloth = 5
+	}
+	trigger = { 
+                                        tag = SON
+                                        cloth = 5
+	}
+                     trade_efficiency = 0.05
+                     land_morale = 0.3    
+	icon = 1
+}
+
+
+#中行天赋
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 1049 }
+                                        not = { owns = 1050 }
+                                        not = { owns = 1051 }
+                                        not = { owns = 1052 }
+                                        not = { owns = 49 }
+	}
+	build_cost = -0.04
+	prestige = 0.01
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 963 }
+                                        not = { owns = 106 }
+	}
+	army_tradition = 0.01
+	land_morale = 1
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 965 }
+                                        not = { owns = 108 }
+	}
+	global_tax_modifier = 0.16
+	production_efficiency = 0.03
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 966 }
+                                        not = { owns = 122 }
+	}
+	artillery_cost = -0.15
+	cavalry_cost = -0.05
+	leader_shock = 0.8
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 1109 }
+                                        not = { owns = 85 }
+	}
+	artillery_cost = -0.15
+	cavalry_cost = -0.05
+	leader_shock = 0.8
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 274 }
+                                        not = { owns = 964 }
+	}
+	land_attrition = -0.15
+	land_tech_investment = 18
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 1108 }
+                                        not = { owns = 82 }
+	}
+	land_attrition = -0.15
+	land_tech_investment = 18
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 84 }
+	}
+	land_attrition = -0.15
+	land_tech_investment = 18
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 366 }
+	}
+	global_tax_modifier = 0.16
+	production_efficiency = 0.03
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 367 }
+	}
+	army_tradition = 0.01
+	land_morale = 1
+}
+
+ZXS_buff1 = {
+	potential = { 
+		tag = ZXS
+	}
+	trigger = {  
+		tag = ZXS
+                                        year = 2300
+                                        not = { owns = 372 }
+	}
+	build_cost = -0.04
+	prestige = 0.01
+}
+
+#秦
+QIN_buff11 = {
+	potential = { 
+		tag = QIN
+	}
+	trigger = {  
+		tag = QIN
+                                        not = { owns = 206 }
+                                        year=2246
+                                        not = { year=2266 }
+	}
+	build_cost = -0.01
+	prestige = 0.01
+}
+
+QIN_buff11 = {
+	potential = { 
+		tag = QIN
+	}
+	trigger = {  
+		tag = QIN
+                                        not = { owns = 193 }
+                                        year=2246
+                                        not = { year=2266 }
+	}
+	build_cost = -0.01
+	prestige = 0.01
+}
+
+QIN_buff11 = {
+	potential = { 
+		tag = QIN
+	}
+	trigger = {  
+		tag = QIN
+                                        not = { owns = 210 }
+                                        year=2246
+                                        not = { year=2266 }
+	}
+	build_cost = -0.01
+	prestige = 0.01
+}
+
+QIN_buff11 = {
+	potential = { 
+		tag = QIN
+	}
+	trigger = {  
+		tag = QIN
+                                        not = { owns = 197 }
+                                        year=2246
+                                        not = { year=2266 }
+	}
+	build_cost = -0.01
+	prestige = 0.01
+}
+
+QIN_buff11 = {
+	potential = { 
+		tag = QIN
+	}
+	trigger = {  
+		tag = QIN
+                                        not = { owns = 212 }
+                                        year=2246
+                                        not = { year=2266 }
+	}
+	build_cost = -0.01
+	prestige = 0.01
+}
+
+QIN_buff11 = {
+	potential = { 
+		tag = QIN
+	}
+	trigger = {  
+		tag = QIN
+                                        not = { owns = 215 }
+                                        year=2246
+                                        not = { year=2266 }
+	}
+	build_cost = -0.01
+	prestige = 0.01
+}
+####恩威并施buff#####
+enweibingshi1 ={
+
+	potential = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 1
+		not={num_of_vassals = 2}
+	}
+	trigger = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 1
+		not={num_of_vassals = 2}
+	}
+	discipline = 0.01
+	badboy = -0.1
+	global_manpower_modifier = 0.04
+}
+enweibingshi2 ={
+
+	potential = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 2
+		not={num_of_vassals = 3}
+	}
+	trigger = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 2
+		not={num_of_vassals = 3}
+	}
+	discipline = 0.02
+	badboy = -0.15
+	global_manpower_modifier = 0.08
+}
+enweibingshi3 ={
+
+	potential = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 3
+		not={num_of_vassals = 4}
+	}
+	trigger = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 3
+		not={num_of_vassals = 4}
+	}
+	discipline = 0.03
+	badboy = -0.2
+	global_manpower_modifier = 0.12
+}
+enweibingshi4 ={
+
+	potential = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 4
+		not={num_of_vassals = 5}
+	}
+	trigger = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 4
+		not={num_of_vassals = 5}
+	}
+	discipline = 0.04
+	badboy = -0.25
+	global_manpower_modifier = 0.16
+}
+enweibingshi5 ={
+
+	potential = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 5
+	}
+	trigger = { 
+		idea = press_gangs
+		idea = superior_seamanship
+		num_of_vassals = 5
+	}
+	discipline = 0.05
+	badboy = -0.3
+	global_manpower_modifier = 0.20
+}
+####大蒐礼buff#####
+dasouli1 ={
+
+	potential = { 
+		idea = sea_hawks
+	}
+	trigger = { 
+                                         idea = sea_hawks
+	}
+        discipline = 0.05
+}
+####晋国新天赋####
+JINJ_buff1 = {
+	potential = { 
+		tag = JIN
+	}
+	trigger = { 
+                                      government = enlightened_despotism
+	}
+	global_tax_modifier = 0.1
+	inflation_reduction = 0.05
+	icon = 1
+}
+
+JING_buff1 = {
+	potential = { 
+		tag = JIN
+	}
+	trigger = { 
+                                          government = noble_republic
+	}
+                    land_morale = 0.7
+                    land_forcelimit_modifier = 0.15
+                    global_manpower_modifier = 0.15
+                    artillery_cost = -0.1
+                    discipline = 0.04
+	icon = 1
+}
+
+JINS_buff1 = {
+	potential = { 
+		tag = JIN
+	}
+	trigger = { 
+                                       government = yuanshuai
+	}
+                     build_cost = -0.25
+                     production_efficiency = 0.08
+                     merchants = 1
+                     stability_cost_modifier = -0.05
+	icon = 1
+}
+
+####朝鲜buff#####
+JSG_buff1 = {
+	potential = { 
+		tag = JSG
+                                   
+	}
+	trigger = {  
+		tag = JSG
+                                  idea = vice_roys
+	}
+	range = 1
+	may_explore = yes
+	global_colonial_growth = 3.33
+	colonists = 3
+}
+
+junduiweihufei121 = { 
+	potential = { 
+		army = 200
+		NOT = { army = 220 }
+	}
+	trigger = { 
+		army = 200
+		NOT = { army = 220 }
+	}
+                    land_maintenance_modifier = +0.10
+}
+
+junduiweihufei121 = { 
+	potential = { 
+		army = 220
+		NOT = { army = 240 }
+	}
+	trigger = { 
+		army = 220
+		NOT = { army = 240 }
+	}
+                     land_maintenance_modifier = +0.15
+}
+
+junduiweihufei121 = { 
+	potential = { 
+		army = 260
+		NOT = { army = 280 }
+	}
+	trigger = { 
+		army = 260
+		NOT = { army = 280 }
+	}
+                    land_maintenance_modifier =  +0.2
+}
+
+junduiweihufei121 = { 
+	potential = { 
+		army = 280
+		NOT = { army = 300 }
+	}
+	trigger = { 
+		army = 280
+		NOT = { army = 300 }
+	}
+                    land_maintenance_modifier = +0.25
+}
+
+junduiweihufei121 = { 
+	potential = { 
+		army = 300
+	}
+	trigger = { 
+		army = 300
+	}
+                    land_maintenance_modifier = +0.30
+}
+
+###西北文化###
+youmudiguo = {
+	potential = { 
+		tag = XNU
+	}
+	trigger = { 
+		NOT = { 
+			core_percentage = 0.70
+		}
+	}
+	cavalry_cost = -0.5
+	artillery_cost = -0.2
+	leader_naval_manuever = 2
+}
+loulan = {
+	potential = { 
+		has_country_flag = xiyutianfu2
+	}
+	trigger = { 
+	}
+	merchant_compete_chance = 5
+	merchants = -2
+}
+jingjuewenhua = {
+	potential = { 
+		has_country_flag = xiyutianfu3
+	}
+	trigger = { 
+		or = {
+			and = {
+				or = {
+					and = {
+						year = 1900
+						not = { year = 1910 }
+					}
+					and = {
+						year = 2000
+						not = { year = 2010 }
+					}
+					and = {
+						year = 2100
+						not = { year = 2110 }
+					}
+					and = {
+						year = 2200
+						not = { year = 2210 }
+					}
+					and = {
+						year = 2300
+						not = { year = 2310 }
+					}
+				}
+				cultural_tradition = 0.0
+				not = { cultural_tradition = 0.1 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1910
+						not = { year = 1920 }
+					}
+					and = {
+						year = 2010
+						not = { year = 2020 }
+					}
+					and = {
+						year = 2110
+						not = { year = 2120 }
+					}
+					and = {
+						year = 2210
+						not = { year = 2220 }
+					}
+					and = {
+						year = 2310
+						not = { year = 2320 }
+					}
+				}
+				cultural_tradition = 0.1
+				not = { cultural_tradition = 0.2 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1920
+						not = { year = 1930 }
+					}
+					and = {
+						year = 2020
+						not = { year = 2030 }
+					}
+					and = {
+						year = 2120
+						not = { year = 2130 }
+					}
+					and = {
+						year = 2220
+						not = { year = 2230 }
+					}
+					and = {
+						year = 2320
+						not = { year = 2330 }
+					}
+				}
+				cultural_tradition = 0.2
+				not = { cultural_tradition = 0.3 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1930
+						not = { year = 1940 }
+					}
+					and = {
+						year = 2030
+						not = { year = 2040 }
+					}
+					and = {
+						year = 2130
+						not = { year = 2140 }
+					}
+					and = {
+						year = 2230
+						not = { year = 2240 }
+					}
+					and = {
+						year = 2330
+						not = { year = 2340 }
+					}
+				}
+				cultural_tradition = 0.3
+				not = { cultural_tradition = 0.4 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1940
+						not = { year = 1950 }
+					}
+					and = {
+						year = 2040
+						not = { year = 2050 }
+					}
+					and = {
+						year = 2140
+						not = { year = 2150 }
+					}
+					and = {
+						year = 2240
+						not = { year = 2250 }
+					}
+					and = {
+						year = 2340
+						not = { year = 2350 }
+					}
+				}
+				cultural_tradition = 0.4
+				not = { cultural_tradition = 0.5 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1950
+						not = { year = 1960 }
+					}
+					and = {
+						year = 2050
+						not = { year = 2060 }
+					}
+					and = {
+						year = 2150
+						not = { year = 2160 }
+					}
+					and = {
+						year = 2250
+						not = { year = 2260 }
+					}
+					and = {
+						year = 2350
+						not = { year = 2360 }
+					}
+				}
+				cultural_tradition = 0.5
+				not = { cultural_tradition = 0.6 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1960
+						not = { year = 1970 }
+					}
+					and = {
+						year = 2060
+						not = { year = 2070 }
+					}
+					and = {
+						year = 2160
+						not = { year = 2170 }
+					}
+					and = {
+						year = 2260
+						not = { year = 2270 }
+					}
+					and = {
+						year = 2360
+						not = { year = 2370 }
+					}
+				}
+				cultural_tradition = 0.6
+				not = { cultural_tradition = 0.7 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1970
+						not = { year = 1980 }
+					}
+					and = {
+						year = 2070
+						not = { year = 2080 }
+					}
+					and = {
+						year = 2170
+						not = { year = 2180 }
+					}
+					and = {
+						year = 2270
+						not = { year = 2280 }
+					}
+					and = {
+						year = 2370
+						not = { year = 2380 }
+					}
+				}
+				cultural_tradition = 0.7
+				not = { cultural_tradition = 0.8 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1980
+						not = { year = 1990 }
+					}
+					and = {
+						year = 2080
+						not = { year = 2090 }
+					}
+					and = {
+						year = 2180
+						not = { year = 2190 }
+					}
+					and = {
+						year = 2280
+						not = { year = 2290 }
+					}
+					and = {
+						year = 2380
+						not = { year = 2390 }
+					}
+				}
+				cultural_tradition = 0.8
+				not = { cultural_tradition = 0.9 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1990
+						not = { year = 2000 }
+					}
+					and = {
+						year = 2090
+						not = { year = 2100 }
+					}
+					and = {
+						year = 2190
+						not = { year = 2200 }
+					}
+					and = {
+						year = 2290
+						not = { year = 2300 }
+					}
+					and = {
+						year = 2390
+						not = { year = 2400 }
+					}
+				}
+				cultural_tradition = 0.9
+				not = { cultural_tradition = 1.0 }
+			}
+		}
+	}
+	merchants = 1
+	colonists = 1
+	diplomats = 1
+	missionaries = 1
+	spies = 1
+	officials = 1
+}
+jingjuehaijun = {
+	potential = { 
+		has_country_flag = xiyutianfu3
+	}
+	trigger = { 
+		or = {
+			and = {
+				or = {
+					and = {
+						year = 1900
+						not = { year = 1910 }
+					}
+					and = {
+						year = 2000
+						not = { year = 2010 }
+					}
+					and = {
+						year = 2100
+						not = { year = 2110 }
+					}
+					and = {
+						year = 2200
+						not = { year = 2210 }
+					}
+					and = {
+						year = 2300
+						not = { year = 2310 }
+					}
+				}
+				navy_tradition = 0.0
+				not = { navy_tradition = 0.1 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1910
+						not = { year = 1920 }
+					}
+					and = {
+						year = 2010
+						not = { year = 2020 }
+					}
+					and = {
+						year = 2110
+						not = { year = 2120 }
+					}
+					and = {
+						year = 2210
+						not = { year = 2220 }
+					}
+					and = {
+						year = 2310
+						not = { year = 2320 }
+					}
+				}
+				navy_tradition = 0.1
+				not = { navy_tradition = 0.2 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1920
+						not = { year = 1930 }
+					}
+					and = {
+						year = 2020
+						not = { year = 2030 }
+					}
+					and = {
+						year = 2120
+						not = { year = 2130 }
+					}
+					and = {
+						year = 2220
+						not = { year = 2230 }
+					}
+					and = {
+						year = 2320
+						not = { year = 2330 }
+					}
+				}
+				navy_tradition = 0.2
+				not = { navy_tradition = 0.3 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1930
+						not = { year = 1940 }
+					}
+					and = {
+						year = 2030
+						not = { year = 2040 }
+					}
+					and = {
+						year = 2130
+						not = { year = 2140 }
+					}
+					and = {
+						year = 2230
+						not = { year = 2240 }
+					}
+					and = {
+						year = 2330
+						not = { year = 2340 }
+					}
+				}
+				navy_tradition = 0.3
+				not = { navy_tradition = 0.4 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1940
+						not = { year = 1950 }
+					}
+					and = {
+						year = 2040
+						not = { year = 2050 }
+					}
+					and = {
+						year = 2140
+						not = { year = 2150 }
+					}
+					and = {
+						year = 2240
+						not = { year = 2250 }
+					}
+					and = {
+						year = 2340
+						not = { year = 2350 }
+					}
+				}
+				navy_tradition = 0.4
+				not = { navy_tradition = 0.5 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1950
+						not = { year = 1960 }
+					}
+					and = {
+						year = 2050
+						not = { year = 2060 }
+					}
+					and = {
+						year = 2150
+						not = { year = 2160 }
+					}
+					and = {
+						year = 2250
+						not = { year = 2260 }
+					}
+					and = {
+						year = 2350
+						not = { year = 2360 }
+					}
+				}
+				navy_tradition = 0.5
+				not = { navy_tradition = 0.6 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1960
+						not = { year = 1970 }
+					}
+					and = {
+						year = 2060
+						not = { year = 2070 }
+					}
+					and = {
+						year = 2160
+						not = { year = 2170 }
+					}
+					and = {
+						year = 2260
+						not = { year = 2270 }
+					}
+					and = {
+						year = 2360
+						not = { year = 2370 }
+					}
+				}
+				navy_tradition = 0.6
+				not = { navy_tradition = 0.7 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1970
+						not = { year = 1980 }
+					}
+					and = {
+						year = 2070
+						not = { year = 2080 }
+					}
+					and = {
+						year = 2170
+						not = { year = 2180 }
+					}
+					and = {
+						year = 2270
+						not = { year = 2280 }
+					}
+					and = {
+						year = 2370
+						not = { year = 2380 }
+					}
+				}
+				navy_tradition = 0.7
+				not = { navy_tradition = 0.8 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1980
+						not = { year = 1990 }
+					}
+					and = {
+						year = 2080
+						not = { year = 2090 }
+					}
+					and = {
+						year = 2180
+						not = { year = 2190 }
+					}
+					and = {
+						year = 2280
+						not = { year = 2290 }
+					}
+					and = {
+						year = 2380
+						not = { year = 2390 }
+					}
+				}
+				navy_tradition = 0.8
+				not = { navy_tradition = 0.9 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1990
+						not = { year = 2000 }
+					}
+					and = {
+						year = 2090
+						not = { year = 2100 }
+					}
+					and = {
+						year = 2190
+						not = { year = 2200 }
+					}
+					and = {
+						year = 2290
+						not = { year = 2300 }
+					}
+					and = {
+						year = 2390
+						not = { year = 2400 }
+					}
+				}
+				navy_tradition = 0.9
+				not = { navy_tradition = 1.0 }
+			}
+		}
+	}
+	production_efficiency = 0.2
+	trade_efficiency = 0.2
+}
+jingjuelujun = {
+	potential = { 
+		has_country_flag = xiyutianfu3
+	}
+	trigger = { 
+		or = {
+			and = {
+				or = {
+					and = {
+						year = 1900
+						not = { year = 1910 }
+					}
+					and = {
+						year = 2000
+						not = { year = 2010 }
+					}
+					and = {
+						year = 2100
+						not = { year = 2110 }
+					}
+					and = {
+						year = 2200
+						not = { year = 2210 }
+					}
+					and = {
+						year = 2300
+						not = { year = 2310 }
+					}
+				}
+				army_tradition = 0.0
+				not = { army_tradition = 0.1 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1910
+						not = { year = 1920 }
+					}
+					and = {
+						year = 2010
+						not = { year = 2020 }
+					}
+					and = {
+						year = 2110
+						not = { year = 2120 }
+					}
+					and = {
+						year = 2210
+						not = { year = 2220 }
+					}
+					and = {
+						year = 2310
+						not = { year = 2320 }
+					}
+				}
+				army_tradition = 0.1
+				not = { army_tradition = 0.2 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1920
+						not = { year = 1930 }
+					}
+					and = {
+						year = 2020
+						not = { year = 2030 }
+					}
+					and = {
+						year = 2120
+						not = { year = 2130 }
+					}
+					and = {
+						year = 2220
+						not = { year = 2230 }
+					}
+					and = {
+						year = 2320
+						not = { year = 2330 }
+					}
+				}
+				army_tradition = 0.2
+				not = { army_tradition = 0.3 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1930
+						not = { year = 1940 }
+					}
+					and = {
+						year = 2030
+						not = { year = 2040 }
+					}
+					and = {
+						year = 2130
+						not = { year = 2140 }
+					}
+					and = {
+						year = 2230
+						not = { year = 2240 }
+					}
+					and = {
+						year = 2330
+						not = { year = 2340 }
+					}
+				}
+				army_tradition = 0.3
+				not = { army_tradition = 0.4 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1940
+						not = { year = 1950 }
+					}
+					and = {
+						year = 2040
+						not = { year = 2050 }
+					}
+					and = {
+						year = 2140
+						not = { year = 2150 }
+					}
+					and = {
+						year = 2240
+						not = { year = 2250 }
+					}
+					and = {
+						year = 2340
+						not = { year = 2350 }
+					}
+				}
+				army_tradition = 0.4
+				not = { army_tradition = 0.5 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1950
+						not = { year = 1960 }
+					}
+					and = {
+						year = 2050
+						not = { year = 2060 }
+					}
+					and = {
+						year = 2150
+						not = { year = 2160 }
+					}
+					and = {
+						year = 2250
+						not = { year = 2260 }
+					}
+					and = {
+						year = 2350
+						not = { year = 2360 }
+					}
+				}
+				army_tradition = 0.5
+				not = { army_tradition = 0.6 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1960
+						not = { year = 1970 }
+					}
+					and = {
+						year = 2060
+						not = { year = 2070 }
+					}
+					and = {
+						year = 2160
+						not = { year = 2170 }
+					}
+					and = {
+						year = 2260
+						not = { year = 2270 }
+					}
+					and = {
+						year = 2360
+						not = { year = 2370 }
+					}
+				}
+				army_tradition = 0.6
+				not = { army_tradition = 0.7 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1970
+						not = { year = 1980 }
+					}
+					and = {
+						year = 2070
+						not = { year = 2080 }
+					}
+					and = {
+						year = 2170
+						not = { year = 2180 }
+					}
+					and = {
+						year = 2270
+						not = { year = 2280 }
+					}
+					and = {
+						year = 2370
+						not = { year = 2380 }
+					}
+				}
+				army_tradition = 0.7
+				not = { army_tradition = 0.8 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1980
+						not = { year = 1990 }
+					}
+					and = {
+						year = 2080
+						not = { year = 2090 }
+					}
+					and = {
+						year = 2180
+						not = { year = 2190 }
+					}
+					and = {
+						year = 2280
+						not = { year = 2290 }
+					}
+					and = {
+						year = 2380
+						not = { year = 2390 }
+					}
+				}
+				army_tradition = 0.8
+				not = { army_tradition = 0.9 }
+			}
+			and = {
+				or = {
+					and = {
+						year = 1990
+						not = { year = 2000 }
+					}
+					and = {
+						year = 2090
+						not = { year = 2100 }
+					}
+					and = {
+						year = 2190
+						not = { year = 2200 }
+					}
+					and = {
+						year = 2290
+						not = { year = 2300 }
+					}
+					and = {
+						year = 2390
+						not = { year = 2400 }
+					}
+				}
+				army_tradition = 0.9
+				not = { army_tradition = 1.0 }
+			}
+		}
+	}
+	land_morale = 2
+	discipline = 0.5
+}
+cheshi = {
+	potential = {
+		has_country_flag = xiyutianfu4
+	}
+	trigger = { 
+		OR = {
+			and = {
+				not = { army = 101 }
+				artillery = 20
+			}
+			and = {
+				not = { army = 201 }
+				artillery = 40
+			}
+			and = {
+				not = { army = 301 }
+				artillery = 60
+			}
+			and = {
+				not = { army = 401 }
+				artillery = 80
+			}
+			and = {
+				not = { army = 501 }
+				artillery = 100
+			}
+			and = {
+				not = { army = 601 }
+				artillery = 120
+			}
+			and = {
+				not = { army = 701 }
+				artillery = 140
+			}
+			and = {
+				not = { army = 801 }
+				artillery = 160
+			}
+			and = {
+				not = { army = 901 }
+				artillery = 180
+			}
+			and = {
+				not = { army = 1001 }
+				artillery = 200
+			}
+		}
+	}
+	discipline = 0.1
+}
+cheshi = {
+	potential = {
+		has_country_flag = xiyutianfu4
+	}
+	trigger = { 
+		OR = {
+			and = {
+				not = { army = 101 }
+				artillery = 40
+			}
+			and = {
+				not = { army = 201 }
+				artillery = 80
+			}
+			and = {
+				not = { army = 301 }
+				artillery = 120
+			}
+			and = {
+				not = { army = 401 }
+				artillery = 160
+			}
+			and = {
+				not = { army = 501 }
+				artillery = 200
+			}
+			and = {
+				not = { army = 601 }
+				artillery = 240
+			}
+			and = {
+				not = { army = 701 }
+				artillery = 280
+			}
+			and = {
+				not = { army = 801 }
+				artillery = 320
+			}
+			and = {
+				not = { army = 901 }
+				artillery = 360
+			}
+			and = {
+				not = { army = 1001 }
+				artillery = 400
+			}
+		}
+	}
+	discipline = 0.1
+}
+cheshi = {
+	potential = {
+		has_country_flag = xiyutianfu4
+	}
+	trigger = { 
+		OR = {
+			and = {
+				not = { army = 101 }
+				artillery = 60
+			}
+			and = {
+				not = { army = 201 }
+				artillery = 120
+			}
+			and = {
+				not = { army = 301 }
+				artillery = 180
+			}
+			and = {
+				not = { army = 401 }
+				artillery = 240
+			}
+			and = {
+				not = { army = 501 }
+				artillery = 300
+			}
+			and = {
+				not = { army = 601 }
+				artillery = 360
+			}
+			and = {
+				not = { army = 701 }
+				artillery = 420
+			}
+			and = {
+				not = { army = 801 }
+				artillery = 480
+			}
+			and = {
+				not = { army = 901 }
+				artillery = 540
+			}
+			and = {
+				not = { army = 1001 }
+				artillery = 600
+			}
+		}
+	}
+	discipline = 0.1
+}
+cheshi = {
+	potential = {
+		has_country_flag = xiyutianfu4
+	}
+	trigger = { 
+		OR = {
+			and = {
+				not = { army = 101 }
+				artillery = 80
+			}
+			and = {
+				not = { army = 201 }
+				artillery = 160
+			}
+			and = {
+				not = { army = 301 }
+				artillery = 240
+			}
+			and = {
+				not = { army = 401 }
+				artillery = 320
+			}
+			and = {
+				not = { army = 501 }
+				artillery = 400
+			}
+			and = {
+				not = { army = 601 }
+				artillery = 480
+			}
+			and = {
+				not = { army = 701 }
+				artillery = 560
+			}
+			and = {
+				not = { army = 801 }
+				artillery = 640
+			}
+			and = {
+				not = { army = 901 }
+				artillery = 720
+			}
+			and = {
+				not = { army = 1001 }
+				artillery = 800
+			}
+		}
+	}
+	discipline = 0.1
+}
+cheshi = {
+	potential = {
+		has_country_flag = xiyutianfu4
+	}
+	trigger = { 
+		OR = {
+			and = {
+				not = { army = 101 }
+				artillery = 100
+			}
+			and = {
+				not = { army = 201 }
+				artillery = 200
+			}
+			and = {
+				not = { army = 301 }
+				artillery = 300
+			}
+			and = {
+				not = { army = 401 }
+				artillery = 400
+			}
+			and = {
+				not = { army = 501 }
+				artillery = 500
+			}
+			and = {
+				not = { army = 601 }
+				artillery = 600
+			}
+			and = {
+				not = { army = 701 }
+				artillery = 700
+			}
+			and = {
+				not = { army = 801 }
+				artillery = 800
+			}
+			and = {
+				not = { army = 901 }
+				artillery = 900
+			}
+			and = {
+				not = { army = 1001 }
+				artillery = 1000
+			}
+		}
+	}
+	discipline = 100
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 10
+		not = { zhuanshu_infantry_99 = 20 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 10
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 20
+		not = { zhuanshu_infantry_99 = 30 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 20
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 30
+		not = { zhuanshu_infantry_99 = 40 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 30
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 40
+		not = { zhuanshu_infantry_99 = 60 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 40
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 60
+		not = { zhuanshu_infantry_99 = 80 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 60
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 80
+		not = { zhuanshu_infantry_99 = 100 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 80
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 100
+		not = { zhuanshu_infantry_99 = 150 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 100
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 150
+		not = { zhuanshu_infantry_99 = 200 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 150
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 200
+		not = { zhuanshu_infantry_99 = 250 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 200
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 250
+		not = { zhuanshu_infantry_99 = 500 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 250
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 500
+		not = { zhuanshu_infantry_99 = 750 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 500
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 750
+		not = { zhuanshu_infantry_99 = 1000 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 750
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 1000
+		not = { zhuanshu_infantry_99 = 2000 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 1000
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 2000
+		not = { zhuanshu_infantry_99 = 3000 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 2000
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 3000
+		not = { zhuanshu_infantry_99 = 5000 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 3000
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 5000
+		not = { zhuanshu_infantry_99 = 10000 }
+	}
+	trigger = { 
+	}
+	land_forcelimit = 5000
+}
+guizi = {
+	potential = {
+		zhuanshu_infantry_99 = 10000
+	}
+	trigger = { 
+	}
+	land_forcelimit = 10000
+}
+#随机天赋
+xiyusuijitianfu17 = {
+	potential = {
+		has_country_flag = xiyutianfu17
+	}
+	trigger = { 
+	}
+	trade_efficiency = 0.1
+}
+xiyusuijitianfu18 = {
+	potential = {
+		has_country_flag = xiyutianfu18
+	}
+	trigger = { 
+	}
+	production_efficiency = 0.1
+}
+xiyusuijitianfu19 = {
+	potential = {
+		has_country_flag = xiyutianfu19
+	}
+	trigger = { 
+	}
+	merchant_placement_chance = 0.50
+}
+xiyusuijitianfu20 = {
+	potential = {
+		has_country_flag = xiyutianfu20
+	}
+	trigger = { 
+	}
+	global_tax_modifier = 1
+}
+xiyusuijitianfu21 = {
+	potential = {
+		has_country_flag = xiyutianfu21
+	}
+	trigger = { 
+	}
+	global_colonial_growth = 1
+}
+xiyusuijitianfu22 = {
+	potential = {
+		has_country_flag = xiyutianfu22
+	}
+	trigger = { 
+	}
+	missionary_placement_chance = 0.05
+}
+xiyusuijitianfu23 = {
+	potential = {
+		has_country_flag = xiyutianfu23
+	}
+	trigger = { 
+	}
+	cultural_tradition = 0.1
+	army_tradition = 0.1
+	navy_tradition = 0.1
+}
+xiyusuijitianfu24 = {
+	potential = {
+		has_country_flag = xiyutianfu24
+	}
+	trigger = { 
+	}
+	discipline = 0.15
+}
+xiyusuijitianfu25 = {
+	potential = {
+		has_country_flag = xiyutianfu25
+	}
+	trigger = { 
+	}
+	land_morale = 2
+}
+xiyusuijitianfu26 = {
+	potential = {
+		has_country_flag = xiyutianfu26
+	}
+	trigger = { 
+	}
+	global_regiment_recruit_speed = -0.2
+}
+xiyusuijitianfu27 = {
+	potential = {
+		has_country_flag = xiyutianfu27
+	}
+	trigger = { 
+	}
+	leader_fire = 1
+	leader_shock = 1
+	leader_naval_manuever = 1
+	leader_siege = 1
+}
+xiyusuijitianfu28 = {
+	potential = {
+		has_country_flag = xiyutianfu28
+	}
+	trigger = { 
+	}
+	leader_fire = 4
+}
+xiyusuijitianfu29 = {
+	potential = {
+		has_country_flag = xiyutianfu29
+	}
+	trigger = { 
+	}
+	leader_shock = 4
+}
+xiyusuijitianfu30 = {
+	potential = {
+		has_country_flag = xiyutianfu30
+	}
+	trigger = { 
+	}
+	leader_naval_manuever = 4
+}
+xiyusuijitianfu31 = {
+	potential = {
+		has_country_flag = xiyutianfu31
+	}
+	trigger = { 
+	}
+	leader_siege = 4
+}
+xiyusuijitianfu32 = {
+	potential = {
+		has_country_flag = xiyutianfu32
+	}
+	trigger = { 
+	}
+	infantry_cost = -0.2
+}
+xiyusuijitianfu33 = {
+	potential = {
+		has_country_flag = xiyutianfu33
+	}
+	trigger = { 
+	}
+	artillery_cost = -0.2
+}
+xiyusuijitianfu34 = {
+	potential = {
+		has_country_flag = xiyutianfu34
+	}
+	trigger = { 
+	}
+	cavalry_cost = -0.2
+}
+xiyusuijitianfu35 = {
+	potential = {
+		has_country_flag = xiyutianfu35
+	}
+	trigger = { 
+	}
+	land_attrition = -0.2
+}
+xiyusuijitianfu36 = {
+	potential = {
+		has_country_flag = xiyutianfu36
+	}
+	trigger = { 
+	}
+	technology_cost = -0.10
+}
+nanxiyu = {
+	potential = {
+		has_country_flag = beixiyu
+	}
+	trigger = { 
+	}
+	war_exhaustion = -1
+}
+duhufu = {
+	potential = {
+		tag = DHF
+	}
+	trigger = {
+	}
+	merchant_placement_chance = -1
+	defensiveness = 1
+	global_spy_defence = 0.20
+	discipline = 0.10
+	garrison_growth = 1
+	war_exhaustion = -1
+}
+#丝绸之路
+sichouzhilu_bei = {
+	potential = {
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 727
+			}
+			controls = 727
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 764
+			}
+			controls = 764
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 765
+			}
+			controls = 765
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1233
+			}
+			controls = 1233
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1236
+			}
+		controls = 1236
+		}
+	}
+	trigger = { 
+	}
+	trade_efficiency = 0.05
+	discipline = 0.15
+}
+sichouzhilu_zhong = {
+	potential = {
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 763
+			}
+			controls = 763
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 768
+			}
+			controls = 768
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1226
+			}
+			controls = 1226
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1227
+			}
+			controls = 1227
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1228
+			}
+			controls = 1228
+		}
+	}
+	trigger = { 
+	}
+	trade_efficiency = 0.05
+	technology_cost = -0.10
+}
+sichouzhilu_nan = {
+	potential = {
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 761
+			}
+			controls = 761
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 762
+			}
+			controls = 762
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1219
+			}
+			controls = 1219
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1220
+			}
+			controls = 1220
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1221
+			}
+			controls = 1221
+		}
+		or = {
+			any_country = {
+				vassal_of = this
+				controls = 1222
+			}
+			controls = 1222
+		}
+	}
+	trigger = { 
+	}
+	trade_efficiency = 0.1
+	production_efficiency = 0.1
+}
+#二岛#
+hainan = {
+	potential = {
+		owns = 541
+		owns = 542
+	}
+	trigger = { 
+		owns = 541
+		owns = 542
+	}
+	trade_efficiency = 0.1
+	naval_morale = 0.5
+	naval_maintenance_modifier = -0.20
+}
+taiwan = {
+	potential = {
+		owns = 525
+		owns = 526
+	}
+	trigger = { 
+		owns = 525
+		owns = 526
+	}
+	production_efficiency = 0.1
+	naval_morale = 0.5
+	naval_maintenance_modifier = -0.20
+}
+#节俭治国#
+jiejianzhiguotongzhang1 = {
+	potential = {
+		has_country_flag = daojiazhuanjing
+		inflation = 1
+		not = { inflation = 2 }
+	}
+	trigger = { 
+		inflation = 1
+		not = { inflation = 2 }
+	}
+	build_cost = 0.05
+	stability_cost_modifier = 0.05
+	merchant_cost = 0.05
+	colonist_cost = 0.05
+	missionary_cost = 0.05
+	infantry_cost = 0.05
+	cavalry_cost = 0.05
+	artillery_cost = 0.05
+	bigship_cost = 0.05
+	lightship_cost = 0.05
+	galley_cost = 0.05
+	transport_cost = 0.05
+	land_tech_cost_modifier = 0.05	
+	trade_tech_cost_modifier = 0.05
+	naval_tech_cost_modifier = 0.05
+	government_tech_cost_modifier = 0.05
+	production_tech_cost_modifier = 0.05
+	advisor_cost = 0.05			
+	spies_cost = 0.05
+	mercenary_cost = 0.05
+}
+jiejianzhiguotongzhang2 = {
+	potential = {
+		has_country_flag = daojiazhuanjing
+		inflation = 2
+		not = { inflation = 3 }
+	}
+	trigger = { 
+		inflation = 2
+		not = { inflation = 3 }
+	}
+	build_cost = 0.10
+	stability_cost_modifier = 0.10
+	merchant_cost = 0.10
+	colonist_cost = 0.10
+	missionary_cost = 0.10
+	infantry_cost = 0.10
+	cavalry_cost = 0.10
+	artillery_cost = 0.10
+	bigship_cost = 0.10
+	lightship_cost = 0.10
+	galley_cost = 0.10
+	transport_cost = 0.10
+	land_tech_cost_modifier = 0.10	
+	trade_tech_cost_modifier = 0.10
+	naval_tech_cost_modifier = 0.10
+	government_tech_cost_modifier = 0.10
+	production_tech_cost_modifier = 0.10
+	advisor_cost = 0.10			
+	spies_cost = 0.10
+	mercenary_cost = 0.10
+}
+jiejianzhiguotongzhang3 = {
+	potential = {
+		has_country_flag = daojiazhuanjing
+		inflation = 3
+		not = { inflation = 4 }
+	}
+	trigger = { 
+		inflation = 3
+		not = { inflation = 4 }
+	}
+	build_cost = 0.15
+	stability_cost_modifier = 0.15
+	merchant_cost = 0.15
+	colonist_cost = 0.15
+	missionary_cost = 0.15
+	infantry_cost = 0.15
+	cavalry_cost = 0.15
+	artillery_cost = 0.15
+	bigship_cost = 0.15
+	lightship_cost = 0.15
+	galley_cost = 0.15
+	transport_cost = 0.15
+	land_tech_cost_modifier = 0.15	
+	trade_tech_cost_modifier = 0.15
+	naval_tech_cost_modifier = 0.15
+	government_tech_cost_modifier = 0.15
+	production_tech_cost_modifier = 0.15
+	advisor_cost = 0.15			
+	spies_cost = 0.15
+	mercenary_cost = 0.15
+}
+jiejianzhiguotongzhang4 = {
+	potential = {
+		has_country_flag = daojiazhuanjing
+		inflation = 4
+		not = { inflation = 5 }
+	}
+	trigger = { 
+		inflation = 4
+		not = { inflation = 5 }
+	}
+	build_cost = 0.20
+	stability_cost_modifier = 0.20
+	merchant_cost = 0.20
+	colonist_cost = 0.20
+	missionary_cost = 0.20
+	infantry_cost = 0.20
+	cavalry_cost = 0.20
+	artillery_cost = 0.20
+	bigship_cost = 0.20
+	lightship_cost = 0.20
+	galley_cost = 0.20
+	transport_cost = 0.20
+	land_tech_cost_modifier = 0.20	
+	trade_tech_cost_modifier = 0.20
+	naval_tech_cost_modifier = 0.20
+	government_tech_cost_modifier = 0.20
+	production_tech_cost_modifier = 0.20
+	advisor_cost = 0.20			
+	spies_cost = 0.20
+	mercenary_cost = 0.20
+}
+jiejianzhiguotongzhang5 = {
+	potential = {
+		has_country_flag = daojiazhuanjing
+		inflation = 5
+	}
+	trigger = { 
+		inflation = 5
+	}
+	build_cost = 0.25
+	stability_cost_modifier = 0.25
+	merchant_cost = 0.25
+	colonist_cost = 0.25
+	missionary_cost = 0.25
+	infantry_cost = 0.25
+	cavalry_cost = 0.25
+	artillery_cost = 0.25
+	bigship_cost = 0.25
+	lightship_cost = 0.25
+	galley_cost = 0.25
+	transport_cost = 0.25
+	land_tech_cost_modifier = 0.25	
+	trade_tech_cost_modifier = 0.25
+	naval_tech_cost_modifier = 0.25
+	government_tech_cost_modifier = 0.25
+	production_tech_cost_modifier = 0.25
+	advisor_cost = 0.25			
+	spies_cost = 0.25
+	mercenary_cost = 0.25
+}
+feigongbuff1 = {
+	potential = {
+		has_country_flag = mojiazhuanjing
+	}
+	trigger = { 
+		not = {
+			check_variable = {
+				which = liangshishuliang
+				value = 100
+			}
+		}
+	}
+	tolerance_own = -2
+}
+feigongbuff2 = {
+	potential = {
+		has_country_flag = mojiazhuanjing
+	}
+	trigger = { 
+		check_variable = {
+			which = liangshishuliang
+			value = 500
+		}
+	}
+	production_efficiency = 0.10
+	war_exhaustion = 0.1
+}
+feigongbuff3 = {
+	potential = {
+		has_country_flag = mojiazhuanjing
+	}
+	trigger = { 
+		check_variable = {
+			which = liangshishuliang
+			value = 1000
+		}
+	}
+	technology_cost = -0.10
+	war_exhaustion = 0.1
+}
+jizhouding = {
+	potential = {
+		or = { 
+			has_country_flag = jizhouding
+			has_country_flag = wenjizhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = jizhouding
+			has_country_flag = wenjizhouding
+		}
+	}
+	prestige = 0.03
+	discipline = 0.08
+	land_morale = 0.3
+	infantry_cost = -0.10
+}
+youzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = youzhouding
+			has_country_flag = wenyouzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = youzhouding
+			has_country_flag = wenyouzhouding
+		}
+	}
+	prestige = 0.03
+	land_attrition = -0.10
+	discipline = 0.05
+	defensiveness = 0.20
+}
+qingzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = qingzhouding
+			has_country_flag = wenqingzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = qingzhouding
+			has_country_flag = wenqingzhouding
+		}
+	}
+	prestige = 0.03
+	trade_efficiency = 0.05
+	global_cot_gravity = 0.20
+	artillery_cost = -0.10
+}
+xuzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = xuzhouding
+			has_country_flag = wenxuzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = xuzhouding
+			has_country_flag = wenxuzhouding
+		}
+	}
+	prestige = 0.03
+	global_revolt_risk = -3
+	badboy_limit = 5
+}
+yangzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = yangzhouding
+			has_country_flag = wenyangzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = yangzhouding
+			has_country_flag = wenyangzhouding
+		}
+	}
+	prestige = 0.03
+	land_morale = 0.3
+	global_manpower = 20
+}
+jingzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = jingzhouding
+			has_country_flag = wenjingzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = jingzhouding
+			has_country_flag = wenjingzhouding
+		}
+	}
+	prestige = 0.03
+	global_manpower_modifier = 0.15
+	land_forcelimit_modifier = 0.10
+	land_maintenance_modifier = -0.10
+}
+yizhouding = {
+	potential = {
+		or = { 
+			has_country_flag = yizhouding
+			has_country_flag = wenyizhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = yizhouding
+			has_country_flag = wenyizhouding
+		}
+	}
+	prestige = 0.03
+}
+liangzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = liangzhouding
+			has_country_flag = wenliangzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = liangzhouding
+			has_country_flag = wenliangzhouding
+		}
+	}
+	prestige = 0.03
+	cavalry_cost = -0.30
+}
+bingzhouding = {
+	potential = {
+		or = { 
+			has_country_flag = bingzhouding
+			has_country_flag = wenbingzhouding
+		}
+	}
+	trigger = { 
+		or = { 
+			has_country_flag = bingzhouding
+			has_country_flag = wenbingzhouding
+		}
+	}
+	prestige = 0.03
+	land_maintenance_modifier = -0.20
+}
+tongzhougongji = {
+	potential = {
+		has_country_modifier = tongzhougongji
+		navy_size_percentage = 0.8
+		not = { 
+			navy_size_percentage = 0.9
+		}
+	}
+	trigger = { 
+		navy_size_percentage = 0.8
+		not = { 
+			navy_size_percentage = 0.9
+		}
+	}
+	discipline = 0.01
+	land_morale = 0.1
+}
+tongzhougongji = {
+	potential = {
+		has_country_modifier = tongzhougongji
+		navy_size_percentage = 0.9
+		not = { 
+			navy_size_percentage = 0.10
+		}
+	}
+	trigger = { 
+		navy_size_percentage = 0.9
+		not = { 
+			navy_size_percentage = 0.10
+		}
+	}
+	discipline = 0.02
+	land_morale = 0.2
+}
+tongzhougongji = {
+	potential = {
+		has_country_modifier = tongzhougongji
+		navy_size_percentage = 1.0
+		not = { 
+			navy_size_percentage = 1.1
+		}
+	}
+	trigger = { 
+		navy_size_percentage = 1.0
+		not = { 
+			navy_size_percentage = 1.1
+		}
+	}
+	discipline = 0.03
+	land_morale = 0.3
+}
+tongzhougongji = {
+	potential = {
+		has_country_modifier = tongzhougongji
+		navy_size_percentage = 1.1
+	}
+	trigger = { 
+		navy_size_percentage = 1.1
+	}
+	discipline = 0.05
+	land_morale = 0.5
+}

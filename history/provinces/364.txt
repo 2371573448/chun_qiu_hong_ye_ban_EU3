@@ -1,0 +1,102 @@
+owner = DGG
+controller = DGG
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "∫‚”∫"
+trade_goods = wine
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = DGG
+add_core = ZGO
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+1930.1.1 = { 
+	owner = ZGO
+	controller = ZGO
+}
+2000.1.1 = { 
+	remove_core = DGG
+}
+2222.1.1 = { 
+	citysize = 34000
+}
+2244.1.1 = { 
+	owner = DGG
+	controller = DGG
+	add_core = DGG
+	remove_core = ZGO
+}
+2244.1.2 = { 
+	owner = ZGO
+	controller = ZGO
+	add_core = ZGO
+	remove_core = DGG
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.1 = { 
+	add_core = WEI
+}	
+
+	
+2246.1.2 = { 
+	owner = DGG
+	controller = DGG
+	add_core = DGG
+	remove_core = WEI
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = ZGO
+	controller = ZGO
+	add_core = ZGO
+	remove_core = DGG
+}
+2305.1.1 = { 
+	owner = WEI
+	controller = WEI
+	culture = dongtu
+}
+2335.1.1 = { 
+	add_core = WEI
+	remove_core = ZGO
+}
+2360.1.1 = { 
+	religion = mojia
+}
+2473.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = SCW
+	controller = SCW
+	add_core = SCW
+}
+2492.10.1 = { 
+	owner = HNW
+	controller = HNW
+}

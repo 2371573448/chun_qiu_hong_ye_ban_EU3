@@ -1,0 +1,1250 @@
+#############################################
+#  event = 1348 - 1382    #
+#############################################
+country_event = { 
+	id = 1348
+	trigger = { 
+		or = { 
+			alderman = 4
+			colonial_governor = 4
+			statesman = 4
+			sheriff = 4
+		}
+		not = { 
+			has_country_modifier = zhengzhiqingming
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				alderman = 5
+				colonial_governor = 5
+				statesman = 5
+				sheriff = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				alderman = 6
+				colonial_governor = 6
+				statesman = 6
+				sheriff = 6
+			}
+		}
+	}
+	title = "EVTNAME1348"
+	desc = "EVTDESC1348"
+	option = { 
+		name = "EVTOPTA1348"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "zhengzhiqingming"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1349
+	trigger = { 
+		or = { 
+			philosopher = 4
+			theologian = 4
+			master_of_mint = 4
+			high_judge = 4
+		}
+		not = { 
+			has_country_modifier = xueshufanrong
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				philosopher = 5
+				theologian = 5
+				master_of_mint = 5
+				high_judge = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				philosopher = 6
+				theologian = 6
+				master_of_mint = 6
+				high_judge = 6
+			}
+		}
+	}
+	title = "EVTNAME1349"
+	desc = "EVTDESC1349"
+	option = { 
+		name = "EVTOPTA1349"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "xueshufanrong"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1350
+	trigger = { 
+		or = { 
+			army_reformer = 4
+			grand_admiral = 4
+			sergeant_major_general = 4
+			quartermaster = 4
+		}
+		not = { 
+			has_country_modifier = junshigeming
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				army_reformer = 5
+				grand_admiral = 5
+				sergeant_major_general = 5
+				quartermaster = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				army_reformer = 6
+				grand_admiral = 6
+				sergeant_major_general = 6
+				quartermaster = 6
+			}
+		}
+	}
+	title = "EVTNAME1350"
+	desc = "EVTDESC1350"
+	option = { 
+		name = "EVTOPTA1350"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "junshigeming"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1351
+	trigger = { 
+		or = { 
+			grand_captain = 4
+			army_organiser = 4
+			commandant = 4
+			colonel = 4
+		}
+		not = { 
+			has_country_modifier = dangshiminjiang
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				grand_captain = 5
+				army_organiser = 5
+				commandant = 5
+				colonel = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				grand_captain = 6
+				army_organiser = 6
+				commandant = 6
+				colonel = 6
+			}
+		}
+	}
+	title = "EVTNAME1351"
+	desc = "EVTDESC1351"
+	option = { 
+		name = "EVTOPTA1351"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "dangshiminjiang"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1352
+	trigger = { 
+		or = { 
+			artist = 4
+			collector = 4
+			privateer = 4
+			naval_organiser = 4
+		}
+		not = { 
+			has_country_modifier = wenyixinglong
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				artist = 5
+				collector = 5
+				privateer = 5
+				naval_organiser = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				artist = 6
+				collector = 6
+				privateer = 6
+				naval_organiser = 6
+			}
+		}
+	}
+	title = "EVTNAME1352"
+	desc = "EVTDESC1352"
+	option = { 
+		name = "EVTOPTA1352"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "wenyixinglong"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1353
+	trigger = { 
+		or = { 
+			treasurer = 4
+			banker = 4
+			rear_admiral = 4
+			trader = 4
+		}
+		not = { 
+			has_country_modifier = shangyefanrong
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				treasurer = 5
+				banker = 5
+				rear_admiral = 5
+				trader = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				treasurer = 6
+				banker = 6
+				rear_admiral = 6
+				trader = 6
+			}
+		}
+	}
+	title = "EVTNAME1353"
+	desc = "EVTDESC1353"
+	option = { 
+		name = "EVTOPTA1353"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "shangyefanrong"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1354
+	trigger = { 
+		or = { 
+			natural_scientist = 4
+			recruitmaster = 4
+			pioneer = 4
+			fortification_expert = 4
+		}
+		not = { 
+			has_country_modifier = difangjianshe
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				natural_scientist = 5
+				recruitmaster = 5
+				pioneer = 5
+				fortification_expert = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				natural_scientist = 6
+				recruitmaster = 6
+				pioneer = 6
+				fortification_expert = 6
+			}
+		}
+	}
+	title = "EVTNAME1354"
+	desc = "EVTDESC1354"
+	option = { 
+		name = "EVTOPTA1354"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "difangjianshe"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1355
+	trigger = { 
+		or = { 
+			spymaster = 4
+			diplomat = 4
+			ambassador = 4
+			grand_marshal = 4
+		}
+		not = { 
+			has_country_modifier = zhuhouchengfu
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				spymaster = 5
+				diplomat = 5
+				ambassador = 5
+				grand_marshal = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				spymaster = 6
+				diplomat = 6
+				ambassador = 6
+				grand_marshal = 6
+			}
+		}
+	}
+	title = "EVTNAME1355"
+	desc = "EVTDESC1355"
+	option = { 
+		name = "EVTOPTA1355"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "zhuhouchengfu"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1356
+	trigger = { 
+		or = { 
+			naval_reformer = 4
+			lord_proprietor = 4
+			navigator = 4
+			inquisitor = 4
+		}
+		not = { 
+			has_country_modifier = anjuleye
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 0.5
+			has_country_flag = weiduojunzi
+		}
+		modifier = { 
+			factor = 0.5
+			or = { 
+				naval_reformer = 5
+				lord_proprietor = 5
+				navigator = 5
+				inquisitor = 5
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			or = { 
+				naval_reformer = 6
+				lord_proprietor = 6
+				navigator = 5
+				inquisitor = 6
+			}
+		}
+	}
+	title = "EVTNAME1356"
+	desc = "EVTDESC1356"
+	option = { 
+		name = "EVTOPTA1356"
+		stability = 1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "anjuleye"
+			duration = 2190
+		}
+	}
+}
+country_event = { 
+	id = 1357
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = philosopher
+		idea = liberty_egalite_fraternity
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1357"
+	desc = "EVTDESC1357"
+	option = { 
+		name = "EVTOPTA1357"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1357"
+		remove_advisor = philosopher
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1358
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = natural_scientist
+		idea = cabinet
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1358"
+	desc = "EVTDESC1358"
+	option = { 
+		name = "EVTOPTA1358"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1358"
+		remove_advisor = philosopher
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1359
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = treasurer
+		mercantilism_freetrade = 3
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1359"
+	desc = "EVTDESC1359"
+	option = { 
+		name = "EVTOPTA1359"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1359"
+		remove_advisor = treasurer
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1360
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = naval_reformer
+		idea = vetting
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1360"
+	desc = "EVTDESC1360"
+	option = { 
+		name = "EVTOPTA1360"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1360"
+		remove_advisor = naval_reformer
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1361
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = treasurer
+		offensive_defensive = 3
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1361"
+	desc = "EVTDESC1361"
+	option = { 
+		name = "EVTOPTA1361"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1361"
+		remove_advisor = treasurer
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1362
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = trader
+		idea = colonial_ventures
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1362"
+	desc = "EVTDESC1362"
+	option = { 
+		name = "EVTOPTA1362"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1362"
+		remove_advisor = alderman
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1363
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = theologian
+		idea = patron_of_art
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1363"
+	desc = "EVTDESC1363"
+	option = { 
+		name = "EVTOPTA1363"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1363"
+		remove_advisor = theologian
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1364
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = diplomat
+		advisor = ambassador
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1364"
+	desc = "EVTDESC1364"
+	option = { 
+		name = "EVTOPTA1364"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1364"
+		remove_advisor = diplomat
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1365
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = ambassador
+		advisor = diplomat
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1365"
+	desc = "EVTDESC1365"
+	option = { 
+		name = "EVTOPTA1365"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1365"
+		remove_advisor = ambassador
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1366
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = master_of_mint
+		aristocracy_plutocracy = 3
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1366"
+	desc = "EVTDESC1366"
+	option = { 
+		name = "EVTOPTA1366"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1366"
+		remove_advisor = master_of_mint
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1367
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = banker
+		idea = land_of_opportunity
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME1367"
+	desc = "EVTDESC1367"
+	option = { 
+		name = "EVTOPTA1367"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1367"
+		remove_advisor = banker
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1368
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = pioneer
+		not = { 
+			land_naval = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1368"
+	desc = "EVTDESC1368"
+	option = { 
+		name = "EVTOPTA1368"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1368"
+		remove_advisor = pioneer
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1369
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = grand_admiral
+		idea = glorious_arms
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1369"
+	desc = "EVTDESC1369"
+	option = { 
+		name = "EVTOPTA1369"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1369"
+		remove_advisor = grand_admiral
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1370
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = rear_admiral
+		innovative_narrowminded = 3
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1370"
+	desc = "EVTDESC1370"
+	option = { 
+		name = "EVTOPTA1370"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1370"
+		remove_advisor = rear_admiral
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1371
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = sergeant_major_general
+		idea = sea_hawks
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1371"
+	desc = "EVTDESC1371"
+	option = { 
+		name = "EVTOPTA1371"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1371"
+		remove_advisor = sergeant_major_general
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1372
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = quartermaster
+		idea = shrewd_commerce_practise
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1372"
+	desc = "EVTDESC1372"
+	option = { 
+		name = "EVTOPTA1372"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1372"
+		remove_advisor = quartermaster
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1373
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = recruitmaster
+		not = { 
+			quality_quantity = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1373"
+	desc = "EVTDESC1373"
+	option = { 
+		name = "EVTOPTA1373"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1373"
+		remove_advisor = recruitmaster
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1374
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		advisor = fortification_expert
+		not = { 
+			offensive_defensive = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME1374"
+	desc = "EVTDESC1374"
+	option = { 
+		name = "EVTOPTA1374"
+		stability = -1
+		prestige = 0.1
+	}
+	option = { 
+		name = "EVTOPTB1374"
+		remove_advisor = fortification_expert
+		# 
+		prestige = -0.2
+		legitimacy = -0.1
+	}
+}
+country_event = { 
+	id = 1377
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		ADM = 7
+		advisor = statesman
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1377"
+	desc = "EVTDESC1377"
+	option = { 
+		name = "EVTOPTA1377"
+		add_country_modifier = { 
+			name = "siweisucan_1"
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "EVTOPTB1377"
+		remove_advisor = statesman
+	}
+	option = { 
+		name = "EVTOPTC1377"
+		prestige = -0.15
+		badboy = 2
+	}
+}
+country_event = { 
+	id = 1378
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		not = { 
+			ADM = 5
+		}
+		advisor = grand_marshal
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1378"
+	desc = "EVTDESC1378"
+	option = { 
+		name = "EVTOPTA1378"
+		add_country_modifier = { 
+			name = "siweisucan_2"
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "EVTOPTB1378"
+		remove_advisor = grand_marshal
+	}
+	option = { 
+		name = "EVTOPTC1378"
+		prestige = -0.15
+		badboy = 2
+	}
+}
+country_event = { 
+	id = 1379
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		DIP = 7
+		advisor = colonial_governor
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1379"
+	desc = "EVTDESC1379"
+	option = { 
+		name = "EVTOPTA1379"
+		add_country_modifier = { 
+			name = "siweisucan_3"
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "EVTOPTB1379"
+		remove_advisor = colonial_governor
+	}
+	option = { 
+		name = "EVTOPTC1379"
+		prestige = -0.15
+		badboy = 2
+	}
+}
+country_event = { 
+	id = 1380
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		not = { 
+			DIP = 5
+		}
+		advisor = privateer
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1380"
+	desc = "EVTDESC1380"
+	option = { 
+		name = "EVTOPTA1380"
+		add_country_modifier = { 
+			name = "siweisucan_4"
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "EVTOPTB1380"
+		remove_advisor = privateer
+	}
+	option = { 
+		name = "EVTOPTC1380"
+		prestige = -0.15
+		badboy = 2
+	}
+}
+country_event = { 
+	id = 1381
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		MIL = 7
+		advisor = grand_captain
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1381"
+	desc = "EVTDESC1381"
+	option = { 
+		name = "EVTOPTA1381"
+		add_country_modifier = { 
+			name = "siweisucan_5"
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "EVTOPTB1381"
+		remove_advisor = grand_captain
+	}
+	option = { 
+		name = "EVTOPTC1381"
+		prestige = -0.15
+		badboy = 2
+	}
+}
+country_event = { 
+	id = 1382
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		not = { 
+			MIL = 5
+		}
+		advisor = army_organiser
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1382"
+	desc = "EVTDESC1382"
+	option = { 
+		name = "EVTOPTA1382"
+		add_country_modifier = { 
+			name = "siweisucan_6"
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "EVTOPTB1382"
+		remove_advisor = army_organiser
+	}
+	option = { 
+		name = "EVTOPTC1382"
+		prestige = -0.15
+		badboy = 2
+	}
+}
+
+country_event = { 
+	id = 3891
+	trigger = { 
+		has_country_modifier = YIJ_buff1
+		NOT = { 
+			any_owned_province = { 
+				has_province_modifier = YIJ_buff2
+			}
+		}
+		advisor = navigator
+		navigator = 5
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME3891"
+	desc = "EVTDESC3891"
+	option = {
+		name = "EVTOPTA3891"
+		any_owned = { 
+			add_province_modifier = { 
+				name = "YIJ_buff2"
+				duration = 3650
+			}
+		}
+	}
+}
+country_event = { 
+	id = 38925
+	trigger = { 
+		tag = NPC
+		not = { tag = NPC }
+	}
+	mean_time_to_happen = { 
+		months = 2
+	}
+	title = "EVTNAME38925"
+	desc = "EVTDESC38925"
+	option = {
+		name = "EVTOPTA38925"
+		any_country = { 
+			any_owned = { 
+				remove_province_modifier = shanlinrenkou1
+				remove_province_modifier = shanlinrenkou2
+				remove_province_modifier = shanlinrenkou3
+				remove_province_modifier = shanlinrenkou4
+				remove_province_modifier = shanlinrenkou5
+				remove_province_modifier = shanlinrenkou6
+			}
+		}
+		any_country = { 
+			limit = { 
+				advisor = lord_proprietor
+				lord_proprietor = 1
+				not = { lord_proprietor = 2 }
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "shanlinrenkou1"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				advisor = lord_proprietor
+				lord_proprietor = 2
+				not = { lord_proprietor = 3 }
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "shanlinrenkou2"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				advisor = lord_proprietor
+				lord_proprietor = 3
+				not = { lord_proprietor = 4 }
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "shanlinrenkou3"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				advisor = lord_proprietor
+				lord_proprietor = 4
+				not = { lord_proprietor = 5 }
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "shanlinrenkou4"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				advisor = lord_proprietor
+				lord_proprietor = 5
+				not = { lord_proprietor = 6 }
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "shanlinrenkou5"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				advisor = lord_proprietor
+				lord_proprietor = 6
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "shanlinrenkou6"
+					duration = -1
+				}
+			}
+		}
+	}
+}

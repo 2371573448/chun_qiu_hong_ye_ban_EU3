@@ -1,0 +1,57 @@
+
+owner = GUZ
+controller = GUZ
+culture = shanrong
+religion = animism
+capital = "º£Ñô"
+trade_goods = fish
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = GUZ
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2035.1.1 = { owner = YAN  controller = YAN }
+2070.1.1 = { add_core = YAN 
+           }
+2100.1.1 = { religion = liyuejiaohua
+             culture = hebei
+           }
+2222.1.1 = { citysize = 24000 }
+
+2244.1.1 = { 
+	owner = GUZ
+	controller = GUZ
+	add_core = GUZ
+	remove_core = YAN
+}
+2244.1.2 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+	remove_core = GUZ
+}
+2246.1.2 = { citysize = 24000 
+	  owner = GUZ
+	  controller = GUZ
+	add_core = GUZ
+	  culture = shanrong
+	  religion = animism
+}
+2247.1.1 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+}
+2472.1.1 = {	owner = QIN
+		controller = QIN
+	   }
+2489.10.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2492.2.1={owner=LDW controller=LDW add_core=LDW}   2492.5.1={owner=YAN controller=YAN}

@@ -1,0 +1,251 @@
+
+spriteTypes = {
+
+	corneredTileSpriteType = {
+		name = "GFX_country_selection_panel_bg"
+		size= {x =320 y = 704 }
+		texturefile = "gfx\\interface\\tiles_dialog.tga"
+		borderSize = { x=32 y=32 }
+		loadType = "FRONTEND"
+	}
+
+
+	# spriteType = {
+	#	name = "yearslider_background"
+	#	texturefile = "gfx\\interface\\scrollbar_sliderbackground.tga"
+	# }
+
+
+	corneredTileSpriteType = {
+		name = "GFX_frontend_tile"
+		size= {x=32 y=32 }		
+		textureFile ="gfx\\interface\\frontend_tile.tga"
+		borderSize = { x=32 y=32 }
+	}
+
+	corneredTileSpriteType = {
+		name = "yearslider_background"
+		size= {x =320 y = 16 }
+		texturefile = "gfx\\interface\\scrollbar_sliderbackground.tga"
+		borderSize = { x=4 y=4 }
+	}
+
+	spriteType = {
+		name = "frontend_tab"
+		texturefile = "gfx\\interface\\frontend_tab.tga"
+		noOfFrames = 2
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_backdrop"
+		texturefile = "gfx\\interface\\frontend_backdrop.tga"
+		noOfFrames = 1
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_frontend_paper_bg"
+		texturefile = "gfx\\interface\\httt_interface\\frontend_paper_bg.tga"
+		noOfFrames = 1
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_button_kick"
+		texturefile = "gfx\\interface\\button_kick.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+	
+	spriteType = {
+		name = "GFX_paradox_connect_button"
+		texturefile = "gfx\\interface\\divine_wind_interface\\Button_Paradox_Connect.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+
+	spriteType = {
+		name = "GFX_button_ban"
+		texturefile = "gfx\\interface\\button_ban.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_panel"
+		texturefile = "gfx\\interface\\frontend_panel.tga"
+		noOfFrames = 1
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_ll"
+		texturefile = "gfx\\interface\\frontend_ll.tga"
+		noOfFrames = 1
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_ur"
+		texturefile = "gfx\\interface\\frontend_ur.tga"
+		noOfFrames = 1
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_banner"
+		texturefile = "gfx\\interface\\frontend_banner.tga"
+		noOfFrames = 1
+		loadType = "FRONTEND"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_frontend_sidepanel"
+		texturefile = "gfx\\interface\\frontend_sidepanel.tga"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_chatpanel"
+		texturefile = "gfx\\interface\\frontend_chatpanel.tga"
+		loadType = "FRONTEND"
+	}
+
+
+
+
+
+	spriteType = {
+		name = "yearslider_leftbutton"
+		texturefile = "gfx\\interface\\scrollbar_leftbutton.tga"
+		noOfFrames = 4
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "yearslider_rightbutton"
+		texturefile = "gfx\\interface\\scrollbar_rightbutton.tga"
+		noOfFrames = 4
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "yearslider_slider"
+		texturefile = "gfx\\interface\\scrollbar_slider.tga"
+		noOfFrames = 4
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "yearslider_slider2"
+		texturefile = "gfx\\interface\\scrollbar_slider_2.tga"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	#### date selection widget
+
+	
+	spriteType = {
+		name = "GFX_selectdate_bg"
+		texturefile = "gfx\\interface\\selectdate_bg.tga"
+		loadType = "FRONTEND"
+	}
+	spriteType = {
+		name = "GFX_selectdate_yearup"
+		texturefile = "gfx\\interface\\selectdate_yearup.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_selectdate_yeardown"
+		texturefile = "gfx\\interface\\selectdate_yeardown.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_selectdate_monthup"
+		texturefile = "gfx\\interface\\selectdate_monthup.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_selectdate_monthdown"
+		texturefile = "gfx\\interface\\selectdate_monthdown.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_selectdate_dayup"
+		texturefile = "gfx\\interface\\selectdate_dayup.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_selectdate_daydown"
+		texturefile = "gfx\\interface\\selectdate_daydown.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_selectdate_bookmark"
+		texturefile = "gfx\\interface\\selectdate_bookmark.tga"
+		#effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+
+#	textSpriteType = {
+#		name = "GFX_selectdate_bookmark"
+#		texturefile = "gfx\\interface\\selectdate_bookmark.tga"
+#		noOfFrames = 4
+#		loadType = "FRONTEND"
+#	}
+
+	######
+
+	spriteType = {
+		name = "GFX_selected_country_banner"
+		texturefile = "gfx\\interface\\selected_country_banner.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_difficulty"
+		texturefile = "gfx\\interface\\difficulty.tga"
+		loadType = "FRONTEND"
+	}
+
+	spriteType = {
+		name = "GFX_horizontal_rule"
+		texturefile = "gfx\\interface\\horizontal_rule.tga"
+		loadType = "FRONTEND"
+	}
+
+	progressbartype = {
+		name = "GFX_difficultybar"
+		color = { 0.0 0.0 1.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 118 y = 6 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+
+
+}

@@ -1,0 +1,326 @@
+government = fengjian
+aristocracy_plutocracy = -2
+centralization_decentralization = 2
+innovative_narrowminded = 1
+mercantilism_freetrade = 4
+offensive_defensive = 1
+land_naval = 0
+quality_quantity = 1
+serfdom_freesubjects = -2
+technology_group = wuyue1
+religion = ancestor
+primary_culture = wuyue
+capital = 438
+1900.1.1 = { 
+	monarch = { 
+		name = "少连"
+		dynasty = "姒"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+2040.1.1 = { 
+	monarch = { 
+		name = "必高"
+		dynasty = "姒"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+2077.1.1 = { 
+	monarch = { 
+		name = "无壬"
+		dynasty = "姒"
+		adm = 7
+		dip = 6
+		mil = 7
+	}
+}
+2100.1.1 = { 
+	decision = tuposanjunguizhi
+}
+2107.1.1 = { 
+	monarch = { 
+		name = "无译"
+		dynasty = "姒"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+2134.1.1 = { 
+	monarch = { 
+		name = "夫谭"
+		dynasty = "姒"
+		adm = 7
+		dip = 4
+		mil = 6
+	}
+}
+2150.1.1 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2161.1.1 = { 
+	monarch = { 
+		name = "允常"
+		dynasty = "姒"
+		adm = 7
+		dip = 3
+		mil = 5
+	}
+}
+2170.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2198.1.1 = { 
+	leader = { 
+		name = "灵姑浮"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 4
+		manuever = 1
+		siege = 1
+		death_date = 2208.1.1
+	}
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2202.1.1 = { 
+	monarch = { 
+		name = "勾践"
+		dynasty = "姒"
+		adm = 9
+		dip = 7
+		mil = 9
+	}
+}
+2203.1.1 = { 
+	leader = { 
+		name = "文种"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 2
+		manuever = 2
+		siege = 2
+		death_date = 2226.1.1
+	}
+}
+2204.1.1 = { 
+	leader = { 
+		name = "范蠡"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 1
+		manuever = 5
+		siege = 1
+		death_date = 2226.1.1
+	}
+}
+2205.1.1 = { 
+	# 吴破越，掳越王勾践，越王勾践誓雪大耻，卧薪尝胆
+	religion = liyuebadao
+	technology_group = chinese
+	unit_type = wuyue1
+	government = enlightened_despotism
+	aristocracy_plutocracy = 3
+	centralization_decentralization = -3
+	innovative_narrowminded = -4
+}
+2216.1.1 = { 
+	# 越王勾践偷袭姑苏，破之
+	centralization_decentralization = -4
+	offensive_defensive = -5
+	land_naval = -5
+}
+2225.1.1 = { 
+	capital = 334
+}
+2225.1.1 = { 
+	emperor = yes
+}
+2235.1.1 = { 
+	monarch = { 
+		name = "鹿郢"
+		dynasty = "姒"
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+2241.1.1 = { 
+	monarch = { 
+		name = "不寿"
+		dynasty = "姒"
+		adm = 3
+		dip = 2
+		mil = 6
+	}
+}
+2245.1.1 = { 
+	emperor = no
+}
+2246.1.1 = { 
+	capital = 438
+}
+2246.1.1 = { 
+	centralization_decentralization = -4
+	aristocracy_plutocracy = 3
+	serfdom_freesubjects = -2
+	innovative_narrowminded = -2
+	mercantilism_freetrade = 2
+	offensive_defensive = -4
+	land_naval = -3
+	quality_quantity = 1
+	monarch = { 
+		name = "逍遥"
+		dynasty = "姒"
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+}
+2246.1.1 = { 
+	decision = chengwang
+	set_global_flag = liyuebenghuai2
+	leader = { 
+		name = "文种"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 4
+		manuever = 4
+		siege = 2
+		death_date = 2247.1.1
+	}
+}
+2247.1.1 = { 
+	monarch = { 
+		name = "不寿"
+		dynasty = "姒"
+		adm = 3
+		dip = 2
+		mil = 6
+	}
+}
+2247.1.1 = { 
+	capital = 334
+}
+2250.1.1 = { 
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+}
+2251.1.1 = { 
+	# 太子朱勾杀父自立，在位期间数败于楚，越由此转衰
+	monarch = { 
+		name = "朱勾"
+		dynasty = "姒"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+2251.1.1 = { 
+	centralization_decentralization = -1
+	innovative_narrowminded = 2
+	offensive_defensive = -4
+	land_naval = -3
+}
+2288.1.1 = { 
+	monarch = { 
+		name = "翳"
+		dynasty = "姒"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+2319.1.1 = { 
+	# 越王翳迁都吴，从此不再能参与中原争霸
+	capital = 438
+}
+2319.1.1 = { 
+	centralization_decentralization = 3
+	offensive_defensive = 0
+	land_naval = 0
+}
+2320.1.1 = { 
+	leader = { 
+		name = "王子豫"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 2
+		manuever = 3
+		siege = 1
+		death_date = 2323.1.1
+	}
+}
+2321.1.1 = { 
+	monarch = { 
+		name = "诸咎"
+		dynasty = "姒"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+2322.1.1 = { 
+	leader = { 
+		name = "寺区"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 1
+		manuever = 3
+		siege = 1
+		death_date = 2328.1.1
+	}
+}
+2322.1.1 = { 
+	monarch = { 
+		name = "错枝"
+		dynasty = "姒"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+2324.1.1 = { 
+	# 卿大夫寺区拥立无余结束越内乱，但越从此彻底衰败
+	monarch = { 
+		name = "无余"
+		dynasty = "姒"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+	centralization_decentralization = 4
+}
+2338.1.1 = { 
+	monarch = { 
+		name = "无颛"
+		dynasty = "姒"
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+2356.1.1 = { 
+	monarch = { 
+		name = "无疆"
+		dynasty = "姒"
+		adm = 3
+		dip = 4
+		mil = 6
+	}
+}

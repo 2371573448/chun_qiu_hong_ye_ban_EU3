@@ -1,0 +1,31 @@
+owner = SGU
+controller = SGU
+culture = shu
+religion = ancestor
+capital = "феЪЯ"
+trade_goods = tobacco
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 12000
+fort1 = yes
+add_core = SGU
+cot = no
+1928.1.1 = { 
+	discovered_by = BAG
+}
+1928.1.1 = { 
+	discovered_by = SGU
+}
+2190.1.1 = { 
+	discovered_by = QIN
+}
+2222.1.1 = { 
+	citysize = 16000
+}
+2246.1.1 = { religion = liyuebadao 
+             citysize = 19000 }
+2382.1.1 = { 
+	owner = XXX
+	controller = XXX
+}

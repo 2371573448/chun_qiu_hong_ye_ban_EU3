@@ -1,0 +1,69 @@
+owner = QIG
+controller = QIG
+culture = qilu
+religion = liyuejiaohua
+capital = "À³×õ"
+trade_goods = fur
+hre = yes
+base_tax = 7
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = QIG
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2222.1.1 = { 
+	citysize = 148000
+	fort2 = yes
+	fort3 = yes
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.1 = { 
+	citysize = 40000
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2 = {
+        citysize = 30000
+    }
+2246.1.3 = {
+        citysize = 40000
+    }
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	citysize = 41000
+}
+2414.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2419.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2477.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1={
+        revolt={
+              type=nationalist_rebels
+              size=1
+               }
+        controller=REB
+        }
+2490.1.1={
+	revolt={}
+	controller=QIG
+	owner=QIG
+}
+2492.2.1={ revolt={} owner=QIG controller=QIG}

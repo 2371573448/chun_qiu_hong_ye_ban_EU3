@@ -1,0 +1,1509 @@
+#改革系统
+country_event = { 
+	# 宗法制度失败
+	id = 1601
+	trigger = { 
+		has_country_flag = shoujiushili1
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2050
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2100
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2150
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2200
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1601"
+	desc = "EVTDESC1601"
+	option = { 
+		name = "EVTOPTA1601"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili1
+		clr_country_flag = zongfazhidu
+	}
+}
+country_event = { 
+	# 宗法制度成功
+	id = 1602
+	trigger = { 
+		NOT = { has_country_flag = zongfazhidu }
+		year = 2050
+		ai = yes
+		religion_group = christian
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1602"
+	desc = "EVTDESC1602"
+	option = { 
+		name = "EVTOPTA1602"
+		set_country_flag = zongfazhidu
+	}
+}
+country_event = { 
+	# 世官制度失败
+	id = 1603
+	trigger = { 
+		has_country_modifier = shoujiushili2
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2150
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2200
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2250
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2300
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1603"
+	desc = "EVTDESC1603"
+	option = { 
+		name = "EVTOPTA1603"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili2
+		clr_country_flag = shiguanzhidu
+	}
+}
+country_event = { 
+	# 世官制度成功
+	id = 1604
+	trigger = { 
+		has_country_flag = zongfazhidu
+		NOT = { has_country_flag = shiguanzhidu }
+		year = 2150
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1604"
+	desc = "EVTDESC1604"
+	option = { 
+		name = "EVTOPTA1604"
+		set_country_flag = shiguanzhidu
+	}
+}
+country_event = { 
+	# 封君制度失败
+	id = 1605
+	trigger = { 
+		has_country_modifier = shoujiushili3
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2300
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2350
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2400
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2450
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1605"
+	desc = "EVTDESC1605"
+	option = { 
+		name = "EVTOPTA1605"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili3
+		clr_country_flag = fengjunzhidu
+		any_owned = { 
+			remove_province_modifier = fengjun
+		}
+	}
+}
+country_event = { 
+	# 封君制度成功
+	id = 1606
+	trigger = { 
+		has_country_flag = tianfuzhidu
+		has_country_flag = shiguanzhidu
+		NOT = { has_country_flag = shiguanzhidu }
+		year = 2300
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1606"
+	desc = "EVTDESC1606"
+	option = { 
+		name = "EVTOPTA1606"
+		set_country_flag = fengjunzhidu
+	}
+}
+country_event = { 
+	# 军功授爵
+	id = 1607
+	trigger = { 
+		has_country_flag = fengjunzhidu
+		idea = engineer_corps
+		any_owned_province = { has_province_modifier = monarch_territory }
+		war = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+		modifier = { 
+			factor = 2
+			NOT = { 
+				num_of_cities = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 12
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 30
+		}
+		modifier = { 
+			factor = 0.8
+			num_of_cities = 80
+		}
+	}
+	title = "EVTNAME1607"
+	desc = "EVTDESC1607"
+	option = { 
+		name = "EVTOPTA1607"
+		badboy = 0.5
+		prestige = -0.05
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { 
+		name = "EVTOPTB1607"
+		badboy = -0.25
+		army_tradition = 0.05
+		random_owned = {
+			limit = { 
+				has_province_modifier = monarch_territory
+				not = { 
+					is_capital = yes
+				}
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = { 
+				name = "vassal_territory"
+				duration = -1
+			}
+		}		
+		change_variable = { 
+			which = "monarch_territory_number"
+			value = -1
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+}
+country_event = { 
+	# 法律制度失败
+	id = 1608
+	trigger = { 
+		has_country_modifier = shoujiushili4
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2200
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2250
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2300
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2350
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1608"
+	desc = "EVTDESC1608"
+	option = { 
+		name = "EVTOPTA1608"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili4
+		clr_country_flag = falvzhidu
+	}
+}
+country_event = { 
+	# 法律制度成功
+	id = 1609
+	trigger = { 
+		has_country_flag = zongfazhidu
+		NOT = { has_country_flag = falvzhidu }
+		year = 2200
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1609"
+	desc = "EVTDESC1609"
+	option = { 
+		name = "EVTOPTA1609"
+		set_country_flag = falvzhidu
+	}
+}
+country_event = { 
+	# 都鄙制度失败
+	id = 1610
+	trigger = { 
+		has_country_modifier = shoujiushili5
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2100
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2150
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2200
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2250
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1610"
+	desc = "EVTDESC1610"
+	option = { 
+		name = "EVTOPTA1610"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili5
+		clr_country_flag = dubizhidu
+	}
+}
+country_event = { 
+	# 都鄙制度成功
+	id = 1611
+	trigger = { 
+		NOT = { has_country_flag = dubizhidu }
+		year = 2100
+		tribal = no
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1611"
+	desc = "EVTDESC1611"
+	option = { 
+		name = "EVTOPTA1611"
+		set_country_flag = dubizhidu
+	}
+}
+country_event = { 
+	# 郡县制度失败
+	id = 1612
+	trigger = { 
+		has_country_modifier = shoujiushili6
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2250
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2300
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2350
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2400
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1612"
+	desc = "EVTDESC1612"
+	option = { 
+		name = "EVTOPTA1612"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili6
+		clr_country_flag = junxianzhidu
+	}
+}
+country_event = { 
+	#郡县制度成功
+	id = 1613
+	trigger = { 
+		has_country_flag = falvzhidu
+		has_country_flag = dubizhidu
+		NOT = { has_country_flag = dubizhidu }
+		year = 2250
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1613"
+	desc = "EVTDESC1613"
+	option = { 
+		name = "EVTOPTA1613"
+		set_country_flag = junxianzhidu
+	}
+}
+country_event = { 
+	# 户籍制度失败
+	id = 1614
+	trigger = { 
+		has_country_modifier = shoujiushili7
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2350
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2400
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2450
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2500
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1614"
+	desc = "EVTDESC1614"
+	option = { 
+		name = "EVTOPTA1614"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili7
+		clr_country_flag = hujizhidu
+	}
+}
+country_event = { 
+	#户籍制度成功
+	id = 1615
+	trigger = { 
+		has_country_flag = sitianzhidu
+		has_country_flag = junxianzhidu
+		NOT = { has_country_flag = hujizhidu }
+		year = 2350
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1615"
+	desc = "EVTDESC1615"
+	option = { 
+		name = "EVTOPTA1615"
+		set_country_flag = hujizhidu
+	}
+}
+country_event = { 
+	# 官僚制度失败
+	id = 1616
+	trigger = { 
+		has_country_modifier = shoujiushili8
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = {
+			factor = 2.5
+			idea = smithian_economics
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { 
+				ADM = 5
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { 
+				badboy = 0.4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			badboy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { 
+				prestige = 0.2
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 1.2
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				num_of_cities = 10
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 80
+		}
+		modifier = { 
+			factor = 0.9
+			has_country_modifier = fastextension1
+		}
+		modifier = { 
+			factor = 0.85
+			has_country_modifier = fastextension2
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = fastextension3
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = fastextension4
+		}
+		modifier = { 
+			factor = 0.7
+			has_country_modifier = fastextension5
+		}
+		modifier = { 
+			factor = 0.65
+			has_country_modifier = fastextension6
+		}
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = overextension1
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 20
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			any_neighbor_country = {
+				technology_group = chinese
+				tech_difference = 10
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 10
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 20
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 30
+		}
+		modifier = { 
+			factor = 1.1
+			inflation = 40
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2400
+		}
+		modifier = { 
+			factor = 1.2
+			year = 2450
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2500
+		}
+		modifier = { 
+			factor = 1.25
+			year = 2550
+		}
+		modifier = { 
+			factor = 1.5
+			tag = WEI
+		}
+	}
+	title = "EVTNAME1616"
+	desc = "EVTDESC1616"
+	option = { 
+		name = "EVTOPTA1616"
+		prestige = -0.15
+		remove_country_modifier = shoujiushili8
+		clr_country_flag = guanliaozhidu
+	}
+}
+country_event = { 
+	#官僚制度成功
+	id = 1617
+	trigger = { 
+		has_country_flag = falvzhidu
+		has_country_flag = junxianzhidu
+		NOT = { has_country_flag = guanliaozhidu }
+		year = 2400
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1617"
+	desc = "EVTDESC1617"
+	option = { 
+		name = "EVTOPTA1617"
+		set_country_flag = guanliaozhidu
+	}
+}
+country_event = { 
+	#田赋制度成功
+	id = 1618
+	trigger = { 
+		has_country_flag = dubizhidu
+		NOT = { has_country_flag = tianfuzhidu }
+		year = 2150
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1618"
+	desc = "EVTDESC1618"
+	option = { 
+		name = "EVTOPTA1618"
+		set_country_flag = tianfuzhidu
+	}
+}
+country_event = { 
+	#私田制度成功
+	id = 1619
+	trigger = { 
+		has_country_flag = tianfuzhidu
+		NOT = { has_country_flag = sitianzhidu }
+		year = 2250
+		ai = yes
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1619"
+	desc = "EVTDESC1619"
+	option = { 
+		name = "EVTOPTA1619"
+		set_country_flag = sitianzhidu
+	}
+}
+
+country_event = {
+	#突破三军规制
+	id = 1620
+	trigger = {
+		year = 2150
+		NOT = { has_country_flag = mil_reform1 }
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	title = "EVTNAME1620"
+	desc = "EVTDESC1620"
+	
+	option = {
+		name = "EVTOPTA1620"			
+		set_country_flag = mil_reform1
+	}
+}
+
+country_event = {
+	#习武重军
+	id = 1621
+	trigger = {
+		year = 2230
+		has_country_flag = mil_reform1
+		NOT = { has_country_flag = mil_reform2 }
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	title = "EVTNAME1621"
+	desc = "EVTDESC1621"
+	
+	option = {
+		name = "EVTOPTA1621"			
+		set_country_flag = mil_reform2
+	}
+}

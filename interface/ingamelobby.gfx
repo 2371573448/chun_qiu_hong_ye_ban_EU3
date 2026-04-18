@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_lobby_panel"
+		texturefile = "gfx\\interface\\multiplayer_panel.tga"
+		noOfFrames = 1
+	}	
+}

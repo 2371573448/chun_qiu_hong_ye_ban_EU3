@@ -1,0 +1,341 @@
+government = fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = 2
+innovative_narrowminded = 2
+mercantilism_freetrade = 3
+offensive_defensive = 0
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -1
+technology_group = wuyue1
+religion = ancestor
+primary_culture = gouwu
+capital = 447
+  
+1926.1.1 = { 
+	monarch = { 
+		name = "×ª"
+		dynasty = "¼§"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+2017.1.1 = { 
+	monarch = { 
+		name = "ÆÄ¸ß"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2028.1.1 = { 
+	monarch = { 
+		name = "¾ä±°"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2078.1.1 = { 
+	monarch = { 
+		name = "È¥Æë"
+		dynasty = "¼§"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+2114.1.1 = { 
+	monarch = { 
+		name = "ÊÙÃÎ"
+		dynasty = "¼§"
+		adm = 4
+		dip = 6
+		mil = 6
+	}
+}
+2115.1.1 = { 
+	# Éê¹«Î×³¼Ê¹Îâ£¬ÎâÊ¼ÓëÖĞÔ­ÏàÍ¨
+	government = absolute_monarchy
+	centralization_decentralization = -2
+	innovative_narrowminded = -2
+	offensive_defensive = -4
+	land_naval = 3
+	quality_quantity = -3
+}
+2139.1.1 = { 
+	monarch = { 
+		name = "Öî·®"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2140.1.1 = { capital = 449 }
+2150.1.1 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2152.1.1 = { 
+	monarch = { 
+		name = "âÅ¼À"
+		dynasty = "¼§"
+		adm = 3
+		dip = 6
+		mil = 5
+	}
+}
+2163.1.1 = { 
+	leader = { 
+		name = "ËïÎä"
+		type = general
+		rank = 1
+		fire = 9
+		shock = 9
+		manuever = 9
+		siege = 9
+		death_date = 2188.1.1
+	}
+}
+2169.1.1 = { 
+	monarch = { 
+		name = "âÅ±t"
+		dynasty = "¼§"
+		adm = 3
+		dip = 6
+		mil = 5
+	}
+}
+2170.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2172.1.1 = { 
+	monarch = { 
+		name = "ÁÅ"
+		dynasty = "¼§"
+		adm = 7
+		dip = 6
+		mil = 7
+	}
+}
+2173.1.1 = { 
+	leader = { 
+		name = "¹«×Ó¹â"
+		type = general
+		rank = 8
+		fire = 4
+		shock = 9
+		manuever = 7
+		siege = 5
+		death_date = 2185.1.1
+	}
+}
+2176.1.1 = { 
+	leader = { 
+		name = "¹«×ÓÇì¼É"
+		type = general
+		rank = 2
+		fire = 1
+		shock = 5
+		manuever = 3
+		siege = 1
+		death_date = 2185.1.1
+	}
+}
+2176.1.1 = { 
+	leader = { 
+		name = "¹«×ÓÖòÓ¹"
+		type = general
+		rank = 2
+		fire = 2
+		shock = 4
+		manuever = 3
+		siege = 1
+		death_date = 2185.1.1
+	}
+}
+2176.1.1 = { 
+	leader = { 
+		name = "Îé×Óñã"
+		type = general
+		rank = 2
+		fire = 4
+		shock = 4
+		manuever = 3
+		siege = 3
+		death_date = 2208.1.1
+	}
+}
+2180.1.1 = { 
+	religion = liyuebadao
+	technology_group = chinese
+	unit_type = wuyue1
+}
+2185.1.1 = { 
+	# ¹«×Ó¹âÉ±ÎâÍõÁÅ×ÔÁ¢£¬ÊÇÎªÎâÍõãØãÌ
+	decision = chengwang
+	monarch = { 
+		name = "ãØãÌ"
+		dynasty = "¼§"
+		adm = 7
+		dip = 5
+		mil = 9
+	}
+}
+2185.1.1 = { 
+	government = enlightened_despotism
+	aristocracy_plutocracy = 1
+	centralization_decentralization = -4
+	innovative_narrowminded = -4
+	offensive_defensive = -5
+	land_naval = -5
+	quality_quantity = -4
+}
+2186.1.1 = { 
+	leader = { 
+		name = "·ò¸Å"
+		type = general
+		rank = 2
+		fire = 2
+		shock = 5
+		manuever = 4
+		siege = 1
+		death_date = 2195.1.1
+	}
+}
+2188.1.1 = { 
+	leader = { 
+		name = "ËïÎä"
+		type = general
+		rank = 1
+		fire = 9
+		shock = 9
+		manuever = 9
+		siege = 9
+		death_date = 2213.1.1
+	}
+}
+2192.1.1 = { 
+	emperor = yes
+}
+2195.1.1 = { 
+	# ÒÊÖ®Õ½£¬Îâ°ÜÓÚÇØ³şÁª¾ü£¬³ş¸´¹ú£¬·ò¸ÅÖ®ÂÒ
+	land_naval = 4
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2203.1.1 = { 
+	monarch = { 
+		name = "·ò²î"
+		dynasty = "¼§"
+		adm = 5
+		dip = 5
+		mil = 8
+	}
+}
+2204.1.1 = { 
+	# ·ò½·Ö®Õ½£¬Îâ»÷°ÜÔ½£¬·ıÂ²Ô½Íõ¹´¼ù£¬ÆÈÊ¹Æä³¼·ş
+	innovative_narrowminded = -2
+	land_naval = -5
+}
+2204.1.1 = { capital = 434 }
+2208.1.1 = { 
+	leader = { 
+		name = "Îé×Óñã"
+		type = general
+		rank = 2
+		fire = 4
+		shock = 4
+		manuever = 3
+		siege = 3
+		death_date = 2214.1.1
+	}
+}
+2210.1.1 = { 
+	leader = { 
+		name = "¹«×Ó¹Ã²Ü"
+		type = general
+		rank = 2
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2226.1.1
+	}
+}
+2211.1.1 = { 
+	leader = { 
+		name = "ñãÃÅ³²"
+		type = general
+		rank = 2
+		fire = 2
+		shock = 4
+		manuever = 3
+		siege = 1
+		death_date = 2226.1.1
+	}
+}
+2214.1.1 = { 
+	# ·ò²îÎª¹´¼ùËù»ó£¬É±Îé×Óñã
+	innovative_narrowminded = 3
+}
+2216.1.1 = { 
+	# ¹´¼ù³Ë·ò²î±±ÉÏ»Æ³Ø·¥Îâ£¬ÆÆÎâ¶¼¹ÃËÕ£¬Îâ´Ó´ËÒ»õê²»Õñ
+	centralization_decentralization = 3
+	offensive_defensive = 3
+	land_naval = 0
+	quality_quantity = 0
+}
+2246.1.1 = { 
+	centralization_decentralization = -2
+	aristocracy_plutocracy = 1
+	serfdom_freesubjects = -2
+	innovative_narrowminded = 2
+	mercantilism_freetrade = 3
+	offensive_defensive = -3
+	land_naval = 0
+	quality_quantity = 0
+	capital = 408
+	monarch = { 
+		name = "Î×"
+		dynasty = "¼§"
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+	heir = {
+		name = "Çä"
+		monarch_name = "Çä"
+		dynasty = "¼§"
+		birth_date = 2246.1.1
+		death_date = 2246.1.1
+		claim = 100
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+}
+2246.1.1 = { 
+	leader = { 
+		name = "ËïÎä"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 5
+		manuever = 5
+		siege = 1
+		death_date = 2247.1.1
+	}
+}
+2250.1.1 = { 
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+}

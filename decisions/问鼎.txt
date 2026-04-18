@@ -1,0 +1,633 @@
+country_decisions = { 
+	wenjizhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenjizhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenjizhouding
+		}
+	}
+	wenyouzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenyouzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenyouzhouding
+		}
+	}
+	wenqingzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenqingzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenqingzhouding
+		}
+	}
+	wenxuzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenxuzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenxuzhouding
+		}
+	}
+	wenyangzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenyangzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenyangzhouding
+		}
+	}
+	wenjingzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenjingzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenjingzhouding
+		}
+	}
+	wenyizhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenyizhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenyizhouding
+		}
+	}
+	wenliangzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenliangzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenliangzhouding
+		}
+	}
+	wenbingzhouding = {
+		potential = {
+			has_country_modifier = chengwang
+			NOT = {
+				any_country = {
+					has_country_flag = wenbingzhouding
+				}
+			}
+			not = {
+				or = {
+					has_country_flag = wenjizhouding
+					has_country_flag = wenyouzhouding
+					has_country_flag = wenqingzhouding
+					has_country_flag = wenxuzhouding
+					has_country_flag = wenyangzhouding
+					has_country_flag = wenjingzhouding
+					has_country_flag = wenyizhouding
+					has_country_flag = wenliangzhouding
+					has_country_flag = wenbingzhouding
+				}
+			}
+		}
+		allow = {
+			not = { badboy = 0.2 }
+			treasury = 5000
+			diplomats = 5
+			prestige = 0.9
+		}
+		effect = {
+			badboy = 10
+			treasury = -5000
+			diplomats = -5
+			set_country_flag = wenbingzhouding
+		}
+	}
+	dingjiuzhouding = {
+		potential = {
+			or = {
+				has_country_flag = wenjizhouding
+				has_country_flag = wenyouzhouding
+				has_country_flag = wenqingzhouding
+				has_country_flag = wenxuzhouding
+				has_country_flag = wenyangzhouding
+				has_country_flag = wenjingzhouding
+				has_country_flag = wenyizhouding
+				has_country_flag = wenliangzhouding
+				has_country_flag = wenbingzhouding
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenjizhouding
+				}
+				set_variable = {
+					which = jizhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = jizhou
+					}
+					owner = { 
+						change_variable = {
+							which = jizhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenjizhouding
+					check_variable = {
+						which = jizhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenjizhouding
+				set_country_flag = jizhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyouzhouding
+				}
+				set_variable = {
+					which = youzhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = youzhou
+					}
+					owner = { 
+						change_variable = {
+							which = youzhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyouzhouding
+					check_variable = {
+						which = youzhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenyouzhouding
+				set_country_flag = youzhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenqingzhouding
+				}
+				set_variable = {
+					which = qingzhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = qingzhou
+					}
+					owner = { 
+						change_variable = {
+							which = qingzhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenqingzhouding
+					check_variable = {
+						which = qingzhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenqingzhouding
+				set_country_flag = qingzhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenxuzhouding
+				}
+				set_variable = {
+					which = xuzhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = xuzhou
+					}
+					owner = { 
+						change_variable = {
+							which = xuzhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenxuzhouding
+					check_variable = {
+						which = xuzhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenxuzhouding
+				set_country_flag = xuzhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyangzhouding
+				}
+				set_variable = {
+					which = yangzhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = yangzhou
+					}
+					owner = { 
+						change_variable = {
+							which = yangzhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyangzhouding
+					check_variable = {
+						which = yangzhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenyangzhouding
+				set_country_flag = yangzhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenjingzhouding
+				}
+				set_variable = {
+					which = jingzhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = jingzhou
+					}
+					owner = { 
+						change_variable = {
+							which = jingzhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenjingzhouding
+					check_variable = {
+						which = jingzhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenjingzhouding
+				set_country_flag = jingzhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyizhouding
+				}
+				set_variable = {
+					which = yizhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = yizhou
+					}
+					owner = { 
+						change_variable = {
+							which = yizhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyizhouding
+					check_variable = {
+						which = yizhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenyizhouding
+				set_country_flag = yizhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenliangzhouding
+				}
+				set_variable = {
+					which = liangzhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = liangzhou
+					}
+					owner = { 
+						change_variable = {
+							which = liangzhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenliangzhouding
+					check_variable = {
+						which = liangzhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenliangzhouding
+				set_country_flag = liangzhouding
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyizhouding
+				}
+				set_variable = {
+					which = yizhoudingpanding
+					value = 0
+				}
+				any_owned = {
+					limit = { 
+						region = yizhou
+					}
+					owner = { 
+						change_variable = {
+							which = yizhoudingpanding
+							value = 1
+						}
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					has_country_flag = wenyizhouding
+					check_variable = {
+						which = yizhoudingpanding
+						value = 100
+					}
+				}
+				clr_country_flag = wenyizhouding
+				set_country_flag = yizhouding
+			}
+		}
+	}
+}

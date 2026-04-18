@@ -1,0 +1,13 @@
+government =fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = 0
+offensive_defensive = -1
+land_naval = -3
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = nomad_group
+religion = animism
+primary_culture = yinyi
+capital = 86

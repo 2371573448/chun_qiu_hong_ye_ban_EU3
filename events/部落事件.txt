@@ -1,0 +1,81 @@
+country_event = { 
+	id = 871
+	is_triggered_only = yes
+	trigger = { 
+		OR = { 
+			government = tribal_despotism
+			government = tribal_federation
+			government = steppe_horde
+		}
+		NOT = { stability = -1
+		}
+		num_of_cities = 8
+		NOT = { 
+			has_country_modifier = tribal_succession_crisis
+		}
+	}
+	title = "EVTNAME871"
+	desc = "EVTDESC871"
+	option = { 
+		name = "EVTOPTA871"
+                stability = -5
+		add_country_modifier = { 
+			name = "tribal_succession_crisis"
+			duration = 730
+		}
+		random_owned = { 
+			pretender_rebels = 7
+		}
+		any_owned = { 
+			limit = {
+				NOT = { is_core = THIS }
+			}
+			random_list = { 
+				100 = { 
+					nationalist_rebels = 10
+				}
+			}
+		}
+		any_owned = { 
+			limit = {
+				is_core = THIS
+			}
+			random_list = { 
+				100 = { 
+					nationalist_rebels = 2
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 874
+	is_triggered_only = yes
+	trigger = {
+		controller = {
+			OR = { 
+				government = tribal_despotism
+				government = tribal_federation
+				government = steppe_horde
+			}
+			num_of_cities = 5
+		}
+		NOT = { controlled_by = owner }
+	}
+	
+	title = "EVTNAME874"
+	desc = "EVTDESC874"
+	
+	immediate = {
+		controller = {
+			legitimacy = 0.01
+			prestige = 0.01
+			war_exhaustion = -0.20
+		}
+	}
+
+	option = {
+		name = "EVTOPTA874"
+	}
+}

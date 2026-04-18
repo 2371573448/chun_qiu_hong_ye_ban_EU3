@@ -1,0 +1,64 @@
+
+culture = ba
+religion = ancestor
+capital = "ºº²ý"
+trade_goods = slaves
+hre = no
+base_tax = 3
+manpower = 0
+owner = BAG
+controller = BAG
+citysize = 12000
+fort1 = yes
+add_core = BAG
+
+1928.1.1 = { discovered_by = BAG }
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { discovered_by = QIN }
+2244.1.1 = { 
+	owner = JUU
+	controller = JUU
+	add_core = JUU
+	remove_core = BAG
+}
+2244.1.2 = { 
+	owner = BAG
+	controller = BAG
+	add_core = BAG
+	remove_core = JUU
+}
+2246.1.1 = { 
+	owner = JUU
+	controller = JUU
+	add_core = JUU
+	religion = liyuebadao
+        citysize = 9000
+}
+2246.1.2 = { 
+	owner = JUU
+	controller = JUU
+	add_core = JUU
+	religion = liyuebadao
+        citysize = 9000
+}
+2247.1.1 = { 
+	owner = BAG
+	controller = BAG
+	add_core = BAG
+	religion = liyuebadao
+        citysize = 9000
+}
+2330.1.1  = {	owner = JUU
+		controller = JUU
+                citysize = 18000
+	    }
+2382.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2412.1.1 = { add_core = QIN  }
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+}

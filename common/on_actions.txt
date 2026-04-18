@@ -1,0 +1,166 @@
+#country
+on_battle_won =  {
+}
+
+#country
+on_battle_lost =  {
+}
+
+#country
+on_siege_won =  {
+	events = {
+		874		#tribes can sack stuff.
+	}
+}
+
+#country 
+on_new_monarch = {
+	events = {
+		871		#harsh anti-tribals.
+		7000
+		4120		#君主死亡
+		10042		#郑国历史事件
+	}
+}
+
+#country 
+on_regent = {
+	events = {
+		871		#harsh anti-tribals.
+	}
+}
+
+#country 
+on_new_term_election = {
+	events = {
+		875		# Election event
+	}
+}
+
+#country 
+on_death_election = {
+	events = {
+		876		# Election event
+	}
+}
+
+#country  (country annexing, this = target)
+on_diplomatic_annex = {
+	events = {
+		877
+	}
+}
+
+#country 
+on_weak_heir_claim = {
+	events = {
+		878
+	}
+}
+
+# Emperor from same dynasty
+on_successive_emperor = {
+	events = {
+		1904
+	}
+}
+
+# HRE Prince released by the emperor
+on_released_hre_member = {
+	events = {
+		1905
+	}
+}
+
+# HRE Prince converts to non-Emperor religion
+on_hre_member_false_religion = {
+	events = {
+		1906
+	}
+}
+
+# HRE Prince converts to non-Emperor religion
+on_hre_member_true_religion = {
+	events = {
+		1907
+	}
+}
+
+# Emperor wins HRE defensive war
+on_hre_wins_defensive_war = {
+	events = {
+		1908
+	}
+}
+
+# HRE member annexed by non-HRE country
+on_hre_member_annexed = {
+	events = {
+		1909
+	}
+}
+
+# HRE member removed from non-HRE country SoI
+on_hre_member_released_soi = {
+	events = {
+		1910
+	}
+}
+
+# HRE member released from non-HRE vassalage
+on_hre_released_vassal = {
+	events = {
+		1911
+	}
+}
+
+# Emperor coming to the defense of a HRE member
+on_hre_defense = {
+	events = {
+		1912
+	}
+}
+
+# Emperor NOT coming to the defense of a HRE member
+on_hre_non_defense = {
+	events = {
+		1913
+	}
+}
+
+# HRE Member takes a HRE province from an outside country in a peace (province scope)
+on_hre_province_reconquest = {
+	events = {
+		1914
+	}
+}
+
+# A new daimyo becomes kampaku all allied to him gets to decide what side they're on
+on_allied_kampaku = {
+	events = {
+
+	}
+}
+
+# A peace treaty to revoke the most recent imperial eform takes effect
+on_reform_revoked = {
+	events = {
+		1903
+	}
+}
+
+# Nation is integrated after being in union
+on_integrate = {
+	events = {
+		877
+	}
+}
+
+# country random events
+on_bi_yearly_pulse = 
+{
+	random_events = {
+
+	}
+}
+

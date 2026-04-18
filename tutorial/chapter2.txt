@@ -1,0 +1,308 @@
+tutorial =
+{
+	title = "TUTORIAL_2"
+	desc = "TUTORIAL_2_DESC"
+	tutorial_window = "TUTORIAL_WINDOW_1"	# default window
+	exclusive = yes
+	country = FRA
+	
+	# page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_1"
+	#	window = "economy"
+	#	window = "arrow_economy"
+	#	exclusive = no
+	#}
+	#page =
+	#{
+	#	tutorial_window = "TUTORIAL_WINDOW_2"
+	#	text1 = "TUTORIAL_TEXT_2_2"
+	#}
+	#page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_3"
+	#	close_window = all
+	#}
+	#page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_4"
+	#	window = court
+	#}
+
+
+	page =
+	{
+
+		effect = {
+			infantry = 168
+			big_ship = 1296
+		}
+		close_window = all
+
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1b_1"
+		text2 = "tut_1b_2"
+
+		window = "highlight_provinceview"
+		window_position = {100 400}
+		window_size = {128 128}
+
+		zoom = 100
+		mapmode = "terrain"
+		goto = 183
+
+		panel = "message_log"
+
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		tutorial_window_position = { 350 200}
+		text1 = "tut_1b_5"
+		text2 = "tut_1b_6"
+
+		window = "illo_9"
+		window_position = { 150 300}
+	}
+
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+
+		text1 = "tut_1b_3"
+		text2 = "tut_1b_4"
+
+		window = "illo_10"
+
+		
+	}
+
+	
+
+	# Resources bulleted list
+	
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_RESOURCES"
+		window = "illo_resources"
+		text1 = "tut_1b_7"
+		text2 = "tut_1b_8"
+		text3 = "tut_1b_9"
+		text4 = "tut_1b_10"
+		text5 = "tut_1b_11"
+	}
+
+	# Envoys bulleted list
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_ENVOYS"
+		window = "illo_envoys"
+		text1 = "tut_1b_12"
+		text2 = "tut_1b_13"
+		text3 = "tut_1b_14"
+		text4 = "tut_1b_15"
+		text5 = "tut_1b_16"
+		text6 = "tut_1b_17"
+		text7 = "tut_1b_48"
+	}
+
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1b_18"
+		text2 = "tut_1b_19"
+
+		window = "underline"
+		window_position = {720 32}
+
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_20"
+		
+		#window = "underline"
+		#window_position = {720 32}
+		window = "illo_Keyboard"
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_21"
+
+		#window = "underline"
+		#window_position = {720 32}
+
+		#window = "illo_keyboard"
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1b_22"
+		text2 = "tut_1b_23"
+
+		zoom = 200
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_24"
+		zoom = 100
+		goto = 1
+
+
+		window = "arrow_3_minimap"
+		window_position = { -220 -160 }
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_25"
+		mapmode = "diplomacy"
+		zoom = 100
+		goto = 236
+
+		window = "arrow_3_minimap"
+		window_position = { -220 -200 }
+	}	
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1b_26"
+		text2 = "tut_1b_27"
+		mapmode = "religion"
+		zoom = 200
+		goto = 350
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_28"
+		zoom = 50
+		goto = 165
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1b_29"
+		text2 = "tut_1b_30"
+		zoom = 50
+		goto = 183
+		mapmode = "political"
+	}
+
+	#page =
+	#{
+	#	tutorial_window = "TUTORIAL_WINDOW_1"
+	#	text3 = "tut_1b_31"
+	#}
+
+
+	page =
+	{
+		select_province = 168
+
+		tutorial_window = "TUTORIAL_WINDOW_2"
+		text1 = "tut_1b_32"
+		text2 = "tut_1b_34"
+
+		tutorial_window_position = { -500 -300}
+		window = "highlight_provinceview"
+		window_position = {500 -320}
+		window_size = {480 320}
+
+		mapmode = "terrain"
+		
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_2"
+		text3 = "tut_1b_35"
+		
+		tutorial_window_position = { -500 -300}
+
+		window = "highlight_provinceview"
+		window_position = {0 -365}
+		window_size = {520 360}
+	}
+
+	
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_2"
+		text1 = "tut_1b_38"
+		text2 = "tut_1b_39"
+
+		tutorial_window_position = { -500 -300}
+
+		window = "highlight_provinceview"
+		window_position = {770 -265}
+		window_size = {200 200}
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1b_40"
+		text2 = "tut_1b_41"
+		tutorial_window_position = { 450 100}
+
+		close_window = all
+
+		select_units = 168
+		goto = 1272
+
+		zoom = 20
+		
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_43"
+		tutorial_window_position = { 450 100}
+		
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_44"
+		tutorial_window_position = { 450 100}
+		
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_45"
+		tutorial_window_position = { 50 450}
+
+		select_units = 1296
+		goto = 1296
+		
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1b_46"
+		close_window = all
+		
+	}
+
+}

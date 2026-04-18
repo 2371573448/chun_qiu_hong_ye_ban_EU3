@@ -1,0 +1,10 @@
+name = "两棠之战"
+casus_belli = cb_insult_zb #收复失地
+2101.1.1 = {
+	add_attacker = JIN
+	add_defender = CHU
+}
+2102.1.1 = {
+	rem_attacker = JIN
+	rem_defender = CHU
+}

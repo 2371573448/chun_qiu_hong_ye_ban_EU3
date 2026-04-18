@@ -1,0 +1,13 @@
+owner = XYM
+controller = XYM
+culture = xiyu
+religion = animism
+capital = "грд╘"
+trade_goods = coffee
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = XYM
+1827.1.1 = { discovered_by = XYR }

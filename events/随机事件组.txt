@@ -1,0 +1,498 @@
+############天灾异变###############
+###瘟疫事件组###
+province_event = { 
+	id = 4501
+	# 爆发瘟疫
+	trigger = { 
+		NOT = { 
+			has_province_modifier = wenyihengxing
+		}
+	}
+	mean_time_to_happen = { 
+		months = 21600
+		modifier = { 
+			factor = 10
+			owner = { 
+				has_country_modifier = YIJ_buff1
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 2
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 4
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 6
+			}
+		}
+		modifier = { 
+			factor = 0.3
+			owner = { 
+				any_owned_province = { 
+					has_province_modifier = wenyihengxing
+					NOT = { has_province_modifier = yangefengsuo }
+					NOT = { has_province_modifier = jijijiuzhi }
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				any_owned_province = { 
+					has_province_modifier = wenyihengxing
+					has_province_modifier = jijijiuzhi
+				}
+				not = {
+					any_owned_province = { 
+						has_province_modifier = wenyihengxing
+						NOT = { has_province_modifier = yangefengsuo }
+						NOT = { has_province_modifier = jijijiuzhi }
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				any_owned_province = { 
+					has_province_modifier = wenyihengxing
+					has_province_modifier = yangefengsuo
+				}
+				not = {
+					any_owned_province = { 
+						has_province_modifier = wenyihengxing
+						NOT = { has_province_modifier = yangefengsuo }
+						NOT = { has_province_modifier = jijijiuzhi }
+					}
+				}
+				not = {
+					any_owned_province = { 
+						has_province_modifier = wenyihengxing
+						has_province_modifier = jijijiuzhi
+					}
+				}
+			}
+		}
+	}
+	title = "EVTNAME4501"
+	desc = "EVTDESC4501"
+	immediate = { 
+		add_province_modifier = { 
+			name = "wenyihengxing"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTA4501"
+		ai_chance = { 
+			factor = 10
+		}
+		multiply_citysize = 0.80
+		random_list = { 
+			33 = { 
+				owner = { 
+					stability = -1
+				}
+			}
+			67 = { }
+		}
+	}
+	option = { 
+		name = "EVTOPTB4501"
+		ai_chance = { 
+			factor = 60
+		}
+		owner = { years_of_income = -0.30 }
+		multiply_citysize = 0.90
+		add_province_modifier = { 
+			name = "jijijiuzhi"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTC4501"
+		ai_chance = { 
+			factor = 30
+		}
+		owner = { years_of_income = -0.05 }
+		multiply_citysize = 0.70
+		add_province_modifier = { 
+			name = "yangefengsuo"
+			duration = 1825
+		}
+	}
+}
+province_event = { 
+	id = 4502
+	# 瘟疫传播1
+	trigger = { 
+		NOT = { 
+			has_province_modifier = wenyihengxing
+		}
+		any_neighbor_province = { 
+			has_province_modifier = wenyihengxing
+			NOT = { 
+				has_province_modifier = yangefengsuo
+			}
+			NOT = { 
+				has_province_modifier = jijijiuzhi
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 480
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 2
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 4
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 6
+			}
+		}
+	}
+	title = "EVTNAME4501"
+	desc = "EVTDESC4501"
+	immediate = { 
+		add_province_modifier = { 
+			name = "wenyihengxing"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTA4502"
+		ai_chance = { 
+			factor = 5
+		}
+		multiply_citysize = 0.80
+	}
+	option = { 
+		name = "EVTOPTB4502"
+		ai_chance = { 
+			factor = 65
+		}
+		owner = { years_of_income = -0.30 }
+		multiply_citysize = 0.90
+		add_province_modifier = { 
+			name = "jijijiuzhi"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTC4502"
+		ai_chance = { 
+			factor = 30
+		}
+		owner = { years_of_income = -0.05 }
+		multiply_citysize = 0.70
+		add_province_modifier = { 
+			name = "yangefengsuo"
+			duration = 1825
+		}
+	}
+}
+province_event = { 
+	id = 4503
+	# 瘟疫传播2
+	trigger = { 
+		NOT = { 
+			has_province_modifier = wenyihengxing
+		}
+		any_neighbor_province = { 
+			has_province_modifier = wenyihengxing
+			NOT = { 
+				has_province_modifier = yangefengsuo
+			}
+			has_province_modifier = jijijiuzhi
+		}
+	}
+	mean_time_to_happen = { 
+		months = 2400
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 2
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 4
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 6
+			}
+		}
+	}
+	title = "EVTNAME4501"
+	desc = "EVTDESC4501"
+	immediate = { 
+		add_province_modifier = { 
+			name = "wenyihengxing"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTA4503"
+		ai_chance = { 
+			factor = 5
+		}
+		multiply_citysize = 0.80
+	}
+	option = { 
+		name = "EVTOPTB4503"
+		ai_chance = { 
+			factor = 65
+		}
+		owner = { years_of_income = -0.30 }
+		multiply_citysize = 0.90
+		add_province_modifier = { 
+			name = "jijijiuzhi"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTC4503"
+		ai_chance = { 
+			factor = 30
+		}
+		owner = { years_of_income = -0.05 }
+		multiply_citysize = 0.70
+		add_province_modifier = { 
+			name = "yangefengsuo"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 4504
+	# 首都爆发瘟疫
+	trigger = { 
+		capital_scope = {
+			has_province_modifier = wenyihengxing
+		}
+	}
+	mean_time_to_happen = { 
+		months = 12
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 2
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 4
+			}
+		}
+		modifier = { 
+			factor = 2
+			and = {
+				advisor = navigator
+				navigator = 6
+			}
+		}
+	}
+	title = "EVTNAME4504"
+	desc = "EVTDESC4504"
+	option = {
+		name = "EVTOPTA4504"
+		ai_chance = { factor = 75 }
+		prestige = -0.05
+		legitimacy = -0.10
+	}
+	option = {
+		name = "EVTOPTB4504"
+		stability = 1
+		random_list = { 
+			25 = { 
+				kill_ruler = THIS
+			}
+			75 = {
+			}
+		}
+	}
+}
+###流星事件组###
+country_event = {
+	id = 4505
+	# 流星事件	
+	trigger = {
+	}
+	mean_time_to_happen = {
+		months = 2400
+	}
+	title = "EVTNAME4505"
+	desc = "EVTDESC4505"
+	immediate = { 
+		set_country_flag = liuxing
+	}
+	option = {
+		name = "EVTOPTA4505"
+		ai_chance = { factor = 50 }
+		stability = -1
+		treasury = -100
+		production_tech = 150
+	}
+	option = {
+		name = "EVTOPTB4505"
+		ai_chance = { factor = 50 }
+		stability = -1
+		prestige = -0.10
+		badboy = -1
+	}
+}
+country_event = {
+	id = 4506
+	# 进献陨石
+	trigger = {
+		has_country_flag = liuxing
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	title = "EVTNAME4506"
+	desc = "EVTDESC4506"
+	option = {
+		name = "EVTOPTA4506"
+		ai_chance = { factor = 50 }
+		prestige = 0.05
+		clr_country_flag = liuxing
+	}
+	option = {
+		name = "EVTOPTB4506"
+		ai_chance = { factor = 50 }
+		treasury = 50
+		clr_country_flag = liuxing
+	}
+}
+###地震事件###
+country_event = { 
+	id = 4507
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 1800
+	}
+	title = "EVTNAME4507"
+	desc = "EVTDESC4507"
+	option = { 
+		name = "EVTOPTA4507"
+		random_country = { 
+			limit = { 
+				num_of_cities = 3
+			}
+			random_owned = { 
+				province_event = 4508
+			}
+		}
+	}
+}
+province_event = { 
+	id = 4508
+	major = yes
+	is_triggered_only = yes
+	title = "EVTNAME4508"
+	desc = "EVTDESC4508"
+	option = { 
+		name = "EVTOPTA4508"
+		multiply_citysize = 0.70
+	}
+	option = { 
+		name = "EVTOPTB4508"
+		owner = { treasury = -150 }
+		multiply_citysize = 0.90
+	}
+}
+###洪水事件###
+province_event = {
+	id = 4509
+	trigger = {
+	}
+	mean_time_to_happen = {
+		months = 7200
+		modifier = {
+			factor = 0.8
+			region = wangji
+		}
+		modifier = {
+			factor = 1.25
+			region = yizhou
+		}
+		modifier = {
+			factor = 6
+			region = shuofang
+		}
+		modifier = {
+			factor = 10
+			region = liangzhou
+		}
+		modifier = {
+			factor = 1.05
+			region = yanzhou
+		}
+		modifier = {
+			factor = 0.66
+			region = yuzhou
+		}
+		modifier = {
+			factor = 0.6
+			region = xuzhou
+		}
+		modifier = {
+			factor = 0.45
+			region = yangzhou
+		}
+		modifier = {
+			factor = 0.35
+			region = jingzhou
+		}
+		modifier = {
+			factor = 0.75
+			region = jiaozhou
+		}
+	}
+	title = "EVTNAME4509"
+	desc = "EVTDESC4509"
+	option = {
+		name = "EVTOPTA4509"
+		add_province_modifier = { 
+			name = "flood_seige"
+			duration = 365
+		}
+	}
+}

@@ -1,0 +1,104 @@
+##华督之乱
+country_event = { 
+	# 华督之乱
+	id = 10007
+	major = yes
+	trigger = { 
+		tag = SON
+		government = monarchy
+		year = 1958
+		NOT = { 
+			year = 2018
+		}
+		NOT = { 
+			has_country_flag = huaduzhiluan
+		}
+		NOT = { 
+			relation = { 
+				who = ZGO
+				value = 50
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.5
+			}
+		}
+	}
+	title = "EVTNAME10007"
+	desc = "EVTDESC10007"
+	option = { 
+		name = "EVTOPTA10007"
+		stability = -2
+		prestige = -0.10
+		badboy = 2
+		define_ruler = { 
+			name = "冯"
+			dynasty = "子"
+			regent = no
+			female = no
+			DIP = 5
+			MIL = 5
+			ADM = 5
+		}
+		relation = { 
+			who = ZGO
+			value = 150
+		}
+		set_country_flag = huaduzhiluan
+	}
+}
+#宋国称王
+country_event = {
+	id = 12015
+
+	major = yes
+
+	trigger = {
+		year = 2245
+		tag = SON
+		has_country_modifier = chengwang
+			war = no
+		NOT = { has_country_flag = songguojueze }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12015"
+	desc = "EVTDESC12015"
+	
+
+	option = {
+		name = "EVTOPTA12015"
+	
+
+		set_country_flag = songguojueze
+		prestige = 0.10
+		change_tag = YSG
+		government =yinshangjunzhi
+	}
+	option = {
+		name = "EVTOPTB12015"
+	
+
+		set_country_flag = songguojueze
+		centralization_decentralization = -3
+		stability = -1
+		prestige = 0.1
+		add_country_modifier = { 
+			name = "daiyanzhisong"
+			duration = -1
+		}
+	}
+}

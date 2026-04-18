@@ -1,0 +1,14 @@
+
+culture = chaoxian
+religion = animism
+capital = "มูออ"
+trade_goods = wine
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = JSG
+}

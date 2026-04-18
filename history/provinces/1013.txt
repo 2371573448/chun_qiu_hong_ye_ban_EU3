@@ -1,0 +1,68 @@
+owner = XGU
+controller = XGU
+culture = jianghan
+religion = liyuejiaohua
+capital = "ÐÅÑô"
+trade_goods = cotton
+hre = yes
+base_tax = 3
+manpower = 0
+citysize = 13000
+fort1 = yes
+add_core = XGU
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2043.8.1 = { owner = CHU
+	     controller = CHU
+	    }
+2073.6.1 = { add_core = CHU }
+2103.1.1 = { culture = nanchu 
+             religion = liyuebadao
+           }
+2192.11.1  = {	owner = WUG
+		controller = WUG
+	    }
+2193.7.1  = {	owner = CHU
+		controller = CHU
+	    }
+2220.1.1 = { religion = rujia }
+2222.1.1 = { citysize = 24000 }
+2244.1.1 = { 
+	owner = EGU
+	controller = EGU
+	add_core = EGU
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = EGU
+}
+2245.1.1 = { hre = no }
+2246.1.1 = { 
+	owner = EGU
+	controller = EGU
+	add_core = EGU
+	remove_core = CHU
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = EGU
+}
+2475.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2492.2.1={owner=XCW controller=XCW add_core=XCW}

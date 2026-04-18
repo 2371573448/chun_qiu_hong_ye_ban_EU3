@@ -1,0 +1,1179 @@
+;;;;;;;;;;X
+ROY_WITH_MESS;与下列国家联姻: \n;;;;;;;;;;X
+HEADER_MISSION;任务&决议;;;;;;;;;;X
+EVTNAME9200;富有的邻国;;;;;;;;;;X
+EVTDESC9200;$MONARCHTITLE$ $MONARCH$ 听说了 \n$COUNTRY_ADJ$ 边境的富庶程度. \n $COUNTRY$ 国内的派系坚持那些城市的统治\n权理所应当属于我们, 或者至少是劫掠权. ;;;;;;;;;;X
+EVTOPTA9200;收获季节到了;;;;;;;;;;X
+EVTNAME9201;弱小的邻国;;;;;;;;;;X
+EVTDESC9201;弱小的邻国应该被$COUNTRY_ADJ$统治. \n我们需要扩张 $COUNTRY$ 的疆域. ;;;;;;;;;;X
+EVTOPTA9201;消灭他们! ;;;;;;;;;;X
+EVTNAME9202;软弱的$MONARCHTITLE$ $MONARCH$ . ;;;;;;;;;;X
+EVTDESC9202;我国承平已久, 人民贪图安逸, 尚武之风不再. \n这不是$COUNTRY_ADJ$的道路, \n某些人开始宣称他们是新的\n$MONARCHTITLE$. ;;;;;;;;;;X
+EVTOPTA9202;展示力量. ;;;;;;;;;;X
+EVTNAME9203;$DYNASTY$承平日久. ;;;;;;;;;;X
+EVTDESC9203;$DYNASTY$享受了太久的和平, 这是软弱和\n懒惰的标志. 很明显$DYNASTY$\n不再适合统治 $COUNTRY$ 了. \n一个新的继承者会更为适宜. ;;;;;;;;;;X
+EVTOPTA9203;砍掉$HEIR_CAP_ADJ$的头! ;;;;;;;;;;X
+EVTOPTB9203;我的话就是法律! ;;;;;;;;;;X
+EVTNAME9204;$DYNASTY$不再获得尊敬;;;;;;;;;;X
+EVTDESC9204;由于缺少能干的继承人和胜利, $COUNTRY$ \n的统治阶层正在花费大量时间考虑\n$DYNASTY$是否有能力统领\n$COUNTRY_ADJ$的军队. ;;;;;;;;;;X
+EVTOPTA9204;快点处理这个问题. ;;;;;;;;;;X
+EVTNAME9205;劫掠 $PROVINCENAME$ ;;;;;;;;;;X
+EVTDESC9205; $PROVINCENAME$ 已被攻克, \n$MONARCHTITLE$ $MONARCH$ \n允许攻城部队为所欲为. \n这极大的增加了军队对他的拥戴. ;;;;;;;;;;X
+EVTOPTA9205; $MONARCH$ 奖赏士兵. ;;;;;;;;;;X
+IS_NOT_TRIBE;不是部落. ;;;;;;;;;;X
+IS_TRIBE;是部落. ;;;;;;;;;;X
+EVTNAME400;缺乏威望影响我国势力范围;;;;;;;;;;X
+EVTDESC400;由于缺乏威望, \n$COUNTRY_ADJ$的势力范围难以得到承认. \n我们要放弃一些王位宣称, 或者实施一些变革. ;;;;;;;;;;X
+EVTOPTA400;一些改变会有帮助. ;;;;;;;;;;X
+EVTOPTB400;不关心. ;;;;;;;;;;X
+EVTNAME401;$DYNASTY$的威望衰减. ;;;;;;;;;;X
+EVTDESC401;$MONARCHTITLE$ $MONARCH$ 的极低威望\n使 $COUNTRY$ 的势力范围难以得到承认. \n如果继续下去, 最终会减少$DYNASTY$\n的正统性. ;;;;;;;;;;X
+EVTOPTA401;正统性算什么. ;;;;;;;;;;X
+EVTOPTB401;确保王位稳固. ;;;;;;;;;;X
+EVTNAME402;天子质疑我国势力范围;;;;;;;;;;X
+EVTDESC402;由于缺乏威望, 天子对$COUNTRY_ADJ$\n的势力范围并不满意. 他向几个枢机主教暗示\n要我们让出几个王位. ;;;;;;;;;;X
+EVTOPTA402;天子可能说对了. ;;;;;;;;;;X
+EVTOPTB402;我们不关心势力范围. ;;;;;;;;;;X
+EVTNAME403; $COUNTRY$ 威望过低;;;;;;;;;;X
+EVTDESC403;低威望带来很少的尊重. \n这导致其他国家减弱对我们保持势力范围的信心. \n但是我们仍然可以通过战争来满足我们的要求. ;;;;;;;;;;X
+EVTOPTA403;说的对! ;;;;;;;;;;X
+EVTOPTB403;我们不关心势力范围. ;;;;;;;;;;X
+non_patrolled;缺乏海军巡逻;;;;;;;;;;X
+MILITARY_TACTICS;军事战术;;;;;;;;;;X
+ADD_TO_SPHERE;$WHO$成为$LEADER$的势力范围. \n;;;;;;;;;;X
+REMOVE_FROM_SPHERE;$LEADER$不再能宣称$WHO$是其势力范围. \n;;;;;;;;;;X
+ANY_SPHERE_STARTS;势力范围;;;;;;;;;;X
+HAS_SPHERE;有势力范围. ;;;;;;;;;;X
+HAS_NO_SPHERE;没有势力范围. ;;;;;;;;;;X
+SHIPS_IN_RANGE;附近的舰队使巡逻半径增大. \n;;;;;;;;;;X
+HAVE_NOT_CORE_CLAIM_AGAINST;对下列国家没有收复核心宣战理由:\n ;;;;;;;;;;X
+HAVE_CORE_CLAIM_AGAINST;对下列国家有收复核心宣战理由:\n ;;;;;;;;;;X
+HAVE_NOT_CG_CLAIM_AGAINST;对下列国家没有不同文化圈宣战理由:\n ;;;;;;;;;;X
+HAVE_CG_CLAIM_AGAINST;对下列国家有不同文化圈宣战理由:\n ;;;;;;;;;;X
+HAVE_NOT_RG_CLAIM_AGAINST;对下列国家没有不同宗教圈宣战理由:\n ;;;;;;;;;;X
+HAVE_RG_CLAIM_AGAINST;对下列国家有不同宗教圈宣战理由:\n ;;;;;;;;;;X
+HAVE_NOT_BORDER_CLAIM_AGAINST;对下列国家没有边境纠纷宣战理由:\n ;;;;;;;;;;X
+HAVE_BORDER_CLAIM_AGAINST;对下列国家有边境纠纷宣战理由:\n ;;;;;;;;;;X
+CHOOSE_CB;选择宣战理由: ;;;;;;;;;;X
+STABILITY_EFFECTS;对稳定的影响: ;;;;;;;;;;X
+ATTACK_NO_CB;直接宣战 ;;;;;;;;;;X
+JIHAD;圣战;;;;;;;;;;X
+DEFECTED_IN_THE_LAST;背叛过盟友;;;;;;;;;;X
+NOT_DEFECTED_IN_THE_LAST;没有背叛盟友;;;;;;;;;;X
+IS_NOT_PREVIOUS_OWNER;不是前拥有者:;;;;;;;;;;X
+IS_PREVIOUS_OWNER;是前拥有者:;;;;;;;;;;X
+ARE_NOT_PRIMITIVES;不是原始国家;;;;;;;;;;X
+ARE_PRIMITIVES;是原始国家;;;;;;;;;;X
+CONCEDE_DEFEAT;$WHO$将承认失败. ;;;;;;;;;;X
+PEACE_EFFECTS;因为$THE$$CASUS$ 宣战理由, \n$ACTIVE$将得到$PRESTIGE$威望和$BADBOY$恶名. ;;;;;;;;;;X
+PEACE_DEFENDER_EFFECTS;作为防御方, $ACTIVE$将得到$PRESTIGE$威望和$BADBOY$恶名. ;;;;;;;;;;X
+THE; ;;;;;;;;;;X
+nocasusbelli;无宣战理由;;;;;;;;;;X
+nocasusbelli_desc;我们没有合法的战争理由. ;;;;;;;;;;X
+cb_defection;省份背叛;;;;;;;;;;X
+cb_defection_desc;他们为从我国叛变的省份提供庇护. ;;;;;;;;;;X
+cb_loan_cancelled;拖欠贷款;;;;;;;;;;X
+cb_loan_cancelled_desc;他们拒绝归还贷款. ;;;;;;;;;;X
+cb_spy_discovered;间谍活动;;;;;;;;;;X
+cb_spy_discovered_desc;他们对我国采取了间谍行动! ;;;;;;;;;;X
+cb_disloyal_vassal;附庸国背叛;;;;;;;;;;X
+cb_disloyal_vassal_desc;他们无耻的撕毁了臣服誓约. ;;;;;;;;;;X
+cb_defender_of_the_faith;守护信仰;;;;;;;;;;X
+cb_defender_of_the_faith_desc;他们攻击了和我们同一宗教的兄弟国家! ;;;;;;;;;;X
+cb_hre_attacked;解放中原领土;;;;;;;;;;X
+cb_hre_attacked_desc;他们吞并了一个中原诸侯. ;;;;;;;;;;X
+cb_guarantee;保证独立;;;;;;;;;;X
+cb_guarantee_desc;他们攻击了一个受我们保证独立的国家. ;;;;;;;;;;X
+cb_warning;违反警告;;;;;;;;;;X
+cb_warning_desc;他们无视我国的警告. ;;;;;;;;;;X
+cb_claim_throne;王位宣称;;;;;;;;;;X
+cb_claim_throne_desc;我们有继承该国王位的正当权利. ;;;;;;;;;;X
+cb_offensive_call;帮助同盟;;;;;;;;;;X
+cb_offensive_call_desc;一个盟国正与他们作战. ;;;;;;;;;;X
+cb_vassalize_mission;附庸国家;;;;;;;;;;X
+cb_vassalize_mission_desc;我们有附庸特定国家的任务. ;;;;;;;;;;X
+cb_religious_conformance;宗教统一;;;;;;;;;;X
+cb_religious_conformance_desc;一个中原, 一种信仰! ;;;;;;;;;;X
+cb_colonial;移民主义;;;;;;;;;;X
+cb_colonial_desc;他们有我国想要的新垦区. ;;;;;;;;;;X
+cb_liberation;解放;;;;;;;;;;X
+cb_liberation_desc;他们在压迫享有自由权利的人民. ;;;;;;;;;;X
+cb_crusade;十字军战争;;;;;;;;;;X
+cb_crusade_desc;他们是该诅咒的异教徒! ;;;;;;;;;;X
+cb_heretic;清除异端;;;;;;;;;;X
+cb_heretic_desc;烧死异端分子! ;;;;;;;;;;X
+cb_border_war;边境摩擦;;;;;;;;;;X
+cb_border_war_desc;两国在边境问题上持有争端. ;;;;;;;;;;X
+cb_excommunication;被开除教籍;;;;;;;;;;X
+cb_excommunication_desc;他们的统治者被开除教籍了. ;;;;;;;;;;X
+cb_trade_war;贸易竞争;;;;;;;;;;X
+cb_trade_war_desc;他们对我们的贸易产生了威胁! ;;;;;;;;;;X
+cb_sphere_of_influence;侵犯势力范围;;;;;;;;;;X
+cb_sphere_of_influence_desc;他们干涉我国势力范围内国家的内政. ;;;;;;;;;;X
+cb_primitives;移民扩张;;;;;;;;;;X
+cb_primitives_desc;他们是好战的原始部落. ;;;;;;;;;;X
+GAIN_CB;得到对 $WHO$ 的宣战理由: $TYPE$. ;;;;;;;;;;X
+LOSE_CB;失去对 $WHO$ 的宣战理由: $TYPE$. ;;;;;;;;;;X
+REV_GAIN_CB;$ACTIVE$ 得到对 $PASSIVE$ 的宣战理由: $TYPE$. ;;;;;;;;;;X
+WAR_JUST;他们以 $CB$ 作为宣战理由! ;;;;;;;;;;X
+WAR_INJUST;他们没有合法的宣战理由! ;;;;;;;;;;X
+CB_DESC_HEAD;$BADBOY$的恶名, $PRESTIGE$的威望和$COST$的胜利点价值:;;;;;;;;;;X
+CB_ALLOWED_PROVS;征服:;;;;;;;;;;X
+CB_ALLOWED_ANNEX;完全吞并:;;;;;;;;;;X
+CB_ALLOWED_REVOKE;撕毁条约:;;;;;;;;;;X
+CB_ALLOWED_RELEASE_VASSALS;解放附庸:;;;;;;;;;;X
+CB_ALLOWED_RELEASE_ANNEXED;解放国家:;;;;;;;;;;X
+CB_ALLOWED_CONVERSION;强迫改变信仰:;;;;;;;;;;X
+CB_ALLOWED_UNION;建立联合统治:;;;;;;;;;;X
+CB_ALLOWED_GOLD;索取赔款:;;;;;;;;;;X
+CB_ALLOWED_VASSALAGE;强迫附庸:;;;;;;;;;;X
+CB_ALLOWED_CONCESSION;迫使承认失败:;;;;;;;;;;X
+CB_ALLOWED_REDUCTION;迫使减小势力范围:;;;;;;;;;;X
+HASCBON;有'$CASUS$'的宣战理由: $LIST$. ;;;;;;;;;;X
+DECLWAR_SETUP;当一个国家对你宣战;;;;;;;;;;X
+DECLWAR_HEADER;$WAR$;;;;;;;;;;X
+DECLWAR_1;战争! ;;;;;;;;;;X
+DECLWAR_2;$MONARCHTITLE$, $BADWORD$;;;;;;;;;;X
+DECLWAR_3;$AGRESSOR$向我们宣战! ;;;;;;;;;;X
+DECLWAR_4;准备战斗...;;;;;;;;;;X
+DECLWAR_5;*;;;;;;;;;;X
+DECLWAR_6;$CASUS$;;;;;;;;;;X
+DECLWAR_LOG;$AGRESSOR$向我们发动$WAR$! ;;;;;;;;;;X
+DECLWAR_BTN1;好的;;;;;;;;;;X
+DECLWAR_BTN2;好的;;;;;;;;;;X
+DECLWAR_BTN3;转到;;;;;;;;;;X
+DECLWAR_MAP;战争! ;;;;;;;;;;X
+DECLWAROTHER_SETUP;当一个国家对另一个国家宣战;;;;;;;;;;X
+DECLWAROTHER_HEADER;使者来自;;;;;;;;;;X
+DECLWAROTHER_1;$AGRESSOR$;;;;;;;;;;X
+DECLWAROTHER_2;$MONARCHTITLE$, $AGRESSOR$;;;;;;;;;;X
+DECLWAROTHER_3;对他们的新敌人;;;;;;;;;;X
+DECLWAROTHER_4;*;;;;;;;;;;X
+DECLWAROTHER_5;$DEFENDER$宣战;;;;;;;;;;X
+DECLWAROTHER_6;$CASUS$;;;;;;;;;;X
+DECLWAROTHER_LOG;$AGRESSOR$对$DEFENDER$发动$WAR$. ;;;;;;;;;;X
+DECLWAROTHER_BTN1;好的;;;;;;;;;;X
+DECLWAROTHER_BTN2;好的;;;;;;;;;;X
+DECLWAROTHER_BTN3;转到;;;;;;;;;;X
+DECLWAROTHER_MAP;战争!;;;;;;;;;;X
+WEDECLWAR_SETUP;当我国对另一个国家宣战;;;;;;;;;;X
+WEDECLWAR_HEADER;$WAR$;;;;;;;;;;X
+WEDECLWAR_1;我们对;;;;;;;;;;X
+WEDECLWAR_2;$DEFENDER$宣战了! ;;;;;;;;;;X
+WEDECLWAR_3;*;;;;;;;;;;X
+WEDECLWAR_4;*;;;;;;;;;;X
+WEDECLWAR_5;*;;;;;;;;;;X
+WEDECLWAR_6;*;;;;;;;;;;X
+WEDECLWAR_LOG;我国对$DEFENDER$发动$WAR$. ;;;;;;;;;;X
+WEDECLWAR_BTN1;好的;;;;;;;;;;X
+WEDECLWAR_BTN2;好的;;;;;;;;;;X
+WEDECLWAR_BTN3;转到;;;;;;;;;;X
+WEDECLWAR_MAP;战争! ;;;;;;;;;;X
+PEACE_CONCEDE_DEFEAT;承认失败;;;;;;;;;;X
+alert_casus_belli_will_expire_instant;开战理由即将过期:;;;;;;;;;;X
+alert_casus_belli_will_expire_delayed;$LIST$. ;;;;;;;;;;X
+MAPMODE_SPHERE;势力范围地图;;;;;;;;;;X
+SPHERETITLE;扩张势力范围;;;;;;;;;;X
+SPHERENEWDESC;你确定要将 $COUNTRY$ 纳入我们的势力范围? \n这将花费$PRESTIGE$威望, 但会使我们有理由对\n干涉该国内政的国家宣战. ;;;;;;;;;;X
+SPHEREDESC;将该国纳入势力范围后, 我们将有\n理由对涉该国内政的国家宣战. ;;;;;;;;;;X
+HASSPHERE;他们已经是$COUNTRYADJ$的势力范围了. ;;;;;;;;;;X
+SPHERE_OF_INFLUENCE;势力范围: $LIST$;;;;;;;;;;X
+IS_IN_SPHERE;在$TAG$的势力范围内;;;;;;;;;;X
+CW_WARNINSPHERE;他们在 $COUNTRY$ 的势力范围内. \n我们的进攻将给他们一个宣战理由. ;;;;;;;;;;X
+CW_WARNINSPHERE2;$ENEMY$在 $COUNTRY$ 的势力范围内. \n我们的进攻将给他们一个宣战理由. ;;;;;;;;;;X
+SPHERETOUS_SETUP;当别国将我国纳入势力范围;;;;;;;;;;X
+SPHERETOUS_HEADER;使者来自;;;;;;;;;;X
+SPHERETOUS_1;$ACTOR$;;;;;;;;;;X
+SPHERETOUS_2;$MONARCHTITLE$, 我们作为一个小国, 被纳入了;;;;;;;;;;X
+SPHERETOUS_3;*;;;;;;;;;;X
+SPHERETOUS_4;*;;;;;;;;;;X
+SPHERETOUS_5;$ACTOR$;;;;;;;;;;X
+SPHERETOUS_6;的势力范围. 他们会遭报应的...;;;;;;;;;;X
+SPHERETOUS_LOG;我们被纳入$ACTORADJ$的势力范围. ;;;;;;;;;;X
+SPHERETOUS_BTN1;好的;;;;;;;;;;X
+SPHERETOUS_BTN2;好的;;;;;;;;;;X
+SPHERETOUS_BTN3;转到;;;;;;;;;;X
+SPHERETOUS_MAP;*;;;;;;;;;;X
+SPHERETOOTHER_SETUP;当别国将另一国纳入势力范围;;;;;;;;;;X
+SPHERETOOTHER_HEADER;使者来自;;;;;;;;;;X
+SPHERETOOTHER_1;$ACTOR$;;;;;;;;;;X
+SPHERETOOTHER_2;$MONARCHTITLE$, ;;;;;;;;;;X
+SPHERETOOTHER_3;$RECIPIENT$;;;;;;;;;;X
+SPHERETOOTHER_4;被纳入;;;;;;;;;;X
+SPHERETOOTHER_5;$ACTORADJ$;;;;;;;;;;X
+SPHERETOOTHER_6;的势力范围;;;;;;;;;;X
+SPHERETOOTHER_LOG;$RECIPIENT$被纳入$ACTORADJ$的势力范围. ;;;;;;;;;;X
+SPHERETOOTHER_BTN1;好的;;;;;;;;;;X
+SPHERETOOTHER_BTN2;好的;;;;;;;;;;X
+SPHERETOOTHER_BTN3;转到;;;;;;;;;;X
+SPHERETOOTHER_MAP;*;;;;;;;;;;X
+WESPHERE_SETUP;当我国将别国纳入势力范围;;;;;;;;;;X
+WESPHERE_HEADER;$MESSENGER$;;;;;;;;;;X
+WESPHERE_1;我国影响力扩张;;;;;;;;;;X
+WESPHERE_2;$MONARCHTITLE$, ;;;;;;;;;;X
+WESPHERE_3;$RECIPIENT$;;;;;;;;;;X
+WESPHERE_4;现在已被纳入我国的;;;;;;;;;;X
+WESPHERE_5;势力范围;;;;;;;;;;X
+WESPHERE_6;*;;;;;;;;;;X
+WESPHERE_LOG;$RECIPIENT$现在已被纳入我国的势力范围. ;;;;;;;;;;X
+WESPHERE_BTN1;好的;;;;;;;;;;X
+WESPHERE_BTN2;好的;;;;;;;;;;X
+WESPHERE_BTN3;转到;;;;;;;;;;X
+WESPHERE_MAP;*;;;;;;;;;;X
+LACK_PRESTIGE;我们需要$PRESTIGE$威望来扩张势力范围. ;;;;;;;;;;X
+NOT_POWERFUL_ENOUGH;与他们相比, 我们还不够强. ;;;;;;;;;;X
+NOT_MIL_POWERFUL_ENOUGH;我们在军队上稍逊一筹. ;;;;;;;;;;X
+NOT_ECO_POWERFUL_ENOUGH;我们在经济上稍逊一筹. ;;;;;;;;;;X
+NOT_GEO_POWERFUL_ENOUGH;我们在省份数量上稍逊一筹. ;;;;;;;;;;X
+THEY_HAVE_SPHERE;他们有自己的势力范围. ;;;;;;;;;;X
+DIPRELCH_BADBOY;恶名;;;;;;;;;;X
+HAVE_LESS_BADBOY_THAN;恶名低于 ;;;;;;;;;;X
+HAVE_MORE_BADBOY_THAN;恶名高于 ;;;;;;;;;;X
+BADBOY_EFFECT;$DIRECTION$ $VALUE$ 恶名. \n;;;;;;;;;;X
+BADBOY_DRO_1;每年恶名变化情况:\n;;;;;;;;;;X
+BADBOY_DRO_2;恶名上限修正:\n;;;;;;;;;;X
+BADBOY;恶名;;;;;;;;;;X
+BADBOY_LIMIT;恶名上限;;;;;;;;;;X
+badboy;恶名;;;;;;;;;;X
+HAS_NOT_TEMP_CLAIM_ON; 没有临时的核心宣称: ;;;;;;;;;;X
+HAS_TEMP_CLAIM_ON; 有临时的核心宣称: ;;;;;;;;;;X
+ADD_TEMP_CLAIM_EFFECT;得到对 $PROV$ 的临时核心宣称. \n;;;;;;;;;;X
+REM_TEMP_CLAIM_EFFECT;失去对 $PROV$ 的临时核心宣称. \n;;;;;;;;;;X
+IS_NOT_IN_SPHERE;不在$COUNTRY_ADJ$的势力范围内;;;;;;;;;;X
+IS_IN_SPHERE_OF;在 $COUNTRY_ADJ$ 的势力范围内;;;;;;;;;;X
+WEGAINCB_SETUP;当我们得到宣战理由;;;;;;;;;;X
+WEGAINCB_HEADER;$MONARCHTITLE$;;;;;;;;;;X
+WEGAINCB_1;宣战理由;;;;;;;;;;X
+WEGAINCB_2;我们得到了;;;;;;;;;;X
+WEGAINCB_3;$CASUS$的战争理由;;;;;;;;;;X
+WEGAINCB_4;*;;;;;;;;;;X
+WEGAINCB_5;针对$ENEMY$;;;;;;;;;;X
+WEGAINCB_6;$DESC$;;;;;;;;;;X
+WEGAINCB_LOG;我们得到针对$ENEMY$的'$CASUS$'的宣战理由. ;;;;;;;;;;X
+WEGAINCB_BTN1;好的;;;;;;;;;;X
+WEGAINCB_BTN2;好的;;;;;;;;;;X
+WEGAINCB_BTN3;转到;;;;;;;;;;X
+WEGAINCB_MAP;*;;;;;;;;;;X
+WELOSECB_SETUP;当我们失去宣战理由;;;;;;;;;;X
+WELOSECB_HEADER;$MONARCHTITLE$;;;;;;;;;;X
+WELOSECB_1;宣战理由;;;;;;;;;;X
+WELOSECB_2;很遗憾, 我们失去了;;;;;;;;;;X
+WELOSECB_3;$CASUS$的宣战理由;;;;;;;;;;X
+WELOSECB_4;*;;;;;;;;;;X
+WELOSECB_5;针对$ENEMY$;;;;;;;;;;X
+WELOSECB_6;*;;;;;;;;;;X
+WELOSECB_LOG;我们失去了针对$ENEMY$的$CASUS$的宣战理由. ;;;;;;;;;;X
+WELOSECB_BTN1;好的;;;;;;;;;;X
+WELOSECB_BTN2;好的;;;;;;;;;;X
+WELOSECB_BTN3;转到;;;;;;;;;;X
+WELOSECB_MAP;*;;;;;;;;;;X
+PEACE_SPHERE;缩小势力范围;;;;;;;;;;X
+SPHERE_GIVEUP;$WHO$不再将$WHAT$视为势力范围. ;;;;;;;;;;X
+NOT_IN_SPHERE_RANGE;该国离我们太远了. \n最大距离随着威望提高而增加\n(请查看势力范围地图. );;;;;;;;;;X
+WELEAVESPHERE_SETUP;当我们离开别国势力范围;;;;;;;;;;X
+WELEAVESPHERE_HEADER;$MONARCHTITLE$;;;;;;;;;;X
+WELEAVESPHERE_1;*;;;;;;;;;;X
+WELEAVESPHERE_2;我们不再处于;;;;;;;;;;X
+WELEAVESPHERE_3;*;;;;;;;;;;X
+WELEAVESPHERE_4;*;;;;;;;;;;X
+WELEAVESPHERE_5;$ACTOR$;;;;;;;;;;X
+WELEAVESPHERE_6;的势力范围内;;;;;;;;;;X
+WELEAVESPHERE_LOG;我国离开$ACTORADJ$的势力范围. ;;;;;;;;;;X
+WELEAVESPHERE_BTN1;好的;;;;;;;;;;X
+WELEAVESPHERE_BTN2;好的;;;;;;;;;;X
+WELEAVESPHERE_BTN3;转到;;;;;;;;;;X
+WELEAVESPHERE_MAP;*;;;;;;;;;;X
+LEAVESOURSPHERE_SETUP;当别国离开我国势力范围;;;;;;;;;;X
+LEAVESOURSPHERE_HEADER;使者来自;;;;;;;;;;X
+LEAVESOURSPHERE_1;$ACTOR$;;;;;;;;;;X
+LEAVESOURSPHERE_2;该国不再处于;;;;;;;;;;X
+LEAVESOURSPHERE_3;我国的势力范围内;;;;;;;;;;X
+LEAVESOURSPHERE_4;他们现在已经比我们更强大了. ;;;;;;;;;;X
+LEAVESOURSPHERE_5;*;;;;;;;;;;X
+LEAVESOURSPHERE_6;*;;;;;;;;;;X
+LEAVESOURSPHERE_LOG;$ACTOR$离开我国势力范围. ;;;;;;;;;;X
+LEAVESOURSPHERE_BTN1;好的;;;;;;;;;;X
+LEAVESOURSPHERE_BTN2;好的;;;;;;;;;;X
+LEAVESOURSPHERE_BTN3;转到;;;;;;;;;;X
+LEAVESOURSPHERE_MAP;*;;;;;;;;;;X
+IS_NOT_WASTELAND; 不是一片焦土;;;;;;;;;;X
+IS_WASTELAND; 是一片焦土;;;;;;;;;;X
+IS_NOT_CRUSADE_TARGET;不是十字军目标;;;;;;;;;;X
+IS_CRUSADE_TARGET;是十字军目标;;;;;;;;;;X
+CV_RULEDBY;$NAME$ $SURNAME$;;;;;;;;;;X
+DIPRELCH_SAMEDYNASTY;同一王朝;;;;;;;;;;X
+DIPRELCH_BANNED;被中原放逐;;;;;;;;;;X
+OFFICIAL_IRO;我们现在有$CURRENT$位吏员待遣 \n(每年获得$YEARLY$位);;;;;;;;;;X
+PROVMODEXP_SETUP;一个省份状况发生变化;;;;;;;;;;X
+PROVMODEXP_HEADER;省份临时状况结束;;;;;;;;;;X
+PROVMODEXP_1;$MOD$;;;;;;;;;;X
+PROVMODEXP_2;已经在;;;;;;;;;;X
+PROVMODEXP_3;$PROV$结束;;;;;;;;;;X
+PROVMODEXP_4;$DESC$;;;;;;;;;;X
+PROVMODEXP_5;*;;;;;;;;;;X
+PROVMODEXP_6;*;;;;;;;;;;X
+PROVMODEXP_LOG;$MOD$ 在 $PROV$ 结束了. ;;;;;;;;;;X
+PROVMODEXP_BTN1;知道了;;;;;;;;;;X
+PROVMODEXP_BTN2;知道了;;;;;;;;;;X
+PROVMODEXP_BTN3;前往;;;;;;;;;;X
+PROVMODEXP_MAP;*;;;;;;;;;;X
+COUNTRYMODEXP_SETUP;一个国家状况发生变化;;;;;;;;;;X
+COUNTRYMODEXP_HEADER;国家临时状况结束;;;;;;;;;;X
+COUNTRYMODEXP_1;$MOD$;;;;;;;;;;X
+COUNTRYMODEXP_2;已经在;;;;;;;;;;X
+COUNTRYMODEXP_3; $COUNTRY$ 结束;;;;;;;;;;X
+COUNTRYMODEXP_4;$DESC$;;;;;;;;;;X
+COUNTRYMODEXP_5;*;;;;;;;;;;X
+COUNTRYMODEXP_6;*;;;;;;;;;;X
+COUNTRYMODEXP_LOG;$MOD$ 在 $COUNTRY$ 结束了. ;;;;;;;;;;X
+COUNTRYMODEXP_BTN1;知道了;;;;;;;;;;X
+COUNTRYMODEXP_BTN2;知道了;;;;;;;;;;X
+COUNTRYMODEXP_BTN3;前往;;;;;;;;;;X
+COUNTRYMODEXP_MAP;*;;;;;;;;;;X
+BREAKMARCURIANEWDESC;一般来说, 破坏联姻会引起贵族不满. 但是, 作为天子控制者, 我们可以请圣座认可. ;;;;;;;;;;X
+BREAKRMCURIADESCR;是否确认要切断与 $COUNTRY$ 王室的联系? \n这会损害我们之间的关系, 不过作为天子控制者, \n这并不会引起国内不稳. ;;;;;;;;;;X
+EXCOMONUS_SETUP;我们的统治者遭到绝罚;;;;;;;;;;X
+EXCOMONUS_HEADER;来自;;;;;;;;;;X
+EXCOMONUS_1;$ACTOR$的使者;;;;;;;;;;X
+EXCOMONUS_2;$MONARCHTITLE$, $ACTOR$ 蛊惑圣座, 使你遭受;;;;;;;;;;X
+EXCOMONUS_3;绝罚! ;;;;;;;;;;X
+EXCOMONUS_4;*;;;;;;;;;;X
+EXCOMONUS_5;*;;;;;;;;;;X
+EXCOMONUS_6;中原国家对我国宣战时可免于国内不稳. ;;;;;;;;;;X
+EXCOMONUS_LOG;圣座在 $ACTOR$ 的蛊惑下将我主逐出教会了! ;;;;;;;;;;X
+EXCOMONUS_BTN1;冤枉;;;;;;;;;;X
+EXCOMONUS_BTN2;冤枉;;;;;;;;;;X
+EXCOMONUS_BTN3;前往;;;;;;;;;;X
+EXCOMONUS_MAP;*;;;;;;;;;;X
+EXCOMONOTHER_SETUP;天子控制者令一位国主被逐出教会;;;;;;;;;;X
+EXCOMONOTHER_HEADER;来自;;;;;;;;;;X
+EXCOMONOTHER_1;$ACTOR$的使者;;;;;;;;;;X
+EXCOMONOTHER_2;$MONARCHTITLE$, ;;;;;;;;;;X
+EXCOMONOTHER_3;圣座在 $ACTOR$ 的建议下;;;;;;;;;;X
+EXCOMONOTHER_4;施行绝罚;;;;;;;;;;X
+EXCOMONOTHER_5;惩戒 $RECIPIENT$ 的不义. ;;;;;;;;;;X
+EXCOMONOTHER_6;*;;;;;;;;;;X
+EXCOMONOTHER_LOG;圣座在 $ACTOR$ 的建议下将 $RECIPIENT$ 的统治者逐出教会. ;;;;;;;;;;X
+EXCOMONOTHER_BTN1;活该;;;;;;;;;;X
+EXCOMONOTHER_BTN2;活该;;;;;;;;;;X
+EXCOMONOTHER_BTN3;前往;;;;;;;;;;X
+EXCOMONOTHER_MAP;*;;;;;;;;;;X
+PAPAL_INFLUENCE;教廷影响力;;;;;;;;;;X
+YEARLY_PAPAL_INFLUENCE;每年可获得的教廷影响力;;;;;;;;;;X
+PAPAL_INFLUENCE_DESC;教廷影响力反映了我们对宗座的影响力. 我们的影响力越大, 我国教士担任枢机主教的机会便越大. ;;;;;;;;;;X
+YEARLY_CHANGE;每年的变化;;;;;;;;;;X
+PAPAL_RELATIONS;教廷关系;;;;;;;;;;X
+NEWPOPE_SETUP;一位新教宗已选出;;;;;;;;;;X
+NEWPOPE_HEADER;新的教宗已登临;;;;;;;;;;X
+NEWPOPE_1;圣伯多禄遗产之上;;;;;;;;;;X
+NEWPOPE_2;秘密会议选出;;;;;;;;;;X
+NEWPOPE_3;$POPE$;;;;;;;;;;X
+NEWPOPE_4;作为新教宗. 各国教廷影响力将重新累积. ;;;;;;;;;;X
+NEWPOPE_5;*;;;;;;;;;;X
+NEWPOPE_6;*;;;;;;;;;;X
+NEWPOPE_LOG;秘密会议选出 $POPE$ 作为新教宗. ;;;;;;;;;;X
+NEWPOPE_BTN1;知道了;;;;;;;;;;X
+NEWPOPE_BTN2;知道了;;;;;;;;;;X
+NEWPOPE_BTN3;前往;;;;;;;;;;X
+NEWPOPE_MAP;*;;;;;;;;;;X
+OLD_CARDINAL_EXPL;他一度受到$OLD$恶魔的诱惑. ;;;;;;;;;;X
+OLD_CARDINAL_EXPL_OURS;他一度追随我们灵性的指导. ;;;;;;;;;;X
+NEW_CARDINAL_EXPL;$NEW$ 满足了他的要求. ;;;;;;;;;;X
+NEW_CARDINAL_EXPL_OURS;虽说这样会影响我们的教廷影响力, 但是他仍对我们效忠. ;;;;;;;;;;X
+CARDINALDEATH_SETUP;一位枢机主教去世;;;;;;;;;;X
+CARDINALDEATH_HEADER;$MESSENGER$;;;;;;;;;;X
+CARDINALDEATH_1;一位枢机主教去世了. ;;;;;;;;;;X
+CARDINALDEATH_2;$MONARCHTITLE$, ;;;;;;;;;;X
+CARDINALDEATH_3;$NAME$ 枢机去世了. ;;;;;;;;;;X
+CARDINALDEATH_4;$EXPLANATION$;;;;;;;;;;X
+CARDINALDEATH_5;来自 $ORIGIN$ 的 $NEWNAME$ 枢机取代了他的位置. ;;;;;;;;;;X
+CARDINALDEATH_6;$EXPLANATION2$;;;;;;;;;;X
+CARDINALDEATH_LOG;$NAME$ 枢机去世了, $NEWNAME$ 万岁! ;;;;;;;;;;X
+CARDINALDEATH_BTN1;知道了;;;;;;;;;;X
+CARDINALDEATH_BTN2;知道了;;;;;;;;;;X
+CARDINALDEATH_BTN3;前往;;;;;;;;;;X
+CARDINALDEATH_MAP;*;;;;;;;;;;X
+HRE_INFLUENCE_DESC;霸主权威反映着霸主在中原内对王公的控制. 当霸主在中原内推行改革时, 就需要一定的权威来支持. ;;;;;;;;;;X
+HRE_INFLUENCE_GAIN;以下事件将获得霸主权威:\n - 响应中原成员的求救\n - 驱逐来自中原外的入侵者\n - 统一中原信仰\n - 为中原成员复国\n - 为中原成员从中原外势力解除附属地位\n - 消除中原外势力在中原内的势力范围\n - 省份加入中原\n - 同一国连任霸主;;;;;;;;;;X
+HRE_INFLUENCE_LOSS;以下事件将失去霸主权威:\n - 对中原成员的求救不行回应\n - 省份脱离中原\n - 中原成员改宗异端;;;;;;;;;;X
+PAPAL_INF_LESS_THAN;教廷影响力少于;;;;;;;;;;X
+PAPAL_INF_AT_LEAST;教廷影响力至少;;;;;;;;;;X
+ADD_PAPAL_INFLUENCE;教廷影响力;;;;;;;;;;X
+PAPACY_IS_ENABLED;教廷已激活;;;;;;;;;;X
+PAPACY_IS_DISABLED;教廷没有激活;;;;;;;;;;X
+ENABLE_PAPACY;激活教廷;;;;;;;;;;X
+DISABLE_PAPACY;关闭教廷;;;;;;;;;;X
+gods_kingdom_title;宣布天主之国已降临地上;;;;;;;;;;X
+gods_kingdom_desc;全意大利已经统一在圣座的名下, 这是宣布天主之国已降临地上的好时机. ;;;;;;;;;;X
+kingdom_of_god;天主的王国;;;;;;;;;;X
+desc_kingdom_of_god;圣座宣布意大利是地上的天主王国. ;;;;;;;;;;X
+EVTNAME2021;地上的天主王国;;;;;;;;;;X
+EVTDESC2021;在圣教会里意大利得到统一. 教宗阁下宣布这是显现在人间的天主之国. 全欧洲的中原徒服膺于圣教会的旗号下, 热切渴望居于此模范的基督王国里. 外国势力无法再插手枢机团中的事务, 同时也不再对宗座的诏令与训示热切关注. ;;;;;;;;;;X
+EVTOPTA2021;亚孟;;;;;;;;;;X
+CULTURE_GROUP_UNION;$NEW$不再有异文化惩罚. \n;;;;;;;;;;X
+RESET_CULTURE_GROUP_UNION;$OLD$再次出现异文化惩罚. \n;;;;;;;;;;X
+SPAWN_EVENT;'$WHICH$'事件已发生. \n;;;;;;;;;;X
+CG_UNION_DESC;$GROUP$文化视 $COUNTRY$ 为他们的母国, 因此不再有异文化惩罚. ;;;;;;;;;;X
+INTERREGNUM;(空位期);;;;;;;;;;X
+EMBARGOHAVETRUCE;和约期间, 我们不能对他们实施禁运. ;;;;;;;;;;X
+EVTNAME5060;扫帚星;;;;;;;;;;X
+EVTDESC5060;农民都是迷信的, 当有扫帚星出现便足以引起恐慌. 他们认为这是末日的先兆, 以为即将会有大祸临头. ;;;;;;;;;;X
+EVTOPTA5060;这是一个预示;;;;;;;;;;X
+EVTOPTB5060;末日已近! ;;;;;;;;;;X
+EVTOPTC5060;无视这些乡巴佬;;;;;;;;;;X
+TREATIES_TO_ANNUL;$WHO$ 将废除与 $WHAT$ 的一切协议与条约. ;;;;;;;;;;X
+CB_ALLOWED_ANNUL;废除条约;;;;;;;;;;X
+PEACE_ANNUL;废除条约;;;;;;;;;;X
+TRUCEWITHMASTERDESC;我们不能与他们签署任何条约, 这是和约里的要求. 这个要求来自 ;;;;;;;;;;X
+CURIACONTROLPAP;教宗回答只有上帝. ;;;;;;;;;;X
+CURIACONTROLTAG;教会史上的黑色日子. ;;;;;;;;;;X
+CURIACONTROLLEROTHER_SETUP;当一国成为教廷控制者;;;;;;;;;;X
+CURIACONTROLLEROTHER_HEADER;来自教廷的消息;;;;;;;;;;X
+CURIACONTROLLEROTHER_1;教廷里的权力比拼;;;;;;;;;;X
+CURIACONTROLLEROTHER_2;$PLAYERTITLE$, $CONTROLLER$赢得最多枢机的效忠, 成为了;;;;;;;;;;X
+CURIACONTROLLEROTHER_3;教廷控制者;;;;;;;;;;X
+CURIACONTROLLEROTHER_4;$COMMENT$;;;;;;;;;;X
+CURIACONTROLLEROTHER_5;*;;;;;;;;;;X
+CURIACONTROLLEROTHER_6;*;;;;;;;;;;X
+CURIACONTROLLEROTHER_LOG;$CONTROLLER$ 是新的教廷控制者. ;;;;;;;;;;X
+CURIACONTROLLEROTHER_BTN1;知道了;;;;;;;;;;X
+CURIACONTROLLEROTHER_BTN2;知道了;;;;;;;;;;X
+CURIACONTROLLEROTHER_BTN3;前往;;;;;;;;;;X
+CURIACONTROLLEROTHER_MAP;*;;;;;;;;;;X
+EXCOM_TARGET_HIGH_REL;他们与教廷的关系太多了. ;;;;;;;;;;X
+EXCOM_TARGET_HIGH_INF;他们对宗座的影响太大了. ;;;;;;;;;;X
+non_accepted_culture_republic;共和国的异文化容忍;;;;;;;;;;X
+CD_TRADE_LEAGUE;$LEAGUE$ 同盟的成员. ;;;;;;;;;;X
+TRADELEAGUETITLE;邀请加入商业同盟;;;;;;;;;;X
+TRADELEAGUE2TITLE;加入商业同盟;;;;;;;;;;X
+CANCELTRADELEAGUETITLE;开除商业同盟成员资格;;;;;;;;;;X
+CANCELTRADELEAGUE2TITLE;脱离同盟成员;;;;;;;;;;X
+TRADELEAGUENEWDESC;是否希望邀请 $COUNTRY$ 加入我们的商业同盟? 同盟成员间不会互相竞争, 而他们的产品也倾向\n在同盟的贸易中心里交易. ;;;;;;;;;;X
+TRADELEAGUE2NEWDESC;是否希望请求 $COUNTRY$ 让我们加入他们的商业同盟? 同盟成员间不会互相竞争, 而他们的产品也倾向\n在同盟的贸易中心里交易. ;;;;;;;;;;X
+CANCELTRADELEAGUENEWDESC;是否希望开除 $COUNTRY$ 的同盟成员资格? 这会引起他们不满. ;;;;;;;;;;X
+CANCELTRADELEAGUE2NEWDESC;是否希望脱离 $COUNTRYADJ$ 的商业同盟? 这会引起他们不满. ;;;;;;;;;;X
+TRADELEAGUEDESC;同盟成员间不会互相竞争, 国内产品也倾向在同盟的贸易中心里交易. ;;;;;;;;;;X
+CANCELTRADELEAGUEDESC;开除他们的同盟成员资格, 这会引起他们不满. ;;;;;;;;;;X
+CANCELTRADELEAGUE2DESC;脱离他们的商业同盟, 这会引起他们不满. ;;;;;;;;;;X
+TRADELEAGUEREQDESC; $COUNTRY$ 邀请我们加入他们的商业同盟. 同盟成员间不会互相竞争, 而他们的产品也倾向在同盟的贸易中心里交易. ;;;;;;;;;;X
+TRADELEAGUE2REQDESC; $COUNTRY$ 希望加入我们的商业同盟. 同盟成员间不会互相竞争, 而他们的产品也倾向在同盟的贸易中心里交易. ;;;;;;;;;;X
+BOTHINLEAGUE;我们都已经加入商业同盟;;;;;;;;;;X
+ACTRALEWITHUS_SETUP;一国与我们签署商业同盟协议;;;;;;;;;;X
+ACTRALEWITHUS_HEADER;来自;;;;;;;;;;X
+ACTRALEWITHUS_1;$RECIPIENT$的使者;;;;;;;;;;X
+ACTRALEWITHUS_2;$MONARCHTITLE$, ;;;;;;;;;;X
+ACTRALEWITHUS_3;$RECIPIENT$;;;;;;;;;;X
+ACTRALEWITHUS_4;同意我们的所提出的;;;;;;;;;;X
+ACTRALEWITHUS_5;商业同盟;;;;;;;;;;X
+ACTRALEWITHUS_6;同盟成员间不会互相竞争, 而他们的产品也倾向在同盟的贸易中心里交易. ;;;;;;;;;;X
+ACTRALEWITHUS_LOG;$RECIPIENT$ 与我们签署商业同盟协议. ;;;;;;;;;;X
+ACTRALEWITHUS_BTN1;知道了;;;;;;;;;;X
+ACTRALEWITHUS_BTN2;知道了;;;;;;;;;;X
+ACTRALEWITHUS_BTN3;前往;;;;;;;;;;X
+ACTRALEWITHUS_MAP;*;;;;;;;;;;X
+WETRADELE_SETUP;我们与一国签署商业同盟协议;;;;;;;;;;X
+WETRADELE_HEADER;$MESSENGER$;;;;;;;;;;X
+WETRADELE_1;$LEAGUEADJ$ 同盟;;;;;;;;;;X
+WETRADELE_2;$MONARCHTITLE$, 经过深思熟虑后我们签署了;;;;;;;;;;X
+WETRADELE_3;商业同盟;;;;;;;;;;X
+WETRADELE_4;加入;;;;;;;;;;X
+WETRADELE_5;$ACTOR$的商业同盟;;;;;;;;;;X
+WETRADELE_6;同盟成员间不会互相竞争, 而他们的产品也倾向在同盟的贸易中心里交易. ;;;;;;;;;;X
+WETRADELE_LOG;我们与 $ACTOR$ 签署了商业同盟协议. ;;;;;;;;;;X
+WETRADELE_BTN1;知道了;;;;;;;;;;X
+WETRADELE_BTN2;知道了;;;;;;;;;;X
+WETRADELE_BTN3;前往;;;;;;;;;;X
+WETRADELE_MAP;*;;;;;;;;;;X
+OTHERTRADELE_SETUP;两国签署商业同盟协议;;;;;;;;;;X
+OTHERTRADELE_HEADER;来自;;;;;;;;;;X
+OTHERTRADELE_1;$LEAGUEADJ$同盟的使者;;;;;;;;;;X
+OTHERTRADELE_2;$MONARCHTITLE$, 我们刚收到通知;;;;;;;;;;X
+OTHERTRADELE_3;$ACTOR$ 与 $RECIPIENT$;;;;;;;;;;X
+OTHERTRADELE_4;签署了;;;;;;;;;;X
+OTHERTRADELE_5;商业同盟;;;;;;;;;;X
+OTHERTRADELE_6;*;;;;;;;;;;X
+OTHERTRADELE_LOG;$RECIPIENT$ 与 $ACTOR$ 签署商业同盟协议. ;;;;;;;;;;X
+OTHERTRADELE_BTN1;知道了;;;;;;;;;;X
+OTHERTRADELE_BTN2;知道了;;;;;;;;;;X
+OTHERTRADELE_BTN3;前往;;;;;;;;;;X
+OTHERTRADELE_MAP;*;;;;;;;;;;X
+DETRALEWITHUS_SETUP;一国拒绝与我们签署商业同盟协议;;;;;;;;;;X
+DETRALEWITHUS_HEADER;来自;;;;;;;;;;X
+DETRALEWITHUS_1;$RECIPIENT$的使者;;;;;;;;;;X
+DETRALEWITHUS_2;$MONARCHTITLE$, $RECIPIENT$ 拒绝与我们签署;;;;;;;;;;X
+DETRALEWITHUS_3;商业同盟;;;;;;;;;;X
+DETRALEWITHUS_4;这是他们的损失. ;;;;;;;;;;X
+DETRALEWITHUS_5;*;;;;;;;;;;X
+DETRALEWITHUS_6;*;;;;;;;;;;X
+DETRALEWITHUS_LOG;$RECIPIENT$ 拒绝与我们签署商业同盟协议. ;;;;;;;;;;X
+DETRALEWITHUS_BTN1;知道了;;;;;;;;;;X
+DETRALEWITHUS_BTN2;知道了;;;;;;;;;;X
+DETRALEWITHUS_BTN3;前往;;;;;;;;;;X
+DETRALEWITHUS_MAP;*;;;;;;;;;;X
+WEDETRALE_SETUP;我们拒绝签署商业同盟协议;;;;;;;;;;X
+WEDETRALE_HEADER;$MESSENGER$;;;;;;;;;;X
+WEDETRALE_1;$LEAGUEADJ$同盟;;;;;;;;;;X
+WEDETRALE_2;$MONARCHTITLE$, 我们拒绝了;;;;;;;;;;X
+WEDETRALE_3;商业同盟;;;;;;;;;;X
+WEDETRALE_4;的提议;;;;;;;;;;X
+WEDETRALE_5;$ACTOR$感到很不解;;;;;;;;;;X
+WEDETRALE_6;其实这对我们利益不大...;;;;;;;;;;X
+WEDETRALE_LOG;我们拒绝与 $ACTOR$ 签署商业同盟协议. ;;;;;;;;;;X
+WEDETRALE_BTN1;知道了;;;;;;;;;;X
+WEDETRALE_BTN2;知道了;;;;;;;;;;X
+WEDETRALE_BTN3;前往;;;;;;;;;;X
+WEDETRALE_MAP;*;;;;;;;;;;X
+DETRALEWITHOTHER_SETUP;两国缔结商业同盟失败;;;;;;;;;;X
+DETRALEWITHOTHER_HEADER;来自;;;;;;;;;;X
+DETRALEWITHOTHER_1;$LEAGUEADJ$同盟的使者;;;;;;;;;;X
+DETRALEWITHOTHER_2;$MONARCHTITLE$, $RECIPIENT$;;;;;;;;;;X
+DETRALEWITHOTHER_3;拒绝加入;;;;;;;;;;X
+DETRALEWITHOTHER_4;$ACTOR$的商业同盟;;;;;;;;;;X
+DETRALEWITHOTHER_5;*;;;;;;;;;;X
+DETRALEWITHOTHER_6;*;;;;;;;;;;X
+DETRALEWITHOTHER_LOG;$RECIPIENT$ 拒绝签署 $ACTOR$ 提出的商业同盟协议. ;;;;;;;;;;X
+DETRALEWITHOTHER_BTN1;知道了;;;;;;;;;;X
+DETRALEWITHOTHER_BTN2;知道了;;;;;;;;;;X
+DETRALEWITHOTHER_BTN3;前往;;;;;;;;;;X
+WEBRKTRADELE_SETUP;我们取消商业同盟协议;;;;;;;;;;X
+WEBRKTRADELE_HEADER;$MESSENGER$;;;;;;;;;;X
+WEBRKTRADELE_1;$LEAGUEADJ$同盟! ;;;;;;;;;;X
+WEBRKTRADELE_2;$MONARCHTITLE$, 我们已经取消;;;;;;;;;;X
+WEBRKTRADELE_3;与$RECIPIENT$签定的商业同盟协议;;;;;;;;;;X
+WEBRKTRADELE_4;*;;;;;;;;;;X
+WEBRKTRADELE_5;*;;;;;;;;;;X
+WEBRKTRADELE_6;*;;;;;;;;;;X
+WEBRKTRADELE_LOG;我们已取消与$RECIPIENT$的商业同盟协议. ;;;;;;;;;;X
+WEBRKTRADELE_BTN1;知道了;;;;;;;;;;X
+WEBRKTRADELE_BTN2;知道了;;;;;;;;;;X
+WEBRKTRADELE_BTN3;前往;;;;;;;;;;X
+WEBRKTRADELE_MAP;*;;;;;;;;;;X
+BRKTRADELEUS_SETUP;一国取消与我们的商业同盟协议;;;;;;;;;;X
+BRKTRADELEUS_HEADER;来自;;;;;;;;;;X
+BRKTRADELEUS_1;$ACTOR$的使者;;;;;;;;;;X
+BRKTRADELEUS_2;$MONARCHTITLE$, 愚不可及的;;;;;;;;;;X
+BRKTRADELEUS_3;$ACTOR$;;;;;;;;;;X
+BRKTRADELEUS_4;背弃了我们之间的;;;;;;;;;;X
+BRKTRADELEUS_5;Trade League Compact;;;;;;;;;;X
+BRKTRADELEUS_6;他们必须为此负责! ;;;;;;;;;;X
+BRKTRADELEUS_LOG;$ACTOR$ 取消了我们之间的商业同盟协议. ;;;;;;;;;;X
+BRKTRADELEUS_BTN1;知道了;;;;;;;;;;X
+BRKTRADELEUS_BTN2;知道了;;;;;;;;;;X
+BRKTRADELEUS_BTN3;前往;;;;;;;;;;X
+BRKTRADELEUS_MAP;*;;;;;;;;;;X
+BRKTRADELEOTH_SETUP;有国家脱离其他商业同盟;;;;;;;;;;X
+BRKTRADELEOTH_HEADER;来自;;;;;;;;;;X
+BRKTRADELEOTH_1;$LEAGUEADJ$同盟的使者;;;;;;;;;;X
+BRKTRADELEOTH_2;$MONARCHTITLE$, 我们希望知会您;;;;;;;;;;X
+BRKTRADELEOTH_3;$ACTOR$;;;;;;;;;;X
+BRKTRADELEOTH_4;已经脱离了;;;;;;;;;;X
+BRKTRADELEOTH_5;$RECIPIENT$的商业同盟;;;;;;;;;;X
+BRKTRADELEOTH_6;*;;;;;;;;;;X
+BRKTRADELEOTH_LOG;$ACTOR$ 脱离了 $RECIPIENT$的商业同盟. ;;;;;;;;;;X
+BRKTRADELEOTH_BTN1;知道了;;;;;;;;;;X
+BRKTRADELEOTH_BTN2;知道了;;;;;;;;;;X
+BRKTRADELEOTH_BTN3;前往;;;;;;;;;;X
+BRKTRADELEOTH_MAP;*;;;;;;;;;;X
+EMBARGOHAVETRADE;我们之间有贸易协议! ;;;;;;;;;;X
+EMBARGOHAVETRADELEAGUE;我们在同一商业同盟之内! ;;;;;;;;;;X
+DIPRELCH_TRADELEAGUE;商业同盟盟友;;;;;;;;;;X
+PROV_TRADE_LEAGUE;$COUNTRYADJ$同盟  的一部分;;;;;;;;;;X
+COTTRADEAGCOMPETE;在贸易协议之下, 我们的商人不会与之竞争;;;;;;;;;;X
+COTLEAGUECOMPETE;我们都是$LEAGUE$同盟  的成员, 我们的商人不会与之竞争 . ;;;;;;;;;;X
+MERCANTILE_DIPLO;领导一个商业同盟\n可以请求贸易权;;;;;;;;;;X
+GOV_TRIBAL_WOES;部落继承危机;;;;;;;;;;X
+CCOT_LEAGUE_LIMIT;作为商业同盟成员, 你不能够自行建立贸易中心. ;;;;;;;;;;X
+HRE_DECISIONS;霸主提议;;;;;;;;;;X
+ALL_OWNED_PROVS;所有治下省份;;;;;;;;;;X
+EVTNAME1093;同盟贸易站关闭;;;;;;;;;;X
+EVTDESC1093;我们不再是商业同盟成员, 因此所有国内的同盟贸易站都会关闭. ;;;;;;;;;;X
+EVTOPTA1093;终于能摆脱! ;;;;;;;;;;X
+EVTNAME1094;建立同盟贸易站;;;;;;;;;;X
+EVTDESC1094;$LEAGUE_ADJ$同盟商人计划在 $PROVINCENAME$ 建立同盟贸易站. ;;;;;;;;;;X
+EVTOPTA1094;欢迎! ;;;;;;;;;;X
+league_kontor;同盟贸易站;;;;;;;;;;X
+desc_league_kontor;我们的商业同盟在此建立起一个同盟贸易站. ;;;;;;;;;;X
+IN_TRADE_LEAGUE;是商业同盟成员;;;;;;;;;;X
+NOT_IN_TRADE_LEAGUE;不是商业同盟成员;;;;;;;;;;X
+alert_disputed_succession_instant;继承争议;;;;;;;;;;X
+alert_disputed_succession_delayed;以下国家缺乏一位众望所归的继承人:\n$LIST$;;;;;;;;;;X
+ACTRARIWITHUS_SETUP;一国同意我们的专卖提议;;;;;;;;;;X
+ACTRARIWITHUS_HEADER;来自;;;;;;;;;;X
+ACTRARIWITHUS_1;$RECIPIENT$的使者;;;;;;;;;;X
+ACTRARIWITHUS_2;$MONARCHTITLE$, 我们现在拥有独家的;;;;;;;;;;X
+ACTRARIWITHUS_3;$GOODS$专卖权;;;;;;;;;;X
+ACTRARIWITHUS_4;这使我们能够;;;;;;;;;;X
+ACTRARIWITHUS_5;在$RECIPIENT$内专营这项商品;;;;;;;;;;X
+ACTRARIWITHUS_6;他们国内所出产的$GOODS$\n自此必须在我们的贸易中心交易. ;;;;;;;;;;X
+ACTRARIWITHUS_LOG;$RECIPIENT$ 给予我们 $GOODS$ 的专营权. ;;;;;;;;;;X
+ACTRARIWITHUS_BTN1;发财了;;;;;;;;;;X
+ACTRARIWITHUS_BTN2;发财了;;;;;;;;;;X
+ACTRARIWITHUS_BTN3;前往;;;;;;;;;;X
+ACTRARIWITHUS_MAP;*;;;;;;;;;;X
+OTHERTRADERI_SETUP;一国给予专营权予另一国;;;;;;;;;;X
+OTHERTRADERI_HEADER;来自;;;;;;;;;;X
+OTHERTRADERI_1;$ACTOR$的使者;;;;;;;;;;X
+OTHERTRADERI_2;$MONARCHTITLE$, 我们已经知会您;;;;;;;;;;X
+OTHERTRADERI_3;$RECIPIENT$;;;;;;;;;;X
+OTHERTRADERI_4;已经将$GOODS$ 的专营权给予;;;;;;;;;;X
+OTHERTRADERI_5;$ACTOR$;;;;;;;;;;X
+OTHERTRADERI_6;他们国内出产的$GOODS$自此必须在 $LEAGUEADJ$ 贸易中心交易. ;;;;;;;;;;X
+OTHERTRADERI_LOG;$RECIPIENT$ 给予 $ACTOR$ $GOODS$ 的专营权. ;;;;;;;;;;X
+OTHERTRADERI_BTN1;知道了;;;;;;;;;;X
+OTHERTRADERI_BTN2;知道了;;;;;;;;;;X
+OTHERTRADERI_BTN3;前往;;;;;;;;;;X
+OTHERTRADERI_MAP;*;;;;;;;;;;X
+WETRADERI_SETUP;我们给予一国专营权;;;;;;;;;;X
+WETRADERI_HEADER;$MESSENGER$;;;;;;;;;;X
+WETRADERI_1;专营权! ;;;;;;;;;;X
+WETRADERI_2;$MONARCHTITLE$, 我们已决定给予;;;;;;;;;;X
+WETRADERI_3;即$GOODS$ 专卖权;;;;;;;;;;X
+WETRADERI_4;予;;;;;;;;;;X
+WETRADERI_5;$ACTOR$;;;;;;;;;;X
+WETRADERI_6;我国所出产的 $GOODS$ 将会运往他们的贸易中心. ;;;;;;;;;;X
+WETRADERI_LOG;我们赋予$ACTOR$ $GOODS$ 专营权. ;;;;;;;;;;X
+WETRADERI_BTN1;知道了;;;;;;;;;;X
+WETRADERI_BTN2;知道了;;;;;;;;;;X
+WETRADERI_BTN3;前往;;;;;;;;;;X
+WETRADERI_MAP;*;;;;;;;;;;X
+DETRARIWITHUS_SETUP;一国拒绝我们的专卖提议;;;;;;;;;;X
+DETRARIWITHUS_HEADER;来自;;;;;;;;;;X
+DETRARIWITHUS_1;$RECIPIENT$的使者;;;;;;;;;;X
+DETRARIWITHUS_2;$MONARCHTITLE$, 我们遗憾地通知您;;;;;;;;;;X
+DETRARIWITHUS_3;$RECIPIENT$;;;;;;;;;;X
+DETRARIWITHUS_4;愚蠢地拒绝了我们所提出的;;;;;;;;;;X
+DETRARIWITHUS_5;$GOODS$专卖权协议;;;;;;;;;;X
+DETRARIWITHUS_6;*;;;;;;;;;;X
+DETRARIWITHUS_LOG;$RECIPIENT$ 拒绝给予我们 $GOODS$ 的专营权. ;;;;;;;;;;X
+DETRARIWITHUS_BTN1;知道了;;;;;;;;;;X
+DETRARIWITHUS_BTN2;知道了;;;;;;;;;;X
+DETRARIWITHUS_BTN3;前往;;;;;;;;;;X
+DETRARIWITHUS_MAP;*;;;;;;;;;;X
+DETRARIWITHOTHER_SETUP;一国拒绝另一国的专卖提议;;;;;;;;;;X
+DETRARIWITHOTHER_HEADER;来自;;;;;;;;;;X
+DETRARIWITHOTHER_1;$RECIPIENT$的使者;;;;;;;;;;X
+DETRARIWITHOTHER_2;$MONARCHTITLE$, $RECIPIENT$ 拒绝给予;;;;;;;;;;X
+DETRARIWITHOTHER_3;$GOODS$专卖权;;;;;;;;;;X
+DETRARIWITHOTHER_4;给;;;;;;;;;;X
+DETRARIWITHOTHER_5;$ACTOR$;;;;;;;;;;X
+DETRARIWITHOTHER_6;*;;;;;;;;;;X
+DETRARIWITHOTHER_LOG;$RECIPIENT$ 拒绝将 $GOODS$ 的专营权赋予 $ACTOR$. ;;;;;;;;;;X
+DETRARIWITHOTHER_BTN1;知道了;;;;;;;;;;X
+DETRARIWITHOTHER_BTN2;知道了;;;;;;;;;;X
+DETRARIWITHOTHER_BTN3;前往;;;;;;;;;;X
+WEDETRARI_SETUP;我们拒绝了一项专卖提议;;;;;;;;;;X
+WEDETRARI_HEADER;$MESSENGER$;;;;;;;;;;X
+WEDETRARI_1;专营权! ;;;;;;;;;;X
+WEDETRARI_2;$MONARCHTITLE$, 我们拒绝将;;;;;;;;;;X
+WEDETRARI_3;$GOODS$专卖权;;;;;;;;;;X
+WEDETRARI_4;赋予那些冒昧放肆的;;;;;;;;;;X
+WEDETRARI_5;$ACTORS$商人;;;;;;;;;;X
+WEDETRARI_6;希望他们不再拿这些疯话来烦扰我们! ;;;;;;;;;;X
+WEDETRARI_LOG;我们拒绝将 $GOODS$ 的专营权赋予 $ACTOR$. ;;;;;;;;;;X
+WEDETRARI_BTN1;知道了;;;;;;;;;;X
+WEDETRARI_BTN2;知道了;;;;;;;;;;X
+WEDETRARI_BTN3;前往;;;;;;;;;;X
+WEDETRARI_MAP;*;;;;;;;;;;X
+BRKTRADERIUS_SETUP;一国收回我们的专营权;;;;;;;;;;X
+BRKTRADERIUS_HEADER;来自;;;;;;;;;;X
+BRKTRADERIUS_1;$ACTOR$的使者;;;;;;;;;;X
+BRKTRADERIUS_2;$MONARCHTITLE$, 脑袋装石头的矮人族;;;;;;;;;;X
+BRKTRADERIUS_3;$ACTOR$;;;;;;;;;;X
+BRKTRADERIUS_4;收回我们的;;;;;;;;;;X
+BRKTRADERIUS_5;$GOODS$专卖权;;;;;;;;;;X
+BRKTRADERIUS_6;*;;;;;;;;;;X
+BRKTRADERIUS_LOG;$ACTOR$ 收回我们对 $GOODS$ 的专卖权. ;;;;;;;;;;X
+BRKTRADERIUS_BTN1;知道了;;;;;;;;;;X
+BRKTRADERIUS_BTN2;知道了;;;;;;;;;;X
+BRKTRADERIUS_BTN3;前往;;;;;;;;;;X
+BRKTRADERIUS_MAP;*;;;;;;;;;;X
+BRKTRADERIOTH_SETUP;当一国打破与另一国的贸易权条约时;;;;;;;;;;X
+BRKTRADERIOTH_HEADER;传令官, 来自于;;;;;;;;;;X
+BRKTRADERIOTH_1;$RECIPIENT$;;;;;;;;;;X
+BRKTRADERIOTH_2;$MONARCHTITLE$, 我们有幸告知您;;;;;;;;;;X
+BRKTRADERIOTH_3;$ACTOR$;;;;;;;;;;X
+BRKTRADERIOTH_4;已经打破了他们和 $RECIPIENT$的关于;;;;;;;;;;X
+BRKTRADERIOTH_5;$GOODS$ 的贸易权条约;;;;;;;;;;X
+BRKTRADERIOTH_6;*;;;;;;;;;;X
+BRKTRADERIOTH_LOG;$ACTOR$ 打破了他们和 $RECIPIENT$ 的关于 $GOODS$ 的贸易权条约. ;;;;;;;;;;X
+BRKTRADERIOTH_BTN1;知道了;;;;;;;;;;X
+BRKTRADERIOTH_BTN2;知道了;;;;;;;;;;X
+BRKTRADERIOTH_BTN3;转到;;;;;;;;;;X
+BRKTRADERIOTH_MAP;*;;;;;;;;;;X
+WEBRKTRADERI_SETUP;当我们打破了与另一国的条约;;;;;;;;;;X
+WEBRKTRADERI_HEADER;$MESSENGER$;;;;;;;;;;X
+WEBRKTRADERI_1;贸易权条约终止了！;;;;;;;;;;X
+WEBRKTRADERI_2;$MONARCHTITLE$, 我们结束了毫无意义的;;;;;;;;;;X
+WEBRKTRADERI_3;和 $RECIPIENT$ 的关于;;;;;;;;;;X
+WEBRKTRADERI_4; $GOODS$ ;;;;;;;;;;X
+WEBRKTRADERI_5;的贸易权条约;;;;;;;;;;X
+WEBRKTRADERI_6;*;;;;;;;;;;X
+WEBRKTRADERI_LOG;我们打破了与 $RECIPIENT$ 的关于 $GOODS$ 的贸易权条约. ;;;;;;;;;;X
+WEBRKTRADERI_BTN1;很好;;;;;;;;;;X
+WEBRKTRADERI_BTN2;很好;;;;;;;;;;X
+WEBRKTRADERI_BTN3;转到;;;;;;;;;;X
+WEBRKTRADERI_MAP;*;;;;;;;;;;X
+TRADERIGHTSREQDESC; $COUNTRY$ 要求我们准予他们对 $GOODS$ 的独占贸易权. \n所有省份生产的 $GOODS$ 商品贸易将通过其拥有的\n贸易中心. \n省份新状态:\n$MODIFIER$;;;;;;;;;;X
+TRADERIGHTSDESC;一个贸易权条约允许他们的所有此类货物得以通过\n我们的贸易中心进行交易. ;;;;;;;;;;X
+CANCELTRADERIGHTSDESC;取消我们对 $GOODS$ 的贸易权条约. ;;;;;;;;;;X
+TRADERIGHTSRIVAL;我们不能向其他贸易共和国要求贸易权. ;;;;;;;;;;X
+TRADERIGHTSNEWDESC;您想要求 $COUNTRY$ 提供我们对$GOODS$ 的独占贸易权吗? 这将导致所有的 $GOODS$ 商品必须通过我们的贸易中心进行交易. ;;;;;;;;;;X
+CANCELTRADERIGHTSNEWDESC;您想取消和 $COUNTRY$ 的关于 $GOODS$的贸易权吗? ;;;;;;;;;;X
+TRADERIGHTSTITLE;要求贸易权;;;;;;;;;;X
+CANCELTRADERIGHTSTITLE;取消贸易权;;;;;;;;;;X
+ALREADYTRADERIGHTS;他们已经把 $GOODS$ 的贸易权交给 $OTHER$ 了! ;;;;;;;;;;X
+NOT_THE_EMPEROR;你不是霸主! ;;;;;;;;;;X
+YEARLY_LEGITIMACY;年度正统性变化;;;;;;;;;;X
+MODIFIER_LOCAL_COT_GRAVITY;本地贸易中心吸引力;;;;;;;;;;X
+MODIFIER_GLOBAL_COT_GRAVITY;国家贸易中心吸引力;;;;;;;;;;X
+num_of_marriages;皇家联姻数量;;;;;;;;;;X
+CVIEW_LEGITIMACY;正统性;;;;;;;;;;X
+CVIEW_YEARLY_LEGITIMACY;年度正统性变化:;;;;;;;;;;X
+CVIEW_LEGITIMACY_DESC;正统性是衡量你的君主有多合法的数据. \n一个不够正统的继承人继承王位时会降低正统性. ;;;;;;;;;;X
+CVIEW_LEGITIMACY_AFFECTS;我国正统性的影响:;;;;;;;;;;X
+NOCLAIMLEGITIMACY;你必须有至少 50 正统性. ;;;;;;;;;;X
+CANNOT_CLAIM_THRONES;不可以索取王位;;;;;;;;;;X
+HAVE_LEGITIMACY_LESS_THAN;正统性少于 ;;;;;;;;;;X
+HAVE_LEGITIMACY_MORE_THAN;正统性至少达到 ;;;;;;;;;;X
+LEGITIMACY_EFFECT;$DIRECTION$ $VALUE$ 正统性. \n;;;;;;;;;;X
+NO_CHANGE;不变;;;;;;;;;;X
+intolerance;不容忍;;;;;;;;;;X
+legitimacy;正统性;;;;;;;;;;X
+NO_RELIGION_PENALTY;消极的宗教宽容不再造成任何惩罚. ;;;;;;;;;;X
+PAPACYVIEW_CANDIDATE;下一个枢机主教是来自于 $COUNTRY$ 这个国家的\n机会有$CHANCE$%. 他们对天子有 $INFLUENCE$%的影响力. ;;;;;;;;;;X
+alert_claim_defender_of_the_faith_instant;信仰守护者;;;;;;;;;;X
+alert_claim_defender_of_the_faith_delayed;我们可以成为信仰守护者! ;;;;;;;;;;X
+CASUS_BELLI;宣战理由;;;;;;;;;;X
+CARDINAL_CHANCE;枢机主教几率;;;;;;;;;;X
+CULTURALTRADITION_EFFECT;$DIRECTION$ $VALUE$ 文化传统. \n;;;;;;;;;;X
+CULTURAL_LABEL;文化传统:;;;;;;;;;;X
+NAVAL_LABEL;海军传统:;;;;;;;;;;X
+ARMY_LABEL;陆军传统:;;;;;;;;;;X
+HRE_MAJORITY;大多数中原成员;;;;;;;;;;X
+MOVE_FOCUS_CURRENT;这是你国家重点地区. 誓死捍卫！;;;;;;;;;;X
+CONFIRMMOVEFOCUSTEXT;你希望把 $PROV$ 做为你的国家重点地区吗? ;;;;;;;;;;X
+CONFIRMMOVEFOCUSTITLE;改变国家重点地区;;;;;;;;;;X
+FOCUSMOVED_SETUP;当我们改变国家重点地区;;;;;;;;;;X
+FOCUSMOVED_HEADER;国家重点地区已改变;;;;;;;;;;X
+FOCUSMOVED_1; $COUNTRY$ ;;;;;;;;;;X
+FOCUSMOVED_2;我们把我们的国家重点地区转移到;;;;;;;;;;X
+FOCUSMOVED_3;$PROVINCE$;;;;;;;;;;X
+FOCUSMOVED_4;随着时间推移整个地区都将得到好处! ;;;;;;;;;;X
+FOCUSMOVED_5;*;;;;;;;;;;X
+FOCUSMOVED_6;*;;;;;;;;;;X
+FOCUSMOVED_LOG;我们已把我们的国家重点地区转移到 $PROVINCE$. ;;;;;;;;;;X
+FOCUSMOVED_BTN1;好极了! ;;;;;;;;;;X
+FOCUSMOVED_BTN2;好极了! ;;;;;;;;;;X
+FOCUSMOVED_BTN3;转到;;;;;;;;;;X
+FOCUSMOVED_MAP;*;;;;;;;;;;X
+FOCUSMOVEDOTHER_SETUP;当一国转移他们的国家重点地区;;;;;;;;;;X
+FOCUSMOVEDOTHER_HEADER;国家重点地区转移;;;;;;;;;;X
+FOCUSMOVEDOTHER_1;$THEM$;;;;;;;;;;X
+FOCUSMOVEDOTHER_2;已把国家重点地区转移到;;;;;;;;;;X
+FOCUSMOVEDOTHER_3;$PROVINCE$;;;;;;;;;;X
+FOCUSMOVEDOTHER_4;随着时间推移整个地区都将得到好处...;;;;;;;;;;X
+FOCUSMOVEDOTHER_5;*;;;;;;;;;;X
+FOCUSMOVEDOTHER_6;*;;;;;;;;;;X
+FOCUSMOVEDOTHER_LOG;$THEM$ 已把国家重点转移到 $PROVINCE$. ;;;;;;;;;;X
+FOCUSMOVEDOTHER_BTN1;知道了! ;;;;;;;;;;X
+FOCUSMOVEDOTHER_BTN2;知道了! ;;;;;;;;;;X
+FOCUSMOVEDOTHER_BTN3;转到;;;;;;;;;;X
+FOCUSMOVEDOTHER_MAP;*;;;;;;;;;;X
+MOVE_FOCUS_SHORT;点击此处让此地成为国家重点地区;;;;;;;;;;X
+MOVE_FOCUS_COOLDOWN;我们不能转移国家重点地区直到 $DATE$. ;;;;;;;;;;X
+MOVE_FOCUS_LONG;这个省份和周边地区会得到政府的特别关注, 此地将会获得令人兴奋的增长, 独特的省份事件和决议将被开启, 新的贸易中心也能在此开办. ;;;;;;;;;;X
+national_focus;国家重点地区;;;;;;;;;;X
+FOCUS_CHANGE;$NEW$将会成为新的国家重点地区. \n;;;;;;;;;;X
+THE_NATIONAL_FOCUS_IS; $ADJ$的国家重点地区在  $PROV$\n;;;;;;;;;;X
+THE_NATIONAL_FOCUS_IS_NOT;$ADJ$的国家重点地区不在$PROV$\n;;;;;;;;;;X
+IS_NOT_NATIONAL_FOCUS; 不在国家重点关注省份影响内 ;;;;;;;;;;X
+IS_NATIONAL_FOCUS; 得到国家重点关注省份影响;;;;;;;;;;X
+ICON_TRADE_LEAGUE;提出贸易联盟;;;;;;;;;;X
+ICON_TRADE_RIGHTS;要求贸易权;;;;;;;;;;X
+ICON_RELIGIOUS_UNITY;要求信仰统一;;;;;;;;;;X
+CCOT_NOT_FOCUS;你只能在你的国家重点地区省份或附近地区创立贸易中心. ;;;;;;;;;;X
+EVTNAME1058;霸主提议得到会盟通过;;;;;;;;;;X
+EVTDESC1058;一个中原霸主提议的决议在会盟中的通过! ;;;;;;;;;;X
+EVTOPTA1058;太棒了;;;;;;;;;;X
+BORN_IN;出生于 $COUNTRY$ . ;;;;;;;;;;X
+ADVISOR_HIRED_SETUP;当一个出生于你国家的臣属被他国雇佣时. ;;;;;;;;;;X
+ADVISOR_HIRED_HEADER;一个臣属被雇佣了. ;;;;;;;;;;X
+ADVISOR_HIRED_1;$ADVISORNAME$;;;;;;;;;;X
+ADVISOR_HIRED_2;被;;;;;;;;;;X
+ADVISOR_HIRED_3;$EMPLOYER$ 雇佣了;;;;;;;;;;X
+ADVISOR_HIRED_4;他是一个 $TYPE$;;;;;;;;;;X
+ADVISOR_HIRED_5;你获得了 $COST$?做报酬. ;;;;;;;;;;X
+ADVISOR_HIRED_6; ;;;;;;;;;;X
+ADVISOR_HIRED_LOG;$ADVISORNAME$ 被 $EMPLOYER$ 雇佣了. ;;;;;;;;;;X
+ADVISOR_HIRED_BTN1;知道了;;;;;;;;;;X
+ADVISOR_HIRED_BTN2;知道了;;;;;;;;;;X
+ADVISOR_HIRED_BTN3;转到;;;;;;;;;;X
+ADVISOR_HIRED_MAP;$ADVISORNAME$ 被雇佣了. ;;;;;;;;;;X
+HAD_COUNTRY_FLAG_LESS_THAN;有 '$FLAG$' 不足 $DAYS$ 天;;;;;;;;;;X
+HAD_COUNTRY_FLAG_AT_LEAST;有 '$FLAG$' 至少达到 $DAYS$ 天;;;;;;;;;;X
+HAD_GLOBAL_FLAG_LESS_THAN;有 '$FLAG$' 不足 $DAYS$ 天;;;;;;;;;;X
+HAD_GLOBAL_FLAG_AT_LEAST;有 '$FLAG$' 至少达到 $DAYS$ 天;;;;;;;;;;X
+HAD_PROVINCE_FLAG_LESS_THAN;有 '$FLAG$' 不足 $DAYS$ 天;;;;;;;;;;X
+HAD_PROVINCE_FLAG_AT_LEAST;有 '$FLAG$' 至少达到 $DAYS$ 天;;;;;;;;;;X
+NOCLAIMWENOTMONARCHY;只有君主制国家可以索取王位! ;;;;;;;;;;X
+NOCLAIMTHEYNOTMONARCHY;他们不是君主制国家! ;;;;;;;;;;X
+HRE;中原;;;;;;;;;;X
+HRE_ADJ;中原的;;;;;;;;;;X
+CARDINAL_CHANCE_INSTANT;有 $CHANCE$% 的机会你将得到下一个枢机主教. ;;;;;;;;;;X
+CARDINAL_CHANCE_DELAYED;你有 $PROVINCES$个中原省份, 对天子有$INFLUENCE$%的影响力. 获得枢机主教的机会也取决于这些省份的税收份额. ;;;;;;;;;;X
+VASSALIZE;附庸 $WHO$. \n;;;;;;;;;;X
+M_FOCUS_BUTTON;转到国家重点地区;;;;;;;;;;X
+M_FOCUS_BUTTON_NO;我们尚未设立国家重点地区;;;;;;;;;;X
+HRE_INTERNAL_CB_ENABLED;允许中原内的战争;;;;;;;;;;X
+HRE_INTERNAL_CB_DISABLED;不允许中原内的战争;;;;;;;;;;X
+PERSONAL_UNION;联合统治;;;;;;;;;;X
+HEREDITARY_RULE;世袭统治;;;;;;;;;;X
+DISMANTLE_HRE;解散中原;;;;;;;;;;X
+plutocratic_administration_title;采纳金权政治;;;;;;;;;;X
+plutocratic_administration_desc;在那些经济主要依靠贸易的国家, 商人们索要\n政治地位和权利的可能性增加. 当我国的首都\n位于一个有利可图的贸易中心, 随着一个商人\n阶级的形成, 我们可以成立一个贸易同盟来增\n加我国未来的经济增长. ;;;;;;;;;;X
+EFFECTIVE_DISTANCE;有效距离;;;;;;;;;;X
+MOVE_FOCUS_DESC_HEADER;对此地和周边地区的影响:;;;;;;;;;;X
+CAN_CREATE_COTS;可以建立贸易中心;;;;;;;;;;X
+KILL_HEIR_EFFECT;当前继承人 ($NAME$) 将会死去. \n;;;;;;;;;;X
+LOCAL_PRODUCTION_EFFICIENCY;本地工业生产效率;;;;;;;;;;X
+CD_TRADE_RIGHTS;给予 $COUNTRY$ 关于 $GOODS$ 的贸易权 . ;;;;;;;;;;X
+commission_painting_title;委托作画;;;;;;;;;;X
+commission_painting_desc;雇佣一个当前最伟大的艺术家之一创造一副杰作. ;;;;;;;;;;X
+endorse_culture_title;尊重当地文化;;;;;;;;;;X
+endorse_culture_desc;接受当地的各种艺术家和演员. ;;;;;;;;;;X
+CULTURAL_TRADITION_IRO;每年变化: ;;;;;;;;;;X
+CULTURAL_TRADITION_DRO;文化传统是你国家的知识分子的潜力. 战争时期和雇佣臣属会减低你的文化传统. 文化传统通过决议, 建筑, 吏员, 事件来增加. ;;;;;;;;;;X
+HEADER_CULTURE;文化;;;;;;;;;;X
+CULTURAL_GREATMEN;雇佣臣属;;;;;;;;;;X
+CULTURAL_DECISIONS;中央决议;;;;;;;;;;X
+HAVE_CULTURAL_TRADITION_UNDER;文化传统不足 ;;;;;;;;;;X
+HAVE_CULTURAL_TRADITION_OVER;文化传统至少有 ;;;;;;;;;;X
+DEFINE_HEIR_EFFECT_UNKNOWN;一个新的合法继承人诞生了. \n;;;;;;;;;;X
+DYNASTY_IS;统治家族是 ';;;;;;;;;;X
+DYNASTY_IS_NOT;统治家族不是 ';;;;;;;;;;X
+ADD_HEIR_CLAIM;继承的正当性;;;;;;;;;;X
+DEFENDER_DESC;我们的兄弟将会请求信仰守护者帮助他们对抗异端\n和异教徒. 并且这将消耗$VALUE$. 另外, 在 $MONTHS$ 月后, \n比当前信仰守护者更有威望的国家可以夺取此头衔. ;;;;;;;;;;X
+CW_WARNDOF; $COUNTRY$ 是 $RELIGION$ 的信仰守护者, 它会保护这一它们. ;;;;;;;;;;X
+CW_WARNDOF2; $COUNTRY$ 是 $RELIGION$ 的信仰守护者, 它会保护 $ENEMY$. ;;;;;;;;;;X
+LAND_MAINTENANCE_MODIFIER;陆军维护费修正;;;;;;;;;;X
+NAVAL_MAINTENANCE_MODIFIER;海军维护费修正;;;;;;;;;;X
+CURRENT_DEFENDER_TIP; $COUNTRY$ 会保持这一头衔直到他们输掉一场战争或者有一个\n拥有更高威望的国家宣称这个头衔. ;;;;;;;;;;X
+CAN_CLAIM_DOF;现在我们可以宣称我们是信仰守护者了! ;;;;;;;;;;X
+S_M_PRONOUN;他;;;;;;;;;;X
+S_F_PRONOUN;她;;;;;;;;;;X
+CAP_S_M_PRONOUN;他;;;;;;;;;;X
+CAP_S_F_PRONOUN;她;;;;;;;;;;X
+O_M_PRONOUN;他;;;;;;;;;;X
+O_F_PRONOUN;她;;;;;;;;;;X
+CAP_O_M_PRONOUN;他;;;;;;;;;;X
+CAP_O_F_PRONOUN;她;;;;;;;;;;X
+POSS_M_PRONOUN;他的;;;;;;;;;;X
+POSS_F_PRONOUN;她的;;;;;;;;;;X
+CAP_POSS_M_PRONOUN;他的;;;;;;;;;;X
+CAP_POSS_F_PRONOUN;她的;;;;;;;;;;X
+M_ADJ;他的;;;;;;;;;;X
+F_ADJ;她的;;;;;;;;;;X
+CAP_M_ADJ;他的;;;;;;;;;;X
+CAP_F_ADJ;她的;;;;;;;;;;X
+alert_superior_unit_type_instant;较好的兵种组;;;;;;;;;;X
+alert_superior_unit_type_delayed;这些兵种也许是更好的选择:;;;;;;;;;;X
+IS_SUPERIOR_TO; 更优越于 ;;;;;;;;;;X
+CURRENT_EMPEROR;来自 $NAME$的 $RULERNAME$ 是中原霸主;;;;;;;;;;X
+DOMESTIC_MODIFIERS;修正;;;;;;;;;;X
+MDEATH_PU_CONTINUES;和  $COUNTRY$  的联合统治得到延续;;;;;;;;;;X
+HAVE_LESS_DIPLOMATIC_RELATION;关系低于;;;;;;;;;;X
+HAVE_DIPLOMATIC_RELATION;关系好于;;;;;;;;;;X
+AND_TRIGGER_STARTS;以下条件必须满足;;;;;;;;;;X
+HAVE_MORE_TRADE_RIGHTS_THAN;贸易权的数目至少达到 ;;;;;;;;;;X
+HAVE_NOT_MORE_TRADE_RIGHTS_THAN;贸易权的数目不足 ;;;;;;;;;;X
+HAVE_TRADE_RIGHTS;拥有 $WITH$ 的 $GOODS$ 贸易权;;;;;;;;;;X
+DO_NOT_HAVE_TRADE_RIGHTS;没有 $WITH$ 的 $GOODS$ 的贸易权;;;;;;;;;;X
+REVOLUTIONARY_WAR_NAME;第$ORDER$次 $FIRST$-$SECOND$ 革命战争;;;;;;;;;;X
+end_bosphorous_sound_toll_title;终止海峡税;;;;;;;;;;X
+end_bosphorous_sound_toll_desc;和我们黑海新垦区的贸易因为巨额的海峡通过费正在成为一个陷阱. 我们要, 想办法, 让控制海峡的国家给予热那亚一些让步. ;;;;;;;;;;X
+black_sea_free_trade;废止海峡税;;;;;;;;;;X
+desc_black_sea_free_trade;热那亚的船只可以免除缴税自由地通过海峡, 避免被骚扰, 检查, 或者勒索了. ;;;;;;;;;;X
+end_sound_toll_title;终止海峡税;;;;;;;;;;X
+end_sound_toll_desc;够了就是够了. 控制海峡两岸不表示可以控制通过海峡的贸易. 要么与他们交好, 要么用武力打垮他们. 无论如何, 我们通过卡特加特海峡的贸易应该自由无阻. ;;;;;;;;;;X
+free_shipping_through_the_sound;自由通行海峡;;;;;;;;;;X
+desc_free_shipping_through_the_sound;我们的船只不用再缴海峡税, 我们的贸易额也因此更多了. ;;;;;;;;;;X
+HISTORY_OWNER_CHANGE;被$NEW$吞并. ;;;;;;;;;;X
+HISTORY_DISCOVERED_BY;被$GROUP$的 $DISCOVERER$ 发现. ;;;;;;;;;;X
+HISTORY_BECAME_COT;成为贸易中心. ;;;;;;;;;;X
+HISTORY_LOST_COT;不再是贸易中心. ;;;;;;;;;;X
+HISTORY_BUILDING_CONSTRUCTED;完成了$BUILDING$的修建. ;;;;;;;;;;X
+HISTORY_BUILDING_DEMOLISHED;$BUILDING$被毁掉. ;;;;;;;;;;X
+HISTORY_TRADE_GOODS_CHANGE;出产$NEW$而取代了原本的$OLD$. ;;;;;;;;;;X
+HISTORY_RELIGION_CHANGE;舍弃了他们的旧信仰而转信$RELIGION$. ;;;;;;;;;;X
+HISTORY_CULTURE_CHANGE;接受了 $CULTURE$ 文化. ;;;;;;;;;;X
+HISTORY_OCCUPIED_BY;被 $COUNTRY$ 占领. ;;;;;;;;;;X
+HISTORY_LIBERATED_BY;从$OLD_ADJ$ 占领下被解放. ;;;;;;;;;;X
+HISTORY_CORE_ADD;成为 $COUNTRY$ 的核心领土. ;;;;;;;;;;X
+HISTORY_CORE_REMOVE;不再是 $COUNTRY$ 的核心领土. ;;;;;;;;;;X
+HISTORY_JOINED_EMPIRE;加入中原. ;;;;;;;;;;X
+HISTORY_LEFT_EMPIRE;离开中原. ;;;;;;;;;;X
+HISTORY_CITY_GROWTH;人口超过了$SIZE$. ;;;;;;;;;;X
+HISTORY_CITY_RENAMED;省会改名为$NEW$. ;;;;;;;;;;X
+HISTORY_ADVISOR;一个当地的 $TYPE$, 叫 $NAME$ 的成名了. ;;;;;;;;;;X
+HISTORY_DECISION;通过决议: $DECISION$. ;;;;;;;;;;X
+xdesc_free_shipping_through_the_sound;我们的船只不用再缴海峡税, 我们的贸易额也因此更多了.;;;;;;;;;;X
+YEARLY_CULTURAL_TRADITION;年度文化传统变化;;;;;;;;;;X
+EVTNAME9468;僭越王位;;;;;;;;;;X
+EVTDESC9468;' $DYNASTY$家族自从获得王位之后就没有什么好消息. 如果你问我怎么办, 我觉得你应该想想, 那些好的事情都是, 万能的神给我们的预示, 说明我的摄政获得了神的喜爱. 因为神站在我这边, 我应该, 由此, 自己去接受王位. 晚安, 我可爱的小王子. ';;;;;;;;;;X
+EVTOPTA9468;唉, 这是命中注定了的. ;;;;;;;;;;X
+EVTOPTB9468;你这叛徒, 给我去挖矿吧! ;;;;;;;;;;X
+EVTNAME9469;明亮的星辰;;;;;;;;;;X
+EVTDESC9469;'命运之线总是变幻莫测, 在荣誉和永恒的锋利边缘维持着平衡. 莫测的, 是命运的狂想. 木星的星位, 和月亮都在第七宫内. 我不知道, 他是谁, 但是星象预示了今日在皇宫内诞生的一个孩子, 有朝一日将会成为一个强大王国的国王. ' 占星师如是说. 今日, 王后刚生下了一个孩子.;;;;;;;;;;X
+EVTOPTA9469;我应该为他起名为亚历山大;;;;;;;;;;X
+EVTOPTB9469;他应该叫做凯撒;;;;;;;;;;X
+illegitimate_ruler;统治者被认为是不合法的;;;;;;;;;;X
+desc_illegitimate_ruler;我们的大多数人民认为我们目前的统治者不合法. ;;;;;;;;;;X
+EVTNAME9470;联姻政策得到回报;;;;;;;;;;X
+EVTDESC9470;'陛下! 陛下! ' 传令官甚至都不试图隐藏他们兴奋. '好消息! '. '我们家族的一个孩子成为了一个王位的首选继承人! ';;;;;;;;;;X
+EVTOPTA9470;接招吧, 哈布斯堡家族. ;;;;;;;;;;X
+PEACE_PROV_SCORE_DESC;每个省份的价值取决于它的税收与人力, 没有被占领的省份价值翻倍, \n省份的价值将在被占领  $YEARS$  之后慢慢减少到原来的  $MIN$  %;;;;;;;;;;X
+CONFIRM_WHITE_PEACE;同样无条件停火;;;;;;;;;;X
+CONFIRM_WHITE_PEACE_DESC;无条件停火意味着双方都无法获胜, \n双方恶名与声望将不会改变. \n$ACCEPTANCE$  ;;;;;;;;;;X
+HEIR_AGE_LESS_THAN;继承人的年龄小于 ;;;;;;;;;;X
+HEIR_AGE_AT_LEAST;继承人的年龄至少要 ;;;;;;;;;;X
+USURPEROTHER_SETUP;当篡位者夺取了王位 ;;;;;;;;;;X
+USURPEROTHER_HEADER;篡位! ;;;;;;;;;;X
+USURPEROTHER_1;一位来自 $COUNTRY$ 的使者;;;;;;;;;;X
+USURPEROTHER_2;告知我们篡位者;;;;;;;;;;X
+USURPEROTHER_3;$USURPER$;;;;;;;;;;X
+USURPEROTHER_4;已经统治了;;;;;;;;;;X
+USURPEROTHER_5; $COUNTRY$ ;;;;;;;;;;X
+USURPEROTHER_6;*;;;;;;;;;;X
+USURPEROTHER_LOG;篡位者$USURPER$已经夺取了 $COUNTRY$ 的王位;;;;;;;;;;X
+USURPEROTHER_BTN1;好的;;;;;;;;;;X
+USURPEROTHER_BTN2;好的;;;;;;;;;;X
+USURPEROTHER_BTN3;前往;;;;;;;;;;X
+USURPEROTHER_MAP;*;;;;;;;;;;X
+EVTNAME9471; $PROVINCENAME$ 边境的紧张局势;;;;;;;;;;X
+EVTDESC9471;国与国的边界并非是永恒的, 而是随着各种因素\n不断改变着. 历史或许会证明将 $PROVINCENAME$ \n在$YEAR$在位之时纳入我国是大势所趋, \n $COUNTRY$ 位于 $PROVINCENAME$ \n的重点省份和它的财富使另一边的人们开始妒忌了, \n虽然这对我们不公平, 但是我们位于\n $PROVINCENAME$ 的重点省份附近的边界冲突已经\n使邻国有了对我们的宣战借口.;;;;;;;;;;X
+EVTOPTA9471;那也没办法;;;;;;;;;;X
+benign_neglect;善意的忽视;;;;;;;;;;X
+desc_benign_neglect;我们在这个省份的不干涉经济政策\n已经使它成为了当地的经济中心;;;;;;;;;;X
+EVTNAME9472;善意的忽视;;;;;;;;;;X
+EVTDESC9472;看来我们的政府把 $PROVINCENAME$ 治理的不错, \n我们的经济政策已经使当地变的十分繁荣;;;;;;;;;;X
+EVTOPTA9472;那就继续好好发展吧;;;;;;;;;;X
+EVTOPTB9472;既然如此那就加税吧;;;;;;;;;;X
+EVTNAME9473;政府特许学校;;;;;;;;;;X
+EVTDESC9473;在$YEAR$年我们宣布$MONARCHTITLE$在\n $PROVINCENAME$ 设立了一所政府特许学校';;;;;;;;;;X
+EVTOPTA9473;知识就是力量! ;;;;;;;;;;X
+EVTOPTB9473;不;;;;;;;;;;X
+EVTNAME9475;战争的老兵;;;;;;;;;;X
+EVTDESC9475;位于 $PROVINCENAME$ 的老兵协会中有不少人\n都参加了我们上一次战争并因此受了伤, 他们提交\n了一份要求被救济的请愿状. 我们的政府现在对退\n役老兵的待遇貌似实在是不怎么样. "$MONARCHTITLE$, \n我们希望我们对 $COUNTRY$ 所作出的贡献能\n有所回报". 如果我们能让国民明白我们绝不会忘\n记那些为国奋战的老兵们, 从长局看来我们就能招\n募到更多愿意参军的年轻人;;;;;;;;;;X
+EVTOPTA9475;谢谢你们对祖国的忠诚, 我勇敢的兄弟们;;;;;;;;;;X
+EVTOPTB9475;我认为战争已经结束了;;;;;;;;;;X
+veterans_home;退伍军人疗养所;;;;;;;;;;X
+desc_veterans_home;这个省份的退伍军人疗养所为老兵们提供周全的照顾. ;;;;;;;;;;X
+HISTORY_PROVINCE_RENAMED;把 $OLD$ 命名为 $NEW$ ;;;;;;;;;;X
+LEDGER_LEGITIMACY;正统性;;;;;;;;;;X
+LEDGER_INFAMY;恶名;;;;;;;;;;X
+LEDGER_PAPAL_INF;教廷影响力;;;;;;;;;;X
+LEDGER_TRADE_LEAGUE;贸易联盟;;;;;;;;;;X
+EVTNAME9476;$DYNASTY$家族;;;;;;;;;;X
+EVTDESC9476;我们家族在$FROMCOUNTRY$的分支\n在我们困难的时候送来了援助;;;;;;;;;;X
+EVTOPTA9476;$DYNASTY$家族永远团结一心;;;;;;;;;;X
+EVTNAME9477;$DYNASTY$家族;;;;;;;;;;X
+EVTDESC9477;我们在$FROMCOUNTRY$的亲戚们对我们现在\n的困难无动于衷, 希望上帝会原谅他们这种背信弃义\n的行为;;;;;;;;;;X
+EVTOPTA9477;一个不团结的家族将不会长久;;;;;;;;;;X
+thalassocracy;海权主义;;;;;;;;;;X
+desc_thalassocracy;为了我们的海洋, 我们必须掌控制海权. 我们是一个依靠大海为生的民族, \n我们的国土与新垦区遍布世界, 我们的船只遍布\n四海. 我们以冰冷的海洋为生, 我们绝不允许任\n何人指染她! ;;;;;;;;;;X
+confirm_thalassocracy_title;确认建立海权主义;;;;;;;;;;X
+confirm_thalassocracy_desc;建立海权主义的话我们将在海军方面得到额外的\n奖励, 使我们在海上立于不败之地;;;;;;;;;;X
+disrupt_genoese_trade_title;打击热那亚的贸易;;;;;;;;;;X
+disrupt_genoese_trade_desc;万恶热那亚已经取得了博斯普鲁斯的自由贸易权\n并大大的抢夺了我们的市场. 我们必须垄断利古里亚\n的市场或者占领他们在黑海的新垦区来作为反击. ;;;;;;;;;;X
+expand_the_franchise_title;扩展特许经销权;;;;;;;;;;X
+expand_the_franchise_desc;眼前的这些衣服都有着 $COUNTRY$ 自豪的印章, \n明天你的商人们将把它们卖到遥远的地方来换取\n会进入你的保险箱的金银;;;;;;;;;;X
+boom_economy;经济大繁荣;;;;;;;;;;X
+desc_boom_economy;我们已经渡过了萧条期, 经济开始高速增长! ;;;;;;;;;;X
+secure_trade_rights_title;确保贸易权;;;;;;;;;;X
+secure_trade_rights_desc;他们轻蔑的说 $COUNTRY$ 是一个小店主之国! \n他们轻视金钱的因为他们不明白它的本质, 它的\n兴衰起伏与好恶. 但你明白这点, 现在是时间去证\n明一下了.;;;;;;;;;;X
+restore_currency_title;重振我们的货币体系;;;;;;;;;;X
+restore_currency_desc;我们稳健的货币体系曾经世界闻名, 但是通货膨胀\n已经让它的价值大跌, 现在外国商人已经不再把它\n作为通货了. $MONARCHTITLE$, \n我们请求你重振我们的货币吧;;;;;;;;;;X
+implement_gold_standard_title;使用金本位;;;;;;;;;;X
+implement_gold_standard_desc;让其他国家去贬值他们的钱吧, 我们的货币应该和黄\n金挂钩, 它将被认同为世界的流通货币. 不过小心, \n这样会购销你之前借出去的贷款. ;;;;;;;;;;X
+gold_standard;金本位制;;;;;;;;;;X
+desc_gold_standard;我们现在在金本位制度下的通货膨胀会比较少;;;;;;;;;;X
+EVTNAME9478;贬值的货币;;;;;;;;;;X
+EVTDESC9478;尽管我们曾承诺会保持坚挺的货币, 但我们还是得\n让它贬值. $COUNTRY_ADJ$的金币已经被各\n国的银行和商人们所抛弃, 它的价值正在狂跌. ;;;;;;;;;;X
+EVTOPTA9478;我才印了一点点钞票而已! ;;;;;;;;;;X
+separation_of_powers;政法分立;;;;;;;;;;X
+desc_separation_of_powers;我们已经建立了一套政法分立的宪法, 立法权将独立\n与王权. 人们对他们新得到的自由十分满意, 而我们的\n政府也能更高效的运作;;;;;;;;;;X
+formalize_separation_of_powers_title;使政法分立正式化;;;;;;;;;;X
+formalize_separation_of_powers_desc;对宪法进行一些改革, 明确各政府部门的权力, 责任\n与关系, 这样就能使政府更高效的运作并使大众对其\n进行有效的监督;;;;;;;;;;X
+EVTNAME9479;恢复宪法;;;;;;;;;;X
+EVTDESC9479;这个国家的政府转换是不合法的, 我们要求重新建立君主立宪制;;;;;;;;;;X
+EVTOPTA9479;为什么你总记着这些小事;;;;;;;;;;X
+EVTOPTB9479;好吧, 既然你这么看的话...;;;;;;;;;;X
+cult_of_reason;理性崇拜;;;;;;;;;;X
+desc_cult_of_reason;上帝已经死了, 再也不会复活了, 我们杀了他. \n身为凶手的我们如何才能重新振作起来呢? \n世界上最伟大的最神圣的已经在我们的刀下死亡了;;;;;;;;;;X
+go_cult_of_reason_title;理性崇拜;;;;;;;;;;X
+go_cult_of_reason_desc;古老的神和他的偶像们在文明世界面前坠落了, \n长期被无知的枷锁捆绑住的 $COUNTRY$ 的\n人们在一个全新的世界面前觉醒了. 上帝在人类\n无尽的力量之前已经死了;;;;;;;;;;X
+EVTNAME9480;停止亵渎;;;;;;;;;;X
+EVTDESC9480; $COUNTRY$ 的人民的生活正在渐渐恢复原状, \n在那些日子里信奉其他信仰甚至支持其他的日历都\n是十分安全的. 当理智沉睡的时候会产生恶魔, \n但是当理智觉醒的时候会比恶魔更可怕;;;;;;;;;;X
+EVTOPTA9480;在 $PROVINCENAME$ 地区的恐惧与憎恶;;;;;;;;;;X
+EVTNAME9481; $PROVINCENAME$ 的怪异;;;;;;;;;;X
+EVTDESC9481;黄昏总是最糟糕的时间, 没有月亮的天空飘着环状的云, \n残星就如碎玻璃一样布满天空, 吊灯在房间内投射出奇怪的阴影. \n之后, 人们总会有一股奇怪的, 不对劲的感觉. 这图像看上去总是有一股.... 腐烂的样子. \n回想起来, 这一切都开始于$HEIR$出生之后;;;;;;;;;;X
+EVTOPTA9481;总是工作而不娱乐, 即使是聪明的 $MONARCH$ 也变傻了;;;;;;;;;;X
+EVTOPTB9481;万能的主呀! ;;;;;;;;;;X
+EVTNAME9482;发现;;;;;;;;;;X
+EVTDESC9482;"我的殿下$MONARCHTITLE$...", 你立即察觉到有什么不对劲. \n在他的声音之下影藏着轻蔑与恐惧. "...东边地窖\n中的新建的砖墙, 那之后没有藏了什么东西吧? "\n你全都记起来了, 身体感觉起来多么小呀, 放在潮\n湿的空间内, 躺在砖上. 那让你觉得发自内心的疾\n病感. 杀死你的子孙并不是你预料之中的发泄. \n在那一瞬间, 有什么东西在你的脑中闪过...;;;;;;;;;;X
+EVTOPTA9482;我都干了什么呀! ? ;;;;;;;;;;X
+EVTOPTB9482; $MONARCH$ 在此! ;;;;;;;;;;X
+EVTNAME9483;与恐惧共舞;;;;;;;;;;X
+EVTDESC9483;宫廷中充满了时有时无的古怪气氛, 你觉得自己很饿, 就像几个月没吃东西一样. \n残星在无月的天空中嘲笑着你, 自由自在, 无拘无束. \n你的直觉告诉你这些星星看上去倒是挺不错的. ;;;;;;;;;;X
+EVTOPTA9483;那与我的我的血亲继承人无关! ;;;;;;;;;;X
+EVTOPTB9483;我愿意用我被诅咒的灵魂去换一杯啤酒;;;;;;;;;;X
+relief_from;从恶魔手中解放;;;;;;;;;;X
+desc_relief_from;这个国家刚刚从一个大恶魔手中解放出来了;;;;;;;;;;X
+NAVAL_RANGE;海军作战距离;;;;;;;;;;X
+A_PREVIOUS_RULER;一位先前的统治者;;;;;;;;;;X
+AN_OLD_RULER;一位年老的统治者;;;;;;;;;;X
+ONE_GENERAL;我们的一位将军;;;;;;;;;;X
+ONE_ADMIRAL;我们的一位舰队指挥官;;;;;;;;;;X
+AN_OLD_WAR;一场很久以前的战争;;;;;;;;;;X
+UNIT_GROUP_CHANGE;军事单位晋级为 $GROUP$ 组. \n;;;;;;;;;;X
+HAVENT_UNIT_TYPE_GROUP;没有 $GROUP$ 组的军事单位;;;;;;;;;;X
+HAVE_UNIT_TYPE_GROUP;有着 $GROUP$ 组的军事单位;;;;;;;;;;X
+EVTOPT9480;或许那才是最好的;;;;;;;;;;X
+MENU_MESSAGES_ALL;全部;;;;;;;;;;X
+MENU_MESSAGES_DYNASTY;王朝;;;;;;;;;;X
+MENU_MESSAGES_DIPLOMACY;外交;;;;;;;;;;X
+MENU_MESSAGES_TRADE;贸易;;;;;;;;;;X
+MENU_MESSAGES_RELIGION;宗教;;;;;;;;;;X
+MENU_MESSAGES_EVENTS;事件;;;;;;;;;;X
+MENU_MESSAGES_GOVERNMENT;政府;;;;;;;;;;X
+MENU_MESSAGES_MILITARY;军事;;;;;;;;;;X
+MENU_MESSAGES_COMBAT;战斗;;;;;;;;;;X
+MENU_MESSAGES_OTHER;其他;;;;;;;;;;X
+M_HISTORY_BUTTON;历史;;;;;;;;;;X
+MILITARY_FIRE_LABEL;远程;;;;;;;;;;X
+MILITARY_SHOCK_LABEL;近战;;;;;;;;;;X
+MILITARY_COUNT_LABEL;军事单位;;;;;;;;;;X
+COUNTRY_HISTORY;国家历史;;;;;;;;;;X
+PROVINCE_HISTORY;省份历史;;;;;;;;;;X
+ENEMY_OCC;敌军;;;;;;;;;;X
+WELOSECLAIM_SETUP;当我们失去了一个对他国王位宣称权的时候;;;;;;;;;;X
+WELOSECLAIM_HEADER;$MONARCHTITLE$;;;;;;;;;;X
+WELOSECLAIM_1;失去宣称权;;;;;;;;;;X
+WELOSECLAIM_2;我们已经失去了以下宣称权;;;;;;;;;;X
+WELOSECLAIM_3;$AGAINST$;;;;;;;;;;X
+WELOSECLAIM_4;*;;;;;;;;;;X
+WELOSECLAIM_5;*;;;;;;;;;;X
+WELOSECLAIM_6;*;;;;;;;;;;X
+WELOSECLAIM_LOG;我们已经失去了对$AGAINST$的王位宣称权;;;;;;;;;;X
+WELOSECLAIM_BTN1;好的;;;;;;;;;;X
+WELOSECLAIM_BTN2;好的;;;;;;;;;;X
+WELOSECLAIM_BTN3;前往;;;;;;;;;;X
+WELOSECLAIM_MAP;*;;;;;;;;;;X
+THEYLOSECLAIMUS_SETUP;当他国失去的对我国王位的宣称权的时候;;;;;;;;;;X
+THEYLOSECLAIMUS_HEADER;$MONARCHTITLE$;;;;;;;;;;X
+THEYLOSECLAIMUS_1;他国失去宣称权;;;;;;;;;;X
+THEYLOSECLAIMUS_2;以下国家的统治者;;;;;;;;;;X
+THEYLOSECLAIMUS_3;$CLAIMANT$;;;;;;;;;;X
+THEYLOSECLAIMUS_4;已经失去了对我国王位的宣称权! ;;;;;;;;;;X
+THEYLOSECLAIMUS_5;*;;;;;;;;;;X
+THEYLOSECLAIMUS_6;*;;;;;;;;;;X
+THEYLOSECLAIMUS_LOG;$CLAIMANT$失去了对我国王位的宣称权;;;;;;;;;;X
+THEYLOSECLAIMUS_BTN1;好的;;;;;;;;;;X
+THEYLOSECLAIMUS_BTN2;好的;;;;;;;;;;X
+THEYLOSECLAIMUS_BTN3;前往;;;;;;;;;;X
+THEYLOSECLAIMUS_MAP;*;;;;;;;;;;X
+COUNTRY_HISTORY_HEADER; $COUNTRY$ 的历史;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE;$NAME$之战也许决定了战争的胜负, \n一共有$ATTACKER_SIZE$$ATTACKER$与$DEFENDER_SIZE$$DEFENDER$参加了战斗. \n结果是$ATTACKER$$ATTACKER_RESULT$, $DEFENDER$$DEFENDER_RESULT$;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_1;战争中最重要的一张战斗是$NAME$之战, \n在$ATTACKING_COMMANDER$统领下的$ATTACKER$军进攻了在$DEFENDER$统领之下的$DEFENDER$军. \n战斗结果是$ATTACKER_SIZE$$ATTACKER$军$ATTACKER_RESULT$, $DEFENDER_SIZE$$DEFENDER$军$DEFENDER_RESULT$;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_2;战争中最具决定性的一次战斗是当$ATTACKER$$ATTACKING_COMMANDER$统领下的$ATTACKER_SIZE$兵马, \n$ATTACKER_RESULT$的攻击了$DEFENDER$军在$DEFENDING_COMMANDER$统领下的的$DEFENDER_SIZE$兵马;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_3;战争的转折点是$ATTACKING_COMMANDER$与$DEFENDING_COMMANDER$对决的$NAME$之战, \n当$ATTACKER$军的$ATTACKER_SIZE$兵马, $ATTACKER_RESULT$的攻击了$DEFENDER$军的$DEFENDER_SIZE$兵马;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_4;历史学家们认为战争中最具决定性的一次战斗是当$ATTACKER$$ATTACKING_COMMANDER$统领下的$ATTACKER_SIZE$兵马, \n$ATTACKER_RESULT$的攻击了$DEFENDER$军在$DEFENDING_COMMANDER$统领下的的$DEFENDER_SIZE$兵马;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_A_NO_COMMANDER;战争的转折点是$NAME$之战, \n$ATTACKER$军的$ATTACKER_SIZE$兵马攻击了$DEFENDER$军在$DEFENDING_COMMANDER$统领下的的$DEFENDER_SIZE$兵马;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_D_NO_COMMANDER;历史学家们认为战争中最具决定性的一次战斗是当$ATTACKER$军在$ATTACKING_COMMANDER$统领下的$ATTACKER_SIZE$兵马, \n$ATTACKER_RESULT$的攻击了$DEFENDER$军的$DEFENDER_SIZE$兵马;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL;最重要的一次战斗是$NAME$之战, \n当$ATTACKING_COMMANDER$旗下的由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了$DEFENDING_COMMANDER$旗下由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL_1;最重要的一次战斗是$NAME$之战, \n当$ATTACKING_COMMANDER$旗下的由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了$DEFENDING_COMMANDER$旗下由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL_2;战争中最重要的一次战斗是$NAME$之战, \n当$ATTACKING_COMMANDER$旗下的由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了$DEFENDING_COMMANDER$旗下由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL_3;战争中最重要的一次战斗是$NAME$之战, \n当$ATTACKING_COMMANDER$旗下的由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了$DEFENDING_COMMANDER$旗下由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL_4;战争中最重要的一次战斗是$NAME$之战, \n当$ATTACKING_COMMANDER$旗下的由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了$DEFENDING_COMMANDER$旗下由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL_A_NO_COMMANDER;战争中最重要的一次战斗是$NAME$之战, \n当$ATTACKING_COMMANDER$旗下的由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+COUNTRY_HISTORY_BATTLE_NAVAL_D_NO_COMMANDER;战争中最重要的一次战斗是$NAME$之战, \n当由$ATTACKER_SIZE$条船组成的$ATTACKER$舰队$ATTACKER_RESULT$突击了$DEFENDING_COMMANDER$旗下由$DEFENDER_SIZE$条船组成的$DEFENDER$舰队. ;;;;;;;;;;X
+HEAVY_LOSSES;损失了他们的主力军;;;;;;;;;;X
+SOME_LOSSES;损失了一部分部队;;;;;;;;;;X
+NO_LOSSES;几乎毫发无损;;;;;;;;;;X
+INCOMEADVISORHIRED;出租臣属;;;;;;;;;;X
+trade_rights;贸易权;;;;;;;;;;X
+GUARANTNEWDESC;您希望保障 $COUNTRY$ 的\n独立吗? 这样在她被攻击的时候\n我们就可以保护她;;;;;;;;;;X
+GUARANTDESC;保障某国独立可以让你在她遭到攻击的时候对攻击\n她的国家有宣战权;;;;;;;;;;X
+WARNNEWDESC;您确定对 $COUNTRY$ 发出警告吗? \n这样的话如果她攻击我们\n的邻居的话我们就可以参战;;;;;;;;;;X
+WARNDESC;发警告就可以对进攻我们邻居的国家拥有宣战权;;;;;;;;;;X
+JOINLEAGUE;加入贸易同盟;;;;;;;;;;X
+FORCED_JOIN_LEAGUE;$WHO$将加入$ADJ$的贸易同盟;;;;;;;;;;X
+CANCELTRADELEAGUETRUCE;我们不能在还有停战条约的时候离开贸易同盟;;;;;;;;;;X
+CB_JOIN_LEAGUE;强制加入贸易同盟;;;;;;;;;;X
+TRADERIGHTSLEAGUE;我们不能和加入其他贸易同盟的国家签订贸易协定;;;;;;;;;;X
+SUPPLY_CORE;核心:;;;;;;;;;;X
+NOTRADERIGHTSLEFT;他们已经没有对贸易协定有价值的货物了;;;;;;;;;;X
+UNIT_ENABLE_PATROL_NEW;开始巡逻;;;;;;;;;;X
+UNIT_DISABLE_PATROL_NEW;停止巡逻;;;;;;;;;;X
+NOCLAIMLESSER;当你被联统的时候你不能要求他国的王位;;;;;;;;;;X
+EVTNAME3097;$LIKELYREBELS$的乱军造反了! ;;;;;;;;;;X
+EVTDESC3097;叛军已经占领了我国的一些省份, \n在 $PROVINCENAME$ 的$LIKELYREBELS$叛军与其他的叛军合流了;;;;;;;;;;X
+EVTOPTA3097;万恶的反贼! ;;;;;;;;;;X
+commission_epic_to_monarch_title;国家史诗;;;;;;;;;;X
+commission_epic_to_monarch_desc;我们的人民们中流传着关于\n $RANDOM_OLD_MONARCH$ 的故事, \n故事说当 $COUNTRY$ 遭到困难时\n $RANDOM_OLD_MONARCH$ 将回来重振祖国. \n无论它是真是假, 我们可以用它来作为宣传;;;;;;;;;;X
+epic_to_monarch;国家史诗;;;;;;;;;;X
+desc_epic_to_monarch;这是一个关于曾经的国王的生平和故事;;;;;;;;;;X
+enlightenment_movement;自由? 平等? ;;;;;;;;;;X
+desc_enlightenment_movement;随着时代的发展人民渐渐开始要求自由了. 英明的 $MONARCH$ 也支持这点;;;;;;;;;;X
+support_enlightenment_movement_title;平等? 自由? 博爱? ;;;;;;;;;;X
+support_enlightenment_movement_desc;给予人民自由是好事, 但也会助长叛乱;;;;;;;;;;X
+military_modernization_muslim_title;军队现代化;;;;;;;;;;X
+military_modernization_muslim_desc;我们的文化已经和文明世界接轨, 但是最重要的军队还没有改革.;;;;;;;;;;X
+military_modernization_eastern_title;军队现代化;;;;;;;;;;X
+military_modernization_eastern_desc;我们的文化已经和文明世界接轨, 但是最重要的军队还没有改革.;;;;;;;;;;X
+military_modernization_western_title;军队现代化;;;;;;;;;;X
+military_modernization_western_desc;我们的文化已经和文明世界接轨, 但是最重要的军队还没有改革.;;;;;;;;;;X
+action_and_reaction;革新与守旧;;;;;;;;;;X
+desc_action_and_reaction;任何事物总会有人反对它, 让我们坚持过去吧;;;;;;;;;;X
+national_focus_foreign;他国的国家焦点;;;;;;;;;;X
+CORE_FRACTION_IS_LESS_THAN;核心省份比例少于;;;;;;;;;;X
+CORE_FRACTION_IS_AT_LEAST;核心省份比例至少;;;;;;;;;;X
+HAVE_TRADE_LEAGUE_WITH;加入了以下国家的贸易联盟;;;;;;;;;;X
+HAVE_NOT_TRADE_LEAGUE_WITH;没有加入以下国家的贸易联盟;;;;;;;;;;X
+LEAGUE_MEMBERS_FEWER_THAN;贸易联盟成员数量少于;;;;;;;;;;X
+LEAGUE_MEMBERS_AT_LEAST;；贸易联盟成员数量至少;;;;;;;;;;X
+HAVE_A_NAVY_SMALLER_THAN;海军数量小于上限的  $PERC$  %;;;;;;;;;;X
+HAVE_A_NAVY_LARGER_THAN;海军数量至少为上限的  $PERC$  %;;;;;;;;;;X
+HAVE_A_ARMY_SMALLER_THAN;陆军数量小于上限的  $PERC$  %;;;;;;;;;;X
+HAVE_A_ARMY_LARGER_THAN;陆军数量至少为上限的  $PERC$  %;;;;;;;;;;X
+EMBARGOSUBJECT;身为附庸国不能对其他国家展开贸易制裁;;;;;;;;;;X
+EVTNAME9492;我们的君主驾崩了;;;;;;;;;;X
+EVTDESC9492;我们的君主驾崩了, 考虑到他晚年的古怪行为这或许对大家是好事;;;;;;;;;;X
+EVTOPTA9492;愿他的灵魂能进入天堂;;;;;;;;;;X
+tut_1c_30;文化界面;;;;;;;;;;X
+tut_1c_31;上方分别显示了你有多少文化, 海军和陆军传统, 下面\n是各种臣属. 你可以花费一些传统来雇佣臣属. \n臣属的能力取决于你有多少相应的传统;;;;;;;;;;X
+tut_1c_32;再下方是各种能增加文化传统的决议, 有的决议还有其他好处;;;;;;;;;;X
+tut_1c_33;任务与国家决议表单;;;;;;;;;;X
+tut_1c_34;上方是你现在的国家任务, 你不必非得完成它, 不过完\n成它都有不少好处. 下方是各种国家决议;;;;;;;;;;X
+ANY_ALLY_STARTS;任何盟友;;;;;;;;;;X
+ALL_CORES;所有核心省份;;;;;;;;;;X
+ALL_CGROUP_PROVS;所有和我们同一文化圈的省份;;;;;;;;;;X
+ALL_ADJ_COLONIES;所有临近的新垦区;;;;;;;;;;X
+ALL_REL_PROVS;所有和我们同一信仰的省份;;;;;;;;;;X
+ALL_HRE_PROVS;所有中原的省份;;;;;;;;;;X
+ALL_CGROUP_COUNTRIES;所有拥有和我们同一文化圈的 省份的国家;;;;;;;;;;X
+ALL_GOV_ENEMIES;所有革命帝国;;;;;;;;;;X
+ALL_OPPRESSORS;所有可以放出其他国家的国家;;;;;;;;;;X
+ALL_INFIDELS;所有异教国家;;;;;;;;;;X
+ALL_HERETICS;所有异端国家;;;;;;;;;;X
+ALL_PRIMITIVES;所有蛮族国家;;;;;;;;;;X
+cb_revolutionary;革命战争;;;;;;;;;;X
+cb_revolutionary_desc;他们是意识形态上的敌人! ;;;;;;;;;;X
+EVTNAME3098;$LIKELYREBELS$的谣言;;;;;;;;;;X
+EVTDESC3098;由于我们糟糕的深望, 我们的邻居把我们当成洪水了猛兽. \n$LIKELYREBELS$的同谋者在 $PROVINCENAME$ 大肆散布谣言来煽动叛乱;;;;;;;;;;X
+EVTOPTA3098;小小的困难;;;;;;;;;;X
+rebel_sentiment;叛乱的谣言;;;;;;;;;;X
+desc_rebel_sentiment;我们糟糕的声望彻底激怒这这个省份的其他国家的爱国者;;;;;;;;;;X
+TRIG_NOT_LIKELY_REBELS;一般来说叛军不会;;;;;;;;;;X
+TRIG_LIKELY_REBELS;一般来说叛军会;;;;;;;;;;X
+MOVE_CAPITAL_HRE_RULE;我们不能把首都移出或者移入中原;;;;;;;;;;X

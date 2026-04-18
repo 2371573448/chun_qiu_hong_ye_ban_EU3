@@ -1,0 +1,214 @@
+# 编号19500
+province_event = {# 农家亲励
+
+	id = 19501
+	
+	trigger = {
+		owner = {
+			has_global_flag = zhanguokaishi
+			year = 2250
+			religion_group = christian 
+		}
+		not = { has_province_modifier = nongjiaqingli }
+	}
+	
+	mean_time_to_happen = {
+		months = 7200
+
+		modifier = {
+			factor = 0.5
+			owner = { idea = improved_foraging }
+		}
+		modifier = {
+			factor = 0.65
+			owner = { idea = land_of_opportunity }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { idea = merchant_adventures }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { idea = vice_roys  }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { idea = cabinet }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { not = {serfdom_freesubjects = -2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { serfdom_freesubjects = 2 }
+		}
+	}
+	
+	title = "EVTNAME19501"
+	desc = "EVTDESC19501"
+	
+	option = {
+		name = "EVTOPTA19501"				
+			add_province_modifier = {
+				name = "nongjiaqingli"
+				duration = 9125
+			}
+	}
+}
+
+country_event = {# 阴阳之道
+
+	id = 19502
+	
+	trigger = {
+		has_global_flag = zhanguokaishi
+		year = 2250
+		religion_group = christian 
+		not = { has_country_modifier = yinyangzhidao }
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+
+		modifier = {
+			factor = 0.4
+			idea = revolution_and_counter
+		}
+		modifier = {
+			factor = 2
+			idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 0.75
+			idea = superior_seamanship
+		}
+		modifier = {
+			factor = 1.5
+			idea = vetting
+		}
+		modifier = {
+			factor = 1.5
+			not = {legitimacy = 0.6 }
+		}
+		modifier = {
+			factor = 0.75
+			prestige = 0.5
+		}
+	}
+	
+	title = "EVTNAME19502"
+	desc = "EVTDESC19502"
+	
+	option = {
+		name = "EVTOPTA19502"				
+			add_country_modifier = {
+				name = "yinyangzhidao"
+				duration = 10800
+			}
+	}
+}
+
+country_event = {# 合纵连横
+
+	id = 19503
+	
+	trigger = {
+		has_global_flag = zhanguokaishi
+		year = 2250
+		religion_group = christian 
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+
+		modifier = {
+			factor = 0.5
+			idea = naval_provisioning
+		}
+		modifier = {
+			factor = 2
+			idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 0.75
+			idea = sea_hawks
+		}
+		modifier = {
+			factor = 1.25
+			idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 0.85
+			prestige = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+	}
+	
+	title = "EVTNAME19503"
+	desc = "EVTDESC19503"
+	
+	option = {
+		name = "EVTOPTA19503"				
+			any_neighbor_country = { relation = { who = THIS value = 30 } } 
+	}
+}
+
+province_event = {# 学派冲突
+
+	id = 19504
+	
+	trigger = {
+		owner = {
+			has_global_flag = zhanguokaishi
+			year = 2250
+		}
+		or ={
+		religion =  rujia
+		religion =  fajia
+		religion =  mojia
+		religion =  daojia
+		}
+		not = { has_province_modifier = xuepaichongtu }
+	}
+	
+	mean_time_to_happen = {
+		months = 6000
+
+		modifier = {
+			factor = 0.5
+			has_province_modifier = nongjiaqingli
+		}
+		modifier = {
+			factor = 0.7
+			owner = { has_country_modifier = yinyangzhidao }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { idea = naval_provisioning }
+		}
+		modifier = {
+			factor = 2
+			owner = { not = {adm = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { adm = 7 }
+		}
+	}
+	
+	title = "EVTNAME19504"
+	desc = "EVTDESC19504"
+	
+	option = {
+		name = "EVTOPTA19504"				
+			add_province_modifier = {
+				name = "xuepaichongtu"
+				duration = 1800
+			}
+	}
+}

@@ -1,0 +1,98 @@
+owner = CHA
+controller = CHA
+culture = changdi
+religion = animism
+capital = "µÂ"
+trade_goods = fish
+hre = no
+base_tax = 8
+manpower = 0
+citysize = 28000
+fort1 = yes
+add_core = CHA
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2015.10.1 = { 
+	owner = QIG
+	controller = QIG
+        add_core = QIG
+}
+2075.1.1 = { 
+	culture = qilu
+	religion = liyuejiaohua
+}
+2222.1.1 = { 
+	citysize = 26000
+}
+2244.1.1 = { 
+	hre = no
+}
+2244.1.2 = { 
+	hre = yes
+}
+2244.1.1 = { 
+	owner = CHA
+	controller = CHA
+	add_core = CHA
+	remove_core = QIG
+}
+2244.1.2 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = CHA
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	owner = CHA
+	controller = CHA
+	add_core = CHA
+	remove_core = QIG
+	remove_core = LUG
+}
+2247.1.1 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+}
+2414.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2419.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2477.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2490.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2492.2.1 = { 
+	owner = JBW
+	controller = JBW
+	add_core = JBW
+}
+2492.7.1 = { 
+	owner = QIG
+	controller = QIG
+}

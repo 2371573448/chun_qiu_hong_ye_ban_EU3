@@ -1,0 +1,135 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+# Union tags do not suffer from the 'same_culture_group' tax penalty.
+# Primary tags are the first choice for rebel factions seeking cultural independence.
+
+huaxia = {
+	zhongyuan =  {
+		primary = PAP
+	}
+	qilu =  {
+		primary = QIG
+	}
+	guanzhong = {
+		primary = QIN
+	}
+	shanxi = {
+		primary = JIN
+	}
+	hebei = {
+		primary = YAN
+	}
+	dongtu = {
+		primary = WEG
+	}
+	jianghan = {
+		primary = CHE
+	}
+}
+man = {
+	nanchu =  {
+		primary = CHU
+	}
+	jingman = {
+		primary = LUO
+	}
+	li = {
+		primary = MIA
+	}
+}
+yi = {
+	yinyi =  {
+		primary = SON
+	}
+	laiyi = {
+		primary = LAI
+	}
+	dongyi = {
+		primary = TAG
+	}
+	chaoxian = {
+		primary = JSG
+	}
+	huaiyi = {
+		primary = HYI
+	}
+}
+di = {
+	chidi =  {
+		primary = CHI
+	}
+	baidi = {
+		primary = BAI
+	}
+	changdi = {
+		primary = CHA
+	}
+	beidi = {
+		primary = LOU
+	}
+}
+rong = {
+	shanrong =  {
+		primary = GUZ
+	}
+	xirong = {
+		primary = YQU
+	}
+}
+bayue = {
+	wuyue =  {
+		primary = YGO
+	}
+	gouwu = {
+		primary = WUG
+	}
+	ouyue = {
+		primary = OUY
+	}
+	minyue = {
+		primary = MIN
+	}
+	nanyue = {
+		primary = NAN
+	}
+	yangyue = {
+		primary = YYG
+	}
+	boliao = {
+		primary = YLG
+	}
+}
+baipu = {
+	ba = {
+		primary = BAG
+	}
+	shu =  {
+		primary = SGU
+	}
+	qiongzuo = {
+		primary = ZUO
+	}
+	yong = {
+		primary = YON
+	}
+	kunxi = {
+	}
+	dian = {
+		primary = DGU
+	}
+}
+hu = {
+	xiongnu =  {
+	}
+	donghu = {
+	}
+	xiyu = {
+	}
+	yuezhi = {
+	}
+	wusun = {
+	}
+	saizhong = {
+	}
+}

@@ -1,0 +1,358 @@
+		guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_leaders"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+
+		iconType =
+		{
+			name ="leader_banner"
+			spriteType = "GFX_leader_banner"
+			position = { x= 0 y = 150 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="land_tradition_bar"
+			spriteType = "traditionbar"
+			position = { x= 70 y = 186 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="naval_tradition_bar"
+			spriteType = "traditionbar"
+			position = { x= 250 y = 186 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "landtradition_label"
+			position = { x = 60 y =155 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		textBoxType = {
+			name = "landtradition_value"
+			position = { x = 60 y =195 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 48	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "navaltradition_label"
+			position = { x = 240 y =155 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		textBoxType = {
+			name = "navaltradition_value"
+			position = { x = 240 y =195 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 48	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "discipline_label"
+			position = { x = 150 y =155 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		textBoxType = {
+			name = "discipline_value"
+			position = { x = 150 y =195 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 48	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		
+		guiButtonType = {
+			name = "button_recruit_general"
+			position = { x=38 y =253 }
+			quadTextureSprite ="button_type_7"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		guiButtonType = {
+			name = "button_recruit_conquistador"
+			position = { x=38 y =283 }
+			quadTextureSprite ="button_type_7"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+
+
+		guiButtonType = {
+			name = "button_recruit_admiral"
+			position = { x=240 y =250 }
+			quadTextureSprite ="button_type_1"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		guiButtonType = {
+			name = "button_recruit_explorer"
+			position = { x=240 y =280 }
+			quadTextureSprite ="button_type_1"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		guiButtonType = {
+				name = "button_makerulergeneral"
+				position = { x=55 y =315}
+				quadTextureSprite ="button_type_3"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+
+		iconType =
+		{
+			name ="divider"
+			spriteType = "GFX_divider"
+			position = { x= 0 y = 350 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="fire_icon"
+			spriteType = "GFX_leader_stats_icons"
+			position = { x= 220 y = 352 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+
+		iconType =
+		{
+			name ="shock_icon"
+			spriteType = "GFX_leader_stats_icons"
+			position = { x= 256 y = 352 }
+			Orientation = "UPPER_LEFT"
+			frame = 2
+		}
+
+
+		iconType =
+		{
+			name ="maneuver_icon"
+			spriteType = "GFX_leader_stats_icons"
+			position = { x= 292 y = 352 }
+			Orientation = "UPPER_LEFT"
+			frame = 3
+		}
+
+		iconType =
+		{
+			name ="siege_icon"
+			spriteType = "GFX_leader_stats_icons"
+			position = { x= 328 y = 352 }
+			Orientation = "UPPER_LEFT"
+			frame = 4
+		}
+
+		
+		listboxType = 
+			{
+			name ="leaderlist"
+			position = { x = 0 y = 370 }
+			backGround=""
+			size = { x=364 y =170}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+
+
+	}
+
+
+
+
+	######Leaderlist entry
+
+	windowType = {
+		name = "leader_list_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =
+		{
+			name ="leader_types"
+			quadTextureSprite = "GFX_leader_types"
+			position = { x= 50 y = 00 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		guiButtonType =
+		{
+			name ="leader_banner2"
+			quadTextureSprite = "GFX_leader_banner2"
+			position = { x= 86 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+	
+		instantTextBoxType = {
+			name = "leader_name"
+			position = { x = 86 y =0 }
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y =0}
+			text = ""	
+			maxWidth = 150
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "leader_assignment"
+			position = { x = 86 y =14 }
+			format = left
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 160
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		iconType =
+		{
+			name ="leader_fire"
+			spriteType = "GFX_stars_small"
+			position = { x= 210 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="leader_shock"
+			spriteType = "GFX_stars_small"
+			position = { x= 246 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="leader_maneuever"
+			spriteType = "GFX_stars_small"
+			position = { x= 282 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="leader_siege"
+			spriteType = "GFX_stars_small"
+			position = { x= 318 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+
+	}
+
+
+}

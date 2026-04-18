@@ -1,0 +1,62 @@
+
+culture = wuyue
+religion = ancestor
+capital = "º£ÑÎ"
+trade_goods = salt
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 120
+native_ferocity = 4
+native_hostileness = 4
+
+1827.1.1 = { discovered_by = WUG }
+2100.1.1 = { discovered_by = CHU }
+2113.1.1  = {	owner = WUG
+		controller = WUG
+                citysize = 18000
+                fort1 = yes
+	    }
+2143.1.1 = { add_core = WUG }
+2190.1.1 = { religion = liyuebadao }
+2216.1.1 = { owner = YGO
+             controller = YGO
+	    }
+2221.1.1 = { add_core = YGO }
+2222.1.1 = { citysize = 28000 }
+2244.1.1 = { 
+	owner = JAG
+	controller = JAG
+	add_core = JAG
+	remove_core = YGO
+}
+2244.1.2 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+	remove_core = JAG
+}
+2246.1.2 = { 
+	owner = JAG
+	controller = JAG
+	add_core = JAG
+	remove_core = YGO
+}
+2247.1.1 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+	remove_core = JAG
+}
+2392.1.1  = {	owner = CHU
+		controller = CHU
+	    }
+2422.1.1 = {    add_core = CHU culture=nanchu  }
+2475.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1={
+        controller=REB
+        }
+2490.6.1 = { revolt={} owner=CHU controller=CHU }
+2492.2.1={owner=XCW controller=XCW add_core=XCW}

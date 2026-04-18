@@ -1,0 +1,122 @@
+#义渠科技加成
+country_event = {
+	id = 12020
+
+	major = yes
+
+	trigger = {
+		year = 2246.1.2
+		NOT = {  year = 2247.1.1 }
+		tag = YQU
+		OR = {   government = tribal_federation
+		              government = tribal_despotism
+		}
+		NOT = { has_country_modifier = YQU_buff }
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12020"
+	desc = "EVTDESC12020"
+	
+
+	option = {
+		name = "EVTOPTA12020"	
+		add_country_modifier = { 
+		name = "YQU_buff"
+		duration = -1
+		}
+	}
+}
+#义渠科技消除
+country_event = {
+	id = 12021
+
+	major = yes
+
+	trigger = {
+		tag = YQU
+		
+		NOT= {  OR = {   government = tribal_federation
+		                             government = tribal_despotism
+			      }
+		  }
+		               has_country_modifier = YQU_buff 
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12021"
+	desc = "EVTDESC12021"
+	
+
+	option = {
+		name = "EVTOPTA12021"	
+		remove_country_modifier = YQU_buff
+	}
+}
+#长狄科技加成
+country_event = {
+	id = 12022
+
+	major = yes
+
+	trigger = {
+		year = 2246.1.2
+		NOT = {  year = 2247.1.1 }
+		tag = CHA
+		OR = {   government = tribal_federation
+		              government = tribal_despotism
+		}
+		NOT = { has_country_modifier = CHA_buff }
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12022"
+	desc = "EVTDESC12022"
+	
+
+	option = {
+		name = "EVTOPTA12022"	
+		add_country_modifier = { 
+		name = "CHA_buff"
+		duration = -1
+		}
+	}
+}
+#长狄科技消除
+country_event = {
+	id = 12023
+
+	major = yes
+
+	trigger = {
+		tag = CHA
+		
+		NOT= {  OR = {   government = tribal_federation
+		                             government = tribal_despotism
+			      }
+		        }
+		           has_country_modifier =  CHA_buff 
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12023"
+	desc = "EVTDESC12023"
+	
+
+	option = {
+		name = "EVTOPTA12023"	
+		remove_country_modifier =  CHA_buff
+	}
+}

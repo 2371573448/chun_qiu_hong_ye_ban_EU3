@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "option_background"
+		texturefile = "gfx\\interface\\napoleon_interface\\option_bg.dds"
+		loadType = "FRONTEND"
+	}
+
+	textSpriteType = {
+		name = "option_closebutton"
+		texturefile = "gfx\\interface\\closebutton.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "FRONTEND"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "option_next"
+		texturefile = "gfx\\interface\\napoleon_interface\\nextoption.dds"
+		loadType = "FRONTEND"
+	}
+	
+	
+	
+	spriteType = {
+		name = "option_prev"
+		texturefile = "gfx\\interface\\napoleon_interface\\prevoption.dds"
+		loadType = "FRONTEND"
+	}
+}

@@ -1,0 +1,231 @@
+#开拓浙江
+
+kaituozhejiang = {
+	
+	type = country
+
+	allow = {
+		or = {
+					tag = YGO
+					tag = WUG
+		}
+		or = {
+			452 = { empty = yes }
+			437 = { empty = yes }
+		}
+		or = {
+			452 = { any_neighbor_province = { owned_by = this } }
+			437 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+		452 = { empty = no }
+		not = { owns = 452 }
+		437 = { empty = no }
+		not = { owns = 437 }
+	}
+	success = {
+	  	452 = { owned_by = this }
+		437 = { owned_by = this }
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	452 = { add_core = this }
+		437 = { add_core = this }
+	}
+}
+
+#附庸瓯越
+YGO_client_OUY = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	OUY = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = OUY
+	  	tag = YGO
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		OUY = { is_subject = yes }
+	    		OUY = { is_lesser_in_union = yes }
+	    		NOT = { exists = OUY }
+	  	}
+	}
+	success = {
+		overlord_of = OUY
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = YGO
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = OUY
+		}
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+#征服吴地
+YGO_annex_WUG = {
+	
+	type = country
+
+	allow = {
+		tag = YGO
+		or = {
+			not = { owns = 434 }
+			not = { owns = 449 }
+			not = { owns = 431 }
+			not = { owns = 432 }
+			not = { owns = 430 }
+		}
+		any_neighbor_country = { tag = WUG }
+	}
+	abort = {
+	}
+	success = {
+		owns = 434
+		owns = 449
+		owns = 431
+		owns = 432
+		owns = 430
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 434
+		add_temp_claim = 449
+		add_temp_claim = 431
+		add_temp_claim = 432
+		add_temp_claim = 430
+	}
+	abort_effect = {
+		remove_temp_claim = 434
+		remove_temp_claim = 449
+		remove_temp_claim = 431
+		remove_temp_claim = 432
+		remove_temp_claim = 430
+	}
+	effect = {
+		add_core = 434
+		add_core = 449
+		add_core = 431
+		add_core = 432
+		add_core = 430
+	}
+}
+
+#争霸中原
+
+Dominate_the_central_plains_YGO = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+		tag = YGO
+		is_emperor = no
+		any_country = { 
+			is_emperor = yes
+		}
+	}
+	abort = {
+	  	or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+	  	}
+	}
+	success = {
+		is_emperor = yes
+	}
+	chance = {
+		factor = 3
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		prestige = 0.20
+		relation = { who = PAP value = 100 }
+	}
+}
+
+#征服淮上
+YGO_annex_huaishang = {
+	
+	type = country
+
+	allow = {
+		tag = YGO
+		owns = 405
+		owns = 333
+		owns = 408
+		owns = 294
+		or = {
+			not = { owns = 405 }
+			not = { owns = 333 }
+			not = { owns = 408 }
+			not = { owns = 294 }
+		}
+		year = 2200
+	}
+	abort = {
+	}
+	success = {
+		owns = 405
+		owns = 333
+		owns = 408
+		owns = 294
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 405
+		add_temp_claim = 333
+		add_temp_claim = 408
+		add_temp_claim = 294
+	}
+	abort_effect = {
+		remove_temp_claim = 405
+		remove_temp_claim = 333
+		remove_temp_claim = 408
+		remove_temp_claim = 294
+	}
+	effect = {
+		add_core = 405
+		add_core = 333
+		add_core = 408
+		add_core = 294
+	}
+}

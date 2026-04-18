@@ -1,0 +1,516 @@
+guiTypes = {
+
+		windowType = {
+			name ="waroverview"
+			backGround="waroverview_background"
+			position = { x= 150 y =150 }	
+			size = { x=256 y =370 }
+			moveable = 1
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			upsound = ""
+			downsound = ""
+			fullscreen=no
+			
+			
+				listboxType = 
+				{
+					name ="left_side"
+					position = { x = 0 y = 10 }
+					backGround=""
+					size = { x= 120 y = 100}
+					Orientation = "UPPER_LEFT"
+					horisontal = 0
+					spacing = 1
+					scrollbartype = "standardlistbox_noslider"
+					borderSize = {x = 0 y = 0}
+				}
+			
+		iconType =
+			{
+				name ="waroverview_icon"
+				spriteType = "GFX_waroverview_icon"
+				position = { x= 50 y = 400 }
+				orientation = "UPPER_LEFT"
+			}
+		
+		instantTextBoxType={
+				position = {x = 260 y = 405 }
+				name = "waroverview_value"
+				font = "Main_14"
+				borderSize = {x = 0 y = 2}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "0%"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+		
+	
+
+
+			
+			listboxType = 
+			{
+				name ="us"
+				position = { x= 15 y = 40 }
+				#backGround="SandboxFloaterBackground"
+				backGround=""
+				size = { x= 245  y = 270 }
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+				Orientation = "UPPER_LEFT"
+			}
+
+			listboxType = 
+			{
+				name ="them"
+				position = { x= 267 y = 40 }
+				#backGround="SandboxFloaterBackground"
+				backGround=""
+				size = { x= 245  y = 270 }
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+			listboxType = 
+			{
+				name ="battles"
+				position = { x= 30 y = 460 }	
+				#backGround="SandboxFloaterBackground"
+				backGround=""
+				size = { x= 485  y = 100 }
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+				Orientation = "UPPER_LEFT"
+			}
+
+			guiButtonType = {
+				name = "waroverview_background"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_waroverview_background"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+			}
+			
+			
+			guiButtonType = {
+				name = "close"
+				position = { x = 207 y = 560 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CLOSE"
+				buttonFont = "Main_14_black"
+			}
+			
+			iconType = {
+				name = "war_cb_icon"
+				spriteType = "GFX_cb_core"
+				position = { x = 110 y = 22 }
+				orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType={
+				position = {x = 97 y = 22 }
+				name = "nameofwar"
+				font = "Main_16"
+				borderSize = {x = 8 y = 0}	
+				maxWidth = 360
+				maxHeight = 18
+				text = "GOTO_LIST_BOX"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			instantTextBoxType={
+				position = {x = 65 y = 332 }
+				name = "ourcav"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200000"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+
+			
+			instantTextBoxType={
+				position = {x = 148 y = 332 }
+				name = "ourinf"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200000"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			instantTextBoxType={
+				position = {x = 233 y = 332 }
+				name = "ourart"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200000"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}		
+		
+			instantTextBoxType={
+				position = {x = 53 y = 363 }
+				name = "ourtrans"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			instantTextBoxType={
+				position = {x = 111 y = 363  }
+				name = "ourgal"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+		instantTextBoxType={
+				position = {x = 173 y = 363  }
+				name = "oursmall"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			instantTextBoxType={
+				position = {x = 240 y = 363  }
+				name = "ourbig"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+		#////////////////////////// ENEMY/////////////////////////////////////////////////////////////////
+		instantTextBoxType={
+				position = {x = 319 y = 332 }
+				name = "enemycav"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200000"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+
+			
+			instantTextBoxType={
+				position = {x = 401 y = 332 }
+				name = "enemyinf"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200000"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			instantTextBoxType={
+				position = {x = 486 y = 332 }
+				name = "enemyart"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200000"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}		
+		
+			instantTextBoxType={
+				position = {x = 305 y = 363 }
+				name = "enemytrans"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			instantTextBoxType={
+				position = {x = 363 y = 363  }
+				name = "enemygal"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+		instantTextBoxType={
+				position = {x = 426 y = 363  }
+				name = "enemysmall"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			instantTextBoxType={
+				position = {x = 492 y = 363  }
+				name = "enemybig"
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 30
+				maxHeight = 20
+				text = "200"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			instantTextBoxType={
+					position = {x = 20 y = 438 }
+					name = "BattlesHeader"
+					font = "Main_16"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 505
+					maxHeight = 18
+					text = "Battles"	
+					orientation = "UPPER_LEFT"
+					format = centre
+				}
+			
+				
+			
+			
+			
+		#/////////////////////////////////////////
+		}
+		
+		windowType = {
+				name ="waroverview_countryItem"
+				backGround=""
+				position = { x= 30 y =100 }	
+				size = { x=200 y = 80 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				upsound = ""
+				downsound = ""
+				fullscreen=no
+				
+#			iconType =
+#			{
+#				name ="shield"
+#				spriteType = "GFX_thinshield"
+#				position = { x= 0 y = 0 }
+#				orientation = "UPPER_LEFT"
+#			}
+
+			guiButtonType = 
+			{
+				name ="shield"
+				quadTextureSprite = "GFX_thinshield"
+				position = { x= 0 y = 0 }
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+				Orientation = "UPPER_LEFT"
+			}
+			
+
+
+				instantTextBoxType={
+					position = {x = 70 y = 0 }
+					name = "CountryName"
+					font = "Main_16"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 350
+					maxHeight = 18
+					text = "Sweden"	
+					orientation = "UPPER_LEFT"
+					format = left
+				}
+				
+				
+				instantTextBoxType={
+					position = {x = 70 y = 16 }
+					name = "warCapacity"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 350
+					maxHeight = 18
+					text = "War Capacity"	
+					orientation = "UPPER_LEFT"
+					format = left
+				}
+				
+				instantTextBoxType={
+					position = {x = 185 y = 16 }
+					name = "warCapacityValue"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 30
+					maxHeight = 18
+					text = "100%"	
+					orientation = "UPPER_LEFT"
+					format = right
+				}
+				
+				
+				instantTextBoxType={
+					position = {x = 70 y = 32 }
+					name = "warExhaustion"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 350
+					maxHeight = 18
+					text = "War Exhaustion"	
+					orientation = "UPPER_LEFT"
+					format = left
+				}
+				
+				instantTextBoxType={
+					position = {x = 185 y = 32 }
+					name = "warExhaustionValue"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 30
+					maxHeight = 18
+					text = "85%"	
+					orientation = "UPPER_LEFT"
+					format = right
+				}
+				
+				instantTextBoxType={
+					position = {x = 70 y = 48 }
+					name = "Stability"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 350
+					maxHeight = 18
+					text = "Stability"	
+					orientation = "UPPER_LEFT"
+					format = left
+				}
+				instantTextBoxType={
+					position = {x = 185 y = 48 }
+					name = "StabilityValue"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 30
+					maxHeight = 18
+					text = "-3"	
+					orientation = "UPPER_LEFT"
+					format = right
+				}
+				instantTextBoxType={
+					position = {x = 70 y = 64 }
+					name = "Blockade"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 350
+					maxHeight = 18
+					text = "Blockade"	
+					orientation = "UPPER_LEFT"
+					format = left
+				}
+				instantTextBoxType={
+					position = {x = 185 y = 64 }
+					name = "blockadeValue"
+					font = "Main_16_plain"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 30
+					maxHeight = 18
+					text = "x"	
+					orientation = "UPPER_LEFT"
+					format = right
+				}
+				
+			}
+		windowType = {
+			name ="waroverview_battleItem"
+			backGround=""
+			position = { x= 0 y = 0 }	
+			size = { x = 200 y = 20 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			upsound = ""
+			downsound = ""
+			fullscreen=no
+			
+			
+			instantTextBoxType={
+				position = {x = 0 y = 0 }
+				name = "BattleName"
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 250
+				maxHeight = 18
+				text = "1458 - april 12 Battle of Bromma"	
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			instantTextBoxType={
+				position = {x = 200 y = 0 }
+				name = "Numbers"
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 250
+				maxHeight = 18
+				text = "13300 V 12030"	
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			instantTextBoxType={
+				position = {x = 425 y = 0 }
+				name = "WinOrLoose"
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 125
+				maxHeight = 18
+				text = "Win"	
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+		}
+}

@@ -1,0 +1,35 @@
+
+owner = WUS
+controller = WUS
+add_core = WUS
+culture = xirong
+religion = animism
+capital = "³¯ÄÇ"
+trade_goods = slaves
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 11000
+fort1 = yes
+
+1928.1.1 = { discovered_by = WUS }
+2222.1.1 = { citysize = 9000 }
+2246.1.1 = { religion = liyuebadao }
+2361.1.1  = {	owner = YQU
+		controller = YQU
+                add_core = YQU
+	    }
+2428.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2458.1.1 = { add_core = QIN  
+             culture = guanzhong 
+            }
+2489.10.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}

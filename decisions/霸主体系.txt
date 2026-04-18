@@ -1,0 +1,1153 @@
+hre_decisions = { 
+	# 代周路线
+	daizhou_lv1 = { 
+		# 稳固霸主地位
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = daizhou_lv1
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			NOT = { 
+				tag = PAP
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_country_flag = daizhou
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9057
+				# 触发相关事件
+			}
+			possible_province_event = 9058
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv2 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv2
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv1
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9059
+			}
+			possible_province_event = 9060
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv3 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv3
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv2
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9061
+			}
+			possible_province_event = 9062
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv4 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv4
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv3
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9063
+			}
+			possible_province_event = 9064
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv5 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv5
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv4
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9065
+			}
+			possible_province_event = 9066
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv6 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv6
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv5
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9069
+			}
+			possible_province_event = 9070
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv7 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv7
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv6
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9067
+			}
+			possible_province_event = 9068
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daizhou_lv8 = { 
+		potential = { 
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = fuzhou
+			}
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_country_flag = daizhou
+			has_global_flag = daizhou_lv7
+			imperial_influence = 60
+			war = no
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9071
+			}
+			possible_province_event = 9072
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 复周路线
+	fuzhou_lv1 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv1
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_country_flag = fuzhou
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1920
+				# 触发相关事件
+			}
+			possible_province_event = 1921
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv2 = { 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv2
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv1
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1922
+				# 触发相关事件
+			}
+			possible_province_event = 1923
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv3 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv3
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv2
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1924
+				# 触发相关事件
+			}
+			possible_province_event = 1925
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv4 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv4
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv3
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1926
+				# 触发相关事件
+			}
+			possible_province_event = 1927
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv5 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv5
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv4
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1928
+				# 触发相关事件
+			}
+			possible_province_event = 1929
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv6 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv6
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv5
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1930
+				# 触发相关事件
+			}
+			possible_province_event = 1931
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv7 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_global_flag = fuzhou_lv7
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv6
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1932
+				# 触发相关事件
+			}
+			possible_province_event = 1933
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+	fuzhou_lv8 = { 
+		# 
+		potential = { 
+			is_emperor = yes
+			NOT = { 
+				has_global_flag = fuzhou_lv8
+			}
+			# 完成整个系列，不用继续了
+			NOT = { 
+				has_global_flag = daizhou_lv8
+			}
+			NOT = { 
+				has_country_flag = daizhou
+			}
+			# 国家霸主，有用
+		}
+		allow = { 
+			has_country_flag = fuzhou
+			has_global_flag = fuzhou_lv7
+			imperial_influence = 60
+			OR = { 
+				NOT = { 
+					has_global_flag = Voting
+				}
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = Voting
+			add_imperial_influence = -60
+			any_country = { 
+				limit = { 
+					is_emperor = yes
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+				add_imperial_influence = 10
+			}
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 1934
+				# 触发相关事件
+			}
+			possible_province_event = 1935
+			# 触发相关事件
+		}
+		ai_will_do = { 
+			factor = 0
+			modifier = { 
+				factor = 1
+				emperor = { 
+					tag = PAP
+				}
+			}
+		}
+	}
+}
+province_decisions = { 
+	join_hre = { 
+		potential = { 
+			hre = no
+			owner = { 
+				is_emperor = no
+			}
+			religion_group = christian
+			owner = { 
+				religion_group = christian
+			}
+			any_neighbor_province = { 
+				hre = yes
+			}
+		}
+		allow = { 
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 100
+				}
+			}
+			owner = { 
+				officials = 1
+			}
+			is_core = THIS
+		}
+		effect = { 
+			owner = { 
+				prestige = 0.02
+				officials = -1
+			}
+			emperor = { 
+				country_event = 9493
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				emperor = { 
+					ai = no
+				}
+				# Simply do not want to join player-controlled HRE
+			}
+			modifier = { 
+				factor = 0
+				owner = { 
+					tag = PAP
+				}
+			}
+			modifier = { 
+				factor = 0
+				owner = { 
+					NOT = { 
+						emperor = { 
+							religion = this
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				NOT = { 
+					emperor = { 
+						relation = { 
+							who = THIS
+							value = 150
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				emperor = { 
+					badboy = 8
+				}
+			}
+			modifier = { 
+				factor = 0
+				owner = { 
+					num_of_cities = 5
+				}
+			}
+		}
+	}
+	join_hre_emp = { 
+		potential = { 
+			hre = no
+			owner = { 
+				is_emperor = yes
+			}
+			owner = { 
+				religion_group = christian
+			}
+			any_neighbor_province = { 
+				hre = yes
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+			}
+			is_core = THIS
+		}
+		effect = { 
+			owner = { 
+				prestige = 0.02
+				officials = -1
+				add_imperial_influence = 1
+			}
+			hre = yes
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

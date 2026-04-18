@@ -1,0 +1,13 @@
+name = "ÇØ·¥Ö£"
+casus_belli =  cb_insult 
+
+2071.1.1 = {
+	add_attacker = QIN
+	add_defender=ZGO
+	add_defender=HAG
+}
+2071.4.13 = {
+	rem_attacker = QIN
+	rem_defender=ZGO
+	rem_defender=HAG
+}

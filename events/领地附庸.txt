@@ -1,0 +1,9310 @@
+country_event = { 
+	# 领地系统初始化事件
+	id = 1501
+	trigger = { 
+		# 只有部落制度、非攻巨子制、神国仙境不触发此事件
+		NOT = { 
+			government = tribal_federation
+		}
+		NOT = { 
+			government = tribal_despotism
+		}
+		NOT = { 
+			government = steppe_horde
+		}
+		NOT = { 
+			government = god_kingdom
+		}
+		NOT = { 
+			government = mojiajuzi
+		}
+		NOT = { 
+			has_country_flag = province_initial
+		}
+	}
+	mean_time_to_happen = { 
+		days = 1
+	}
+	title = "EVTNAME1501"
+	desc = "EVTDESC1501"
+	immediate = {
+		any_country = { 
+			limit = { 
+				relation = { 
+					who = THIS
+					value = 100
+				}
+			}
+			relation = { 
+				who = THIS
+				value = -40
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTA1501"
+		set_country_flag = province_initial
+		any_owned = { 
+		# 首都
+			limit = { 
+				is_capital = yes
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			add_province_modifier = { 
+				name = "monarch_territory"
+				duration = -1
+			}
+			owner = { 
+				change_variable = { 
+					which = "monarch_territory_number"
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = { 
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+				not = { 
+					has_province_modifier = noble_territory
+				}
+				not = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+			random_list = { 
+				33 = { 
+					add_province_modifier = { 
+						name = "monarch_territory"
+						duration = -1
+					}
+					owner = { 
+						change_variable = { 
+							which = "monarch_territory_number"
+							value = 1
+						}
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "noble_territory"
+						duration = -1
+					}
+				}
+				33 = { 
+					add_province_modifier = { 
+						name = "vassal_territory"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 领地得失变化
+	id = 1502
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			NOT = { 
+				government = god_kingdom
+			}
+			NOT = { 
+				government = mojiajuzi
+			}
+			any_owned_province = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				NOT = { 
+					has_province_modifier = noble_territory
+				}
+				NOT = { 
+					has_province_modifier = vassal_territory
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1502"
+	desc = "EVTDESC1502"
+	option = { 
+		name = "EVTOPTA1502"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					government = tribal_federation
+				}
+				NOT = { 
+					government = tribal_despotism
+				}
+				NOT = { 
+					government = steppe_horde
+				}
+				NOT = { 
+					government = god_kingdom
+				}
+				NOT = { 
+					government = mojiajuzi
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+			random_owned = { 
+				limit = { 
+					not = { 
+						has_province_modifier = monarch_territory
+					}
+					not = { 
+						has_province_modifier = noble_territory
+					}
+					not = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				random_list = { 
+					33 = { 
+						add_province_modifier = { 
+							name = "monarch_territory"
+							duration = -1
+						}
+						owner = { 
+							change_variable = { 
+								which = "monarch_territory_number"
+								value = 1
+							}
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "noble_territory"
+							duration = -1
+						}
+					}
+					33 = { 
+						add_province_modifier = { 
+							name = "vassal_territory"
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 直辖转化为公家
+	id = 1503
+	trigger = { 
+		NOT = { 
+			has_country_flag = jinwugongzu
+			has_country_flag = fenfenggongjia
+		}
+		any_owned_province = { 
+			has_province_modifier = monarch_territory
+			is_capital = no
+		}
+	}
+	mean_time_to_happen = { 
+		months = 60
+		modifier = { 
+			factor = 0.75
+			num_of_cities = 120
+		}
+		modifier = { 
+			factor = 0.75
+			num_of_cities = 50
+		}
+		modifier = { 
+			factor = 0.8
+			num_of_cities = 20
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 8
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				centralization_decentralization = 2
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				centralization_decentralization = 0
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				centralization_decentralization = -2
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			NOT = { 
+				centralization_decentralization = -4
+			}
+		}
+	}
+	title = "EVTNAME1503"
+	desc = "EVTDESC1503"
+	option = { 
+		name = "EVTOPTA1503"
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = fenfenggongjia
+		legitimacy = 0.20
+		random_owned = { 
+			limit = { 
+				has_province_modifier = monarch_territory
+				is_capital = no
+				NOT = { has_province_modifier = junzhi }
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = { 
+				name = "noble_territory"
+				duration = -1
+			}
+			owner = { 
+				change_variable = { 
+					which = "monarch_territory_number"
+					value = -1
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				owner = { 
+					num_of_cities = 15
+				}
+				NOT = { has_province_modifier = junzhi }
+				has_province_modifier = monarch_territory
+				is_capital = no
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = { 
+				name = "noble_territory"
+				duration = -1
+			}
+			owner = { 
+				change_variable = { 
+					which = "monarch_territory_number"
+					value = -1
+				}
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1503"
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = fenfenggongjia
+		treasury = -50
+		legitimacy = -0.15
+	}
+}
+
+province_event = { 
+	# 公家转化为直辖
+	id = 1504
+	trigger = { 
+		has_province_modifier = noble_territory
+	}
+	mean_time_to_happen = { 
+		months = 1800
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -4
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					num_of_cities = 6
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					num_of_cities = 12
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 30
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 60
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 120
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 30
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 40
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 50
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 60
+			}
+		}
+	}
+	title = "EVTNAME1504"
+	desc = "EVTDESC1504"
+	option = { 
+		name = "EVTOPTA1504"
+		ai_chance = {
+			factor = 50
+		}
+		owner = { 
+			badboy = 0.25
+			prestige = 0.02
+		}
+		remove_province_modifier = noble_territory
+		add_province_modifier = { 
+			name = "monarch_territory"
+			duration = -1
+		}
+		change_variable = { 
+			which = "monarch_territory_number"
+			value = 1
+		}
+	}
+	option = { 
+		name = "EVTOPTB1504"
+		ai_chance = {
+			factor = 50
+		}
+		owner = { 
+			badboy = -0.15
+			legitimacy = 0.05
+		}
+	}
+}
+
+country_event = { 
+	# 直辖转化为卿士
+	id = 1505
+	trigger = { 
+		any_owned_province = { 
+			has_province_modifier = monarch_territory
+			is_capital = no
+		}
+		OR = { 
+			war = yes
+			has_country_modifier = zhengzhiqingming
+			has_country_modifier = xueshufanrong
+			has_country_modifier = junshigeming
+			has_country_modifier = dangshiminjiang
+			has_country_modifier = wenyixinglong
+			has_country_modifier = shangyefanrong
+			has_country_modifier = difangjianshe
+			has_country_modifier = zhuhouchengfu
+			has_country_modifier = anjuleye
+		}
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = { 
+			factor = 0.75
+			num_of_cities = 120
+		}
+		modifier = { 
+			factor = 0.75
+			num_of_cities = 50
+		}
+		modifier = { 
+			factor = 0.75
+			num_of_cities = 20
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 8
+		}
+		modifier = { 
+			factor = 0.85
+			aristocracy_plutocracy = 0
+		}
+		modifier = { 
+			factor = 0.85
+			aristocracy_plutocracy = 2
+		}
+		modifier = { 
+			factor = 0.85
+			aristocracy_plutocracy = 4
+		}
+		modifier = { 
+			factor = 1.25
+			NOT = { 
+				centralization_decentralization = 2
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			NOT = { 
+				centralization_decentralization = 0
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			NOT = { 
+				centralization_decentralization = -2
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			NOT = { 
+				centralization_decentralization = -4
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			army_tradition = 0.25
+		}
+		modifier = { 
+			factor = 0.85
+			army_tradition = 0.5
+		}
+		modifier = { 
+			factor = 0.85
+			army_tradition = 0.75
+		}
+	}
+	title = "EVTNAME1505"
+	desc = "EVTDESC1505"
+	option = { 
+		name = "EVTOPTA1505"
+		ai_chance = { 
+			factor = 50
+		}
+		prestige = 0.05
+		random_owned = { 
+			limit = { 
+				has_province_modifier = monarch_territory
+				is_capital = no
+				NOT = { has_province_modifier = junzhi }
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = { 
+				name = "vassal_territory"
+				duration = -1
+			}
+			owner = { 
+				change_variable = { 
+					which = "monarch_territory_number"
+					value = -1
+				}
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB1505"
+		ai_chance = { 
+			factor = 50
+		}
+		treasury = -40
+		prestige = -0.10
+	}
+}
+
+province_event = { 
+	# 士卿转化为直辖
+	id = 1506
+	trigger = { 
+		has_province_modifier = vassal_territory
+	}
+	mean_time_to_happen = { 
+		months = 1800
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -4
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 30
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 60
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 120
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 30
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 40
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 50
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 60
+			}
+		}
+	}
+	title = "EVTNAME1506"
+	desc = "EVTDESC1506"
+	option = { 
+		name = "EVTOPTA1506"
+		ai_chance = { 
+			factor = 50
+		}
+		owner = { 
+			badboy = 0.25
+			prestige = 0.05
+		}
+		remove_province_modifier = vassal_territory
+		add_province_modifier = { 
+			name = "monarch_territory"
+			duration = -1
+		}
+		change_variable = { 
+			which = "monarch_territory_number"
+			value = 1
+		}
+	}
+	option = { 
+		name = "EVTOPTB1506"
+		ai_chance = { 
+			factor = 50
+		}
+		owner = { 
+			badboy = -0.15
+		}
+	}
+}
+
+province_event = { 
+	# 公家-士卿
+	id = 1507
+	trigger = { 
+		has_province_modifier = noble_territory
+	}
+	mean_time_to_happen = { 
+		months = 1800
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				aristocracy_plutocracy = -4
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				aristocracy_plutocracy = -2
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				aristocracy_plutocracy = 0
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				aristocracy_plutocracy = 2
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				aristocracy_plutocracy = 4
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				has_country_modifier = zhichishiqing
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				has_country_modifier = zhichigongjia
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				idea = engineer_corps
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				idea = shrewd_commerce_practise
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = naval_glory
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = vetting
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				idea = national_bank
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2000
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2100
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2200
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2300
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2400
+			}
+		}
+	}
+	title = "EVTNAME1507"
+	desc = "EVTDESC1507"
+	option = { 
+		name = "EVTOPTA1507"
+		remove_province_modifier = noble_territory
+		add_province_modifier = { 
+			name = "vassal_territory"
+			duration = -1
+		}
+	}
+}
+
+province_event = { 
+	# 士卿-公家
+	id = 1523
+	trigger = { 
+		has_province_modifier = vassal_territory
+	}
+	mean_time_to_happen = { 
+		months = 1800
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { aristocracy_plutocracy = -3 }
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { aristocracy_plutocracy = -1 }
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { aristocracy_plutocracy = 1 }
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { aristocracy_plutocracy = 4 }
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { aristocracy_plutocracy = 5 }
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				has_country_modifier = zhichigongjia
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				has_country_modifier = zhichishiqing
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = engineer_corps
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				idea = shrewd_commerce_practise
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				idea = naval_glory
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				idea = vetting
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				idea = national_bank
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2000
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2100
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2200
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2300
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				year = 2400
+			}
+		}
+	}
+	title = "EVTNAME1523"
+	desc = "EVTDESC1523"
+	option = { 
+		name = "EVTOPTA1523"
+		remove_province_modifier = vassal_territory
+		add_province_modifier = { 
+			name = "noble_territory"
+			duration = -1
+		}
+	}
+}
+
+country_event = { 
+	# 公家不满
+	id = 1508
+	trigger = { 
+		any_owned_province = { 
+			has_province_modifier = noble_territory
+			not = { 
+				has_province_modifier = noble_discontent
+			}
+		}
+		aristocracy_plutocracy = 2
+	}
+	mean_time_to_happen = { 
+		months = 180
+		modifier = { 
+			factor = 5
+			has_country_flag = jinwugongzu
+			tag = JIN
+		}
+	}
+	title = "EVTNAME1508"
+	desc = "EVTDESC1508"
+	option = { 
+		name = "EVTOPTA1508"
+		any_owned = { 
+			limit = { 
+				has_province_modifier = noble_territory
+			}
+			add_province_modifier = { 
+				name = "noble_discontent"
+				duration = 1825
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 士卿不满
+	id = 1509
+	trigger = { 
+		any_owned_province = { 
+			has_province_modifier = vassal_territory
+			not = { 
+				has_province_modifier = vassal_discontent
+			}
+		}
+		NOT = { 
+			aristocracy_plutocracy = -1
+		}
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1509"
+	desc = "EVTDESC1509"
+	option = { 
+		name = "EVTOPTA1509"
+		any_owned = { 
+			limit = { 
+				has_province_modifier = vassal_territory
+			}
+			add_province_modifier = { 
+				name = "vassal_discontent"
+				duration = 1825
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 公家控制朝廷
+	id = 1510
+	trigger = { 
+		or = { 
+			and = { 
+				centralization_decentralization = 4
+				not = { 
+					aristocracy_plutocracy = 0
+				}
+			}
+			and = { 
+				centralization_decentralization = 2
+				not = { 
+					aristocracy_plutocracy = -1
+				}
+			}
+			and = { 
+				centralization_decentralization = 0
+				not = { 
+					aristocracy_plutocracy = -2
+				}
+			}
+			and = { 
+				centralization_decentralization = -2
+				not = { 
+					aristocracy_plutocracy = -3
+				}
+			}
+			and = { 
+				centralization_decentralization = -4
+				not = { 
+					aristocracy_plutocracy = -4
+				}
+			}
+		}
+		not = { 
+			has_country_modifier = noble_controls
+		}
+		not = { 
+			has_country_modifier = vassal_controls
+		}
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1510"
+	desc = "EVTDESC1510"
+	option = { 
+		name = "EVTOPTA1510"
+		add_country_modifier = { 
+			name = "noble_controls"
+			duration = 1825
+		}
+	}
+}
+
+country_event = { 
+	# 士卿控制朝廷
+	id = 1511
+	trigger = { 
+		or = { 
+			and = { 
+				centralization_decentralization = 4
+				aristocracy_plutocracy = 1
+			}
+			and = { 
+				centralization_decentralization = 2
+				aristocracy_plutocracy = 2
+			}
+			and = { 
+				centralization_decentralization = 0
+				aristocracy_plutocracy = 3
+			}
+			and = { 
+				centralization_decentralization = -2
+				aristocracy_plutocracy = 4
+			}
+			and = { 
+				centralization_decentralization = -4
+				aristocracy_plutocracy = 5
+			}
+		}
+		not = { 
+			has_country_modifier = noble_controls
+		}
+		not = { 
+			has_country_modifier = vassal_controls
+		}
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME1511"
+	desc = "EVTDESC1511"
+	option = { 
+		name = "EVTOPTA1511"
+		add_country_modifier = { 
+			name = "vassal_controls"
+			duration = 1825
+		}
+	}
+}
+
+country_event = { 
+	# 主动附庸
+	id = 1512
+	trigger = { 
+		is_subject = no
+		num_of_cities = 6
+		war = no
+		any_sphere = {
+			alliance_with = THIS
+			war = no
+			neighbour = THIS
+			is_subject = no
+			NOT = { 
+				num_of_cities = 3
+			}
+			relation = { 
+				who = THIS
+				value = 0
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+		modifier = { 
+			factor = 0.7
+			idea = press_gangs
+		}
+		modifier = { 
+			factor = 0.7
+			idea = superior_seamanship
+		}
+	}
+	title = "EVTNAME1512"
+	desc = "EVTDESC1512"
+	option = { 
+		name = "EVTOPTA1512"
+		# 命其附庸
+		ai_chance = { 
+			factor = 80
+		}
+		badboy = 1
+		random_sphere = { 
+			limit = {
+				alliance_with = THIS
+				war = no
+				neighbour = THIS
+				is_subject = no
+				NOT = { 
+					num_of_cities = 3
+				}
+			}
+			country_event = 1513
+		}
+	}
+	option = { 
+		name = "EVTOPTB1512"
+		# 舍弃
+		ai_chance = { 
+			factor = 20
+		}
+	}
+}
+country_event = { 
+	# 成为附庸国
+	id = 1513
+	is_triggered_only = yes
+	title = "EVTNAME1513"
+	desc = "EVTDESC1513"
+	option = { 
+		name = "EVTOPTA1513"
+		# 同意
+		ai_chance = { 
+			factor = 80
+			modifier = { 
+				factor = 0.66
+				num_of_cities = 2
+			}
+			modifier = { 
+				factor = 0.75
+				prestige = 0.4
+			}
+			modifier = { 
+				factor = 0.5
+				FROM = { 
+					relation = { 
+						who = THIS
+						value = 0
+					}
+				}
+			}
+		}
+		set_country_flag = ziyuanfuyong
+		FROM = { 
+			vassalize = THIS
+		}
+		prestige = -0.05
+	}
+	option = { 
+		name = "EVTOPTA1513"
+		# 不同意
+		ai_chance = { 
+			factor = 20
+		}
+		FROM = { 
+			relation = { 
+				who = THIS
+				value = -100
+			}
+		}
+		prestige = 0.20
+	}
+}
+
+country_event = { 
+	# 脱离宗主国
+	id = 1514
+	trigger = { 
+		is_subject = yes
+		OR = { 
+			overlord = { 
+				NOT = { 
+					prestige = 0.40
+				}
+			}
+			overlord = { 
+				badboy = 0.75
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 6
+					}
+				}
+				num_of_vassals = 3
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 8
+					}
+				}
+				num_of_vassals = 4
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 10
+					}
+				}
+				num_of_vassals = 5
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 12
+					}
+				}
+				num_of_vassals = 6
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 14
+					}
+				}
+				num_of_vassals = 7
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 16
+					}
+				}
+				num_of_vassals = 8
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 18
+					}
+				}
+				num_of_vassals = 9
+			}
+			AND = { 
+				overlord = { 
+					NOT = { 
+						num_of_cities = 20
+					}
+				}
+				num_of_vassals = 10
+			}
+			num_of_vassals = 11
+			overlord = { 
+				NOT = { 
+					num_of_cities = 2
+				}
+				num_of_vassals = 1
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 4
+				}
+				num_of_vassals = 2
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 6
+				}
+				num_of_vassals = 3
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 8
+				}
+				num_of_vassals = 4
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 10
+				}
+				num_of_vassals = 5
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 12
+				}
+				num_of_vassals = 6
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 14
+				}
+				num_of_vassals = 7
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 16
+				}
+				num_of_vassals = 8
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 18
+				}
+				num_of_vassals = 9
+			}
+			overlord = { 
+				NOT = { 
+					num_of_cities = 20
+				}
+				num_of_vassals = 10
+			}
+			has_country_flag = ziyuanfuyong
+			AND = { 
+				tag = YGO
+				has_country_flag = woxinchangdan
+			}
+		}
+		war = no
+	}
+	mean_time_to_happen = { 
+		months = 600
+		modifier = { 
+			factor = 2
+			overlord = { 
+				ai = yes
+			}
+		}
+		modifier = { 
+			factor = 2
+			overlord = { 
+				tag = PAP
+				has_country_flag = jixingzongzhu
+			}
+		}
+		modifier = { 
+			factor = 1.75
+			overlord = { 
+				idea = press_gangs
+			}
+		}
+		modifier = { 
+			factor = 1.75
+			overlord = { 
+				idea = superior_seamanship
+			}
+		}
+		modifier = { 
+			factor = 1.33
+			overlord = { 
+				idea = naval_glory
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			overlord = { 
+				NOT = { 
+					prestige = 0.2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			overlord = { 
+				NOT = { 
+					prestige = -0.2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			overlord = { 
+				NOT = { 
+					prestige = -0.5
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			overlord = { 
+				badboy = 0.5
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			overlord = { 
+				badboy = 0.75
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			overlord = { 
+				badboy = 1.001
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			overlord = { 
+				NOT = { 
+					stability = 1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			overlord = { 
+				NOT = { 
+					stability = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			overlord = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			overlord = { 
+				war_exhaustion = 6
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			overlord = { 
+				war_exhaustion = 12
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			overlord = { 
+				NOT = { 
+					legitimacy = 0.75
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			overlord = { 
+				NOT = { 
+					legitimacy = 0.50
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			overlord = { 
+				NOT = { 
+					legitimacy = 0.25
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			num_of_cities = 4
+		}
+		modifier = { 
+			factor = 0.9
+			num_of_cities = 8
+		}
+		modifier = { 
+			factor = 0.9
+			num_of_cities = 12
+		}
+		modifier = { 
+			factor = 0.75
+			tag = YGO
+			has_country_flag = woxinchangdan
+		}
+		modifier = { 
+			factor = 1.50
+			religion_group = christian
+			overlord = { 
+				tag = LUG
+			}
+			NOT = { 
+				has_country_flag = zhanguokaishi
+			}
+		}
+	}
+	title = "EVTNAME1514"
+	desc = "EVTDESC1514"
+	immediate = { 
+		add_country_modifier = { 
+			name = "shituduli"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTA1514"
+		# 交给宗主决定
+		ai_chance = { 
+			factor = 100
+		}
+		overlord = { 
+			country_event = 1515
+		}
+	}
+	option = { 
+		name = "EVTOPTB1514"
+		# 独立！
+		ai_chance = { 
+			factor = 0
+		}
+		clr_country_flag = ziyuanfuyong
+		overlord = { 
+			war = THIS
+			badboy = -1
+			prestige = 0.10
+		}
+	}
+}
+
+country_event = { 
+	# 附庸国独立
+	id = 1515
+	is_triggered_only = yes
+	title = "EVTNAME1515"
+	desc = "EVTDESC1515"
+	option = { 
+		name = "EVTOPTA1515"
+		# 收买
+		ai_chance = { 
+			factor = 10
+			modifier = { 
+				factor = 5
+				treasury = 125
+			}
+			modifier = { 
+				factor = 0
+				number_of_loans = 2
+			}
+		}
+		prestige = -0.1
+		treasury = -125
+	}
+	option = { 
+		name = "EVTOPTB1515"
+		# 放弃
+		ai_chance = { 
+			factor = 20
+		}
+		FROM = { free_vassal = THIS }
+		FROM = { clr_country_flag = ziyuanfuyong }
+		badboy = -1
+	}
+	option = { 
+		name = "EVTOPTC1515"
+		# 战争
+		ai_chance = { 
+			factor = 20
+		}
+		FROM = { free_vassal = THIS }
+		FROM = { clr_country_flag = ziyuanfuyong }
+		casus_belli = { 
+			target = FROM
+			type = cb_vassalize_mission
+			months = 24
+		}
+	}
+}
+
+country_event = { 
+	# 附庸国改宗
+	id = 1516
+	trigger = { 
+		religion = liyuejiaohua
+		any_neighbor_country = { 
+			vassal_of = THIS
+			NOT = { 
+				religion = liyuejiaohua
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1516"
+	desc = "EVTDESC1516"
+	option = { 
+		name = "EVTOPTA1516"
+		random_country = { 
+			limit = {
+				neighbour = THIS
+				vassal_of = THIS
+			}
+			religion = liyuejiaohua
+		}
+	}
+}
+
+country_event = { 
+	# 附庸国改宗
+	id = 1517
+	trigger = { 
+		religion = liyuebadao
+		any_neighbor_country = { 
+			vassal_of = THIS
+			NOT = { 
+				religion = liyuebadao
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1517"
+	desc = "EVTDESC1517"
+	option = { 
+		name = "EVTOPTA1517"
+		random_country = { 
+			limit = {
+				neighbour = THIS
+				vassal_of = THIS
+			}
+			religion = liyuebadao
+		}
+	}
+}
+
+country_event = { 
+	# 玩家过度直辖
+	id = 1518
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1518"
+	desc = "EVTDESC1518"
+	option = { 
+		name = "EVTOPTA1518"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					government = tribal_federation
+				}
+				NOT = { 
+					government = tribal_despotism
+				}
+				NOT = { 
+					government = steppe_horde
+				}
+				NOT = { 
+					government = god_kingdom
+				}
+				NOT = { 
+					government = mojiajuzi
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = { 
+						# 玩家的情况
+						and = { 
+							owner = { 
+								ai = no
+							}
+							NOT = { 
+								has_province_modifier = noble_territory
+							}
+							NOT = { 
+								has_province_modifier = vassal_territory
+							}
+							NOT = { 
+								is_capital = yes
+							}
+							NOT = { 
+								any_neighbor_province = { 
+									owner = { 
+										ai = no
+									}
+									is_capital = yes
+									owner = { 
+										num_of_cities = 2
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+												ai = no
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+								}
+							}
+							NOT = { 
+								has_province_modifier = junzhi
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										has_province_modifier = junzhi
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = no
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = no
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+							}
+						}
+						# ai的情况
+						and = { 
+							owner = { 
+								ai = yes
+							}
+							NOT = { 
+								has_province_modifier = noble_territory
+							}
+							NOT = { 
+								has_province_modifier = vassal_territory
+							}
+							NOT = { 
+								is_capital = yes
+							}
+							NOT = { 
+								any_neighbor_province = { 
+									owner = { 
+										ai = yes
+									}
+									is_capital = yes
+									owner = { 
+										num_of_cities = 2
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+								}
+							}
+							NOT = { 
+								has_province_modifier = junzhi
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										has_province_modifier = junzhi
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = yes
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+							}
+							NOT = { 
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = yes
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "guoduzhixia"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	# 过度直辖消除
+	id = 1519
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1519"
+	desc = "EVTDESC1519"
+	option = { 
+		name = "EVTOPTA1519"
+		any_country = { 
+			any_owned = { 
+				limit = { 
+					or = { 
+						# 玩家的情况
+						and = { 
+							owner = { 
+								ai = no
+							}
+							OR = { 
+								has_province_modifier = noble_territory
+								has_province_modifier = vassal_territory
+								is_capital = yes
+								any_neighbor_province = { 
+									owner = { 
+										ai = no
+									}
+									is_capital = yes
+									owner = { 
+										num_of_cities = 2
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+								}
+								has_province_modifier = junzhi
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										has_province_modifier = junzhi
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = no
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = no
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = no
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = no
+										}
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+							}
+						}
+						# ai的情况
+						and = { 
+							owner = { 
+								ai = yes
+							}
+							OR = { 
+								has_province_modifier = noble_territory
+								has_province_modifier = vassal_territory
+								is_capital = yes
+								any_neighbor_province = { 
+									owner = { 
+										ai = yes
+									}
+									is_capital = yes
+									owner = { 
+										num_of_cities = 2
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+								}
+								has_province_modifier = junzhi
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										has_province_modifier = junzhi
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											is_capital = yes
+											owner = { 
+												num_of_cities = 3
+											}
+										}
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = dubizhidu
+										}
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = yes
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											has_province_modifier = junzhi
+										}
+									}
+									owner = { 
+										has_country_flag = junxianzhidu
+									}
+								}
+								AND = { 
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										any_neighbor_province = { 
+											owner = { 
+												ai = yes
+											}
+											any_neighbor_province = { 
+												owner = { 
+													ai = yes
+												}
+												is_capital = yes
+												owner = { 
+													num_of_cities = 4
+												}
+											}
+										}
+									}
+									owner = { 
+										has_country_flag = dubizhidu
+									}
+									any_neighbor_province = { 
+										owner = { 
+											ai = yes
+										}
+										has_province_modifier = junzhi
+									}
+									NOT = { 
+										owner = { 
+											has_country_flag = junxianzhidu
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				remove_province_modifier = guoduzhixia
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 首都直辖
+	id = 1520
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			NOT = { 
+				government = god_kingdom
+			}
+			NOT = { 
+				government = mojiajuzi
+			}
+			any_owned_province = { 
+				is_capital = yes
+				not = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1520"
+	desc = "EVTDESC1520"
+	option = { 
+		name = "EVTOPTA1520"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					government = tribal_federation
+				}
+				NOT = { 
+					government = tribal_despotism
+				}
+				NOT = { 
+					government = steppe_horde
+				}
+				NOT = { 
+					government = god_kingdom
+				}
+				NOT = { 
+					government = mojiajuzi
+				}
+			}
+			any_owned = { 
+				limit = { 
+					is_capital = yes
+				}
+				remove_province_modifier = noble_territory
+				remove_province_modifier = vassal_territory
+				add_province_modifier = { 
+					name = "monarch_territory"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 封君制度
+	id = 1521
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			has_country_flag = fengjunzhidu
+			any_owned_province = { 
+				OR = { 
+					has_province_modifier = noble_territory
+					has_province_modifier = vassal_territory
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1521"
+	desc = "EVTDESC1521"
+	option = { 
+		name = "EVTOPTA1521"
+		any_country = { 
+			limit = { 
+				has_country_flag = fengjunzhidu
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
+					}
+				}
+				add_province_modifier = { 
+					name = "fengjun"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 封君制度撤销
+	id = 1522
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			any_owned_province = { 
+				has_province_modifier = fengjun
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1522"
+	desc = "EVTDESC1522"
+	option = { 
+		name = "EVTOPTA1522"
+		any_country = { 
+			any_owned = { 
+				limit = { 
+					NOT = { 
+						has_province_modifier = noble_territory
+					}
+					NOT = { 
+						has_province_modifier = vassal_territory
+					}
+				}
+				remove_province_modifier = fengjun
+			}
+		}
+	}
+}
+
+province_event = { 
+	id = 1523
+	trigger = { 
+		not = { has_province_modifier = chengjian }
+		has_province_modifier = noble_territory
+	}
+	mean_time_to_happen = { 
+		months = 163
+	}
+	title = "EVTNAME1523"
+	desc = "EVTDESC1523"
+	option = { 
+		name = "EVTOPTA1523"
+		add_province_modifier = { 
+			name = "chengjian"
+			duration = 1825
+		}
+	}
+}
+###########################
+#历史幸运
+###########################
+country_event = { 
+	id = 1345
+	trigger = { 
+		ai = no
+		NOT = { 
+			has_global_flag = history_lucky1
+		}
+		NOT = { 
+			has_global_flag = history_lucky2
+		}
+		NOT = { 
+			has_global_flag = no_history_lucky
+		}
+	}
+	mean_time_to_happen = { 
+		years = 0
+	}
+	title = "EVTNAME1345"
+	desc = "EVTDESC1345"
+	option = { 
+		name = "EVTOPTA1345"
+		ai_chance = { 
+			factor = 0
+		}
+		set_global_flag = history_lucky1
+	}
+	option = { 
+		name = "EVTOPTB1345"
+		ai_chance = { 
+			factor = 1
+		}
+		set_global_flag = history_lucky2
+	}
+	option = { 
+		name = "EVTOPTC1345"
+		ai_chance = { 
+			factor = 0
+		}
+		clr_global_flag = history_lucky1
+		clr_global_flag = history_lucky2
+		set_global_flag = no_history_lucky
+	}
+}

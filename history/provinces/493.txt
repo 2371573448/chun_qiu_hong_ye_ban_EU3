@@ -1,0 +1,74 @@
+culture = li
+religion = ancestor
+capital = "³¤É³"
+trade_goods = grain
+hre = no
+base_tax = 7
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1960.1.1 = { 
+	discovered_by = CHU
+}
+2222.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 14000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = YNG
+	controller = YNG
+	add_core = YNG
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = YNG
+}
+2246.1.1 = { 
+	owner = MIA
+	controller = MIA
+	add_core = MIA
+	remove_core = CHU
+	religion = liyuebadao
+	citysize = 32000
+}
+2246.1.2 = { 
+	cot = yes
+}
+2246.1.2 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	remove_core = MIA
+}
+2247.1.1 = { 
+	cot = no
+	owner = CHU
+	controller = CHU
+	remove_core = MIA
+	remove_core = JJW
+	citysize = 18000
+}
+2252.1.1 = { 
+	add_core = CHU
+}
+2272.1.1 = { 
+	religion = liyuebadao
+	culture = nanchu
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.11.1 = { 
+	owner = LJW
+	controller = LJW
+}

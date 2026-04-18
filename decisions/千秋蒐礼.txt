@@ -1,0 +1,27 @@
+country_decisions = { 
+	#大蒐礼jueyi
+	dasoulijueyi = {         
+                                        potential = {
+		idea = sea_hawks
+		}
+		allow = {          
+		years_of_income = 0.015
+			NOT = { 
+                                                                                war = yes
+				has_country_modifier = dasouli 
+                                                            }
+			mil = 7
+		                    diplomats = 3
+		                    officials = 3
+		}
+		effect = {
+		                years_of_income = -0.015
+		                add_country_modifier = { 
+			name = "dasouli"
+			duration = 730
+		               }
+		                  diplomats = -3
+		                  officials = -3
+		}
+	}
+}

@@ -1,0 +1,1875 @@
+country_event = {#君权旁落
+
+	id = 7000
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = JIN
+		faction_in_power = enuchs
+		has_factions = yes
+		OR = {
+			NOT = { ADM = 5 }
+			has_heir = no
+			regency = yes
+		}
+		
+	}
+
+	title = "EVTNAME7000"
+	desc = "EVTDESC7000"
+	
+	option = {
+		name = "EVTOPTA7000"
+		add_country_modifier = {
+			name = "junquanpangluo"
+			duration = 730
+		}
+		capital_scope = { pretender_rebels = 2 }
+		random_owned = {
+			pretender_rebels = 2
+		}
+	}
+}
+
+country_event = {#公家夺位
+
+	id = 7001
+	
+	trigger = {
+		NOT = { aristocracy_plutocracy = 0 }
+		tag = JIN
+		faction_in_power = temples
+		has_factions = yes
+		OR = {
+			NOT = { legitimacy = 0.33 }
+			regency = yes
+		}
+		NOT = { has_country_modifier = gongjiadongluan }
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	title = "EVTNAME7001"
+	desc = "EVTDESC7001"
+	
+	option = {
+		name = "EVTOPTA7001"
+		add_country_modifier = {
+			name = "gongjiadongluan"
+			duration = 730
+		}
+		random_owned = {
+			noble_rebels = 2
+		}
+		random_owned = {
+			noble_rebels = 2
+		}
+		aristocracy_plutocracy = -1
+	}
+}
+
+province_event = {#公卿内斗
+
+	id = 7002
+	
+	trigger = {
+		owner = {
+			tag = JIN
+			faction_in_power = bureaucrats
+			has_factions = yes
+			NOT = { stability = 0 }
+		}
+		OR = {
+			has_province_modifier = vassal_territory
+			has_province_modifier = noble_territory
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	title = "EVTNAME7002"
+	desc = "EVTDESC7002"
+	
+	option = {
+		name = "EVTOPTA7002"
+		add_province_modifier = {
+			name = "gongqingneidou"
+			duration = 730
+		}
+	}
+}
+
+country_event = { 
+	# 瓜分晋国
+	id = 7003
+	major = yes
+	trigger = { 
+		tag = JIN
+		has_factions = yes
+		num_of_cities = 70
+                                        year = 2200
+		NOT = { year = 2246 }
+                                        NOT = { has_global_flag = sanjiafenjin } 
+		OR = { 
+			AND = { 
+				ai = no
+				faction_in_power = bureaucrats
+				faction_influence = { 
+					faction = bureaucrats
+					influence = 50
+				}
+			}
+			ai = yes
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME7003"
+	desc = "EVTDESC7003"
+	immediate = {
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+			add_core = HAN
+		}
+		release_vassal = HAN
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+			add_core = WEI
+		}
+		release_vassal = WEI
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+			add_core = ZHO
+		}
+		release_vassal = ZHO
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+			add_core = ZHI
+		}
+		release_vassal = ZHI
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+			add_core = FAS
+		}
+		release_vassal = FAS
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+			}
+			add_core = ZXS
+		}
+		release_vassal = ZXS
+	}
+	option = { 
+		name = "EVTOPTA7003"
+		set_global_flag = sanjiafenjin
+		remove_faction = temples
+		remove_faction = enuchs
+		remove_faction = bureaucrats
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = dongjun
+			}
+			random_list = { 
+				60 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = dongjun
+			}
+			random_list = { 
+				60 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = dongjun
+			}
+			random_list = { 
+				60 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = yanmen
+					region = daijun
+				}
+			}
+			random_list = { 
+				80 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = yanmen
+					region = daijun
+				}
+			}
+			random_list = { 
+				80 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = yanmen
+					region = daijun
+				}
+			}
+			random_list = { 
+				80 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = yanmen
+					region = daijun
+				}
+			}
+			random_list = { 
+				80 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = yanmen
+					region = daijun
+				}
+			}
+			random_list = { 
+				80 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = yanmen
+					region = daijun
+				}
+			}
+			random_list = { 
+				80 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henan
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = WEI
+					add_core = FAS
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = HAN
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = HAN
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = HAN
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = HAN
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = henei
+				}
+			}
+			random_list = { 
+				40 = { 
+					add_core = FAS
+					secede_province = FAS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = handan
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				OR = {
+					region = julu
+				}
+			}
+			random_list = { 
+				70 = { 
+					add_core = ZHO
+					add_core = ZXS
+					secede_province = ZXS
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = HAN
+					add_core = ZHI
+					secede_province = HAN
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = HAN
+					add_core = ZHI
+					secede_province = HAN
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = HAN
+					add_core = ZHI
+					secede_province = HAN
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangdang
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHI
+					add_core = HAN
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = taiyuan
+			}
+			random_list = { 
+				60 = { 
+					add_core = ZHO
+					add_core = ZHI
+					secede_province = ZHO
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hexi
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hexi
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = ZHI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hexi
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hexi
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hexi
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hexi
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hedong
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hedong
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hedong
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = hedong
+			}
+			random_list = { 
+				70 = { 
+					add_core = WEI
+					add_core = ZHI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangjun
+			}
+			random_list = { 
+				80 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangjun
+			}
+			random_list = { 
+				80 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangjun
+			}
+			random_list = { 
+				80 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangjun
+			}
+			random_list = { 
+				80 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangjun
+			}
+			random_list = { 
+				80 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = monarch_territory
+				}
+				region = shangjun
+			}
+			random_list = { 
+				80 = { 
+					add_core = WEI
+					secede_province = WEI
+				}
+			}
+		}
+		# 附庸国独立
+		any_country = { 
+			limit = { 
+				vassal_of = THIS
+			}
+			free_vassal = THIS
+		}
+		# 省份重新洗牌
+		any_owned = { 
+			limit = { 
+				is_capital = no
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = noble_territory
+			remove_province_modifier = vassal_territory
+			clr_province_flag = territory
+		}
+	}
+}
+province_event = {#三晋初始军队
+
+	id = 7004
+
+	trigger = { 
+		OR = { 
+			owner = { tag = ZHO }
+			owner = { tag = WEI }
+			owner = { tag = HAN }
+			owner = { tag = ZHI }
+			owner = { tag = ZXS }
+			owner = { tag = FAS }
+		}
+		owner = { NOT = { has_country_flag = chushijundui }}
+		owner = { ai = yes }
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	
+	title = "EVTNAME7004"
+	desc = "EVTDESC7004"
+	
+	option = {
+		name = "EVTOPTA7004"
+			infantry = this
+			infantry = this
+			infantry = this
+			infantry = this
+			infantry = this
+			infantry = this
+			infantry = this
+			infantry = this
+			artillery = this
+			artillery = this
+			artillery = this
+			artillery = this
+			artillery = this
+			artillery = this
+			artillery = this
+			artillery = this
+			cavalry = this
+			cavalry = this
+
+		owner = { set_country_flag = chushijundui }
+	}
+}

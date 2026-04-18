@@ -1,0 +1,37 @@
+government =fengjian
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = animism 
+primary_culture = dongyi
+capital = 301
+
+1920.1.1 = {
+	monarch = {
+		name = "ð¯"
+               dynasty = "¼º"
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+2100.1.1 = { decision = tuposanjunguizhi }
+2264.1.1 = {
+	monarch = {
+		name = "ð³"
+               dynasty = "¼º"
+		adm = 7
+		dip = 6
+		mil = 5
+	}
+}
+
+2246.1.2 = {
+                     religion = rujia
+}

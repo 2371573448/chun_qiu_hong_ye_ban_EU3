@@ -1,0 +1,54 @@
+vassal={
+	first=LUG
+	second=ZHU
+	start_date=2246.1.1
+	end_date=2247.1.1
+}
+vassal={
+	first=ZHU
+	second=XZG
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+vassal={
+	first=SON
+	second=XUE
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+
+alliance={
+	first=YAN
+	second=LUG
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+
+alliance={
+	first=QIG
+	second=WEG
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+
+alliance={
+	first=QIN
+	second=CHU
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+
+alliance={
+	first=YGO
+	second=SON
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+
+alliance={
+	first=ZGO
+	second=WUG
+	start_date=2246.1.1
+	end_date=2246.1.2
+}
+#天下剧本

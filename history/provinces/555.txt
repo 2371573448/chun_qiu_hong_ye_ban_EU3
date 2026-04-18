@@ -1,0 +1,13 @@
+
+culture = qiongzuo
+religion = ancestor
+capital = "¥Û«g"
+trade_goods = copper
+hre = no
+base_tax = 3
+manpower = 0
+owner = ZUO
+controller = ZUO
+citysize = 18000
+fort1 = yes
+add_core = ZUO

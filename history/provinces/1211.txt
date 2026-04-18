@@ -1,0 +1,103 @@
+owner = ZLA
+controller = ZLA
+culture = huaiyi
+religion = ancestor
+capital = "³ÉµÂ"
+trade_goods = chinaware
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 4000
+fort1 = yes
+add_core = ZLA
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2160.11.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2169.11.1 = { 
+	owner = WUG
+	controller = WUG
+}
+2222.1.1 = { 
+	citysize = 16000
+	remove_core = ZLA
+	fort2 = yes
+}
+2225.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2244.1.1 = { 
+	owner = ZLA
+	controller = ZLA
+	add_core = ZLA
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = ZLA
+}
+2246.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = CHU
+	religion = liyuebadao
+}
+2246.1.2 = { 
+	owner = ZLA
+	controller = ZLA
+	add_core = ZLA
+	remove_core = WUG
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = WUG
+}
+2255.1.1 = { 
+	add_core = CHU
+}
+2285.1.1 = { 
+	religion = liyuebadao
+	culture = nanchu
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2490.6.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	citysize = 42000
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

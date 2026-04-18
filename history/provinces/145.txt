@@ -1,0 +1,35 @@
+
+culture = xiongnu
+religion = animism
+capital = "Ë··½"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2246.1.2 = { 
+	controller = HZS
+        citysize = 10000
+          fort1 = yes
+add_core = HZS
+}
+
+2300.1.1 = { discovered_by = ZHO }
+2397.1.1  = {	owner = ZHO
+		controller = ZHO
+                citysize = 6000
+            }
+2427.1.1  = {   add_core = ZHO  }
+2464.1.1  = {	owner = LHU
+		controller = LHU
+	    }
+2489.10.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}

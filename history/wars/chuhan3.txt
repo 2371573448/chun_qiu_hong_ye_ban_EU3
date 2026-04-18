@@ -1,0 +1,24 @@
+name = "统一三齐之战"
+casus_belli = cb_imperial #
+
+2492.5.1 = {
+  # 田荣不满项羽分封，意图统一三齐
+	add_attacker = QIG
+	add_defender = JBW
+  add_defender = JDW
+}
+2492.7.1 = {
+  rem_defender = JBW
+	rem_defender = JDW
+  add_defender = XCW
+}
+2493.1.1 = {
+  # 项羽正式出兵伐齐，招九江王兵
+	add_defender = JJW
+}
+2493.4.1 = {
+  # 刘邦发起彭城之战，项羽撤军
+	rem_defender = XCW
+  rem_defender = JJW
+  rem_attacker = QIG
+}

@@ -1,0 +1,214 @@
+#消灭钟离
+dongyibazhu1 = { 
+	type = country
+	allow = { 
+		tag = YXU
+		is_subject = no
+		is_lesser_in_union = no
+		exists = ZHL
+		or = { 
+			not = { 
+				owns = 1212
+			}
+			not = { 
+				owns = 1213
+			}
+		}
+		ZHL = {
+			owns = 411
+			neighbour = this
+			not = { vassal_of = YXU }
+		}
+	}
+	abort = { 
+		or = { 
+			is_subject = yes
+			is_lesser_in_union = yes
+			AND = { 
+				not = { 
+					exists = ZHL
+				}
+				not = { 
+					owns = 411
+				}
+			}
+		}
+	}
+	success = { 
+                                        owns = 1212
+		owns = 1213
+	}
+	chance = { 
+		factor = 500
+	}
+	immediate = { 
+		add_temp_claim = 425
+		add_temp_claim = 411
+		add_temp_claim = 1212
+		add_temp_claim = 1213
+		add_temp_claim = 1214
+		add_temp_claim = 1215
+		add_temp_claim = 1216       
+	}
+	abort_effect = { 
+		remove_temp_claim = 425
+		remove_temp_claim = 411
+		remove_temp_claim = 1212
+		remove_temp_claim = 1213
+		remove_temp_claim = 1214
+		remove_temp_claim = 1215
+		remove_temp_claim = 1216
+	}
+	effect = { 
+		add_core = 425
+		add_core = 411
+		add_core = 1212
+		add_core = 1213
+		add_core = 1214
+		add_core = 1215
+		add_core = 1216
+                set_country_flag = dongyibazhu
+	}
+}
+
+#征服钟吾
+zhongwu1 = { 
+	type = country
+	allow = { 
+		tag = YXU
+		is_subject = no
+		is_lesser_in_union = no
+		exists = ZWG
+		or = { 
+			not = { 
+				owns = 339
+			}
+			not = { 
+				owns = 996
+			}
+                                                not = { 
+				owns = 992
+			}
+		}
+		ZWG = {
+			owns = 339
+			neighbour = this
+			not = { vassal_of = YXU }
+		}
+                                YXU = {
+			owns = 425
+		  	owns = 411
+		}
+	}
+	abort = { 
+		or = { 
+			is_subject = yes
+			is_lesser_in_union = yes
+			AND = { 
+				not = { 
+					exists = ZWG
+				}
+				not = { 
+					owns = 339
+				}
+			}
+		}
+	}
+	success = { 
+		owns = 339
+		owns = 996
+                                owns = 992
+	}
+	chance = { 
+		factor = 600
+	}
+	immediate = { 
+		add_temp_claim = 339
+		add_temp_claim = 996
+                                add_temp_claim = 992
+	}
+	abort_effect = { 
+		remove_temp_claim = 339
+		remove_temp_claim = 996
+                                remove_temp_claim = 992
+	}
+	effect = { 
+		add_core = 339
+		add_core = 996
+                                add_core = 992
+                                set_country_flag = dongyibazhu
+		     #此处乃兔子陈年老bug，知而不改，工厂现已修复。
+	}
+}
+#灭亡钟吾
+zhongwu2 = { 
+	type = country
+	allow = { 
+		tag = YXU
+		is_subject = no
+		is_lesser_in_union = no
+		exists = ZWG
+		or = { 
+			not = { 
+				owns = 991
+			}
+			not = { 
+				owns = 329
+			}
+                                                not = { 
+				owns = 331
+			}
+                        
+		}
+		ZWG = {
+			owns = 331
+			neighbour = this
+			not = { vassal_of = YXU }
+		}
+                                YXU = {
+			owns = 339
+		  	owns = 996
+		  	owns = 992
+		}
+
+	}
+	abort = { 
+		or = { 
+			is_subject = yes
+			is_lesser_in_union = yes
+			AND = { 
+				not = { 
+					exists = ZWG
+				}
+				not = { 
+					owns = 331
+				}
+			}
+		}
+	}
+	success = { 
+		owns = 991
+		owns = 329
+                                owns = 331
+	}
+	chance = { 
+		factor = 600
+	}
+	immediate = { 
+		add_temp_claim = 991
+		add_temp_claim = 329
+                                add_temp_claim = 331
+	}
+	abort_effect = { 
+		remove_temp_claim = 991
+		remove_temp_claim = 329
+                                remove_temp_claim = 331
+	}
+	effect = { 
+		add_core = 991
+		add_core = 329
+                                add_core = 331
+                                set_country_flag = dongyibazhu
+		     #此处同上面相同的bug，已修复
+	}
+}

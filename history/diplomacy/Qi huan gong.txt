@@ -1,0 +1,83 @@
+#±±–”÷Æ√À
+alliance= {
+	first=QIG
+	second=CHE
+	start_date=2017.2.1
+	end_date=2042.7.1
+}
+alliance= {
+	first=QIG
+	second=CAO
+	start_date=2017.2.1
+	end_date=2054.1.1
+}
+#”ƒ÷Æ√À
+alliance= {
+	first=QIG
+	second=ZGO
+	start_date=2031.1.1
+	end_date=2044.2.1
+}
+alliance= {
+	first=QIG
+	second=LUG
+	start_date=2031.1.1
+	end_date=2054.1.1
+}
+alliance= {
+	first=QIG
+	second=SON
+	start_date=2031.1.1
+	end_date=2055.1.1
+}
+alliance= {
+	first=QIG
+	second=XUG
+	start_date=2031.1.1
+	end_date=2055.1.1
+}
+alliance= {
+	first=QIG
+	second=ZHU
+	start_date=2031.1.1
+	end_date=2055.1.1
+}
+#µ“»Àƒœ«÷
+vassal={
+	first=QIG
+	second=XGO
+	start_date=2039.1.1
+	end_date=2055.1.1
+}
+alliance= {
+	first=QIG
+	second=WEG
+	start_date=2034.1.1
+	end_date=2054.1.1
+}
+alliance= {
+	first=QIG
+	second=YAN
+	start_date=2034.1.1
+	end_date=2054.1.1
+}
+#—Ùπ»÷Æ√À
+alliance= {
+	first=QIG
+	second=JAG
+	start_date=2041.1.1
+	end_date=2050.4.1
+}
+alliance= {
+	first=QIG
+	second=HUA
+	start_date=2041.1.1
+	end_date=2050.4.1
+}
+#≤Ã≈—
+alliance= {
+	first=CHU
+	second=CAI
+	start_date=2041.10.1
+	end_date=2066.5.1
+}

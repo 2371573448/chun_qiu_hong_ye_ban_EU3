@@ -1,0 +1,224 @@
+cultural_decisions = {
+
+	#公子成人礼
+	chengrenli = {
+		potential = {
+			has_heir = yes
+			heir_age = 12
+			not = {
+				heir_age = 16
+				has_country_modifier = heir_introduced
+			}
+		}
+		allow = {
+			years_of_income = 0.05
+			diplomats = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "heir_introduced"
+				duration = 1460
+			}
+			prestige = 0.05
+			years_of_income = -0.05
+			diplomats = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#编写国史
+	bianxieguoshi = {
+		potential = {
+			not = {
+				has_country_modifier = guoshi
+			}
+			prestige = 0.1
+		}
+		allow = {
+			officials = 3
+			years_of_income = 0.15
+		}
+		effect = {
+			officials = -3
+			years_of_income = -0.05
+			add_country_modifier = {
+				name = "guoshi"
+				duration = 9999
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#收容周朝移民
+	court_byzantine_refugees = {
+		potential = {
+			NOT = {
+				has_country_modifier = zhouchaoyimin
+			}
+			not = { year = 2000 }
+		}
+		allow = {
+			diplomats = 3
+			officials = 3
+			prestige = 0.35
+			production_tech = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = "zhouchaoyimin"
+				duration = 7300
+			}
+			diplomats = -3
+			officials = -3
+			prestige = -0.15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#杂技百戏
+	zajibaixi = {
+		potential = {
+			not = {
+				has_country_modifier = zajibaixi
+			}
+		}
+		allow = {
+			years_of_income = 0.10
+			officials = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "zajibaixi"
+				duration = 3650
+			}
+			officials = -2
+			years_of_income = -0.10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				cultural_tradition = 0.2
+			}
+		}
+	}
+
+	#投资青铜器铸造
+	touzizhuzao = {
+		potential = {
+			religion_group = christian
+			not = {
+				has_country_modifier = touzizhuzao
+			}
+		}
+		allow = {
+			officials = 4
+			treasury = 300
+		}
+		effect = {
+			add_country_modifier = {
+				name = "touzizhuzao"
+				duration = -1
+			}
+			officials = -4
+			treasury = -300
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					years_of_income = 0.75
+				}
+			}
+		}
+	}
+
+	#编钟文化
+	bianzhong = {
+		potential = {
+			religion_group = christian
+                        not = {
+				has_country_modifier = bianzhong
+			}
+		}
+		allow = {
+			officials = 3
+			years_of_income = 0.12
+		}
+		effect = {
+			add_country_modifier = {
+				name = bianzhong
+				duration = 1825
+			}
+			officials = -3
+			years_of_income = -0.12
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				not = {
+					treasury = 200
+				}
+			}
+		}
+	}
+	#广开言路
+	guangkaiyanlu = { 
+		potential = { 
+			has_country_flag = shiguanzhidu
+			NOT = { has_country_modifier = guangkaiyanlu }
+		}
+		allow = { 
+			government_tech = 30
+			adm = 7
+			or = { 
+				government = enlightened_despotism
+				government = reformed_despotism
+				government = celestial_empire
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "guangkaiyanlu"
+				duration = 1825
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	#广纳贤臣
+	guangnaxianchen = { 
+		potential = { 
+			has_country_flag = shiguanzhidu
+		}
+		allow = { 
+			NOT = { has_country_modifier = shiguanzhidu }
+			government_tech = 24
+			ADM = 5
+			DIP = 5
+			treasury = 150
+			diplomats = 2
+			legitimacy = 0.5
+		}
+		effect = { 
+			treasury = -150
+			legitimacy = -0.25
+			cultural_tradition = 0.05
+			diplomats = -2
+			officials = 1
+			merchants = 1
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

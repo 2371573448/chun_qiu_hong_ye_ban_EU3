@@ -1,0 +1,275 @@
+§Divine Wind was developed by
+§PRODUCER
+Johan Andersson
+
+§PROJECT LEAD
+Thomas Johansson
+
+§GAME DESIGN
+Chris King
+Johan Andersson
+
+§PROGRAMMING
+Thomas Johansson
+Olof Björk
+
+§SCRIPTING AND RESEARCH
+Niklas Strid
+Sara Wendel-Örtqvist
+Björn Johannessen
+David Ballantyne
+Chris King
+
+§GRAPHICS
+Jonas Jakobsson
+Fredrik Persson
+Victor Rathsmann
+
+§ADDITIONAL PROGRAMMING
+Johan Andersson
+Henrik Fåhraeus
+Dan Lind
+
+§COMMUNITY MANAGER
+Linda Kiby
+
+§QA
+Artur Foxander
+
+§ADDITIONAL SUPPORT
+Fredrik Zetterman
+Johan Lerström
+
+§Heir to the Throne is the work of
+
+§GAME DESIGN
+Johan Andersson
+Chris King
+Henrik Fåhraeus
+
+§PROGRAMMING
+Henrik Fåhraeus
+Björn Johannessen
+Johan Andersson
+Olof Björk
+
+§GRAPHICS
+Jonas Jakobsson
+
+§LEAD TESTER
+Chris King
+
+
+
+
+§In Nomine was developed by
+
+§GAME DESIGN
+Johan Andersson
+Henrik Fåhraeus
+
+§PROGRAMMING
+Henrik Fåhraeus
+Johan Andersson
+Anna Drevendal
+
+§GRAPHICS
+Jonas Jakobsson
+
+§LEAD TESTER
+Chris King
+
+
+
+
+§Napoleon's Ambition was created by
+
+Johan Andersson
+Pontus Åberg
+Anna Drevendal
+Chris King
+Dick Sjöström
+
+
+
+
+
+§EU3 was originally created by...
+ 
+§CEO
+Theodore Bergquist
+ 
+§PRODUCER
+Johan Andersson
+ 
+§GAME DESIGN
+Johan Andersson
+
+§LEAD PROGRAMMER
+Adam Skoglund
+
+§PROGRAMMING
+Thomas Johansson
+Pontus Åberg
+Anna Drevendal
+Johan Andersson
+
+§LEAD ARTIST
+Marcus Edström
+
+§3D ARTIST
+Dick Sjöström
+
+§TUTORIAL
+Marcus Edström
+
+§ORIGINAL MUSIC
+Andreas Waldetoft
+
+§SOUND EFFECTS
+Andreas Waldetoft
+
+§LEAD TESTER
+Chris King
+
+
+§MARKETING & PR DIRECTOR
+Susana Meza
+
+§MARKETING ASSISTANT
+Keisha Salmon
+
+§SALES & ACQUISITIONS
+Fredrik Wester
+
+§CFO
+Lena Eriksson
+
+§PRODUCT MANAGER
+Jeanette Bauer
+
+§ART DIRECTOR
+Stefan Thulin
+
+§MANUAL
+Chris Stone
+
+§STRATEGY GUIDE
+Ed Hanks
+
+§EDITING
+Robbie Graham
+Ryan Newman
+Nick Stewart
+ 
+§BETA TESTERS
+David Ballantyne
+Frank van Aanholt
+Tom Adriaenssen
+Jose Maria Aguirre
+Simon Aistleitner
+Brent Wilkerson I
+Markus Alahuhta
+Guillaume Alvarez
+Mike Amberry
+Gustav Björklund
+Loic Brient
+Kristof Haekens
+Thomas Broman
+Joe Chandler
+Thomas Corriol
+Luis Miguel Nunes Corujo
+Tony Cristanelli
+Inge Davidsen
+Maarten Demeyer
+David DiCicco
+Jan Peter Dijkstra
+Jean-Philippe Duflot
+Peter Ebbesen
+Aric Ferrell
+Wesley Ferris
+Alexander John Fowler
+Michael Girard
+Stephen Gregson
+Jean-Alain Grunchec
+Ed Hanks
+Chris Iddings
+Markus Herrmann
+Jeremy Holley
+Kalle Isotalo
+Robert Jackson
+Simon Jäger
+Nils Karlsson
+Tamas Kiss
+Mark Kvistgaard Thomsen
+Paul Lancashire
+Tony Lozina
+Jacob Michael Lundgren
+Rajeev D. Majumdar
+Nicholas Malouin
+Carsten Mannetje
+Thomas Mittelbach
+Fokke van der Molen
+Robert O'Regan
+Anu Pakanati
+Maxime Penen
+Kevin Peter
+Thomas Pettersen
+Pent Ploompuu
+Derek Pullem
+Ludovic Russo
+Kevin Simmons
+Jason Snyder
+Chris Stone
+Jarkko Suvinen
+Kevyn Taylor
+Sascha Tesch
+Lars Thomsen
+Douglas Troiani
+Jens Van Heuverswijn
+Patrick Wegerle
+Gene Whitmore
+Mark Williams
+Emre Yigit
+
+
+§Market coordination
+USA: Ezra Chen
+Germany, Austria and Switzerland: 
+Mario Gerhold, Susanna Mittermaier,
+UK: Jo Kemp
+Italy: Daniele Falcone
+Scandinavia: Niklas Molin
+France: Eric Boccara, Geraldine Morisse
+ 
+Thanks to our partners THQ/Valusoft (USA),
+Snowball (Russia), Friendware
+(Spain), Cenega (Poland) 
+and Koch Media (UK, Germany, Italy, France).
+ 
+Special thanks to all our forum members,
+partners and supporters, 
+who are integral for our success.
+
+Uses Bink Video Technology. 
+Copyright (C) 1997-2000 by RAD Game Tools Inc.
+
+
+
+
+FORZA DJURGÅR'N!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

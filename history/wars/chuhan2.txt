@@ -1,0 +1,32 @@
+name = "汉讨楚之战"
+casus_belli = cb_imperial #
+
+2493.3.1 = {
+  # 汉以项羽杀义帝不道，联合诸侯伐楚
+	add_attacker = HNW
+  add_attacker = ZHO
+  add_attacker = WEI
+  add_attacker = DAI
+	add_defender = XCW
+}
+2493.4.10 = {
+  rem_attacker = ZHO
+  rem_attacker = WEI
+  rem_attacker = DAI
+}
+2493.11.1 = {
+  add_attacker = ZHO
+}
+2494.11.1 = {
+  add_attacker = QIG
+}
+2495.6.1 = {
+  add_attacker = JJW
+}  
+2495.12.1 = {
+  rem_attacker = HNW
+  rem_attacker = ZHO
+  rem_attacker = QIG
+  rem_attacker = JJW
+  rem_defender = XCW
+}

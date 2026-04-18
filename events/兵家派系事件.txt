@@ -1,0 +1,322 @@
+country_event = { 
+	# 兵家移除
+	id = 21220
+	trigger = { 
+		NOT = { 
+			idea = napoleonic_warfare
+		}
+		has_country_flag = bingjiasipai
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME21220"
+	desc = "EVTDESC21220"
+	option = { 
+		name = "EVTOPTA21220"
+		remove_country_modifier = bingquanmou1
+		remove_country_modifier = bingquanmou2
+		remove_country_modifier = bingquanmou3
+		remove_country_modifier = bingquanmou4
+		remove_country_modifier = bingxingshi1
+		remove_country_modifier = bingxingshi2
+		remove_country_modifier = bingxingshi3
+		remove_country_modifier = bingxingshi4
+		remove_country_modifier = bingjiqiao1
+		remove_country_modifier = bingjiqiao2
+		remove_country_modifier = bingjiqiao3
+		remove_country_modifier = bingjiqiao4
+		remove_country_modifier = bingyinyang1
+		remove_country_modifier = bingyinyang2
+		remove_country_modifier = bingyinyang3
+		remove_country_modifier = bingyinyang4
+		clr_country_flag = bingjiasipai
+	}
+}
+country_event = { 
+	# 兵阴阳-天时
+	id = 21221
+	trigger = { 
+		or = {
+			has_country_modifier = bingyinyang1
+			has_country_modifier = bingyinyang2
+			has_country_modifier = bingyinyang3
+			has_country_modifier = bingyinyang4
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = bingyinyang2
+		}
+		modifier = { 
+			factor = 0.5
+			has_country_modifier = bingyinyang3
+		}
+		modifier = { 
+			factor = 0.4
+			has_country_modifier = bingyinyang4
+		}
+	}
+	title = "EVTNAME21221"
+	desc = "EVTDESC21221"
+	option = { 
+		name = "EVTOPTA21221"
+		treasury = 500
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang1
+			}
+			add_country_modifier = { 
+				name = "bingyinyangtianshi"
+				duration = 730
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang2
+			}
+			add_country_modifier = { 
+				name = "bingyinyangtianshi"
+				duration = 1095
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang3
+			}
+			add_country_modifier = { 
+				name = "bingyinyangtianshi"
+				duration = 1825
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang4
+			}
+			add_country_modifier = { 
+				name = "bingyinyangtianshi"
+				duration = 2555
+			}
+		}
+	}
+}
+country_event = { 
+	# 兵阴阳-地利
+	id = 21222
+	trigger = { 
+		or = {
+			has_country_modifier = bingyinyang1
+			has_country_modifier = bingyinyang2
+			has_country_modifier = bingyinyang3
+			has_country_modifier = bingyinyang4
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = bingyinyang2
+		}
+		modifier = { 
+			factor = 0.5
+			has_country_modifier = bingyinyang3
+		}
+		modifier = { 
+			factor = 0.4
+			has_country_modifier = bingyinyang4
+		}
+	}
+	title = "EVTNAME21222"
+	desc = "EVTDESC21222"
+	option = { 
+		name = "EVTOPTA21222"
+		war_exhaustion = -5
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang1
+			}
+			add_country_modifier = { 
+				name = "bingyinyangdili"
+				duration = 730
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang2
+			}
+			add_country_modifier = { 
+				name = "bingyinyangdili"
+				duration = 1095
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang3
+			}
+			add_country_modifier = { 
+				name = "bingyinyangdili"
+				duration = 1825
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang4
+			}
+			add_country_modifier = { 
+				name = "bingyinyangdili"
+				duration = 2555
+			}
+		}
+	}
+}
+country_event = { 
+	# 兵阴阳-人和
+	id = 21223
+	trigger = { 
+		or = {
+			has_country_modifier = bingyinyang1
+			has_country_modifier = bingyinyang2
+			has_country_modifier = bingyinyang3
+			has_country_modifier = bingyinyang4
+		}
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.75
+			has_country_modifier = bingyinyang2
+		}
+		modifier = { 
+			factor = 0.5
+			has_country_modifier = bingyinyang3
+		}
+		modifier = { 
+			factor = 0.4
+			has_country_modifier = bingyinyang4
+		}
+	}
+	title = "EVTNAME21223"
+	desc = "EVTDESC21223"
+	option = { 
+		name = "EVTOPTA21223"
+		manpower = 30
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang1
+			}
+			add_country_modifier = { 
+				name = "bingyinyangrenhe"
+				duration = 730
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang2
+			}
+			add_country_modifier = { 
+				name = "bingyinyangrenhe"
+				duration = 1095
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang3
+			}
+			add_country_modifier = { 
+				name = "bingyinyangrenhe"
+				duration = 1825
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingyinyang4
+			}
+			add_country_modifier = { 
+				name = "bingyinyangrenhe"
+				duration = 2555
+			}
+		}
+	}
+}
+country_event = { 
+	# 兵权谋
+	id = 21224
+	trigger = { 
+		or = {
+			has_country_modifier = bingquanmou1
+			has_country_modifier = bingquanmou2
+			has_country_modifier = bingquanmou3
+			has_country_modifier = bingquanmou4
+		}
+		or = {
+			not = { has_country_flag = quanmouzhilengque }
+			had_country_flag = { 
+				flag = quanmouzhilengque
+				days = 365
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME21224"
+	desc = "EVTDESC21224"
+	option = { 
+		name = "EVTOPTA21224"
+		set_country_flag = quanmouzhilengque
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingquanmou1
+			}
+			change_variable = {
+				which = quanmouzhi
+				value = 1
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingquanmou2
+			}
+			change_variable = {
+				which = quanmouzhi
+				value = 2
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingquanmou3
+			}
+			change_variable = {
+				which = quanmouzhi
+				value = 3
+			}
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_modifier = bingquanmou4
+			}
+			change_variable = {
+				which = quanmouzhi
+				value = 4
+			}
+		}
+	}
+}

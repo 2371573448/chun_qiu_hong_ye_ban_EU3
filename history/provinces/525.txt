@@ -1,0 +1,12 @@
+
+culture = minyue
+religion = ancestor
+capital = "±±ÒÄÖİ"
+trade_goods = fish
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+

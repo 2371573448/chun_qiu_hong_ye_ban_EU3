@@ -1,0 +1,70 @@
+country_decisions = {
+
+	junzhuzhizheng = {#君主执政
+		potential = {
+			tag = JIN
+			has_global_flag = zhanguokaishi
+			has_factions = yes
+		}
+		allow = {
+			ADM = 7
+			DIP = 7
+			MIL = 7
+                		idea = national_bank
+			advisor = rear_admiral
+			rear_admiral = 4
+			advisor = privateer
+			privateer = 4
+		}
+		effect = {
+			remove_faction = temples
+			remove_faction = enuchs
+			remove_faction = bureaucrats
+			centralization_decentralization = -4
+                                                            mercantilism_freetrade = -4
+			prestige = 0.40
+                                                            government = enlightened_despotism
+		}
+	}
+
+	gongjiazhizheng = {#公家执政
+		potential = {
+			tag = JIN
+			has_factions = yes
+			has_global_flag = zhanguokaishi
+		}
+		allow = {
+                                                            advisor = grand_captain
+		}
+		effect = {
+			remove_faction = temples
+			remove_faction = enuchs
+			remove_faction = bureaucrats
+			centralization_decentralization = 1
+                                                            government = noble_republic
+		}
+	}
+
+	shiqingzhizheng = {#士卿执政
+		potential = {
+			tag = JIN
+			has_global_flag = zhanguokaishi
+			has_factions = yes
+		}
+		allow = {
+			OR = {
+				government = yuanshuai
+				government = zhizheng
+			}
+			prestige = 0.50
+                                                            advisor = statesman
+		}
+		effect = {
+			remove_faction = temples
+			remove_faction = enuchs
+			remove_faction = bureaucrats
+			centralization_decentralization = 1
+                                                            aristocracy_plutocracy = -6
+		}
+	}
+}

@@ -1,0 +1,7 @@
+#ô¿ô¾
+
+type = transport
+
+hull_size = 20
+base_cannons = 7
+sail_speed = 3

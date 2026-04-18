@@ -1,0 +1,107 @@
+
+culture = baidi
+religion = animism
+capital = "‘‰Ã®"
+trade_goods = coffee
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1960.1.1 = { 
+	discovered_by = JIN
+}
+2118.1.1 = { 
+	owner = BAI
+	controller = BAI
+	culture = baidi
+	add_core = BAI
+	citysize = 12000
+	fort1 = yes
+}
+2157.1.1 = { 
+	owner = JIN
+	controller = JIN
+}
+2187.1.1 = { 
+	add_core = JIN
+}
+2217.1.1 = { 
+	culture = shanxi
+	religion = liyuejiaohua
+	remove_core = BAI
+}
+2222.1.1 = { 
+	citysize = 20000
+}
+2244.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = WEI
+}
+2245.1.1 = { 
+	religion = fajia
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+	remove_core = JIN
+}
+2246.1.1 = { 
+	add_core = ZHO
+}
+2246.1.2 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+	remove_core = LOU
+	remove_core = ZHO
+}
+2247.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2337.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	remove_core = WEI
+	add_core = ZHO
+}
+2360.1.1 = { 
+	religion = fajia
+}
+2439.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2441.1.1 = { 
+	owner = HAN
+	controller = HAN
+}
+2442.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2472.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2493.8.1 = { 
+	owner = HNW
+	controller = HNW
+}

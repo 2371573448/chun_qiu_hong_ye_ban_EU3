@@ -1,0 +1,112 @@
+owner = YIN
+controller = YIN
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "шн"
+trade_goods = tea
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 36000
+fort1 = yes
+add_core = YIN
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2092.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2122.1.1 = { 
+	add_core = CHU
+	remove_core = YIN
+}
+2192.6.1 = { 
+	owner = XUG
+	controller = XUG
+	add_core = XUG
+}
+2194.1.1 = { 
+	owner = ZGO
+	controller = ZGO
+}
+2222.1.1 = { 
+	citysize = 24000
+}
+2224.1.1 = { 
+	add_core = ZGO
+}
+2244.1.1 = { 
+	owner = YIN
+	controller = YIN
+	add_core = YIN
+	remove_core = ZGO
+}
+2244.1.2 = { 
+	owner = ZGO
+	controller = ZGO
+	add_core = ZGO
+	remove_core = YIN
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	owner = YIN
+	controller = YIN
+	add_core = YIN
+	remove_core = HAN
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = ZGO
+	controller = ZGO
+	add_core = ZGO
+}
+2275.1.1 = { 
+	owner = HAN
+	controller = HAN
+}
+2305.1.1 = { 
+	add_core = HAN
+	remove_core = XUG
+	remove_core = ZGO
+}
+2360.1.1 = { 
+	religion = mojia
+}
+2403.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2433.1.1 = { 
+	add_core = QIN
+}
+2489.10.1 = { 
+	controller = CHU
+}
+2490.6.1 = { 
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = HAN
+	controller = HAN
+}

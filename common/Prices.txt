@@ -1,0 +1,2178 @@
+
+# base_price = X		base price in $.		  (default is 1.0 if not specified
+# min_demand = 0.5	  	Demand is never lower than this.  (default is 0.01 if not specified)
+# max_demand = 1.4		Demand is never higher than this.  (default is 2.0 if not specified)
+# goldtype = yes/no		This resource works like 'gold' if yes, using prices from mine-value in province instead of supply/demand and baseprice.  Also creates gold-inflation
+# Supply = { mtth def } 	Multiplied together for every province producing it and multiplied by prod value.
+# Demand = { mtth def }		Multiplied together for every province owned by someone, multiplied by 0.01 * taxvalue/10 (for size)
+
+
+#粮食
+grain = { 
+	base_price = 5.25
+	# 最高允许为6倍，古代粮食价格是不封顶的也是最重要的国家税收来源
+	max_demand = 3
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		# 劫掠带来
+		modifier = { 
+			factor = 0.2
+			is_blockaded = yes
+		}
+		# 被围城时没有粮食供给
+		modifier = { 
+			factor = 0.1
+			has_siege = yes
+		}
+		modifier = { 
+			factor = 0.25
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = -0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				serfdom_freesubjects = 1
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				mercantilism_freetrade = 1
+			}
+		}
+		modifier = { 
+			factor = 0.05
+			units_in_province = 1
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = temple
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = courthouse
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = cathedral
+		}
+		# 部落近乎游牧民族
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				tribal = yes
+			}	
+		}
+	}
+	demand = { 
+		# 战争修正
+		modifier = { 
+			factor = 2
+			owner = { 
+				war = yes
+			}
+		}
+		# 战争的恐慌
+		modifier = { 
+			factor = 1.25
+			any_neighbor_province = { 
+				owner = { 
+					war = yes
+				}
+			}
+			owner = { 
+				war = no
+			}
+		}
+		# 稳定的作用
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				stability = 2
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				stability = 3
+			}
+		}
+		# 军事系建筑修正（后备兵限制）原来的直接加成通过人口修正已经体现所以取消直接加成
+		modifier = { 
+			factor = 1.1
+			has_building = armory
+			NOT = { 
+				owner = { 
+					manpower_percentage = 1
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = training_fields
+			NOT = { 
+				owner = { 
+					manpower_percentage = 1
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = barracks
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = regimental_camp
+			owner = { 
+				war = yes
+			}
+		}
+		# 高级军事建筑的拉动
+		modifier = { 
+			factor = 1.25
+			has_building = conscription_center
+		}
+		# 维护费的修正
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				land_maintenance = 90
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				land_maintenance = 60
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				not = { 
+					land_maintenance = 30
+				}
+			}
+		}
+		# 没有一级要塞需求减少
+		modifier = { 
+			factor = 0.9
+			not = { 
+				has_building = fort1
+			}
+		}
+		# 2,3,4级要塞带来的加成
+		modifier = { 
+			factor = 1.1
+			has_building = fort2
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = fort3
+		}
+		modifier = { 
+			factor = 1.15
+			has_building = fort4
+		}
+		# 高级要塞等于军事重镇，大幅度拉高粮食需求
+		modifier = { 
+			factor = 1.2
+			has_building = fort5
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = fort6
+		}
+		# 贸易物的影响（增加影响系数）
+		modifier = { 
+			factor = 0.65
+			trade_goods = fish
+		}
+		modifier = { 
+			factor = 0.7
+			trade_goods = coffee
+		}
+		# 酒的轻微影响
+		modifier = { 
+			factor = 1.10
+			trade_goods = wine
+		}
+		# 人口修正
+		modifier = { 
+			factor = 1.15
+			citysize = 10000
+		}
+		modifier = { 
+			factor = 1.15
+			citysize = 20000
+		}
+		modifier = { 
+			factor = 1.15
+			citysize = 30000
+		}
+		modifier = { 
+			factor = 1.15
+			citysize = 50000
+		}
+		modifier = { 
+			factor = 1.15
+			citysize = 80000
+		}
+	}
+}
+
+#酒
+wine = { 
+	base_price = 4.5
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.2
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			NOT = { 
+				owner = { 
+					stability = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = 0
+				}
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.05
+			trade_goods = ivory
+		}
+		modifier = { 
+			factor = 1.2
+			has_building = drydock
+		}
+		modifier = { 
+			factor = 1.2
+			has_building = shipyard
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = marketplace
+		}
+		modifier = { 
+			factor = 1.2
+			has_building = canal
+		}
+		modifier = { 
+			factor = 1.75
+			has_building = royal_palace
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				stability = 2
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			NOT = { 
+				owner = { 
+					stability = -1
+				}
+			}
+		}
+		# 鬼神崇拜中的祭祀要用酒于祭祀
+		modifier = { 
+			factor = 1.15
+			religion = animism
+		}
+	}
+}
+
+#蚕丝
+wool = { 
+	base_price = 7.25
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				owner = { 
+					stability = 0
+				}
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.25
+			has_building = march
+			# 关隘
+			owner = { 
+				war = no
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = marketplace
+			# 街市
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = shipyard
+			# 女
+		}
+		modifier = { 
+			factor = 1.75
+			has_building = royal_palace
+			# 宫室
+		}
+		modifier = { 
+			factor = 2.0
+			trade_goods = cloth
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					trade_income_percentage = 0.1
+				}
+			}
+		}
+	}
+}
+
+#布匹
+cloth = { 
+	base_price = 4.75
+	supply = { 
+		modifier = { 
+			factor = 0.15
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.15
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.2
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = counting_house
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.25
+			has_building = marketplace
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = trade_depot
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = canal
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = fine_arts_academy
+		}
+		modifier = { 
+			factor = 1.1
+			citysize = 20000
+		}
+		modifier = { 
+			factor = 1.15
+			citysize = 40000
+		}
+		modifier = { 
+			factor = 1.2
+			citysize = 60000
+		}
+		modifier = { 
+			factor = 0.5
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					trade_income_percentage = 0.1
+				}
+			}
+		}
+		# 维护费的修正
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_maintenance = 70
+			}
+		}
+		# 非中原宗教组减少需求
+		modifier = { 
+			factor = 0.7
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+	}
+}
+
+#鱼
+fish = { 
+	base_price = 4.25
+	max_demand = 1.75
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = -0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			NOT = { 
+				owner = { 
+					land_naval = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			has_building = wharf
+		}
+		modifier = { 
+			factor = 2
+			owner = { 
+				idea = grand_army
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.5
+			trade_goods = grain
+		}
+		modifier = { 
+			factor = 0.66
+			trade_goods = coffee
+		}
+		modifier = { 
+			factor = 0.66
+			NOT = { 
+				owner = { 
+					num_of_ports = 1
+				}
+			}
+		}
+		# 海军数目修正
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				navy_size_percentage = 0.1
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				navy_size_percentage = 0.3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				navy_size_percentage = 0.5
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				navy_size_percentage = 0.7
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				navy_size_percentage = 0.9
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				navy_size_percentage = 1
+			}
+		}
+	}
+}
+
+#毛皮
+fur = { 
+	# 基础价格变低（调高了需求 以及调低供给 基础价位变低作为调节 原来12）
+	base_price = 4
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		# 部落近乎游牧民族
+		modifier = { 
+			factor = 1.3
+			owner = { 
+				tribal = yes
+			}
+		}
+		# 战乱修正 供给变低（采用战争修正影响太大）---打仗时期没人愿意打猎
+		modifier = { 
+			factor = 0.7
+			any_neighbor_province = { 
+				owner = { 
+					war = yes
+				}
+			}
+			owner = { 
+				war = no
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.1
+			has_building = workshop
+		}
+		# 战争修正 需求变高
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				government = republic
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			NOT = { 
+				owner = { 
+					quality_quantity = -3
+				}
+			}
+		}
+		# 非中原宗教组增加需求
+		modifier = { 
+			factor = 1.8
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		# 控制着为部落制度增加需求
+		modifier = { 
+			factor = 2
+			owner = { 
+				tribal = yes
+			}
+		}
+		# 冬天会增加省份的需求
+		modifier = { 
+			factor = 1.3
+			or = { 
+				NOT = { 
+					month = 2
+				}
+				month = 11
+			}
+		}
+	}
+}
+
+#盐
+salt = { 
+	base_price = 9
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				idea = colonial_ventures
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = university
+		}
+		# 盐铁均属-四海通商的细致修正
+		modifier = { 
+			factor = 0.95
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -3
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -4
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				mercantilism_freetrade = 1
+			}
+		}
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				mercantilism_freetrade = 2
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				mercantilism_freetrade = 3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				mercantilism_freetrade = 4
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				mercantilism_freetrade = 5
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				stability = 2
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			trade_goods = fish
+		}
+		modifier = { 
+			factor = 1.5
+			trade_goods = coffee
+		}
+		# 制作毛皮耗费少量盐
+		modifier = { 
+			factor = 1.05
+			trade_goods = fur
+		}
+		modifier = { 
+			factor = 0.75
+			has_building = wharf
+		}
+		modifier = { 
+			factor = 1.05
+			citysize = 20000
+		}
+		modifier = { 
+			factor = 1.2
+			citysize = 40000
+		}
+		modifier = { 
+			factor = 1.2
+			citysize = 80000
+		}
+		modifier = { 
+			factor = 1.2
+			citysize = 120000
+		}
+		modifier = { 
+			factor = 1.2
+			citysize = 150000
+		}
+	}
+}
+
+#金
+gold = { 
+	base_price = 11
+	supply = { }
+	demand = { }
+}
+
+#银
+naval_supplies = { 
+	base_price = 8.75
+	supply = { }
+	demand = { }
+}
+
+#铜
+copper = { 
+	base_price = 7.75
+	max_demand = 2.25
+	supply = { 
+		modifier = { 
+			factor = 0.15
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.15
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				mercantilism_freetrade = 1
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = textile
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				artillery = 2
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_tech = 25
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_tech = 50
+			}
+		}
+		modifier = { 
+			factor = 0.70
+			NOT = { 
+				owner = { 
+					war = yes
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = armory
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = training_fields
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = barracks
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = regimental_camp
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = mint
+		}
+		modifier = { 
+			factor = 1.35
+			has_building = war_college
+		}
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				prestige = 0.3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				prestige = 0.6
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				NOT = { 
+					land_tech = 60
+				}
+				land_maintenance = 50
+			}
+		}
+	}
+}
+
+#铁
+iron = { 
+	base_price = 5.75
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				mercantilism_freetrade = 1
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = textile
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				idea = colonial_ventures
+			}
+		}
+		# 盐铁均属-四海通商的细致修正
+		modifier = { 
+			factor = 0.95
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -3
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					mercantilism_freetrade = -4
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				mercantilism_freetrade = 1
+			}
+		}
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				mercantilism_freetrade = 2
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				mercantilism_freetrade = 3
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				mercantilism_freetrade = 4
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				mercantilism_freetrade = 5
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				infantry = 20
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			NOT = { 
+				owner = { 
+					war = yes
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = armory
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = training_fields
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = barracks
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = regimental_camp
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = war_college
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				NOT = { 
+					land_naval = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.05
+			owner = { 
+				land_tech = 25
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_tech = 35
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				land_tech = 45
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				land_tech = 55
+			}
+		}
+		modifier = { 
+			factor = 1.15
+			owner = { 
+				land_tech = 70
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_tech = 60
+				land_maintenance = 50
+			}
+		}
+	}
+}
+
+#木材
+slaves = { 
+	base_price = 4
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = refinery
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.1
+			has_building = workshop
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = counting_house
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = trade_depot
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = grain_depot
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = wharf
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = royal_palace
+		}
+		modifier = { 
+			factor = 1.25
+			trade_goods = fish
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				big_ship = 20
+			}
+		}
+		modifier = { 
+			factor = 10.0
+			is_capital = yes
+			owner = { 
+				big_ship = 20
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 10.0
+			is_capital = yes
+			owner = { 
+				land_naval = 3
+				big_ship = 50
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				NOT = { 
+					land_naval = 0
+				}
+			}
+		}
+		# 海军数目修正（有一定数量海军并且维护费不低）
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				navy_size_percentage = 0.2
+				naval_maintenance = 50
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				navy_size_percentage = 0.5
+				naval_maintenance = 90
+			}
+		}
+		# 和平利于建设
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				war = no
+			}
+		}
+	}
+}
+
+#药材
+ivory = { 
+	base_price = 4.75
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.25
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+	}
+	demand = { 
+		# 开拓蛮荒会增加草药需求
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				idea = vice_roys
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			NOT = { 
+				has_building = marketplace
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = armory
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = spy_agency
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = arsenal
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = conscription_center
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = shipyard
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = embassy
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = war_college
+		}
+		modifier = { 
+			factor = 1.75
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				num_of_trade_embargos = 2
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			revolt_risk = 5
+		}
+		modifier = { 
+			factor = 1.25
+			revolt_risk = 2
+		}
+		# 战争需要草药 但是只有有交战动作才会触发需求
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				unit_in_battle = yes
+			}
+			# 有单位正在交战
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				unit_in_siege = yes
+			}
+			# 有单位正在围城
+		}
+	}
+}
+
+#茶叶
+tea = { 
+	base_price = 5.25
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.5
+			NOT = { 
+				has_building = marketplace
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = customs_house
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = weapons
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = post_office
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = road_network
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = trade_depot
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				NOT = { 
+					mercantilism_freetrade = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				gold_income_percentage = 0.1
+			}
+		}
+		# 非战争且中原文化
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				religion_group = christian
+				war = no
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				num_of_trade_embargos = 2
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			revolt_risk = 3
+		}
+		# 非中原宗教组减少需求
+		modifier = { 
+			factor = 0.85
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		# 部落
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+}
+
+#陶器
+chinaware = { 
+	base_price = 3.75
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				has_building = marketplace
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				NOT = { 
+					mercantilism_freetrade = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = fine_arts_academy
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = glorious_monument
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = customs_house
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = town_hall
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = cathedral
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = trade_depot
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			revolt_risk = 2
+		}
+		modifier = { 
+			factor = 1.5
+			trade_goods = wine
+		}
+		# 人口修正
+		modifier = { 
+			factor = 1.05
+			citysize = 10000
+		}
+		modifier = { 
+			factor = 1.05
+			citysize = 20000
+		}
+		modifier = { 
+			factor = 1.05
+			citysize = 30000
+		}
+		modifier = { 
+			factor = 1.05
+			citysize = 40000
+		}
+		modifier = { 
+			factor = 1.05
+			citysize = 50000
+		}
+		modifier = { 
+			factor = 1.05
+			citysize = 60000
+		}
+	}
+}
+
+#马匹
+spices = { 
+	base_price = 5.75
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.25
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		# 部落近乎游牧民族
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				cavalry = 20
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_tech = 25
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			owner = { 
+				land_tech = 50
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = armory
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = training_fields
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = barracks
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = regimental_camp
+		}
+		modifier = { 
+			factor = 1.2
+			has_building = war_college
+		}
+		modifier = { 
+			factor = 1.2
+			owner = { 
+				NOT = { 
+					land_naval = -2
+				}
+			}
+		}
+	}
+}
+
+#牛羊
+coffee = { 
+	base_price = 5.25
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.2
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.2
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = -1
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					stability = -0
+				}
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = weapons
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = spy_agency
+		}
+		# 部落近乎游牧民族
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.75
+			trade_goods = grain
+		}
+		modifier = { 
+			factor = 0.5
+			trade_goods = fish
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = town_hall
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = naval_arsenal
+		}
+		modifier = { 
+			factor = 1.1
+			has_building = marketplace
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = canal
+		}
+		modifier = { 
+			factor = 0.75
+			has_building = post_office
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = glorious_monument
+		}
+		# 部落近乎游牧民族
+		modifier = { 
+			factor = 1.8
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+}
+
+#漆器
+cotton = { 
+	base_price = 8
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				has_building = marketplace
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = town_hall
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = cathedral
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = arsenal
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = drydock
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = shipyard
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = naval_base
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = stock_exchange
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = customs_house
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = glorious_monument
+		}
+		modifier = { 
+			factor = 2.0
+			is_capital = yes
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = royal_palace
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = fine_arts_academy
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				NOT = { 
+					mercantilism_freetrade = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				gold_income_percentage = 0.1
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				num_of_trade_embargos = 2
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			revolt_risk = 2
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				prestige = 0.25
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				prestige = 0.5
+			}
+		}
+		# 非中原宗教组减少需求
+		modifier = { 
+			factor = 0.95
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		# 部落
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+}
+
+#玉
+sugar = { 
+	base_price = 9.5
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				has_building = marketplace
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = town_hall
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = cathedral
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = arsenal
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = drydock
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = shipyard
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = naval_base
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = stock_exchange
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = customs_house
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = glorious_monument
+		}
+		modifier = { 
+			factor = 2.0
+			is_capital = yes
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = royal_palace
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = fine_arts_academy
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				NOT = { 
+					mercantilism_freetrade = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				gold_income_percentage = 0.1
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				num_of_trade_embargos = 2
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			revolt_risk = 2
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				prestige = 0.25
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				prestige = 0.5
+			}
+		}
+		# 非中原宗教组减少需求
+		modifier = { 
+			factor = 0.95
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		# 部落
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+}
+
+#犀象
+tobacco = { 
+	base_price = 8
+	supply = { 
+		modifier = { 
+			factor = 0.1
+			looted = yes
+		}
+		modifier = { 
+			factor = 0.1
+			is_blockaded = yes
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				controlled_by = owner
+			}
+		}
+	}
+	demand = { 
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				has_building = marketplace
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = town_hall
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = cathedral
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = arsenal
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = drydock
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = shipyard
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = naval_base
+		}
+		modifier = { 
+			factor = 1.25
+			has_building = stock_exchange
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = customs_house
+		}
+		modifier = { 
+			factor = 1.5
+			has_building = glorious_monument
+		}
+		modifier = { 
+			factor = 2.0
+			is_capital = yes
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = royal_palace
+		}
+		modifier = { 
+			factor = 2.0
+			has_building = fine_arts_academy
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				NOT = { 
+					mercantilism_freetrade = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				gold_income_percentage = 0.1
+			}
+		}
+		modifier = { 
+			factor = 0.6
+			owner = { 
+				war = yes
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				num_of_trade_embargos = 2
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			revolt_risk = 2
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				prestige = 0.25
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				prestige = 0.5
+			}
+		}
+		# 非中原宗教组减少需求
+		modifier = { 
+			factor = 0.9
+			NOT = { 
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		# 部落
+		modifier = { 
+			factor = 0.65
+			owner = { 
+				tribal = yes
+			}
+		}
+	}
+}
+
+unknown = { 
+	base_price = 0
+}

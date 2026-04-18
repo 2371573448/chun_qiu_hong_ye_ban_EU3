@@ -1,0 +1,24 @@
+owner = LHU
+controller = LHU
+culture = xiongnu
+religion = animism
+capital = "¸ßÍû"
+trade_goods = fur
+hre = no
+base_tax = 1
+manpower = 0
+citysize = 4000
+fort1 = yes
+add_core = LHU
+cot = no
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2391.1.1 = { 
+	native_size = 20
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}

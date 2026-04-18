@@ -1,0 +1,414 @@
+##########################
+#秦国专属决议
+##########################
+country_decisions = { 
+	bianshen_qin = { 
+		potential = { 
+			NOT = { 
+				exists = QIN
+			}
+			NOT = { 
+				tag = PAP
+			}
+			OR = { 
+				primary_culture = guanzhong
+				primary_culture = xirong
+			}
+			NOT = { 
+				government = tribal_despotism
+				government = tribal_federation
+				government = steppe_horde
+			}
+		}
+		allow = { 
+			owns = 173
+			owns = 197
+			owns = 179
+			owns = 198
+			is_core = 173
+			is_core = 197
+			is_core = 179
+			is_core = 198
+			war = no
+		}
+		effect = { 
+			fufeng = { 
+				add_core = QIN
+			}
+			fengyi = { 
+				add_core = QIN
+			}
+			capital = 197
+			prestige = 0.05
+			change_tag = QIN
+			elector = yes
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qiandupingyang = { 
+		# 迁都平阳
+		potential = { 
+			owns = 192
+			NOT = { capital = 192 }
+			NOT = { 
+				has_country_flag = qiandupingyang
+			}
+			tag = QIN
+		}
+		allow = { 
+			OR = { 
+				AND = { 
+					capital_scope = { 
+						hre = yes
+					}
+					192 = { 
+						hre = yes
+					}
+				}
+				capital_scope = { 
+					hre = no
+				}
+			}
+			is_core = 192
+			war = no
+		}
+		effect = { 
+			capital = 192
+			192 = { 
+				base_tax = 1
+				rename_capital = "平阳"
+			}
+			stability = -1
+			set_country_flag = qiandupingyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qianduyongcheng = { 
+		# 迁都雍城
+		potential = { 
+			tag = QIN
+			NOT = { 
+				has_country_flag = qianduyongcheng
+			}
+			has_country_flag = qiandupingyang
+			owns = 179
+			NOT = { capital = 179 }
+		}
+		allow = { 
+			OR = { 
+				AND = { 
+					capital_scope = { 
+						hre = yes
+					}
+					179 = { 
+						hre = yes
+					}
+				}
+				capital_scope = { 
+					hre = no
+				}
+			}
+			is_core = 179
+			war = no
+		}
+		effect = { 
+			capital = 179
+			179 = { 
+				base_tax = 1
+			}
+			stability = -1
+			set_country_flag = qianduyongcheng
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qiandujingyang = { 
+		# 迁都泾阳
+		potential = { 
+			tag = QIN
+			has_country_flag = qianduyongcheng
+			NOT = { 
+				has_country_flag = qiandujingyang
+			}
+			owns = 196
+			NOT = { capital = 196 }
+		}
+		allow = { 
+			OR = { 
+				AND = { 
+					capital_scope = { 
+						hre = yes
+					}
+					196 = { 
+						hre = yes
+					}
+				}
+				capital_scope = { 
+					hre = no
+				}
+			}
+			is_core = 196
+			war = no
+		}
+		effect = { 
+			capital = 196
+			196 = { 
+				base_tax = 1
+			}
+			stability = -1
+			set_country_flag = qiandujingyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qianduyueyang = { 
+		# 迁都栎阳
+		potential = { 
+			tag = QIN
+			has_country_flag = qiandujingyang
+			NOT = { 
+				has_country_flag = qianduyueyang
+			}
+			owns = 199
+			NOT = { capital = 199 }
+		}
+		allow = { 
+			OR = { 
+				AND = { 
+					capital_scope = { 
+						hre = yes
+					}
+					199 = { 
+						hre = yes
+					}
+				}
+				capital_scope = { 
+					hre = no
+				}
+			}
+			is_core = 199
+			war = no
+		}
+		effect = { 
+			capital = 199
+			199 = { 
+				base_tax = 1
+			}
+			stability = -1
+			set_country_flag = qianduyueyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qianduxianyang = { 
+		# 迁都咸阳
+		potential = { 
+			tag = QIN
+			owns = 173
+			owns = 197
+			owns = 179
+			owns = 198
+			is_core = 173
+			is_core = 197
+			is_core = 179
+			is_core = 198
+			NOT = { capital = 197 }
+			has_country_flag = qianduyueyang
+			NOT = { 
+				has_country_flag = qianduxianyang
+			}
+		}
+		allow = { 
+			OR = { 
+				AND = { 
+					capital_scope = { 
+						hre = yes
+					}
+					197 = { 
+						hre = yes
+					}
+				}
+				capital_scope = { 
+					hre = no
+				}
+			}
+			war = no
+		}
+		effect = { 
+			centralization_decentralization = -1
+			capital = 197
+			197 = { 
+				base_tax = 1
+			}
+			set_country_flag = qianduxianyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qiandupingyang_ai = { 
+		# 迁都平阳
+		potential = { 
+			ai = yes
+			owns = 192
+			NOT = { capital = 192 }
+			NOT = { 
+				has_country_flag = qiandupingyang
+			}
+			tag = QIN
+		}
+		allow = { 
+			192 = { hre = yes }
+			is_core = 192
+			war = no
+		}
+		effect = { 
+			capital = 192
+			192 = { 
+				base_tax = 1
+				rename_capital = "平阳"
+			}
+			set_country_flag = qiandupingyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qianduyongcheng_ai = { 
+		# 迁都雍城
+		potential = { 
+			tag = QIN
+			ai = yes
+			NOT = { 
+				has_country_flag = qianduyongcheng
+			}
+			has_country_flag = qiandupingyang
+			owns = 179
+		}
+		allow = { 
+			179 = { hre = yes }
+			is_core = 179
+			war = no
+		}
+		effect = { 
+			capital = 179
+			179 = { 
+				base_tax = 1
+			}
+			set_country_flag = qianduyongcheng
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qiandujingyang_ai = { 
+		# 迁都泾阳
+		potential = { 
+			tag = QIN
+			ai = yes
+			has_country_flag = qianduyongcheng
+			NOT = { 
+				has_country_flag = qiandujingyang
+			}
+			owns = 196
+			NOT = { capital = 196 }
+		}
+		allow = { 
+			196 = { hre = yes }
+			is_core = 196
+			war = no
+		}
+		effect = { 
+			capital = 196
+			196 = { 
+				base_tax = 1
+			}
+			set_country_flag = qiandujingyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qianduyueyang_ai = { 
+		# 迁都栎阳
+		potential = { 
+			tag = QIN
+			ai = yes
+			has_country_flag = qiandujingyang
+			NOT = { 
+				has_country_flag = qianduyueyang
+			}
+			owns = 199
+			NOT = { capital = 199 }
+		}
+		allow = { 
+			199 = { hre = yes }
+			is_core = 199
+			war = no
+		}
+		effect = { 
+			capital = 199
+			199 = { 
+				base_tax = 1
+			}
+			set_country_flag = qianduyueyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	qin_qianduxianyang_ai = { 
+		# 迁都咸阳
+		potential = { 
+			tag = QIN
+			ai = yes
+			has_country_flag = qianduyueyang
+			NOT = { 
+				has_country_flag = qianduxianyang
+			}
+			owns = 197
+			NOT = { capital = 197 }
+		}
+		allow = { 
+			197 = { hre = yes }
+			is_core = 197
+			war = no
+		}
+		effect = { 
+			capital = 197
+			199 = { 
+				base_tax = 1
+			}
+			set_country_flag = qianduxianyang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	#天下大乱
+	tianxiadaluan = { 
+		potential = { 
+			tag = QIN
+			ai = yes
+		}
+		allow = { 
+			year = 2480
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "tianxiadaluan"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

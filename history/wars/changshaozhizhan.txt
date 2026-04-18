@@ -1,0 +1,12 @@
+name = "³¤É×Ö®Õ½"
+casus_belli = cb_insult #
+
+2014.1.1 = {
+	add_attacker = QIG
+	add_defender = LUG
+}
+
+2014.2.1  = {
+	rem_attacker = QIG
+	rem_defender = LUG
+}

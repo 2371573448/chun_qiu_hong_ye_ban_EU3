@@ -1,0 +1,50 @@
+owner = SGU
+controller = SGU
+culture = shu
+religion = ancestor
+capital = "טקהü"
+trade_goods = cloth
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 26000
+fort1 = yes
+add_core = SGU
+cot = no
+
+1928.1.1 = { discovered_by = BAG }
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { discovered_by = QIN }
+2222.1.1 = { citysize = 38000 }
+2244.1.1 = { 
+	owner = JUU
+	controller = JUU
+	add_core = JUU
+	remove_core = SGU
+}
+2244.1.2 = { 
+	owner = SGU
+	controller = SGU
+	add_core = SGU
+	remove_core = JUU
+}
+2246.1.1 = { religion = liyuebadao 
+             citysize = 49000 
+}
+2246.1.2 = {
+        citysize = 39000
+    }
+2246.1.3 = {
+        citysize = 49000
+    }
+2382.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2412.1.1 = { add_core = QIN  }
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+	citysize = 36000
+}

@@ -1,0 +1,253 @@
+tutorial =
+{
+	title = "TUTORIAL_6"
+	desc = "TUTORIAL_6_DESC"
+	tutorial_window = "TUTORIAL_WINDOW_1"	# default window
+	interactive = yes
+	country = BRA
+
+
+	
+
+
+	page =
+	{
+
+		effect = {
+			treasury = 1000
+		}
+
+		args = { 
+			regiment_type = "Men at Arms"
+			province = "Ruppin"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_1_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_1_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_1_conc"
+
+		trigger = {
+			51 = {
+				infantry_in_province = 1	# At least one
+				NOT = {
+					infantry_in_province = 2	# NOT two or more  == exactly one.
+				}
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			province_1 = "Ruppin"
+			province_2 = "Brandenburg"
+		}
+	
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_2_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_2_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_2_conc"
+
+		trigger = {
+			50 = {
+				infantry_in_province = 3	# At least three
+				NOT = {
+					infantry_in_province = 4
+				}
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			amount = "3"
+			province = "Brandenburg"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_3_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_3_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_3_conc"
+
+		trigger = {
+			50 = {
+				infantry_in_province = 6
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			province = "Brandenburg"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_4_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_4_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_4_conc"
+
+		trigger = {
+			50 = {
+				units_in_province = 1	
+				NOT = {
+					units_in_province = 2 	
+				}
+			}
+		}
+
+	}
+
+	
+
+	page =
+	{
+
+		args = { 
+			province = "Brandenburg"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_5_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_5_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_5_conc"
+
+		trigger = {
+			50 = {
+				unit_has_leader = yes
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			nation = "Magdeburg"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_8_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_8_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_8_conc"
+
+		trigger = {
+			war_with = MAG
+		}
+
+	}
+
+
+	page =
+	{
+
+		args = { 
+			province = "Altmark"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_10_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_10_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_10_conc"
+
+		trigger = {
+			BRA = {
+				controls = 52
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			nation = "Magdeburg"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_11_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_11_hint"
+		window = "TUTORIAL_CONC"
+		text = "tut_miss_11_conc"
+
+		trigger = {
+
+			NOT = {
+				war_with = MAG
+			}
+		}
+
+	}
+
+	page =
+	{
+
+		args = { 
+			nation = "Magdeburg"
+		}
+
+
+		window = "TUTORIAL_TASK"
+		text = "tut_miss_11_task"
+		window = "TUTORIAL_HINT"
+		text = "tut_miss_11_hint"
+		window = "TUTORIAL_CONC"
+		text = "tutorial_completed"
+
+		trigger = {
+
+			NOT = {
+				war_with = MAG
+			}
+		}
+
+	}
+
+
+
+
+
+
+}
+
+# new triggers..
+
+## galleys_in_province
+## infantry_in_province
+## war_with
+## unit_in_battle
+## unit_in_siege
+## unit_has_leader

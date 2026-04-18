@@ -1,0 +1,39 @@
+#Country Name: Please see filename.
+ 
+graphical_culture = chinesegfx
+
+color = { 109  193  133 }
+ 
+historical_ideas = {
+	land_of_opportunity
+	national_bank
+
+}
+ 
+ 
+historical_units = {
+
+}
+ 
+ 
+monarch_names = {
+"²®Ø²" = 100
+"°×Â¹" = 60
+"²®»ª" = 40
+"·ëÒÄ" = 40
+"ÎÞÒÄ" = 20
+"Ë¼Âú" = 20
+"ÒÄ" = -20
+"´¥" = 20
+"ÕÂ" = 10
+"µÂ" = -10
+}
+ 
+ 
+leader_names = {
+²®Ø²
+³àÎÚ
+¼§ ¼§ ¼§ ¼§ ¼§ 
+}
+ 
+ 

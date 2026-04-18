@@ -1,0 +1,14 @@
+government = tribal_despotism
+aristocracy_plutocracy = 0
+centralization_decentralization = 0
+innovative_narrowminded = 0
+mercantilism_freetrade = 0
+offensive_defensive = 0
+land_naval = 0
+quality_quantity = 0
+serfdom_freesubjects = 0
+technology_group = nomad_group
+religion = animism
+primary_culture = xirong
+
+capital = 366

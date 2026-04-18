@@ -1,0 +1,105 @@
+owner = CHI
+controller = CHI
+culture = chidi
+religion = animism
+capital = "³¤Æ½"
+trade_goods = chinaware
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = CHI
+add_core = DOC
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2038.12.1 = { 
+	owner = DOC
+	controller = DOC
+}
+2094.1.1 = { 
+	owner = LUS
+	controller = LUS
+}
+2104.1.1 = { 
+	owner = JIN
+	controller = JIN
+}
+2134.1.1 = { 
+	add_core = JIN
+}
+2164.1.1 = { 
+	culture = shanxi
+	religion = liyuejiaohua
+	remove_core = DOC
+	remove_core = CHI
+}
+2222.1.1 = { 
+	citysize = 26000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = ZHO
+}
+2245.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+}
+2246.1.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+	remove_core = ZHO
+}
+2246.1.2 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+}
+2247.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = HAN
+}
+2456.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2486.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2493.8.1 = { 
+	owner = HNW
+	controller = HNW
+}

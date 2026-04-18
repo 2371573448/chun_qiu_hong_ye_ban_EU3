@@ -1,0 +1,52 @@
+government = steppe_horde
+aristocracy_plutocracy = -2
+centralization_decentralization = -2
+innovative_narrowminded = 2
+mercantilism_freetrade = 4
+offensive_defensive = -5
+land_naval = -5
+quality_quantity = 5
+serfdom_freesubjects = -4
+technology_group = xiongnu
+religion = animism
+primary_culture = xiongnu
+capital = 787
+2246.1.1 = {
+	monarch = {
+		name = "×ÓÒÇ"
+		dynasty = "ÂÎíL"
+		adm = 7
+		dip = 7
+		mil = 7
+		death_date=2247.1.1
+	}
+}
+2465.1.1 = {
+	monarch = {
+		name = "Í·Âü"
+		dynasty = "ÂÎíL"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2489.1.1 = {
+	monarch = {
+		name = "Ã°¶Ù"
+		dynasty = "ÂÎíL"
+		adm = 8
+		dip = 7
+		mil = 9
+	}
+	centralization_decentralization = -4
+	leader={
+		name="ÉäµñÕß"
+		type=general
+		rank=1
+		fire=5
+		shock=6
+		manuever=3
+		siege=0
+		death_date=2520.1.1
+	}
+}

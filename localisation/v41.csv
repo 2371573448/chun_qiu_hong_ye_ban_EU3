@@ -1,0 +1,25 @@
+;;;;;;;;;;X
+LEVEL_WITH;需要补给：;;;;;;;;;;X
+REV_LOSE_CB;$ACTIVE$失去了一个对$PASSIVE$的\n$TYPE$的宣战理由. \n;;;;;;;;;;X
+CW_WARNINSPHERE_SHORT;他们在 $COUNTRY$ 的势力范围内. ;;;;;;;;;;X
+RENAME_CAPITAL_EFF; $OLD$ 改名为 $NEW$ .\n;;;;;;;;;;X
+regency_council;公卿摄政;;;;;;;;;;X
+national_defense;国家防御;;;;;;;;;;X
+PEACEBETTER_NODECLINE;\n(这笔交易比我们预期的好,再加上我们\n过低的稳定, 所以我们不能拒绝!);;;;;;;;;;X
+TECHNOLOGY;科技组;;;;;;;;;;X
+RESEARCH_EFF;研发效率;;;;;;;;;;X
+UNIT_TECH_DRO;- 允许 $TYPE$ 兵种类型;;;;;;;;;;X
+MAX_CAV_TO_INF;- 如果混合军团中骑兵不超过比例会获得奖励 ;;;;;;;;;;X
+UNIT_TECH;兵种组;;;;;;;;;;X
+cb_nomad_conquest;部落争霸;;;;;;;;;;X
+cb_nomad_conquest_desc;我们比他们的部落更强盛!;;;;;;;;;;X
+MERC_MAINTENANCE_MODIFIER;私募兵维护费修正因子;;;;;;;;;;X
+NOTECH_MORE_ADVANCED2;这个国家理念格将在文化科技等级达到后得到.\n我们目前的等级不能支持更多理念.;;;;;;;;;;X
+BANKRUPT_UNTIL;我们不幸的受到破产效果影响,直到$DATE$.\n这将受到以下惩罚..;;;;;;;;;;X
+ABANDON_MERCHANT;放弃商人;;;;;;;;;;X
+ABANDON_MERCHANT_IRO;放弃所有在这个贸易中心的我们的商人.\n这样我们将完全撤出这个贸易中心.;;;;;;;;;;X
+PEACE_CANNOT_ANNEX_OCCUPY;在吞并他们之前我们必须占领他们所有的省份.;;;;;;;;;;X
+PEACE_CANNOT_ANNEX_SIZE;除非他们是原始国家或者叛军,\n否则我们不能吞并省份大于$NUMBER$的国家.;;;;;;;;;;X
+PEACE_CANNOT_ANNEX_COST;他们省份的总胜利点数太高了.;;;;;;;;;;X
+RELIGIOUS_WAR_NAME;$ORDER$$FIRST$-$SECOND$ 宗教战争;;;;;;;;;;X
+ALL_REL_GROUP_PROVS;我们宗教圈的所有省份;;;;;;;;;;X

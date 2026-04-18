@@ -1,0 +1,1105 @@
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\alerts.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\backend.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\casus_bellis.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\combat.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\core.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\countryhistory.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\credits.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_court.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_culture.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_economy.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_leaders.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_military.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_missions.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_overview.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_policies.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\domesticpanel_religion.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\eu3dialog.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\eventwindow.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\faction.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\goto.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\hre.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\hre_vote.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\ingamelobby.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\ledger.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\menubar.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\messagesettings.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\metaserver.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\modifier_interface.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\nudge.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\offerloandialog.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\options.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\outliner.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\papacy.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\peace.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\peaceview.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\provincehistory.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\provincepanel.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\provincepanel_colony.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\rightclickmenu.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\sellprovdialog.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\settings.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\shogunate.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\temp_frontend.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\topbar.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\trade_goods.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\tutorial.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\unitpanel.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\waroverview.gui
+[eu3application.cpp:552]: Loaded GUI Definition File: interface\warsubsidydialog.gui
+[eu3application.cpp:882]: FactionDatabase Initialized
+[technology.cpp:1253]: Technology Table #0 tag = land_tech name = 军事科技等级
+[technology.cpp:1253]: Technology Table #1 tag = naval_tech name = 文化科技等级
+[technology.cpp:1253]: Technology Table #2 tag = trade_tech name = 商业科技等级
+[technology.cpp:1253]: Technology Table #3 tag = production_tech name = 工业科技等级
+[technology.cpp:1253]: Technology Table #4 tag = government_tech name = 行政科技等级
+[technology.cpp:1268]: Technology Group #0 tag = notechgroup name = 没有科技组 modifier = 0.01
+[technology.cpp:1268]: Technology Group #1 tag = tianjie name = 天界之力 modifier = 0.88
+[technology.cpp:1268]: Technology Group #2 tag = tianjie name = 天界之力 modifier = 0.88
+[technology.cpp:1268]: Technology Group #3 tag = xiongnu name = 匈奴 modifier = 1
+[technology.cpp:1268]: Technology Group #4 tag = chinese name = 中原 modifier = 1
+[technology.cpp:1268]: Technology Group #5 tag = jingchu name = 荆楚 modifier = 1
+[technology.cpp:1268]: Technology Group #6 tag = nomad_group name = 戎狄 modifier = 1
+[technology.cpp:1268]: Technology Group #7 tag = dongyi1 name = 东夷 modifier = 1
+[technology.cpp:1268]: Technology Group #8 tag = wuyue1 name = 吴越 modifier = 1
+[technology.cpp:1268]: Technology Group #9 tag = bashu1 name = 巴蜀 modifier = 1
+[technology.cpp:1268]: Technology Group #10 tag = baiyue name = 百越 modifier = 0.7
+[technology.cpp:1268]: Technology Group #11 tag = qinguo name = 秦国 modifier = 1
+[technology.cpp:1268]: Technology Group #12 tag = qiguo name = 齐国 modifier = 1
+[technology.cpp:1268]: Technology Group #13 tag = zhaoguo name = 赵国 modifier = 1
+[technology.cpp:1268]: Technology Group #14 tag = weiguo name = 魏国 modifier = 1
+[technology.cpp:1268]: Technology Group #15 tag = hanguo name = 韩国 modifier = 1
+[technology.cpp:1268]: Technology Group #16 tag = yanguo name = 燕国 modifier = 1
+[technology.cpp:1268]: Technology Group #17 tag = wuyue2 name = wuyue2 modifier = 1
+[technology.cpp:1268]: Technology Group #18 tag = yinshang name = 宋国科技组 modifier = 1
+[technology.cpp:1268]: Technology Group #19 tag = dahan name = 大汉 modifier = 1
+[technology.cpp:1268]: Technology Group #20 tag = mojia name = 墨家 modifier = 1
+[technology.cpp:1268]: Technology Group #21 tag = xiyu name = 西域 modifier = 1
+[technology.cpp:1268]: Technology Group #22 tag = zhuanshu name = zhuanshu modifier = 1
+[eu3application.cpp:897]: TechnologyDatabase Phase #1 Initialized
+[eu3application.cpp:920]: Static Modifiers Initialized
+[policies.cpp:132]: Policy #0 tag = centralization_decentralization name = 君主集权/封邦建国
+[policies.cpp:132]: Policy #1 tag = aristocracy_plutocracy name = 公家政治/士卿政治
+[policies.cpp:132]: Policy #2 tag = serfdom_freesubjects name = 井田蓄奴/私田耕作
+[policies.cpp:132]: Policy #3 tag = innovative_narrowminded name = 尚今思新/祭祖崇古
+[policies.cpp:132]: Policy #4 tag = mercantilism_freetrade name = 盐铁均输/四海通商
+[policies.cpp:132]: Policy #5 tag = offensive_defensive name = 开疆拓土/持盈守成
+[policies.cpp:132]: Policy #6 tag = land_naval name = 问鼎中原/开拓不毛
+[policies.cpp:132]: Policy #7 tag = quality_quantity name = 精兵强将/千军万马
+[eu3application.cpp:934]: PolicyDatabase Initialized
+[religion.cpp:139]: Religion Group #0 tag = none name =  ===>没有信仰 
+[religion.cpp:139]: Religion Group #1 tag = christian name = 华夏信仰 ===>礼乐教化 礼乐霸道 儒家 法家 墨家 道家 
+[religion.cpp:139]: Religion Group #2 tag = pagan name = 泛灵崇拜 ===>鬼神崇拜 祖先崇拜 
+[eu3application.cpp:948]: ReligionDatabase Initialized
+[tradegoods.cpp:320]: TradeGoods #0 tag = nogoods name = 没有货物
+[tradegoods.cpp:320]: TradeGoods #1 tag = grain name = 谷物
+[tradegoods.cpp:320]: TradeGoods #2 tag = wine name = 酒
+[tradegoods.cpp:320]: TradeGoods #3 tag = wool name = 蚕丝
+[tradegoods.cpp:320]: TradeGoods #4 tag = cloth name = 布匹
+[tradegoods.cpp:320]: TradeGoods #5 tag = fish name = 鱼类
+[tradegoods.cpp:320]: TradeGoods #6 tag = fur name = 毛皮
+[tradegoods.cpp:320]: TradeGoods #7 tag = salt name = 盐
+[tradegoods.cpp:320]: TradeGoods #8 tag = naval_supplies name = 银矿
+[tradegoods.cpp:320]: TradeGoods #9 tag = copper name = 铜
+[tradegoods.cpp:320]: TradeGoods #10 tag = gold name = 黄金
+[tradegoods.cpp:320]: TradeGoods #11 tag = iron name = 铁
+[tradegoods.cpp:320]: TradeGoods #12 tag = slaves name = 木材
+[tradegoods.cpp:320]: TradeGoods #13 tag = ivory name = 药材
+[tradegoods.cpp:320]: TradeGoods #14 tag = tea name = 茶叶
+[tradegoods.cpp:320]: TradeGoods #15 tag = chinaware name = 陶器
+[tradegoods.cpp:320]: TradeGoods #16 tag = spices name = 马匹
+[tradegoods.cpp:320]: TradeGoods #17 tag = coffee name = 牛羊
+[tradegoods.cpp:320]: TradeGoods #18 tag = cotton name = 漆器
+[tradegoods.cpp:320]: TradeGoods #19 tag = sugar name = 玉
+[tradegoods.cpp:320]: TradeGoods #20 tag = tobacco name = 犀象
+[tradegoods.cpp:320]: TradeGoods #21 tag = unknown name = 未知
+[eu3application.cpp:962]: TradeGoodsDatabase Initialized
+[government.cpp:460]: Government #0 tag = nogovernment name = 没有政府 num_of_legal_conversions = 0
+[government.cpp:460]: Government #1 tag = fengjian name = 封建诸侯制 num_of_legal_conversions = 3
+[government.cpp:460]: Government #2 tag = celestial_empire name = 天下共主制 num_of_legal_conversions = 1
+[government.cpp:460]: Government #3 tag = yinshangjunzhi name = 殷商制度 num_of_legal_conversions = 0
+[government.cpp:460]: Government #4 tag = yuanshuai name = 元帅士卿制 num_of_legal_conversions = 3
+[government.cpp:460]: Government #5 tag = zhizheng name = 执政士卿制 num_of_legal_conversions = 4
+[government.cpp:460]: Government #6 tag = absolute_monarchy name = 君主独裁制 num_of_legal_conversions = 2
+[government.cpp:460]: Government #7 tag = enlightened_despotism name = 君主集权制 num_of_legal_conversions = 3
+[government.cpp:460]: Government #8 tag = tribal_federation name = 部落联盟制 num_of_legal_conversions = 1
+[government.cpp:460]: Government #9 tag = tribal_despotism name = 部落独裁制 num_of_legal_conversions = 1
+[government.cpp:460]: Government #10 tag = zhongshang name = 商业邦国制 num_of_legal_conversions = 2
+[government.cpp:460]: Government #11 tag = noble_republic name = 周召共和制 num_of_legal_conversions = 2
+[government.cpp:460]: Government #12 tag = reformed_despotism name = 变法君主制 num_of_legal_conversions = 2
+[government.cpp:460]: Government #13 tag = centralization_empire name = 集权帝国制 num_of_legal_conversions = 1
+[government.cpp:460]: Government #14 tag = feudal_empire name = 封建帝国制 num_of_legal_conversions = 1
+[government.cpp:460]: Government #15 tag = steppe_horde name = 草原游牧制 num_of_legal_conversions = 0
+[government.cpp:460]: Government #16 tag = republican_dictatorship name = 圣王禅让制 num_of_legal_conversions = 2
+[government.cpp:460]: Government #17 tag = god_kingdom name = 神国仙境 num_of_legal_conversions = 0
+[government.cpp:460]: Government #18 tag = small_city name = 小国寡民制 num_of_legal_conversions = 2
+[government.cpp:460]: Government #19 tag = datongwangdao name = 大同王道制 num_of_legal_conversions = 1
+[government.cpp:460]: Government #20 tag = mojiajuzi name = 非攻巨子制 num_of_legal_conversions = 0
+[government.cpp:460]: Government #21 tag = merchant_republic name = 商业共和制 num_of_legal_conversions = 1
+[eu3application.cpp:975]: GovernmentDatabase Initialized
+[eu3application.cpp:989]: BuildingDatabase Initialized
+[ideas.cpp:287]: Idea Group #0 tag = none name = 无 ===>没有国家理念 
+[ideas.cpp:287]: Idea Group #1 tag = naval_ideas name = 文化理念 ===>威震华夏·恩威并施 嫡长继承 广结诸侯·蒐狩之礼 天命所归·家国天下 莫非王土 尊王攘夷 逐鹿中原 合纵连横 
+[ideas.cpp:287]: Idea Group #2 tag = land_ideas name = 陆军理念 ===>行舟走舸 奖励耕战 军功授爵 私募制度 千乘之国 上兵伐谋 革化战阵 广纳兵家 
+[ideas.cpp:287]: Idea Group #3 tag = exploration_ideas name = 探索理念 ===>重农抑商 端木遗风 盐铁专卖 封邑建设 开拓荒蛮 物产开发 什一之制 与民同耕 
+[ideas.cpp:287]: Idea Group #4 tag = state_business_ideas name = 政治理念 ===>宗法至上 门客制度 郡县制度 防范私铸 什伍连坐 鼎铸刑书 锐意变法 重用法家 
+[ideas.cpp:287]: Idea Group #5 tag = culture_ideas name = 文化理念 ===>设立官学 鸡鸣狗盗 有教无类 绝圣弃智 兼爱非攻 制名指实 天道无为 阴阳五行 
+[eu3application.cpp:1005]: IdeaDatabase Initialized
+[eu3application.cpp:1016]: TechnologyDatabase Phase #2 Initialized
+[eu3application.cpp:1035]: CountryDatabase Initialized
+[culture.cpp:92]: Culture Group #0 tag = noculturegroup name =  ===>无文化 
+[culture.cpp:92]: Culture Group #1 tag = huaxia name = 华夏 ===>中原 海岱 关中 河东 河北 东夏 江汉 
+[culture.cpp:92]: Culture Group #2 tag = man name = 蛮 ===>荆楚 群蛮 三苗 
+[culture.cpp:92]: Culture Group #3 tag = yi name = 夷 ===>殷商 莱夷 东夷 朝鲜 淮夷 
+[culture.cpp:92]: Culture Group #4 tag = di name = 狄 ===>赤狄 白狄 长狄 北狄 
+[culture.cpp:92]: Culture Group #5 tag = rong name = 戎 ===>山戎 西戎 
+[culture.cpp:92]: Culture Group #6 tag = bayue name = 百越 ===>於越 句吴 瓯越 闽越 南越 扬越 僰僚 
+[culture.cpp:92]: Culture Group #7 tag = baipu name = 西南夷 ===>巴 蜀 邛笮 庸 昆巂 滇 
+[culture.cpp:92]: Culture Group #8 tag = hu name = 胡 ===>匈奴 东胡 西域 月氏 乌孙 塞种 
+[eu3application.cpp:1048]: CultureDatabase Initialized
+[onaction.cpp:204]: ActionList #0 tag = on_centralization_decentralization_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #1 tag = on_centralization_decentralization_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #2 tag = on_aristocracy_plutocracy_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #3 tag = on_aristocracy_plutocracy_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #4 tag = on_serfdom_freesubjects_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #5 tag = on_serfdom_freesubjects_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #6 tag = on_innovative_narrowminded_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #7 tag = on_innovative_narrowminded_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #8 tag = on_mercantilism_freetrade_left random events = 3 events = 0
+[onaction.cpp:204]: ActionList #9 tag = on_mercantilism_freetrade_right random events = 3 events = 0
+[onaction.cpp:204]: ActionList #10 tag = on_offensive_defensive_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #11 tag = on_offensive_defensive_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #12 tag = on_land_naval_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #13 tag = on_land_naval_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #14 tag = on_quality_quantity_left random events = 4 events = 0
+[onaction.cpp:204]: ActionList #15 tag = on_quality_quantity_right random events = 4 events = 0
+[onaction.cpp:204]: ActionList #16 tag = on_battle_won random events = 0 events = 0
+[onaction.cpp:204]: ActionList #17 tag = on_battle_lost random events = 0 events = 0
+[onaction.cpp:204]: ActionList #18 tag = on_siege_won random events = 0 events = 1
+[onaction.cpp:204]: ActionList #19 tag = on_new_monarch random events = 0 events = 4
+[onaction.cpp:204]: ActionList #20 tag = on_regent random events = 0 events = 1
+[onaction.cpp:204]: ActionList #21 tag = on_new_term_election random events = 0 events = 1
+[onaction.cpp:204]: ActionList #22 tag = on_death_election random events = 0 events = 1
+[onaction.cpp:204]: ActionList #23 tag = on_diplomatic_annex random events = 0 events = 1
+[onaction.cpp:204]: ActionList #24 tag = on_weak_heir_claim random events = 0 events = 1
+[onaction.cpp:204]: ActionList #25 tag = on_successive_emperor random events = 0 events = 1
+[onaction.cpp:204]: ActionList #26 tag = on_released_hre_member random events = 0 events = 1
+[onaction.cpp:204]: ActionList #27 tag = on_hre_member_false_religion random events = 0 events = 1
+[onaction.cpp:204]: ActionList #28 tag = on_hre_member_true_religion random events = 0 events = 1
+[onaction.cpp:204]: ActionList #29 tag = on_hre_wins_defensive_war random events = 0 events = 1
+[onaction.cpp:204]: ActionList #30 tag = on_hre_member_annexed random events = 0 events = 1
+[onaction.cpp:204]: ActionList #31 tag = on_hre_member_released_soi random events = 0 events = 1
+[onaction.cpp:204]: ActionList #32 tag = on_hre_released_vassal random events = 0 events = 1
+[onaction.cpp:204]: ActionList #33 tag = on_hre_defense random events = 0 events = 1
+[onaction.cpp:204]: ActionList #34 tag = on_hre_non_defense random events = 0 events = 1
+[onaction.cpp:204]: ActionList #35 tag = on_hre_province_reconquest random events = 0 events = 1
+[onaction.cpp:204]: ActionList #36 tag = on_allied_kampaku random events = 0 events = 0
+[onaction.cpp:204]: ActionList #37 tag = on_reform_revoked random events = 0 events = 1
+[onaction.cpp:204]: ActionList #38 tag = on_integrate random events = 0 events = 1
+[onaction.cpp:204]: ActionList #39 tag = on_bi_yearly_pulse random events = 0 events = 0
+[eu3application.cpp:1062]: On Actions Initialized
+[map.cpp:1040]: Continent #0 name = 欧洲 with 0province assigned.
+[map.cpp:1040]: Continent #1 name = 亚洲 with 1300province assigned.
+[map.cpp:1040]: Continent #2 name = 非洲 with 0province assigned.
+[map.cpp:1040]: Continent #3 name = 北美洲 with 0province assigned.
+[map.cpp:1040]: Continent #4 name = 南美洲 with 0province assigned.
+[map.cpp:1040]: Continent #5 name = 大洋洲 with 0province assigned.
+[map.cpp:1040]: Continent #6 name = lake with 6province assigned.
+[map.cpp:818]: Terrain #0 name = ocean1 with 1 colors assigned.
+[map.cpp:818]: Terrain #1 name = inland_ocean1 with 1 colors assigned.
+[map.cpp:818]: Terrain #2 name = text_0 with 1 colors assigned.
+[map.cpp:818]: Terrain #3 name = text_1 with 1 colors assigned.
+[map.cpp:818]: Terrain #4 name = text_2 with 1 colors assigned.
+[map.cpp:818]: Terrain #5 name = text_3 with 1 colors assigned.
+[map.cpp:818]: Terrain #6 name = text_4 with 1 colors assigned.
+[map.cpp:818]: Terrain #7 name = text_5 with 1 colors assigned.
+[map.cpp:818]: Terrain #8 name = text_6 with 1 colors assigned.
+[map.cpp:818]: Terrain #9 name = text_7 with 1 colors assigned.
+[map.cpp:818]: Terrain #10 name = text_8 with 1 colors assigned.
+[map.cpp:818]: Terrain #11 name = text_9 with 1 colors assigned.
+[map.cpp:818]: Terrain #12 name = text_10 with 1 colors assigned.
+[map.cpp:818]: Terrain #13 name = text_11 with 1 colors assigned.
+[map.cpp:818]: Terrain #14 name = text_12 with 1 colors assigned.
+[map.cpp:818]: Terrain #15 name = text_13 with 1 colors assigned.
+[map.cpp:818]: Terrain #16 name = text_14 with 1 colors assigned.
+[map.cpp:818]: Terrain #17 name = text_15 with 1 colors assigned.
+[map.cpp:818]: Terrain #18 name = text_16 with 1 colors assigned.
+[map.cpp:818]: Terrain #19 name = text_17 with 1 colors assigned.
+[map.cpp:818]: Terrain #20 name = text_18 with 1 colors assigned.
+[map.cpp:818]: Terrain #21 name = text_19 with 1 colors assigned.
+[map.cpp:818]: Terrain #22 name = text_20 with 1 colors assigned.
+[map.cpp:818]: Terrain #23 name = text_21 with 1 colors assigned.
+[map.cpp:818]: Terrain #24 name = text_22 with 1 colors assigned.
+[map.cpp:818]: Terrain #25 name = text_23 with 1 colors assigned.
+[map.cpp:818]: Terrain #26 name = text_24 with 1 colors assigned.
+[map.cpp:818]: Terrain #27 name = text_25 with 1 colors assigned.
+[map.cpp:818]: Terrain #28 name = text_26 with 1 colors assigned.
+[map.cpp:818]: Terrain #29 name = text_27 with 1 colors assigned.
+[map.cpp:818]: Terrain #30 name = text_28 with 1 colors assigned.
+[map.cpp:818]: Terrain #31 name = text_29 with 1 colors assigned.
+[map.cpp:818]: Terrain #32 name = text_30 with 1 colors assigned.
+[map.cpp:818]: Terrain #33 name = text_31 with 1 colors assigned.
+[map.cpp:818]: Terrain #34 name = text_32 with 1 colors assigned.
+[map.cpp:818]: Terrain #35 name = text_33 with 1 colors assigned.
+[map.cpp:818]: Terrain #36 name = text_34 with 1 colors assigned.
+[map.cpp:818]: Terrain #37 name = text_35 with 1 colors assigned.
+[map.cpp:818]: Terrain #38 name = text_36 with 1 colors assigned.
+[map.cpp:818]: Terrain #39 name = text_37 with 1 colors assigned.
+[map.cpp:818]: Terrain #40 name = text_38 with 1 colors assigned.
+[map.cpp:818]: Terrain #41 name = text_39 with 1 colors assigned.
+[map.cpp:818]: Terrain #42 name = text_40 with 1 colors assigned.
+[map.cpp:818]: Terrain #43 name = text_41 with 1 colors assigned.
+[map.cpp:818]: Terrain #44 name = text_42 with 1 colors assigned.
+[map.cpp:818]: Terrain #45 name = text_43 with 1 colors assigned.
+[map.cpp:818]: Terrain #46 name = text_44 with 1 colors assigned.
+[map.cpp:818]: Terrain #47 name = text_45 with 1 colors assigned.
+[map.cpp:818]: Terrain #48 name = text_46 with 1 colors assigned.
+[map.cpp:818]: Terrain #49 name = text_47 with 1 colors assigned.
+[map.cpp:818]: Terrain #50 name = text_48 with 1 colors assigned.
+[map.cpp:818]: Terrain #51 name = text_49 with 1 colors assigned.
+[map.cpp:818]: Terrain #52 name = text_50 with 1 colors assigned.
+[map.cpp:818]: Terrain #53 name = text_51 with 1 colors assigned.
+[map.cpp:818]: Terrain #54 name = text_52 with 1 colors assigned.
+[map.cpp:818]: Terrain #55 name = text_53 with 1 colors assigned.
+[map.cpp:818]: Terrain #56 name = text_54 with 1 colors assigned.
+[map.cpp:818]: Terrain #57 name = text_55 with 1 colors assigned.
+[map.cpp:818]: Terrain #58 name = text_56 with 1 colors assigned.
+[map.cpp:818]: Terrain #59 name = text_57 with 1 colors assigned.
+[map.cpp:818]: Terrain #60 name = text_58 with 1 colors assigned.
+[map.cpp:818]: Terrain #61 name = text_59 with 1 colors assigned.
+[map.cpp:818]: Terrain #62 name = text_60 with 1 colors assigned.
+[map.cpp:818]: Terrain #63 name = text_61 with 1 colors assigned.
+[map.cpp:818]: Terrain #64 name = text_62 with 1 colors assigned.
+[map.cpp:818]: Terrain #65 name = text_63 with 1 colors assigned.
+[map.cpp:818]: Terrain #66 name = pti with 190 colors assigned.
+[map.cpp:751]: Tree #0 name = coniferous with texture terrain/trees/coniferous.dds added.
+[map.cpp:751]: Tree #1 name = decidous with texture terrain/trees/decidous.dds added.
+[map.cpp:751]: Tree #2 name = jungletree with texture terrain/trees/jungletree.dds added.
+[eu3application.cpp:1123]: Map Initialized
+[advisortype.cpp:204]: AdvisorType #0 tag = noAdvisorType name = 没有顾问
+[advisortype.cpp:204]: AdvisorType #1 tag = philosopher name = 诸子百家
+[advisortype.cpp:204]: AdvisorType #2 tag = natural_scientist name = 能工巧匠
+[advisortype.cpp:204]: AdvisorType #3 tag = artist name = 先雅乐师
+[advisortype.cpp:204]: AdvisorType #4 tag = statesman name = 一代名相
+[advisortype.cpp:204]: AdvisorType #5 tag = treasurer name = 商宦监理
+[advisortype.cpp:204]: AdvisorType #6 tag = naval_reformer name = 布衣门客
+[advisortype.cpp:204]: AdvisorType #7 tag = army_reformer name = 新军领袖
+[advisortype.cpp:204]: AdvisorType #8 tag = trader name = 商人巨贾
+[advisortype.cpp:204]: AdvisorType #9 tag = theologian name = 布道学究
+[advisortype.cpp:204]: AdvisorType #10 tag = spymaster name = 孤胆刺客
+[advisortype.cpp:204]: AdvisorType #11 tag = colonial_governor name = 内臣谋士
+[advisortype.cpp:204]: AdvisorType #12 tag = diplomat name = 纵横之士
+[advisortype.cpp:204]: AdvisorType #13 tag = sheriff name = 内政精英
+[advisortype.cpp:204]: AdvisorType #14 tag = high_judge name = 先贤巨子
+[advisortype.cpp:204]: AdvisorType #15 tag = alderman name = 当政公卿
+[advisortype.cpp:204]: AdvisorType #16 tag = colonel name = 统兵之将
+[advisortype.cpp:204]: AdvisorType #17 tag = collector name = 文人骚客
+[advisortype.cpp:204]: AdvisorType #18 tag = master_of_mint name = 伯乐之才
+[advisortype.cpp:204]: AdvisorType #19 tag = banker name = 经济之才
+[advisortype.cpp:204]: AdvisorType #20 tag = lord_proprietor name = 山林隐逸
+[advisortype.cpp:204]: AdvisorType #21 tag = pioneer name = 蛮夷经略
+[advisortype.cpp:204]: AdvisorType #22 tag = grand_admiral name = 水军提督
+[advisortype.cpp:204]: AdvisorType #23 tag = naval_organiser name = 先登死士
+[advisortype.cpp:204]: AdvisorType #24 tag = navigator name = 济世医者
+[advisortype.cpp:204]: AdvisorType #25 tag = rear_admiral name = 改革人士
+[advisortype.cpp:204]: AdvisorType #26 tag = privateer name = 贤达智者
+[advisortype.cpp:204]: AdvisorType #27 tag = sergeant_major_general name = 兵法名家
+[advisortype.cpp:204]: AdvisorType #28 tag = grand_captain name = 三军先锋
+[advisortype.cpp:204]: AdvisorType #29 tag = army_organiser name = 军事统帅
+[advisortype.cpp:204]: AdvisorType #30 tag = commandant name = 卓越将领
+[advisortype.cpp:204]: AdvisorType #31 tag = quartermaster name = 军需官员
+[advisortype.cpp:204]: AdvisorType #32 tag = recruitmaster name = 征兵官员
+[advisortype.cpp:204]: AdvisorType #33 tag = fortification_expert name = 防御专家
+[advisortype.cpp:204]: AdvisorType #34 tag = inquisitor name = 法家酷吏
+[advisortype.cpp:204]: AdvisorType #35 tag = ambassador name = 舌辩之才
+[advisortype.cpp:204]: AdvisorType #36 tag = grand_marshal name = 直言之臣
+[eu3application.cpp:1134]: AdvisorTypeDatabase Initialized
+[triggeredmodifier.cpp:114]: TriggeredModifier #0 tag = zongfazhi name = 宗法制
+[triggeredmodifier.cpp:114]: TriggeredModifier #1 tag = the_mandate_of_heaven name = 天命所归
+[triggeredmodifier.cpp:114]: TriggeredModifier #2 tag = weizhenhuaxia name = 威震华夏
+[triggeredmodifier.cpp:114]: TriggeredModifier #3 tag = zhuluzhongyuan1 name = 逐鹿中原
+[triggeredmodifier.cpp:114]: TriggeredModifier #4 tag = zhuluzhongyuan2 name = 逐鹿中原
+[triggeredmodifier.cpp:114]: TriggeredModifier #5 tag = zhuluzhongyuan3 name = 逐鹿中原
+[triggeredmodifier.cpp:114]: TriggeredModifier #6 tag = qianshengzhiguo1 name = 百乘之国
+[triggeredmodifier.cpp:114]: TriggeredModifier #7 tag = qianshengzhiguo2 name = 千乘之国
+[triggeredmodifier.cpp:114]: TriggeredModifier #8 tag = qianshengzhiguo3 name = 万乘之国
+[triggeredmodifier.cpp:114]: TriggeredModifier #9 tag = yan_one name = 少量出产盐
+[triggeredmodifier.cpp:114]: TriggeredModifier #10 tag = yan_two name = 大量出产盐
+[triggeredmodifier.cpp:114]: TriggeredModifier #11 tag = yan_three name = 物产垄断盐
+[triggeredmodifier.cpp:114]: TriggeredModifier #12 tag = ma_one name = 少量出产马
+[triggeredmodifier.cpp:114]: TriggeredModifier #13 tag = ma_two name = 大量出产马
+[triggeredmodifier.cpp:114]: TriggeredModifier #14 tag = ma_three name = 物产垄断马
+[triggeredmodifier.cpp:114]: TriggeredModifier #15 tag = tie_one name = 少量出产铁
+[triggeredmodifier.cpp:114]: TriggeredModifier #16 tag = tie_two name = 大量出产铁
+[triggeredmodifier.cpp:114]: TriggeredModifier #17 tag = tie_three name = 物产垄断铁
+[triggeredmodifier.cpp:114]: TriggeredModifier #18 tag = mu_one name = 少量出产木材
+[triggeredmodifier.cpp:114]: TriggeredModifier #19 tag = mu_two name = 大量出产木材
+[triggeredmodifier.cpp:114]: TriggeredModifier #20 tag = mu_three name = 物产垄断木材
+[triggeredmodifier.cpp:114]: TriggeredModifier #21 tag = yu_one name = 少量出产玉
+[triggeredmodifier.cpp:114]: TriggeredModifier #22 tag = yu_two name = 大量出产玉
+[triggeredmodifier.cpp:114]: TriggeredModifier #23 tag = yu_three name = 物产垄断玉
+[triggeredmodifier.cpp:114]: TriggeredModifier #24 tag = cloth_one name = 少量出产布匹
+[triggeredmodifier.cpp:114]: TriggeredModifier #25 tag = cloth_two name = 大量出产布匹
+[triggeredmodifier.cpp:114]: TriggeredModifier #26 tag = cloth_three name = 物产垄断布匹
+[triggeredmodifier.cpp:114]: TriggeredModifier #27 tag = wine_one name = 少量出产酒
+[triggeredmodifier.cpp:114]: TriggeredModifier #28 tag = wine_two name = 大量出产酒
+[triggeredmodifier.cpp:114]: TriggeredModifier #29 tag = wine_three name = 物产垄断酒
+[triggeredmodifier.cpp:114]: TriggeredModifier #30 tag = tea_one name = 少量出产茶
+[triggeredmodifier.cpp:114]: TriggeredModifier #31 tag = tea_two name = 大量出产茶
+[triggeredmodifier.cpp:114]: TriggeredModifier #32 tag = tea_three name = 物产垄断茶
+[triggeredmodifier.cpp:114]: TriggeredModifier #33 tag = coffee_one name = 少量出产牛羊
+[triggeredmodifier.cpp:114]: TriggeredModifier #34 tag = coffee_two name = 大量出产牛羊
+[triggeredmodifier.cpp:114]: TriggeredModifier #35 tag = coffee_three name = 物产垄断牛羊
+[triggeredmodifier.cpp:114]: TriggeredModifier #36 tag = ivory_one name = 少量出产药材
+[triggeredmodifier.cpp:114]: TriggeredModifier #37 tag = ivory_two name = 大量出产药材
+[triggeredmodifier.cpp:114]: TriggeredModifier #38 tag = ivory_three name = 物产垄断药材
+[triggeredmodifier.cpp:114]: TriggeredModifier #39 tag = yan_one name = 少量出产盐
+[triggeredmodifier.cpp:114]: TriggeredModifier #40 tag = yan_two name = 大量出产盐
+[triggeredmodifier.cpp:114]: TriggeredModifier #41 tag = yan_three name = 物产垄断盐
+[triggeredmodifier.cpp:114]: TriggeredModifier #42 tag = ma_one name = 少量出产马
+[triggeredmodifier.cpp:114]: TriggeredModifier #43 tag = ma_two name = 大量出产马
+[triggeredmodifier.cpp:114]: TriggeredModifier #44 tag = ma_three name = 物产垄断马
+[triggeredmodifier.cpp:114]: TriggeredModifier #45 tag = tie_one name = 少量出产铁
+[triggeredmodifier.cpp:114]: TriggeredModifier #46 tag = tie_two name = 大量出产铁
+[triggeredmodifier.cpp:114]: TriggeredModifier #47 tag = tie_three name = 物产垄断铁
+[triggeredmodifier.cpp:114]: TriggeredModifier #48 tag = mu_one name = 少量出产木材
+[triggeredmodifier.cpp:114]: TriggeredModifier #49 tag = mu_two name = 大量出产木材
+[triggeredmodifier.cpp:114]: TriggeredModifier #50 tag = mu_three name = 物产垄断木材
+[triggeredmodifier.cpp:114]: TriggeredModifier #51 tag = yu_one name = 少量出产玉
+[triggeredmodifier.cpp:114]: TriggeredModifier #52 tag = yu_two name = 大量出产玉
+[triggeredmodifier.cpp:114]: TriggeredModifier #53 tag = yu_three name = 物产垄断玉
+[triggeredmodifier.cpp:114]: TriggeredModifier #54 tag = cloth_one name = 少量出产布匹
+[triggeredmodifier.cpp:114]: TriggeredModifier #55 tag = cloth_two name = 大量出产布匹
+[triggeredmodifier.cpp:114]: TriggeredModifier #56 tag = cloth_three name = 物产垄断布匹
+[triggeredmodifier.cpp:114]: TriggeredModifier #57 tag = wine_one name = 少量出产酒
+[triggeredmodifier.cpp:114]: TriggeredModifier #58 tag = wine_two name = 大量出产酒
+[triggeredmodifier.cpp:114]: TriggeredModifier #59 tag = wine_three name = 物产垄断酒
+[triggeredmodifier.cpp:114]: TriggeredModifier #60 tag = tea_one name = 少量出产茶
+[triggeredmodifier.cpp:114]: TriggeredModifier #61 tag = tea_two name = 大量出产茶
+[triggeredmodifier.cpp:114]: TriggeredModifier #62 tag = tea_three name = 物产垄断茶
+[triggeredmodifier.cpp:114]: TriggeredModifier #63 tag = coffee_one name = 少量出产牛羊
+[triggeredmodifier.cpp:114]: TriggeredModifier #64 tag = coffee_two name = 大量出产牛羊
+[triggeredmodifier.cpp:114]: TriggeredModifier #65 tag = coffee_three name = 物产垄断牛羊
+[triggeredmodifier.cpp:114]: TriggeredModifier #66 tag = ivory_one name = 少量出产药材
+[triggeredmodifier.cpp:114]: TriggeredModifier #67 tag = ivory_two name = 大量出产药材
+[triggeredmodifier.cpp:114]: TriggeredModifier #68 tag = ivory_three name = 物产垄断药材
+[triggeredmodifier.cpp:114]: TriggeredModifier #69 tag = guodujiquan name = 过度集权. 
+[triggeredmodifier.cpp:114]: TriggeredModifier #70 tag = chunqiu_mil_1 name = 西周时期军事制度
+[triggeredmodifier.cpp:114]: TriggeredModifier #71 tag = buxichezhan name = 不习车战
+[triggeredmodifier.cpp:114]: TriggeredModifier #72 tag = shaoliangliangshi_one name = 少量粮食进口
+[triggeredmodifier.cpp:114]: TriggeredModifier #73 tag = shaoliangliangshi_two name = 少量粮食进口
+[triggeredmodifier.cpp:114]: TriggeredModifier #74 tag = daliangliangshi_one name = 大量粮食进口
+[triggeredmodifier.cpp:114]: TriggeredModifier #75 tag = daliangliangshi_two name = 大量粮食进口
+[triggeredmodifier.cpp:114]: TriggeredModifier #76 tag = shaoliangjinkouliangshi_one name = 少量粮食出口
+[triggeredmodifier.cpp:114]: TriggeredModifier #77 tag = shaoliangjinkouliangshi_two name = 少量粮食出口
+[triggeredmodifier.cpp:114]: TriggeredModifier #78 tag = daliangjinkouliangshi_one name = 大量粮食出口
+[triggeredmodifier.cpp:114]: TriggeredModifier #79 tag = daliangjinkouliangshi_two name = 大量粮食出口
+[triggeredmodifier.cpp:114]: TriggeredModifier #80 tag = lack_of_copper1 name = 严重缺乏铜矿
+[triggeredmodifier.cpp:114]: TriggeredModifier #81 tag = lack_of_copper2 name = 少量缺乏铜矿
+[triggeredmodifier.cpp:114]: TriggeredModifier #82 tag = appropriate_amount_of_copper name = 适量铜矿出产
+[triggeredmodifier.cpp:114]: TriggeredModifier #83 tag = large_amount_of_copper name = 大量铜矿出产
+[triggeredmodifier.cpp:114]: TriggeredModifier #84 tag = zhengbazhanzheng name = 争霸战争
+[triggeredmodifier.cpp:114]: TriggeredModifier #85 tag = states_MBNG name = 诸侯弭兵
+[triggeredmodifier.cpp:114]: TriggeredModifier #86 tag = war_with_ZHOU name = 与天子交恶
+[triggeredmodifier.cpp:114]: TriggeredModifier #87 tag = illegal_control_ZHOU name = 占据天子宫室
+[triggeredmodifier.cpp:114]: TriggeredModifier #88 tag = manyijieluezhanzheng name = 劫掠战争
+[triggeredmodifier.cpp:114]: TriggeredModifier #89 tag = chinese_hre name = 华夏诸侯
+[triggeredmodifier.cpp:114]: TriggeredModifier #90 tag = helpnomad_group name = 蛮夷骑兵
+[triggeredmodifier.cpp:114]: TriggeredModifier #91 tag = overextension1 name = 国土过度扩张
+[triggeredmodifier.cpp:114]: TriggeredModifier #92 tag = overextension2 name = 国土过度扩张
+[triggeredmodifier.cpp:114]: TriggeredModifier #93 tag = fastextension1 name = 扩张过快
+[triggeredmodifier.cpp:114]: TriggeredModifier #94 tag = fastextension2 name = 扩张过快
+[triggeredmodifier.cpp:114]: TriggeredModifier #95 tag = fastextension3 name = 扩张过快
+[triggeredmodifier.cpp:114]: TriggeredModifier #96 tag = fastextension4 name = 扩张过快
+[triggeredmodifier.cpp:114]: TriggeredModifier #97 tag = fastextension5 name = 扩张过快
+[triggeredmodifier.cpp:114]: TriggeredModifier #98 tag = fastextension6 name = 扩张过快
+[triggeredmodifier.cpp:114]: TriggeredModifier #99 tag = zhanguoshidai name = 战国时代
+[triggeredmodifier.cpp:114]: TriggeredModifier #100 tag = luck_QIG name = 历史强国-齐国
+[triggeredmodifier.cpp:114]: TriggeredModifier #101 tag = luck_QIN name = 历史强国-秦国
+[triggeredmodifier.cpp:114]: TriggeredModifier #102 tag = luck_JIN name = 历史强国-晋国
+[triggeredmodifier.cpp:114]: TriggeredModifier #103 tag = luck_CHU name = 历史强国-楚国
+[triggeredmodifier.cpp:114]: TriggeredModifier #104 tag = luck_WUG name = 历史强国-吴国
+[triggeredmodifier.cpp:114]: TriggeredModifier #105 tag = luck_YGO name = 历史强国-越国
+[triggeredmodifier.cpp:114]: TriggeredModifier #106 tag = luck_ZGO name = 历史强国-郑国
+[triggeredmodifier.cpp:114]: TriggeredModifier #107 tag = luck_WEI name = 历史强国-魏国
+[triggeredmodifier.cpp:114]: TriggeredModifier #108 tag = luck_ZHO name = 历史强国-赵国
+[triggeredmodifier.cpp:114]: TriggeredModifier #109 tag = luck_YAN name = 历史强国-燕国
+[triggeredmodifier.cpp:114]: TriggeredModifier #110 tag = goverment_tech_5 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #111 tag = goverment_tech_10 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #112 tag = goverment_tech_15 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #113 tag = goverment_tech_20 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #114 tag = goverment_tech_25 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #115 tag = goverment_tech_30 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #116 tag = goverment_tech_35 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #117 tag = goverment_tech_40 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #118 tag = goverment_tech_45 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #119 tag = goverment_tech_50 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #120 tag = goverment_tech_55 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #121 tag = goverment_tech_60 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #122 tag = goverment_tech_65 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #123 tag = goverment_tech_70 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #124 tag = goverment_tech_75 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #125 tag = goverment_tech_80 name = 行政科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #126 tag = land_tech_5 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #127 tag = land_tech_10 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #128 tag = land_tech_15 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #129 tag = land_tech_20 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #130 tag = land_tech_25 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #131 tag = land_tech_30 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #132 tag = land_tech_35 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #133 tag = land_tech_40 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #134 tag = land_tech_45 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #135 tag = land_tech_50 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #136 tag = land_tech_55 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #137 tag = land_tech_60 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #138 tag = land_tech_65 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #139 tag = land_tech_70 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #140 tag = land_tech_75 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #141 tag = land_tech_80 name = 军事科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #142 tag = naval_tech_5 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #143 tag = naval_tech_10 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #144 tag = naval_tech_15 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #145 tag = naval_tech_20 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #146 tag = naval_tech_25 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #147 tag = naval_tech_30 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #148 tag = naval_tech_35 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #149 tag = naval_tech_40 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #150 tag = naval_tech_45 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #151 tag = naval_tech_50 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #152 tag = naval_tech_55 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #153 tag = naval_tech_60 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #154 tag = naval_tech_65 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #155 tag = naval_tech_70 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #156 tag = naval_tech_75 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #157 tag = naval_tech_80 name = 文化科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #158 tag = trade_tech_5 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #159 tag = trade_tech_10 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #160 tag = trade_tech_15 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #161 tag = trade_tech_20 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #162 tag = trade_tech_25 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #163 tag = trade_tech_30 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #164 tag = trade_tech_35 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #165 tag = trade_tech_40 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #166 tag = trade_tech_45 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #167 tag = trade_tech_50 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #168 tag = trade_tech_55 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #169 tag = trade_tech_60 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #170 tag = trade_tech_65 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #171 tag = trade_tech_70 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #172 tag = trade_tech_75 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #173 tag = trade_tech_80 name = 商业科技加成
+[triggeredmodifier.cpp:114]: TriggeredModifier #174 tag = shangwuchuantong name = 尚武传统
+[triggeredmodifier.cpp:114]: TriggeredModifier #175 tag = waijiaoguanxi_1a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #176 tag = waijiaoguanxi_2a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #177 tag = waijiaoguanxi_3a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #178 tag = waijiaoguanxi_4a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #179 tag = waijiaoguanxi_5a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #180 tag = waijiaoguanxi_6a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #181 tag = waijiaoguanxi_7a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #182 tag = waijiaoguanxi_8a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #183 tag = waijiaoguanxi_9a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #184 tag = waijiaoguanxi_10a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #185 tag = waijiaoguanxi_12a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #186 tag = waijiaoguanxi_14a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #187 tag = waijiaoguanxi_16a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #188 tag = waijiaoguanxi_18a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #189 tag = waijiaoguanxi_20a name = 维持同盟关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #190 tag = waijiaoguanxi_1b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #191 tag = waijiaoguanxi_2b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #192 tag = waijiaoguanxi_3b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #193 tag = waijiaoguanxi_4b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #194 tag = waijiaoguanxi_5b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #195 tag = waijiaoguanxi_6b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #196 tag = waijiaoguanxi_7b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #197 tag = waijiaoguanxi_8b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #198 tag = waijiaoguanxi_9b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #199 tag = waijiaoguanxi_10b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #200 tag = waijiaoguanxi_12b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #201 tag = waijiaoguanxi_14b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #202 tag = waijiaoguanxi_16b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #203 tag = waijiaoguanxi_18b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #204 tag = waijiaoguanxi_20b name = 维持附庸关系
+[triggeredmodifier.cpp:114]: TriggeredModifier #205 tag = fengkuangguodu name = 桀宋
+[triggeredmodifier.cpp:114]: TriggeredModifier #206 tag = xianggongzhiren name = 襄公之仁
+[triggeredmodifier.cpp:114]: TriggeredModifier #207 tag = vassal_morale_limit name = 附庸国限制
+[triggeredmodifier.cpp:114]: TriggeredModifier #208 tag = country_size_1_6 name = 弹丸小国
+[triggeredmodifier.cpp:114]: TriggeredModifier #209 tag = country_size_6_12 name = 蕞尔小国
+[triggeredmodifier.cpp:114]: TriggeredModifier #210 tag = country_size_12_20 name = 声名鹊起
+[triggeredmodifier.cpp:114]: TriggeredModifier #211 tag = country_size_12_20 name = 声名鹊起
+[triggeredmodifier.cpp:114]: TriggeredModifier #212 tag = country_size_20_30 name = 百乘之邦
+[triggeredmodifier.cpp:114]: TriggeredModifier #213 tag = country_size_20_30 name = 百乘之邦
+[triggeredmodifier.cpp:114]: TriggeredModifier #214 tag = country_size_30_45 name = 地域宽广
+[triggeredmodifier.cpp:114]: TriggeredModifier #215 tag = country_size_30_45 name = 地域宽广
+[triggeredmodifier.cpp:114]: TriggeredModifier #216 tag = country_size_45_60 name = 幅员辽阔
+[triggeredmodifier.cpp:114]: TriggeredModifier #217 tag = country_size_45_60 name = 幅员辽阔
+[triggeredmodifier.cpp:114]: TriggeredModifier #218 tag = country_size_60_80 name = 国土广袤
+[triggeredmodifier.cpp:114]: TriggeredModifier #219 tag = country_size_60_80 name = 国土广袤
+[triggeredmodifier.cpp:114]: TriggeredModifier #220 tag = country_size_80_100 name = 区域霸主
+[triggeredmodifier.cpp:114]: TriggeredModifier #221 tag = country_size_80_100 name = 区域霸主
+[triggeredmodifier.cpp:114]: TriggeredModifier #222 tag = country_size_100_150 name = 蛟龙出渊
+[triggeredmodifier.cpp:114]: TriggeredModifier #223 tag = country_size_100_150 name = 蛟龙出渊
+[triggeredmodifier.cpp:114]: TriggeredModifier #224 tag = country_size_150_200 name = 龙行天下
+[triggeredmodifier.cpp:114]: TriggeredModifier #225 tag = country_size_150_200 name = 龙行天下
+[triggeredmodifier.cpp:114]: TriggeredModifier #226 tag = country_size_200 name = 神州华夏
+[triggeredmodifier.cpp:114]: TriggeredModifier #227 tag = country_size_200 name = 神州华夏
+[triggeredmodifier.cpp:114]: TriggeredModifier #228 tag = zongfazhidu name = 宗法制度
+[triggeredmodifier.cpp:114]: TriggeredModifier #229 tag = hujizhidu name = 户籍制度
+[triggeredmodifier.cpp:114]: TriggeredModifier #230 tag = shiguanzhidu name = 世官制度
+[triggeredmodifier.cpp:114]: TriggeredModifier #231 tag = junqishuzuishixin name = 军器赎罪导致国君失信臣民
+[triggeredmodifier.cpp:114]: TriggeredModifier #232 tag = junqishuzuitanwu name = 军器杂乱不堪一用
+[triggeredmodifier.cpp:114]: TriggeredModifier #233 tag = age_1900 name = 年代修正
+[triggeredmodifier.cpp:114]: TriggeredModifier #234 tag = age_2000 name = 年代修正
+[triggeredmodifier.cpp:114]: TriggeredModifier #235 tag = age_2200 name = 年代修正
+[triggeredmodifier.cpp:114]: TriggeredModifier #236 tag = age_2300 name = 年代修正
+[triggeredmodifier.cpp:114]: TriggeredModifier #237 tag = age_2400 name = 年代修正
+[triggeredmodifier.cpp:114]: TriggeredModifier #238 tag = late_reform1 name = 要求改革的呼声
+[triggeredmodifier.cpp:114]: TriggeredModifier #239 tag = late_reform2 name = 要求改革的呼声
+[triggeredmodifier.cpp:114]: TriggeredModifier #240 tag = late_reform3 name = 要求改革的呼声
+[triggeredmodifier.cpp:114]: TriggeredModifier #241 tag = late_reform4 name = 要求改革的呼声
+[triggeredmodifier.cpp:114]: TriggeredModifier #242 tag = QIN_gift name = 称霸西戎
+[triggeredmodifier.cpp:114]: TriggeredModifier #243 tag = WUG_gift1 name = 仿效华夏
+[triggeredmodifier.cpp:114]: TriggeredModifier #244 tag = WUG_gift2 name = 起兵伐楚
+[triggeredmodifier.cpp:114]: TriggeredModifier #245 tag = LUG_gift1 name = 木匠鼻祖
+[triggeredmodifier.cpp:114]: TriggeredModifier #246 tag = ZHO_gift1 name = 将相和——众志成城
+[triggeredmodifier.cpp:114]: TriggeredModifier #247 tag = ZHO_gift2 name = 将相和——休养生息
+[triggeredmodifier.cpp:114]: TriggeredModifier #248 tag = HAN_iron1 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #249 tag = HAN_iron2 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #250 tag = HAN_iron3 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #251 tag = HAN_iron4 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #252 tag = HAN_iron5 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #253 tag = HAN_iron6 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #254 tag = HAN_iron7 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #255 tag = HAN_iron8 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #256 tag = HAN_iron9 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #257 tag = HAN_iron10 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #258 tag = HAN_iron11 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #259 tag = HAN_iron12 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #260 tag = HAN_iron13 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #261 tag = HAN_iron14 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #262 tag = HAN_iron15 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #263 tag = HAN_iron16 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #264 tag = HAN_iron17 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #265 tag = HAN_iron18 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #266 tag = HAN_iron19 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #267 tag = HAN_iron20 name = 弩强剑利
+[triggeredmodifier.cpp:114]: TriggeredModifier #268 tag = WUG_buff3 name = 孙子兵法
+[triggeredmodifier.cpp:114]: TriggeredModifier #269 tag = WEG_buff name = 鬼谷纵横
+[triggeredmodifier.cpp:114]: TriggeredModifier #270 tag = CHE_cotton name = 陶正之后
+[triggeredmodifier.cpp:114]: TriggeredModifier #271 tag = CHE_cotton name = 陶正之后
+[triggeredmodifier.cpp:114]: TriggeredModifier #272 tag = CHE_cotton name = 陶正之后
+[triggeredmodifier.cpp:114]: TriggeredModifier #273 tag = CHE_cotton name = 陶正之后
+[triggeredmodifier.cpp:114]: TriggeredModifier #274 tag = CHE_cotton name = 陶正之后
+[triggeredmodifier.cpp:114]: TriggeredModifier #275 tag = SGU_buff name = 山川险要
+[triggeredmodifier.cpp:114]: TriggeredModifier #276 tag = ZHI_buff2 name = 名门望族
+[triggeredmodifier.cpp:114]: TriggeredModifier #277 tag = ZHI_buff2 name = 名门望族
+[triggeredmodifier.cpp:114]: TriggeredModifier #278 tag = ZHI_buff2 name = 名门望族
+[triggeredmodifier.cpp:114]: TriggeredModifier #279 tag = ZHI_buff2 name = 名门望族
+[triggeredmodifier.cpp:114]: TriggeredModifier #280 tag = ZHI_buff2 name = 名门望族
+[triggeredmodifier.cpp:114]: TriggeredModifier #281 tag = ZHI_buff3 name = 政出私门
+[triggeredmodifier.cpp:114]: TriggeredModifier #282 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #283 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #284 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #285 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #286 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #287 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #288 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #289 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #290 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #291 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #292 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #293 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #294 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #295 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #296 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #297 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #298 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #299 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #300 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #301 tag = ZGO_buff1 name = 郑商盟誓
+[triggeredmodifier.cpp:114]: TriggeredModifier #302 tag = YGO_buff3 name = 三千越甲
+[triggeredmodifier.cpp:114]: TriggeredModifier #303 tag = PAP_buff1 name = 天下共主
+[triggeredmodifier.cpp:114]: TriggeredModifier #304 tag = PAP_buff2 name = 天子六师
+[triggeredmodifier.cpp:114]: TriggeredModifier #305 tag = ZHS_buff1 name = ZHS_buff1
+[triggeredmodifier.cpp:114]: TriggeredModifier #306 tag = YQU_buff1 name = 侵略成性
+[triggeredmodifier.cpp:114]: TriggeredModifier #307 tag = YQU_buff2 name = 马背民族
+[triggeredmodifier.cpp:114]: TriggeredModifier #308 tag = YQU_buff2 name = 马背民族
+[triggeredmodifier.cpp:114]: TriggeredModifier #309 tag = YQU_buff2 name = 马背民族
+[triggeredmodifier.cpp:114]: TriggeredModifier #310 tag = YQU_buff2 name = 马背民族
+[triggeredmodifier.cpp:114]: TriggeredModifier #311 tag = YQU_buff2 name = 马背民族
+[triggeredmodifier.cpp:114]: TriggeredModifier #312 tag = YQU_buff2 name = 马背民族
+[triggeredmodifier.cpp:114]: TriggeredModifier #313 tag = LAI_buff1 name = 滨海黄金
+[triggeredmodifier.cpp:114]: TriggeredModifier #314 tag = LAI_buff1 name = 滨海黄金
+[triggeredmodifier.cpp:114]: TriggeredModifier #315 tag = LAI_buff1 name = 滨海黄金
+[triggeredmodifier.cpp:114]: TriggeredModifier #316 tag = LAI_buff1 name = 滨海黄金
+[triggeredmodifier.cpp:114]: TriggeredModifier #317 tag = LAI_buff1 name = 滨海黄金
+[triggeredmodifier.cpp:114]: TriggeredModifier #318 tag = LAI_buff2 name = 东夷古国
+[triggeredmodifier.cpp:114]: TriggeredModifier #319 tag = yumizhixiangmaoyi name = 鱼米之乡
+[triggeredmodifier.cpp:114]: TriggeredModifier #320 tag = yumizhixiangmaoyi name = 鱼米之乡
+[triggeredmodifier.cpp:114]: TriggeredModifier #321 tag = yumizhixiangmaoyi name = 鱼米之乡
+[triggeredmodifier.cpp:114]: TriggeredModifier #322 tag = yumizhixiangmaoyi name = 鱼米之乡
+[triggeredmodifier.cpp:114]: TriggeredModifier #323 tag = yumizhixiangmaoyi name = 鱼米之乡
+[triggeredmodifier.cpp:114]: TriggeredModifier #324 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #325 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #326 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #327 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #328 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #329 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #330 tag = bozhangzhifuyong name = 伯长之附庸
+[triggeredmodifier.cpp:114]: TriggeredModifier #331 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #332 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #333 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #334 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #335 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #336 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #337 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #338 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #339 tag = SHI_gift2 name = 深观阴阳
+[triggeredmodifier.cpp:114]: TriggeredModifier #340 tag = SHI_gift2 name = 深观阴阳
+[triggeredmodifier.cpp:114]: TriggeredModifier #341 tag = SHI_gift2 name = 深观阴阳
+[triggeredmodifier.cpp:114]: TriggeredModifier #342 tag = SHI_gift2 name = 深观阴阳
+[triggeredmodifier.cpp:114]: TriggeredModifier #343 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #344 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #345 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #346 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #347 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #348 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #349 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #350 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #351 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #352 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #353 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #354 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #355 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #356 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #357 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #358 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #359 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #360 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #361 tag = SHI_gift1 name = 见贤思齐
+[triggeredmodifier.cpp:114]: TriggeredModifier #362 tag = ZHJ_buff2 name = 纵横之能
+[triggeredmodifier.cpp:114]: TriggeredModifier #363 tag = YYJ_buff2 name = 阴阳之能
+[triggeredmodifier.cpp:114]: TriggeredModifier #364 tag = ZAJ_buff2 name = 杂家之能
+[triggeredmodifier.cpp:114]: TriggeredModifier #365 tag = NOJ_buff2 name = 农家之能
+[triggeredmodifier.cpp:114]: TriggeredModifier #366 tag = MIJ_buff2 name = 名家之能
+[triggeredmodifier.cpp:114]: TriggeredModifier #367 tag = XSJ_buff2 name = 小说家之能
+[triggeredmodifier.cpp:114]: TriggeredModifier #368 tag = JIN_buff2 name = 晋无公族
+[triggeredmodifier.cpp:114]: TriggeredModifier #369 tag = JIN_buff2 name = 晋无公族
+[triggeredmodifier.cpp:114]: TriggeredModifier #370 tag = JIN_buff2 name = 晋无公族
+[triggeredmodifier.cpp:114]: TriggeredModifier #371 tag = JIN_buff2 name = 晋无公族
+[triggeredmodifier.cpp:114]: TriggeredModifier #372 tag = JIN_buff2 name = 晋无公族
+[triggeredmodifier.cpp:114]: TriggeredModifier #373 tag = dizhangbuff name = 嫡长继承
+[triggeredmodifier.cpp:114]: TriggeredModifier #374 tag = dizhangbuff name = 嫡长继承
+[triggeredmodifier.cpp:114]: TriggeredModifier #375 tag = dizhangbuff name = 嫡长继承
+[triggeredmodifier.cpp:114]: TriggeredModifier #376 tag = dizhangbuff name = 嫡长继承
+[triggeredmodifier.cpp:114]: TriggeredModifier #377 tag = dizhangbuff name = 嫡长继承
+[triggeredmodifier.cpp:114]: TriggeredModifier #378 tag = fajiayunji_buff1 name = fajiayunji_buff1
+[triggeredmodifier.cpp:114]: TriggeredModifier #379 tag = yinshangbuzhanbu name = 君主不好占卜
+[triggeredmodifier.cpp:114]: TriggeredModifier #380 tag = CAO_buff1 name = 天下之中
+[triggeredmodifier.cpp:114]: TriggeredModifier #381 tag = CAO_buff1 name = 天下之中
+[triggeredmodifier.cpp:114]: TriggeredModifier #382 tag = CAO_buff1 name = 天下之中
+[triggeredmodifier.cpp:114]: TriggeredModifier #383 tag = CAO_buff1 name = 天下之中
+[triggeredmodifier.cpp:114]: TriggeredModifier #384 tag = CAO_buff1 name = 天下之中
+[triggeredmodifier.cpp:114]: TriggeredModifier #385 tag = YXU_buff1 name = 东夷霸主
+[triggeredmodifier.cpp:114]: TriggeredModifier #386 tag = DAI_buff1 name = 代子立国
+[triggeredmodifier.cpp:114]: TriggeredModifier #387 tag = DAI_buff1 name = 代子立国
+[triggeredmodifier.cpp:114]: TriggeredModifier #388 tag = DAI_buff1 name = 代子立国
+[triggeredmodifier.cpp:114]: TriggeredModifier #389 tag = DAI_buff1 name = 代子立国
+[triggeredmodifier.cpp:114]: TriggeredModifier #390 tag = DAI_buff1 name = 代子立国
+[triggeredmodifier.cpp:114]: TriggeredModifier #391 tag = JUG_buff1 name = 勿忘在莒
+[triggeredmodifier.cpp:114]: TriggeredModifier #392 tag = JUG_buff2 name = 凤鸟立制
+[triggeredmodifier.cpp:114]: TriggeredModifier #393 tag = JUG_buff3 name = 凤国盛世
+[triggeredmodifier.cpp:114]: TriggeredModifier #394 tag = YON_buff1 name = 南风之薰
+[triggeredmodifier.cpp:114]: TriggeredModifier #395 tag = YON_buff2 name = 牧誓之首
+[triggeredmodifier.cpp:114]: TriggeredModifier #396 tag = WY_buff1 name = 收容百越
+[triggeredmodifier.cpp:114]: TriggeredModifier #397 tag = WY_buff2 name = 收容百越
+[triggeredmodifier.cpp:114]: TriggeredModifier #398 tag = JUNZILIUYI_buff name = 君子六艺
+[triggeredmodifier.cpp:114]: TriggeredModifier #399 tag = SHE_buff1 name = 召伯营之
+[triggeredmodifier.cpp:114]: TriggeredModifier #400 tag = SHE_buff1 name = 召伯营之
+[triggeredmodifier.cpp:114]: TriggeredModifier #401 tag = SHE_buff1 name = 召伯营之
+[triggeredmodifier.cpp:114]: TriggeredModifier #402 tag = SHE_buff1 name = 召伯营之
+[triggeredmodifier.cpp:114]: TriggeredModifier #403 tag = SHE_buff1 name = 召伯营之
+[triggeredmodifier.cpp:114]: TriggeredModifier #404 tag = SON_buff1 name = 殷商之遗
+[triggeredmodifier.cpp:114]: TriggeredModifier #405 tag = SON_buff1 name = 殷商之遗
+[triggeredmodifier.cpp:114]: TriggeredModifier #406 tag = SON_buff1 name = 殷商之遗
+[triggeredmodifier.cpp:114]: TriggeredModifier #407 tag = SON_buff1 name = 殷商之遗
+[triggeredmodifier.cpp:114]: TriggeredModifier #408 tag = SON_buff1 name = 殷商之遗
+[triggeredmodifier.cpp:114]: TriggeredModifier #409 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #410 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #411 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #412 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #413 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #414 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #415 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #416 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #417 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #418 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #419 tag = ZXS_buff1 name = 困兽犹斗
+[triggeredmodifier.cpp:114]: TriggeredModifier #420 tag = QIN_buff11 name = 赳赳老秦
+[triggeredmodifier.cpp:114]: TriggeredModifier #421 tag = QIN_buff11 name = 赳赳老秦
+[triggeredmodifier.cpp:114]: TriggeredModifier #422 tag = QIN_buff11 name = 赳赳老秦
+[triggeredmodifier.cpp:114]: TriggeredModifier #423 tag = QIN_buff11 name = 赳赳老秦
+[triggeredmodifier.cpp:114]: TriggeredModifier #424 tag = QIN_buff11 name = 赳赳老秦
+[triggeredmodifier.cpp:114]: TriggeredModifier #425 tag = QIN_buff11 name = 赳赳老秦
+[triggeredmodifier.cpp:114]: TriggeredModifier #426 tag = enweibingshi1 name = 恩威并施
+[triggeredmodifier.cpp:114]: TriggeredModifier #427 tag = enweibingshi2 name = 恩威并施
+[triggeredmodifier.cpp:114]: TriggeredModifier #428 tag = enweibingshi3 name = 恩威并施
+[triggeredmodifier.cpp:114]: TriggeredModifier #429 tag = enweibingshi4 name = 恩威并施
+[triggeredmodifier.cpp:114]: TriggeredModifier #430 tag = enweibingshi5 name = 恩威并施
+[triggeredmodifier.cpp:114]: TriggeredModifier #431 tag = dasouli1 name = 蒐狩之礼
+[triggeredmodifier.cpp:114]: TriggeredModifier #432 tag = JINJ_buff1 name = 君主执政
+[triggeredmodifier.cpp:114]: TriggeredModifier #433 tag = JING_buff1 name = 宗室执政
+[triggeredmodifier.cpp:114]: TriggeredModifier #434 tag = JINS_buff1 name = 元帅执政
+[triggeredmodifier.cpp:114]: TriggeredModifier #435 tag = JSG_buff1 name = 箕子朝鲜
+[triggeredmodifier.cpp:114]: TriggeredModifier #436 tag = junduiweihufei121 name = 冗军
+[triggeredmodifier.cpp:114]: TriggeredModifier #437 tag = junduiweihufei121 name = 冗军
+[triggeredmodifier.cpp:114]: TriggeredModifier #438 tag = junduiweihufei121 name = 冗军
+[triggeredmodifier.cpp:114]: TriggeredModifier #439 tag = junduiweihufei121 name = 冗军
+[triggeredmodifier.cpp:114]: TriggeredModifier #440 tag = junduiweihufei121 name = 冗军
+[triggeredmodifier.cpp:114]: TriggeredModifier #441 tag = youmudiguo name = 游牧帝国。
+[triggeredmodifier.cpp:114]: TriggeredModifier #442 tag = loulan name = loulan
+[triggeredmodifier.cpp:114]: TriggeredModifier #443 tag = jingjuewenhua name = jingjuewenhua
+[triggeredmodifier.cpp:114]: TriggeredModifier #444 tag = jingjuehaijun name = jingjuehaijun
+[triggeredmodifier.cpp:114]: TriggeredModifier #445 tag = jingjuelujun name = jingjuelujun
+[triggeredmodifier.cpp:114]: TriggeredModifier #446 tag = cheshi name = cheshi
+[triggeredmodifier.cpp:114]: TriggeredModifier #447 tag = cheshi name = cheshi
+[triggeredmodifier.cpp:114]: TriggeredModifier #448 tag = cheshi name = cheshi
+[triggeredmodifier.cpp:114]: TriggeredModifier #449 tag = cheshi name = cheshi
+[triggeredmodifier.cpp:114]: TriggeredModifier #450 tag = cheshi name = cheshi
+[triggeredmodifier.cpp:114]: TriggeredModifier #451 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #452 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #453 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #454 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #455 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #456 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #457 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #458 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #459 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #460 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #461 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #462 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #463 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #464 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #465 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #466 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #467 tag = guizi name = guizi
+[triggeredmodifier.cpp:114]: TriggeredModifier #468 tag = xiyusuijitianfu17 name = xiyusuijitianfu17
+[triggeredmodifier.cpp:114]: TriggeredModifier #469 tag = xiyusuijitianfu18 name = xiyusuijitianfu18
+[triggeredmodifier.cpp:114]: TriggeredModifier #470 tag = xiyusuijitianfu19 name = xiyusuijitianfu19
+[triggeredmodifier.cpp:114]: TriggeredModifier #471 tag = xiyusuijitianfu20 name = xiyusuijitianfu20
+[triggeredmodifier.cpp:114]: TriggeredModifier #472 tag = xiyusuijitianfu21 name = xiyusuijitianfu21
+[triggeredmodifier.cpp:114]: TriggeredModifier #473 tag = xiyusuijitianfu22 name = xiyusuijitianfu22
+[triggeredmodifier.cpp:114]: TriggeredModifier #474 tag = xiyusuijitianfu23 name = xiyusuijitianfu23
+[triggeredmodifier.cpp:114]: TriggeredModifier #475 tag = xiyusuijitianfu24 name = xiyusuijitianfu24
+[triggeredmodifier.cpp:114]: TriggeredModifier #476 tag = xiyusuijitianfu25 name = xiyusuijitianfu25
+[triggeredmodifier.cpp:114]: TriggeredModifier #477 tag = xiyusuijitianfu26 name = xiyusuijitianfu26
+[triggeredmodifier.cpp:114]: TriggeredModifier #478 tag = xiyusuijitianfu27 name = xiyusuijitianfu27
+[triggeredmodifier.cpp:114]: TriggeredModifier #479 tag = xiyusuijitianfu28 name = xiyusuijitianfu28
+[triggeredmodifier.cpp:114]: TriggeredModifier #480 tag = xiyusuijitianfu29 name = xiyusuijitianfu29
+[triggeredmodifier.cpp:114]: TriggeredModifier #481 tag = xiyusuijitianfu30 name = xiyusuijitianfu30
+[triggeredmodifier.cpp:114]: TriggeredModifier #482 tag = xiyusuijitianfu31 name = xiyusuijitianfu31
+[triggeredmodifier.cpp:114]: TriggeredModifier #483 tag = xiyusuijitianfu32 name = xiyusuijitianfu32
+[triggeredmodifier.cpp:114]: TriggeredModifier #484 tag = xiyusuijitianfu33 name = xiyusuijitianfu33
+[triggeredmodifier.cpp:114]: TriggeredModifier #485 tag = xiyusuijitianfu34 name = xiyusuijitianfu34
+[triggeredmodifier.cpp:114]: TriggeredModifier #486 tag = xiyusuijitianfu35 name = xiyusuijitianfu35
+[triggeredmodifier.cpp:114]: TriggeredModifier #487 tag = xiyusuijitianfu36 name = xiyusuijitianfu36
+[triggeredmodifier.cpp:114]: TriggeredModifier #488 tag = nanxiyu name = 南西域
+[triggeredmodifier.cpp:114]: TriggeredModifier #489 tag = duhufu name = duhufu
+[triggeredmodifier.cpp:114]: TriggeredModifier #490 tag = sichouzhilu_bei name = sichouzhilu_bei
+[triggeredmodifier.cpp:114]: TriggeredModifier #491 tag = sichouzhilu_zhong name = sichouzhilu_zhong
+[triggeredmodifier.cpp:114]: TriggeredModifier #492 tag = sichouzhilu_nan name = sichouzhilu_nan
+[triggeredmodifier.cpp:114]: TriggeredModifier #493 tag = hainan name = 珠崖
+[triggeredmodifier.cpp:114]: TriggeredModifier #494 tag = taiwan name = 夷州
+[triggeredmodifier.cpp:114]: TriggeredModifier #495 tag = jiejianzhiguotongzhang1 name = 节俭治国通胀
+[triggeredmodifier.cpp:114]: TriggeredModifier #496 tag = jiejianzhiguotongzhang2 name = 节俭治国通胀
+[triggeredmodifier.cpp:114]: TriggeredModifier #497 tag = jiejianzhiguotongzhang3 name = 节俭治国通胀
+[triggeredmodifier.cpp:114]: TriggeredModifier #498 tag = jiejianzhiguotongzhang4 name = 节俭治国通胀
+[triggeredmodifier.cpp:114]: TriggeredModifier #499 tag = jiejianzhiguotongzhang5 name = 节俭治国通胀
+[triggeredmodifier.cpp:114]: TriggeredModifier #500 tag = feigongbuff1 name = 天下皆攻
+[triggeredmodifier.cpp:114]: TriggeredModifier #501 tag = feigongbuff2 name = 天下非攻
+[triggeredmodifier.cpp:114]: TriggeredModifier #502 tag = feigongbuff3 name = 天下无攻
+[triggeredmodifier.cpp:114]: TriggeredModifier #503 tag = jizhouding name = 冀州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #504 tag = youzhouding name = 幽州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #505 tag = qingzhouding name = 青州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #506 tag = xuzhouding name = 徐州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #507 tag = yangzhouding name = 扬州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #508 tag = jingzhouding name = 荆州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #509 tag = yizhouding name = 益州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #510 tag = liangzhouding name = 凉州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #511 tag = bingzhouding name = 并州鼎
+[triggeredmodifier.cpp:114]: TriggeredModifier #512 tag = tongzhougongji name = 同舟共济
+[triggeredmodifier.cpp:114]: TriggeredModifier #513 tag = tongzhougongji name = 同舟共济
+[triggeredmodifier.cpp:114]: TriggeredModifier #514 tag = tongzhougongji name = 同舟共济
+[triggeredmodifier.cpp:114]: TriggeredModifier #515 tag = tongzhougongji name = 同舟共济
+[eu3application.cpp:1143]: Triggered Modifiers Initialized
+[eu3application.cpp:1153]: Revolt Triggers Initialized
+[mission.cpp:629]: Missions loaded missions\巴蜀任务.txt' #5
+[mission.cpp:629]: Missions loaded missions\曹国任务.txt' #3
+[mission.cpp:629]: Missions loaded missions\陈国任务.txt' #6
+[mission.cpp:629]: Missions loaded missions\赤狄任务.txt' #5
+[mission.cpp:629]: Missions loaded missions\楚国任务.txt' #31
+[mission.cpp:629]: Missions loaded missions\代国任务.txt' #2
+[mission.cpp:629]: Missions loaded missions\韩国任务.txt' #7
+[mission.cpp:629]: Missions loaded missions\汉国任务.txt' #3
+[mission.cpp:629]: Missions loaded missions\晋国任务.txt' #29
+[mission.cpp:629]: Missions loaded missions\鲁国任务.txt' #8
+[mission.cpp:629]: Missions loaded missions\齐国任务.txt' #15
+[mission.cpp:629]: Missions loaded missions\秦国任务.txt' #19
+[mission.cpp:629]: Missions loaded missions\宋国任务.txt' #10
+[mission.cpp:629]: Missions loaded missions\通用任务.txt' #56
+[mission.cpp:629]: Missions loaded missions\魏国任务.txt' #10
+[mission.cpp:629]: Missions loaded missions\卫国任务.txt' #6
+[mission.cpp:629]: Missions loaded missions\吴国任务.txt' #11
+[mission.cpp:629]: Missions loaded missions\西域任务.txt' #4
+[mission.cpp:629]: Missions loaded missions\匈奴任务.txt' #2
+[mission.cpp:629]: Missions loaded missions\徐国任务.txt' #3
+[mission.cpp:629]: Missions loaded missions\燕国任务.txt' #10
+[mission.cpp:629]: Missions loaded missions\越国任务.txt' #5
+[mission.cpp:629]: Missions loaded missions\赵国任务.txt' #7
+[mission.cpp:629]: Missions loaded missions\郑国任务.txt' #12
+[mission.cpp:629]: Missions loaded missions\中山任务.txt' #2
+[mission.cpp:629]: Missions loaded missions\周王任务.txt' #7
+[mission.cpp:629]: Missions loaded missions\莒国任务.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\廧咎如氏决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\巴蜀决议.txt' #6
+[decision.cpp:325]: Decisions loaded decisions\霸主体系.txt' #18
+[decision.cpp:325]: Decisions loaded decisions\霸主征贡.txt' #3
+[decision.cpp:325]: Decisions loaded decisions\霸主弭兵.txt' #8
+[decision.cpp:325]: Decisions loaded decisions\兵家派系决议.txt' #20
+[decision.cpp:325]: Decisions loaded decisions\曹国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\朝鲜决议.txt' #2
+[decision.cpp:325]: Decisions loaded decisions\赤狄决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\楚国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\春秋军改.txt' #19
+[decision.cpp:325]: Decisions loaded decisions\道决议.txt' #16
+[decision.cpp:325]: Decisions loaded decisions\法决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\封禅泰山.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\公家士卿.txt' #10
+[decision.cpp:325]: Decisions loaded decisions\国家简介.txt' #195
+[decision.cpp:325]: Decisions loaded decisions\韩国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\华夏化.txt' #2
+[decision.cpp:325]: Decisions loaded decisions\建筑.txt' #9
+[decision.cpp:325]: Decisions loaded decisions\建筑决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\晋国决议.txt' #5
+[decision.cpp:325]: Decisions loaded decisions\精细化种田决议.txt' #36
+[decision.cpp:325]: Decisions loaded decisions\掘河攻城.txt' #8
+[decision.cpp:325]: Decisions loaded decisions\理念相关.txt' #25
+[decision.cpp:325]: Decisions loaded decisions\灵风补丁.txt' #5
+[decision.cpp:325]: Decisions loaded decisions\鲁国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\蛮夷侵袭.txt' #9
+[decision.cpp:325]: Decisions loaded decisions\派系终结.txt' #3
+[decision.cpp:325]: Decisions loaded decisions\齐国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\千秋蒐礼.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\秦国决议.txt' #12
+[decision.cpp:325]: Decisions loaded decisions\人口决议.txt' #4
+[decision.cpp:325]: Decisions loaded decisions\申国决议.txt' #2
+[decision.cpp:325]: Decisions loaded decisions\使节.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\水利要塞.txt' #23
+[decision.cpp:325]: Decisions loaded decisions\宋国决议.txt' #4
+[decision.cpp:325]: Decisions loaded decisions\特殊称王.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\天痕补丁.txt' #3
+[decision.cpp:325]: Decisions loaded decisions\魏国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\卫国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\文化决议.txt' #8
+[decision.cpp:325]: Decisions loaded decisions\文化统一.txt' #5
+[decision.cpp:325]: Decisions loaded decisions\问鼎.txt' #10
+[decision.cpp:325]: Decisions loaded decisions\吴越决议.txt' #6
+[decision.cpp:325]: Decisions loaded decisions\西楚决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\西域决议.txt' #6
+[decision.cpp:325]: Decisions loaded decisions\西域天赋决议.txt' #30
+[decision.cpp:325]: Decisions loaded decisions\新建文本文档.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\新宗教决议.txt' #16
+[decision.cpp:325]: Decisions loaded decisions\匈奴决议.txt' #2
+[decision.cpp:325]: Decisions loaded decisions\燕国决议.txt' #6
+[decision.cpp:325]: Decisions loaded decisions\殷商决议.txt' #9
+[decision.cpp:325]: Decisions loaded decisions\越国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\战国军改.txt' #27
+[decision.cpp:325]: Decisions loaded decisions\赵国决议.txt' #3
+[decision.cpp:325]: Decisions loaded decisions\政经改革.txt' #37
+[decision.cpp:325]: Decisions loaded decisions\政体转换.txt' #5
+[decision.cpp:325]: Decisions loaded decisions\郑国决议.txt' #2
+[decision.cpp:325]: Decisions loaded decisions\中山决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\周王决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\诸子百家.txt' #10
+[spies.cpp:337]: SpyAction #0 tag = lijianji name = 离间计
+[spies.cpp:337]: SpyAction #1 tag = incite_against_merchant name = 打击商人行会
+[spies.cpp:337]: SpyAction #2 tag = tarnish_reputation name = 毁谤声望
+[spies.cpp:337]: SpyAction #3 tag = infiltrate_administration name = 全面密探渗透
+[spies.cpp:337]: SpyAction #4 tag = sow_discontent name = 挑动不满
+[spies.cpp:337]: SpyAction #5 tag = sabotage_reputation name = 夸大威胁
+[spies.cpp:337]: SpyAction #6 tag = counterfeit_currency name = 贿赂官员
+[spies.cpp:337]: SpyAction #7 tag = assassinate_advisor name = 刺杀重臣
+[spies.cpp:337]: SpyAction #8 tag = hezonglianheng_reputation name = 合纵连横
+[spies.cpp:337]: SpyAction #9 tag = spy_ring_infiltration name = 安插宫中亲信
+[spies.cpp:337]: SpyAction #10 tag = kill_the_monarch name = 刺杀君主
+[spies.cpp:337]: SpyAction #11 tag = kill_heir name = 刺杀继承人
+[spies.cpp:337]: SpyAction #12 tag = gudongdudi_reputation name = 鼓动独立
+[spies.cpp:337]: SpyAction #13 tag = tech_steal name = 窃取技术
+[spies.cpp:337]: SpyAction #14 tag = heqin name = 和亲
+[spies.cpp:337]: SpyAction #15 tag = meirenji name = 美人计
+[spies.cpp:337]: SpyAction #16 tag = bribe_defenders name = 细作入城
+[spies.cpp:337]: SpyAction #17 tag = support_revolt name = 策划叛乱
+[spies.cpp:337]: SpyAction #18 tag = incite_troop_desertion name = 鼓动哗变
+[spies.cpp:337]: SpyAction #19 tag = sponsor_patriots name = 资助复国军
+[spies.cpp:337]: SpyAction #20 tag = sponsor_pretender name = 资助篡位军
+[spies.cpp:337]: SpyAction #21 tag = shaoshanhuilin name = 烧山毁林
+[spies.cpp:337]: SpyAction #22 tag = dajishengchan name = 打击生产
+[spies.cpp:337]: SpyAction #23 tag = sanbowenyi name = 散播瘟疫
+[spies.cpp:337]: SpyAction #24 tag = jieduanliangdao name = 截断粮道
+[spies.cpp:337]: SpyAction #25 tag = qpjm name = 强迫结盟
+[spies.cpp:337]: SpyAction #26 tag = qstb name = 劝说退兵
+[spies.cpp:337]: SpyAction #27 tag = yjtd name = 移交土地
+[spies.cpp:337]: SpyAction #28 tag = shtd name = 收回土地
+[spies.cpp:337]: SpyAction #29 tag = qpgb name = 强迫关闭贸易中心
+[spies.cpp:337]: SpyAction #30 tag = lyjh name = 强迫接受礼乐教化
+[spies.cpp:337]: SpyAction #31 tag = lybd name = 强迫接受礼乐霸道
+[spies.cpp:337]: SpyAction #32 tag = jsgj name = 强迫军事化
+[spies.cpp:337]: SpyAction #33 tag = khgj name = 强迫开荒
+[spies.cpp:337]: SpyAction #34 tag = shangbingfamou name = 上兵伐谋
+[spies.cpp:337]: SpyAction #35 tag = qicifajiao name = 其次伐交
+[spies.cpp:337]: SpyAction #36 tag = qicifabing name = 其次伐兵
+[spies.cpp:337]: SpyAction #37 tag = qixiagongcheng name = 其下攻城
+[eu3application.cpp:1169]: SpyActionDatabase Initialized
+[rebeltype.cpp:488]: Rebel Type #0 tag = anti_tax_rebels
+[rebeltype.cpp:488]: Rebel Type #1 tag = particularist_rebels
+[rebeltype.cpp:488]: Rebel Type #2 tag = nationalist_rebels
+[rebeltype.cpp:488]: Rebel Type #3 tag = patriot_rebels
+[rebeltype.cpp:488]: Rebel Type #4 tag = colonial_rebels
+[rebeltype.cpp:488]: Rebel Type #5 tag = noble_rebels
+[rebeltype.cpp:488]: Rebel Type #6 tag = religious_rebels
+[rebeltype.cpp:488]: Rebel Type #7 tag = heretic_rebels
+[rebeltype.cpp:488]: Rebel Type #8 tag = pretender_rebels
+[rebeltype.cpp:488]: Rebel Type #9 tag = reactionary_rebels
+[rebeltype.cpp:488]: Rebel Type #10 tag = barbarian_rebels
+[eu3application.cpp:1179]: Rebel Types Initialized
+[casusbelli.cpp:618]: Casus Belli Types #0 tag = nocasusbelli
+[casusbelli.cpp:618]: Casus Belli Types #1 tag = cb_trade_league
+[casusbelli.cpp:618]: Casus Belli Types #2 tag = cb_insult
+[casusbelli.cpp:618]: Casus Belli Types #3 tag = cb_dishonored_call
+[casusbelli.cpp:618]: Casus Belli Types #4 tag = cb_restore_personal_union
+[casusbelli.cpp:618]: Casus Belli Types #5 tag = cb_fabricated_claims
+[casusbelli.cpp:618]: Casus Belli Types #6 tag = jap_civil_war
+[casusbelli.cpp:618]: Casus Belli Types #7 tag = cb_conquest
+[casusbelli.cpp:618]: Casus Belli Types #8 tag = cb_core
+[casusbelli.cpp:618]: Casus Belli Types #9 tag = cb_imperial_ban
+[casusbelli.cpp:618]: Casus Belli Types #10 tag = cb_horde_vs_civ
+[casusbelli.cpp:618]: Casus Belli Types #11 tag = cb_border_war
+[casusbelli.cpp:618]: Casus Belli Types #12 tag = cb_liberation
+[casusbelli.cpp:618]: Casus Belli Types #13 tag = cb_trade_war
+[casusbelli.cpp:618]: Casus Belli Types #14 tag = cb_super_badboy
+[casusbelli.cpp:618]: Casus Belli Types #15 tag = cb_zhulu
+[casusbelli.cpp:618]: Casus Belli Types #16 tag = cb_vassalize_mission
+[casusbelli.cpp:618]: Casus Belli Types #17 tag = cb_nationalist
+[casusbelli.cpp:618]: Casus Belli Types #18 tag = cb_horde_conquest
+[casusbelli.cpp:618]: Casus Belli Types #19 tag = cb_ganshe
+[casusbelli.cpp:618]: Casus Belli Types #20 tag = cb_vassalize_pretend_to_bazhu
+[casusbelli.cpp:618]: Casus Belli Types #21 tag = cb_insult_zb
+[casusbelli.cpp:618]: Casus Belli Types #22 tag = cb_insult_mbng
+[casusbelli.cpp:618]: Casus Belli Types #23 tag = cb_imperial
+[eu3application.cpp:1189]: Casus Belli Types Initialized
+[tradegoods.cpp:350]: TradeGoods price definition #0 tag = nogoods base_price = 1
+[tradegoods.cpp:350]: TradeGoods price definition #1 tag = grain base_price = 5.25
+[tradegoods.cpp:350]: TradeGoods price definition #2 tag = wine base_price = 4.5
+[tradegoods.cpp:350]: TradeGoods price definition #3 tag = wool base_price = 7.25
+[tradegoods.cpp:350]: TradeGoods price definition #4 tag = cloth base_price = 4.75
+[tradegoods.cpp:350]: TradeGoods price definition #5 tag = fish base_price = 4.25
+[tradegoods.cpp:350]: TradeGoods price definition #6 tag = fur base_price = 4
+[tradegoods.cpp:350]: TradeGoods price definition #7 tag = salt base_price = 9
+[tradegoods.cpp:350]: TradeGoods price definition #8 tag = naval_supplies base_price = 8.75
+[tradegoods.cpp:350]: TradeGoods price definition #9 tag = copper base_price = 7.75
+[tradegoods.cpp:350]: TradeGoods price definition #10 tag = gold base_price = 11
+[tradegoods.cpp:350]: TradeGoods price definition #11 tag = iron base_price = 5.75
+[tradegoods.cpp:350]: TradeGoods price definition #12 tag = slaves base_price = 4
+[tradegoods.cpp:350]: TradeGoods price definition #13 tag = ivory base_price = 4.75
+[tradegoods.cpp:350]: TradeGoods price definition #14 tag = tea base_price = 5.25
+[tradegoods.cpp:350]: TradeGoods price definition #15 tag = chinaware base_price = 3.75
+[tradegoods.cpp:350]: TradeGoods price definition #16 tag = spices base_price = 5.75
+[tradegoods.cpp:350]: TradeGoods price definition #17 tag = coffee base_price = 5.25
+[tradegoods.cpp:350]: TradeGoods price definition #18 tag = cotton base_price = 8
+[tradegoods.cpp:350]: TradeGoods price definition #19 tag = sugar base_price = 9.5
+[tradegoods.cpp:350]: TradeGoods price definition #20 tag = tobacco base_price = 8
+[tradegoods.cpp:350]: TradeGoods price definition #21 tag = unknown base_price = 0
+[eu3application.cpp:1199]: TradeGoods Prices Initialized
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\alderman 当政公卿.txt' #5
+[history.cpp:822]: History loaded 11 advisors from 'history\Advisors\ambassador 舌辩之才.txt' #11
+[history.cpp:822]: History loaded 9 advisors from 'history\Advisors\army_organiser 军事统帅.txt' #9
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\army_reformer 新军领袖.txt' #8
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\artist 先雅乐师.txt' #6
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\banker 经济之才.txt' #3
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\collector 文人骚客.txt' #4
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\colonel 统兵之将.txt' #4
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\colonial_governor 内臣谋士.txt' #6
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\commandant 卓越将领.txt' #6
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\diplomat 纵横之士.txt' #8
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\fortification_expert 防御专家.txt' #3
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\grand_admiral 水军提督.txt' #2
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\grand_captain 三军先锋.txt' #5
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\grand_marshal 直言之臣.txt' #4
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\high_judge 先贤巨子.txt' #5
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\inquisitor 法家酷吏.txt' #2
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\lord_proprietor 山林隐逸.txt' #3
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\master_of_mint 聚贤贵族.txt' #8
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\natural_scientst 科学先驱.txt' #5
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\naval_organiser 史家绝唱.txt' #2
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\naval_reformer 布衣门客.txt' #3
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\navigator 济世医者.txt' #2
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\philosopher 诸子百家.txt' #6
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\pioneer 蛮夷经略.txt' #4
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\privateer 贤达智者.txt' #4
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\quartermaster 军需官员.txt' #6
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\rear_admiral 改革人士.txt' #8
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\recruitmaster 征兵官员.txt' #5
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\sergeant_major_general 兵法名将.txt' #4
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\sheriff 内政精英.txt' #5
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\spymaster 孤胆刺客.txt' #6
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\statesman 一代名相.txt' #5
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\theologian 布道学究.txt' #3
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\trader 商人巨贾.txt' #4
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4
+[eu3application.cpp:1213]: History Initialized
+[eu3application.cpp:726]: Checksum is EU3 v5.2 (JIHZ)    -1982631153
+[provincemanager.cpp:472]: CEU3MapCache creation.
+[provincemanager.cpp:627]: Creating beach manager.
+[provincemanager.cpp:638]: Creating province collision data.
+[provincemanager.cpp:644]: Finished creating province collision data.
+[natives.cpp:158]: NativeType #0 tag = noNativeType name = noNativeType provinces = 0
+[natives.cpp:158]: NativeType #1 tag = natives_american name = 美洲原住民 provinces = 606
+[natives.cpp:158]: NativeType #2 tag = natives_african name = 非洲原住民 provinces = 0
+[natives.cpp:158]: NativeType #3 tag = natives_asian name = 亚洲原住民 provinces = 0
+[natives.cpp:158]: Nati[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\alderman 当政公卿.txt' #5
+[history.cpp:822]: History loaded 11 advisors from 'history\Advisors\ambassador 舌辩之才.txt' #11
+[history.cpp:822]: History loaded 9 advisors from 'history\Advisors\army_organiser 军事统帅.txt' #9
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\army_reformer 新军领袖.txt' #8
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\artist 先雅乐师.txt' #6
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\banker 经济之才.txt' #3
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\collector 文人骚客.txt' #4
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\colonel 统兵之将.txt' #4
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\colonial_governor 内臣谋士.txt' #6
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\commandant 卓越将领.txt' #6
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\diplomat 纵横之士.txt' #8
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\fortification_expert 防御专家.txt' #3
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\grand_admiral 水军提督.txt' #2
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\grand_captain 三军先锋.txt' #5
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\grand_marshal 直言之臣.txt' #4
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\high_judge 先贤巨子.txt' #5
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\inquisitor 法家酷吏.txt' #2
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\lord_proprietor 山林隐逸.txt' #3
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\master_of_mint 聚贤贵族.txt' #8
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\natural_scientst 科学先驱.txt' #5
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\naval_organiser 史家绝唱.txt' #2
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\naval_reformer 布衣门客.txt' #3
+[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\navigator 济世医者.txt' #2
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\philosopher 诸子百家.txt' #6
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\pioneer 蛮夷经略.txt' #4
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\privateer 贤达智者.txt' #4
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\quartermaster 军需官员.txt' #6
+[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\rear_admiral 改革人士.txt' #8
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\recruitmaster 征兵官员.txt' #5
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\sergeant_major_general 兵法名将.txt' #4
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\sheriff 内政精英.txt' #5
+[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\spymaster 孤胆刺客.txt' #6
+[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\statesman 一代名相.txt' #5
+[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\theologian 布道学究.txt' #3
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\trader 商人巨贾.txt' #4
+[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4
+ loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4

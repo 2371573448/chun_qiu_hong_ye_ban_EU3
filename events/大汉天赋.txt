@@ -1,0 +1,151 @@
+#黄老之术
+country_event = {
+	id = 12010
+
+	major = yes
+
+	trigger = {
+		tag = HNW
+		religion = daojia
+		NOT = { has_country_modifier = dahan_buff1 }
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12010"
+	desc = "EVTDESC12010"
+	
+
+	option = {
+		name = "EVTOPTA12010"	
+		add_country_modifier = { 
+			name = "dahan_buff1"
+			duration = -1
+		}
+	}
+}
+#孔孟之道
+country_event = {
+	id = 12012
+
+	major = yes
+
+	trigger = {
+		tag = HNW
+		religion = rujia
+		NOT = { has_country_modifier = dahan_buff2 }
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12012"
+	desc = "EVTDESC12012"
+	
+
+	option = {
+		name = "EVTOPTA12012"
+		add_country_modifier = { 
+			name = "dahan_buff2"
+			duration = -1
+		}
+	}
+}
+#黄老之术移除
+country_event = {
+	id = 12011
+
+	major = yes
+
+	trigger = {
+		tag = HNW
+		NOT = { religion = daojia }
+		has_country_modifier = dahan_buff1 	
+		
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	title = "EVTNAME12011"
+	desc = "EVTDESC12011"
+	
+
+	option = {
+		name = "EVTOPTA12011"
+		remove_country_modifier = dahan_buff1
+	}
+}
+#孔孟之道移除
+country_event = {
+	id = 12013
+
+	major = yes
+
+	trigger = {
+		tag = HNW
+		NOT = { religion = rujia}
+		has_country_modifier = dahan_buff2 	
+		
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	title = "EVTNAME12013"
+	desc = "EVTDESC12013"
+	
+
+	option = {
+		name = "EVTOPTA12013"
+		remove_country_modifier = dahan_buff2
+	}
+}
+#黄老之术-道法养生
+country_event = { 
+	id = 12016
+	trigger = { 
+		religion = daojia
+		has_country_modifier = dahan_buff1
+		NOT = { 
+			any_owned_province = { 
+				has_province_modifier = dahan_buff3
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME12016"
+	desc = "EVTDESC12016"
+	option = {
+		name = "EVTOPTA12016"
+			any_owned = { 
+		add_province_modifier = { 
+			name = "dahan_buff3"
+			duration = 3650
+		}
+	     }
+	}
+}
+#西楚霸王
+country_event = { 
+	id = 12024
+	trigger = { 
+		tag = XCW
+		NOT = { has_country_modifier = XCBW_buff }	
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME12024"
+	desc = "EVTDESC12024"
+	option = {
+		name = "EVTOPTA12024"
+		add_country_modifier = { 
+			name = "XCBW_buff"
+			duration = -1
+		}
+	}
+}

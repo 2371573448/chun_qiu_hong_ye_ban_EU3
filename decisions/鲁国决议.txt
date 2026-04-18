@@ -1,0 +1,27 @@
+######±¸≥÷÷‹¿Ò#####
+country_decisions = {
+bingchizhouli={
+potential = {
+tag = LUG
+not = {has_country_flag = bingchizhouli}
+not = {has_country_modifier = bingchizhouli}
+}
+allow = {
+officials = 2
+}
+effect = {
+officials = -2
+add_country_modifier = {
+name = "bingchizhouli"
+duration = -1
+}
+set_country_flag = bingchizhouli
+}
+ai_will_do = {
+factor = 1
+}
+}
+
+}
+
+

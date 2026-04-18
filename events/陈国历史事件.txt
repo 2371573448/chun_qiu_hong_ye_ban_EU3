@@ -1,0 +1,51 @@
+##周吁之乱
+country_event = { 
+	# 石碏求援
+	id = 10005
+	trigger = { 
+		tag = CHE
+		WEG = { 
+			has_country_modifier = cuanweizhijun
+		}
+		NOT = { 
+			year = 2030
+		}
+	}
+	mean_time_to_happen = { 
+		months = 24
+	}
+	title = "EVTNAME10005"
+	desc = "EVTDESC10005"
+	option = { 
+		name = "EVTOPTA10005"
+		prestige = 0.15
+		WEG = { 
+			remove_country_modifier = cuanweizhijun
+			define_ruler = { 
+				name = "晋"
+				dynasty = "姬"
+				regent = no
+				female = no
+				DIP = 5
+				MIL = 5
+				ADM = 3
+			}
+			country_event = 10006
+		}
+		relation = { 
+			who = WEG
+			value = 150
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { 
+		name = "EVTOPTB10005"
+		prestige = -0.05
+		badboy = -0.5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

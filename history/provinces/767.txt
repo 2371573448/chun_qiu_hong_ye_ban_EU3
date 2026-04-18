@@ -1,0 +1,13 @@
+owner = XYQ
+controller = XYQ
+culture = xiyu
+religion = animism
+capital = "¹ÃÄ«"
+trade_goods = wine
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = XYQ
+1827.1.1 = { discovered_by = XYR }

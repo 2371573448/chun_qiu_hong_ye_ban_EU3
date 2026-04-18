@@ -1,0 +1,12 @@
+vassal= {
+	first=WEI
+	second=WEG
+	start_date=2438.1.1
+	end_date=2439.6.18
+}
+vassal= {
+	first=QIN
+	second=WEG
+	start_date=2460.1.1
+	end_date=2461.6.18
+}

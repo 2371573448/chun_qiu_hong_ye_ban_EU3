@@ -1,0 +1,17 @@
+country_decisions = { 
+	guanbixiaochuwenhua = { 
+		potential = { 
+			ai = no
+			not = { has_global_flag = guanbixiaochuwenhua }
+		}
+		allow = { 
+			diplomats = 1
+			treasury = 10
+		}
+		effect = { 
+			diplomats = -1
+			treasury = -10
+			set_global_flag = guanbixiaochuwenhua
+		}
+	}
+}

@@ -1,0 +1,484 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_menu"
+		texturefile = "gfx\\interface\\menu.tga"
+	}
+	spriteType = {
+		name = "GFX_bg_country_history"
+		texturefile = "gfx\\interface\\httt_interface\\bg_country_history.tga"
+	}
+
+	spriteType = {
+		name = "GFX_menubar_bg"
+		texturefile = "gfx\\interface\\menubar.tga"
+	}
+
+	spriteType = {
+		name = "GFX_minimap_bg"
+		texturefile = "gfx\\interface\\minimap_bg.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_minimap_closed"
+		texturefile = "gfx\\interface\\minimap_closed.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minishield_strikeout"
+		texturefile = "gfx\\interface\\minishield_strikeout.tga"
+		allwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_chat_bg"
+		texturefile = "gfx\\interface\\chat_bg.tga"
+	}
+
+
+	spriteType = {
+		name = "GFX_messageicon_bg"
+		texturefile = "gfx\\interface\\messageicon_bg.tga"
+	}
+
+	spriteType = {
+		name = "GFX_minimap"
+		texturefile = "gfx\\interface\\minimap.tga"
+	}
+
+	spriteType = {
+		name = "GFX_messagesettings_bg"
+		texturefile = "gfx\\interface\\messagesettings_bg.tga"
+	}
+
+	spriteType = {
+		name = "GFX_messageicon_log"
+		texturefile = "gfx\\interface\\messageicon_log.tga"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_messageicon_pause"
+		texturefile = "gfx\\interface\\messageicon_pause.tga"
+		noOfFrames = 2
+	}
+
+
+	spriteType = {
+		name = "GFX_messageicon_icon"
+		texturefile = "gfx\\interface\\messageicon_icon.tga"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_messageicons"
+		texturefile = "gfx\\interface\\messageicons.tga"
+		noOfFrames = 17
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_button_home"
+		texturefile = "gfx\\interface\\button_home.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_button_gotofocus"
+		texturefile = "gfx\\interface\\httt_interface\\button_gotofocus.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_button_goto"
+		texturefile = "gfx\\interface\\button_goto.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_button_war_overview"
+		texturefile = "gfx\\interface\\napoleon_interface\\war_overview_button.dds"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_messageicon_dialog"
+		texturefile = "gfx\\interface\\messageicon_dialog.tga"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_messageicon_map"
+		texturefile = "gfx\\interface\\messageicon_map.tga"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_messagesettings_listbutton"
+		texturefile = "gfx\\interface\\messagesettings_listbutton.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_button"
+		texturefile = "gfx\\interface\\mapmode_button.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_zoom_in"
+		texturefile = "gfx\\interface\\zoom_in.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_zoom_out"
+		texturefile = "gfx\\interface\\zoom_out.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_mapmode_generic"
+		texturefile = "gfx\\interface\\mapmode_generic.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_terrain"
+		texturefile = "gfx\\interface\\mapmode_terrain.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_political"
+		texturefile = "gfx\\interface\\mapmode_political.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_religion"
+		texturefile = "gfx\\interface\\mapmode_religion.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_empire"
+		texturefile = "gfx\\interface\\mapmode_empire.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_trade"
+		texturefile = "gfx\\interface\\mapmode_trade.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_diplomatic"
+		texturefile = "gfx\\interface\\mapmode_diplomatic.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_mapmode_region"
+		texturefile = "gfx\\interface\\in_nomine_interface\\mapmode_region.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_mapmode_culture"
+		texturefile = "gfx\\interface\\in_nomine_interface\\mapmode_culture.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_mapmode_sphere"
+		texturefile = "gfx\\interface\\httt_interface\\mapmode_sphere.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_mapmode_rebel"
+		texturefile = "gfx\\interface\\httt_interface\\mapmode_rebel.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_mapmode_colonial"
+		texturefile = "gfx\\interface\\httt_interface\\mapmode_colonial.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_buildings"
+		texturefile = "gfx\\interface\\mapmode_buildings.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_buildingships"
+		texturefile = "gfx\\interface\\mapmode_buildingships.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_economical"
+		texturefile = "gfx\\interface\\mapmode_economical.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_fortlevel"
+		texturefile = "gfx\\interface\\mapmode_fortlevel.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_manpower"
+		texturefile = "gfx\\interface\\mapmode_manpower.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_missionaries"
+		texturefile = "gfx\\interface\\mapmode_missionaries.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_recruitment"
+		texturefile = "gfx\\interface\\mapmode_recruitment.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_stabilitycost"
+		texturefile = "gfx\\interface\\mapmode_stabilitycost.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_supplylimit"
+		texturefile = "gfx\\interface\\mapmode_supplylimit.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_tech"
+		texturefile = "gfx\\interface\\mapmode_tech.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_mapmode_tradevalue"
+		texturefile = "gfx\\interface\\mapmode_tradevalue.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 2
+	}	
+	
+
+	
+	spriteType = {
+		name = "GFX_mapmode_bg"
+		texturefile = "gfx\\interface\\httt_interface\\mapmode_bg.tga"
+	}
+
+	spriteType = {
+		name = "GFX_log_bg"
+		texturefile = "gfx\\interface\\log_bg.tga"
+	}
+
+
+	spriteType = {
+		name = "GFX_closelog_button"
+		texturefile = "gfx\\interface\\log_min.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+	
+	spriteType = {
+		name = "GFX_floating_hre"
+		texturefile = "gfx\\interface\\divine_wind_interface\\floating_hre.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+	spriteType = {
+		name = "GFX_floating_vatican"
+		texturefile = "gfx\\interface\\divine_wind_interface\\floating_vatican.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+	spriteType = {
+		name = "GFX_floating_shogun"
+		texturefile = "gfx\\interface\\divine_wind_interface\\floating_shogun.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+	spriteType = {
+		name = "GFX_menubar_floating_bg"
+		texturefile = "gfx\\interface\\divine_wind_interface\\menubar_floating_bg.tga"
+	}
+	spriteType = {
+		name = "GFX_menubar_floating_strip"
+		texturefile = "gfx\\interface\\divine_wind_interface\\menubar_floating_strip.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_mailbox_icon"
+		texturefile = "gfx\\interface\\divine_wind_interface\\mailbox_icon.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_message_background"
+		texturefile = "gfx\\interface\\divine_wind_interface\\message_background.tga"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_menubar_new"
+		texturefile = "gfx\\interface\\divine_wind_interface\\menubar_new.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_msg_combat"
+		texturefile = "gfx\\interface\\divine_wind_interface\\msg_combat.tga"
+	}
+	spriteType = {
+		name = "GFX_msg_diplo"
+		texturefile = "gfx\\interface\\divine_wind_interface\\msg_diplo.tga"
+	}
+	spriteType = {
+		name = "GFX_msg_event"
+		texturefile = "gfx\\interface\\divine_wind_interface\\msg_event.tga"
+	}
+	spriteType = {
+		name = "GFX_msg_trade"
+		texturefile = "gfx\\interface\\divine_wind_interface\\msg_trade.tga"
+	}
+	spriteType = {
+		name = "GFX_msg_gov"
+		texturefile = "gfx\\interface\\divine_wind_interface\\msg_gov.tga"
+	}
+
+	spriteType = {
+		name = "GFX_openlog_button"
+		texturefile = "gfx\\interface\\log_max.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+
+	spriteType = {
+		name = "GFX_vatican_button"
+		texturefile = "gfx\\interface\\icon_vatican.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+	spriteType = {
+		name = "GFX_button_history"
+		texturefile = "gfx\\interface\\httt_interface\\button_history.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+
+	spriteType = {
+		name = "GFX_hre_button"
+		texturefile = "gfx\\interface\\icon_hre.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+
+	spriteType = {
+		name = "GFX_menu_button"
+		texturefile = "gfx\\interface\\button_menu.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+
+
+	spriteType = {
+		name = "GFX_ledger_button"
+		texturefile = "gfx\\interface\\button_ledger.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}
+
+	spriteType = {
+		name = "GFX_panel_button"
+		texturefile = "gfx\\interface\\panel_button.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		clicksound = click
+	}	
+
+	spriteType = {
+		name = "GFX_settings_tab"
+		texturefile = "gfx\\interface\\tab_settings.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_goto_box"
+		texturefile = "gfx\\interface\\goto_prov_dialog_bg.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_waroverview_background"
+		texturefile = "gfx\\interface\\napoleon_interface\\warscore_popup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_waroverview_icon"
+		texturefile = "gfx\\interface\\napoleon_interface\\warscore_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_menubar_mail_bg"
+		texturefile = "gfx\\interface\\menubar_mail_bg.tga"
+	}
+	spriteType = {
+		name = "GFX_mailbox_strip"
+		texturefile = "gfx\\interface\\mailbox_strip.tga"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_menubar_msg_other"
+		texturefile = "gfx\\interface\\menubar_msg_other.tga"
+	}
+	spriteType = {
+		name = "GFX_menubar_msg_event"
+		texturefile = "gfx\\interface\\menubar_msg_other.tga"
+	}
+	spriteType = {
+		name = "GFX_menubar_msg_diplo"
+		texturefile = "gfx\\interface\\menubar_msg_other.tga"
+	}
+	spriteType = {
+		name = "GFX_menubar_msg_government"
+		texturefile = "gfx\\interface\\menubar_msg_other.tga"
+	}
+	spriteType = {
+		name = "GFX_menubar_msg_trade"
+		texturefile = "gfx\\interface\\menubar_msg_other.tga"
+	}
+	spriteType = {
+		name = "GFX_menubar_msg_combat"
+		texturefile = "gfx\\interface\\menubar_msg_other.tga"
+	}
+
+}

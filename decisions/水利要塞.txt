@@ -1,0 +1,1204 @@
+country_decisions = { 
+	goutong_honggou = { 
+		potential = { 
+			year = 2200
+			owns = 364
+			# ºâÓº
+			owns = 380
+			# ÖÐÄ²
+			owns = 358
+			# ´óÁº
+			owns = 345
+			# ÓºÇð
+			not = { 
+				has_global_flag = kaifa_honggou
+			}
+		}
+		allow = { 
+			or = {
+				and = { production_tech = 43 }
+				and = { tag = ZGO 
+					trade_tech = 42  }
+			}
+			idea = shrewd_commerce_practise
+			treasury = 400
+			manpower = 30
+			officials = 1
+			364 = { 
+				has_building = town_hall
+			}
+			380 = { 
+				has_building = town_hall
+			}
+			358 = { 
+				has_building = town_hall
+			}
+			345 = { 
+				has_building = town_hall
+			}
+		}
+		effect = { 
+			treasury = -400
+			manpower = -30
+			officials = -1
+			364 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			380 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			358 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			345 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			363 = { 
+				base_tax = +1
+			}
+			365 = { 
+				base_tax = +1
+			}
+			set_global_flag = kaifa_honggou
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 800
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 60
+				}
+			}
+		}
+	}
+
+	kaizao_hangou = { 
+		potential = { 
+			year = 2100
+			owns = 406
+			owns = 409
+			owns = 410
+			idea = grand_army
+			not = { 
+				has_global_flag = kaifa_hangou
+			}
+		}
+		allow = { 
+			trade_tech = 33
+			treasury = 250
+			manpower = 15
+			officials = 1
+			406 = { 
+				has_building = town_hall
+			}
+			409 = { 
+				has_building = town_hall
+			}
+			410 = { 
+				has_building = town_hall
+			}
+		}
+		effect = { 
+			treasury = -250
+			manpower = -15
+			officials = -1
+			406 = { 
+				base_tax = +1
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+				add_province_modifier = { 
+					name = "hangoushuiqu"
+					duration = -1
+				}
+			}
+			409 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+				add_province_modifier = { 
+					name = "hangoushuiqu"
+					duration = -1
+				}
+			}
+			410 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+				add_province_modifier = { 
+					name = "hangoushuiqu"
+					duration = -1
+				}
+			}
+			set_global_flag = kaifa_hangou
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 800
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 30
+				}
+			}
+		}
+	}
+
+	dujiangyan = {
+		potential = {
+			year = 2350
+			owns = 235
+			owns = 232
+			not = { has_global_flag = kaifa_dujiangyan }
+		}
+		allow = {
+			production_tech = 58
+			idea = shrewd_commerce_practise 
+                        advisor = natural_scientist
+                        natural_scientist = 5
+			treasury = 250
+			manpower = 12
+			officials = 1
+		}
+		effect = {
+			treasury = -250
+			manpower = -12
+			officials = -1
+			232 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+			}
+			233 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+			}
+			235 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+			}
+			242 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1825
+				}
+			}
+			set_global_flag = kaifa_dujiangyan
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 500
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 24
+				}
+			}
+		}
+	}
+
+	zhengguoqu = {
+		potential = {
+			year = 2300
+			owns = 196
+			owns = 198
+			owns = 199
+			owns = 202
+			owns = 215
+			not = { has_global_flag = kaifa_zhengguoqu }
+		}
+		allow = {
+			production_tech = 54
+			idea = shrewd_commerce_practise 
+                        advisor = natural_scientist
+                        natural_scientist = 3
+			treasury = 1200
+			manpower = 40
+			officials = 1
+		}
+		effect = {
+			treasury = -1200
+			manpower = -40
+			officials = -1
+			196 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			197 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			198 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			199 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			202 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			204 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			215 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 3650
+				}
+			}
+			set_global_flag = kaifa_zhengguoqu
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 1800
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 80
+				}
+			}
+		}
+	}
+
+	yinzhanggaiye = {
+		potential = {
+			year = 2200
+			owns = 118
+			not = { has_global_flag = kaifa_yecheng }
+		}
+		allow = {
+			production_tech = 41
+			idea = shrewd_commerce_practise 
+			treasury = 150
+			manpower = 6
+			officials = 1
+		}
+		effect = {
+			treasury = -150
+			manpower = -6
+			officials = -1
+			118 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 730
+				}
+			}
+			set_global_flag = kaifa_yecheng
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	qishibei = {
+		potential = {
+			year = 2000
+			owns = 402
+			not = { has_global_flag = kaifa_qishibei }
+		}
+		allow = {
+			trade_tech = 24
+			idea = shrewd_commerce_practise 
+			treasury = 150
+			manpower = 6
+			officials = 1
+		}
+		effect = {
+			treasury = -150
+			manpower = -6
+			officials = -1
+			402 = { 
+				base_tax = +2
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 730
+				}
+			}
+			set_global_flag = kaifa_qishibei
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_464 = { 
+		potential = { 
+			year = 2222
+			owns = 464
+			464 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			464 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_400 = { 
+		potential = { 
+			year = 2222
+			owns = 400
+			400 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			400 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_387 = { 
+		potential = { 
+			year = 2222
+			owns = 387
+			387 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			387 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_414 = { 
+		potential = { 
+			year = 2222
+			owns = 414
+			414 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			414 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_338 = { 
+		potential = { 
+			year = 2222
+			owns = 338
+			338 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			338 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_492 = { 
+		potential = { 
+			year = 2222
+			owns = 492
+			492 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			492 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_354 = { 
+		potential = { 
+			year = 2222
+			owns = 354
+			354 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			354 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_83 = { 
+		potential = { 
+			year = 2222
+			owns = 83
+			83 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			83 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_100 = { 
+		potential = { 
+			year = 2222
+			owns = 100
+			100 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			100 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_68 = { 
+		potential = { 
+			year = 2222
+			owns = 68
+			68 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			68 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_349 = { 
+		potential = { 
+			year = 2222
+			owns = 349
+			349 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			349 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_217 = { 
+		potential = { 
+			year = 2222
+			owns = 217
+			217 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			217 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_51 = { 
+		potential = { 
+			year = 2222
+			owns = 51
+			51 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			51 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_271 = { 
+		potential = { 
+			year = 2222
+			owns = 271
+			271 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			271 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_91 = { 
+		potential = { 
+			year = 2222
+			owns = 91
+			91 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			91 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_148 = { 
+		potential = { 
+			year = 2222
+			owns = 148
+			148 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			148 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+
+	guanai_164 = { 
+		potential = { 
+			year = 2222
+			owns = 164
+			164 = { 
+				not = { 
+					has_province_modifier = lishimingguan
+				}
+			}
+		}
+		allow = { 
+			land_tech = 37
+			treasury = 150
+			manpower = 10
+		}
+		effect = { 
+			treasury = -150
+			manpower = -10
+			164 = { 
+				add_province_modifier = { 
+					name = "building_program"
+					duration = 1095
+				}
+				add_province_modifier = { 
+					name = "lishimingguan"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 300
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					manpower = 20
+				}
+			}
+		}
+	}
+}

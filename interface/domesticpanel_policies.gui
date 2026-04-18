@@ -1,0 +1,749 @@
+guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_policies"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+
+		instantTextBoxType = {
+			name = "national_ideas_label"
+			position = { x = 0 y =181 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 0}
+			text = "DOMESTIC_IDEAS"	
+			maxWidth = 420
+			maxHeight = 16	
+			Orientation = "UPPER_LEFT"
+			
+			
+			}
+
+		instantTextBoxType = {
+			name = "domestic_policies_label"
+			position = { x = 0 y =390 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 0}
+			text = "DOMESTIC_POLICIES"	
+			maxWidth = 420
+			maxHeight = 16	
+			Orientation = "UPPER_LEFT"
+			
+			
+			}
+
+		instantTextBoxType = {
+			name = "FOG_label"
+			position = { x = 0 y =143 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 0}
+			text = "DOMESTIC_FORM_OF_GOV"	
+			maxWidth = 420
+			maxHeight = 16	
+			Orientation = "UPPER_LEFT"
+			
+			
+			}
+	
+			
+		
+
+		guiButtonType = {
+				name = "FOG_button"
+				position = { x=46 y =155}
+				quadTextureSprite ="button_type_3"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+			}
+
+
+		}
+
+		guiButtonType =
+		{
+			name ="idea_button"
+			quadTextureSprite= "GFX_idea_empty"
+			position = { x= 32 y = 229 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+
+	
+
+		
+
+
+
+		
+
+		windowType = {
+			name = "domestic_policy_slider_window"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+	
+			
+				
+			scrollbarType = {
+				name = "policy_slider"	
+				slider = "ds_SliderButton"
+				track= "ds_TrackButton"
+				leftbutton = "ds_upButton"
+				rightbutton = "ds_downButton"
+				size = {x =155 y =16 }
+				position = {x= 126 y =0}
+				priority = 100			
+				borderSize = {x =16 y = 16}	
+				maxValue = +5
+				minValue = -5
+				stepSize =1
+				startValue = 0
+				horizontal = 1
+				drag = no
+	
+				guiButtonType = {
+					name = "ds_SliderButton"	
+					quadTextureSprite = "yearslider_slider"
+					tooltip = ""
+					tooltipText =""	
+					delayedTooltipText = ""
+					position = { x=0 y =0}
+				}
+	
+				guiButtonType = {
+					name = "ds_TrackButton"
+					quadTextureSprite = "yearslider_background"
+					position = { x=0 y =20}	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""	
+	
+				}	
+	
+				guiButtonType = {
+					parent = "ds_SliderButton"
+					name = "ds_upButton"
+					quadTextureSprite = "yearslider_leftbutton"
+					position = { x=0 y =0}	
+				}
+				
+				guiButtonType = {
+					parent = "ds_SliderButton"
+					name = "ds_downButton"
+					quadTextureSprite = "yearslider_rightbutton"
+					position = { x=0 y =120}	
+				}
+			}
+
+			instantTextBoxType = {
+					name = "policy_right"
+					position = { x = 280 y = 0 }
+	
+					format = left
+	
+					textureFile = ""
+					font = "Main_14"
+					borderSize = {x = 4 y = 0}
+					text = ""	
+					maxWidth = 110
+					maxHeight = 32	
+					Orientation = "UPPER_LEFT"
+				}
+	
+			instantTextBoxType = {
+					name = "policy_left"
+					position = { x = 0 y = 0 }
+	
+					format = right
+	
+					textureFile = ""
+					font = "Main_14"
+					borderSize = {x = 4 y = 0}
+					text = ""	
+					maxWidth = 122
+					maxHeight = 32	
+					Orientation = "UPPER_LEFT"
+				
+				}
+
+
+		}
+
+
+		
+
+
+	positionType = {
+		name = "idea_start"
+#		position = { x = 28 y = 230 }
+#		position = { x = 32 y = 230 }
+		position = { x = 34 y = 195 }
+	}
+
+	positionType = {
+		name = "idea_offset"
+#		position = { x = 62 y = 70 }
+#		position = { x = 70 y = 70 }
+		position = { x = 94 y = 65 }
+	}
+
+
+#### Policy Sliders
+
+
+
+	positionType = {
+		name = "domestic_policy_slider_start"
+#		position = { x = 0 y = 400 }
+		position = { x = 0 y = 404 }
+	}
+
+	positionType = {
+		name = "domestic_policy_slider_offset"
+		position = { x = 0 y = 20 }
+	}
+
+
+	guiButtonType =
+			{
+				name = "restriction_button"
+				quadTextureSprite = "GFX_scrollbar_limiter"
+				position = { x=0 y =0}
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+
+
+
+	positionType = {
+		name = "idea_selection_start"
+#		position = { x = 40 y = 130 }
+		position = { x = 40 y = 120 }
+	}
+
+	positionType = {
+		name = "idea_selection_offset"
+		position = { x = 70 y = 62 }
+#		position = { x = 70 y = 70 }
+	}
+
+
+	guiButtonType =
+			{
+				name ="idea_selection_button"
+				quadTextureSprite= "GFX_idea_empty"
+				position = { x= 40 y = 130 }
+				Orientation = "UPPER_LEFT"
+
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+	
+			}
+
+
+
+
+# Select idea interface
+
+
+		windowType = {
+			name = "domesticpanel_idea_select"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = yes	
+	
+	
+			iconType =
+			{
+				name ="domesticpanel_overlay_ideas"
+				spriteType = "GFX_domesticpanel_overlay"  #_ideas"
+				position = { x= 0 y = -1 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			guiButtonType = {
+				name = "back_button"
+				position = { x=172 y =618}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "BACK"
+				buttonFont = "Main_14_black"
+			}
+
+
+			######## New selection area #######
+
+
+
+			instantTextBoxType = {
+				name = "idea_label_1"
+				position = { x = 30 y =106 }
+	
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = "DOMESTIC_NAVAL"	
+				maxWidth = 84
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "idea_label_2"
+				position = { x = 100 y =106 }
+	
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = "DOMESTIC_LAND"	
+				maxWidth = 84
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+
+			instantTextBoxType = {
+				name = "idea_label_3"
+				position = { x = 170 y =106 }
+	
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = "DOMESTIC_EXPLORATION"	
+				maxWidth = 84
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "idea_label_4"
+				position = { x = 240 y =106 }
+	
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = "DOMESTIC_STATE"	
+				maxWidth = 84
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "idea_label_5"
+				position = { x = 310 y =106 }
+	
+				format = centre
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = "DOMESTIC_CULTURE"	
+				maxWidth = 84
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		
+
+
+			
+
+
+
+
+
+
+
+			
+		}
+	
+
+
+
+
+
+
+
+#entry for listbox when selecting new...
+
+	windowType = {
+		name = "domesticpanel_idea_selection_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 80 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		iconType =
+		{
+			name ="divider"
+			spriteType = "GFX_divider"
+			position = { x= -70 y = 70 }
+			Orientation = "UPPER_LEFT"
+		}
+			
+
+
+
+
+		guiButtonType =
+		{
+			name ="idea_selection_button"
+			quadTextureSprite= "GFX_idea_empty"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+		
+
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 80 y =0 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		instantTextBoxType = {
+			name = "effect"
+			position = { x = 80 y =15 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 350
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		
+
+
+	}
+	
+	# Select GOVERNMENT interface
+
+
+		windowType = {
+			name = "domesticpanel_fog_select"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = yes	
+	
+	
+			iconType =
+			{
+				name ="domesticpanel_overlay"
+				spriteType = "GFX_domesticpanel_overlay"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			
+	
+			iconType =
+			{
+				name ="fog_selection_frame"
+				spriteType = "GFX_court_selection_frame"
+				position = { x= 46 y = 90 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+	
+	
+			instantTextBoxType = {
+				name = "domestictext_fog_selection_name_current"
+				position = { x = 80 y =116 }
+	
+				format = left
+	
+				textureFile = ""
+				font = "garamond_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 400
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+			}
+					
+			instantTextBoxType = {
+				name = "domestictext_fog_selection_name_effect"
+				position = { x = 80	 y =131 }
+	
+				format = left
+	
+				textureFile = ""
+				font = "garamond_14"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 350
+				maxHeight = 85
+				fixedsize = yes				
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+			
+			listboxType = 
+				{
+				name ="domesticpanel_fog_select_list"
+				position = { x=58 y =217}
+				backGround=""
+				size = { x=300 y =324}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+			
+			guiButtonType = {
+				name = "back_button"
+				position = { x=172 y =550}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "BACK"
+				buttonFont = "Main_14_black"
+			}
+			
+		}
+	
+
+
+
+
+
+
+
+#entry for listbox when selecting new form of government...
+
+	windowType = {
+		name = "domesticpanel_fog_selection_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 108 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		#iconType =
+		#{
+		#	name ="divider"
+		#	spriteType = "GFX_divider"
+		#	position = { x= -70 y = 70 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+			
+
+
+
+
+		guiButtonType =
+		{
+			name ="fog_selection_button"
+			quadTextureSprite= "button_type_5_notext"
+			position = { x= -32 y = 0 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+
+
+
+		iconType =
+		{
+			name ="circle"
+			spriteType = "GFX_circle"
+			position = { x= 250 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+			
+		
+
+
+		instantTextBoxType = {
+			name = "gov_name"
+			position = { x = 12 y =8 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 256
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		instantTextBoxType = {
+			name = "effect"
+			position = { x = 12 y =28 }
+
+			format = left
+
+			textureFile = ""
+			font = "garamond_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 350
+			maxHeight = 64	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		instantTextBoxType = {
+			name = "years_between_policy_change"
+			position = { x = 258 y =0 }
+
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 8}
+			text = ""	
+			maxWidth = 32
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "circle_text"
+			position = { x = 262 y =7 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+		
+
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

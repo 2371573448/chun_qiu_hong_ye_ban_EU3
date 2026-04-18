@@ -1,0 +1,184 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "archipelago_frigate"
+		actorfile = "gfx\anims\Archipelago_frigate.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "barque"
+		actorfile = "gfx\anims\Barque.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "carrack"
+		actorfile = "gfx\anims\Carrack.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "caravel"
+		actorfile = "gfx\anims\Caravele.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "chebeck"
+		actorfile = "gfx\anims\Chebeck.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "cog"
+		actorfile = "gfx\anims\Cog.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "early_frigate"
+		actorfile = "gfx\anims\Early_frigate.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "frigate"
+		actorfile = "gfx\anims\Early_frigate.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "flute"
+		actorfile = "gfx\anims\Flute.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "galleass"
+		actorfile = "gfx\anims\Galleass.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ship_Oars.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "galley"
+		actorfile = "gfx\anims\Galley.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ship_Oars.xsm"
+		attack = "gfx\anims\Ships_Moving.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "galleon"
+		actorfile = "gfx\anims\Galleon.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "heavy_frigate"
+		actorfile = "gfx\anims\Heavy_frigate.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "merchantman"
+		actorfile = "gfx\anims\Merchant.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "eastindiaman"
+		actorfile = "gfx\anims\East_India_Man.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "threedecker"
+		actorfile = "gfx\anims\Threedecker.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "twodecker"
+		actorfile = "gfx\anims\Twodecker.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "wargalleon"
+		actorfile = "gfx\anims\Wargalleon.xac"
+		
+		idle   = "gfx\anims\Ships_Moving.xsm"
+		move   = "gfx\anims\Ships_Moving.xsm"
+		attack = "gfx\anims\Ships_Attack.xsm"
+		scale = 2.0
+	}
+	
+	
+}

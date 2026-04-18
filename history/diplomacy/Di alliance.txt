@@ -1,0 +1,48 @@
+alliance= {
+	first=LUS
+	second=LIY
+	start_date=1928.1.1
+	end_date=2104.6.18
+}
+alliance= {
+	first=LUS
+	second=DOC
+	start_date=1928.1.1
+	end_date=2104.6.18
+}
+alliance= {
+	first=LUS
+	second=CHA
+	start_date=2034.1.1
+	end_date=2074.6.18
+}
+alliance={
+	first=LIY
+	second=JIS
+	start_date=2034.2.1
+	end_date=2105.1.1
+}
+alliance={
+	first=LIY
+	second=JIS
+	start_date=2034.2.1
+	end_date=2105.1.1
+}
+alliance={
+	first=XIY
+	second=GUG
+	start_date=1928.1.1
+	end_date=2226.1.1
+}
+alliance={
+	first=XIY
+	second=FEI
+	start_date=1928.1.1
+	end_date=2153.1.1
+}
+alliance={
+	first=GUZ
+	second=LZG
+	start_date=1928.1.1
+	end_date=2015.1.1
+}

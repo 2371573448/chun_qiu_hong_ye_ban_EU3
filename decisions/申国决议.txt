@@ -1,0 +1,61 @@
+country_decisions = { 
+	# 申国天赋
+	susuxiegong1 = { 
+		potential = { 
+			tag = SHE
+			not = { 
+				has_country_flag = susuxiegong1
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			set_country_flag = susuxiegong1
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}
+
+province_decisions = { 
+	# 肃肃谢功
+	susuxiegong = { 
+		potential = { 
+			tag = SHE
+			not = { 
+				has_province_modifier = susuxiegong
+			}
+			not = { 
+				has_province_modifier = zhaoboyingzhi
+			}
+		}
+		allow = {    
+			citysize = 5000
+			NOT = { citysize = 100000 }
+			owner={ has_country_flag = susuxiegong1}
+		}
+		effect = { 
+			add_province_modifier = { 
+				name = "susuxiegong"
+				duration = 3650
+			}
+			random = { 
+				chance = 50
+				owner = { 
+					badboy = 0.5
+				}
+			}
+			any_neighbor_province = { 
+				add_province_modifier = { 
+					name = "zhaoboyingzhi"
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}

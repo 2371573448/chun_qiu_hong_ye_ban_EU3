@@ -1,0 +1,94 @@
+
+culture = guanzhong
+religion = animism
+capital = "ÖØÈª"
+trade_goods = grain
+hre = no
+base_tax = 7
+manpower = 0
+owner = PXS
+controller = PXS
+citysize = 16000
+fort1 = yes
+add_core = PXS
+add_core = PAP
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2001.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 5000
+}
+2031.1.1 = { 
+	add_core = QIN
+	remove_core = PAP
+	remove_core = PXS
+}
+2110.1.1 = { 
+	religion = liyuebadao
+}
+2222.1.1 = { 
+	citysize = 34000
+}
+2244.1.1 = { 
+	hre = no
+}
+2244.1.2 = { 
+	hre = yes
+}
+2244.1.1 = { 
+	owner = PXS
+	controller = PXS
+	add_core = PXS
+	remove_core = QIN
+}
+2244.1.2 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = PXS
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	remove_core = QIN
+	owner = PXS
+	controller = PXS
+	add_core = PXS
+}
+2247.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+}
+2340.1.1 = { 
+	religion = fajia
+}
+2440.1.1 = { 
+	religion = rujia
+}
+2492.2.1 = { 
+	owner = SAI
+	controller = SAI
+	add_core = SAI
+}
+2492.8.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

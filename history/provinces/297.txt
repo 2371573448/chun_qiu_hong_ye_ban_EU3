@@ -1,0 +1,90 @@
+owner = XUE
+controller = XUE
+culture = dongyi
+religion = liyuejiaohua
+capital = "Ñ¦³Ç"
+trade_goods = ivory
+hre = yes
+base_tax = 8
+manpower = 0
+citysize = 38000
+fort1 = yes
+add_core = XUE
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2222.1.1 = { 
+	citysize = 60000
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = {
+        citysize = 50000
+    }
+2246.1.3 = {
+        citysize = 60000
+    }
+2247.1.1 = { 
+	hre = no
+}
+2260.1.1 = { 
+	religion = rujia
+}
+2280.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2310.1.1 = { 
+	add_core = QIG
+}
+2404.1.1 = { 
+	owner = XUE
+	controller = XUE
+	culture = dongtu
+}
+2412.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2413.1.1 = { 
+	owner = LUG
+	controller = LUG
+}
+2437.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2467.1.1 = { 
+	add_core = CHU
+	remove_core = XUE
+}
+2472.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.6.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

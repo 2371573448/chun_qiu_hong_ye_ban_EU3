@@ -1,0 +1,14 @@
+name = "€≥¡Í÷Æ’Ω"
+casus_belli = cb_vassalize_pretend_to_bazhu 
+
+2123.4.1 = {
+	add_attacker = JIN
+	add_defender = ZGO
+	add_defender = CHU
+}
+
+2123.7.1  = {
+	rem_attacker = JIN
+	rem_defender = CHU
+	rem_defender = ZGO
+}

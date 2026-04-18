@@ -1,0 +1,17 @@
+name = "鞍之战"
+casus_belli = cb_insult #收复失地
+
+2109.1.1 = {
+	add_attacker = QIG
+	add_defender = LUG
+	add_defender = WEG
+}
+2109.5.1 = {
+	add_defender = JIN
+}
+2109.7.1  = {
+	rem_attacker = QIG
+	rem_defender = LUG
+	rem_defender = WEG
+	rem_defender = JIN
+}

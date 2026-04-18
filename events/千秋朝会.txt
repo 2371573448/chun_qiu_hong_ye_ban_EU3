@@ -1,0 +1,445 @@
+country_event = {				
+	id = 9457			
+	# 举行朝会			
+	trigger = { 			
+	                      idea = superior_seamanship			
+	              any_country = { 			
+                                                           vassal_of = THIS				
+			not = {  	
+                                                                              has_country_modifier = "juxingchaohui" 				
+                                                            }				
+	               }			
+                      }				
+	mean_time_to_happen = { 			
+                                    months = 0 				
+                    }				
+				
+	title = "chaohui1"			
+	desc = "chaohui2"			
+				
+                  option = { 				
+                                          name = "chaohui3"				
+		  random_country = { 		
+                                                                                 limit = { 				
+                                                                                                  vassal_of = THIS				
+			                        not = { has_country_modifier = "juxingchaohui"	}
+				 }
+		            add_country_modifier = { 		
+			name = "juxingchaohui"	
+			duration = 3650  	
+                                                    }				
+			relation = { who = THIS value = 25 }	
+	                        }			
+		prestige = 0.05		
+		years_of_income = -0.005		
+		random_list = {		
+			6 = { diplomats = 1 }	
+			2 = { merchants = 1 }	
+			2 = { colonists = 1 }	
+			2 = { missionaries = 1 }	
+		                    2 = { spies = 1 }		
+			4 = { officials = 1 }	
+                                                            2 = {				
+			define_general = {	
+                                                                      name = "于禁"				
+                                                                      shock = 1				
+                                                                      fire = 5				
+                                                                      siege = 1				
+                                                                      manuever = 1			
+                                                                      rank = 6				
+                                                             }				
+                                                             }				
+                                                            2 = {				
+			define_general = {	
+                                                                      name = "乐进"				
+                                                                      shock = 5				
+                                                                      fire = 1				
+                                                                      siege = 1				
+                                                                      manuever = 1				
+                                                                      rank = 4				
+                                                             }				
+                                                             }				
+                                                            2 = {				
+			define_general = {	
+                                                                      name = "徐晃"				
+                                                                      shock = 1				
+                                                                      fire = 1				
+                                                                      siege = 5				
+                                                                      manuever = 1				
+                                                                      rank = 4				
+                                                             }				
+                                                             }				
+                                                            2 = {				
+			define_general = {	
+                                                                      name = "张辽"				
+                                                                      shock = 2				
+                                                                      fire = 2				
+                                                                      siege = 1				
+                                                                      manuever = 5				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            2 = {				
+			define_general = {	
+                                                                      name = "张合"				
+                                                                      shock = 2				
+                                                                      fire = 3				
+                                                                      siege = 3				
+                                                                      manuever = 1				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            2 = {				
+			define_general = {	
+                                                                      name = "关羽"				
+                                                                      shock = 4				
+                                                                      fire = 4				
+                                                                      siege = 1				
+                                                                      manuever = 1				
+                                                                      rank = 6				
+                                                             }				
+                                                             }				
+                                                            10 = {				
+			define_general = {	
+                                                                      name = "侯选"				
+                                                                      shock = 1				
+                                                                      fire = 3				
+                                                                      siege = 1				
+                                                                      manuever = 1				
+                                                                      rank = 2				
+                                                             }				
+                                                             }				
+                                                            10 = {				
+			define_general = {	
+                                                                      name = "程银"				
+                                                                      shock = 3				
+                                                                      fire = 1				
+                                                                      siege = 1				
+                                                                      manuever = 1				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            10 = {				
+			define_general = {	
+                                                                      name = "杨秋"				
+                                                                      shock = 1				
+                                                                      fire = 1				
+                                                                      siege = 1				
+                                                                      manuever = 2				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            10 = {				
+			define_general = {	
+                                                                      name = "宋宪"				
+                                                                      shock = 1				
+                                                                      fire = 2				
+                                                                      siege = 1				
+                                                                      manuever = 1			
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            10 = {				
+			define_general = {	
+                                                                      name = "魏续"				
+                                                                      shock = 1				
+                                                                      fire = 2				
+                                                                      siege = 1				
+                                                                      manuever = 2				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            10 = {				
+			define_general = {	
+                                                                      name = "臧霸"				
+                                                                      shock = 1				
+                                                                      fire = 1				
+                                                                      siege = 3				
+                                                                      manuever = 3			
+                                                                      rank = 4				
+                                                             }				
+                                                             }				
+		} 		
+                     }				
+	option = {			
+		name = "chaohui4"		
+		random_country = {		
+				limit = {
+				vassal_of = THIS
+			                              not = { 	
+				                has_country_modifier = "juxingchaohui"
+			                              }	
+				}
+				
+		}		
+	}			
+}				
+				
+country_event = {				
+	id = 9458			
+	# 属邦归顺			
+	trigger = { 			
+		idea = press_gangs		
+		idea = superior_seamanship		
+	                    any_neighbor_country = { 			
+			vassal_of = THIS	
+                                        }				
+	}			
+	mean_time_to_happen = { 			
+		months = 1200		
+	}			
+				
+	title = "weiwei1"			
+	desc = "weiwei2"			
+				
+				
+	option = {			
+		name = "weiwei3"		
+		random_country = {		
+				limit = {
+				vassal_of = THIS
+				}
+			random_owned = {	
+				any_owned = { 
+				add_core = THIS
+			                    }	
+			}	
+		}		
+		prestige = 0.20		
+	}			
+	option = {			
+		name = "weiwei4"		
+		badboy = -4		
+	}			
+}				
+				
+country_event = {				
+	id = 9459			
+	# 属邦天灾			
+	trigger = { 			
+		idea = superior_seamanship		
+	                    any_country = { 			
+			vassal_of = THIS	
+                                        }				
+	}			
+	mean_time_to_happen = { 			
+		months = 180		
+	}			
+				
+	title = "shubang1"			
+	desc = "shubang2"			
+				
+				
+	option = {			
+		name = "shubang3"		
+		random_country = {		
+				limit = {
+				vassal_of = THIS
+				}
+			relation = { who = THIS value = 50  }	
+		}		
+		add_country_modifier = { 		
+			name = "jiujishubang"	
+			duration = 90	
+		}		
+		prestige = 0.5		
+		random_list = {		
+			3 = {government_tech_cost_modifier = 0.01375	
+                                                                    		treasury = -150                                                                                                                                 }		
+			7 = {}	
+		}		
+	}			
+	option = {			
+		name = "shubang4"		
+		random_country = {		
+				limit = {
+				vassal_of = THIS
+				}
+		                    add_country_modifier = { 		
+			name = "shubangtianzai"	
+			duration = 365	
+			}	
+			relation = { who = THIS value = -25 }	
+		}		
+		badboy = 0.5		
+	}			
+}				
+
+country_event = {				
+	id = 13112			
+	# 举行朝会			
+	trigger = { 			
+	                      idea = superior_seamanship			
+	              any_country = { 			
+                                                           vassal_of = THIS				
+			not = {  	
+                                                                              has_country_modifier = "juxingchaohui" 				
+                                                            }				
+	               }
+		tag = CAO	
+		not = { tag = CAO }		
+                      }				
+	mean_time_to_happen = { 			
+                                    months = 0 				
+                    }				
+				
+	title = "chaohui1"			
+	desc = "chaohui2"			
+				
+                  option = { 				
+                                          name = "chaohui3"				
+		  random_country = { 		
+                                                                                 limit = { 				
+                                                                                                  vassal_of = THIS				
+			                        not = { has_country_modifier = "juxingchaohui"	}
+				 }
+		            add_country_modifier = { 		
+			name = "juxingchaohui"	
+			duration = 3650  	
+                                                    }				
+			relation = { who = THIS value = 25 }	
+	                        }			
+		prestige = 0.05		
+		years_of_income = -0.005		
+		random_list = {		
+			6 = { diplomats = 1 }	
+			2 = { merchants = 1 }	
+			2 = { colonists = 1 }	
+			2 = { missionaries = 1 }	
+		                    2 = { spies = 1 }		
+			4 = { officials = 1 }	
+                                                            20 = {				
+			define_general = {	
+                                                                      name = "于禁"				
+                                                                      shock = 5				
+                                                                      fire = 10				
+                                                                      siege = 5				
+                                                                      manuever = 5				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            20 = {				
+			define_general = {	
+                                                                      name = "乐进"				
+                                                                      shock = 9				
+                                                                      fire = 5				
+                                                                      siege = 5				
+                                                                      manuever = 5				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            20 = {				
+			define_general = {	
+                                                                      name = "徐晃"				
+                                                                      shock = 5				
+                                                                      fire = 7				
+                                                                      siege = 8				
+                                                                      manuever = 6				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            20 = {				
+			define_general = {	
+                                                                      name = "张辽"				
+                                                                      shock = 7				
+                                                                      fire = 5				
+                                                                      siege = 5				
+                                                                      manuever = 10				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            20 = {				
+			define_general = {	
+                                                                      name = "张合"				
+                                                                      shock = 6				
+                                                                      fire = 7				
+                                                                      siege = 7				
+                                                                      manuever = 6				
+                                                                      rank = 5				
+                                                             }				
+                                                             }				
+                                                            20 = {				
+			define_general = {	
+                                                                      name = "关羽"				
+                                                                      shock = 10				
+                                                                      fire = 10				
+                                                                      siege = 8				
+                                                                      manuever = 8				
+                                                                      rank = 6				
+                                                             }				
+                                                             }				
+                                                            1 = {				
+			define_general = {	
+                                                                      name = "侯选"				
+                                                                      shock = 1				
+                                                                      fire = 5				
+                                                                      siege = 1				
+                                                                      manuever = 1				
+                                                                      rank = 2				
+                                                             }				
+                                                             }				
+                                                            1 = {				
+			define_general = {	
+                                                                      name = "程银"				
+                                                                      shock = 4				
+                                                                      fire = 1				
+                                                                      siege = 1				
+                                                                      manuever = 1				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            1 = {				
+			define_general = {	
+                                                                      name = "杨秋"				
+                                                                      shock = 1				
+                                                                      fire = 3				
+                                                                      siege = 3				
+                                                                      manuever = 2				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            1 = {				
+			define_general = {	
+                                                                      name = "宋宪"				
+                                                                      shock = 3				
+                                                                      fire = 2				
+                                                                      siege = 1				
+                                                                      manuever = 5				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            1 = {				
+			define_general = {	
+                                                                      name = "魏续"				
+                                                                      shock = 2				
+                                                                      fire = 2				
+                                                                      siege = 3				
+                                                                      manuever = 2				
+                                                                      rank = 1				
+                                                             }				
+                                                             }				
+                                                            1 = {				
+			define_general = {	
+                                                                      name = "臧霸"				
+                                                                      shock = 5				
+                                                                      fire = 5				
+                                                                      siege = 3				
+                                                                      manuever = 3				
+                                                                      rank = 4				
+                                                             }				
+                                                             }				
+		} 		
+                     }				
+	option = {			
+		name = "chaohui4"		
+		random_country = {		
+				limit = {
+				vassal_of = THIS
+			                              not = { 	
+				                has_country_modifier = "juxingchaohui"
+			                              }	
+				}
+				
+		}		
+	}			
+}

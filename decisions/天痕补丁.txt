@@ -1,0 +1,76 @@
+#君主太子退位
+cultural_decisions = { 
+	feichutaizi = {
+		potential = {
+			regency = no
+			has_heir = yes
+		}
+		allow = {
+			legitimacy = 1
+			stability = 3
+			prestige = 0.40
+			war = no
+			NOT = { 
+				has_country_modifier = guoneizhendang
+			}
+		}
+		effect = {
+			kill_heir = yes
+			prestige = -0.2
+			stability = -2
+			badboy = 5
+			add_country_modifier = { 
+				name = "guoneizhendang"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	zuijizao= {
+		potential = {
+			regency = no
+			has_heir = yes
+		}
+		allow = {
+			legitimacy = 1
+			stability = 3
+			war = no
+			heir_age = 12
+			prestige = 0.40
+			NOT = { 
+				has_country_modifier = guoneizhendang
+			}
+		}
+		effect = {
+			kill_ruler = THIS
+			stability = -2
+			prestige = -0.2
+			badboy = 5
+			add_country_modifier = { 
+				name = "guoneizhendang"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+#文化传统
+cultural_decisions = { 
+	goumaiwenhua = {
+		allow = {
+			officials = 1
+			treasury = 50
+		}
+		effect = {
+			treasury = -50
+			officials = -1
+			cultural_tradition = 0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}

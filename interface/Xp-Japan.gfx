@@ -1,0 +1,200 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_temple_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_temple.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_courthouse_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_courthouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_spy_agency_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_town_hall_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_town_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_college_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cathedral_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_cathedral.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_training_fields_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_training_fields.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barracks_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_barracks.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_regimental_camp_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_regimental_camp.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_arsenal_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_conscription_center_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_conscription_center.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_dock_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_dock.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_drydock_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_drydock.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_shipyard_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grand_shipyard_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_naval_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_naval_base.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_constable_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_workshop_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_workshop.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_counting_house_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_counting_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_treasury_office_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_mint_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stock_exchange_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_stock_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_marketplace_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_marketplace.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_trade_depot_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_trade_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_post_office_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_customs_house_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort1_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_fort01.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort2_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_fort02.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort3_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_fort03.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort4_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_fort04.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort5_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_fort05.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort6_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_fort06.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_glorious_monument_japanesegfx"
+		texturefile = "gfx\\interface\\divine_wind_interface\\buildings\\chinese_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {	
+		name = "GFX_building_japanesegfx"
+		texturefile = "gfx\\interface\\buildings_chinesegfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "BG_japanesegfx"
+		texturefile = "gfx\\interface\\chinese_backend_bg.tga"
+	}
+}
+	

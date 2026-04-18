@@ -1,0 +1,41 @@
+government = fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = 0
+offensive_defensive = 0
+land_naval = 5
+quality_quantity = 2
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = animism
+primary_culture = chaoxian
+capital = 5
+
+1919.1.1={monarch={name="职" dynasty="子" adm=6 dip=5 mil=6}}
+1922.1.1={monarch={name="优" dynasty="子" adm=6 dip=5 mil=6}}
+1937.1.1={monarch={name="睦" dynasty="子" adm=6 dip=5 mil=6}}
+1950.1.1={monarch={name="平" dynasty="子" adm=6 dip=7 mil=6}}
+1976.1.1={monarch={name="阙" dynasty="子" adm=6 dip=4 mil=6}}
+1995.1.1={monarch={name="怀" dynasty="子" adm=6 dip=4 mil=6}}
+2023.1.1={monarch={name="存" dynasty="子" adm=6 dip=8 mil=6}}
+2040.1.1={monarch={name="孝" dynasty="子" adm=6 dip=8 mil=6}}
+2064.1.1={monarch={name="立" dynasty="子" adm=6 dip=5 mil=6}}
+2083.1.1={monarch={name="通" dynasty="子" adm=6 dip=5 mil=6}}
+2104.1.1={monarch={name="参" dynasty="子" adm=6 dip=5 mil=6}}
+2120.1.1={monarch={name="仅" dynasty="子" adm=6 dip=5 mil=6}}
+2138.1.1={monarch={name="翔" dynasty="子" adm=6 dip=5 mil=3}}
+2179.1.1={monarch={name="藜" dynasty="子" adm=6 dip=5 mil=6}}
+2195.1.1={monarch={name="冈" dynasty="子" adm=6 dip=5 mil=6}}
+2212.1.1={monarch={name="混" dynasty="子" adm=6 dip=5 mil=6}}
+2233.1.1={monarch={name="璧" dynasty="子" adm=3 dip=3 mil=3}}
+2246.1.2={monarch={name="魔理" dynasty="子" adm=9 dip=9 mil=9}}
+2266.1.1={monarch={name="澄" dynasty="子" adm=6 dip=5 mil=6}}
+2285.1.1={monarch={name="隲" dynasty="子" adm=6 dip=5 mil=6}}
+2313.1.1={monarch={name="謵" dynasty="子" adm=6 dip=5 mil=6}}
+2329.1.1={monarch={name="贺" dynasty="子" adm=6 dip=5 mil=6}}
+2337.1.1={monarch={name="华" dynasty="子" adm=6 dip=5 mil=6}}
+2356.1.1={monarch={name="诩" dynasty="子" adm=6 dip=5 mil=6}}
+2383.1.1={monarch={name="煜" dynasty="子" adm=6 dip=5 mil=6}}
+2403.1.1={capital = 839}
+2408.1.1={monarch={name="释" dynasty="子" adm=6 dip=5 mil=6}}

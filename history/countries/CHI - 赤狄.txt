@@ -1,0 +1,32 @@
+government = tribal_despotism
+aristocracy_plutocracy = -4
+centralization_decentralization = 5
+innovative_narrowminded = -2
+mercantilism_freetrade = -1
+offensive_defensive = -5
+land_naval = -4
+quality_quantity = 3
+serfdom_freesubjects = 3
+technology_group = nomad_group
+religion = animism
+primary_culture = chidi
+capital = 84
+
+1928.1.1 = {
+	monarch = {
+		name = "¸Þ"
+		dynasty = "Úó"
+		adm = 5
+		dip = 6
+		mil = 5
+		leader = {	
+			name = "¸Þ"
+			type = general
+			rank = 0
+			fire = 4
+			shock = 3
+			manuever = 3
+			siege = 2
+		}
+	}
+}

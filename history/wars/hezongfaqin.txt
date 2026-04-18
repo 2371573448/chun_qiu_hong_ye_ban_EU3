@@ -1,0 +1,20 @@
+name = "ºÏ×Ý·¥ÇØ"
+casus_belli = cb_insult #ÊÕ¸´Ê§µØ
+
+2380.1.1 = {
+	add_attacker = WEI
+	add_attacker = ZHO
+	add_attacker = HAN
+	add_attacker = CHU
+	add_attacker = YAN
+	add_defender = QIN
+}
+
+2381.1.1 = {
+	rem_attacker = WEI
+	rem_attacker = ZHO
+	rem_attacker = HAN
+	rem_attacker = CHU
+	rem_attacker = YAN
+	rem_defender = QIN
+}

@@ -1,0 +1,77 @@
+owner = XGO
+controller = XGO
+culture = hebei
+religion = liyuejiaohua
+capital = "до╨м"
+trade_goods = cloth
+hre = yes
+base_tax = 4
+manpower = 0
+citysize = 10000
+fort1 = yes
+add_core = XGO
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2037.2.1 = { 
+	owner = JIS
+	controller = JIS
+	add_core = JIS
+}
+2116.1.1 = { owner = JIN
+             controller = JIN
+	add_core = JIN   remove_core=XGO
+             citysize =16000
+           }
+2146.1.1 = { add_core = JIN 
+            }
+2222.1.1 = { citysize = 22000 }
+2244.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = ZHO
+}
+2245.1.1 = { owner = ZHO
+             controller = ZHO
+             add_core = ZHO   remove_core=JIN
+           }
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	remove_core = ZHO
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2 = { 
+	owner = ZHO
+	controller = ZHO
+        add_core = ZHO
+	remove_core = JIN
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+}
+2350.1.1 = { religion = daojia }
+2470.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1={
+        owner=ZHO
+        controller=ZHO
+        }
+2492.2.1={owner=CSW controller=CSW add_core=CSW}   2492.11.1={owner=ZHO controller=ZHO}

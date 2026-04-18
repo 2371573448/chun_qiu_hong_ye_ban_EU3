@@ -1,0 +1,487 @@
+religion_decisions = { 
+	# 儒家
+	# 祖述尧舜，宪章文武
+	zushuyaoshun = { 
+		potential = { 
+			not = { 
+				has_country_modifier = zushuyaoshun
+			}
+			religion = rujia
+		}
+		allow = { 
+			idea = vetting
+			innovative_narrowminded = -1
+			offensive_defensive = -1
+			advisor = privateer
+			privateer = 3
+		}
+		effect = { 
+			innovative_narrowminded = 1
+			add_country_modifier = { 
+				name = "zushuyaoshun"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 修身中庸（曾子派）
+	xiushenzhongyong = { 
+		potential = { 
+			not = { 
+				has_country_modifier = xiushenzhongyong
+			}
+			not = { 
+				has_country_modifier = renzhengwangdao
+			}
+			not = { 
+				has_country_modifier =wangzhezhifa
+			}
+			religion = rujia
+		}
+		allow = { 
+			idea = ecumenism
+			advisor = high_judge
+			high_judge = 4
+		}
+		effect = { 
+			offensive_defensive = 1
+			add_country_modifier = { 
+				name = "xiushenzhongyong"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 仁政王道（孟子派）
+	renzhengwangdao = { 
+		potential = { 
+			not = { 
+				has_country_modifier = renzhengwangdao
+			}
+			not = { 
+				has_country_modifier = xiushenzhongyong
+			}
+			not = { 
+				has_country_modifier =wangzhezhifa
+			}
+			religion = rujia
+		}
+		allow = { 
+			ADM = 6
+			DIP = 6
+			NOT = { badboy = 0.5 }
+		}
+		effect = { 
+			badboy = -2
+			add_country_modifier = { 
+				name = "renzhengwangdao"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 礼义生而制法度（荀子派）
+	wangzhezhifa = { 
+		potential = { 
+			not = { 
+				has_country_modifier = renzhengwangdao
+			}
+			not = { 
+				has_country_modifier = xiushenzhongyong
+			}
+			not = { 
+				has_country_modifier =wangzhezhifa
+			}
+			religion = rujia
+		}
+		allow = { 
+			government_tech = 41
+			prestige = 0.30
+			NOT = { centralization_decentralization = 0 }
+		}
+		effect = { 
+			stability = 1
+			add_country_modifier = { 
+				name = "wangzhezhifa"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 道家
+	# 黄帝刑德
+	huangdixingde = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_flag = laozhuang
+			}
+			not = { 
+				has_country_modifier = huangdixingde
+			}
+		}
+		allow = { 
+			advisor = philosopher
+			philosopher = 3
+			idea = revolution_and_counter
+			not = { 
+				centralization_decentralization = 3
+			}
+			centralization_decentralization = -3
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "huangdixingde"
+				duration = -1
+			}
+			set_country_flag = huanglao
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 虚静执法
+	xujingzhifa = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_flag = laozhuang
+			}
+			not = { 
+				has_country_modifier = xujingzhifa
+			}
+		}
+		allow = { 
+			has_country_modifier = huangdixingde
+			advisor = philosopher
+			philosopher = 3
+			treasury = 100
+			officials = 5
+		}
+		effect = { 
+			treasury = -100
+			officials = -5
+			add_country_modifier = { 
+				name = "xujingzhifa"
+				duration = -1
+			}
+			set_country_flag = huanglao
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 轻重九府
+	qingzhongjiufu = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_flag = laozhuang
+			}
+			not = { 
+				has_country_modifier = qingzhongjiufu
+			}
+		}
+		allow = { 
+			has_country_modifier = xujingzhifa
+			advisor = treasurer
+			treasurer = 4
+			idea = national_trade_policy
+		}
+		effect = { 
+			set_country_flag = huanglao
+			add_country_modifier = { 
+				name = "qingzhongjiufu"
+				duration = -1
+			}
+			offensive_defensive = 3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 道德无为（老庄派）
+	daodewuwei = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_modifier = daodewuwei
+			}
+			not = { 
+				has_country_flag = huanglao
+			}
+		}
+		allow = { 
+			advisor = lord_proprietor
+			lord_proprietor = 3
+			stability = 2
+			offensive_defensive = 2
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "daodewuwei"
+				duration = -1
+			}
+			stability = 1
+			set_country_flag = laozhuang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 以柔克刚（老庄派）
+	yiroukegang = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_modifier = yiroukegang
+			}
+			not = { 
+				has_country_flag = huanglao
+			}
+		}
+		allow = { 
+			has_country_modifier = daodewuwei
+			DIP = 6
+			stability = 1
+			treasury = 150
+			offensive_defensive = 2
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "yiroukegang"
+				duration = -1
+			}
+			stability = 1
+			treasury = -150
+			set_country_flag = laozhuang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 休养生息(老庄派)
+	xiuyangshengxi = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_modifier = xiuyangshengxi
+			}
+			not = { 
+				has_country_flag = huanglao
+			}
+		}
+		allow = { 
+			has_country_modifier = yiroukegang
+			ADM = 6
+			advisor = lord_proprietor
+			lord_proprietor = 3
+			offensive_defensive = 2
+		}
+		effect = { 
+			set_country_flag = laozhuang
+			add_country_modifier = { 
+				name = "xiuyangshengxi"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 尚贤尚同
+	shangxianshangtong = { 
+		potential = { 
+			NOT = { 
+				has_country_modifier = shangxianshangtong
+			}
+			religion = mojia
+		}
+		allow = { 
+			stability = 3
+			naval_tech = 40
+			diplomats = 5
+		}
+		effect = { 
+			diplomats = -5
+			add_country_modifier = { 
+				name = "shangxianshangtong"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 非乐非儒
+	feiyuefeiru = { 
+		potential = { 
+			not = { 
+				has_country_modifier = feiyuefeiru
+			}
+			religion = mojia
+		}
+		allow = { 
+			not = { 
+				idea = divine_supremacy
+			}
+			innovative_narrowminded = 1
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "feiyuefeiru"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 抱法
+	baofa = { 
+		potential = { 
+			religion = fajia
+			not = { 
+				has_country_modifier = fashushijianyong
+			}
+			not = { 
+				has_country_modifier = baofa
+			}
+		}
+		allow = { 
+			stability = 2
+			idea = liberty_egalite_fraternity
+			idea = smithian_economics
+		}
+		effect = { 
+			stability = -1
+			add_country_modifier = { 
+				name = "baofa"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 处势
+	chushi = { 
+		potential = { 
+			religion = fajia
+			not = { 
+				has_country_modifier = fashushijianyong
+			}
+			not = { 
+				has_country_modifier = chushi
+			}
+		}
+		allow = { 
+			advisor = sheriff
+			sheriff = 4
+			NOT = { centralization_decentralization = -1 }
+
+		}
+		effect = { 
+			stability = -1
+			add_country_modifier = { 
+				name = "chushi"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 术治
+	shuzhi = { 
+		potential = { 
+			religion = fajia
+			not = { 
+				has_country_modifier = fashushijianyong
+			}
+			not = { 
+				has_country_modifier = shuzhi
+			}
+		}
+		allow = { 
+			ADM = 6
+			DIP = 6
+			prestige = 0.25
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shuzhi"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 法术势兼用
+	fashushijianyong = { 
+		potential = { 
+			religion = fajia
+			not = { 
+				has_country_modifier = fashushijianyong
+			}
+		}
+		allow = { 
+			has_country_modifier = baofa
+			has_country_modifier = chushi
+			has_country_modifier = shuzhi
+			government_tech = 45
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "fashushijianyong"
+				duration = -1
+			}
+			remove_country_modifier = baofa
+			remove_country_modifier = chushi
+			remove_country_modifier = shuzhi
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 信鬼神嗜卜筮
+	xinguishen = { 
+		potential = { 
+			not = { 
+				has_country_modifier = xinguishen
+			}
+			religion = animism
+		}
+		allow = { 
+			war = no
+			stability = 2
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "xinguishen"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				NOT = { 
+					stability = 3
+				}
+				factor = 0
+			}
+		}
+	}
+}

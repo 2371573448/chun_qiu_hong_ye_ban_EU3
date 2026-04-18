@@ -1,0 +1,39 @@
+
+culture = ba
+religion = ancestor
+capital = "นใบบ"
+trade_goods = cloth
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+
+1928.1.1 = { discovered_by = BAG }
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { discovered_by = QIN }
+2222.1.1 = { owner = SGU
+             controller = SGU
+             fort1 = yes
+             citysize = 32000
+            }
+2246.1.1 = { religion = liyuebadao 
+             owner = SGU
+             controller = SGU
+             fort1 = yes
+             add_core = SGU
+             citysize = 29000 }
+2252.1.1 = {add_core = SGU }
+2382.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2412.1.1 = { add_core = QIN  }
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+	citysize = 36000
+}

@@ -1,0 +1,60 @@
+
+owner = BAO
+controller = BAO
+culture = guanzhong
+religion = ancestor
+capital = "А§жа"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = BAO
+cot = no
+
+1827.1.1 = { discovered_by = PAP }
+1928.1.1 = { discovered_by = BAO }
+2246.1.1 = { religion = liyuebadao }
+2246.1.2 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+	remove_core = SGU
+}
+2247.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 22000
+	religion = liyuebadao
+}
+2257.1.1 = { 
+	owner = SGU
+	controller = SGU
+}
+2267.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 24000  remove_core=BAO
+}
+2297.1.1 = { 
+	add_core = QIN
+}
+2311.1.1 = { 
+	owner = SGU
+	controller = SGU
+}
+2321.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2420.1.1 = { 
+	religion = fajia
+}
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+}

@@ -1,0 +1,284 @@
+guiTypes = {
+
+	windowType = {
+		name = "shogunate_window"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+
+
+
+
+		iconType =
+		{
+			name ="shogunate_bg"
+			spriteType = "GFX_shogunate_bg"
+			position = { x= -290 y = -323 }
+			Orientation = "CENTER"
+		}
+
+
+		instantTextBoxType = {
+			name = "shogunate_label"
+			position = { x = -156 y =-299 }
+			format = centre
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = "SHOGUNATE"	
+			maxWidth = 400
+			maxHeight = 32	
+			
+			Orientation = "CENTER"
+
+			
+		}
+		
+		guiButtonType = 
+		{
+			name ="emperor_shield"
+			quadTextureSprite = "GFX_round_shield"
+			position = { x= -187 y = -246 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			Orientation = "CENTER"
+
+		}
+		instantTextBoxType = {
+			name = "emperor_label"
+			position = { x = -277 y =-165 }
+
+			textureFile = ""
+			font = "Main_16_black"
+			borderSize = {x = 4 y = 4}
+			text = "EMPEROR"	
+			maxWidth = 300
+			maxHeight = 128	
+			format = centre
+			Orientation = "CENTER"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "info"
+			position = { x = -16 y =-236 }
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "EMPEROR"	
+			maxWidth = 270
+			maxHeight = 128		
+			Orientation = "CENTER"
+			
+		}
+		#### DAIMYOS
+		listboxType =  {
+			name ="daimyos_listbox"
+			position = { x = -265 y = -131 }
+			backGround=""
+			size = { x = 283 y = 339}
+			Orientation = "CENTER"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+
+	
+		
+		#### AUTHORITY
+		instantTextBoxType = {
+			name = "influence_label"
+			position = { x = 7 y = -124 }
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 0}
+			text = "SHOGUN_INFLUENCE"	
+			maxWidth = 320
+			maxHeight = 16	
+			format = centre
+			Orientation = "CENTER"
+		}
+		
+		instantTextBoxType = {
+			name = "shogun_influence"
+			position = { x = 84 y = -90 }
+
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 80
+			maxHeight = 32	
+			format = centre
+			Orientation = "CENTER"
+		}
+		
+		
+	
+			
+		#### REFORM DECISIONS
+		instantTextBoxType = {
+			name = "decisions_label"
+			position = { x = 17 y = -41 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 0}
+			text = "SHOGUNATE_DECISIONS"
+			maxWidth = 320
+			maxHeight = 16	
+			Orientation = "CENTER"
+		}
+			
+		listboxType =  {
+			name ="decisions_listbox"
+			position = { x = 63 y = -6 }
+			backGround=""
+			size = { x = 190 y = 200}
+			Orientation = "CENTER"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+			
+		guiButtonType = {
+				name = "close_button"
+				position = { x=-62 y =208}
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "HRE_CLOSE"
+				buttonFont = "Main_14_black"
+
+				Orientation = "CENTER"
+				clicksound = close_window
+				shortcut = "ESCAPE"
+			}
+	}
+
+	
+### DECISION ENTRY	
+	windowType = {
+		name = "shogunate_decision_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 22 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "shogunate_decision_bg"
+			spriteType ="GFX_shogunate_decision_bg"	
+			position = { x= -92 y = -21 }
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=-76 y =-10}
+			name = "name"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_info_decision"	
+			position = { x=123 y =-13}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=153 y =-14}
+			quadTextureSprite ="GFX_execute_decision"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+	}
+
+	### DAIMYO ENTRY	
+	windowType = {
+		name = "daimyo_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 83 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		guiButtonType = 
+		{
+			name ="daimyo_shield"
+			quadTextureSprite = "GFX_round_shield"
+			position = { x= 0 y = -4 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+		instantTextBoxType= {
+			position = { x=81 y =6}
+			name = "name"
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			format = left
+		}
+		instantTextBoxType= {
+			position = { x=81 y =26}
+			name = "ruler"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			format = left
+		}
+		instantTextBoxType= {
+			position = { x=81 y =42}
+			name = "status"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = "Shogun"	
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_shogunate_strip"	
+			position = { x=48 y =42}
+		}
+	}
+}

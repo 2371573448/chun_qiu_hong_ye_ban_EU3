@@ -1,0 +1,2823 @@
+ENEMYMILALLHONOUR = {
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+SHOGUNATEDEAD={
+log=no
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+
+WE_WEAKEN_SHOGUNATE={
+log=no
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+OTHER_WEAKEN_SHOGUNATE={
+log=no
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+WEAKLINGSTART={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+
+WEAKLINGEND={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+
+NOMADWARSTART={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+
+NOMADWAREND={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+
+NEWFACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+
+NEWMONOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+NEWMON={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+USURPEROTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+NEWHEIR={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+HEIRDEATH={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+LEADER_ARRIVED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+ADVISOR_DEATH={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+ADVISOR_DEATH_OTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+ADVISOR_ARRIVED_PROV={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+ADVISOR_ARRIVED_TECH={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+BUILDING_DONE={
+log=yes
+onmap=yes
+popup=no
+idle=no
+option=yes
+icon=yes
+pausepopup=no
+categories = "cat_government"
+}
+BANKRUPT_OTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+icon=yes
+pausepopup=no
+categories = "cat_government"
+}
+BANKRUPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+BANKLOAN={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+WARTAX={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+WARTAX_OTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+EMPEROR={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+NEWPOPE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_religion"
+}
+DISCOVER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+DISCOVERY_SPREAD={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+CLAIM_DEFENDER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_religion"
+}
+CLAIM_DEFENDER_OTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+icon=yes
+pausepopup=no
+categories = "cat_religion"
+}
+WECONVERT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_religion"
+}
+OTHERCONVERT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+icon=yes
+categories = "cat_religion"
+}
+WEDEFECT={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+THEYDEFECT={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+OTHERDEFECT={
+log=yes
+onmap=yes
+popup=no
+idle=no
+option=yes
+icon=yes
+pausepopup=no
+categories = "cat_government"
+}
+SPY_DONE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+SPY_FOUND={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+EVENTHAPPENOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+EVENTHAPPENOTHEROPTION={
+log=yes
+onmap=no
+popup=no
+icon=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+MAJOREVENTHAPPENOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+MAJOREVENTHAPPENOTHEROPTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+EVENTHAPPENUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+COLSUCCESS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+COLFAIL={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+MERCHANTSUCCESS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+MERCHANTFAIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+MERCWELOOSE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+MERCTHEYLOOSE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+icon=yes
+categories = "cat_trade"
+}
+MERCCOMPETEFAIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+TECH={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+TRIGMOD={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+TRIGMODLOST={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+DECLWAR={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+DECLWAROTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEDECLWAR={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEACCEPT={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEWEINVOLVED={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEACCEPTOTHER={
+log=yes
+onmap=yes
+popup=no
+idle=no
+option=yes
+icon=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEACCEPTENEMY={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEREJECT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEWEACCEPT={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEWEREJECT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+PEACEREJECTOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+ROYMARACCEPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMARREJECT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMARACCEPTOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+icon=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMARREJECTOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMARWEACCEPT={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMARWEREJECT={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMAROTHERBREAK={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMAROTHERBREAKUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ROYMARWEBREAK={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+MILALLWEREJECT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLWEACCEPT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLWEBAN={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLBAN={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLBANOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILLALLINVACCEPTOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILLALLJOINREJECTOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLREJECT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLACCEPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+OWNTRADEREFUSAL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+TRADEREFUSAL={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+TRADEREFUSALOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+OWNTRADEALLOW={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+TRADEALLOW={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+TRADEALLOWOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+ACTRAWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+OTHERTRADEAG={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WETRADEAG={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WEDETRA={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+DETRAWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+DETRAWITHOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+BRKTRADEUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+icon=yes
+categories = "cat_trade"
+}
+WEBRKTRADE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+BRKTRADEOTH={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+ACTRALEWITHUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+icon=yes
+categories = "cat_trade"
+}
+WETRADELE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+OTHERTRADELE={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WEDETRALE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+DETRALEWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+DETRALEWITHOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+BRKTRADELEUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WEBRKTRADELE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+BRKTRADELEOTH={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+ACTRARIWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+OTHERTRADERI={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WETRADERI={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WEDETRARI={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+DETRARIWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+DETRARIWITHOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+BRKTRADERIUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+WEBRKTRADERI={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+BRKTRADERIOTH={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+ANNEXACCEPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WEANNEXACCEPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+ANNEXACCEPTOTHER={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+ANNEXREJECT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+ANNEXREJECTOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+ANNEXREJECTWE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLACCEPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLREJECT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLACCEPTOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+icon=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLREJECTOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLWEREJECT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLWEACCEPT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLBREAK={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+VASALLBREAKOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WEVASALLBREAK={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+GUARATOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+GUARATOOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WEGUARAT={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+SPHERETOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+SPHERETOOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WESPHERE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WELEAVESPHERE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+LEAVESOURSPHERE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WARNTOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WARNTOOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WEWARN={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+INSUTOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WEINSU={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+INSUOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+CLAIMTOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+CLAIMTOOTH={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+WECLAIM={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+WELOSECLAIM={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+THEYLOSECLAIMUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+ACCMILUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEACCMIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+ACCMILOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+DECMILUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEDECMIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+DECMILOTHER={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+CANCMILUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+CANMILOTHE={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WECANMIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WECANTHEIRMIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+OFFACCMILUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEOFFACCMIL={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+OFFACCMILOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+OFFDECMILUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEDECOFFMIL={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+DECOFFMILOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLHONOUR={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEMILALLHONOUR={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+OTHERMILALLHONOUR={
+log=yes
+onmap=no
+popup=no
+icon=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+MILALLDISHONOUR={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WEMILALLDISHONOUR={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+OTHERMILALLDISHONOUR={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+CURIACONTROLLER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+CURIACONTROLLEROTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+COLONYBURNED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+COLONYBURNEDUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+COLONYBURNEDOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+COLONYTAKEN={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+COLONYTAKENUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+COLONYTAKENOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+SUCCESSIONWAR={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+icon=yes
+pausepopup=no
+categories = "cat_military"
+}
+SUCCESSIONWARUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+STABDROP={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+STABINCREASE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+REGENT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+REGENTOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+icon=yes
+pausepopup=no
+categories = "cat_government"
+}
+DISBAND={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+}
+COLONYDAMAGED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+NATIVERISING={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+CARDINALBRIBE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+WECARDINALBRIBE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+OHTERCARDINALBRIBE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+FCARDINABRIBE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+WEFCARDINABRIBE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+CARDINALDEATH={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+icon=no
+categories = "cat_religion"
+}
+REPAIDLOAN={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+REPAIDLOANOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+CANCELLOAN={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+CANCELLOANOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+DECLINELOAN={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+DECLINELOANOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+ACCEPTLOAN={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+BREAKCOUNTRY={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+BREAKCOUNTRYOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+ACCEPTLOANOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+ACCEPTEDCULTUREGAINED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+ACCEPTEDCULTURELOST={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+LEADERDIED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+MISSSUCC={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+COTGAIN={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+COTREMOVE={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_trade"
+}
+ATTACKTHEM={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+ATTACKUS={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+SIEGETHEM={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+SIEGEUS={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+LANDBATTLEOVER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+SIEGEOVER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+NAVALBATTLEOVER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+CHATMESSAGE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+}
+NEWIDEAWE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+NEWIDEAOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+NEWFOGWE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+NEWFOGOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_government"
+}
+INHERITWE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+INHERITOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_dynasty"
+}
+UNIONWEMASTER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+UNIONWELESSER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+UNIONOTHER={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WHITEPEACEWE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WHITEPEACEOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+PIRATES={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+WEGIFT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+GIFTTOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+GIFTTOOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+WEIMPREL={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+IMPRELTOUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+IMPRELTOOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_diplomacy"
+}
+
+COREGAIN={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+CORELOSS={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+WARSUBSIDIES={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+WEWARSUBSIDIES={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+OTHERWARSUBSIDIES={
+log=yes
+onmap=no
+popup=no
+idle=no
+icon=yes
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+CANCELWARSUBSIDIES={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+WECANCELWARSUBSIDIES={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+OTHERCANCELWARSUBSIDIES={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+ALLYTAKEOVER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+ALLYTAKEOVERWE={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+INDEPENDANCE={
+log=yes
+onmap=yes
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+SELLPROV={
+log=yes
+onmap=yes
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WESELLPROV={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+THEYDECLINESELLPROV={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+OTHERSELLPROV={
+log=yes
+onmap=yes
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+REVOLT={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+REVOLTSIEGE={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+SHIPSUNK={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+PROVINCELOST={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+NAVALATTACKTHEM={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+NAVALATTACKUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+
+UNITARRIVED={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+
+RMEND={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+
+PUEND={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+
+PUENDMASTER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_dynasty"
+}
+
+MARKETOPENEDACCEPT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_trade"
+}
+MARKETOPENEDREJECT={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_trade"
+}
+CAPITALMOVED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+CAPITALMOVEDOTHER={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+icon=yes
+categories = "cat_government"
+}
+FOCUSMOVED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+FOCUSMOVEDOTHER={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+DECISIONOTHER={
+log=yes
+onmap=no
+popup=no
+icon=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+DECISIONUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+PROVDECISIONOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+PROVDECISIONUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+REBELACCEPTANCEOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+REBELACCEPTANCEUS={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_military"
+}
+CRUSADEONUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+CRUSADEONOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+WECRUSADE={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+EXCOMONUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+EXCOMONOTHER={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+WEEXCOM={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+EXCOMREVONUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+EXCOMREVONOTHER={
+log=yes
+onmap=no
+popup=no
+icon=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+WEREVEXCOM={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+MISSIONDONEUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+MISSIONDONEOTHER={
+log=yes
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+NEWMISSIONUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+MISSIONFAILEDUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+MISSIONCANCELUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=no
+pausepopup=no
+categories = "cat_event"
+}
+COLONYCITYUS={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}
+
+NOMADSRAZEUS={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+NOMADSFLIPFROMUS={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+NOMADSFLIPTOUS={
+log=yes
+onmap=yes
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+
+
+SCORCHEDEARTH={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+SCORCHEDEARTHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_combat"
+}
+WEGAINCB={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WELOSECB={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_military"
+}
+WELOSECLAIM={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_diplomacy"
+}
+WEACCRELUNITY={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+RELUNITYWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+RELUNITYWITHOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+DECRELUNITYWITHUS={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+DECRELUNITYWITHOTHER={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_religion"
+}
+PROVMODEXP={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+COUNTRYMODEXP={
+log=no
+onmap=no
+popup=no
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_event"
+}
+ADVISOR_HIRED={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+categories = "cat_government"
+}

@@ -1,0 +1,266 @@
+#征服邢国
+annex_XGO = {
+	
+	type = country
+
+	allow = {
+		tag = WEG
+		is_subject = no
+		is_lesser_in_union = no
+		exists = XGO
+		XGO = {
+			neighbour = this
+			not = { vassal_of = WEG }
+		}
+		year = 1963
+		NOT = { year = 2213 }
+	}
+	abort = {
+	  	or = {
+		 	is_subject = yes
+		  	is_lesser_in_union = yes
+		}
+	}
+	success = {
+		NOT = { exists = XGO }
+	}
+	chance = {
+		factor = 75
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = { 
+		any_owned = { 
+			limit = { 
+				is_core = XGO
+			}
+			add_core = WEG
+		}
+		prestige = 0.05
+	}
+}
+
+#恢复疆土
+huifujiangtu = {
+	
+	type = country
+
+	allow = {
+		tag = WEG
+		is_subject = no
+		is_lesser_in_union = no 
+		not = { owns = 124 }
+	}
+	abort = {
+	  	or = {
+		  	is_subject = yes
+		  	is_lesser_in_union = yes
+		}
+	}
+	success = {
+		owns = 124
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 124
+	}
+	abort_effect = {
+		remove_temp_claim = 124
+	}
+	effect = {
+		add_core = 124
+	  	prestige = 0.1
+	}
+}
+
+#选贤举能
+WEG_culture = { 
+	type = country
+	allow = { 
+		tag = WEG
+		NOT = { 
+			has_country_flag = xuanxianjuneng
+		}
+	}
+	abort = { }
+	success = { 
+		advisor = philosopher
+		philosopher = 5
+		advisor = collector
+		collector = 5
+		prestige = 0.40
+	}
+	chance = { 
+		factor = 50
+	}
+	immediate = { }
+	abort_effect = { }
+	effect = { 
+		cultural_tradition = 0.25
+		stability = 2
+		prestige = 0.2
+		set_country_flag = xuanxianjuneng
+	}
+}
+
+#收复北地
+SFbeidi = {
+	type = country
+	allow = {
+		tag = WEG
+		is_lesser_in_union = no
+		is_subject = no
+		exists = CHA
+		CHA = {
+			neighbour = this
+			not = { 
+				vassal_of = WEG
+			}
+		}
+                                        ai = no
+	}
+	abort = { 
+		or = { 
+			and = { 
+				not = { 
+					exists = CHA
+				}
+				not = { 
+					owns = 112
+				}
+				not = { 
+					owns = 117
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 112
+		owns = 117
+		owns = 115
+	}
+	chance = {
+		factor = 75
+	}
+	immediate = {
+	  	add_temp_claim = 112
+	  	add_temp_claim = 117
+	  	add_temp_claim = 115
+	}
+	abort_effect = {
+	  	remove_temp_claim = 112
+	  	remove_temp_claim = 117
+	  	remove_temp_claim = 115
+	}
+	effect = {
+	  	prestige = 0.05
+	 	add_core = 112
+	 	add_core = 117
+	 	add_core = 115
+	}
+}
+#附庸曹国
+client_cao = { 
+	type = country
+	allow = { 
+		tag = WEG
+		is_subject = no
+		is_lesser_in_union = no
+		exists = CAO
+		CAO = { 
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		num_of_cities = 12
+                                        ai = no
+	}
+	abort = { 
+		or = { 
+			is_lesser_in_union = yes
+			is_subject = yes
+			CAO = { 
+				is_lesser_in_union = yes
+			}
+		}
+	}
+	success = { 
+		CAO = { 
+			vassal_of = this
+		}
+	}
+	chance = { 
+		factor = 200
+	}
+	immediate = { 
+		casus_belli = { 
+			type = cb_vassalize_mission
+			months = 240
+			target = CAO
+		}
+	}
+	abort_effect = { 
+		remove_casus_belli = { 
+			type = cb_vassalize_mission
+			target = CAO
+		}
+	}
+	effect = { 
+		prestige = 0.15
+	}
+}
+
+#附庸南燕
+client_nanyan = { 
+	type = country
+	allow = { 
+		tag = WEG
+		is_subject = no
+		is_lesser_in_union = no
+		exists = NYA
+		NYA = { 
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		num_of_cities = 12
+                                        ai = no
+	}
+	abort = { 
+		or = { 
+			is_lesser_in_union = yes
+			is_subject = yes
+			NYA = { 
+				is_lesser_in_union = yes
+			}
+		}
+	}
+	success = { 
+		NYA = { 
+			vassal_of = this
+		}
+	}
+	chance = { 
+		factor = 200
+	}
+	immediate = { 
+		casus_belli = { 
+			type = cb_vassalize_mission
+			months = 240
+			target = NYA
+		}
+	}
+	abort_effect = { 
+		remove_casus_belli = { 
+			type = cb_vassalize_mission
+			target = NYA
+		}
+	}
+	effect = { 
+		prestige = 0.15
+	}
+}

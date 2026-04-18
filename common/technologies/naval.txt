@@ -1,0 +1,101 @@
+technology = {	id = 0	average_year = 1840  	range = 0    	}
+technology = {	id = 1	average_year = 1860  	range = 0   	}
+technology = {	id = 2	average_year = 1880  	range = 0    	}
+technology = {	id = 3	average_year = 1900  	range = 0    	   allowed_ideas = 1  }
+technology = {	id = 4	average_year = 1910  	range = 0    	}
+technology = {	id = 5	average_year = 1920  	range = 0    	}
+technology = {	id = 6	average_year = 1930  	range = 0   	}
+technology = {	id = 7	average_year = 1940  	range = 0    	    allowed_ideas = 2  }
+technology = {	id = 8	average_year = 1950  	range = 0                    enable = galley   }
+technology = {	id = 9	average_year = 1960  	range = 0    	      dock = yes      }
+technology = {	id = 10	average_year = 1970  	range = 0    	}
+technology = {	id = 11	average_year = 1980  	range = 5   	}
+technology = {	id = 12	average_year = 1990  	range = 5                                              	wharf = yes          }
+technology = {	id = 13	average_year = 2000  	range = 5   	   allowed_ideas = 3  }
+technology = {	id = 14	average_year = 2010  	range = 5   	    drydock = yes     }
+technology = {	id = 15	average_year = 2020  	range = 5   	}
+technology = {	id = 16	average_year = 2030  	range = 10  	}
+technology = {	id = 17	average_year = 2040  	range = 10   	}
+technology = {	id = 18	average_year = 2050  	range = 10   	   allowed_ideas = 4  }
+technology = {	id = 19	average_year = 2060  	range = 10   	}
+technology = {	id = 20	average_year = 2070  	range = 10   	    shipyard = yes    }
+technology = {	id = 21	average_year = 2080  	range = 15   	}
+technology = {	id = 22	average_year = 2090  	range = 15                  enable = cog    }
+technology = {	id = 23	average_year = 2100  	range = 15                       }
+technology = {	id = 24	average_year = 2110  	range = 15   	   allowed_ideas = 5  }
+technology = {	id = 25	average_year = 2120  	range = 15               }
+technology = {	id = 26	average_year = 2130  	range = 20               }
+technology = {	id = 27	average_year = 2140  	range = 20             enable = early_frigate  }
+technology = {	id = 28	average_year = 2150  	range = 20               grand_shipyard = yes }
+technology = {	id = 29	average_year = 2160  	range = 20   	}
+technology = {	id = 30	average_year = 2170  	range = 20   	    blockade = yes    }
+technology = {	id = 31	average_year = 2180  	range = 25  	   allowed_ideas = 6  }
+technology = {	id = 32	average_year = 2190  	range = 25           naval_arsenal = yes }
+technology = {	id = 33	average_year = 2200  	range = 25            enable = frigate      }
+technology = {	id = 34	average_year = 2210  	range = 25  	}
+technology = {	id = 35	average_year = 2220  	range = 25                 enable = galleass     }
+technology = {	id = 36	average_year = 2230  	range = 30  	    naval_base = yes  }
+technology = {	id = 37	average_year = 2240  	range = 30                enable = heavy_frigate  }
+technology = {	id = 38	average_year = 2250  	range = 30  	   allowed_ideas = 7   }
+technology = {	id = 39	average_year = 2258  	range = 30          reduced_naval_attrition = yes }
+technology = {	id = 40	average_year = 2266  	range = 100                   enable = merchantman   }
+technology = {	id = 41	average_year = 2274  	range = 100   	}
+technology = {	id = 42	average_year = 2282  	range = 100   	    admiralty = yes   }
+technology = {	id = 43	average_year = 2290  	range = 100   	}
+technology = {	id = 44	average_year = 2298  	range = 100   	   allowed_ideas = 8  }
+technology = {	id = 45	average_year = 2306  	range = 100   	}                        
+technology = {	id = 46	average_year = 2314  	range = 100   	}  
+technology = {	id = 47	average_year = 2322  	range = 100   	}                        
+technology = {	id = 48	average_year = 2330  	range = 100   	}                        
+technology = {	id = 49	average_year = 2338  	range = 100   	   allowed_ideas = 9  }             
+technology = {	id = 50	average_year = 2346  	range = 100   	}                        
+technology = {	id = 51	average_year = 2354  	range = 100   	}  
+technology = {	id = 52	average_year = 2362  	range = 100   	}                        
+technology = {	id = 53	average_year = 2370  	range = 100   	}                        
+technology = {	id = 54	average_year = 2378  	range = 100   	   allowed_ideas = 10 }                        
+technology = {	id = 55	average_year = 2386  	range = 100   	}                        
+technology = {	id = 56	average_year = 2394  	range = 100   	}  
+technology = {	id = 57	average_year = 2402  	range = 100  	}                        
+technology = {	id = 58	average_year = 2410  	range = 100  	}                        
+technology = {	id = 59	average_year = 2418  	range = 100  	   allowed_ideas = 11 }                        
+technology = {	id = 60	average_year = 2426  	range = 100  	}                        
+technology = {	id = 61	average_year = 2434  	range = 100  	}  
+technology = {	id = 62	average_year = 2442  	range = 100  	}                        
+technology = {	id = 63	average_year = 2450  	range = 100  	}                        
+technology = {	id = 64	average_year = 2458  	range = 100  	   allowed_ideas = 12 }                        
+technology = {	id = 65	average_year = 2466  	range = 100  	}                        
+technology = {	id = 66	average_year = 2474  	range = 100  	}  
+technology = {	id = 67	average_year = 2482  	range = 100  	}                        
+technology = {	id = 68	average_year = 2490  	range = 100  	}                        
+technology = {	id = 69	average_year = 2500  	range = 100  	}
+technology = {	id = 70	average_year = 2510  	range = 100  	}
+technology = {	id = 71	average_year = 2520  	range = 100  	}
+technology = {	id = 72	average_year = 2530  	range = 100  	}
+technology = {	id = 73	average_year = 2540  	range = 100  	}
+technology = {	id = 74	average_year = 2550  	range = 100  	}
+technology = {	id = 75	average_year = 2560  	range = 100  	}
+technology = {	id = 76	average_year = 2570  	range = 100  	}
+technology = {	id = 77	average_year = 2580  	range = 100  	}
+technology = {	id = 78	average_year = 2590  	range = 100  	}
+technology = {	id = 79	average_year = 2600  	range = 100  	}
+technology = {	id = 80	average_year = 2610  	range = 100  	}
+technology = {	id = 81	average_year = 2620  	range = 100  	}
+technology = {	id = 82	average_year = 2630  	range = 100  	}
+technology = {	id = 83	average_year = 2640  	range = 100  	}
+technology = {	id = 84	average_year = 2650  	range = 100  	}
+technology = {	id = 85	average_year = 2660  	range = 100  	}
+technology = {	id = 86	average_year = 2670  	range = 100  	}
+technology = {	id = 87	average_year = 2680  	range = 100  	}
+technology = {	id = 88	average_year = 2690  	range = 100  	}
+technology = {	id = 89	average_year = 2700  	range = 100  	}
+technology = {	id = 90	average_year = 2710  	range = 100  	}
+technology = {	id = 91	average_year = 2720  	range = 100  	}
+technology = {	id = 92	average_year = 2730  	range = 100  	}
+technology = {	id = 93	average_year = 2740  	range = 100  	}
+technology = {	id = 94	average_year = 2750  	range = 100  	}
+technology = {	id = 95	average_year = 2760  	range = 100  	}
+technology = {	id = 96	average_year = 2770  	range = 100  	}
+technology = {	id = 97	average_year = 2780  	range = 100  	}
+technology = {	id = 98	average_year = 2790  	range = 100  	}
+technology = {	id = 99	average_year = 2800  	range = 100  	}
+technology = {	id = 100	average_year = 9999  	range = 100  	}

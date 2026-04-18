@@ -1,0 +1,13 @@
+culture = xiongnu
+religion = animism
+capital = "ÐÙÅ«¾Û¼¯µØ16"
+trade_goods = coffee
+hre = no
+base_tax = 2
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2245.1.1 = { 
+	discovered_by = XNU
+}

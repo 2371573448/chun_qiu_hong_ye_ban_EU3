@@ -1,0 +1,76 @@
+#减少通货膨胀
+country_event = { 
+	id = 882
+	trigger = { 
+		ai = yes
+		inflation = 10
+		treasury = 100
+	}
+	mean_time_to_happen = { 
+		months = 24
+		modifier = { 
+			factor = 0.9
+			inflation = 12
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 16
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 20
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 30
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 40
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 50
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 60
+		}
+		modifier = { 
+			factor = 0.9
+			inflation = 80
+		}
+	}
+	title = "EVTNAME882"
+	desc = "EVTDESC882"
+	option = { 
+		name = "EVTOPTA882"
+		inflation = -0.5
+		years_of_income = -0.5
+	}
+}
+
+
+#系统国家
+country_event = { 
+	id = 881
+	trigger = { 
+		NOT = { tag = NPC }
+		owns = 744
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME881"
+	desc = "EVTDESC881"
+	option = { 
+		name = "EVTOPTA881"
+		744 = { 
+			add_core = NPC
+			secede_province = NPC
+		}
+		NPC = { 
+			capital = 744
+		}
+	}
+}

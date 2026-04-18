@@ -1,0 +1,192 @@
+##Ö£Â³Ò×Ìï
+country_event = { 
+	# Ö£Â³Ò×Ìï
+	id = 10008
+	major = yes
+	trigger = { 
+		tag = LUG
+		year = 1957
+		NOT = { 
+			year = 2017
+		}
+		NOT = { 
+			has_country_flag = zhengluyitian
+		}
+		NOT = { 
+			relation = { 
+				who = ZGO
+				value = 50
+			}
+		}
+		NOT = { alliance_with = ZGO }
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				stability = 1
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				stability = -1
+			}
+		}
+	}
+	title = "EVTNAME10008"
+	desc = "EVTDESC10008"
+	option = { 
+		name = "EVTOPTA10008"
+		prestige = -0.05
+		stability = 1
+		create_alliance = ZGO
+		relation = { 
+			who = WEG
+			value = 100
+		}
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = zhengluyitian
+	}
+	option = { 
+		name = "EVTOPTB10005"
+		prestige = 0.05
+		ai_chance = {
+			factor = 5
+		}
+		set_country_flag = zhengluyitian
+	}
+}
+##Òþ¹«Ö®ËÀ
+country_event = { 
+	# ¹«×ÓÁšÏ×²ß
+	id = 10009
+	trigger = { 
+		tag = LUG
+		government = monarchy
+		year = 1956
+		NOT = { 
+			year = 2016
+		}
+		NOT = { 
+			has_country_flag = yingongzhisi1
+		}
+	}
+	mean_time_to_happen = { 
+		months = 360
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10009"
+	desc = "EVTDESC10009"
+	option = { 
+		name = "EVTOPTA10009"
+		legitimacy = 0.25
+		badboy = 2
+		set_country_flag = yingongzhisi1
+		ai_chance = {
+			factor = 2
+		}
+	}
+	option = { 
+		name = "EVTOPTB10009"
+		prestige = 0.05
+		badboy = -2
+		set_country_flag = yingongzhisi1
+		set_country_flag = yingongzhisi2
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { 
+		name = "EVTOPTC10009"
+		prestige = -0.10
+		badboy = 1
+		set_country_flag = yingongzhisi1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	# ´ÌÉ±Òþ¹«
+	id = 10010
+	major = yes
+	trigger = { 
+		tag = LUG
+		government = monarchy
+		year = 1956
+		NOT = { 
+			year = 2016
+		}
+		has_country_flag = yingongzhisi2
+	}
+	mean_time_to_happen = { 
+		months = 36
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10010"
+	desc = "EVTDESC10010"
+	option = { 
+		name = "EVTOPTA10010"
+		random_list = { 
+			75 = { 
+				stability = -1
+				define_ruler = { 
+					name = "¹ì"
+					dynasty = "¼§"
+					regent = no
+					female = no
+					DIP = 5
+					MIL = 5
+					ADM = 5
+				}
+				add_country_modifier = { 
+					name = "cuanweizhijun"
+					duration = 365
+				}
+			}
+			25 = { 
+				stability = -1
+				legitimacy = 0.25
+			}
+		}
+		clr_country_flag = yingongzhisi2
+	}
+}

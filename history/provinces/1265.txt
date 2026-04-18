@@ -1,0 +1,57 @@
+owner = LUK
+controller = LUK
+culture = jingman
+religion = ancestor
+capital = "É½´¨Æ½Ô­"
+trade_goods = tea
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = LUK
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2087.1.1  = {	owner = CHU
+		controller = CHU
+	    }
+2117.1.1 = { add_core = CHU }
+2127.1.1 = { religion = liyuebadao }
+2222.1.1 = { citysize = 28000 }
+2244.1.1 = { 
+	owner = LUK
+	controller = LUK
+	add_core = LUK
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = LUK
+}
+2246.1.2 = { 
+	add_core = HNW
+	owner = LUK
+	controller = LUK
+	add_core = LUK
+	remove_core = CHU
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2419.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2449.1.1 = { add_core = QIN  }
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}

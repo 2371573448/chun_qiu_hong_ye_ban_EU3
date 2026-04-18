@@ -1,0 +1,37 @@
+##########³àµÒ############
+country_decisions = {
+
+	bianshen_chidi = {
+		potential = {
+			 NOT = { exists = CHI} 
+                         NOT = { tag = PAP } 
+                         primary_culture = chidi
+		}
+		allow = {
+			owns = 81
+			owns = 84
+			owns = 89
+			owns = 111
+
+                        is_core = 81
+                        is_core = 84
+                        is_core = 89
+                        is_core = 111
+                        war = no 
+		}
+		effect = {
+			shangdang = { add_core = CHI }
+                        CHI = {
+                                  add_core = 111
+                                  add_core = 115
+                                  add_core = 120
+                                  add_core = 122
+                        }
+			prestige = 0.05 
+                        change_tag = CHI
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

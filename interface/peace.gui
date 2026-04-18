@@ -1,0 +1,1012 @@
+guiTypes = {
+
+	windowType = {
+		name = "peace_window"
+		backGround=""
+		position = { x=-400 y=-360 }	
+		size = { x=800 y=600 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		Orientation = "CENTER"
+
+
+
+
+
+		iconType =
+		{
+			name ="peace_bg"
+			spriteType = "GFX_peace_bg"
+			position = { x= -112 y = -24 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="player_shield"
+			spriteType = "GFX_thinshield"
+			position = { x= 264 y = 58 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+
+		iconType =
+		{
+			name ="opponent_shield"
+			spriteType = "GFX_thinshield"
+			position = { x= 473 y = 58 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+	
+
+		guiButtonType = {
+				name = "secede_provinces"
+				position = { x = 77 y = 143 }
+				quadTextureSprite ="GFX_peacetab"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				#buttonText = "PEACE_SECEDE"
+				#buttonFont = "Main_14"
+
+			}
+		guiButtonType = {
+				name = "give_up_cores"
+				position = { x = 185 y = 143 }
+				quadTextureSprite ="GFX_peacetab"	
+				tooltip = ""
+				tooltipText =""
+					delayedTooltipText = ""
+				#buttonText = "PEACE_CORES"
+				#buttonFont = "Main_14"
+
+			}
+		guiButtonType = {
+				name = "cancel_vassals"
+				position = { x = 293 y = 143 }
+				quadTextureSprite ="GFX_peacetab"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				#buttonText = "PEACE_CANCEL_VASSALLS"
+				#buttonFont = "Main_14"
+
+			}
+		guiButtonType = {
+				name = "reduce_sphere"
+				position = { x = 401 y = 143	 }
+				quadTextureSprite ="GFX_peacetab"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+
+			}
+		guiButtonType = {
+				name = "release_nations"
+				position = { x = 509 y = 143	 }
+				quadTextureSprite ="GFX_peacetab"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+
+			}
+		guiButtonType = {
+				name = "annul_treaties"
+				position = { x = 617 y = 143	 }
+				quadTextureSprite ="GFX_peacetab"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				#buttonText = "PEACE_ANNUL"
+				#buttonFont = "Main_14"
+
+			}
+
+		textBoxType = {
+			name = "secede_text"
+			position = { x = 77 y = 143 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 10}
+			text = "PEACE_SECEDE"	
+			maxWidth = 111
+			maxHeight = 46	
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "cores_text"
+			position = { x = 185 y = 143 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 10}
+			text = "PEACE_CORES"	
+			maxWidth = 111
+			maxHeight = 46	
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "cancelvassal_text"
+			position = { x = 293 y = 143 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 10}
+			text = "PEACE_CANCEL_VASSALLS"	
+			maxWidth = 111
+			maxHeight = 46	
+
+			format = centre
+		}
+
+		textBoxType = {
+			name = "reduce_sphere_text"
+			position = { x = 401 y = 143 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 10}
+			text = "PEACE_SPHERE"	
+			maxWidth = 111
+			maxHeight = 46	
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "releasenation_text"
+			position = { x = 509 y = 143 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 10}
+			text = "PEACE_RELEASE"	
+			maxWidth = 111
+			maxHeight = 46	
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "annul_treaties_text"
+			position = { x = 617 y = 143 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 10}
+			text = "PEACE_ANNUL"	
+			maxWidth = 111
+			maxHeight = 46	
+
+			format = centre
+		}
+
+
+		guiButtonType = {
+				name = "send"
+				position = { x = 290 y = 652 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "SEND_OFFER"
+				buttonFont = "Main_14_black"
+
+			}
+		guiButtonType = {
+				name = "cancel"
+				position = { x = 610 y = 650 }
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+			
+		guiButtonType = {
+				name = "reset_button"
+				position = { x = 100 y = 650 }
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "PW_RESET"
+				buttonFont = "Main_14_black"
+				
+			}
+			
+		instantTextBoxType = {
+			name = "acceptance"
+			position = { x = 240 y = 678 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "They will not accept this offer."	
+			maxWidth = 300
+			maxHeight = 16
+
+			format = centre
+		}
+			
+		textBoxType = {
+			name = "desc"
+			position = { x = 90 y = 568 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 620
+			maxHeight = 68	
+
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "cash"
+			position = { x = 594 y = 522 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+
+			format = right
+		}
+
+		instantTextBoxType = {
+			name = "offer_score_label"
+			position = { x = 340 y = 635 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_OFFER_WARSCORE"
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}	
+
+		instantTextBoxType = {
+			name = "offer_score"
+			position = { x = 355 y = 635 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+
+			format = right
+		}			
+		instantTextBoxType = {
+			name = "warscore"
+			position = { x = 0 y = 70 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 800
+			maxHeight = 32	
+
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "warscore_label"
+			position = { x = 0 y = 116 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_WARSCORE"
+			maxWidth = 800
+			maxHeight = 32	
+
+			format = centre
+		}		
+
+
+		iconType =
+		{
+			name ="mapwidget_start"
+			spriteType = "GFX_icon_gold"
+			position = { x= 340 y = 189 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="icon_gold"
+			spriteType = "GFX_icon_gold"
+			position = { x= 600 y = 516 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		checkboxType = {
+			name = "concede_defeat_checkbox"
+			position = { x = 80 y = 518 }
+			quadTextureSprite ="GFX_checkbox"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+
+		checkboxType = {
+				name = "force_religion_checkbox"
+				position = { x = 200 y = 518 }
+				quadTextureSprite ="GFX_checkbox"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+
+		checkboxType = {
+				name = "force_vassal_checkbox"
+				position = { x = 320 y = 518 }
+				quadTextureSprite ="GFX_checkbox"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+
+		checkboxType = {
+			name = "force_union_checkbox"
+			position = { x = 440 y = 518 }
+			quadTextureSprite ="GFX_checkbox"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		checkboxType = {
+			name = "join_league_checkbox"
+			position = { x = 440 y = 518 }
+			quadTextureSprite ="GFX_checkbox"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+			
+		instantTextBoxType = {
+			name = "concede_defeat_label"
+			position = { x = 110 y = 526 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_CONCEDE_DEFEAT"	
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "force_religion_label"
+			position = { x = 230 y = 526 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_FORCE_RELIGION"	
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "force_vassal_label"
+			position = { x = 350 y = 526 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_FORCE_VASSAL"	
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "force_union_label"
+			position = { x = 470 y = 526 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_FORCE_UNION"	
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "join_league_label"
+			position = { x = 470 y = 526 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "JOINLEAGUE"	
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}
+
+
+
+		guiButtonType = {
+				name = "inccash"
+				position = { x = 710 y = 516 }
+				quadTextureSprite ="GFX_plusbutton"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+		guiButtonType = {
+				name = "deccash"
+				position = { x = 710 y = 536 }
+				quadTextureSprite ="GFX_minusbutton"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+			
+		listboxType = 
+			{
+			name ="peace_list"
+			position = { x = 98 y = 200 }
+			backGround=""
+			size = { x= 212 y = 290}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}	
+		threeDguiType 	= {
+			name = "peace_gfx_view"
+			size = { x = 380  y = 300 }
+			position = { x = -65 y = 165 }
+			orientation= "CENTRE"
+		}		
+	}
+
+			
+			
+
+	windowType = {
+		name = "pre_peace_window"
+		backGround=""
+		position = { x=-128 y=-250 }	
+		size = { x=256 y=512 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		
+
+		Orientation = "CENTER"
+
+
+
+		iconType =
+		{
+			name ="pre_peace_bg"
+			spriteType = "GFX_pre_peace_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+
+		iconType =
+		{
+			name ="player_shield"
+			spriteType = "GFX_thinshield"
+			position = { x= -10 y = 30 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+
+		iconType =
+		{
+			name ="opponent_shield"
+			spriteType = "GFX_thinshield"
+			position = { x= 200 y = 30 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+		
+		
+		textBoxType = {
+			name = "desc"
+			position = { x = 25 y = 130 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 206
+			maxHeight = 180	
+
+			format = centre
+		}		
+		instantTextBoxType = {
+			name = "warscore"
+			position = { x = 0 y = 46 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 256
+			maxHeight = 32	
+
+			format = centre
+			
+		}
+
+		instantTextBoxType = {
+			name = "warscore_label"
+			position = { x = 0 y = 90 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "PEACE_WARSCORE"	
+			maxWidth = 256
+			maxHeight = 32	
+
+			format = centre
+		}
+		
+		guiButtonType = {
+				name = "nomad_demand_tribute"
+				position = { x = 16 y = 307 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "NOMAD_DEMAND_TRIBUTE"
+				buttonFont = "Main_14_black"
+
+			}
+
+		guiButtonType = {
+				name = "nomad_offer_tribute"
+				position = { x = 16 y = 332 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "NOMAD_OFFER_TRIBUTE"
+				buttonFont = "Main_14_black"
+
+			}
+		guiButtonType = {
+				name = "nomad_demand_submission"
+				position = { x = 16 y = 357 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "NOMAD_DEMAND_SUBMISSION"
+				buttonFont = "Main_14_black"
+			}
+			
+		guiButtonType = {
+				name = "nomad_demand_vassal_release"
+				position = { x = 16 y = 382 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "NOMAD_DEMAND_SUBMISSION"
+				buttonFont = "Main_14_black"
+			}
+
+		guiButtonType = {
+				name = "annex_button"
+				position = { x = 16 y = 307 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "PEACE_ANNEX"
+				buttonFont = "Main_14_black"
+
+			}
+
+		guiButtonType = {
+				name = "demand_button"
+				position = { x = 16 y = 332 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+		guiButtonType = {
+				name = "whitepeace_button"
+				position = { x = 16 y = 357 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}
+		guiButtonType = {
+				name = "offer_button"
+				position = { x = 16 y = 382 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}	
+			
+		guiButtonType = {
+				name = "cancel_button"
+				position = { x = 86 y = 410 }
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+			}	
+			
+									
+						
+	}
+	
+	windowType = 
+	{
+		name = "secede_province_entry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=29 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		checkboxType = {
+			name = "select"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_check_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		instantTextBoxType = {
+			name = "score"
+			position = { x = -8 y = 8 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+		}	
+		textBoxType = {
+			name = "text"
+			position = { x = 16 y = 4 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "xxxx"
+			format = centre	
+			maxWidth = 192
+			maxHeight = 16	
+		}		
+	}	
+	windowType = 
+	{
+		name = "renounce_core_entry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=29 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		checkboxType = {
+			name = "select"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_check_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		instantTextBoxType = {
+			name = "score"
+			position = { x = -8 y = 8 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+		}	
+		textBoxType = {
+			name = "text"
+			position = { x = 16 y = 4 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "xxxx"
+			format = centre	
+			maxWidth = 192
+			maxHeight = 16	
+		}	
+	}
+	
+	windowType = 
+	{
+		name = "cancel_vassal_entry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=60 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType =
+		{
+			name ="shield"
+			spriteType = "GFX_minishield"
+			position = { x= -16 y = -2 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		checkboxType = {
+			name = "select"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_check_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		textBoxType = {
+			name = "text"
+			position = { x = 16 y = 4 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "xxxx"
+			format = centre	
+			maxWidth = 192
+			maxHeight = 16	
+		}
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 0 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 212
+			maxHeight = 32	
+		}
+	}
+	
+	windowType = 
+	{
+		name = "reduce_sphere_entry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=60 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType =
+		{
+			name ="shield"
+			spriteType = "GFX_minishield"
+			position = { x= -16 y = -2 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		checkboxType = {
+			name = "select"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_check_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		textBoxType = {
+			name = "text"
+			position = { x = 16 y = 4 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "xxxx"
+			format = centre	
+			maxWidth = 192
+			maxHeight = 16	
+		}
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 0 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 212
+			maxHeight = 32	
+		}
+	}
+	
+	windowType = 
+	{
+		name = "annul_treaty_entry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=60 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType =
+		{
+			name ="shield"
+			spriteType = "GFX_minishield"
+			position = { x= -16 y = -2 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		checkboxType = {
+			name = "select"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_check_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		textBoxType = {
+			name = "text"
+			position = { x = 16 y = 4 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "xxxx"
+			format = centre	
+			maxWidth = 192
+			maxHeight = 16	
+		}
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 0 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 212
+			maxHeight = 32	
+		}
+	}
+	
+	
+	windowType = 
+	{
+		name = "release_country_entry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=60 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		
+		
+		checkboxType = {
+			name = "select"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_list_check_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		iconType =
+		{
+			name ="shield"
+			spriteType = "GFX_minishield"
+			position = { x= -16 y = -2 }
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+			
+		textBoxType = {
+			name = "text"
+			position = { x = 16 y = 4 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = "xxxx"
+			format = centre	
+			maxWidth = 192
+			maxHeight = 16	
+		}
+
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 0 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 212
+			maxHeight = 32	
+		}		
+	}	
+		
+}

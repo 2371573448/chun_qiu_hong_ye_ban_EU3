@@ -1,0 +1,55 @@
+#著名将领，尤其是非主帅的将领
+
+advisor ={
+name ="蒙毅" 
+location =178
+skill =4
+type =commandant
+date =2450.1.1
+death_date =2488.1.1
+}
+
+advisor ={
+name ="养由基" 
+location =463
+skill =5
+type =commandant
+date =1970.1.1
+death_date =2010.1.1
+}
+
+advisor ={
+name ="周勃" 
+location =232
+skill =4
+type =commandant
+date =2489.1.1
+death_date =2529.1.1
+}
+
+advisor ={
+name ="胥臣" 
+location =64
+skill =3
+type =commandant
+date =2062.1.1
+death_date =2100.1.1
+}
+
+advisor ={
+name ="彭越" 
+location =361
+skill =4
+type =commandant
+date =2489.1.1
+death_date =2502.1.1
+}
+
+advisor ={
+name ="灌婴" 
+location =232
+skill =4
+type =commandant
+date =2489.1.1
+death_date =2522.1.1
+}

@@ -1,0 +1,1712 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "latingfx_infantry_1"
+		actorfile = "gfx\anims\Generic_Western_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "latingfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Western_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "latingfx_infantry_3"
+		actorfile = "gfx\anims\Generic_Western_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "latingfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Western_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "latingfx_infantry_5"
+		actorfile = "gfx\anims\Generic_Western_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "easterngfx_infantry_1"
+		actorfile = "gfx\anims\Generic_Eastern_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "easterngfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Eastern_2.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Eastern_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "easterngfx_infantry_3"
+		actorfile = "gfx\anims\Generic_Eastern_2.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Eastern_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "easterngfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Eastern_3.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "easterngfx_infantry_5"
+		actorfile = "gfx\anims\Generic_Eastern_4.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "muslimgfx_infantry_1"
+		actorfile = "gfx\anims\Generic_Muslim_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "muslimgfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Muslim_2.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "muslimgfx_infantry_3"
+		actorfile = "gfx\anims\Generic_Muslim_2.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "muslimgfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Muslim_3.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "muslimgfx_infantry_5"
+		actorfile = "gfx\anims\Generic_Muslim_4.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "chinesegfx_infantry_1"
+  actorfile = "gfx\anims\Generic_NA_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "chinesegfx_infantry_2"
+    actorfile = "gfx\anims\Generic_Asian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "chinesegfx_infantry_3"
+   actorfile = "gfx\anims\Generic_Asian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "chinesegfx_infantry_4"
+	  actorfile = "gfx\anims\Generic_Asian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "chinesegfx_infantry_5"
+		actorfile = "gfx\anims\Generic_Asian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "indiangfx_infantry_1"
+		actorfile = "gfx\anims\Generic_Indian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "indiangfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Indian_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "indiangfx_infantry_3"
+		actorfile = "gfx\anims\Generic_Indian_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "indiangfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Indian_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "indiangfx_infantry_5"
+		actorfile = "gfx\anims\Generic_Indian_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "northamericagfx_infantry_1"
+actorfile = "gfx\anims\Generic_Asian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "northamericagfx_infantry_2"
+		actorfile = "gfx\anims\Generic_NA_2.xac"
+		
+		idle   = "gfx\anims\Generic_SA_2_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_2_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "northamericagfx_infantry_3"
+		actorfile = "gfx\anims\Generic_NA_2.xac"
+		
+		idle   = "gfx\anims\Generic_SA_2_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_2_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "northamericagfx_infantry_4"
+		actorfile = "gfx\anims\Generic_NA_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "northamericagfx_infantry_5"
+		actorfile = "gfx\anims\Generic_NA_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "southamericagfx_infantry_1"
+		actorfile = "gfx\anims\Generic_SA_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "southamericagfx_infantry_2"
+		actorfile = "gfx\anims\Generic_SA_2.xac"
+		
+		idle   = "gfx\anims\Generic_SA_2_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_2_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "southamericagfx_infantry_3"
+		actorfile = "gfx\anims\Generic_SA_2.xac"
+		
+		idle   = "gfx\anims\Generic_SA_2_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_2_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "southamericagfx_infantry_4"
+		actorfile = "gfx\anims\Generic_SA_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "southamericagfx_infantry_5"
+		actorfile = "gfx\anims\Generic_SA_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "africangfx_infantry_1"
+		actorfile = "gfx\anims\Generic_African_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "africangfx_infantry_2"
+		actorfile = "gfx\anims\Generic_African_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "africangfx_infantry_3"
+		actorfile = "gfx\anims\Generic_African_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "africangfx_infantry_4"
+		actorfile = "gfx\anims\Generic_African_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "africangfx_infantry_5"
+		actorfile = "gfx\anims\Generic_African_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "AZT_infantry_1"
+		actorfile = "gfx\anims\AZT_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "AZT_infantry_2"
+		actorfile = "gfx\anims\AZT_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_SA_2_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_2_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "AZT_infantry_3"
+		actorfile = "gfx\anims\AZT_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_SA_2_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_2_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "AZT_infantry_4"
+		actorfile = "gfx\anims\AZT_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "AZT_infantry_5"
+		actorfile = "gfx\anims\AZT_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "INC_infantry_1"
+		actorfile = "gfx\anims\INC_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "INC_infantry_2"
+		actorfile = "gfx\anims\INC_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "INC_infantry_3"
+		actorfile = "gfx\anims\INC_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "INC_infantry_4"
+		actorfile = "gfx\anims\INC_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "INC_infantry_5"
+		actorfile = "gfx\anims\INC_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_SA_3_Idle.xsm"
+		move   = "gfx\anims\Generic_SA_3_Moving.xsm"
+		attack = "gfx\anims\Generic_SA_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "DAN_infantry_1"
+		actorfile = "gfx\anims\DAN_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "DAN_infantry_2"
+		actorfile = "gfx\anims\DAN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "DAN_infantry_3"
+		actorfile = "gfx\anims\DAN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "DAN_infantry_4"
+		actorfile = "gfx\anims\DAN_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "DAN_infantry_5"
+		actorfile = "gfx\anims\DAN_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "ENG_infantry_1"
+		actorfile = "gfx\anims\ENG_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "ENG_infantry_2"
+		actorfile = "gfx\anims\ENG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "ENG_infantry_3"
+		actorfile = "gfx\anims\ENG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "ENG_infantry_4"
+		actorfile = "gfx\anims\ENG_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "ENG_infantry_5"
+		actorfile = "gfx\anims\ENG_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "GBR_infantry_1"
+		actorfile = "gfx\anims\ENG_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "GBR_infantry_2"
+		actorfile = "gfx\anims\ENG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "GBR_infantry_3"
+		actorfile = "gfx\anims\ENG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "GBR_infantry_4"
+		actorfile = "gfx\anims\ENG_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "GBR_infantry_5"
+		actorfile = "gfx\anims\ENG_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SCO_infantry_1"
+		actorfile = "gfx\anims\SCO_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "FRA_infantry_1"
+		actorfile = "gfx\anims\FRA_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "FRA_infantry_2"
+		actorfile = "gfx\anims\FRA_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "FRA_infantry_3"
+		actorfile = "gfx\anims\FRA_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "FRA_infantry_4"
+		actorfile = "gfx\anims\FRA_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "FRA_infantry_5"
+		actorfile = "gfx\anims\FRA_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HAB_infantry_1"
+		actorfile = "gfx\anims\HAB_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HAB_infantry_2"
+		actorfile = "gfx\anims\HAB_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "HAB_infantry_3"
+		actorfile = "gfx\anims\HAB_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HAB_infantry_4"
+		actorfile = "gfx\anims\HAB_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HAB_infantry_5"
+		actorfile = "gfx\anims\HAB_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HOL_infantry_1"
+		actorfile = "gfx\anims\HOL_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HOL_infantry_2"
+		actorfile = "gfx\anims\HOL_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "HOL_infantry_3"
+		actorfile = "gfx\anims\HOL_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HOL_infantry_4"
+		actorfile = "gfx\anims\HOL_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HOL_infantry_5"
+		actorfile = "gfx\anims\HOL_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POR_infantry_1"
+		actorfile = "gfx\anims\POR_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POR_infantry_2"
+		actorfile = "gfx\anims\POR_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "POR_infantry_3"
+		actorfile = "gfx\anims\POR_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POR_infantry_4"
+		actorfile = "gfx\anims\POR_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POR_infantry_5"
+		actorfile = "gfx\anims\POR_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PRU_infantry_1"
+		actorfile = "gfx\anims\PRU_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PRU_infantry_2"
+		actorfile = "gfx\anims\PRU_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "PRU_infantry_3"
+		actorfile = "gfx\anims\PRU_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PRU_infantry_4"
+		actorfile = "gfx\anims\PRU_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PRU_infantry_5"
+		actorfile = "gfx\anims\PRU_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SCA_infantry_1"
+		actorfile = "gfx\anims\SCA_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SCA_infantry_2"
+		actorfile = "gfx\anims\SCA_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "SCA_infantry_3"
+		actorfile = "gfx\anims\SCA_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SCA_infantry_4"
+		actorfile = "gfx\anims\SCA_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SCA_infantry_5"
+		actorfile = "gfx\anims\SCA_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SPA_infantry_1"
+		actorfile = "gfx\anims\SPA_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SPA_infantry_2"
+		actorfile = "gfx\anims\SPA_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "SPA_infantry_3"
+		actorfile = "gfx\anims\SPA_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SPA_infantry_4"
+		actorfile = "gfx\anims\SPA_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SPA_infantry_5"
+		actorfile = "gfx\anims\SPA_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SWE_infantry_1"
+		actorfile = "gfx\anims\SWE_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SWE_infantry_2"
+		actorfile = "gfx\anims\SWE_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "SWE_infantry_3"
+		actorfile = "gfx\anims\SWE_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SWE_infantry_4"
+		actorfile = "gfx\anims\SWE_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "SWE_infantry_5"
+		actorfile = "gfx\anims\SWE_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "VEN_infantry_1"
+		actorfile = "gfx\anims\VEN_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "VEN_infantry_2"
+		actorfile = "gfx\anims\VEN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "VEN_infantry_3"
+		actorfile = "gfx\anims\VEN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "VEN_infantry_4"
+		actorfile = "gfx\anims\VEN_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Western_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "VEN_infantry_5"
+		actorfile = "gfx\anims\HAB_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Western_4_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_4_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_4_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "RUS_infantry_1"
+		actorfile = "gfx\anims\RUS_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "RUS_infantry_2"
+		actorfile = "gfx\anims\RUS_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Eastern_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "RUS_infantry_3"
+		actorfile = "gfx\anims\RUS_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Eastern_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+		
+	EMFXActorType = {
+		name = "RUS_infantry_4"
+		actorfile = "gfx\anims\RUS_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+		EMFXActorType = {
+		name = "RUS_infantry_5"
+		actorfile = "gfx\anims\RUS_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POL_infantry_1"
+		actorfile = "gfx\anims\POL_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POL_infantry_2"
+		actorfile = "gfx\anims\POL_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Eastern_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "POL_infantry_3"
+		actorfile = "gfx\anims\POL_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Eastern_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POL_infantry_4"
+		actorfile = "gfx\anims\POL_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "POL_infantry_5"
+		actorfile = "gfx\anims\POL_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "TUR_infantry_1"
+		actorfile = "gfx\anims\TUR_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "TUR_infantry_2"
+		actorfile = "gfx\anims\TUR_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "TUR_infantry_3"
+		actorfile = "gfx\anims\TUR_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "TUR_infantry_4"
+		actorfile = "gfx\anims\TUR_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "TUR_infantry_5"
+		actorfile = "gfx\anims\TUR_Infantry_4.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PER_infantry_1"
+		actorfile = "gfx\anims\PER_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PER_infantry_2"
+		actorfile = "gfx\anims\PER_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "PER_infantry_3"
+		actorfile = "gfx\anims\PER_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PER_infantry_4"
+		actorfile = "gfx\anims\PER_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "PER_infantry_5"
+		actorfile = "gfx\anims\PER_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Muslim_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Muslim_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "AYU_infantry_1"
+		actorfile = "gfx\anims\AYU_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "AYU_infantry_2"
+		actorfile = "gfx\anims\AYU_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "AYU_infantry_3"
+		actorfile = "gfx\anims\AYU_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "AYU_infantry_4"
+		actorfile = "gfx\anims\AYU_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "AYU_infantry_5"
+		actorfile = "gfx\anims\AYU_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MCH_infantry_1"
+		actorfile = "gfx\anims\MCH_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MCH_infantry_2"
+		actorfile = "gfx\anims\MCH_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "MCH_infantry_3"
+		actorfile = "gfx\anims\MCH_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MCH_infantry_4"
+		actorfile = "gfx\anims\MCH_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "MCH_infantry_5"
+		actorfile = "gfx\anims\MCH_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MNG_infantry_1"
+		actorfile = "gfx\anims\MNG_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MNG_infantry_2"
+		actorfile = "gfx\anims\MNG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "MNG_infantry_3"
+		actorfile = "gfx\anims\MNG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MNG_infantry_4"
+		actorfile = "gfx\anims\MNG_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "MNG_infantry_5"
+		actorfile = "gfx\anims\MNG_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "JAP_infantry_1"
+		actorfile = "gfx\anims\JAP_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "JAP_infantry_2"
+		actorfile = "gfx\anims\JAP_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "JAP_infantry_3"
+		actorfile = "gfx\anims\JAP_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "JAP_infantry_4"
+		actorfile = "gfx\anims\JAP_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "JAP_infantry_5"
+		actorfile = "gfx\anims\JAP_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "HIN_infantry_1"
+		actorfile = "gfx\anims\HIN_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HIN_infantry_2"
+		actorfile = "gfx\anims\HIN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "HIN_infantry_3"
+		actorfile = "gfx\anims\HIN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "HIN_infantry_4"
+		actorfile = "gfx\anims\HIN_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "HIN_infantry_5"
+		actorfile = "gfx\anims\HIN_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "RAJ_infantry_1"
+		actorfile = "gfx\anims\RAJ_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "RAJ_infantry_2"
+		actorfile = "gfx\anims\RAJ_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "RAJ_infantry_3"
+		actorfile = "gfx\anims\RAJ_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "RAJ_infantry_4"
+		actorfile = "gfx\anims\RAJ_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+EMFXActorType = {
+		name = "RAJ_infantry_5"
+		actorfile = "gfx\anims\RAJ_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "PUN_infantry_1"
+		actorfile = "gfx\anims\PUN_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PUN_infantry_2"
+		actorfile = "gfx\anims\PUN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PUN_infantry_3"
+		actorfile = "gfx\anims\PUN_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "PUN_infantry_4"
+		actorfile = "gfx\anims\PUN_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "PUN_infantry_5"
+		actorfile = "gfx\anims\PUN_Infantry_3.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "MUG_infantry_1"
+		actorfile = "gfx\anims\MUG_Infantry_1.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Muslim_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MUG_infantry_2"
+		actorfile = "gfx\anims\MUG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "MUG_infantry_3"
+		actorfile = "gfx\anims\MUG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MUG_infantry_4"
+		actorfile = "gfx\anims\MUG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "MUG_infantry_5"
+		actorfile = "gfx\anims\MUG_Infantry_2.xac"
+		
+		idle   = "gfx\anims\Generic_Indian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Indian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Indian_3_Attack.xsm"
+		scale = 1.3
+	}
+}

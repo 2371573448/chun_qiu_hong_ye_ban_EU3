@@ -1,0 +1,46 @@
+#重要的学说推行者和开创者
+
+advisor ={
+name ="韩非" 
+location =356
+skill =5
+type =high_judge
+date =2428.1.1
+death_date =2465.1.1
+}
+
+advisor ={
+name ="韩非" 
+location =366
+skill =5
+type =high_judge
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="李耳" 
+location =484
+skill =6
+type =high_judge
+date =2147.1.1
+death_date =2227.1.1
+}
+
+advisor ={
+name ="孔丘"  
+location =293
+skill =6
+type =high_judge
+date =2167.9.28 
+death_date =2219.4.11
+}
+
+advisor ={
+name ="孔丘"  
+location =293
+skill =6
+type =high_judge
+date =2246.1.1
+death_date =2247.1.1
+}

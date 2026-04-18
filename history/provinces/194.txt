@@ -1,0 +1,63 @@
+
+owner = LHR
+controller = LHR
+culture = xirong
+religion = animism
+capital = "ÖÐÄÏÉ½"
+trade_goods = slaves
+hre = no
+base_tax = 2
+manpower = 0
+citysize = 8000
+fort1 = yes
+add_core = LHR
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2070.6.1  = { owner = QIN
+              controller = QIN
+	    }
+2100.1.1 = { add_core = QIN }
+2130.1.1 = { religion = liyuebadao
+             culture = guanzhong
+             remove_core = LHR
+           }
+2222.1.1 = { citysize = 14000 }
+2244.1.1 = { 
+	owner = LHR
+	controller = LHR
+	add_core = LHR
+	remove_core = QIN
+}
+2244.1.2 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = LHR
+}
+2246.1.2 = { 
+	remove_core = QIN
+	owner = LHR
+	controller = LHR
+	add_core = LHR
+}
+2247.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = LHR
+}
+2340.1.1 = { religion = fajia }
+2492.2.1 = { 
+	owner = YOW
+	controller = YOW
+	add_core = YOW
+}
+2493.6.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

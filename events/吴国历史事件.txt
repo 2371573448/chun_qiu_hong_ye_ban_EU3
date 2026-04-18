@@ -1,0 +1,68 @@
+#吴国吞并会稽
+country_event = {
+	id = 12000
+
+	major = yes
+
+	trigger = {
+		year = 2260
+		tag = WUG
+		controls = 434
+		controls = 438
+
+		NOT = { has_global_flag = destoryYGU }
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	title = "EVTNAME12000"
+	desc = "EVTDESC12000"
+	
+
+	option = {
+		name = "EVTOPTA12000"
+	
+
+		set_global_flag = destoryYGU
+		prestige = 0.10
+		kuaiji = {
+                    add_core = WUG
+                    secede_province = WUG
+		 }
+	}
+}
+#吴被三千越甲吞
+country_event = {
+	id = 11999
+
+	major = yes
+
+	trigger = {
+		year = 2246
+		tag = YGO
+		not = { tag = YGO }
+		controls = 434
+		controls = 438
+
+		NOT = { has_global_flag = destoryWUG }
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	title = "EVTNAME11999"
+	desc = "EVTDESC11999"
+	
+
+	option = {
+		name = "EVTOPTA11999"
+	
+		set_global_flag = destoryWUG
+		prestige = 0.10
+		kuaiji = {
+                    add_core = YGO
+                    secede_province = YGO
+		 }
+	}
+}

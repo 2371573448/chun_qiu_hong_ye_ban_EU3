@@ -1,0 +1,12 @@
+
+culture = xirong
+religion = animism
+capital = "ฯ๔นุ"
+trade_goods = coffee
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+ 

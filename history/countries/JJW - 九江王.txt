@@ -1,0 +1,46 @@
+government = enlightened_despotism
+aristocracy_plutocracy = 0
+centralization_decentralization = -1
+innovative_narrowminded = -4
+mercantilism_freetrade = -3
+offensive_defensive = 4
+land_naval = -5
+quality_quantity = 4
+serfdom_freesubjects = -2
+technology_group = chinese
+religion = liyuebadao
+primary_culture = nanchu
+capital = 412
+unit_type = jingchu
+2400.1.1 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+	set_country_flag = fengjunzhidu
+	set_country_flag = hujizhidu
+	set_country_flag = guanliaozhidu
+}
+2492.2.1 = { 
+	monarch = { 
+		name = "²¼"
+		dynasty = "Ó¢"
+		adm = 4
+		dip = 5
+		mil = 8
+		leader = {	
+			name = "Ó¢²¼"
+			type = general
+			rank = 0
+			fire = 6
+			shock = 6
+			manuever = 3
+			siege = 2
+		}
+	}
+}

@@ -1,0 +1,62 @@
+
+owner = JIO
+controller = JIO
+culture = jingman
+religion = ancestor
+capital = "½Ê"
+trade_goods = slaves
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = JIO
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+1998.5.1  = { owner = CHU
+	      controller = CHU
+	    }
+2028.1.1 = { add_core = CHU }
+2058.1.1 = { culture = nanchu } 
+2090.1.1 = { religion = liyuebadao }
+2222.1.1 = { citysize = 24000 }
+2244.1.1 = { 
+	owner = JIO
+	controller = JIO
+	add_core = JIO
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = JIO
+}
+2246.1.2 = { 
+	owner = JIO
+	controller = JIO
+	add_core = JIO
+	remove_core = CHU
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2386.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2416.1.1 = { add_core = QIN  }
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}
+2492.11.1 = { 
+	owner = HNW
+	controller = HNW
+}

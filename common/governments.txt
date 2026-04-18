@@ -1,0 +1,561 @@
+#####################################################################
+#封建君主制—国君
+fengjian = {
+	monarchy = yes
+	royal_marriage = yes
+	valid_for_new_country = yes
+
+	adm_efficiency = 1.50
+
+	allowed_conversion = {
+		yuanshuai = 0.5
+		zhizheng = 1.0
+		absolute_monarchy = 1.0
+	}
+	
+	minimum_policy = {
+		centralization_decentralization = -2 
+	}
+	maximum_policy = {
+		aristocracy_plutocracy = 3
+	}
+	maximum_policy = {
+		serfdom_freesubjects = 2
+	}
+
+	officials = 0.65
+	defensiveness = 0.15
+	global_revolt_risk = 1
+}
+
+#####################################################################
+#天下共主—天子
+celestial_empire = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = no
+
+	adm_efficiency = 1.25
+
+	allowed_conversion = {
+		feudal_empire = 0.5
+	}
+
+	minimum_policy = {
+		centralization_decentralization = -2
+	}
+	maximum_policy = {
+		aristocracy_plutocracy = 2
+	}
+	maximum_policy = {
+		serfdom_freesubjects = 1
+	}
+
+	officials = 1.5
+	prestige = 0.01
+	land_forcelimit_modifier = 0.25
+}
+
+#####################################################################
+#天下共主—殷商
+yinshangjunzhi = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = no
+
+	adm_efficiency = 1.1
+
+	allowed_conversion = {
+		reformed_despotism
+	}
+
+	minimum_policy = {
+		innovative_narrowminded=0
+	}
+	maximum_policy = {
+		serfdom_freesubjects=0
+	}
+	officials = 2
+	land_forcelimit_modifier = 0.1
+	global_manpower_modifier = 0.1
+	stability_cost_modifier = -0.3	
+	global_revolt_risk = 2
+
+
+}
+######################################################################
+#元帅世卿制
+yuanshuai = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.30
+
+	allowed_conversion = {
+		fengjian = 1.0
+		zhizheng = 1.0
+		absolute_monarchy = 2.0
+	}
+	
+	minimum_policy = {
+		centralization_decentralization = -1 
+	}
+	minimum_policy = {
+		aristocracy_plutocracy = -2
+	}
+
+	discipline = 0.05
+	land_morale = 0.25
+	officials = 0.7
+	global_revolt_risk = 1
+}
+
+######################################################################
+#执政世卿制
+zhizheng = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.15
+
+	allowed_conversion = {
+                yuanshuai = 2.0
+                zhongshang = 0.5
+                republican_dictatorship = 2.0
+                reformed_despotism = 1.0
+	}
+	
+	minimum_policy = {
+		centralization_decentralization = -3 
+	}
+	minimum_policy = {
+		aristocracy_plutocracy = -1
+	}
+
+	production_efficiency = 0.05
+	land_morale = 0.2
+	officials = 1.1
+	missionaries = 0.7
+	cultural_tradition = 0.01
+	stability_cost_modifier = 0.15
+
+}
+
+#########################################################
+#君主独裁-国君
+absolute_monarchy = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.25
+
+	allowed_conversion = {
+		fengjian = 1.0
+                enlightened_despotism = 1.0
+	}
+	minimum_policy = {
+		centralization_decentralization = -3
+	}
+	maximum_policy = {
+		serfdom_freesubjects = 2
+	}
+	badboy_limit = 8
+	officials = 0.65
+	global_revolt_risk = 1.5
+}
+
+#########################################################
+#君主集权-国君
+enlightened_despotism = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.0
+
+	allowed_conversion = {
+		absolute_monarchy = 0.5
+		centralization_empire = 5.0
+		reformed_despotism = 1.0
+	}
+	
+	maximum_policy = {
+		centralization_decentralization = 3
+	}
+	minimum_policy = {
+		serfdom_freesubjects = -2
+	}
+
+	land_forcelimit_modifier = 0.25
+	badboy = -0.25
+	officials = 1.25
+}
+
+#########################################################
+#部落联盟-族长
+tribal_federation = {
+	monarchy = yes
+	royal_marriage = no
+	tribal = yes
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.75
+
+	allowed_conversion = {
+		tribal_despotism = 1.5
+	}
+	
+	minimum_policy = {
+		centralization_decentralization = 2
+	}
+	minimum_policy = {
+		innovative_narrowminded = 0
+	}
+	
+	#bonus
+	land_forcelimit_modifier = 0.50
+	badboy = 0.5
+	technology_cost = 1
+
+	#malus
+	global_revolt_risk = 2
+}
+
+#########################################################
+#部落独裁-酋王
+tribal_despotism = {
+	monarchy = yes
+	royal_marriage = no
+	tribal = yes
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.50
+
+	allowed_conversion = {
+		tribal_federation = 1.0
+	}
+
+	minimum_policy = {
+		centralization_decentralization = 2
+	}
+	minimum_policy = {
+		innovative_narrowminded = 0
+	}
+
+	#bonus
+	badboy_limit = -4
+	global_manpower_modifier = 0.75
+	badboy = 0.5
+	technology_cost = 1
+	
+	#malus
+	global_revolt_risk = 2
+}
+
+######################################################################
+#重商邦国制-国君
+zhongshang = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 1.25
+
+	allowed_conversion = {
+		zhizheng = 2.0
+		merchant_republic = 3.0
+		}
+	
+	minimum_policy = {
+		aristocracy_plutocracy = -3 
+	}
+	minimum_policy = {
+		mercantilism_freetrade = 0
+	}
+
+	merchants = 1
+	trade_efficiency = 0.06
+	tolerance_heretic = 1
+	officials = 1
+}
+
+#########################################################
+#周召共和制
+noble_republic = {
+	republic = yes
+	royal_marriage = no
+	valid_for_new_country = no
+	
+	adm_efficiency = 1.20
+	
+	duration = 8
+
+	allowed_conversion = {
+                absolute_monarchy = 1.0
+                zhongshang = 1.0
+	}
+	republican_name = yes
+	
+	minimum_policy = {
+		centralization_decentralization = -3
+	}
+
+	production_efficiency = 0.05
+	stability_cost_modifier = -0.25
+	officials = 1
+}
+
+#########################################################
+#变法君主制-国君
+reformed_despotism = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 0.90
+
+	allowed_conversion = {
+		centralization_empire = 1.0
+		enlightened_despotism = 2.0
+	}
+
+	land_forcelimit_modifier = 0.2
+	global_manpower_modifier = 0.2
+	officials = 1.85
+
+        global_revolt_risk = 1.5     
+}
+
+#########################################################
+#集权帝国-皇帝
+centralization_empire = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 0.80
+
+	allowed_conversion = {
+		enlightened_despotism = 2.0
+	}
+
+        maximum_policy = {
+		centralization_decentralization = 0
+	}
+
+	global_tax_modifier = 0.15
+	prestige = 0.01
+	land_forcelimit_modifier = 0.3
+	global_manpower_modifier = 0.3
+	officials = 1.75
+}
+
+#########################################################
+#封建帝国-皇帝
+feudal_empire = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+	
+	adm_efficiency = 0.90
+
+	allowed_conversion = {
+		centralization_empire = 2.0	
+	}
+	minimum_policy = {
+		centralization_decentralization = 0
+	}
+
+	production_efficiency = 0.10
+	trade_efficiency = 0.05
+	legitimacy = 0.02
+	officials = 1.25
+}
+
+#########################################################
+#草原游牧-大单于
+steppe_horde = {
+	monarchy = yes
+	tribal = yes
+	nomad = yes
+	colonize_prov = yes
+	royal_marriage = yes
+	
+	valid_for_new_country = no
+	
+	adm_efficiency = 1.40
+
+	allowed_conversion = {
+	}
+
+	minimum_policy = {
+		centralization_decentralization = 0
+	}
+	minimum_policy = {
+		innovative_narrowminded = 0
+	}
+
+	#bonus
+	land_forcelimit_modifier = 1.0
+	global_manpower_modifier = 1.0
+	land_morale = 0.5
+	global_regiment_cost = -0.33
+	
+	#malus
+	global_revolt_risk = 2
+}
+
+
+#########################################################
+#圣王禅让制-圣王
+republican_dictatorship = {
+	republic = yes
+	royal_marriage = no
+	valid_for_new_country = no
+	republican_name = yes
+
+	adm_efficiency = 0.95
+
+	allowed_conversion = {
+		feudal_empire = 1.0
+		datongwangdao = 2.0
+	}
+
+	minimum_policy = {
+		innovative_narrowminded = 0
+	}
+
+	#BONUS
+	tolerance_heretic = 1
+	tolerance_heathen = 2
+	badboy = -0.50
+	officials = 1.25
+}
+
+#########################################################
+#神国仙境-天帝
+god_kingdom = {
+	monarchy = yes
+	nomad = yes
+	royal_marriage = no
+	valid_for_new_country = no
+
+	adm_efficiency = 1.00
+
+	allowed_conversion = {
+	}
+
+	spies = -10
+	merchants = -20
+	diplomats = -20
+	global_revolt_risk = -20
+	officials = 1.25
+}
+
+#########################################################
+#小国寡民制-国君
+small_city = {
+	monarchy = yes
+	royal_marriage = no
+	valid_for_new_country = yes
+
+	adm_efficiency = 1.35
+
+	allowed_conversion = {
+		datongwangdao = 0.5
+		zhongshang = 1.0
+	}
+
+	minimum_policy = {
+		mercantilism_freetrade = 0
+	}
+	minimum_policy = {
+		offensive_defensive = 2
+	}
+
+	stability_cost_modifier = -0.20
+	officials = 0.9
+}
+
+#########################################################
+#大同王道-圣君
+datongwangdao = {
+	republic = yes
+	royal_marriage = no
+	valid_for_new_country = no
+	republican_name = yes
+
+	adm_efficiency = 1.10
+
+	allowed_conversion = {
+		feudal_empire = 5.0
+	}
+
+	production_efficiency = 0.15
+	officials = 1.25
+	global_revolt_risk = -2
+}
+
+#########################################################
+#非攻巨子制-巨子
+mojiajuzi = {
+	religion = yes
+	royal_marriage = no
+	valid_for_new_country = no
+	republican_name = yes
+
+	adm_efficiency = 0.75
+
+	allowed_conversion = {
+	}
+
+	maximum_policy = {
+		centralization_decentralization = 2
+	}
+	minimum_policy = {
+		centralization_decentralization = -2
+	}
+
+	land_tech_cost_modifier = -0.10
+	defensiveness = 0.50
+	discipline = 0.10
+	officials = 1.5
+	badboy_limit = -12
+}
+
+#########################################################
+#商业共和制-总督
+merchant_republic = {
+	republic = yes
+	mercantile_diplomacy = yes
+	valid_for_new_country = no
+	
+	adm_efficiency = 1.15
+	
+	duration = 4
+	
+	allowed_conversion = {
+		zhongshang = 1.0
+	}
+	
+	minimum_policy = {
+		aristocracy_plutocracy = 1
+	}
+	minimum_policy = {
+		mercantilism_freetrade = 0
+	}
+	
+	republican_name = yes
+	royal_marriage = no
+
+	merchants = 2
+	trade_efficiency = 0.10
+	officials = -1
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+	global_cot_gravity = 30
+	merchant_cost = -0.25
+}

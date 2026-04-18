@@ -1,0 +1,28 @@
+government =fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 2
+innovative_narrowminded = -2
+mercantilism_freetrade = 2
+offensive_defensive = 0
+land_naval = 2
+quality_quantity = 0
+serfdom_freesubjects = -4
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = zhongyuan
+capital = 378
+
+1920.1.1={monarch={name="ÐË¸¸" dynasty="½ª" adm=5 dip=7 mil=4}}
+1967.1.1={monarch={name="ÜÚÈË" dynasty="½ª" adm=4 dip=5 mil=5}}
+2001.1.1={monarch={name="ÐÂ³¼" dynasty="½ª" adm=3 dip=6 mil=4}}
+2043.1.1={monarch={name="Òµ" dynasty="½ª" adm=3 dip=5 mil=5}}
+2077.1.1={monarch={name="Îý" dynasty="½ª" adm=6 dip=3 mil=6}}
+2100.1.1 = { decision = tuposanjunguizhi }
+2107.1.1={monarch={name="Äþ" dynasty="½ª" adm=5 dip=4 mil=5}}
+2152.1.1={monarch={name="Âò" dynasty="½ª" adm=3 dip=4 mil=6}}
+2176.1.1={monarch={name="Ë¹" dynasty="½ª" adm=4 dip=6 mil=3}}
+2195.1.1={monarch={name="³É" dynasty="½ª" adm=5 dip=5 mil=6}}
+2217.1.1={monarch={name="½á" dynasty="½ª" adm=4 dip=3 mil=3}}
+2238.1.1={monarch={name="ÓÏÊ¦" dynasty="½ª" adm=6 dip=4 mil=5}}
+2258.1.1={monarch={name="±ë" dynasty="½ª" adm=6 dip=4 mil=5}}
+2278.1.1={monarch={name="×±" dynasty="½ª" adm=3 dip=6 mil=6}}

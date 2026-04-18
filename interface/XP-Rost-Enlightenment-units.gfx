@@ -1,0 +1,172 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "latingfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Western_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "FRA_infantry_4"
+		actorfile = "gfx\anims\French_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "ENG_infantry_4"
+		actorfile = "gfx\anims\English_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "POR_infantry_4"
+		actorfile = "gfx\anims\Portuguese_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "PRU_infantry_4"
+		actorfile = "gfx\anims\Prussian_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SWE_infantry_4"
+		actorfile = "gfx\anims\Swedish_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "VEN_infantry_4"
+		actorfile = "gfx\anims\Venetian_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SCA_infantry_4"						
+		actorfile = "gfx\anims\Scandinavian_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HOL_infantry_4"
+		actorfile = "gfx\anims\Dutch_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SPA_infantry_4"
+		actorfile = "gfx\anims\Spanish_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "GBR_infantry_4"
+		actorfile = "gfx\anims\British_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "DAN_infantry_4"
+		actorfile = "gfx\anims\Danish_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SCO_infantry_4"
+		actorfile = "gfx\anims\Scottish_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HAB_infantry_4"
+		actorfile = "gfx\anims\Habsburgian_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "USA_infantry_4"
+		actorfile = "gfx\anims\USAmerican_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "RFR_infantry_4"
+		actorfile = "gfx\anims\Revolutionaryfrench_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "NED_infantry_4"
+		actorfile = "gfx\anims\Dutch_1700.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1700_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1700_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1700_Attack.xsm"
+		scale = 7.8
+	}	
+}	

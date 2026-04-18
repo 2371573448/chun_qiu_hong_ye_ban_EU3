@@ -1,0 +1,73 @@
+#以战国四公子为代表的为国家招揽贤才的人
+
+advisor ={
+name ="陈婴" 
+location =425
+skill =3
+type =master_of_mint 
+date =2489.1.1
+death_date =2515.1.1
+}
+
+advisor ={
+name ="春申君" 
+location =466
+skill =5
+type =master_of_mint 
+date =2404.1.1
+death_date =2460.1.1
+}
+
+advisor ={
+name ="春申君" 
+location =466
+skill =5
+type =master_of_mint 
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="郭隗" 
+location =21
+skill =4
+type =master_of_mint 
+date =2360.1.1
+death_date =2405.1.1
+}
+
+advisor ={
+name ="孟尝君" 
+location =254
+skill =5
+type =master_of_mint 
+date =2350.1.1
+death_date =2419.1.1
+}
+
+advisor ={
+name ="平原君" 
+location =60
+skill =5
+type =master_of_mint
+date =2385.1.1
+death_date =2445.1.1
+}
+
+advisor ={
+name ="信陵君"
+location =79
+skill =6
+type =master_of_mint
+date =2410.1.1
+death_date =2455.1.1
+}
+
+advisor ={
+name ="信陵君"
+location =79
+skill =6
+type =master_of_mint
+date =2246.1.1
+death_date =2247.1.1
+}

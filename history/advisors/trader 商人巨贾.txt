@@ -1,0 +1,37 @@
+#在经商上有重要地位或成就的在野商人
+
+advisor ={
+name ="郭纵" 
+location =112
+skill =5
+type =trader
+date =2235.1.1
+death_date =2300.1.1
+}
+
+advisor ={
+name ="孔氏" 
+location =216
+skill =5
+type =trader
+date =2400.1.1
+death_date =2465.1.1
+}
+
+advisor ={
+name ="猗顿" 
+location =76
+skill =5
+type =trader
+date =2247.1.1
+death_date =2300.1.1
+}
+
+advisor ={
+name ="卓氏" 
+location =61
+skill =5
+type =trader
+date =2400.1.1
+death_date =2465.1.1
+}

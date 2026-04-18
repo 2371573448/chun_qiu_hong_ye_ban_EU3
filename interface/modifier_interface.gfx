@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_modifier_bg"
+		texturefile = "gfx\\interface\\divine_wind_interface\\modifier_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_button"
+		texturefile = "gfx\\interface\\divine_wind_interface\\modifiers_button.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_entry_bg"
+		texturefile = "gfx\\interface\\divine_wind_interface\\modifier_entry_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_strip"
+		texturefile = "gfx\\interface\\modifiers.dds"
+		noOfFrames = 20
+	}
+	spriteType = {
+		name = "GFX_modifier_info"
+		texturefile = "gfx\\interface\\divine_wind_interface\\modifier_info.dds"
+	}
+	progressbartype = {
+		name = "modifier_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\divine_wind_interface\\modifier_progress1.dds"
+		textureFile2 = "gfx\\interface\\divine_wind_interface\\modifier_progress2.dds"
+		size = { x = 51 y = 20 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	spriteType = {
+		name = "GFX_modifier_progress_overlay"
+		texturefile = "gfx\\interface\\divine_wind_interface\\modifier_progress_overlay.dds"
+	}
+	
+	
+}

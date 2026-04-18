@@ -1,0 +1,18 @@
+alliance= {
+	first=WEG
+	second=QIG
+	start_date=2201.1.1
+	end_date=2202.10.1
+}
+alliance= {
+	first=ZGO
+	second=QIG
+	start_date=2201.1.1
+	end_date=2202.10.1
+}
+alliance= {
+	first=LUG
+	second=QIG
+	start_date=2201.1.1
+	end_date=2202.10.1
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<setting key="widget-center-x" value="0.5" />
+	<setting key="widget-center-y" value="0.5" />
+	<setting key="login-center-x" value="0.5" />
+	<setting key="login-center-y" value="0.5" />
+	<setting key="popup-center-x" value="0.43" />
+	<setting key="popup-center-y" value="0.85" />
+</config>

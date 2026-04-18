@@ -1,0 +1,55 @@
+#居于君主身旁出谋划策，以奇计改变历史的谋臣
+
+advisor ={
+name ="祭仲" 
+location =369
+skill =4
+type =colonial_governor 
+date =1952.1.1
+death_date =2016.1.1
+}
+
+advisor ={
+name ="祭仲" 
+location =369
+skill =4
+type =colonial_governor 
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="张良" 
+location =232
+skill =6
+type =colonial_governor 
+date =2489.1.1
+death_date =1486.1.1
+}
+
+advisor ={
+name ="范增" 
+location =328
+skill =5
+type =colonial_governor 
+date =2489.1.1
+death_date =2494.1.1
+}
+
+advisor ={
+name ="陈平" 
+location =232
+skill =5
+type =colonial_governor 
+date =2489.1.1
+death_date =2520.1.1
+}
+
+advisor ={
+name ="栾枝" 
+location =70
+skill =3
+type =naval_reformer
+date =2062.1.1
+death_date =2100.1.1
+}

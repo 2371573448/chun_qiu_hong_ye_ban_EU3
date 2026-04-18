@@ -1,0 +1,30 @@
+country_decisions = { 
+	#½­¶«×ÓµÜ
+	jiangdongzidi = { 
+		potential = { 
+			owns = 328
+			NOT = { 
+				has_country_flag = jiangdongzidi
+			}
+			tag = XCW
+		}
+		allow = { 
+			stability = 1
+			mil = 9		
+		}
+		effect = { 
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			wuyue_infantry_65 = 328
+			set_country_flag = jiangdongzidi
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

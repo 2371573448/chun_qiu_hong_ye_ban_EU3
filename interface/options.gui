@@ -1,0 +1,625 @@
+guiTypes = {
+
+	
+
+	
+	windowType = {
+		name = "option_window"
+		backGround=""
+		position = { x= -255 y = 50 }
+		size = { x=500 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		orientation = CENTER_UP
+		
+		iconType = {
+			name = "Background"	
+			spriteType = "option_background"
+			position = { x= 0 y = 0 }
+		}		
+		
+		
+		instantTextBoxType = {
+			name = "optiontext"
+			position = { x = 156 y = 7 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 1 y = 1}
+			text = "Options"	
+			maxWidth = 200
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+
+			fixedsize = yes
+		}
+			
+			guiButtonType = {
+				name = "close_button"
+				position = { x = 285 y = 457 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "FE_OK"
+				buttonFont = "Main_14_black"
+			}
+			
+				guiButtonType = {
+				name = "cancel_button"
+				position = { x = 96 y = 457 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "FE_CANCEL"
+				buttonFont = "Main_14_black"
+			}
+		
+		instantTextBoxType = {
+			name = "advisors"
+			position = { x = 45 y = 66 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_ADVISORS"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "advisor_prev"
+				position = { x = 300 y = 66 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "advisor_next"
+				position = { x = 448 y = 66 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		instantTextBoxType = {
+			name = "advisor_box"
+			position = { x = 320 y = 66 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "leaders"
+			position = { x = 45 y = 82 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_LEADERS"	
+			maxWidth = 50
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "leader_box"
+			position = { x = 320 y = 82 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "leader_prev"
+				position = { x = 300 y = 82}
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "leader_next"
+				position = { x = 448 y = 82 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		instantTextBoxType = {
+			name = "colonists"
+			position = { x = 45 y = 98 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_COLONISTS"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "colonist_box"
+			position = { x = 320 y = 98 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "colonist_prev"
+				position = { x = 300 y = 98 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "colonist_next"
+				position = { x = 448 y = 98 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		instantTextBoxType = {
+			name = "merchants"
+			position = { x = 45 y = 114 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_MERCHANTS"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "merchant_box"
+			position = { x = 320 y = 114 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "merchant_prev"
+				position = { x = 300 y = 114 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "merchant_next"
+				position = { x = 448 y = 114 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		instantTextBoxType = {
+			name = "missionaries"
+			position = { x = 45 y = 130 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_MISSIONARIES"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "missionarie_box"
+			position = { x = 320 y = 130 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "missionarie_prev"
+				position = { x = 300 y = 130 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "missionarie_next"
+				position = { x = 448 y = 130 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		instantTextBoxType = {
+			name = "inflation"
+			position = { x = 45 y = 146 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_INFLATION"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "inflation_prev"
+				position = { x = 300 y = 146 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "inflation_next"
+				position = { x = 448 y = 146 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		instantTextBoxType = {
+			name = "inflation_box"
+			position = { x = 320 y = 146 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "sizeofcolonists"
+			position = { x = 45 y = 162 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_SIZE_OF_COLONISTS"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "sizeofcolonist_prev"
+				position = { x = 300 y = 162 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "sizeofcolonist_next"
+				position = { x = 448 y = 162 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+			name = "sizeofcolonist_box"
+			position = { x = 320 y = 162 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		
+		
+		
+		instantTextBoxType = {
+			name = "difficulty"
+			position = { x = 45 y = 178 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_DIFFICULTY"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "difficulty_box"
+			position = { x = 320 y =178 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		
+		
+		guiButtonType = {
+				name = "difficulty_prev"
+				position = { x = 300 y = 178 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "difficulty_next"
+				position = { x = 448 y = 178 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+			
+		instantTextBoxType = {
+			name = "aiaggressiveness"
+			position = { x = 45 y = 194 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_AI_AGGRESSIVENESS"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "aiaggressiveness_prev"
+				position = { x = 300 y = 194 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "aiaggressiveness_next"
+				position = { x = 448 y = 194 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		instantTextBoxType = {
+			name = "aiaggressiveness_box"
+			position = { x = 320 y =194 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "spread1"
+			position = { x = 45 y = 210 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_SPREAD1"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "spread1_box"
+			position = { x = 320 y =210 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+		guiButtonType = {
+				name = "spread1_prev"
+				position = { x = 300 y = 210 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "spread1_next"
+				position = { x = 448 y = 210 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+			
+		instantTextBoxType = {
+			name = "spread2"
+			position = { x = 45 y = 226 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_SPREAD2"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+			
+		instantTextBoxType = {
+			name = "spread2_box"
+			position = { x = 320 y =226 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+			
+			guiButtonType = {
+				name = "spread2_prev"
+				position = { x = 300 y =226 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "spread2_next"
+				position = { x = 448 y = 226 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		instantTextBoxType = {
+			name = "spy"
+			position = { x = 45 y = 242 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_SPY"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+			
+		instantTextBoxType = {
+			name = "spy_box"
+			position = { x = 320 y = 242 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+			
+			guiButtonType = {
+				name = "spy_prev"
+				position = { x = 300 y = 242 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "spy_next"
+				position = { x = 448 y = 242 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		
+
+
+
+		instantTextBoxType = {
+			name = "luck"
+			position = { x = 45 y = 258 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "FE_LUCK"	
+			maxWidth = 250
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = left
+			fixedsize = yes
+		}
+			
+		instantTextBoxType = {
+			name = "luck_box"
+			position = { x = 320 y = 258 }
+			textureFile = ""
+			font = "ledger"
+			borderSize = {x = 1 y = 1}
+			text = "Ruler"	
+			maxWidth = 130
+			maxHeight = 20
+
+			Orientation = "UPPER_LEFT"	
+			format = centre
+			fixedsize = yes
+		}
+			
+			guiButtonType = {
+				name = "luck_prev"
+				position = { x = 300 y = 258 }
+				quadTextureSprite ="option_prev"
+				Orientation = "UPPER_LEFT"
+			}
+		
+		guiButtonType = {
+				name = "luck_next"
+				position = { x = 448 y = 258 }
+				quadTextureSprite ="option_next"
+				Orientation = "UPPER_LEFT"
+			}
+		
+	}	
+}

@@ -1,0 +1,46 @@
+#历史著名将领，尤其是以勇武著称的
+
+advisor ={
+name ="鬻拳" 
+location =485
+skill =3
+type =grand_captain
+date =1980.1.1
+death_date =2023.1.1
+}
+
+advisor ={
+name ="先轸" 
+location =68
+skill =4
+type =grand_captain
+date =2062.1.1
+death_date =2071.1.1
+}
+
+advisor ={
+name ="樊哙" 
+location =232
+skill =5
+type =grand_captain
+date =2489.1.1
+death_date =2509.1.1
+}
+
+advisor ={
+name ="英布" 
+location =462
+skill =4
+type =grand_captain
+date =2489.1.1
+death_date =2502.1.1
+}
+
+advisor ={
+name ="季布" 
+location =328
+skill =4
+type =grand_captain
+date =2489.1.1
+death_date =2540.1.1
+}

@@ -1,0 +1,13 @@
+culture = boliao
+religion = ancestor
+capital = "àˆ"
+trade_goods = ivory
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2300.1.1 = { 
+	discovered_by = CHU
+}

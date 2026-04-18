@@ -1,0 +1,554 @@
+#开拓上郡
+
+kaituoshangjun = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		year = 2266
+		or = {
+		  	NOT = { owns = 201 }
+		 	NOT = { owns = 202 }
+			NOT = { owns = 203 }
+		 	NOT = { owns = 204 }
+		 	NOT = { owns = 216 }
+		 	NOT = { owns = 218 }
+		}
+	  	or = { 
+	    		201 = { any_neighbor_province = { owned_by = this } }
+	    		202 = { any_neighbor_province = { owned_by = this } }
+			203 = { any_neighbor_province = { owned_by = this } }
+	    		204 = { any_neighbor_province = { owned_by = this } }
+			216 = { any_neighbor_province = { owned_by = this } }
+			218 = { any_neighbor_province = { owned_by = this } }
+	  	}
+	}
+	abort = {
+	}
+	success = {
+		owns = 201
+	  	owns = 202
+		owns = 203
+	  	owns = 204
+		owns = 216
+		owns = 218
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 201
+	  	add_temp_claim = 202
+		add_temp_claim = 203
+	  	add_temp_claim = 204
+		add_temp_claim = 216
+		add_temp_claim = 218
+	}
+	abort_effect = {
+		remove_temp_claim = 201
+	  	remove_temp_claim = 202
+		remove_temp_claim = 203
+	  	remove_temp_claim = 204
+		remove_temp_claim = 216
+		remove_temp_claim = 218
+	}
+	effect = {
+	 	add_core = 201
+	 	add_core = 202
+	 	add_core = 203
+	 	add_core = 204
+		add_core = 216
+		add_core = 218
+	}
+}
+
+#开拓西河
+
+kaituoxihe = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		year = 2266
+		or = {
+		  	NOT = { owns = 200 }
+		 	NOT = { owns = 150 }
+			NOT = { owns = 151 }
+		 	NOT = { owns = 152 }
+		}
+	  	or = { 
+	    		200 = { any_neighbor_province = { owned_by = this } }
+	    		150 = { any_neighbor_province = { owned_by = this } }
+			151 = { any_neighbor_province = { owned_by = this } }
+	    		152 = { any_neighbor_province = { owned_by = this } }
+
+	  	}
+	}
+	abort = {
+	}
+	success = {
+		owns = 200
+		owns = 150
+		owns = 151
+		owns = 152
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 200
+	  	add_temp_claim = 150
+		add_temp_claim = 151
+	  	add_temp_claim = 152
+	}
+	abort_effect = {
+		remove_temp_claim = 200
+	  	remove_temp_claim = 150
+		remove_temp_claim = 151
+	  	remove_temp_claim = 152
+	}
+	effect = {
+		add_accepted_culture = baidi
+	 	add_core = 150
+	 	add_core = 151
+	 	add_core = 200
+	 	add_core = 150
+	}
+}
+
+#收复河东
+
+shoufuhedong = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		or = {
+		  	NOT = { owns = 73 }
+		 	NOT = { owns = 79 }
+			NOT = { owns = 77 }
+			NOT = { owns = 72 }
+			NOT = { owns = 75 }
+		}
+	  	or = { 
+	    		73 = { any_neighbor_province = { owned_by = this } }
+	    		79 = { any_neighbor_province = { owned_by = this } }
+			77 = { any_neighbor_province = { owned_by = this } }
+	  	}
+	}
+	abort = {
+	}
+	success = {
+		owns = 73
+		owns = 79
+		owns = 77
+		owns = 72
+		owns = 75
+	}
+	chance = {
+		factor = 700
+	}
+	immediate = {
+	  	add_temp_claim = 73
+	  	add_temp_claim = 79
+		add_temp_claim = 77
+	  	add_temp_claim = 72
+		add_temp_claim = 75
+	}
+	abort_effect = {
+		remove_temp_claim = 73
+	  	remove_temp_claim = 79
+		remove_temp_claim = 77
+	  	remove_temp_claim = 72
+		remove_temp_claim = 75
+	}
+	effect = {
+	 	add_core = 73
+		add_core = 79
+	 	add_core = 77
+		add_core = 72
+	 	add_core = 75
+                                       hedong = { add_core = WEI }
+		prestige = 0.1
+	}
+}
+
+#巩固与韩国关系
+improve_relations_with_HAN = {
+
+	type = country
+
+	allow = {
+		tag = WEI
+		exists = HAN
+		not = { war_with = HAN }
+		not = { relation = { who = HAN value = 100 } }
+	}
+	abort = {
+		or = {
+			not = { exists = HAN }
+			war_with = HAN
+		}
+	}
+	success = {
+		relation = { who = HAN value = 100 }
+	}
+	chance = {
+		factor = 100
+	}
+	effect = {
+		relation = { who = HAN value = 50 }
+		prestige = 0.05
+	}
+}
+
+#征服上蔡
+
+zhengfushangcai = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		owns = 378
+		or = {
+		  	NOT = { owns = 370 }
+		 	NOT = { owns = 388 }
+		  	NOT = { owns = 1025 }
+		 	NOT = { owns = 1006 }
+		  	NOT = { owns = 1005 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		owns = 370
+		owns = 388
+		owns = 1025
+		owns = 1006
+		owns = 1005
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 370
+	  	add_temp_claim = 388
+	  	add_temp_claim = 1025
+	  	add_temp_claim = 1006
+	  	add_temp_claim = 1007
+	}
+	abort_effect = {
+		remove_temp_claim = 370
+	  	remove_temp_claim = 388
+		remove_temp_claim = 1025
+	  	remove_temp_claim = 1006
+		remove_temp_claim = 1007
+	}
+	effect = {
+	 	add_core = 370
+		add_core = 388
+	 	add_core = 1025
+		add_core = 1006
+	 	add_core = 1007
+	}
+}
+
+#征服中山
+
+zhengfuzhongshan = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		exists = ZHS
+		ZHS = {
+			neighbour = this
+			not = { vassal_of = WEI }
+		}
+		or = {
+		  	NOT = { owns = 96 }
+		 	NOT = { owns = 93 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		owns = 96
+		owns = 93
+		owns = 958
+		owns = 959
+		owns = 960
+		not = { exists = ZHS }
+	}
+	chance = {
+		factor = 200
+	}
+	immediate = {
+	  	add_temp_claim = 96
+	  	add_temp_claim = 93
+	 	add_temp_claim = 958
+	 	add_temp_claim = 959
+	 	add_temp_claim = 960
+	}
+	abort_effect = {
+		remove_temp_claim = 96
+	  	remove_temp_claim = 93
+	 	remove_temp_claim = 958
+	 	remove_temp_claim = 959
+	 	remove_temp_claim = 960
+	}
+	effect = {
+	 	add_core = 93
+	 	add_core = 96
+	 	add_core = 958
+	 	add_core = 959
+	 	add_core = 960
+		prestige = 0.2
+	}
+}
+
+#征服大梁
+
+zhengfudaliang = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		year = 2266
+		or = {
+		  	NOT = { owns = 363 }
+		 	NOT = { owns = 358 }
+		}
+		or = { 
+	    		363 = { any_neighbor_province = { owned_by = this } }
+	    		358 = { any_neighbor_province = { owned_by = this } }
+	  	}
+	}
+	abort = {
+	}
+	success = {
+		owns = 363
+		owns = 358
+		owns = 932
+		owns = 1033
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 363
+	  	add_temp_claim = 358
+	  	add_temp_claim = 932
+	  	add_temp_claim = 1033
+	}
+	abort_effect = {
+		remove_temp_claim = 363
+	  	remove_temp_claim = 358
+		remove_temp_claim = 932
+	  	remove_temp_claim = 1033
+	}
+	effect = {
+	 	add_core = 363
+		add_core = 358
+	 	add_core = 932
+		add_core = 1033
+	}
+}
+#征服河内
+
+zhengfuhenei = {
+	
+	type = country
+
+	allow = {
+		tag = WEI
+		or = {
+		  	NOT = { owns = 118 }
+		 	NOT = { owns = 124 }
+			NOT = { owns = 126 }
+		 	NOT = { owns = 130 }
+		 	NOT = { owns = 131 }
+		  	NOT = { owns = 125 }
+		 	NOT = { owns = 127 }
+			NOT = { owns = 128 }
+		 	NOT = { owns = 132 }
+		 	NOT = { owns = 133 }
+		 	NOT = { owns = 134 }
+		  	NOT = { owns = 872 }
+		 	NOT = { owns = 877 }
+			NOT = { owns = 878 }
+		 	NOT = { owns = 879 }
+		 	NOT = { owns = 880 }
+		  	NOT = { owns = 1036 }
+		 	NOT = { owns = 1037 }
+			NOT = { owns = 1038 }
+		 	NOT = { owns = 1039 }
+		 	NOT = { owns = 1040 }
+		}
+	  	or = { 
+	    		118 = { any_neighbor_province = { owned_by = this } }
+	    		124 = { any_neighbor_province = { owned_by = this } }
+			126 = { any_neighbor_province = { owned_by = this } }
+	    		130 = { any_neighbor_province = { owned_by = this } }
+			131 = { any_neighbor_province = { owned_by = this } }
+	    		125 = { any_neighbor_province = { owned_by = this } }
+	    		127 = { any_neighbor_province = { owned_by = this } }
+			128 = { any_neighbor_province = { owned_by = this } }
+	    		132 = { any_neighbor_province = { owned_by = this } }
+			133 = { any_neighbor_province = { owned_by = this } }
+			134 = { any_neighbor_province = { owned_by = this } }
+	    		872 = { any_neighbor_province = { owned_by = this } }
+	    		877 = { any_neighbor_province = { owned_by = this } }
+			878 = { any_neighbor_province = { owned_by = this } }
+	    		879 = { any_neighbor_province = { owned_by = this } }
+			880 = { any_neighbor_province = { owned_by = this } }
+	    		1036 = { any_neighbor_province = { owned_by = this } }
+	    		1037 = { any_neighbor_province = { owned_by = this } }
+			1039 = { any_neighbor_province = { owned_by = this } }
+	    		1040 = { any_neighbor_province = { owned_by = this } }
+	  	}
+	}
+	abort = {
+	}
+	success = {
+		owns = 118
+		owns = 126
+	  	owns = 130
+		owns = 131
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 118
+	  	add_temp_claim = 124
+		add_temp_claim = 126
+	  	add_temp_claim = 130
+		add_temp_claim = 131
+	}
+	abort_effect = {
+		remove_temp_claim = 118
+	  	remove_temp_claim = 124
+		remove_temp_claim = 126
+	  	remove_temp_claim = 130
+		remove_temp_claim = 131
+	}
+	effect = {
+	 	add_core = 118
+	 	add_core = 124
+	 	add_core = 126
+	 	add_core = 130
+		add_core = 131
+                                        henei = { add_core = WEI }
+	}
+}
+#征服野王
+zhengfuyewang = {
+	
+	type = country
+
+	allow = {
+		year = 2266
+		tag = WEI
+		or = {
+		  	NOT = { owns = 127 }
+		 	NOT = { owns = 129 }
+		}
+	  	or = { 
+	    		127 = { any_neighbor_province = { owned_by = this } }
+	    		129 = { any_neighbor_province = { owned_by = this } }
+	  	}
+	}
+	abort = {
+	}
+	success = {
+		owns = 129
+	  	owns = 127
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 127
+	  	add_temp_claim = 129
+	}
+	abort_effect = {
+		remove_temp_claim = 127
+	  	remove_temp_claim = 129
+	}
+	effect = {
+	 	add_core = 127
+	 	add_core = 129
+	}
+}
+#征服砀郡
+zhengfudangjun = {
+	
+	type = country
+
+	allow = {	
+		year = 2265
+		tag = WEI
+		any_owned_province  = {
+		any_neighbor_province = { region = dangjun }
+		}
+	}
+	abort = {
+
+	}
+	success = {
+    		owns = 312  
+    		owns = 314 
+    		owns = 321  
+		owns = 323 
+		owns = 324 
+		owns = 325
+    		owns = 326 
+    		owns = 335  
+		owns = 345 
+		owns = 346 
+		owns = 347
+		owns = 358           				 
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+	 	add_temp_claim = 312
+	 	add_temp_claim = 314
+	 	add_temp_claim = 321
+	 	add_temp_claim = 323
+	 	add_temp_claim = 324
+	 	add_temp_claim = 325
+	 	add_temp_claim = 326
+	 	add_temp_claim = 335
+	 	add_temp_claim = 345
+	 	add_temp_claim = 346
+	 	add_temp_claim = 347
+	 	add_temp_claim = 358
+	}
+	abort_effect = {
+	 	remove_temp_claim = 312
+	 	remove_temp_claim = 314
+	 	remove_temp_claim = 321
+	 	remove_temp_claim = 323
+	 	remove_temp_claim = 324
+	 	remove_temp_claim = 325
+	 	remove_temp_claim = 326
+	 	remove_temp_claim = 335
+	 	remove_temp_claim = 345
+	 	remove_temp_claim = 346
+	 	remove_temp_claim = 347
+	 	remove_temp_claim = 358
+	  	prestige = -0.05
+	}
+	effect = {
+		dangjun = { add_core = WEI }
+	}
+}

@@ -1,0 +1,62 @@
+culture = nanchu
+religion = ancestor
+capital = "сот╜и╫"
+trade_goods = iron
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+
+1960.1.1 = { discovered_by = CHU }
+2222.1.1 = { 
+	citysize = 10000
+}
+2246.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 9000
+	fort1 = yes
+        religion = liyuebadao 
+}
+2246.1.2 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+2280.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 6000
+	fort1 = yes
+}
+2280.1.1 = { 
+	religion = daojia
+}
+2310.1.1 = { 
+	add_core = CHU
+}
+2418.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2419.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2421.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2452.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}

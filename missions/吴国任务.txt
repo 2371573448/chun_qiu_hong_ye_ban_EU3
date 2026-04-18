@@ -1,0 +1,471 @@
+#开拓江东1
+
+kaituojiangdong1 = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		or = {
+			433 = { empty = yes }
+			434 = { empty = yes }
+		}
+		or = {
+			433 = { any_neighbor_province = { owned_by = this } }
+			434 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+			433 = { empty = no }
+			not = { owns = 433 }
+			434 = { empty = no }
+			not = { owns = 434 }
+	}
+	success = {
+	  	433 = { owned_by = this }
+		434 = { owned_by = this }
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	433 = { add_core = this }
+		434 = { add_core = this }
+	}
+}
+
+#征服邗国
+
+WUG_annex_HNX = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		exists = HNX
+		any_neighbor_country = { tag = HNX }
+	}
+	abort = {
+	}
+	success = {
+		owns = 406
+	  	owns = 407
+	  	owns = 410
+	  	owns = 414
+	  	owns = 427
+	  	owns = 417
+		not = { exists = HNX }
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+		add_temp_claim = 414
+		add_temp_claim = 407
+		add_temp_claim = 410
+		add_temp_claim = 406
+		add_temp_claim = 417
+		add_temp_claim = 427
+	}
+	abort_effect = {
+		remove_temp_claim = 414
+		remove_temp_claim = 407
+		remove_temp_claim = 410
+		remove_temp_claim = 406
+		remove_temp_claim = 417
+		remove_temp_claim = 427
+	}
+	effect = {
+	  	add_core = 406
+	  	add_core = 407
+	  	add_core = 410
+	  	add_core = 414
+	  	add_core = 427
+	  	add_core = 417
+		prestige = 0.1
+	}
+}
+
+#争衡淮上
+
+WUG_annex_huaishang = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		or = {
+			not = { owns = 424 }
+			not = { owns = 411 }
+			not = { owns = 420 }
+		}
+		or = {
+			424 = { any_neighbor_province = { owned_by = this } }
+			411 = { any_neighbor_province = { owned_by = this } }
+			420 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+	}
+	success = {
+		owns = 424
+		owns = 411
+		owns = 420
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+		add_temp_claim = 424
+		add_temp_claim = 411
+		add_temp_claim = 420
+	}
+	abort_effect = {
+		remove_temp_claim = 424
+		remove_temp_claim = 411
+		remove_temp_claim = 420
+	}
+	effect = {
+	  	add_core = 411
+		add_core = 424
+		add_core = 420
+		prestige = 0.20
+	}
+}
+
+#附庸越国
+WUG_client_zng = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	YGO = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = YGO
+	  	tag = WUG
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		YGO = { is_subject = yes }
+	    		YGO = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+	overlord_of = YGO
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = YGO
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = YGO
+		}
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+#征服淮北
+
+WUG_annex_huaibei = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		owns = 411
+		or = {
+			not = { owns = 330 }
+			not = { owns = 339 }
+			not = { owns = 331 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		owns = 330
+		owns = 339
+		owns = 331
+		owns = 992
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+		add_temp_claim = 330
+		add_temp_claim = 339
+		add_temp_claim = 331
+		add_temp_claim = 992
+	}
+	abort_effect = {
+		remove_temp_claim = 330
+		remove_temp_claim = 339
+		remove_temp_claim = 331
+		remove_temp_claim = 992
+	}
+	effect = {
+		add_core = 330
+		add_core = 339
+		add_core = 331
+		add_core = 992
+	}
+}
+
+#交好晋国
+WUG_improve_relations_with_JIN = {
+
+	type = country
+
+	allow = {
+		tag = WUG
+		exists = JIN
+		not = { war_with = JIN }
+		not = { relation = { who = JIN value = 100 } }
+                                        year = 2165
+	}
+	abort = {
+		or = {
+			not = { exists = JIN }
+			war_with = JIN
+		}
+	}
+	success = {
+		relation = { who = JIN value = 100 }
+	}
+	chance = {
+		factor = 300
+	}
+	effect = {
+		relation = { who = JIN value = 50 }
+		prestige = 0.05
+	}
+}
+
+#开拓江东2
+
+kaituojiangdong2 = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		or = {
+			445 = { empty = yes }
+			455 = { empty = yes }
+			428 = { empty = yes }
+		}
+		or = {
+			445 = { any_neighbor_province = { owned_by = this } }
+			455 = { any_neighbor_province = { owned_by = this } }
+			428 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+			445 = { empty = no }
+			not = { owns = 445 }
+			455 = { empty = no }
+			not = { owns = 455 }
+			428 = { empty = no }
+			not = { owns = 428 }
+	}
+	success = {
+	  	445 = { owned_by = this }
+		455 = { owned_by = this }
+		428 = { owned_by = this }
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	445 = { add_core = this }
+		455 = { add_core = this }
+		428 = { add_core = this }
+	}
+}
+
+#争霸中原
+
+Dominate_the_central_plains2 = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+		tag = WUG
+		is_emperor = no
+		any_country = { 
+			is_emperor = yes
+		}
+                                        year =2100
+	}
+	abort = {
+	  	or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+	  	}
+	}
+	success = {
+		is_emperor = yes
+	}
+	chance = {
+		factor = 3
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		prestige = 0.20
+		relation = { who = PAP value = 100 }
+	}
+}
+#征服南阳
+
+WUG_annex_nanjun = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		NOT = { owns = 485 }
+		year = 2260
+	}
+	abort = {
+
+	}
+	success = { 
+		owns = 475
+
+	}
+	chance = {
+		factor = 550
+	}
+	immediate = {
+		add_temp_claim = 470	 
+		add_temp_claim = 471
+		add_temp_claim = 473
+		add_temp_claim = 475		
+		add_temp_claim = 481
+		add_temp_claim = 484
+		add_temp_claim = 485
+
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_core = 470
+		add_core = 475
+		add_core = 481
+		add_core = 485
+		add_core = 471 
+		add_core = 473
+		add_core = 484
+	}
+}
+
+#开拓江东3
+
+kaituojiangdong3 = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		or = {
+			435 = { empty = yes }
+			436 = { empty = yes }
+		}
+		or = {
+			435 = { any_neighbor_province = { owned_by = this } }
+			436 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+			435= { empty = no }
+			not = { owns = 433 }
+			436 = { empty = no }
+			not = { owns = 434 }
+	}
+	success = {
+	  	435 = { owned_by = this }
+		436 = { owned_by = this }
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	435 = { add_core = this }
+		436 = { add_core = this }
+	}
+}
+
+#开拓江东4
+
+kaituojiangdong4 = {
+	
+	type = country
+
+	allow = {
+		tag = WUG
+		or = {
+			446 = { empty = yes }
+			444 = { empty = yes }
+		}
+		or = {
+			444 = { any_neighbor_province = { owned_by = this } }
+			446 = { any_neighbor_province = { owned_by = this } }
+		}
+	}
+	abort = {
+			444= { empty = no }
+			not = { owns = 433 }
+			446 = { empty = no }
+			not = { owns = 434 }
+	}
+	success = {
+	  	444 = { owned_by = this }
+		446 = { owned_by = this }
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	444 = { add_core = this }
+		446 = { add_core = this }
+	}
+}

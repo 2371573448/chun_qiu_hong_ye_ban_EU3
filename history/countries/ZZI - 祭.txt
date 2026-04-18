@@ -1,0 +1,23 @@
+government = fengjian		
+aristocracy_plutocracy = -3		
+centralization_decentralization = 1		
+innovative_narrowminded = -1		
+mercantilism_freetrade = 4		
+offensive_defensive = 0		
+land_naval = -3		
+quality_quantity = 1		
+serfdom_freesubjects = -3		
+technology_group = chinese		
+religion = liyuejiaohua		
+primary_culture = zhongyuan		
+capital = 1019		
+		
+1927.1.1 = {		
+	monarch = {	
+		name = "зу"
+               dynasty = "МЇ"		
+		adm = 5
+		dip = 7
+		mil = 5
+	}	
+}		

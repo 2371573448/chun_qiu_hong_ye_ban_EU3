@@ -1,0 +1,3700 @@
+country_decisions = {
+	
+	introduction_ANG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ANG
+                        ai = no 
+		}
+		allow = {
+			tag = ANG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BAG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BAG
+                        ai = no 
+		}
+		allow = {
+			tag = BAG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BAI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BAI
+                        ai = no 
+		}
+		allow = {
+			tag = BAI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BAO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BAO
+                        ai = no 
+		}
+		allow = {
+			tag = BAO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BEI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BEI
+                        ai = no 
+		}
+		allow = {
+			tag = BEI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BER = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BER
+                        ai = no 
+		}
+		allow = {
+			tag = BER
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BIY = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BIY
+                        ai = no 
+		}
+		allow = {
+			tag = BIY
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_BOG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = BOG
+                        ai = no 
+		}
+		allow = {
+			tag = BOG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CAI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CAI
+                        ai = no 
+		}
+		allow = {
+			tag = CAI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CAO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CAO
+                        ai = no 
+		}
+		allow = {
+			tag = CAO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CHA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CHA
+                        ai = no 
+		}
+		allow = {
+			tag = CHA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CHE = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CHE
+                        ai = no 
+		}
+		allow = {
+			tag = CHE
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CHG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CHG
+                        ai = no 
+		}
+		allow = {
+			tag = CHG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CHI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CHI
+                        ai = no 
+		}
+		allow = {
+			tag = CHI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CHU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CHU
+                        ai = no 
+		}
+		allow = {
+			tag = CHU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DAG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DAG
+                        ai = no 
+		}
+		allow = {
+			tag = DAG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DAI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DAI
+                        ai = no 
+		}
+		allow = {
+			tag = DAI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DAR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DAR
+                        ai = no 
+		}
+		allow = {
+			tag = DAR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DBG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DBG
+                        ai = no 
+		}
+		allow = {
+			tag = DBG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DEG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DEG
+                        ai = no 
+		}
+		allow = {
+			tag = DEG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DGG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DGG
+                        ai = no 
+		}
+		allow = {
+			tag = DGG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DGU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DGU
+                        ai = no 
+		}
+		allow = {
+			tag = DGU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DHU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DHU
+                        ai = no 
+		}
+		allow = {
+			tag = DHU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DOC = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DOC
+                        ai = no 
+		}
+		allow = {
+			tag = DOC
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DXU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DXU
+                        ai = no 
+		}
+		allow = {
+			tag = DXU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_EGU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = EGU
+                        ai = no 
+		}
+		allow = {
+			tag = EGU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_FAN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = FAN
+                        ai = no 
+		}
+		allow = {
+			tag = FAN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_FEG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = FEG
+                        ai = no 
+		}
+		allow = {
+			tag = FEG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_FEI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = FEI
+                        ai = no 
+		}
+		allow = {
+			tag = FEI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_FGO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = FGO
+                        ai = no 
+		}
+		allow = {
+			tag = FGO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GAL = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GAL
+                        ai = no 
+		}
+		allow = {
+			tag = GAL
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GAN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GAN
+                        ai = no 
+		}
+		allow = {
+			tag = GAN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GAO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GAO
+                        ai = no 
+		}
+		allow = {
+			tag = GAO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GNG
+                        ai = no 
+		}
+		allow = {
+			tag = GNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GUG
+                        ai = no 
+		}
+		allow = {
+			tag = GUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GUI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GUI
+                        ai = no 
+		}
+		allow = {
+			tag = GUI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GUO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GUO
+                        ai = no 
+		}
+		allow = {
+			tag = GUO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GUW = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GUW
+                        ai = no 
+		}
+		allow = {
+			tag = GUW
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_GUZ = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = GUZ
+                        ai = no 
+		}
+		allow = {
+			tag = GUZ
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HAG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HAG
+                        ai = no 
+		}
+		allow = {
+			tag = HAG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HAN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HAN
+                        ai = no 
+		}
+		allow = {
+			tag = HAN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HEN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HEN
+                        ai = no 
+		}
+		allow = {
+			tag = HEN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HNG
+                        ai = no 
+		}
+		allow = {
+			tag = HNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HUA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HUA
+                        ai = no 
+		}
+		allow = {
+			tag = HUA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HUG
+                        ai = no 
+		}
+		allow = {
+			tag = HUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HUN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HUR
+                        ai = no 
+		}
+		allow = {
+			tag = HUR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HUO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HUO
+                        ai = no 
+		}
+		allow = {
+			tag = HUO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HYI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HYI
+                        ai = no 
+		}
+		allow = {
+			tag = HYI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JAG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JAG
+                        ai = no 
+		}
+		allow = {
+			tag = JAG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIA
+                        ai = no 
+		}
+		allow = {
+			tag = JIA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIC = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIC
+                        ai = no 
+		}
+		allow = {
+			tag = JIC
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIE = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIE
+                        ai = no 
+		}
+		allow = {
+			tag = JIE
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIG
+                        ai = no 
+		}
+		allow = {
+			tag = JIG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JII = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JII
+                        ai = no 
+		}
+		allow = {
+			tag = JII
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIN
+                        ai = no 
+		}
+		allow = {
+			tag = JIN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIO
+                        ai = no 
+		}
+		allow = {
+			tag = JIO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIR
+                        ai = no 
+		}
+		allow = {
+			tag = JIR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIS
+                        ai = no 
+		}
+		allow = {
+			tag = JIS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JIW = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JIW
+                        ai = no 
+		}
+		allow = {
+			tag = JIW
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JNG
+                        ai = no 
+		}
+		allow = {
+			tag = JNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JOG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JOG
+                        ai = no 
+		}
+		allow = {
+			tag = JOG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JUG
+                        ai = no 
+		}
+		allow = {
+			tag = JUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JUN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JUN
+                        ai = no 
+		}
+		allow = {
+			tag = JUN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JUU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JUU
+                        ai = no 
+		}
+		allow = {
+			tag = JUU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_JSG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = JSG
+                        ai = no 
+		}
+		allow = {
+			tag = JSG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_KUA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = KUA
+                        ai = no 
+		}
+		allow = {
+			tag = KUA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_KUI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = KUI
+                        ai = no 
+		}
+		allow = {
+			tag = KUI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LAI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LAI
+                        ai = no 
+		}
+		allow = {
+			tag = LAI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LAO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LAO
+                        ai = no 
+		}
+		allow = {
+			tag = LAO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LHR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LHR
+                        ai = no 
+		}
+		allow = {
+			tag = LHR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LHU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LHU
+                        ai = no 
+		}
+		allow = {
+			tag = LHU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LIA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LIA
+                        ai = no 
+		}
+		allow = {
+			tag = LIA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LIG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LIG
+                        ai = no 
+		}
+		allow = {
+			tag = LIG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LIO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LIO
+                        ai = no 
+		}
+		allow = {
+			tag = LIO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LIR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LIR
+                        ai = no 
+		}
+		allow = {
+			tag = LIR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LIU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LIU
+                        ai = no 
+		}
+		allow = {
+			tag = LIU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LIY = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LIY
+                        ai = no 
+		}
+		allow = {
+			tag = LIY
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LNG
+                        ai = no 
+		}
+		allow = {
+			tag = LNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LOU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LOU
+                        ai = no 
+		}
+		allow = {
+			tag = LOU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LUC = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LUC
+                        ai = no 
+		}
+		allow = {
+			tag = LUC
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LUG
+                        ai = no 
+		}
+		allow = {
+			tag = LUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LUK = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LUK
+                        ai = no 
+		}
+		allow = {
+			tag = LUK
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LUO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LUO
+                        ai = no 
+		}
+		allow = {
+			tag = LUO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LUS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LUS
+                        ai = no 
+		}
+		allow = {
+			tag = LUS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LUY = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LUY
+                        ai = no 
+		}
+		allow = {
+			tag = LUY
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LZG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LZG
+                        ai = no 
+		}
+		allow = {
+			tag = LZG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_MAO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = MAO
+                        ai = no 
+		}
+		allow = {
+			tag = MAO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_MIA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = MIA
+                        ai = no 
+		}
+		allow = {
+			tag = MIA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_MIN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = MIN
+                        ai = no 
+		}
+		allow = {
+			tag = MIN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_MOU  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = MOU
+                        ai = no 
+		}
+		allow = {
+			tag = MOU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_MZR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = MZR
+                        ai = no 
+		}
+		allow = {
+			tag = MZR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_NAN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = NAN
+                        ai = no 
+		}
+		allow = {
+			tag = NAN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_NYA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = NYA
+                        ai = no 
+		}
+		allow = {
+			tag = NYA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_OUY  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = OUY
+                        ai = no 
+		}
+		allow = {
+			tag = OUY
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_PAP = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = PAP
+                        ai = no 
+		}
+		allow = {
+			tag = PAP
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_PUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = PUG
+                        ai = no 
+		}
+		allow = {
+			tag = PUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QIA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QIA
+                        ai = no 
+		}
+		allow = {
+			tag = QIA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QIC  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QIC
+                        ai = no 
+		}
+		allow = {
+			tag = QIC
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QIG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QIG
+                        ai = no 
+		}
+		allow = {
+			tag = QIG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QIN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QIN
+                        ai = no 
+		}
+		allow = {
+			tag = QIN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QIO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QIO
+                        ai = no 
+		}
+		allow = {
+			tag = QIO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QIY  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QIY
+                        ai = no 
+		}
+		allow = {
+			tag = QIY
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QJR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QJR
+                        ai = no 
+		}
+		allow = {
+			tag = QJR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QRO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QRO
+                        ai = no 
+		}
+		allow = {
+			tag = QRO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QUA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QUA
+                        ai = no 
+		}
+		allow = {
+			tag = QUA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QUW  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QUW
+                        ai = no 
+		}
+		allow = {
+			tag = QUW
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_RGO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = RGO
+                        ai = no 
+		}
+		allow = {
+			tag = RGO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_RUO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = RUO
+                        ai = no 
+		}
+		allow = {
+			tag = RUO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SGU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SGU
+                        ai = no 
+		}
+		allow = {
+			tag = SGU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SHE  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SHE
+                        ai = no 
+		}
+		allow = {
+			tag = SHE
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SHI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SHI
+                        ai = no 
+		}
+		allow = {
+			tag = SHI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SHN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SHN
+                        ai = no 
+		}
+		allow = {
+			tag = SHN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SHU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SHU
+                        ai = no 
+		}
+		allow = {
+			tag = SHU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SJG  = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SJG
+                        ai = no 
+		}
+		allow = {
+			tag = SJG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SLG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SLG
+                        ai = no 
+		}
+		allow = {
+			tag = SLG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SON = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SON
+                        ai = no 
+		}
+		allow = {
+			tag = SON
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SUG
+                        ai = no 
+		}
+		allow = {
+			tag = SUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SUI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SUI
+                        ai = no 
+		}
+		allow = {
+			tag = SUI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SUS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SUS
+                        ai = no 
+		}
+		allow = {
+			tag = SUS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_SYG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = SYG
+                        ai = no 
+		}
+		allow = {
+			tag = SYG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_TAG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = TAG
+                        ai = no 
+		}
+		allow = {
+			tag = TAG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_TAN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = TAN
+                        ai = no 
+		}
+		allow = {
+			tag = TAN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_TEN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = TEN
+                        ai = no 
+		}
+		allow = {
+			tag = TEN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_TUH = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = TUH
+                        ai = no 
+		}
+		allow = {
+			tag = TUH
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WEG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WEG
+                        ai = no 
+		}
+		allow = {
+			tag = WEG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WEI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WEI
+                        ai = no 
+		}
+		allow = {
+			tag = WEI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WEN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WEN
+                        ai = no 
+		}
+		allow = {
+			tag = WEN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WEO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WEO
+                        ai = no 
+		}
+		allow = {
+			tag = WEO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WUG
+                        ai = no 
+		}
+		allow = {
+			tag = WUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WUS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WUS
+                        ai = no 
+		}
+		allow = {
+			tag = WUS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_WUZ = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = WUZ
+                        ai = no 
+		}
+		allow = {
+			tag = WUZ
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XBG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XBG
+                        ai = no 
+		}
+		allow = {
+			tag = XBG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XGG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XGG
+                        ai = no 
+		}
+		allow = {
+			tag = XGG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XGO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XGO
+                        ai = no 
+		}
+		allow = {
+			tag = XGO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XGU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XGU
+                        ai = no 
+		}
+		allow = {
+			tag = XGU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XIA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XIA
+                        ai = no 
+		}
+		allow = {
+			tag = XIA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XIG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XIG
+                        ai = no 
+		}
+		allow = {
+			tag = XIG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XIY = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XIY
+                        ai = no 
+		}
+		allow = {
+			tag = XIY
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XNC = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XNC
+                        ai = no 
+		}
+		allow = {
+			tag = XNC
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XNG
+                        ai = no 
+		}
+		allow = {
+			tag = XNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XOU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XOU
+                        ai = no 
+		}
+		allow = {
+			tag = XOU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XUE = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XUE
+                        ai = no 
+		}
+		allow = {
+			tag = XUE
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XUG
+                        ai = no 
+		}
+		allow = {
+			tag = XUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XUN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XUN
+                        ai = no 
+		}
+		allow = {
+			tag = XUN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XZG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XZG
+                        ai = no 
+		}
+		allow = {
+			tag = XZG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YAG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YAG
+                        ai = no 
+		}
+		allow = {
+			tag = YAG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YAN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YAN
+                        ai = no 
+		}
+		allow = {
+			tag = YAN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YGG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YGG
+                        ai = no 
+		}
+		allow = {
+			tag = YGG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YGO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YGO
+                        ai = no 
+		}
+		allow = {
+			tag = YGO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YIC = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YIC
+                        ai = no 
+		}
+		allow = {
+			tag = YIC
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YIG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YIG
+                        ai = no 
+		}
+		allow = {
+			tag = YIG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YIN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YIN
+                        ai = no 
+		}
+		allow = {
+			tag = YIN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YNG
+                        ai = no 
+		}
+		allow = {
+			tag = YNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YOG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YOG
+                        ai = no 
+		}
+		allow = {
+			tag = YOG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YON = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YON
+                        ai = no 
+		}
+		allow = {
+			tag = YON
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YQU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YQU
+                        ai = no 
+		}
+		allow = {
+			tag = YQU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YUA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YUA
+                        ai = no 
+		}
+		allow = {
+			tag = YUA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YUE = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YUE
+                        ai = no 
+		}
+		allow = {
+			tag = YUE
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YUG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YUG
+                        ai = no 
+		}
+		allow = {
+			tag = YUG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YUN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YUN
+                        ai = no 
+		}
+		allow = {
+			tag = YUN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YUO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YUO
+                        ai = no 
+		}
+		allow = {
+			tag = YUO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YXU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YXU
+                        ai = no 
+		}
+		allow = {
+			tag = YXU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YYG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YYG
+                        ai = no 
+		}
+		allow = {
+			tag = YYG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZGO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZGO
+                        ai = no 
+		}
+		allow = {
+			tag = ZGO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZHA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHA
+                        ai = no 
+		}
+		allow = {
+			tag = ZHA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZHG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHG
+                        ai = no 
+		}
+		allow = {
+			tag = ZHG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZHL = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHL
+                        ai = no 
+		}
+		allow = {
+			tag = ZHL
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZHO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHO
+                        ai = no 
+		}
+		allow = {
+			tag = ZHO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZHS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHS
+                        ai = no 
+		}
+		allow = {
+			tag = ZHS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZHU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHU
+                        ai = no 
+		}
+		allow = {
+			tag = ZHU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZLA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZLA
+                        ai = no 
+		}
+		allow = {
+			tag = ZLA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZNG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZNG
+                        ai = no 
+		}
+		allow = {
+			tag = ZNG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZWG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZWG
+                        ai = no 
+		}
+		allow = {
+			tag = ZWG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HZS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HZS
+                        ai = no 
+		}
+		allow = {
+			tag = HZS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_LSS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = LSS
+                        ai = no 
+		}
+		allow = {
+			tag = LSS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XSG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XSG
+                        ai = no 
+		}
+		allow = {
+			tag = XSG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_PXS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = PXS
+                        ai = no 
+		}
+		allow = {
+			tag = PXS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_MJR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = MJR
+                        ai = no 
+		}
+		allow = {
+			tag = MJR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_XHM = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XHM
+                        ai = no 
+		}
+		allow = {
+			tag = XHM
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_HNX = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HNX
+                        ai = no 
+		}
+		allow = {
+			tag = HNX
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_QON = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = QON
+                        ai = no 
+		}
+		allow = {
+			tag = QON
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZUO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZUO
+                        ai = no 
+		}
+		allow = {
+			tag = ZUO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YLG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YLG
+                        ai = no 
+		}
+		allow = {
+			tag = YLG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZKG = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZKG
+                        ai = no 
+		}
+		allow = {
+			tag = ZKG
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_ZOU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZOU
+                        ai = no 
+		}
+		allow = {
+			tag = ZOU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_DUN = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = DUN
+                        ai = no 
+		}
+		allow = {
+			tag = DUN
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_YLR = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = YLR
+                        ai = no 
+		}
+		allow = {
+			tag = YLR
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	introduction_CHO = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = CHO
+                        ai = no 
+		}
+		allow = {
+			tag = CHO
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_ZHI = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZHI
+                        ai = no 
+		}
+		allow = {
+			tag = ZHI
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_FAS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = FAS
+                        ai = no 
+		}
+		allow = {
+			tag = FAS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_ZXS = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = ZXS
+                        ai = no 
+		}
+		allow = {
+			tag = ZXS
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_XNU = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XNU
+                        ai = no 
+		}
+		allow = {
+			tag = XNU
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_XCW = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = XCW
+                        ai = no 
+		}
+		allow = {
+			tag =  XCW
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_HNW = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HNW
+                        ai = no 
+		}
+		allow = {
+			tag =  HNW
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	introduction_HDA = {
+		potential = {
+                        not = { has_country_flag = introduction }
+                        tag = HDA
+                        ai = no 
+		}
+		allow = {
+			tag =  HDA
+			war = no
+		}
+		effect = {
+			prestige = -0.01
+                        set_country_flag = introduction
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,29 @@
+culture = shu
+religion = ancestor
+capital = "วลอท"
+trade_goods = fur
+hre = no
+base_tax = 2
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { discovered_by = QIN }
+2246.1.1 = { religion = liyuebadao 
+                add_core = SGU
+	        citysize = 9000  }
+2382.1.1  = {	owner = QIN
+		controller = QIN
+	        citysize = 8000 
+                fort1 = yes
+}
+2412.1.1 = { add_core = QIN  }
+2492.2.1={owner=XXX 
+controller=XXX
+          native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+remove_core=QIN }

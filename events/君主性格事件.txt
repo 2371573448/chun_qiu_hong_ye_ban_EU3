@@ -1,0 +1,1617 @@
+
+#君主精神错乱
+country_event = { 
+	id = 4700
+	trigger = { 
+		war = no
+		or = { 
+			and = { 
+				has_country_modifier = conghuiguoren
+				has_country_modifier = yudunwuzhi
+			}
+			and = { 
+				has_country_modifier = leilifengxing
+				has_country_modifier = jinxiaoshenwei
+			}
+			and = { 
+				has_country_modifier = qinjianzichi
+				has_country_modifier = qiongshejiyu
+			}
+			and = { 
+				has_country_modifier = zhirenshanren
+				has_country_modifier = jixianduneng
+			}
+			and = { 
+				has_country_modifier = bujinnvse
+				has_country_modifier = huangyinwudu
+			}
+			and = { 
+				has_country_modifier = renaiqinxia
+				has_country_modifier = gaoaolengku
+			}
+			and = { 
+				has_country_modifier = gongzhengyanming
+				has_country_modifier = piansixiaai
+			}
+			and = { 
+				has_country_modifier = kuakuaqitan
+				has_country_modifier = shoukouruping
+			}
+			and = { 
+				has_country_modifier = jianyibuqu
+				has_country_modifier = nuoruodanqie
+			}
+			and = { 
+				has_country_modifier = yongwuhaodou
+				has_country_modifier = qianrangrennai
+			}
+			and = { 
+				has_country_modifier = xiongxinwanzhang
+				has_country_modifier = zhizuchangle
+			}
+			and = { 
+				has_country_modifier = xinjinance
+				has_country_modifier = chengshitanran
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 180
+	}
+	title = "EVTNAME4700"
+	desc = "EVTDESC4700"
+	option = { 
+		name = "EVTOPTA4700"
+		ai_chance = { 
+			factor = 34
+		}
+		officials = -4
+		random_list = { 
+			60 = { }
+			40 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB4700"
+		ai_chance = { 
+			factor = 66
+		}
+		prestige = -0.05
+		army_tradition = -0.1
+		navy_tradition = -0.1
+		random_list = { 
+			60 = { }
+			40 = { 
+				stability = -1
+			}
+		}
+	}
+}
+
+#聪慧过人
+country_event = {
+	id = 4701         #识破敌计#
+	trigger = {
+		has_country_modifier = conghuiguoren
+		NOT = { has_country_modifier = yudunwuzhi }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	title = "EVTNAME4701"
+	desc = "EVTDESC4701"
+	option = {
+		name = "EVTOPTA4701"
+		spies = 1
+		prestige = 0.05
+	}
+}
+
+country_event = {
+	id = 4702           #庸碌之臣#
+	trigger = {
+		has_country_modifier = conghuiguoren
+		OR = {
+			advisor = statesman
+			advisor = natural_scientist
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	title = "EVTNAME4702"
+	desc = "EVTDESC4702"
+	
+	option = {
+		name = "EVTOPTA4702"
+		remove_advisor = statesman
+		remove_advisor = natural_scientist
+	}
+}
+
+#愚钝无知
+country_event = {
+	id = 4703         #顾命之臣
+	trigger = {
+		has_country_modifier = yudunwuzhi
+		NOT = { has_country_modifier = dachenfuzheng }
+		NOT = { has_country_modifier = conghuiguoren }
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	title = "EVTNAME4703"
+	desc = "EVTDESC4703"
+	option = {
+		name = "EVTOPTB4703"
+		define_advisor = { type = statesman skill = 5 }
+		add_country_modifier = {
+			name = "dachenfuzheng"
+			duration = 1825
+		}		
+	}
+}
+
+country_event = {
+	id = 4704         #权臣擅国
+	trigger = {
+		has_country_modifier = yudunwuzhi
+		has_country_modifier = dachenfuzheng
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	title = "EVTNAME4704"
+	desc = "EVTDESC4704"
+	option = {
+		name = "EVTOPTB4704"
+		prestige = -0.1	
+		legitimacy = -0.1
+		remove_country_modifier = "dachenfuzheng"		
+	}
+}
+
+#雷厉风行
+country_event = { 
+	id = 4705	#酷吏当道#
+	trigger = { 
+		has_country_modifier = leilifengxing
+		NOT = { 
+			has_country_modifier = jinxiaoshenwei
+		}
+	}
+	mean_time_to_happen = { 
+		months = 480
+	}
+	title = "EVTNAME4705"
+	desc = "EVTDESC4705"
+	option = { 
+		name = "EVTOPTA4705"
+		ai_chance = { 
+			factor = 25
+		}
+		prestige = -0.05
+		define_advisor = { 
+			type = spymaster
+			skill = 5
+		}
+		random_list = { 
+			70 = { }
+			30 = { 
+				stability = -1
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB4705"
+		ai_chance = { 
+			factor = 75
+		}
+		define_advisor = { 
+			type = spymaster
+			skill = 4
+		}
+		badboy = 1.5
+	}
+}
+
+country_event = {
+	id = 4706        #肃清朝野#
+	trigger = {
+		has_country_modifier = leilifengxing
+		NOT = { has_country_modifier = jinxiaoshenwei }
+	}
+	
+	mean_time_to_happen = {
+		months = 320
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.75
+			advisor = spymaster
+		}
+	}
+	title = "EVTNAME4706"
+	desc = "EVTDESC4706"
+	option = {
+		name = "EVTOPTA4706"		
+		aristocracy_plutocracy = -1
+		random_list = { 
+			66 = { }
+			33 = { 
+				stability = -1
+			}
+		}
+	}
+}
+
+#谨小慎微
+country_event = {
+	id = 4707         #裹足不前
+	trigger = {
+		has_country_modifier = jinxiaoshenwei
+		NOT = { has_country_modifier = leilifengxing }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	title = "EVTNAME4707"
+	desc = "EVTDESC4707"
+	option = {
+		name = "EVTOPTA4707"		
+		ai_chance = { factor = 75 }
+		badboy = -2
+		government_tech = -0.25
+	}
+	option = {
+		name = "EVTOPTB4707"		
+		ai_chance = { factor = 25 }
+		naval_tech = -0.25
+		years_of_income = 0.05
+	}
+}
+
+country_event = {
+	id = 4708         #文官执政
+	trigger = {
+		has_country_modifier = jinxiaoshenwei
+		NOT = { has_country_modifier = leilifengxing }
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.75
+			advisor = statesman
+		}
+	}
+	title = "EVTNAME4708"
+	desc = "EVTDESC4708"
+	option = {
+		name = "EVTOPTA4708"		
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+		aristocracy_plutocracy = 1
+	}
+}
+
+#勤俭自持
+country_event = {
+	id = 4709         #国库充盈#
+	trigger = {
+		has_country_modifier = qinjianzichi
+		NOT = { has_country_modifier = qiongshejiyu }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	title = "EVTNAME4709"
+	desc = "EVTDESC4709"
+	option = { 
+		name = "EVTOPTA4709"
+		ai_chance = { 
+			factor = 75
+		}
+		years_of_income = 0.15
+		prestige = 0.05
+	}
+	option = { 
+		name = "EVTOPTB4709"
+		ai_chance = { 
+			factor = 25
+		}
+		years_of_income = 0.05
+		prestige = 0.1
+	}
+}
+
+country_event = { 
+	id = 4710
+	# 市集萧条
+	trigger = { 
+		has_country_modifier = qinjianzichi
+		NOT = { 
+			has_country_modifier = qiongshejiyu
+		}
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME4710"
+	desc = "EVTDESC4710"
+	option = { 
+		name = "EVTOPTA4710"
+		random_center_of_trade = { 
+			limit = { 
+				placed_merchants = 1
+			}
+			remove_merchant = THIS
+		}
+		treasury = -25
+	}
+}
+
+#穷奢极欲
+country_event = {
+
+	id = 4711  #国库空虚#
+	trigger = {
+		has_country_modifier = qiongshejiyu
+		NOT = { has_country_modifier = qinjianzichi }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4711"
+	desc = "EVTDESC4711"
+
+	option = {
+		name = "EVTOPTA4711"		
+		ai_chance = { factor = 25 }
+		prestige = 0.2
+		years_of_income = -0.2
+	}
+	option = {
+		name = "EVTOPTB4711"		
+		ai_chance = { factor = 75 }
+		prestige = -0.05
+	}
+}
+
+country_event = {
+
+	id = 4712  #繁花似锦
+	trigger = {
+		has_country_modifier = qiongshejiyu
+		NOT = { has_country_modifier = qinjianzichi }
+	}
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.8
+			mercantilism_freetrade = 1
+		}
+		modifier = {
+			factor = 0.8
+			mercantilism_freetrade = 3
+		}
+		
+		modifier = {
+			factor = 1.25
+			NOT = {
+				mercantilism_freetrade = -2
+			}
+		}
+	}
+
+	title = "EVTNAME4712"
+	desc = "EVTDESC4712"
+
+	option = {
+		name = "EVTOPTA4712"		
+		ai_chance = { factor = 35 }
+		mercantilism_freetrade = -1
+		stability = 1
+		trade_tech = -0.5
+	}
+	option = {
+		name = "EVTOPTB4712"		
+		ai_chance = { factor = 65 }
+		merchants = 2
+		trade_tech = 0.2
+	}
+}
+
+#知人善任
+country_event = {
+
+	id = 4713       #各司其责
+	trigger = {
+		has_country_modifier = zhirenshanren
+		NOT = { has_country_modifier = jixianduneng }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4713"
+	desc = "EVTDESC4713"
+
+	option = {
+		name = "EVTOPTA4713"		
+		ai_chance = { factor = 30 }
+		random_list = { 
+			66 = { }
+			33 = { 
+				stability = 1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4713"		
+		ai_chance = { factor = 70 }
+		random_owned = {
+			base_tax = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 4714  #招揽人才#
+	trigger = {
+		has_country_modifier = zhirenshanren
+		NOT = { has_country_modifier = jixianduneng }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	title = "EVTNAME4714"
+	desc = "EVTDESC4714"
+
+	option = {
+		name = "EVTOPTA4714"	
+		ai_chance = { factor = 75 }
+		prestige = 0.1
+		land_tech = 200
+		treasury = -100
+                
+	}
+	option = {
+		name = "EVTOPTB4714"		
+		ai_chance = { factor = 25 }
+		prestige = -0.05
+	}
+}
+
+#嫉贤妒能
+country_event = {
+
+	id = 4715  #一手遮天#
+	trigger = {                
+		has_country_modifier = jixianduneng
+		NOT = { has_country_modifier = zhirenshanren }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4715"
+	desc = "EVTDESC4715"
+
+	option = {
+		name = "EVTOPTA4715"		
+		ai_chance = { factor = 75 }
+		random_list = { 
+			30 = { }
+			70 = { 
+				stability = -1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4715"	
+		ai_chance = { factor = 25 }
+		inflation = 1.5
+	}
+}
+
+country_event = {
+
+	id = 4716  #君权至上
+	trigger = {                
+		has_country_modifier = jixianduneng
+		NOT = { has_country_modifier = zhirenshanren  }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	title = "EVTNAME4716"
+	desc = "EVTDESC4716"
+
+	option = {
+		name = "EVTOPTA4716"		
+		centralization_decentralization = -1
+		manpower = -0.05
+	}
+}
+
+#公正严明
+country_event = {
+
+	id = 4717  #平等博爱
+	trigger = {                
+		has_country_modifier = gongzhengyanming
+		NOT = { has_country_modifier = piansixiaai }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			idea = deus_vult
+		}
+	}
+
+	title = "EVTNAME4717"
+	desc = "EVTDESC4717"
+	
+	option = {
+		name = "EVTOPTA4717"		
+		ai_chance = { factor = 33 }
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = 1
+			}
+		}
+		officials = 2
+	}
+	option = {
+		name = "EVTOPTB4717"		
+		ai_chance = { factor = 66 }
+		army_tradition = 0.1
+		navy_tradition = 0.1
+	}
+}
+
+country_event = {
+
+	id = 4718 #执法如山
+
+	trigger = {
+		has_country_modifier = gongzhengyanming
+		NOT = { has_country_modifier = piansixiaai }
+		num_of_cities = 3
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4718"
+	desc = "EVTDESC4718"
+
+	option = {
+		name = "EVTOPTA4718"		
+		ai_chance = { factor = 20 }
+		random_owned = {
+			noble_rebels = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB4718"
+		ai_chance = { factor = 10 }
+		centralization_decentralization = 1
+	}	
+	option = {
+		name = "EVTOPTC4718"
+		ai_chance = { factor = 70 }
+		aristocracy_plutocracy = -1
+		serfdom_freesubjects = -1
+	}	
+}
+	
+#偏私狭隘
+country_event = {
+
+	id = 4719 #奸佞当道
+	
+	trigger = {
+		has_country_modifier = piansixiaai 
+		NOT = { has_country_modifier = gongzhengyanming }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4719"
+	desc = "EVTDESC4719"
+
+	option = {
+		name = "EVTOPTA4719"	
+		ai_chance = { factor = 55 }
+		prestige = -0.05
+		random_list = { 
+			20 = { }
+			80 = { 
+				stability = -1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4719"		
+		ai_chance = { factor = 45 }
+		prestige = -0.1
+		years_of_income = -0.1
+		
+	}
+}
+
+country_event = {
+
+	id = 4720 #宠幸外戚 
+	
+	trigger = {
+		has_country_modifier = piansixiaai 
+		NOT = { has_country_modifier = gongzhengyanming }
+	}
+
+	mean_time_to_happen = {
+		months = 420
+	}
+
+	title = "EVTNAME4720"
+	desc = "EVTDESC4720"
+
+	option = {
+		name = "EVTOPTA4720"	
+		ai_chance = { factor = 55 }
+		merchants = 2
+	}
+	option = {
+		name = "EVTOPTB4720"		
+		ai_chance = { factor = 45 }
+		define_advisor = { type = trader skill = 5 }
+	}
+}
+
+#夸夸其谈
+country_event = {
+   	id = 4721 #纸上谈兵 
+	
+	trigger = {
+		has_country_modifier = kuakuaqitan 
+		NOT = { has_country_modifier = shoukouruping }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4721"
+	desc = "EVTDESC4721"
+
+	option = {
+		name = "EVTOPTA4721"
+		manpower = -0.05
+	}
+	option = {
+		name = "EVTOPTB4721"		
+		prestige = -0.1
+	}
+}   
+
+country_event = {
+
+	id = 4722 #清谈高论 
+	
+	trigger = {
+		has_country_modifier = kuakuaqitan 
+		NOT = { has_country_modifier = shoukouruping }
+	}
+
+	mean_time_to_happen = {
+		months = 420
+	}
+
+	title = "EVTNAME4722"
+	desc = "EVTDESC4722"
+
+	option = {
+		name = "EVTOPTA4722"	
+		diplomats = 2
+	}
+	option = {
+		name = "EVTOPTB4722"		
+		define_advisor = { type = diplomat skill = 4 }
+	}
+}   
+
+#守口如瓶
+country_event = {
+	id = 4723 #心中秘事
+	
+	trigger = {
+		has_country_modifier = shoukouruping
+		NOT = { has_country_modifier = kuakuaqitan }
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	title = "EVTNAME4723"
+	desc = "EVTDESC4723"
+		
+	option = {
+		name = "EVTOPTA4723"
+		ai_chance = { factor = 75 }
+		legitimacy = -0.05
+		prestige = -0.2
+	}	
+	option = {
+		ai_chance = { factor = 25 }
+		name = "EVTOPTB4723"
+		legitimacy = -0.1
+		prestige = -0.1
+	}	
+}
+
+country_event = {   
+
+	id = 4724  #坚守信条
+
+	trigger = {
+		has_country_modifier = shoukouruping
+		NOT = { has_country_modifier = kuakuaqitan }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4724"
+	desc = "EVTDESC4724"
+	
+	option = {
+		name = "EVTOPTA4724"		
+		ai_chance = { factor = 55 }
+		prestige = 0.15
+		badboy = -1
+	}
+	option = {
+		name = "EVTOPTB4724"	
+		ai_chance = { factor = 45 }
+		badboy = -2
+	}
+}
+
+#不近女色
+country_event = { 
+	id = 4725 #子嗣匮乏
+	
+	trigger = {
+		has_country_modifier = bujinnvse
+		NOT = { has_country_modifier = huangyinwudu }
+		has_heir = no
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	title = "EVTNAME4725"
+	desc = "EVTDESC4725"
+		
+	option = { 
+		name = "EVTOPTA4725"
+		ai_chance = { 
+			factor = 70
+		}
+		aristocracy_plutocracy = -1
+	}
+	option = { 
+		name = "EVTOPTB4725"
+		ai_chance = { 
+			factor = 30
+		}
+		centralization_decentralization = 1
+		aristocracy_plutocracy = 1
+	}
+}
+
+
+country_event = {
+	id = 4726  #后继有人
+	
+	trigger = {
+		has_country_modifier = bujinnvse
+		NOT = { has_country_modifier = huangyinwudu }
+		has_heir = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	title = "EVTNAME4726"
+	desc = "EVTDESC4726"
+		
+	option = {
+		name = "EVTOPTA4726"
+		legitimacy = 0.15
+		prestige = 0.05
+	}	
+}
+
+#荒淫无度
+country_event = {
+
+	id = 4727  #宫斗事件
+	
+	trigger = {
+		has_country_modifier = huangyinwudu
+		NOT = { has_country_modifier = bujinnvse }
+		has_heir = yes
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4727"
+	desc = "EVTDESC4727"
+	
+	option = {
+		name = "EVTOPTA4727"		
+		ai_chance = { factor = 75 }
+		prestige = -0.05
+		kill_heir = THIS
+	}
+	option = {
+		name = "EVTOPTB4727"		
+		ai_chance = { factor = 25 }
+		legitimacy = -0.2
+		random_country = { 
+			limit = { 
+				alliance_with = THIS
+			}
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 4728
+	# 子嗣众多
+	trigger = { 
+		has_country_modifier = huangyinwudu
+		NOT = { 
+			has_country_modifier = bujinnvse
+		}
+		has_heir = yes
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME4728"
+	desc = "EVTDESC4728"
+	option = { 
+		name = "EVTOPTA4728"
+		# 把子嗣分封出去		
+	                ai_chance = { factor = 70 }
+		stability = 1
+		aristocracy_plutocracy = 1
+	}
+	option = { 
+		name = "EVTOPTB4728"
+		ai_chance = { 
+			factor = 30
+		}
+		centralization_decentralization = -1
+		aristocracy_plutocracy = -1
+	}
+}
+
+#仁爱亲下
+country_event = {
+
+	id = 4729  #仁政治国
+	
+	trigger = {
+		has_country_modifier = renaiqinxia
+		NOT = { has_country_modifier = gaoaolengku }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	title = "EVTNAME4729"
+	desc = "EVTDESC4729"
+
+	option = {
+		name = "EVTOPTA4729"		
+		ai_chance = { factor = 50 }
+		prestige = -0.02
+		inflation = 1
+	}
+	option = {
+		name = "EVTOPTB4729"		
+		ai_chance = { factor = 50 }
+		random_owned = {
+			limit = {
+				NOT = { is_colony = yes }
+			}
+			anti_tax_rebels = 1
+		}
+	}
+}
+
+country_event = { 
+	id = 4730
+	# 全民拥护
+	trigger = { 
+		has_country_modifier = renaiqinxia
+		NOT = { 
+			has_country_modifier = gaoaolengku
+		}
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME4730"
+	desc = "EVTDESC4730"
+	option = { 
+		name = "EVTOPTA4730"
+		# 远民来服
+		ai_chance = { 
+			factor = 50
+		}
+		spies = 2
+	}
+	option = { 
+		name = "EVTOPTB4730"
+		ai_chance = { 
+			factor = 50
+		}
+		prestige = 0.1
+	}
+}
+
+
+#高傲冷漠
+country_event = {
+	id = 4731  #独善其身
+	title = "EVTNAME4731"
+	desc = "EVTDESC4731"
+	
+	trigger = {
+		has_country_modifier = gaoaolengku
+                NOT = { has_country_modifier = renaiqinxia }
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	option = {
+		name = "EVTOPTA4731"
+		officials = 2
+		prestige = 0.05
+		cultural_tradition = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB4731"
+		government_tech = 0.1
+	}
+}
+
+country_event = {
+
+	id = 4732 #孤家寡人
+	
+	trigger = {
+		has_country_modifier = gaoaolengku
+                NOT = { has_country_modifier = renaiqinxia }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4732"
+	desc = "EVTDESC4732"
+
+	option = {
+		name = "EVTOPTA4732"		
+		ai_chance = { factor = 55 }
+		random_list = { 
+			60 = { }
+			40 = { 
+				stability = -1
+			}
+		}
+		prestige = -0.05
+	}
+	option = {
+		name = "EVTOPTB4732"		
+		ai_chance = { factor = 45 }
+		years_of_income = -0.05
+		prestige = -0.10
+	}
+}
+
+#坚毅不屈
+country_event = { 
+	id = 4733
+	# 一代雄才
+	trigger = { 
+		has_country_modifier = jianyibuqu
+		NOT = { 
+			has_country_modifier = nuoruodanqie
+		}
+	}
+	mean_time_to_happen = { 
+		months = 400
+	}
+	title = "EVTNAME4733"
+	desc = "EVTDESC4733"
+	option = { 
+		name = "EVTOPTA4733"
+		ai_chance = { 
+			factor = 65
+		}
+		random_country = { 
+			limit = { 
+				num_of_cities = 2
+				any_neighbor_country = { tag = THIS }
+			}
+			random_owned = { 
+				limit = { 
+					is_capital = no
+					any_neighbor_province = { 
+						owned_by = THIS
+					}
+				}
+				add_core = THIS
+			}
+		}
+		prestige = 0.02
+	}
+	option = { 
+		name = "EVTOPTB4733"
+		ai_chance = { 
+			factor = 35
+		}
+		define_advisor = { 
+			type = army_organiser
+			skill = 4
+		}
+	}
+}
+	
+country_event = {
+
+	id = 4734 #武夫治国
+	
+	trigger = {
+		has_country_modifier = jianyibuqu
+		NOT = { has_country_modifier = nuoruodanqie }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	title = "EVTNAME4734"
+	desc = "EVTDESC4734"
+
+	option = {
+		name = "EVTOPTA4734"		
+		land_tech = 0.1
+		government_tech = -0.15
+	}
+}
+
+#懦弱胆怯
+country_event = {
+
+	id = 4735 #酒囊饭袋
+	
+	trigger = {
+		has_country_modifier = nuoruodanqie
+		NOT = { has_country_modifier = jianyibuqu }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4735"
+	desc = "EVTDESC4735"
+
+	option = {
+		name = "EVTOPTA4735"		
+		ai_chance = { factor = 45 }
+		offensive_defensive = 1
+		prestige = -0.1	  
+	}
+	option = {
+		name = "EVTOPTB4735"		
+		ai_chance = { factor = 55 }
+		diplomats = 2
+		stability = -1
+		random_country = { 
+			limit = { neighbour = THIS }
+			relation = { who = THIS value = 50 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 4736 #示弱强国
+	trigger = { 
+		has_country_modifier = nuoruodanqie
+		NOT = { 
+			has_country_modifier = jianyibuqu
+		}
+		num_of_electors = 3
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME4736"
+	desc = "EVTDESC4736"
+	option = { 
+		name = "EVTOPTA4736"
+		random_country = { 
+			limit = { 
+				is_emperor = yes
+			}
+			relation = { 
+				who = THIS
+				value = 25
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB4736"
+		any_country = { 
+			limit = { 
+				elector = yes
+			}
+			relation = { 
+				who = THIS
+				value = 10
+			}
+		}
+	}
+}
+
+#勇武好斗
+
+country_event = { 
+	id = 4737
+	# 趁虚而入
+	trigger = { 
+		has_country_modifier = yongwuhaodou
+		NOT = { 
+			has_country_modifier = qianrangrennai
+		}
+		war = no
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME4733"
+	desc = "EVTDESC4733"
+	option = { 
+		name = "EVTOPTA4733"
+		ai_chance = { 
+			factor = 65
+		}
+		random_country = { 
+			limit = { 
+				any_neighbor_country = { 
+					tag = THIS
+				}
+			}
+			random_owned = { 
+				limit = { 
+					is_capital = no
+					any_neighbor_province = { 
+						owned_by = THIS
+					}
+				}
+				add_core = THIS
+			}
+		}
+		prestige = 0.02
+	}
+	option = { 
+		name = "EVTOPTB4733"
+		ai_chance = { 
+			factor = 35
+		}
+		define_advisor = { 
+			type = army_organiser
+			skill = 4
+		}
+	}
+}
+
+country_event = {
+
+	id = 4738 #屠城废民
+	
+	trigger = {
+		has_country_modifier = yongwuhaodou
+		NOT = { has_country_modifier = qianrangrennai }
+		war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	title = "EVTNAME4738"
+	desc = "EVTDESC4738"
+
+	option = {
+		name = "EVTOPTA4738"		
+		war_exhaustion = -2
+	}
+}
+
+#谦让忍耐
+country_event = {
+
+	id = 4740 #隐忍不发
+	
+	trigger = {
+		has_country_modifier = qianrangrennai
+		NOT = { has_country_modifier = yongwuhaodou }
+		war = yes
+	}
+	mean_time_to_happen = {
+		months = 360
+	}
+	title = "EVTNAME4740"
+	desc = "EVTDESC4740"
+	option = {
+		name = "EVTOPTA4740"	
+		prestige = -0.05
+	}
+}
+
+country_event = {
+
+	id = 4741  #厚积薄发
+
+	trigger = {
+		has_country_modifier = qianrangrennai
+		NOT = { has_country_modifier = yongwuhaodou }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4741"
+	desc = "EVTDESC4741"
+	
+	option = {
+		name = "EVTOPTB4741"		
+		land_tech = 0.10
+		army_tradition = 0.1
+	}
+}
+
+#雄心万丈
+country_event = { 
+	id = 4742
+	# 一决雌雄
+	trigger = { 
+		has_country_modifier = xiongxinwanzhang
+		NOT = { 
+			has_country_modifier = zhizuchangle
+		}
+		num_of_electors = 1
+		is_emperor = no
+	}
+	mean_time_to_happen = { 
+		months = 300
+	}
+	title = "EVTNAME4742"
+	desc = "EVTDESC4742"
+	option = { 
+		name = "EVTOPTA4742"
+		prestige = 0.05
+	}
+}
+
+country_event = { 
+	id = 4743
+	# 染指江山
+	trigger = { 
+		has_country_modifier = yongwuhaodou
+		NOT = { 
+			has_country_modifier = qianrangrennai
+		}
+	}
+	mean_time_to_happen = { 
+		months = 360
+	}
+	title = "EVTNAME4733"
+	desc = "EVTDESC4733"
+	option = { 
+		name = "EVTOPTA4733"
+		ai_chance = { 
+			factor = 65
+		}
+		random_country = { 
+			limit = { 
+				any_neighbor_country = { 
+					tag = THIS
+				}
+			}
+			random_owned = { 
+				limit = { 
+					is_capital = no
+					any_neighbor_province = { 
+						owned_by = THIS
+					}
+				}
+				add_core = THIS
+			}
+		}
+		prestige = 0.02
+	}
+	option = { 
+		name = "EVTOPTB4733"
+		ai_chance = { 
+			factor = 35
+		}
+		define_advisor = { 
+			type = army_organiser
+			skill = 4
+		}
+	}
+}
+
+#知足常乐
+
+country_event = {
+
+	id = 4744 #固步自封
+
+	trigger = {
+		NOT = { has_country_modifier = xiongxinwanzhang }
+		has_country_modifier = zhizuchangle
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	title = "EVTNAME4744"
+	desc = "EVTDESC4744"
+
+	option = {
+		name = "EVTOPTA4744"		
+		ai_chance = { factor = 25 }
+		centralization_decentralization = 1
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = 1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4744"		
+		ai_chance = { factor = 75 }
+		random_list = { 
+			25 = { }
+			75 = { 
+				stability = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 4745 #歌舞升平
+
+	trigger = {
+		NOT = { has_country_modifier = xiongxinwanzhang }
+		has_country_modifier = zhizuchangle
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4745"
+	desc = "EVTDESC4745"
+
+	option = {
+		name = "EVTOPTA4745"		
+		government_tech = 0.2
+	}
+	option = {
+		name = "EVTOPTB4745"		
+		colonists = 1
+		officials = 2
+	}
+}
+
+#心机难测
+country_event = {
+
+	id = 4746 #喜好无常
+
+	trigger = {
+		NOT = { has_country_modifier = chengshitanran }
+		has_country_modifier = xinjinance
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.75
+			advisor = philosopher
+		} 
+	}
+
+	title = "EVTNAME4746"
+	desc = "EVTDESC4746"
+
+	option = {
+		name = "EVTOPTA4746"		
+		ai_chance = { factor = 60 }
+		innovative_narrowminded = 1
+		stability = -1		
+	}
+	option = {
+		name = "EVTOPTB4746"		
+		ai_chance = { factor = 40 }
+		innovative_narrowminded = -1
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 4747 #了如指掌
+
+	trigger = {
+		NOT = { has_country_modifier = chengshitanran }
+		has_country_modifier = xinjinance
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	title = "EVTNAME4747"
+	desc = "EVTDESC4747"
+
+	option = {
+		name = "EVTOPTA4747"		
+		trade_tech = 0.1
+	}
+	option = {
+		name = "EVTOPTB4747"		
+		missionaries = 2
+		merchants = 2
+	}
+}
+
+#诚实坦然
+country_event = {
+	id = 4748 #取信于民
+
+	trigger = {
+		has_country_modifier = chengshitanran
+		NOT = { has_country_modifier = xinjinance }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	title = "EVTNAME4748"
+	desc = "EVTDESC4748"
+		
+	option = {
+		name = "EVTOPTA4748"
+		badboy = -2
+	}	
+}
+
+country_event = {
+	id = 4749 #人善人欺
+	trigger = {
+		has_country_modifier = chengshitanran
+		NOT = { has_country_modifier = xinjinance }
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	title = "EVTNAME4749"
+	desc = "EVTDESC4749"
+	option = {
+		name = "EVTOPTA4749"
+		prestige = -0.05
+		random_list = { 
+			50 = { }
+			50 = { 
+				stability = -1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4749"
+		prestige = -0.05
+		random_owned = {
+			limit = { 
+				is_capital = no
+			}
+			noble_rebels = 1
+		}
+	}
+}

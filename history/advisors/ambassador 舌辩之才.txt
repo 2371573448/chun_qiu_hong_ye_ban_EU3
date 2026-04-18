@@ -1,0 +1,100 @@
+#著名的辞令家或者著名的使节
+
+advisor ={
+name ="季札" 
+location =449
+skill =4
+type =ambassador
+date =2142.1.1
+death_date =2214.1.1
+}
+
+advisor ={
+name ="烛之武" 
+location =354
+skill =3
+type =ambassador
+date =2058.1.1
+death_date =2075.1.1
+}
+
+advisor ={
+name ="郦食其"
+location =232
+skill =5
+type =ambassador
+date =2489.1.1
+death_date =2495.1.1
+}
+
+advisor ={
+name ="吕饴甥" 
+location =69
+skill =3
+type =ambassador
+date =2020.1.1
+death_date =2063.1.1
+}
+
+advisor ={
+name ="宁戚" 
+location =283
+skill =5
+type =ambassador
+date =2013.1.1
+death_date =2055.1.1
+}
+
+advisor ={
+name ="蔺相如" 
+location =112
+skill =5
+type =ambassador
+date =2389.1.1
+death_date =2439.1.1
+}
+
+advisor ={
+name ="蔺相如" 
+location =112
+skill =5
+type =ambassador
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="屈完" 
+location =481
+skill =4
+type =ambassador
+date =2030.1.1
+death_date =2060.1.1
+}
+
+advisor ={
+name ="唐雎" 
+location =380
+skill =6
+type =ambassador
+date =2410.1.1
+death_date =2480.1.1
+}
+
+advisor ={
+name ="晏婴" 
+location =267
+skill =4
+type =ambassador
+date =2140.1.1
+death_date =2198.1.1
+}
+
+advisor ={
+name ="申包胥" 
+location =463
+skill =3
+type =ambassador
+date =2175.1.1
+death_date =2210.1.1
+}

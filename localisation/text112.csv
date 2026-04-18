@@ -1,0 +1,86 @@
+;;;;;;;X
+LOG_SETTING_PAUSE;弹出消息时暂停游戏;;;;;;;;;;X
+SM_WATER;高级水面效果;;;;;;;;;;X
+EVTNAME4043;贸易亏损;;;;;;;;;;X
+EVTDESC4043;由于资源过量消耗和竞争的加剧, 贸易环境日益恶\n化, 导致我国远洋贸易收入锐减. 在此情况下我们\n不得不关系东印度贸易公司. ;;;;;;;;;;X
+EVTOPTA4043;真是一场灾难! ;;;;;;;;;;X
+hungarian_hussarDESCR;服饰华丽的匈牙利胡萨尔轻骑兵, 以其严明的\n纪律和战斗精神闻名全欧洲. ;;;;;;;;;;X
+CREATE_NATIVE;$SIZE$名怀有敌意的的原住民出现于$WHERE$. \n;;;;;;;;;;X
+CHANGE_SIEGE;$WHERE$的围城战防御方负面加成$SIZE$;;;;;;;;;;X
+SIEGE_MINOR;小型;;;;;;;;;;X
+SIEGE_AVERAGE;中等;;;;;;;;;;X
+SIEGE_MAJOR;大型;;;;;;;;;;X
+BLOCKADED_PEACE;港口被封锁;;;;;;;;;;X
+EXPENSEVASSAL;附庸国贡赋;;;;;;;;;;X
+CORE_LAST_CONTROL;在$DATE$该国对该地的核心省份宣称权将终止;;;;;;;;;;X
+CORE_HAS_CONTROL;该国拥有该省份的控制权;;;;;;;;;;X
+CORE_EXPLAIN;在以下条件之一持续$YEARS$年后核心宣称权将终止:\n1)失去该省份. \n2)该国结束与该地现所有者的战争\n3)该地最后一次改变政治归属\n\n某一国家在控制某一省份$GAIN$年后可获得核心宣称权;;;;;;;;;;X
+MAINTENANCE;维持费;;;;;;;;;;X
+MAINTENANCE_DUC;金币每个月;;;;;;;;;;X
+ATTR_SHIP_AT_PORT;0% 在港口中;;;;;;;;;;X
+ATTR_HOME_WATERS;0% 在本国水域;;;;;;;;;;X
+ATTR_BASE;基础值;;;;;;;;;;X
+ATTR_TIME_AT_SEA;航行时间;;;;;;;;;;X
+ATTR_OPEN_SEA;公海;;;;;;;;;;X
+ATTR_LEADER;将领谋略;;;;;;;;;;X
+ENEMY_SIEGES;敌军围城;;;;;;;;;;X
+COTLEDGER_COT_FREE_SLOT_S;该贸易中心的空位数量;;;;;;;;;;X
+COTLEDGER_COT_FREE_SLOT_L;如果当前没有空位, 需要先派遣一个商贾排\n挤别国商贾以获得空位;;;;;;;;;;X
+UNITARRIVED_SETUP;当我国部队到达目的地;;;;;;;;;;X
+UNITARRIVED_HEADER;$TYPE$已到达! ;;;;;;;;;;X
+UNITARRIVED_1;$MESSENGER$, ;;;;;;;;;;X
+UNITARRIVED_2;我们的$TYPE$;;;;;;;;;;X
+UNITARRIVED_3;$NAME$;;;;;;;;;;X
+UNITARRIVED_4;已经安全到达;;;;;;;;;;X
+UNITARRIVED_5;$PROV$;;;;;;;;;;X
+UNITARRIVED_6;他们正等待进一步的指令;;;;;;;;;;X
+UNITARRIVED_LOG;$NAME$到达$PROV$;;;;;;;;;;X
+UNITARRIVED_BTN1;确定;;;;;;;;;;X
+UNITARRIVED_BTN2;确定;;;;;;;;;;X
+UNITARRIVED_BTN3;前往;;;;;;;;;;X
+UNITARRIVED_MAP; ;;;;;;;;;;X
+RMEND_SETUP;当与我国有王室联姻关系的君主去世;;;;;;;;;;X
+RMEND_HEADER;一个使者报告来自;;;;;;;;;;X
+RMEND_1; $COUNTRY$ ;;;;;;;;;;X
+RMEND_2;一个令人沮丧的消息, 一位杰出的政治家;;;;;;;;;;X
+RMEND_3; $COUNTRY$ 的$KING$;;;;;;;;;;X
+RMEND_4;已经去世. 我们;;;;;;;;;;X
+RMEND_5;王室联姻;;;;;;;;;;X
+RMEND_6;和 $COUNTRY$ 已经终止了. ;;;;;;;;;;X
+RMEND_LOG;我们和 $COUNTRY$ 的王室联姻已经中止了. ;;;;;;;;;;X
+RMEND_BTN1;好的;;;;;;;;;;X
+RMEND_BTN2;好的;;;;;;;;;;X
+RMEND_BTN3;转到;;;;;;;;;;X
+RMEND_MAP; ;;;;;;;;;;X
+PUEND_SETUP;当我们一位正在联合统治的君主去世时. ;;;;;;;;;;X
+PUEND_HEADER;联合统治结束了;;;;;;;;;;X
+PUEND_1; $COUNTRY$ 的$KING$;;;;;;;;;;X
+PUEND_2;去世了. ;;;;;;;;;;X
+PUEND_3;我们的联合统治;;;;;;;;;;X
+PUEND_4;与 $COUNTRY$ 的;;;;;;;;;;X
+PUEND_5;解散;;;;;;;;;;X
+PUEND_6;我们再一次成为了我们信仰的主人. ;;;;;;;;;;X
+PUEND_LOG;我们与 $COUNTRY$ 的联合统治已经结束了. ;;;;;;;;;;X
+PUEND_BTN1;好的;;;;;;;;;;X
+PUEND_BTN2;好的;;;;;;;;;;X
+PUEND_BTN3;转到;;;;;;;;;;X
+PUEND_MAP; ;;;;;;;;;;X
+ARMY;陆军;;;;;;;;;;X
+NAVY;海军;;;;;;;;;;X
+CVIEW_PRESTIGE_AFFECTS;当前威望带来的效果;;;;;;;;;;X
+EVTNAME6032;边界纠纷;;;;;;;;;;X
+EVTDESC6032; $PROVINCENAME$ 的边境地区有一块长期以来就有争议的边\n境区域, 但是当地人民对于我们的忠诚是没有任何\n疑问的. 考虑到那个被神所抛弃的国家其余部分的\n情况, 当我们决定进一步施加压力时, 他们几乎不\n可能组织起任何认真的抵抗. ;;;;;;;;;;X
+EVTOPTA6032;保护我们的信仰;;;;;;;;;;X
+EVTOPTB6032;和平的解决问题;;;;;;;;;;X
+EVTNAME6033;边界纠纷;;;;;;;;;;X
+EVTDESC6033; $PROVINCENAME$ 的边境地区有一块长期以来就有争议的边\n境区域, 但是当地人民对于我们的忠诚是没有任何\n疑问的. 考虑到那个被神所抛弃的国家其余部分的\n情况, 当我们决定进一步施加压力时, 他们几乎不\n可能组织起任何认真的抵抗. ;;;;;;;;;;X
+EVTOPTA6033;压制争端;;;;;;;;;;X
+EVTOPTB6033;和平的解决问题;;;;;;;;;;X
+CORE_IS_REVOLTER;该省份将能释放出这个国家, \n或者当叛军足够强时也会独立出来. ;;;;;;;;;;X
+MINIMUM_REVOLT_RISK;最小的叛乱风险;;;;;;;;;;X
+AMBIENT;周边环境;;;;;;;;;;X
+WCRD_ATT;这场战争是他们挑起的. ;;;;;;;;;;X
+WCRD_DEF;这是一场自卫战争, \n我们需要帮助我们的盟友. ;;;;;;;;;;X
+LESSER_CANT_PEACE;当宗主国仍然在战争中时, 附属国或者联合统\n治中地位较低的一国是不能签署和平条约的 ;;;;;;;;;;X
+YEARLY_ARMY_TRADITION_DECAY;陆军传统的年度性衰减 ;;;;;;;;;;X
+YEARLY_NAVY_TRADITION_DECAY;海军传统的年度性衰减 ;;;;;;;;;;X

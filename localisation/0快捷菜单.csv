@@ -1,0 +1,72 @@
+XXXXX;XXXX;;;;;;;;;;;;;x
+guanbiquxiaojunzhi_title;关闭取消郡治选项;;;;;;;;;;X
+guanbiquxiaojunzhi_desc;“勿废朕令” ---《大盂鼎》;;;;;;;;;;X
+dakaijianchahukou_title;打开检查户口选项;;;;;;;;;;X
+dakaijianchahukou_desc;人口普查方便计划生育;;;;;;;;;;X
+dakaikuaijiecaidan_title;打开快捷菜单;;;;;;;;;;X
+dakaikuaijiecaidan_desc;快捷菜单中包含了一系列省份决议的隐藏以及打开命令（方便你使用省份决议）;;;;;;;;;;X
+guanbikuaijiecaidan_title;关闭快捷菜单;;;;;;;;;;X
+guanbikuaijiecaidan_desc;你知道吗？关闭快捷菜单的快捷键是ALT+F4;;;;;;;;;;X
+guanbijianchahukou_title;关闭检查户口选项;;;;;;;;;;X
+guanbijianchahukou_desc;没钱没人谁有空检查户口？;;;;;;;;;;X
+dakaiquxiaojunzhi_title;打开取消郡治选项;;;;;;;;;;X
+dakaiquxiaojunzhi_desc;朕虞不贤 吾去之 ;;;;;;;;;;X
+guanbishelijunzhi_title;关闭设立郡治选项;;;;;;;;;;X
+guanbishelijunzhi_desc;萧规曹随;;;;;;;;;;X
+dakaishelijunzhi_title;打开设立郡治选项;;;;;;;;;;X
+dakaishelijunzhi_desc;“汝作朕虞。” ----《书·舜典》 ;;;;;;;;;;X
+guanbiguangchamanyi_title;关闭观察蛮夷选项;;;;;;;;;;X
+guanbiguangchamanyi_desc;我是活雷锋 专治强迫症;;;;;;;;;;X
+dakaiguangchamanyi_title;打开观察蛮夷选项;;;;;;;;;;X
+dakaiguangchamanyi_desc;“君子以思患而豫防之” ---《易·既济》 ;;;;;;;;;;X
+guanbixiyinyimin_title;关闭吸引移民选项;;;;;;;;;;X
+guanbixiyinyimin_desc;没这闲工夫;;;;;;;;;;X
+dakaixiyinyimin_title;打开吸引移民选项;;;;;;;;;;X
+dakaixiyinyimin_desc;人口是第一生产力 ;;;;;;;;;;X
+guanbifengditiaojie_title;关闭封地调节选项;;;;;;;;;;X
+guanbifengditiaojie_desc;此选项包含没收封地，分封封地等一系列省份决议的控制;;;;;;;;;;X
+dakaifengditiaojie_title;打开封地调节选项;;;;;;;;;;X
+dakaifengditiaojie_desc;此选项包含没收封地，分封封地等一系列省份决议的控制 ;;;;;;;;;;X
+kuaijiecaidanpiaoapiao5_title;5年内不想看见快捷菜单选项;;;;;;;;;;X
+kuaijiecaidanpiaoapiao5_desc;专治强迫症;;;;;;;;;;X
+guanbijuehegongcheng_title;关闭掘河攻城选项;;;;;;;;;;X
+guanbijuehegongcheng_desc;人命关天;;;;;;;;;;X
+dakaijuehegongcheng_title;打开掘河攻城选项;;;;;;;;;;X
+dakaijuehegongcheng_desc;事急从权 ;;;;;;;;;;X
+guanbisuoyou_title;关闭所有省份决议选项;;;;;;;;;;X
+guanbisuoyou_desc;所有省份决议已关闭;;;;;;;;;;X
+dakaisuoyou_title;打开所有省份决议选项;;;;;;;;;;X
+dakaisuoyou_desc;所有省份决议已打开 ;;;;;;;;;;X
+guanbiyiminzhengce_title;关闭移民政策选项;;;;;;;;;;X
+guanbiyiminzhengce_desc;移民政策已关闭 猫星人休想侵略地球;;;;;;;;;;X
+dakaiyiminzhengce_title;打开移民政策选项;;;;;;;;;;X
+dakaiyiminzhengce_desc;警告--由于移民政策开启 电脑将不负重担而爆炸 ;;;;;;;;;;X
+guanbimytj_title;关闭贸易中心相关决议选项;;;;;;;;;;X
+guanbimytj_desc;自由市场好;;;;;;;;;;X
+dakaimytj_title;打开贸易中心相关决议选项;;;;;;;;;;X
+dakaimytj_desc;计划经济妙 ;;;;;;;;;;X
+qiangxingguanbimaoyizhongxin_title;强行关闭贸易中心;;;;;;;;;;X
+shudaozhinanheping_title;蜀道难难于上青天（和平）;;;;;;;;;;X
+shudaozhinanzhanzheng_title;蜀道难难于上青天（战争）;;;;;;;;;;X
+shudaozhinanjiechu_title;天堑变通途;;;;;;;;;;X
+shudaonan;蜀道难. ;;;;;;;;;;X
+yinshangzhanbu1;终胜之兆. ;;;;;;;;;;X
+desc_yinshangzhanbu1;占卜结果显示我们最终一定会获胜，我方贵族都贡献出自己的力量;;;;;;;;;;X
+yinshangzhanbu2;速胜之兆. ;;;;;;;;;;X
+desc_yinshangzhanbu2;占卜结果显示我们会快速战胜敌人，我方已经提前准备好宴席招待各位战士;;;;;;;;;;X
+yinshangzhanbu3;祖先之命. ;;;;;;;;;;X
+desc_yinshangzhanbu3;占卜结果显示我们的战争受到祖先的保佑，国内贵族普遍支持这场战争;;;;;;;;;;X
+yinshangzhanbu4;不应之战. ;;;;;;;;;;X
+desc_yinshangzhanbu4;对这场战争我们占卜不出结果;;;;;;;;;;X
+yinshangzhanbu5;违背祖先. ;;;;;;;;;;X
+desc_yinshangzhanbu5;占卜结果显示我们违背了上天，贵族普遍不支持这场战争;;;;;;;;;X
+yinshangzhanbu6;动荡之兆. ;;;;;;;;;;X
+desc_yinshangzhanbu6;占卜结果显示出对君主统治不利的预言，贵族借机质疑君主;;;;;;;;;;X
+yinshangzhanbu7;失败之兆. ;;;;;;;;;;X
+desc_yinshangzhanbu7;占卜结果显示这场必将失败，军队受到了影响;;;;;;;;;;X
+yinshangzhanbujueyi_title;占卜凶吉;;;;;;;;;;X
+yinshangzhanbujueyi_desc;殷商军改-战争时期好占卜 ;;;;;;;;;;X
+yinshangbuzhanbu;君主不好占卜;;;;;;;;;;X
+desc_yinshangbuzhanbu;君主不好占卜，这使得下层贵族借机怀疑王位的正当性;;;;;;;;;;X
+zhengdunlizhi2_title;整顿吏治;;;;;;;;;;X
+zhengdunlizhi2_desc;君主借助官僚系统整顿吏治 ;;;;;;;;;;X

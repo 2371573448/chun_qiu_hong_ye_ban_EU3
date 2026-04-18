@@ -1,0 +1,2258 @@
+
+#########################################################
+#		Scandal at the Court		  	#
+#########################################################
+
+country_event = {
+
+	id = 4204
+	
+
+	trigger = {
+		num_of_royal_marriages = 2
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4204"
+	desc = "EVTDESC4204"
+	
+	option = {
+		name = "EVTOPTA4204"		# Take the blame and move on.
+		ai_chance = { factor = 42 }
+		prestige = -0.1
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4204"		# Bribe an advisor to take the blame.
+		ai_chance = { factor = 25 }
+		years_of_income = -0.1
+		stability = -1
+	}
+}
+
+#########################################################
+#		Wave of obscurantism		  	#
+#########################################################
+
+country_event = {
+
+	id = 4205
+	
+
+	trigger = {
+		NOT = { has_country_modifier = obscurantism1 }
+		innovative_narrowminded = 3
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4205"
+	desc = "EVTDESC4205"
+	
+	option = {
+		name = "EVTOPTA4205"		# Knowledge is power
+		ai_chance = { factor = 45 }
+		add_country_modifier = {
+			name = "obscurantism1"
+			duration = 4260
+		}
+	}
+	option = {
+		name = "EVTOPTB4205"		# Ignorance is bliss
+		ai_chance = { factor = 55 }
+		prestige = -0.015
+	}
+}
+
+#########################################################
+#		Exceptional year			#
+#########################################################
+
+country_event = {
+
+	id = 4206
+	
+
+	trigger = {
+		OR = {
+			advisor = treasurer
+			advisor = sheriff
+			advisor = alderman
+			advisor = collector
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4206"
+	desc = "EVTDESC4206"
+	
+	option = {
+		name = "EVTOPTA4206"		# Collect the benefits over time
+		ai_chance = { factor = 45 }
+		add_country_modifier = {
+			name = "exceptional_year1"
+			duration = 365
+		}
+	}
+	option = {
+		name = "EVTOPTB4206"		# Take advantage of the benefits at once
+		ai_chance = { factor = 55 }
+		years_of_income = 0.2
+	}
+}
+
+#########################################################
+#		Rush of colonists			#
+#########################################################
+
+country_event = {
+
+	id = 4207
+	
+
+	trigger = {
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.66
+			NOT = { land_naval = -2 }
+		}
+		modifier = {
+			factor = 0.10
+			idea = vice_roys
+		}
+	}
+
+	title = "EVTNAME4207"
+	desc = "EVTDESC4207"
+	
+	option = {
+		name = "EVTOPTA4207"		# Gain extra colonists
+		colonists = 1
+	}
+}
+
+
+#########################################################
+#		Diplomatic event		  	#
+#########################################################
+
+# Diplomatic move
+country_event = {
+
+	id = 4208
+	
+	
+
+	trigger = {
+		DIP = 7
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4208"
+	desc = "EVTDESC4208"
+	
+	option = {
+		name = "EVTOPTA4208"		# Appoint new diplomats
+		ai_chance = { factor = 60 }
+		diplomats = 3
+				random_country = {
+			limit = { neighbour = THIS }
+			relation = { who = THIS value = -25 }
+		}
+	}	
+	option = {
+		name = "EVTOPTB4208"		# Improve relations with neighboring states
+		ai_chance = { factor = 40 }
+		diplomats = 1
+		random_country = {
+			limit = { neighbour = THIS }
+			relation = { who = THIS value = 25 }
+		}
+	}
+}
+
+#########################################################
+#		Good government policies	  	#
+#########################################################
+
+country_event = {
+
+	id = 4212
+	
+
+	trigger = {
+		ADM = 8
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.5
+			idea = bill_of_rights
+		}
+	}
+
+	title = "EVTNAME4212"
+	desc = "EVTDESC4212"
+
+	option = {
+		name = "EVTOPTA4212"		# Use the money to bring stability to our nation
+		ai_chance = { factor = 40 }
+		stability = 1
+	}
+	option = {
+		name = "EVTOPTB4212"		# Invest the money in our government
+		ai_chance = { factor = 20 }
+		government_tech = 0.15
+		
+	}
+	option = {
+		name = "EVTOPTC4212"		# Let's fill our treasury while we have their support
+		ai_chance = { factor = 20 }
+		years_of_income = 0.25
+	}
+		option = {
+		name = "EVTOPTD4212"		# prestige
+		ai_chance = { factor = 20 }
+		years_of_income = 0.25
+	}
+}
+
+
+#########################################################
+#		Unhappiness among the peasantry	  	#
+#########################################################
+
+country_event = {
+
+	id = 4214
+	
+
+	trigger = {
+		NOT = { serfdom_freesubjects = -3 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4214"
+	desc = "EVTDESC4214"
+
+	option = {
+		name = "EVTOPTA4214"		# We rule as we see fit.
+		ai_chance = { factor = 75 }
+		prestige = -0.02
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4214"		# Prevent the discontent from spreading.
+		ai_chance = { factor = 25 }
+		prestige = -0.2
+		years_of_income = -0.2
+	}
+}
+
+
+#########################################################
+#		Diplomatic insult		  	#
+#########################################################
+
+country_event = {
+
+	id = 4217
+	
+
+	trigger = {
+		OR = {
+			num_of_royal_marriages = 1
+			num_of_vassals = 1
+			num_of_unions = 1
+		}
+		any_neighbor_country = {
+			war = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4217"
+	desc = "EVTDESC4217"
+
+	option = {
+		name = "EVTOPTA4217"		# We won't forget this.
+		ai_chance = { factor = 55 }
+		random_country = {
+			limit = { neighbour = THIS  }
+			add_casus_belli = {	
+				target = THIS
+				type = cb_insult
+				months = 12
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4217"		# Try to ease the tension.
+		ai_chance = { factor = 45 }
+		any_neighbor_country = {
+			limit = { war = no }
+			relation = { who = THIS value = 60 }
+		}
+	}
+}
+
+
+#########################################################
+#			Nobles			  	#
+#########################################################
+
+country_event = {
+
+	id = 4218
+	
+
+	trigger = {
+		NOT = { aristocracy_plutocracy = -1 }
+		aristocracy_plutocracy = -3
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4218"
+	desc = "EVTDESC4218"
+
+	option = {
+		name = "EVTOPTA4218"		# Accept their rightful claims.
+		ai_chance = { factor = 55 }
+		aristocracy_plutocracy = -1
+	}
+	option = {
+		name = "EVTOPTB4218"		# Ignore their demands.
+		ai_chance = { factor = 45 }
+		add_country_modifier = {
+			name = "disorder1"
+			duration = 365
+		}
+	}
+}
+
+#########################################################
+#		Nobles ally with foreign power	  	#
+#########################################################
+
+country_event = {
+
+	id = 4220
+	
+
+	trigger = {
+		NOT = { aristocracy_plutocracy = 2 }
+		centralization_decentralization = 1
+		NOT = { DIP = 7 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4220"
+	desc = "EVTDESC4220"
+
+	option = {
+		name = "EVTOPTA4220"		# They will pay for their treachery
+		ai_chance = { factor = 55 }
+		random_country = {
+			limit = { neighbour = THIS
+				NOT = { vassal_of = THIS }
+				}
+			add_casus_belli = {	
+				target = THIS
+				type = cb_insult
+				months = 12
+			}
+		}
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4220"		# We'll deal with them later
+		ai_chance = { factor = 45 }
+		prestige = -0.05
+		stability = -1
+	}
+}
+
+#########################################################
+#		Sale of offices				#
+#########################################################
+
+country_event = {
+
+	id = 4222
+	
+
+	trigger = {
+		OR = {
+			number_of_loans = 1
+			is_bankrupt = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4222"
+	desc = "EVTDESC4222"
+
+	option = {
+		name = "EVTOPTA4222"		# Accept
+		ai_chance = { factor = 25 }
+		years_of_income = 1
+		prestige = -0.1
+		add_country_modifier = {
+			name = "reduced_taxes1"
+			duration = 14600
+		}
+	}
+	option = {
+		name = "EVTOPTB4222"		# Decline
+		ai_chance = { factor = 75 }
+		years_of_income = -0.35
+		prestige = 0.1
+	}
+}
+
+
+#########################################################
+#	Nobles demand increased pensions		#
+#########################################################
+
+country_event = {
+
+	id = 4223
+	
+
+	trigger = {
+		NOT = { aristocracy_plutocracy = -1 }
+		NOT = { ADM = 6 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4223"
+	desc = "EVTDESC4223"
+
+	option = {
+		name = "EVTOPTA4223"		# Accept their demands.
+		ai_chance = { factor = 75 }
+		add_country_modifier = {
+			name = "tax_income_loss1"
+			duration = 42600
+		}		
+	}
+	option = {
+		name = "EVTOPTB4223"		# Refuse their demands.
+		ai_chance = { factor = 25 }
+		stability = -1
+	}
+}
+
+#########################################################
+#		Establish Cantonments			#
+#########################################################
+
+country_event = {
+
+	id = 4224
+	
+
+	trigger = {
+		NOT = { offensive_defensive = 2 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.25
+			idea = vice_roys
+		}
+		modifier = {
+			factor = 1.33
+			has_national_focus = yes
+		}
+	}
+
+	title = "EVTNAME4224"
+	desc = "EVTDESC4224"
+
+	option = {
+		name = "EVTOPTA4224"		# Draft citizens
+		ai_chance = { factor = 90 }
+		random_owned = {
+			change_manpower = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB4224"		# Mass draft with financial incentive
+		ai_chance = { factor = 10 }
+		treasury = -100
+		random_owned = {
+			change_manpower = 2
+		}
+	}
+}
+
+#########################################################
+#		Nobles demand old rights		#
+#########################################################
+
+country_event = {
+
+	id = 4225
+	
+
+	trigger = {
+		NOT = { centralization_decentralization = 0 }
+		NOT = { aristocracy_plutocracy = 0 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4225"
+	desc = "EVTDESC4225"
+
+	option = {
+		name = "EVTOPTA4225"		# Accept demands.
+		ai_chance = { factor = 25 }
+		centralization_decentralization = 1
+		stability = 1
+	}
+	option = {
+		name = "EVTOPTB4225"		# Reject demands.
+		ai_chance = { factor = 75 }
+		stability = -1
+	}
+}
+
+#########################################################
+#		Italian engineer available		#
+#########################################################
+
+country_event = {
+
+	id = 4227
+	
+
+	trigger = {
+		idea = deus_vult
+		prestige = 0.15
+		treasury = 500
+		NOT = { offensive_defensive = 5 }
+		quality_quantity = -4
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		
+		modifier = {
+			factor = 2.0
+			offensive_defensive = 3
+		}
+		modifier = {
+			factor = 0.66
+			NOT = { offensive_defensive = -2 }
+		}
+	}
+
+	title = "EVTNAME4227"
+	desc = "EVTDESC4227"
+
+	option = {
+		name = "EVTOPTA4227"		# Hire the engineer
+		ai_chance = { factor = 75 }
+		prestige = 0.1
+		offensive_defensive = 1
+		quality_quantity = -1
+		land_tech = 200
+		treasury = -500
+	}
+	option = {
+		name = "EVTOPTB4227"		# Decline the offer
+		ai_chance = { factor = 25 }
+		prestige = -0.05
+	}
+}
+
+
+#########################################################
+#		Grant nobles aid			#
+#########################################################
+
+country_event = {
+
+	id = 4232
+
+	trigger = {
+		NOT = { centralization_decentralization = 0 }
+		NOT = { aristocracy_plutocracy = 0 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4232"
+	desc = "EVTDESC4232"
+
+	option = {
+		name = "EVTOPTA4232"		# Grant aid
+		ai_chance = { factor = 75 }
+		years_of_income = -0.25
+	}
+	option = {
+		name = "EVTOPTB4232"		# Deny aid
+		ai_chance = { factor = 25 }
+		stability = -1
+	}
+}
+
+#########################################################
+#	Support for dissidents abroad			#
+#########################################################
+
+country_event = {
+
+	id = 4233
+	
+
+	trigger = {
+		NOT = { ADM = 6 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4233"
+	desc = "EVTDESC4233"
+
+	option = {
+		name = "EVTOPTA4233"		# Support
+		ai_chance = { factor = 75 }
+		treasury = -50
+		random_country = {
+			limit = { neighbour = THIS }
+			relation = { who = THIS value = -60 }
+		}
+	}
+	option = {
+		name = "EVTOPTB4233"		# Decline
+		ai_chance = { factor = 25 }
+		prestige = -0.2
+		stability = -1
+	}
+}
+#########################################################
+#		Advisor events				#
+#########################################################
+
+# Parliament demands removal of advisor
+country_event = {
+
+	id = 4234
+	
+
+	trigger = {
+		advisor = statesman
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4234"
+	desc = "EVTDESC4234"
+
+	option = {
+		name = "EVTOPTA4234"		# Fire him!
+		ai_chance = { factor = 40 }
+		remove_advisor = statesman
+	}
+	option = {
+		name = "EVTOPTB4234"		# We have faith in him
+		ai_chance = { factor = 60 }
+		stability = -1
+	}
+}
+
+
+# Statesman gains power
+country_event = {
+
+	id = 4235
+	
+
+	trigger = {
+		statesman = 4
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4235"
+	desc = "EVTDESC4235"
+
+	option = {
+		name = "EVTOPTA4235"		# Fire him!
+		ai_chance = { factor = 75 }
+		remove_advisor = statesman
+		stability = -2
+	}
+	option = {
+		name = "EVTOPTB4235"		# He is doing a great job
+		ai_chance = { factor = 25 }
+		centralization_decentralization = 1
+		prestige = -0.1
+		legitimacy = -0.2
+	}
+}
+
+#########################################################
+#		Peasants getting uppity			#
+#########################################################
+
+country_event = {
+
+	id = 4236
+	
+
+	trigger = {
+		NOT = { serfdom_freesubjects = 0 }
+		serfdom_freesubjects = -3
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4236"
+	desc = "EVTDESC4236"
+
+	option = {
+		name = "EVTOPTA4236"		# Enforce serfdom
+		ai_chance = { factor = 25 }
+		serfdom_freesubjects = -1
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4236"		# These things happen
+		ai_chance = { factor = 75 }
+		serfdom_freesubjects = 1
+		years_of_income = -0.25
+		stability = 1
+	}
+}
+
+#########################################################
+#		Military traditions scorned		#
+#########################################################
+
+# Naval traditions scorned
+country_event = {
+
+	id = 4237
+	
+
+	trigger = {
+		NOT = { land_naval = -1 }
+		navy_tradition = 0.1
+		
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4237"
+	desc = "EVTDESC4237"
+
+	option = {
+		name = "EVTOPTA4237"		# This is well, land is where its at
+		ai_chance = { factor = 60 }
+		land_naval = -1
+		prestige = -0.1
+	}
+	option = {
+		name = "EVTOPTB4237"		# We must stop this deterioration
+		ai_chance = { factor = 40 }
+		land_naval = 1
+				prestige = -0.1
+	}
+}
+
+# Land traditions scorned
+country_event = {
+
+	id = 4238
+	
+
+	trigger = {
+		land_naval = 1
+		num_of_ports = 1
+		army_tradition = 0.1
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4238"
+	desc = "EVTDESC4238"
+
+	option = {
+		name = "EVTOPTA4238"		# The fleet is our wooden wall!
+		ai_chance = { factor = 60 }
+		land_naval = 1
+		prestige = -0.1
+	}
+	option = {
+		name = "EVTOPTB4238"		# We must stop this deterioration
+		land_naval = -1
+		prestige = -0.1
+	}
+}
+
+#########################################################
+#		Opposing military schools		#
+#########################################################
+
+country_event = {
+
+	id = 4239
+	
+
+	trigger = {
+		MIL = 7
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4239"
+	desc = "EVTDESC4239"
+
+	option = {
+		name = "EVTOPTA4239"		# Attack is always the best option
+		ai_chance = { factor = 55 }
+		offensive_defensive = -1
+		prestige = -0.1
+	}
+	option = {
+		name = "EVTOPTB4239"		# Let them come to us
+		ai_chance = { factor = 45 }
+		offensive_defensive = 1
+		prestige = -0.1	
+	}
+}
+
+
+#########################################################
+#	Representative national institutions		#
+#########################################################
+
+country_event = {
+
+	id = 4240
+	
+
+	trigger = {
+		centralization_decentralization = 1
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4240"
+	desc = "EVTDESC4240"
+
+	option = {
+		name = "EVTOPTA4240"		# L'etat c'est moi!
+		ai_chance = { factor = 90 }
+		centralization_decentralization = -1
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4240"		# Give them what they want
+		ai_chance = { factor = 10 }
+		centralization_decentralization = 1
+		stability = 1
+	}
+}
+
+
+#########################################################
+#		Exceptional Court Painter		#
+#########################################################
+
+country_event = {
+
+	id = 4241
+	
+
+	trigger = {
+		NOT = { badboy = 0.05 }
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4241"
+	desc = "EVTDESC4241"
+
+	option = {
+		name = "EVTOPTA4241"		# Hire him
+		ai_chance = { factor = 75 }
+		treasury = -100
+		prestige = 0.2
+		stability = 1
+	}
+	option = {
+		name = "EVTOPTB4241"		# Decline his services
+		ai_chance = { factor = 25 }
+	}
+}
+
+
+#########################################################
+#			Grand Ball			#
+#########################################################
+
+country_event = {
+
+	id = 4242
+	
+
+	trigger = {
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4242"
+	desc = "EVTDESC4242"
+
+	option = {
+		name = "EVTOPTA4242"		# Arrange a ball
+		ai_chance = { factor = 60 }
+		prestige = 0.1
+		treasury = -20
+	}
+	option = {
+		name = "EVTOPTB4242"		# Don't arrange a ball
+		ai_chance = { factor = 40 }
+		prestige = -0.1
+	}
+}
+
+
+
+country_event = {
+
+	id = 4244
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4244"
+	desc = "EVTDESC4244"
+		
+	option = {
+		name = "EVTOPTA4244"
+				ai_chance = { factor = 70 }
+		prestige = -0.05
+		officials = -1
+		legitimacy = -0.05
+	}
+	option = {
+		name = "EVTOPTB4244"
+				ai_chance = { factor = 30 }
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 4245
+	
+	trigger = {
+		stability = 0
+		inflation = 5
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4245"
+	desc = "EVTDESC4245"
+		
+	option = {
+		name = "EVTOPTA4245"
+		ai_chance = { factor = 30 }
+		inflation = -3
+		stability = -1
+		prestige = -0.15
+		legitimacy = -0.15
+		officials = -5
+	}
+	option = {
+		name = "EVTOPTB4245"
+		ai_chance = { factor = 70 }
+		inflation = 2
+	}
+}
+
+country_event = {
+	id = 4246
+	
+	trigger = {
+		stability = 0
+		war = no
+		treasury = 200
+		NOT = { war_exhaustion = 0.1 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4246"
+	desc = "EVTDESC4246"
+		
+	option = {
+		name = "EVTOPTA4246"
+		stability = -1
+		prestige = -0.05
+		legitimacy = -0.15
+		inflation = 2
+		add_country_modifier = {
+			name = "disorder2"
+			duration = 365
+		}
+	}
+}
+
+country_event = {
+	id = 4247
+	
+	trigger = {
+		stability = 0
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4247"
+	desc = "EVTDESC4247"
+		
+	option = {
+		name = "EVTOPTA4247"
+		ai_chance = { factor = 50 }
+		stability = -1
+		offensive_defensive = 1
+	}
+	option = {
+		name = "EVTOPTB4247"
+		ai_chance = { factor = 50 }
+		stability = -1
+		offensive_defensive = -1
+	}
+}
+
+country_event = {
+	id = 4248
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4248"
+	desc = "EVTDESC4248"
+		
+	option = {
+		name = "EVTOPTA4248"
+		stability = -1
+	}
+}
+
+country_event = {
+	id = 4249
+	
+	trigger = {
+		stability = 1
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4249"
+	desc = "EVTDESC4249"
+		
+	option = {
+		name = "EVTOPTA4249"
+				ai_chance = { factor = 70 }
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4249"
+				ai_chance = { factor = 30 }
+		years_of_income = -0.2
+	}	
+}
+
+country_event = {
+	id = 4250
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4250"
+	desc = "EVTDESC4250"
+		
+	option = {
+		name = "EVTOPTA4250"
+				ai_chance = { factor = 70 }
+		stability = -1
+		inflation = 1
+		add_country_modifier = { 
+			name = "tongzhangjian"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB4250"
+				ai_chance = { factor = 30 }
+		stability = -1
+		inflation = -2
+		add_country_modifier = { 
+			name = "tongzhangjia"
+			duration = 3650
+		}
+	}	
+}
+
+country_event = {
+	id = 4251
+	
+	trigger = {
+		stability = -2
+		war_exhaustion = 5
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4251"
+	desc = "EVTDESC4251"
+		
+	option = {
+		name = "EVTOPTA4251"
+				ai_chance = { factor = 70 }
+		stability = -1
+		legitimacy = -0.1
+		war_exhaustion = -5
+			add_country_modifier = {
+			name = "shuijixiuyangshengxi"
+			duration = 365
+		}
+	}
+	option = {
+		name = "EVTOPTB4251"
+				ai_chance = { factor = 30 }
+		war_exhaustion = -1
+	}	
+}
+
+country_event = {
+	id = 4252
+	
+	trigger = {
+		stability = 0
+		army_tradition = 0.5
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4252"
+	desc = "EVTDESC4252"
+		
+	option = {
+		name = "EVTOPTA4252"
+						ai_chance = { factor = 30 }
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4252"
+						ai_chance = { factor = 70 }
+		army_tradition = -0.2
+	}	
+}
+	
+country_event = {
+	id = 4255
+	
+	trigger = {
+		num_of_cities = 5
+		any_owned_province = {
+			NOT = { base_tax = 5 }
+			base_tax = 2
+			is_capital = no
+			is_overseas = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4255"
+	desc = "EVTDESC4255"
+		
+	option = {
+		name = "EVTOPTA4255"
+		ai_chance = { factor = 80 }
+		random_owned = {
+			limit = {
+				NOT = { base_tax = 5 }
+				base_tax = 2
+				is_capital = no
+				is_overseas = no
+			}
+			base_tax = -1
+		}
+		capital_scope = {
+			base_tax = 1
+		}
+		stability = -1
+	}
+	option = {
+		ai_chance = { factor = 20 }
+		name = "EVTOPTB4225"
+		serfdom_freesubjects = -1
+	}	
+}
+
+country_event = {
+	id = 4256
+	
+	trigger = {
+		NOT = { DIP = 8 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4256"
+	desc = "EVTDESC4256"
+		
+	option = {
+		name = "EVTOPTA4256"
+		ai_chance = { factor = 70 }
+		prestige = -0.05
+		legitimacy = -0.2
+		badboy = 2
+	}
+	option = {
+		name = "EVTOPTB4256"
+		years_of_income = -0.1
+				ai_chance = { factor = 30 }
+		stability = -1
+	}	
+	
+}
+
+country_event = {
+	id = 4257
+	
+	trigger = {
+		rival_countries = {
+			war_with = THIS
+		}
+		war_exhaustion = 5
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4257"
+	desc = "EVTDESC4257"
+		
+	option = {
+		name = "EVTOPTA4257"
+		war_exhaustion = -1
+	}
+
+}
+
+country_event = {
+	id = 4258
+	
+	
+	trigger = {
+		rival_countries = {
+			neighbour = THIS
+		}
+		DIP = 6
+	}
+
+	mean_time_to_happen =  {
+		months = 2400
+		modifier = {
+			factor = 0.95
+			ADM = 7
+		}
+		modifier = {
+			factor = 0.95
+			ADM = 8
+		}
+		modifier = {
+			factor = 0.95
+			ADM = 9
+		}
+		modifier = {
+			factor = 0.95
+			MIL = 7
+		}
+		modifier = {
+			factor = 0.95
+			MIL = 8
+		}
+		modifier = {
+			factor = 0.95
+			MIL = 9
+		}
+		modifier = {
+			factor = 0.95
+			DIP = 7
+		}
+		modifier = {
+			factor = 0.95
+			DIP = 8
+		}
+		modifier = {
+			factor = 0.95
+			DIP = 9
+		}
+		modifier = {
+			factor = 0.66
+			idea = naval_glory
+		}
+	}
+
+	title = "EVTNAME4258"
+	desc = "EVTDESC4258"
+
+	option = {
+		name = "EVTOPTA4258"
+		rival_countries = {
+			random_owned = {
+				limit = {
+					any_neighbor_province = {
+						owned_by = THIS
+					}
+				}
+				add_core = THIS
+			}
+		}	
+		prestige = 0.05	
+	}
+}
+
+country_event = {
+
+	id = 4259
+	
+	trigger = {
+		war = no
+		prestige = 0.5
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4259"
+	desc = "EVTDESC4259"
+		
+	option = {
+		name = "EVTOPTA4259"
+		ai_chance = { factor = 70 }
+		prestige = 0.1
+		manpower = -0.2
+	}
+	option = {
+		name = "EVTOPTB4259"
+						ai_chance = { factor = 30 }
+		prestige = 0.1
+		years_of_income = -0.1
+	}
+}
+
+country_event = {
+
+	id = 4260
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4260"
+	desc = "EVTDESC4260"
+		
+	option = {
+		name = "EVTOPTA4260"
+		ai_chance = { factor = 70 }
+		land_tech = -0.10
+	}
+	option = {
+		name = "EVTOPTB4260"
+		ai_chance = { factor = 30 }
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 4261
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4261"
+	desc = "EVTDESC4261"
+		
+	option = {
+		name = "EVTOPTA4261"
+		ai_chance = { factor = 70 }
+		production_tech = -0.10
+	}
+	option = {
+		name = "EVTOPTB4261"
+				ai_chance = { factor = 30 }
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 4262
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4262"
+	desc = "EVTDESC4262"
+		
+	option = {
+		name = "EVTOPTA4262"
+						ai_chance = { factor = 70 }
+		government_tech = -0.10
+	}
+	option = {
+		name = "EVTOPTB4262"
+						ai_chance = { factor = 30 }
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 4263
+	
+	trigger = {
+		stability = 1
+		war = no
+		horde_war = no
+		NOT = { war_exhaustion = 0.5 }
+		NOT = { num_of_revolts = 1 }
+		NOT = { manpower_percentage = 0.9 }
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4263"
+	desc = "EVTDESC4263"
+		
+	option = {
+		name = "EVTOPTA4263"
+						ai_chance = { factor = 70 }
+		manpower = -0.33
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB4263"
+		ai_chance = { factor = 30 }
+		add_country_modifier = {
+			name = "bad_discipline1"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+
+	id = 4264
+	
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4264"
+	desc = "EVTDESC4264"
+		
+	option = {
+		name = "EVTOPTA4264"
+						ai_chance = { factor = 70 }
+		years_of_income = 0.25
+	}
+	option = {
+		name = "EVTOPTB4264"
+		ai_chance = { factor = 30 }
+		random_list = {
+			10 = { create_advisor = theologian }
+			10 = { create_advisor = artist }
+			10 = { create_advisor = philosopher }
+		}
+	}
+}
+
+country_event = {
+
+	id = 4265
+	
+	trigger = {
+		num_of_cities = 2
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4265"
+	desc = "EVTDESC4265"
+		
+	option = {
+		name = "EVTOPTA4265"
+						ai_chance = { factor = 30 }
+		create_advisor = fortification_expert
+	}
+}
+
+country_event = {
+
+	id = 4266
+	
+	trigger = {
+		stability = 0
+		regency = no
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4266"
+	desc = "EVTDESC4266"
+		
+	option = {
+		name = "EVTOPTA4266"
+		ai_chance = { factor = 75 }
+		stability = -1
+	}
+	option = {
+					ai_chance = { factor = 75 }
+		name = "EVTOPTB4266"
+		add_country_modifier = {
+			name = "compromised_spy_defence1"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+
+	id = 4267
+	
+	trigger = {
+		stability = 0
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4267"
+	desc = "EVTDESC4267"
+		
+	option = {
+		name = "EVTOPTA4267"
+						ai_chance = { factor = 75 }
+		stability = -1
+		years_of_income = -0.33
+	}
+	option = {
+		name = "EVTOPTB4267"
+						ai_chance = { factor = 25 }
+		remove_country_modifier = smugglers_dominating1
+		add_country_modifier = {
+			name = "smugglers_dominating1"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+
+	id = 4268
+	
+		trigger = {
+		has_global_flag = zhanguokaishi 
+	}
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4268"
+	desc = "EVTDESC4268"
+		
+	option = {
+		name = "EVTOPTA4268"
+		land_tech = 0.05
+		government_tech = 0.2
+	}
+}
+
+country_event = {
+
+	id = 4269
+	
+	trigger = {
+		MIL = 7
+		NOT = { manpower_percentage = 0.6 }
+		war = yes
+		NOT = { war_exhaustion = 10 }
+		stability = -1
+	}
+
+	mean_time_to_happen = {
+		months = 2400
+	}
+
+	title = "EVTNAME4269"
+	desc = "EVTDESC4269"
+		
+	option = {
+				ai_chance = { factor = 25 }
+		name = "EVTOPTA4269"
+		add_country_modifier = {
+		    name = "dazhengbing"
+		    duration = 365
+		}
+		manpower = 0.33
+		war_exhaustion = 5
+		stability = -1
+	}
+	option = {
+				ai_chance = { factor = 75 }
+		name = "EVTOPTB4269"
+		manpower = 0.05
+	}	
+}
+
+# inflation loss if ADM 8
+country_event = {
+	id = 4272
+	
+	
+	trigger = {
+		adm = 8
+		inflation = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4272"
+	desc = "EVTDESC4272"
+		
+	option = {
+		name = "EVTOPTA4272"
+		inflation = -1
+	}	
+}
+
+# cultural tradition gain.
+country_event = {
+	id = 4273
+	
+	
+	trigger = {
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4273"
+	desc = "EVTDESC4273"
+		
+	option = {
+		name = "EVTOPTA4273"
+		cultural_tradition = 0.2
+	}	
+}
+
+# cultural tradition loss.
+country_event = {
+	id = 4274
+	
+	
+	trigger = {
+		war = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4274"
+	desc = "EVTDESC4274"
+		
+	option = {
+		name = "EVTOPTA4274"
+		cultural_tradition = -0.1
+	}	
+}
+
+# infamy gain
+country_event = {
+	id = 4276
+	
+	
+	trigger = {
+		NOT = { DIP = 7 }
+		badboy = 0.1
+		regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4276"
+	desc = "EVTDESC4276"
+		
+	option = {
+		name = "EVTOPTA4276"
+		badboy = 1
+	}	
+}
+
+# warexhaustion gain or army/navy tradition loss
+country_event = {
+	id = 4277
+	
+	
+	trigger = {
+		war = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4277"
+	desc = "EVTDESC4277"
+		
+	option = {
+		name = "EVTOPTA4277"
+					ai_chance = { factor = 75 }
+		war_exhaustion = 2
+	}
+	option = {
+		name = "EVTOPTB4277"
+					ai_chance = { factor = 25 }
+		army_tradition = -0.1
+		navy_tradition = -0.1
+	}		
+}
+# warexhaustion loss or army/navy tradition gain
+country_event = {
+	id = 4278
+	
+	
+	trigger = {
+		war = yes
+		war_exhaustion = 5
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4278"
+	desc = "EVTDESC4278"
+		
+	option = {
+				ai_chance = { factor = 75 }
+		name = "EVTOPTA4278"
+		war_exhaustion = -2
+	}
+	option = {
+				ai_chance = { factor = 25 }
+		name = "EVTOPTB4278"
+		army_tradition = 0.1
+		navy_tradition = 0.1
+	}		
+}
+
+# colonists boost or conquistador.
+country_event = {
+	id = 4280
+	
+	
+	trigger = {
+		any_owned_province = {
+			is_colony = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.15
+			idea = vice_roys
+		}
+	}
+	
+	title = "EVTNAME4280"
+	desc = "EVTDESC4280"
+		
+	option = {
+		name = "EVTOPTA4280"
+		colonists = 1
+	}
+}
+	
+# relation boost with a random neighbour country.
+country_event = {
+	id = 4281
+	
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4281"
+	desc = "EVTDESC4281"
+		
+	option = {
+		name = "EVTOPTA4281"
+		random_country = {
+			limit = { religion_group = this }
+			relation = { who = THIS value = 50 }
+		}		
+	}
+}
+
+
+# add land tech (big for inflation)
+country_event = {
+	id = 4282
+	
+	
+	trigger = {
+		land_tech = 12
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4282"
+	desc = "EVTDESC4282"
+		
+	option = {
+		name = "EVTOPTA4282"
+				ai_chance = { factor = 75 }
+		inflation = 0.5
+		land_tech = 0.25
+	}
+	option = {
+		name = "EVTOPTB4282"
+			ai_chance = { factor = 25 }
+		land_tech = 0.10
+	}
+}
+
+# add naval tech (big for inflation)
+country_event = {
+	id = 4283
+	
+	
+	trigger = {
+		num_of_ports = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4283"
+	desc = "EVTDESC4283"
+		
+	option = {
+		name = "EVTOPTA4283"
+		ai_chance = { factor = 75 }
+		inflation = 0.5
+		naval_tech = 0.25
+	}
+	option = {
+		name = "EVTOPTB4283"
+				ai_chance = { factor = 25 }
+		naval_tech = 0.10
+	}
+}
+# add trade tech (big for inflation)
+country_event = {
+	id = 4284
+	
+	
+	trigger = {
+		total_merchants = 8
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4284"
+	desc = "EVTDESC4284"
+		
+	option = {
+			ai_chance = { factor = 75 }
+		name = "EVTOPTA4284"
+		inflation = 0.5
+		trade_tech = 0.25
+	}
+	option = {
+			ai_chance = { factor = 25 }
+		name = "EVTOPTB4284"
+		trade_tech = 0.10
+	}
+}
+
+# add gov tech (big for inflation)
+country_event = {
+	id = 4285
+	
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4285"
+	desc = "EVTDESC4285"
+		
+	option = {
+			ai_chance = { factor = 75 }
+		name = "EVTOPTA4285"
+		inflation = 0.5
+		government_tech = 0.25
+	}
+	option = {
+			ai_chance = { factor = 25 }
+		name = "EVTOPTB4285"
+		government_tech = 0.10
+	}
+}
+# add prod tech (big for inflation)
+country_event = {
+	id = 4286
+	
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4286"
+	desc = "EVTDESC4286"
+		
+	option = {
+			ai_chance = { factor = 25 }
+		name = "EVTOPTA4286"
+		inflation = 0.5
+		production_tech = 0.25
+	}
+	option = {
+			ai_chance = { factor = 75 }
+		name = "EVTOPTB4286"
+		production_tech = 0.10
+	}
+}
+
+#A travelling minstrel
+country_event = {
+	id = 4287
+	
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4287"
+	desc = "EVTDESC4287"
+		
+	option = {
+		name = "EVTOPTA4287"
+		stability = 1
+	}
+	option = {
+		name = "EVTOPTB4287"
+		define_advisor = {
+			type = artist
+			skill = 4
+		}
+	}
+}
+
+
+#A bountiful harvest
+country_event = {
+	id = 4288
+	
+	
+	trigger = {
+		month = 7
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4288"
+	desc = "EVTDESC4288"
+		
+	option = {
+		name = "EVTOPTA4288"
+		years_of_income = 0.25
+				stability = 1
+	}
+}
+
+#Disagreeing Advisor
+country_event = {
+	id = 4290
+	
+	
+	trigger = {
+		has_advisor = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4290"
+	desc = "EVTDESC4290"
+		
+	option = {
+		name = "EVTOPTA4290"
+				ai_chance = { factor = 75 }
+		prestige = -0.05
+		random_list = {
+			10 = { government_tech = 0.2 }
+			10 = { land_tech = 0.2 }
+			10 = { trade_tech = 0.2 }
+			10 = { production_tech = 0.2 }
+			10 = { naval_tech = 0.2 }
+		}
+	}
+	option = {
+			ai_chance = { factor = 25 }
+		name = "EVTOPTB4290"
+		remove_advisor = random
+	}
+}
+
+
+
+#Renaissance Prince
+country_event = {
+	id = 4291
+	
+	
+	trigger = {
+		NOT = { cultural_tradition = 0.8 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4291"
+	desc = "EVTDESC4291"
+		
+	option = {
+		name = "EVTOPTA4291"
+				ai_chance = { factor = 50 }
+		years_of_income = -0.10
+		cultural_tradition = 0.1
+	}
+	option = {
+		name = "EVTOPTB4291"
+				ai_chance = { factor = 50 }
+		prestige = -0.05
+		cultural_tradition = -0.05
+	}
+}
+
+
+
+#Local Noble's Power Grows
+country_event = {
+	id = 4292
+	
+	
+	trigger = {
+		NOT = { ADM = 6 }
+		any_owned_province = { 
+			  has_province_modifier = noble_territory
+				NOT = { has_province_modifier = "powerful_noble" } 
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	title = "EVTNAME4292"
+	desc = "EVTDESC4292"
+		
+	option = {
+		name = "EVTOPTA4292"
+		ai_chance = { factor = 50 }
+		random_owned = {
+			limit = { 
+			  has_province_modifier = noble_territory
+				NOT = { has_province_modifier = "powerful_noble" } 
+			}
+			add_province_modifier = {
+				name = "powerful_noble"
+				duration = 240
+			}
+		}
+		prestige = -0.1
+	}
+	option = {
+			ai_chance = { factor = 25 }
+		name = "EVTOPTB4292"
+		prestige = 0.05
+		stability = -1
+	}
+	option = {
+			ai_chance = { factor = 25 }
+		name = "EVTOPTC4292"
+		prestige = 0.05
+		random_owned = {
+			limit = { 
+				has_province_modifier = noble_territory
+				NOT = { has_province_modifier = "powerful_noble" } 
+			}
+			pretender_rebels = 2
+		}
+	}
+}

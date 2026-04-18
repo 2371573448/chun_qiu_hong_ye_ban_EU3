@@ -1,0 +1,36 @@
+#Country Name: Please see filename.
+
+graphical_culture = chinesegfx
+
+
+color = { 33  24  48 }
+
+historical_ideas = {
+	engineer_corps
+	battlefield_commisions
+
+}
+
+historical_units = {
+
+}
+
+monarch_names = {
+        "管理员" = 10
+        "管理员" = 10
+}
+
+leader_names = {
+    系统
+}
+
+ship_names = {
+	岱舆号 员峤号 方壶号 瀛洲号
+	蓬莱号 青丘号 天子号 豫州号 冀州号 兖州号 
+        青州号 徐州号 扬州号 荆州号 雍州号 幽州号
+	东海号 南海号 西海号 北海号 昆仑号 女娲号 
+        盘古号 夸父号 精卫号 毕方号 祝融号 共工号 
+        烛龙号 云梦号 太湖号 洞庭号 伏羲号 羲和号
+	河伯号 山鬼号 湘君号 东君号 少昊号 苍梧号
+	济水号 淮水号 渭水号 河水号 江水号 汉水号
+}

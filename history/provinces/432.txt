@@ -1,0 +1,57 @@
+
+owner = WUG
+controller = WUG
+culture = gouwu
+religion = ancestor
+capital = "ÑÙ"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 14000
+fort1 = yes
+add_core = WUG
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = YXU }
+2190.1.1 = { religion = liyuebadao }
+2220.1.1 = { owner = YGO
+             controller = YGO
+           }
+2222.1.1 = { citysize = 24000 }
+2225.1.1 = { add_core = YGO }
+2244.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = YGO
+}
+2244.1.2 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+}
+2246.1.2 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = YGO
+}
+2247.1.1 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+}
+2392.1.1  = {	owner = CHU
+		controller = CHU
+	    }
+2422.1.1 = {    add_core = CHU culture=nanchu  }
+2475.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1={
+        controller=REB
+        }
+2490.6.1 = { owner=CHU controller=CHU }
+2492.2.1={owner=XCW controller=XCW add_core=XCW}

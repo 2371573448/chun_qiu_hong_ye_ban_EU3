@@ -1,0 +1,59 @@
+##########ут╧З############
+country_decisions = { 
+	bianshen_zhaoguo = { 
+		potential = { 
+			NOT = { 
+				exists = ZHO
+			}
+			tag = QJR
+		}
+		allow = { 
+			owns = 61
+			is_core = 61
+			war = no
+                                             JIN = { 
+			any_neighbor_country = { 
+				tag = this
+			}
+		     }
+                                                          year = 2000
+		}
+		effect = { 
+			taiyuan = { 
+				add_core = ZHO
+			}
+			ZHO = { 
+				add_core = 54
+				add_core = 55
+				add_core = 56
+				add_core = 57
+				add_core = 58
+				add_core = 59
+				add_core = 60
+				add_core = 61
+				add_core = 62
+				add_core = 63
+				add_core = 64
+				add_core = 65
+				add_core = 1091
+				add_core = 1092
+				add_core = 1093
+				add_core = 1094
+				add_core = 1095
+				add_core = 1096
+				add_core = 1097
+				add_core = 1103
+				add_core = 1104
+				add_core = 1105
+			}
+			technology_group = chinese
+			religion = liyuebadao
+                                                            government = zhizheng
+			prestige = 0.05
+			change_tag = ZHO
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

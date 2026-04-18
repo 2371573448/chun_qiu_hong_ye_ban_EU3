@@ -1,0 +1,6 @@
+alliance={
+	first=JIN
+	second=ZGO
+	start_date=2071.1.1
+	end_date=2072.1.1
+}

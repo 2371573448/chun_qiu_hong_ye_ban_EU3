@@ -1,0 +1,180 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_small_merge"
+		texturefile = "gfx/interface/small_merge_btn.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_unitpanel_bg"
+		texturefile = "gfx\\interface\\unitpanel_bg.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_multiselection_bg"
+		texturefile = "gfx\\interface\\multiselection_bg.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_regiment_bg"
+		texturefile = "gfx\\interface\\regiment_bg.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_remove_unit_button"
+		texturefile = "gfx\\interface\\remove_unit.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_reorg_bg"
+		texturefile = "gfx\\interface\\reorg_bg.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_reorg_right"
+		texturefile = "gfx\\interface\\reorg_right.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_leader_button"
+		texturefile = "gfx\\interface\\leader_button.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_button_embarked"
+		texturefile = "gfx\\interface\\button_embarked.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_leader_band_button"
+		texturefile = "gfx\\interface\\leader_band_button.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_multi_reorg_button"
+		texturefile = "gfx\\interface\\button_reorg.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_multi_reinforce_button"
+		texturefile = "gfx\\interface\\button_reinforce.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_multi_merge_button"
+		texturefile = "gfx\\interface\\button_merge.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_reorg_button"
+		texturefile = "gfx\\interface\\reorg_button.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_reorg_left"
+		texturefile = "gfx\\interface\\reorg_left.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_band_regiment"
+		texturefile = "gfx\\interface\\band_regiment.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	
+
+	spriteType = {
+		name = "GFX_band_mercenary_regiment"
+		texturefile = "gfx\\interface\\band_mercenary_regiment.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_band_reorg_regiment"
+		texturefile = "gfx\\interface\\band_reorg_blue.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_band_reorg_mercenary_regiment"
+		texturefile = "gfx\\interface\\band_reorg_green.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+
+
+	spriteType = {
+		name = "GFX_disband_unit_button"
+		texturefile = "gfx\\interface\\disband_button.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	progressbartype = {
+		name = "unitbar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		size = { x = 6 y = 32 }
+		horizontal = no
+		effectFile = "gfx\\FX\\progress.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_button_prev"
+		texturefile = "gfx\\interface\\button_prev.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		
+	}
+
+	spriteType = {
+		name = "GFX_button_next"
+		texturefile = "gfx\\interface\\button_next.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+
+	}
+
+}

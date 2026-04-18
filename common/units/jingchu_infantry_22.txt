@@ -1,0 +1,12 @@
+#Û«¶¼×é¼×
+
+type = infantry
+unit_type = jingchu
+
+maneuver = 1
+offensive_fire = 3
+defensive_fire = 3
+offensive_shock = 4
+defensive_shock = 3
+offensive_morale = 3
+defensive_morale = 3

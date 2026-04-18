@@ -1,0 +1,1237 @@
+guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_military"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+		instantTextBoxType = {
+			name = "unit_type_label"
+			position = { x = 75 y =152 }
+			format = centre
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 215
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+### New
+		instantTextBoxType = {
+			name = "fire_label"
+			position = { x = 290 y =155  }
+	
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "MILITARY_FIRE_LABEL"	
+			maxWidth = 140
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "shock_label"
+			position = { x = 325 y =155  }
+		
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "MILITARY_SHOCK_LABEL"	
+			maxWidth = 140
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "count_label"
+			position = { x = 360 y =155  }
+	
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "MILITARY_COUNT_LABEL"	
+			maxWidth = 140
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType =
+		{
+			name ="military_overview_banner_1"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 170 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type_infantry"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 150 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		
+		guiButtonType = {
+			name = "infantry_type_button"
+			position = { x=75 y =166}
+			quadTextureSprite ="GFX_button_military_overview"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_plain"
+		}
+
+
+		instantTextBoxType = {
+			name = "infantry_fire"
+			position = { x = 290 y =172  }
+		
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		instantTextBoxType = {
+			name = "infantry_shock"
+			position = { x = 325 y =172  }
+		
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "infantry_count"
+			position = { x = 285 y =172  }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+
+
+
+
+	
+		iconType =
+		{
+			name ="military_overview_banner_2"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 196 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="unit_type_cavalry"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 176 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = {
+			name = "cavalry_type_button"
+			position = { x=75 y =192}
+			quadTextureSprite ="GFX_button_military_overview"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_plain"
+		}
+		instantTextBoxType = {
+			name = "cavalry_fire"
+			position = { x = 290 y =198  }
+		
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "cavalry_shock"
+			position = { x = 325 y =198  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "cavalry_count"
+			position = { x = 285 y =198  }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		
+
+
+
+		
+	
+		iconType =
+		{
+			name ="military_overview_banner_3"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type_artillery"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 202 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = {
+			name = "artillery_type_button"
+			position = { x=75 y =218}
+			quadTextureSprite ="GFX_button_military_overview"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_plain"
+		}
+		instantTextBoxType = {
+			name = "artillery_fire"
+			position = { x = 290 y =224  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "artillery_shock"
+			position = { x = 325 y =224  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "artillery_count"
+			position = { x = 285 y =224  }
+			format = right
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+	
+
+	
+		iconType =
+		{
+			name ="military_overview_banner_4"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 248 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type_bigship"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 228 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "ship1_type_label"
+			position = { x = 75 y =248  }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		instantTextBoxType = {
+			name = "ship1_fire"
+			position = { x = 290 y =250  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		instantTextBoxType = {
+			name = "ship1_shock"
+			position = { x = 325 y =250  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "ship1_count"
+			position = { x = 285 y =250  }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		
+	
+	
+		iconType =
+		{
+			name ="military_overview_banner_5"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 274 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type_smallship"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 254 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		instantTextBoxType = {
+			name = "ship2_type_label"
+			position = { x = 75 y =274  }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		
+		instantTextBoxType = {
+			name = "ship2_fire"
+			position = { x = 290 y =276  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+			
+		instantTextBoxType = {
+			name = "ship2_shock"
+			position = { x = 325 y =276  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "ship2_count"
+			position = { x = 285 y =276  }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		
+
+
+	
+		iconType =
+		{
+			name ="military_overview_banner_6"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 300 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type_galley"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 280 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "ship3_type_label"
+			position = { x = 75 y =300  }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		instantTextBoxType = {
+			name = "ship3_fire"
+			position = { x = 290 y =302  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		instantTextBoxType = {
+			name = "ship3_shock"
+			position = { x = 325 y =302  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "ship3_count"
+			position = { x = 285 y =302  }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+	
+
+
+		iconType =
+		{
+			name ="military_overview_banner_7"
+			spriteType = "GFX_military_overview_banner"
+			position = { x= 0 y = 326 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type_transport"
+			spriteType = "GFX_unit_types_strip_mil_view"
+			position = { x= 25 y = 306 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "ship4_type_label"
+			position = { x = 75 y =326 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "ship4_fire"
+			position = { x = 290 y =328  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		instantTextBoxType = {
+			name = "ship4_shock"
+			position = { x = 325 y =328  }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		instantTextBoxType = {
+			name = "ship4_count"
+			position = { x = 285 y =328  }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		#iconType =
+		#{
+		#	name ="unit_type_icons"
+		#	spriteType = "GFX_unittype_icons"
+		#	position = { x= 32 y = 154 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+
+		
+		iconType =
+		{
+			name ="military_overview_frame"
+			spriteType = "GFX_military_overview_frame"
+			position = { x= 0 y = 320 }
+			Orientation = "UPPER_LEFT"
+		}
+
+#### LAND 
+
+		instantTextBoxType = {
+			name = "domestic_military_land_label"
+			position = { x = 40 y =397  }
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 160
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_morale_label"
+			position = { x = 40 y =418 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "DOMESTIC_MORALE"	
+			maxWidth = 160
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		iconType =
+		{
+			name ="domestic_military_morale_value"
+			spriteType = "GFX_stars"
+			position = { x= 88 y = 438 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+		instantTextBoxType = {
+			name = "domestic_military_total_label"
+			position = { x = 40 y =466 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_total_value"
+			position = { x = 100 y =466 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_maximum_label"
+			position = { x = 40 y =482 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_maximum_value"
+			position = { x = 100 y =482 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+		
+		
+
+		
+
+
+		instantTextBoxType = {
+			name = "domestic_military_maintenance"
+			position = { x = 40 y = 510 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+		instantTextBoxType = {
+			name = "domestic_military_maintenance_value"
+			position = { x = 100 y = 510 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+
+		instantTextBoxType = {
+			name = "domestic_military_land_label_naval"
+			position = { x = 220 y =397 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 160
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_morale_label_naval"
+			position = { x = 220 y =418 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "DOMESTIC_MORALE"	
+			maxWidth = 160
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		iconType =
+		{
+			name ="domestic_military_morale_value_naval"
+			spriteType = "GFX_stars"
+			position = { x= 268 y = 438 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_total_label_naval"
+			position = { x = 220 y =466 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_total_value_naval"
+			position = { x = 280 y =466 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_maximum_label_naval"
+			position = { x = 220 y =482 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestic_military_maximum_value_naval"
+			position = { x = 280 y =482 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+	
+		
+
+		instantTextBoxType = {
+			name = "domestic_military_maintenance_naval"
+			position = { x = 220 y = 510 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 130
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+		instantTextBoxType = {
+			name = "domestic_military_maintenance_value_naval"
+			position = { x = 280 y = 510 }
+			format = right
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+
+
+		scrollbarType = {
+				name = "land_slider"	
+				slider = "landslider_SliderButton"
+				track= "landslider_TrackButton"
+				leftbutton = "landslider_upButton"
+				rightbutton = "landslider_downButton"
+				size = {x =172 y =16 }
+				position = {x= 32 y =530}
+				priority = 100			
+				borderSize = {x =16 y = 16}	
+				maxValue = 100
+				minValue = 0
+				stepSize =1
+				startValue = 20
+				horizontal = 1
+	
+	
+				guiButtonType = {
+					name = "landslider_SliderButton"	
+					quadTextureSprite = "yearslider_slider2"
+					tooltip = ""
+					tooltipText =""	
+					delayedTooltipText = ""
+					position = { x=0 y =0}
+				}
+	
+				guiButtonType = {
+					name = "landslider_TrackButton"
+					quadTextureSprite = "yearslider_background"
+					position = { x=0 y =20}	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""	
+	
+				}	
+	
+				guiButtonType = {
+					parent = "landslider_SliderButton"
+					name = "landslider_upButton"
+					quadTextureSprite = "yearslider_leftbutton"
+					position = { x=0 y =0}	
+				}
+				
+				guiButtonType = {
+					parent = "landslider_SliderButton"
+					name = "landslider_downButton"
+					quadTextureSprite = "yearslider_rightbutton"
+					position = { x=0 y =120}	
+				}
+		}
+		scrollbarType = {
+				name = "naval_slider"	
+				slider = "navalslider_SliderButton"
+				track= "navalslider_TrackButton"
+				leftbutton = "navalslider_upButton"
+				rightbutton = "navalslider_downButton"
+				size = {x =172 y =16 }
+				position = {x= 214 y =530}
+				priority = 100			
+				borderSize = {x =16 y = 16}	
+				maxValue = 100
+				minValue = 0
+				stepSize =1
+				startValue = 20
+				horizontal = 1
+	
+	
+				guiButtonType = {
+					name = "navalslider_SliderButton"	
+					quadTextureSprite = "yearslider_slider2"
+					tooltip = ""
+					tooltipText =""	
+					delayedTooltipText = ""
+					position = { x=0 y =0}
+				}
+	
+				guiButtonType = {
+					name = "navalslider_TrackButton"
+					quadTextureSprite = "yearslider_background"
+					position = { x=0 y =20}	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""	
+	
+				}	
+	
+				guiButtonType = {
+					parent = "navalslider_SliderButton"
+					name = "navalslider_upButton"
+					quadTextureSprite = "yearslider_leftbutton"
+					position = { x=0 y =0}	
+				}
+				
+				guiButtonType = {
+					parent = "navalslider_SliderButton"
+					name = "navalslider_downButton"
+					quadTextureSprite = "yearslider_rightbutton"
+					position = { x=0 y =120}	
+				}
+		}
+
+
+
+		instantTextBoxType = {
+			name = "war_exhaustion_label"
+			position = { x = 32 y = 352 }
+
+			textureFile = ""
+			font = "Main_14_plain"
+			borderSize = {x = 4 y = 4}
+			text = "WAR_EXHUASTION_LABEL"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "war_exhaustion_value"
+			position = { x = 284 y =352 }
+			format = right
+			textureFile = ""
+			font = "Main_14_plain"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+
+
+
+
+
+
+	}
+
+
+windowType = {
+			name = "domesticpanel_unit_select"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = yes	
+	
+	
+			iconType =
+			{
+				name ="domesticpanel_overlay"
+				spriteType = "GFX_domesticpanel_overlay"
+				position = { x= 0 y = -1 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			guiButtonType = {
+				name = "back_button"
+				position = { x=172 y =550}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "BACK"
+				buttonFont = "Main_14_black"
+			}
+	
+			
+
+		instantTextBoxType = {
+			name = "label_fire"
+			position = { x = 212 y = 115 }
+
+			format = center
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "DOMESTIC_FIRE"	
+			maxWidth = 80
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+		instantTextBoxType = {
+			name = "label_shock"
+			position = { x = 250 y = 115 }
+
+			format = center
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "DOMESTIC_SHOCK"	
+			maxWidth = 80
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+		
+		}
+
+		instantTextBoxType = {
+			name = "label_morale"
+			position = { x = 296 y = 115 }
+
+			format = center
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "DOMESTIC_MORALE"	
+			maxWidth = 80
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+		
+		}
+	
+			
+			
+			listboxType = 
+				{
+				name ="domesticpanel_unit_select_list"
+				position = { x=18 y =124}
+				backGround=""
+				size = { x=360 y =400}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+
+
+			
+		}
+		
+	windowType = {
+		name = "domesticpanel_unit_selection_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+	
+
+
+		guiButtonType =
+		{
+			name ="unit_selection_button"
+			quadTextureSprite= "button_type_5"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+		
+
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 54 y = 8 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14_plain"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 184
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		iconType =
+			{
+				name ="fire_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 212 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="fire_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 212 y = 15 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="shock_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 248 y = 7}
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="shock_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 248 y = 15}
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="morale_offensive"
+				spriteType = "GFX_dots_offensive"
+				position = { x= 284 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="morale_defensive"
+				spriteType = "GFX_dots_defensive"
+				position = { x= 284 y = 15 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+		
+		
+
+
+	}
+
+}

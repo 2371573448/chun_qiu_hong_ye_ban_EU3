@@ -1,0 +1,28 @@
+#不愿出仕，因此隐居山林的贤人
+
+advisor ={
+name ="介子推" 
+location =73
+skill =5
+type =lord_proprietor
+date =2022.1.1
+death_date =2062.1.1
+}
+
+advisor ={
+name ="柳下惠" 
+location =293
+skill =5
+type =lord_proprietor
+date =1998.1.1
+death_date =2077.1.1
+}
+
+advisor ={
+name ="宋钘" 
+location =324
+skill =5
+type =lord_proprietor
+date =2348.1.1
+death_date =2407.1.1
+}

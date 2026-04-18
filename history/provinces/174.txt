@@ -1,0 +1,14 @@
+
+culture = xirong
+religion = animism
+capital = "–¢º±"
+trade_goods = fur
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+
+1928.1.1 = { discovered_by = SGU }

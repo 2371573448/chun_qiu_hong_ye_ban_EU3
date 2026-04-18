@@ -1,0 +1,238 @@
+government = fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 2
+innovative_narrowminded = -2
+mercantilism_freetrade = -2
+offensive_defensive = 0
+land_naval = 0
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = jianghan
+capital = 385
+1921.1.1 = { 
+	monarch = { 
+		name = "ÛÆ"
+		dynasty = "æ£"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+1928.1.1 = { 
+	elector = yes
+}
+1944.1.1 = { 
+	monarch = { 
+		name = "àö"
+		dynasty = "æ£"
+		adm = 7
+		dip = 5
+		mil = 4
+	}
+}
+1954.1.1 = { 
+	monarch = { 
+		name = "±«"
+		dynasty = "æ£"
+		adm = 3
+		dip = 5
+		mil = 6
+	}
+}
+1991.1.1 = { 
+	monarch = { 
+		name = "Ù¢"
+		dynasty = "æ£"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+1992.1.1 = { 
+	monarch = { 
+		name = "Ô¾"
+		dynasty = "æ£"
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+1999.1.1 = { 
+	monarch = { 
+		name = "ÁÖ"
+		dynasty = "æ£"
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+2006.1.1 = { 
+	monarch = { 
+		name = "èÆ¾Ê"
+		dynasty = "æ£"
+		adm = 6
+		dip = 7
+		mil = 4
+	}
+}
+2038.1.1 = { 
+	leader = { 
+		name = "Ô¯ÌÎÍ¿"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 1
+		siege = 1
+		death_date = 2063.1.1
+	}
+}
+2051.1.1 = { 
+	monarch = { 
+		name = "¿î"
+		dynasty = "æ£"
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+2063.1.1 = { 
+	leader = { 
+		name = "Ô¯ÌÎÍ¿"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 1
+		siege = 1
+		death_date = 2073.1.1
+	}
+}
+2067.1.1 = { 
+	monarch = { 
+		name = "Ë·"
+		dynasty = "æ£"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+2085.1.1 = { 
+	monarch = { 
+		name = "Æ½¹ú"
+		dynasty = "æ£"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+2088.1.1 = { 
+	leader = { 
+		name = "ÏÄÕ÷Êæ"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 1
+		manuever = 3
+		siege = 1
+		death_date = 2099.1.1
+	}
+}
+2100.1.1 = { 
+	decision = tuposanjunguizhi
+}
+2100.1.1 = { 
+	monarch = { 
+		name = "Îç"
+		dynasty = "æ£"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+2128.1.1 = { 
+	leader = { 
+		name = "Çì»¢"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2149.1.1
+	}
+}
+2130.1.1 = { 
+	monarch = { 
+		name = "Èõ"
+		dynasty = "æ£"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+2158.1.1 = { 
+	leader = { 
+		name = "ÏÄÄö"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 1
+		manuever = 2
+		siege = 1
+		death_date = 2180.1.1
+	}
+}
+2165.1.1 = { 
+	monarch = { 
+		name = "Áô"
+		dynasty = "æ£"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+2169.1.1 = { 
+	monarch = { 
+		name = "Îâ"
+		dynasty = "æ£"
+		adm = 7
+		dip = 8
+		mil = 6
+	}
+}
+2182.1.1 = { 
+	elector = no
+}
+2193.1.1 = { 
+	monarch = { 
+		name = "Áø"
+		dynasty = "æ£"
+		adm = 5
+		dip = 7
+		mil = 5
+	}
+}
+2197.1.1 = { 
+	monarch = { 
+		name = "Ô½"
+		dynasty = "æ£"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+2198.1.1 = { 
+	leader = { 
+		name = "¹«ËïÙ¢ÈË"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2208.1.1
+	}
+}

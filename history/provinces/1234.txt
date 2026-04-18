@@ -1,0 +1,13 @@
+owner = MXY
+controller = MXY
+culture = xiyu
+religion = animism
+capital = "īʦ"
+trade_goods = iron
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = MXY
+1827.1.1 = { discovered_by = XYR }

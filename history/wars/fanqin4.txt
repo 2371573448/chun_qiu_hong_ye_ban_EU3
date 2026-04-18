@@ -1,0 +1,13 @@
+name = "燕复国之战"
+casus_belli = cb_core #
+
+2489.10.1 = {
+  # 赵将韩广自立为燕王
+	add_attacker = YAN
+	add_defender = QIN
+}
+2492.2.1 = {
+	# 秦亡，战争结束
+	rem_attacker = YAN
+	rem_defender = QIN
+}

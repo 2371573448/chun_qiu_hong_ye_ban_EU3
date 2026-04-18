@@ -1,0 +1,93 @@
+owner = ZGO
+controller = ZGO
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "¾©"
+trade_goods = grain
+hre = yes
+base_tax = 12
+manpower = 0
+citysize = 56000
+fort1 = yes
+add_core = ZGO
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+1931.1.1 = { 
+	owner = ZGO
+	controller = ZGO
+}
+2222.1.1 = { 
+	citysize = 42000
+}
+2240.1.1 = { 
+	religion = daojia
+}
+2245.1.1 = { 
+	hre = no
+	religion = liyuejiaohua
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2  = {	owner = ZGO
+		controller = ZGO
+	    }
+2246.1.2 = { add_core = ZGO
+             
+           }
+2246.1.2 = {
+        citysize = 32000
+    }
+2246.1.3 = {
+        citysize = 42000
+    }
+2247.1.1  = {	owner = ZGO
+		controller = ZGO
+	    }
+2247.1.1 = { add_core = ZGO
+             remove_core = ZMI
+           }
+2247.1.1 = { 
+	hre = no
+	religion = daojia
+}
+2320.1.1 = { 
+	religion = rujia
+}
+2322.1.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+}
+2340.1.1 = { 
+	religion = fajia
+	remove_core = ZGO
+}
+2468.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = CHU
+}
+2490.6.1 = { 
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = HAN
+	controller = HAN
+}

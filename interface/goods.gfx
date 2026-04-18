@@ -1,0 +1,213 @@
+objectTypes = {
+	
+	EMFXActorType = {
+		name = "grain"
+		actorfile = "gfx\anims\Grain.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "wine"
+		actorfile = "gfx\anims\Wine.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "wool"
+		actorfile = "gfx\anims\Wool.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "cloth"
+		actorfile = "gfx\anims\cloth.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "fish"
+		actorfile = "gfx\anims\Fish.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "fur"
+		actorfile = "gfx\anims\Fur.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "salt"
+		actorfile = "gfx\anims\Salt.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "naval_supplies"
+		actorfile = "gfx\anims\naval_supplies.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "copper"
+		actorfile = "gfx\anims\Copper.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "gold"
+		actorfile = "gfx\anims\Gold.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "iron"
+		actorfile = "gfx\anims\Iron.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "slaves"
+		actorfile = "gfx\anims\Slaves.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "ivory"
+		actorfile = "gfx\anims\Ivory.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "tea"
+		actorfile = "gfx\anims\Tea.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "chinaware"
+		actorfile = "gfx\anims\chinaware.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "spices"
+		actorfile = "gfx\anims\Spice.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "coffee"
+		actorfile = "gfx\anims\Coffee.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+		
+	EMFXActorType = {
+		name = "cotton"
+		actorfile = "gfx\anims\Cotton.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "sugar"
+		actorfile = "gfx\anims\Sugar.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "tobacco"
+		actorfile = "gfx\anims\Tobacco.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "unknown"
+		actorfile = "gfx\anims\unknown.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+}	

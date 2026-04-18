@@ -1,0 +1,204 @@
+chenguo1 = { 
+	type = country
+	allow = { 
+		tag = CHE
+		exists = DUN
+		year = 2246
+		CHE = { ai = no }
+	}
+	abort = { 
+	}
+	success = { 
+		not = { 
+			exists = DUN
+		}
+	}
+	chance = { 
+		factor = 1000
+	}
+	immediate = { 
+	}
+	abort_effect = { 
+		prestige = -0.05
+	}
+	effect = { 
+		set_country_flag = chenguo1
+		centralization_decentralization = -4
+		set_country_flag = zongfazhidu
+		manpower = 10
+	}
+}
+chenguo2 = { 
+	type = country
+	allow = { 
+		tag = CHE
+		exists = XNC
+		year = 2246
+		CHE = { ai = no }
+		has_country_flag = chenguo1
+	}
+	abort = { 
+	}
+	success = { 
+		not = { 
+			exists = XNC
+		}
+	}
+	chance = { 
+		factor = 1000
+	}
+	immediate = { 
+	}
+	abort_effect = { 
+		prestige = -0.05
+	}
+	effect = { 
+		set_country_flag = chenguo2
+		serfdom_freesubjects = 4
+		set_country_flag = shiguanzhidu
+		manpower = 10
+	}
+}
+
+chenguo3 = { 
+	type = country
+	allow = { 
+		tag = CHE
+		exists = YAG
+		year = 2246
+		CHE = { ai = no }
+		has_country_flag = chenguo2
+	}
+	abort = { 
+	}
+	success = { 
+		not = { 
+			exists = YAG
+		}
+	}
+	chance = { 
+		factor = 1000
+	}
+	immediate = { 
+	}
+	abort_effect = { 
+		prestige = -0.05
+	}
+	effect = { 
+		set_country_flag = chenguo3
+		offensive_defensive = -5
+		set_country_flag = falvzhidu
+		manpower = 10
+	}
+}
+chenguo4 = { 
+	type = country
+	allow = { 
+		tag = CHE
+		exists = SHN
+		year = 2246
+		CHE = { ai = no }
+		has_country_flag = chenguo3
+	}
+	abort = { 
+	}
+	success = { 
+		not = { 
+			exists = SHN
+		}
+	}
+	chance = { 
+		factor = 1000
+	}
+	immediate = { 
+	}
+	abort_effect = { 
+		prestige = -0.05
+	}
+	effect = { 
+		set_country_flag = chenguo4
+		land_naval = -5
+		set_country_flag = dubizhidu
+		manpower = 10
+	}
+}
+chenguo5 = { 
+	type = country
+	allow = { 
+		tag = CHE
+		exists = HUG
+		year = 2246
+		CHE = { ai = no }
+		has_country_flag = chenguo4
+	}
+	abort = { 
+	}
+	success = { 
+		not = { 
+			exists = HUG
+		}
+	}
+	chance = { 
+		factor = 1000
+	}
+	immediate = { 
+	}
+	abort_effect = { 
+		prestige = -0.05
+	}
+	effect = { 
+		set_country_flag = chenguo5
+		quality_quantity = -5
+		set_country_flag = tianfuzhidu
+		manpower = 10
+	}
+}
+zhengfuchenjun = {
+	
+	type = country
+
+	allow = {
+		OR = {
+			any_owned_province  = {
+			region = chenjun
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = chenjun }
+			}
+		}
+		NOT = { has_country_flag = zhengfuchenjun }
+		tag = CHE
+		year = 2246
+		has_country_flag = chenguo5
+	}
+	abort = {
+
+	}
+	success = {
+    		owns = 388
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+    		add_temp_claim = 388
+	}
+	abort_effect = {
+    		remove_temp_claim = 388
+	  	prestige = -0.05
+	}
+	effect = {
+		set_country_flag = zhengfuchenjun
+		chenjun = { add_core = this }
+		government = enlightened_despotism
+		inflation = -3
+			define_ruler = { 
+				name = "Ç§Ëê´óµÛ"
+				female = no
+				DIP = 9
+				MIL = 9
+				ADM = 9
+			}
+		legitimacy = 1
+	}	
+}

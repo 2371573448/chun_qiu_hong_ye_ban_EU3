@@ -1,0 +1,13 @@
+vassal = {
+	first=YGO
+	second=OUY
+	start_date=2220.1.1
+	end_date=2364.1.1
+}
+
+vassal = {
+	first=CHU
+	second=YGO
+	start_date=2392.1.1
+	end_date=2475.1.1
+}

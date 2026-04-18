@@ -1,0 +1,94 @@
+culture = qilu
+religion = animism
+capital = "ียฮไ"
+trade_goods = salt
+hre = no
+base_tax = 6
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2035.1.1 = { 
+	citysize = 16000
+	fort1 = yes
+	owner = QIG
+	controller = QIG
+        add_core = QIG
+}
+2095.1.1 = { 
+	religion = liyuejiaohua
+}
+2222.1.1 = { 
+	citysize = 32000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = CHA
+	controller = CHA
+	add_core = CHA
+	remove_core = QIG
+}
+2244.1.2 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = CHA
+}
+2246.1.1 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+}
+2246.1.2 = { 
+	owner = CHA
+	controller = CHA
+	add_core = CHA
+	remove_core = YAN
+	remove_core = QIG
+}
+2247.1.1 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = CHA
+}
+2414.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2430.1.1 = { 
+	culture = dongtu
+}
+2472.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2492.2.1 = { 
+	owner = CSW
+	controller = CSW
+	add_core = CSW
+}
+2492.11.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+}

@@ -1,0 +1,18 @@
+alliance={
+	first=YGO
+	second=LUG
+	start_date=2295.1.1
+	end_date=2296.1.1
+}
+alliance={
+	first=CHU
+	second=ZGO
+	start_date=2295.1.1
+	end_date=2296.1.1
+}
+alliance={
+	first=CHU
+	second=SON
+	start_date=2295.1.1
+	end_date=2296.1.1
+}

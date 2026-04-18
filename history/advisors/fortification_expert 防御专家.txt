@@ -1,0 +1,28 @@
+#著名的擅长防守的任务，或著名防御战的主将
+
+advisor ={
+name ="墨翟" 
+location =324
+skill =6
+type =fortification_expert
+date =2250.1.1
+death_date =2322.1.1
+}
+
+advisor ={
+name ="墨翟" 
+location =324
+skill =6
+type =fortification_expert
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="华元"
+location =324
+skill =4
+type =fortification_expert
+date =2085.1.1
+death_date =2125.1.1
+}

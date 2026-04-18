@@ -1,0 +1,41 @@
+##########ÖÐÉ½############
+country_decisions = { 
+	bianshen_zhongshan = { 
+		potential = { 
+			NOT = { 
+				exists = ZHS
+			}
+			primary_culture = baidi
+		}
+		allow = { 
+			owns = 94
+			owns = 93
+			owns = 95
+			owns = 98
+			is_core = 94
+			is_core = 93
+			is_core = 95
+			is_core = 98
+			war = no
+		}
+		effect = { 
+			hengshan1 = { 
+				add_core = ZHS
+			}
+			ZHS = { 
+				add_core = 114
+				add_core = 119
+				add_core = 103
+				add_core = 108
+				add_core = 104
+			}
+			technology_group = chinese
+			religion = liyuebadao
+			prestige = 0.05
+			change_tag = ZHS
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

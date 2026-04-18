@@ -1,0 +1,19 @@
+name = "ãüË®Ö®Õ½"
+casus_belli = cb_dishonored_call 
+
+2060.1.1 = {
+	add_attacker = SON
+	add_attacker = WEG
+	add_attacker = XUG
+	add_attacker = TEN
+	add_defender = CHU
+	add_defender = ZGO
+}
+2060.6.1 = {
+	rem_attacker = SON
+	rem_attacker = WEG
+	rem_attacker = XUG
+	rem_attacker = TEN
+	rem_defender = ZGO
+	rem_defender = CHU
+}

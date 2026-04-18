@@ -1,0 +1,103 @@
+
+owner = GUO
+controller = GUO
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "Íõ·á"
+trade_goods = chinaware
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 13000
+fort1 = yes
+add_core = GUO
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2043.12.1 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+}
+2073.1.1 = { 
+	add_core = JIN
+}
+2222.1.1 = { 
+	citysize = 26000
+}
+2244.1.1 = { 
+	owner = FAS
+	controller = FAS
+	add_core = FAS
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = FAS
+}
+2245.1.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+	remove_core = JIN
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	owner = GUO
+	controller = GUO
+	add_core = GUO
+	add_core = HAN
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+}
+2391.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2421.1.1 = { 
+	add_core = QIN
+}
+2430.1.1 = { 
+	religion = fajia
+}
+2489.10.1 = { 
+	controller = CHU
+}
+2489.12.1 = { 
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = SCW
+	controller = SCW
+	add_core = SCW
+}
+2492.10.1 = { 
+	owner = HNW
+	controller = HNW
+}

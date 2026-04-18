@@ -1,0 +1,43 @@
+government =fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = -2
+offensive_defensive = 2
+land_naval = -1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = ancestor
+primary_culture = guanzhong
+capital = 219
+
+
+1918.1.1 = {
+	monarch = {
+		name = "¼¾"
+               dynasty = "æ¦"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+1923.1.23 = {
+	heir = {
+		name = "²®À³"
+		monarch_name = "²®À³"
+		dynasty = "æ¦"
+		birth_date = 1923.1.23
+		death_date = 1953.1.1
+		claim = 90
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+2246.1.2 = { 
+	religion = liyuebadao
+}
+2246.1.3 = { 
+	religion = animism
+}

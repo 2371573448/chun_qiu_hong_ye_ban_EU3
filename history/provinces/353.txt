@@ -1,0 +1,79 @@
+
+owner = PAP
+controller = PAP
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "¹®"
+trade_goods = chinaware
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 24000
+fort1 = yes
+add_core = PAP
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2222.1.1 = { 
+	citysize = 32000
+	fort2 = yes
+}
+2240.1.1 = { 
+	religion = rujia
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	hre = yes
+	religion = liyuejiaohua
+}
+2247.1.1 = { 
+	hre = no
+}
+2322.1.1 = { 
+	owner = PAP
+	controller = PAP
+}
+2331.1.1 = { 
+	owner = ZHG
+	controller = ZHG
+}
+2361.1.1 = { 
+	add_core = ZHG
+}
+2449.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2479.1.1 = { 
+	add_core = QIN
+}
+2489.10.1 = { 
+	controller = CHU
+}
+2489.12.1 = { 
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = SCW
+	controller = SCW
+	add_core = SCW
+}
+2492.10.1 = { 
+	owner = HNW
+	controller = HNW
+}

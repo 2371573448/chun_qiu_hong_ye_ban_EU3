@@ -1,0 +1,185 @@
+# max_tradegoods = 64
+# Do not change tags in here without changing every other reference to them.
+# If adding new resources, make sure they are uniquely named.
+# Please add price definitions to prices.txt as well.
+
+# 0.4 0.8
+
+#Base resources
+grain = {
+	color = { 0.7 0.7 0 }
+	modifier = {
+		global_manpower_modifier = 0.10
+		max_war_exhaustion = -2
+	}
+}
+
+wine = {
+	color = { 0.7 0.0 0 }
+	modifier = {
+		global_revolt_risk = -0.3
+		stability_cost_modifier = -0.05
+	}
+}
+
+#É£²Ï
+wool = {
+	color = { 0.7 0.4 0 }
+	modifier = {
+		merchants = 0.25
+		mercenary_cost = -0.05
+	}
+}
+
+cloth = {
+	color = { 0.7 1.0 1.0 }
+	modifier = {
+		infantry_cost = -0.05
+		land_attrition = -0.10
+	}
+}
+
+fish = {
+	color = { 0.0 1.0 0 }
+	modifier = {
+		naval_forcelimit_modifier = 0.15
+		naval_morale = 0.2
+	}
+}
+
+fur = {
+	color = { 1.0 1.0 1 }
+	modifier = {
+		global_cot_gravity = 2
+		advisor_cost = -0.15
+	}
+}
+
+salt = {
+	color = { 1.0 0.0 1 }
+	modifier = {
+		trade_efficiency = 0.03
+		production_efficiency = 0.02
+	}
+}
+
+naval_supplies = {
+	color = { 1.0 0.4 0.4 }
+	modifier = {
+		spy_efficiency = 0.03
+		spies_cost = -0.10
+	}
+}
+
+
+# metals
+copper = {
+	color = { 0.0 0.4 0.4 }
+	modifier = {
+		land_morale = 0.25
+		army_tradition = 0.005
+	}
+}
+
+gold = {
+	color = { 0.0 0.0 0.4 }
+		modifier = {
+		spy_efficiency = 0.04
+		global_spy_defence = 0.06
+	}
+}
+
+iron = {
+	color = { 0.0 1.0 0.0 }
+	modifier = {
+		land_tech_cost_modifier = -0.04
+		discipline = 0.04
+	}
+}
+
+#Ä¾²Ä
+slaves = {
+	color = { 0.0 0.0 0.0 }
+	modifier = {
+		build_cost = -0.10
+		naval_maintenance_modifier = -0.10
+	}
+}
+
+#Ò©²Ä
+ivory = {
+	color = { 1.0 1.0 1.0 }
+	modifier = {
+		land_attrition = -0.10
+		garrison_growth = 0.15
+	}
+}
+
+#²èÒ¶
+tea = {
+	color = { 1.0 1.0 1.0 }
+	modifier = {
+		interest = -0.03
+		tolerance_own = 0.30
+	}
+}
+
+#ÌÕÆ÷
+chinaware = {
+	color = { 1.0 1.0 1.0 }
+	modifier = {
+		production_tech_cost_modifier = -0.04
+		colonist_cost = -0.06
+		}
+}
+
+#ÂíÆ¥
+spices = {
+	color = { 1.0 1.0 1.0 }
+	modifier = {
+		cavalry_cost = -0.06
+		artillery_cost = -0.04
+	}
+}
+
+#Å£Ñò
+coffee = {
+	color = { 1.0 0.0 1.0 }
+	# 0.2 1
+	modifier = {
+		defensiveness = 0.08
+		colonist_placement_chance = 0.04
+	}
+}
+
+#ÆáÆ÷
+cotton = {
+	color = { 1.0 0.0 0.0 }
+	modifier = {
+		diplomats = 0.5
+		cultural_tradition = 0.005
+	}
+}
+
+#Óñ
+sugar = {
+	color = { 0.1 0.7 0.5 }
+	modifier = {
+		badboy_limit = 3
+		diplomatic_skill = 2
+	}
+}
+
+#Ï¬Ïó
+tobacco = {
+	color = { 0.0 0.7 0.5 }
+	modifier = {
+		trade_range_modifier = 0.25
+		merchant_compete_chance = 0.05
+	}
+}
+
+# unknown
+unknown = {
+	color = { 0.5 0.5 0.5 }
+}

@@ -1,0 +1,51 @@
+
+owner = MZR
+controller = MZR
+culture = xirong
+religion = animism
+capital = "√‡÷Ó"
+trade_goods = coffee
+hre = no
+base_tax = 7
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = MZR
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2222.1.1 = { 
+	citysize = 26000
+}
+2246.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	religion = liyuebadao
+}
+2246.1.2 = { 
+	owner = MZR
+	controller = MZR
+	add_core = MZR
+	remove_core = QIN
+	religion = animism
+}
+2303.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2333.1.1 = { 
+	add_core = QIN
+	culture = guanzhong
+}
+2360.1.1 = { 
+	religion = mojia
+}
+2492.2.1={owner=YOW controller=YOW add_core=YOW}  2492.11.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

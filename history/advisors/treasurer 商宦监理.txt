@@ -1,0 +1,37 @@
+# 在经商或国家贸易上做出成就的政治人物
+
+advisor ={
+name ="端木赐" 
+location =123
+skill =5
+type =treasurer
+date =2198.1.1
+death_date =2248.1.1
+}
+
+advisor ={
+name ="范蠡" 
+location =438
+skill =6
+type =treasurer
+date =2182.1.1
+death_date =2250.1.1
+}
+
+advisor ={
+name ="范蠡" 
+location =438
+skill =6
+type =treasurer
+date =2245.6.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="吕不韦" 
+location =180
+skill =5
+type =treasurer
+date =2415.1.1
+death_date =2463.1.1
+}

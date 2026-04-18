@@ -1,0 +1,67 @@
+culture = li
+religion = ancestor
+capital = "‰”∆÷"
+trade_goods = gold
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2180.1.1 = { 
+	discovered_by = CHU
+}
+2230.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 5000
+	fort1 = yes
+}
+2244.1.1 = { 
+	owner = MIA
+	controller = MIA
+	add_core = MIA
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = MIA
+}
+2246.1.1 = { 
+	owner = MIA
+	controller = MIA
+	add_core = MIA
+	remove_core = CHU
+	religion = liyuebadao
+	citysize = 12000
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = MIA
+	citysize = 6000
+}
+2260.1.1 = { 
+	add_core = CHU
+}
+2418.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2419.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2421.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2452.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}

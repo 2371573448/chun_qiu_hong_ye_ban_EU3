@@ -1,0 +1,12 @@
+#ÐÙÅ«¹­Æï±ø
+
+type = artillery
+unit_type = xiongnu
+
+maneuver = 2
+offensive_fire = 8
+defensive_fire = 8
+offensive_shock = 5
+defensive_shock = 4
+offensive_morale = 6
+defensive_morale = 4

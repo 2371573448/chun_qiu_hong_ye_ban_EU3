@@ -1,0 +1,70 @@
+
+owner = DAI
+controller = DAI
+culture = shanrong
+religion = animism
+capital = "ф╫рь"
+trade_goods = coffee
+hre = no
+base_tax = 8
+manpower = 0
+citysize = 38000
+fort1 = yes
+add_core = DAI
+cot = no
+
+1928.1.1 = { discovered_by = DAI }
+2120.1.1 = { discovered_by = JIN }
+2222.1.1 = { 
+	citysize = 24000
+}
+2223.1.1 = { 
+	owner = JIN
+	controller = JIN
+}
+2244.1.1 = { 
+	owner = DAI
+	controller = DAI
+	add_core = DAI
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = DAI
+}
+2245.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+	culture = hebei
+}
+2246.1.1 = { 
+	religion = liyuejiaohua
+}
+2246.1.2 = { 
+	owner = DAI
+	controller = DAI
+	culture = baidi
+	add_core = DAI
+	remove_core = WEG
+	remove_core = LOU
+	religion = liyuebadao
+}
+2247.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = LOU
+}
+2320.1.1 = { 
+	religion = liyuejiaohua
+}
+2476.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+
+2492.2.1={owner=DAI controller=DAI}   2493.9.1={owner=HNW controller=HNW}

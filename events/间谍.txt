@@ -1,0 +1,44 @@
+country_event = { 
+	id = 500
+	is_triggered_only = yes
+	title = "EVTNAME5001"
+	desc = "EVTDESC5001"
+	option = { 
+		name = "EVTOPTA500"
+		years_of_income = 0.5
+		any_country = { 
+			limit = { 
+				has_country_flag = heqinguo
+			}
+			white_peace = THIS
+			clr_country_flag = heqinguo
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = { 
+		name = "EVTOPTA500"
+		stability = -1
+		any_country = { 
+			limit = { 
+				has_country_flag = heqinguo
+			}
+			clr_country_flag = heqinguo
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = { 
+	id = 501
+	is_triggered_only = yes
+	title = "EVTNAME501"
+	desc = "EVTDESC501"
+	option = { 
+		name = "EVTOPTA501"
+		any_country = { 
+			relation = { 
+				who = THIS
+				value = -500
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+country_decisions = { 
+	chengwang = { 
+		potential = { 
+			OR = { 
+				tag = PAP
+				tag = CHU
+			}
+			ai = yes
+		}
+		allow = { 
+			prestige = 0.99
+			badboy = 0.99
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "chengwang"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

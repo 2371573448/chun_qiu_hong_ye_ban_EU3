@@ -1,0 +1,46 @@
+
+culture = wuyue
+religion = ancestor
+capital = "÷ÓÙﬂ"
+trade_goods = wool
+hre = no
+base_tax = 4
+manpower = 0
+2090.1.1 = { 
+	discovered_by = YGO
+}
+2090.1.1 = { 
+	discovered_by = QIG
+}
+2105.1.1 = { 
+	owner = YGO
+	controller = YGO
+	citysize = 16000
+	fort1 = yes
+}
+2135.1.1 = { 
+	add_core = YGO
+}
+2205.1.1 = { 
+	religion = liyuebadao
+}
+2222.1.1 = { 
+	citysize = 28000
+	fort2 = yes
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.6.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

@@ -1,0 +1,2066 @@
+#殖民物产锁定事件
+
+province_event = { 
+	# 最终消除未知-懒人补丁
+	id = 45620
+	trigger = { 
+		trade_goods = unknown
+		citysize = 3000
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME45620"
+	desc = "EVTDESC45620"
+	option = { 
+		name = "EVTOPTA45620"
+		random_list = {
+			1 = { trade_goods = grain }
+			1 = { trade_goods = wine }
+			1 = { trade_goods = wool }
+			1 = { trade_goods = cloth }
+			1 = { trade_goods = fish }
+			1 = { trade_goods = fur }
+			1 = { trade_goods = salt }
+			1 = { trade_goods = gold }
+			1 = { trade_goods = naval_supplies }
+			1 = { trade_goods = copper }
+			1 = { trade_goods = iron }
+			1 = { trade_goods = slaves }
+			1 = { trade_goods = ivory }
+			1 = { trade_goods = tea }
+			1 = { trade_goods = chinaware }
+			1 = { trade_goods = spices }
+			1 = { trade_goods = coffee }
+			1 = { trade_goods = cotton }
+			1 = { trade_goods = sugar }
+			1 = { trade_goods = tobacco }
+		}
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 粮食 grain
+	id = 849
+	trigger = { 
+		OR = { 
+			province_id = 8
+			province_id = 60
+			province_id = 61
+			province_id = 62
+			province_id = 103
+			province_id = 105
+			province_id = 117
+			province_id = 125
+			province_id = 145
+			province_id = 153
+			province_id = 208
+			province_id = 214
+			province_id = 215
+			province_id = 230
+			province_id = 249
+			province_id = 255
+			province_id = 328
+			province_id = 344
+			province_id = 407
+			province_id = 414
+			province_id = 434
+			province_id = 492
+			province_id = 493
+			province_id = 506
+			province_id = 507
+			province_id = 534
+			province_id = 562
+			province_id = 579
+			province_id = 584
+			province_id = 832
+			province_id = 839
+			province_id = 842
+			province_id = 921
+			province_id = 950
+			province_id = 949
+			province_id = 1127
+			province_id = 1133
+			province_id = 1142
+			province_id = 1147
+			province_id = 1208
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME849"
+	desc = "EVTDESC849"
+	option = { 
+		name = "EVTOPTA849"
+		trade_goods = grain
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 鱼 fish
+	id = 850
+	trigger = { 
+		OR = { 
+			province_id = 1
+			province_id = 108
+			province_id = 254
+			province_id = 294
+			province_id = 437
+			province_id = 443
+			province_id = 486
+			province_id = 500
+			province_id = 511
+			province_id = 525
+			province_id = 836
+			province_id = 840
+			province_id = 965
+			province_id = 1138
+			province_id = 1139
+			province_id = 1140
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME850"
+	desc = "EVTDESC850"
+	option = { 
+		name = "EVTOPTA850"
+		trade_goods = fish
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 毛皮 fur
+	id = 851
+	trigger = { 
+		OR = { 
+			province_id = 10
+			province_id = 19
+			province_id = 26
+			province_id = 27
+			province_id = 46
+			province_id = 139
+			province_id = 142
+			province_id = 144
+			province_id = 149
+			province_id = 157
+			province_id = 174
+			province_id = 220
+			province_id = 491
+			province_id = 497
+			province_id = 560
+			province_id = 561
+			province_id = 833
+			province_id = 1137
+			province_id = 1151
+			province_id = 1176
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME851"
+	desc = "EVTDESC851"
+	option = { 
+		name = "EVTOPTA851"
+		trade_goods = fur
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 牛羊 coffee
+	id = 852
+	trigger = { 
+		OR = { 
+			province_id = 28
+			province_id = 30
+			province_id = 69
+			province_id = 102
+			province_id = 104
+			province_id = 126
+			province_id = 136
+			province_id = 138
+			province_id = 156
+			province_id = 158
+			province_id = 159
+			province_id = 186
+			province_id = 577
+			province_id = 580
+			province_id = 585
+			province_id = 586
+			province_id = 1017
+			province_id = 1017
+			province_id = 1128
+			province_id = 1129
+			province_id = 1136
+			province_id = 1155
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME852"
+	desc = "EVTDESC852"
+	option = { 
+		name = "EVTOPTA852"
+		trade_goods = coffee
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 盐 salt
+	id = 853
+	trigger = { 
+		OR = { 
+			province_id = 2
+			province_id = 109
+			province_id = 244
+			province_id = 251
+			province_id = 435
+			province_id = 439
+			province_id = 582
+			province_id = 844
+			province_id = 948
+			province_id = 1153
+			province_id = 1154
+			province_id = 1167
+			province_id = 1173
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME853"
+	desc = "EVTDESC853"
+	option = { 
+		name = "EVTOPTA853"
+		trade_goods = salt
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 漆器 cotton
+	id = 854
+	trigger = { 
+		OR = { 
+			province_id = 110
+			province_id = 130
+			province_id = 498
+			province_id = 512
+			province_id = 568
+			province_id = 947
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME854"
+	desc = "EVTDESC854"
+	option = { 
+		name = "EVTOPTA854"
+		trade_goods = cotton
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 铁 iron
+	id = 855
+	trigger = { 
+		OR = { 
+			province_id = 5
+			province_id = 112
+			province_id = 113
+			province_id = 150
+			province_id = 198
+			province_id = 242
+			province_id = 366
+			province_id = 453
+			province_id = 483
+			province_id = 553
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME855"
+	desc = "EVTDESC855"
+	option = { 
+		name = "EVTOPTA855"
+		trade_goods = iron
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 布匹 cloth
+	id = 856
+	trigger = { 
+		OR = { 
+			province_id = 38
+			province_id = 39
+			province_id = 118
+			province_id = 121
+			province_id = 124
+			province_id = 134
+			province_id = 195
+			province_id = 243
+			province_id = 342
+			province_id = 373
+			province_id = 457
+			province_id = 841
+			province_id = 1141
+			province_id = 1143
+			province_id = 1145
+			province_id = 1146
+			province_id = 1150
+			province_id = 1186
+			province_id = 1207
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME856"
+	desc = "EVTDESC856"
+	option = { 
+		name = "EVTOPTA856"
+		trade_goods = cloth
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 蚕丝 wool
+	id = 857
+	trigger = { 
+		OR = { 
+			province_id = 127
+			province_id = 151
+			province_id = 213
+			province_id = 253
+			province_id = 429
+			province_id = 436
+			province_id = 444
+			province_id = 445
+			province_id = 446
+			province_id = 452
+			province_id = 1144
+			province_id = 1156
+			province_id = 1166
+			province_id = 1174
+			province_id = 1179
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME857"
+	desc = "EVTDESC857"
+	option = { 
+		name = "EVTOPTA857"
+		trade_goods = wool
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 马匹 spices
+	id = 858
+	trigger = { 
+		OR = { 
+			province_id = 9
+			province_id = 14
+			province_id = 20
+			province_id = 52
+			province_id = 53
+			province_id = 57
+			province_id = 91
+			province_id = 135
+			province_id = 141
+			province_id = 143
+			province_id = 146
+			province_id = 152
+			province_id = 155
+			province_id = 161
+			province_id = 199
+			province_id = 367
+			province_id = 433
+			province_id = 554
+			province_id = 556
+			province_id = 578
+			province_id = 919
+			province_id = 981
+			province_id = 1157
+			province_id = 1158
+			province_id = 1159
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME858"
+	desc = "EVTDESC858"
+	option = { 
+		name = "EVTOPTA858"
+		trade_goods = spices
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 药材 ivory
+	id = 859
+	trigger = { 
+		OR = { 
+			province_id = 3
+			province_id = 15
+			province_id = 217
+			province_id = 245
+			province_id = 252
+			province_id = 332
+			province_id = 441
+			province_id = 448
+			province_id = 490
+			province_id = 513
+			province_id = 542
+			province_id = 547
+			province_id = 564
+			province_id = 566
+			province_id = 835
+			province_id = 838
+			province_id = 1152
+			province_id = 1148
+			province_id = 1149
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME859"
+	desc = "EVTDESC859"
+	option = { 
+		name = "EVTOPTA859"
+		trade_goods = ivory
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 木材 slaves
+	id = 860
+	trigger = { 
+		OR = { 
+			province_id = 166
+			province_id = 176
+			province_id = 177
+			province_id = 187
+			province_id = 200
+			province_id = 222
+			province_id = 229
+			province_id = 239
+			province_id = 246
+			province_id = 456
+			province_id = 458
+			province_id = 508
+			province_id = 548
+			province_id = 557
+			province_id = 558
+			province_id = 834
+			province_id = 837
+			province_id = 920
+			province_id = 1117
+			province_id = 1175
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME860"
+	desc = "EVTDESC860"
+	option = { 
+		name = "EVTOPTA860"
+		trade_goods = slaves
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 茶叶 tea
+	id = 861
+	trigger = { 
+		OR = { 
+			province_id = 237
+			province_id = 417
+			province_id = 427
+			province_id = 447
+			province_id = 494
+			province_id = 510
+			province_id = 529
+			province_id = 552
+			province_id = 1217
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME861"
+	desc = "EVTDESC861"
+	option = { 
+		name = "EVTOPTA861"
+		trade_goods = tea
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 陶器 chinaware
+	id = 862
+	trigger = { 
+		OR = { 
+			province_id = 64
+			province_id = 107
+			province_id = 185
+			province_id = 420
+			province_id = 424
+			province_id = 428
+			province_id = 455
+			province_id = 475
+			province_id = 549
+			province_id = 951
+			province_id = 1165
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME862"
+	desc = "EVTDESC862"
+	option = { 
+		name = "EVTOPTA862"
+		trade_goods = chinaware
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 酒 wine
+	id = 863
+	trigger = { 
+		OR = { 
+			province_id = 196
+			province_id = 197
+			province_id = 476
+			province_id = 581
+			province_id = 843
+			province_id = 1132
+			province_id = 1210
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME863"
+	desc = "EVTDESC863"
+	option = { 
+		name = "EVTOPTA863"
+		trade_goods = wine
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 黄金 gold
+	id = 864
+	trigger = { 
+		OR = { 
+			province_id = 31
+			province_id = 204
+			province_id = 372
+			province_id = 489
+			province_id = 499
+			province_id = 550
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME864"
+	desc = "EVTDESC864"
+	option = { 
+		name = "EVTOPTA864"
+		trade_goods = gold
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 玉石 sugar
+	id = 865
+	trigger = { 
+		OR = { 
+			province_id = 4
+			province_id = 7
+			province_id = 219
+			province_id = 227
+			province_id = 440
+			province_id = 526
+			province_id = 1134
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME865"
+	desc = "EVTDESC865"
+	option = { 
+		name = "EVTOPTA865"
+		trade_goods = sugar
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 犀象 tobacco
+	id = 866
+	trigger = { 
+		OR = { 
+			province_id = 221
+			province_id = 238
+			province_id = 371
+			province_id = 478
+			province_id = 487
+			province_id = 488
+			province_id = 503
+			province_id = 505
+			province_id = 541
+			province_id = 544
+			province_id = 551
+			province_id = 563
+			province_id = 569
+			province_id = 570
+			province_id = 1016
+			province_id = 1188
+			province_id = 1192
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME866"
+	desc = "EVTDESC866"
+	option = { 
+		name = "EVTOPTA866"
+		trade_goods = tobacco
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 白银 naval_supplies
+	id = 867
+	trigger = { 
+		OR = { 
+			province_id = 6
+			province_id = 175
+			province_id = 338
+			province_id = 495
+			province_id = 496
+			province_id = 546
+			province_id = 559
+			province_id = 565
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME867"
+	desc = "EVTDESC867"
+	option = { 
+		name = "EVTOPTA867"
+		trade_goods = naval_supplies
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+province_event = { 
+	# 铜 copper
+	id = 868
+	trigger = { 
+		OR = { 
+			province_id = 65
+			province_id = 184
+			province_id = 401
+			province_id = 451
+			province_id = 454
+			province_id = 481
+			province_id = 501
+			province_id = 504
+			province_id = 509
+			province_id = 555
+			province_id = 567
+			province_id = 583
+			province_id = 1135
+		}
+		trade_goods = unknown
+		citysize = 600
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	immediate = { 
+		set_province_flag = tradegood_picked
+	}
+	title = "EVTNAME868"
+	desc = "EVTDESC868"
+	option = { 
+		name = "EVTOPTA868"
+		trade_goods = copper
+		clr_province_flag = tradegood_picked
+		owner = { 
+			officials = 1
+		}
+	}
+}
+
+#影响省份产出
+
+#部落优势产业添加
+country_event = { 
+	id = 1551
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			OR = { 
+				government = tribal_federation
+				government = tribal_despotism
+				government = steppe_horde
+			}
+			any_owned_province = { 
+				OR = { 
+					trade_goods = spices
+					trade_goods = fur
+					trade_goods = coffee
+				}
+				not = { 
+					has_province_modifier = tribe_product1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1551"
+	desc = "EVTDESC1551"
+	option = { 
+		name = "EVTOPTA1551"
+		any_country = { 
+			limit = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = steppe_horde
+				}
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						trade_goods = spices
+						trade_goods = fur
+						trade_goods = coffee
+					}
+				}
+				add_province_modifier = { 
+					name = "tribe_product1"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#部落优势产业去除
+country_event = { 
+	id = 1552
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			any_owned_province = { 
+				has_province_modifier = tribe_product1
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1552"
+	desc = "EVTDESC1552"
+	option = { 
+		name = "EVTOPTA1552"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					government = tribal_federation
+				}
+				NOT = { 
+					government = tribal_despotism
+				}
+				NOT = { 
+					government = steppe_horde
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = tribe_product1
+			}
+		}
+	}
+}
+
+#部落劣势产业添加
+country_event = { 
+	id = 1553
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			OR = { 
+				government = tribal_federation
+				government = tribal_despotism
+				government = steppe_horde
+			}
+			any_owned_province = { 
+				OR = { 
+					trade_goods = grain
+					trade_goods = cotton
+					trade_goods = tea
+					trade_goods = wool
+				}
+				not = { 
+					has_province_modifier = tribe_product2
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1553"
+	desc = "EVTDESC1553"
+	option = { 
+		name = "EVTOPTA1553"
+		any_country = { 
+			limit = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = steppe_horde
+				}
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						trade_goods = grain
+						trade_goods = cotton
+						trade_goods = tea
+						trade_goods = wool
+					}
+				}
+				add_province_modifier = { 
+					name = "tribe_product2"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#部落劣势产业去除
+country_event = { 
+	id = 1554
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			any_owned_province = { 
+				has_province_modifier = tribe_product2
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1554"
+	desc = "EVTDESC1554"
+	option = { 
+		name = "EVTOPTA1554"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					government = tribal_federation
+				}
+				NOT = { 
+					government = tribal_despotism
+				}
+				NOT = { 
+					government = steppe_horde
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = tribe_product2
+			}
+		}
+	}
+}
+
+#行舟走舸buff
+country_event = { 
+	id = 1555
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			idea = grand_army
+			any_owned_province = { 
+				trade_goods = fish
+				not = { 
+					has_province_modifier = morefish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1555"
+	desc = "EVTDESC1555"
+	option = { 
+		name = "EVTOPTA1555"
+		any_country = { 
+			limit = { 
+				idea = grand_army
+			}
+			any_owned = { 
+				limit = { 
+					trade_goods = fish
+				}
+				add_province_modifier = { 
+					name = "morefish"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#行舟走舸buff去除
+country_event = { 
+	id = 1556
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				idea = grand_army
+			}
+			any_owned_province = { 
+				has_province_modifier = morefish
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1556"
+	desc = "EVTDESC1556"
+	option = { 
+		name = "EVTOPTA1556"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					idea = grand_army
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = morefish
+			}
+		}
+	}
+}
+
+#盐铁专卖buff
+country_event = { 
+	id = 1557
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			idea = colonial_ventures
+			any_owned_province = { 
+				OR = { 
+					trade_goods = iron
+					trade_goods = salt
+				}
+				not = { 
+					has_province_modifier = product_control
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1557"
+	desc = "EVTDESC1557"
+	option = { 
+		name = "EVTOPTA1557"
+		any_country = { 
+			limit = { 
+				idea = colonial_ventures
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						trade_goods = salt
+						trade_goods = wine
+						trade_goods = iron
+					}
+				}
+				add_province_modifier = { 
+					name = "product_control"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#盐铁专卖buff去除
+country_event = { 
+	id = 1558
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				idea = colonial_ventures
+			}
+			any_owned_province = { 
+				has_province_modifier = product_control
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1558"
+	desc = "EVTDESC1558"
+	option = { 
+		name = "EVTOPTA1558"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					idea = colonial_ventures
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = product_control
+			}
+		}
+	}
+}
+
+#齐国专属buff
+country_event = { 
+	id = 1559
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			tag = QIG
+			any_owned_province = { 
+				OR = { 
+					trade_goods = fish
+					trade_goods = salt
+				}
+				not = { 
+					has_province_modifier = qiguo_product
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1559"
+	desc = "EVTDESC1559"
+	option = { 
+		name = "EVTOPTA1559"
+		any_country = { 
+			limit = { 
+				tag = QIG
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						trade_goods = fish
+						trade_goods = salt
+					}
+					not = { 
+						has_province_modifier = qiguo_product
+					}
+				}
+				add_province_modifier = { 
+					name = "qiguo_product"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#齐国专属buff去除
+country_event = { 
+	id = 1560
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				tag = QIG
+			}
+			any_owned_province = { 
+				has_province_modifier = qiguo_product
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1558"
+	desc = "EVTDESC1558"
+	option = { 
+		name = "EVTOPTA1558"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					tag = QIG
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = product_control
+			}
+		}
+	}
+}
+country_event = { 
+	id = 4559
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			any_owned_province = { 
+				NOT = { 
+					mercantilism_freetrade = -3
+				}
+				OR = { 
+					trade_goods = salt
+					trade_goods = wine
+					trade_goods = iron
+					trade_goods = naval_supplies
+					trade_goods = gold
+					trade_goods = copper
+				}
+				not = { 
+					has_province_modifier = yantiebuff1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4559"
+	desc = "EVTDESC4559"
+	option = { 
+		name = "EVTOPTA4559"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					mercantilism_freetrade = -3
+				}
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						trade_goods = salt
+						trade_goods = wine
+						trade_goods = iron
+						trade_goods = naval_supplies
+						trade_goods = gold
+						trade_goods = copper
+					}
+					not = { 
+						has_province_modifier = yantiebuff1
+					}
+				}
+				add_province_modifier = { 
+					name = "yantiebuff1"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 4560
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			mercantilism_freetrade = -3
+			any_owned_province = { 
+				has_province_modifier = yantiebuff1
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4559"
+	desc = "EVTDESC4559"
+	option = { 
+		name = "EVTOPTA4559"
+		any_country = { 
+			limit = { 
+				mercantilism_freetrade = -3
+			}
+			any_owned = { 
+				remove_province_modifier = yantiebuff1
+			}
+		}
+	}
+}
+country_event = { 
+	id = 4561
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			any_owned_province = { 
+				idea = land_of_opportunity
+				OR = { 
+					trade_goods = grain
+					trade_goods = wool
+				}
+				not = { 
+					has_province_modifier = zhongnongbuff1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4561"
+	desc = "EVTDESC4561"
+	option = { 
+		name = "EVTOPTA4561"
+		any_country = { 
+			limit = { 
+				idea = land_of_opportunity
+			}
+			any_owned = { 
+				limit = { 
+					idea = land_of_opportunity
+					OR = { 
+						trade_goods = grain
+						trade_goods = wool
+					}
+					not = { 
+						has_province_modifier = zhongnongbuff1
+					}
+				}
+				add_province_modifier = { 
+					name = "zhongnongbuff1"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 4562
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				idea = land_of_opportunity
+			}
+			any_owned_province = { 
+				has_province_modifier = zhongnongbuff1
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4561"
+	desc = "EVTDESC4561"
+	option = { 
+		name = "EVTOPTA4561"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					idea = land_of_opportunity
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = zhongnongbuff1
+			}
+		}
+	}
+}
+country_event = { 
+	id = 4563
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			any_owned_province = { 
+				tag = LUG
+				has_country_flag = ruxueqiyuan
+				not = { 
+					has_province_modifier = ruxuebuff
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4559"
+	desc = "EVTDESC4559"
+	option = { 
+		name = "EVTOPTA4559"
+		any_country = { 
+			limit = { 
+				tag = LUG
+				has_country_flag = ruxueqiyuan
+			}
+			any_owned = { 
+				limit = { 
+					religion =  rujia
+					not = { 
+						has_province_modifier = ruxuebuff
+					}
+				}
+				add_province_modifier = { 
+					name = "ruxuebuff"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 4564
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				religion =  rujia
+			}
+			any_owned_province = { 
+				has_province_modifier = ruxuebuff
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4561"
+	desc = "EVTDESC4561"
+	option = { 
+		name = "EVTOPTA4561"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					religion =  rujia
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = ruxuebuff
+			}
+		}
+	}
+}
+country_event = { 
+	# 粮食铜铁归零
+	id = 152100
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 2
+	}
+	title = "EVTNAME152100"
+	desc = "EVTDESC152100"
+	option = { 
+		name = "EVTOPTA152100"
+		any_country = { 
+			set_variable = {
+				which = liangshishuliang
+				value = 0
+			}
+		}
+		any_country = { 
+			set_variable = {
+				which = tongtieshuliang
+				value = 0
+			}
+		}
+		country_event = 152101
+	}
+}
+
+country_event = { 
+	# 粮食铜铁计算
+	id = 152101
+	trigger = { 
+		tag = NPC
+		not = { tag = NPC }
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME152101"
+	desc = "EVTDESC152101"
+	option = { 
+		name = "EVTOPTA152101"
+		any_country = { 
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = grain
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.5
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					or = { 
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = coffee
+					}
+					has_building = cathedral
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.5
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = copper
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = copper
+					has_building = stock_exchange
+					has_building = textile
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 1
+					}
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = tuiguangtieqi
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = iron
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = iron
+					has_building = stock_exchange
+					has_building = textile
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	# 非核心
+	id = 152102
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 2
+	}
+	title = "EVTNAME152102"
+	desc = "EVTDESC152102"
+	option = { 
+		name = "EVTOPTA152102"
+		any_country = { 
+			any_owned = { 
+				limit = { 
+					not = { is_core = yes }
+					revolt_risk = 1
+				}
+				add_province_modifier = { 
+					name = "xinzhengfu"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			any_owned = { 
+				limit = { 
+					or = {
+						is_core = yes
+						not = { revolt_risk = 1 }
+					}
+				}
+				remove_province_modifier = xinzhengfu
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = yiyidailao
+			}
+			any_owned = { 
+				limit = { 
+					port = yes
+				}
+				add_province_modifier = { 
+					name = "woxinxunlian"
+					duration = -1
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = yiyidailao
+			}
+			any_owned = { 
+				limit = { 
+					port = yes
+					not = { is_blockaded = yes }
+				}
+				add_province_modifier = { 
+					name = "woxinjichushui"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	# 要塞循环触发
+	id = 152103
+	trigger = { 
+		tag = NPC
+		not = { tag = NPC }
+		#not = { 
+			#has_country_flag = yaosaichushichufa
+		#}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME152103"
+	desc = "EVTDESC152103"
+	option = { 
+		name = "EVTOPTA152103"
+		set_country_flag = yaosaichushichufa
+		country_event = 152104
+	}
+}
+country_event = { 
+	# 要塞buff添加
+	id = 152104
+	trigger = { 
+		tag = NPC
+	}
+	is_triggered_only = yes
+	title = "EVTNAME152104"
+	desc = "EVTDESC152104"
+	option = { 
+		name = "EVTOPTA152104"
+		#country_event = 152103
+		any_owned = { 
+			remove_province_modifier = yaosaibuji1
+			remove_province_modifier = yaosaibuji2
+			remove_province_modifier = yaosaibuji3
+			remove_province_modifier = yaosaibuji4
+		}
+		any_country = { 
+			limit = { 
+				tag = this
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						and = {
+							not = { has_siege = yes }
+							has_building = fort5
+							not = { has_building = fort6 }
+						}
+						and = {
+							controlled_by = this
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort5
+								controlled_by = this
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort5
+								controlled_by = this
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+						and = {
+							controlled_by = this
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort5
+								not = { controlled_by = this }
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort5
+								not = { controlled_by = this }
+							}
+							not = {
+								any_neighbor_province = {
+								has_building = fort6
+								}
+							}
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "yaosaibuji1"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						and = {
+							has_siege = yes
+							has_building = fort5
+							not = { has_building = fort6 }
+						}
+						and = {
+							controlled_by = this
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort5
+								controlled_by = this
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort5
+								controlled_by = this
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+						and = {
+							controlled_by = this
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort5
+								not = { controlled_by = this }
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort5
+								not = { controlled_by = this }
+							}
+							not = {
+								any_neighbor_province = {
+									has_building = fort6
+								}
+							}
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "yaosaibuji2"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						and = {
+							not = { has_siege = yes }
+							has_building = fort6
+						}
+						and = {
+							controlled_by = this
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort6
+								controlled_by = this
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort6
+								controlled_by = this
+							}
+						}
+						and = {
+							controlled_by = this
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort6
+								not = { controlled_by = this }
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort6
+								not = { controlled_by = this }
+							}
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "yaosaibuji3"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						and = {
+							has_siege = yes
+							has_building = fort6
+						}
+						and = {
+							controlled_by = this
+							has_siege = yes
+							any_neighbor_province = {
+								has_building = fort6
+								controlled_by = this
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort6
+								controlled_by = this
+							}
+						}
+						and = {
+							controlled_by = this
+							not = { has_siege = yes }
+							any_neighbor_province = {
+								has_building = fort6
+								not = { controlled_by = this }
+							}
+						}
+						and = {
+							not = { controlled_by = this }
+							has_siege = yes
+							any_neighbor_province = {
+							has_building = fort6
+							not = { controlled_by = this }
+							}
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "yaosaibuji4"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	# 要塞循环触发
+	id = 152105
+	trigger = { 
+		OR = {
+			not = {
+				has_country_flag = yaosaiweihufei
+			}
+			had_country_flag = { 
+				flag = yaosaiweihufei
+				days = 1825
+			}
+		}
+		any_owned_province = { 
+			or = {
+				has_building = fort5
+				has_building = fort6
+			}
+		} 
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME152105"
+	desc = "EVTDESC152105"
+	option = { 
+		name = "EVTOPTA152105"
+		set_country_flag = yaosaiweihufei
+		any_owned = { 
+			limit = { 
+				has_building = fort5
+				not = { has_building = fort6 }
+			}
+			owner = { treasury = -50 }
+		}
+		any_owned = { 
+			limit = { 
+				has_building = fort6
+			}
+			owner = { treasury = -100 }
+		}
+	}
+}
+
+

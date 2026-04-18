@@ -1,0 +1,146 @@
+country_decisions = { 
+	tribal_despotism_reform = { 
+		potential = { 
+			government = tribal_despotism
+		}
+		allow = { 
+			NOT = { 
+				centralization_decentralization = 0
+			}
+			NOT = { 
+				innovative_narrowminded = 0
+			}
+			any_neighbor_country = { 
+				religion_group = christian
+			}
+			ADM = 7
+			legitimacy = 0.75
+			prestige = 0.5
+			stability = 1
+			war = no
+		}
+		effect = { 
+			government = fengjian
+			stability = -4
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	steppe_horde_reform = { 
+		potential = { 
+			government = steppe_horde
+		}
+		allow = { 
+			NOT = { 
+				centralization_decentralization = 2
+			}
+			NOT = { 
+				innovative_narrowminded = 3
+			}
+			any_neighbor_country = { 
+				NOT = { 
+					government = steppe_horde
+				}
+			}
+			ADM = 5
+			DIP = 5
+			MIL = 5
+			legitimacy = 0.5
+			government_tech = 6
+			stability = 1
+			AI = NO
+		}
+		effect = { 
+			government = tribal_federation
+			stability = -3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	mojiajuzi_reform = { 
+		potential = { 
+			religion = mojia
+			has_global_flag = zhanguokaishi
+			NOT = { 
+				government = mojiajuzi
+			}
+		}
+		allow = { 
+			prestige = 0.5
+			idea = deus_vult
+			government_tech = 45
+			stability = 2
+		}
+		effect = { 
+			government = mojiajuzi
+			stability = -2
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	small_city_reform = { 
+		potential = { 
+			religion = daojia
+			NOT = { 
+				num_of_cities = 3
+			}
+			NOT = { 
+				government = small_city
+			}
+		}
+		allow = { 
+			NOT = { 
+				ADM = 6
+			}
+			NOT = { 
+				DIP = 6
+			}
+			NOT = { 
+				MIL = 6
+			}
+			idea = patron_of_art
+			idea = cabinet
+			government_tech = 36
+		}
+		effect = { 
+			government = small_city
+			stability = -2
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	noble_republic_reform = { 
+		potential = { 
+			NOT = { 
+				tag = PAP
+			}
+			regency = yes
+			government_tech = 12
+			NOT = { 
+				government = noble_republic
+			}
+		}
+		allow = { 
+			ADM = 6
+			DIP = 6
+			NOT = { 
+				aristocracy_plutocracy = -2
+			}
+			NOT = { 
+				legitimacy = 0.50
+			}
+			stability = 3
+		}
+		effect = { 
+			government = noble_republic
+			stability = -3
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

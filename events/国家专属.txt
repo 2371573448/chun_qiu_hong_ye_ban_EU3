@@ -1,0 +1,4675 @@
+country_event = { 
+	id = 5001
+	trigger = { 
+		tag = JIN
+		ADM = 7
+		NOT = { 
+			has_country_flag = jinwenzhiba
+		}
+		OR = { 
+			has_factions = no
+			is_emperor = yes
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5001"
+	desc = "EVTDESC5001"
+	option = { 
+		name = "EVTOPTA5001"
+		set_country_flag = jinwenzhiba
+	}
+}
+province_event = { 
+	id = 6002
+	trigger = { 
+		owner = { tag = JIN }
+		has_province_modifier = noble_territory
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME1504"
+	desc = "EVTDESC1504"
+	option = { 
+		name = "EVTOPTA1504"
+		remove_province_modifier = noble_territory
+		add_province_modifier = { 
+			name = "monarch_territory"
+			duration = -1
+		}
+		change_variable = { 
+			which = "monarch_territory_number"
+			value = 1
+		}
+	}
+}
+country_event = { 
+	id = 6003
+	trigger = { 
+		tag = JIN
+		ADM = 5
+		has_country_flag = jinwenzhiba
+		NOT = { 
+			prestige = 0.3
+			ADM = 7
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME6003"
+	desc = "EVTDESC6003"
+	option = { 
+		name = "EVTOPTA6003"
+		prestige = 0.2
+	}
+}
+country_event = { 
+	id = 6004
+	trigger = { 
+		tag = JIN
+		ADM = 7
+		has_country_flag = jinwenzhiba
+		NOT = { 
+			prestige = 0.5
+			ADM = 9
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME6003"
+	desc = "EVTDESC6003"
+	option = { 
+		name = "EVTOPTA6003"
+		prestige = 0.2
+	}
+}
+country_event = { 
+	id = 6005
+	trigger = { 
+		tag = JIN
+		ADM = 9
+		has_country_flag = jinwenzhiba
+		NOT = { 
+			prestige = 0.7
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME6003"
+	desc = "EVTDESC6003"
+	option = { 
+		name = "EVTOPTA6003"
+		prestige = 0.2
+	}
+}
+country_event = { 
+	# 楚-祝融苗裔
+	id = 5003
+	trigger = { 
+		tag = CHU
+		NOT = { 
+			has_country_flag = zhurongmiaoyi
+		}
+		legitimacy = 0.90
+		num_of_cities = 40
+		naval_tech = 24
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5003"
+	desc = "EVTDESC5003"
+	option = { 
+		name = "EVTOPTA5003"
+		set_country_flag = zhurongmiaoyi
+		add_accepted_culture = li
+		add_accepted_culture = jingman
+	}
+}
+
+country_event = { 
+	# 楚-用兵他国
+	id = 17567
+	trigger = { 
+		tag = CHU
+		NOT = { 
+			has_country_flag = wobenmanyi
+		}
+	}
+	mean_time_to_happen = { 
+		years = 0
+	}
+	title = "EVTNAME17567"
+	desc = "EVTDESC17567"
+	option = { 
+		name = "EVTOPTA17567"
+		set_country_flag = wobenmanyi
+		add_country_modifier = { 
+			name = "YONGBINGTAGUO_debuff"
+		duration = -1
+		}
+	}
+}
+country_event = { 
+	# 齐-九合诸侯
+	id = 50042
+	trigger = { 
+		tag = QIG
+		DIP = 7
+		idea = press_gangs
+		NOT = { 
+			has_country_flag = jiuhezhuhou
+			has_country_flag = jiuhezhuhou2
+		}
+		has_global_flag = zhanguokaishi
+		OR = {
+			NOT = {
+				SON = { ai = yes }
+			}
+			relation = { 
+				who = SON
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				YGO = { ai = yes }
+			}
+			relation = { 
+				who = YGO
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				QIN = { ai = yes }
+			}
+			relation = { 
+				who = QIN
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				HAN = { ai = yes }
+			}
+			relation = { 
+				who = HAN
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				WEI = { ai = yes }
+			}
+			relation = { 
+				who = WEI
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				ZGO = { ai = yes }
+			}
+			relation = { 
+				who = ZGO
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				CHU = { ai = yes }
+			}
+			relation = { 
+				who = CHU
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				WUG = { ai = yes }
+			}
+			relation = { 
+				who = WUG
+				value = 60
+			}
+		}
+		OR = {
+			NOT = {
+				WEG = { ai = yes }
+			}
+			relation = { 
+				who = WEG
+				value = 60
+			}
+		}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5004"
+	desc = "EVTDESC5004"
+	option = { 
+		name = "EVTOPTA5004"
+		set_country_flag = jiuhezhuhou
+		set_country_flag = jiuhezhuhou2
+		prestige = 0.01
+	}
+}
+
+country_event = { 
+	# 齐-九合诸侯
+	id = 5004
+	trigger = { 
+		tag = QIG
+		NOT = { 
+			has_country_flag = jiuhezhuhou
+			has_country_flag = jiuhezhuhou2
+		}
+		is_emperor = yes
+		prestige = 0.75
+		NOT = { badboy = 0.25 }
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5004"
+	desc = "EVTDESC5004"
+	option = { 
+		name = "EVTOPTA5004"
+		set_country_flag = jiuhezhuhou
+		set_country_flag = jiuhezhuhou2
+		prestige = 0.01
+	}
+}
+country_event = { 
+	# 秦-变法图强
+	id = 5005
+	trigger = { 
+		tag = QIN
+		NOT = { 
+			has_country_flag = bianfatuqiang
+		}
+		not = { 
+			has_country_modifier = bianfatuqiang_buff
+		}
+		has_global_flag = zhanguokaishi
+		idea = smithian_economics
+		advisor = rear_admiral
+		rear_admiral = 4
+		any_owned_province = { 
+			religion = fajia
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5005"
+	desc = "EVTDESC5005"
+	option = { 
+		name = "EVTOPTA5005"
+		set_country_flag = bianfatuqiang
+		add_country_modifier = { 
+			name = "bianfatuqiang_buff"
+			duration = -1
+		}
+	}
+}
+
+country_event = { 
+	# 秦-求贤令
+	id = 5067
+	trigger = { 
+		tag = QIN
+		ADM = 6
+		NOT = { 
+			has_country_flag = qiuxianling
+		}
+		has_global_flag = zhanguokaishi
+		idea = smithian_economics
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5059"
+	desc = "EVTDESC5059"
+	option = { 
+		name = "EVTOPTA5059"
+		set_country_flag = qiuxianling
+		prestige = 0.01
+	}
+}
+
+country_event = { 
+	# 吴-伍员奔吴
+	id = 5006
+	trigger = { 
+		tag = WUG
+		NOT = { 
+			has_country_flag = wuyuanbenwu
+		}
+		religion_group = christian
+		technology_group = chinese
+		prestige = 0.50
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5006"
+	desc = "EVTDESC5006"
+	option = { 
+		name = "EVTOPTA5006"
+		set_country_flag = wuyuanbenwu
+		government_tech = 0.25
+		land_tech = 0.25
+		naval_tech = 0.25
+		trade_tech = 0.25
+		production_tech = 0.25
+	}
+}
+
+#越国专属debuff
+country_event = { 
+	id = 5007
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				primary_culture = wuyue
+			}
+			any_owned_province = { 
+				OR = { 
+					province_id = 437
+					province_id = 438
+					province_id = 439
+					province_id = 440
+					province_id = 441
+					province_id = 442
+					province_id = 443
+					province_id = 450
+					province_id = 451
+					province_id = 452
+				}
+				not = { 
+					has_province_modifier = YGO_debuff
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5007"
+	desc = "EVTDESC5007"
+	option = { 
+		name = "EVTOPTA5007"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					primary_culture = wuyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						province_id = 437
+						province_id = 438
+						province_id = 439
+						province_id = 440
+						province_id = 441
+						province_id = 442
+						province_id = 443
+						province_id = 450
+						province_id = 451
+						province_id = 452
+					}
+					not = { 
+						has_province_modifier = YGO_debuff
+					}
+				}
+				add_province_modifier = { 
+					name = "YGO_debuff"
+					duration = 36500
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 5008
+	trigger = { 
+		tag = NPC
+		OR = { 
+			any_country = { 
+				primary_culture = wuyue
+				any_owned_province = { 
+					has_province_modifier = YGO_debuff
+				}
+			}
+			any_country = { 
+				NOT = { 
+					primary_culture = wuyue
+				}
+				any_owned_province = { 
+					has_owner_culture = yes
+					has_province_modifier = YGO_debuff
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5008"
+	desc = "EVTDESC5008"
+	option = { 
+		name = "EVTOPTA5008"
+		any_country = { 
+			limit = { 
+				primary_culture = wuyue
+			}
+			any_owned = { 
+				remove_province_modifier = YGO_debuff
+			}
+		}
+		any_country = { 
+			limit = { 
+				NOT = { 
+					primary_culture = wuyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					has_owner_culture = yes
+				}
+				remove_province_modifier = YGO_debuff
+			}
+		}
+	}
+}
+
+
+country_event = { 
+	# 越-卧薪尝胆
+	id = 5009
+	trigger = { 
+		tag = YGO
+		NOT = { 
+			has_country_flag = woxinchangdan
+		}
+		religion_group = christian
+		NOT = { badboy = 0.3 }
+		NOT = { manpower_percentage = 0.4 }
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5009"
+	desc = "EVTDESC5009"
+	option = { 
+		name = "EVTOPTA5009"
+		set_country_flag = woxinchangdan
+		badboy = -2
+	}
+}
+
+#燕国专属debuff
+country_event = { 
+	id = 5010
+	trigger = { 
+		tag = NPC
+		YAN = { 
+			any_owned_province = { 
+				has_national_focus  = yes
+				not = { 
+					has_province_modifier = YAN_buff
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5010"
+	desc = "EVTDESC5010"
+	option = { 
+		name = "EVTOPTA5010"
+		YAN= { 
+			any_owned = { 
+				limit = { has_national_focus  = yes }
+				add_province_modifier = { 
+					name = "YAN_buff"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = { has_national_focus  = no }
+				remove_province_modifier = YAN_buff
+			}
+		}
+	}
+}
+country_event = { 
+	id = 5011
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { tag = YAN }
+			any_owned_province = { 
+				has_province_modifier = YAN_buff
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5011"
+	desc = "EVTDESC5011"
+	option = { 
+		name = "EVTOPTA5011"
+		any_country = { 
+			limit = { 
+				NOT = { tag = YAN }
+			}
+			any_owned = { 
+				remove_province_modifier = YAN_buff
+			}
+		}
+	}
+}
+
+country_event = { 
+	# 燕-千金马骨
+	id = 5012
+	trigger = { 
+		tag = YAN
+		OR = { 
+			has_country_modifier = zhaowangtuqiang
+		}
+		NOT = { 
+			has_country_flag = qianjinmagu
+		}
+		has_global_flag = zhanguokaishi
+		DIP = 7
+		has_country_modifier = guangkaiyanlu
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5012"
+	desc = "EVTDESC5012"
+	option = { 
+		name = "EVTOPTA5012"
+		set_country_flag = qianjinmagu
+		cultural_tradition = 0.15
+	}
+}
+
+country_event = { 
+	# 鲁-鲁班木工
+	id = 5013
+	trigger = { 
+		tag = LUG
+		NOT = { 
+			has_country_flag = lubanmugong
+		}
+		advisor = natural_scientist
+		natural_scientist = 5
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5013"
+	desc = "EVTDESC5013"
+	option = { 
+		name = "EVTOPTA5013"
+		set_country_flag = lubanmugong
+		legitimacy = 0.10
+		cultural_tradition = 0.10
+	}
+}
+
+country_event = { 
+	# 郑-郑商卫国
+	id = 5015
+	trigger = { 
+		tag = ZGO
+		placed_merchants = 10
+		merchants = 5
+		NOT = { 
+			has_country_flag = zhengshangweiguo
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5015"
+	desc = "EVTDESC5015"
+	option = { 
+		name = "EVTOPTA5015"
+		legitimacy = 0.10
+		merchants = -5
+		set_country_flag = zhengshangweiguo
+	}
+}
+country_event = { 
+	# 郑-郑商四海
+	id = 5072
+	trigger = { 
+		tag = ZGO
+		NOT = { 
+			has_country_flag = zhengshangsihai
+		}
+		has_global_flag = zhanguokaishi
+		ADM = 6
+		DIP = 6
+		mercantilism_freetrade = 4
+		aristocracy_plutocracy = 4
+		idea = merchant_adventures
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5900"
+	desc = "EVTDESC5900"
+	option = { 
+		name = "EVTOPTA900"
+		set_country_flag = zhengshangsihai
+		prestige = 0.01
+	}
+}
+country_event = { 
+	# 
+	id = 5071
+	trigger = { 
+		tag = ZGO
+		has_country_flag = zhengshangsihai
+		not = { 
+			has_country_modifier = zhengshangsihai_buff
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5900"
+	desc = "EVTDESC5900"
+	option = { 
+		name = "EVTOPTA5900"
+			add_country_modifier = { 
+				name = "zhengshangsihai_buff"
+				duration = -1
+			}
+		}
+}
+country_event = { 
+	# 郑-索要贷款
+	id = 5016
+	trigger = { 
+		tag = ZGO
+		NOT = { 
+			has_country_modifier = jiedai
+		}
+		has_country_flag = jiedai
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5016"
+	desc = "EVTDESC5016"
+	option = { 
+		name = "EVTOPTA5016"
+		treasury = -500
+		clr_country_flag = jiedai
+	}
+	option = { 
+		name = "EVTOPTB5016"
+		badboy = 4
+		stability = -1
+		prestige = -0.2
+		clr_country_flag = jiedai
+	}
+}
+#卫国占卜
+country_event = { 
+	# 乾卦
+	id = 5017
+	is_triggered_only = yes
+	title = "EVTNAME5017"
+	desc = "EVTDESC5017"
+	option = { 
+		name = "EVTOPTA5017"
+		stability = 2
+	}
+}
+country_event = { 
+	# 兑卦
+	id = 5018
+	is_triggered_only = yes
+	title = "EVTNAME5018"
+	desc = "EVTDESC5018"
+	option = { 
+		name = "EVTOPTA5018"
+		any_neighbor_country = { 
+			relation = { who = THIS value = 25 }
+		}
+	}
+}
+country_event = { 
+	# 离卦
+	id = 5019
+	is_triggered_only = yes
+	title = "EVTNAME5019"
+	desc = "EVTDESC5019"
+	option = { 
+		name = "EVTOPTA5019"
+		add_country_modifier = { 
+			name = "zhanbu3"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	# 震卦
+	id = 5020
+	is_triggered_only = yes
+	title = "EVTNAME5020"
+	desc = "EVTDESC5020"
+	option = { 
+		name = "EVTOPTA5020"
+		add_country_modifier = { 
+			name = "zhanbu4"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	# 巽卦
+	id = 5021
+	is_triggered_only = yes
+	title = "EVTNAME5021"
+	desc = "EVTDESC5021"
+	option = { 
+		name = "EVTOPTA5021"
+		add_country_modifier = { 
+			name = "zhanbu5"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	# 坎卦
+	id = 5022
+	is_triggered_only = yes
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	option = { 
+		name = "EVTOPTA5022"
+		random_owned = {
+			particularist_rebels = 2
+		}
+		random_owned = {
+			noble_rebels = 1
+		}		
+	}
+}
+country_event = { 
+	# 艮卦
+	id = 5023
+	is_triggered_only = yes
+	title = "EVTNAME5023"
+	desc = "EVTDESC5023"
+	option = { 
+		name = "EVTOPTA5023"
+		add_country_modifier = { 
+			name = "zhanbu7"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	# 坤卦
+	id = 5024
+	is_triggered_only = yes
+	title = "EVTNAME5024"
+	desc = "EVTDESC5024"
+	option = { 
+		name = "EVTOPTA5024"
+		add_country_modifier = { 
+			name = "zhanbu8"
+			duration = 1825
+		}
+	}
+}
+
+country_event = { 
+	# 卫-卫多君子
+	id = 5025
+	trigger = { 
+		tag = WEG
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		DIP = 7
+		war = no
+		NOT = { badboy = 0.20 }
+		naval_tech = 16
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5025"
+	desc = "EVTDESC5025"
+	option = { 
+		name = "EVTOPTA5025"
+		set_country_flag = weiduojunzi
+	}
+}
+
+country_event = { 
+	# 赵-将相和
+	id = 5026
+	trigger = { 
+		tag = ZHO
+		NOT = { 
+			has_country_flag = jiangxianghe
+		}
+		has_global_flag = zhanguokaishi
+		has_country_modifier = chengwang
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5026"
+	desc = "EVTDESC5026"
+	option = { 
+		name = "EVTOPTA5026"
+		set_country_flag = jiangxianghe
+		prestige = 0.15
+	}
+}
+
+country_event = { 
+	# 韩-弓强剑利
+	id = 5031
+	trigger = { 
+		NOT = { 
+			has_country_flag = gongqiangjianli
+		}
+		tag = HAN
+		land_tech = 42
+		production_tech = 42
+		has_country_modifier = shenbuhaibianfa
+		iron = 2
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5031"
+	desc = "EVTDESC5031"
+	option = { 
+		name = "EVTOPTA5031"
+		set_country_flag = gongqiangjianli
+		army_tradition = 0.10
+	}
+}
+country_event = { 
+	# 齐-稷下学宫
+	id = 5032
+	trigger = { 
+		tag = QIG
+		idea = ecumenism
+		has_global_flag = zhanguokaishi
+		aristocracy_plutocracy = 3
+		any_owned_province = { 
+			has_building = naval_arsenal
+		}
+		NOT = { 
+			has_country_flag = jixiaxuegong
+		}
+		ADM = 7
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5032"
+	desc = "EVTDESC5032"
+	option = { 
+		name = "EVTOPTA5032"
+		set_country_flag = jixiaxuegong
+	}
+}
+country_event = { 
+	# 吴-孙子兵法
+	id = 5033
+	trigger = { 
+		tag = WUG
+		NOT = { 
+			has_country_flag = sunzibingfa
+		}
+		has_global_flag = zhanguokaishi
+		army_tradition = 0.4
+		and = {
+			advisor = sergeant_major_general
+			sergeant_major_general = 4
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5033"
+	desc = "EVTDESC5033"
+	option = { 
+		name = "EVTOPTA5033"
+		set_country_flag = sunzibingfa
+		army_tradition = 0.10
+	}
+}
+country_event = { 
+	# 楚-山河广袤
+	id = 5039
+	trigger = { 
+		tag = CHU
+		NOT = { 
+			has_country_flag = shanheguangmao
+		}
+		has_global_flag = zhanguokaishi
+		production_tech = 39
+		government_tech = 39
+		naval_tech = 39
+		land_tech = 39
+		ADM = 6
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5039"
+	desc = "EVTDESC5039"
+	option = { 
+		name = "EVTOPTA5039"
+		set_country_flag = shanheguangmao
+	}
+}
+country_event = { 
+	# 越-铸造之功
+	id = 5040
+	trigger = { 
+		tag = YGO
+		NOT = { 
+			has_country_flag = zhuzaozhigong
+		}
+		has_global_flag = zhanguokaishi
+		land_tech = 40
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5040"
+	desc = "EVTDESC5040"
+	option = { 
+		name = "EVTOPTA5040"
+		set_country_flag = zhuzaozhigong
+	}
+}
+country_event = { 
+	# 齐-稷下学宫
+	id = 5044
+	trigger = { 
+		not = { 
+			has_country_modifier = QIG_buff1
+			has_country_modifier = QIG_buff2
+		}
+		tag = QIG
+		idea = ecumenism
+		has_country_flag = jixiaxuegong
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5032"
+	desc = "EVTDESC5032"
+	option = {
+		name = "EVTOPTA5044"
+		add_country_modifier = { 
+			name = "QIG_buff1"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB5044"
+		add_country_modifier = { 
+			name = "QIG_buff2"
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = 5045
+	trigger = { 
+		ADM = 7
+		tag = CHE
+		NOT = { 
+			has_country_flag = yushunzhihou
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5045"
+	desc = "EVTDESC5045"
+	option = { 
+		name = "EVTOPTA5045"
+		set_country_flag = yushunzhihou
+	}
+}
+province_event = { 
+	id = 5046
+	trigger = { 
+		owner = { has_country_flag = yushunzhihou }
+		
+
+	}
+	mean_time_to_happen = { 
+		months = 1500
+		modifier = { 
+			factor = 1.25
+			base_tax = 10
+		}
+		modifier = { 
+			factor = 1.25
+			base_tax = 14
+		}
+		modifier = { 
+			factor = 0.85
+			NOT = { base_tax = 5 }
+		}
+		modifier = { 
+			factor = 0.5
+			NOT = { base_tax = 3 }
+		}
+		modifier = { 
+			factor = 2
+			base_tax = 16 
+		}
+		modifier = { 
+			factor = 3
+			base_tax = 20 
+		}
+	}
+	title = "EVTNAME5046"
+	desc = "EVTDESC5046"
+	option = { 
+		name = "EVTOPTA5046"
+		base_tax = 1
+	}
+}
+country_event = { 
+	# 
+	id = 5050
+	trigger = { 
+		tag = SGU
+		NOT = { 
+			exists = BAG
+		}
+		NOT = { 
+			has_country_flag = shanchuanxianyao
+		}
+		owns = 248
+		owns = 250
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5050"
+	desc = "EVTDESC5050"
+	option = { 
+		name = "EVTOPTA5050"
+		set_country_flag = shanchuanxianyao
+	}
+}
+country_event = { 
+	#
+	id = 5051
+	is_triggered_only = yes
+	title = "EVTNAME5051"
+	desc = "EVTDESC5051"
+	option = { 
+		name = "EVTOPTA5051"
+		centralization_decentralization = -1
+	}
+	option = { 
+		name = "EVTOPTB5051"
+		aristocracy_plutocracy = -1
+	}
+	option = { 
+		name = "EVTOPTC5051"
+		serfdom_freesubjects = -1
+	}
+	option = { 
+		name = "EVTOPTD5051"
+		innovative_narrowminded = -1
+	}
+	option = { 
+		name = "EVTOPTE5051"
+		mercantilism_freetrade = -1
+	}
+	option = { 
+		name = "EVTOPTF5051"
+		offensive_defensive = -1
+	}
+	option = { 
+		name = "EVTOPTG5051"
+		land_naval = -1
+	}
+	option = { 
+		name = "EVTOPTH5051"
+		quality_quantity = -1
+	}
+}
+country_event = { 
+	#
+	id = 5052
+	is_triggered_only = yes
+	title = "EVTNAME5052"
+	desc = "EVTDESC5052"
+	option = { 
+		name = "EVTOPTA5052"
+		centralization_decentralization = 1
+	}
+	option = { 
+		name = "EVTOPTB5052"
+		aristocracy_plutocracy = 1
+	}
+	option = { 
+		name = "EVTOPTC5052"
+		serfdom_freesubjects = 1
+	}
+	option = { 
+		name = "EVTOPTD5052"
+		innovative_narrowminded = 1
+	}
+	option = { 
+		name = "EVTOPTE5052"
+		mercantilism_freetrade = 1
+	}
+	option = { 
+		name = "EVTOPTF5052"
+		offensive_defensive = 1
+	}
+	option = { 
+		name = "EVTOPTG5052"
+		land_naval = 1
+	}
+	option = { 
+		name = "EVTOPTH5052"
+		quality_quantity = 1
+	}
+}
+country_event = { 
+	# 
+	id = 5053
+	trigger = { 
+		tag = PAP
+		NOT = { 
+			has_country_flag = mofeiwangtu
+		}
+		num_of_cities = 10
+		idea = naval_glory
+		prestige = 0.50
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5053"
+	desc = "EVTDESC5053"
+	option = { 
+		name = "EVTOPTA5053"
+		set_country_flag = mofeiwangtu
+	}
+}
+province_event = { 
+	id = 5054
+	trigger = { 
+		idea = naval_glory
+		NOT = { 
+			is_core = this
+		}
+		owner = { has_country_flag = mofeiwangtu}
+	}
+	mean_time_to_happen = { 
+		months = 140
+	}
+	title = "EVTNAME1002"
+	desc = "EVTDESC1002"
+	option = { 
+		name = "EVTOPTA1002"
+		add_core = this
+	}
+}
+country_event = { 
+	# 
+	id = 5055
+	trigger = { 
+		tag = ZHI
+		NOT = { 
+			exists = JIN
+		}
+		NOT = { 
+			has_country_flag = zhengzaisimen
+		}
+		idea = grand_navy
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5055"
+	desc = "EVTDESC5055"
+	option = { 
+		name = "EVTOPTA5055"
+		set_country_flag = zhengzaisimen
+	}
+}
+country_event = { 
+	# 
+	id = 5056
+	trigger = { 
+		tag = CHE
+	}
+	mean_time_to_happen = { 
+		months = 240
+		modifier = { 
+			factor = 0.8
+			cotton = 1
+		}
+		modifier = { 
+			factor = 0.8
+			cotton = 2
+		}
+		modifier = { 
+			factor = 0.8
+			cotton = 3
+		}
+		modifier = { 
+			factor = 0.8
+			cotton = 4
+		}
+		modifier = { 
+			factor = 0.8
+			cotton = 5
+		}
+	}
+	title = "EVTNAME5056"
+	desc = "EVTDESC5056"
+	option = { 
+		name = "EVTOPTA5056"
+		random_list = { 
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff1"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff2"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff3"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff4"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff5"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff6"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff7"
+					duration = 1825
+				}
+			}
+			12.5 = { 
+				add_country_modifier = { 
+					name = "CHE_buff8"
+					duration = 1825
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	# 
+	id = 5057
+	trigger = { 
+		tag = PAP
+		NOT = { 
+			has_country_flag = tianziliushi
+		}
+		idea = press_gangs
+		prestige = 0.50
+		num_of_vassals = 3
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5057"
+	desc = "EVTDESC5057"
+	option = { 
+		name = "EVTOPTA5057"
+		set_country_flag = tianziliushi
+	}
+}
+country_event = { 
+	# 
+	id = 5058
+	trigger = { 
+		tag = ZHS
+		NOT = { 
+			has_country_flag = qierbianqiang
+		}
+		has_country_flag = mil_reform3
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5058"
+	desc = "EVTDESC5058"
+	option = { 
+		name = "EVTOPTA5058"
+		set_country_flag = qierbianqiang
+	}
+}
+country_event = { 
+	# 
+	id = 5059
+	trigger = { 
+		tag = ZHS
+		has_country_flag = qierbianqiang
+		NOT = { 
+			land_size_percentage = 0.4
+			manpower_percentage = 0.50
+			has_country_modifier = ZHS_buff2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5058"
+	desc = "EVTDESC5058"
+	option = { 
+		name = "EVTOPTA5058"
+		add_country_modifier = { 
+			name = "ZHS_buff2"
+			duration = 1080
+		}
+	}
+}
+country_event = { 
+	# 
+	id = 5060
+	trigger = { 
+		tag = YQU
+		owns = 181
+		num_of_cities = 20
+		NOT = { 
+			has_country_flag = mabeiminzu
+		}
+		OR = { 
+			has_country_modifier = likuibianfa
+			has_country_modifier = wuqibianfa
+			has_country_modifier = sunbinzhijun
+			has_country_modifier = shenbuhaibianfa
+			has_country_modifier = shangyangbianfa
+			has_country_modifier = hufuqishe
+			has_country_modifier = zhaowangtuqiang
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5060"
+	desc = "EVTDESC5060"
+	option = { 
+		name = "EVTOPTA5060"
+		set_country_flag = mabeiminzu
+	}
+}
+country_event = { 
+	#
+	id = 5061
+	trigger = { 
+		tag = LAI
+		NOT = { 
+			has_country_flag = dongyiguguo
+		}
+		naval_tech = 40
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5061"
+	desc = "EVTDESC5061"
+	option = { 
+		name = "EVTOPTA5061"
+		set_country_flag = dongyiguguo
+	}
+}
+country_event = { 
+	id = 5062
+	trigger = { 
+		tag = LUG
+		NOT = { 
+			has_country_flag = ruxueqiyuan
+		}
+		religion =  rujia
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5062"
+	desc = "EVTDESC5062"
+	option = { 
+		name = "EVTOPTA5062"
+		set_country_flag = ruxueqiyuan
+		legitimacy = 0.10
+		cultural_tradition = 0.10
+	}
+}
+country_event = { 
+	id = 5063
+	is_triggered_only = yes
+	title = "EVTNAME5063"
+	desc = "EVTDESC5063"
+	option = { 
+		name = "EVTOPTA5063"
+		stability = 2
+		add_country_modifier = { 
+			name = "zhanbu9"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 5064
+	is_triggered_only = yes
+	title = "EVTNAME5064"
+	desc = "EVTDESC5064"
+	option = { 
+		name = "EVTOPTA5064"
+		add_country_modifier = { 
+			name = "zhanbu10"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 5065
+	is_triggered_only = yes
+	title = "EVTNAME5065"
+	desc = "EVTDESC5065"
+	option = { 
+		name = "EVTOPTA5065"
+		add_country_modifier = { 
+			name = "zhanbu11"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 5066
+	is_triggered_only = yes
+	title = "EVTNAME5066"
+	desc = "EVTDESC5066"
+	option = { 
+		name = "EVTOPTA5066"
+		treasury = 300
+	}
+}
+country_event = { 
+	#求贤令事件
+	id = 5068
+	trigger = { 
+		tag = QIN
+		has_country_flag = qiuxianling
+		not = { 
+			has_country_modifier = QIN_buff1
+			has_country_modifier = QIN_buff6
+			has_country_modifier = QIN_buff3
+			has_country_modifier = QIN_buff4
+			has_country_modifier = QIN_buff5
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5059"
+	desc = "EVTDESC5059"
+	option = { 
+		name = "EVTOPTA5068"
+		add_country_modifier = { 
+			name = "QIN_buff1"
+			duration = 3650
+		}
+	}				
+	option = { 
+		name = "EVTOPTB5059"
+		add_country_modifier = { 
+			name = "QIN_buff6"
+			duration = 3650
+		}
+	}		
+	option = { 
+		name = "EVTOPTC5059"
+		add_country_modifier = { 
+			name = "QIN_buff4"
+			duration = 3650
+		}
+	}
+		option = { 
+		name = "EVTOPTD5059"
+		add_country_modifier = { 
+			name = "QIN_buff3"
+			duration = 3650
+		}
+	}
+		option = { 
+		name = "EVTOPTE5059"
+		add_country_modifier = { 
+			name = "QIN_buff5"
+			duration = 3650
+		}
+	}	
+}
+#鲁国儒学起源天赋修正
+country_event = { 
+	id = 4565
+	trigger = { 
+		tag = LUG
+		NOT = { 
+			religion =  rujia
+		}
+		any_owned_province = { 
+			has_province_modifier = ruxuebuff
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5062"
+	desc = "EVTDESC5062"
+	option = { 
+		name = "EVTOPTA5062"
+		any_owned = { 
+			remove_province_modifier = ruxuebuff
+		}
+	}
+}
+province_event = { 
+	id = 4566
+	trigger = { 
+		or = { 
+			owner = { 
+				NOT = { 
+					has_country_flag = ruxueqiyuan
+				}
+ 			}
+			NOT = { 
+				religion =  rujia
+			}
+ 		}
+		has_province_modifier = ruxuebuff
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4565"
+	desc = "EVTDESC4565"
+	option = { 
+		name = "EVTOPTA4565"
+		remove_province_modifier = ruxuebuff
+	}
+}
+#齐国九合诸侯状态修正
+country_event = { 
+	# 
+	id = 5069
+	trigger = { 
+		tag = QIG
+		has_country_flag = jiuhezhuhou2
+		not = { 
+			has_country_modifier = jiuhezhuhou2_buff
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME5004"
+	desc = "EVTDESC5004"
+	option = { 
+		name = "EVTOPTA5004"
+			add_country_modifier = { 
+				name = "jiuhezhuhou2_buff"
+				duration = -1
+			}
+		}
+	}
+
+country_event = { 
+	# 秦-秦之锐士
+	id = 12014
+	trigger = { 
+		tag = QIN
+		has_country_modifier = shangyangbianfa 
+		NOT = { has_country_flag = qinzhiruishi }	
+		MIL = 8	
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME12014"
+	desc = "EVTDESC12014"
+	option = { 
+		name = "EVTOPTA12014"
+		set_country_flag = qinzhiruishi
+			add_country_modifier = { 
+			name = "qinzhiruishi"
+			duration = -1
+		}
+		define_general = { 
+			name = "卫鞅"
+			fire = 5
+			shock = 5
+			manuever = 2
+			siege = 1
+		}
+	}
+}
+#西域诸国天赋
+country_event = { 
+	id = 12019
+	trigger = { 
+		has_global_flag = xiyusuijitianfu
+		capital_scope = { 
+			culture = xiyu
+		}
+		NOT = { 
+			OR = {
+				has_country_flag = xiyutianfu1
+				has_country_flag = xiyutianfu2
+				has_country_flag = xiyutianfu3
+				has_country_flag = xiyutianfu4
+				has_country_flag = xiyutianfu5
+				has_country_flag = xiyutianfu6
+				has_country_flag = xiyutianfu7
+				has_country_flag = xiyutianfu8
+				has_country_flag = xiyutianfu9
+				has_country_flag = xiyutianfu10
+				has_country_flag = xiyutianfu11
+				has_country_flag = xiyutianfu12
+				has_country_flag = xiyutianfu13
+				has_country_flag = xiyutianfu14
+				has_country_flag = xiyutianfu15
+				has_country_flag = xiyutianfu16
+				has_country_flag = xiyutianfu17
+				has_country_flag = xiyutianfu18
+				has_country_flag = xiyutianfu19
+				has_country_flag = xiyutianfu20
+				has_country_flag = xiyutianfu21
+				has_country_flag = xiyutianfu22
+				has_country_flag = xiyutianfu23
+				has_country_flag = xiyutianfu24
+				has_country_flag = xiyutianfu25
+				has_country_flag = xiyutianfu26
+				has_country_flag = xiyutianfu27
+				has_country_flag = xiyutianfu28
+				has_country_flag = xiyutianfu29
+				has_country_flag = xiyutianfu30
+				has_country_flag = xiyutianfu31
+				has_country_flag = xiyutianfu32
+				has_country_flag = xiyutianfu33
+				has_country_flag = xiyutianfu34
+				has_country_flag = xiyutianfu35
+				has_country_flag = xiyutianfu36
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12019"
+	desc = "EVTDESC12019"
+	option = { 
+		name = "EVTOPTA12019"
+		any_country = {
+			limit = {
+				tag = this
+				owns = 768
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu1
+			}
+			set_country_flag = xiyutianfu1
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 771
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu2
+			}
+			set_country_flag = xiyutianfu2
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 773
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu3
+			}
+			set_country_flag = xiyutianfu3
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 765
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu4
+			}
+			set_country_flag = xiyutianfu4
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 770
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu5
+			}
+			set_country_flag = xiyutianfu5
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 1224
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu6
+			}
+			set_country_flag = xiyutianfu6
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 769
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu7
+			}
+			set_country_flag = xiyutianfu7
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 1234
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu8
+			}
+			set_country_flag = xiyutianfu8
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 764
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu9
+			}
+			set_country_flag = xiyutianfu9
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 767
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu10
+			}
+			set_country_flag = xiyutianfu10
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 766
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu11
+			}
+			set_country_flag = xiyutianfu11
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 592
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu12
+			}
+			set_country_flag = xiyutianfu12
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 1220
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu13
+			}
+			set_country_flag = xiyutianfu13
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 1228
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu14
+			}
+			set_country_flag = xiyutianfu14
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 1221
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu15
+			}
+			set_country_flag = xiyutianfu15
+		}
+		any_country = {
+			limit = {
+				tag = this
+				owns = 1225
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu16
+			}
+			set_country_flag = xiyutianfu16
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji1
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu17
+			}
+			set_country_flag = xiyutianfu17
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji2
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu18
+			}
+			set_country_flag = xiyutianfu18
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji3
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu19
+			}
+			set_country_flag = xiyutianfu19
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji4
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu20
+			}
+			set_country_flag = xiyutianfu20
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji5
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu21
+			}
+			set_country_flag = xiyutianfu21
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji6
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu22
+			}
+			set_country_flag = xiyutianfu22
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji7
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu23
+			}
+			set_country_flag = xiyutianfu23
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji8
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu24
+			}
+			set_country_flag = xiyutianfu24
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji9
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu25
+			}
+			set_country_flag = xiyutianfu25
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji10
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu26
+			}
+			set_country_flag = xiyutianfu26
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji11
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu27
+			}
+			set_country_flag = xiyutianfu27
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji12
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu28
+			}
+			set_country_flag = xiyutianfu28
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji13
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu29
+			}
+			set_country_flag = xiyutianfu29
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji14
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu30
+			}
+			set_country_flag = xiyutianfu30
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji15
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu31
+			}
+			set_country_flag = xiyutianfu31
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji16
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu32
+			}
+			set_country_flag = xiyutianfu32
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji17
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu33
+			}
+			set_country_flag = xiyutianfu33
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji18
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu34
+			}
+			set_country_flag = xiyutianfu34
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji19
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu35
+			}
+			set_country_flag = xiyutianfu35
+		}
+		any_country = {
+			limit = {
+				tag = this
+				has_country_flag = xiyusuiji20
+			}
+			capital_scope = { 
+				set_province_flag = xiyutianfu36
+			}
+			set_country_flag = xiyutianfu36
+		}
+	}
+}
+country_event = { 
+	id = 12120
+	trigger = { 
+		tag = NPC
+		NOT = { has_global_flag = xiyusuijitianfu }
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME12120"
+	desc = "EVTDESC12120"
+	option = { 
+		name = "EVTOPTA12120"
+		set_global_flag = xiyusuijitianfu
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji1
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji2
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji3
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji4
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji5
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji6
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji7
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji8
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji9
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji10
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji11
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji12
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji13
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji14
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji15
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji16
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji17
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji18
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji19
+		}
+		random_country = {
+			limit = {
+				primary_culture = xiyu
+				OR = {
+					owns = 724
+					owns = 726
+					owns = 727
+					owns = 758
+					owns = 761
+					owns = 762
+					owns = 763
+					owns = 772
+					owns = 1219
+					owns = 1222
+					owns = 1223
+					owns = 1226
+					owns = 1227
+					owns = 1229
+					owns = 1230
+					owns = 1231
+					owns = 1232
+					owns = 1233
+					owns = 1235
+					owns = 1236
+				}
+				NOT = {
+					OR = {
+						has_country_flag = xiyusuiji1
+						has_country_flag = xiyusuiji2
+						has_country_flag = xiyusuiji3
+						has_country_flag = xiyusuiji4
+						has_country_flag = xiyusuiji5
+						has_country_flag = xiyusuiji6
+						has_country_flag = xiyusuiji7
+						has_country_flag = xiyusuiji8
+						has_country_flag = xiyusuiji9
+						has_country_flag = xiyusuiji10
+						has_country_flag = xiyusuiji11
+						has_country_flag = xiyusuiji12
+						has_country_flag = xiyusuiji13
+						has_country_flag = xiyusuiji14
+						has_country_flag = xiyusuiji15
+						has_country_flag = xiyusuiji16
+						has_country_flag = xiyusuiji17
+						has_country_flag = xiyusuiji18
+						has_country_flag = xiyusuiji19
+						has_country_flag = xiyusuiji20
+					}
+				}
+			}
+			set_country_flag = xiyusuiji20
+		}
+	}
+}
+country_event = { 
+	id = 12121
+	trigger = { 
+		any_owned_province = { 
+			not = {
+				has_province_modifier = zhenghebangmin
+			}
+			has_province_flag = bangguodiwei
+			or = {
+				AND = { 
+					has_province_flag = xiyutianfu1
+					owner = {
+						not = { has_country_flag = xiyutianfu1 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu2
+					owner = {
+						not = { has_country_flag = xiyutianfu2 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu3
+					owner = {
+						not = { has_country_flag = xiyutianfu3 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu4
+					owner = {
+						not = { has_country_flag = xiyutianfu4 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu5
+					owner = {
+						not = { has_country_flag = xiyutianfu5 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu6
+					owner = {
+						not = { has_country_flag = xiyutianfu6 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu7
+					owner = {
+						not = { has_country_flag = xiyutianfu7 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu8
+					owner = {
+						not = { has_country_flag = xiyutianfu8 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu9
+					owner = {
+						not = { has_country_flag = xiyutianfu9 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu10
+					owner = {
+						not = { has_country_flag = xiyutianfu10 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu11
+					owner = {
+						not = { has_country_flag = xiyutianfu11 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu12
+					owner = {
+						not = { has_country_flag = xiyutianfu12 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu13
+					owner = {
+						not = { has_country_flag = xiyutianfu13 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu14
+					owner = {
+						not = { has_country_flag = xiyutianfu14 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu15
+					owner = {
+						not = { has_country_flag = xiyutianfu15 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu16
+					owner = {
+						not = { has_country_flag = xiyutianfu16 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu17
+					owner = {
+						not = { has_country_flag = xiyutianfu17 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu18
+					owner = {
+						not = { has_country_flag = xiyutianfu18 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu19
+					owner = {
+						not = { has_country_flag = xiyutianfu19 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu20
+					owner = {
+						not = { has_country_flag = xiyutianfu20 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu21
+					owner = {
+						not = { has_country_flag = xiyutianfu21 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu22
+					owner = {
+						not = { has_country_flag = xiyutianfu22 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu23
+					owner = {
+						not = { has_country_flag = xiyutianfu23 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu24
+					owner = {
+						not = { has_country_flag = xiyutianfu24 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu25
+					owner = {
+						not = { has_country_flag = xiyutianfu25 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu26
+					owner = {
+						not = { has_country_flag = xiyutianfu26 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu27
+					owner = {
+						not = { has_country_flag = xiyutianfu27 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu28
+					owner = {
+						not = { has_country_flag = xiyutianfu28 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu29
+					owner = {
+						not = { has_country_flag = xiyutianfu29 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu30
+					owner = {
+						not = { has_country_flag = xiyutianfu30 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu31
+					owner = {
+						not = { has_country_flag = xiyutianfu31 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu32
+					owner = {
+						not = { has_country_flag = xiyutianfu32 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu33
+					owner = {
+						not = { has_country_flag = xiyutianfu33 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu34
+					owner = {
+						not = { has_country_flag = xiyutianfu34 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu35
+					owner = {
+						not = { has_country_flag = xiyutianfu35 }
+					}
+				}
+				AND = { 
+					has_province_flag = xiyutianfu36
+					owner = {
+						not = { has_country_flag = xiyutianfu36 }
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12121"
+	desc = "EVTDESC12121"
+	option = { 
+		name = "EVTOPTA12121"
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu1
+			}
+			owner = {
+				set_country_flag = xiyutianfu1
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu2
+			}
+			owner = {
+				set_country_flag = xiyutianfu2
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu3
+			}
+			owner = {
+				set_country_flag = xiyutianfu3
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu4
+			}
+			owner = {
+				set_country_flag = xiyutianfu4
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu5
+			}
+			owner = {
+				set_country_flag = xiyutianfu5
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu6
+			}
+			owner = {
+				set_country_flag = xiyutianfu6
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu7
+			}
+			owner = {
+				set_country_flag = xiyutianfu7
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu8
+			}
+			owner = {
+				set_country_flag = xiyutianfu8
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu9
+			}
+			owner = {
+				set_country_flag = xiyutianfu9
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu10
+			}
+			owner = {
+				set_country_flag = xiyutianfu10
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu11
+			}
+			owner = {
+				set_country_flag = xiyutianfu11
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu12
+			}
+			owner = {
+				set_country_flag = xiyutianfu12
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu13
+			}
+			owner = {
+				set_country_flag = xiyutianfu13
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu14
+			}
+			owner = {
+				set_country_flag = xiyutianfu14
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu15
+			}
+			owner = {
+				set_country_flag = xiyutianfu15
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu16
+			}
+			owner = {
+				set_country_flag = xiyutianfu16
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu17
+			}
+			owner = {
+				set_country_flag = xiyutianfu17
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu18
+			}
+			owner = {
+				set_country_flag = xiyutianfu18
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu19
+			}
+			owner = {
+				set_country_flag = xiyutianfu19
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu20
+			}
+			owner = {
+				set_country_flag = xiyutianfu20
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu21
+			}
+			owner = {
+				set_country_flag = xiyutianfu21
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu22
+			}
+			owner = {
+				set_country_flag = xiyutianfu22
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu23
+			}
+			owner = {
+				set_country_flag = xiyutianfu23
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu24
+			}
+			owner = {
+				set_country_flag = xiyutianfu24
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu25
+			}
+			owner = {
+				set_country_flag = xiyutianfu25
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu26
+			}
+			owner = {
+				set_country_flag = xiyutianfu26
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu27
+			}
+			owner = {
+				set_country_flag = xiyutianfu27
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu28
+			}
+			owner = {
+				set_country_flag = xiyutianfu28
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu29
+			}
+			owner = {
+				set_country_flag = xiyutianfu29
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu30
+			}
+			owner = {
+				set_country_flag = xiyutianfu30
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu31
+			}
+			owner = {
+				set_country_flag = xiyutianfu31
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu32
+			}
+			owner = {
+				set_country_flag = xiyutianfu32
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu33
+			}
+			owner = {
+				set_country_flag = xiyutianfu33
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu34
+			}
+			owner = {
+				set_country_flag = xiyutianfu34
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu35
+			}
+			owner = {
+				set_country_flag = xiyutianfu35
+			}
+		}
+		any_owned = { 
+			limit = { 
+				not = {
+					has_province_modifier = zhengzaijianshe
+				}
+				has_province_flag = bangguodiwei
+				has_province_flag = xiyutianfu36
+			}
+			owner = {
+				set_country_flag = xiyutianfu36
+			}
+		}
+	}
+}
+country_event = { 
+	id = 12122
+	#小宛乌孙
+	trigger = { 
+		tag = NPC
+		OR = {
+			any_country = {
+				has_country_flag = xiyutianfu6
+				any_owned = { 
+					trade_goods = wine
+					not = { has_province_modifier = xiaowanjiu }
+				}
+			}
+			any_country = {
+				has_country_flag = xiyutianfu7
+				any_owned = { 
+					trade_goods = spices
+					not = { has_province_modifier = wusunma }
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12122"
+	desc = "EVTDESC12122"
+	option = { 
+		name = "EVTOPTA12122"
+		any_country = {
+			limit = { 
+				has_country_flag = xiyutianfu6
+			}
+			any_owned = { 
+				limit = { 
+					trade_goods = wine
+				}
+				add_province_modifier = { 
+					name = "xiaowanjiu"
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = { 
+				has_country_flag = xiyutianfu7
+			}
+			any_owned = { 
+				limit = { 
+					trade_goods = spices
+				}
+				add_province_modifier = { 
+					name = "wusunma"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+province_event = { 
+	id = 12123
+	#墨山
+	trigger = { 
+		controller = { has_country_flag = xiyutianfu8 }
+		NOT = { religion = mojia }
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12123"
+	desc = "EVTDESC12123"
+	option = { 
+		name = "EVTOPTA12123"
+		religion = mojia
+	}
+}
+country_event = { 
+	id = 12124
+	#劫
+	trigger = { 
+		has_country_flag = xiyutianfu9
+		OR = {
+			and = {
+				war = yes
+				not = { has_country_modifier = jienan }
+				not = { has_country_flag = jienan }
+			}
+			and = {
+				war = no
+				has_country_flag = jienan
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME12124"
+	desc = "EVTDESC12124"
+	option = { 
+		name = "EVTOPTA12124"
+		any_country = {
+			limit = { 
+				tag = this
+				war = yes
+				not = { has_country_modifier = jienan }
+				not = { has_country_flag = jienan }
+			}
+			set_country_flag = jienan
+			add_country_modifier = { 
+				name = "jienan"
+				duration = 365
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				war = no
+				has_country_flag = jienan
+			}
+			clr_country_flag = jienan
+		}
+	}
+}
+country_event = { 
+	id = 12125
+	#鬼兹
+	trigger = { 
+		has_country_flag = xiyutianfu11
+		capital_scope = {
+			not = { has_province_modifier = "guizi" }
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12125"
+	desc = "EVTDESC12125"
+	option = { 
+		name = "EVTOPTA12125"
+		capital_scope = {
+			add_province_modifier = { 
+				name = "guizi"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = { 
+	id = 12126
+	#皮山
+	trigger = { 
+		has_country_flag = xiyutianfu12
+		any_neighbor_country = {
+			tech_difference = 1
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12126"
+	desc = "EVTDESC12126"
+	option = { 
+		name = "EVTOPTA12126"
+		random_list = {
+			20 = { government_tech = 0.99 }
+			20 = { land_tech = 0.99 }
+			20 = { naval_tech = 0.99 }
+			20 = { trade_tech = 0.99 }
+			20 = { production_tech = 0.99 }
+		}
+	}
+}
+country_event = { 
+	id = 12127
+	#西夜
+	trigger = { 
+		has_country_flag = xiyutianfu13
+		placed_merchants = 1
+	}
+	mean_time_to_happen = { 
+		months = 120
+	}
+	title = "EVTNAME12127"
+	desc = "EVTDESC12127"
+	immediate = {
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				NOT = { has_province_flag = maoyizhongxinsuoding }
+				OR = {
+					NOT = { religion = this }
+					NOT = { culture = this }
+					NOT = { owned_by = this }
+				}
+			}
+			set_province_flag = maoyizhongxinsuoding
+		}
+	}
+	option = { 
+		name = "EVTOPTA12127"
+		any_country = {
+			limit = { 
+				tag = this
+				religion = liyuejiaohua
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = liyuejiaohua
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = liyuebadao
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = liyuebadao
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = rujia
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = rujia
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = fajia
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = fajia
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = mojia
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = mojia
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = daojia
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = daojia
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = animism
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = animism
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				religion = ancestor
+			}
+			any_province = { 
+				limit = {
+					has_province_flag = maoyizhongxinsuoding
+				}
+				religion = ancestor
+				clr_province_flag = maoyizhongxinsuoding
+			}
+		}
+		random_center_of_trade = {
+			limit = {
+				has_province_flag = maoyizhongxinsuoding
+				NOT = { culture = this }
+			}
+			culture = this
+			clr_province_flag = maoyizhongxinsuoding
+		}
+		random_center_of_trade = {
+			limit = {
+				has_province_flag = maoyizhongxinsuoding
+			}
+			secede_province = THIS
+			clr_province_flag = maoyizhongxinsuoding
+		}
+	}
+}
+country_event = { 
+	id = 12128
+	#捐毒
+	trigger = { 
+		has_country_flag = xiyutianfu14
+		placed_merchants = 1
+	}
+	mean_time_to_happen = { 
+		months = 120
+	}
+	title = "EVTNAME12128"
+	desc = "EVTDESC12128"
+	immediate = {
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				NOT = { has_province_flag = maoyizhongxinsuoding }
+				NOT = { has_province_modifier = wenyihengxing }
+			}
+			set_province_flag = maoyizhongxinsuoding
+		}
+	}
+	option = { 
+		name = "EVTOPTA12128"
+		treasury = -500
+		any_province = { 
+			limit = {
+				OR = {
+					has_province_flag = maoyizhongxinsuoding
+					any_neighbor_province = {
+						has_province_flag = maoyizhongxinsuoding
+					}
+					and = {
+						is_capital = yes
+						owner = {
+							any_owned_province = {
+								has_province_flag = maoyizhongxinsuoding
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				manpower = -5
+			}
+			province_event = 4501
+			clr_province_flag = maoyizhongxinsuoding
+		}
+	}
+	option = { 
+		name = "EVTOPTB12128"
+		treasury = -100
+		any_province = { 
+			limit = {
+				has_province_flag = maoyizhongxinsuoding
+			}
+			province_event = 4501
+			clr_province_flag = maoyizhongxinsuoding
+		}
+	}
+	option = { 
+		name = "EVTOPTC12128"
+		legitimacy = -0.25
+		prestige = -0.50
+	}
+}
+country_event = { 
+	id = 12129
+	#第二十一号随机天赋全国人口
+	trigger = { 
+		has_country_flag = xiyutianfu21
+		any_owned_province = { 
+			not = { has_province_modifier = xiyusuijitianfu21 }
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12129"
+	desc = "EVTDESC12129"
+	option = { 
+		name = "EVTOPTA12129"
+		any_owned= { 
+			add_province_modifier = { 
+				name = "xiyusuijitianfu21"
+				duration = -1
+			}
+		}
+	}
+}
+province_event = { 
+	id = 12130
+	trigger = { 
+		owner = {
+			ai = yes
+			tag = YUE
+		}
+		any_country = { 
+			war_with = THIS
+			has_country_flag = xiyudongchu
+		}
+		has_siege = no
+		NOT = { controlled_by = owner }
+		NOT = { controller = { tag = REB } }
+		NOT = { controller = { tag = NAT } }
+		NOT = { controller = { tag = PIR } }
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12130"
+	desc = "EVTDESC12130"
+	immediate = {
+		owner = {
+			set_country_flag = xiyuguojiabiaoji
+		}
+		set_province_flag = xiyushenfenbiaoji
+	}
+	option = { 
+		name = "EVTOPTA12130"
+		random_country = {
+			limit = {
+				has_country_flag = xiyuguojiabiaoji
+				num_of_cities = 2
+			}
+			any_owned_province = { 
+				limit = {
+					has_province_flag = xiyushenfengbiaoji
+				}
+				secede_province = controller
+				clr_province_flag = xiyushengfenbiaoji
+				owner = {
+					clr_country_flag = xiyuguojiabiaoji
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				has_country_flag = xiyuguojiabiaoji
+				NOT = { num_of_cities = 2 }
+			}
+			any_owned_province = { 
+				limit = {
+					has_province_flag = xiyushengfenbiaoji
+				}
+				controller = { inherit = this }
+				clr_province_flag = xiyushengfenbiaoji
+				owner = {
+					clr_country_flag = xiyuguojiabiaoji
+				}
+			}
+			white_peace = THIS
+		}
+	}
+}
+province_event = { 
+	id = 12131
+	trigger = { 
+		culture = xiyu
+		owner = {
+			primary_culture = xiyu
+			NOT = { 
+				has_country_flag = wanjiayoushi
+			}
+			ai = no
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12131"
+	desc = "EVTDESC12131"
+	option = { 
+		name = "EVTOPTA12131"
+		owner = {
+			define_general = {
+				name = "耿恭"
+				shock = 6
+				fire = 6
+				siege = 6
+				manuever = 6
+				rank = 20
+			}
+			treasury = 500
+			manpower = 50
+			diplomats = 10
+			set_country_flag = wanjiayoushi
+		}
+		base_tax = 2
+		change_manpower = 5
+		citysize = 20000
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+	}
+}
+country_event = { 
+	# 西域兼并
+	id = 12132
+	trigger = { 
+		any_country = { 
+			war_with = THIS
+			capital_scope = { 
+				culture = xiyu
+				controlled_by = THIS
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME12132"
+	desc = "EVTDESC12132"
+	option = { 
+		name = "EVTOPTA12132"
+		random_country = { 
+			limit = { 
+				war_with = THIS
+				capital_scope = { 
+					culture = xiyu
+					controlled_by = THIS
+				}
+			}
+			any_owned = { 
+				secede_province = THIS
+			}
+			white_peace = THIS
+		}
+		badboy = -8
+	}
+}
+
+country_event = { 
+	id = 456500
+	trigger = { 
+		tag = WUG
+		any_owned_province = { 
+			OR = { 
+				trade_goods = grain
+				trade_goods = fish
+			}
+			not = { has_province_modifier = yumizhixiang }
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME456500"
+	desc = "EVTDESC456500"
+	option = { 
+		name = "EVTOPTA456500"
+		any_owned = { 
+			limit = { 
+				OR = { 
+					trade_goods = grain
+					trade_goods = fish
+				}
+				not = {
+					has_province_modifier = yumizhixiang
+				}
+			}
+			add_province_modifier = { 
+				name = "yumizhixiang"
+				duration = -1
+			}
+		}
+	}
+}
+province_event = {
+	# 燕国自动割地
+
+	id = 89500
+	trigger = {
+		owner = {
+			or = {
+				tag = WUZ
+				tag = GUZ
+				tag = LZG
+				tag = TUH
+				tag = JSG
+			}
+		}
+		controller = { tag = YAN }
+		controller = { has_country_flag = dajishanrongchidi }
+		region = youzhou
+		owner = { num_of_cities = 2 }
+		or = {
+			not = { set_province_flag = bieshuale }
+			had_province_flag = { 
+				flag = bieshuale
+				days = 30
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	title = "EVTNAME89500"
+	desc = "EVTDESC89500"
+		
+	immediate = {
+		controller = { country_event = 89502 }
+		add_core = YAN
+	}
+
+	option = {
+		name = "EVTOPTA89500"
+		set_province_flag = bieshuale
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		secede_province = controller
+	}
+}
+province_event = {
+	# 燕国自动割地
+
+	id = 89501
+	trigger = {
+		owner = {
+			or = {
+				tag = WUZ
+				tag = GUZ
+				tag = LZG
+				tag = TUH
+				tag = JSG
+			}
+		}
+		controller = { tag = YAN }
+		controller = { has_country_flag = dajishanrongchidi }
+		region = youzhou
+		owner = { not = { num_of_cities = 2 } }
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	title = "EVTNAME89501"
+	desc = "EVTDESC89501"
+		
+	immediate = {
+		controller = { country_event = 89502 }
+		add_core = YAN
+		controller = { inherit = this }
+	}
+
+	option = {
+		name = "EVTOPTA89501"
+		set_province_flag = bieshuale
+	}
+}
+country_event = {
+	id = 89502
+	is_triggered_only = yes
+
+	title = "EVTNAME89502"
+	desc = "EVTDESC89502"
+		
+	immediate = {
+		clr_province_flag = bieshuale
+	}
+	option = {
+		name = "EVTOPTA89502"
+		badboy = 2
+		manpower = 3
+	}
+}
+province_event = {
+	id = 89503
+	trigger = {
+		owner = { has_country_flag = chaoxianxintu }
+		region = chaoxian1
+		not = { citysize = 1000 }
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	title = "EVTNAME89503"
+	desc = "EVTDESC89503"
+		
+	immediate = {
+		set_province_flag = chaoxianxintubiaoji
+		owner = {
+			random_list = {
+				1 = {
+					random_owned = {
+						limit = {
+							or = {
+								region = yuyang
+								region = shanggu
+								region = guangyang
+							}
+							citysize = 30000
+						}
+						citysize = -5000
+						owner = {
+							random_owned = {
+								limit = {
+									has_province_flag = chaoxianxintubiaoji
+								}
+								citysize = 10000
+								clr_province_flag = chaoxianxintubiaoji
+							}
+						}
+					}
+				}
+				1 = {
+					random_owned = {
+						limit = {
+							or = {
+								region = yuyang
+								region = shanggu
+								region = guangyang
+							}
+							citysize = 20000
+						}
+						citysize = -3000
+						owner = {
+							random_owned = {
+								limit = {
+									has_province_flag = chaoxianxintubiaoji
+								}
+								citysize = 6000
+								clr_province_flag = chaoxianxintubiaoji
+							}
+						}
+					}
+				}
+				1 = {
+					random_owned = {
+						limit = {
+							or = {
+								region = yuyang
+								region = shanggu
+								region = guangyang
+							}
+							citysize = 15000
+						}
+						citysize = -2000
+						owner = {
+							random_owned = {
+								limit = {
+									has_province_flag = chaoxianxintubiaoji
+								}
+								citysize = 4000
+								clr_province_flag = chaoxianxintubiaoji
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA89503"
+	}
+}
+country_event = {
+	id = 89504
+	trigger = {
+		marriage_with = CAI
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	title = "EVTNAME89504"
+	desc = "EVTDESC89504"
+		
+	immediate = {
+		kill_heir = THIS
+	}
+	option = {
+		name = "EVTOPTA89504"
+	}
+}

@@ -1,0 +1,29 @@
+country_decisions = { 
+	#Ç¨¶¼ÐÂÖ£
+	qianduxinzheng = { 
+		potential = { 
+			owns = 356
+			NOT = { capital = 356 }
+			NOT = { 
+				has_country_flag = qianduxinzheng
+			}
+			tag = HAN
+			has_global_flag = zhanguokaishi
+		}
+		allow = { 
+			stability = 1
+			is_core = 356
+			war = no
+		}
+		effect = { 
+			capital = 356
+			356 = { 
+				base_tax = 2
+			}
+			set_country_flag = qianduxinzheng
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

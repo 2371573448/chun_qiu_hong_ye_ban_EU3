@@ -1,0 +1,12 @@
+#¶«ºúÆï±ø
+
+type = cavalry
+unit_type = yanguo
+
+maneuver = 3
+offensive_fire = 7
+defensive_fire = 6
+offensive_shock = 7
+defensive_shock = 6
+offensive_morale = 7
+defensive_morale = 6

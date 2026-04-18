@@ -1,0 +1,119 @@
+government = enlightened_despotism
+aristocracy_plutocracy = 5
+centralization_decentralization = -1
+innovative_narrowminded = -4
+mercantilism_freetrade = -2
+offensive_defensive = -4
+land_naval = -5
+quality_quantity = 0
+serfdom_freesubjects = 5
+technology_group = chinese
+religion = daojia
+primary_culture = nanchu
+capital = 219
+unit_type = dahan
+2246.1.2 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = shiguanzhidu
+	set_country_flag = falvzhidu
+	set_country_flag = dubizhidu
+	set_country_flag = tianfuzhidu
+	monarch = { 
+		name = "°î"
+		dynasty = "Áõ"
+		adm = 8
+		dip = 9
+		mil = 6
+	}
+}
+2400.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+	set_country_flag = fengjunzhidu
+	set_country_flag = hujizhidu
+	set_country_flag = guanliaozhidu
+}
+2492.2.1 = { 
+	monarch = { 
+		name = "°î"
+		dynasty = "Áõ"
+		adm = 8
+		dip = 9
+		mil = 6
+		leader = { 
+			name = "Áõ°î"
+			type = general
+			rank = 0
+			fire = 2
+			shock = 2
+			manuever = 9
+			siege = 1
+		}
+	}
+	leader = { 
+		name = "·®ßà"
+		type = general
+		rank = 3
+		fire = 4
+		shock = 5
+		manuever = 1
+		siege = 1
+		death_date = 2509.1.1
+	}
+	leader = { 
+		name = "²Ü²Î"
+		type = general
+		rank = 2
+		fire = 6
+		shock = 3
+		manuever = 4
+		siege = 3
+		death_date = 2511.1.1
+	}
+	leader = { 
+		name = "ÖÜ²ª"
+		type = general
+		rank = 2
+		fire = 3
+		shock = 3
+		manuever = 2
+		siege = 2
+		death_date = 2529.1.1
+	}
+	leader = { 
+		name = "¹àÓ¤"
+		type = general
+		rank = 3
+		fire = 1
+		shock = 6
+		manuever = 3
+		siege = 1
+		death_date = 2520.1.1
+	}
+	leader = { 
+		name = "º«ĞÅ"
+		type = general
+		rank = 1
+		fire = 8
+		shock = 8
+		manuever = 9
+		siege = 9
+		death_date = 2495.1.1
+		# ·â¼ÙÆëÍõ
+	}
+	leader = { 
+		name = "ÂÀÔó"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 4
+		siege = 1
+		death_date = 2500.1.1
+	}
+}
+2492.11.1 = { 
+	capital = 199
+}

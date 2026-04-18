@@ -1,0 +1,90 @@
+owner = BAI
+controller = BAI
+culture = baidi
+religion = animism
+capital = "É½´¨Æ½Ô­"
+trade_goods = spices
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 10000
+fort1 = yes
+add_core = BAI
+cot = no
+1827.1.1 = { 
+	discovered_by = CHA
+}
+2118.1.1 = { 
+	owner = YQU
+	controller = YQU
+	add_core = YQU
+	remove_core = BAI
+}
+2244.1.1 = { 
+	owner = BAI
+	controller = BAI
+	add_core = BAI
+	remove_core = YQU
+}
+2244.1.2 = { 
+	owner = YQU
+	controller = YQU
+	add_core = YQU
+	remove_core = BAI
+}
+2246.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	religion = liyuebadao
+}
+2246.1.2 = { 
+	owner = BAI
+	controller = BAI
+	add_core = BAI
+	remove_core = WEI
+	remove_core = QIN
+	religion = animism
+}
+2246.1.2 = { 
+	owner = BAI
+	controller = BAI
+	add_core = BAI
+	remove_core = WEI
+	remove_core = QIN
+}
+2247.1.1 = { 
+	owner = YQU
+	controller = YQU
+	add_core = YQU
+}
+2286.5.1 = { 
+	owner = WEI
+	controller = WEI
+	citysize = 18000
+	fort1 = yes
+}
+2315.1.1 = { 
+	add_core = WEI
+}
+2346.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2376.1.1 = { 
+	add_core = QIN
+	culture = guanzhong
+}
+2420.1.1 = { 
+	religion = fajia
+}
+2492.2.1 = { 
+	owner = DIW
+	controller = DIW
+	add_core = DIW
+}
+2492.8.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

@@ -1,0 +1,28 @@
+
+owner = YYG
+controller = YYG
+culture = yangyue
+religion = ancestor
+capital = "½ÒÑô"
+trade_goods = sugar
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 12000
+fort1 = yes
+add_core = YYG
+cot = no
+
+2380.1.1 = { 
+	discovered_by = QIN
+}
+2484.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = NAN
+	controller = NAN
+	add_core = NAN
+	citysize = 14000
+}

@@ -1,0 +1,293 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_grand_navy"
+		texturefile = "gfx\\interface\\ideas\\grand_navy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_sea_hawks"
+		texturefile = "gfx\\interface\\ideas\\sea_hawks.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_superior_seamanship"
+		texturefile = "gfx\\interface\\ideas\\superior_seamanship.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_naval_fighting_instruction"
+		texturefile = "gfx\\interface\\ideas\\naval_fighting_instruction.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_excellent_shipwrights"
+		texturefile = "gfx\\interface\\ideas\\excellent_shipwrights.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_naval_glory"
+		texturefile = "gfx\\interface\\ideas\\naval_glory.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_naval_provisioning"
+		texturefile = "gfx\\interface\\ideas\\naval_provisioning.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_national_conscripts"
+		texturefile = "gfx\\interface\\ideas\\national_conscripts.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_grand_army"
+		texturefile = "gfx\\interface\\ideas\\grand_army.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_military_drill"
+		texturefile = "gfx\\interface\\ideas\\military_drill.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_engineer_corps"
+		texturefile = "gfx\\interface\\ideas\\engineer_corps.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_battlefield_commisions"
+		texturefile = "gfx\\interface\\ideas\\battlefield_commisions.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_glorious_arms"
+		texturefile = "gfx\\interface\\ideas\\glorious_arms.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_napoleonic_warfare"
+		texturefile = "gfx\\interface\\ideas\\napoleonic_warfare.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_merchant_adventures"
+		texturefile = "gfx\\interface\\ideas\\merchant_adventures.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_quest_for_the_new_world"
+		texturefile = "gfx\\interface\\ideas\\quest_for_the_new_world.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_colonial_ventures"
+		texturefile = "gfx\\interface\\ideas\\colonial_ventures.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_shrewd_commerce_practise"
+		texturefile = "gfx\\interface\\ideas\\shrewd_commerce_practise.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_vice_roys"
+		texturefile = "gfx\\interface\\ideas\\vice_roys.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_smithian_economics"
+		texturefile = "gfx\\interface\\ideas\\smithian_economics.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_improved_foraging"
+		texturefile = "gfx\\interface\\ideas\\improved_foraging.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_bureaucracy"
+		texturefile = "gfx\\interface\\ideas\\bureaucracy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_national_bank"
+		texturefile = "gfx\\interface\\ideas\\national_bank.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_national_trade_policy"
+		texturefile = "gfx\\interface\\ideas\\national_trade_policy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_espionage"
+		texturefile = "gfx\\interface\\ideas\\espionage.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_cabinet"
+		texturefile = "gfx\\interface\\ideas\\cabinet.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_bill_of_rights"
+		texturefile = "gfx\\interface\\ideas\\bill_of_rights.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_liberty_egalite_fraternity"
+		texturefile = "gfx\\interface\\ideas\\liberty_egalite_fraternity.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_church_attendance_duty"
+		texturefile = "gfx\\interface\\ideas\\church_attendance_duty.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_divine_supremacy"
+		texturefile = "gfx\\interface\\ideas\\divine_supremacy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_humanist_tolerance"
+		texturefile = "gfx\\interface\\ideas\\humanist_tolerance.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_scientific_revolution"
+		texturefile = "gfx\\interface\\ideas\\scientific_revolution.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_patron_of_art"
+		texturefile = "gfx\\interface\\ideas\\patron_of_art.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_deus_vult"
+		texturefile = "gfx\\interface\\ideas\\deus_vult.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_revolution_and_counter"
+		texturefile = "gfx\\interface\\ideas\\revolution_and_counter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_idea_press_gangs"
+		texturefile = "gfx\\interface\\ideas\\press_gangs.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_regimental_system"
+		texturefile = "gfx\\interface\\ideas\\regimental_system.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_land_of_opportunity"
+		texturefile = "gfx\\interface\\ideas\\land_of_opportunity.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_vetting"
+		texturefile = "gfx\\interface\\ideas\\vetting.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_idea_ecumenism"
+		texturefile = "gfx\\interface\\ideas\\ecumenism.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_empty"
+		texturefile = "gfx\\interface\\ideas\\empty.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+}

@@ -1,0 +1,194 @@
+#¡™√À≥§µ“
+
+lianmengchangdi = {
+	
+	type = country
+
+	allow = {
+		primary_culture = chidi
+		NOT = { tag = CHA }
+		exists = CHA
+		not = { alliance_with = CHA }
+	}
+	abort = {
+		not = { exists = CHA }
+	}
+	success = {
+		not = { relation = { who = CHA value = 200 } }
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		create_alliance = CHA
+	  	#prestige = 0.05
+	}
+}
+
+
+#“€ Ù¡Ù”ı
+
+yishuliuyu = {
+	
+	type = country
+
+	allow = {
+		primary_culture = chidi
+		NOT = { tag = LIY }
+		exists = LIY
+		LIY = { is_subject = no }
+		
+	}
+	abort = {
+		or = {
+			not = { exists = LIY }
+			LIY = { 
+				is_subject = yes 
+				not = { overlord_of = LUS }
+			}
+		}
+	}
+	success = {
+		LIY = { 
+			is_subject = yes 
+			vassal_of = LUS
+		}
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		treasury = 50
+	  	prestige = 0.2
+	}
+}
+
+#∏Ω”π¿Ëπ˙
+
+chidi_client_LIO = {
+	
+	type = country
+
+	allow = {
+		primary_culture = chidi
+		NOT = { tag = LIO }
+		is_subject = no
+		is_lesser_in_union = no
+	  	LIO = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = LIO
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		LIO = { is_subject = yes }
+	    		LIO = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+		overlord_of = LIO
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = LIO
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = LIO
+		}
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+#∂´≥ˆÃ´––
+
+chidi_eastern_conquest = {
+	
+	type = country
+
+	allow = {
+		primary_culture = chidi
+		or = {
+			overlord_of = LIO
+			owns = 83
+		}
+		or = {
+			not = { owns = 116 }
+			not = { owns = 118 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		owns = 116
+		owns = 118
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+		add_temp_claim = 116
+		add_temp_claim = 118
+	}
+	abort_effect = {
+		remove_temp_claim = 116
+		remove_temp_claim = 118
+	}
+	effect = {
+		prestige = 0.3
+		treasury = 50
+	}
+}
+
+#∆∆–œ≤–Œ¿
+
+poxingcanwei = {
+	
+	type = country
+
+	allow = {
+		primary_culture = chidi
+		owns = 116
+		owns = 118
+	}
+	abort = {
+	}
+	success = {
+		owns = 113
+		owns = 124
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		stability = 1
+		prestige = 0.5
+	}
+}

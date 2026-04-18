@@ -1,0 +1,12 @@
+#Èý½ú·½Õó
+
+type = infantry
+unit_type = hanguo
+
+maneuver = 1
+offensive_fire = 5
+defensive_fire = 5
+offensive_shock = 5
+defensive_shock = 6
+offensive_morale = 4
+defensive_morale = 5

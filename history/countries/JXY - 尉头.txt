@@ -1,0 +1,13 @@
+government = tribal_despotism
+aristocracy_plutocracy = -5
+centralization_decentralization = 2
+innovative_narrowminded = 0
+mercantilism_freetrade = 0
+offensive_defensive = -5
+land_naval = 0
+quality_quantity = 0
+serfdom_freesubjects = -5
+technology_group = chinese
+religion = animism
+primary_culture = xiyu
+capital = 1231

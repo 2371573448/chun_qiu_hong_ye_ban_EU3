@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_hre_bg"
+		texturefile = "gfx\\interface\\hre_bg.tga"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_hre_vote_bg"
+		texturefile = "gfx\\interface\\in_nomine_interface\\hre_vote_bg.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_are_hre_elector"
+		texturefile = "gfx\\interface\\in_nomine_interface\\we_are_hre_elector.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hre_decision_banner"
+		texturefile = "gfx\\interface\\httt_interface\\hre_decision_banner.tga"
+		loadType = "INGAME"
+	}
+	
+}

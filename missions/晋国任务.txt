@@ -1,0 +1,1655 @@
+#借道伐戎（吞并韩国）
+annex_HNG = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = HNG
+		is_lesser_in_union = no
+		is_subject = no
+		HNG = {
+			owns = 74
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+                year = 1930
+		NOT = { year = 2187 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = HNG }
+				not = { owns = 74 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		prestige = 0.35
+	}
+	chance = {
+		factor = 400
+	}
+	immediate = {
+    		add_temp_claim = 74
+    		add_temp_claim = 1055
+	}
+	abort_effect = {
+		remove_temp_claim = 74
+		remove_temp_claim = 1055
+	}
+	effect = {
+		add_core = 74
+		add_core = 1055
+	}
+}
+
+#惩罚不义（吞并郇国）
+annex_XUN = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = XUN
+		is_lesser_in_union = no
+		is_subject = no
+		year = 1935
+		NOT = { year = 2170 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = XUN }
+				not = { owns = 76 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		prestige = 0.35
+	}
+	chance = {
+		factor = 400
+	}
+	immediate = {
+		add_temp_claim = 76
+		add_temp_claim = 1049
+		add_temp_claim = 1050
+		add_temp_claim = 1051
+		add_temp_claim = 1052
+	}
+	abort_effect = {
+		remove_temp_claim = 76
+		remove_temp_claim = 1049
+		remove_temp_claim = 1050
+		remove_temp_claim = 1051
+		remove_temp_claim = 1052
+	}
+	effect = {
+		add_core = 76
+                                        add_core = 1049
+                                        add_core = 1050
+                                        add_core = 1051
+                                        add_core = 1052
+	}
+}
+
+#假途伐虢（虢国）
+jiadaofaguo1 = {
+  
+	type = country
+  
+  	allow = {
+    		tag = JIN
+    		exists = GUO #虢
+		is_lesser_in_union = no
+		is_subject = no
+    		GUO = {
+			owns = 348
+			not = { vassal_of = JIN }
+    		}
+    		exists = YUG #虞
+    		YUG = {
+			owns = 78
+			neighbour = this
+    		}
+                                        year = 1935
+		NOT = { year = 2193 }
+	}
+  	abort = {
+		or = {
+			and = {
+				not = { exists = GUO }
+				not = { owns = 348 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+	  	owns = 350
+	  	owns = 348
+                                        owns = 349
+	}    
+  	chance = {
+    		factor = 80
+    		modifier = {
+      			factor = 50
+      			not = { relation = { who = GUO value = 0 } }
+    		}
+    		modifier = {
+      			factor = 50
+      			relation = { who = YUG value = 100 }
+    		}
+	}
+  	immediate = {
+    		add_temp_claim = 350 #渑池
+    		add_temp_claim = 348 #上阳
+    		add_temp_claim = 349 #函谷关
+    		add_temp_claim = 1041
+    		add_temp_claim = 1042
+    		add_temp_claim = 1043
+    		add_temp_claim = 1044
+    		add_temp_claim = 1045
+  	}
+	abort_effect = {
+		remove_temp_claim = 348
+		remove_temp_claim = 349
+		remove_temp_claim = 350
+    		remove_temp_claim = 1041
+    		remove_temp_claim = 1042
+    		remove_temp_claim = 1043
+    		remove_temp_claim = 1044
+    		remove_temp_claim = 1045
+	}
+  	effect = {
+    		350 = { add_core = THIS }
+   		348 = { add_core = THIS }
+    		349 = { add_core = THIS }
+    		1041 = { add_core = THIS }
+    		1042 = { add_core = THIS }
+    		1043 = { add_core = THIS }
+    		1044 = { add_core = THIS }
+    		1045 = { add_core = THIS }
+  	}
+}
+
+#假途伐虢（虞国）
+jiadaofaguo2 = {
+
+	type = country 
+  
+	allow = {
+    		tag = JIN 
+		NOT = { exists = GUO }
+		exists = YUG
+ 		is_lesser_in_union = no
+		is_subject = no     
+		YUG = {
+			owns = 78
+			not = { vassal_of = JIN }
+		}
+		JIN = { owns = 348 }
+                                        year = 1940
+		NOT = { year = 2193 }
+                
+	}
+  	abort = {
+		or = {
+			and = {
+				not = { exists = YUG }
+				not = { owns = 78 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+	  	owns = 78
+	}
+	chance = {
+	  	factor = 80
+	  	modifier = {
+	    		factor = 150
+	    		relation = { who = YUG value = 100 }
+		}   
+		modifier = {
+	    		factor = 150
+	    		alliance_with = YUG
+	  	}
+	}
+  	immediate = {
+    		add_temp_claim = 78
+    		add_temp_claim = 1046
+    		add_temp_claim = 1047
+  	}
+	abort_effect = {
+		remove_temp_claim = 78
+		remove_temp_claim = 1046
+		remove_temp_claim = 1047
+	}
+	effect = {
+	  	78 = { add_core = THIS } 
+	  	1046 = { add_core = THIS }
+	  	1047 = { add_core = THIS }  
+	}
+}
+
+#讨伐大戎
+annex_DAR = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = DAR
+		is_lesser_in_union = no
+		is_subject = no
+		DAR = {
+			owns = 66
+			owns = 67
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = DAR }
+				or = {
+					not = { owns = 66 }
+					not = { owns = 67 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 66
+		owns = 67
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+		add_temp_claim = 66
+		add_temp_claim = 67
+	}
+	abort_effect = {
+		remove_temp_claim = 66
+		remove_temp_claim = 67
+	}
+	effect = {
+		prestige = 0.1
+		add_core = 66
+		add_core = 67
+		badboy = -2
+	}
+}
+
+#征服魏国
+annex_WEO = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = WEO
+		is_lesser_in_union = no
+		is_subject = no
+		WEO = {
+			owns = 77
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		NOT = { year = 2187 }
+                year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = WEO }
+				not = { owns = 77 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 77
+	}
+	chance = {
+		factor = 525
+	}
+	immediate = {
+    		add_temp_claim = 77
+    		add_temp_claim = 1048
+	}
+	abort_effect = {
+		remove_temp_claim = 77
+		remove_temp_claim = 1048
+	}
+	effect = {
+		add_core = 77
+		add_core = 1048
+	}
+}
+
+#征服霍国
+annex_HUO = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = HUO
+		is_lesser_in_union = no
+		is_subject = no
+		HUO = {
+			owns = 1067
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		NOT = { year = 2187 }
+                year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = HUO }
+				not = { owns = 1067 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 1067
+	}
+	chance = {
+		factor = 225
+	}
+	immediate = {
+    		add_temp_claim = 68
+    		add_temp_claim = 1067
+    		add_temp_claim = 1068
+	}
+	abort_effect = {
+		remove_temp_claim = 68
+    		remove_temp_claim = 1067
+    		remove_temp_claim = 1068
+	}
+	effect = {
+		add_core = 68
+		add_core = 1067
+		add_core = 1068
+	}
+}
+
+#征服杨国
+annex_YNG = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = YNG
+		is_lesser_in_union = no
+		is_subject = no
+		YNG = {
+			owns = 1066
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		NOT = { year = 2187 }
+                year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = YNG }
+				not = { owns = 1066 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 1066
+	}
+	chance = {
+		factor = 225
+	}
+	immediate = {
+    		add_temp_claim = 70
+		add_temp_claim = 1066
+	}
+	abort_effect = {
+		remove_temp_claim = 70
+		remove_temp_claim = 1066
+	}
+	effect = {
+		add_core = 70
+		add_core = 1066
+	}
+}
+
+#统一晋国（晋国）
+
+annex_QUW = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = QUW
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = {
+		or = {
+			not = { exists = QUW }
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		not = { exists = QUW }
+	}
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 2
+			QUW = {
+				not = { num_of_cities = this }
+                  		}
+		}
+	}
+	immediate = {
+	 	add_temp_claim = 75
+	}
+	abort_effect = {
+	 	remove_temp_claim = 75
+	}
+	effect = {
+		prestige = 0.1
+		centralization_decentralization = -1
+	  	badboy = -5
+	}
+}
+
+#统一晋国（曲沃）
+
+annex_JIN = {
+	
+	type = country
+
+	allow = {
+		tag = QUW
+		exists = JIN
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = { 
+		or = {
+			not = { exists = JIN }
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		not = { exists = JIN }
+	  	owns = 72
+	}
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 2
+			JIN = {
+		     		not = { num_of_cities = this }
+			}
+		}
+	}
+	immediate = {
+	 	add_temp_claim = 72
+	 	add_temp_claim = 1062
+	}
+	abort_effect = {
+	 	remove_temp_claim = 72
+	 	remove_temp_claim = 1062
+	}
+	effect = {
+		prestige = 0.15
+		centralization_decentralization = -1
+		capital = 72
+		badboy = -4
+		add_core = 1062
+	}
+}
+
+#秦晋之好
+improve_relations_with_QIN = {
+
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = QIN
+		year = 2053
+		not = { war_with = QIN }
+		not = { relation = { who = QIN value = 50 } }
+		not = { has_country_flag = qinjinzhihao }
+		not = { has_global_flag = zhanguokaishi }
+	}
+	abort = {
+		or = {
+			not = { exists = QIN }
+			war_with = QIN
+		}
+	}
+	success = {
+		relation = { who = QIN value = 150 }
+	}
+	chance = {
+		factor = 10
+	}
+	effect = {
+		stability = 2
+		set_country_flag = qinjinzhihao
+	}
+}
+
+#成为霸主
+Dominate_the_central_plains_jin = {
+	
+	type = country
+
+	allow = {
+		any_country = { 
+			is_emperor = yes
+		}
+		tag = JIN
+		num_of_cities = 12
+		is_subject = no
+		is_emperor = no
+	}
+	abort = {
+	}
+	success = {
+		is_emperor = yes
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		prestige = 1
+		relation = { who = PAP value = 100 }
+	}
+}
+
+#征服河内
+The_conquest_of_Henei = {
+	
+	type = country
+
+	allow = {
+		OR = {
+			any_owned_province  = {
+			region = henei
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = henei }
+			}
+		}
+		tag = JIN
+	}
+	abort = {
+	  	or = {
+			is_subject = yes
+		}
+	}
+	success = {
+    		owns = 126
+    		owns = 134
+    		owns = 133
+    		owns = 132
+    		owns = 127
+    		owns = 125
+	}
+	chance = {
+		factor = 25
+	}
+	immediate = {
+	 	add_temp_claim = 126
+	 	add_temp_claim = 134
+	 	add_temp_claim = 133
+	 	add_temp_claim = 132
+	 	add_temp_claim = 127
+	 	add_temp_claim = 125
+	}
+	abort_effect = {
+	 	remove_temp_claim = 126
+	 	remove_temp_claim = 134
+	 	remove_temp_claim = 133
+	 	remove_temp_claim = 132
+	 	remove_temp_claim = 127
+	 	remove_temp_claim = 125
+	  	prestige = -0.05
+	}
+	effect = {
+		prestige = 0.20
+		henei = { add_core = JIN }
+		set_global_flag = zhourangheyang
+	}
+}
+
+#附庸郑国（晋楚通用）
+client_zheng = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	exists = ZGO
+	  	ZGO = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	   	or = {
+	    		tag = JIN
+	    		tag = CHU
+	   	}
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+ 			is_subject = yes
+	    		ZGO = { is_lesser_in_union = yes }
+	    		not = { exists = ZGO }
+	  	}
+	}
+	success = {
+		overlord_of = ZGO
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 60
+			target = ZGO
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ZGO
+		}
+	  	prestige = -0.05
+	}
+	effect = {
+		prestige = 0.15
+		badboy = -2
+	}
+}
+
+#附庸宋国（晋齐楚通用）
+client_song = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	exists = SON
+	  	SON = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	   	or = {
+	    		tag = JIN
+	    		tag = CHU
+	    		tag = QIG
+	   	}
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		SON = { is_lesser_in_union = yes }
+	    		not = { exists = SON }
+	  	}
+	}
+	success = {
+		overlord_of = SON
+	}
+	chance = {
+		factor = 50
+		modifier = {
+			factor = 2
+			tag = JIN
+		}
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 60
+			target = SON
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = SON
+		}
+	  	prestige = -0.05
+	}
+	effect = {
+		prestige = 0.15
+		badboy = -2
+	}
+}
+
+#复兴晋国
+revive_the_state_of_jin = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+                                        year = 2000
+	  	OR = {
+	  		exists = ZHO
+	  		exists = WEI
+	  		exists = HAN
+	  		exists = ZHI
+	  		exists = FAS
+	  		exists = ZXS
+	  	}
+	  	tag = JIN
+                                        not = { 
+			has_country_modifier = fuxingjinshi
+		}
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+		  	is_subject = yes
+		}
+	}
+	success = {
+		OR = {
+			war_with = WEI
+			war_with = ZHO
+			war_with = HAN
+			war_with = ZHI
+			war_with = FAS
+			war_with = ZXS
+
+		}
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	}
+	abort_effect = {
+	  	prestige = -0.05
+	}
+	effect = {
+	  	badboy = -8
+		prestige = 0.25
+		army_tradition = 0.4
+                                        add_country_modifier = { 
+			name = "fuxingjinshi"
+			duration = 2190
+		}
+	}
+}
+
+#打击赤狄
+blow_GAL_or_LUS_or_LIY = {
+	
+	type = country
+
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+		tag = JIN
+		OR = {
+			AND = {
+				exists = DOC
+				neighbour = DOC
+			}
+			AND = {
+				exists = QJR
+				neighbour = QJR
+			}
+			AND = {
+				exists = GAL
+				neighbour = GAL
+			}
+			AND = {
+				exists = LUS
+				neighbour = LUS
+			}
+			AND = {
+				exists = LIY
+				neighbour = LIY
+			}
+		}
+	  	war = no
+                                        ai = no
+	}
+	abort = {
+		NOT = { exists = DOC }
+		NOT = { exists = QJR }
+		NOT = { exists = GAL }
+		NOT = { exists = LUS }
+		NOT = { exists = LIY }
+	}
+	success = {
+		OR = {
+			war_with = DOC
+			war_with = QJR
+			war_with = GAL
+			war_with = LUS
+			war_with = LIY
+		}
+	}
+	chance = {
+		factor = 30
+		modifier = {
+			factor = 5
+			ai = yes
+		}
+	}
+	immediate = {
+	}
+	abort_effect = {	
+	}
+	effect = {
+		prestige = 0.05
+		badboy = -1
+		random_owned = {
+			limit = {
+				primary_culture = chidi
+				NOT = { is_core = THIS }
+			}
+			add_core = THIS
+		}
+	}
+}
+
+#交好白狄
+improve_relations_with_BAI = {
+
+	type = country
+
+	allow = {
+		tag = JIN
+		neighbour = BAI
+		exists = BAI
+		not = { war_with = BAI }
+		not = { relation = { who = BAI value = 0 } }
+		not = { has_country_flag = jiaohaobaidi }
+	}
+	abort = {
+		or = {
+			not = { exists = BAI }
+			war_with = BAI 
+		}
+	}
+	success = {
+		relation = { who = BAI value = 100 }
+	}
+	chance = {
+		factor = 10
+	}
+	effect = {
+		stability = 1
+		relation = { who = BAI value = 50 }
+		set_country_flag = jiaohaobaidi
+	}
+}
+
+#征服上党
+zhengfushangdang = {
+	
+	type = country
+
+	allow = {
+                                     or = { 
+                                                   tag = JIN
+                                                   tag = HAN
+                                     }
+
+	          any_owned_province  = {
+			region = shangdang
+	          }
+		  any_owned_province  = {
+			any_neighbor_province = { region = shangdang }
+		  }
+	}
+	abort = {
+
+	}
+	success = {
+    		owns = 69
+    		owns = 81
+    		owns = 82
+    		owns = 83
+    		owns = 84
+    		owns = 85
+    		owns = 86
+    		owns = 87
+    		owns = 88
+    		owns = 89
+    		owns = 90
+	}
+	chance = {
+		factor = 200
+	}
+	immediate = {
+	 	add_temp_claim = 69
+	 	add_temp_claim = 81
+	 	add_temp_claim = 82
+	 	add_temp_claim = 83
+	 	add_temp_claim = 84
+	 	add_temp_claim = 85
+	 	add_temp_claim = 86
+	 	add_temp_claim = 87
+	 	add_temp_claim = 88
+	 	add_temp_claim = 89
+	 	add_temp_claim = 90
+	}
+	abort_effect = {
+	 	remove_temp_claim = 69
+	 	remove_temp_claim = 81
+	 	remove_temp_claim = 82
+	 	remove_temp_claim = 83
+	 	remove_temp_claim = 84
+	 	remove_temp_claim = 85
+	 	remove_temp_claim = 86
+	 	remove_temp_claim = 87
+	 	remove_temp_claim = 88
+	 	remove_temp_claim = 89
+	 	remove_temp_claim = 90
+	  	prestige = -0.05
+	}
+	effect = {
+		shangdang = { add_core = this }
+	}
+}
+
+#征服太原
+zhengfutaiyuan = {
+	
+	type = country
+
+	allow = {
+	   	or = {
+	    		tag = JIN
+	   	}
+	          any_owned_province  = {
+			region = taiyuan
+	          }
+		  any_owned_province  = {
+			any_neighbor_province = { region = taiyuan }
+		  }
+	}
+	abort = {
+
+	}
+	success = {
+    		owns = 54
+    		owns = 55
+    		owns = 56
+    		owns = 57
+    		owns = 58
+    		owns = 59
+    		owns = 60
+    		owns = 61
+    		owns = 62
+    		owns = 63
+    		owns = 64
+                                        owns = 65
+	}
+	chance = {
+		factor = 200
+	}
+	immediate = {
+	 	add_temp_claim = 54
+	 	add_temp_claim = 55
+	 	add_temp_claim = 56
+	 	add_temp_claim = 57
+	 	add_temp_claim = 58
+	 	add_temp_claim = 59
+	 	add_temp_claim = 60
+	 	add_temp_claim = 61
+	 	add_temp_claim = 62
+	 	add_temp_claim = 63
+	 	add_temp_claim = 64
+                                        add_temp_claim = 65
+	}
+	abort_effect = {
+	 	remove_temp_claim = 54
+	 	remove_temp_claim = 55
+	 	remove_temp_claim = 56
+	 	remove_temp_claim = 57
+	 	remove_temp_claim = 58
+	 	remove_temp_claim = 59
+	 	remove_temp_claim = 60
+	 	remove_temp_claim = 61
+	 	remove_temp_claim = 62
+	 	remove_temp_claim = 63
+	 	remove_temp_claim = 64
+                                        remove_temp_claim = 65
+	  	prestige = -0.05
+	}
+	effect = {
+		taiyuan = { add_core = this }
+	}
+}
+
+#讨伐皋洛氏
+annex_GAL = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = GAL
+		is_lesser_in_union = no
+		is_subject = no
+		GAL = {
+			owns = 69
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = GAL }
+				or = {
+					not = { owns = 69 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+	                    owns = 69
+		owns = 1098
+	                    owns = 1099
+                                        owns = 1100
+	}
+	chance = {
+		factor = 400
+	}
+	immediate = {
+		add_temp_claim = 69
+		add_temp_claim = 1098
+		add_temp_claim = 1099
+                                        add_temp_claim = 1100
+	}
+	abort_effect = {
+		remove_temp_claim = 69
+		remove_temp_claim = 1098
+		remove_temp_claim = 1099
+                                        remove_temp_claim = 1100
+	}
+	effect = {
+		prestige = 0.1
+		add_core = 69
+		add_core = 1098
+		add_core = 1099
+                                        add_core = 1100
+		badboy = -2
+	}
+}
+
+#灭亡皋洛氏
+annex_GAL2 = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = GAL
+		is_lesser_in_union = no
+		is_subject = no
+		GAL = {
+			owns = 80
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+                                        JIN = {
+                                                     owns = 69
+		             owns = 1098
+	                                 owns = 1099
+                                                     owns = 1100
+		}     
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = GAL }
+				or = {
+					not = { owns = 80 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+                                        owns = 87
+		owns = 80
+		owns = 1101
+	}
+	chance = {
+		factor = 400
+	}
+	immediate = {
+		add_temp_claim = 87
+		add_temp_claim = 80
+		add_temp_claim = 1101
+	}
+	abort_effect = {
+		remove_temp_claim = 87
+		remove_temp_claim = 80
+		remove_temp_claim = 1101
+	}
+	effect = {
+		prestige = 0.1
+		add_core = 87
+		add_core = 80
+		add_core = 1101
+		badboy = -2
+	}
+}
+
+
+JIN_client_LIR = { 
+	# 开疆拓土
+	type = country
+	allow = { 
+		is_subject = no
+		is_lesser_in_union = no
+		LIR = { 
+			is_subject = no
+			is_lesser_in_union = no
+			not = { 
+				vassal_of = LIR
+			}
+			any_neighbor_country = { 
+				tag = this
+			}
+		}
+		exists = LIR
+		tag = JIN
+	}
+	abort = { 
+		or = { 
+			is_lesser_in_union = yes
+			is_subject = yes
+			LIR = { 
+				is_subject = yes
+				NOT = { vassal_of = this }
+			}
+		}
+	}
+	success = { 
+		LIR = { 
+			vassal_of = JIN
+		}
+	}
+	chance = { 
+		factor = 150
+	}
+	immediate = { 
+		casus_belli = { 
+			type = cb_vassalize_mission
+			months = 120
+			target = LIR
+		}
+	}
+	abort_effect = { 
+		remove_casus_belli = { 
+			type = cb_vassalize_mission
+			target = LIR
+		}
+		prestige = -0.05
+	}
+	effect = { 
+		prestige = 0.1
+		create_alliance = LIR
+                                        add_core = 88
+                                        add_core = 1102
+	}
+}
+
+#打击铎辰
+blow_DOC = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = DOC
+		is_lesser_in_union = no
+		is_subject = no
+		DOC = {
+			owns = 90
+			owns = 86
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = DOC }
+				or = {
+					not = { owns = 90 }
+					not = { owns = 86 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 90
+		owns = 86
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 90
+		add_temp_claim = 86
+	}
+	abort_effect = {
+		remove_temp_claim = 90
+		remove_temp_claim = 86
+	}
+	effect = {
+		add_core = 90
+		add_core = 86
+	}
+}
+
+#打击留吁
+blow_LIY = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = LIY
+		is_lesser_in_union = no
+		is_subject = no
+		LIY = {
+			owns = 81
+			owns = 82
+                                                            owns = 85
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = LIY }
+				or = {
+					not = { owns = 81 }
+					not = { owns = 82 }
+                                                                                                    not = { owns = 85 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 81
+		owns = 82
+		owns = 85
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 81
+		add_temp_claim = 82
+		add_temp_claim = 85
+	}
+	abort_effect = {
+		remove_temp_claim = 81
+		remove_temp_claim = 82
+		remove_temp_claim = 85
+	}
+	effect = {
+		add_core = 81
+		add_core = 82
+                                        add_core = 85
+	}
+}
+#打击潞氏
+blow_LUS = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = LUS
+		is_lesser_in_union = no
+		is_subject = no
+		LUS = {
+			owns = 89
+			owns = 84
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = LUS }
+				or = {
+					not = { owns = 89 }
+					not = { owns = 84 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 89
+		owns = 84
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+		add_temp_claim = 89
+		add_temp_claim = 84
+	}
+	abort_effect = {
+		remove_temp_claim = 89
+		remove_temp_claim = 84
+	}
+	effect = {
+		add_core = 89
+		add_core = 84
+	}
+}
+
+
+#吞并温国
+annex_WEN = { 
+	type = country
+	allow = { 
+		tag = JIN
+		is_subject = no
+		is_lesser_in_union = no
+		exists = WEN
+		or = { 
+			not = { 
+				owns = 133
+			}
+			not = { 
+				owns = 125
+			}
+			not = { 
+				owns = 127
+			}
+		}
+		WEN = {
+			owns = 133
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1923
+		NOT = { year = 2193 }
+	}
+	abort = { 
+		or = { 
+			is_subject = yes
+			is_lesser_in_union = yes
+			AND = { 
+				not = { 
+					exists = WEN
+				}
+				not = { 
+					owns = 133
+				}
+				not = { 
+					owns = 125
+				}
+				not = { 
+					owns = 127
+				}
+			}
+		}
+	}
+	success = { 
+		owns = 133
+		owns = 125
+		owns = 127
+		owns = 1036
+		owns = 1037
+	}
+	chance = { 
+		factor = 100
+	}
+	immediate = { 
+		add_temp_claim = 133
+		add_temp_claim = 125
+		add_temp_claim = 127
+		add_temp_claim = 1036
+		add_temp_claim = 1037
+	}
+	abort_effect = { 
+		remove_temp_claim = 133
+		remove_temp_claim = 125
+		remove_temp_claim = 127
+		remove_temp_claim = 1036
+		remove_temp_claim = 1037
+		prestige = -0.05
+	}
+	effect = { 
+		add_core = 133
+		add_core = 125
+		add_core = 127
+		add_core = 1036
+		add_core = 1037
+	}
+}
+
+#攻打原国
+annex_YUA = { 
+	type = country
+	allow = { 
+		tag = JIN
+		is_subject = no
+		is_lesser_in_union = no
+		exists = YUA
+		or = { 
+			not = { 
+				owns = 128
+			}
+		}
+		YUA = {
+			owns = 128
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1923
+		NOT = { year = 2193 }
+	}
+	abort = { 
+		or = { 
+			is_subject = yes
+			is_lesser_in_union = yes
+			AND = { 
+				not = { 
+					exists = YUA
+				}
+				not = { 
+					owns = 128
+				}
+			}
+		}
+	}
+	success = { 
+		owns = 128
+	}
+	chance = { 
+		factor = 100
+	}
+	immediate = { 
+		add_temp_claim = 128
+	}
+	abort_effect = { 
+		remove_temp_claim = 128
+		remove_temp_claim = 126
+		remove_temp_claim = 134
+		remove_temp_claim = 124
+		remove_temp_claim = 131
+		remove_temp_claim = 130
+		remove_temp_claim = 118
+		remove_temp_claim = 1040
+		remove_temp_claim = 1039
+		remove_temp_claim = 877
+		remove_temp_claim = 878
+		remove_temp_claim = 879
+		remove_temp_claim = 880
+		remove_temp_claim = 872
+		remove_temp_claim = 875
+		remove_temp_claim = 876
+		prestige = -0.05
+	}
+	effect = { 
+		add_core = 128
+		add_core = 126
+		add_core = 134
+		add_core = 124
+		add_core = 131
+		add_core = 130
+		add_core = 118
+		add_core = 1040
+		add_core = 1039
+		add_core = 878
+		add_core = 879
+		add_core = 880
+		add_core = 877
+		add_core = 872
+		add_core = 875
+		add_core = 876
+	}
+}
+
+#打击甲氏
+blow_JIS = {
+	
+	type = country
+
+	allow = {
+		tag = JIN
+		exists = JIS
+		is_lesser_in_union = no
+		is_subject = no
+		JIS = {
+			owns = 111
+			owns = 112
+			owns = 117
+			owns = 115
+			owns = 120
+			neighbour = this
+			not = { vassal_of = JIN }
+		}
+		year = 1921
+		NOT = { year = 2171 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = JIS }
+				or = {
+					not = { owns = 111 }
+					not = { owns = 112 }
+					not = { owns = 117 }
+					not = { owns = 115 }
+					not = { owns = 120 }
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 111
+		owns = 112
+		owns = 117
+		owns = 115
+		owns = 120
+	}
+	chance = {
+		factor = 50
+	}
+	immediate = {
+		add_temp_claim = 111
+		add_temp_claim = 112
+		add_temp_claim = 117
+		add_temp_claim = 115
+		add_temp_claim = 120
+	}
+	abort_effect = {
+		remove_temp_claim = 111
+		remove_temp_claim = 112
+		remove_temp_claim = 117
+		remove_temp_claim = 115
+		remove_temp_claim = 120
+	}
+	effect = {
+		add_core = 111
+		add_core = 112
+		add_core = 117
+		add_core = 115
+		add_core = 120
+	}
+}

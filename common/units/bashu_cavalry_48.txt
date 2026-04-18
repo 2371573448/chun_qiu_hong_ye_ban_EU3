@@ -1,0 +1,12 @@
+#ÔçÆÚÆï±ø
+
+type = cavalry
+unit_type = bashu1
+
+maneuver = 3
+offensive_morale = 5
+defensive_morale = 5
+offensive_fire = 6
+defensive_fire = 6
+offensive_shock = 5
+defensive_shock = 5

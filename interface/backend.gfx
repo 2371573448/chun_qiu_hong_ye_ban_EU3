@@ -1,0 +1,48 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "BG_africangfx"
+		texturefile = "gfx\\interface\\african_backend_bg.tga"
+	}
+
+
+	spriteType = {
+		name = "BG_southamericagfx"
+		texturefile = "gfx\\interface\\aztec_backend_bg.tga"
+	}
+
+
+	spriteType = {
+		name = "BG_chinesegfx"
+		texturefile = "gfx\\interface\\chinese_backend_bg.tga"
+	}
+
+	spriteType = {
+		name = "BG_easterngfx"
+		texturefile = "gfx\\interface\\eastern_backend_bg.tga"
+	}
+
+
+	spriteType = {
+		name = "BG_indiangfx"
+		texturefile = "gfx\\interface\\hindu_backend_bg.tga"
+	}
+
+
+	spriteType = {
+		name = "BG_northamericagfx"
+		texturefile = "gfx\\interface\\iroquese_backend_bg.tga"
+	}
+
+	spriteType = {
+		name = "BG_latingfx"
+		texturefile = "gfx\\interface\\westen_backend_bg.tga"
+	}
+
+	spriteType = {
+		name = "BG_muslimgfx"
+		texturefile = "gfx\\interface\\moslem_backend_bg.tga"
+	}
+
+}

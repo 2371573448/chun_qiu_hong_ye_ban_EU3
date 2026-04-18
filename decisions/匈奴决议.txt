@@ -1,0 +1,44 @@
+province_decisions = { 
+	renyongjinmidi = {
+		potential = { 
+			owner = { 
+				has_country_modifier = fenglangjuxu
+				not = { has_country_modifier = jinmidi }
+			}
+			is_capital = yes
+		}
+		allow = { 
+			owner = {
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				treasury = -500
+				add_country_modifier = { 
+					name = "jinmidi"
+					duration = -1
+				}
+			}
+		}
+	}
+	huoqubinglianjun = {
+		potential = { 
+			owner = { has_country_modifier = fenglangjuxu }
+			is_capital = yes
+		}
+		allow = { 
+			owner = {
+				treasury = 100
+				manpower = 10
+			}
+		}
+		effect = { 
+			owner = {
+				treasury = -100
+				manpower = -10
+			}
+			dahan_cavalry_82 = this
+		}
+	}
+}

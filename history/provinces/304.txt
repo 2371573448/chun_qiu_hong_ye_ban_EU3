@@ -1,0 +1,43 @@
+owner = LUG
+controller = LUG
+culture = yinyi
+religion = liyuejiaohua
+capital = "Æ½Ñô"
+trade_goods = grain
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = LUG
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2180.1.1 = { religion = rujia }
+2222.1.1 = { citysize = 26000 }
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	religion = liyuejiaohua
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2304.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2334.1.1 = {    add_core = QIG  }
+2414.1.1  = {	owner = YAN
+		controller = YAN
+	    }
+2419.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2477.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2490.6.1={ owner=CHU controller=CHU }
+2492.2.1={owner=XCW controller=XCW add_core=XCW}

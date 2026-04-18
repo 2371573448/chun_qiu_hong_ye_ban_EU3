@@ -1,0 +1,82 @@
+
+culture = nanchu
+religion = ancestor
+capital = "∑Û«≥‘≠"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2090.1.1 = { 
+	discovered_by = CHU
+}
+2190.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 4000
+	fort1 = yes
+}
+2220.1.1 = { 
+	add_core = CHU
+}
+2240.1.1 = { 
+	religion = liyuebadao
+	citysize = 6000
+}
+2244.1.1 = { 
+	owner = HNX
+	controller = HNX
+	add_core = HNX
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = HNX
+}
+2246.1.1 = { 
+	owner = MIA
+	controller = MIA
+	add_core = MIA
+	remove_core = CHU
+}
+2246.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = MIA
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = MIA
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.5.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	citysize = 12000
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

@@ -1,0 +1,603 @@
+################################
+#»ÄÂùÖ®µØ
+################################
+country_event = { 
+	id = 885
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			not = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = steppe_horde
+					government = republican_dictatorship
+				}
+			}
+			any_owned_province = { 
+				OR = { 
+					province_id = 154
+					province_id = 155
+					province_id = 159
+					province_id = 160
+					province_id = 161
+					province_id = 162
+					province_id = 163
+					province_id = 169
+					province_id = 525
+					province_id = 526
+					province_id = 541
+					province_id = 542
+					province_id = 547
+					province_id = 548
+					province_id = 549
+					province_id = 550
+					province_id = 551
+					province_id = 552
+					province_id = 558
+					province_id = 559
+					province_id = 560
+					province_id = 561
+					province_id = 562
+					province_id = 563
+					province_id = 564
+					province_id = 565
+					province_id = 566
+					province_id = 567
+					province_id = 568
+					province_id = 569
+					province_id = 570
+					province_id = 750
+					province_id = 751
+					province_id = 774
+					province_id = 775
+					province_id = 776
+					province_id = 777
+					province_id = 778
+					province_id = 779
+					province_id = 780
+					province_id = 781
+					province_id = 782
+					province_id = 783
+					province_id = 784
+					province_id = 785
+					province_id = 786
+					province_id = 787
+					province_id = 788
+					province_id = 789
+					province_id = 790
+					province_id = 791
+					province_id = 792
+					province_id = 793
+					province_id = 794
+					province_id = 795
+					province_id = 796
+					province_id = 797
+					province_id = 798
+				}
+				not = { 
+					has_province_modifier = huangmannanzhi
+				}
+				not = { 
+					has_province_flag = developed_region
+				}
+				not = { 
+					AND = { 
+						NOT = { 
+							owner = { 
+								culture_group = huaxia
+							}
+						}
+						has_owner_culture = yes
+						is_core = yes
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME885"
+	desc = "EVTDESC885"
+	option = { 
+		name = "EVTOPTA885"
+		any_country = { 
+			limit = { 
+				not = { 
+					OR = { 
+						government = tribal_federation
+						government = tribal_despotism
+						government = steppe_horde
+						government = republican_dictatorship
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						province_id = 154
+						province_id = 155
+						province_id = 159
+						province_id = 160
+						province_id = 161
+						province_id = 162
+						province_id = 163
+						province_id = 169
+						province_id = 525
+						province_id = 526
+						province_id = 541
+						province_id = 542
+						province_id = 547
+						province_id = 548
+						province_id = 549
+						province_id = 550
+						province_id = 551
+						province_id = 552
+						province_id = 558
+						province_id = 559
+						province_id = 560
+						province_id = 561
+						province_id = 562
+						province_id = 563
+						province_id = 564
+						province_id = 565
+						province_id = 566
+						province_id = 567
+						province_id = 568
+						province_id = 569
+						province_id = 570
+						province_id = 750
+						province_id = 751					
+						province_id = 774
+						province_id = 775
+						province_id = 776
+						province_id = 777
+						province_id = 778
+						province_id = 779
+						province_id = 780
+						province_id = 781
+						province_id = 782
+						province_id = 783
+						province_id = 784
+						province_id = 785
+						province_id = 786
+						province_id = 787
+						province_id = 788
+						province_id = 789
+						province_id = 790
+						province_id = 791
+						province_id = 792
+						province_id = 793
+						province_id = 794
+						province_id = 795
+						province_id = 796
+						province_id = 797
+						province_id = 798
+					}
+					not = { 
+						has_province_flag = developed_region
+					}
+					not = { 
+						AND = { 
+							NOT = { 
+								owner = { 
+									culture_group = huaxia
+								}
+							}
+							has_owner_culture = yes
+							is_core = yes
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "huangmannanzhi"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 893
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			not = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = steppe_horde
+					government = republican_dictatorship
+				}
+			}
+			NOT = { 
+				government_tech = 60
+			}
+			any_owned_province = { 
+				OR = { 
+					province_id = 502
+					province_id = 513
+					province_id = 514
+					province_id = 517
+					province_id = 518
+					province_id = 519
+					province_id = 520
+					province_id = 521
+					province_id = 522
+					province_id = 523
+					province_id = 524
+					province_id = 527
+					province_id = 528
+					province_id = 529
+					province_id = 530
+					province_id = 531
+					province_id = 532
+					province_id = 533
+					province_id = 534
+					province_id = 535
+					province_id = 536
+					province_id = 537
+					province_id = 538
+					province_id = 539
+					province_id = 540
+					province_id = 543
+					province_id = 544
+					province_id = 545
+					province_id = 546
+					province_id = 571
+					province_id = 572
+					province_id = 573
+					province_id = 574
+					province_id = 575
+					province_id = 576
+					province_id = 577
+					province_id = 578
+					province_id = 579
+					province_id = 580
+					province_id = 581
+					province_id = 582
+					province_id = 583
+					province_id = 584
+					province_id = 585
+					province_id = 586
+
+				}
+				not = { 
+					has_province_modifier = huangmannanzhi
+				}
+				not = { 
+					has_province_flag = developed_region
+				}
+				not = { 
+					AND = { 
+						NOT = { 
+							owner = { 
+								culture_group = huaxia
+							}
+						}
+						has_owner_culture = yes
+						is_core = yes
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME893"
+	desc = "EVTDESC893"
+	option = { 
+		name = "EVTOPTA893"
+		any_country = { 
+			limit = { 
+				not = { 
+					OR = { 
+						government = tribal_federation
+						government = tribal_despotism
+						government = steppe_horde
+						government = republican_dictatorship
+					}
+				}
+				NOT = { 
+					government_tech = 60
+				}
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						province_id = 502
+						province_id = 513
+						province_id = 514
+						province_id = 517
+						province_id = 518
+						province_id = 519
+						province_id = 520
+						province_id = 521
+						province_id = 522
+						province_id = 523
+						province_id = 524
+						province_id = 527
+						province_id = 528
+						province_id = 529
+						province_id = 530
+						province_id = 531
+						province_id = 532
+						province_id = 533
+						province_id = 534
+						province_id = 535
+						province_id = 536
+						province_id = 537
+						province_id = 538
+						province_id = 539
+						province_id = 540
+						province_id = 543
+						province_id = 544
+						province_id = 545
+						province_id = 546
+						province_id = 571
+						province_id = 572
+						province_id = 573
+						province_id = 574
+						province_id = 575
+						province_id = 576
+						province_id = 577
+						province_id = 578
+						province_id = 579
+						province_id = 580
+						province_id = 581
+						province_id = 582
+						province_id = 583
+						province_id = 584
+						province_id = 585
+						province_id = 586
+
+					}
+					not = { 
+						AND = { 
+							NOT = { 
+								owner = { 
+									culture_group = huaxia
+								}
+							}
+							has_owner_culture = yes
+							is_core = yes
+						}
+					}
+					not = { 
+						has_province_flag = developed_region
+					}
+				}
+				add_province_modifier = { 
+					name = "huangmannanzhi"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 886
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			OR = { 
+				government = tribal_federation
+				government = tribal_despotism
+				government = steppe_horde
+				government = republican_dictatorship
+			}
+			any_owned_province = { 
+				has_province_modifier = huangmannanzhi
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME886"
+	desc = "EVTDESC886"
+	option = { 
+		name = "EVTOPTA886"
+		any_country = { 
+			limit = { 
+				OR = { 
+					government = tribal_federation
+					government = tribal_despotism
+					government = steppe_horde
+					government = republican_dictatorship
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = huangmannanzhi
+			}
+		}
+	}
+}
+country_event = { 
+	id = 894
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			government_tech = 60
+			any_owned_province = { 
+				has_province_modifier = huangmannanzhi
+				OR = { 
+					province_id = 502
+					province_id = 513
+					province_id = 514
+					province_id = 517
+					province_id = 518
+					province_id = 519
+					province_id = 520
+					province_id = 521
+					province_id = 522
+					province_id = 523
+					province_id = 524
+					province_id = 527
+					province_id = 528
+					province_id = 529
+					province_id = 530
+					province_id = 531
+					province_id = 532
+					province_id = 533
+					province_id = 534
+					province_id = 535
+					province_id = 536
+					province_id = 537
+					province_id = 538
+					province_id = 539
+					province_id = 540
+					province_id = 543
+					province_id = 544
+					province_id = 545
+					province_id = 546
+					province_id = 571
+					province_id = 572
+					province_id = 573
+					province_id = 574
+					province_id = 575
+					province_id = 576
+					province_id = 577
+					province_id = 578
+					province_id = 579
+					province_id = 580
+					province_id = 581
+					province_id = 582
+					province_id = 583
+					province_id = 584
+					province_id = 585
+					province_id = 586
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME894"
+	desc = "EVTDESC894"
+	option = { 
+		name = "EVTOPTA894"
+		any_country = { 
+			limit = { 
+				government_tech = 60
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						province_id = 502
+						province_id = 513
+						province_id = 514
+						province_id = 517
+						province_id = 518
+						province_id = 519
+						province_id = 520
+						province_id = 521
+						province_id = 522
+						province_id = 523
+						province_id = 524
+						province_id = 527
+						province_id = 528
+						province_id = 529
+						province_id = 530
+						province_id = 531
+						province_id = 532
+						province_id = 533
+						province_id = 534
+						province_id = 535
+						province_id = 536
+						province_id = 537
+						province_id = 538
+						province_id = 539
+						province_id = 540
+						province_id = 543
+						province_id = 544
+						province_id = 545
+						province_id = 546
+						province_id = 571
+						province_id = 572
+						province_id = 573
+						province_id = 574
+						province_id = 575
+						province_id = 576
+						province_id = 577
+						province_id = 578
+						province_id = 579
+						province_id = 580
+						province_id = 581
+						province_id = 582
+						province_id = 583
+						province_id = 584
+						province_id = 585
+						province_id = 586
+
+					}
+				}
+				remove_province_modifier = huangmannanzhi
+			}
+		}
+	}
+}
+province_event = { 
+	id = 897
+	trigger = { 
+		has_province_modifier = huangmankaifa
+	}
+	mean_time_to_happen = { 
+		months = 900
+		modifier = { 
+			factor = 0.6
+			owner = { idea = vice_roys }
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { land_naval = 2 }
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { land_naval = 3 }
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { land_naval = 4 }
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { land_naval = 5 }
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { advisor = pioneer }
+		}
+		modifier = { 
+			factor = 0.5
+			and = {
+				advisor = pioneer
+				pioneer = 5
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			and = {
+				advisor = pioneer
+				pioneer = 6
+			}
+		}
+		modifier = { 
+			factor = 0.3
+			owner = { has_country_flag = shanchuanxianyao }
+		}
+	}
+	title = "EVTNAME897"
+	desc = "EVTDESC897"
+	option = { 
+		name = "EVTOPTA897"
+		base_tax = 2
+		citysize = 10000
+		remove_province_modifier = huangmannanzhi
+		remove_province_modifier = huangmankaifa
+		set_province_flag = developed_region
+	}
+}

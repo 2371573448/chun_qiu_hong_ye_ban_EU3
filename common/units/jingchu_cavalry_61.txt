@@ -1,0 +1,12 @@
+#œ›’Û√Õ ø
+
+type = cavalry
+unit_type = jingchu
+
+maneuver = 3
+offensive_fire = 7
+defensive_fire = 7
+offensive_shock = 9
+defensive_shock = 7
+offensive_morale = 9
+defensive_morale = 8

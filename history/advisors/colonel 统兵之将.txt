@@ -1,0 +1,37 @@
+#指挥军队作战，负责军队运转的人
+
+advisor ={
+name ="孟明视" 
+location =182
+skill =4
+type =colonel
+date =2070.1.1
+death_date =2015.1.1
+}
+
+advisor ={
+name ="郤缺" 
+location =74
+skill =4
+type =colonel
+date =2062.1.1
+death_date =2101.1.1
+}
+
+advisor ={
+name ="郦商" 
+location =362
+skill =3
+type =colonel
+date =2489.1.1
+death_date =2518.1.1
+}
+
+advisor ={
+name ="章邯" 
+location =181
+skill =5
+type =colonel
+date =2489.1.1
+death_date =2502.1.1
+}

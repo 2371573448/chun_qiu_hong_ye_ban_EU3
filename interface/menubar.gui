@@ -1,0 +1,1886 @@
+guiTypes = {
+
+
+		windowType = {
+			name ="waroverview_shieldItem"
+			backGround=""
+			position = { x= 0 y = 0 }	
+			size = { x = 60 y = 40 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			upsound = ""
+			downsound = ""
+			fullscreen=no
+		guiButtonType = {
+				name = "button_war_overview_item"
+				position = { x= 0 y = -5 }	
+				quadTextureSprite ="GFX_button_war_overview"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				clicksound = click
+			}
+			iconType =
+			{
+				name ="waroverview_icon"
+				spriteType = "GFX_minishield_war"
+				position = { x= 10 y = 6 }
+				orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}
+			
+			
+		}
+		windowType = {
+			name = "endgame_dialog"
+			backGround=""
+			position = { x=-256 y=-128 }	
+			size = { x=512 y=256 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "CENTER"
+
+			iconType =
+				{
+					name ="bg"
+					spriteType = "GFX_endgame"
+					position = { x= 0 y = 0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+			textBoxType = {
+					name = "headline"
+					position = { x = 0 y = 40 }
+					textureFile = ""
+					font = "Main_24"
+					borderSize = {x = 4 y = 4}
+					text = "XXXXXXXXXXXXXXX"	
+					maxWidth = 512
+					maxHeight = 32	
+					format = centre
+			}
+
+			textBoxType = {
+					name = "bodytext"
+					position = { x = 60 y = 80 }
+					textureFile = ""
+					font = "Main_16"
+					borderSize = {x = 4 y = 4}
+					text = "xxxxxxxxxxxxxx"	
+					maxWidth = 372
+					maxHeight = 80	
+					format = centre
+			}
+
+			guiButtonType = {
+				name = "quit_button"
+				position = { x=190 y =180}
+				quadTextureSprite ="largefloaterbutton"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "QUIT"
+				buttonFont = "Main_14_black"
+			}
+		}
+
+	iconType =
+	{
+		name ="minimap_bg"
+		spriteType = "GFX_minimap_bg"
+		position = { x= -295 y = -110 }
+		Orientation = "LOWER_RIGHT"
+	}
+
+	iconType =
+	{
+		name ="minimap_pic"
+		spriteType = "GFX_minimap"
+		position = { x= -266 y = -84 }
+		Orientation = "LOWER_RIGHT"
+	}
+
+
+	windowType = {
+		name = "logtext"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=700 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		guiButtonType = {
+				name = "messagelogbutton"
+				position = { x = 10 y = -6 }
+				quadTextureSprite =""
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+
+				Orientation = "UPPER_LEFT"
+				size = { x = 700 y = 16  }
+				buttonFont = "messagelog"
+				format = left
+			}		
+		
+	}
+
+
+	windowType = {
+		name = "diplomessageicons_window"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=720 y= 48 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+	}
+
+	windowType = {
+		name = "diplomessageicon_entry_window"
+		backGround=""
+		position = { x=20 y=0 }	
+		size = { x=20 y= 48 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+
+		iconType =
+			{
+				name ="messageicon_bg"
+				spriteType = "GFX_messageicon_bg"
+				position = { x= 11 y = -14 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		guiButtonType = {
+				name = "diplomessageicon_button"
+				position = { x = 14 y = -14 }
+				quadTextureSprite ="GFX_messageicons"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = ""
+			}
+		
+		instantTextBoxType = {
+			name = "flag"
+			position = { x = 14 y =20}
+			format = centre
+			textureFile = ""
+
+			font = "garamond_14"
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 32
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"			
+		}
+	}
+
+	positionType = {
+		name = "diplomessageicon_offset"
+		position = { x = 20 y = 0 }
+	}
+
+
+	windowType = {
+		name = "menu"
+		backGround=""
+		position = { x= -256 y = -206 }	
+		size = { x=512 y = 512 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "CENTER"
+		
+		iconType =
+		{
+			name ="menu"
+			spriteType = "GFX_menu"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		windowType = {
+			name ="menu_panel"
+			backGround=""
+			position = { x=46 y =24}	
+			size = { x=420 y =500}
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			upsound = ""
+			downsound = ""
+			fullscreen=no
+			
+			guiButtonType = {
+				name = "menu_save_button"
+				position = { x = 100 y = 113 }
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_SAVE_GAME"
+				buttonFont = "Main_14_black"
+			}
+
+			guiButtonType = {
+				name = "menu_options_button"
+				position = { x = 100 y = 170}
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_GAME_OPTIONS"
+				buttonFont = "Main_14_black"
+			}
+			
+			guiButtonType = {
+				name = "menu_message_button"
+				position = { x = 100 y = 227}
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_MESSAGE_SETTINGS"
+				buttonFont = "Main_14_black"
+			}
+			
+			guiButtonType = {
+				name = "menu_resign_button"
+				position = { x = 100 y = 284}
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_GAME_RESIGN"
+				buttonFont = "Main_14_black"
+			}
+
+		
+			
+			
+			guiButtonType = {
+				name = "menu_quit_button"
+				position = { x = 100 y = 341 }
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_QUIT"
+				buttonFont = "Main_14_black"
+			}
+			
+			guiButtonType = {
+				name = "menu_achievement_button"
+				position = { x = 1600 y = 1200 }
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_ACHIEVEMENT"
+				buttonFont = "Main_14_black"
+			}
+					
+			guiButtonType = {
+				name = "menu_close_button"
+				position = { x = 146 y = 386 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_CLOSE"
+				buttonFont = "Main_14_black"
+				shortcut = "ESCAPE"
+			}
+
+		
+		}
+		
+		
+		
+		windowType = {
+			name ="menu_save"
+			backGround=""
+			position = { x=0 y =0 }	
+			size = { x=420 y =500}
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			upsound = ""
+			downsound = ""
+			fullscreen=no
+			
+			listboxType = 
+			{
+				name ="games"
+				position = { x=155 y =124}
+				#backGround="SandboxFloaterBackground"
+				backGround=""
+				size = { x=198 y =191}
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+				Orientation = "UPPER_LEFT"
+			}
+			
+			guiButtonType = {
+				name = "save"
+				position = { x = 192 y = 370 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_SAVE"
+				buttonFont = "Main_14_black"
+			}
+			
+			guiButtonType = {
+				name = "cancel"
+				position = { x = 192 y = 410 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_CLOSE"
+				buttonFont = "Main_14_black"
+				shortcut = "ESCAPE"
+			}
+
+			instantTextBoxType={
+				position = {x = 155 y = 325 }
+				name = "filename_label"
+				font = "Main_14"
+				borderSize = {x = 8 y = 0}	
+				maxWidth = 188
+				maxHeight = 18
+				text = "MENU_BAR_SAVE_GAME_FILENAME"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			editBoxType = {
+				position = { x = 155 y = 340 }
+				name = "game_name"
+				textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+				font = "Main_16"
+				borderSize = { x = 8 y = 6  }	
+				size = { x=198 y=32 }
+				text = ""	
+				maxWidth = 188
+				maxHeight = 26
+				orientation = "UPPER_LEFT"
+			}
+			
+		}
+		
+		windowType = {
+			name ="menu_message_settings"
+			backGround=""
+			position = { x=0 y =0 }	
+			size = { x=420 y =500}
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			upsound = ""
+			downsound = ""
+			fullscreen=no
+
+			iconType =
+				{
+				name ="messagesettings_bg"
+				spriteType = "GFX_messagesettings_bg"
+				position = { x= -76 y = 53 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			listboxType = 
+			{
+				name ="settings"
+				position = { x=-60 y =144}
+				#backGround="SandboxFloaterBackground"
+				backGround=""
+				size = { x=620 y =220}
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 20 y = 5}
+				Orientation = "UPPER_LEFT"
+			}
+
+
+			instantTextBoxType={
+				position = {x = 65 y = 70 }
+				name = "messagesettings_label"
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 390
+				maxHeight = 18
+				text = "MENU_BAR_MESSAGE_SETTINGS"	
+				orientation = "UPPER_LEFT"
+				format = centre
+			}
+
+			guiButtonType = {
+				name = "all"
+				position = { x = -55 y = 96 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_ALL"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "dynasty"
+				position = { x = 75 y = 96 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_DYNASTY"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "diplomacy"
+				position = { x = 205 y = 96 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_DIPLOMACY"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "trade"
+				position = { x = 335 y = 96 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_TRADE"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "religion"
+				position = { x = 465 y = 96 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_RELIGION"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "events"
+				position = { x = -55 y = 120 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_EVENTS"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "government"
+				position = { x = 75 y = 120 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_GOVERNMENT"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "military"
+				position = { x = 205 y = 120 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_MILITARY"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "combat"
+				position = { x = 335 y = 120 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_COMBAT"
+				buttonFont = "Main_14_black"
+			}
+			guiButtonType = {
+				name = "other"
+				position = { x = 465 y = 120 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_OTHER"
+				buttonFont = "Main_14_black"
+			}
+			
+
+			guiButtonType = {
+				name = "reset"
+				position = { x = 110 y = 380 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_MESSAGES_RESET"
+				buttonFont = "Main_14_black"
+			}
+					
+			guiButtonType = {
+				name = "close"
+				position = { x = 280 y = 380 }
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MENU_BAR_CLOSE"
+				buttonFont = "Main_14_black"
+			}		
+		}
+		
+	}
+	
+		### MESSAGE ICONS
+	windowType = {
+		name = "message_icons"
+		backGround=""
+		position = { x=-254 y=-274 }	
+		size = { x=256 y= 48 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_RIGHT"
+
+		OverlappingElementsBoxType = {
+			name = "combat"
+			position = { x = -64 y = 47 }
+			size = { x = 230 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = right
+			spacing = 1.0
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "diplo"
+			position = { x = -64 y = 68 }
+			size = { x = 230 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = right
+			spacing = 1.0
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "government"
+			position = { x = -64 y = 89 }
+			size = { x=230 y= 32 }
+			Orientation = "UPPER_LEFT"
+			format = right
+			spacing = 1.0
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "trade"
+			position = { x = -64 y = 110 }
+			size = { x=230 y= 32 }
+			Orientation = "UPPER_LEFT"
+			format = right
+			spacing = 1.0
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "event"
+			position = { x = -64 y = 131 }
+			size = { x=230 y= 32 }
+			Orientation = "UPPER_LEFT"
+			format = right
+			spacing = 1.0
+		}
+		
+	}
+	##########
+	windowType = {
+		name = "message_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=128 y= 20 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		guiButtonType = {
+			name = "message"
+			position = { x=0 y =0}
+			quadTextureSprite ="GFX_messagesettings_listbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "*"
+			buttonFont = "Main_16"
+		}
+
+		instantTextBoxType={
+			position = {x = 0 y = 0 }
+			name = "text"
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 500
+			maxHeight = 16
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+			fixedsize = yes
+		}
+
+
+		checkboxType = {
+			name = "messageicon_pause"
+			position = { x=500 y =0}
+			quadTextureSprite ="GFX_messageicon_pause"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		checkboxType = {
+			name = "messageicon_log"
+			position = { x=520 y =0}
+			quadTextureSprite ="GFX_messageicon_log"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		checkboxType = {
+			name = "messageicon_dialog"
+			position = { x=540 y =0}
+			quadTextureSprite ="GFX_messageicon_dialog"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		checkboxType = {
+			name = "messageicon_map"
+			position = { x=560 y =0}
+			quadTextureSprite ="GFX_messageicon_map"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+	checkboxType = {
+			name = "messageicon_icon"
+			position = { x=580 y =-1}
+			quadTextureSprite ="GFX_mailbox_icon"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+	}
+	
+	windowType = {
+		name = "save_game_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=128 y= 24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		checkboxType = {
+			name = "game"
+			position = { x=-4 y =0}
+			quadTextureSprite ="GFX_list_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+	}
+	
+	windowType = {
+		name = "chat_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=512 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "shield"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_minishield"
+		}
+
+		instantTextBoxType={
+			position = {x = 33 y = 5 }
+			name = "text_shadow"
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 512
+			maxHeight = 18
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+			allwaystransparent = yes
+		}
+		
+		instantTextBoxType={
+			position = {x = 32 y = 4 }
+			name = "text"
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 512
+			maxHeight = 18
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+			allwaystransparent = yes
+		}
+
+		
+		
+	}
+	
+
+	windowType = {
+		name = "menubar"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=2048 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+
+		listboxType = 
+			{
+				name ="WarOverviewButtonList"
+				position = { x= -105 y = -132 }
+				#backGround="SandboxFloaterBackground"
+				backGround=""
+				size = { x=  54 y = 176 }
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+				Orientation = "LOWER_RIGHT"
+			}
+
+
+		windowType = {
+			name = "messagelog_window"
+			backGround=""
+			position = { x=0 y=-100 }	
+			size = { x=770 y=100 }	
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "LOWER_LEFT"
+	
+
+
+			#guiButtonType = {
+			#	name = "message_bg"
+			#	position = { x = 0 y = 0 }
+			#	quadTextureSprite ="gfx_message_bg"
+			#}
+			
+			iconType =
+			{
+				name ="log_bg"
+				spriteType = "GFX_log_bg"
+				position = { x= 0 y = -10 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			listboxType = 
+			{
+				name ="messagelog"
+				position = { x = 0 y = 14 }
+				backGround=""
+				size = { x= 720 y = 80}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0}
+			}
+			
+			guiButtonType = {
+				name = "closebutton"
+				position = { x = 720 y = 4 }
+				quadTextureSprite ="GFX_closelog_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				shortcut = "<"
+			}
+		}
+
+
+		guiButtonType = {
+				name = "OPENbutton"
+				position = { x = 716 y = -30 }
+				quadTextureSprite ="GFX_openlog_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "Main_14_black"
+
+				shortcut = "<"
+				Orientation = "LOWER_LEFT"
+		}
+	
+
+
+		
+		
+		windowType = {
+		name = "chat_window"
+		backGround="chat_bg"
+		position = { x=0 y=-100 }	
+		size = { x=720 y=150 }	
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+	
+
+
+			guiButtonType = {
+				name = "chat_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_chat_bg"
+			}
+
+
+			#listboxType = 
+			#{
+			#	name ="playerlist"
+			#	position = { x = 90 y = 10 }
+			#	backGround=""
+			#	size = { x= 720 y = 80}
+			#	Orientation = "UPPER_LEFT"
+			#	horisontal = 0
+			#	spacing = 1
+			#	scrollbartype = "standardlistbox_slider"
+			#	borderSize = {x = 0 y = 0}
+			#}
+			
+			guiButtonType = {
+				name = "none"
+				position = { x = 20 y = 5 }
+				quadTextureSprite ="button_type_6"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CHAT_NONE"
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				shortcut = ""
+			}
+			
+			guiButtonType = {
+				name = "allies"
+				position = { x = 20 y = 25 }
+				quadTextureSprite ="button_type_6"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CHAT_ALLIES"
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				shortcut = ""
+			}
+			
+			guiButtonType = {
+				name = "enemies"
+				position = { x = 20 y = 45 }
+				quadTextureSprite ="button_type_6"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CHAT_FOES"
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				shortcut = ""
+			}
+			
+			guiButtonType = {
+				name = "all"
+				position = { x = 20 y = 65 }
+				quadTextureSprite ="button_type_6"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CHAT_ALL"
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				shortcut = ""
+			}
+			
+			guiButtonType = {
+				name = "closebutton"
+				position = { x = 708 y = 0 }
+				quadTextureSprite ="GFX_closelog_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "Main_14_black"
+
+				Orientation = "UPPER_LEFT"
+				shortcut = "ESCAPE"
+			}
+			
+			editBoxType = {
+				position = { x = 90 y = 46 }
+				name = "chat_message"
+				#textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+				textureFile = "" 
+				font = "Main_16"
+				borderSize = { x = 8 y = 8 }	
+				size = { x=600 y=32 }
+				text = ""	
+				maxWidth = 600
+				maxHeight = 26
+				orientation = "UPPER_LEFT"
+			}
+		}
+		
+		listBoxType = 
+		{
+			name ="chat_list"
+			background = ""
+			position = { x=5 y=-655 }
+			orientation = "LOWER_LEFT"
+			priority = 100
+			size = { x=265 y=246 }
+			borderSize = {x = 32 y = 32}
+			allwaystransparent = yes
+		}
+
+		#textBoxType = {
+		#	name = "messagelog"
+		#	position = { x = 0 y = -96 }
+		#	textureFile = ""
+		#	font = "messagelog"
+		#	borderSize = {x = 8 y = 4}
+		#	text = ""	
+		#	maxWidth = 1024
+		#	maxHeight = 32	
+		#
+		#	Orientation = "LOWER_LEFT"
+		#}
+
+
+
+		#textBoxType = {
+		#	name = "list_widget"
+		#	position = { x = -300 y = 50 }
+		#	textureFile = ""
+		#	font = "list"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "List object #1"	
+		#	maxWidth = 280
+		#	maxHeight = 32
+		#	format = right	
+		#
+		#	Orientation = "UPPER_RIGHT"
+		#}
+
+
+
+
+
+
+		
+
+
+		iconType =
+		{
+			name ="menubar_bg"
+			spriteType = "GFX_menubar_new"
+			position = { x= -240 y = -260 }
+			Orientation = "LOWER_RIGHT"
+		}
+
+		
+		
+			### MAILBOX BG and BUTTONS
+		guiButtonType = {
+			name = "msg_combat"
+			position = { x = -72 y = -248 }
+			quadTextureSprite ="GFX_msg_combat"
+			Orientation = "LOWER_RIGHT"
+			clicksound = click
+		}
+		guiButtonType = {
+			name = "msg_diplo"
+			position = { x = -72 y = -227 }
+			quadTextureSprite ="GFX_msg_diplo"
+			Orientation = "LOWER_RIGHT"
+			clicksound = click
+		}
+		guiButtonType = {
+			name = "msg_government"
+			position = { x = -72 y = -206 }
+			quadTextureSprite ="GFX_msg_gov"
+			Orientation = "LOWER_RIGHT"
+			clicksound = click
+		}
+		guiButtonType = {
+			name = "msg_trade"
+			position = { x = -72 y = -185 }
+			quadTextureSprite ="GFX_msg_trade"
+			Orientation = "LOWER_RIGHT"
+			clicksound = click
+		}
+		guiButtonType = {
+			name = "msg_event"
+			position = { x = -72 y = -164 }
+			quadTextureSprite ="GFX_msg_event"
+			Orientation = "LOWER_RIGHT"
+			clicksound = click
+		}
+		
+	########### 
+	
+		guiButtonType = {
+			name = "menubar_modifiers_button"
+			position = { x = -50 y = -247 }
+			quadTextureSprite ="GFX_modifiers_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+
+			Orientation = "LOWER_RIGHT"
+			clicksound = click
+		}
+
+		guiButtonType = {
+				name = "button_goto"
+				position = { x = -47 y = -179 }
+				quadTextureSprite ="GFX_button_goto"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				clicksound = click
+			}
+
+
+
+		guiButtonType = {
+				name = "button_home"
+				position = { x = -47 y = -155 }
+				quadTextureSprite ="GFX_button_home"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				clicksound = click
+			}
+		guiButtonType = {
+				name = "button_gotofocus"
+				position = { x = -47 y = -131 }
+				quadTextureSprite ="GFX_button_gotofocus"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				clicksound = click
+			}
+
+		
+
+#		iconType =
+#		{
+#			name ="minimap_closed"
+#			spriteType = "GFX_minimap_closed"
+#			position = { x= -80 y = -100 }
+#			Orientation = "LOWER_RIGHT"
+#		}
+
+
+
+		textBoxType = {
+			name = "mapmode_name"
+			position = { x = -265 y = -141 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = "MAPMODE"	
+			maxWidth = 200
+			maxHeight = 32
+			format = right	
+
+			Orientation = "LOWER_RIGHT"
+		}
+		
+
+
+				iconType =
+		{
+			name ="menubar_floating_bg_1"
+			spriteType = "GFX_menubar_floating_bg"
+			position = { x= -35 y = -307 }
+			Orientation = "LOWER_RIGHT"
+		}
+		iconType =
+		{
+			name ="menubar_floating_bg_2"
+			spriteType = "GFX_menubar_floating_bg"
+			position = { x= -35 y = -347 }
+			Orientation = "LOWER_RIGHT"
+		}
+		iconType =
+		{
+			name ="menubar_floating_bg_3"
+			spriteType = "GFX_menubar_floating_bg"
+			position = { x= -35 y = -387 }
+			Orientation = "LOWER_RIGHT"
+		}
+
+		iconType =
+		{
+			name ="menubar_floating_bg_4"
+			spriteType = "GFX_menubar_floating_bg"
+			position = { x= -35 y = -427 }
+			Orientation = "LOWER_RIGHT"
+		}
+		
+		instantTextBoxType = {
+			name = "floating_number_1"
+			position = { x = -22 y = -293 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "100"	
+			maxWidth = 50
+			maxHeight = 32
+			format = left	
+
+			Orientation = "LOWER_RIGHT"
+		}
+		instantTextBoxType = {
+			name = "floating_number_2"
+			position = { x = -22 y = -333 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "100"	
+			maxWidth = 50
+			maxHeight = 32
+			format = left	
+
+			Orientation = "LOWER_RIGHT"
+		}
+		
+		instantTextBoxType = {
+			name = "floating_number_3"
+			position = { x = -22 y = -373 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "100"	
+			maxWidth = 50
+			maxHeight = 32
+			format = left	
+
+			Orientation = "LOWER_RIGHT"
+		}		
+		instantTextBoxType = {
+			name = "floating_number_4"
+			position = { x = -22 y = -413 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "100"	
+			maxWidth = 50
+			maxHeight = 32
+			format = left	
+
+			Orientation = "LOWER_RIGHT"
+		}		
+ 
+		guiButtonType = {
+				name = "f_button_1"
+				position = { x = -60 y = -305 }
+				quadTextureSprite ="GFX_menubar_floating_strip"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+		guiButtonType = {
+				name = "f_button_2"
+				position = { x = -60 y = -345 }
+				quadTextureSprite ="GFX_menubar_floating_strip"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+			guiButtonType = {
+				name = "f_button_3"
+				position = { x = -60 y = -385 }
+				quadTextureSprite ="GFX_menubar_floating_strip"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+		guiButtonType = {
+				name = "f_button_4"
+				position = { x = -60 y = -425 }
+				quadTextureSprite ="GFX_menubar_floating_strip"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+			
+		
+		######
+
+			guiButtonType = {
+				name = "history_button"
+				position = { x = -48 y = -221 }
+				quadTextureSprite ="GFX_button_history"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "H"
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+			
+		
+		iconType =
+		{
+		name ="mapmode_bg"
+		spriteType = "GFX_mapmode_bg"
+		position = { x= -282 y = -109 }
+		Orientation = "LOWER_RIGHT"
+		}
+		iconType =
+		{
+		name ="mapmode_bg_2"
+		spriteType = "GFX_mapmode_bg"
+		position = { x= -282 y = -126 }
+		Orientation = "LOWER_RIGHT"
+		}		
+			
+		guiButtonType = {
+				name = "mapmode_1"
+				position = { x = -282 y = -128 }
+				quadTextureSprite ="GFX_mapmode_terrain"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "q"
+			}
+
+		guiButtonType = {
+				name = "mapmode_2"
+				position = { x = -262 y = -128 }
+				quadTextureSprite ="GFX_mapmode_political"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "w"
+			}
+
+		guiButtonType = {
+				name = "mapmode_3"
+				position = { x = -242 y = -128 }
+				quadTextureSprite ="GFX_mapmode_religion"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "e"
+			}
+
+		guiButtonType = {
+				name = "mapmode_4"
+				position = { x = -222 y = -128 }
+				quadTextureSprite ="GFX_mapmode_empire"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "r"
+			}
+
+		guiButtonType = {
+				name = "mapmode_5"
+				position = { x = -202 y = -128 }
+				quadTextureSprite ="GFX_mapmode_trade"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "t"
+			}
+
+		guiButtonType = {
+				name = "mapmode_6"
+				position = { x = -182 y = -128 }
+				quadTextureSprite ="GFX_mapmode_diplomatic"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "y"
+			}
+			
+		guiButtonType = {
+				name = "mapmode_7"
+				position = { x = -162 y = -128 }
+				quadTextureSprite ="GFX_mapmode_region"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "u"
+			}
+			
+		guiButtonType = {
+				name = "mapmode_8"
+				position = { x = -142 y = -128 }
+				quadTextureSprite ="GFX_mapmode_culture"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "i"
+			}
+			
+		guiButtonType = {
+				name = "mapmode_9"
+				position = { x = -122 y = -128 }
+				quadTextureSprite ="GFX_mapmode_sphere"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "o"
+			}
+		guiButtonType = {
+				name = "mapmode_10"
+				position = { x = -102 y = -128 }
+				quadTextureSprite ="GFX_mapmode_rebel"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "p"
+			}
+		guiButtonType = {
+				name = "mapmode_11"
+				position = { x = -82 y = -128 }
+				quadTextureSprite ="GFX_mapmode_colonial"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = ""
+			}
+
+		guiButtonType = {
+				name = "mapmode_12"
+				position = { x = -282 y = -111 }
+				quadTextureSprite ="GFX_mapmode_economical"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "a"
+			}
+
+		guiButtonType = {
+				name = "mapmode_13"
+				position = { x = -262 y = -111 }
+				quadTextureSprite ="GFX_mapmode_manpower"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "s"
+			}
+
+		guiButtonType = {
+				name = "mapmode_14"
+				position = { x = -242 y = -111 }
+				quadTextureSprite ="GFX_mapmode_fortlevel"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "d"
+			}
+
+		guiButtonType = {
+				name = "mapmode_15"
+				position = { x = -222 y = -111 }
+				quadTextureSprite ="GFX_mapmode_stabilitycost"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "f"
+			}
+
+		guiButtonType = {
+				name = "mapmode_16"
+				position = { x = -202 y = -111 }
+				quadTextureSprite ="GFX_mapmode_tech"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "g"
+			}
+
+		guiButtonType = {
+				name = "mapmode_17"
+				position = { x = -182 y = -111 }
+				quadTextureSprite ="GFX_mapmode_tradevalue"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "h"
+			}
+			
+		guiButtonType = {
+				name = "mapmode_18"
+				position = { x = -162 y = -111 }
+				quadTextureSprite ="GFX_mapmode_supplylimit"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "j"
+			}
+			
+		guiButtonType = {
+				name = "mapmode_19"
+				position = { x = -142 y = -111 }
+				quadTextureSprite ="GFX_mapmode_buildings"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = ""
+			}
+			
+		guiButtonType = {
+				name = "mapmode_20"
+				position = { x = -122 y = -111 }
+				quadTextureSprite ="GFX_mapmode_recruitment"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = ""
+			}
+		guiButtonType = {
+				name = "mapmode_21"
+				position = { x = -102 y = -111 }
+				quadTextureSprite ="GFX_mapmode_buildingships"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = ""
+			}
+		guiButtonType = {
+				name = "mapmode_22"
+				position = { x = -82 y = -111 }
+				quadTextureSprite ="GFX_mapmode_missionaries"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "k"
+			}
+
+		guiButtonType = {
+				name = "zoom_in"
+				position = { x = -47 y = -28 }
+				quadTextureSprite ="GFX_zoom_in"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+		guiButtonType = {
+				name = "zoom_out"
+				position = { x = -30 y = -28 }
+				quadTextureSprite ="GFX_zoom_out"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+
+
+
+
+
+
+
+		guiButtonType = {
+				name = "menu_button"
+				position = { x = -47 y = -93 }
+				quadTextureSprite ="GFX_menu_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+			}
+
+		guiButtonType = {
+				name = "ledger_button"
+				position = { x = -47 y = -68 }
+				quadTextureSprite ="GFX_ledger_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				shortcut = "l"
+			}
+
+}
+
+
+
+
+	positionType = {
+		name = "chat_shield_start"
+		position = { x = 90 y = 10 }
+	}
+
+	positionType = {
+		name = "chat_shield_offset"
+		position = { x = 26 y = 0 }
+	}
+
+	positionType = {
+		name = "chat_shield_offset_long"
+		position = { x = 150 y = 0 }
+	}
+
+	positionType = {
+		name = "war_overview_list_start"
+		position = { x = -112 y = -300 }
+	}
+	
+	windowType = {
+		name = "short_player_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x = 26 y = 26 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+	
+		checkboxType = 
+		{
+			name = "shield"
+			position = { x=0 y =0}
+			quadTextureSprite ="GFX_minishield_greydown"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+		iconType =
+		{
+			name ="minishield_strikeout"
+			spriteType = "GFX_minishield_strikeout"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+		
+	windowType = {
+		name = "player_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=128 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			name = "name"
+			position = { x=16 y =14}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "..."
+			buttonFont = "Main_14_black"
+		}
+		
+		checkboxType = {
+			name = "shield"
+			position = { x=0 y =0}
+			quadTextureSprite ="GFX_minishield_greydown"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+		iconType =
+		{
+			name ="minishield_strikeout"
+			spriteType = "GFX_minishield_strikeout"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+			
+	}
+		##########
+		
+	windowType = {
+		name = "messageicon_entry_window"
+		backGround=""
+		position = { x=20 y=0 }	
+		size = { x=32 y= 20 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+				name = "messageicon_button"
+				position = { x = 14 y = -21 }
+				quadTextureSprite ="GFX_message_background"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = ""
+			}
+			
+		instantTextBoxType = {
+			name = "flag"
+			position = { x = 15 y =-19 }
+			format = centre
+			textureFile = ""
+
+			font = "garamond_14"
+			allwaystransparent = yes
+
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 32
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"			
+		}
+		
+		
+			
+	}
+
+	#### DIPLO ICONS
+
+	positionType = {
+		name = "diplomessageicon_start"
+		position = { x = 415 y = 110 }
+	}
+	
+				
+}

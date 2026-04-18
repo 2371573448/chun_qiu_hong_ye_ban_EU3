@@ -1,0 +1,12 @@
+name = "Ö£²®ÃğÛ¦"
+casus_belli = cb_core #ÊÕ¸´Ê§µØ
+
+1928.1.1 = {
+	add_attacker = ZGO
+	add_defender = KUA
+}
+
+1929.12.31 = {
+	rem_attacker = ZGO
+	rem_defender = KUA
+}

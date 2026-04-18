@@ -1,0 +1,112 @@
+government =fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 2
+innovative_narrowminded = -2
+mercantilism_freetrade = 2
+offensive_defensive = -4
+land_naval = -4
+quality_quantity = -5
+serfdom_freesubjects = 0
+technology_group = chinese
+religion=liyuejiaohua 
+primary_culture = dongtu
+capital = 302
+
+1903.1.1={monarch={name="ÔÙ" dynasty="ºß" adm=6 dip=6 mil=6}}
+1928.1.1 = { 
+	elector = yes
+}
+1938.1.1={monarch={name=" Ø∏∏" dynasty="ºß" adm=6 dip=6 mil=2}}
+1939.1.1={monarch={name="Œ‰" dynasty="ºß" adm=5 dip=5 mil=2}}
+1942.1.1={monarch={name="÷’…˙" dynasty="ºß" adm=3 dip=3 mil=4}}
+1997.1.1={monarch={name="œ¶π√" dynasty="ºß" adm=5 dip=5 mil=2}}
+2028.1.1={monarch={name="≥‡" dynasty="ºß" adm=6 dip=4 mil=6}}
+2037.1.1={monarch={name="∞‡" dynasty="ºß" adm=2 dip=5 mil=2}}
+2046.1.1={monarch={name="œÂ" dynasty="ºß" adm=2 dip=5 mil=6}}
+2050.1.1 = { 
+	set_country_flag = zongfazhidu
+}
+2060.1.1 = { elector = yes }
+2081.1.1={monarch={name=" Ÿ" dynasty="ºß" adm=5 dip=6 mil=2}}
+2100.1.1 = { decision = tuposanjunguizhi }
+2100.1.1 = { 
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2104.1.1={monarch={name="«ø" dynasty="ºß" adm=3 dip=6 mil=6}}
+2121.1.1={monarch={name="∏∫€ª" dynasty="ºß" adm=4 dip=5 mil=2}}
+2144.1.1={monarch={name=" §" dynasty="ºß" adm=6 dip=3 mil=4}}
+2150.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2171.1.1={monarch={name="–Î" dynasty="ºß" adm=5 dip=5 mil=4}}
+2175.1.1={monarch={name="ŒÁ" dynasty="ºß" adm=3 dip=4 mil=3}}
+2183.1.1 = { elector = no }
+2184.1.1={monarch={name="“∞" dynasty="ºß" adm=4 dip=2 mil=5}}
+2189.1.1={monarch={name="Õ®" dynasty="ºß" adm=5 dip=3 mil=5}}
+2193.1.1={monarch={name="¬∂" dynasty="ºß" adm=2 dip=6 mil=3}}
+2197.1.1={monarch={name="—Ù" dynasty="ºß" adm=2 dip=2 mil=6}}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2245.1.1 = { 
+	
+	government = enlightened_despotism
+	set_country_flag = sitianzhidu
+}
+2245.1.1 = { 
+	set_country_flag = sitianzhidu
+	set_country_flag = junxianzhidu
+	set_country_flag = fengjunzhidu
+}
+2246.1.2={monarch={name="≤Ÿ" dynasty="≤‹" adm=8 dip=7 mil=9}}
+2246.1.2 = { 
+	leader = { 
+		name = "≤‹» "
+		type = general
+		rank = 1
+		fire = 2
+		shock = 4
+		manuever = 2
+		siege = 1
+		death_date = 2346.1.1
+	}
+}
+2246.1.2 = { 
+	leader = { 
+		name = "≤‹∫È"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 3
+		manuever = 2
+		siege = 1
+		death_date = 2346.1.1
+	}
+}
+2246.1.2 = { 
+	leader = { 
+		name = "œƒ∫Óê™"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 2
+		manuever = 1
+		siege = 1
+		death_date = 2346.1.1
+	}
+}
+2246.1.2 = { 
+	leader = { 
+		name = "œƒ∫Ó‘®"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 2
+		death_date = 2346.1.1
+	}
+}

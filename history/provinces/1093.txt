@@ -1,0 +1,71 @@
+
+owner = QJR
+controller = QJR
+culture = chidi
+religion = animism
+capital = "¹£Ñô"
+trade_goods = spices
+hre = no
+base_tax = 7
+manpower = 0
+citysize = 34000
+fort1 = yes
+add_core = QJR
+cot = no
+
+1827.1.1 = { discovered_by = CHA }
+1960.1.1 = { discovered_by = JIN }
+2110.9.1 = { owner = JIN controller = JIN }
+2140.1.1 = { add_core = JIN }
+2170.1.1 = { culture = shanxi
+             religion = liyuejiaohua  remove_core=QJR
+           }
+2222.1.1 = { citysize = 34000 }
+2244.1.1 = { 
+	owner = FAS
+	controller = FAS
+	add_core = FAS
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = FAS
+}
+2245.1.1 = { owner = ZHO
+             controller = ZHO
+             add_core = ZHO  remove_core=JIN
+           }
+2246.1.2 = { 
+	owner = FAS
+	controller = FAS
+	add_core = FAS
+	remove_core = LOU
+	remove_core = ZHO
+}
+2247.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+}
+2439.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2440.1.1 = { religion = rujia }
+2441.1.1  = {	owner = ZHO
+		controller = ZHO
+	    }
+2442.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2472.1.1  = {   add_core = QIN  }
+2492.2.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2493.8.1 = { 
+	owner = HNW
+	controller = HNW
+}

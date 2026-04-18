@@ -1,0 +1,114 @@
+owner = KUA
+controller = KUA
+culture = dongtu
+religion = liyuejiaohua
+capital = "√˘—„"
+trade_goods = coffee
+hre = yes
+base_tax = 7
+manpower = 0
+citysize = 27000
+fort1 = yes
+add_core = KUA
+add_core = ZGO
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+1929.1.1 = { 
+	owner = ZGO
+	controller = ZGO
+}
+1960.1.1 = { 
+	remove_core = KUA
+}
+2222.1.1 = { 
+	citysize = 78000
+	fort2 = yes
+	fort3 = yes
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2  = {	owner = KUA
+		controller = KUA
+	    }
+2246.1.2 = { add_core = KUA
+             
+           }
+2246.1.2 = {
+        citysize = 68000
+    }
+2246.1.3 = {
+        citysize = 78000
+    }
+2247.1.1  = {	owner = ZGO
+		controller = ZGO
+	    }
+2247.1.1 = { add_core = ZGO
+             remove_core = KUA
+           }
+2247.1.1 = { 
+	hre = no
+}
+2277.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2307.1.1 = { 
+	owner = WEI
+	controller = WEI
+	remove_core = CHU
+}
+2337.1.1 = { 
+	remove_core = ZGO
+	add_core = WEI
+}
+2340.1.1 = { 
+	religion = fajia
+}
+2473.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 24000
+}
+2489.10.1 = { 
+	revolt = { 
+		type = nationalist_rebels
+		size = 4
+		leader = "÷‹ –"
+	}
+	controller = REB
+}
+2490.1.1 = { 
+	revolt = { }
+	controller = WEI
+	owner = WEI
+}
+2490.9.1 = { 
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}
+2494.11.1 = { 
+	owner = WEI
+	controller = WEI
+}

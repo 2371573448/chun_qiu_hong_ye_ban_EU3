@@ -1,0 +1,117 @@
+owner = CHE
+controller = CHE
+culture = jianghan
+religion = liyuejiaohua
+capital = "ÑôÏÄ"
+trade_goods = tea
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 24000
+fort1 = yes
+add_core = CHE
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2100.10.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2100.12.10 = { 
+	owner = CHE
+	controller = CHE
+}
+2164.10.15 = { 
+	owner = CHU
+	controller = CHU
+}
+2169.6.15 = { 
+	owner = CHE
+	controller = CHE
+}
+2200.1.1 = { 
+	religion = rujia
+}
+2220.7.8 = { 
+	owner = CHU
+	controller = CHU
+}
+2222.1.1 = { 
+	citysize = 32000
+}
+2244.1.1 = { 
+	owner = CHE
+	controller = CHE
+	add_core = CHE
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = CHE
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.1 = { 
+	owner = SON
+	controller = SON
+	add_core = SON
+	religion = liyuejiaohua
+}
+2246.1.2 = { 
+	owner = CHE
+	controller = CHE
+	add_core = CHE
+	remove_core = SON
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+	religion = rujia
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = SON
+}
+2250.1.1 = { 
+	add_core = CHU
+}
+2280.1.1 = { 
+	religion = liyuebadao
+	culture = nanchu
+	remove_core = CHE
+}
+2472.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.7.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2489.12.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

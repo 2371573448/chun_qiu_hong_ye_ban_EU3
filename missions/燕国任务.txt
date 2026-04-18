@@ -1,0 +1,642 @@
+#征服诸蛮
+zhengfuzhuman = {
+	type = country
+	allow = {
+		tag = YAN
+		NOT = { has_country_flag = zhengfuzhuman }
+	}
+	abort = {
+	}
+	success = {
+		owns = 7
+		owns = 8
+		owns = 9
+		owns = 11
+		owns = 12
+		owns = 13
+		owns = 15
+		owns = 16
+		owns = 17
+		owns = 18
+		owns = 21
+		owns = 22
+		owns = 1130
+		owns = 1131
+		owns = 1132
+		owns = 1133
+		owns = 1134
+		owns = 1157
+		owns = 1158
+	}
+	chance = {
+		factor = 5000
+	}
+	immediate = {
+		add_temp_claim = 7
+		add_temp_claim = 8
+		add_temp_claim = 9
+		add_temp_claim = 11
+		add_temp_claim = 12
+		add_temp_claim = 13
+		add_temp_claim = 15
+		add_temp_claim = 16
+		add_temp_claim = 17
+		add_temp_claim = 18
+		add_temp_claim = 21
+		add_temp_claim = 22
+		add_temp_claim = 1130
+		add_temp_claim = 1131
+		add_temp_claim = 1132
+		add_temp_claim = 1133
+		add_temp_claim = 1134
+		add_temp_claim = 1157
+		add_temp_claim = 1158
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_core = 7
+		add_core = 8
+		add_core = 9
+		add_core = 11
+		add_core = 12
+		add_core = 13
+		add_core = 15
+		add_core = 16
+		add_core = 17
+		add_core = 18
+		add_core = 21
+		add_core = 22
+		add_core = 1130
+		add_core = 1131
+		add_core = 1132
+		add_core = 1133
+		add_core = 1134
+		add_core = 1157
+		add_core = 1158
+		set_country_flag = zhengfuzhuman
+	}
+}
+#征服无终
+YAN_annex_WUZ = {
+	
+	type = country
+
+	allow = {
+		not = { tag = YAN }
+		tag = YAN
+		num_of_cities = 12
+		is_lesser_in_union = no
+		is_subject = no
+		or = {
+		  	NOT = { owns = 17 }
+		 	NOT = { owns = 22 }
+			NOT = { owns = 21 }
+		}
+		exists = WUZ
+		WUZ = {
+			neighbour = this
+			not = { vassal_of = YAN }
+		}
+		year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = WUZ }
+				not = { owns = 17 }
+				not = { owns = 21 }
+				not = { owns = 22 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		WUZ = { 
+			capital_scope = { 
+				controlled_by = THIS
+			}
+		}
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 17
+	  	add_temp_claim = 22
+		add_temp_claim = 21
+	}
+	abort_effect = {
+	  	remove_temp_claim = 17
+		remove_temp_claim = 22
+	  	remove_temp_claim = 21
+	}
+	effect = {
+	 	add_core = 21
+		add_core = 22
+	 	add_core = 17
+	 	add_core = 26
+	 	add_core = 19
+	 	add_core = 20
+		inherit = WUZ
+		WUZ = { white_peace = THIS }
+	}
+}
+
+#打击山戎
+blow_shanron = {
+	
+	type = country
+
+	allow = {
+		not = { tag = YAN }
+		tag = YAN
+		any_neighbor_country = { 
+			or = { 
+				tag = WUZ
+				tag = GUZ
+				tag = LZG
+				tag = TUH
+			}
+		}
+		NOT = { has_country_flag = dajishanrong }
+	}
+	abort = {	
+	}
+	success = {
+		NOT = { exists = WUZ }
+		NOT = { exists = GUZ }
+		NOT = { exists = LZG }
+		NOT = { exists = TUH }
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 0.2
+			not = { num_of_cities = 10 }
+		}
+	}
+	immediate = {
+		set_country_flag = dajishanrongchidi
+	}
+	abort_effect = {
+	  	clr_country_flag = dajishanrongchidi
+	}
+	effect = {
+		prestige = 0.10
+		set_country_flag = dajishanrong
+	  	clr_country_flag = dajishanrongchidi
+	}
+}
+
+#征服孤竹
+YAN_annex_GUZ = {
+	
+	type = country
+
+	allow = {
+		not = { tag = YAN }
+		tag = YAN
+		is_lesser_in_union = no
+		is_subject = no
+		or = {
+		  	NOT = { owns = 11 }
+		 	NOT = { owns = 13 }
+			NOT = { owns = 15 }
+		}
+		exists = GUZ
+		GUZ = {
+			neighbour = this
+			not = { vassal_of = YAN }
+		}
+		year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = GUZ }
+				not = { owns = 13 }
+				not = { owns = 15 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		GUZ = { 
+			capital_scope = { 
+				controlled_by = THIS
+			}
+		}
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 11
+	  	add_temp_claim = 13
+	  	add_temp_claim = 15
+	  	add_temp_claim = 1157
+	}
+	abort_effect = {
+	  	remove_temp_claim = 11
+	  	remove_temp_claim = 13
+	  	remove_temp_claim = 15
+	  	remove_temp_claim = 1157
+	}
+	effect = {
+	  	prestige = 0.05
+	 	add_core = 11
+	 	add_core = 13
+	 	add_core = 15
+	 	add_core = 1157
+	 	add_core = 1158
+		inherit = GUZ
+		GUZ = { white_peace = THIS }
+		badboy = 10
+	}
+}
+
+#征服令支
+YAN_annex_LZG = {
+	
+	type = country
+
+	allow = {
+		not = { tag = YAN }
+		tag = YAN
+		is_lesser_in_union = no
+		is_subject = no
+		or = {
+		  	NOT = { owns = 12 }
+		 	NOT = { owns = 16 }
+			NOT = { owns = 18 }
+		}
+		exists = LZG
+		LZG = {
+			neighbour = this
+			not = { vassal_of = YAN }
+		}
+		year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = LZG }
+				not = { owns = 12 }
+				not = { owns = 16 }
+				not = { owns = 18 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		LZG = { 
+			capital_scope = { 
+				controlled_by = THIS
+			}
+		}
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 12
+	  	add_temp_claim = 16
+	  	add_temp_claim = 18
+	  	add_temp_claim = 1157
+	}
+	abort_effect = {
+	  	remove_temp_claim = 12
+	  	remove_temp_claim = 16
+	  	remove_temp_claim = 18
+	  	remove_temp_claim = 1157
+	}
+	effect = {
+	  	prestige = 0.05
+	 	add_core = 14
+	 	add_core = 12
+	 	add_core = 16
+	 	add_core = 18
+	 	add_core = 1157
+		inherit = LZG
+		LZG = { white_peace = THIS }
+	}
+}
+
+#征服屠何
+YAN_annex_TUH = {
+	
+	type = country
+
+	allow = {
+		not = { tag = YAN }
+		tag = YAN
+		is_lesser_in_union = no
+		is_subject = no
+		or = {
+		  	NOT = { owns = 7 }
+		 	NOT = { owns = 8 }
+			NOT = { owns = 9 }
+		}
+		exists = TUH
+		TUH = {
+			neighbour = this
+			not = { vassal_of = YAN }
+		}
+		year = 1930
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = TUH}
+				not = { owns = 12 }
+				not = { owns = 16 }
+				not = { owns = 18 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		TUH = { 
+			capital_scope = { 
+				controlled_by = THIS
+			}
+		}
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	  	add_temp_claim = 7
+	  	add_temp_claim = 8
+	  	add_temp_claim = 9
+	  	add_temp_claim = 1133
+	  	add_temp_claim = 1131
+	  	add_temp_claim = 1130
+	  	add_temp_claim = 1132
+	  	add_temp_claim = 1134
+	}
+	abort_effect = {
+	  	remove_temp_claim = 7
+	  	remove_temp_claim = 8
+	  	remove_temp_claim = 9
+	  	remove_temp_claim = 1130
+	  	remove_temp_claim = 1131
+	  	remove_temp_claim = 1132
+	  	remove_temp_claim = 1133
+	  	remove_temp_claim = 1134
+	}
+	effect = {
+	  	prestige = 0.05
+	 	add_core = 7
+	 	add_core = 8
+	 	add_core = 9
+	 	add_core = 10
+	 	add_core = 1130
+	 	add_core = 1131
+	 	add_core = 1132
+	 	add_core = 1133
+	 	add_core = 1134
+	 	add_core = 1159
+		inherit = TUH
+		TUH = { white_peace = THIS }
+		badboy = 10
+	}
+}
+
+
+
+
+#开拓辽东
+kaituoliaodong = {
+	
+	type = country
+
+	allow = {
+		tag = YAN
+		JSG = {
+			neighbour = this
+			not = { vassal_of = YAN }
+		}
+		owns = 8
+		year = 1950
+	}
+	abort = {
+	}
+	success = {
+		owns = 2
+		owns = 1123
+		owns = 1124
+		owns = 1125
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+	 	add_temp_claim = 2
+	 	add_temp_claim = 1123
+	 	add_temp_claim = 1124
+	 	add_temp_claim = 1125
+	}
+	abort_effect = {
+	 	remove_temp_claim = 2
+	 	remove_temp_claim = 1123
+	 	remove_temp_claim = 1124
+	 	remove_temp_claim = 1125
+	  	prestige = -0.05
+	}
+	effect = {
+		liaodong = { add_core = this }
+		chaoxian1 = { add_core = this }
+		land_naval = 10
+		add_country_modifier = { 
+			name = "kaituoliaodongbuff"
+			duration = -1
+		}
+	}
+}
+#移民北境
+yiminbeijing = {
+	
+	type = country
+
+	allow = {
+		tag = YAN
+		has_country_flag = zhengfuzhuman
+		or = {
+			not = { owns = 26 }
+			not = { owns = 19 }
+			not = { owns = 14 }
+			not = { owns = 20 }
+			not = { owns = 1159 }
+			not = { owns = 10 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		owns = 26
+		owns = 19
+		owns = 14
+		owns = 20
+		owns = 1159
+		owns = 10
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+		add_temp_claim = 26
+		add_temp_claim = 19
+		add_temp_claim = 14
+		add_temp_claim = 20
+		add_temp_claim = 1159
+		add_temp_claim = 10
+	}
+	abort_effect = {
+		remove_temp_claim = 26
+		remove_temp_claim = 19
+		remove_temp_claim = 14
+		remove_temp_claim = 20
+		remove_temp_claim = 1159
+		remove_temp_claim = 10
+	}
+	effect = {
+		26 = { 
+			base_tax = 1
+			add_building = fort1
+			add_core = YAN
+		}
+		19 = { 
+			base_tax = 1
+			add_building = fort1
+			add_core = YAN
+		}
+		14 = { 
+			base_tax = 1
+			add_building = fort1
+			add_core = YAN
+		}
+		20 = { 
+			base_tax = 1
+			add_building = fort1
+			add_core = YAN
+		}
+		1159 = { 
+			base_tax = 1
+			add_building = fort1
+			add_core = YAN
+		}
+		10 = { 
+			base_tax = 1
+			add_building = fort1
+			add_core = YAN
+		}
+	}
+}
+#朝鲜新土
+chaoxianxintu = {
+	
+	type = country
+
+	allow = {
+		tag = YAN
+		has_country_flag = zhengfuzhuman
+		any_owned_province  = {
+			any_neighbor_province = { region = chaoxian1 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		NOT = {
+			chaoxian1 = {
+				NOT = { controlled_by = THIS }
+			}
+		}
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+		set_country_flag = chaoxianxintu
+	}
+	abort_effect = {
+		clr_country_flag = chaoxianxintu
+	}
+	effect = {
+		clr_country_flag = chaoxianxintu
+		4 = {
+			culture = THIS
+		}
+		5 = {
+			culture = THIS
+		}
+		7 = {
+			culture = THIS
+		}
+	}
+}
+#征服代郡
+
+YAN_annex_daijun = {
+	
+	type = country
+
+	allow = {
+		tag = YAN
+		NOT = { owns = 42 }
+		year = 2246
+		NOT = { year = 2500 }
+	}
+	abort = {
+	}
+	success = {
+    		owns = 40 
+    		owns = 41  
+    		owns = 42
+    		owns = 43
+    		owns = 44
+    		owns = 45
+    		owns = 46
+    		owns = 51
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	add_temp_claim = 40
+	 	add_temp_claim = 41
+	 	add_temp_claim = 42
+	 	add_temp_claim = 43
+	 	add_temp_claim = 44
+	 	add_temp_claim = 45
+	 	add_temp_claim = 46
+	 	add_temp_claim = 51
+	}
+	abort_effect = {
+	 	remove_temp_claim = 40
+	 	remove_temp_claim = 41
+	 	remove_temp_claim = 42
+	 	remove_temp_claim = 43
+	 	remove_temp_claim = 44
+	 	remove_temp_claim = 45
+	 	remove_temp_claim = 46
+	 	remove_temp_claim = 51
+	  	prestige = -0.05
+	}
+	effect = {
+		add_core = 40
+		add_core = 41
+	 	add_core = 42
+		add_core = 43
+		add_core = 44
+	 	add_core = 45
+		add_core = 46
+	 	add_core = 51
+	}
+}

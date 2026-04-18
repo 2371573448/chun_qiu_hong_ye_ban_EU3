@@ -1,0 +1,656 @@
+##########################################
+# 君主集权
+##########################################
+country_event = {
+	id = 801
+	is_triggered_only = yes		
+	title = "EVTNAME801"
+	desc = "EVTDESC801"	
+	option = {
+		name = "EVTOPTB801A"
+		random_owned = {
+			limit = {
+				is_overseas = no
+			}
+			change_manpower = 2
+		}		
+	}
+}
+country_event = {
+	id = 802
+	is_triggered_only = yes		
+	title = "EVTNAME802"
+	desc = "EVTDESC802"	
+	option = {
+		name = "EVTOPTB802A"
+		random_owned = {
+			particularist_rebels = 1
+		}
+		random_owned = {
+			noble_rebels = 1
+		}		
+	}
+}
+country_event = {
+	id = 803
+	is_triggered_only = yes		
+	title = "EVTNAME803"
+	desc = "EVTDESC803"
+	option = {
+		name = "EVTOPTB803A"
+                stability = -1
+	}
+}
+##########################################
+# 封邦建国
+##########################################
+country_event = {
+	id = 804
+	is_triggered_only = yes	
+	title = "EVTNAME804"
+	desc = "EVTDESC804"
+	option = {
+		name = "EVTOPTB804A"
+		stability = 1
+	}
+}
+country_event = {
+	id = 805
+	is_triggered_only = yes		
+	title = "EVTNAME805"
+	desc = "EVTDESC805"	
+	option = {
+		name = "EVTOPTB805A"
+                	random_owned = {
+			limit = {
+				is_overseas = no
+				is_capital = no
+			}
+			base_tax = -1
+		}		
+	}
+}
+country_event = {
+	id = 806
+	is_triggered_only = yes	
+	title = "EVTNAME806"
+	desc = "EVTDESC806"	
+	option = {
+		name = "EVTOPTB806A"
+		manpower = -0.2
+	}
+}
+##########################################
+# 公家政治
+##########################################
+country_event = {
+	id = 807
+	is_triggered_only = yes	
+	title = "EVTNAME807"
+	desc = "EVTDESC807"	
+	option = {
+		name = "EVTOPTB807A"
+		army_tradition = 0.10	
+	}
+}
+country_event = {
+	id = 808
+	is_triggered_only = yes	
+	title = "EVTNAME808"
+	desc = "EVTDESC808"	
+	option = {
+		name = "EVTOPTB808A"
+		prestige = -0.1	
+	}
+}
+country_event = {
+	id = 809
+	is_triggered_only = yes	
+	title = "EVTNAME809"
+	desc = "EVTDESC809"	
+	option = {
+		name = "EVTOPTB809A"
+                random_owned = {
+			pretender_rebels = 1
+		}
+	}
+}
+##########################################
+# 士卿政治
+##########################################
+country_event = {
+	id = 810
+	is_triggered_only = yes	
+	title = "EVTNAME810"
+	desc = "EVTDESC810"	
+	option = {
+		name = "EVTOPTB810A"
+		random_list = {
+			10 = { define_advisor = { type = treasurer skill = 5 }  }
+			10 = { define_advisor = { type = trader skill = 5 }  }
+			10 = { define_advisor = { type = collector skill = 5 }  }
+		}
+	}
+}
+country_event = {
+	id = 811
+	is_triggered_only = yes	
+	title = "EVTNAME811"
+	desc = "EVTDESC811"	
+	option = {
+		name = "EVTOPTB811A"
+		random_owned = {
+			noble_rebels = 1
+		}	
+	}
+}
+country_event = {
+	id = 812
+	is_triggered_only = yes
+	title = "EVTNAME812"
+	desc = "EVTDESC812"
+	option = {
+		name = "EVTOPTB812A"
+                stability = -1
+
+	}
+}
+##########################################
+# 井田蓄奴
+##########################################
+country_event = {
+	id = 813
+	is_triggered_only = yes
+	title = "EVTNAME813"
+	desc = "EVTDESC813"
+	option = {
+		name = "EVTOPTB813A"
+		inflation = -2	
+	}
+}
+country_event = {
+	id = 814
+	is_triggered_only = yes
+	title = "EVTNAME814"
+	desc = "EVTDESC814"
+	option = {
+		name = "EVTOPTB814A"
+		stability = -1	
+	}
+}
+country_event = {
+	id = 815
+	is_triggered_only = yes
+	title = "EVTNAME815"
+	desc = "EVTDESC815"
+	option = {
+		name = "EVTOPTB815A"
+                random_owned = {
+			anti_tax_rebels = 1
+		}			
+	}
+}
+##########################################
+# 私田耕作
+##########################################
+country_event = {
+	id = 816
+	is_triggered_only = yes
+	title = "EVTNAME816"
+	desc = "EVTDESC816"
+	option = {
+		name = "EVTOPTB816A"
+		random_list = {
+			10 = { create_advisor = sheriff }
+			10 = { create_advisor = alderman }
+		}		
+	}
+}
+country_event = {
+	id = 817
+	is_triggered_only = yes
+	title = "EVTNAME817"
+	desc = "EVTDESC817"
+	option = {
+		name = "EVTOPTB817A"
+                inflation = 0.3
+	}
+}
+country_event = {
+	id = 818
+	is_triggered_only = yes
+	title = "EVTNAME818"
+	desc = "EVTDESC818"
+	option = {
+		name = "EVTOPTB818A"
+		random_owned = {
+                        limit = {
+				is_overseas = no
+				manpower = 2
+			}
+		change_manpower = -1
+                }
+	}
+}
+##########################################
+# 尚今思新
+##########################################
+country_event = {
+	id = 819
+	is_triggered_only = yes
+	title = "EVTNAME819"
+	desc = "EVTDESC819"
+	option = {
+		name = "EVTOPTB819A"
+		random_list = {
+			10 = { create_advisor = natural_scientist }
+			10 = { create_advisor = statesman }
+			10 = { create_advisor = treasurer }
+			10 = { create_advisor = naval_reformer }
+			10 = { create_advisor = army_reformer }
+		}		
+	}
+}
+country_event = {
+	id = 820
+	is_triggered_only = yes
+	title = "EVTNAME820"
+	desc = "EVTDESC820"
+	option = {
+		name = "EVTOPTB820A"
+		prestige = -0.10
+	}
+}
+country_event = {
+	id = 821
+	is_triggered_only = yes
+	title = "EVTNAME821"
+	desc = "EVTDESC821"
+	option = {
+		name = "EVTOPTB821A"
+                stability = -1
+	}
+}
+##########################################
+# 祭祖崇古
+##########################################
+country_event = {
+	id = 822
+	is_triggered_only = yes
+	title = "EVTNAME822"
+	desc = "EVTDESC822"
+	option = {
+                 name = "EVTOPTB822A"
+                 create_advisor = theologian
+	}
+}
+country_event = {
+	id = 823
+	is_triggered_only = yes
+	title = "EVTNAME823"
+	desc = "EVTDESC823"
+	option = {
+		name = "EVTOPTB823A"
+		stability = -1
+	}
+}
+country_event = {
+	id = 824
+	is_triggered_only = yes
+	title = "EVTNAME824"
+	desc = "EVTDESC824"
+        trigger = {
+		any_owned_province = {
+			has_owner_religion = yes
+		}
+	}
+	option = {
+		name = "EVTOPTB824A"
+		random_owned = {
+			limit = {
+				has_owner_religion = yes
+			}
+			religion = heretic
+		}
+                }
+}
+##########################################
+# 盐铁均输
+##########################################
+country_event = {
+	id = 825
+	is_triggered_only = yes
+	title = "EVTNAME825"
+	desc = "EVTDESC825"
+	option = {
+		name = "EVTOPTB825A"
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				NOT = { owned_by = THIS }
+			}
+			remove_merchant = THIS
+		}
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				NOT = { owned_by = THIS }
+			}
+			remove_merchant = THIS
+		}				
+	}
+}
+country_event = {
+	id = 826
+	is_triggered_only = yes
+	title = "EVTNAME826"
+	desc = "EVTDESC826"
+	option = {
+		name = "EVTOPTB826A"
+		random_center_of_trade = {
+			limit = {
+				owned_by = THIS
+				base_tax = 1
+				is_capital = no
+			}
+			base_tax = -1
+		}		
+	}
+}
+country_event = {
+	id = 827
+	is_triggered_only = yes
+	title = "EVTNAME827"
+	desc = "EVTDESC827"
+	option = {
+		name = "EVTOPTB827A"
+		create_advisor = collector
+	}
+}
+##########################################
+# 四海通商
+##########################################
+country_event = {
+	id = 828
+	is_triggered_only = yes
+	title = "EVTNAME828"
+	desc = "EVTDESC828"
+	option = {
+		name = "EVTOPTB828A"
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				owned_by = THIS
+			}
+			remove_merchant = THIS
+		}	
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				owned_by = THIS
+			}
+			remove_merchant = THIS
+		}			
+	}
+}
+country_event = {
+	id = 829
+	is_triggered_only = yes
+	title = "EVTNAME829"
+	desc = "EVTDESC829"
+	option = {
+		name = "EVTOPTB829A"
+		merchants = -3		
+	}
+}
+country_event = {
+	id = 830
+	is_triggered_only = yes
+	title = "EVTNAME830"
+	desc = "EVTDESC830"
+	option = {
+		name = "EVTOPTB830A"
+		create_advisor = trader
+	}
+}
+##########################################
+# 开疆拓土
+##########################################
+country_event = {
+	id = 831
+	is_triggered_only = yes
+	title = "EVTNAME831"
+	desc = "EVTDESC831"
+	option = {
+		name = "EVTOPTB831A"
+		stability = -1
+	}
+}
+country_event = {
+	id = 832
+	is_triggered_only = yes
+	title = "EVTNAME832"
+	desc = "EVTDESC832"
+	option = {
+		name = "EVTOPTB832A"
+		manpower = -0.25
+	}
+}
+country_event = {
+	id = 833
+	is_triggered_only = yes
+	title = "EVTNAME833"
+	desc = "EVTDESC833"
+	option = {
+		name = "EVTOPTB833A"
+		prestige = 0.05
+	}
+}
+##########################################
+# 持盈守成
+##########################################
+country_event = {
+	id = 834
+	is_triggered_only = yes
+	title = "EVTNAME834"
+	desc = "EVTDESC834"
+	option = {
+		name = "EVTOPTB834A"
+		army_tradition = -0.1
+	}
+}
+country_event = {
+	id = 835
+	is_triggered_only = yes
+	title = "EVTNAME835"
+	desc = "EVTDESC835"
+	option = {
+		name = "EVTOPTB835A"
+		random_owned = {
+			anti_tax_rebels = 1
+		}
+	}
+}
+country_event = {
+	id = 836
+	is_triggered_only = yes
+	title = "EVTNAME836"
+	desc = "EVTDESC836"
+	option = {
+		name = "EVTOPTB836A"
+		create_advisor = fortification_expert
+	}
+}
+##########################################
+# 问鼎中原
+##########################################
+country_event = {
+	id = 837
+	is_triggered_only = yes
+	title = "EVTNAME837"
+	desc = "EVTDESC837"
+	option = {
+		name = "EVTOPTB837A"
+		navy_tradition = -0.1
+	}
+}
+country_event = {
+	id = 838
+	is_triggered_only = yes
+	title = "EVTNAME838"
+	desc = "EVTDESC838"
+	option = {
+		name = "EVTOPTB838A"
+		navy_tradition = -0.1
+	}
+}
+country_event = {
+	id = 839
+	is_triggered_only = yes
+	title = "EVTNAME839"
+	desc = "EVTDESC839"
+	option = {
+		name = "EVTOPTB839A"
+		create_advisor = grand_captain
+	}
+}
+##########################################
+# 开拓外夷
+##########################################
+country_event = {
+	id = 840
+	is_triggered_only = yes
+	title = "EVTNAME840"
+	desc = "EVTDESC840"
+	option = {
+		name = "EVTOPTB840A"
+		land_tech = -0.35
+	}
+}
+country_event = {
+	id = 841
+	is_triggered_only = yes
+	title = "EVTNAME841"
+	desc = "EVTDESC841"
+	option = {
+		name = "EVTOPTB841A"
+		army_tradition = -0.1
+	}
+}
+country_event = {
+	id = 842
+	is_triggered_only = yes
+	title = "EVTNAME842"
+	desc = "EVTDESC842"
+	option = {
+		name = "EVTOPTB842A"
+		create_advisor = grand_admiral
+	}
+}
+
+##########################################
+# 精兵强将
+##########################################
+country_event = {
+	id = 843
+	is_triggered_only = yes
+	title = "EVTNAME843"
+	desc = "EVTDESC843"
+	option = {
+		name = "EVTOPTB843A"
+		manpower = -0.25
+	}
+}
+country_event = {
+	id = 844
+	is_triggered_only = yes
+	title = "EVTNAME844"
+	desc = "EVTDESC844"
+	option = {
+		name = "EVTOPTB844A"
+		stability = -1
+		
+	}
+}
+country_event = {
+	id = 845
+	is_triggered_only = yes
+	title = "EVTNAME845"
+	desc = "EVTDESC845"
+	option = {
+		name = "EVTOPTB845A"
+		create_advisor = commandant
+	}
+}
+##########################################
+# 千军万马
+##########################################
+country_event = {
+	id = 846
+	is_triggered_only = yes
+	title = "EVTNAME846"
+	desc = "EVTDESC846"
+	option = {
+		name = "EVTOPTB846A"
+		prestige = -0.1
+	}
+}
+country_event = {
+	id = 847
+	is_triggered_only = yes
+	title = "EVTNAME847"
+	desc = "EVTDESC847"
+	option = {
+		name = "EVTOPTB847A"
+		army_tradition = -0.1
+	}
+}
+country_event = {
+	id = 848
+	is_triggered_only = yes
+	title = "EVTNAME848"
+	desc = "EVTDESC848"
+	option = {
+		name = "EVTOPTB848A"
+		create_advisor = army_organiser
+	}
+}
+##########################################
+# 政治危机
+##########################################
+country_event = { 
+	id = 872
+	is_triggered_only = yes
+	title = "EVTNAME872"
+	desc = "EVTDESC872"
+	option = { 
+		name = "EVTOPTA873"
+		random_owned = { 
+			limit = { owner = { ai = no } }
+			pretender_rebels = 2
+		}
+		stability = -2
+	}
+}
+
+country_event = { 
+	id = 873
+	is_triggered_only = yes
+	title = "EVTNAME873"
+	desc = "EVTDESC873"
+	option = { 
+		name = "EVTOPTA873"
+		random_owned = { 
+			limit = { owner = { ai = no } }
+			anti_tax_rebels = 1
+		}
+		random_owned = { 
+			limit = { owner = { ai = no } }
+			noble_rebels = 1
+		}
+		add_country_modifier = { 
+			name = "politics_crisis"
+			duration = 1095
+		}
+	}
+}

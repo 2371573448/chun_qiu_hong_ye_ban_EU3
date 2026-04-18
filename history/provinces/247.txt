@@ -1,0 +1,39 @@
+owner = BAG
+controller = BAG
+culture = ba
+religion = ancestor
+capital = "è×"
+trade_goods = iron
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = BAG
+cot = no
+
+1928.1.1 = { discovered_by = BAG }
+1928.1.1 = { discovered_by = SGU }
+2190.1.1 = { discovered_by = QIN }
+2222.1.1 = { citysize = 20000 }
+2246.1.1 = { 
+	owner = BAG
+	controller = BAG
+	add_core = BAG
+	religion = liyuebadao
+        citysize = 10000
+}
+2382.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2412.1.1 = { add_core = QIN  }
+
+2418.1.1 = {owner = CHU controller =CHU}
+2421.1.1 = {owner = QIN controller = QIN}
+2451.1.1 = {add_core = QIN}
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+}

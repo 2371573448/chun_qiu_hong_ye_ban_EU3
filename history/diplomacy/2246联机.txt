@@ -1,0 +1,24 @@
+alliance= {
+	first=CAO
+	second=DGG
+	start_date=2246.1.2
+	end_date=2247.1.1
+}
+#alliance={
+#	first=WEI
+#	second=ZHO
+#	start_date=2246.1.2
+#	end_date=2247.1.1
+#}
+#alliance={
+#	first=WEI
+#	second=HAN
+#	start_date=2246.1.2
+#	end_date=2247.1.1
+#}
+#alliance={
+#	first=ZHO
+#	second=HAN
+#	start_date=2246.1.2
+#	end_date=2247.1.1
+#}

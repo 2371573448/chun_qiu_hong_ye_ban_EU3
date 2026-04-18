@@ -1,0 +1,144 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_topbar_bg"
+		texturefile = "gfx\\interface\\topbar_UL.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar2_bg"
+		texturefile = "gfx\\interface\\topbar.tga"
+		transparencecheck = yes
+	}
+
+
+
+	spriteType = {
+		name = "GFX_endgame"
+		texturefile = "gfx\\interface\\endgame.tga"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_icon_gold"
+		texturefile = "gfx\\interface\\icon_gold.tga"
+	}
+
+	spriteType = {
+		name = "GFX_icon_stability"
+		texturefile = "gfx\\interface\\icon_stability.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_icon_manpower"
+		texturefile = "gfx\\interface\\icon_manpower.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_prestige"
+		texturefile = "gfx\\interface\\in_nomine_interface\\icon_prestige.tga"
+	}
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_icon_missionary"
+		texturefile = "gfx\\interface\\icon_envoy_missionary.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_icon_settler"
+		texturefile = "gfx\\interface\\icon_envoy_settler.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_icon_diplomat"
+		texturefile = "gfx\\interface\\icon_envoy_diplomat.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_icon_merchant"
+		texturefile = "gfx\\interface\\icon_envoy_merchant.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_icon_spy"
+		texturefile = "gfx\\interface\\icon_envoy_spy.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_icon_ninja"
+		texturefile = "gfx\\interface\\divine_wind_interface\\icon_ninja.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_icon_bureaucrat"
+		texturefile = "gfx\\interface\\httt_interface\\icon_bureaucrat.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_icon_infamy"
+		texturefile = "gfx\\interface\\httt_interface\\icon_infamy.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+	spriteType = {
+		name = "GFX_icon_legitimacy"
+		texturefile = "gfx\\interface\\httt_interface\\icon_legitimacy.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_speed_indicator"
+		texturefile = "gfx\\interface\\speed_indicator.tga"
+		noOfFrames = 6
+	}
+
+
+
+
+
+	spriteType = {
+		name = "GFX_button_pause"
+		texturefile = "gfx\\interface\\button_pause.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_button_speedup"
+		texturefile = "gfx\\interface\\button_speedup.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+	spriteType = {
+		name = "GFX_button_speeddown"
+		texturefile = "gfx\\interface\\button_speeddown.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+	}
+
+
+
+
+	
+	maskedShieldType = {
+		name = "thinshield"
+		textureFile1 = "gfx\\interface\\shield_frame.tga"
+		textureFile2 = "gfx\\interface\\shield_mask.tga"
+		effectFile = "gfx\\FX\\maskedflag.fx"
+	}
+}

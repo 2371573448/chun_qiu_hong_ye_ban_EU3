@@ -1,0 +1,20 @@
+country_decisions = { 
+	# 天下富商
+	tianxiafushang = { 
+		potential = { 
+			tag = CAO
+			not = { tag = CAO }
+		}
+		allow = { 
+			diplomats = 2
+		}
+		effect = { 
+			merchants = 2
+                                                            diplomats = -2
+			set_country_flag = tianxiafushang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

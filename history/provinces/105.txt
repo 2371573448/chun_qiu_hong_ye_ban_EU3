@@ -1,0 +1,88 @@
+culture = changdi
+religion = animism
+capital = "ºÓ¼ä"
+trade_goods = grain
+hre = no
+base_tax = 6
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1960.1.1 = { 
+	discovered_by = QIG
+}
+2180.1.1 = { 
+	owner = JIN
+	controller = JIN
+	citysize = 18000
+	fort1 = yes
+}
+2210.1.1 = { 
+	add_core = JIN
+}
+2222.1.1 = { 
+	citysize = 34000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+	add_core = ZHS
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = ZHS
+}
+2245.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	religion = liyuejiaohua
+	culture = hebei
+	remove_core = JIN
+}
+2246.1.1 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+	remove_core = ZHO
+	religion = liyuejiaohua
+}
+2247.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = ZHS
+	religion = liyuejiaohua
+}
+2384.3.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2413.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2470.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2492.2.1 = { 
+	owner = CSW
+	controller = CSW
+	add_core = CSW
+}
+2492.11.1 = { 
+	owner = ZHO
+	controller = ZHO
+}

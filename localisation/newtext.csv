@@ -1,0 +1,340 @@
+MILALLWEBAN_BTN3;前往;;;;;;;;;;X
+ALL_PLAYERS_HERE;所有玩家已经到达. ;;;;;;;;;;X
+MILD_WINTER;温暖的冬天;;;;;;;;;;X
+NORMAL_WINTER;正常的冬天;;;;;;;;;;X
+SEVERE_WINTER;严酷的冬天;;;;;;;;;;X
+alert_revoltrisk_in_provinces_instant;叛乱可能发生;;;;;;;;;;X
+alert_revoltrisk_in_provinces_delayed;下列省份有发生叛乱的危险. \n$LIST$;;;;;;;;;;X
+SM_MULTISAMPLE;多重抗锯齿等级;;;;;;;;;;X
+RESTART_REQ;需要重新启动;;;;;;;;;;X
+RESTART_REQ_DESC;必须重新启动游戏以使改变生效. ;;;;;;;;;;X
+very_easy_player;极易;;;;;;;;;;X
+easy_player;容易;;;;;;;;;;X
+hard_player;困难;;;;;;;;;;X
+very_hard_player;极难;;;;;;;;;;X
+very_easy_ai;极易;;;;;;;;;;X
+easy_ai;容易;;;;;;;;;;X
+hard_ai;困难;;;;;;;;;;X
+very_hard_ai;极难;;;;;;;;;;X
+CORE_MP_PAUSED_NAME;$PLAYER$选择暂停. ;;;;;;;;;;X
+CORE_MP_PAUSED;距离所有玩家都必须开始还有$TIME$;;;;;;;;;;X
+OOS_TITLE;错误! ;;;;;;;;;;X
+OOS_DESC;游戏现在不同步! ;;;;;;;;;;X
+NO_CANNON;我们还没有学会如何制造加农炮. ;;;;;;;;;;X
+FE_TUTORIAL;教程;;;;;;;;;;X
+base_values;基础值;;;;;;;;;;X
+EMPIRE_MEMBER;成为一个帝国的成员, 将与该帝国的其他成员\n有更好的关系, 并有可能当选霸主. ;;;;;;;;;;X
+LEDGER_NATIONAL_STASTISTICS;国家统计;;;;;;;;;;X
+LEDGER_NATIONAL_COMPARISON;国家对比;;;;;;;;;;X
+LEDGER_ECONOMICS;经济统计;;;;;;;;;;X
+LEDGER_MILITARY_STATISTICS;军事统计;;;;;;;;;;X
+LEDGER_RELATIONS;国家关系;;;;;;;;;;X
+LEDGER_TRUCE_L;我们与该国签订了停战协定. 强行对他们宣战\n将为世界各国所不耻. 而且我们的子民也会认\n为他们统治者是反覆无常的食言小人. ;;;;;;;;;;X
+LEDGER_TRUCE_S;停战;;;;;;;;;;X
+CANCELMILACCNEWDESC;是否要中止与 $COUNTRY$ 签订的军事通行\n条约? 中止后我们的军队将不能通过他\n们的领土和港口. ;;;;;;;;;;X
+city;城市;;;;;;;;;;X
+PROV_BASETAX_DESCR;当该省份发展为正规城市时, 它将向你提供的\n基础税收. ;;;;;;;;;;X
+NO_EFFECT;无影响;;;;;;;;;;X
+SMIL_CONST_TIP;在$DATE$一艘$TYPE$将下海起航. ;;;;;;;;;;X
+NONE_AVAILABLE;不可用. ;;;;;;;;;;X
+NO_MERCS_DESC;目前没有私募兵可用. ;;;;;;;;;;X
+AFFORD_SHIP_COST;你没有钱造这艘船, 这艘船至少需要$COST$. ;;;;;;;;;;X
+admiralty_short;海军部;;;;;;;;;;X
+artisan_workshop_short;工场;;;;;;;;;;X
+cathedral_short;教堂;;;;;;;;;;X
+constable_short;治安官;;;;;;;;;;X
+courthouse_short;法院;;;;;;;;;;X
+customs_house_short;海关;;;;;;;;;;X
+farm_estate_short;农场;;;;;;;;;;X
+fine_arts_academy_short;美术学院;;;;;;;;;;X
+fiscal_bureau_short;财政局;;;;;;;;;;X
+fort1_short;一级要塞;;;;;;;;;;X
+fort2_short;二级要塞;;;;;;;;;;X
+fort3_short;三级要塞;;;;;;;;;;X
+fort4_short;四级要塞;;;;;;;;;;X
+fort5_short;五级要塞;;;;;;;;;;X
+fort6_short;六级要塞;;;;;;;;;;X
+inspection_agency_short;检察院;;;;;;;;;;X
+local_market_short;本地市场;;;;;;;;;;X
+marketplace_short;集市;;;;;;;;;;X
+naval_college_short;海军学院;;;;;;;;;;X
+none_short;无;;;;;;;;;;X
+plantation_short;种植园;;;;;;;;;;X
+refinery_short;精炼厂;;;;;;;;;;X
+regimental_camp_short;兵营;;;;;;;;;;X
+shipyard_short;造船厂;;;;;;;;;;X
+spy_headquarter_short;间谍总部;;;;;;;;;;X
+tax_assessor_short;税务局;;;;;;;;;;X
+temple_short;寺庙;;;;;;;;;;X
+textile_short;纺织厂;;;;;;;;;;X
+trade_company_short;贸易公司;;;;;;;;;;X
+university_short;大学;;;;;;;;;;X
+war_college_short;军事学院;;;;;;;;;;X
+weapons_short;武器厂;;;;;;;;;;X
+wharf_short;海军装备厂;;;;;;;;;;X
+workshop_short;工场;;;;;;;;;;X
+EVTNAME2036;宗教骚乱;;;;;;;;;;X
+EVTDESC2036;有消息称霸主将对国家内的所有的新教徒省份动武. \n在年底前, 他将清剿中原土地上的所有异\n教徒. 如果我们要坚持我们的信仰, 就必须早作准\n备. ;;;;;;;;;;X
+EVTOPTA2036;宣布宗教独立;;;;;;;;;;X
+EVTOPTB2036;我们效忠霸主的统治;;;;;;;;;;X
+EXPIRES_ON;在$DATE$期满;;;;;;;;;;X
+FINISHED_ON;于$DATE$终结. ;;;;;;;;;;X
+FE_TRIALS;考验;;;;;;;;;;X
+SIEGE_DEFEAT;因饥荒与疾病失去战斗力;;;;;;;;;;X
+CD_AGREEMENTS;与 $LIST$ 的贸易协定. ;;;;;;;;;;X
+CD_ISEMBARGOED;被 $LIST$ 实行禁运. ;;;;;;;;;;X
+CD_ISEMBARGOING;对 $LIST$ 实行禁运. ;;;;;;;;;;X
+CD_GIVESACCESS;我们给予 $LIST$ 军事通行权. ;;;;;;;;;;X
+CD_HASACCESS; $LIST$ 给予我们军事通行权. ;;;;;;;;;;X
+PW_RESET;重置;;;;;;;;;;X
+OURWARALLY;战时同盟;;;;;;;;;;X
+STABHIT_FROM_SUBJECT;他们是我们的宗主;;;;;;;;;;X
+bg_war_1_1;$WARADJECTIVE1$ $WARNAME$持续了$NUMBEROF$$YEARS$, $RESULT1$. ;;;;;;;;;;X
+bg_war_1_2;$MONARCHTITLE$ $MONARCHNAME$ $WARADJECTIVE2$ $WARADJECTIVE1$ $WARNAME$, 我军$RESULT2$. ;;;;;;;;;;X
+bg_war_1_3;$RESULT3$ $WARNAME$持续了$NUMBEROF$ $YEARS$. ;;;;;;;;;;X
+#$WARADJECTIVE1$;;;;;;;;;;;X
+bg_time_1;微型的;;;;;;;;;;X
+bg_time_2;小型的;;;;;;;;;;X
+bg_time_3;短暂的;;;;;;;;;;X
+bg_time_4;血腥的;;;;;;;;;;X
+bg_time_5;残忍的;;;;;;;;;;X
+bg_time_6;漫长的;;;;;;;;;;X
+bg_time_7;持久的;;;;;;;;;;X
+#$WARADJECTIVE1.5$;;;;;;;;;;;X
+bg_result0_1;正义的;;;;;;;;;;X
+bg_result0_2;正当的;;;;;;;;;;X
+bg_result0_3;光荣的;;;;;;;;;;X
+bg_result0_4;胜利的;;;;;;;;;;X
+bg_result0_5;愚蠢的;;;;;;;;;;X
+bg_result0_6;灾难般的;;;;;;;;;;X
+bg_result0_7;不明智的;;;;;;;;;;X
+#;;;;;;;;;;;X
+bg_year;年;;;;;;;;;;X
+bg_years;年;;;;;;;;;;X
+#$WARADJECTIVE2$;;;;;;;;;;;X
+bg_part_1_1;进行了;;;;;;;;;;X
+bg_part_1_2;指挥了;;;;;;;;;;X
+bg_part_1_3;领导了;;;;;;;;;;X
+bg_part_1_4;筹划了;;;;;;;;;;X
+bg_part_1_5;参加了;;;;;;;;;;X
+bg_part_1_6;策划了;;;;;;;;;;X
+bg_part_1_7;卷入了;;;;;;;;;;X
+#$RESULT1$;;;;;;;;;;;X
+bg_result1_1;以彻底的征服告终;;;;;;;;;;X
+bg_result1_2;赢得了辉煌的胜利;;;;;;;;;;X
+bg_result1_3;我国军队战果卓著;;;;;;;;;;X
+bg_result1_4;双方军队未分胜负;;;;;;;;;;X
+bg_result1_5;我国军队遭遇挫折;;;;;;;;;;X
+bg_result1_6;遭到了惨重的失败;;;;;;;;;;X
+bg_result1_7;以深重的屈辱告终;;;;;;;;;;X
+#$RESULT2$;;;;;;;;;;;X
+bg_result2_1;大获全胜;;;;;;;;;;X
+bg_result2_2;得胜而归;;;;;;;;;;X
+bg_result2_3;多有斩获;;;;;;;;;;X
+bg_result2_4;不辱使命;;;;;;;;;;X
+bg_result2_5;遭受挫败;;;;;;;;;;X
+bg_result2_6;损失惨重;;;;;;;;;;X
+bg_result2_7;一败涂地;;;;;;;;;;X
+#$RESULT3$;;;;;;;;;;;X
+bg_result3_1;大获全胜的;;;;;;;;;;X
+bg_result3_2;战果辉煌的;;;;;;;;;;X
+bg_result3_3;斩获颇丰的;;;;;;;;;;X
+bg_result3_4;无功而返的;;;;;;;;;;X
+bg_result3_5;一无所获的;;;;;;;;;;X
+bg_result3_6;伤亡惨重的;;;;;;;;;;X
+bg_result3_7;全军覆灭的;;;;;;;;;;X
+#$MONARCHTITLE$ $MONARCHNAME$ $ADJECTIVE$ 喜欢 $SLIDERNAME$.;;;;;;;;;;;X
+bg_slider_1;$MONARCHNAME$ $ADJECTIVE$实行$SLIDERNAME$国策. ;;;;;;;;;;X
+bg_slider_1_1;平静和缓地;;;;;;;;;;X
+bg_slider_1_2;小心谨慎地;;;;;;;;;;X
+bg_slider_1_3;积极热情地;;;;;;;;;;X
+bg_slider_2_1;稳健有力地;;;;;;;;;;X
+bg_slider_2_2;坚定不移地;;;;;;;;;;X
+bg_slider_2_3;大刀阔斧地;;;;;;;;;;X
+bg_slider_3_1;毫不手软地;;;;;;;;;;X
+bg_slider_3_2;不计后果地;;;;;;;;;;X
+bg_slider_3_3;狂热无情地;;;;;;;;;;X
+bg_rel1;$YEAR$年, $MONARCHNAME$改宗$RELIGION$. ;;;;;;;;;;X
+bg_rel2;在$YEAR$年, $RELIGION$成为我们的信仰, $MONARCHNAME$这个家伙应该下地狱受酷刑. ;;;;;;;;;;X
+bg_rel3;$MONARCHTITLE$ $MONARCHNAME$发现了正确的道路, 于$YEAR$年改宗$RELIGION$. ;;;;;;;;;;X
+bg_rel4;在黑暗的$YEAR$年, $MONARCHTITLE$ $MONARCHNAME$投入了邪恶的$RELIGION$的怀抱. ;;;;;;;;;;X
+MISS_BUILD;省份正在建造设施, \n你不能派遣布道者. ;;;;;;;;;;X
+bg_sbuilding_1;$MONARCHTITLE$$MONARCHNAME$$DESCRIPTIVEADJECTIVE$在$PROVINCE$$CONSTRUCTIONADJECTIVE$了一座$SBUILDINGNAME$. ;;;;;;;;;;X
+bg_sbuilding_2;在$MONARCHTITLE$$MONARCHNAME$的$DESCRIPTIVEAJECTIVE2$统治下, 人们在$PROVINCE$$CONSTRUCTIONADJECTIVE2$了一座$SBUILDINGNAME$. ;;;;;;;;;;X
+#$CONSTRUCTIONADJECTIVE$;;;;;;;;;;;X
+bg_ca_1_1;完成;;;;;;;;;;X
+bg_ca_1_2;建造;;;;;;;;;;X
+bg_ca_1_3;建成;;;;;;;;;;X
+bg_ca_1_4;兴建;;;;;;;;;;X
+bg_ca_1_5;营建;;;;;;;;;;X
+#$CONSTRUCTIONADJECTIVE2$;;;;;;;;;;;X
+bg_ca_2_1;完成;;;;;;;;;;X
+bg_ca_2_2;建造;;;;;;;;;;X
+bg_ca_2_3;建成;;;;;;;;;;X
+bg_ca_2_4;兴建;;;;;;;;;;X
+bg_ca_2_5;营建;;;;;;;;;;X
+#$DESCRIPTIVEADJECTIVE$;;;;;;;;;;;X
+bg_da_1_1;明智地;;;;;;;;;;X
+bg_da_1_2;英明地;;;;;;;;;;X
+bg_da_1_3;慷慨地;;;;;;;;;;X
+bg_da_1_4;光荣地;;;;;;;;;;X
+bg_da_1_5;智慧地;;;;;;;;;;X
+#$DESCRIPTIVEADJECTIVE2$;;;;;;;;;;;X
+bg_da_2_1;公正的;;;;;;;;;;X
+bg_da_2_2;圣明的;;;;;;;;;;X
+bg_da_2_3;伟大的;;;;;;;;;;X
+bg_da_2_4;光辉的;;;;;;;;;;X
+bg_da_2_5;仁慈的;;;;;;;;;;X
+bg_pl_1;在$PRONOUN$统治期间, 我国$GAINED$$PROVINCE$. ;;;;;;;;;;X
+bg_pl_2;在$MONARCHNAME$统治下, 我们$GAINED$$PROVINCE$. ;;;;;;;;;;X
+bg_pl_his;他;;;;;;;;;;X
+bg_pl_her;她;;;;;;;;;;X
+bg_pl_gained;得到了;;;;;;;;;;X
+bg_pl_lost;失去了;;;;;;;;;;X
+bg_new_culture;$CULTURE$一次又一次的显示了他们的忠心, 成为了我国的主流文化. ;;;;;;;;;;X
+bg_lost_culture;$CULTURE$在帝国中越来越无足轻重, 不再是我国的主流文化. ;;;;;;;;;;X
+bg_emperor;在$YEAR$年, $MONARCHTITLE$$MONARCHNAME$ 被小霸推举成为的中原霸主. ;;;;;;;;;;X
+bg_elector;在$YEAR$年, $COUNTRY$ 获得中原诸侯资格. ;;;;;;;;;;X
+bg_war_3_1;$WARNAME$在$MONARCHNAME$的统治时期仍在继续. ;;;;;;;;;;X
+bg_war_3_2;在$MONARCHNAME$的统治期间, $WARNAME$继续进行着. ;;;;;;;;;;X
+CONFIRMMISSIONTITLE;派遣布道者;;;;;;;;;;X
+CONFIRMMISSIONTEXT;确定要向$PROV$派遣布道者吗? ;;;;;;;;;;X
+COST_TIME;花费:$AMOUNT$金币\n时间:$TIME$天. ;;;;;;;;;;X
+LOAN_SIZE;银行贷款限额将设为月收入的$SIZE$倍. ;;;;;;;;;;X
+ADD_SUB_UNIT_EFFECT;在$WHERE$得到$UNIT$. ;;;;;;;;;;X
+CHANGE_CONTROLLER_EFFECT;$WHO$控制了$WHERE$. \n;;;;;;;;;;X
+WAR_EFFECT;对$WHO$宣战. \n;;;;;;;;;;X
+bg_waradj_3_1;战争;;;;;;;;;;X
+bg_waradj_3_2;争端;;;;;;;;;;X
+bg_waradj_3_3;战斗;;;;;;;;;;X
+bg_waradj_3_4;战役;;;;;;;;;;X
+bg_war_5_1;在$YEAR$年, 我们遭到$ADJECTIVE1$ $ADJECTIVE2$. ;;;;;;;;;;X
+bg_war_5_2; $COUNTRY$ 在$WARNAME$中, 发起了$ADJECTIVE2$. ;;;;;;;;;;X
+bg_war_5_3;在$WARNAME$中, $MONARCHNAME$遭到$ADJECTIVE1$ $ADJECTIVE2$. ;;;;;;;;;;X
+bg_war_5_adj_1_1;残酷无情的;;;;;;;;;;X
+bg_war_5_adj_1_2;奸诈狡猾的;;;;;;;;;;X
+bg_war_5_adj_1_3;卑鄙无耻的;;;;;;;;;;X
+bg_war_5_adj_1_4;穷凶极恶的;;;;;;;;;;X
+bg_war_5_adj_2_1;攻击;;;;;;;;;;X
+bg_war_5_adj_2_2;袭击;;;;;;;;;;X
+bg_war_5_adj_2_3;偷袭;;;;;;;;;;X
+bg_war_5_adj_2_4;入侵;;;;;;;;;;X
+CONFIRMSAVETITLE;保存游戏;;;;;;;;;;X
+CONFIRMSAVETEXT;确定要覆盖$NAME$么? ;;;;;;;;;;X
+bg_war_A_1;$MONARCHNAME$ $ADJECTIVE1$ $ADJECTIVE2$了$WARNAME$. ;;;;;;;;;;X
+bg_war_A_2;$MONARCHNAME$ $ADJECTIVE2$了$ADJECTIVE3$ $WARNAME$. ;;;;;;;;;;X
+bg_war_A_3;在$YEAR$年, 我们$ADJECTIVE1$ $ADJECTIVE2$了$WARNAME$. ;;;;;;;;;;X
+bg_war_A_adj_1_1;公正的;;;;;;;;;;X
+bg_war_A_adj_1_2;光荣的;;;;;;;;;;X
+bg_war_A_adj_1_3;勇敢的;;;;;;;;;;X
+bg_war_A_adj_1_4;聪明的;;;;;;;;;;X
+bg_war_A_adj_2_1;发动;;;;;;;;;;X
+bg_war_A_adj_2_2;开展;;;;;;;;;;X
+bg_war_A_adj_2_3;开始;;;;;;;;;;X
+bg_war_A_adj_2_4;策动;;;;;;;;;;X
+bg_war_A_adj_3_1;伟大的;;;;;;;;;;X
+bg_war_A_adj_3_2;史诗的;;;;;;;;;;X
+bg_war_A_adj_3_3;持久的;;;;;;;;;;X
+bg_war_A_adj_3_4;血腥的;;;;;;;;;;X
+PW_TRADE_VALUE;贸易额:;;;;;;;;;;X
+PROV_TRADE_VALUE;贸易中心获得的贸易额. ;;;;;;;;;;X
+NO_SEPARATE_PEACE;不能在非战争盟主之间单独媾和. ;;;;;;;;;;X
+bg_new_gov;$MONARCHNAME$$ADJECTIVE2$建立了$GOVERNMENT$政体. ;;;;;;;;;;X
+DIPCHANCE_VLIKELY;(极有可能);;;;;;;;;;X
+DIPCHANCE_IMPOSSIBLE;(绝不可能);;;;;;;;;;X
+DIPCHANCE_VUNLIKELY;(很不可能);;;;;;;;;;X
+DIPCHANCE_UNLIKELY;(不太可能);;;;;;;;;;X
+DIPCHANCE_MAYBE;(有点可能);;;;;;;;;;X
+DIPCHANCE_LIKELY;(很有可能);;;;;;;;;;X
+bg_move_capital;在$MONARCHNAME$统治期间, 我国迁都至$PROVINCE$. ;;;;;;;;;;X
+bg_idle_1;由于毫无功绩, $MONARCHNAME$被历史学家称为$ADJECTIVE1$$MONARCHNAME$. ;;;;;;;;;;X
+bg_idle_2;$MONARCHNAME$在其统治期间, 只表现出了$PRONOUN2$的$ADJECTIVE2$性格. ;;;;;;;;;;X
+bg_idle_3;$MONARCHNAME$在$PRONOUN2$在统治期间只能说是$ADJECTIVE3$. ;;;;;;;;;;X
+bg_idle_afj_1_1;庸碌无为的;;;;;;;;;;X
+bg_idle_afj_1_2;游手好闲的;;;;;;;;;;X
+bg_idle_afj_1_3;谨慎的;;;;;;;;;;X
+bg_idle_afj_1_4;狂妄自大的;;;;;;;;;;X
+bg_idle_afj_1_5;默默无闻的;;;;;;;;;;X
+bg_idle_afj_2_1;冒失的;;;;;;;;;;X
+bg_idle_afj_2_2;放荡的;;;;;;;;;;X
+bg_idle_afj_2_3;贪婪的;;;;;;;;;;X
+bg_idle_afj_2_4;浅薄的;;;;;;;;;;X
+bg_idle_afj_2_5;荒淫无道;;;;;;;;;;X
+bg_idle_afj_3_1;一事无成;;;;;;;;;;X
+bg_idle_afj_3_2;治国无方;;;;;;;;;;X
+bg_idle_afj_3_3;少有建树;;;;;;;;;;X
+bg_idle_afj_3_4;乏善可陈;;;;;;;;;;X
+bg_idle_afj_3_5;尸位素餐;;;;;;;;;;X
+bg_prestige_1;我国威望:卑鄙低贱 ;;;;;;;;;;X
+bg_prestige_2;我国威望:备受歧视 ;;;;;;;;;;X
+bg_prestige_3;我国威望:无人理会 ;;;;;;;;;;X
+bg_prestige_4;我国威望:受人轻视 ;;;;;;;;;;X
+bg_prestige_5;我国威望:毁誉参半 ;;;;;;;;;;X
+bg_prestige_6;我国威望:初露头角 ;;;;;;;;;;X
+bg_prestige_7;我国威望:颇受重视 ;;;;;;;;;;X
+bg_prestige_8;我国威望:素有声威 ;;;;;;;;;;X
+bg_prestige_9;我国威望:声名显赫 ;;;;;;;;;;X
+bg_prestige_10;我国威望:名扬四海 ;;;;;;;;;;X
+bg_prestige_11;我国威望:声隆至极 ;;;;;;;;;;X
+COT_FREE_SLOT;$NUM$个空位. ;;;;;;;;;;X
+desc_western_arms_trade;多年以来, \n我们对邻国的技术优势望而生畏, \n但是最近这种情况即将改变. \n我们已经达成协议, \n他们决定帮助我们改进可怜的军队. ;;;;;;;;;;X
+COL_ORIG;来自 $COUNTRY$ 的拓荒队. ;;;;;;;;;;X
+M_GOTO_BUTTON;查找省份;;;;;;;;;;X
+M_LEDGER_BUTTON;查看统计报表;;;;;;;;;;X
+M_MENU_BUTTON;游戏菜单;;;;;;;;;;X
+M_HRE_BUTTON;中原;;;;;;;;;;X
+M_VATICAN_BUTTON;中原联盟总部;;;;;;;;;;X
+M_HOME_BUTTON;前往首都;;;;;;;;;;X
+PTI;永久未知区域;;;;;;;;;;X
+ONLY_HOST_SPEED;只有主机可以改变游戏速度. ;;;;;;;;;;X
+PTI_DESC;这个地区太偏远贫瘠了, \n无法探索. ;;;;;;;;;;X
+TI_DESC;这个地区只有探险家(海洋)\n或征服者(陆地)才能进入. ;;;;;;;;;;X
+PW_GROWTH;增长率;;;;;;;;;;X
+NOPORTOTHERCONTINENT;这个省份不能通过任何港口与首都相连. ;;;;;;;;;;X
+OTHERS_IN_COT;其他附属于这个贸易中心的省份. ;;;;;;;;;;X
+RELATION_CHANGE_VALUE;预计年变化额:;;;;;;;;;;X
+NEW_CORE_EFFECT_EMPEROR;得到了一个核心省份在$NEW$. \n;;;;;;;;;;X
+PEACE_OFFER_WARSCORE;战争分数:;;;;;;;;;;X
+TAG_CHANGE;国家改变为$NEW$. \n;;;;;;;;;;X
+CONFIRMCONVERSIONTITLE;转变为$NAME$信仰. ;;;;;;;;;;X
+CONFIRMCONVERSIONTEXT;确实要转变为$NAME$信仰么? \n这将严重影响你的领土稳定, \n并且打破目前的联盟和王室联姻. ;;;;;;;;;;X
+PV_OCCUPIED_BY;被$NAME$占领;;;;;;;;;;X
+BATTLE_OF;战役;;;;;;;;;;X
+SIEGE_OF;围攻;;;;;;;;;;X
+BG_PRESTIGE;威望:;;;;;;;;;;X
+BG_COUNTRY;国家:;;;;;;;;;;X
+LIBERATE_VASSAL;在你控制的省份中放出一个附庸国. ;;;;;;;;;;X
+LOAD_GAME_FAILED;读取游戏失败;;;;;;;;;;X
+MP_FEW_PLAYERS;你需要至少两个玩家进行游戏. ;;;;;;;;;;X
+NATIONALISM_LASTS;民族主义持续到;;;;;;;;;;X
+LEDGER_NO_GRAPH_DATA;没有足够的数据生成这个图表. ;;;;;;;;;;X
+ENDOFTIME_TITLE;结束游戏;;;;;;;;;;X
+ENDOFTIME_BODY;现在是公元1820年;;;;;;;;;;X
+RECRUIT_CANT_USE;这个臣属目前还不能被雇佣. ;;;;;;;;;;X
+ADV_EXCLUSIVE;在$DATE$以前, 只有我们能雇佣这个臣属. ;;;;;;;;;;X
+NO_WAR_ON_OTHERS_AS_VASSAL;作为附庸国, \n在独立前你不能向宗主以外的任何国家开战. ;;;;;;;;;;X
+MENU_MESSAGES_RESET;恢复默认值;;;;;;;;;;X
+WARSUBSIDIES_ECOVIEW;战争资助;;;;;;;;;;X
+PROVINCELOST_SETUP;我们失去一个省份;;;;;;;;;;X
+PROVINCELOST_HEADER;$MESSENGER$;;;;;;;;;;X
+PROVINCELOST_1;省份沦陷! ;;;;;;;;;;X
+PROVINCELOST_2;我们的省份;;;;;;;;;;X
+PROVINCELOST_3;$PROV$;;;;;;;;;;X
+PROVINCELOST_4;被卑鄙的;;;;;;;;;;X
+PROVINCELOST_5; $COUNTRY$ 夺走了;;;;;;;;;;X
+PROVINCELOST_6;我们必须夺回它! ;;;;;;;;;;X
+PROVINCELOST_LOG;我们的$PROV$被 $COUNTRY$ 占领. ;;;;;;;;;;X
+PROVINCELOST_BTN1;好的;;;;;;;;;;X
+PROVINCELOST_BTN2;好的;;;;;;;;;;X
+PROVINCELOST_BTN3;前往;;;;;;;;;;X
+PROVINCELOST_MAP;省份沦陷!;;;;;;;;;;X
+COL_CONST_TIP_FROM_SHIP;这个拓荒队将于$DATE$到达$LOCATION$. ;;;;;;;;;;X
+bg_regent;在我们的霸主未成年之时, 年长的贵族们通过公卿摄政工作, 对国家作出贡献. ;;;;;;;;;;X
+WT_NOT_AT_WAR;在处于和平状态时, \n我们不能开征战争税. ;;;;;;;;;;X
+WT_HAS_TAX;我们已经征收了战争税. ;;;;;;;;;;X
+STRAITS;可直接跨越$SEA$前往$PROV$. ;;;;;;;;;;X
+STRAITSDESC;陆军可以直接通过海峡, \n但是如果敌国的海军封锁了这个海峡, \n陆军就不能通过了. ;;;;;;;;;;X
+SAVE_DONE;完成;;;;;;;;;;X
+FOR_PLAYER;对玩家:;;;;;;;;;;X
+FOR_AI;对电脑:;;;;;;;;;;X
+prussian_frederickianDESCR;腓特烈大帝的精锐步兵团. \n这支军队经过了严酷的训练, \n在战斗中士气高昂, 热衷进攻. ;;;;;;;;;;X

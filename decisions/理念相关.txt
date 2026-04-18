@@ -1,0 +1,792 @@
+cultural_decisions = { 
+	# 游说诸侯
+	youshui = { 
+		potential = { 
+			idea = press_gangs
+		}
+		allow = { 
+			treasury = 50
+			NOT = { 
+				diplomats = 10
+			}
+			prestige = 0.3
+		}
+		effect = { 
+			treasury = -50
+			prestige = -0.05
+			diplomats = 2
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+
+country_decisions = { 
+	jianchagongjia = {
+		potential = { 
+			or = {
+				idea = national_bank
+				idea = shrewd_commerce_practise
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			any_owned = { 
+				limit = { 
+					has_province_modifier = noble_territory
+				}
+				add_province_modifier = {
+					name = "rebel_sentiment"
+					duration = 10
+				}
+			}
+		}
+	}
+	jianchashiqing = {
+		potential = { 
+			or = {
+				idea = national_bank
+				idea = shrewd_commerce_practise
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			any_owned = { 
+				limit = { 
+					has_province_modifier = vassal_territory
+				}
+				add_province_modifier = {
+					name = "rebel_sentiment"
+					duration = 10
+				}
+			}
+		}
+	}
+	jianchazhixia = {
+		potential = { 
+			or = {
+				idea = national_bank
+				idea = shrewd_commerce_practise
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			any_owned = { 
+				limit = { 
+					has_province_modifier = monarch_territory
+				}
+				add_province_modifier = {
+					name = "rebel_sentiment"
+					duration = 10
+				}
+			}
+		}
+	}
+	jianchaguoduzhixia = {
+		potential = { 
+			or = {
+				idea = national_bank
+				idea = shrewd_commerce_practise
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			any_owned = { 
+				limit = { 
+					has_province_modifier = guoduzhixia
+				}
+				add_province_modifier = {
+					name = "rebel_sentiment"
+					duration = 10
+				}
+			}
+		}
+	}
+	dizhangjicheng = { 
+	#嫡长继承
+		potential = { 
+			idea = grand_navy
+			government = monarchy
+			is_lesser_in_union = no
+			regency = no
+		}
+		allow = { 
+			has_heir = yes
+			NOT = { 
+				heir_claim = 50
+			}
+			stability = 1
+		}
+		effect = { 
+			stability = -1
+			badboy = 1
+			kill_heir = THIS
+			define_heir = { 
+				dynasty = THIS
+				claim = 95
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+
+	guangfanyoushui = { 
+		# 广泛游说诸侯
+		potential = { 
+			OR = { 
+				year = 2150
+				AND = { 
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+			}
+			not = { 
+				has_country_modifier = quanmianwaijiao
+			}
+			badboy = 0.5
+			OR = { 
+				idea = sea_hawks
+				idea = superior_seamanship
+				idea = naval_provisioning
+				AND = { 
+					tag = QIG
+					has_country_flag = jiuhezhuhou
+				}
+			}
+		}
+		allow = { 
+			DIP = 5
+			diplomats = 10
+			treasury = 600
+			stability = 0
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "quanmianwaijiao"
+				duration = 3650
+			}
+			treasury = -600
+			diplomats = -10
+			badboy = -2
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+
+	dongyuansimubudui = { 
+	# 动员私募部队
+		potential = { 
+			idea = battlefield_commisions
+			government = monarchy
+			NOT = { 
+				religion_group = pagan
+			}
+		}
+		allow = { 
+			NOT = { 
+				has_country_modifier = simubuduidongyuan
+			}
+			war = yes
+		}
+		effect = {
+			centralization_decentralization = 1
+			prestige = -0.15
+			add_country_modifier = { 
+				name = "simubuduidongyuan"
+				duration = 3650
+			}
+			any_owned = { 
+				limit = { 
+					has_province_modifier = noble_territory
+					citysize = 15000
+				}
+				random_list = { 
+					50 = { 
+						infantry = current
+						add_province_modifier = { 
+							name = "dongyuansimubudui"
+							duration = 3650
+						}
+					}
+					50 = { 
+						artillery = current
+						add_province_modifier = { 
+							name = "dongyuansimubudui"
+							duration = 3650
+						}
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					has_province_modifier = vassal_territory
+					citysize = 15000
+				}
+				random_list = { 
+					70 = { 
+						infantry = current
+						add_province_modifier = { 
+							name = "dongyuansimubudui"
+							duration = 3650
+						}
+					}
+					30 = { 
+						artillery = current
+						add_province_modifier = { 
+							name = "dongyuansimubudui"
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+#锐意变法决议开
+country_decisions = { 
+	ruiyibianfakai = { 
+		potential = { 
+			ai=no
+			not = { 
+				has_country_flag = ruiyigaige
+			}
+			idea = smithian_economics
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = ruiyigaige
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+#锐意变法决议关
+country_decisions = { 
+	ruiyibianfaguan = {
+		potential = {
+			ai=no
+			has_country_flag = ruiyigaige
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = ruiyigaige
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+#战国补改革
+country_decisions = { 
+	ruiyichunqiugaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			has_global_flag = zhanguokaishi
+			idea = smithian_economics
+			or = {
+				not = { has_country_flag = zongfazhidu }
+				not = { has_country_flag = shiguanzhidu }
+				not = { has_country_flag = falvzhidu }
+				not = { has_country_flag = dubizhidu }
+				not = { has_country_flag = tianfuzhidu }
+				not = { has_country_flag = mil_reform1 }
+				not = { has_country_flag = mil_reform2 }
+			}
+		}
+		allow = { 
+			stability = 3
+			NOT = { 
+				has_country_modifier = shoujiubuman
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			set_country_flag = zongfazhidu
+			set_country_flag = shiguanzhidu
+			set_country_flag = falvzhidu
+			set_country_flag = dubizhidu
+			set_country_flag = tianfuzhidu
+			set_country_flag = mil_reform1
+			set_country_flag = mil_reform2
+			stability = -3
+		}
+	}
+}
+#私田改革
+country_decisions = { 
+	sitiangaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			NOT = { 
+				has_country_modifier = shoujiubuman
+				serfdom_freesubjects = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			serfdom_freesubjects = 1
+			stability = -1
+		}
+	}
+}
+#尚今改革
+country_decisions = { 
+	shangjingaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			innovative_narrowminded = -1
+			NOT = { 
+				has_country_modifier = shoujiubuman
+
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			innovative_narrowminded = -1
+			stability = -1
+		}
+	}
+}
+#集权改革
+country_decisions = { 
+	jiquangaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			centralization_decentralization = -1
+			NOT = { 
+				has_country_modifier = shoujiubuman
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			centralization_decentralization = -1
+			stability = -1
+		}
+	}
+}
+#精兵改革
+country_decisions = { 
+	jingbinggaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			quality_quantity = -1
+			NOT = { 
+				has_country_modifier = shoujiubuman
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			quality_quantity = -1
+			stability = -1
+		}
+	}
+}
+#问鼎改革
+country_decisions = { 
+	wendinggaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			land_naval = -1
+			NOT = { 
+				has_country_modifier = shoujiubuman
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			land_naval = -1
+			stability = -1
+		}
+	}
+}
+#开疆改革
+country_decisions = { 
+	kaijianggaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			offensive_defensive = -1
+			NOT = { 
+				has_country_modifier = shoujiubuman
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			offensive_defensive = -1
+			stability = -1
+		}
+	}
+}
+#井田改革
+country_decisions = { 
+	jingtiangaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			serfdom_freesubjects = -1
+			NOT = { 
+				has_country_modifier = shoujiubuman
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			serfdom_freesubjects = -1
+			stability = -1
+		}
+	}
+}
+#祭祖改革
+country_decisions = { 
+	jizugaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			NOT = { 
+				has_country_modifier = shoujiubuman
+				innovative_narrowminded = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			innovative_narrowminded = 1
+			stability = -1
+		}
+	}
+}
+#封邦改革
+country_decisions = { 
+	fengbanggaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			NOT = { 
+				has_country_modifier = shoujiubuman
+				centralization_decentralization = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			centralization_decentralization = 1
+			stability = -1
+		}
+	}
+}
+#开拓不毛改革
+country_decisions = { 
+	kaituogaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			NOT = { 
+				has_country_modifier = shoujiubuman
+				land_naval = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			land_naval = 1
+			stability = -1
+		}
+	}
+}
+#千军改革
+country_decisions = { 
+	qianjungaige = { 
+		potential = { 
+			has_country_flag = ruiyigaige
+			idea = smithian_economics
+		}
+		allow = { 
+			stability = 1
+			ADM = 6
+			NOT = { 
+				has_country_modifier = shoujiubuman
+				quality_quantity = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "shoujiubuman"
+				duration = 3650
+			}
+			any_country = { 
+				limit = { 
+					tag = THIS
+					has_country_flag = bianfatuqiang
+				}
+				remove_country_modifier = shoujiubuman
+				add_country_modifier = { 
+					name = "shoujiubuman"
+					duration = 1825
+				}
+			}
+			quality_quantity = 1
+			stability = -1
+		}
+	}
+}
+#投资官学
+country_decisions = { 
+	touziguanxuekai = { 
+		potential = { 
+			idea = ecumenism
+			NOT = { 
+				has_country_modifier = touziguanxue
+			}
+		}
+		allow = { 
+			treasury = 100
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "touziguanxue"
+				duration = -1
+			}
+			set_country_flag = touziguanxue
+			treasury = -100
+		}
+	}
+	touziguanxueguan = { 
+		potential = { 
+			idea = ecumenism
+			has_country_modifier = touziguanxue
+		}
+		allow = { 
+		}
+		effect = { 
+			remove_country_modifier = touziguanxue
+			clr_country_flag = touziguanxue
+		}
+	}
+}
+province_decisions = { 
+	mofeiwangtu = {
+		potential = { 
+			idea = naval_glory
+			not = { idea = naval_glory }
+		}
+		allow = { 
+			owner = {
+				treasury = 100
+				officials = 1
+				OR = {
+					not = {
+						has_country_flag = wangtulengque
+					}
+					had_country_flag = { 
+						flag = wangtulengque
+						days = 365
+					}
+				}
+			}
+		}
+		effect = { 
+			owner = { 
+				set_country_flag = wangtulengque
+				treasury = -100
+				officials = 1
+			}
+			add_core = this
+		}
+	}
+}

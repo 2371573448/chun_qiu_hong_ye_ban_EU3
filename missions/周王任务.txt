@@ -1,0 +1,508 @@
+PAP_client_GUO = { 
+	# 附庸虢国
+	type = country
+	allow = { 
+		tag = PAP
+		exists = GUO
+		is_subject = no
+		is_lesser_in_union = no
+		GUO = { 
+			is_subject = no
+			is_lesser_in_union = no
+			not = { 
+				vassal_of = PAP
+			}
+			any_neighbor_country = { 
+				tag = this
+			}
+		}
+	}
+	abort = { 
+		or = { 
+			is_lesser_in_union = yes
+			is_subject = yes
+			GUO = { 
+				is_subject = yes
+				NOT = { vassal_of = this }
+			}
+			GUO = { 
+				NOT = { num_of_cities = 1 }
+			}
+		}
+	}
+	success = { 
+		GUO = { 
+			vassal_of = PAP
+		}
+	}
+	chance = { 
+		factor = 70
+	}
+	immediate = { 
+		casus_belli = { 
+			type = cb_vassalize_mission
+			months = 120
+			target = GUO
+		}
+	}
+	abort_effect = { 
+		remove_casus_belli = { 
+			type = cb_vassalize_mission
+			target = GUO
+		}
+		prestige = -0.05
+	}
+	effect = { 
+		prestige = 0.1
+		create_alliance = GUO
+	}
+}
+
+PAP_client_WEN = { 
+	# 附庸温国
+	type = country
+	allow = { 
+		tag = PAP
+		exists = WEN
+		is_subject = no
+		is_lesser_in_union = no
+		WEN = { 
+			is_subject = no
+			is_lesser_in_union = no
+			not = { 
+				vassal_of = PAP
+			}
+			any_neighbor_country = { 
+				tag = this
+			}
+		}
+	}
+	abort = { 
+		or = { 
+			is_lesser_in_union = yes
+			is_subject = yes
+			WEN = { 
+				is_subject = yes
+				NOT = { vassal_of = this }
+			}
+			WEN = { 
+				NOT = { num_of_cities = 1 }
+			}
+		}
+	}
+	success = { 
+		WEN = { 
+			vassal_of = PAP
+		}
+	}
+	chance = { 
+		factor = 100
+	}
+	immediate = { 
+		casus_belli = { 
+			type = cb_vassalize_mission
+			months = 120
+			target = WEN
+		}
+	}
+	abort_effect = { 
+		remove_casus_belli = { 
+			type = cb_vassalize_mission
+			target = WEN
+		}
+		prestige = -0.05
+	}
+	effect = { 
+		prestige = 0.1
+		create_alliance = WEN
+	}
+}
+
+PAP_client_DGG = { 
+	# 附庸东虢国
+	type = country
+	allow = { 
+		is_subject = no
+		is_lesser_in_union = no
+		DGG = { 
+			is_subject = no
+			is_lesser_in_union = no
+			not = { 
+				vassal_of = PAP
+			}
+			any_neighbor_country = { 
+				tag = this
+			}
+		}
+		exists = DGG
+		tag = PAP
+	}
+	abort = { 
+		or = { 
+			is_lesser_in_union = yes
+			is_subject = yes
+			DGG = { 
+				is_subject = yes
+				NOT = { vassal_of = this }
+			}
+			DGG = { 
+				NOT = { num_of_cities = 1 }
+			}
+		}
+	}
+	success = { 
+		DGG = { 
+			vassal_of = PAP
+		}
+	}
+	chance = { 
+		factor = 50
+	}
+	immediate = { 
+		casus_belli = { 
+			type = cb_vassalize_mission
+			months = 120
+			target = DGG
+		}
+	}
+	abort_effect = { 
+		remove_casus_belli = { 
+			type = cb_vassalize_mission
+			target = DGG
+		}
+		prestige = -0.05
+	}
+	effect = { 
+		prestige = 0.1
+		create_alliance = DGG
+	}
+}
+
+PAP_annex_ZHG = { 
+	# 故都遗恨
+	type = country
+	allow = { 
+		tag = PAP
+		NOT = { 
+			owns = 214
+		}
+		or = { 
+			214 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			and = { 
+				214 = { 
+					any_neighbor_province = { 
+						owned_by = GUO
+					}
+				}
+				GUO = { 
+					vassal_of = PAP
+				}
+			}
+		}
+	}
+	abort = { }
+	success = { 
+		owns = 214
+	}
+	chance = { 
+		factor = 100
+	}
+	immediate = { 
+		add_temp_claim = 214
+	}
+	abort_effect = { 
+		remove_temp_claim = 214
+	}
+	effect = { 
+		add_core = 214
+	}
+}
+
+PAP_annex_LSS = { 
+	# 收复故土
+	type = country
+	allow = { 
+		tag = PAP
+		owns = 214
+		or = { 
+			NOT = { 
+				owns = 204
+			}
+			NOT = { 
+				owns = 212
+			}
+			NOT = { 
+				owns = 215
+			}
+			NOT = { 
+				owns = 191
+			}
+			NOT = { 
+				owns = 195
+			}
+			NOT = { 
+				owns = 197
+			}
+			NOT = { 
+				owns = 198
+			}
+			NOT = { 
+				owns = 207
+			}
+		}
+		or = { 
+			204 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			212 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			215 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			191 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			195 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			197 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			198 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			207 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+		}
+	}
+	abort = { }
+	success = { 
+		owns = 204
+		owns = 212
+		owns = 215
+		owns = 191
+		owns = 195
+		owns = 197
+		owns = 198
+		owns = 207
+	}
+	chance = { 
+		factor = 100
+	}
+	immediate = { 
+		add_temp_claim = 204
+		add_temp_claim = 207
+		add_temp_claim = 212
+		add_temp_claim = 191
+		add_temp_claim = 195
+		add_temp_claim = 197
+		add_temp_claim = 198
+		add_temp_claim = 215
+	}
+	abort_effect = { 
+		remove_temp_claim = 204
+		remove_temp_claim = 207
+		remove_temp_claim = 212
+		remove_temp_claim = 215
+		remove_temp_claim = 191
+		remove_temp_claim = 195
+		remove_temp_claim = 197
+		remove_temp_claim = 198
+	}
+	effect = { 
+		add_core = 204
+		add_core = 207
+		prestige = 0.2
+	}
+}
+
+PAP_annex_ZGO = { 
+	# 保护滑国
+	type = country
+	allow = { 
+		tag = PAP
+		or = { 
+			NOT = { 
+				owns = 368
+			}
+			NOT = { 
+				owns = 369
+			}
+		}
+		exists = HAG
+		not = { 
+			ZGO = { 
+				relation = { 
+					who = HAG
+					value = 100
+				}
+			}
+		}
+		or = { 
+			368 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			369 = { 
+				any_neighbor_province = { 
+					owned_by = this
+				}
+			}
+			and = { 
+				368 = { 
+					any_neighbor_province = { 
+						owned_by = this
+					}
+				}
+				DGG = { 
+					vassal_of = PAP
+				}
+			}
+			and = { 
+				369 = { 
+					any_neighbor_province = { 
+						owned_by = this
+					}
+				}
+				DGG = { 
+					vassal_of = PAP
+				}
+			}
+		}
+	}
+	abort = { }
+	success = { 
+		owns = 368
+		owns = 369
+	}
+	chance = { 
+		factor = 25
+	}
+	immediate = { 
+		add_temp_claim = 368
+		add_temp_claim = 369
+	}
+	abort_effect = { 
+		remove_temp_claim = 368
+		remove_temp_claim = 369
+	}
+	effect = { 
+		prestige = 0.05
+		add_core = 368
+		add_core = 369
+	}
+}
+
+#合并附庸
+PAP_annex_vassal_mission = { 
+	type = neighbor_provinces
+	allow = { 
+		this = { 
+			war = no
+			tag = PAP
+			has_country_flag = jixingzongzhu
+		}
+		owner = { 
+			nomad = no
+			is_subject = yes
+			vassal_of = THIS
+			not = { 
+				num_of_cities = this
+			}
+			religion = liyuejiaohua
+			capital_scope = { 
+				hre = yes
+			}
+		}
+	}
+	abort = { 
+		owner = { 
+			or = { 
+				not = { 
+					religion_group = this
+				}
+				not = { 
+					num_of_cities = 1
+				}
+				not = { 
+					vassal_of = this
+				}
+			}
+		}
+	}
+	success = { 
+		owned_by = this
+	}
+	chance = { 
+		factor = 2
+		modifier = { 
+			factor = 1.5
+			this = { 
+				DIP = 4
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			this = { 
+				DIP = 6
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			this = { 
+				DIP = 8
+			}
+		}
+	}
+	immediate = { 
+		owner = { 
+			any_owned = { 
+				set_province_flag = annex_vassal_mission_target
+			}
+		}
+	}
+	abort_effect = { 
+		owner = { 
+			any_owned = { 
+				clr_province_flag = annex_vassal_mission_target
+			}
+		}
+	}
+	effect = { 
+		THIS = { 
+			any_owned = { 
+				limit = { 
+					has_province_flag = annex_vassal_mission_target
+					NOT = { 
+						is_core = THIS
+					}
+				}
+				add_core = THIS
+				clr_province_flag = annex_vassal_mission_target
+			}
+		}
+	}
+}

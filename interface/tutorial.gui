@@ -1,0 +1,1259 @@
+guiTypes = {
+
+	windowType = {
+		name = "TUTORIAL_WINDOW_1"
+		backGround="Background"
+		position = { x=300 y=200 }
+		size = { x=500 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		#	
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 20 y = 30 }
+				textureFile = ""
+				font = "Main_24_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 460
+				maxHeight = 200	
+
+				format = centre
+			}
+
+		textBoxType = {
+				name = "Text2"
+				position = { x =40 y = 60 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 420
+				maxHeight = 180	
+
+				format = centre
+			}
+
+		textBoxType = {
+				name = "Text3"
+				position = { x =40 y = 30 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 420
+				maxHeight = 200	
+
+				format = centre
+			}
+		
+		guiButtonType = {
+			name = "NextButton"
+			position = { x=184 y =200}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+	}	
+
+windowType = {
+		name = "TUTORIAL_WINDOW_2"
+		backGround="Background"
+		position = { x=-500 y=200 }
+		size = { x=1000 y=180 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "CENTER"
+
+
+		#	
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 40 y = 20 }
+				textureFile = ""
+				font = "Main_24_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 920
+				maxHeight = 200	
+
+				format = centre
+			}
+
+		textBoxType = {
+				name = "Text2"
+				position = { x =40 y = 50 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 920
+				maxHeight = 140	
+
+				format = centre
+			}
+
+		textBoxType = {
+				name = "Text3"
+				position = { x =40 y = 20 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 920
+				maxHeight = 140	
+
+				format = centre
+			}
+		
+		guiButtonType = {
+			name = "NextButton"
+			position = { x=440 y =130}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+	}
+
+	windowType = {
+		name = "TUTORIAL_TASK"
+		backGround="Background"
+		position = { x=-500 y=40 }
+		size = { x=500 y=130 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_RIGHT"
+
+
+		#	
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_taskicon"
+				position = { x= 32 y = 32 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 96 y = 20 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 360
+				maxHeight = 200	
+
+				format = left
+			}
+
+				
+		guiButtonType = {
+			name = "HintButton"
+			position = { x=340 y =70}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "Hint"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+
+		#guiButtonType = {
+		#	name = "NextButton"
+		#	position = { x=200 y =70}
+		#	quadTextureSprite ="largefloaterbutton"
+		#	tooltip = ""
+		#	tooltipText =""
+		#	delayedTooltipText = ""
+		#	buttonText = "Next"
+		#	buttonFont = "Main_14_black"
+		#	shortcut = "ESCAPE"
+		#}
+		
+		
+		
+	}
+
+	windowType = {
+		name = "TUTORIAL_HINT"
+		backGround="Background"
+		position = { x=300 y=200 }
+		size = { x=500 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		#	
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 20 y = 40 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 460
+				maxHeight = 200	
+
+				format = centre
+			}
+
+				
+		guiButtonType = {
+			name = "CloseButton"
+			position = { x=184 y =200}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "Close"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+	}	
+
+
+	windowType = {
+		name = "TUTORIAL_CONC"
+		backGround="Background"
+		position = { x=-275 y=-200 }
+		size = { x=550 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "CENTER"
+
+
+		#	
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		iconType =
+		{
+			name ="banner"
+			spriteType = "GFX_congratulation_banner"
+			position = { x= -7 y = 22 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 65 y = 80 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 420
+				maxHeight = 200	
+
+				format = centre
+			}
+
+				
+		guiButtonType = {
+			name = "NextButton"
+			position = { x=210 y =200}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+	}
+
+	windowType = {
+		name = "TUTORIAL_WINDOW_RESOURCES"
+		backGround="Background"
+		position = { x=300 y=100 }
+		size = { x=650 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="icon_manpower"
+				spriteType = "GFX_icon_manpower"
+				position = { x= 40 y = 105 }
+				Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+			{
+				name ="icon_stability"
+				spriteType = "GFX_icon_stability"
+				position = { x= 40 y = 135 }
+				Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+			{
+				name ="icon_gold"
+				spriteType = "GFX_icon_gold"
+				position = { x= 40 y = 160 }
+				Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 40 y = 30 }
+				textureFile = ""
+				font = "Main_24_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 560
+				maxHeight = 200	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text2"
+				position = { x =40 y = 60 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 520
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text3"
+				position = { x =80 y = 110 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 500
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text4"
+				position = { x =80 y = 135 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 500
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text5"
+				position = { x =80 y = 160 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 500
+				maxHeight = 140	
+
+				format = left
+			}		
+		
+		guiButtonType = {
+			name = "NextButton"
+			position = { x=310 y =200}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+	}
+
+	windowType = {
+		name = "TUTORIAL_WINDOW_ENVOYS"
+		backGround="Background"
+		position = { x=620 y=100 }
+		size = { x=350 y=530 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="icon_merchant"
+				spriteType = "GFX_icon_merchant"
+				position = { x= 40 y = 100 }
+				Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+			{
+				name ="icon_settler"
+				spriteType = "GFX_icon_settler"
+				position = { x= 40 y = 150 }
+				Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+			{
+				name ="icon_diplomat"
+				spriteType = "GFX_icon_diplomat"
+				position = { x= 40 y = 200 }
+				Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+			{
+				name ="icon_missionary"
+				spriteType = "GFX_icon_missionary"
+				position = { x= 40 y = 250 }
+				Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+				name ="icon_spy"
+				spriteType = "GFX_icon_spy"
+				position = { x= 40 y = 300 }
+				Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+				name ="icon_magistrate"
+				spriteType = "GFX_icon_bureaucrat"
+				position = { x= 40 y = 350 }
+				Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="tutorial_dialog"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		
+		textBoxType = {
+				name = "Text1"
+				position = { x = 40 y = 30 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 260
+				maxHeight = 200	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text2"
+				position = { x =80 y = 100 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text3"
+				position = { x =80 y = 150 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text4"
+				position = { x =80 y = 200 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text5"
+				position = { x =80 y = 250 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 140	
+
+				format = left
+			}
+
+		textBoxType = {
+				name = "Text6"
+				position = { x =80 y = 300 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 140	
+
+				format = left
+			}		
+		textBoxType = {
+				name = "Text7"
+				position = { x =80 y = 350 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 140	
+
+				format = left
+			}		
+		
+		guiButtonType = {
+			name = "NextButton"
+			position = { x=130 y =420}
+			quadTextureSprite ="largefloaterbutton"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+		}
+		
+		
+	}
+
+	windowType = {
+		name = "fake_messages"
+		backGround=""
+		position = { x=10 y=-163 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+
+		iconType =
+			{
+				name ="Background"
+				spriteType = "GFX_fake_messages"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "fake_modifiers"
+		backGround=""
+		position = { x=0 y=-512 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+
+		iconType =
+			{
+				name ="Background"
+				spriteType = "GFX_fake_modifiers"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+
+
+	windowType = {
+		name = "arrow_economy"
+		backGround=""
+		position = { x=100 y=000 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="Background"
+				spriteType = "GFX_lobby_panel"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "arrow_1"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_arrow_1"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "arrow_2"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_arrow_2"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "arrow_2_provinceview"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_arrow_2"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "arrow_3"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_arrow_3"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "arrow_3_minimap"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_RIGHT"
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_arrow_3"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "arrow_4"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_arrow_4"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "underline"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_underline"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "highlight"
+		backGround="Background"
+		position = { x=300 y=200 }
+		size = { x=500 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="GFX_highlight"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+	}
+
+	windowType = {
+		name = "highlight_provinceview"
+		backGround="Background"
+		position = { x=300 y=00 }
+		size = { x=500 y=260 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+
+		guiButtonType = {
+			name = "Background"	
+			#quadTextureSprite ="SandboxFloaterBackground"
+			quadTextureSprite ="GFX_highlight"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+	}
+
+	windowType = {
+		name = "illo_resources"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_1"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_rebel"
+		backGround=""
+		position = { x=295 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_rebel_flag"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+
+	windowType = {
+		name = "illo_envoys"
+		backGround=""
+		position = { x=375 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo_1"
+				spriteType = "GFX_tutorial_8"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_2"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_2"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_3"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_3"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_4"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_4"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_5"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_5"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_6"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_6"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_7"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_7"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_9"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_9"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_10"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+
+		iconType =
+			{
+				name ="illo1"
+				spriteType = "GFX_tutorial_10a"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="illo2"
+				spriteType = "GFX_tutorial_10b"
+				position = { x= 0 y = -128 }
+				Orientation = "LOWER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="illo3"
+				spriteType = "GFX_tutorial_10c"
+				position = { x= -512 y = -512 }
+				Orientation = "LOWER_RIGHT"
+			}
+	}
+
+	windowType = {
+		name = "illo_keyboard"
+		backGround=""
+		position = { x=768 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_keyboard"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_vatican"
+		backGround=""
+		position = { x=256 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_vatican"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+	windowType = {
+		name = "illo_hre"
+		backGround=""
+		position = { x=256 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_hre"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+
+	windowType = {
+		name = "illo_religion"
+		backGround=""
+		position = { x=256 y=0 }
+		size = { x=100 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		iconType =
+			{
+				name ="illo"
+				spriteType = "GFX_tutorial_religion"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+	}
+
+
+
+}

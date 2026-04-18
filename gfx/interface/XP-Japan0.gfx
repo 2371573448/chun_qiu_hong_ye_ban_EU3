@@ -1,0 +1,88 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "japanesegfx_infantry_1"
+		actorfile = "gfx\anims\Japanese_Infantry.xac"
+		
+		idle   = "gfx\anims\Japanese_idle.xsm"
+		move   = "gfx\anims\Japanese_moving.xsm"
+		attack = "gfx\anims\Japanese_Attack.xsm"
+		
+		scale = 1.7
+	}
+	EMFXActorType = {
+		name = "JAP_infantry_1"
+		actorfile = "gfx\anims\Japanese_Infantry.xac"
+		
+		idle   = "gfx\anims\Japanese_idle.xsm"
+		move   = "gfx\anims\Japanese_moving.xsm"
+		attack = "gfx\anims\Japanese_Attack.xsm"
+		
+		scale = 1.7
+	}
+	EMFXActorType = {
+		name = "japanesegfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Asian_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+
+	EMFXActorType = {
+		name = "japanesegfx_infantry_3"
+		actorfile = "gfx\anims\Generic_Asian_2.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "japanesegfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Asian_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "City_japanesegfx_0"
+		actorfile = "gfx\anims\City_Japan_00.xac"
+		
+		use_animation = no
+		
+		scale = 0.25
+	}
+	
+	EMFXActorType = {
+		name = "City_japanesegfx_1"
+		actorfile = "gfx\anims\City_Japan_01.xac"
+		
+		use_animation = no
+		
+		scale = 0.25
+	}
+	
+	EMFXActorType = {
+		name = "City_japanesegfx_2"
+		actorfile = "gfx\anims\City_Japan_02.xac"
+		
+		use_animation = no
+		
+		scale = 0.25
+	}
+	
+	EMFXActorType = {
+		name = "City_japanesegfx_3"
+		actorfile = "gfx\anims\City_Japan_03.xac"
+		
+		use_animation = no
+		
+		scale = 0.25
+	}
+}

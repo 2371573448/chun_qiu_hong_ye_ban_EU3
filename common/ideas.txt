@@ -1,0 +1,273 @@
+
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+naval_ideas = {
+#威震华夏
+press_gangs = {
+	prestige_from_land = 1.0
+	prestige_from_naval = 1.0
+ 	prestige_decay = -0.006
+	}	
+#嫡长继承
+grand_navy = {
+	legitimacy = 0.03
+	badboy_limit = 6
+	temples_influence = 0.75
+	}
+#广结诸侯
+sea_hawks = {
+	diplomatic_skill = 2
+	diplomats = 0.5
+	badboy = -0.3
+	}
+#天命所归
+superior_seamanship = {
+	build_cost = -0.04
+	prestige = 0.01
+	}
+#莫非王土
+naval_glory = {
+	global_revolt_risk = -6
+	global_spy_defence = -0.05
+	}
+#尊王攘夷
+excellent_shipwrights = {
+	trigger = { year = 1960 }
+	prestige = 0.025
+	}
+#逐鹿中原
+naval_fighting_instruction = {
+	trigger = { year = 2050 }
+	badboy_limit = 4
+	max_war_exhaustion = -2
+	}
+#合纵连横
+naval_provisioning = {
+	trigger = { year = 2200 }
+	badboy = -1
+	diplomats = 0.5
+	}
+}
+
+land_ideas = {
+#行舟走舸
+grand_army = {
+	naval_morale = 0.5
+	naval_maintenance_modifier = -0.20
+	navy_tradition = 0.01
+	range = 0.25
+	land_attrition = -0.05
+	naval_attrition = -0.2
+	}
+#奖励耕战
+military_drill = {
+	global_manpower_modifier = 0.30
+                    global_manpower = 1
+                    land_forcelimit_modifier = 0.1
+	reinforce_speed = 0.05
+	}
+#军功授爵
+engineer_corps = {
+	army_tradition = 0.01
+	land_morale = 1
+	}
+#私募制度
+battlefield_commisions = {
+	land_forcelimit_modifier = 0.20
+	land_maintenance_modifier = -0.1
+	merc_maintenance_modifier = -0.25 
+	enuchs_influence = -0.5
+	bureaucrats_influence = 0.5
+	}
+#千乘之国
+glorious_arms = {
+	artillery_cost = -0.15
+	cavalry_cost = -0.05
+	leader_shock = 0.8
+	}
+#上兵伐谋
+national_conscripts = {
+	trigger = { land_tech = 11 }
+	land_attrition = -0.15
+	land_tech_cost_modifier = -0.10
+	land_tech_investment = 18
+	}
+#革化战阵
+regimental_system = {
+	trigger = { land_tech = 24 }
+	army_tradition_decay = -0.01
+	discipline = 0.18
+	land_maintenance_modifier = 0.1
+	}	
+#广纳兵家
+napoleonic_warfare = {
+	trigger = { land_tech = 34 }
+	army_tradition = 0.02
+	}
+}
+
+exploration_ideas = {
+#重农抑商
+land_of_opportunity = {
+	global_tax_modifier = 0.25
+	production_efficiency = 0.04
+	trade_efficiency = -0.04
+	merchants = -0.50
+	}
+#端木遗风
+merchant_adventures = {
+	merchant_placement_chance = 0.10
+	trade_efficiency = 0.10
+	merchant_cost = -0.25
+	}
+#盐铁专卖
+colonial_ventures = {
+	global_tax_modifier = 0.15
+	trade_efficiency = -0.05
+	}
+#封邑建设
+shrewd_commerce_practise = {
+	global_tax_modifier = 0.15
+	bureaucrats_influence = 0.5
+  	}
+#开拓荒蛮
+vice_roys  = {
+	range = 1
+	may_explore = yes
+	global_colonial_growth = 0.50
+	colonists = 0.30
+ 	}
+#物产开发
+quest_for_the_new_world = {
+	trigger = { production_tech = 12 }
+	colonist_placement_chance = 0.05
+	}
+#什一之制
+scientific_revolution = {
+	global_revolt_risk = -1
+	trade_efficiency = 0.05
+	stability_investment = 15
+	inflation_reduction = 0.06
+	global_tax_modifier = -0.05
+	}
+#与民同耕
+improved_foraging = {
+	trigger = { production_tech = 35 }
+	global_tax_modifier = 0.16
+	production_efficiency = 0.03
+	}
+}
+
+state_business_ideas = {
+#宗法至上
+vetting = {
+	tolerance_own = 2
+	legitimacy = 0.045
+	global_revolt_risk = -1	
+	enuchs_influence = -0.5
+	temples_influence = 0.5
+	}
+#门客制度
+bureaucracy = {
+	spy_efficiency = 0.08
+	global_spy_defence = 0.10
+	}
+#郡县制度
+national_bank = {
+	stability_cost_modifier = 0.05
+	production_efficiency = 0.04
+	enuchs_influence = 0.5
+	temples_influence = -0.5
+	bureaucrats_influence = -0.5           
+	}
+#防范私铸
+national_trade_policy = {
+	inflation_reduction = 0.10
+	interest = -0.05
+	}
+#什伍连坐
+espionage = {
+	stability_cost_modifier = -0.28
+	global_spy_defence = 0.12
+	}
+#鼎铸刑书
+bill_of_rights = {
+	trigger = { government_tech = 11 }
+	stability_cost_modifier = 0.08
+	global_revolt_risk = -3	
+	}
+#锐意变法
+smithian_economics = {
+	trigger = { government_tech = 18 }
+ 	government_tech_cost_modifier = -0.04
+ 	trade_tech_cost_modifier = -0.04
+	}
+#重用法家
+liberty_egalite_fraternity = {
+	trigger = { government_tech = 32 }
+	officials = 1.5
+	global_tax_modifier = 0.15
+        }
+}
+
+culture_ideas = {
+#设立官学
+ecumenism = {
+	cultural_tradition = 0.06
+	army_tradition = 0.01
+	navy_tradition = 0.02
+	}
+#鸡鸣狗盗 
+church_attendance_duty = {
+	spies = 0.8
+	spies_cost = -0.35
+	spy_efficiency = 0.1
+	tolerance_heretic = 1.5
+	}
+#有教无类
+divine_supremacy = {
+	missionaries = 0.5
+	missionary_placement_chance = 0.05
+	}
+#绝圣弃智 
+patron_of_art  = {
+	cultural_tradition = -0.01
+	cultural_tradition_decay = -0.01
+	army_tradition_decay = -0.01
+	navy_tradition_decay = -0.01
+	tolerance_heathen = 2
+	global_revolt_risk = -1
+	}
+#兼爱非攻
+deus_vult = {
+	trigger = { year = 2180 }
+	discipline = -0.02
+	garrison_growth = 1
+	spies = 0.5
+	}
+#制名指实
+humanist_tolerance = {
+	trigger = { year = 2180 }
+	legitimacy = 0.015
+	badboy = -0.55
+	prestige = 0.02
+	}
+#天道无为
+cabinet = {
+	trigger = { year = 2180 }
+	tolerance_own = 2
+	tolerance_heretic = 1.5
+	tolerance_heathen = 1
+	global_tax_modifier = -0.1
+	global_revolt_risk = -0.5
+	}
+#阴阳五行
+revolution_and_counter = {
+	trigger = { year = 2200 }
+	technology_cost = -0.10
+	prestige_decay = -0.012
+	}
+}

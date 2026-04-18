@@ -1,0 +1,42 @@
+name = "城濮之战"
+casus_belli = cb_dishonored_call 
+
+2064.10.1 = {
+	add_attacker = CHU
+	add_defender = SON
+}
+
+2065.10.1 = {
+	add_attacker = CHE
+	add_attacker = CAI
+	add_attacker = ZGO
+	add_attacker = XUG
+#晋参战
+	add_defender=JIN
+	rem_defender=SON
+	add_defender=SON
+}
+2066.1.1= {
+	add_attacker=CAO
+	add_attacker=WEG
+}
+2066.2.1= {
+	add_defender=QIG
+	add_defender=QIN
+}
+2066.3.1= {
+	rem_attacker=CAO
+	rem_attacker=WEG
+}
+2066.5.1= {
+	rem_attacker=CHU
+	rem_attacker=CHE
+	rem_attacker = CAI
+	rem_attacker = ZGO
+	rem_attacker = XUG
+
+rem_defender = JIN
+rem_defender = QIG
+rem_defender = QIN
+rem_defender = SON
+}

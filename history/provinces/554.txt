@@ -1,0 +1,13 @@
+
+culture = qiongzuo
+religion = ancestor
+capital = "Úö¶¼"
+trade_goods = spices
+hre = no
+base_tax = 5
+manpower = 0
+owner = QON
+controller = QON
+citysize = 14000
+fort1 = yes
+add_core = QON

@@ -1,0 +1,13 @@
+owner = XYI
+controller = XYI
+culture = xiyu
+religion = animism
+capital = "‹SÇ¼"
+trade_goods = copper
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = XYI
+1827.1.1 = { discovered_by = XYR }

@@ -1,0 +1,24 @@
+government =fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 2
+innovative_narrowminded = -2
+mercantilism_freetrade = 2
+offensive_defensive = 0
+land_naval = 2
+quality_quantity = 0
+serfdom_freesubjects = -4
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = jianghan
+capital = 394
+      
+1928.1.1={monarch={name="≤ª¿Î" dynasty="ºß" adm=4 dip=5 mil=6}}
+1958.1.1={monarch={name="–“" dynasty="ºß" adm=6 dip=3 mil=5}}
+1988.1.1={monarch={name="“—º√" dynasty="ºß" adm=3 dip=6 mil=5}}
+2018.1.1={monarch={name="”ÿ" dynasty="ºß" adm=6 dip=4 mil=6}}
+2048.1.1={monarch={name="ÈÆ" dynasty="ºß" adm=6 dip=4 mil=6}}
+2078.1.1={monarch={name="ÿ∑" dynasty="ºß" adm=6 dip=6 mil=4}}
+2100.1.1 = { decision = tuposanjunguizhi }
+2108.1.1={monarch={name="∏µ" dynasty="ºß" adm=3 dip=3 mil=4}}
+2138.1.1={monarch={name="≥—" dynasty="ºß" adm=6 dip=4 mil=6}}
+2168.1.1={monarch={name="ºŒ" dynasty="ºß" adm=5 dip=4 mil=4}}

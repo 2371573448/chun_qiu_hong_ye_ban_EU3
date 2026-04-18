@@ -1,0 +1,55 @@
+# 东周时期著名的乐师或有突出音乐成就的人
+
+advisor ={
+name ="师涓" 
+location =118
+skill =5
+type =artist
+date =2164.1.1
+death_date =2206.1.1
+}
+
+advisor ={
+name ="师旷" 
+location =87
+skill =6
+type =artist
+date =2126.1.1
+death_date =2166.1.1
+}
+
+advisor ={
+name ="师文" 
+location =355
+skill =4
+type =artist
+date =2180.1.1
+death_date =2220.1.1
+}
+
+advisor ={
+name ="师襄" 
+location =306
+skill =4
+type =artist
+date =2160.1.1
+death_date =2200.1.1
+}
+
+advisor ={
+name ="颜回" 
+location =304
+skill =5
+type =artist
+date =2197.1.1
+death_date =2217.1.1
+}
+
+advisor ={
+name ="俞伯牙" 
+location =77
+skill =6
+type =artist
+date =2100.1.1
+death_date =2150.1.1
+}

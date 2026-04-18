@@ -1,0 +1,141 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_peace_bg"	
+		texturefile = "gfx\\interface\\peace_bg.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name =  "GFX_peace_bg_new"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_bg_new.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_treaties"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_treaties.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_annultreaty"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_annultreaty.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_releasenation"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_releasenation.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_sphere"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_sphere.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_cancelvassal"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_cancelvassal.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_revokecores"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_revokecores.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_icon_cede"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_icon_cede.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_peace_tab_new"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_tab_new.tga"
+		effectFile = "gfx\\FX\\buttonstate_nodisable.fx"
+		loadType = "INGAME"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_peace_sort_infamy"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_sort_infamy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_peace_sort_prestige"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_sort_prestige.tga"
+		loadType = "INGAME"
+	}
+	textSpriteType = {
+		name = "GFX_peace_sort_score"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_sort_score.tga"
+		loadType = "INGAME"
+	}
+	textSpriteType = {
+		name = "GFX_peace_sort_name"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_sort_name.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_peace_list_button"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\peace_list_button.tga"
+		loadType = "INGAME"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_pre_peace_bg"	
+		texturefile = "gfx\\interface\\pre_peace_bg.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_XXXXpeacetab"
+		texturefile = "gfx\\interface\\peacetab.tga"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_plusbutton"
+		texturefile = "gfx\\interface\\button_plus.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_minusbutton"
+		texturefile = "gfx\\interface\\button_minus.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	#textSpriteType = {
+	#	name = "GFX_peacetab"
+	#	texturefile = "gfx\\interface\\peacetab.tga"
+	#	noOfFrames = 4
+	#	#effectFile = "gfx\\FX\\buttonstate.fx"
+	#	loadType = "INGAME"
+	#}
+
+	spriteType = {
+		name = "GFX_peacetab"
+		texturefile = "gfx\\interface\\peacetab.tga"
+		noOfFrames = 4
+		#effectFile = "gfx\\FX\\buttonstate_nodisable.fx"
+		#norefcount = yes
+	}
+
+}

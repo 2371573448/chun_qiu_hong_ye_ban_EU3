@@ -1,0 +1,6 @@
+#瞼摒
+type = transport
+
+hull_size = 44
+base_cannons = 30
+sail_speed = 6

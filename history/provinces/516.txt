@@ -1,0 +1,25 @@
+owner = OUY
+controller = OUY
+culture = ouyue
+religion = ancestor
+capital = "ÕÂ°²"
+trade_goods = fish
+hre = no
+base_tax = 6
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = OUY
+cot = no
+
+2380.1.1 = { 
+	discovered_by = QIN
+}
+2477.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = OUY
+	controller = OUY
+}

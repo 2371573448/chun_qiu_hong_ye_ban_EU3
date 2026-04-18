@@ -1,0 +1,718 @@
+cb_trade_league = {#讨逆
+	is_triggered_only = yes
+	mutual = yes
+	nomad = no
+ 
+	months = 48
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 0.40
+
+	po_annex = yes
+	po_demand_provinces = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_reduce_sphere = yes
+	
+	war_name = TRADE_WAR_NAME
+}
+ 
+cb_insult = {#外交羞辱
+
+	is_triggered_only = yes
+	mutual = yes
+	nomad = no
+	
+	months = 12
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+
+	po_revoke_cores = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	
+	war_name = INSULT_WAR_NAME
+}
+
+cb_dishonored_call = {#背盟
+
+	is_triggered_only = yes
+	months = 36
+	nomad = no
+	
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+
+	po_revoke_cores = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	
+	war_name = INSULT_WAR_NAME
+}
+
+cb_restore_personal_union = { 
+	# 尊王攘夷
+	mutual = yes
+	badboy_factor = 0.3
+	prestige_factor = 1.25
+	peace_cost_factor = 0.8
+	nomad = no
+	prerequisites = { 
+		# 目标国家
+		THIS = { 
+			OR = { 
+				has_country_modifier = illegal_control_ZHOU
+				AND = { 
+					religion_group = pagan
+					capital_scope = { 
+						hre = no
+					}
+					OR = { 
+						any_owned_province = { 
+							hre = yes
+						}
+						any_elector = { 
+							war_with = THIS
+						}
+						PAP = { 
+							war_with = THIS
+						}
+					}
+				}
+			}
+		}
+		# 发起战争的国家
+		NOT = { 
+			has_global_flag = zhanguokaishi
+		}
+		or = { 
+			AND = { 
+				capital_scope = { 
+					hre = yes
+				}
+				is_emperor = yes
+				religion_group = christian
+			}
+			AND = { 
+				capital_scope = { 
+					hre = yes
+				}
+				idea = excellent_shipwrights
+				religion_group = christian
+			}
+			AND = { 
+				neighbour = THIS
+				capital_scope = { 
+					hre = yes
+				}
+				religion_group = christian
+			}
+		}
+	}
+	allowed_provinces = { 
+		always = yes
+	}
+	po_annex = yes
+	po_demand_provinces = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_reduce_sphere = yes
+	war_name = UNION_WAR_NAME
+}
+
+# CB for fabricated claims (spy action)
+cb_fabricated_claims = {#制造主权——暂时不考虑的理由
+	
+	is_triggered_only = yes
+	months = 12
+	nomad = no
+	
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 1.5
+	
+	po_form_personal_union = yes
+	
+	war_name = UNION_WAR_NAME
+}
+
+jap_civil_war = {#不奉天子
+
+	mutual = yes
+	is_triggered_only = yes
+	nomad = no
+	
+	badboy_factor = 0.75
+	prestige_factor = 1.25
+	peace_cost_factor = 0.75
+	
+	po_become_vassal = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_reduce_sphere = yes
+		
+	war_name = JAPANESE_CB_NAME
+}
+
+cb_conquest = {#征服任务
+
+	badboy_factor = 0.5
+	prestige_factor = 1.25
+	peace_cost_factor = 0.9
+	nomad = no
+	
+	prerequisites = {
+		temp_claim = THIS
+	}
+	
+	allowed_provinces = {
+		temp_claim = THIS
+	}
+
+	po_annex = yes
+	po_demand_provinces = yes
+	
+	war_name = CONQUEST_WAR_NAME
+}
+
+cb_core = {#收复失地
+
+	mutual = yes
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 1
+	nomad = no
+	
+	prerequisites = {
+		core_claim = THIS
+	}
+	
+	allowed_provinces = {
+		is_core = THIS
+	}
+	
+	po_annex = yes
+	po_demand_provinces = yes
+	
+	prov_desc = ALL_CORES
+	war_name = CORE_WAR_NAME
+}
+
+cb_imperial_ban = { 
+	# 收复中原故土
+	badboy_factor = 0.33
+	prestige_factor = 1.5
+	peace_cost_factor = 1
+	nomad = no
+	prerequisites = { 
+		# 弭兵
+		or = { 
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			THIS = { 
+				not = { 
+					has_country_modifier = rival_for_by
+				}
+			}
+		}
+		THIS = { 
+			capital_scope = { 
+				hre = no
+			}
+			any_owned_province = { 
+				hre = yes
+			}
+		}
+		is_emperor = yes
+	}
+	allowed_provinces = { 
+		hre = yes
+		owner = { 
+			capital_scope = { 
+				hre = no
+			}
+		}
+	}
+	po_release_vassals = yes
+	po_demand_provinces = yes
+	po_reduce_sphere = yes
+	prov_desc = ALL_HRE_PROVS
+	war_name = BAN_WAR_NAME
+}
+
+cb_horde_vs_civ = { 
+	# 游牧侵扰
+	mutual = yes
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 1
+	nomad = no
+	prerequisites = { 
+		NOT = { 
+			OR = { 
+				government = tribal_despotism
+				government = tribal_federation
+				government = republican_dictatorship
+			}
+		}
+		THIS = { 
+			OR = { 
+				government = tribal_despotism
+				government = tribal_federation
+				government = republican_dictatorship
+			}
+		}
+		neighbour = THIS
+	}
+	allowed_provinces = { 
+		always = yes
+	}
+	po_annex = yes
+	po_demand_provinces = yes
+	po_become_vassal = yes
+	po_gold = yes
+	po_change_religion = yes
+	prov_desc = ALL_PROVS
+	war_name = PRIMITIVE_WAR_NAME
+}
+
+
+cb_border_war = {#边境摩擦
+
+	is_triggered_only = yes
+	months = 12
+	nomad = no
+
+	badboy_factor = 0.6
+	prestige_factor = 1
+	peace_cost_factor = 0.5
+
+	allowed_provinces = {
+		has_national_focus = yes
+		is_capital = no
+		any_neighbor_province = {
+			owned_by = THIS
+		}
+	}
+
+	po_demand_provinces = yes
+	po_concede_defeat = yes
+	
+	war_name = BORDER_WAR_NAME
+}
+cb_liberation = {#解放
+
+	badboy_factor = 0
+	prestige_factor = 1.5
+	peace_cost_factor = 0.5
+	nomad = no
+	
+	prerequisites = {
+		OR = {
+			government = mojiajuzi
+			is_emperor = yes
+			idea = naval_fighting_instruction
+			idea = deus_vult
+		}
+		THIS = {
+			OR = {
+				can_create_vassals = yes
+				num_of_vassals = 1
+			}
+			num_of_cities = 12
+		}
+	}
+	
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_reduce_sphere = yes
+	
+	country_desc = ALL_OPPRESSORS
+	war_name = LIBERATION_WAR_NAME
+}
+cb_trade_war = {#贸易战争
+
+	mutual = yes
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	nomad = no
+	
+	prerequisites = {
+		nomad = no				#Do not remove!
+		THIS = { nomad = no }	#Do not remove!
+		OR = {
+			trade_embargo_by = THIS
+			AND = {
+				government = theocracy
+				THIS = { government = theocracy } 
+			}
+		}
+	}
+
+	po_join_league = yes
+	po_revoke_cores = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	
+	war_name = TRADE_WAR_NAME
+}
+
+cb_super_badboy = {#吊民伐罪
+
+	badboy_factor = 0.3
+	prestige_factor = 1
+	peace_cost_factor = 0.75
+	nomad = no
+	
+	prerequisites = {
+		THIS = { badboy = 1.001 }
+	}
+	
+	allowed_provinces = {
+		always = yes
+	}
+	
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_annex = yes
+	po_demand_provinces = yes
+	po_revoke_cores = yes
+	po_reduce_sphere = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	
+	prov_desc = ALL_PROVS
+	war_name = PUNITIVE_WAR_NAME
+}
+
+#逐鹿
+cb_zhulu = {
+	
+	mutual = yes
+
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 0.40
+	nomad = no
+
+	prerequisites = {
+		idea = naval_fighting_instruction
+		THIS = {
+			capital_scope = { hre = yes }
+		}
+		# 发起战争的国家
+		capital_scope = { hre = yes }
+	}
+	
+	allowed_provinces = {
+		always = yes
+		}
+	
+	po_annex = yes
+	po_demand_provinces = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_reduce_sphere = yes
+	
+	war_name = ZHULU_WAR_NAME
+}
+
+#附庸任务
+cb_vassalize_mission = {
+	
+	is_triggered_only = yes
+	months = 120
+	nomad = no
+	
+	badboy_factor = 0.25
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	
+	po_become_vassal = yes
+	
+	war_name = VASSAL_MISSION_WAR_NAME
+}
+
+#问鼎中原
+cb_nationalist = { 
+	mutual = yes
+	badboy_factor = 0.6
+	prestige_factor = 1.0
+	peace_cost_factor = 1
+	nomad = no
+	prerequisites = { 
+		# 目标国家
+		THIS = { 
+			or = { 
+				is_emperor = yes
+				elector = yes
+				tag = PAP
+			}
+		}
+		not = { 
+			has_global_flag = mibingdahui
+		}
+		not = { 
+			is_emperor = yes
+			has_country_modifier = rival_for_by
+		}
+		culture_group = man
+	}
+	allowed_provinces = { 
+		always = yes
+	}
+	po_annex = yes
+	po_demand_provinces = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	war_name = NATION_WAR_NAME
+}
+
+cb_horde_conquest = { 
+	# 劫掠
+	mutual = yes
+	badboy_factor = 0.5
+	prestige_factor = 0.8
+	peace_cost_factor = 1
+	nomad = no
+	prerequisites = { 
+		THIS = { 
+			OR = { 
+				NOT = { 
+					government = tribal_despotism
+				}
+				NOT = { 
+					government = tribal_federation
+				}
+				NOT = { 
+					government = republican_dictatorship
+				}
+			}
+		}
+		OR = { 
+			government = tribal_despotism
+			government = tribal_federation
+			government = republican_dictatorship
+		}
+		not = { 
+			is_emperor = yes
+		}
+		not = { 
+			has_country_modifier = rival_for_by
+		}
+		neighbour = THIS
+	}
+	allowed_provinces = { 
+		always = yes
+	}
+	po_annex = yes
+	po_demand_provinces = yes
+	po_become_vassal = yes
+	po_gold = yes
+	po_change_religion = yes
+	prov_desc = ALL_PROVS
+	war_name = PRIMITIVE_WAR_NAME
+}
+
+cb_ganshe = { 
+	# 干涉战争
+	mutual = yes
+	badboy_factor = 0.7
+	prestige_factor = 1.50
+	peace_cost_factor = 1
+	nomad = no
+	prerequisites = { 
+		THIS = { 
+			OR = { 
+				AND = { 
+					idea = grand_navy
+					not = { 
+						legitimacy = 0.25
+					}
+				}
+				AND = { 
+					NOT = { idea = grand_navy }
+					not = { 
+						legitimacy = 0.5
+					}
+				}
+				AND = { 
+					government = noble_republic
+					not = { 
+						stability = 0
+					}
+				}
+			}
+			religion_group = christian
+		}
+		or = { 
+			AND = { 
+				idea = grand_navy
+				legitimacy = 0.75
+			}
+			AND = { 
+				neighbour = THIS
+				legitimacy = 0.75
+			}
+			AND = { 
+				is_emperor = yes
+				legitimacy = 0.75
+			}
+		}
+		NOT = { has_global_flag = daizhou_lv7 }
+		NOT = { has_global_flag = zhanguokaishi }
+		religion_group = christian
+	}
+	allowed_provinces = { 
+		always = yes
+	}
+	po_annex = yes
+	po_demand_provinces = yes
+	po_become_vassal = yes
+	po_gold = yes
+	war_name = GANSE_WAR_NAME
+}
+
+#谋夺霸主国家专属(针对选侯)
+cb_vassalize_pretend_to_bazhu = { 
+	mutual = yes
+	badboy_factor = 0.5
+	prestige_factor = 1.25
+	peace_cost_factor = 0.8
+	nomad = no
+	prerequisites = { 
+		# 目标国家
+		THIS = { 
+			elector = yes
+			not = { 
+				vassal_of = THIS
+			}
+			not = { 
+				junior_union_with = THIS
+			}
+			not = { 
+				preferred_emperor = THIS
+			}
+			is_emperor = no
+		}
+		# 弭兵
+		or = { 
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			not = { 
+				is_emperor = yes
+				has_country_modifier = rival_for_by
+			}
+		}
+		# 发起战争的国家
+		has_country_modifier = campaign_to_bazhu
+	}
+	po_become_vassal = yes
+	war_name = VASSAL_PRETEND_BAZHU_WAR_NAME
+}
+
+#谋夺霸位国和霸主国互相拥有
+cb_insult_zb = { 
+	mutual = yes
+	nomad = no
+	badboy_factor = 0
+	prestige_factor = 1.5
+	peace_cost_factor = 0.5
+	prerequisites = { 
+		OR = { 
+			and = { 
+				THIS = { 
+					is_emperor = yes
+				}
+				has_country_modifier = campaign_to_bazhu
+				not = { 
+					has_country_modifier = rival_for_by
+				}
+				# 非第二种(霸主VS诸夏)弭兵
+			}
+			and = { 
+				THIS = { 
+					has_country_modifier = campaign_to_bazhu
+					not = { 
+						has_country_modifier = rival_for_by
+					}
+				}
+				is_emperor = yes
+			}
+		}
+	}
+	po_revoke_cores = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_reduce_sphere = yes
+	war_name = MDBW_WAR_NAME
+}
+
+#拒绝弭兵纳贡宣战理由
+cb_insult_mbng = {
+
+	is_triggered_only = yes
+	mutual = yes
+	nomad = no
+	
+	months = 12
+
+	badboy_factor = 0.25
+	prestige_factor = 2
+	peace_cost_factor = 0.8
+
+	po_revoke_cores = yes
+	po_gold = yes
+	po_concede_defeat = yes
+	po_become_vassal = yes
+	
+	war_name = WNG_WAR_NAME
+}
+
+#兼并
+cb_imperial = {
+	mutual = yes
+
+	badboy_factor = 0.33
+	prestige_factor = 1
+	peace_cost_factor = 0.45
+	nomad = no
+	
+	prerequisites = {
+		year = 2290
+		
+		OR = {
+			government = yinshangjunzhi
+			government = yuanshuai
+			government = zhizheng
+			government = absolute_monarchy
+			government = enlightened_despotism
+			government = reformed_despotism
+			government = centralization_empire
+			government = feudal_empire
+		}
+		neighbour = THIS
+	}
+	
+	allowed_provinces = {
+		always = yes
+	}
+	
+	po_annex = yes
+	po_demand_provinces = yes
+	
+	prov_desc = ALL_PROVS
+	war_name = IMPERIAL_WAR_NAME
+}
+

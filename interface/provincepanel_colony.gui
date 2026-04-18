@@ -1,0 +1,299 @@
+guiTypes = {
+windowType = {
+		name = "colonize"
+		backGround=""
+		position = { x=17 y=-432 }	
+		size = { x=500 y=320 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+
+		iconType =
+			{
+				name ="background"
+				spriteType = "GFX_colonization_bg"
+				position = { x= -19 y = -34 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="natives"
+				spriteType = "GFX_natives"
+				position = { x= 155 y = 150 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="gold_icon"
+				spriteType = "GFX_icon_gold"
+				position = { x= 390 y = 60 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="colony_sea"
+				spriteType = "GFX_colony_sea"
+				position = { x= 350 y = 128 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+
+		##### REMOVE REFERENCE IN CODE. Texts is deliberately placed outside of screen.
+
+		textBoxType = {
+			name = "province_name"
+			position = { x = 30 y = 9406 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PP_NATION_NAME"	
+			maxWidth = 150
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+		textBoxType = {
+			name = "label_basetax"
+			position = { x = 30 y = 9422 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_BASE_TAX_VALUE"	
+			maxWidth = 150
+			maxHeight = 64	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_basetax_value"
+			position = { x = 170 y = 9022 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_MONEY"	
+			maxWidth = 150
+			maxHeight = 64	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+		#################
+
+		
+		textBoxType = {
+			name = "label_colony"
+			position = { x = 50 y = 112 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 410
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+				
+		textBoxType = {
+			name = "label_colony_time"
+			position = { x = 68 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_TIME"	
+			maxWidth = 110
+			maxHeight = 25	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "label_colony_time_value"
+			position = { x = 68 y = 64 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 110
+			maxHeight = 25	
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "label_colony_chance"
+			position = { x = 195 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_CHANCE"	
+			maxWidth = 110
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "label_colony_chance_value"
+			position = { x = 195 y = 64 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 110
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "label_colony_cost"
+			position = { x = 316 y = 26 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_COST"	
+			maxWidth = 110
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "label_colony_cost_value"
+			position = { x = 316 y = 64 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 110
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = centre
+		}
+		
+		textBoxType = {
+			name = "label_natives"
+			position = { x = 220 y = 148 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PP_NATIVES"	
+			maxWidth = 250
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_natives_value"
+			position = { x = 265 y = 148 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "PP_BRAVES"	
+			maxWidth = 80
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		textBoxType = {
+			name = "label_natives_hostility"
+			position = { x = 220 y = 174 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_AGRESSIVE"	
+			maxWidth = 250
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_natives_hostility_value"
+			position = { x = 265 y = 174 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_CHARGE"	
+			maxWidth = 80
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		textBoxType = {
+			name = "label_natives_ferocity"
+			position = { x = 220 y = 200 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_FEROCITY"	
+			maxWidth = 250
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_natives_ferocity_value"
+			position = { x = 265 y = 200 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "PP_CHARGE"	
+			maxWidth = 80
+			maxHeight = 25
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		guiButtonType = {
+				name = "colonize_button"
+				position = { x=220 y =250 }
+				quadTextureSprite ="button_envoy_colonist"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "PW_SEND"
+				buttonFont = "Main_14_black"
+			}
+
+		#iconType =
+		#	{
+		#		name ="settler_icon"
+		#		spriteType = "GFX_icon_settler"
+		#		position = { x= 237 y = 258 }
+		#		Orientation = "UPPER_LEFT"
+		#	}
+
+}
+}

@@ -1,0 +1,82 @@
+country_decisions = {
+
+#科技华夏化
+	technology_to_chinese =
+	{
+		potential =
+		{
+			religion_group = christian
+			tribal = no
+			NOT = { technology_group = chinese }
+		}
+		allow =
+		{
+			any_neighbor_country =
+			{
+				technology_group = chinese
+				tech_difference = 12
+			}
+			ADM = 7
+			NOT = { centralization_decentralization = -1 }
+			stability = 2
+			advisor = rear_admiral
+			rear_admiral = 4
+		}
+		effect =
+		{
+			technology_group = chinese
+			stability = -3
+			prestige = 0.1
+		}
+		ai_will_do =
+		{
+			factor = 1
+		}
+	}
+	
+	#军事华夏化
+	military_to_chinese =
+	{
+		potential =
+		{
+			religion_group = christian
+			tribal = no
+			technology_group = chinese
+			NOT = { unit_type = chinese }
+			NOT = { unit_type = qiguo }
+			NOT = { unit_type = qinguo }
+			NOT = { unit_type = jingchu }
+			NOT = { unit_type = zhaoguo }
+			NOT = { unit_type = weiguo }
+			NOT = { unit_type = hanguo }
+			NOT = { unit_type = yanguo }
+			NOT = { unit_type = yinshang }
+			NOT = { unit_type = wuyue1 }
+			NOT = { unit_type = mojia }
+		}
+		allow =
+		{
+			any_neighbor_country =
+			{
+				technology_group = chinese
+			}
+			MIL = 7
+			treasury = 500
+			NOT = { centralization_decentralization = -2 }
+			stability = 3
+			advisor = army_organiser
+			army_organiser = 4
+		}
+		effect =
+		{
+			unit_type = chinese
+			stability = -3
+			treasury = -500
+			army_tradition = 0.15
+		}
+		ai_will_do =
+		{
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,37 @@
+
+culture = xiongnu
+religion = animism
+capital = "¶¨Ïå"
+trade_goods = fur
+hre = no
+base_tax = 4
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2246.1.1 = {    owner =XHM
+              controller =XHM
+              manpower = 0
+              citysize = 8000
+              fort1 = yes
+              add_core = XHM
+              cot = no }
+2300.1.1 = { discovered_by = ZHO }
+2397.1.1  = {	owner = ZHO
+		controller = ZHO
+                citysize = 8000
+            }
+2427.1.1  = {   add_core = ZHO  }
+2464.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}

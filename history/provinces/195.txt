@@ -1,0 +1,71 @@
+
+culture = guanzhong
+religion = liyuejiaohua
+capital = "·á"
+trade_goods = cloth
+hre = no
+base_tax = 10
+manpower = 0
+owner = BOG
+controller = BOG
+citysize = 10000
+fort1 = yes
+add_core = BOG
+add_core = PAP
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+1985.1.1  = {	owner = QIN
+		controller = QIN
+                citysize = 30000
+ 	    }
+2015.1.1 = { add_core = QIN }
+2100.1.1 = { remove_core = PAP
+             base_tax = 8
+             religion = liyuebadao
+           }
+2222.1.1 = { citysize = 32000 }
+2244.1.1 = { 
+	owner = BOG
+	controller = BOG
+	add_core = BOG
+	remove_core = QIN
+}
+2244.1.2 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = BOG
+}
+2244.1.1 = { 
+	hre = no
+}
+2244.1.2 = { 
+	hre = yes
+}
+2246.1.2 = { 
+	owner = BOG
+	controller = BOG
+	add_core = BOG
+}
+2247.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+}
+2245.1.1 = { hre = no }
+2340.1.1 = { 
+	religion = fajia
+}
+2492.2.1 = { 
+	owner = YOW
+	controller = YOW
+	add_core = YOW
+}
+2493.6.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

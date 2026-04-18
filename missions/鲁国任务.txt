@@ -1,0 +1,343 @@
+#¸½Ó¹à‹¹ú
+client_zng = {
+	type = country
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	ZNG = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = ZNG
+	  	tag = LUG
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		ZNG = { is_subject = yes }
+	    		ZNG = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+		overlord_of = ZNG
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = ZNG
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ZNG
+		}
+	  	 prestige = -0.05
+	}
+	effect = {
+		prestige = 0.10
+		badboy = -1
+	}
+}
+
+#¸½Ó¹Û¥¹ú
+client_zhu = {
+	type = country
+	allow = {
+		is_subject = no
+		is_lesser_in_union = no
+	  	ZHU = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = ZHU
+	  	tag = LUG
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		ZHU = { is_subject = yes }
+	    		ZHU = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+		overlord_of = ZHU
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = ZHU
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ZHU
+		}
+	  	prestige = -0.05
+	}
+	effect = {
+		prestige = 0.10
+		badboy = -1
+	}
+}
+
+#Õ÷·þ·ÑÒØ
+LUG_annex_FEG = {
+	type = country
+	allow = {
+		tag = LUG
+		exists = FEG
+		is_lesser_in_union = no
+		is_subject = no
+		FEG = {
+			owns = 299
+			neighbour = this
+			not = { vassal_of = LUG }
+		}
+		year = 1858
+		NOT = { year = 2108 }
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = FEG }
+				not = { owns = 299 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 299
+		owns = 907
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	  	add_temp_claim = 299
+	  	add_temp_claim = 907
+	}
+	abort_effect = {
+	  	remove_temp_claim = 299
+	  	remove_temp_claim = 907
+	}
+	effect = {
+	 	add_core = 299
+	 	add_core = 907
+	}
+}
+
+#¸½Ó¹ßŸ¹ú
+client_shi = {
+	type = country
+	allow = {
+	  	tag = LUG
+		is_subject = no
+		is_lesser_in_union = no
+	  	exists = SHI
+	  	SHI = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	    		SHI = { is_subject = yes }
+	    		SHI = { is_lesser_in_union = yes }
+	  	}
+	}
+	success = {
+		overlord_of = SHI
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = SHI
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = SHI
+		}
+	  	prestige = -0.05
+	}
+	effect = {
+		prestige = 0.10
+		badboy = -1
+	}
+}
+
+
+#Õ÷·þ¸ÇÒØ
+LUG_annex_gai = {
+	type = country
+	allow = {
+		tag = LUG
+		NOT = { owns = 306 }
+	    	306 = { any_neighbor_province = { owned_by = this } }
+		year = 1950
+		NOT = { year = 2216 }
+	}
+	abort = {
+	}
+	success = {
+		owns = 306
+		owns = 986
+		owns = 985
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	  	add_temp_claim = 306
+	  	add_temp_claim = 986
+	  	add_temp_claim = 985
+	}
+	abort_effect = {
+	  	remove_temp_claim = 306
+	  	remove_temp_claim = 986
+	  	remove_temp_claim = 985
+	}
+	effect = {
+	 	add_core = 306
+	 	add_core = 986
+	 	add_core = 985
+	}
+}
+
+#¹¥»÷Üì¹ú
+blow_JUG = {
+	
+	type = country
+
+	allow = {
+		tag = LUG
+		exists = JUG
+		neighbour = JUG
+	}
+	abort = {
+	}
+	success = {
+		war_with = JUG
+	}
+	chance = {
+		factor = 25
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		prestige = 0.10
+		badboy = -1
+	}
+}
+
+#Õ÷·þÄ²ÒØ
+LUG_annex_mou = {
+	
+	type = country
+
+	allow = {
+		tag = LUG
+		NOT = { owns = 264 }
+	    	264 = { any_neighbor_province = { owned_by = this } }
+	}
+	abort = {
+	}
+	success = {
+		owns = 264
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+	  	add_temp_claim = 264
+	  	add_temp_claim = 890
+	  	add_temp_claim = 891
+	}
+	abort_effect = {
+	  	remove_temp_claim = 264
+	  	remove_temp_claim = 890
+	  	remove_temp_claim = 891
+	}
+	effect = {
+	 	add_core = 264
+	 	add_core = 890
+	 	add_core = 891
+	}
+}
+
+#¸½Ó¹ßŸ¹ú
+client_xzg = {
+	
+	type = country
+
+	allow = {
+	  	tag = LUG
+		is_subject = no
+		is_lesser_in_union = no
+	  	XZG = { 
+	    		is_subject = no
+	    		is_lesser_in_union = no
+	    		not = { num_of_cities = this }
+	    		any_neighbor_country = { tag = this }
+	   	}
+	  	exists = XZG
+	}
+	abort = {
+	  	or = {
+		  	is_lesser_in_union = yes
+  			is_subject = yes
+	  	}
+	}
+	success = {
+		overlord_of = XZG
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	 	casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = XZG
+		}
+	}
+	abort_effect = {
+	 	remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = XZG
+		}
+	  	prestige = -0.05
+	}
+	effect = {
+		prestige = 0.05
+		badboy = -1
+	}
+}

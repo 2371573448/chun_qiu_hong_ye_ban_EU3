@@ -1,0 +1,496 @@
+spriteTypes = {
+
+	textSpriteType = {
+		name = "GFX_province_back_button"
+		texturefile = "gfx\\interface\\backbutton.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_provincepanel_bg"
+		texturefile = "gfx\\interface\\province_bg.tga"
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_building_bg2"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_bg.tga"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_building_currentlybuilding"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_currentlybuilding.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_building_manufactory_button"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_manufactory_button.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_building_destroy"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_destroy.tga"
+		loadType = "INGAME"
+	}
+	progressbartype = {
+		name = "GFX_building_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\divine_wind_interface\\building_progress1.tga"
+		textureFile2 = "gfx\\interface\\divine_wind_interface\\building_progress2.tga"
+		size = { x = 46 y = 5 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	spriteType = {
+		name = "GFX_building_redline"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_redline.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_building_manufactory_bg"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_manufactory_bg.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_building_status_strip"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_status_strip.tga"
+		loadType = "INGAME"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_building_category_strip"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_category_strip.tga"
+		loadType = "INGAME"
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_building_category_strip2"
+		texturefile = "gfx\\interface\\divine_wind_interface\\building_category_strip2.tga"
+		loadType = "INGAME"
+		noOfFrames = 8
+	}
+	spriteType = {
+		name = "GFX_bg_province_history"
+		texturefile = "gfx\\interface\\httt_interface\\bg_province_history.tga"
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_moneyloan_frame"
+		texturefile = "gfx\\interface\\moneyloan_frame.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_siege_indicator"
+		texturefile = "gfx\\interface\\siege_indicator.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_strait"
+		texturefile = "gfx\\interface\\strait.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_icon"
+		texturefile = "gfx\\interface\\resources.tga"
+		noOfFrames = 21
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_cash_picture"
+		texturefile = "gfx\\interface\\cash_picture.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_diploconfirm_banner"
+		texturefile = "gfx\\interface\\diploconfirm_banner.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_spies_banner"
+		texturefile = "gfx\\interface\\spies_banner.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_diplomacy_bg"
+		texturefile = "gfx\\interface\\diplomacy_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_colonization_bg"
+		texturefile = "gfx\\interface\\colonization_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_frame_missionary"
+		texturefile = "gfx\\interface\\frame_missionary.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_natives"
+		texturefile = "gfx\\interface\\natives.tga"
+		noOfFrames = 4
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_colony_sea"
+		texturefile = "gfx\\interface\\colony_sea.tga"
+		noOfFrames = 1GFX_colony_sea
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+
+
+
+
+	spriteType = {	
+		name = "GFX_vertical_divider_type_2"	
+		texturefile = "gfx\\interface\\divider_vertical_type_2.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {	
+		name = "GFX_COT_bg"
+		texturefile = "gfx\\interface\\COT_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {	
+		name = "GFX_spies_bg"
+		texturefile = "gfx\\interface\\spies_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {	
+		name = "GFX_band_blue"
+		texturefile = "gfx\\interface\\band_blue.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {	
+		name = "GFX_band_green"
+		texturefile = "gfx\\interface\\band_green.tga"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		noOfFrames = 1
+		loadType = "INGAME"
+		transparencecheck = yes
+		norefcount = yes
+	}
+
+	spriteType = {	
+		name = "GFX_unit_types_strip"
+		texturefile = "gfx\\interface\\unit_types_strip.tga"
+		noOfFrames = 8
+		loadType = "INGAME"
+		norefcount = yes
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		transparencecheck = yes
+	}
+
+	spriteType = {	
+		name = "GFX_building_overlay"
+		texturefile = "gfx\\interface\\building_overlay.tga"
+		noOfFrames = 4
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+
+
+	spriteType = {	
+		name = "GFX_building_bg"
+		texturefile = "gfx\\interface\\building_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+
+	spriteType = {	
+		name = "GFX_build_navy_bg"
+		texturefile = "gfx\\interface\\build_navy_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {	
+		name = "GFX_build_army_bg"
+		texturefile = "gfx\\interface\\build_army_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {	
+		name = "GFX_build_buildings_bg"
+		texturefile = "gfx\\interface\\build_buildings_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+
+	textSpriteType = {
+		name = "GFX_closebutton"
+		texturefile = "gfx\\interface\\closebutton.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	textSpriteType = {
+		name = "GFX_build_province_improvement"
+		texturefile = "gfx\\interface\\button_province_improvement.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	textSpriteType = {
+		name = "GFX_build_army"
+		texturefile = "gfx\\interface\\button_army.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	textSpriteType = {
+		name = "GFX_build_merc"
+		texturefile = "gfx\\interface\\button_merc.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	textSpriteType = {
+		name = "GFX_build_navy"
+		texturefile = "gfx\\interface\\button_navy.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	textSpriteType = {
+		name = "create_cot_gfx"
+		texturefile = "gfx\\interface\\napoleon_interface\\build_cot.dds"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	textSpriteType = {
+		name = "destroy_cot_gfx"
+		texturefile = "gfx\\interface\\napoleon_interface\\cancel_cot.dds"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {	
+		name = "GFX_building_latingfx"
+		texturefile = "gfx\\interface\\buildings_latingfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {	
+		name = "GFX_toggle"
+		texturefile = "gfx\\interface\\toggle.tga"
+		noOfFrames = 2
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {	
+		name = "GFX_building_easterngfx"
+		texturefile = "gfx\\interface\\buildings_easterngfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_building_muslimgfx"
+		texturefile = "gfx\\interface\\buildings_muslimgfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_building_indiangfx"
+		texturefile = "gfx\\interface\\buildings_indiangfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_building_chinesegfx"
+		texturefile = "gfx\\interface\\buildings_chinesegfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_building_africangfx"
+		texturefile = "gfx\\interface\\buildings_africangfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_building_northamericagfx"
+		texturefile = "gfx\\interface\\buildings_northamericagfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_building_southamericagfx"
+		texturefile = "gfx\\interface\\buildings_southamericagfx.tga"
+		noOfFrames = 23
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {	
+		name = "GFX_move_capital"
+		texturefile = "gfx\\interface\\httt_interface\\move_capital.dds"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {	
+		name = "GFX_have_capital"
+		texturefile = "gfx\\interface\\httt_interface\\current_capital.dds"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	spriteType = {	
+		name = "GFX_move_focus"
+		texturefile = "gfx\\interface\\httt_interface\\move_nationalfocus.dds"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {	
+		name = "GFX_have_focus"
+		texturefile = "gfx\\interface\\httt_interface\\current_nationalfocus.dds"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {	
+		name = "GFX_province_decision"
+		texturefile = "gfx\\interface\\in_nomine_interface\\province_decision.dds"
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+	}
+	spriteType = {	
+		name = "GFX_prov_decisions_bg"
+		texturefile = "gfx\\interface\\in_nomine_interface\\prov_decisions_bg.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+	spriteType = {	
+		name = "GFX_prov_decisions_banner"
+		texturefile = "gfx\\interface\\in_nomine_interface\\province_decision_banner.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_cb_banner"
+		texturefile = "gfx\\interface\\httt_interface\\cb_banner.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_bg_declarewar"
+		texturefile = "gfx\\interface\\httt_interface\\bg_declarewar.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_bg_traderights"
+		texturefile = "gfx\\interface\\httt_interface\\bg_traderights.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_province_history_button"
+		texturefile = "gfx\\interface\\httt_interface\\province_history_button.tga"
+		noOfFrames = 1
+	}
+	
+}

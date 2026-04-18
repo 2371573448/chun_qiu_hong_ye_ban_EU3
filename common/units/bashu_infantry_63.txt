@@ -1,0 +1,12 @@
+#ΑϊΞΖξα±ψ
+
+type = infantry
+unit_type = bashu1
+
+maneuver = 1
+offensive_fire = 5
+defensive_fire = 7
+offensive_shock = 8
+defensive_shock = 9
+offensive_morale = 6
+defensive_morale = 8

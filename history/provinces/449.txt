@@ -1,0 +1,94 @@
+owner = WUG
+controller = WUG
+culture = gouwu
+religion = ancestor
+capital = "ÎÞÎý"
+trade_goods = salt
+hre = no
+base_tax = 9
+manpower = 0
+citysize = 46000
+fort1 = yes
+add_core = WUG
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2190.1.1 = { 
+	religion = liyuebadao
+}
+2220.1.1 = { 
+	owner = YGO
+	controller = YGO
+}
+2222.1.1 = { 
+	citysize = 36000
+}
+2225.1.1 = { 
+	add_core = YGO
+}
+2244.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = YGO
+}
+2244.1.2 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+}
+2246.1.2 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = YGO
+}
+2246.1.2 = {
+        citysize = 31000
+    }
+2246.1.3 = {
+        citysize = 36000
+    }
+2247.1.1 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+}
+2392.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2422.1.1 = { 
+	add_core = CHU
+	culture = nanchu
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+	base_tax = 6
+}
+2489.10.1 = { 
+	revolt = { 
+		type = nationalist_rebels
+		size = 4
+		leader = "·¶Ôö"
+	}
+	controller = REB
+}
+2490.6.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

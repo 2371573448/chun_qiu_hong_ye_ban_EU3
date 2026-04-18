@@ -1,0 +1,13 @@
+owner = XYT
+controller = XYT
+culture = xiyu
+religion = animism
+capital = "´óÍð"
+trade_goods = spices
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = XYT
+1827.1.1 = { discovered_by = XYR }

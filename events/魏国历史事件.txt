@@ -1,0 +1,264 @@
+#∫”Œ˜ª·√À
+country_event = {
+	id = 12001
+
+	major = yes
+
+	trigger = {
+		tag = WEI
+		year = 2265
+		NOT ={ has_global_flag = hexizhimeng1
+		       has_global_flag = hexizhimeng2
+		}
+		NOT = { year = 2266 )
+	  OR = {	 
+		NOT = { QIN = { owns = 200 } }
+		NOT = { QIN = { owns = 205 } }
+		NOT = { QIN = { owns = 150 } }
+		NOT = { QIN = { owns = 152 } }
+		NOT = { QIN = { owns = 203 } }
+		NOT = { QIN = { owns = 216 } }
+		NOT = { QIN = { owns = 202 } }
+		NOT = { QIN = { owns = 218 } }
+		NOT = { QIN = { owns = 204 } }
+	       }		
+
+	}
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12001"
+	desc = "EVTDESC12001"
+	
+
+	option = {
+		name = "EVTOPTA12001"
+		prestige = 0.20
+		treasury = -350
+		set_global_flag = hexizhimeng1
+		 }
+	option = {
+		name = "EVTOPTB12001"
+		prestige = -0.50
+		set_global_flag = hexizhimeng2
+		}
+}
+country_event = {
+	id = 12002
+
+	major = yes
+
+	trigger = {
+		tag = QIN
+		NOT ={ has_global_flag = hexizhimeng3
+		       has_global_flag = hexizhimeng4
+		}
+		  has_global_flag = hexizhimeng1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12002"
+	desc = "EVTDESC12002"
+	
+
+	option = {
+		name = "EVTOPTA12002"
+		prestige = 0.20
+		set_global_flag = hexizhimeng3
+		 }
+	option = {
+		name = "EVTOPTB12002"
+		prestige = -0.70
+		set_global_flag = hexizhimeng4
+		}
+}
+
+country_event = {
+	id = 12003
+
+	major = yes
+
+	trigger = {
+		tag = WEI
+		year = 2246
+		NOT ={ has_global_flag = hexizhimeng6
+		}
+		  has_global_flag = hexizhimeng3
+	}
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12003"
+	desc = "EVTDESC12003"
+	
+
+	option = {
+		name = "EVTOPTA12003"
+		set_global_flag = hexizhimeng6
+		 }
+}
+country_event = {
+	id = 12004
+
+	major = yes
+
+	trigger = {
+		tag = WEI
+		year = 2246
+		NOT ={ has_global_flag = hexizhimeng5
+		}
+		  has_global_flag = hexizhimeng4
+	}
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12004"
+	desc = "EVTDESC12004"
+	
+
+	option = {
+		name = "EVTOPTA12004"
+		prestige = 0.20
+		set_global_flag = hexizhimeng5
+	 }
+}
+
+country_event = {
+	id = 12005
+
+	major = yes
+
+	trigger = {
+		tag = QIN
+		NOT ={ has_global_flag = hexizhimeng7
+		       has_global_flag = hexizhimeng8
+		}
+		  has_global_flag = hexizhimeng6
+	}
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12005"
+	desc = "EVTDESC12005"
+	
+	option = {
+		name = "EVTOPTA12005"
+		prestige = -0.10
+		set_global_flag = hexizhimeng7
+			add_country_modifier = { 
+			name = "QINCHI_buff"
+			duration = 10900
+		}
+			any_owned = { 
+			add_province_modifier = { 
+			name = "QINCHI_buff2"
+			duration = 10900
+			}
+		}
+		
+	}
+	option = {
+		name = "EVTOPTB12005"
+		prestige = 0.15
+		set_global_flag = hexizhimeng8
+			add_country_modifier = { 
+			name = "JIUJIULAOQIN_buff"
+			duration = 3000
+			}
+	 }
+
+}
+country_event = {
+	id = 12006
+
+	major = yes
+
+	trigger = {
+		tag = QIN
+		NOT ={ has_global_flag = hexizhimeng9
+		}
+		  has_global_flag = hexizhimeng7
+	}
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12006"
+	desc = "EVTDESC12006"
+	
+	option = {
+		name = "EVTOPTA12006"
+		prestige = 0.30
+	218={
+		add_core = WEI
+                secede_province = WEI
+}
+	204={
+		add_core = WEI
+                secede_province = WEI
+}
+	hexi={
+		add_core = WEI
+                secede_province = WEI
+}
+		set_global_flag = hexizhimeng9
+	 	}
+
+}
+country_event = {
+	id = 12007
+
+	major = yes
+
+	trigger = {
+		tag = WEI
+		NOT ={ has_global_flag = hexizhimeng10
+		}
+		  has_global_flag = hexizhimeng8
+	}
+	mean_time_to_happen = {
+		days = 0
+		}
+
+	title = "EVTNAME12007"
+	desc = "EVTDESC12007"
+	
+	option = {
+		name = "EVTOPTA12007"
+	200={
+		add_core = WEI
+}
+	205={
+		add_core = WEI
+}
+	150={
+		add_core = WEI
+}
+	152={
+		add_core = WEI
+}
+	203={
+		add_core = WEI
+}
+	216={
+		add_core = WEI
+}
+	202={
+		add_core = WEI
+}
+	218={
+		add_core = WEI
+}
+	204={
+		add_core = WEI
+}		
+	set_global_flag = hexizhimeng10
+	}
+}

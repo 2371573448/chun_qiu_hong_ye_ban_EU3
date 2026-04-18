@@ -1,0 +1,58 @@
+##########朝鲜############
+country_decisions = { 
+	bianshen_chaoxian = { 
+		potential = { 
+			tag = JSG
+                                                            not = { 
+				has_global_flag = chaoxianguo
+			}
+		}
+		allow = { 
+			owns = 839
+			war = no
+		}
+		effect = { 
+			chaoxian1 = { 
+				add_core = JSG
+			}
+			technology_group = chinese
+			religion = daojia
+			prestige = 0.50
+                                                            set_global_flag = chaoxianguo
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	chaoxianguotu = { 
+		potential = { 
+			tag = JSG
+			owns = 842
+			OR = {
+				not = { 
+					owns = 1153
+				}
+				not = { 
+					owns = 843
+				}
+			}
+		}
+		allow = { 
+			diplomats = 2
+		}
+		effect = { 
+			diplomats = -2
+			1153 = {
+				secede_province = JSG
+				culture = THIS
+			}
+			843 = {
+				secede_province = JSG
+				culture = THIS
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

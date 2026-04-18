@@ -1,0 +1,101 @@
+owner = JNG
+controller = JNG
+culture = huaiyi
+religion = liyuejiaohua
+capital = "ÆÚË¼"
+trade_goods = tea
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = JNG
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2089.10.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2111.1.1 = { 
+	add_core = CHU
+}
+2141.1.1 = { 
+	culture = nanchu
+	religion = liyuebadao
+}
+2192.11.1 = { 
+	owner = WUG
+	controller = WUG
+}
+2193.7.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2222.1.1 = { 
+	citysize = 22000
+}
+2244.1.1 = { 
+	owner = JNG
+	controller = JNG
+	add_core = JNG
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = JNG
+}
+2246.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = CHU
+}
+2246.1.2 = { 
+	owner = JNG
+	controller = JNG
+	add_core = JNG
+	remove_core = WUG
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = WUG
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	revolt = { 
+		type = nationalist_rebels
+		size = 0
+	}
+	controller = REB
+}
+2490.6.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = HSW
+	controller = HSW
+	add_core = HSW
+}

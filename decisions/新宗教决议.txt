@@ -1,0 +1,793 @@
+religion_decisions = { 
+	bachubaijia = { 
+		potential = { 
+			not = { 
+				has_country_modifier = bachubaijia
+			}
+			not = { 
+				has_country_modifier = hainabaichuan
+			}
+		}
+		allow = { 
+			dominant_religion = this
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "bachubaijia"
+				duration = -1
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = daojia
+				}
+				set_country_flag = duzundaojia
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = fajia
+				}
+				set_country_flag = duzunfajia
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = rujia
+				}
+				set_country_flag = duzunrujia
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = mojia
+				}
+				set_country_flag = duzunmojia
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = liyuejiaohua
+				}
+				set_country_flag = duzunliyuejiaohua
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = liyuebadao
+				}
+				set_country_flag = duzunliyuebadao
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = animism
+				}
+				set_country_flag = duzunanimism
+			}
+			any_country = {
+				limit = {
+					tag = this
+					religion = ancestor
+				}
+				set_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	hainabaichuan = { 
+		potential = { 
+			not = { 
+				has_country_modifier = bachubaijia
+			}
+			not = { 
+				has_country_modifier = hainabaichuan
+			}
+		}
+		allow = { 
+			not = { dominant_religion = this }
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "hainabaichuan"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	mojiazhuanjing = { 
+		potential = { 
+			has_country_modifier = bachubaijia
+			religion = mojia
+			not = { has_country_flag = mojiazhuanjing }
+		}
+		allow = { 
+			num_of_religion = {
+				religion = mojia
+				value = 0.9
+			}
+			treasury = 2000
+			missionaries = 10
+		}
+		effect = { 
+			treasury = -2000
+			missionaries = -10
+			set_country_flag = mojiazhuanjing
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	fajiazhuanjing = { 
+		potential = { 
+			has_country_modifier = bachubaijia
+			religion = fajia
+			not = { has_country_flag = fajiazhuanjing }
+		}
+		allow = { 
+			num_of_religion = {
+				religion = fajia
+				value = 0.9
+			}
+			treasury = 2000
+			missionaries = 10
+		}
+		effect = { 
+			treasury = -2000
+			missionaries = -10
+			set_country_flag = fajiazhuanjing
+			add_country_modifier = { 
+				name = "fajiazhuanjing"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiazhuanjing = { 
+		potential = { 
+			has_country_modifier = bachubaijia
+			religion = daojia
+			not = { has_country_flag = daojiazhuanjing }
+		}
+		allow = { 
+			num_of_religion = {
+				religion = daojia
+				value = 0.9
+			}
+			treasury = 2000
+			missionaries = 10
+		}
+		effect = { 
+			treasury = -2000
+			missionaries = -10
+			set_country_flag = daojiazhuanjing
+			add_country_modifier = { 
+				name = "daojiazhuanjing"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	rujiazhuanjing = { 
+		potential = { 
+			has_country_modifier = bachubaijia
+			religion = rujia
+			not = { has_country_flag = rujiazhuanjing }
+		}
+		allow = { 
+			num_of_religion = {
+				religion = rujia
+				value = 0.9
+			}
+			treasury = 2000
+			missionaries = 10
+		}
+		effect = { 
+			treasury = -2000
+			missionaries = -10
+			set_country_flag = rujiazhuanjing
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	mojiashangxian = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 200
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -200
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = philosopher
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = natural_scientist
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = artist
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = statesman
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = treasurer
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = naval_reformer
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = army_reformer
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = trader
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = theologian
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = spymaster
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = colonial_governor 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = diplomat 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = sheriff 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = high_judge 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = alderman 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = colonel 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = collector 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = master_of_mint 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = banker 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = lord_proprietor 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = pioneer 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = grand_admiral 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = naval_organiser 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = navigator 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = rear_admiral 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = privateer 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = sergeant_major_general 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = grand_captain 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = army_organiser 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = commandant 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = quartermaster 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = recruitmaster 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = fortification_expert 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = inquisitor 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = ambassador 
+					skill = 6
+				}
+			}
+			random = { 
+				chance = 10
+				define_advisor = {
+					name = "д╚ом"
+					type = grand_marshal 
+					skill = 6
+				}
+			}
+		}
+	}
+	mojiashangtong = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 500
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -500
+			}
+			random_list = {
+				50 = {
+					define_ruler = {
+						name = "╬чвс"
+						dynasty = "д╚"
+						DIP = 9
+						MIL = 9
+						ADM = 9
+					}
+				}
+				50 = {
+					define_ruler = {
+						name = "╬чвс"
+						dynasty = "д╚"
+						DIP = 8
+						MIL = 8
+						ADM = 8
+					}
+				}
+			}
+		}
+	}
+	mojiajianai = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 100
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -100
+			}
+			random = { 
+				chance = 50
+				any_neighbor_country = {
+					limit = { 
+						NOT = { num_of_cities = 6 }
+						relation = { who = this value = 199 }
+					}
+					any_owned = {
+						secede_province = this
+					}
+				}
+			}
+		}
+	}
+	mojiafeigong = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 1000
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -1000
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					war = no
+				}
+				any_country = {
+					limit = { 
+						or = { 
+							tag = this
+							vassal_of = this
+							relation = { who = this value = 199 }
+						}
+					}
+					any_owned = {
+						citysize = 1000
+					}
+				}
+			}
+			any_country = {
+				limit = { 
+					tag = this
+					war = yes
+				}
+				manpower = 0.5
+				any_country = {
+					limit = { 
+						or = { 
+							tag = this
+							vassal_of = this
+							relation = { who = this value = 199 }
+						}
+					}
+					any_owned = {
+						change_siege = -10
+					}
+				}
+			}
+		}
+	}
+	mojiajieyong = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 1500
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -1500
+			}
+			any_country = {
+				limit = { 
+					or = { 
+						tag = this
+						vassal_of = this
+						relation = { who = this value = 199 }
+					}
+				}
+				any_owned = {
+					base_tax = 1
+					this = {
+						treasury = -50
+						manpower = -1
+					}
+				}
+			}
+		}
+	}
+	mojiajiezang = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 800
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -800
+			}
+			any_country = {
+				limit = { 
+					or = { 
+						tag = this
+						vassal_of = this
+						relation = { who = this value = 199 }
+					}
+				}
+				any_owned = {
+					change_manpower = 1
+					this = {
+						treasury = -50
+						manpower = -1
+					}
+				}
+			}
+		}
+	}
+	mojiatianzhi = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 2000
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -2000
+			}
+			any_country = {
+				limit = { 
+					religion = mojia
+				}
+			}
+			country_event = 290806
+		}
+	}
+	mojiaminggui = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 300
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -300
+			}
+			any_country = {
+				limit = { 
+					religion = mojia
+				}
+			}
+			country_event = 290807
+		}
+	}
+	mojiafeile = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 100
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -100
+			}
+			years_of_income = 0.1
+			stability = -1
+			inflation = -1
+		}
+	}
+	mojiafeiming = { 
+		potential = { 
+			has_country_flag = mojiazhuanjing
+		}
+		allow = { 
+			check_variable = {
+				which = feigongzhi
+				value = 600
+			}
+		}
+		effect = { 
+			change_variable = {
+				which = feigongzhi
+				value = -600
+			}
+			random_list = {
+				20 = {
+					land_tech = 0.999
+				}
+				20 = {
+					naval_tech = 0.999
+				}
+				20 = {
+					trade_tech = 0.999
+				}
+				20 = {
+					production_tech = 0.999
+				}
+				20 = {
+					government_tech = 0.999
+				}
+			}
+		}
+	}
+}

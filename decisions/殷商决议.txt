@@ -1,0 +1,335 @@
+country_decisions = { 
+
+	huifushangli = { 
+		# 恢复商礼
+		potential = { 
+			tag = YSG
+			NOT = { 
+				has_country_modifier = huifushangli
+			}
+		}
+		allow = { 
+			has_country_modifier = yinshanggaige
+			stability = 3
+			ADM = 7
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "huifushangli"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	wangzizheng = { 
+		# 王自征
+		potential = { 
+			tag = YSG
+			NOT = { 
+				has_country_modifier = wangzizheng
+			}
+		}
+		allow = { 
+			has_country_modifier = yinshanggaige
+			offensive_defensive = -2
+			is_monarch_leader = yes
+			MIL = 7
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "wangzizheng"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	shangshenzungui = { 
+		# 尚鬼尊神
+		potential = { 
+			tag = YSG
+			not = { 
+				religion = animism
+			}
+		}
+		allow = { 
+			prestige = 0.75
+			stability = 2
+			DIP = 7
+		}
+		effect = { 
+			stability = -2
+			religion = animism
+			capital_scope = { 
+				religion = animism
+			}
+			any_owned = { 
+				limit = { 
+					OR = { 
+						any_neighbor_province = { 
+							is_capital = yes
+							owner = { 
+								tag = YSG
+							}
+						}
+						any_neighbor_province = { 
+							any_neighbor_province = { 
+								is_capital = yes
+								owner = { 
+									tag = YSG
+								}
+							}
+						}
+					}
+				}
+				religion = animism
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	shangxingtianxia = { 
+		# 商行天下
+		potential = { 
+			tag = YSG
+			NOT = { 
+				has_country_modifier = shanxingtianxia
+			}
+		}
+		allow = { 
+			has_country_modifier = yinshanggaige
+			placed_merchants = 10
+			merchants = 5
+			num_of_cots = 2
+		}
+		effect = { 
+			merchants = -5
+			add_country_modifier = { 
+				name = "shanxingtianxia"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}
+cultural_decisions = { 
+	zhanbutian = { 
+		potential = { 
+			tag = YSG
+			religion = animism
+			NOT = { 
+				has_country_modifier = zhanbu
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			random_list = { 
+				35 = { 
+					country_event = 5063
+				}
+				65 = { 
+					country_event = 3206
+				}
+			}
+			add_country_modifier = { 
+				name = "zhanbu"
+				duration = 1825
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+cultural_decisions = { 
+	zhanbudi = { 
+		potential = { 
+			tag = YSG
+			religion = animism
+			NOT = { 
+				has_country_modifier = zhanbu
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			random_list = { 
+				6 = { 
+					country_event = 1300
+				}
+				6 = { 
+					country_event = 1301
+				}
+				6 = { 
+					country_event = 1302
+				}
+				6 = { 
+					country_event = 1303
+				}
+				6 = { 
+					country_event = 1304
+				}
+				6 = { 
+					country_event = 1305
+				}
+				6 = { 
+					country_event = 1306
+				}
+				6 = { 
+					country_event = 1307
+				}
+				6 = { 
+					country_event = 1308
+				}
+				6 = { 
+					country_event = 1309
+				}
+				6 = { 
+					country_event = 1310
+				}
+				6 = { 
+					country_event = 1311
+				}
+				6 = { 
+					country_event = 1312
+				}
+				6 = { 
+					country_event = 1313
+				}
+				6 = { 
+					country_event = 1314
+				}
+				6 = { 
+					country_event = 1315
+				}
+			}
+			add_country_modifier = { 
+				name = "zhanbu"
+				duration = 1825
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+cultural_decisions = { 
+	zhanburen = { 
+		potential = { 
+			tag = YSG
+			religion = animism
+			NOT = { 
+				has_country_modifier = zhanbu
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			random_list = { 
+				33 = { 
+					country_event = 5064
+				}
+				33 = { 
+					country_event = 5065
+				}
+				33 = { 
+					country_event = 5066
+				}
+			}
+			add_country_modifier = { 
+				name = "zhanbu"
+				duration = 1825
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+cultural_decisions = { 
+	yinshangbianfa = { 
+		potential = { 
+			tag = YSG
+			government = yinshangjunzhi
+			government_tech = 44
+
+		}
+		allow = { 
+			government_tech = 44
+		}
+		effect = { 
+			government = reformed_despotism
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+province_decisions = { 
+	yinshangrenxun = {
+		potential = { 
+			tag = YSG
+			is_capital = yes
+		}
+		allow = { 
+			owner = { 
+				or = {
+					has_country_modifier = lueduorenkou1
+					has_country_modifier = lueduorenkou2
+					has_country_modifier = lueduorenkou3
+				}
+			}
+		}
+		effect = { 
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = lueduorenkou1
+				}
+				capital_scope = {
+					citysize = 1000
+					owner = { 
+						remove_country_modifier = lueduorenkou1
+					}
+				}
+			}
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = lueduorenkou2
+				}
+				capital_scope = {
+					citysize = 1500
+					owner = { 
+						remove_country_modifier = lueduorenkou2
+					}
+				}
+			}
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = lueduorenkou3
+				}
+				capital_scope = {
+					citysize = 3000
+					owner = { 
+						remove_country_modifier = lueduorenkou3
+					}
+				}
+			}
+		}
+	}
+}

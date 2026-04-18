@@ -1,0 +1,223 @@
+# If you add religions, and use those tags, do not change them without changing everywhere they are used.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+christian = {
+
+	liyuejiaohua = {
+		color = { 0.8 0.5 0 }
+	
+		allowed_conversion = {
+			liyuebadao
+			rujia
+			fajia
+			mojia
+			daojia
+		}
+		province = {
+			stability_cost = 15
+			local_tax_modifier = 0.10
+			local_trade_income_modifier = 0.1
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.06
+			missionaries = 0.2
+			diplomatic_skill = 6
+			badboy = -0.5
+			trade_efficiency = 0.05
+		}
+		
+		#heretic = {  }
+		
+		#papacy = yes	#can play with papacy stuff..
+		
+	}
+
+	liyuebadao = {
+		color = { 0.3 0 0.6 }
+		allowed_conversion = {
+			liyuejiaohua
+			rujia
+			fajia
+			mojia
+			daojia
+			}
+		province = {
+			local_manpower_modifier = 0.10
+			land_forcelimit = 1
+			stability_cost = 15
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.06
+			missionaries = 0.2
+			land_morale = 0.20
+			discipline = 0.05
+			cultural_tradition = -0.01
+		}
+		
+		#heretic = { }
+		
+		date = 2040
+		
+
+	}
+
+	rujia = {
+		color = { 0.5 0.5 0.2 }
+		allowed_conversion = {
+			fajia
+		}
+		province = {
+			direct_tax_percentage = 0.15
+			stability_cost = 10
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.06
+			missionaries = 0.2
+			cultural_tradition = 0.03
+			legitimacy = 0.02
+			officials = 1.00
+		}
+		
+		heretic = { GONGYANG GULIANG MENGZI XUNZI }
+		date = 2240
+	}
+
+	fajia = {
+		color = { 0.2 0.5 0.2 }
+		allowed_conversion = {
+			rujia
+		}
+
+		province = {
+			local_manpower_modifier = 0.20
+			land_forcelimit = 1
+			stability_cost = 15
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.06
+			missionaries = 0.2
+			stability_cost_modifier = 0.15
+			land_maintenance_modifier = -0.10
+			production_efficiency = 0.05
+			global_revolt_risk = 1.00
+		}
+		
+		heretic = { SHANGYANG SHENBUHAI SHENDAO }
+		date = 2250
+	}
+	
+	mojia = {
+		color = { 0.2 0.3 0.7 }
+		allowed_conversion = {
+			rujia
+			fajia
+			daojia
+		}
+
+		province = {
+			local_production_efficiency = 0.10
+			local_defensiveness = 0.50
+			stability_cost = 15
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.06
+			missionaries = 0.2
+			land_tech_cost_modifier = -0.05
+			production_tech_cost_modifier = -0.05
+			build_cost = -0.15
+		}
+		
+		heretic = { XIANGLISHI XIANGFUSHI DENGLINGSHI }
+		date = 2270
+	}
+	
+	daojia = {
+		color = { 0.1 0.2 0.2 }
+		allowed_conversion = {
+			rujia
+			fajia
+			mojia
+		}
+
+		province = {
+			population_growth = 0.02
+			stability_cost = 15
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.11
+			missionaries = 0.2
+			local_revolt_risk = -1
+		}
+		
+		heretic = { YANGZHU HUANGLAO LAOZHUANG }
+		date = 2230
+	}
+	
+	crusade_name = ZWRYZZ
+}
+
+pagan = {
+	animism = {
+		color = { 0.5 0.0 0.0 }
+		province = {
+			local_manpower = 0.020
+			land_forcelimit = 2
+			stability_cost = 15
+			land_morale = 0.03
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.06
+			missionaries = 0.2
+			land_morale = 0.2
+			war_exhaustion = -0.05
+		}
+		#heretic = {  }
+		
+		#annex = yes
+	}
+	ancestor = {
+		color = { 0.5 0.3 0.3 }
+		province = {
+			local_manpower = 0.020
+			local_revolt_risk = -2
+			stability_cost = 15
+		}
+		country = {
+			tolerance_own = 2
+			tolerance_heretic = -2
+			colonist_placement_chance = 0.10
+			missionary_placement_chance = 0.11
+			missionaries = 0.2
+			global_tax_modifier = 0.30
+			legitimacy = 0.03
+		}
+		
+		#heretic = {   }
+		
+		#annex = yes		
+	}
+	
+	#crusade_name = CRUSADE
+}

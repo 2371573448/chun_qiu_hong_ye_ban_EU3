@@ -1,0 +1,31 @@
+alliance={
+	first=ZHO
+	second=YAN
+	start_date=2413.1.1
+	end_date=2414.1.1
+}
+alliance={
+	first=YAN
+	second=QIN
+	start_date=2413.1.1
+	end_date=2414.1.1
+}
+alliance={
+	first=QIN
+	second=HAN
+	start_date=2413.1.1
+	end_date=2414.1.1
+}
+alliance={
+	first=QIN
+	second=WEI
+	start_date=2413.1.1
+	end_date=2414.1.1
+}
+
+alliance={
+	first=QIG
+	second=CHU
+	start_date=2413.1.1
+	end_date=2414.1.1
+}

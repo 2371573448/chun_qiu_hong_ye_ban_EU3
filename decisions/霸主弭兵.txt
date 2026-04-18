@@ -1,0 +1,557 @@
+country_decisions = { 
+	# 谋夺霸位
+	attempted_to_bazhu = { 
+		potential = { 
+			any_country = { 
+				is_emperor = yes
+			}
+			is_emperor = no
+			has_country_modifier = qianshengdaguo
+			# 有千乘buff
+			not = { 
+				has_global_flag = aspire_to_bazhu
+			}
+			not = { 
+				has_country_modifier = campaign_to_bazhu
+			}
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			# 没有弭兵大会
+			not = { 
+				has_global_flag = daizhou_lv4
+			}
+			not = { 
+				has_global_flag = fuzhou_lv4
+			}
+		}
+		allow = { 
+			OR = { 
+				and = { 
+					manpower = 30
+					emperor = { 
+						not = { 
+							manpower = 60
+						}
+					}
+				}
+				and = { 
+					manpower = 40
+					emperor = { 
+						not = { 
+							manpower = 80
+						}
+					}
+				}
+				and = { 
+					manpower = 50
+					emperor = { 
+						not = { 
+							manpower = 100
+						}
+					}
+				}
+				and = { 
+					manpower = 60
+					emperor = { 
+						not = { 
+							manpower = 120
+						}
+					}
+				}
+				and = { 
+					manpower = 70
+					emperor = { 
+						not = { 
+							manpower = 140
+						}
+					}
+				}
+				and = { 
+					manpower = 80
+					emperor = { 
+						not = { 
+							manpower = 160
+						}
+					}
+				}
+				and = { 
+					manpower = 90
+					emperor = { 
+						not = { 
+							manpower = 180
+						}
+					}
+				}
+				manpower = 100
+			}
+			OR = { 
+				ADM = 6
+				DIP = 6
+				MIL = 6
+			}
+			prestige = 0
+			legitimacy = 0.6
+			stability = 1
+		}
+		effect = { 
+			set_global_flag = aspire_to_bazhu
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = -300
+				}
+			}
+			# 和霸主关系-200
+			any_country = { 
+				limit = { 
+					elector = yes
+					overlord = { 
+						is_emperor = yes
+					}
+				}
+				# 选侯是霸主的附庸
+				relation = { 
+					who = THIS
+					value = -200
+				}
+			}
+			add_country_modifier = { 
+				name = "campaign_to_bazhu"
+				duration = -1
+			}
+			emperor = { 
+				set_variable = { 
+					which = advocated_bazhu
+					value = 0
+				}
+				set_variable = { 
+					which = advocated_mouweizhe
+					value = 0
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 弭兵计划-霸主和谋夺者
+	campaign_to_peace1 = { 
+		potential = { 
+			is_emperor = no
+			capital_scope = { 
+				hre = yes
+			}
+			not = { 
+				has_global_flag = zhanguokaishi
+			}
+			# 春秋时期
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			# 没有弭兵大会
+			not = { 
+				has_country_modifier = failure_to_make_peace
+			}
+			# 没有弭兵失败
+			any_country = { 
+				has_country_modifier = campaign_to_bazhu
+			}
+			# 有谋夺霸位
+			not = { 
+				has_global_flag = campaign_to_peace
+			}
+			# 弭兵计划
+			not = { 
+				has_country_modifier = campaign_to_peace
+			}
+			not = { 
+				has_global_flag = vote_if_peace
+			}
+			# 没有正在投票
+		}
+		allow = { 
+			war_exhaustion = 4
+			hre_size = 15
+			prestige = 0.2
+			not = { 
+				has_global_flag = daizhou_lv4
+			}
+			not = { 
+				has_global_flag = fuzhou_lv4
+			}
+		}
+		effect = { 
+			set_global_flag = campaign_to_peace
+			# 弭兵计划
+			set_country_flag = campaign_to_peace
+			add_country_modifier = { 
+				name = "campaign_to_peace"
+				duration = 18250
+			}
+			any_country = { 
+				limit = { 
+					has_country_modifier = campaign_to_bazhu
+				}
+				add_country_modifier = { 
+					name = "rival_for_by"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 弭兵计划-亲和诸侯
+	campaign_to_peace2 = { 
+		potential = { 
+			has_country_modifier = campaign_to_peace
+			# 弭兵计划
+			has_global_flag = campaign_to_peace
+			not = { 
+				has_global_flag = zhanguokaishi
+			}
+			# 春秋时期
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			# 没有弭兵大会
+			not = { 
+				has_country_modifier = failure_to_make_peace
+			}
+			# 没有弭兵失败
+			not = { 
+				has_global_flag = vote_if_peace
+			}
+			# 没有正在投票
+		}
+		allow = { 
+			not = { 
+				badboy = 0.2
+			}
+			diplomats = 5
+			treasury = 100
+			or = { 
+				not = { 
+					has_global_flag = campaign_to_peace2
+				}
+				# 亲和诸侯
+				had_global_flag = { 
+					flag = campaign_to_peace2
+					days = 365
+				}
+				# 1年一次
+			}
+		}
+		effect = { 
+			set_global_flag = campaign_to_peace2
+			# 亲和诸侯
+			prestige = 0.05
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+					not = { 
+						has_country_modifier = qianshengdaguo
+					}
+				}
+				relation = { 
+					who = THIS
+					value = 20
+				}
+			}
+			diplomats = -5
+			treasury = -100
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 弭兵计划-游走大国
+	campaign_to_peace3 = { 
+		potential = { 
+			has_country_modifier = campaign_to_peace
+			# 弭兵计划
+			has_global_flag = campaign_to_peace
+			has_global_flag = campaign_to_peace2
+			# 第2步已点
+			not = { 
+				has_global_flag = zhanguokaishi
+			}
+			# 春秋时期
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			# 没有弭兵大会
+			not = { 
+				has_country_modifier = failure_to_make_peace
+			}
+			# 没有弭兵失败
+			not = { 
+				has_global_flag = vote_if_peace
+			}
+			# 没有正在投票
+			not = { 
+				has_global_flag = campaign_to_peace3
+			}
+		}
+		allow = { 
+			not = { 
+				badboy = 0.3
+			}
+			diplomats = 5
+			treasury = 100
+			prestige = 0.25
+		}
+		effect = { 
+			set_global_flag = campaign_to_peace3
+			# 游走大国
+			prestige = -0.25
+			any_country = { 
+				limit = { 
+					elector = yes
+					is_emperor = no
+				}
+				relation = { 
+					who = THIS
+					value = 20
+				}
+			}
+			diplomats = -5
+			treasury = -100
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 弭兵计划-拉拢霸主
+	campaign_to_peace4 = { 
+		potential = { 
+			has_country_modifier = campaign_to_peace
+			# 弭兵计划
+			has_global_flag = campaign_to_peace
+			has_global_flag = campaign_to_peace3
+			# 第3步已点
+			not = { 
+				has_global_flag = zhanguokaishi
+			}
+			# 春秋时期
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			# 没有弭兵大会
+			not = { 
+				has_country_modifier = failure_to_make_peace
+			}
+			# 没有弭兵失败
+			not = { 
+				has_global_flag = vote_if_peace
+			}
+			# 没有正在投票
+			not = { 
+				has_global_flag = campaign_to_peace4
+			}
+		}
+		allow = { 
+			diplomats = 3
+			treasury = 50
+			prestige = 0.25
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 100
+				}
+			}
+		}
+		effect = { 
+			set_global_flag = campaign_to_peace4
+			# 拉拢霸主
+			prestige = -0.25
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 50
+				}
+			}
+			diplomats = -3
+			treasury = -50
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 弭兵计划-历史契机
+	campaign_to_peace5 = { 
+		potential = { 
+			has_country_modifier = campaign_to_peace
+			# 弭兵计划
+			has_global_flag = campaign_to_peace
+			has_global_flag = campaign_to_peace4
+			# 第4步已点
+			not = { 
+				has_global_flag = zhanguokaishi
+			}
+			# 春秋时期
+			not = { 
+				has_global_flag = mibingdahui
+			}
+			# 没有弭兵大会
+			not = { 
+				has_country_modifier = failure_to_make_peace
+			}
+			# 没有弭兵失败
+			not = { 
+				has_global_flag = vote_if_peace
+			}
+			# 没有正在投票
+			not = { 
+				has_global_flag = campaign_to_peace4
+			}
+		}
+		allow = { 
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 100
+				}
+				or = { 
+					war_exhaustion = 4
+					not = { 
+						stability = 3
+					}
+				}
+			}
+			any_country = { 
+				has_country_modifier = rival_for_by
+				relation = { 
+					who = THIS
+					value = 100
+				}
+				or = { 
+					war_exhaustion = 4
+					not = { 
+						stability = 3
+					}
+				}
+			}
+		}
+		effect = { 
+			emperor = { 
+				set_variable = { 
+					which = support_peace
+					value = 0
+				}
+			}
+			set_global_flag = campaign_to_peace5
+			# 历史契机
+			set_global_flag = vote_if_peace
+			# 投票
+			set_country_flag = vote_to_peace
+			# 投票发起国
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					is_emperor = no
+				}
+				country_event = 60084
+				# 投票事件
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+
+	# 弭兵纳贡
+	peace_tribute = { 
+		potential = { 
+			has_global_flag = mibingdahui
+			# 有弭兵大会
+			OR = { 
+				is_emperor = yes
+				has_country_modifier = rival_for_by
+			}
+			# 是霸主或相对国家
+			or = { 
+				not = { 
+					has_country_flag = peace_tribute
+				}
+				# 弭兵纳贡
+				had_country_flag = { 
+					flag = peace_tribute
+					days = 3650
+				}
+				# 10年一次
+			}
+		}
+		allow = { }
+		effect = { 
+			set_country_flag = peace_tribute
+			# 弭兵纳贡
+			any_country = { 
+				limit = { 
+					capital_scope = { 
+						hre = yes
+					}
+					not = { 
+						tag = PAP
+					}
+					not = { 
+						has_country_modifier = qianshengdaguo
+					}
+					not = { 
+						has_country_modifier = rival_for_by
+					}
+					not = { 
+						is_emperor = yes
+					}
+				}
+				country_event = 60087
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 取消弭兵
+	peace_end = { 
+		potential = { 
+			is_emperor = yes
+			not = { 
+				has_global_flag = zhanguokaishi
+			}
+			# 春秋时期
+			has_global_flag = mibingdahui
+			# 有弭兵大会
+		}
+		allow = { 
+			or = { 
+				has_global_flag = daizhou_lv4
+				# 决议点到4步后
+				has_global_flag = fuzhou_lv4
+			}
+			prestige = 0.5
+			imperial_influence = 50
+		}
+		effect = { 
+			prestige = -0.1
+			add_imperial_influence = -25
+			clr_global_flag = mibingdahui
+			any_country = { 
+				limit = { 
+					has_country_modifier = rival_for_by
+				}
+				remove_country_modifier = rival_for_by
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

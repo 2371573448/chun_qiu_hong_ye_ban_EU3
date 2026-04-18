@@ -1,0 +1,135 @@
+cultural_decisions = { 
+	YAN_advisor1 = { 
+		potential = { 
+			tag = YAN
+			has_country_flag = qianjinmagu
+			NOT = { 
+				has_country_modifier = YAN_ad1
+			}
+		}
+		allow = { 
+			treasury = 100
+		}
+		effect = { 
+			treasury = -100
+			cultural_tradition = -0.15
+			add_country_modifier = { 
+				name = "YAN_ad1"
+				duration = 7300
+			}
+			remove_country_modifier = YAN_ad2
+			remove_country_modifier = YAN_ad3
+			remove_country_modifier = YAN_ad4
+		}
+	}
+	YAN_advisor2 = { 
+		potential = { 
+			tag = YAN
+			has_country_flag = qianjinmagu
+			NOT = { 
+				has_country_modifier = YAN_ad2
+			}
+		}
+		allow = { 
+			treasury = 100
+		}
+		effect = { 
+			treasury = -100
+			cultural_tradition = -0.15
+			add_country_modifier = { 
+				name = "YAN_ad2"
+				duration = 7300
+			}
+			remove_country_modifier = YAN_ad1
+			remove_country_modifier = YAN_ad3
+			remove_country_modifier = YAN_ad4
+		}
+	}
+	YAN_advisor3 = { 
+		potential = { 
+			tag = YAN
+			has_country_flag = qianjinmagu
+			NOT = { 
+				has_country_modifier = YAN_ad3
+			}
+		}
+		allow = { 
+			treasury = 100
+		}
+		effect = { 
+			treasury = -100
+			cultural_tradition = -0.15
+			add_country_modifier = { 
+				name = "YAN_ad3"
+				duration = 7300
+			}
+			remove_country_modifier = YAN_ad1
+			remove_country_modifier = YAN_ad2
+			remove_country_modifier = YAN_ad4
+		}
+	}
+	YAN_advisor4 = { 
+		potential = { 
+			tag = YAN
+			has_country_flag = qianjinmagu
+			NOT = { 
+				has_country_modifier = YAN_ad4
+			}
+		}
+		allow = { 
+			treasury = 100
+		}
+		effect = { 
+			treasury = -100
+			cultural_tradition = -0.15
+			add_country_modifier = { 
+				name = "YAN_ad4"
+				duration = 7300
+			}
+			remove_country_modifier = YAN_ad1
+			remove_country_modifier = YAN_ad2
+			remove_country_modifier = YAN_ad3
+		}
+	}
+}
+
+cultural_decisions = { 
+	SGU_advisor1 = { 
+		potential = { 
+			tag = SGU
+			not = { 
+				has_country_modifier = SGU_kaiguohemangran
+			}
+		}
+		allow = { 
+			stability = 1
+		}
+		effect = { 
+			country_event = 5051
+			add_country_modifier = { 
+				name = "SGU_kaiguohemangran"
+				duration = 3650
+			}
+		}
+	}
+}
+cultural_decisions = { 
+	SGU_advisor2 = { 
+		potential = { 
+			tag = SGU
+			not = { 
+				has_country_modifier = SGU_kaiguohemangran
+			}
+		}
+		allow = { 
+			stability = 1
+		}
+		effect = { 
+			country_event = 5052
+			add_country_modifier = { 
+				name = "SGU_kaiguohemangran"
+				duration = 5475
+			}
+		}
+	}
+}

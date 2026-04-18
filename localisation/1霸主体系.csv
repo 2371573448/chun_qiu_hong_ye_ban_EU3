@@ -1,0 +1,460 @@
+;;;;;;;;;;;;;x;
+war_with_ZHOU;与天子交恶;;;;;;;;;;;;;x;
+desc_war_with_ZHOU;周天子虽然威信不再，但仍是名义上的天下共主，我国贸然与其交恶，引起了其他诸侯极大的不满，国内反对的声音也很多;;;;;;;;;;;;;x;
+war_with_ZHOU2;伐周问鼎;;;;;;;;;;;;;x;
+desc_war_with_ZHOU2;我本蛮夷也，今兵强马壮而入主中原，大军直驱洛邑，风头正盛，天下侧目;;;;;;;;;;;;;x;
+chinese_hre;华夏诸侯;;;;;;;;;;;;;x;
+desc_chinese_hre;我国是中原华夏诸侯之一，上遵从天子，中贡赋霸主，下善待百姓，这一切都是国家稳定的基础;;;;;;;;;;;;;x;
+reichsreform_emperor;巩固霸主地位;;;;;;;;;;;;;x;
+desc_reichsreform_emperor;经过多年积累，我国的霸主地位已经得到了加强，这主要归功于几代先王的励精图治，长期维持了我国霸业不堕;;;;;;;;;;;;;x;
+reichsregiment_emperor;诸侯朝贡常规化;;;;;;;;;;;;;x;
+desc_reichsregiment_emperor;随着我国霸主地位的确立，各诸侯国向我国进贡已经成为了常规，每年九月，天下诸侯会聚于我国首都，送上今年的供奉;;;;;;;;;;;;;x;
+reichsregiment_member;诸侯朝贡常规化;;;;;;;;;;;;;x;
+desc_reichsregiment_member;随着我国霸主地位的确立，各诸侯国向霸主进贡已经成为了常规，每年九月，我们必须前往霸主的都城，送上今年的供奉;;;;;;;;;;;;;x;
+gemeinerpfennig_emperor;禁止诸侯私相勾结;;;;;;;;;;;;;x;
+desc_gemeinerpfennig_emperor;为了防止诸侯国颠覆我国的霸主地位，我国向各国派出大臣常驻，监事和禁止一切诸侯之间相互勾结的行为;;;;;;;;;;;;;x;
+hofgericht_member;禁止诸侯私相勾结;;;;;;;;;;;;;x;
+desc_hofgericht_member;霸主为了防止诸侯国颠覆其统治地位，向各国派出大臣常驻，监事和禁止一切诸侯之间相互勾结的行为，我国外交行动受限;;;;;;;;;;;;;x;
+kongzhizhou;控制周王室;;;;;;;;;;;;;x;
+desc_kongzhizhou;我国如今已经完全控制了周王室，其一切举动都必须先和我国商议之后才能进行，周天子名存实亡，不过这引起了很多华夏诸侯的私下不满;;;;;;;;;;;;;x;
+zhouweiwang;诸侯朝周正常化;;;;;;;;;;;;;x;
+desc_zhouweiwang;自从诸侯朝周正常化以来，周王室的地位不断提高，其威望也在不断恢复;;;;;;;;;;;;;x;
+landfriede_emperor;恢复朝觐制度;;;;;;;;;;;;;x;
+desc_landfriede_emperor;ABC;;;;;;;;;;;;;x;
+erbkaisertum_emperor;恢复定期盟会;;;;;;;;;;;;;x;
+desc_erbkaisertum_emperor;周天子要求恢复旧有的盟会制度，加强诸侯国之间的联系，同时也是加强周王室对于天下的掌控;;;;;;;;;;;;;x;
+erbkaisertum_member;恢复定期盟会;;;;;;;;;;;;;x;
+desc_erbkaisertum_member;周天子要求恢复旧有的盟会制度，加强诸侯国之间的联系，同时也是加强周王室对于天下的掌控;;;;;;;;;;;;;x;
+zhoushuishou;恢复周王赋税;;;;;;;;;;;;;x;
+desc_zhoushuishou;普天之下，莫非王土；率土之滨，莫非王臣；如今周王已经恢复了对于天下的权力，地方的赋税的一部分必须向周王室直接缴纳，地方诸侯的部分则相应减少;;;;;;;;;;;;;x;
+privilegia_de_non_appelando_member;恢复周王赋税;;;;;;;;;;;;;x;
+desc_privilegia_de_non_appelando_member;普天之下，莫非王土；率土之滨，莫非王臣；如今周王已经恢复了对于天下的权力，地方的赋税的一部分必须向周王室直接缴纳，地方诸侯的部分则相应减少;;;;;;;;;;;;;x;
+privilegia_de_non_appelando_emperor;率领诸侯入朝;;;;;;;;;;;;;x;
+desc_privilegia_de_non_appelando_emperor;我国作为霸主，多年以来致力于恢复周王的权威，如今诸侯拜服，四夷安定，所有的诸侯将亲自来到洛邑，朝见周天子;;;;;;;;;;;;;x;
+daizhou_lv1_title;稳固霸主地位（代周）;;;;;;;;;;X
+daizhou_lv1_desc;加强霸主的地位，这将会造成以下影响:\n\n中原霸主\n 每年威望+1%;;;;;;;;;;X
+EVTNAME9057;霸主要求稳固地位;;;;;;;;;;X
+EVTDESC9057;周王室的权力衰微. 在这一年, 中原的霸主, $YEAR$, 诸侯的指挥者\n$EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，提出了一项关于强化霸主地位的提议，诸侯们歃血为盟，在河水边起誓。依照霸主的意愿, 霸主将成为长期有效的政治机制，代行周天子的权力，使华夏更加团结，以有利的抵抗外族的入侵。但私下里, 部分诸侯认为这样的行为违背了周礼，伤害了诸侯们的权益神意，在这次变革中我们应站在哪一边? ;;;;;;;;;;X
+EVTOPTA9057;顺从霸主的意思. ;;;;;;;;;;X
+EVTOPTB9057;坚决反对这种破坏周王地位的事情;;;;;;;;;;X
+EVTNAME9058;在 $PROVINCECAPITAL$ 的盟会宣布加强霸主地位;;;;;;;;;;X
+EVTDESC9058;在 $PROVINCECAPITAL$ 的盟会宣布加强霸主地位;;;;;;;;;;X
+EVTOPTA9058;时代在改变;;;;;;;;;;X
+daizhou_lv2_title;诸侯朝供常规化;;;;;;;;;;X
+daizhou_lv2_desc;诸侯朝供霸主成为常规，每年定期进行 这会造成以下影响:\n\n华夏系统成员\n  税收-5%\n\n中原霸主\n  税收+10% ;;;;;;;;;;X
+EVTNAME9059;霸主要求朝供常规化;;;;;;;;;;X
+EVTDESC9059;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，在盟会上提出了一项关于诸侯朝贡常规化的决议。霸主, 强调他对于周王室的忠诚, 但同时也提到了面临蛮夷入侵的巨大压力，因此他说霸主必须强化诸侯对其臣服的制度。我们在这个时代变革的抉择中应该站在哪一边? ;;;;;;;;;;X
+EVTOPTA9059;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB9059;这并不符合周朝的旧制度. ;;;;;;;;;;X
+EVTNAME9060;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9060;在 $PROVINCECAPITAL$ 的盟会宣布诸侯朝供常规化.  ;;;;;;;;;;X
+EVTOPTA9060;时代的变革;;;;;;;;;;X
+daizhou_lv3_title;禁止诸侯勾结;;;;;;;;;;X
+daizhou_lv3_desc;严令禁止华夏诸侯私下交往，必须定期派出代表觐见霸主，汇报国家情况. 这会造成以下结果  :\n\n华夏系统成员\n- 使节数量 -1\n\n中原霸主\n  外交力 +2;;;;;;;;;;X
+EVTNAME9061;禁止诸侯勾结;;;;;;;;;;X
+EVTDESC9061;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们. 在盟会上重申禁止诸侯私下勾结，旨在加强霸主和各诸侯国之间的联系;;;;;;;;;;X
+EVTOPTA9061;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB9061;这是赤裸裸的压迫！ ;;;;;;;;;;X
+EVTNAME9062;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9062;在 $PROVINCECAPITAL$ 的盟会宣布禁止诸侯勾结.  ;;;;;;;;;;X
+EVTOPTA9062;时代在改变;;;;;;;;;;X
+daizhou_lv4_title;降低周王地位;;;;;;;;;;X
+daizhou_lv4_desc;降低周王室的权力，使其只具有象征性意义，不能够直接对诸侯发号施令，取而代之的是霸主的权. 这将产生以下效果:\n\n周天子\n- 不再获得朝贡\n\n霸主\n- 恶名  +4;;;;;;;;;;X
+EVTNAME9063;降低周王地位;;;;;;;;;;X
+EVTDESC9063;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，霸主宣布降低周王室的地位，周室已经失去天命，不再能够领导天下诸侯。我们应该何去何从？;;;;;;;;;;X
+EVTOPTA9063;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB9063;这是彻底的背叛！ ;;;;;;;;;;X
+EVTNAME9064;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9064;在 $PROVINCECAPITAL$ 的盟会宣布降低周王室地位.  ;;;;;;;;;;X
+EVTOPTA9064;时代在改变;;;;;;;;;;X
+daizhou_lv5_title;控制周王室;;;;;;;;;;X
+daizhou_lv5_desc;霸主直接派出军队进驻洛邑，周王不再具有自主权利，一切号令从此自霸主出. 则将会有以下影响:\n\n   周王室  成为霸主的附庸   \n\n中原霸主\n- 恶名每年 +0.15;;;;;;;;;;X
+EVTNAME9065;控制周王室;;;;;;;;;;X
+EVTDESC9065;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们. 宣布进驻洛邑，直接控制周王室，政令从此自霸主出;;;;;;;;;;X
+EVTOPTA9065;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB9065;这是以下犯上的行为！ ;;;;;;;;;;X
+EVTNAME9066;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9066;在 $PROVINCECAPITAL$ 的盟会宣布控制周王室.  ;;;;;;;;;;X
+EVTOPTA9066;时代在改变;;;;;;;;;;X
+daizhou_lv6_title;取周而代之;;;;;;;;;;X
+daizhou_lv6_desc;将周王降级为普通诸侯，霸主成为新的天下共主，所有诸侯必须加倍朝贡。 这将会导致下列影响:\n\n- 所有华夏系统的成员成为霸主的附庸国. \n\n中原霸主恶名debuff消除  \n  朝贡事件加倍发生;;;;;;;;;;X
+EVTNAME9069;取周而代之;;;;;;;;;;X
+EVTDESC9069;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，宣布正式去代周的地位，原来的周天子被降级为普通诸侯，继承周文王的香火;;;;;;;;;;X
+EVTOPTA9069;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB9069;绝对不能容忍这种行径！ ;;;;;;;;;;X
+EVTNAME9070;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9070;在 $PROVINCECAPITAL$ 的盟会\n宣布取周而代之;;;;;;;;;;X
+EVTOPTA9070;时代在改变;;;;;;;;;;X
+daizhou_lv7_title;禁止诸侯争斗;;;;;;;;;;X
+daizhou_lv7_desc;天下诸侯自此皆为臣民，严禁诸侯私相干涉，停止一切私斗行为。这将会导致以下结果:\n\n华夏系统成员\n  不再拥有干涉战争的战争理由  \n\n中原霸主\n  威望 +10;;;;;;;;;;X
+EVTNAME9067;禁止诸侯争斗;;;;;;;;;;X
+EVTDESC9067;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们. 宣布自此众诸侯皆为我臣民，禁止一切诸侯私斗行为;;;;;;;;;;X
+EVTOPTA9067;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB9067;这是干涉诸侯内政的行为！ ;;;;;;;;;;X
+EVTNAME9068;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9068;在 $PROVINCECAPITAL$ 的盟会宣布禁止诸侯私斗。;;;;;;;;;;X
+EVTOPTA9068;时代在改变;;;;;;;;;;X
+daizhou_lv8_title;一统天下;;;;;;;;;;X
+daizhou_lv8_desc;统一分裂的周王室各诸侯国, 将重新建立一个统一的国家. 这回造成以下影响:\n\n  所有华夏诸侯国成为$EMPERORNAME$统治下的附庸国，恢复到周朝的旧制度上。;;;;;;;;;;X
+EVTNAME9071;恢复旧制度;;;;;;;;;;X
+EVTDESC9071;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，宣布正式成为天下共主，恢复周朝的诸侯附庸制度;;;;;;;;;;X
+EVTOPTA9071;新的王朝! ;;;;;;;;;;X
+EVTOPTB9071;起兵反抗! ;;;;;;;;;;X
+EVTNAME9072;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC9072;在 $PROVINCECAPITAL$ 的盟会宣布天下重新一统。;;;;;;;;;;X
+EVTOPTA9072;时代在改变;;;;;;;;;;X
+EVTNAME9075;霸主要求统一;;;;;;;;;;X
+EVTDESC9075;霸主要求诸侯成为其附庸 ;;;;;;;;;;X
+EVTOPTA9075;要求诸侯效忠霸主;;;;;;;;;;X
+EVTNAME9076;霸主要求统一）;;;;;;;;;;X
+EVTDESC9076;霸主要求我国成为其附庸.;;;;;;;;;;X
+EVTOPTA9076;向霸主效忠;;;;;;;;;;X
+EVTOPTB9076;起兵反抗！;;;;;;;;;;X
+fuzhou_lv1_title;稳固霸主地位（复周）;;;;;;;;;;X
+fuzhou_lv1_desc;加强霸主的地位，这将会造成以下影响:\n\n中原霸主\n 每年威望+1%;;;;;;;;;;X
+EVTNAME1920;稳固霸主地位;;;;;;;;;;X
+EVTDESC1920;周王室的旗帜在风中飘动. 在这一年, 我们的领主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$ \n以霸主的身份召集了华夏各地的诸侯们，提出了一项关于强化霸主地位的提议，诸侯们歃血为盟，在河水边起誓。依照霸主的意愿, 霸主将成为长期有效的政治机制，代行周天子的权力，使华夏更加团结，以有利的抵抗外族的入侵。但私下里, 部分诸侯认为这样的行为违背了周礼，伤害了诸侯们的权益神意，在这次变革中我们应站在哪一边? ;;;;;;;;;;X
+EVTOPTA1920;顺从霸主的命令. ;;;;;;;;;;X
+EVTOPTB1920;我们必须保护我们的封建权利. ;;;;;;;;;;X
+EVTNAME1921;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1921;在 $PROVINCECAPITAL$ 的盟会宣布加强霸主地位;;;;;;;;;;X
+EVTOPTA1921;时代在改变;;;;;;;;;;X
+fuzhou_lv2_title;诸侯朝周正常化;;;;;;;;;;X
+fuzhou_lv2_desc;恢复过去的朝觐制度，各诸侯国必须定期向周王室派出代表，宣告国内情况。这会造成以下影响:\n\n周天子\n  威望每年 +1%;;;;;;;;;;X
+EVTNAME1922;关于复周Lv2的投票;;;;;;;;;;X
+EVTDESC1922;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们。霸主, 强调他对于周王室的忠诚, 因此他提出中原各国应当回复朝觐制度，重新建立以周王室为中心的联盟。我们该如何抉择？ ;;;;;;;;;;X
+EVTOPTA1922;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB1922;天下已改，庶难从命 ;;;;;;;;;;X
+EVTNAME1923;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1923;在 $PROVINCECAPITAL$ 的盟会宣布诸侯朝周正常化;;;;;;;;;;X
+EVTOPTA1923;时代在改变;;;;;;;;;;X
+fuzhou_lv3_title;恢复朝觐制度;;;;;;;;;;X
+fuzhou_lv3_desc;恢复过去的朝觐制度，各诸侯国君主必须亲自觐见周天子。这会造成以下结果  :\n\n中原霸主\n  使节数量 +1  ;;;;;;;;;;X
+EVTNAME1924;恢复朝觐制度;;;;;;;;;;X
+EVTDESC1924;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，要求诸侯国君主亲自前往觐见周天子;;;;;;;;;;X
+EVTOPTA1924;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB1924;这没有必要 ;;;;;;;;;;X
+EVTNAME1925;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1925;在 $PROVINCECAPITAL$ 的盟会宣布回复朝觐制度;;;;;;;;;;X
+EVTOPTA1925;时代在改变;;;;;;;;;;X
+fuzhou_lv4_title;恢复定期盟会;;;;;;;;;;X
+fuzhou_lv4_desc;通过建立定期的盟会制度加强诸侯国之间的紧密联系，以确立周天子的共主地位. 这将产生以下效果:\n\n华夏系统成员\n  外交力  -1  \n\n霸主\n  正统性每年  +2%\n  外交力 +2 ;;;;;;;;;;X
+EVTNAME1926;恢复定期盟会;;;;;;;;;;X
+EVTDESC1926;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，要求实现定期盟会;;;;;;;;;;X
+EVTOPTA1926;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB1926;这没有意义 ;;;;;;;;;;X
+EVTNAME1927;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1927;在 $PROVINCECAPITAL$ 的盟会宣布恢复定期盟会 ;;;;;;;;;;X
+EVTOPTA1927;时代在改变;;;;;;;;;;X
+fuzhou_lv5_title;恢复周王赋税;;;;;;;;;;X
+fuzhou_lv5_desc;普天之下莫非王土，率土之滨，莫非王臣。各诸侯国应当向周天子缴纳职责所在的税款。这将会有以下影响:\n\n华夏系统成员\n  税收  -5%\n\n周天子\n-  税收 +30%;;;;;;;;;;X
+EVTNAME1928;恢复周王赋税;;;;;;;;;;X
+EVTDESC1928;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，要求恢复周王朝的税收制度;;;;;;;;;;X
+EVTOPTA1928;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB1928;这是强征暴敛 ;;;;;;;;;;X
+EVTNAME1929;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1929;在 $PROVINCECAPITAL$ 的盟会宣布恢复周朝税制;;;;;;;;;;X
+EVTOPTA1929;时代在改变;;;;;;;;;;X
+fuzhou_lv7_title;成为天子方牧;;;;;;;;;;X
+fuzhou_lv7_desc;霸主成为天子任命的方牧，管理诸侯，督促他们进献贡赋. 这将会导致下列影响:\n\n  周天子获得的诸侯贡赋加倍;;;;;;;;;;X
+EVTNAME1932;成为天子方牧;;;;;;;;;;X
+EVTDESC1932;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，周天子提议任命他为方牧;;;;;;;;;;X
+EVTOPTA1932;顺从天子的命令;;;;;;;;;;X
+EVTOPTB1932;坚决反对 ;;;;;;;;;;X
+EVTNAME1933;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1933;在 $PROVINCECAPITAL$ 的盟会后成为天子方牧;;;;;;;;;;X
+EVTOPTA1933;时代在改变;;;;;;;;;;X
+fuzhou_lv6_title;率领诸侯入朝;;;;;;;;;;X
+fuzhou_lv6_desc;把主帅令诸侯入朝，集体拜见周天子. 这将会导致以下结果:\n\n  中原霸主\n  恶名每年  -0.2;;;;;;;;;;X
+EVTNAME1930;率领诸侯入朝;;;;;;;;;;X
+EVTDESC1930;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，提议诸侯集体入朝参见周天子;;;;;;;;;;X
+EVTOPTA1930;顺从霸主的命令;;;;;;;;;;X
+EVTOPTB1930;寡人身体不适 ;;;;;;;;;;X
+EVTNAME1931;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1931;在 $PROVINCECAPITAL$ 的盟会宣布霸主即将率领诸侯入朝 ;;;;;;;;;;X
+EVTOPTA1931;时代在改变;;;;;;;;;;X
+fuzhou_lv8_title;恢复周王天下;;;;;;;;;;X
+fuzhou_lv8_desc;统一分裂的周王室各诸侯国, 重新建立一个统一的国家. 这会造成以下影响:\n\n  除霸主外，所有诸侯成为周天子附庸  \n  霸主威望 +10% ;;;;;;;;;;X
+EVTNAME1934;恢复周王天下;;;;;;;;;;X
+EVTDESC1934;周王室的权力衰微，在这一年，中原的霸主, $YEAR$, 诸侯的指挥者\n $EMPERORNAME$, \n以霸主的身份召集了华夏各地的诸侯们，宣布恢复周王的天下;;;;;;;;;;X
+EVTOPTA1934;大周重建！;;;;;;;;;;X
+EVTOPTB1934;起兵造反！;;;;;;;;;;X
+EVTNAME1935;在 $PROVINCECAPITAL$ 的盟会;;;;;;;;;;X
+EVTDESC1935;在 $PROVINCECAPITAL$ 的盟会宣布恢复周王天下;;;;;;;;;;X
+EVTOPTA1935;时代在改变;;;;;;;;;;X
+EVTNAME1936;恢复周王天下;;;;;;;;;;X
+EVTDESC1936;周天子开始要求诸侯成为附庸. ;;;;;;;;;;X
+EVTOPTA1936;要求向周宣誓效忠;;;;;;;;;;X
+EVTNAME1937;周天子要求附庸;;;;;;;;;;X
+EVTDESC1937;周天子即将取消了我们的特权.;;;;;;;;;;X
+EVTOPTA1937;向周天子效忠;;;;;;;;;;X
+EVTOPTB1937;保持独立;;;;;;;;;;X   
+HRE_LEAVE_ALL_PROVINCES;所有省份都归属当前所有者并从华夏系统移除。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_RELEASE;$COUNTRY$ 将成立并拥有下列省份: $LIST$。\n;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_EMPEROR;周王室霸主 ($COUNTRY$) 将获得下列省份的所有权: $LIST$。\n;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_PROVINCES;其他所有省份都归属当前所有者并从周王室移除。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_RELEASE_SHORT;$COUNTRY$ 将成立并拥有 $COUNT$ 省份。\n;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_EMPEROR_SHORT;周王室霸主 ($COUNTRY$) 将获得 $COUNT$ 省份的所有权。\n;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_NOT_PART_OF_EMPIRE;你不是周王室成员。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_HAS_OVERLORD;当你是附庸国或接受被他国控制时不能脱离。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+LEAVE_HRE_CONFIRM;脱离华夏系统;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE_NOT_AS_EMPEROR;周王室霸主不能脱离华夏系统！;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+HRE_LEAVE;脱离华夏系统;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+RELEASE_OUR_VASSAL;承认$THEM$独立地位。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+PEACE_EFFECT;与$THEM$达成无条件和平。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+REVOKE_REFORM_DESC;霸业中衰。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+CB_ALLOWED_REVREF;撤销改革: ;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+REVOKE_REFORM_TOOLTIP;$COUNTRY$ 使得霸业中衰。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+DEMAND_REVOKE_REFORM;霸业中衰;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+OFFER_REVOKE_REFORM;霸业中衰;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTNAME766;霸业中衰;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTDESC_REFORM_REVOKED;霸业中衰，我们想尝试再次称霸前必须积蓄力量。;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTOPT_REVOKE;可恶！;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTNAME1903;霸业中衰;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTNAME1915;新的霸业;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTDESC1915;新的霸业开始了，旧日霸主的功业化为过眼云烟;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTOPTA1915;霸业更替;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTNAME9090;割让$FROM$;;;;;;;;;;X,,,,,,,,,,,,,,,,,
+EVTDESC9090;$FROMCOUNTRY$决定交还非法占有的省份$FROM$。 他们的选择很明智。\n\n但为了避免非法占有周王室成员省份带来的后果,将其尽快转交给合法所有者是一个明智的选择。;;;;;;;;;;X,,,,,,,,,,,,,,,,
+EVTOPTA9090;它是我们的！;;;;;;;;;;X,,,,,,,,,,,,,,,,,
+EVTOPTB9090;交给合法所有者。;;;;;;;;;;X,,,,,,,,,,,,,,,,,
+EVTNAME9091;$FROM$;;;;;;;;;;X,,,,,,,,,,,,,,,,,
+EVTDESC9091;$FROMCOUNTRY$拒绝我们关于交还非法占有省份$FROM$的要求。;;;;;;;;;;X,,,,,,,,,,,,,,,,,
+EVTOPTA9091;他们的选择很不明智。;;;;;;;;;;X,,,,,,,,,,,,,,,,,
+EVTNAME1904;霸主离世;;;;;;;;;;;;;x,,,,,
+EVTDESC1904;霸业不堕，中原各国仍然推举$COUNTRY$为霸主，朝觐不断，供奉不绝。;;;;;;;;;;;;;x,,,,,
+EVTOPTA1904;天佑$COUNTRY$国;;;;;;;;;;;;;x,,,,,
+EVTNAME1905;$FROMCOUNTRY$复国了;;;;;;;;;;;;;x,,,,,
+EVTDESC1905;在经历了灭国的厄运后，$FROMCOUNTRY$国祚不终，最终复国。这是$FROMCOUNTRY$国历代先祖庇佑的结果。;;;;;;;;;;;;;x,,
+EVTOPTA1905;重立太庙！;;;;;;;;;;;;;x,,,,,
+EVTNAME1906;一名异端统治者;;;;;;;;;;;;;x,,,,,
+EVTDESC1906;$FROMCOUNTRY$, 华夏系统的成员,\n已经改信了异端信仰!;;;;;;;;;;;;;x,,,
+EVTOPTA1906;这是无法忍受的!;;;;;;;;;;;;;x,,,,,
+EVTNAME1907;一个迷途的羔羊归来了;;;;;;;;;;;;x,,,,,
+EVTDESC1907;$FROMCOUNTRY$, 华夏系统的成员,\n已经皈依了正确的信仰。;;;;;;;;;;;;;x,,,
+EVTOPTA1907;太好了!;;;;;;;;;;;;;x,,,,,
+EVTNAME1908;维护中原;;;;;;;;;;;;;x,,,,,
+EVTDESC1908;我国已经战胜了妄图侵犯中原的$FROMCOUNTRY$，中原的秩序仍然在我国的控制当中。;;;;;;;;;;;;;x,,,,,
+EVTOPTA1908;这是霸主的责任所系;;;;;;;;;;;;;x,,,,,
+EVTNAME1909;一位君主退位;;;;;;;;;;;;;x,,,,,
+EVTDESC1909;$FROMCOUNTRY$, 华夏系统的成员,已经被蛮夷势力吞并!;;;;;;;;;;;;;x,,,
+EVTOPTA1909;唉!;;;;;;;;;;;;;x,,,,,
+EVTNAME1910;蛮夷势力退却了;;;;;;;;;;;;;x,,,,,
+EVTDESC1910;$FROMCOUNTRY$,华夏系统的成员,已经从外国的势力范围得到解放。;;;;;;;;;;;;;x,,,
+EVTOPTA1910;太好了;;;;;;;;;;;;;x,,,,,
+EVTNAME1911;一名君主复位了;;;;;;;;;;;;;x,,,,,
+EVTDESC1911;$FROMCOUNTRY$,华夏系统的成员,已经从外国的附庸中得到解放!;;;;;;;;;;;;;x,,,
+EVTOPTA1911;太好了!;;;;;;;;;;;;;x,,,,,
+EVTNAME1912;保卫周王室!;;;;;;;;;;;;;x,,,,,
+EVTDESC1912;霸主已经赶往保护$FROMCOUNTRY$抵抗外国侵略!;;;;;;;;;;;;;x,,,,,
+EVTOPTA1912;应该的!;;;;;;;;;;;;;x,,,,,
+EVTNAME1913;可耻的霸主;;;;;;;;;;;;;x,,,,,
+EVTDESC1913;霸主未能保卫$FROMCOUNTRY$抵抗外国侵略。;;;;;;;;;;;;;x,,,,,
+EVTOPTA1913;可耻?这叫有远见!;;;;;;;;;;;;;x,,,,,
+EVTNAME1914;夺回周王室领地;;;;;;;;;;;;;x,,,,,
+EVTDESC1914;$PROVINCENAME$已经脱离了$FROMCOUNTRY$的魔掌\n并回到了华夏系统。我们对周王室的奉献得到了认可;;;;;;;;;;;;;x,,,,,
+EVTOPTA1914;计划之中;;;;;;;;;;;;;x,,,,,
+occupied_imperial;非法占领帝国领地;;;;;;;;;;X
+big_hre;帝国的完整性;;;;;;;;;;X
+desc_big_hre;只要帝国里存在至少25个国家,\n我们就可以从帝国机构中受益.;;;;;;;;;;X
+HREVOTE_NOT_ELIGIBLE_FOR_EMPIRE;没有资格成为霸主;;;;;;;;;;X
+HREVOTE_ENEMY;我们是敌人;;;;;;;;;;X
+HREVOTE_HERETIC;异端不能被支持;;;;;;;;;;X
+HREVOTE_RELATION;关系: $VAL$\n;;;;;;;;;;X
+HREVOTE_OVERLORD;是附庸或联统国: +$VAL$\n;;;;;;;;;;X
+HREVOTE_BIG_IN_HRE;大国: +$VAL$\n;;;;;;;;;;X
+HREVOTE_WE_TOO_SMALL;国土太小: $VAL$\n;;;;;;;;;;X
+HREVOTE_NON_MEMBER;不是成员: $VAL$\n;;;;;;;;;;X
+HREVOTE_IMPERIAL_AUTHORITY;霸主权威: +$VAL$\n;;;;;;;;;;X
+HREVOTE_SAME_CULTURE;同文化组: +$VAL$\n;;;;;;;;;;X
+HREVOTE_ALLIED;军事联盟: +$VAL$\n;;;;;;;;;;X
+HREVOTE_TRUST;信任度: $VAL$\n;;;;;;;;;;X
+HREVOTE_LEGITIMACY;正统性: $VAL$\n;;;;;;;;;;X
+HREVOTE_ROYALMARRIAGE;王室联姻: +$VAL$\n;;;;;;;;;;X
+HREVOTE_HAS_CLAIMS;领土纠纷: $VAL$\n;;;;;;;;;;X
+HREVOTE_BADBOY;恶名: $VAL$\n;;;;;;;;;;X
+HREVOTE_DIPLO_SKILL;外交技能: $VAL$\n;;;;;;;;;;X
+HREVOTE_PRESTIGE;威望: $VAL$\n;;;;;;;;;;X
+MISSION_INTEREST_IN_EMP;他们自己希望成为霸主.;;;;;;;;;;X
+HRE_SOMEONE_ELSE;另外一个小霸支持他们，所以他们支持自己.;;;;;;;;;;X
+HRE_MISSION_TO_VOTE;因任务目标而投票.;;;;;;;;;;X
+HRE_THEY_VOTE_CAUSE;当决定投票对象时，他们对我们的支持度是$VAL$;;;;;;;;;;X
+HRE_PREF_VOTE_CAUSE;他们支持$NAME$，支持度为$VAL$;;;;;;;;;;X
+HRE_EMP_VOTE_CAUSE;$NAME$的支持度是$VAL$;;;;;;;;;;X
+HRE_RIVAL_VOTE_CAUSE;我们的竞争对手是$NAME$，其支持度为$VAL$;;;;;;;;;;X
+LOW_AUTHORITY;你需要有一些霸主权威来强迫宗教一致;;;;;;;;;;X
+member_in_hre;中原的成员;;;;;;;;;;X
+HRE_IS_LESS_THAN;中原的成员少于$SIZE$\n;;;;;;;;;;X
+HRE_IS_AT_LEAST;中原的成员至少$SIZE$\n;;;;;;;;;;X
+HRE_CANT_HEREDITARY;你不能取消世袭后的帝国.;;;;;;;;;;X
+HRE_INFLUENCE;中原威望;;;;;;;;;;X
+IMP_INF_LESS_THAN;中原威望低于;;;;;;;;;;X
+IMP_INF_AT_LEAST;中原威望最低;;;;;;;;;;X
+ADD_IMPERIAL_INFLUENCE;中原威望;;;;;;;;;;X
+TRADE_EMBARGOING;贸易禁运 ;;;;;;;;;;X
+NOT_TRADE_EMBARGOING;没有贸易禁运 ;;;;;;;;;;X
+IN_SPHERE; $COUNTRY$ 势力范围;;;;;;;;;;X
+IN_RANGE_OF_SPHERE;$TARGET$ 在  $COUNTRY$ 的势力范围半径内;;;;;;;;;;X
+NOT_IN_RANGE_OF_SPHERE;$TARGET$ 不在  $COUNTRY$ 的势力范围半径内;;;;;;;;;;X
+MAPMODE_SPH;势力范围地图;;;;;;;;;;X
+MAPMODE_REB;叛乱地图;;;;;;;;;;X
+MAPMODE_COL;新垦区图;;;;;;;;;;X
+IMPERIALRELATIONSTITLE;霸主的恩惠;;;;;;;;;;X
+IMPERIALRELATIONSNEWDESC;你有兴趣赐与 $COUNTRY$ 霸主的恩惠吗? \n这将稍稍消耗你$COST$的霸主权威, \n但能大大改善我们与该国的关系. ;;;;;;;;;;X
+IMPERIALRELATIONSDESC;这将稍稍消耗你$COST$的霸主权威, \n但能大大改善我们与该国的关系. ;;;;;;;;;;X
+NUMBER_OF_OFFICIALS;吏员;;;;;;;;;;X
+OFFICIALS;$DIRECTION$ $VALUE$ 个吏员. \n;;;;;;;;;;X
+YEARLY_OFFICIALS;每年可获得的专员;;;;;;;;;;X
+NOOFFICIALS;没有吏员可供差遣. ;;;;;;;;;;X
+NOAUTHORITY;你的霸主权威不足. ;;;;;;;;;;X
+WEIMPREL_SETUP;我国作为中原霸主与一位中原的王公改善关系;;;;;;;;;;X
+WEIMPREL_HEADER;$MESSENGER$;;;;;;;;;;X
+WEIMPREL_1;帝国关系;;;;;;;;;;X
+WEIMPREL_2;$MONARCHTITLE$, 我们派往;;;;;;;;;;X
+WEIMPREL_3;$RECIPIENT$;;;;;;;;;;X
+WEIMPREL_4;的吏员使我们的关系 $INCDEC$ 了;;;;;;;;;;X
+WEIMPREL_5;$CHANGE$;;;;;;;;;;X
+WEIMPREL_6;*;;;;;;;;;;X
+WEIMPREL_LOG;我们与 $RECIPIENT$ 的关系得以改善. ;;;;;;;;;;X
+WEIMPREL_BTN1;知道了;;;;;;;;;;X
+WEIMPREL_BTN2;知道了;;;;;;;;;;X
+WEIMPREL_BTN3;前往;;;;;;;;;;X
+WEIMPREL_MAP;*;;;;;;;;;;X
+IMPRELTOUS_SETUP;中原霸主希望改善与我们的关系;;;;;;;;;;X
+IMPRELTOUS_HEADER;来自;;;;;;;;;;X
+IMPRELTOUS_1;$ACTOR$ 的使者;;;;;;;;;;X
+IMPRELTOUS_2;霸主派遣一位;;;;;;;;;;X
+IMPRELTOUS_3;帝国专员;;;;;;;;;;X
+IMPRELTOUS_4;来到, 我们的双边关系 $INCDEC$ 了;;;;;;;;;;X
+IMPRELTOUS_5;$CHANGE$;;;;;;;;;;X
+IMPRELTOUS_6;*;;;;;;;;;;X
+IMPRELTOUS_LOG;我们接待了一位来自 $ACTOR$ 的帝国专员. ;;;;;;;;;;X
+IMPRELTOUS_BTN1;知道了;;;;;;;;;;X
+IMPRELTOUS_BTN2;知道了;;;;;;;;;;X
+IMPRELTOUS_BTN3;前往;;;;;;;;;;X
+IMPRELTOUS_MAP;*;;;;;;;;;;X
+IMPRELTOOTHER_SETUP;为中原与一位中原的王公改善关系;;;;;;;;;;X
+IMPRELTOOTHER_HEADER;来自;;;;;;;;;;X
+IMPRELTOOTHER_1;$ACTOR$ 的使者;;;;;;;;;;X
+IMPRELTOOTHER_2;霸主派遣一位中原专员前往;;;;;;;;;;X
+IMPRELTOOTHER_3;$RECIPIENT$;;;;;;;;;;X
+IMPRELTOOTHER_4;他们之间的关系 $INCDEC$ 了;;;;;;;;;;X
+IMPRELTOOTHER_5;$CHANGE$;;;;;;;;;;X
+IMPRELTOOTHER_6;*;;;;;;;;;;X
+IMPRELTOOTHER_LOG;$ACTOR$ 作为中原霸主与 $RECIPIENT$ 改善关系. ;;;;;;;;;;X
+IMPRELTOOTHER_BTN1;知道了;;;;;;;;;;X
+IMPRELTOOTHER_BTN2;知道了;;;;;;;;;;X
+IMPRELTOOTHER_BTN3;前往;;;;;;;;;;X
+IMPRELTOOTHER_MAP;*;;;;;;;;;;X
+RELIGIOUSUNITYDESC;要求他们改宗独一的真信. \n如果他们拒绝, 我们将损失10点声望. ;;;;;;;;;;X
+RELIGIOUSUNITYNEWDESC;一家人应常一起生活一起祈祷. \n你有兴趣要求他们改宗那独一的真信吗? ;;;;;;;;;;X
+RELIGIOUSUNITYTITLE;推行同奉一宗;;;;;;;;;;X
+RELIGIOUSUNITYREQDESC; $COUNTRY$ \n作为中原霸主要求我们改宗 $RELIGION$ . \n拒绝将令他们有对我们宣战的口实. ;;;;;;;;;;X
+RELUNITYWITHUS_SETUP;一位王公接受我们同奉一宗的要求;;;;;;;;;;X
+RELUNITYWITHUS_HEADER;来自;;;;;;;;;;X
+RELUNITYWITHUS_1;$RECIPIENT$ 的使者;;;;;;;;;;X
+RELUNITYWITHUS_2;$MONARCHTITLE$, 我们所冀望的;;;;;;;;;;X
+RELUNITYWITHUS_3;同奉一宗;;;;;;;;;;X
+RELUNITYWITHUS_4;已经在;;;;;;;;;;X
+RELUNITYWITHUS_5;$RECIPIENT$;;;;;;;;;;X
+RELUNITYWITHUS_6;得到实行. 一个中原, 一种信仰! ;;;;;;;;;;X
+RELUNITYWITHUS_LOG;$RECIPIENT$ 改宗 $ACTORRELIGION$. ;;;;;;;;;;X
+RELUNITYWITHUS_BTN1;知道了;;;;;;;;;;X
+RELUNITYWITHUS_BTN2;知道了;;;;;;;;;;X
+RELUNITYWITHUS_BTN3;前往;;;;;;;;;;X
+RELUNITYWITHUS_MAP;*;;;;;;;;;;X
+WEACCRELUNITY_SETUP;我们同意同奉一宗;;;;;;;;;;X
+WEACCRELUNITY_HEADER;$MESSENGER$;;;;;;;;;;X
+WEACCRELUNITY_1;同奉一宗! ;;;;;;;;;;X
+WEACCRELUNITY_2;$MONARCHTITLE$, 我们已答应来自霸主;;;;;;;;;;X
+WEACCRELUNITY_3;$ACTOR$;;;;;;;;;;X
+WEACCRELUNITY_4;的要求. 知会教士我们现在已改宗 $ACTORRELIGION$ . ;;;;;;;;;;X
+WEACCRELUNITY_5;*;;;;;;;;;;X
+WEACCRELUNITY_6;*;;;;;;;;;;X
+WEACCRELUNITY_LOG;我们同意与 $ACTOR$ 同奉一宗. ;;;;;;;;;;X
+WEACCRELUNITY_BTN1;知道了;;;;;;;;;;X
+WEACCRELUNITY_BTN2;知道了;;;;;;;;;;X
+WEACCRELUNITY_BTN3;前往;;;;;;;;;;X
+WEACCRELUNITY_MAP;*;;;;;;;;;;X
+RELUNITYWITHOTHER_SETUP;一位中原的王公同意与中原同奉一宗;;;;;;;;;;X
+RELUNITYWITHOTHER_HEADER;来自;;;;;;;;;;X
+RELUNITYWITHOTHER_1;$RECIPIENT$ 的使者;;;;;;;;;;X
+RELUNITYWITHOTHER_2;$MONARCHTITLE$, 我们得到来自;;;;;;;;;;X
+RELUNITYWITHOTHER_3;$RECIPIENT$;;;;;;;;;;X
+RELUNITYWITHOTHER_4;的通知. 他们已同意与;;;;;;;;;;X
+RELUNITYWITHOTHER_5;$ACTOR$;;;;;;;;;;X
+RELUNITYWITHOTHER_6;同奉一宗. 他们已改宗 $ACTORRELIGION$ ;;;;;;;;;;X
+RELUNITYWITHOTHER_LOG;$RECIPIENT$ 同意与 $ACTOR$ 同奉一宗. ;;;;;;;;;;X
+RELUNITYWITHOTHER_BTN1;知道了;;;;;;;;;;X
+RELUNITYWITHOTHER_BTN2;知道了;;;;;;;;;;X
+RELUNITYWITHOTHER_BTN3;前往;;;;;;;;;;X
+RELUNITYWITHOTHER_MAP;*;;;;;;;;;;X
+DECRELUNITYWITHUS_SETUP;一位王公拒绝我们同奉一宗的要求;;;;;;;;;;X
+DECRELUNITYWITHUS_HEADER;来自;;;;;;;;;;X
+DECRELUNITYWITHUS_1;$RECIPIENT$ 的使者;;;;;;;;;;X
+DECRELUNITYWITHUS_2;$MONARCHTITLE$, 他们鲁莽地;;;;;;;;;;X
+DECRELUNITYWITHUS_3;拒绝同奉一宗;;;;;;;;;;X
+DECRELUNITYWITHUS_4;的合理正当要求. ;;;;;;;;;;X
+DECRELUNITYWITHUS_5;*;;;;;;;;;;X
+DECRELUNITYWITHUS_6;*;;;;;;;;;;X
+DECRELUNITYWITHUS_LOG;$RECIPIENT$ 拒绝我们同奉一宗的要求. ;;;;;;;;;;X
+DECRELUNITYWITHUS_BTN1;知道了;;;;;;;;;;X
+DECRELUNITYWITHUS_BTN2;知道了;;;;;;;;;;X
+DECRELUNITYWITHUS_BTN3;前往;;;;;;;;;;X
+DECRELUNITYWITHUS_MAP;*;;;;;;;;;;X
+DECRELUNITYWITHOTHER_SETUP;一位中原的王公拒绝与中原同奉一宗;;;;;;;;;;X
+DECRELUNITYWITHOTHER_HEADER;来自;;;;;;;;;;X
+DECRELUNITYWITHOTHER_1;$RECIPIENT$ 的使者;;;;;;;;;;X
+DECRELUNITYWITHOTHER_2;$MONARCHTITLE$, 他们;;;;;;;;;;X
+DECRELUNITYWITHOTHER_3;拒绝同奉一宗;;;;;;;;;;X
+DECRELUNITYWITHOTHER_4;的要求;;;;;;;;;;X
+DECRELUNITYWITHOTHER_5;$ACTOR$ 很愤怒;;;;;;;;;;X
+DECRELUNITYWITHOTHER_6;并表示后果很严重...;;;;;;;;;;X
+DECRELUNITYWITHOTHER_LOG;$RECIPIENT$ 拒绝与 $ACTOR$ 同奉一宗. ;;;;;;;;;;X
+DECRELUNITYWITHOTHER_BTN1;知道了;;;;;;;;;;X
+DECRELUNITYWITHOTHER_BTN2;知道了;;;;;;;;;;X
+DECRELUNITYWITHOTHER_BTN3;前往;;;;;;;;;;X
+HRE_EMPEROR;$NAME$ 的统治者是中原霸主.;;;;;;;;;;X
+HRE_ELECTOR;$NAME$ 的统治者是中原小霸. \n如果现任霸主去世, 该国将推举 $VOTE$ 继任霸主. ;;;;;;;;;;X
+HRE_MEMBER;$NAME$ 是中原成员;;;;;;;;;;X
+HRE_RELATION;我们与 $NAME$ 的关系是 $RELATION$. ;;;;;;;;;;X
+HRE_MEMBERS;中原成员;;;;;;;;;;X
+HRE_MEMBER_HAS_NOT_MODIFIER;中原成员没有此修正 ;;;;;;;;;;X
+HRE_MEMBER_HAS_MODIFIER;中原成员有此修正 ;;;;;;;;;;X
+HRE_EMPEROR_HAS_NOT_MODIFIER;中原霸主没有此修正 ;;;;;;;;;;X
+HRE_EMPEROR_HAS_MODIFIER;中原霸主有此修正 ;;;;;;;;;;X
+EVTNAME1916;霸业更迭;;;;;;;;;;X
+EVTDESC1916;我国失去霸业，前代君主的所有努力化为乌有，寡人愧对列祖列宗;;;;;;;;;;X
+EVTOPTA1916;天命不再;;;;;;;;;;X
+EVTNAME9493;将$FROM$加入华夏吗? ;;;;;;;;;;X
+EVTDESC9493;$FROMCOUNTRY$希望将$FROM$加入周王朝体系, 身为霸主的你同意吗? ;;;;;;;;;;X
+EVTOPTA9493;华夏的省份越多越好;;;;;;;;;;X
+EVTOPTB9493;蛮夷不同华夏;;;;;;;;;;X
+EVTNAME9494; $PROVINCENAME$ 加入了帝国;;;;;;;;;;X
+EVTDESC9494;霸主$EMPERORNAME$同意了我们的请求, 将 $PROVINCENAME$ 加入了中原;;;;;;;;;;X
+EVTOPTA9494;太好了! ;;;;;;;;;;X
+EVTNAME9495; $PROVINCENAME$ 被拒绝了! ;;;;;;;;;;X
+EVTDESC9495;殿下, 霸主$EMPERORNAME$拒绝了我们将 $PROVINCENAME$ 加入中原的请求;;;;;;;;;;X
+EVTOPTA9495;那个无赖! ;;;;;;;;;;X
+EVTNAME9496;$FROM$已经不属于中原;;;;;;;;;;X
+EVTDESC9496;霸主! $FROMCOUNTRY$ 已经宣称\n $FROM$ 不再是中原的一部分.;;;;;;;;;;X
+EVTOPTA9496;这意味着战争!;;;;;;;;;;X
+EVTNAME879;成为小霸;;;;;;;;;;X
+EVTDESC879;在卓越的统治者 $MONARCH$ 统治期间，我国国力强盛，中原霸主已经决定给与我们一方诸侯之长的荣誉! \n我们要接受吗? ;;;;;;;;;;X
+EVTOPTA879;接受;;;;;;;;;;X
+EVTOPTB879;拒绝;;;;;;;;;;X
+EVTNAME880;失去小霸资格;;;;;;;;;;X
+EVTDESC880;在统治者 $MONARCH$ 统治期间，我国国力衰微，已无力负担一方，因此失去了中原主要国家的资格 ;;;;;;;;;;X
+EVTOPTA880;无奈的结局;;;;;;;;;;X
+EVTOPTB880;我们不会忘记! ;;;;;;;;;;X
+EVTNAME6007;霸主下令;;;;;;;;;;X
+EVTDESC6007;中原霸主已经正式遣使者让我们放弃 $PROVINCENAME$ , 他同时提醒我们最好顺从他的决定. ;;;;;;;;;;X
+EVTOPTA6007;彼何德而敢施号令于我国;;;;;;;;;;X
+EVTOPTB6007;此固非我之所应有;;;;;;;;;;X
+EVTNAME6008;领土合并;;;;;;;;;;X
+EVTDESC6008;$PROVINCENAME$现在被认为是我国领土不可分割的一部分. 反抗者消失了,人民接受了我们的统治.;;;;;;;;;;X
+EVTOPTA6008;寡人甚喜;;;;;;;;;;X
+join_hre_emp_title;加入中原体系;;;;;;;;;;X
+join_hre_emp_desc;中原体系代表着以周天子为核心的华夏文明政治体系，在一定情况下，原本的蛮夷国家也可能成为这个体系的一部分。省份的归属很大程度上取决于这个国家的情况。;;;;;;;;;;X
+join_hre_title;加入中原体系;;;;;;;;;;X
+join_hre_desc;中原体系代表着以周天子为核心的华夏文明政治体系，在一定情况下，原本的蛮夷国家也可能成为这个体系的一部分。省份的归属很大程度上取决于这个国家的情况。;;;;;;;;;;X

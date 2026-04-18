@@ -1,0 +1,16 @@
+name = "¹ğÁêÖ®Õ½"
+casus_belli = cb_fabricated_claims
+
+2344.1.1= {
+	add_attacker = WEI
+	add_defender = QIG
+	add_defender = ZHO
+	add_attacker = HAN
+}
+2345.1.1={
+
+	rem_attacker = WEI
+	rem_defender = QIG
+	rem_defender = ZHO
+	rem_attacker = HAN
+}

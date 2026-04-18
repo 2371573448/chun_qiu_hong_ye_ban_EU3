@@ -1,0 +1,3389 @@
+##################################
+#霸主决议
+##################################
+reichsreform_member = {
+	build_cost = -0.02
+	technology_cost = -0.025
+	icon = 13
+}
+
+reichsreform_emperor = {
+	prestige = 0.01
+	icon = 13
+}
+
+reichsregiment_member = {
+	global_tax_modifier = -0.05
+	icon = 14
+}
+
+reichsregiment_emperor = {
+	global_tax_modifier = 0.10
+	icon = 13
+}
+
+hofgericht_member = {
+	diplomats = -1
+	icon = 14
+}
+
+hofgericht_emperor = {
+	cultural_tradition = 0.02
+	badboy = 0.01
+	icon = 13
+}
+
+gemeinerpfennig_member = {
+	global_tax_modifier = -0.05
+	icon = 14
+}
+
+gemeinerpfennig_emperor = {
+	diplomatic_skill = 2
+	icon = 13
+}
+
+landfriede_member = {
+	diplomats = 0.5
+	icon = 13
+}
+
+landfriede_emperor = {
+	diplomats = 1
+	icon = 13
+}
+
+erbkaisertum_member = {
+	diplomats = -1
+	icon = 14
+}
+
+erbkaisertum_emperor = {
+	diplomatic_skill = 2
+	legitimacy = 0.01
+	icon = 13
+}
+
+privilegia_de_non_appelando_member = {
+	global_tax_modifier = -0.05
+	icon = 14
+}
+
+privilegia_de_non_appelando_emperor = {
+	badboy = -0.25
+	icon = 13
+}
+
+rome_reborn = {
+	prestige = 0.02
+	global_tax_modifier = 0.05
+	badboy = -0.01
+	icon = 13
+}
+
+unlawful_territory = {
+	local_manpower_modifier = -0.33
+	local_revolt_risk = 6
+	local_tax_modifier = -0.33
+	icon = 2
+}
+
+rebel_sentiment = {
+	local_revolt_risk = 15
+	icon = 2
+}
+
+religious_zeal_at_conv = {
+	local_missionary_placement_chance = -0.2
+	icon = 10
+}
+
+local_autonomy = {
+	local_manpower_modifier = -0.5
+	local_revolt_risk = -5
+	local_tax_modifier = -0.5
+	local_missionary_placement_chance = -0.025
+	local_tariffs = -0.5
+	local_production_efficiency = -0.25
+	icon = 2
+}
+###############################
+#国家理念
+###############################
+zunwangrangyi = { 
+	badboy_limit = 3
+	global_tax_modifier = 0.05
+	land_morale = 0.25
+	icon = 3
+}
+yidaimingjiang = { 
+	land_tech_cost_modifier = -0.10
+	icon = 7
+}
+liangcang = { 
+	local_defensiveness = 0.2
+	population_growth = 0.02
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.10
+	icon = 5
+}
+zhengtongrenhe = { 
+	population_growth = 0.02
+	officials = 0.1
+	local_revolt_risk = -3
+	icon = 5
+}
+zhengtongrenhefajia = { 
+	population_growth = 0.02
+	officials = 0.2
+	local_revolt_risk = -3
+	icon = 5
+}
+zengshou = { 
+	local_tax_modifier = 0.20
+	local_production_efficiency = 0.20
+	population_growth = 0.03
+	icon = 5
+}
+shangyefanrong1 = { 
+	local_trade_income_modifier = 0.15
+	local_production_efficiency = 0.15
+	population_growth = 0.015
+	local_colonial_growth = 0.25
+	icon = 5
+}
+touziguanxue = {
+	global_tax_modifier = -0.15
+	production_efficiency = -0.03
+}
+#########################################
+# 国策理念事件 #
+#########################################
+science_improvement = {
+	technology_cost = -0.02
+	icon = 9
+}
+army_improvement = {
+	land_morale = 0.5
+	icon = 7
+}
+tax_decrease = {
+	global_tax_modifier = -0.2
+	icon = 6
+}
+colony_decrease = {
+	global_colonial_growth = -0.3
+	icon = 6
+}
+
+#########################################
+# 顾问相关事件 #
+#########################################
+zhengzhiqingming = { 
+	government_tech_investment = 20
+	government_tech_cost_modifier = -0.05
+	icon = 3
+}
+xueshufanrong = { 
+	cultural_tradition = 0.02
+	technology_cost = -0.02
+	icon = 9
+}
+junshigeming = { 
+	global_regiment_cost = -0.1
+	global_ship_cost = -0.1
+	icon = 7
+}
+dangshiminjiang = { 
+	land_morale = 0.5
+	discipline = 0.06
+	icon = 7
+}
+wenyixinglong = { 
+	cultural_tradition = 0.02
+	stability_investment = 20
+	icon = 9
+}
+shangyefanrong = { 
+	trade_efficiency = 0.1
+	merchant_compete_chance = 0.1
+	icon = 5
+}
+difangjianshe = { 
+	defensiveness = 0.3
+	global_colonial_growth = 0.2
+	icon = 1
+}
+zhuhouchengfu = { 
+	legitimacy = 0.02
+	badboy = -0.2
+	icon = 13
+}
+anjuleye = { 
+	global_revolt_risk = -1
+	tolerance_heathen = 1
+	icon = 1
+}
+siweisucan_1 = { 
+	government_tech_investment = -12
+	icon = 4
+}
+siweisucan_2 = { 
+	legitimacy = -0.025
+	icon = 4
+}
+siweisucan_3 = { 
+	stability_investment = -12
+	icon = 4
+}
+siweisucan_4 = { 
+	diplomatic_skill = -3
+	icon = 4
+}
+siweisucan_5 = { 
+	land_morale = -0.4
+	icon = 8
+}
+siweisucan_6 = { 
+	discipline = -0.05
+	icon = 8
+}
+shanlinrenkou1 = {
+	population_growth = 0.005
+}
+shanlinrenkou2 = {
+	population_growth = 0.010
+}
+shanlinrenkou3 = {
+	population_growth = 0.015
+}
+shanlinrenkou4 = {
+	population_growth = 0.020
+}
+shanlinrenkou5 = {
+	population_growth = 0.025
+}
+shanlinrenkou6 = {
+	population_growth = 0.030
+}
+##########################################
+#   中央与地方
+##########################################
+#省份领地类型
+monarch_territory = { 
+	# 君主直辖
+	officials = 0.03
+	stability_investment = -2
+	production_tech_investment = 0.5
+	naval_tech_investment = 0.5
+	land_tech_investment = 0.5
+	trade_tech_investment = 0.5
+	government_tech_investment = 0.5
+	tax_income = 2
+	local_production_efficiency = 0.20
+	icon = 15
+}
+noble_territory = { 
+	# 公家领地
+	local_revolt_risk = 1
+	direct_tax_percentage = -0.20
+	local_manpower = 0.025
+	stability_cost = -10
+	discipline = 0.002
+	global_manpower_modifier = 0.01
+	icon = 17
+}
+gongjiachengjian = {
+	local_trade_income_modifier = 0.25
+}
+vassal_territory = { 
+	# 卿士封邑
+	local_trade_income_modifier = 0.25
+	local_revolt_risk = 1
+	direct_tax_percentage = -0.20
+	trade_efficiency = 0.001
+	stability_cost = -10
+	population_growth = 0.02
+	icon = 16
+}
+JIN_buff2 = { 
+	# 卿士封邑
+	local_tax_modifier = 0.12
+	local_manpower_modifier = 0.15
+	icon = 16
+}
+noble_discontent = { 
+	# 公家不满
+	local_revolt_risk = 3
+	icon = 4
+}
+vassal_discontent = { 
+	# 士卿不满
+	local_revolt_risk = 3
+	icon = 4
+}
+noble_controls = { 
+	# 公家把持朝政
+	global_tax_modifier = -0.2
+	icon = 4
+}
+vassal_controls = { 
+	# 士卿把持朝政
+	global_tax_modifier = -0.2
+	icon = 4
+}
+guoduzhixia = { 
+	# 过度直辖
+	local_revolt_risk = 5
+	direct_tax_percentage = -0.20
+	icon = 4
+}
+fengjun = { 
+	# 封君
+	direct_tax_percentage = 0.10
+	icon = 3
+}
+jianchahukou = {
+	# 检查户口
+	direct_tax_percentage = 0.20
+}
+yijiaotuzaofan  = { 
+	local_revolt_risk = 3
+	local_manpower_modifier = -0.3
+	direct_tax_percentage = -0.20
+	local_tax_modifier = -0.2
+	icon = 6
+}
+zongjiaoxiuzheng1  = { 
+	population_growth = 0.01
+	icon = 20
+}
+zongjiaoxiuzheng2  = { 
+	direct_tax_percentage = -0.20
+	icon = 6
+}
+##################################################################################################
+# 军事改革
+##################################################################################################
+
+guoyeyitibingfu = {
+	global_manpower_modifier = 0.10
+	global_tax_modifier = 0.10
+	stability_cost_modifier = 0.08
+	icon = 7
+}
+wanshanguoyeyitibingfu = {
+	global_manpower_modifier = 0.20
+	global_tax_modifier = 0.20
+	icon = 7
+}
+
+junguobaojia = {
+	global_revolt_risk = -0.75
+	reinforce_speed = 0.15
+	icon = 7
+}
+
+junqishuzui = {
+	stability_cost_modifier = 0.05
+	global_revolt_risk = 0.5
+	global_regiment_cost = -0.10
+	discipline = 0.02
+	icon = 7
+}
+zhiyejundui = {
+	global_regiment_recruit_speed = 0.30
+	reinforce_speed = -0.20
+	tolerance_own = 10
+	land_morale = 0.50
+	discipline = 0.10
+	army_tradition = 0.01
+	icon = 7
+}
+
+huicheweixing = {
+	discipline = 0.05
+	infantry_cost = -0.15
+	cavalry_cost = 0.1
+	icon = 7
+}
+
+xichezhan = {
+	artillery_cost = 0.1
+	icon = 7
+}
+
+##################################################################################################
+# 军事制度
+##################################################################################################
+total_war = {
+	global_manpower_modifier = 0.25
+	land_morale = 0.5
+	discipline = -0.05
+	global_tax_modifier = -0.20
+	war_exhaustion = 0.02
+	icon = 7
+}
+
+##################################################################################################
+# 霸主决议
+##################################################################################################
+
+kongzhizhou = {
+	badboy = 0.25
+	icon = 14
+}
+
+zhouweiwang = {
+	prestige = 0.01
+	icon = 13
+}
+
+zhoushuishou = {
+	global_tax_modifier = 0.30
+	icon = 13
+} 
+
+##################################################################################################
+# 人口相关
+##################################################################################################
+product0 = {
+	population_growth = -0.040
+	icon = 2
+}
+
+product1 = {
+	population_growth = -0.036
+	icon = 2
+}
+
+product2 = {
+	population_growth = -0.032
+	icon = 2
+}
+
+product3 = {
+	population_growth = -0.028
+	icon = 2
+}
+
+product4 = {
+	population_growth = -0.024
+	icon = 2
+}
+
+product5 = {
+	population_growth = -0.020
+	icon = 2
+}
+
+product6 = {
+	population_growth = -0.016
+	icon = 2
+}
+
+product7 = {
+	population_growth = -0.012
+	icon = 2
+}
+
+product8 = {
+	population_growth = -0.008
+	icon = 2
+}
+
+product9 = {
+	population_growth = -0.004
+	icon = 2
+}
+
+product10 = {
+	population_growth = 0.0
+	icon = 2
+}
+
+imguliyimin = {
+	population_growth = 0.06
+	stability_cost = 10
+	badboy = 0.02
+	icon = 1
+}
+
+emguliyimin = {
+	population_growth = -0.01
+	icon = 2
+}
+
+wanquanzhanling = {
+	local_tax_modifier = 0.15
+	icon = 1
+}
+
+lueduorenkou1 = {
+	badboy = 0.02
+	icon = 2
+}
+
+lueduorenkou2 = {
+	badboy = 0.02
+	icon = 2
+}
+
+lueduorenkou3 = {
+	badboy = 0.02
+	icon = 2
+}
+
+at_war_pop = {
+	population_growth = -0.038
+	local_production_efficiency = -0.15
+	local_trade_income_modifier = -0.20
+	icon = 2
+}
+
+at_peace_pop = {
+	population_growth = 0.008
+	icon = 1
+}
+
+sta1 = {
+	population_growth = 0.005
+	icon = 1
+}
+
+sta2 = {
+	population_growth = 0.01
+	icon = 1
+}
+
+sta3 = {
+	population_growth = 0.015
+	icon = 1
+}
+
+stan1 = {
+	population_growth = -0.005
+	icon = 2
+}
+
+stan2 = {
+	population_growth = -0.01
+	icon = 2
+}
+
+stan3 = {
+	population_growth = -0.015
+	icon = 2
+}
+
+renkouxishao1 = {
+	population_growth = 0.12
+	local_production_efficiency = -0.35
+	icon = 1
+}
+
+renkouxishao2 = {
+	population_growth = 0.04
+	local_production_efficiency = -0.15
+	icon = 1
+}
+
+renkouguoliang1 = {
+	population_growth = -0.018
+	icon = 2
+}
+
+renkouguoliang2 = {
+	population_growth = -0.036
+	icon = 2
+}
+
+renkouguoliang3 = {
+	population_growth = -0.054
+	icon = 2
+}
+
+renkouguoliang4 = {
+	population_growth = -0.08
+	icon = 2
+}
+
+renkouguoliang5 = {
+	population_growth = -0.10
+	icon = 2
+}
+
+renkouguoliang6 = {
+	population_growth = -0.12
+	icon = 2
+}
+renkouguoliang7 = {
+	population_growth = -0.15
+	icon = 2
+}
+
+renkouguoliang8 = {
+	population_growth = -0.20
+	icon = 2
+}
+
+#谢国天赋
+susuxiegong = {
+	population_growth = 0.08
+	badboy = 0.02
+	icon = 1
+}
+
+zhaoboyingzhi = {
+	population_growth = -0.01
+	icon = 2
+}
+
+##################################################################################################
+# 霸主体系
+##################################################################################################
+#千乘大国
+qianshengdaguo = {
+	prestige = 0.01
+	badboy = 0.01
+	land_morale = 0.1
+	icon = 13
+}
+#谋夺霸位
+campaign_to_bazhu = {
+	prestige = 0.01
+	badboy = 0.02
+	global_manpower_modifier = 0.15
+	land_morale = 0.15
+	icon = 13
+}
+#致力弭兵
+campaign_to_peace = {
+	prestige = 0.01
+	icon = 13
+}
+#弭兵失败
+failure_to_make_peace = {
+	prestige = -0.01
+	icon = 14
+}
+#霸主敌国
+rival_for_by = {
+	prestige = 0.01
+	badboy = 0.02
+	land_morale = 0.2
+	icon = 13
+}
+
+##################################################################################################
+# 学派
+##################################################################################################
+nongjiaqingli = { 
+	local_tax_modifier = 0.12
+	population_growth = 0.02
+	icon = 5
+}
+yinyangzhidao = { 
+	legitimacy = 0.01
+	prestige = 0.01
+	icon = 5
+}
+xuepaichongtu = { 
+	local_revolt_risk = 2
+	local_tax_modifier = -0.2
+	local_production_efficiency = -0.1
+	icon = 5
+}
+rujiajijiu = { 
+	icon = 9
+}
+fajiajijiu = { 
+	icon = 9
+}
+mojiajijiu = { 
+	icon = 9
+}
+daojiajijiu = { 
+	icon = 9
+}
+mingjiajijiu = { 
+	badboy = -0.10
+	icon = 9
+}
+nongjiajijiu = { 
+	tax_income = 2
+	population_growth = 0.03
+	icon = 9
+}
+yinyangjiajijiu = { 
+	stability_cost_modifier = -0.05
+	icon = 9
+}
+bingjiajijiu = { 
+	army_tradition = 0.01
+	navy_tradition = 0.01
+	icon = 9
+}
+
+##################################################################################################
+# 建筑
+##################################################################################################
+guanji = {
+	global_tax_modifier = 0.08
+	war_exhaustion = -0.015
+	icon = 1
+}
+yaosaibuji1 = {
+	supply_limit = 1
+}
+yaosaibuji2 = {
+	supply_limit = -1
+}
+yaosaibuji3 = {
+	supply_limit = 2
+}
+yaosaibuji4 = {
+	supply_limit = -2
+}
+##########################################
+# 水利要塞
+##########################################
+building_program = {
+	local_manpower_modifier = -0.75
+	local_production_efficiency = -0.50
+	icon = 2
+}
+
+hangoushuiqu = {
+	local_movement_speed = 0.20
+	supply_limit = 1
+	icon = 1
+}
+
+lishimingguan = {
+	supply_limit = 0.5
+	garrison_growth = 0.33
+	fort_level = 1
+	local_defensiveness = 0.60
+	icon = 1
+}
+
+#开掘河堤
+flood_made = {
+	population_growth = -0.04
+	local_tax_modifier = -0.10
+	icon = 2
+}
+
+#大水围城
+flood_seige = {
+	population_growth = -0.15
+	local_tax_modifier = -0.50
+        local_production_efficiency = -0.50
+        local_defensiveness = -0.50
+	icon = 8
+}
+
+#修建长城
+great_wall = {
+	local_defensiveness = 0.2
+	fort_level = 1
+	icon = 7
+}
+##########################################
+# 省份通用决议
+##########################################
+#推行移民政策
+settlement_policy = {
+	colonists = -0.05
+	officials = -0.05
+	local_revolt_risk = 3
+	badboy = 0.1
+	population_growth = 0.018
+	icon = 4
+}
+
+# 扩大官僚体系
+expanded_bureaucracy = {
+	global_tax_modifier = -0.20
+	build_cost = -0.1
+	stability_cost_modifier = -0.1
+	merchant_cost = -0.1
+	colonist_cost = -0.1
+	missionary_cost = -0.1
+	infantry_cost = -0.1
+	cavalry_cost = -0.1
+	artillery_cost = -0.1
+	bigship_cost = -0.1
+	lightship_cost = -0.1
+	galley_cost = -0.1
+	transport_cost = -0.1
+	land_tech_cost_modifier = -0.1	
+	trade_tech_cost_modifier = -0.1
+	naval_tech_cost_modifier = -0.1
+	government_tech_cost_modifier = -0.1
+	production_tech_cost_modifier = -0.1
+	advisor_cost = -0.1			
+	spies_cost = -0.1
+	mercenary_cost = -0.1
+	icon = 3
+}
+
+# 统一度量衡
+formalized_measures = {
+	global_tax_modifier = 0.10
+	trade_efficiency = 0.03
+	production_efficiency = 0.02
+	icon = 1
+}
+
+##########################################
+# 战国军改
+##########################################
+#通用战国军改
+zhanguojungai = {
+	discipline = 0.08
+	land_morale = 0.3
+	global_manpower_modifier = 0.10
+	icon = 7
+}
+#朝令夕改
+zhaolingxigai={
+	stability_cost_modifier = 0.05
+}
+
+
+#固法强军
+likuibianfa = {
+	discipline = 0.15
+	land_morale = 0.5
+	land_maintenance_modifier = 0.15
+	stability_cost_modifier = -0.10
+	icon = 7
+}
+
+#破旧兴政
+wuqibianfa = {
+	discipline = 0.06
+	land_morale = 0.4
+	land_forcelimit_modifier = 0.15
+	government_tech_cost_modifier = -0.05
+	land_maintenance_modifier = -0.10
+	global_manpower_modifier = 0.15
+	naval_morale = 0.35
+	naval_maintenance_modifier = -0.20
+	naval_forcelimit_modifier=0.4
+	icon = 7
+}
+
+#以法治军
+sunbinzhijun = {
+	discipline = 0.08
+	land_morale = 0.4
+	cultural_tradition = 0.03
+	army_tradition = 0.005
+	navy_tradition = 0.01
+	icon = 7
+}
+
+#内术外法
+shenbuhaibianfa = {
+	discipline = 0.10
+	land_morale = 0.25
+	land_tech_cost_modifier = -0.06
+	stability_investment = 20
+	legitimacy = 0.02
+	leader_fire = 1
+	icon = 7
+}
+
+#耕战立国
+shangyangbianfa = {
+	discipline = 0.08
+	land_morale = 0.8
+	army_tradition = 0.02
+	global_manpower_modifier = 0.30
+	land_maintenance_modifier = 0.10
+	icon = 7
+}
+
+
+#骑射之风
+hufuqishe = {
+	cavalry_cost = -0.25
+	discipline = 0.08
+	land_morale = 0.6
+	leader_shock = 1
+	icon = 7
+}
+
+#纳贤革新
+zhaowangtuqiang = {
+	land_morale = 0.3
+	colonists = 0.75
+	officials = 0.75
+	spies = 0.5
+	government_tech_investment = 10
+	land_attrition = -0.25
+	icon = 7
+}
+#以逸待劳
+yiyidailao={
+	land_morale = 0.3
+	naval_morale = 0.3
+	naval_maintenance_modifier = -0.10
+	naval_forcelimit_modifier= 0.2
+	navy_tradition = 0.05
+}
+woxinxunlian = {
+	discipline = 0.002
+}
+woxinjichushui = {
+	tax_income = 1
+}
+tongzhougongji = {
+	naval_maintenance_modifier = -0.10
+}
+
+#复古殷商
+yinshanggaige={
+		discipline = 0.08
+		land_morale = 0.5
+		trade_efficiency=0.08
+		technology_cost = -0.05
+
+}
+
+#墨家军改
+mozhetianxia ={
+	discipline = 0.12
+	land_morale = 0.4
+	production_efficiency = 0.03
+	artillery_cost = -0.20
+	land_forcelimit_modifier = 0.15
+}
+##########################################
+# 宗教决议
+##########################################
+#祖述尧舜
+zushuyaoshun = { 
+	cultural_tradition = 0.01
+	technology_cost = 0.01
+	missionary_placement_chance = 0.01
+	icon = 18
+}
+#修身中庸
+xiushenzhongyong = { 
+	badboy = -0.06
+	global_revolt_risk = -0.5
+	stability_investment = 8
+	icon = 18
+}
+#仁政王道
+renzhengwangdao = { 
+	badboy = -0.12
+	badboy_limit = 5
+	prestige = 0.01
+	icon = 18
+}
+#王者之法
+wangzhezhifa = { 
+	officials = 0.25
+	legitimacy = 0.01
+	stability_cost_modifier = -0.04
+	icon = 18
+}
+#黄帝刑德
+huangdixingde = { 
+	badboy = -0.1
+	badboy_limit = -2
+	global_manpower_modifier = -0.1
+	global_revolt_risk = -0.75
+	icon = 20
+}
+#虚静执法
+xujingzhifa = { 
+	diplomatic_skill = 2
+	global_manpower_modifier = -0.1
+	stability_investment = 10
+	legitimacy = 0.01
+	icon = 20
+}
+#轻重九府
+qingzhongjiufu = { 
+	merchant_compete_chance = 0.02
+	global_manpower_modifier = -0.1
+	production_efficiency = 0.04
+	land_morale = -0.1
+	icon = 20
+}
+#道德无为
+daodewuwei = { 
+	technology_cost = 0.02
+	global_tax_modifier = -0.10
+	global_manpower_modifier = -0.1
+	stability_cost_modifier = -0.1
+	global_revolt_risk = -1.5
+	icon = 20
+}
+#以柔克刚
+yiroukegang = { 
+	missionary_placement_chance = 0.02
+	colonist_placement_chance = 0.15
+	global_manpower_modifier = -0.1
+	merchant_compete_chance = 0.04
+	icon = 20
+}
+#休养生息
+xiuyangshengxi = { 
+	badboy_limit = -4
+	global_tax_modifier = -0.10
+	global_manpower_modifier = -0.1
+	trade_efficiency = 0.03
+	build_cost = -0.06
+	icon = 20
+}
+#尚贤尚同
+shangxianshangtong = { 
+	technology_cost = -0.02
+	cultural_tradition = 0.02
+	badboy_limit = 5
+	legitimacy = -0.01
+	icon = 9
+}
+#非乐非儒
+feiyuefeiru = {
+	missionary_placement_chance = 0.02
+	tolerance_heretic = -1
+	production_efficiency = 0.03
+	prestige_decay = -0.01
+	icon = 9
+}
+#抱法
+baofa = { 
+	officials = 0.15
+	global_revolt_risk = -0.5
+	icon = 19
+}
+#处势
+chushi = { 
+	officials = 0.15
+	legitimacy= 0.005
+	icon = 19
+}
+#术治
+shuzhi = { 
+	global_revolt_risk = -0.5
+	legitimacy= 0.005
+	icon = 19
+}
+#法术势兼用
+fashushijianyong = { 
+	global_revolt_risk = -1.5
+	officials = 0.4
+	legitimacy= 0.015
+	icon = 19
+}
+#信鬼神嗜卜筮
+xinguishen = {
+	max_war_exhaustion = -5
+	icon = 9
+}
+#罢黜百家
+bachubaijia = {
+	tolerance_own = 2
+	icon = 9
+}
+#海纳百川
+hainabaichuan = {
+	tolerance_heretic = 2
+	tolerance_heathen = 2
+	icon = 9
+}
+hainabaichuanshengfen = {
+	local_revolt_risk = -1.5
+	local_manpower_modifier = 0.15
+	direct_tax_percentage = 0.10
+	local_tax_modifier = 0.1
+	icon = 9
+}
+#兴功惧暴
+fajiazhuanjing = {
+	global_revolt_risk = -1
+	icon = 9
+}
+fajiazhuanjingshengfen1 = {
+	local_revolt_risk = 1
+	local_manpower_modifier = 0.04
+}
+fajiazhuanjingshengfen2 = {
+	local_revolt_risk = 2
+	local_manpower_modifier = 0.08
+}
+fajiazhuanjingshengfen3 = {
+	local_revolt_risk = 3
+	local_manpower_modifier = 0.12
+}
+fajiazhuanjingshengfen4 = {
+	local_revolt_risk = 4
+	local_manpower_modifier = 0.16
+}
+fajiazhuanjingshengfen5 = {
+	local_revolt_risk = 5
+	local_manpower_modifier = 0.20
+}
+fajiazhuanjingshengfen6 = {
+	local_revolt_risk = 6
+	local_manpower_modifier = 0.24
+}
+fajiazhuanjingshengfen7 = {
+	local_revolt_risk = 7
+	local_manpower_modifier = 0.28
+}
+fajiazhuanjingshengfen8 = {
+	local_revolt_risk = 8
+	local_manpower_modifier = 0.32
+}
+fajiazhuanjingshengfen9 = {
+	local_revolt_risk = 9
+	local_manpower_modifier = 0.36
+}
+fajiazhuanjingshengfen10 = {
+	local_revolt_risk = 10
+	local_manpower_modifier = 0.40
+}
+fajiazhuanjingshengfenjian1 = {
+	local_manpower_modifier = -0.04
+}
+fajiazhuanjingshengfenjian2 = {
+	local_manpower_modifier = -0.08
+}
+fajiazhuanjingshengfenjian3 = {
+	local_manpower_modifier = -0.12
+}
+fajiazhuanjingshengfenjian4 = {
+	local_manpower_modifier = -0.16
+}
+fajiazhuanjingshengfenjian5 = {
+	local_manpower_modifier = -0.20
+}
+fajiazhuanjingshengfenjian6 = {
+	local_manpower_modifier = -0.24
+}
+fajiazhuanjingshengfenjian7 = {
+	local_manpower_modifier = -0.28
+}
+fajiazhuanjingshengfenjian8 = {
+	local_manpower_modifier = -0.32
+}
+fajiazhuanjingshengfenjian9 = {
+	local_manpower_modifier = -0.36
+}
+fajiazhuanjingshengfenjian10 = {
+	local_manpower_modifier = -0.40
+}
+#节俭治国
+daojiazhuanjing = {
+	inflation_reduction = -0.08
+	production_efficiency = 0.05
+	icon = 9
+}
+daojiazhuanjingshengfen = {
+	population_growth = 0.03
+}
+#足食足兵
+rujiazhuanjingshengfen = {
+	supply_limit = 1
+	land_forcelimit = 1
+	stability_cost = -10
+	stability_investment = 1
+}
+##########################################
+# 部落危机
+##########################################
+#部落分裂
+tribal_devision = {
+	local_revolt_risk = 2
+	local_tax_modifier = -0.20
+        stability_cost = 4
+	icon = 4
+}
+
+#部落继承危机
+tribal_succession_crisis = {
+	global_revolt_risk = 5
+	badboy_limit = -5
+	icon = 4
+}
+
+############################################
+# 国策拉动
+############################################
+#政治危机
+politics_crisis = {
+	global_revolt_risk = 3
+	stability_cost_modifier = 0.25
+        global_spy_defence = -0.10
+	icon = 4
+}
+
+###########################################
+# 派系负面事件
+###########################################
+junquanpangluo = {#君权旁落
+	global_revolt_risk = 4
+	icon = 4
+}
+
+gongjiadongluan = {#公家动乱
+	global_revolt_risk = 2
+	icon = 4
+}
+
+gongqingneidou = {#公卿内斗
+	local_tax_modifier = -0.5
+	population_growth = -0.05
+	local_defensiveness = -0.4
+	icon = 4
+}
+#############################################
+# 正统事件
+#############################################
+#士卿专政
+noble_government = { 
+	global_tax_modifier = -0.2
+	icon = 4
+}
+
+#############################################
+# 随机事件
+#############################################
+bad_discipline1 = {
+	discipline = -0.08
+	icon = 8
+}
+
+reduced_taxes1 = {
+	global_tax_modifier = -0.1
+	icon = 6
+}
+
+
+tax_income_loss1 = {
+	global_tax_modifier = -0.05
+	icon = 6
+}
+
+
+smugglers_dominating1 = {
+	global_tax_modifier = -0.1
+	trade_efficiency = -0.1
+	global_revolt_risk = 1
+	icon = 6
+}
+
+
+obscurantism1 = {
+	land_tech_cost_modifier = -0.01
+	naval_tech_cost_modifier = -0.01
+	production_tech_cost_modifier = -0.01
+	government_tech_cost_modifier = -0.01
+	trade_tech_cost_modifier = -0.01
+	global_revolt_risk = 5
+	icon = 2
+}
+
+exceptional_year1 = {
+	tolerance_own = 1
+	global_tax_modifier = 0.25
+	icon = 5
+}
+
+disorder1 = {
+	global_revolt_risk = 2
+	global_tax_modifier = -0.05
+	icon = 2
+}
+
+disorder2 = {
+	global_tax_modifier = -0.2
+	icon = 2
+}
+
+disorder3 = {
+	global_revolt_risk = 5
+	global_tax_modifier = -0.2
+	icon = 2
+}
+
+
+shuijixiuyangshengxi = {
+	war_exhaustion = -0.05
+   	global_tax_modifier = -0.2
+   	global_revolt_risk = -2
+   	icon = 5
+}
+
+dazhengbing = {	
+	global_revolt_risk = 2
+	global_manpower_modifier = 0.2
+	icon = 7
+}
+
+
+powerful_noble = {
+	local_revolt_risk = 2
+	local_manpower_modifier = -0.5
+	local_tax_modifier = -0.5
+	icon = 2
+}
+
+compromised_spy_defence1 = {
+	global_spy_defence = -0.25
+	icon = 14
+}
+
+tongzhangjian = {
+		inflation_reduction = 0.2
+}
+tongzhangjia = {
+		inflation_reduction = -0.1
+}
+
+##########################################
+# 文化决议
+##########################################
+#公子成人礼
+heir_introduced = {
+	prestige = 0.01
+	legitimacy = 0.01
+	cultural_tradition = 0.03
+	icon = 9
+}
+#编写国史
+guoshi = {
+	cultural_tradition = 0.02
+	legitimacy = 0.005
+	icon = 9
+}
+#收容周朝遗民
+zhouchaoyimin = {
+	cultural_tradition = 0.02
+	badboy = -0.15
+	production_tech_investment = 10
+	government_tech_investment = 10
+	trade_tech_investment = 10
+	icon = 9
+}
+#杂技百戏
+zajibaixi = {
+	cultural_tradition = 0.01
+	global_revolt_risk = -1
+	icon = 9
+}
+#投资青铜器铸造
+touzizhuzao = {
+	cultural_tradition = 0.03
+	global_revolt_risk = -1
+	legitimacy = 0.01
+  	global_tax_modifier = -0.07
+	icon = 9
+}
+#编钟文化
+bianzhong = {
+	global_tax_modifier = -0.15
+	global_revolt_risk = -1.5
+	cultural_tradition = 0.02
+	icon = 9
+}
+
+##################################
+#蛮夷侵袭
+##################################
+fanduimanzu = {
+	global_revolt_risk = 3
+  	global_tax_modifier = -0.25
+	defensiveness = -0.15
+	icon = 8
+}
+
+panluanfenfen = {
+	local_revolt_risk = 5
+	icon = 8
+}
+
+youmuminjielue = {
+	population_growth = -0.025
+	local_production_efficiency = -0.25
+	supply_limit = -1
+	icon = 4
+}
+
+manzusaodong = {
+	local_revolt_risk = 0.5
+	population_growth = -0.01
+	local_production_efficiency = -0.05
+	icon = 4
+}
+
+hejiechenggong = {
+	population_growth = 0.005
+	icon = 3
+}
+
+wushi = {
+	local_tax_modifier = -0.05
+	local_defensiveness = -0.05
+	icon = 4
+}
+
+kaishizhunbei = {
+	local_defensiveness = 0.10
+	local_manpower_modifier = 0.05
+	icon = 4
+}
+
+konghuang = {
+	population_growth = -0.02
+	local_tax_modifier = -0.05
+	local_defensiveness = -0.05
+	icon = 4
+}
+
+jiandingdejumin = {
+	local_defensiveness = 0.05
+	local_manpower_modifier = 0.05
+	icon = 3
+}
+
+afangyumanzu = {
+	local_tax_modifier = -0.01
+	local_defensiveness = 0.10
+	local_manpower_modifier = 0.05
+	icon = 7
+}
+
+rangrenshiwangdexunshi = {
+	population_growth = -0.015
+	local_defensiveness = -0.05
+	icon = 8
+}
+
+meiyoufaxiandexunshi = {
+	icon = 4
+}
+
+shibaidetanpan = {
+	icon = 4
+}
+
+hejieshibai = {
+	icon = 4
+}
+
+############################################
+# 君主与继承人
+############################################
+#大臣辅政
+dachenfuzheng = {
+	stability_cost_modifier = 0.25
+	legitimacy = 0.01
+	icon = 3
+}
+
+#昏聩君主
+hunkuijunzhu = {
+	badboy = 0.5
+	prestige = -0.03
+	global_tax_modifier = -0.1
+	icon = 4
+}
+
+#君主无道
+junzhuwudao = {
+	badboy = 0.5
+	badboy_limit = -5
+	icon = 4
+}
+
+#君主怠政
+junzhudaizheng = {
+	prestige = -0.015
+	global_tax_modifier = -0.1
+	icon = 4
+}
+
+#一代雄主
+yidaixiongzhu = {
+	land_morale = 0.25
+	land_forcelimit_modifier = 0.1
+	naval_forcelimit_modifier = 0.1
+	discipline = 0.05
+	icon = 3
+}
+
+#君主贤明
+junzhuxianming = {
+	technology_cost = -0.05
+	icon = 3
+}
+
+#宠姬不满
+chongjibuman = {
+	global_revolt_risk = 1
+	icon = 4
+}
+
+#太子阴谋作乱
+taiziyinmouzuoluan = {
+	global_revolt_risk = 1
+	icon = 4
+}
+
+#########################################
+# 叛军 debuff
+#########################################
+
+tax_revolt = {
+	local_tax_modifier = -0.66
+	local_production_efficiency = -0.50
+	icon = 6
+}
+
+severe_tax_reduction = {
+	local_tax_modifier = -0.5
+	local_production_efficiency = -0.25
+	icon = 6
+}
+
+suppress_minority = {
+	local_manpower_modifier = -0.25
+	local_revolt_risk = 8
+	icon = 4
+}
+
+local_autonomy = {
+	local_manpower_modifier = -0.85
+	local_revolt_risk = -5
+	local_tax_modifier = -0.85
+	local_missionary_placement_chance = -0.75
+	local_tariffs = -0.85
+	local_production_efficiency = -0.75
+	icon = 2
+}
+colonial_tensions = {
+	local_revolt_risk = 15
+	icon = 2
+}
+loyalist_stronghold = {
+	local_revolt_risk = -1
+	icon = 3
+}
+founding_father = {
+	local_revolt_risk = 3
+	local_tax_modifier = 0.2
+	icon = 4
+}
+religious_turmoil = {
+	tolerance_heretic = -2
+	tolerance_own = -2
+	global_revolt_risk = 3
+	icon = 10
+}
+forced_conversion = {
+	population_growth = -0.03
+	local_manpower_modifier = -0.5
+	local_tax_modifier = -0.5
+	local_revolt_risk = -1
+	icon = 10
+}
+heretic_country = {
+	tolerance_heretic = 2
+	tolerance_own = -3
+	global_revolt_risk = 3
+	papal_influence = -1
+	icon = 10
+}
+heresy = {
+	local_manpower_modifier = -0.4
+	local_revolt_risk = 2
+	local_tax_modifier = -0.33
+	icon = 10
+}
+western_influences = {
+	stability_cost_modifier = 0.25
+	icon = 10
+}
+xinzhengfu = {
+	local_revolt_risk = 5
+	local_manpower_modifier = -0.8
+	local_trade_income_modifier = -0.8
+}
+############################################
+#宋-商相关
+############################################
+daiyanzhisong = { 
+	prestige = 0.01
+	land_morale = 0.1
+	discipline = 0.02
+	land_forcelimit = 3
+	global_tax_modifier = 0.02
+	stability_cost_modifier = 0.05
+	badboy = 0.2
+	icon = 1
+}
+wuqiansheng = { 
+	prestige = 0.02
+	land_morale = 0.4
+	discipline = 0.05
+	land_forcelimit = 5
+	global_tax_modifier = 0.05
+	stability_cost_modifier = 0.1
+	global_manpower_modifier = 0.1
+	icon = 1
+}
+jiesong = { 
+	discipline = 0.05
+	land_forcelimit = 10
+	global_tax_modifier = 0.1
+	stability_cost_modifier = 0.2
+	icon = 1
+}
+yingshanyigu = { 
+	land_morale = 0.5
+	global_revolt_risk = -3
+	stability_cost_modifier = -0.1
+	land_forcelimit_modifier = 0.3
+	global_manpower_modifier = 0.3
+	icon = 1
+}
+
+##################################################
+#政治调整
+##################################################
+dashangjinnei = { 
+	stability_cost_modifier = -0.08
+	icon = 3
+}
+zhengdunlizhi = { 
+	stability_cost_modifier = 0.1
+	inflation_reduction = 0.15
+	global_tax_modifier = 0.1
+	icon = 3
+}
+guangkaiyanlu = { 
+	cultural_tradition = 0.005
+	government_tech_cost_modifier = -0.02
+	officials = 0.15
+	icon = 3
+}
+############################
+#专属决议
+############################
+bingchizhouli = { 
+	diplomats = 1
+	icon = 1
+}
+jisishangdi = { 
+	tolerance_own = 1
+	icon = 1
+}
+zhoushizhizhang = { 
+	diplomatic_skill = 1
+	icon = 1
+}
+yuenvjian = { 
+	discipline = 0.05
+	icon = 1
+}
+baihuzhilv = { 
+	leader_shock = 1
+	icon = 1
+}
+wangcongyijiao = { 
+	production_tech_cost_modifier = -0.05
+	icon = 1
+}
+shuguoyiming = { 
+	leader_fire = 1
+	icon = 1
+}
+#######################
+#春秋政治改革
+#######################
+chengwenfa = {
+	global_revolt_risk = -0.4
+	stability_cost_modifier = -0.05
+	icon = 3
+}
+tuiguangtieqi = {
+	discipline = 0.010
+	global_regiment_cost = 0.10
+}
+#######################
+#全面外交策略
+#######################
+quanmianwaijiao = {
+	diplomats = -1
+	badboy = -0.5
+	prestige_decay = -0.005
+	diplomatic_skill = 1
+	icon = 3
+}
+#########################
+#封禅泰山
+#######################
+fengshangtaishang = { 
+	legitimacy = 0.015
+	prestige = 0.015
+	prestige_from_land = 0.25
+	land_morale = 0.20
+	icon = 9
+}
+############################
+#荒蛮
+############################
+huangmannanzhi = { 
+	local_revolt_risk = 3
+	local_production_efficiency = -0.50
+	local_tax_modifier = -0.75
+	stability_cost = 8
+	population_growth = -0.15
+	local_manpower_modifier = -0.50
+	local_defensiveness = -0.25
+	icon = 6
+}
+huangmankaifa = { 
+	local_tax_modifier = -0.25
+	population_growth = 0.06
+	local_manpower_modifier = -0.25
+	icon = 6
+}
+#############################
+#君主性格#
+#############################
+#聪慧过人
+conghuiguoren = { 
+	technology_cost = -0.02
+	badboy_limit = -2
+	icon = 13
+}
+#愚钝无知
+yudunwuzhi = { 
+	technology_cost = 0.02
+	badboy_limit = 2
+	icon = 14
+}
+#雷厉风行
+leilifengxing = { 
+	prestige = 0.015
+	global_revolt_risk = 0.5
+	icon = 13
+}
+#谨小慎微
+jinxiaoshenwei = { 
+	prestige = -0.015
+	global_revolt_risk = -0.5
+	icon = 14
+}
+#勤俭自持
+qinjianzichi = { 
+	build_cost = -0.06
+	cultural_tradition_decay = 0.002
+	icon = 13
+}
+#穷奢极欲
+qiongshejiyu = { 
+	build_cost = 0.06
+	cultural_tradition_decay = -0.002
+	icon = 14
+}
+#知人善任
+zhirenshanren = { 
+	global_tax_modifier = 0.08
+	advisor_cost = 0.04
+	icon = 13
+}
+#嫉贤妒能
+jixianduneng = { 
+	global_tax_modifier = -0.08
+	advisor_cost = -0.04
+	icon = 14
+}
+#不近女色
+bujinnvse = { 
+	stability_cost_modifier = -0.05
+	legitimacy = -0.003
+	icon = 13
+}
+#荒淫无度
+huangyinwudu = { 
+	stability_cost_modifier = 0.05
+	legitimacy = 0.003
+	icon = 14
+}
+#仁爱亲下
+renaiqinxia = { 
+	global_revolt_risk = -1
+	inflation_reduction = -0.02
+	icon = 13
+}
+#高傲冷酷
+gaoaolengku = { 
+	global_revolt_risk = 1
+	inflation_reduction = 0.02
+	icon = 14
+}
+#公正严明
+gongzhengyanming = { 
+	officials = 0.25
+	badboy = 0.03
+	icon = 13
+}
+#偏私狭隘
+piansixiaai = { 
+	officials = -0.25
+	badboy = -0.03
+	icon = 14
+}
+#夸夸其谈
+kuakuaqitan = { 
+	missionary_placement_chance = 0.015
+	prestige_decay = 0.005
+	icon = 13
+}
+#守口如瓶
+shoukouruping = { 
+	missionary_placement_chance = -0.015
+	prestige_decay = -0.005
+	icon = 14
+}
+#坚毅不屈
+jianyibuqu = { 
+	war_exhaustion = -0.02
+	max_war_exhaustion = 1
+	icon = 13
+}
+#懦弱胆怯
+nuoruodanqie = { 
+	war_exhaustion = 0.02
+	max_war_exhaustion = -1
+	icon = 14
+}
+#勇武好斗
+yongwuhaodou = { 
+	land_morale = 0.2
+	diplomatic_skill = -1
+	icon = 13
+}
+#谦让忍耐
+qianrangrennai = { 
+	land_morale = -0.2
+	diplomatic_skill = 1
+	icon = 14
+}
+#雄心万丈
+xiongxinwanzhang = { 
+	land_forcelimit_modifier = 0.05
+	global_tax_modifier = -0.04
+	icon = 13
+}
+#知足常乐
+zhizuchangle = { 
+	land_forcelimit_modifier = -0.05
+	global_tax_modifier = 0.04
+	icon = 14
+}
+#心机难测
+xinjinance = { 
+	global_spy_defence = 0.06
+	tolerance_own = -0.5
+	icon = 13
+}
+#诚实坦然
+chengshitanran = { 
+	global_spy_defence = -0.06
+	tolerance_own = 0.5
+	icon = 14
+}
+####################################
+#商
+####################################
+huifushangli = { 
+	legitimacy = 0.02
+	prestige = 0.02
+	badboy_limit = 10
+	icon = 3
+}
+wangzizheng = { 
+	global_manpower_modifier = 0.10
+	land_forcelimit_modifier = 0.15
+	land_morale = 0.5
+	icon = 7
+}
+shanxingtianxia = { 
+	trade_efficiency = 0.05
+	global_trade_income_modifier = 0.10
+	merchant_placement_chance = 0.05
+	merchant_compete_chance = 0.05
+	icon = 5
+}
+rensong = { 
+	badboy_limit = 10
+	badboy = -0.3
+	prestige = 0.03
+	icon = 1
+}
+
+#####################################
+#殖民队加成
+#####################################
+capital1 = { 
+	colonists = 0.04
+	icon = 5
+}
+capital2 = { 
+	colonists = 0.08
+	icon = 5
+}
+capital3 = { 
+	colonists = 0.12
+	icon = 5
+}
+capital4 = { 
+	colonists = 0.16
+	icon = 5
+}
+capital5 = { 
+	colonists = 0.20
+	icon = 5
+}
+capital6 = { 
+	colonists = 0.24
+	icon = 5
+}
+capital7 = { 
+	colonists = 0.28
+	icon = 5
+}
+capital8 = { 
+	colonists = 0.32
+	icon = 5
+}
+capital9 = { 
+	colonists = 0.36
+	icon = 5
+}
+capital10 = { 
+	colonists = 0.40
+	icon = 5
+}
+empty_colonists = { 
+	colonists = 0.02
+	icon = 5
+}
+################################
+#称王
+################################
+chengwang = {
+	badboy_limit = 6
+	legitimacy = 0.025
+	icon = 13
+}
+jujuechengwang = {
+	badboy = -0.2
+	prestige = -0.01
+	legitimacy = -0.01
+	icon = 14
+}
+################################
+#附庸试图独立
+################################
+shituduli = { 
+	badboy = 0.01
+	icon = 4
+}
+################################
+#太后不满
+################################
+taihoubuman = {
+	badboy = 0.1
+	icon = 4
+}
+################################
+#篡位之君
+################################
+cuanweizhijun = {
+	legitimacy = -0.02
+	global_revolt_risk = 5
+	icon = 4
+}
+################################
+#支持公家或士卿
+################################
+zhichigongjia = { 
+	legitimacy = 0.005
+	icon = 3
+}
+zhichishiqing = { 
+	build_cost = -0.04
+	icon = 3
+}
+################################
+#天灾
+################################
+wenyihengxing = { 
+	supply_limit = -2
+	max_attrition=10
+	local_production_efficiency = -0.20
+	local_tax_modifier = -0.50
+	population_growth = -0.15
+	icon = 6
+}
+jijijiuzhi = {
+	population_growth = 0.08
+	icon = 5
+}
+yangefengsuo = { 
+	local_production_efficiency = -0.15
+	local_tax_modifier = -0.30
+	stability_cost = 5
+	population_growth = -0.08
+	icon = 6
+}
+################################
+#墨家救援
+################################
+mojiajiuyuan = { 
+	land_morale = 0.25
+	icon = 7
+}
+################################
+#动员私募部队
+################################
+dongyuansimubudui = {
+	local_defensiveness = -0.25
+	icon = 8
+}
+################################
+#私募部队总动员
+################################
+simubuduidongyuan = {
+	war_exhaustion = 0.01
+	defensiveness = -0.10
+	icon = 8
+}
+################################
+#改革系统
+################################
+#守旧势力（宗法制度）
+shoujiushili1 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（世官制度）
+shoujiushili2 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（封君制度）
+shoujiushili3 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（法律制度）
+shoujiushili4 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（都鄙制度）
+shoujiushili5 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（郡县制度）
+shoujiushili6 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（户籍制度）
+shoujiushili7 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#守旧势力（官僚制度）
+shoujiushili8 = {
+	global_revolt_risk = 2.5
+	global_tax_modifier = -0.20
+	icon = 4
+}
+#门客制
+menkezhi = {
+	cultural_tradition = 0.01
+	spies = 0.25
+	officials = 0.25
+	local_revolt_risk = 1
+	icon = 3
+}
+#郡治
+junzhi = {
+	officials = -0.50
+	direct_tax_percentage = 0.10
+	fort_level = 2
+	local_regiment_cost = -0.10
+	icon = 3
+}
+#国内震荡
+guoneizhendang = {
+	global_revolt_risk = 2
+	global_tax_modifier = -0.10
+	stability_cost_modifier = 0.25
+	legitimacy = -0.03
+	icon = 4
+}
+######################################
+#物产产量影响
+######################################
+#部落优势
+tribe_product1 = {
+	local_production_efficiency = 0.30
+	icon = 5
+}
+#部落劣势
+tribe_product2 = {
+	local_production_efficiency = -0.25
+	icon = 6
+}
+#鱼类优势
+morefish = {
+	local_production_efficiency = 1.0
+	icon = 5
+}
+#盐铁专卖
+product_control = {
+	local_production_efficiency = 0.15
+	tax_income = 6
+	local_trade_income_modifier = -0.10
+	icon = 5
+}
+######################################
+#统一战争
+######################################
+#循序渐进
+slow_unify = {
+	badboy = -0.01
+	icon = 14
+}
+#统一战争
+fast_unify = {
+	global_revolt_risk = -2
+	stability_cost_modifier = -0.50
+	land_morale = 0.5
+	badboy_limit = 500
+	mercenary_cost = -0.50
+	legitimacy = 0.50
+	icon = 13
+}
+#天下大乱
+tianxiadaluan = {
+	global_revolt_risk = 2
+	stability_cost_modifier = 0.25
+	land_morale = -0.5
+	legitimacy = -0.02
+	production_efficiency = -0.25
+	global_tax_modifier = -0.50
+	global_manpower_modifier = -1.0
+	land_forcelimit_modifier = -1.0
+	icon = 2
+}
+######################################
+#国家天赋能力
+######################################
+#齐国专属
+qiguo_product = {
+	population_growth = 0.025
+	tax_income = 1.5
+	local_production_efficiency = 0.12
+	icon = 5
+}
+jiuhezhuhou2_buff = {
+	prestige = 0.015
+	legitimacy = 0.01
+	diplomatic_skill = 2
+	badboy = -0.20
+	badboy_limit = 8
+	icon = 5
+}
+#越国专属
+YGO_debuff = {
+	local_manpower_modifier = -0.33
+	local_revolt_risk = 3
+	stability_cost = 5
+	icon = 2
+}
+YGO_buff1 = {
+	badboy_limit = -8
+	icon = 2
+}
+YGO_buff2 = {
+	population_growth = 0.08
+	local_manpower_modifier = 0.25
+	local_colonial_growth = 0.25
+	icon = 5
+}
+QIG_buff1 = {
+	officials = 1
+	army_tradition = -0.03
+	government_tech_investment = 10
+	naval_tech_investment = 10
+	cultural_tradition = 0.02
+	icon = 1
+}
+QIG_buff2 = {
+	army_tradition = 0.01
+	discipline = 0.03
+	cultural_tradition = -0.03
+	land_tech_investment = 10
+	icon = 1
+}
+CHE_buff1 = {
+	global_tax_modifier = 0.15
+	icon = 1
+}
+CHE_buff2 = {
+	production_efficiency = 0.02
+	icon = 1
+}
+CHE_buff3 = {
+	trade_efficiency = 0.02
+	icon = 1
+}
+CHE_buff4 = {
+	discipline = 0.08
+	icon = 1
+}
+CHE_buff5 = {
+	stability_cost_modifier = -0.10
+	icon = 1
+}
+CHE_buff6 = {
+	global_revolt_risk = -1.5
+	icon = 1
+}
+CHE_buff7 = {
+	land_morale = 0.2
+	icon = 1
+}
+CHE_buff8 = {
+	technology_cost = -0.05
+	icon = 1
+}
+QIN_buff1 = {
+	production_tech_investment = 20
+                    production_tech_cost_modifier = -0.03
+	icon = 1
+}
+QIN_buff6 = {
+	government_tech_investment = 20
+                    government_tech_cost_modifier = -0.03
+	icon = 1
+}
+QIN_buff3 = {
+	trade_tech_investment = 20
+                    trade_tech_cost_modifier = -0.03
+	icon = 1
+}
+QIN_buff4 = {
+	naval_tech_investment = 20
+                    naval_tech_cost_modifier = -0.03
+	icon = 1
+}
+QIN_buff5 = {
+	land_tech_investment = 20
+                    land_tech_cost_modifier = -0.015
+	icon = 1
+}
+zhengshangsihai_buff = {
+	trade_range_modifier = 0.2
+	merchants = 0.5
+	merchant_compete_chance = 0.1
+	icon = 1
+}
+YAN_buff = {
+	local_tax_modifier = 0.25
+	stability_cost = -4
+	local_missionary_placement_chance = 0.07
+	local_defensiveness = 0.25
+	icon = 1
+}
+bianfatuqiang_buff = {
+	officials = 0.3
+	icon = 1
+}
+#内政顾问
+YAN_ad1 = {
+	war_exhaustion = -0.02
+	inflation_reduction = 0.02
+	badboy = -0.15
+	icon = 9
+}
+#经济顾问
+YAN_ad2 = {
+	global_tax_modifier = 0.15
+	production_efficiency = 0.04
+	trade_efficiency = 0.04
+	icon = 5
+}
+#军事顾问
+YAN_ad3 = {
+	discipline = 0.10
+	land_morale = 0.4
+	global_manpower_modifier = 0.10
+	icon = 7
+}
+#文化顾问
+YAN_ad4 = {
+	cultural_tradition = 0.015
+	legitimacy = 0.015
+	technology_cost = -0.025
+	icon = 9
+}
+#宋国专属
+SON_gift = {
+	diplomats = 0.25
+	diplomatic_skill = 2
+	badboy = -0.15
+	icon = 3
+}
+#郑国专属
+jiedai = {
+	prestige = -0.005
+	icon = 6
+}
+#卫国专属
+zhanbu = {
+	cultural_tradition = 0.001
+	icon = 1
+}
+zhanbu3 = {
+	badboy = 0.25
+	land_morale = 0.5
+	icon = 1
+}
+zhanbu4 = {
+	legitimacy = -0.05
+	icon = 1
+}
+zhanbu5 = {
+	global_revolt_risk = -1
+	missionaries = 0.25
+	icon = 1
+}
+zhanbu7 = {
+	stability_cost_modifier = -0.15
+	war_exhaustion = 0.05
+	icon = 1
+}
+zhanbu8 = {
+	global_colonial_growth = 0.25
+	tolerance_own = 1
+	tolerance_heretic = 1
+	icon = 1
+}
+zhanbu9 = {
+	global_tax_modifier = 0.15
+	production_efficiency = 0.03
+	icon = 1
+}
+zhanbu10 = {
+	land_morale = 0.3
+	global_manpower_modifier = 0.1
+	war_exhaustion = -0.02
+	icon = 1
+}
+zhanbu11 = {
+	land_morale = -0.3
+	global_manpower_modifier = -0.1
+	war_exhaustion = 0.02
+	icon = 1
+}
+#韩国天赋
+shenzizhushu = {
+	stability_cost_modifier = -0.06
+	inflation_reduction = 0.02
+	icon = 3
+}
+hanfeizizhushu = {
+	global_revolt_risk = -1
+	badboy_limit = 5
+	icon = 3
+}
+shangjunzhushu = {
+	land_morale = 0.25
+	production_efficiency = 0.03
+	icon = 3
+}
+CHE_shanrang = {
+	legitimacy = -0.02
+	icon = 7
+}
+
+SGU_kaiguohemangran = {
+	icon = 7
+}
+ZHS_buff2 = {
+	land_morale = 0.6
+	global_manpower_modifier = 0.3
+	icon = 1
+}
+zongjiaozhuanbian = { 
+	missionaries=2
+	missionary_placement_chance = 0.15
+	icon = 3
+}
+YIJ_buff1 = {
+	icon = 3
+}
+YIJ_buff2 = {
+	population_growth = 0.02
+	icon = 3
+}
+ZHJ_buff1 = {
+	icon = 3
+}
+YYJ_buff1 = {
+	icon = 3
+}
+ZAJ_buff1 = {
+	icon = 3
+}
+NOJ_buff1 = {
+	icon = 3
+}
+MIJ_buff1 = {
+	icon = 3
+}
+XSJ_buff1 = {
+	icon = 3
+}
+lianzuobuff = {
+	stability_cost_modifier = -0.2
+	global_spy_defence = 0.1
+	icon = 3
+}
+zhongnongbuff = {
+	production_efficiency = 0.05
+	icon = 3
+}
+dingxingbuff = {
+	global_revolt_risk = -3
+	icon = 3
+}
+zhongfabuff = {
+	global_tax_modifier = 0.1
+	missionaries = 0.5
+	missionary_placement_chance = 0.05
+	icon = 3
+}
+jueshengbuff = {
+	cultural_tradition = 0.02
+	army_tradition = 0.02
+	navy_tradition = 0.02
+	production_tech_investment = 8
+	government_tech_investment = 8
+	trade_tech_investment = 8
+	naval_tech_investment = 8
+	land_tech_investment = 8
+	global_revolt_risk = 3
+	stability_cost_modifier = 0.15
+	legitimacy = 0.03
+	icon = 3
+}
+wuweibuff1 = {
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+	icon = 3
+}
+wuweibuff2 = {
+	population_growth = 0.03
+	icon = 3
+}
+youjiaobuff = {
+	missionaries = 1
+	missionary_placement_chance = 0.15
+	cultural_tradition = 0.04
+	army_tradition = 0.02
+	navy_tradition = 0.02
+	icon = 3
+}
+zongfabuff = {
+	tolerance_own = 2
+	legitimacy = 0.05
+	global_revolt_risk = -2
+	icon = 3
+}
+jianaibuff = {
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+	icon = 3
+}
+jianaibuff1 = {
+	population_growth = 0.03
+	icon = 3
+}
+feigongbuff = {
+	defensiveness = 1
+	icon = 3
+}
+qingzhongjiufubuff1 = {
+	icon = 20
+}
+qingzhongjiufubuff2 = {
+	population_growth = 0.008
+	icon = 20
+}
+qingzhongjiufubuff3 = {
+	population_growth = 0.016
+	icon = 20
+}
+qingzhongjiufubuff4 = {
+	population_growth = 0.024
+	icon = 20
+}
+qingzhongjiufubuff5 = {
+	population_growth = 0.032
+	icon = 20
+}
+qingzhongjiufubuff6 = {
+	population_growth = 0.040
+	icon = 20
+}
+qingzhongjiufubuff7 = {
+	population_growth = 0.048
+	icon = 20
+}
+qingzhongjiufubuff8 = {
+	population_growth = 0.056
+	icon = 20
+}
+qingzhongjiufubuff9 = {
+	population_growth = 0.064
+	icon = 20
+}
+qingzhongjiufubuff10 = {
+	population_growth = 0.072
+	icon = 20
+}
+qingzhongjiufubuff11 = {
+	population_growth = 0.080
+	icon = 20
+}
+xiuyangshengxibuff1 = {
+	icon = 20
+}
+xiuyangshengxibuff2 = {
+	population_growth = 0.03
+	icon = 20
+}
+xiuyangshengxibuff3 = {
+	population_growth = 0.03
+	icon = 20
+}
+xiuyangshengxibuff4 = {
+	population_growth = 0.03
+	icon = 20
+}
+yantiebuff1 = {
+	local_production_efficiency = 0.20
+	tax_income = 2
+	local_trade_income_modifier = -0.20
+	direct_tax_percentage=0.1
+	icon = 5
+}
+zhongnongbuff1 = {
+	local_production_efficiency = 0.15
+	tax_income = 3
+	local_trade_income_modifier = -0.15
+	icon = 5
+}
+ruxuebuff = {
+	tax_income = 4
+	icon = 5
+}
+yumizhixiang = {
+	tax_income = 4
+	icon = 5
+}
+shoujiubuman = {
+	global_revolt_risk = 2
+	icon = 4
+}
+chengzhongyoushan1 = {
+	local_production_efficiency = 0.1
+	population_growth = 0.01
+}
+#####蜀道难#####
+shudaonan={
+supply_limit = -1.2
+max_attrition=10
+population_growth=-0.05
+}
+
+#######殷商占卜######
+#终将获胜 后备 补充 减少厌战
+yinshangzhanbu1={
+war_exhaustion=-0.02
+global_manpower_modifier=0.4
+
+}
+#速胜之兆 士气 减少后背  小幅度减少厌战
+yinshangzhanbu2={
+war_exhaustion=-0.01
+global_manpower_modifier=-0.2
+land_morale=0.2
+}
+#祖先之命 大幅度减少厌战
+yinshangzhanbu3={
+war_exhaustion=-0.05
+
+}
+#不应之战 小幅度增加厌战  
+yinshangzhanbu4={
+war_exhaustion=0.01
+
+}
+#违背祖先 大幅度增加厌战
+yinshangzhanbu5={
+war_exhaustion=0.05
+
+}
+#动荡之兆 减2稳定 增加厌战
+yinshangzhanbu6={
+war_exhaustion=0.02
+stability = -2
+}
+#失败之兆 士气减少 增加厌战
+yinshangzhanbu7={
+war_exhaustion=0.02
+land_morale=-0.1
+}
+#秦国血耻，变法图强
+QINCHI_buff = {
+	government_tech_cost_modifier = -0.15
+	land_tech_cost_modifier = -0.15 
+	prestige = -0.01
+	icon = 7
+}
+QINCHI_buff2 = {
+	population_growth = 0.04
+	icon = 7
+}
+
+JIUJIULAOQIN_buff = {
+	global_manpower_modifier = 0.20
+	war_exhaustion = -0.05
+	icon = 7
+}
+#楚国-用兵他国
+YONGBINGTAGUO_debuff = {
+	land_attrition = -0.15
+	diplomatic_skill = 4
+	badboy = -0.15
+	icon = 7
+}
+#黄老之术
+dahan_buff1 = {
+	discipline = -0.05
+	land_morale = -0.2
+	government_tech_cost_modifier = 0.08
+	land_tech_cost_modifier = 0.08
+	production_efficiency = 0.10
+	land_forcelimit_modifier = -0.3
+	global_revolt_risk = -2
+	officials = -1
+	icon = 7
+}
+#孔孟之道
+dahan_buff2 = {
+	trade_efficiency = -0.05
+	production_efficiency = 0.05
+	global_revolt_risk = -1
+	cultural_tradition = 0.05
+	officials = 2
+	icon = 7
+}
+#秦之锐士
+qinzhiruishi = {
+	discipline = 0.08
+	land_morale = 0.5
+	global_manpower_modifier = 0.10
+	leader_shock = 1
+	icon = 7
+}
+#黄老之术人口buff
+dahan_buff3 = {
+	population_growth = 0.05
+	icon = 7
+}
+#游牧帝国
+youmudiguo = {
+	cavalry_cost = -0.5
+	artillery_cost = 2
+	leader_naval_manuever = 2
+}
+#义渠长狄科技
+YQU_buff = {
+	technology_cost = -1
+}
+CHA_buff = {
+	technology_cost = -1
+}
+XCBW_buff = {
+	badboy_limit = -600
+	prestige = 1	
+}
+#千秋朝会
+juxingchaohui = {
+	global_tax_modifier = 0.20
+	production_efficiency = 0.20
+	land_maintenance_modifier = -0.1 
+}
+
+
+jiujishubang = {
+	global_tax_modifier = -0.05
+        land_forcelimit_modifier = +0.05
+        global_manpower_modifier = -0.05  
+}
+
+shubangtianzai = {
+	global_tax_modifier = -0.10
+	global_manpower_modifier = -0.10 
+}
+
+dasouli = {
+	army_tradition = 0.015
+        land_morale = 0.3
+}
+
+fuxingjinshi = {
+	badboy = -0.2
+}
+#任务
+kaituoliaodongbuff = {
+	colonists = 0.5
+	land_attrition = -0.10
+}
+fenglangjuxu = {
+	prestige_from_land = 3.0
+	army_tradition = 0.01
+	land_morale = 1
+	land_maintenance_modifier = 0.2
+	stability_cost_modifier = 0.2
+}
+jinmidi = {
+	artillery_cost = -0.10
+	cavalry_cost = -0.20
+	leader_shock = 1
+	legitimacy = -0.03
+	stability_cost_modifier = 0.2
+}
+nanmanwang = {
+	land_morale = 1
+	badboy_limit = 20
+	legitimacy = 0.10
+	artillery_cost = 0.2
+	stability_cost_modifier = 0.2
+	icon = 13
+}
+duoqutongkuang = {
+	land_morale = 1
+	discipline = 0.10
+}
+weiwangrenwu = {
+	prestige = 0.1
+}
+baohushoudu = {
+	land_morale = 1
+}
+mibazi = {
+	global_manpower_modifier = -0.01
+}
+#道家流民
+daojialiumin1 = {
+	population_growth = 0.02
+}
+daojialiumin2 = {
+	population_growth = 0.04
+	local_production_efficiency = 0.20
+}
+daojialiumin3 = {
+	population_growth = 0.04
+	supply_limit = 0.5
+}
+daojialiumin4 = {
+	population_growth = 0.04
+	local_revolt_risk = -3
+}
+daojialiumin5 = {
+	population_growth = 0.06
+	local_production_efficiency = 0.20
+	supply_limit = 0.5
+	local_trade_income_modifier = 0.2
+}
+daojialiumin6 = {
+	population_growth = 0.06
+	supply_limit = 0.5
+	local_revolt_risk = -3
+	local_build_cost = -0.10
+}
+daojialiumin7 = {
+	population_growth = 0.06
+	local_production_efficiency = 0.20
+	local_revolt_risk = -3
+	local_manpower = 0.005
+}
+daojialiumin8 = {
+	population_growth = 0.08
+	local_production_efficiency = 0.20
+	supply_limit = 0.5
+	local_revolt_risk = -3
+	local_trade_income_modifier = 0.2
+	local_build_cost = -0.10
+	local_manpower = 0.005
+}
+daojiaxiyinliumin = {
+	badboy = -0.01
+	global_manpower_modifier = -0.2
+}
+daojianongju = {
+	prestige = 0.01
+}
+daojianongtian = {
+	prestige = 0.01
+}
+daojiafangwu = {
+	prestige = 0.01
+}
+daojialiumindaianzhi = {
+	local_tax_modifier = -0.10
+}
+#精细化种田
+zhengzaijianshe = {
+	icon = 2
+}
+jingxihuajianshegongye1 = {
+	local_production_efficiency = 0.15
+	regiment_recruit_speed = -0.05
+}
+jingxihuajianshegongye2 = {
+	local_production_efficiency = 0.30
+	regiment_recruit_speed = -0.10
+}
+jingxihuajianshegongye3 = {
+	local_production_efficiency = 0.45
+	regiment_recruit_speed = -0.15
+}
+jingxihuajianshegongye4 = {
+	local_production_efficiency = 0.60
+	regiment_recruit_speed = -0.20
+}
+jingxihuajianshegongye5 = {
+	local_production_efficiency = 0.75
+	regiment_recruit_speed = -0.25
+}
+jingxihuajianshegongye6 = {
+	local_production_efficiency = 0.90
+	regiment_recruit_speed = -0.30
+}
+jingxihuajianshegongye7 = {
+	local_production_efficiency = 1.05
+	regiment_recruit_speed = -0.35
+}
+jingxihuajianshegongye8 = {
+	local_production_efficiency = 1.20
+	regiment_recruit_speed = -0.40
+}
+jingxihuajianshegongye9 = {
+	local_production_efficiency = 1.35
+	regiment_recruit_speed = -0.45
+}
+jingxihuajianshegongye10 = {
+	local_production_efficiency = 1.50
+	regiment_recruit_speed = -0.50
+}
+#商业
+jingxihuajiansheshangye1 = {
+	local_trade_income_modifier = 0.15
+	local_movement_speed = 0.2
+}
+jingxihuajiansheshangye2 = {
+	local_trade_income_modifier = 0.30
+	local_movement_speed = 0.4
+}
+jingxihuajiansheshangye3 = {
+	local_trade_income_modifier = 0.45
+	local_movement_speed = 0.6
+}
+jingxihuajiansheshangye4 = {
+	local_trade_income_modifier = 0.60
+	local_movement_speed = 0.8
+}
+jingxihuajiansheshangye5 = {
+	local_trade_income_modifier = 0.75
+	local_movement_speed = 1.0
+}
+jingxihuajiansheshangye6 = {
+	local_trade_income_modifier = 0.90
+	local_movement_speed = 1.2
+}
+jingxihuajiansheshangye7 = {
+	local_trade_income_modifier = 1.05
+	local_movement_speed = 1.4
+}
+jingxihuajiansheshangye8 = {
+	local_trade_income_modifier = 1.20
+	local_movement_speed = 1.6
+}
+jingxihuajiansheshangye9 = {
+	local_trade_income_modifier = 1.35
+	local_movement_speed = 1.8
+}
+jingxihuajiansheshangye10 = {
+	local_trade_income_modifier = 1.50
+	local_movement_speed = 2.0
+}
+#要塞
+jingxihuajiansheyaosai1 = {
+	local_defensiveness = 0.2
+	supply_limit = 0.5
+	local_spy_defence = 0.1
+}
+jingxihuajiansheyaosai2 = {
+	local_defensiveness = 0.4
+	supply_limit = 1.0
+	local_spy_defence = 0.2
+}
+jingxihuajiansheyaosai3 = {
+	local_defensiveness = 0.6
+	supply_limit = 1.5
+	local_spy_defence = 0.3
+}
+jingxihuajiansheyaosai4 = {
+	local_defensiveness = 0.8
+	supply_limit = 2.0
+	local_spy_defence = 0.4
+}
+jingxihuajiansheyaosai5 = {
+	local_defensiveness = 1.0
+	supply_limit = 2.5
+	local_spy_defence = 0.5
+}
+jingxihuajiansheyaosai6 = {
+	local_defensiveness = 1.2
+	supply_limit = 3.0
+	local_spy_defence = 0.6
+}
+jingxihuajiansheyaosai7 = {
+	local_defensiveness = 1.4
+	supply_limit = 3.5
+	local_spy_defence = 0.7
+}
+jingxihuajiansheyaosai8 = {
+	local_defensiveness = 1.6
+	supply_limit = 4.0
+	local_spy_defence = 0.8
+}
+jingxihuajiansheyaosai9 = {
+	local_defensiveness = 1.8
+	supply_limit = 4.5
+	local_spy_defence = 0.9
+}
+jingxihuajiansheyaosai10 = {
+	local_defensiveness = 2.0
+	supply_limit = 5.0
+	local_spy_defence = 1.0
+}
+kuojianneishi1 = {
+	inflation_reduction = 0.04
+	global_revolt_risk = -1
+}
+kuojianneishi2 = {
+	inflation_reduction = 0.08
+	global_revolt_risk = -2
+}
+kuojianneishi3 = {
+	inflation_reduction = 0.12
+	global_revolt_risk = -3
+}
+kuojianneishi4 = {
+	inflation_reduction = 0.16
+	global_revolt_risk = -4
+}
+kuojianneishi5 = {
+	inflation_reduction = 0.20
+	global_revolt_risk = -5
+}
+kuojianneishi6 = {
+	inflation_reduction = 0.24
+	global_revolt_risk = -6
+}
+kuojianxingrenshu1 = {
+	diplomats = 0.8
+	badboy = -0.3
+	diplomatic_skill = 1
+}
+kuojianxingrenshu2 = {
+	diplomats = 1.6
+	badboy = -0.6
+	diplomatic_skill = 2
+}
+kuojianxingrenshu3 = {
+	diplomats = 2.4
+	badboy = -0.9
+	diplomatic_skill = 3
+}
+kuojianxingrenshu4 = {
+	diplomats = 3.2
+	badboy = -1.2
+	diplomatic_skill = 4
+}
+kuojianxingrenshu5 = {
+	diplomats = 4.0
+	badboy = -1.5
+	diplomatic_skill = 5
+}
+kuojianxingrenshu6 = {
+	diplomats = 4.8
+	badboy = -1.8
+	diplomatic_skill = 6
+}
+kuojiantaimiao1 = {
+	badboy = -0.2
+	cultural_tradition = 0.015
+}
+kuojiantaimiao2 = {
+	badboy = -0.4
+	cultural_tradition = 0.030
+}
+kuojiantaimiao3 = {
+	badboy = -0.6
+	cultural_tradition = 0.045
+}
+kuojiantaimiao4 = {
+	badboy = -0.8
+	cultural_tradition = 0.060
+}
+kuojiantaimiao5 = {
+	badboy = -1.0
+	cultural_tradition = 0.075
+}
+kuojiantaimiao6 = {
+	badboy = -1.2
+	cultural_tradition = 0.09
+}
+kuojianguanai1 = {
+	local_defensiveness = 1.5
+	local_manpower = 0.75
+}
+kuojianguanai2 = {
+	local_defensiveness = 3.0
+	local_manpower = 1.50
+}
+kuojianguanai3 = {
+	local_defensiveness = 4.5
+	local_manpower = 2.25
+}
+kuojianguanai4 = {
+	local_defensiveness = 6.0
+	local_manpower = 3.00
+}
+kuojianguanai5 = {
+	local_defensiveness = 7.5
+	local_manpower = 3.75
+}
+kuojianguanai6 = {
+	local_defensiveness = 9.0
+	local_manpower = 4.50
+}
+kuojianyinglei1 = {
+	land_forcelimit_modifier = 0.15
+	land_maintenance_modifier = -0.15
+}
+kuojianyinglei2 = {
+	land_forcelimit_modifier = 0.30
+	land_maintenance_modifier = -0.30
+}
+kuojianyinglei3 = {
+	land_forcelimit_modifier = 0.45
+	land_maintenance_modifier = -0.45
+}
+kuojianyinglei4 = {
+	land_forcelimit_modifier = 0.60
+	land_maintenance_modifier = -0.60
+}
+kuojianyinglei5 = {
+	land_forcelimit_modifier = 0.75
+	land_maintenance_modifier = -0.75
+}
+kuojianyinglei6 = {
+	land_forcelimit_modifier = 0.90
+	land_maintenance_modifier = -0.90
+}
+kuojianwanggong1 = {
+	legitimacy = 0.015
+	prestige = 0.01
+}
+kuojianwanggong2 = {
+	legitimacy = 0.030
+	prestige = 0.02
+}
+kuojianwanggong3 = {
+	legitimacy = 0.045
+	prestige = 0.03
+}
+kuojianwanggong4 = {
+	legitimacy = 0.060
+	prestige = 0.04
+}
+kuojianwanggong5 = {
+	legitimacy = 0.075
+	prestige = 0.05
+}
+kuojianwanggong6 = {
+	legitimacy = 0.090
+	prestige = 0.06
+}
+kuojianxiwutai1 = {
+	army_tradition = 0.01
+	navy_tradition = 0.01
+}
+kuojianxiwutai2 = {
+	army_tradition = 0.02
+	navy_tradition = 0.02
+}
+kuojianxiwutai3 = {
+	army_tradition = 0.03
+	navy_tradition = 0.03
+}
+kuojianxiwutai4 = {
+	army_tradition = 0.04
+	navy_tradition = 0.04
+}
+kuojianxiwutai5 = {
+	army_tradition = 0.05
+	navy_tradition = 0.05
+}
+kuojianxiwutai6 = {
+	army_tradition = 0.06
+	navy_tradition = 0.06
+}
+kuojiansiwencao1 = {
+	spies = 0.5
+	spy_efficiency = 0.05
+	global_spy_defence = 0.1
+}
+kuojiansiwencao2 = {
+	spies = 1.0
+	spy_efficiency = 0.10
+	global_spy_defence = 0.2
+}
+kuojiansiwencao3 = {
+	spies = 1.5
+	spy_efficiency = 0.15
+	global_spy_defence = 0.3
+}
+kuojiansiwencao4 = {
+	spies = 2.0
+	spy_efficiency = 0.20
+	global_spy_defence = 0.4
+}
+kuojiansiwencao5 = {
+	spies = 2.5
+	spy_efficiency = 0.25
+	global_spy_defence = 0.5
+}
+kuojiansiwencao6 = {
+	spies = 3.0
+	spy_efficiency = 0.30
+	global_spy_defence = 0.6
+}
+#兵家
+bingquanmou1 = {
+	leader_naval_manuever=1
+	spy_efficiency = 0.05
+	diplomatic_skill = 3
+	land_attrition = -0.05
+}
+bingquanmou2 = {
+	leader_naval_manuever=2
+	spy_efficiency = 0.10
+	diplomatic_skill = 9
+	land_attrition = -0.10
+}
+bingquanmou3 = {
+	leader_naval_manuever=3
+	spy_efficiency = 0.15
+	diplomatic_skill = 9
+	land_attrition = -0.15
+}
+bingquanmou4 = {
+	leader_naval_manuever = 4
+	spy_efficiency = 0.20
+	diplomatic_skill = 12
+	land_attrition = -0.20
+}
+bingxingshi1 = {
+	land_morale = 0.2
+	discipline = 0.04
+	army_tradition = 0.005
+	land_maintenance_modifier = 0.20
+}
+bingxingshi2 = {
+	land_morale = 0.4
+	discipline = 0.08
+	army_tradition = 0.01
+	land_maintenance_modifier = 0.20
+}
+bingxingshi3 = {
+	land_morale = 0.6
+	discipline = 0.12
+	army_tradition = 0.015
+	land_maintenance_modifier = 0.30
+}
+bingxingshi4 = {
+	land_morale = 0.8
+	discipline = 0.16
+	army_tradition = 0.02
+	land_maintenance_modifier = 0.30
+}
+bingjiqiao1 = {
+	leader_fire = 0.5
+	artillery_cost = -0.04
+	war_exhaustion = -0.03
+	global_manpower_modifier = 0.10
+	reinforce_speed = 0.10
+}
+bingjiqiao2 = {
+	leader_fire = 1.0
+	artillery_cost = -0.08
+	war_exhaustion = -0.06
+	global_manpower_modifier = 0.10
+	reinforce_speed = 0.20
+}
+bingjiqiao3 = {
+	leader_fire = 1.5
+	artillery_cost = -0.12
+	war_exhaustion = -0.09
+	global_manpower_modifier = 0.20
+	reinforce_speed = 0.25
+}
+bingjiqiao4 = {
+	leader_fire = 2.0
+	artillery_cost = -0.16
+	war_exhaustion = -0.12
+	global_manpower_modifier = 0.20
+	reinforce_speed = 0.30
+}
+bingyinyang1 = {
+	technology_cost = -0.03
+	land_maintenance_modifier = -0.03
+}
+bingyinyang2 = {
+	technology_cost = -0.06
+	land_maintenance_modifier = -0.06
+}
+bingyinyang3 = {
+	technology_cost = -0.09
+	land_maintenance_modifier = -0.09
+}
+bingyinyang4 = {
+	technology_cost = -0.12
+	land_maintenance_modifier = -0.12
+}
+bingyinyangtianshi = {
+	land_morale = 1
+}
+bingyinyangdili = {
+	defensiveness = 1
+}
+bingyinyangrenhe = {
+	global_manpower_modifier = 0.50
+}
+
+#西域
+zhenghebangmin = {
+}
+xiaowanjiu = {
+	tax_income = 4
+	local_trade_income_modifier = 1
+	population_growth = 0.02
+}
+wusunma = {
+	tax_income = 4
+	local_trade_income_modifier = 1
+	army_tradition = 0.002
+}
+jienan = {
+	discipline = 99
+	land_morale = 999
+}
+guizi = {
+	regiment_recruit_speed = 999
+	local_regiment_cost = -999
+}
+xiyusuijitianfu21 = {
+	population_growth = 0.03
+}
+#间谍
+qpzb = {
+	global_revolt_risk = 5
+}
+weihu = {
+	 cavalry_cost = -0.99
+}
+weihu2 = {
+	global_regiment_cost = 0.50
+}
+huiluguanyuan = {
+	inflation = 0.3
+}
+zhonglemeirenji = {
+	inflation = 0.05
+	legitimacy = -0.02
+	prestige = -0.04
+}
+shaoshanhuilin = {
+	population_growth = -0.1
+}
+dajishengchan = {
+	local_trade_income_modifier = -0.50
+}
+jieduanliangdao = {
+	supply_limit = -1
+}
+quanmoufabing = {
+	discipline = -0.10
+	land_morale = -1
+}
+#九州鼎
+xuzhoudingshengfen = {
+	population_growth = 0.02
+}
+yizhoudingshengfen1 = {
+	tax_income = 5
+}
+yizhoudingshengfen2 = {
+	population_growth = 0.05
+}
+liangzhoudingshengfen = {
+	regiment_recruit_speed = -0.20
+	local_movement_speed = 1
+}

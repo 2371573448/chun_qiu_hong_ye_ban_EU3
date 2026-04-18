@@ -1,0 +1,42 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "koreanagfx_infantry_1"
+		actorfile = "gfx\anims\Generic_Asian_1.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_1_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_1_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_1_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "koreanagfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Asian_3.xac"
+		
+		idle   = "gfx\anims\Generic_Asian_3_Idle.xsm"
+		move   = "gfx\anims\Generic_Asian_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Asian_3_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "koreanagfx_infantry_3"
+		actorfile = "gfx\anims\Generic_Western_2.xac"
+		
+		idle   = "gfx\anims\Generic_Western_2_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_2_Moving.xsm"
+		attack = "gfx\anims\Generic_Western_2_Attack.xsm"
+		scale = 1.3
+	}
+	
+	EMFXActorType = {
+		name = "koreanagfx_infantry_4"
+		actorfile = "gfx\anims\Generic_Eastern_3.xac"
+		
+		idle   = "gfx\anims\Generic_Eastern_3_Idle.xsm" 
+		move   = "gfx\anims\Generic_Eastern_3_Moving.xsm"
+		attack = "gfx\anims\Generic_Eastern_3_Attack.xsm"
+		scale = 1.3
+	}
+}

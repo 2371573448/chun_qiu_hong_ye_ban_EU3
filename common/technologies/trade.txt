@@ -1,0 +1,101 @@
+technology = { id = 0    average_year = 1840       trade_range = 100     trade_efficiency = 0.15      }
+technology = { id = 1    average_year = 1860       trade_range = 105     trade_efficiency = 0.15      }
+technology = { id = 2    average_year = 1880       trade_range = 110     trade_efficiency = 0.15      }
+technology = { id = 3    average_year = 1900       trade_range = 140     trade_efficiency = 0.15      }
+technology = { id = 4    average_year = 1910       trade_range = 170     trade_efficiency = 0.16           merchants = yes      }
+technology = { id = 5    average_year = 1920       trade_range = 200     trade_efficiency = 0.17      }
+technology = { id = 6    average_year = 1930       trade_range = 230     trade_efficiency = 0.18     }
+technology = { id = 7    average_year = 1940       trade_range = 260     trade_efficiency = 0.19      }
+technology = { id = 8    average_year = 1950       trade_range = 290     trade_efficiency = 0.20      }
+technology = { id = 9    average_year = 1960       trade_range = 320     trade_efficiency = 0.21      }
+technology = { id = 10  average_year = 1970       trade_range = 350   trade_efficiency = 0.22           marketplace = yes    }
+technology = { id = 11  average_year = 1980       trade_range = 380   trade_efficiency = 0.23                         refinery = yes     }
+technology = { id = 12  average_year = 1990       trade_range = 410   trade_efficiency = 0.24      }
+technology = { id = 13  average_year = 2000       trade_range = 440   trade_efficiency = 0.25      }
+technology = { id = 14  average_year = 2010       trade_range = 470   trade_efficiency = 0.26           trade_depot = yes     }
+technology = { id = 15  average_year = 2020       trade_range = 500   trade_efficiency = 0.27      }
+technology = { id = 16  average_year = 2030       trade_range = 530   trade_efficiency = 0.28      }
+technology = { id = 17  average_year = 2040       trade_range = 560   trade_efficiency = 0.29      }
+technology = { id = 18  average_year = 2050       trade_range = 590   trade_efficiency = 0.30                 canal = yes          }
+technology = { id = 19  average_year = 2060       trade_range = 620   trade_efficiency = 0.30      }
+technology = { id = 20  average_year = 2070       trade_range = 650   trade_efficiency = 0.30      }
+technology = { id = 21  average_year = 2080       trade_range = 680   trade_efficiency = 0.30      }
+technology = { id = 22  average_year = 2090       trade_range = 710   trade_efficiency = 0.30           road_network = yes   }
+technology = { id = 23  average_year = 2100       trade_range = 740   trade_efficiency = 0.30      }
+technology = { id = 24  average_year = 2110       trade_range = 770   trade_efficiency = 0.30       }
+technology = { id = 25  average_year = 2120       trade_range = 800   trade_efficiency = 0.30       }
+technology = { id = 26  average_year = 2130       trade_range = 830   trade_efficiency = 0.30       }
+technology = { id = 27  average_year = 2140       trade_range = 860   trade_efficiency = 0.30       }
+technology = { id = 28  average_year = 2150       trade_range = 890   trade_efficiency = 0.30                   }
+technology = { id = 29  average_year = 2160       trade_range = 920   trade_efficiency = 0.30       }
+technology = { id = 30  average_year = 2170       trade_range = 950   trade_efficiency = 0.30       }
+technology = { id = 31  average_year = 2180       trade_range = 980   trade_efficiency = 0.30       }
+technology = { id = 32  average_year = 2190       trade_range = 1010   trade_efficiency = 0.30       }
+technology = { id = 33  average_year = 2200       trade_range = 1040   trade_efficiency = 0.30       }
+technology = { id = 34  average_year = 2210       trade_range = 1070   trade_efficiency = 0.30             post_office = yes    }
+technology = { id = 35  average_year = 2220       trade_range = 1100   trade_efficiency = 0.30      }
+technology = { id = 36  average_year = 2230       trade_range = 1130   trade_efficiency = 0.30      }
+technology = { id = 37  average_year = 2240       trade_range = 1160   trade_efficiency = 0.30      }
+technology = { id = 38  average_year = 2250       trade_range = 1190   trade_efficiency = 0.31      }
+technology = { id = 39  average_year = 2258       trade_range = 1220   trade_efficiency = 0.32             monopoly = yes      }
+technology = { id = 40  average_year = 2266       trade_range = 1250   trade_efficiency = 0.33      }
+technology = { id = 41  average_year = 2274       trade_range = 1280   trade_efficiency = 0.34      }
+technology = { id = 42  average_year = 2282       trade_range = 1310   trade_efficiency = 0.35      }
+technology = { id = 43  average_year = 2290       trade_range = 1340   trade_efficiency = 0.36           customs_house = yes   }
+technology = { id = 44  average_year = 2298       trade_range = 1370   trade_efficiency = 0.37      }
+technology = { id = 45  average_year = 2306       trade_range = 1400   trade_efficiency = 0.38	merchant_republic = yes      }
+technology = { id = 46  average_year = 2314       trade_range = 1430   trade_efficiency = 0.39      }
+technology = { id = 47  average_year = 2322       trade_range = 1460   trade_efficiency = 0.40      }
+technology = { id = 48  average_year = 2330       trade_range = 1490   trade_efficiency = 0.40      }
+technology = { id = 49  average_year = 2338       trade_range = 1520   trade_efficiency = 0.41      }
+technology = { id = 50  average_year = 2346       trade_range = 1550   trade_efficiency = 0.42     }
+technology = { id = 51  average_year = 2354       trade_range = 1580   trade_efficiency = 0.43      }
+technology = { id = 52  average_year = 2362       trade_range = 1610   trade_efficiency = 0.44      }
+technology = { id = 53  average_year = 2370       trade_range = 1640   trade_efficiency = 0.45      }
+technology = { id = 54  average_year = 2378       trade_range = 1670   trade_efficiency = 0.46      }
+technology = { id = 55  average_year = 2386       trade_range = 1700   trade_efficiency = 0.47      }
+technology = { id = 56  average_year = 2394       trade_range = 1730   trade_efficiency = 0.48      }
+technology = { id = 57  average_year = 2402       trade_range = 1760   trade_efficiency = 0.49      }
+technology = { id = 58  average_year = 2410       trade_range = 1790   trade_efficiency = 0.50      }
+technology = { id = 59  average_year = 2418       trade_range = 1820   trade_efficiency = 0.50      }
+technology = { id = 60  average_year = 2426       trade_range = 1850   trade_efficiency = 0.50      }
+technology = { id = 61  average_year = 2434       trade_range = 1880   trade_efficiency = 0.50      }
+technology = { id = 62  average_year = 2442       trade_range = 1910   trade_efficiency = 0.50      }
+technology = { id = 63  average_year = 2450       trade_range = 1940   trade_efficiency = 0.50      }
+technology = { id = 64  average_year = 2458       trade_range = 1970   trade_efficiency = 0.50      }
+technology = { id = 65  average_year = 2466       trade_range = 2000   trade_efficiency = 0.50      }
+technology = { id = 66  average_year = 2474          trade_efficiency = 0.50      }
+technology = { id = 67  average_year = 2482         trade_efficiency = 0.50      }
+technology = { id = 68  average_year = 2490          trade_efficiency = 0.50      }
+technology = { id = 69  average_year = 2500          trade_efficiency = 0.50      }
+technology = { id = 70  average_year = 2510          trade_efficiency = 0.50      }
+technology = { id = 71  average_year = 2520          trade_efficiency = 0.50      }
+technology = { id = 72  average_year = 2530          trade_efficiency = 0.50      }
+technology = { id = 73  average_year = 2540         trade_efficiency = 0.50      }
+technology = { id = 74  average_year = 2550          trade_efficiency = 0.50     }
+technology = { id = 75  average_year = 2560          trade_efficiency = 0.50      }
+technology = { id = 76  average_year = 2570          trade_efficiency = 0.50      }
+technology = { id = 77  average_year = 2580         trade_efficiency = 0.50      }
+technology = { id = 78  average_year = 2590         trade_efficiency = 0.50      }
+technology = { id = 79  average_year = 2600         trade_efficiency = 0.50      }
+technology = { id = 80  average_year = 2610          trade_efficiency = 0.50      }
+technology = { id = 81  average_year = 2620         trade_efficiency = 0.50      }
+technology = { id = 82  average_year = 2630          trade_efficiency = 0.50      }
+technology = { id = 83  average_year = 2640         trade_efficiency = 0.50      }
+technology = { id = 84  average_year = 2650         trade_efficiency = 0.50      }
+technology = { id = 85  average_year = 2660        trade_efficiency = 0.50      }
+technology = { id = 86  average_year = 2670          trade_efficiency = 0.50      }
+technology = { id = 87  average_year = 2680          trade_efficiency = 0.50      }
+technology = { id = 88  average_year = 2690        trade_efficiency = 0.50      }
+technology = { id = 89  average_year = 2700          trade_efficiency = 0.50      }
+technology = { id = 90  average_year = 2710          trade_efficiency = 0.50      }
+technology = { id = 91  average_year = 2720       trade_efficiency = 0.50      }
+technology = { id = 92  average_year = 2730          trade_efficiency = 0.50      }
+technology = { id = 93  average_year = 2740          trade_efficiency = 0.50      }
+technology = { id = 94  average_year = 2750         trade_efficiency = 0.50      }
+technology = { id = 95  average_year = 2760          trade_efficiency = 0.50      }
+technology = { id = 96  average_year = 2770         trade_efficiency = 0.50      }
+technology = { id = 97  average_year = 2780          trade_efficiency = 0.50      }
+technology = { id = 98  average_year = 2790          trade_efficiency = 0.50      }
+technology = { id = 99  average_year = 2800          trade_efficiency = 0.50      }
+technology = { id = 100  average_year = 9999          trade_efficiency = 0.50      }

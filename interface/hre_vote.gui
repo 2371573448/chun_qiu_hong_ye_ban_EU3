@@ -1,0 +1,131 @@
+guiTypes = {
+
+	windowType = {
+		name ="hre_vote_box"
+		backGround="hre_vote_box"
+		position = { x= 50 y =150 }	
+		size = { x=330 y =400 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		upsound = ""
+		downsound = ""
+		fullscreen=no
+			
+		guiButtonType = {
+			name = "hre_vote_box"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_hre_vote_bg"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""	
+		}
+		
+		textBoxType = {
+			name = "hre_vote_label"
+			position = { x = -22 y = 13 }
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "CAST_ELECTORAL_VOTE"	
+			maxWidth = 300
+			maxHeight = 32
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "sortby_nation_button"
+			position = { x=55 y =40 }
+			quadTextureSprite ="mini_button"	
+			tooltip = ""
+			tooltipText =""
+			
+			delayedTooltipText = ""
+			buttonText = "DOMESTIC_NATION"
+			buttonFont = "Main_14_plain"
+		}
+
+		guiButtonType = {
+			name = "sortby_relation_button"
+			position = { x=142 y =40 }
+			quadTextureSprite ="mini_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "DOMESTIC_RELATION"
+			buttonFont = "Main_14_plain"
+		}
+
+		listboxType = {
+			name ="domestictext_relationlist"
+			position = { x = 24 y = 58 }
+			backGround=""
+			size = { x=180 y =260}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		guiButtonType = {
+			name = "cancel"
+			position = { x = 67 y = 323 }
+			quadTextureSprite ="button_type_1"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "GOTO_CANCEL"
+			buttonFont = "Main_14_black"
+		}
+	}
+	
+	windowType = {
+		name = "hre_vote_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		guiButtonType =
+		{
+			name ="hre_vote_shield"
+			quadTextureSprite = "GFX_minishield"
+			position = { x= 0 y = 0 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 32 y =7 }
+			format = left
+			font = "Main_14_bold"
+			maxWidth = 134
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "value"
+			position = { x = 148 y =7 }
+			format = left
+			font = "Main_14_bold"
+			maxWidth = 64
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+}

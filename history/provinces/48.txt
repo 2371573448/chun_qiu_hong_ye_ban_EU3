@@ -1,0 +1,42 @@
+owner = LOU
+controller = LOU
+culture = beidi
+religion = animism
+capital = "ÉÆÎÞ"
+trade_goods = fur
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 10000
+fort1 = yes
+add_core = LOU
+cot = no
+1928.1.1 = { 
+	discovered_by = DAI
+}
+1928.1.1 = { discovered_by = LOU }
+2120.1.1 = { discovered_by = JIN }
+2222.1.1 = { citysize = 16000 }
+2246.1.1 = { religion = liyuebadao 
+add_core = ZHO
+}
+2397.1.1  = {	owner = ZHO
+		controller = ZHO
+                citysize = 14000
+            }
+2427.1.1  = {   add_core = ZHO
+                culture = hebei  
+             }
+2440.1.1 = { religion = liyuejiaohua }
+2464.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2492.2.1 = { 
+	owner = DAI
+	controller = DAI
+	add_core = DAI
+}
+2493.9.1 = { 
+	owner = HNW
+	controller = HNW
+}

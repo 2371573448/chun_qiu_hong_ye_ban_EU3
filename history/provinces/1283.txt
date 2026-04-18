@@ -1,0 +1,73 @@
+
+culture = beidi
+religion = animism
+capital = "É½´¨Æ½Ô­"
+trade_goods = spices
+hre = no
+base_tax = 6
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+1827.1.1 = { 
+	discovered_by = CHA
+}
+2165.1.1 = { 
+	owner = JIN
+	controller = JIN
+	citysize = 8000
+	fort1 = yes
+}
+2195.1.1 = { 
+	add_core = JIN
+}
+2222.1.1 = { 
+	citysize = 18000
+}
+2225.1.1 = { 
+	culture = shanxi
+	religion = liyuejiaohua
+}
+2244.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = ZHO
+}
+2245.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+}
+2439.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2441.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2442.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2472.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = DAI
+	controller = DAI
+	add_core = DAI
+}
+2493.9.1 = { 
+	owner = HNW
+	controller = HNW
+}

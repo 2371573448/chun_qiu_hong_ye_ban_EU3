@@ -1,0 +1,549 @@
+government = fengjian
+aristocracy_plutocracy = -2
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = 0
+offensive_defensive = 0
+land_naval = -2
+quality_quantity = 2
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = yinyi
+capital = 324
+1919.1.1 = { 
+	monarch = { 
+		name = "白"
+		dynasty = "子"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1928.1.1 = { 
+	elector = yes
+}
+1933.1.1 = { 
+	monarch = { 
+		name = "司空"
+		dynasty = "子"
+		adm = 5
+		dip = 5
+		mil = 7
+	}
+}
+1951.1.1 = { 
+	monarch = { 
+		name = "力"
+		dynasty = "子"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+1970.1.1 = { 
+	monarch = { 
+		name = "和"
+		dynasty = "子"
+		adm = 6
+		dip = 2
+		mil = 9
+	}
+}
+1979.1.1 = { 
+	# 宋殇公好战，十年十一战
+	monarch = { 
+		name = "与夷"
+		dynasty = "子"
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+	offensive_defensive = -3
+}
+1979.1.1 = { 
+	leader = { 
+		name = "华父督"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 1
+		manuever = 2
+		siege = 1
+		death_date = 2004.1.1
+	}
+}
+1988.1.1 = { 
+	leader = { 
+		name = "孔父嘉"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 1
+		manuever = 1
+		siege = 1
+		death_date = 1988.1.1
+	}
+}
+1988.1.1 = { 
+	# 华父督杀殇公
+	monarch = { 
+		name = "冯"
+		dynasty = "子"
+		adm = 5
+		dip = 7
+		mil = 7
+	}
+	aristocracy_plutocracy = -3
+	offensive_defensive = -1
+}
+2004.1.1 = { 
+	leader = { 
+		name = "华父督"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 1
+		manuever = 2
+		siege = 1
+		death_date = 2016.1.1
+	}
+}
+2007.1.1 = { 
+	monarch = { 
+		name = "捷"
+		dynasty = "子"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+2012.1.1 = { 
+	leader = { 
+		name = "南宫长万"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 3
+		manuever = 1
+		siege = 1
+		death_date = 2016.1.1
+	}
+}
+2012.1.1 = { 
+	leader = { 
+		name = "萧叔大心"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2023.1.1
+	}
+}
+2016.1.1 = { 
+	monarch = { 
+		name = "游"
+		dynasty = "子"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+2017.1.1 = { 
+	monarch = { 
+		name = "御说"
+		dynasty = "子"
+		adm = 5
+		dip = 6
+		mil = 6
+	}
+}
+2017.1.1 = { 
+	# 宋桓公杀南宫长万、子游
+	centralization_decentralization = 2
+}
+2048.1.1 = { 
+	monarch = { 
+		name = "兹父"
+		dynasty = "子"
+		adm = 7
+		dip = 6
+		mil = 3
+	}
+}
+2048.1.1 = { 
+	# 宋襄公以庶兄公子目夷为相，行东宫图治
+	government = yuanshuai
+	centralization_decentralization = -1
+	innovative_narrowminded = -1
+}
+2048.1.1 = { 
+	leader = { 
+		name = "公子目夷"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 2
+		manuever = 3
+		siege = 1
+		death_date = 2063.1.1
+	}
+}
+2050.1.1 = { 
+	set_country_flag = zongfazhidu
+}
+2059.1.1 = { 
+	leader = { 
+		name = "公孙固"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 1
+		manuever = 1
+		siege = 1
+		death_date = 2078.1.1
+	}
+}
+2059.1.1 = { 
+	# 宋襄公联曹、卫、邾四国攻齐，拥立齐孝公，开始图谋争霸
+	offensive_defensive = -3
+	land_naval = -4
+}
+2061.1.1 = { 
+	# 泓水之战，宋大败于楚，从此无力参与争霸
+	centralization_decentralization = 1
+	offensive_defensive = 3
+	land_naval = 0
+}
+2062.1.1 = { 
+	monarch = { 
+		name = "王臣"
+		dynasty = "子"
+		adm = 5
+		dip = 7
+		mil = 5
+	}
+}
+2072.1.1 = { 
+	leader = { 
+		name = "公子成"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 4
+		manuever = 4
+		siege = 1
+		death_date = 2080.1.1
+	}
+}
+2078.1.1 = { 
+	monarch = { 
+		name = "御"
+		dynasty = "子"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+2079.1.1 = { 
+	monarch = { 
+		name = "杵臼"
+		dynasty = "子"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+2083.1.1 = { 
+	leader = { 
+		name = "乐吕"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 3
+		manuever = 1
+		siege = 1
+		death_date = 2091.1.1
+	}
+}
+2087.1.1 = { 
+	leader = { 
+		name = "华元"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 2
+		manuever = 6
+		siege = 1
+		death_date = 2111.1.1
+	}
+}
+2088.1.1 = { 
+	monarch = { 
+		name = "鲍"
+		dynasty = "子"
+		adm = 7
+		dip = 6
+		mil = 4
+	}
+	# 公子鲍杀昭公自立，是为宋文公，在位21年，行恶政，死后以活人殉葬
+	government = zhizheng
+	centralization_decentralization = 3
+	innovative_narrowminded = 3
+}
+2100.1.1 = { 
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2110.1.1 = { 
+	monarch = { 
+		name = "瑕"
+		dynasty = "子"
+		adm = 6
+		dip = 3
+		mil = 7
+	}
+}
+2122.1.1 = { 
+	leader = { 
+		name = "老佐"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 1
+		siege = 1
+		death_date = 2125.1.1
+	}
+}
+2122.1.1 = { 
+	leader = { 
+		name = "鱼石"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 2
+		manuever = 2
+		siege = 1
+		death_date = 2126.1.1
+	}
+}
+2123.1.1 = { 
+	monarch = { 
+		name = "成"
+		dynasty = "子"
+		adm = 4
+		dip = 8
+		mil = 5
+	}
+}
+2132.1.1 = { 
+	leader = { 
+		name = "华阅"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 1
+		manuever = 4
+		siege = 1
+		death_date = 2142.1.1
+	}
+}
+2134.1.1 = { 
+	leader = { 
+		name = "乐喜"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 1
+		manuever = 4
+		siege = 1
+		death_date = 2158.1.1
+	}
+}
+2150.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2152.1.1 = { 
+	# 向戌弭兵
+	offensive_defensive = 0
+}
+2167.1.1 = { 
+	monarch = { 
+		name = "佐"
+		dynasty = "子"
+		adm = 8
+		dip = 6
+		mil = 6
+	}
+}
+2176.1.1 = { 
+	# 华氏之乱
+	aristocracy_plutocracy = -4
+	centralization_decentralization = 4
+}
+2182.1.1 = { 
+	monarch = { 
+		name = "头曼"
+		dynasty = "子"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+2198.1.1 = { 
+	leader = { 
+		name = "向魋"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 2
+		manuever = 3
+		siege = 1
+		death_date = 2217.1.1
+	}
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2229.1.1 = { 
+	monarch = { 
+		name = "启"
+		dynasty = "子"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+2230.1.1 = { 
+	# 乐氏、皇氏、灵氏以国人“施于大尹”，逐大尹、宋君启，立宋昭公
+	monarch = { 
+		name = "得"
+		dynasty = "子"
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+	aristocracy_plutocracy = -5
+	centralization_decentralization = 5
+}
+2230.1.1 = { 
+	# 墨子入宋
+	offensive_defensive = 5
+}
+2245.1.1 = { 
+	elector = no
+}
+2246.1.1 = { 
+	centralization_decentralization = -2
+	aristocracy_plutocracy = -1
+	serfdom_freesubjects = -3
+	innovative_narrowminded = 1
+	mercantilism_freetrade = 4
+	offensive_defensive = 3
+	land_naval = -2
+	quality_quantity = -1
+	monarch = { 
+		name = "分"
+		dynasty = "子"
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+}
+2247.1.1 = { 
+	centralization_decentralization = 4
+	monarch = { 
+		name = "得"
+		dynasty = "子"
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+2250.1.1 = { 
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+}
+2280.1.1 = { 
+	set_global_flag = mojiachuanbo
+}
+2295.1.1 = { 
+	monarch = { 
+		name = "购由"
+		dynasty = "子"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+2300.1.1 = { 
+	set_country_flag = fengjunzhidu
+}
+2313.1.1 = { 
+	monarch = { 
+		name = "田"
+		dynasty = "子"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+2336.1.1 = { 
+	monarch = { 
+		name = "辟兵"
+		dynasty = "子"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+2348.1.1 = { 
+	# 戴氏取宋
+	monarch = { 
+		name = "喜"
+		dynasty = "戴"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+	government = enlightened_despotism
+	aristocracy_plutocracy = -1
+	centralization_decentralization = 2
+}
+2350.1.1 = { 
+	set_country_flag = hujizhidu
+}
+2370.1.1 = { 
+	# 戴偃逐剔成，是为宋康王，在位厉行改革，使宋强大一时，号五千乘之劲宋
+	monarch = { 
+		name = "偃"
+		dynasty = "戴"
+		adm = 6
+		dip = 4
+		mil = 8
+	}
+	capital = 328
+	government = reformed_despotism
+	aristocracy_plutocracy = 2
+	centralization_decentralization = -3
+	innovative_narrowminded = -2
+	offensive_defensive = -5
+	serfdom_freesubjects = 2
+}
+2373.1.1 = { 
+	leader = { 
+		name = "田不礼"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 2
+		manuever = 4
+		siege = 1
+		death_date = 2393.1.1
+	}
+}

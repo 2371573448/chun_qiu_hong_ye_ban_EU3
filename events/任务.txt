@@ -1,0 +1,79 @@
+country_event = { 
+	id = 502
+	is_triggered_only = yes
+	title = "EVTNAME502"
+	desc = "EVTDESC502"
+	option = { 
+		name = "EVTOPTA502"
+		any_country = { 
+			limit = { 
+				has_country_flag = jiemengrenwubeifuyong
+			}
+			country_event = 503
+		}
+	}
+}
+country_event = { 
+	id = 503
+	is_triggered_only = yes
+	title = "EVTNAME503"
+	desc = "EVTDESC503"
+	option = { 
+		name = "EVTOPTA503"
+		clr_country_flag = jiemengrenwubeifuyong
+		FROM = { 
+			vassalize = THIS
+		}
+	}
+}
+province_event = { 
+	id = 504
+	is_triggered_only = yes
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	immediate = {
+		name = "EVTOPTA504"
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+		transport = this
+	}
+	option = { 
+	}
+}
+province_event = { 
+	id = 505
+	is_triggered_only = yes
+	title = "EVTNAME505"
+	desc = "EVTDESC505"
+	immediate = {
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		infantry = this
+		artillery = this
+		artillery = this
+		artillery = this
+		artillery = this
+		cavalry = this
+		cavalry = this
+		cavalry = this
+		cavalry = this
+	}
+	option = { 
+	}
+}

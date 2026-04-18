@@ -1,0 +1,43 @@
+
+owner = HAG
+controller = HAG
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "ทั"
+trade_goods = coffee
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = HAG
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2071.4.13={owner =PAP controller =PAP}
+2101.1.1 = {add_core =PAP}
+2222.1.1 = { citysize = 30000 remove_core = HAG }
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2331.1.1 = { owner = HAN
+             controller = HAN
+           }
+2361.1.1 =  { add_core = HAN  }
+2449.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2479.1.1 = { add_core = QIN  }
+2489.10.1={
+    controller=CHU
+}
+2489.12.1={ controller=QIN }
+
+2492.2.1={owner=SCW controller=SCW add_core=SCW}   2492.10.1={owner=HNW controller=HNW}

@@ -1,0 +1,228 @@
+province_decisions = {
+#贸易中心相关决议
+
+        qiangxingguanbimaoyizhongxin = { #强行关闭贸易中心
+		potential = {
+			cot=yes
+			owner = {
+			ai=no
+                        }
+		}
+		allow = {
+			owner = {
+				officials = 2
+                                treasury = 100
+			or={
+			not={has_country_flag = guanbimytj}
+			ai=yes
+			}
+                        }
+
+		not={mercantilism_freetrade=2}
+		}
+		effect = {
+			owner = {
+				officials = -2
+				treasury = -100
+				badboy= 5
+			}
+			cot=no
+
+		}
+		ai_will_do = {
+			factor = 0
+                }
+        }
+
+
+#蜀国天赋-蜀道之难
+         shudaozhinanheping = { 
+		potential = {
+		owner={
+			tag = SGU
+			has_country_flag = shanchuanxianyao
+			war=no
+		}
+		not={has_province_modifier = shudaonan}
+		}
+		allow = {
+
+			owner = {
+                                treasury = 10	
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+                        }
+
+		}
+		effect = {
+			owner = {
+				years_of_income = -0.01
+			}
+			add_province_modifier = { 
+				name = "shudaonan"
+				duration = 1825
+			}
+
+		}
+		ai_will_do = {
+			factor = 0
+                }
+        }
+      shudaozhinanzhanzheng = { 
+		potential = {
+		owner={
+			tag = SGU
+			has_country_flag = shanchuanxianyao
+			war=yes
+		}
+		not={has_province_modifier = shudaonan}
+		}
+		allow = {
+			owner = {
+                                treasury = 100
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+                        }
+
+		}
+		effect = {
+			owner = {
+				years_of_income = -0.03
+				multiply_citysize = 0.97
+				badboy= 1				
+			}
+			add_province_modifier = { 
+				name = "shudaonan"
+				duration = 1825
+			}
+
+		}
+		ai_will_do = {
+			factor = 0
+                }
+        }
+
+       shudaozhinanjiechu = { 
+		potential = {
+		owner={
+			has_country_flag = shanchuanxianyao
+		}
+		has_province_modifier = shudaonan
+		}
+		allow = {
+			owner = {
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+                        }
+		}
+		effect = {
+			owner = {			
+			}
+			remove_province_modifier = shudaonan
+
+		}
+		ai_will_do = {
+			factor = 0
+                }
+        }
+
+
+}
+
+
+
+######殷商占卜########
+country_decisions = {
+
+yinshangzhanbujueyi={
+
+		potential = {
+			has_country_modifier = yinshanggaige
+			not={has_country_modifier = yinshangzhanbu1}
+			not={has_country_modifier = yinshangzhanbu2}
+			not={has_country_modifier = yinshangzhanbu3}
+			not={has_country_modifier = yinshangzhanbu4}
+			not={has_country_modifier = yinshangzhanbu5}
+			not={has_country_modifier = yinshangzhanbu6}
+			not={has_country_modifier = yinshangzhanbu7}
+
+		}
+		allow = {
+			war=yes
+		}
+		effect = {
+			random_list = { 
+
+			15 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu1"##终将获胜
+				duration = 1825
+			}
+			}
+
+
+			10 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu2"##速胜之兆
+				duration = 1825
+			}
+			}
+
+
+
+			10 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu3"##祖先之命
+				duration = 1825
+			}
+			}
+
+
+			30 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu4"##不应之战
+				duration = 1825
+			}
+			}
+
+
+			10 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu5"##违背祖先
+				duration = 1825
+			}
+			}
+
+
+			10 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu6"##动荡之兆 
+				duration = 1825
+			}
+			}
+
+
+			15 = { 
+			add_country_modifier = {
+				name = "yinshangzhanbu7"##失败之兆
+				duration = 1825
+			}
+			}
+
+			}
+
+
+		}
+		ai_will_do = {
+			factor = 0
+                }
+
+}
+
+}

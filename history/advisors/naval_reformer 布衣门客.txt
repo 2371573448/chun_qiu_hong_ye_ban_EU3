@@ -1,0 +1,28 @@
+#公卿所属的门客中杰出的代表
+
+advisor ={
+name ="毛遂" 
+location =112
+skill =4
+type =naval_reformer
+date =2440.1.1
+death_date =2470.1.1
+}
+
+advisor ={
+name ="侯嬴" 
+location =66
+skill =4
+type =naval_reformer
+date =2441.1.1
+death_date =2415.1.1
+}
+
+advisor ={
+name ="冯谖"
+location =260
+skill =5
+type =naval_reformer
+date =2360.1.1
+death_date =2410.1.1
+}

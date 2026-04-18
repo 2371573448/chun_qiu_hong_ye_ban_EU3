@@ -1,0 +1,88 @@
+
+culture = yangyue
+religion = ancestor
+capital = "до╡Щ"
+trade_goods = tea
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2090.1.1 = { 
+	discovered_by = CHU
+}
+2222.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 6000
+	fort1 = yes
+}
+2244.1.1 = { 
+	owner = HNX
+	controller = HNX
+	add_core = HNX
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = HNX
+}
+2246.1.1 = { 
+	owner = MIA
+	controller = MIA
+	add_core = MIA
+	remove_core = CHU
+	citysize = 20000
+}
+2246.1.2 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+        religion = liyuebadao
+	remove_core = MIA
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = MIA
+	citysize = 9000
+}
+2252.1.1 = { 
+	add_core = CHU
+}
+2272.1.1 = { 
+	religion = liyuebadao
+	culture = nanchu
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	revolt = { 
+		type = nationalist_rebels
+		size = 4
+	}
+	controller = REB
+}
+2490.5.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	citysize = 24000
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

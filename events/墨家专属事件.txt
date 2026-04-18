@@ -1,0 +1,90 @@
+country_event = { 
+	id = 4601
+	#Ä«¼Ò¾ÈÔ®
+	trigger = { 
+		war = yes
+		idea = deus_vult
+		NOT = { 
+			has_country_modifier = mojiajiuyuan
+		}
+		OR = { 
+			war_exhaustion = 6
+			NOT = { 
+				manpower_percentage = 0.30
+			}
+			NOT = { 
+				stability = 1
+			}
+		}
+		any_owned_province = { 
+			has_siege = yes
+		}
+	}
+	mean_time_to_happen = { 
+		months = 12
+	}
+	title = "EVTNAME4601"
+	desc = "EVTDESC4601"
+	option = { 
+		name = "EVTOPTA4601"
+		random_owned = {
+			limit = { controlled_by = THIS  }
+			artillery = current
+			artillery = current
+			artillery = current
+			cavalry = current
+			cavalry = current
+			cavalry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+		}
+		define_general = { 
+			name = "Ä«¼Ò¾Þ×Ó"
+			shock = 3
+			fire = 4
+			siege = 3
+			manuever = 4
+		}
+		add_country_modifier = { 
+			name = "mojiajiuyuan"
+			duration = 1825
+		}
+	}
+	option = { 
+		name = "EVTOPTA4601"
+		war_exhaustion = -2
+		manpower = 0.1
+		add_country_modifier = { 
+			name = "mojiajiuyuan"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 4602
+	#Ä«¼Ò¾ÈÔ®½â³ý
+	trigger = { 
+		OR = { 
+			war = no
+			NOT = { 
+				idea = deus_vult
+			}
+		}
+		has_country_modifier = mojiajiuyuan
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME4602"
+	desc = "EVTDESC4602"
+	option = { 
+		name = "EVTOPTA4602"
+		remove_country_modifier = mojiajiuyuan
+	}
+}

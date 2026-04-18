@@ -1,0 +1,44 @@
+country_decisions = { 
+	bianshen_qi = { 
+		potential = { 
+			NOT = { 
+				exists = QIG
+			}
+			primary_culture = qilu
+			NOT = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			owns = 265
+			owns = 277
+			owns = 282
+			owns = 259
+			owns = 261
+			is_core = 265
+			is_core = 277
+			is_core = 282
+			is_core = 259
+			is_core = 261
+			war = no
+		}
+		effect = { 
+			jiaodong = { 
+				add_core = QIG
+			}
+			linzi = { 
+				add_core = QIG
+			}
+			jibei = { 
+				add_core = QIG
+			}
+			capital = 265
+			prestige = 0.05
+			change_tag = QIG
+			elector = yes
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,14 @@
+
+1827.1.1 = { discovered_by = XYR }owner = JXY
+controller = JXY
+culture = xiyu
+religion = animism
+capital = "ξͷ"
+trade_goods = coffee
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = JXY
+1827.1.1 = { discovered_by = XYR }

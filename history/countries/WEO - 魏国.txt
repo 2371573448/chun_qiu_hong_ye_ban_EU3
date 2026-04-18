@@ -1,0 +1,15 @@
+government =fengjian
+aristocracy_plutocracy = 0
+centralization_decentralization = -3
+innovative_narrowminded = -2
+mercantilism_freetrade = -2
+offensive_defensive = -2
+land_naval = -5
+quality_quantity = -2
+serfdom_freesubjects = 2
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = shanxi
+capital = 77
+
+2100.1.1 = { decision = tuposanjunguizhi }

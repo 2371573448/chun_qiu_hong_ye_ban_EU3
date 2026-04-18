@@ -1,0 +1,515 @@
+country_event = { 
+	# 吴国崛起
+	id = 10101
+	trigger = { 
+		tag = WUG
+		war = no
+		ai = yes
+		num_of_cots = 1
+		not = { 
+			has_country_flag = wuguojierang1
+		}
+		433 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = WUG
+			}
+		}
+		year = 2050
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2100
+		}
+	}
+	title = "EVTNAME10101"
+	desc = "EVTDESC10101"
+	option = { 
+		name = "EVTOPTA10101"
+		433 = { 
+			add_core = WUG
+		}
+		433 = { 
+			change_controller = WUG
+			secede_province = WUG
+			citysize = 5000
+			add_building = fort1
+		}
+		WUG = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = wuguojierang1
+		}
+	}
+}
+country_event = { 
+	# 吴国崛起
+	id = 10102
+	trigger = { 
+		tag = WUG
+		war = no
+		ai = yes
+		num_of_cots = 1
+		not = { 
+			has_country_flag = wuguojierang2
+		}
+		434 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = WUG
+			}
+		}
+		year = 2050
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2100
+		}
+	}
+	title = "EVTNAME10101"
+	desc = "EVTDESC10101"
+	option = { 
+		name = "EVTOPTA10101"
+		434 = { 
+			add_core = WUG
+		}
+		434 = { 
+			change_controller = WUG
+			secede_province = WUG
+			citysize = 5000
+			add_building = fort1
+		}
+		WUG = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = wuguojierang2
+		}
+	}
+}
+country_event = { 
+	# 吴国崛起
+	id = 10103
+	trigger = { 
+		tag = WUG
+		war = no
+		ai = yes
+		num_of_cots = 1
+		not = { 
+			has_country_flag = wuguojierang3
+		}
+		428 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = WUG
+			}
+		}
+		year = 2050
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2100
+		}
+	}
+	title = "EVTNAME10101"
+	desc = "EVTDESC10101"
+	option = { 
+		name = "EVTOPTA10101"
+		428 = { 
+			add_core = WUG
+		}
+		428 = { 
+			change_controller = WUG
+			secede_province = WUG
+			citysize = 5000
+			add_building = fort1
+		}
+		WUG = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = wuguojierang3
+		}
+	}
+}
+country_event = { 
+	# 吴国崛起
+	id = 10104
+	trigger = { 
+		tag = WUG
+		war = no
+		ai = yes
+		num_of_cots = 1
+		not = { 
+			has_country_flag = wuguojierang4
+		}
+		445 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = WUG
+			}
+		}
+		year = 2050
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2100
+		}
+	}
+	title = "EVTNAME10101"
+	desc = "EVTDESC10101"
+	option = { 
+		name = "EVTOPTA10101"
+		445 = { 
+			add_core = WUG
+		}
+		445 = { 
+			change_controller = WUG
+			secede_province = WUG
+			citysize = 5000
+			add_building = fort1
+		}
+		WUG = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = wuguojierang4
+		}
+	}
+}
+
+country_event = { 
+	# 越国崛起
+	id = 10105
+	trigger = { 
+		tag = YGO
+		war = no
+		ai = yes
+		not = { 
+			has_country_flag = yueguojueqi1
+		}
+		439 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = YGO
+			}
+		}
+		year = 2100
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2150
+		}
+	}
+	title = "EVTNAME10102"
+	desc = "EVTDESC10102"
+	option = { 
+		name = "EVTOPTA10102"
+		439 = { 
+			add_core = YGO
+		}
+		439 = { 
+			change_controller = YGO
+			secede_province = YGO
+			citysize = 5000
+			add_building = fort1
+		}
+		YGO = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = yueguojueqi1
+		}
+	}
+}
+country_event = { 
+	# 越国崛起
+	id = 10106
+	trigger = { 
+		tag = YGO
+		war = no
+		ai = yes
+		not = { 
+			has_country_flag = yueguojueqi2
+		}
+		452 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = YGO
+			}
+		}
+		year = 2100
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2150
+		}
+	}
+	title = "EVTNAME10102"
+	desc = "EVTDESC10102"
+	option = { 
+		name = "EVTOPTA10102"
+		452 = { 
+			add_core = YGO
+		}
+		452 = { 
+			change_controller = YGO
+			secede_province = YGO
+			citysize = 5000
+			add_building = fort1
+		}
+		YGO = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = yueguojueqi2
+		}
+	}
+}
+country_event = { 
+	# 越国崛起
+	id = 10107
+	trigger = { 
+		tag = YGO
+		war = no
+		ai = yes
+		not = { 
+			has_country_flag = yueguojueqi3
+		}
+		451 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = YGO
+			}
+		}
+		year = 2100
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2150
+		}
+	}
+	title = "EVTNAME10102"
+	desc = "EVTDESC10102"
+	option = { 
+		name = "EVTOPTA10102"
+		451 = { 
+			add_core = YGO
+		}
+		451 = { 
+			change_controller = YGO
+			secede_province = YGO
+			citysize = 5000
+			add_building = fort1
+		}
+		YGO = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = yueguojueqi3
+		}
+	}
+}
+country_event = { 
+	# 越国崛起
+	id = 10108
+	trigger = { 
+		tag = YGO
+		war = no
+		ai = yes
+		not = { 
+			has_country_flag = yueguojueqi4
+		}
+		444 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = YGO
+			}
+		}
+		year = 2100
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2150
+		}
+	}
+	title = "EVTNAME10102"
+	desc = "EVTDESC10102"
+	option = { 
+		name = "EVTOPTA10102"
+		444 = { 
+			add_core = YGO
+		}
+		444 = { 
+			change_controller = YGO
+			secede_province = YGO
+			citysize = 5000
+			add_building = fort1
+		}
+		YGO = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = yueguojueqi4
+		}
+	}
+}
+country_event = { 
+	# 越国崛起
+	id = 10109
+	trigger = { 
+		tag = YGO
+		war = no
+		ai = yes
+		not = { 
+			has_country_flag = yueguojueqi5
+		}
+		441 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = YGO
+			}
+		}
+		year = 2100
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2150
+		}
+	}
+	title = "EVTNAME10102"
+	desc = "EVTDESC10102"
+	option = { 
+		name = "EVTOPTA10102"
+		441 = { 
+			add_core = YGO
+		}
+		441 = { 
+			change_controller = YGO
+			secede_province = YGO
+			citysize = 5000
+			add_building = fort1
+		}
+		YGO = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = yueguojueqi5
+		}
+	}
+}
+country_event = { 
+	# 越国崛起
+	id = 10110
+	trigger = { 
+		tag = YGO
+		war = no
+		ai = yes
+		not = { 
+			has_country_flag = yueguojueqi6
+		}
+		437 = { 
+			empty = yes
+			any_neighbor_province = { 
+				owned_by = YGO
+			}
+		}
+		year = 2100
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.25
+			WUG = { 
+				technology_group = chinese
+			}
+		}
+		modifier = { 
+			factor = 0.33
+			year = 2150
+		}
+	}
+	title = "EVTNAME10102"
+	desc = "EVTDESC10102"
+	option = { 
+		name = "EVTOPTA10102"
+		437 = { 
+			add_core = YGO
+		}
+		437 = { 
+			change_controller = YGO
+			secede_province = YGO
+			citysize = 5000
+			add_building = fort1
+		}
+		YGO = { 
+			treasury = 100
+			innovative_narrowminded = -1
+			set_country_flag = yueguojueqi6
+		}
+	}
+}

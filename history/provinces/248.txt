@@ -1,0 +1,51 @@
+
+culture = ba
+religion = ancestor
+capital = "°Í"
+trade_goods = grain
+hre = no
+base_tax = 9
+manpower = 0
+owner = BAG
+controller = BAG
+citysize = 34000
+fort1 = yes
+add_core = BAG
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1928.1.1 = { 
+	discovered_by = BAG
+}
+1928.1.1 = { 
+	discovered_by = SGU
+}
+2222.1.1 = { 
+	citysize = 48000
+	fort2 = yes
+}
+2246.1.1 = { 
+	owner = BAG
+	controller = BAG
+	add_core = BAG
+	religion = liyuebadao
+        citysize = 24000
+}
+2382.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2412.1.1 = { 
+	add_core = QIN
+}
+2420.1.1 = { 
+	religion = fajia
+}
+2492.2.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+	religion = daojia
+	citysize = 40000
+}

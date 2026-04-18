@@ -1,0 +1,911 @@
+#儒家
+province_event = { 
+	# 诗经
+	id = 10015
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = shijing
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = LUG
+			}
+		}
+	}
+	title = "EVTNAME10015"
+	desc = "EVTDESC10015"
+	option = { 
+		name = "EVTOPTA10015"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = shijing
+	}
+}
+province_event = { 
+	# 易经
+	id = 10016
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = yijing
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 6000
+	}
+	title = "EVTNAME10016"
+	desc = "EVTDESC10016"
+	option = { 
+		name = "EVTOPTA10016"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = yijing
+	}
+}
+province_event = { 
+	# 尚书
+	id = 10017
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = shangshu
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = LUG
+			}
+		}
+	}
+	title = "EVTNAME10017"
+	desc = "EVTDESC10017"
+	option = { 
+		name = "EVTOPTA10017"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = shangshu
+	}
+}
+province_event = { 
+	# 春秋
+	id = 10018
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = chunqiu
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = LUG
+			}
+		}
+	}
+	title = "EVTNAME10018"
+	desc = "EVTDESC10018"
+	option = { 
+		name = "EVTOPTA10018"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = chunqiu
+	}
+}
+province_event = { 
+	# 礼记
+	id = 10019
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = liji
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = LUG
+			}
+		}
+	}
+	title = "EVTNAME10019"
+	desc = "EVTDESC10019"
+	option = { 
+		name = "EVTOPTA10019"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = liji
+	}
+}
+province_event = { 
+	# 孟子
+	id = 10020
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = mengzi
+			}
+		}
+		year = 2340
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			region = yanzhou
+		}
+	}
+	title = "EVTNAME10020"
+	desc = "EVTDESC10020"
+	option = { 
+		name = "EVTOPTA10020"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = mengzi
+	}
+}
+province_event = { 
+	# 论语
+	id = 10021
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = lunyu
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = LUG
+			}
+		}
+	}
+	title = "EVTNAME10021"
+	desc = "EVTDESC10021"
+	option = { 
+		name = "EVTOPTA10021"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = lunyu
+	}
+}
+province_event = { 
+	# 荀子
+	id = 10022
+	major = yes
+	trigger = { 
+		religion = rujia
+		owner = { 
+			NOT = { 
+				has_global_flag = xunzi
+			}
+		}
+		year = 2400
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10022"
+	desc = "EVTDESC10022"
+	option = { 
+		name = "EVTOPTA10022"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = xunzi
+	}
+}
+#法家
+province_event = { 
+	# 管子
+	id = 10023
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = guanzi
+			}
+		}
+		has_global_flag = zhanguokaishi
+	}
+	mean_time_to_happen = { 
+		months = 6000
+		modifier = { 
+			factor = 0.33
+			owner = { 
+				tag = QIG
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				tag = HAN
+			}
+		}
+	}
+	title = "EVTNAME10023"
+	desc = "EVTDESC10023"
+	immediate = { 
+		owner = { 
+			set_country_flag = zhuzuo
+		}
+	}
+	option = { 
+		name = "EVTOPTA10023"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		any_country={
+			limit = { 
+				has_country_flag = zhuzuo
+				tag = HAN
+			}
+			stability = 3
+			clr_country_flag = zhuzuo
+		}
+		set_global_flag = guanzi
+	}
+}
+province_event = { 
+	# 法经
+	id = 10024
+	major = yes
+	trigger = { 
+		religion = fajia
+		owner = { 
+			NOT = { 
+				has_global_flag = fajing
+			}
+		}
+		has_global_flag = zhanguokaishi
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.33
+			owner = { 
+				tag = WEI
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				tag = HAN
+			}
+		}
+	}
+	title = "EVTNAME10024"
+	desc = "EVTDESC10024"
+	immediate = { 
+		owner = { 
+			set_country_flag = zhuzuo
+		}
+	}
+	option = { 
+		name = "EVTOPTA10024"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		any_country={
+			limit = { 
+				has_country_flag = zhuzuo
+				tag = HAN
+			}
+			legitimacy = 0.25
+			clr_country_flag = zhuzuo
+		}
+		set_global_flag = fajing
+	}
+}
+province_event = { 
+	# 申子
+	id = 10025
+	major = yes
+	trigger = { 
+		religion = fajia
+		owner = { 
+			NOT = { 
+				has_global_flag = shenzi1
+			}
+		}
+		year = 2300
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = HAN
+			}
+		}
+	}
+	title = "EVTNAME10025"
+	desc = "EVTDESC10025"
+	immediate = { 
+		owner = { 
+			set_country_flag = zhuzuo
+		}
+	}
+	option = { 
+		name = "EVTOPTA10025"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		any_country={
+			limit = { 
+				has_country_flag = zhuzuo
+				tag = HAN
+			}
+			prestige = 0.15
+			badboy = -4
+			clr_country_flag = zhuzuo
+		}
+		set_global_flag = shenzi1
+	}
+}
+province_event = { 
+	# 慎子
+	id = 10026
+	major = yes
+	trigger = { 
+		religion = fajia
+		owner = { 
+			NOT = { 
+				has_global_flag = shenzi2
+			}
+		}
+		year = 2300
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				tag = HAN
+			}
+		}
+	}
+	title = "EVTNAME10026"
+	desc = "EVTDESC10026"
+	immediate = { 
+		owner = { 
+			set_country_flag = zhuzuo
+		}
+	}
+	option = { 
+		name = "EVTOPTA10026"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		any_country={
+			limit = { 
+				has_country_flag = zhuzuo
+				tag = HAN
+			}
+			add_country_modifier = {
+				name = "shenzizhushu"
+				duration = 7300
+			}
+			clr_country_flag = zhuzuo
+		}
+		set_global_flag = shenzi2
+	}
+}
+province_event = { 
+	# 韩非子
+	id = 10027
+	major = yes
+	trigger = { 
+		religion = fajia
+		owner = { 
+			NOT = { 
+				has_global_flag = hanfeizi
+			}
+		}
+		year = 2400
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = HAN
+			}
+		}
+	}
+	title = "EVTNAME10027"
+	desc = "EVTDESC10027"
+	immediate = { 
+		owner = { 
+			set_country_flag = zhuzuo
+		}
+	}
+	option = { 
+		name = "EVTOPTA10027"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		any_country={
+			limit = { 
+				has_country_flag = zhuzuo
+				tag = HAN
+			}
+			add_country_modifier = {
+				name = "hanfeizizhushu"
+				duration = 7300
+			}
+			clr_country_flag = zhuzuo
+		}
+		set_global_flag = hanfeizi
+	}
+}
+province_event = { 
+	# 商君书
+	id = 10028
+	major = yes
+	trigger = { 
+		religion = fajia
+		owner = { 
+			NOT = { 
+				has_global_flag = shangjunshu
+			}
+		}
+		year = 2300
+	}
+	mean_time_to_happen = { 
+		months = 3000
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				tag = HAN
+			}
+		}
+	}
+	title = "EVTNAME10028"
+	desc = "EVTDESC10028"
+	immediate = { 
+		owner = { 
+			set_country_flag = zhuzuo
+		}
+	}
+	option = { 
+		name = "EVTOPTA10028"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		any_country={
+			limit = { 
+				has_country_flag = zhuzuo
+				tag = HAN
+			}
+			add_country_modifier = {
+				name = "shangjunzhushu"
+				duration = 7300
+			}
+			clr_country_flag = zhuzuo
+		}
+		set_global_flag = shangjunshu
+	}
+}
+#道家
+province_event = { 
+	# 老子
+	id = 10029
+	major = yes
+	trigger = { 
+		religion = daojia
+		owner = { 
+			NOT = { 
+				has_global_flag = laozi
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10029"
+	desc = "EVTDESC10029"
+	option = { 
+		name = "EVTOPTA10029"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = laozi
+	}
+}
+province_event = { 
+	# 庄子
+	id = 10030
+	major = yes
+	trigger = { 
+		religion = daojia
+		owner = { 
+			NOT = { 
+				has_global_flag = zhuangzi
+			}
+		}
+		year = 2300
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10030"
+	desc = "EVTDESC10030"
+	option = { 
+		name = "EVTOPTA10030"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = zhuangzi
+	}
+}
+province_event = { 
+	# 黄帝四经
+	id = 10031
+	major = yes
+	trigger = { 
+		religion = daojia
+		owner = { 
+			NOT = { 
+				has_global_flag = huangdisijing
+			}
+		}
+		year = 2250
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10031"
+	desc = "EVTDESC10031"
+	option = { 
+		name = "EVTOPTA10031"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = huangdisijing
+	}
+}
+province_event = { 
+	# 杨朱
+	id = 10032
+	major = yes
+	trigger = { 
+		religion = daojia
+		owner = { 
+			NOT = { 
+				has_global_flag = yangzhu
+			}
+		}
+		year = 2250
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10032"
+	desc = "EVTDESC10032"
+	option = { 
+		name = "EVTOPTA10032"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = yangzhu
+	}
+}
+#墨家
+province_event = { 
+	# 墨子
+	id = 10033
+	major = yes
+	trigger = { 
+		religion = mojia
+		owner = { 
+			NOT = { 
+				has_global_flag = mozi
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10033"
+	desc = "EVTDESC10033"
+	option = { 
+		name = "EVTOPTA10033"
+		owner = {
+			prestige = 0.02
+			cultural_tradition = 0.05
+		}
+		set_global_flag = mozi
+	}
+}
+#兵家
+province_event = { 
+	# 孙子兵法
+	id = 10034
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = sunzibingfa
+			}
+		}
+		year = 2150
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10034"
+	desc = "EVTDESC10034"
+	option = { 
+		name = "EVTOPTA10034"
+		owner = {
+			prestige = 0.05
+			army_tradition = 0.05
+		}
+		set_global_flag = sunzibingfa
+	}
+}
+province_event = { 
+	# 孙膑兵法
+	id = 10035
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = sunbinbingfa
+			}
+		}
+		year = 2320
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10035"
+	desc = "EVTDESC10035"
+	option = { 
+		name = "EVTOPTA10035"
+		owner = {
+			prestige = 0.05
+			army_tradition = 0.05
+		}
+		set_global_flag = sunbinbingfa
+	}
+}
+province_event = { 
+	# 司马法
+	id = 10036
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = simafa
+			}
+		}
+		year = 2150
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10036"
+	desc = "EVTDESC10036"
+	option = { 
+		name = "EVTOPTA10036"
+		owner = {
+			prestige = 0.05
+			army_tradition = 0.05
+		}
+		set_global_flag = simafa
+	}
+}
+province_event = { 
+	# 吴子
+	id = 10037
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = wuzi
+			}
+		}
+		year = 2250
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10037"
+	desc = "EVTDESC10037"
+	option = { 
+		name = "EVTOPTA10037"
+		owner = {
+			prestige = 0.05
+			army_tradition = 0.05
+		}
+		set_global_flag = wuzi
+	}
+}
+province_event = { 
+	# 六韬
+	id = 10038
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = liutao
+			}
+		}
+		year = 2250
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10038"
+	desc = "EVTDESC10038"
+	option = { 
+		name = "EVTOPTA10038"
+		owner = {
+			prestige = 0.05
+			army_tradition = 0.05
+		}
+		set_global_flag = liutao
+	}
+}
+province_event = { 
+	# 尉缭子
+	id = 10039
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = weiliaozi
+			}
+		}
+		year = 2450
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10039"
+	desc = "EVTDESC10039"
+	option = { 
+		name = "EVTOPTA10039"
+		owner = {
+			prestige = 0.05
+			army_tradition = 0.05
+		}
+		set_global_flag = weiliaozi
+	}
+}
+#其他著作
+province_event = { 
+	# 吕氏春秋
+	id = 10040
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = lvshichunqiu
+			}
+		}
+		year = 2440
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10040"
+	desc = "EVTDESC10040"
+	option = { 
+		name = "EVTOPTA10040"
+		owner = {
+			cultural_tradition = 0.10
+		}
+		set_global_flag = lvshichunqiu
+	}
+}
+province_event = { 
+	# 楚辞
+	id = 10041
+	major = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_global_flag = chuci
+			}
+		}
+		year = 2450
+	}
+	mean_time_to_happen = { 
+		months = 3000
+	}
+	title = "EVTNAME10041"
+	desc = "EVTDESC10041"
+	option = { 
+		name = "EVTOPTA10041"
+		owner = {
+			cultural_tradition = 0.10
+		}
+		set_global_flag = chuci
+	}
+}
+country_event = { 
+	id = 12909
+	trigger = { 
+		religion = daojia
+		has_country_modifier = wuweibuff1
+		NOT = { 
+			any_owned_province = { 
+				has_province_modifier = wuweibuff2
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME2904"
+	desc = "EVTDESC2904"
+	option = {
+		name = "EVTOPTA2904"
+			any_owned = { 
+		add_province_modifier = { 
+			name = "wuweibuff2"
+			duration = 3650
+		}
+	}
+}

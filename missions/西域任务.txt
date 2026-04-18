@@ -1,0 +1,295 @@
+tongyixiyu = { 
+	type = country
+	allow = {
+		primary_culture = xiyu
+		any_country = { 
+			not = { tag = this }
+			any_owned_province = { 
+				or = {
+					region = nanxiyu
+					region = beixiyu
+				}
+			}
+		}
+	}
+	immediate = { 
+		add_temp_claim = 592
+		add_temp_claim = 724
+		add_temp_claim = 726
+		add_temp_claim = 727
+		add_temp_claim = 758
+		add_temp_claim = 761
+		add_temp_claim = 762
+		add_temp_claim = 763
+		add_temp_claim = 764
+		add_temp_claim = 765
+		add_temp_claim = 766
+		add_temp_claim = 767
+		add_temp_claim = 768
+		add_temp_claim = 769
+		add_temp_claim = 770
+		add_temp_claim = 771
+		add_temp_claim = 772
+		add_temp_claim = 773
+		add_temp_claim = 1219
+		add_temp_claim = 1220
+		add_temp_claim = 1221
+		add_temp_claim = 1222
+		add_temp_claim = 1223
+		add_temp_claim = 1224
+		add_temp_claim = 1225
+		add_temp_claim = 1226
+		add_temp_claim = 1227
+		add_temp_claim = 1228
+		add_temp_claim = 1229
+		add_temp_claim = 1230
+		add_temp_claim = 1231
+		add_temp_claim = 1232
+		add_temp_claim = 1233
+		add_temp_claim = 1234
+		add_temp_claim = 1235
+		add_temp_claim = 1236
+	}
+	abort = { 
+	}
+	success = { 
+		not = {
+			any_country = { 
+				not = { tag = this }
+				any_owned_province = { 
+					or = {
+						region = nanxiyu
+						region = beixiyu
+					}
+				}
+			}
+		}
+	}
+	chance = { 
+		factor = 2000
+	}
+	effect = { 
+		beixiyu = { add_core = THIS }
+		nanxiyu = { add_core = THIS }
+		any_country = {
+			limit = { 
+				tag = this
+				or = {
+					government = fengjian
+					government = yuanshuai
+					government = zhizheng
+					government = absolute_monarchy
+					government = enlightened_despotism
+					government = tribal_federation
+					government = tribal_despotism
+					government = zhongshang
+					government = reformed_despotism
+					government = centralization_empire
+					government = feudal_empire
+					government = small_city
+				}
+			}
+			government = fengjian
+			change_tag = XYA
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				or = {
+					government = noble_republic
+					government = republican_dictatorship
+					government = datongwangdao
+					government = mojiajuzi
+					government = merchant_republic
+				}
+			}
+			change_tag = XYB
+		}
+		any_country = {
+			limit = { 
+				tag = this
+				or = {
+					government = steppe_horde
+					government = god_kingdom
+				}
+			}
+			change_tag = XYC
+		}
+	}
+}
+zhengfuxiyu = {
+	type = country
+	allow = {
+		not = { primary_culture = xiyu }
+		or = {
+			any_owned_province  = { region = nanxiyu }
+			any_owned_province  = { region = beixiyu }
+		}
+		any_country = { 
+			not = { tag = this }
+			any_owned_province = { 
+				or = {
+					region = nanxiyu
+					region = beixiyu
+				}
+			}
+		}
+	}
+	immediate = { 
+		add_temp_claim = 592
+		add_temp_claim = 724
+		add_temp_claim = 726
+		add_temp_claim = 727
+		add_temp_claim = 758
+		add_temp_claim = 761
+		add_temp_claim = 762
+		add_temp_claim = 763
+		add_temp_claim = 764
+		add_temp_claim = 765
+		add_temp_claim = 766
+		add_temp_claim = 767
+		add_temp_claim = 768
+		add_temp_claim = 769
+		add_temp_claim = 770
+		add_temp_claim = 771
+		add_temp_claim = 772
+		add_temp_claim = 773
+		add_temp_claim = 1219
+		add_temp_claim = 1220
+		add_temp_claim = 1221
+		add_temp_claim = 1222
+		add_temp_claim = 1223
+		add_temp_claim = 1224
+		add_temp_claim = 1225
+		add_temp_claim = 1226
+		add_temp_claim = 1227
+		add_temp_claim = 1228
+		add_temp_claim = 1229
+		add_temp_claim = 1230
+		add_temp_claim = 1231
+		add_temp_claim = 1232
+		add_temp_claim = 1233
+		add_temp_claim = 1234
+		add_temp_claim = 1235
+		add_temp_claim = 1236
+	}
+	abort = { 
+	}
+	success = { 
+		not = {
+			any_country = { 
+				not = { tag = this }
+				any_owned_province = { 
+					or = {
+						region = nanxiyu
+						region = beixiyu
+					}
+				}
+			}
+		}
+	}
+	chance = { 
+		factor = 2000
+	}
+	effect = { 
+		any_owned = { 
+			limit = {
+				or = {
+					region = nanxiyu
+					region = beixiyu
+				}
+			}
+			add_core = DHF
+			secede_province = DHF
+		}
+		vassalize = DHF
+		create_alliance = DHF
+		DHF = {
+			define_general = {
+				name = "耿恭"
+				shock = 6
+				fire = 6
+				siege = 6
+				manuever = 6
+				rank = 20
+			}
+		}
+	}
+}
+fuyongxiongnu = {
+	type = country
+	allow = {
+		or = {
+			tag = XYA
+			tag = XYB
+			tag = XYC
+		}
+		exists = XNU
+		XNU = {
+			not = { 
+				vassal_of = THIS
+			}
+		}
+	}
+	abort = {
+	}
+	success = {
+		XNU = {
+			capital_scope = { 
+				controlled_by = THIS
+			}
+		}
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		prestige = 1
+		badboy = -20
+		treasury = 1000
+		manpower = 30
+		XNU = { government = tribal_despotism }
+		vassalize = XNU
+		create_alliance = XNU
+	}
+}
+zhengfuyueshi = {
+	type = country
+	allow = {
+		or = {
+			tag = XYA
+			tag = XYB
+			tag = XYC
+		}
+		exists = YUE
+	}
+	abort = {
+	}
+	success = {
+		not = { exists = YUE }
+	}
+	chance = {
+		factor = 500
+	}
+	immediate = {
+		set_country_flag = xiyudongchu
+	}
+	abort_effect = {
+		clr_country_flag = xiyudongchu
+	}
+	effect = {
+		prestige = 1
+		badboy = -20
+		treasury = 1000
+		manpower = 30
+		yuezhi = {
+			add_core = this
+		}
+		583 = { cot = yes }
+		clr_country_flag = xiyudongchu
+	}
+}

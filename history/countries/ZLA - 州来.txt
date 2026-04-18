@@ -1,0 +1,29 @@
+government = tribal_federation
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = dongyi1
+religion = ancestor
+primary_culture = huaiyi
+capital = 341
+
+1928.1.1 = {
+	monarch = {
+		name = "╥Б"
+               dynasty = "ых"
+		adm = 6
+		dip = 7
+		mil = 7
+	}
+}
+2246.1.2 = { 
+	religion = liyuebadao
+}
+2246.1.3 = { 
+	religion = animism
+}

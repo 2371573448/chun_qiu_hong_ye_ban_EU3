@@ -1,0 +1,456 @@
+province_decisions = {   
+
+	#防御蛮族
+	fangyumanzu = {
+		potential = {
+			not = { has_province_modifier = afangyumanzu }
+			has_province_modifier = manzusaodong
+
+		}
+		allow = {
+			owner = {
+				treasury = 40	
+				OR = { 
+					idea = military_drill
+					idea = vice_roys
+					adm = 7
+					AND = { 
+						advisor = fortification_expert
+						fortification_expert = 4
+					}
+					AND = { 
+						advisor = pioneer
+						fortification_expert = 4
+					}
+				}
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -40	
+			}
+			add_province_modifier = {
+				name = "afangyumanzu"
+				duration = 3650
+			}			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}   
+
+	#巡视边疆
+	xunshibianjiang = {
+		potential = {
+			not = { has_province_modifier = rangrenshiwangdexunshi }
+			not = { has_province_modifier = meiyoufaxiandexunshi }
+			has_province_modifier = manzusaodong
+
+		}
+		allow = {
+			controlled_by = owner
+			owner = {
+				treasury = 50	
+				officials = 1 
+				OR = { 
+					idea = military_drill
+					idea = vice_roys
+					mil = 7
+					AND = { 
+						advisor = fortification_expert
+						fortification_expert = 4
+					}
+					AND = { 
+						advisor = pioneer
+						fortification_expert = 4
+					}
+				}
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -50	
+				officials = -1
+			}
+			random_list = {
+				33 = { 
+					owner = { prestige = -0.01 }
+					add_province_modifier = {
+						name = "rangrenshiwangdexunshi"
+						duration = 1825
+					}	
+				}
+				33 = { 
+					add_province_modifier = {
+						name = "meiyoufaxiandexunshi"
+						duration = 1825
+					}	
+				}
+				33 = { 
+					set_variable = {
+							which = manzusaodong
+							value = 0
+						}
+					remove_province_modifier = manzusaodong
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}   
+
+	#与小股蛮族谈判
+	xiaogumanzutanpan = {
+		potential = {
+			NOT = {
+				check_variable = {
+					which = manzusaodong
+					value = 2
+				}
+			}
+			check_variable = {
+					which = manzusaodong
+					value = 1
+			}
+			NOT = {
+				has_province_modifier = shibaidetanpan
+			}
+			has_province_modifier = manzusaodong
+
+		}
+		allow = {
+			controlled_by = owner
+			owner = {
+				treasury = 60	
+				diplomats = 2
+				OR = { 
+					idea = military_drill
+					idea = vice_roys
+					dip = 5
+					AND = { 
+						advisor = fortification_expert
+						fortification_expert = 3
+					}
+					AND = { 
+						advisor = pioneer
+						fortification_expert = 3
+					}
+				}
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -60	
+				diplomats = -2
+			}
+			random_list = {
+				20 = { 
+					change_variable = {
+						which = manzusaodong
+						value = 1
+					}
+					add_province_modifier = {
+						name = "shibaidetanpan"
+						duration = 1825
+					}	
+					add_province_modifier = {
+						name = "konghuang"
+						duration = 1825
+					}	
+				}
+				20 = { 
+					add_province_modifier = {
+						name = "shibaidetanpan"
+						duration = 1825
+					}	
+				}
+				60 = { 
+					set_variable = {
+							which = manzusaodong
+							value = 0
+						}
+					remove_province_modifier = manzusaodong
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}   
+
+
+
+	#与较多蛮族谈判
+	jiaoduomanzutanpan = {
+		potential = {
+			NOT = {
+				check_variable = {
+					which = manzusaodong
+					value = 3
+				}
+			}
+			check_variable = {
+					which = manzusaodong
+					value = 2
+			}
+			NOT = {
+				has_province_modifier = shibaidetanpan
+			}
+			has_province_modifier = manzusaodong
+
+		}
+		allow = {
+			controlled_by = owner
+			owner = {
+				treasury = 90	
+				diplomats = 2
+				OR = { 
+					idea = military_drill
+					idea = vice_roys
+					dip = 6
+					AND = { 
+						advisor = fortification_expert
+						fortification_expert = 4
+					}
+					AND = { 
+						advisor = pioneer
+						fortification_expert = 4
+					}
+				}
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -90	
+				diplomats = -2
+			}
+			random_list = {
+				25 = { 
+					change_variable = {
+						which = manzusaodong
+						value = 1
+					}
+					add_province_modifier = {
+						name = "shibaidetanpan"
+						duration = 1825
+					}	
+					add_province_modifier = {
+						name = "konghuang"
+						duration = 1825
+					}	
+				}
+				20 = { 
+					add_province_modifier = {
+						name = "shibaidetanpan"
+						duration = 1825
+					}	
+				}
+				55 = { 
+					set_variable = {
+							which = manzusaodong
+							value = 0
+						}
+					remove_province_modifier = manzusaodong
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}   
+
+
+	#与大量蛮族谈判
+	daliangmanzutanpan = {
+		potential = {
+			NOT = {
+				check_variable = {
+					which = manzusaodong
+					value = 4
+				}
+			}
+			check_variable = {
+					which = manzusaodong
+					value = 3
+			}
+			NOT = {
+				has_province_modifier = shibaidetanpan
+			}
+			has_province_modifier = manzusaodong
+
+		}
+		allow = {
+			controlled_by = owner
+			owner = {
+				treasury = 120	
+				diplomats = 2
+				OR = { 
+					idea = military_drill
+					idea = vice_roys
+					dip = 7
+					AND = { 
+						advisor = fortification_expert
+						fortification_expert = 5
+					}
+					AND = { 
+						advisor = pioneer
+						fortification_expert = 5
+					}
+				}
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -120	
+				diplomats = -2
+			}
+			random_list = {
+				50 = { 
+					add_province_modifier = {
+						name = "shibaidetanpan"
+						duration = 1825
+					}	
+					add_province_modifier = {
+						name = "konghuang"
+						duration = 1825
+					}
+				}
+				50 = { 
+					set_variable = {
+							which = manzusaodong
+							value = 0
+						}
+					remove_province_modifier = manzusaodong
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	} 
+
+
+
+	#与蛮族和解
+	yumanzuhejie = {
+		potential = {
+			has_empty_adjacent_province = yes
+			NOT = {
+				has_province_modifier = manzusaodong
+				has_province_modifier = hejiechenggong
+				has_province_modifier = hejieshibai
+			}
+
+		}
+		allow = {
+			controlled_by = owner
+			owner = {
+				diplomats = 1 
+				officials = 1 
+				dip = 7
+				OR = { 
+					idea = military_drill
+					idea = vice_roys
+				}
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -180	
+				officials = -1
+				diplomats = -1 
+			}
+			random_list = {
+				75 = { 
+					add_province_modifier = {
+						name = "hejiechenggong"
+						duration = 1825
+					}	
+				}
+				25= { 
+					add_province_modifier = {
+						name = "hejieshibai"
+						duration = 1825
+					}	
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}   
+	#观察蛮族强度（不要点）
+
+
+	qiangdu1 = {
+		potential = { 
+			owner={not={has_country_flag = guanbiguangchamanyi}}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = manzusaodong
+					value = 2
+				}
+			}
+			check_variable = {
+				which = manzusaodong
+				value = 1
+			}
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 0.0
+		}
+	} 
+
+	qiangdu2 = {
+		potential = { 
+				owner={not={has_country_flag = guanbiguangchamanyi}}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = manzusaodong
+					value = 3
+				}
+			}
+			check_variable = {
+				which = manzusaodong
+				value = 2
+			}
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 0.0
+		}
+	} 
+
+
+	qiangdu3 = {
+		potential = { 
+				owner={not={has_country_flag = guanbiguangchamanyi}}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = manzusaodong
+					value = 4
+				}
+			}
+			check_variable = {
+				which = manzusaodong
+				value = 3
+			}
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 0.0
+		}
+	} 
+
+}

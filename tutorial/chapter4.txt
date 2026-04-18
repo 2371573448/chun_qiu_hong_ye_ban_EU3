@@ -1,0 +1,222 @@
+tutorial =
+{
+	title = "TUTORIAL_2"
+	desc = "TUTORIAL_2_DESC"
+	tutorial_window = "TUTORIAL_WINDOW_1"	# default window
+	exclusive = yes
+	country = ENG
+	save_game = "tutorial4.eu3"
+
+
+	# page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_1"
+	#	window = "economy"
+	#	window = "arrow_economy"
+	#	exclusive = no
+	#}
+	#page =
+	#{
+	#	tutorial_window = "TUTORIAL_WINDOW_2"
+	#	text1 = "TUTORIAL_TEXT_2_2"
+	#}
+	#page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_3"
+	#	close_window = all
+	#}
+	#page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_4"
+	#	window = court
+	#}
+
+	page =
+	{
+
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_1"
+		text2 = "tut_1d_2"
+
+		close_window=all
+		zoom = 200
+		goto = 183
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_3"
+		text2 = "tut_1d_4"
+
+		panel = "message_log"
+
+		window = "highlight_provinceview"
+		window_position = {0 -100}
+		window_size = {720 100}
+	}
+
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1d_5"
+
+		window = "highlight_provinceview"
+		window_position = {0 -100}
+		window_size = {720 100}
+
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_6"
+		text2 = "tut_1d_7"
+		window = "arrow_2_provinceview"
+		window_position = { 20 -260 }
+
+		window = "fake_messages"
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_8"
+		text2 = "tut_1d_9"
+		tutorial_window_position = { 450 100}
+
+		panel = "message_log"
+
+		select_units = 248
+		zoom = 20
+		goto = 250
+
+		window = "fake_modifiers"
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_8"
+		text2 = "tut_1d_10"
+		tutorial_window_position = { 450 100}
+
+
+		window = "fake_modifiers"
+
+	}
+
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_11"
+		text2 = "tut_1d_12"
+		tutorial_window_position = { 450 100}
+
+		close_window = all
+		select_units = 249
+		goto = 248
+		zoom = 30
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1d_13"
+		tutorial_window_position = { 450 100}
+	}
+
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_14"
+		text2 = "tut_1d_15"
+		close_window = all
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_14"
+		text2 = "tut_1d_16"
+	}
+	
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1d_17"
+	}
+
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_2"
+		panel= "papacy"
+		text1 = "tut_1d_18"
+		text2 = "tut_1d_19"
+		
+
+		window = "arrow_3_minimap"
+		window_position = { -140 -260 }
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_2"
+		text3 = "tut_1d_20"
+
+		window = "arrow_3_minimap"
+		window_position = { -140 -260 }
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_2"
+		panel= "hre"
+		text1 = "tut_1d_21"
+		text2 = "tut_1d_22"
+
+		window = "arrow_3_minimap"
+		window_position = { -140 -230 }
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_23"
+		text2 = "tut_1d_24"
+
+		close_window = all
+	
+		window = "arrow_3_minimap"
+		window_position = { -140 -300 }
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1d_25"
+		window = "arrow_3_minimap"
+		window_position = { -140 -300 }
+	}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1d_26"
+		text2 = "tut_1d_27"
+		
+		
+	}
+
+	#page =
+	#{
+	#	tutorial_window = "TUTORIAL_WINDOW_1"
+	#	text3 = "tut_1d_28"
+	#}
+	
+	
+}

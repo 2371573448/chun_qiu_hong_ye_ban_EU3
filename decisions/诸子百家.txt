@@ -1,0 +1,625 @@
+religion_decisions = { 
+	# 融入中国
+	switch_to_liyue = { 
+		potential = { 
+			NOT = { religion_group = christian }
+		}
+		allow = { 
+			any_neighbor_country = { 
+				religion_group = christian
+				relation = { 
+					who = THIS
+					value = 100
+				}
+			}
+or={
+and={
+			DIP = 5
+			ADM = 5
+}
+
+and={
+			has_global_flag = zhanguokaishi
+or={
+			DIP = 5
+			ADM = 5
+}
+}
+}
+			prestige = 0.4
+			cultural_tradition = 0.3
+			stability = 2
+			government_tech = 16
+		}
+		effect = { 
+			stability = -2
+			religion = liyuebadao
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				set_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+			prestige = 0.15
+			capital_scope = { 
+				religion = liyuebadao
+			}
+			land_tech = 0.2
+			naval_tech = 0.3
+			trade_tech = 0.2
+			production_tech = 0.25
+			government_tech = 0.3
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	# 转变宗教-礼乐教化
+	switch_to_liyuejiaohua1 = { 
+		potential = { 
+			not = { 
+				is_emperor = yes
+			}
+			religion = liyuebadao
+			NOT = { 
+				has_country_flag = zongfazhidu
+			}
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			war = no
+			relation = { 
+				who = PAP
+				value = 100
+			}
+			legitimacy = 0.8
+			innovative_narrowminded = 1
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = liyuejiaohua
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				set_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+
+	# 转变宗教-礼乐教化
+	switch_to_liyuejiaohua2 = { 
+		potential = { 
+			has_country_flag = zongfazhidu
+			OR = { 
+				religion = liyuebadao
+				religion = rujia
+				religion = daojia
+			}
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			war = no
+			legitimacy = 0.5
+			innovative_narrowminded = -3
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = liyuejiaohua
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				set_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+
+	# 转变宗教-礼乐霸道
+	switch_to_liyuebadao1 = { 
+		potential = { 
+			is_emperor = yes
+			religion = liyuejiaohua
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			imperial_influence = 25
+			prestige = 0.33
+			legitimacy = 0.75
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = liyuebadao
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				set_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				NOT = { num_of_cities = 32 }
+			}
+			modifier = { 
+				factor = 0
+				NOT = { year = 2000 }
+			}
+			modifier = { 
+				factor = 0
+				year = 2300
+			}
+		}
+	}
+
+	# 转变宗教-礼乐霸道
+	switch_to_liyuebadao2 = { 
+		potential = { 
+			religion = fajia
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			stability = 1
+			prestige = 0.2
+			legitimacy = 0.5
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = liyuebadao
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				set_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+
+	# 转变宗教-儒家
+	switch_to_rujia = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			or = { 
+				religion = liyuejiaohua
+				religion = fajia
+				religion = mojia
+				religion = daojia
+			}
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			any_owned_province = { 
+				religion = rujia
+			}
+			not = { 
+				idea = liberty_egalite_fraternity
+			}
+			ADM = 6
+			stability = 1
+			war = no
+			years_of_income = -0.05
+			
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = rujia
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				set_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				tag = QIN
+			}
+			modifier = { 
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = { 
+				factor = 0
+				tag = PAP
+			}
+			modifier = { 
+				factor = 0
+				NOT = { num_of_religion = { religion = rujia value = 0.40 } }
+			}
+		}
+	}
+
+	# 转变宗教-法家
+	switch_to_fajia1 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			or = { 
+				religion = liyuebadao
+				religion = daojia
+			}
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			any_owned_province = { 
+				religion = fajia
+			}
+			not = { 
+				idea = cabinet
+			}
+			ADM = 6
+			stability = 2
+			war = no
+			not = { 
+				centralization_decentralization = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = fajia
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				set_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				tag = LUG
+			}
+			modifier = { 
+				factor = 0
+				tag = QIG
+			}
+			modifier = { 
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = { 
+				factor = 0
+				tag = PAP
+			}
+			modifier = { 
+				factor = 0
+				NOT = { num_of_religion = { religion = fajia value = 0.30 } }
+			}
+		}
+	}
+
+	# 转变宗教-法家1
+	switch_to_fajia2 = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			religion = rujia
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			any_owned_province = { 
+				religion = fajia
+			}
+			not = { 
+				idea = cabinet
+			}
+			ADM = 6
+			stability = 2
+			war = no
+			OR = { 
+				and = { 
+					not = { 
+						centralization_decentralization = 0
+					}
+					serfdom_freesubjects = 0
+				}
+				not = { 
+					centralization_decentralization = -1
+				}
+				serfdom_freesubjects = 2
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = fajia
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				set_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				tag = LUG
+			}
+			modifier = { 
+				factor = 0
+				tag = QIG
+			}
+			modifier = { 
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = { 
+				factor = 0
+				tag = PAP
+			}
+			modifier = { 
+				factor = 0
+				centralization_decentralization = -3
+				not = { 
+					idea = liberty_egalite_fraternity
+				}
+			}
+		}
+	}
+
+	# 转变宗教-墨家
+	switch_to_mojia = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			or = { 
+				religion = liyuejiaohua
+				religion = liyuebadao
+				religion = daojia
+			}
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			OR = { 
+				AND = { 
+					any_owned_province = { 
+						religion = mojia
+					}
+				}
+				capital_scope = { 
+					religion = mojia
+				}
+			}
+			not = { 
+				idea = naval_fighting_instruction
+			}
+			not = { 
+				idea = liberty_egalite_fraternity
+			}
+			stability = 1
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = mojia
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				clr_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				set_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				tag = LUG
+			}
+			modifier = { 
+				factor = 0
+				religion = rujia
+			}
+			modifier = { 
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = { 
+				factor = 0
+				tag = PAP
+			}
+			modifier = { 
+				factor = 0
+				religion = fajia
+			}
+			modifier = { 
+				factor = 0
+				NOT = { num_of_religion = { religion = mojia value = 0.50 } }
+			}
+		}
+	}
+
+	# 转变宗教-道家
+	switch_to_daojia = { 
+		potential = { 
+			has_global_flag = zhanguokaishi
+			or = { 
+				religion = liyuejiaohua
+				religion = liyuebadao
+			}
+		}
+		allow = { 
+			not = { 
+				has_country_modifier = zongjiaozhuanbian
+			}
+			any_owned_province = { 
+				religion = daojia
+			}
+			not = { 
+				idea = liberty_egalite_fraternity
+			}
+			war = no
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			stability = -4
+			religion = daojia
+			any_country = {
+				limit = {
+					tag = this
+					has_country_modifier = bachubaijia
+				}
+				set_country_flag = duzundaojia
+				clr_country_flag = duzunfajia
+				clr_country_flag = duzunrujia
+				clr_country_flag = duzunmojia
+				clr_country_flag = duzunliyuejiaohua
+				clr_country_flag = duzunliyuebadao
+				clr_country_flag = duzunanimism
+				clr_country_flag = duzunancestor
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				num_of_cities = 6
+			}
+			modifier = { 
+				factor = 0
+				is_emperor = yes
+			}
+			modifier = { 
+				factor = 0
+				tag = PAP
+			}
+			modifier = { 
+				factor = 0
+				NOT = { num_of_religion = { religion = daojia value = 0.33 } }
+			}
+		}
+	}
+}

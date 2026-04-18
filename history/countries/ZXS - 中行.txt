@@ -1,0 +1,56 @@
+government = fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = -1
+innovative_narrowminded = 1
+mercantilism_freetrade = -1
+offensive_defensive = 3
+land_naval = -2
+quality_quantity = -2
+serfdom_freesubjects = 2
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = shanxi
+capital = 122
+
+2050.1.1 = { 
+	set_country_flag = zongfazhidu
+}
+2100.1.1 = { 
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2150.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+
+2244.1.1 = { 
+	monarch = { 
+		name = "Òú"
+		dynasty = "Ü÷"
+		adm = 6
+		dip = 4
+		mil = 5
+	}
+}
+2245.1.1 = { 
+	monarch = { 
+		name = "Òú"
+		dynasty = "Ü÷"
+		adm = 6
+		dip = 4
+		mil = 5
+	}
+}
+
+2246.1.1 = { 
+	capital = 127
+	government = absolute_monarchy
+}
+2247.1.1 = { 
+	government = enlightened_despotism
+}

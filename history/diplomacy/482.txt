@@ -1,0 +1,49 @@
+alliance={
+	first=WUG
+	second=LUG
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+alliance={
+	first=WUG
+	second=ZHU
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+alliance={
+	first=WUG
+	second=CAI
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+vassal={
+	first=WUG
+	second=CAI
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+vassal={
+	first=WUG
+	second=YGO
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+
+alliance={
+	first=QIG
+	second=WEG
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+alliance={
+	first=QIG
+	second=SON
+	start_date=2216.1.1
+	end_date=2217.1.1
+}
+alliance={
+	first=JIN
+	second=ZGO
+	start_date=2216.1.1
+	end_date=2217.1.1
+}

@@ -1,0 +1,49 @@
+alliance={
+	first=CHU
+	second=ZGO
+	start_date=2100.1.1
+	end_date=2112.1.1
+}
+alliance={
+	first=CHU
+	second=CHE
+	start_date=2100.1.1
+	end_date=2128.1.1
+}
+vassal={
+	first=CHU
+	second=CHE
+	start_date=2100.12.10
+	end_date=2110.1.1
+}
+vassal={
+	first=CHU
+	second=CAI
+	start_date=2098.1.1
+	end_date=2140.1.1
+}
+alliance={
+	first=CHU
+	second=CAI
+	start_date=2098.1.1
+	end_date=2140.1.1
+}
+
+alliance={
+	first=JIN
+	second=SON
+	start_date=2098.1.1
+	end_date=2104.9.1
+}
+alliance={
+	first=JIN
+	second=CAO
+	start_date=2098.1.1
+	end_date=2118.1.1
+}
+alliance={
+	first=JIN
+	second=WEG
+	start_date=2098.1.1
+	end_date=2118.1.1
+}

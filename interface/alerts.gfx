@@ -1,0 +1,19 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_alerticons"
+		texturefile = "gfx\\interface\\alerticons.tga"
+		noOfFrames = 23
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_alerticon_banner"
+		texturefile = "gfx\\interface\\alerticon_banner.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	
+}

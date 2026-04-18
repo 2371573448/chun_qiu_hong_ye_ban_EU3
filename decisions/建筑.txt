@@ -1,0 +1,209 @@
+province_decisions = { 
+	wenhuajianzhu1 = {
+		potential = { 
+			owner = { naval_tech = 16 }
+			has_building = dock
+			not = { has_building = drydock }
+		}
+		allow = { 
+			owner = {
+				missionaries = 1
+			}
+		}
+		effect = { 
+			add_building = drydock
+			owner = {
+				treasury = -60
+				missionaries = -1
+			}
+		}
+	}
+	wenhuajianzhu2 = {
+		potential = { 
+			owner = { naval_tech = 22 }
+			has_building = drydock
+			not = { has_building = shipyard }
+		}
+		allow = { 
+			owner = {
+				missionaries = 1
+			}
+		}
+		effect = { 
+			add_building = shipyard
+			owner = {
+				treasury = -80
+				missionaries = -1
+			}
+		}
+	}
+	wenhuajianzhu3 = {
+		potential = { 
+			owner = { naval_tech = 30 }
+			has_building = shipyard
+			not = { has_building = grand_shipyard }
+		}
+		allow = { 
+			owner = {
+				missionaries = 1
+			}
+		}
+		effect = { 
+			add_building = grand_shipyard
+			owner = {
+				treasury = -90
+				missionaries = -1
+			}
+		}
+	}
+	wenhuajianzhu4 = {
+		potential = { 
+			owner = { naval_tech = 34 }
+			has_building = grand_shipyard
+			not = { has_building = naval_base }
+			not = { has_building = college }
+			not = { has_building = arsenal }
+			not = { has_building = mint }
+			not = { has_building = post_office }
+			not = { has_building = fort5 }
+		}
+		allow = { 
+			owner = {
+				missionaries = 1
+			}
+		}
+		effect = { 
+			add_building = naval_arsenal
+			owner = {
+				treasury = -160
+				missionaries = -1
+			}
+		}
+	}
+	wenhuajianzhu5 = {
+		potential = { 
+			owner = { naval_tech = 38 }
+			has_building = naval_arsenal
+			not = { has_building = naval_base }
+			not = { has_building = college }
+			not = { has_building = arsenal }
+			not = { has_building = mint }
+			not = { has_building = post_office }
+			not = { has_building = fort5 }
+		}
+		allow = { 
+			owner = {
+				missionaries = 1
+			}
+		}
+		effect = { 
+			add_building = naval_base
+			owner = {
+				treasury = -250
+				missionaries = -1
+			}
+		}
+	}
+	zaoren = {
+		potential = { 
+			has_building = shipyard
+			owner = { has_country_flag = kaishipiaochang }
+		}
+		allow = { 
+			has_building = shipyard
+			owner = { treasury = 0.1 }
+		}
+		effect = { 
+			owner = { treasury = -0.1 }
+			random_list = { 
+				87 = { 
+					citysize = 1
+				}
+				10 = { 
+					citysize = 2
+				}
+				1 = { 
+					citysize = 3
+				}
+				1 = { 
+					owner = { country_event = 4111 }
+				}
+				1 = { 
+					owner = { country_event = 4112 }
+				}
+			}
+		}
+	}
+}
+religion_decisions = { 
+	zaorenkai = {
+		potential = { 
+			ai = no
+			not = { has_country_flag = kaishipiaochang }
+		}
+		allow = { 
+			ai = no
+		}
+		effect = { 
+			set_country_flag = kaishipiaochang
+		}
+	}
+	zaorenguan = {
+		potential = { 
+			ai = no
+			has_country_flag = kaishipiaochang
+		}
+		allow = { 
+			ai = no
+		}
+		effect = { 
+			clr_country_flag = kaishipiaochang
+		}
+	}
+	shuaxinyaosai = {
+		potential = { 
+			ai = no
+			or = {
+				any_owned_province = {
+					or = {
+						has_building = fort5
+						has_building = fort6
+					}
+				}
+				any_country = {
+					war_with = this
+					any_owned_province = {
+						or = {
+							has_building = fort5
+							has_building = fort6
+						}
+					}
+				}
+			}
+			OR = {
+				not = {
+					has_country_flag = shuaxinlengque
+				}
+				had_country_flag = { 
+					flag = shuaxinlengque
+					days = 5
+				}
+			}
+		}
+		allow = { 
+			ai = no
+		}
+		effect = { 
+			any_country = {
+				limit = {
+					or = {
+						tag = this
+						war_with = this
+					}
+				}
+				country_event = 152104
+			}
+			set_country_flag = shuaxinlengque
+		}
+	}
+}

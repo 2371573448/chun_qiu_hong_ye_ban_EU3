@@ -1,0 +1,106 @@
+
+owner = LIA
+controller = LIA
+culture = huaiyi
+religion = liyuejiaohua
+capital = "Þ¤³Ç"
+trade_goods = iron
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = LIA
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2059.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2089.1.1 = { 
+	add_core = CHU
+}
+2119.1.1 = { 
+	culture = zhongyuan
+	religion = liyuebadao
+}
+2222.1.1 = { 
+	citysize = 22000
+}
+2244.1.1 = { 
+	owner = LIA
+	controller = LIA
+	add_core = LIA
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = LIA
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	religion = liyuejiaohua
+	owner = LIA
+	controller = LIA
+	add_core = LIA
+	remove_core = CHU
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	religion = liyuebadao
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2386.1.1 = { 
+	owner = HAN
+	controller = HAN
+}
+2406.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2436.1.1 = { 
+	add_core = QIN
+}
+2489.10.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2489.12.1 = { 
+	controller = QIN
+	owner = QIN
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+	citysize = 24000
+}
+2492.11.1 = { 
+	owner = HNW
+	controller = HNW
+}

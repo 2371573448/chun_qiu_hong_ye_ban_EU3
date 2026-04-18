@@ -1,0 +1,13 @@
+government = steppe_horde
+aristocracy_plutocracy = -5
+centralization_decentralization = 2
+innovative_narrowminded = 5
+mercantilism_freetrade = 2
+offensive_defensive = -5
+land_naval = -5
+quality_quantity = 5
+serfdom_freesubjects = -5
+technology_group = chinese
+religion = animism
+primary_culture = xiyu
+capital = 724

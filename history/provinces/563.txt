@@ -1,0 +1,11 @@
+
+culture = kunxi
+religion = ancestor
+capital = "Î¶ÏØ"
+trade_goods = tobacco
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10

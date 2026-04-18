@@ -1,0 +1,46 @@
+#为国家开辟税源、鼓励农业的政治家
+
+advisor ={
+name ="鲍叔牙" 
+location =265
+skill =5
+type =sheriff
+date =1995.1.1
+death_date =2054.1.1
+}
+
+advisor ={
+name ="季文子" 
+location =307
+skill =5
+type =sheriff
+date =2097.1.1
+death_date =2130.1.1
+}
+
+advisor ={
+name ="文种" 
+location =438
+skill =4
+type =sheriff
+date =2180.1.1
+death_date =2226.1.1
+}
+
+advisor ={
+name ="文种" 
+location =438
+skill =4
+type =sheriff
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="田文" 
+location =202
+skill =4
+type =sheriff
+date =2395.1.1
+death_date =2445.1.1
+}

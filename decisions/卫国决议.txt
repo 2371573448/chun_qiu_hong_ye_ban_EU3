@@ -1,0 +1,50 @@
+cultural_decisions = { 
+	# “Û…Ã≤∑Ûﬂ
+	zhanbu = { 
+		potential = { 
+			tag = WEG
+			NOT = { 
+				has_country_modifier = zhanbu
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			random_list = { 
+				12 = { 
+					country_event = 5017
+				}
+				12 = { 
+					country_event = 5018
+				}
+				12 = { 
+					country_event = 5019
+				}
+				12 = { 
+					country_event = 5020
+				}
+				12 = { 
+					country_event = 5021
+				}
+				12 = { 
+					country_event = 5022
+				}
+				12 = { 
+					country_event = 5023
+				}
+				12 = { 
+					country_event = 5024
+				}
+			}
+			add_country_modifier = { 
+				name = "zhanbu"
+				duration = 1825
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,13 @@
+alliance={
+	first=JIN
+	second=WUG
+	start_date=2114.1.1
+	end_date=2210.1.1
+}
+
+alliance={
+	first=YGO
+	second=WEI
+	start_date=2247.1.1
+	end_date=2350.1.1
+}

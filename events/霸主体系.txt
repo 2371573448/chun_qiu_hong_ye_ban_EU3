@@ -1,0 +1,3796 @@
+
+# revoke Reichsreform  撤销改革
+country_event = 
+{
+	id = 1903
+	is_triggered_only = yes
+	
+	title = "EVTNAME1903"
+	desc = "EVTDESC_REFORM_REVOKED"
+	
+	trigger = {
+		hre = yes
+			NOT = { has_global_flag = fuzhou_lv8}
+			NOT = { has_global_flag = daizhou_lv8}
+	    OR = {
+	  		has_global_flag = daizhou_lv1
+			has_global_flag = daizhou_lv2
+			has_global_flag = daizhou_lv3
+			has_global_flag = daizhou_lv4
+			has_global_flag = daizhou_lv5
+			has_global_flag = daizhou_lv6
+			has_global_flag = daizhou_lv7
+		#	has_global_flag = daizhou_lv8
+			has_global_flag = fuzhou_lv1
+			has_global_flag = fuzhou_lv2
+			has_global_flag = fuzhou_lv3
+			has_global_flag = fuzhou_lv4
+			has_global_flag = fuzhou_lv5
+			has_global_flag = fuzhou_lv6
+			has_global_flag = fuzhou_lv7
+		#	has_global_flag = fuzhou_lv8
+			}
+	}
+	
+	option = {
+		name = "EVTOPT_REVOKE"
+		clr_global_flag = daizhou_lv1
+		clr_global_flag = daizhou_lv2
+		clr_global_flag = daizhou_lv3
+		clr_global_flag = daizhou_lv4
+		clr_global_flag = daizhou_lv5
+		clr_global_flag = daizhou_lv6
+		clr_global_flag = daizhou_lv7
+		clr_global_flag = daizhou_lv8
+		clr_global_flag = fuzhou_lv1
+		clr_global_flag = fuzhou_lv2
+		clr_global_flag = fuzhou_lv3
+		clr_global_flag = fuzhou_lv4
+		clr_global_flag = fuzhou_lv5
+		clr_global_flag = fuzhou_lv6
+		clr_global_flag = fuzhou_lv7
+		clr_global_flag = fuzhou_lv8
+		
+		clr_global_flag = denyjgzhou
+		clr_global_flag = doublejgbazhu
+		clr_global_flag = doublejgzhou
+		internal_hre_cb = yes
+		emperor = {remove_country_modifier = kongzhizhou}
+				
+		remove_hre_member_modifier = "reichsregiment_member"
+		remove_hre_member_modifier = "hofgericht_member"
+		remove_hre_member_modifier = "erbkaisertum_member"
+		remove_hre_member_modifier = "privilegia_de_non_appelando_member"
+		remove_hre_emperor_modifier = "reichsreform_emperor"
+		remove_hre_emperor_modifier = "reichsregiment_emperor"
+		remove_hre_emperor_modifier = "gemeinerpfennig_emperor"
+		remove_hre_emperor_modifier = "landfriede_emperor"
+		remove_hre_emperor_modifier = "erbkaisertum_emperor"
+		remove_hre_emperor_modifier = "privilegia_de_non_appelando_emperor"
+		revoke_reform = no
+
+		PAP = {
+		remove_country_modifier = zhouweiwang
+		remove_country_modifier = zhoushuishou
+		}
+		
+		emperor = { country_event = 1916 }
+		any_country = {
+			limit = {
+				has_country_flag = "was_elector"
+			}
+			elector = yes
+			clr_country_flag = "was_elector"
+		}
+	}	
+}
+
+country_event = {
+	id = 1916
+	is_triggered_only = yes
+	
+	title = "EVTNAME1916"
+	desc = "EVTDESC1916"
+	
+	trigger = {
+		ai = yes
+	}
+	
+	immediate = {
+	any_country =
+	{
+		limit = 
+		{
+			has_country_flag = privileged_vassal
+		}
+		free_vassal = THIS
+		clr_country_flag = privileged_vassal
+	}
+	any_country =
+	{
+		limit = 
+		{
+			has_country_flag = prilvilege_war
+		}
+		white_peace = this
+		clr_country_flag = prilvilege_war
+	}
+	clr_country_flag = oldemperor
+	}
+	option = { name = "EVTOPTA1916" }
+}
+
+# 失去霸主地位
+country_event = 
+{
+	id = 1915
+#	is_triggered_only = yes
+	
+	title = "EVTNAME1915"
+	desc = "EVTDESC1915"
+	
+	trigger = {#新霸主重建霸业
+		hre = yes
+		NOT = { has_global_flag = fuzhou_lv8}
+		NOT = { has_global_flag = daizhou_lv8}
+		any_country = {
+		OR = {	has_country_flag = daizhou
+			has_country_flag = fuzhou }
+		is_emperor = no
+		}
+		is_emperor = yes
+	}
+	
+	option = {
+		name = "EVTOPTA1915"
+		PAP = {
+		remove_country_modifier = zhouweiwang
+		remove_country_modifier = zhoushuishou
+		}
+		any_country = {
+		limit = {
+		OR = {	has_country_flag = daizhou
+			has_country_flag = fuzhou }
+		is_emperor = no}
+		clr_country_flag = daizhou #旧霸主也重头来过
+		clr_country_flag = fuzhou
+		remove_country_modifier = kongzhizhou
+		set_country_flag = oldemperor
+		}
+		any_country = {
+			limit = {
+				has_country_flag = "was_elector"
+			}
+			elector = yes
+			clr_country_flag = "was_elector"
+		}
+		random_country = { 
+			limit = { has_country_flag = oldemperor }
+			country_event = 1916
+			}
+
+		clr_global_flag = daizhou_lv1
+		clr_global_flag = daizhou_lv2
+		clr_global_flag = daizhou_lv3
+		clr_global_flag = daizhou_lv4
+		clr_global_flag = daizhou_lv5
+		clr_global_flag = daizhou_lv6
+		clr_global_flag = daizhou_lv7
+		clr_global_flag = daizhou_lv8
+		clr_global_flag = fuzhou_lv1
+		clr_global_flag = fuzhou_lv2
+		clr_global_flag = fuzhou_lv3
+		clr_global_flag = fuzhou_lv4
+		clr_global_flag = fuzhou_lv5
+		clr_global_flag = fuzhou_lv6
+		clr_global_flag = fuzhou_lv7
+		clr_global_flag = fuzhou_lv8
+
+		clr_global_flag = denyjgzhou
+		clr_global_flag = doublejgbazhu
+		clr_global_flag = doublejgzhou
+		internal_hre_cb = yes
+		
+		
+		remove_hre_member_modifier = "reichsregiment_member"
+		remove_hre_member_modifier = "hofgericht_member"
+		remove_hre_member_modifier = "erbkaisertum_member"
+		remove_hre_member_modifier = "privilegia_de_non_appelando_member"
+		remove_hre_emperor_modifier = "reichsreform_emperor"
+		remove_hre_emperor_modifier = "reichsregiment_emperor"
+		remove_hre_emperor_modifier = "gemeinerpfennig_emperor"
+		remove_hre_emperor_modifier = "landfriede_emperor"
+		remove_hre_emperor_modifier = "erbkaisertum_emperor"
+		remove_hre_emperor_modifier = "privilegia_de_non_appelando_emperor"
+		revoke_reform = no
+	}	
+}
+
+
+# On Action: Emperor from same dynasty
+country_event = {
+	id = 1904
+	title = "EVTNAME1904"
+	desc = "EVTDESC1904"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	
+	option = {
+		name = "EVTOPTA1904"
+		add_imperial_influence = 12
+		any_country = { 
+			limit = { 
+				tag = THIS
+				idea = press_gangs
+			}
+			add_imperial_influence = 6
+		}
+		any_country = { 
+			limit = { 
+				is_emperor = yes
+				tag = JIN
+			}
+			add_imperial_influence = 0
+		}
+		any_country = { 
+			limit = { 
+				is_emperor = yes
+				tag = ZGO
+			}
+			add_imperial_influence = 5
+		}
+	}
+}
+
+
+# On Action: HRE Prince released by the emperor
+country_event = {
+	id = 1905
+	title = "EVTNAME1905"
+	desc = "EVTDESC1905"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	
+	immediate = {
+		add_imperial_influence = 5
+	}
+	option = {
+		name = "EVTOPTA1905"
+		any_country = { 
+			limit = { 
+				is_emperor = yes
+				tag = JIN
+			}
+			badboy = -0.0
+		}
+	}
+}
+
+
+
+# On Action: HRE Prince converts to non-Emperor religion
+country_event = {
+	id = 1906
+	title = "EVTNAME1906"
+	desc = "EVTDESC1906"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	
+	immediate = {
+		add_imperial_influence = -5
+	}
+
+	option = {
+		name = "EVTOPTA1906"
+	}
+}
+
+
+
+# On Action: HRE Prince converts to Emperor's religion
+country_event = {
+	id = 1907
+	title = "EVTNAME1907"
+	desc = "EVTDESC1907"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	immediate = {
+		add_imperial_influence = 5
+	}
+	option = {
+		name = "EVTOPTA1907"
+	}
+}
+
+
+# On Action: Emperor wins HRE defensive war
+country_event = {
+	id = 1908
+	title = "EVTNAME1908"
+	desc = "EVTDESC1908"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+
+	immediate = {
+	}
+	option = {
+		name = "EVTOPTA1908"
+		add_imperial_influence = 8
+		any_country = { 
+			limit = { 
+				is_emperor = yes
+				tag = JIN
+			}
+			army_tradition = 0.00
+		}
+	}
+}
+
+
+# On Action: HRE member annexed by non-HRE country
+country_event = {
+	id = 1909
+	title = "EVTNAME1909"
+	desc = "EVTDESC1909"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	immediate = {
+		add_imperial_influence = -12
+	}
+	option = {
+		name = "EVTOPTA1909"
+	}
+}
+
+
+# On Action: HRE member removed from non-HRE country SoI
+country_event = {
+	id = 1910
+	title = "EVTNAME1910"
+	desc = "EVTDESC1910"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+
+	immediate = {
+		add_imperial_influence = 2
+	}
+
+	option = {
+		name = "EVTOPTA1910"
+	}
+}
+
+
+# On Action: HRE member released from non-HRE vassalage
+country_event = {
+	id = 1911
+	title = "EVTNAME1911"
+	desc = "EVTDESC1911"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	immediate = {
+		add_imperial_influence = 4
+	}
+	option = {
+		name = "EVTOPTA1911"
+	}
+}
+
+
+# On Action: Emperor coming to the defense of a HRE member
+country_event = {
+	id = 1912
+	title = "EVTNAME1912"
+	desc = "EVTDESC1912"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	immediate = {
+		add_imperial_influence = 5
+	}
+	option = {
+		name = "EVTOPTA1912"
+	}
+}
+
+
+# On Action: Emperor NOT coming to the defense of a HRE member
+country_event = {
+	id = 1913
+	title = "EVTNAME1913"
+	desc = "EVTDESC1913"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	immediate = {
+		add_imperial_influence = -10
+	}
+	option = {
+		name = "EVTOPTA1913"
+	}
+}
+
+
+# On Action: HRE Member takes a HRE province from an outside country in a peace
+country_event = {
+	id = 1914
+	title = "EVTNAME1914"
+	desc = "EVTDESC1914"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { is_core = THIS }
+	}
+
+	immediate = {
+		add_core = THIS
+	}
+	option = {
+		name = "EVTOPTA1914"
+	}
+}
+
+
+# Vote on daizhou_lv1
+country_event = { #相关国家开始投票
+
+	id = 9057
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9057"
+	desc = "EVTDESC9057"
+	
+	option = {
+		name = "EVTOPTA9057"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv1_yes" # 赞成票
+	}
+	
+	option = {
+		name = "EVTOPTB9057"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}
+		}
+		clr_country_flag = "daizhou_lv1_yes" #反对票
+	
+	}
+}
+
+
+# daizhou_lv1
+province_event = {
+	id = 9058
+	title = "EVTNAME9058"
+	desc = "EVTDESC9058"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv1 }
+		hre_majority = {
+			has_country_flag = daizhou_lv1_yes  # 改革通过
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 50
+	}
+	
+	option = {
+		name = "EVTOPTA9058"
+		set_global_flag = daizhou_lv1
+		add_hre_emperor_modifier = {
+			name = "reichsreform_emperor"
+			duration = -1
+		}
+		revoke_reform = yes
+		clr_global_flag = Voting
+		emperor = { set_country_flag = daizhou }
+		emperor = { clr_country_flag = fuzhou }
+	}
+
+}
+
+
+# Vote on daizhou_lv2
+country_event = {
+
+	id = 9059
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9059"
+	desc = "EVTDESC9059"
+	
+	option = {
+		name = "EVTOPTA9059"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}		
+		set_country_flag = "daizhou_lv2_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9059"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "daizhou_lv2_yes"
+
+	}
+}
+
+# Trigger Reichsregiment
+province_event = {
+	id = 9060
+	title = "EVTNAME9060"
+	desc = "EVTDESC9060"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		has_global_flag = daizhou_lv1
+		NOT = { has_global_flag = daizhou_lv2 }
+		hre_majority = {
+			has_country_flag = daizhou_lv2_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA9060"
+		set_global_flag = daizhou_lv2
+		add_hre_member_modifier = {
+			name = "reichsregiment_member"
+			duration = -1
+		}
+		add_hre_emperor_modifier = {
+			name = "reichsregiment_emperor"
+			duration = -1
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+# Vote on daizhou_lv3
+country_event = {
+
+	id = 9061
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9061"
+	desc = "EVTDESC9061"
+	
+	option = {
+		name = "EVTOPTA9061"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv3_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9061"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}
+		}
+		clr_country_flag = "daizhou_lv3_yes"
+
+	}
+}
+
+# Trigger daizhou_lv3
+province_event = {
+	id = 9062
+	title = "EVTNAME9062"
+	desc = "EVTDESC9062"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv3 }
+		hre_majority = {
+			has_country_flag = daizhou_lv3_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA9062"
+		set_global_flag = daizhou_lv3
+		add_hre_member_modifier = {
+			name = "hofgericht_member"
+			duration = -1
+		}
+		add_hre_emperor_modifier = {
+			name = "gemeinerpfennig_emperor"
+			duration = -1
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+# Vote on daizhou_lv4
+country_event = {
+
+	id = 9063
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9063"
+	desc = "EVTDESC9063"
+	
+	option = {
+		name = "EVTOPTA9063"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv4_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9063"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "daizhou_lv4_yes"
+
+	}
+}
+
+# Trigger Gemeiner Pfennig
+province_event = {
+	id = 9064
+	title = "EVTNAME9064"
+	desc = "EVTDESC9064"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv4 }
+		hre_majority = {
+			has_country_flag = daizhou_lv4_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA9064"
+		set_global_flag = daizhou_lv4 
+		set_global_flag = denyjgzhou 
+		emperor = { infamy = 4 }
+		clr_global_flag = Voting
+	}
+
+}
+
+
+
+# Vote on daizhou_lv5
+country_event = {
+
+	id = 9065
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9065"
+	desc = "EVTDESC9065"
+	
+	option = {
+		name = "EVTOPTA9065"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv5_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9065"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "daizhou_lv5_yes"
+
+	}
+}
+
+# Trigger Ewiger Landfriede
+province_event = {
+	id = 9066
+	title = "EVTNAME9066"
+	desc = "EVTDESC9066"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv5 }
+		hre_majority = {
+			has_country_flag = daizhou_lv5_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA9066"
+		set_global_flag = daizhou_lv5
+		emperor = { 
+			add_country_modifier = {
+				name = "kongzhizhou"
+				duration = -1
+			}
+			vassalize = PAP
+		}
+		PAP = { set_country_flag = privileged_vassal }
+		internal_hre_cb = no
+		clr_global_flag = Voting
+	}
+}
+
+
+# Vote on Revoking the Privilegia de non appelando(第七个)
+country_event = {
+
+	id = 9067
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9067"
+	desc = "EVTDESC9067"
+	
+	option = {
+		name = "EVTOPTA9067"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv7_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9067"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "daizhou_lv7_yes"
+
+	}
+}
+
+# Check votes on Revoking the Privilegia de non appelando(第七个)
+province_event = {
+	id = 9068
+	title = "EVTNAME9068"
+	desc = "EVTDESC9068"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv7 }
+		hre_majority = {
+			has_country_flag = "daizhou_lv7_yes"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA9066"
+		set_global_flag = daizhou_lv7
+		internal_hre_cb = no
+		emperor = { prestige = 0.1 }
+		clr_global_flag = Voting
+	}
+
+}
+
+
+
+# Vote on Erbkaisertum（第六个）
+country_event = {
+
+	id = 9069
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9069"
+	desc = "EVTDESC9069"
+	
+	option = {
+		name = "EVTOPTA9069"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 1000
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv6_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9069"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 100
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "daizhou_lv6_yes"
+
+	}
+}
+
+# Trigger Erbkaisertum（第六个）
+province_event = {
+	id = 9070
+	title = "EVTNAME9070"
+	desc = "EVTDESC9070"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv6 }
+		hre_majority = {
+			has_country_flag = "daizhou_lv6_yes"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA9070"
+			set_global_flag = daizhou_lv6
+		set_global_flag = doublejgbazhu
+		emperor = {
+			remove_country_modifier = kongzhizhou
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+
+# Vote on Renovatio(第八个)
+country_event = {
+
+	id = 9071
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME9071"
+	desc = "EVTDESC9071"
+	
+	option = {
+		name = "EVTOPTA9071"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+		}
+		set_country_flag = "daizhou_lv8_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9071"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "daizhou_lv8_yes"
+
+	}
+}
+
+# Check Renovatio Votes（第八个）
+province_event = {
+	id = 9072
+	title = "EVTNAME9072"
+	desc = "EVTDESC9072"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = daizhou_lv8 }
+		hre_majority = {
+			has_country_flag = "daizhou_lv8_yes"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	option = {
+		name = "EVTOPTA9072"
+		set_global_flag = daizhou_lv8
+	any_country = {
+			limit = {
+				elector = yes
+			}
+			elector = no
+			set_country_flag = "was_elector"
+		}
+		emperor = {
+			country_event = 9075
+			government = celestial_empire
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+# Privilegia triggers for Emperor... （全体附庸）
+country_event = {
+	id = 9075
+	title = "EVTNAME9075"
+	desc = "EVTDESC9075"
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		any_country = {
+			limit = {
+				hre = yes
+				is_emperor = no
+				num_of_cities = 1
+			}
+			country_event = 9076
+		}	
+	}
+
+	option = {
+		name = "EVTOPTA9075"
+	}
+}
+
+#... and for member states
+country_event = {
+	id = 9076
+	title = "EVTNAME9076"
+	desc = "EVTDESC9076"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9076"
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 1.5
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					alliance_with = THIS
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+		}
+		emperor = {
+			vassalize = this
+			this = {
+				set_country_flag = "privileged_vassal"
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9076"
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+#			modifier = {
+#				factor = 0
+#				has_country_flag = "privilegia_de_non_appelando_yes"
+#			}
+			modifier = {
+				factor = 1000
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.25
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.9
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = -100 }
+					}
+				}
+			}
+		}
+		any_owned = {
+			hre = no
+		}
+		emperor = {
+			war = this
+			this = {
+				set_country_flag = "prilvilege_war"
+				}
+		}
+	}
+}
+
+
+
+
+
+# Vote on fuzhou_lv1
+country_event = { #相关国家开始投票
+
+	id = 1920
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1920"
+	desc = "EVTDESC1920"
+	
+	option = {
+		name = "EVTOPTA1920"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv1_yes" # 赞成票
+	}
+	
+	option = {
+		name = "EVTOPTB1920"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}
+		}
+		clr_country_flag = "fuzhou_lv1_yes" #反对票
+	
+	}
+}
+
+
+# fuzhou_lv1
+province_event = {
+	id = 1921
+	title = "EVTNAME1921"
+	desc = "EVTDESC1921"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = fuzhou_lv1 }
+		hre_majority = {
+			has_country_flag = fuzhou_lv1_yes  # 改革通过
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 50
+	}
+	
+	option = {
+		name = "EVTOPTA1921"
+		set_global_flag = fuzhou_lv1
+		add_hre_emperor_modifier = {
+			name = "reichsreform_emperor"
+			duration = -1
+		}
+		revoke_reform = yes
+		clr_global_flag = Voting
+		emperor = { set_country_flag = fuzhou }
+		emperor = { clr_country_flag = daizhou }
+	}
+
+}
+
+
+
+# Vote on fuzhou_lv2
+country_event = {
+
+	id = 1922
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1922"
+	desc = "EVTDESC1922"
+	
+	option = {
+		name = "EVTOPTA1922"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}		
+		set_country_flag = "fuzhou_lv2_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB1922"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "fuzhou_lv2_yes"
+
+	}
+}
+
+# Trigger Reichsregiment
+province_event = {
+	id = 1923
+	title = "EVTNAME1923"
+	desc = "EVTDESC1923"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		has_global_flag = fuzhou_lv1
+		NOT = { has_global_flag = fuzhou_lv2 }
+		hre_majority = {
+			has_country_flag = fuzhou_lv2_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA1923"
+		set_global_flag = fuzhou_lv2
+		clr_global_flag = Voting
+		PAP = {add_country_modifier = { 
+			name = "zhouweiwang"
+			duration = -1	}
+		}
+	}
+
+}
+
+
+
+# Vote on fuzhou_lv3
+country_event = {
+
+	id = 1924
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1924"
+	desc = "EVTDESC1924"
+	
+	option = {
+		name = "EVTOPTA1924"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv3_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB1924"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}
+		}
+		clr_country_flag = "fuzhou_lv3_yes"
+
+	}
+}
+
+# Trigger fuzhou_lv3
+province_event = {
+	id = 1925
+	title = "EVTNAME1925"
+	desc = "EVTDESC1925"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = fuzhou_lv3 }
+		hre_majority = {
+			has_country_flag = fuzhou_lv3_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA1925"
+		set_global_flag = fuzhou_lv3
+		add_hre_emperor_modifier = {
+			name = "landfriede_emperor"
+			duration = -1
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+
+
+# Vote on daizhou_lv4
+country_event = {
+
+	id = 1926
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1926"
+	desc = "EVTDESC1926"
+	
+	option = {
+		name = "EVTOPTA1926"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv4_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB1926"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "fuzhou_lv4_yes"
+
+	}
+}
+
+# Trigger fuzhou_lv4
+province_event = {
+	id = 1927
+	title = "EVTNAME1927"
+	desc = "EVTDESC1927"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = fuzhou_lv4 }
+		hre_majority = {
+			has_country_flag = fuzhou_lv4_yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA1927"
+		set_global_flag = fuzhou_lv4 
+		add_hre_member_modifier = {
+			name = "erbkaisertum_member"
+			duration = -1
+		}
+		add_hre_emperor_modifier = {
+			name = "erbkaisertum_emperor"
+			duration = -1
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+
+# Vote on fuzhou_lv5
+country_event = {
+
+	id = 1928
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1928"
+	desc = "EVTDESC1928"
+	
+	option = {
+		name = "EVTOPTA1928"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv5_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB1928"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "fuzhou_lv5_yes"
+
+	}
+}
+
+# Trigger fuzhou_lv5
+province_event = { 
+	id = 1929
+	title = "EVTNAME1929"
+	desc = "EVTDESC1929"
+	major = yes
+	exclusive = yes
+	trigger = { 
+		hre = yes
+		has_global_flag = Voting
+		NOT = { 
+			has_global_flag = fuzhou_lv5
+		}
+		hre_majority = { 
+			has_country_flag = fuzhou_lv5_yes
+		}
+	}
+	mean_time_to_happen = { 
+		days = 100
+	}
+	option = { 
+		name = "EVTOPTA1929"
+		set_global_flag = fuzhou_lv5
+		add_hre_member_modifier = { 
+			name = "privilegia_de_non_appelando_member"
+			duration = -1
+		}
+		PAP = { 
+			add_country_modifier = { 
+				name = "zhoushuishou"
+				duration = -1
+			}
+			clr_global_flag = Voting
+		}
+	}
+}
+
+# Vote on fuzhou_lv6（第六个）
+country_event = {
+
+	id = 1930
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1930"
+	desc = "EVTDESC1930"
+	
+	option = {
+		name = "EVTOPTA1930"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 } 
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 1000
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv6_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB1930"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 100
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "fuzhou_lv6_yes"
+
+	}
+}
+
+# Trigger Erbkaisertum（第六个）
+province_event = {
+	id = 1931
+	title = "EVTNAME1931"
+	desc = "EVTDESC1931"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = fuzhou_lv6 }
+		hre_majority = {
+			has_country_flag = "fuzhou_lv6_yes"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA1931"
+			set_global_flag = fuzhou_lv6
+		add_hre_emperor_modifier = {
+			name = "privilegia_de_non_appelando_emperor"
+			duration = -1
+		}
+		clr_global_flag = Voting
+	}
+
+}
+
+
+
+# Vote on fuzhou_lv7(第七个)
+country_event = {
+
+	id = 1932
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1932"
+	desc = "EVTDESC1932"
+	
+	option = {
+		name = "EVTOPTA1932"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv7_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB9067"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "fuzhou_lv7_yes"
+
+	}
+}
+
+# Check votes on fuzhou_lv7（第七个)
+province_event = {
+	id = 1933
+	title = "EVTNAME1933"
+	desc = "EVTDESC1933"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = fuzhou_lv7 }
+		hre_majority = {
+			has_country_flag = "fuzhou_lv7_yes"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = "EVTOPTA1933"
+		set_global_flag = doublejgzhou
+		clr_global_flag = Voting
+		set_global_flag = fuzhou_lv7 
+	}
+
+}
+
+
+
+# Vote on Renovatio(第八个)
+country_event = {
+
+	id = 1934
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME1934"
+	desc = "EVTDESC1934"
+	
+	option = {
+		name = "EVTOPTA1934"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				emperor = {
+					dynasty = THIS
+				}
+			}
+			modifier = {
+				factor = 1.2
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						badboy = 0.1
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					religion = THIS
+				}
+			}
+		}
+		set_country_flag = "fuzhou_lv8_yes"
+
+	}
+	
+	option = {
+		name = "EVTOPTB1934"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.2
+				}
+			}
+			modifier = {
+				factor = 3
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 10
+				num_of_cities = 6
+			}			
+		}
+		clr_country_flag = "fuzhou_lv8_yes"
+
+	}
+}
+
+# Check Renovatio Votes（第八个）
+province_event = {
+	id = 1935
+	title = "EVTNAME1935"
+	desc = "EVTDESC1935"
+	
+	major = yes
+	exclusive = yes
+	
+	trigger = {
+		hre = yes
+		has_global_flag = Voting
+		NOT = { has_global_flag = fuzhou_lv8 }
+		hre_majority = {
+			has_country_flag = "fuzhou_lv8_yes"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	option = {
+		name = "EVTOPTA1935"
+		set_global_flag = fuzhou_lv8
+		any_country = {
+			limit = {
+				elector = yes
+			}
+			elector = no
+			set_country_flag = "was_elector"
+		}
+		PAP = {
+			country_event = 1936
+		}
+		emperor = { prestige = 0.1 }
+		clr_global_flag = Voting
+	}
+
+}
+
+
+# Privilegia triggers for Emperor... （全体附庸）
+country_event = {
+	id = 1936
+	title = "EVTNAME1936"
+	desc = "EVTDESC1936"
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		any_country = {
+			limit = {
+				hre = yes
+				is_emperor = no
+				num_of_cities = 1
+			}
+			country_event = 1937
+		}	
+	}
+
+	option = {
+		name = "EVTOPTA1936"
+	}
+}
+
+#... and for member states
+country_event = {
+	id = 1937
+	title = "EVTNAME1937"
+	desc = "EVTDESC1937"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA1937"
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 1.5
+				emperor = {
+					marriage_with = THIS
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					alliance_with = THIS
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					relation = { who = THIS value = 150 }
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+		}
+		PAP = {
+			vassalize = this
+			this = {
+				set_country_flag = "privileged_vassal"
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB1937"
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0
+				emperor = {
+					overlord_of = THIS
+				}
+			}
+			modifier = {
+				factor = 1000
+				emperor = {
+					war_with = THIS
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					badboy = 0.25
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					badboy = 0.9
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						religion = THIS
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						relation = { who = THIS value = -100 }
+					}
+				}
+			}
+		}
+		any_owned = {
+			hre = no
+		}
+		PAP = {
+			war = this
+			this = {
+				set_country_flag = "prilvilege_war"
+				}
+		}
+	}
+}
+
+#Asking to join province
+country_event = {
+	id = 9493
+	title = "EVTNAME9493"
+	desc = "EVTDESC9493"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9493"
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 2
+				relation = { who = FROM value = 150 }
+			}
+			modifier = {
+				factor = 0.5
+				from = {
+					owner = {
+						badboy = 0.5
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				FROM = {
+					owner = {
+						num_of_cities = THIS
+					}
+				}
+			}
+				
+		}
+		add_imperial_influence = 1
+		from = {
+			hre = yes
+			province_event = 9494
+		}
+	}
+	option = {
+		name = "EVTOPTB9493"
+		ai_chance = { 
+			factor = 10
+		}
+		from = {
+			hre = no
+			province_event = 9495
+		}
+	}
+}
+
+province_event = {
+	id = 9494
+	title = "EVTNAME9494"
+	desc = "EVTDESC9494"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9494"
+		owner = { prestige = 0.01 }
+	}
+}
+
+province_event = {
+	id = 9495
+	title = "EVTNAME9495"
+	desc = "EVTDESC9495"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9495"
+		owner = { prestige = -0.01 }
+	}
+}
+
+# 成为小霸
+country_event = { 
+	id = 879
+	trigger = { 
+		OR = { 
+			AND = { 
+				NOT = { 
+					num_of_electors = 9
+				}
+				hre_size = 32
+			}
+			AND = { 
+				NOT = { 
+					num_of_electors = 7
+				}
+				NOT = { 
+					hre_size = 32
+				}
+				hre_size = 20
+			}
+			NOT = { 
+				num_of_electors = 5
+			}
+		}
+		elector = no
+		NOT = { 
+			government = republic
+		}
+		capital_scope = { 
+			hre = yes
+		}
+		NOT = { 
+			has_global_flag = elector_offered
+		}
+		NOT = { 
+			has_global_flag = daizhou_lv8
+		}
+		NOT = { 
+			has_global_flag = fuzhou_lv8
+		}
+		religion_group = christian
+		NOT = { 
+			is_subject = yes
+			overlord = { 
+				elector = no
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 120
+		modifier = { 
+			factor = 0.2
+			NOT = { 
+				num_of_electors = 5
+			}
+		}
+		modifier = { 
+			factor = 0.2
+			NOT = { 
+				num_of_electors = 3
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 50
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.85
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 100
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			emperor = { 
+				relation = { 
+					who = THIS
+					value = 150
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			any_neighbor_country = { 
+				is_emperor = yes
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			stability = 1
+		}
+		modifier = { 
+			factor = 1.25
+			NOT = { 
+				stability = 0
+			}
+		}
+		modifier = { 
+			factor = 5
+			NOT = { num_of_cities = 2 }
+		}
+		modifier = { 
+			factor = 2.5
+			NOT = { num_of_cities = 4 }
+		}
+		modifier = { 
+			factor = 0.4
+			num_of_cities = 8
+		}
+		modifier = { 
+			factor = 0.5
+			num_of_cities = 12
+		}
+		modifier = { 
+			factor = 0.6
+			num_of_cities = 20
+		}
+		modifier = { 
+			factor = 0.4
+			OR = { 
+				tag = QIG
+				tag = CHU
+				tag = JIN
+				tag = YAN
+				tag = QIN
+				tag = ZGO
+				tag = SON
+				tag = WEG
+				tag = LUG
+				tag = CHE
+				tag = CAI
+			}
+		}
+	}
+	title = "EVTNAME879"
+	desc = "EVTDESC879"
+	immediate = { 
+		set_global_flag = elector_offered
+	}
+	option = { 
+		name = "EVTOPTA879"
+		# An offer too good to pass
+		ai_chance = { 
+			factor = 90
+		}
+		elector = yes
+		prestige = 0.05
+		clr_global_flag = elector_offered
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = 100
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB879"
+		# Unfortunately we have to decline
+		ai_chance = { 
+			factor = 10
+		}
+		prestige = -0.05
+		clr_global_flag = elector_offered
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = -100
+			}
+		}
+	}
+}
+
+
+# Remove elector
+country_event = {
+
+	id = 880
+	
+	trigger = {
+		elector = yes
+		is_emperor = no
+		num_of_electors = 7
+		NOT = { num_of_cities = 2 }
+	}
+
+	mean_time_to_happen = {
+	
+		months = 360
+		
+		modifier = {
+			factor = 0.9
+			emperor = { 
+				NOT = { relation = { who = THIS value = -50 } }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			emperor = {
+				NOT = { relation = { who = THIS value = -100 } }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			emperor = {
+				NOT = { relation = { who = THIS value = -150 } }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			emperor = { 
+				NOT = { religion = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			emperor = { 
+				religion = THIS
+			}
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.40
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.70
+		}
+		modifier = {
+			factor = 0.75
+			badboy = 1.00
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.25
+			stability = 1
+		}
+	}
+
+	title = "EVTNAME880"
+	desc = "EVTDESC880"
+
+	option = {
+		name = "EVTOPTA880"		# Try to mend the situation
+		ai_chance = { factor = 80 }
+		elector = no
+		prestige = -0.02
+		emperor = { relation = { who = THIS value = -50 } }
+	}
+	option = {
+		name = "EVTOPTB880"		# We won't forget this!
+		ai_chance = { factor = 20 }
+		elector = no
+		prestige = -0.01
+		emperor = { relation = { who = THIS value = -100 } }
+	}
+}
+
+#########################################################
+#		霸主要求归还非法领土		#
+#########################################################
+
+province_event = {
+
+	id = 6007
+
+	trigger = {
+		emperor = {
+			exists = yes
+			war = no
+		}
+		hre = yes
+		NOT = { is_core = THIS }
+		is_capital = no
+		NOT = { has_province_flag = emperor_nagged_for_it }
+		NOT = { has_province_flag = given_to_the_emperor }
+		owner = {
+			is_emperor = no
+			war = no
+			religion_group = christian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120 # Random Province Event
+		
+		modifier = {
+			factor = 0.75
+			owner = { badboy = 0.25 }
+		}
+		modifier = {
+			factor = 10.0
+			owner = { luck = yes }
+		}
+	}
+
+	title = "EVTNAME6007"
+	desc = "EVTDESC6007"
+
+	option = {
+		name = "EVTOPTA6007"		# Clearly the Emperor underestimates us
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.5
+				owner = { badboy = 0.33 }
+			}
+		}
+		emperor = {
+			casus_belli = {	
+				target = THIS
+				type = cb_imperial_ban
+				months = 18
+			}
+			relation = { who = THIS value = -50 }
+		}
+		set_province_flag = emperor_nagged_for_it
+		add_province_modifier = {
+			name = unlawful_territory
+			duration = -1
+		}
+		owner = {
+			prestige = 0.05
+			badboy = 1
+		}
+		emperor = {
+			country_event = 9091
+		}
+	}
+	option = {
+		name = "EVTOPTB6007"		# That land means nothing to us
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				owner = { badboy = 0.5 }
+			}
+		}
+		set_province_flag = in_event_6007_optb
+		owner = {
+			random_owned = {
+				limit = {
+					has_province_flag = in_event_6007_optb
+					NOT = {
+						is_core = THIS
+					}
+				}
+				set_province_flag = given_to_the_emperor
+				owner = { prestige = -0.05 }
+				emperor = {
+					country_event = 9090
+				}
+			}
+		}
+		clr_province_flag = in_event_6007_optb
+	}
+}
+
+#########################################################
+#		非法领土消除		#
+#########################################################
+
+province_event = {
+
+	id = 6008
+
+	trigger = {
+		has_province_modifier = unlawful_territory
+		is_core = THIS
+	}
+
+	mean_time_to_happen = {
+		months = 12 # Random Province Event
+		
+		modifier = {
+			factor = 2.0
+			owner = { badboy = 0.25 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { badboy = 0.5 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { badboy = 0.1 } }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { badboy = 0.05 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { prestige = 0.50 }
+		}
+	}
+
+	title = "EVTNAME6008"
+	desc = "EVTDESC6008"
+
+	option = {
+		name = "EVTOPTA6008"		# Great News!
+		ai_chance = { factor = 100 }
+		remove_province_modifier = unlawful_territory
+		clr_province_flag = emperor_nagged_for_it
+	}
+}
+
+# Unlawfully held province handed over
+country_event = {
+
+	id = 9090
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME9090"
+	desc = "EVTDESC9090"
+	
+	option = {
+		name = "EVTOPTB9090"
+		FROM = {
+			clr_province_flag = given_to_the_emperor
+			secede_province = previous_owner
+		}
+		badboy = -1
+		prestige = 0.05
+		add_imperial_influence = 2
+	}
+}
+
+# 拒绝归还非法领土
+country_event = {
+
+	id = 9091
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME9091"
+	desc  ="EVTDESC9091"
+	
+	option = {
+		name = "EVTOPTA9091"
+	}
+}

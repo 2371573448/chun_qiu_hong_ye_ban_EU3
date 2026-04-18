@@ -1,0 +1,372 @@
+cultural_decisions = { 
+	#########支持公家##########
+	zhichigongjia = { 
+		potential = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			NOT = { 
+				government = god_kingdom
+			}
+			NOT = { 
+				government = mojiajuzi
+			}
+			religion_group = christian
+			NOT ={ has_country_modifier = zhichigongjia }
+			NOT ={ has_country_modifier = zhichishiqing }
+		}
+		allow = {
+			stability = 1
+		}
+		effect = { 
+			aristocracy_plutocracy = -1
+			add_country_modifier = { 
+				name = "zhichigongjia"
+				duration = 4380
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				aristocracy_plutocracy = -3
+			}
+		}
+	}
+	#########支持士卿##########
+	zhichishiqing = { 
+		potential = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			NOT = { 
+				government = god_kingdom
+			}
+			NOT = { 
+				government = mojiajuzi
+			}
+			religion_group = christian
+			NOT ={ has_country_modifier = zhichigongjia }
+			NOT ={ has_country_modifier = zhichishiqing }
+		}
+		allow = {
+			stability = 1
+		}
+		effect = { 
+			aristocracy_plutocracy = 1
+			add_country_modifier = { 
+				name = "zhichishiqing"
+				duration = 4380
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { aristocracy_plutocracy =4 }
+			}
+		}
+	}
+	#########强行支持公家##########
+	zhichigongjia1 = { 
+		potential = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			NOT = { 
+				government = god_kingdom
+			}
+			NOT = { 
+				government = mojiajuzi
+			}
+			religion_group = christian
+			has_country_modifier = zhichishiqing
+		}
+		allow = {
+			stability = 2
+		}
+		effect = { 
+			aristocracy_plutocracy = -1
+			stability = -3
+			add_country_modifier = { 
+				name = "zhichigongjia"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#########强行支持士卿##########
+	zhichishiqing1 = { 
+		potential = { 
+			NOT = { 
+				government = tribal_federation
+			}
+			NOT = { 
+				government = tribal_despotism
+			}
+			NOT = { 
+				government = steppe_horde
+			}
+			NOT = { 
+				government = god_kingdom
+			}
+			NOT = { 
+				government = mojiajuzi
+			}
+			religion_group = christian
+			has_country_modifier = zhichigongjia
+		}
+		allow = {
+			stability = 2
+		}
+		effect = { 
+			aristocracy_plutocracy = 1
+			stability = -3
+			add_country_modifier = { 
+				name = "zhichishiqing"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+
+province_decisions = { 
+	# 分封公家
+	set_noble_territory = { 
+		potential = { 
+			is_capital = no
+			owner = { 
+				has_country_modifier = zhichigongjia
+				has_country_flag = zongfazhidu
+				NOT = { 
+					has_country_modifier = shoujiushili1
+				}
+			}
+			
+		}
+		allow = { 
+			owner = { stability = 1 }
+			owner = { 
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+			}
+			has_province_modifier = monarch_territory
+		}
+		effect = { 
+			owner = { 
+				badboy = -0.2
+				legitimacy = 0.02
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = { 
+				name = "noble_territory"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 分封士卿
+	set_vassal_territory = { 
+		potential = { 
+
+			is_capital = no
+			or={
+			owner = { tag=JIN  }
+			owner = { 
+			has_country_modifier = zhichishiqing
+			has_country_flag = shiguanzhidu
+			NOT = { has_country_modifier = shoujiushili2}
+			}
+			}
+			has_province_modifier = monarch_territory
+		}
+		allow = { 
+			owner ={ stability = 1 }
+			owner = { 
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+			}
+		}
+		effect = { 
+			owner = { 
+				badboy = -0.25
+				prestige = 0.02
+			}
+			remove_province_modifier = monarch_territory
+			add_province_modifier = { 
+				name = "vassal_territory"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 没收封地
+	set_monarch_territory = { 
+		potential = { 
+			owner = { 
+				has_country_flag = fengjunzhidu
+				NOT = { idea = national_bank }
+			}
+			OR = { 
+				has_province_modifier = vassal_territory
+				has_province_modifier = noble_territory
+			}
+		}
+		allow = { 
+			owner = { 
+				NOT = { centralization_decentralization = 0 }
+				legitimacy = 0.5
+				prestige = 0.25
+				diplomats = 1
+				officials = 1
+				not={has_country_flag = guanbifengditiaojie}
+			}
+			owner = { 
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+			}
+		}
+		effect = { 
+			owner = { 
+				treasury = 15
+				legitimacy = -0.1
+				prestige = -0.05
+				diplomats = -1
+				officials = -1
+				badboy = 0.5
+			}
+			remove_province_modifier = vassal_territory
+			remove_province_modifier = noble_territory
+			add_province_modifier = { 
+				name = "monarch_territory"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	set_monarch_territory2 = { 
+		potential = { 
+			owner = { 
+				has_country_flag = fengjunzhidu
+				idea = national_bank
+			}
+			OR = { 
+				has_province_modifier = vassal_territory
+				has_province_modifier = noble_territory
+			}
+		}
+		allow = { 
+			owner = { 
+				NOT = { centralization_decentralization = 0 }
+				not={has_country_flag = guanbifengditiaojie}
+			}
+			owner = { 
+			or={
+			not={has_country_flag = guanbifengditiaojie}
+			ai=yes
+			}
+			}
+		}
+		effect = { 
+			owner = { 
+				legitimacy = -0.03
+				treasury = 15
+				badboy = 0.5
+			}
+			remove_province_modifier = vassal_territory
+			remove_province_modifier = noble_territory
+			add_province_modifier = { 
+				name = "monarch_territory"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	shiqingzhuanhua = {
+		potential = { 
+			owner = { 
+				has_country_flag = fengjunzhidu
+				idea = shrewd_commerce_practise
+			}
+			has_province_modifier = noble_territory
+		}
+		allow = { 
+			owner = { 
+				idea = shrewd_commerce_practise
+				prestige = 0.80
+			}
+		}
+		effect = { 
+			owner = { 
+				prestige = -0.05
+			}
+			remove_province_modifier = noble_territory
+			add_province_modifier = { 
+				name = "vassal_territory"
+				duration = -1
+			}
+		}
+	}
+	gongjiazhuanhua = {
+		potential = { 
+			owner = { 
+				has_country_flag = fengjunzhidu
+				idea = shrewd_commerce_practise
+			}
+			has_province_modifier = vassal_territory
+		}
+		allow = { 
+			owner = { 
+				idea = shrewd_commerce_practise
+				prestige = 0.80
+			}
+		}
+		effect = { 
+			owner = { 
+				prestige = -0.05
+			}
+			remove_province_modifier = vassal_territory
+			add_province_modifier = { 
+				name = "noble_territory"
+				duration = -1
+			}
+		}
+	}
+}

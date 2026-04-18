@@ -1,0 +1,20 @@
+name = "É½ÈÖ·¥Ñà¹ú"
+casus_belli = cb_horde_conquest #
+
+2034.1.1 = {
+	add_attacker = WUZ
+	add_attacker = GUZ
+	add_attacker = LZG
+	add_defender=YAN
+}
+2035.1.1 = {
+	add_defender=QIG
+}
+2035.6.1 = {
+
+	rem_attacker = WUZ
+	rem_attacker = GUZ
+	rem_attacker = LZG
+	rem_defender=YAN
+	rem_defender=QIG
+}

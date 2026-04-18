@@ -1,0 +1,54 @@
+government =fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 2
+innovative_narrowminded = -2
+mercantilism_freetrade = 2
+offensive_defensive = 0
+land_naval = 2
+quality_quantity = 0
+serfdom_freesubjects = -4
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = zhongyuan
+capital = 348
+
+1927.1.1 = {
+	monarch = {
+		name = "∫≤"
+               dynasty = "ºß"
+		adm = 5
+		dip = 7
+		mil = 5
+	}
+}
+1928.1.1 = { elector = yes }
+1948.1.1 = {
+	monarch = {
+		name = "º…∏∏"
+               dynasty = "ºß"
+		adm = 5
+		dip = 8
+		mil = 4
+	}
+}
+1973.1.1 = {
+	monarch = {
+		name = "¡÷∏∏"
+               dynasty = "ºß"
+		adm = 6
+		dip = 6
+		mil = 3
+	}
+}
+1997.1.1 = { elector = no }
+2013.1.1 = {
+	monarch = {
+		name = "≥Û"
+               dynasty = "ºß"
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+2030.1.1={leader={name="÷€÷Æ«»" type=general rank=1 fire=4 shock=1 manuever=3 siege=1 death_date=2043.1.1}}

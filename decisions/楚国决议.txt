@@ -1,0 +1,47 @@
+##########³þ############
+country_decisions = { 
+	bianshen_chu = { 
+		potential = { 
+			NOT = { 
+				exists = CHU
+			}
+			NOT = { 
+				tag = PAP
+			}
+			religion = liyuebadao
+			OR = { 
+				primary_culture = nanchu
+				primary_culture = jianghan
+			}
+		}
+		allow = { 
+			owns = 466
+			owns = 463
+			owns = 382
+			owns = 468
+			owns = 475
+			owns = 493
+			is_core = 466
+			is_core = 463
+			is_core = 382
+			is_core = 468
+			is_core = 475
+			is_core = 493
+			war = no
+		}
+		effect = { 
+			nanjun = { 
+				add_core = CHU
+			}
+			nanyang = { 
+				add_core = CHU
+			}
+			capital = 466
+			prestige = 0.05
+			change_tag = CHU
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

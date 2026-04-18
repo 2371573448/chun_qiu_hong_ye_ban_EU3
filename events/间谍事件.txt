@@ -1,0 +1,15 @@
+country_event = { 
+	id = 3301
+	is_triggered_only = yes
+	title = "EVTNAME3301"
+	desc = "EVTDESC3301"
+	option = { 
+		name = "EVTOPTA3301"
+		any_neighbor_country = { 
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+	}
+}

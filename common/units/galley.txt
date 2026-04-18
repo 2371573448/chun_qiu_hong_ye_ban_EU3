@@ -1,0 +1,7 @@
+#ะกาํ
+type = galley
+unit_type = wuyue1
+
+hull_size = 15
+base_cannons = 4
+sail_speed = 4

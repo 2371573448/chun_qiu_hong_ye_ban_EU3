@@ -1,0 +1,20 @@
+name = "Îå¹ú·¥Æë"
+casus_belli = cb_zhulu 
+
+2413.1.1 = {
+	add_attacker = YAN
+	add_attacker = ZHO
+	add_attacker = QIN
+	add_attacker = WEI
+	add_attacker = HAN
+	add_defender = QIG
+}
+
+2415.10.1 = {
+	rem_attacker = YAN
+	rem_attacker = ZHO
+	rem_attacker = QIN
+	rem_attacker = WEI
+	rem_attacker = HAN
+	rem_defender = QIG
+}

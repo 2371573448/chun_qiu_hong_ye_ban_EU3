@@ -1,0 +1,13 @@
+owner = CXY
+controller = CXY
+culture = xiyu
+religion = animism
+capital = "ะกอ๐"
+trade_goods = wine
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 30000
+fort1 = yes
+add_core = CXY
+1827.1.1 = { discovered_by = XYR }

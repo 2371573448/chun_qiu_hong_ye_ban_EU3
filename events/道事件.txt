@@ -1,0 +1,149 @@
+country_event = { 
+	id = 21213
+	trigger = { 
+		has_country_modifier = daojiaxiyinliumin
+	}
+	mean_time_to_happen = { 
+		months = 120
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = daojianongju
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = daojianongtian
+		}
+		modifier = { 
+			factor = 0.8
+			has_country_modifier = daojiafangwu
+		}
+		modifier = { 
+			factor = 0.9
+			ADM = 7
+		}
+		modifier = { 
+			factor = 0.9
+			ADM = 8
+		}
+		modifier = { 
+			factor = 0.9
+			ADM = 9
+		}
+		modifier = { 
+			factor = 0.9
+			DIP = 7
+		}
+		modifier = { 
+			factor = 0.9
+			DIP = 8
+		}
+		modifier = { 
+			factor = 0.9
+			DIP = 9
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 0.5
+		}
+		modifier = { 
+			factor = 0.9
+			prestige = 1
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 1
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 2
+		}
+		modifier = { 
+			factor = 0.9
+			stability = 3
+		}
+		modifier = { 
+			factor = 0.9
+			idea = cabinet
+		}
+		modifier = { 
+			factor = 0.6
+			idea = improved_foraging
+		}
+		modifier = { 
+			factor = 2
+			idea = espionage
+		}
+		modifier = { 
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = { 
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = { 
+			factor = 1.5
+			war_exhaustion = 15
+		}
+		modifier = { 
+			factor = 0.5
+			war = yes
+		}
+		modifier = { 
+			factor = 1.2
+			badboy = 0.25
+		}
+		modifier = { 
+			factor = 1.2
+			badboy = 0.50
+		}
+		modifier = { 
+			factor = 1.2
+			badboy = 0.75
+		}
+		modifier = { 
+			factor = 2
+			badboy = 1
+		}
+	}
+	title = "liuminyuanlai1"
+	desc = "liuminyuanlai2"
+	immediate = {
+		set_country_flag = daojialiuminfangzhigaizhengce
+	}
+	option = { 
+		name = "liuminyuanlai3"
+		treasury = -50
+		badboy = -0.5
+		capital_scope = {
+			add_province_modifier = {
+				name = "daojialiumindaianzhi"
+				duration = -1
+			}
+		}
+		clr_country_flag = daojialiuminfangzhigaizhengce
+	}
+	option = { 
+		name = "liuminyuanlai4"
+		prestige = -0.10
+		treasury = -10
+		random_owned = {
+			citysize = 2000
+		}
+		clr_country_flag = daojialiuminfangzhigaizhengce
+	}
+	option = { 
+		name = "liuminyuanlai5"
+		random_list = {
+			90 = { 
+				treasury = 20
+				years_of_income = 0.05
+			}
+			10 = { 
+				badboy = 10
+				stability = -1
+			}
+		}
+		clr_province_flag = daojialiuminfangzhigaizhengce
+	}
+}

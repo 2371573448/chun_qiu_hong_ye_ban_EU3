@@ -1,0 +1,623 @@
+province_decisions = { 
+	# 鼓励移民
+	imguliyimin = { 
+		potential = { 
+			not = { 
+				has_province_modifier = imguliyimin
+			}
+			not = { 
+				has_province_modifier = emguliyimin
+			}
+		}
+		allow = { 
+			citysize = 5000
+			NOT = { citysize = 30000 }
+			or={
+			owner={not={has_country_flag = guanbixiyinyimin}}
+			owner={ai=yes}
+			}
+		}
+		effect = { 
+			add_province_modifier = { 
+				name = "imguliyimin"
+				duration = 3650
+			}
+			random = { 
+				chance = 50
+				owner = { 
+					badboy = 0.5
+				}
+			}
+			any_neighbor_province = { 
+				add_province_modifier = { 
+					name = "emguliyimin"
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				not = { 
+					citysize = 15000
+				}
+			}
+			modifier = { 
+				factor = 0
+				owner = { 
+					not = { 
+						land_naval = 2
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				NOT = { 
+					base_tax = 6
+				}
+			}
+		}
+	}
+	# 安置掠夺人口1
+	set_sacked_pop1 = { 
+		potential = { 
+			owner = { 
+				has_country_modifier = lueduorenkou1
+			}
+			citysize = 750
+			not = { 
+				citysize = 50000
+			}
+			or = { 
+				and = { 
+					not = { 
+						has_province_modifier = renkouguoliang4
+					}
+					not = { 
+						has_province_modifier = renkouguoliang4
+					}
+					not = { 
+						has_province_modifier = renkouguoliang6
+					}
+				}
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = { 
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang4
+					}
+				}
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang5
+					}
+				}
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang6
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 10
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 10
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 8
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 8
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 6
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 6
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 4
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 4
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 2
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 2
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = { 
+			citysize = 750
+			owner = { 
+				remove_country_modifier = lueduorenkou1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 安置掠夺人口2
+	set_sacked_pop2 = { 
+		potential = { 
+			owner = { 
+				has_country_modifier = lueduorenkou2
+			}
+			citysize = 1500
+			not = { 
+				citysize = 	100000
+			}
+			or = { 
+				and = { 
+					not = { 
+						has_province_modifier = renkouguoliang4
+					}
+					not = { 
+						has_province_modifier = renkouguoliang5
+					}
+					not = { 
+						has_province_modifier = renkouguoliang6
+					}
+				}
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = { 
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang4
+					}
+				}
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang5
+					}
+				}
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang6
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 10
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 10
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 8
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 8
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 6
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 6
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 4
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 4
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 2
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 2
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = { 
+			citysize = 1500
+			owner = { 
+				remove_country_modifier = lueduorenkou2
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 安置掠夺人口3
+	set_sacked_pop3 = { 
+		potential = { 
+			owner = { 
+				has_country_modifier = lueduorenkou3
+			}
+			citysize = 3000
+			not = { 
+				citysize = 200000
+			}
+			or = { 
+				and = { 
+					not = { 
+						has_province_modifier = renkouguoliang4
+					}
+					not = { 
+						has_province_modifier = renkouguoliang5
+					}
+					not = { 
+						has_province_modifier = renkouguoliang6
+					}
+				}
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = { 
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang4
+					}
+				}
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang5
+					}
+				}
+				owner = { 
+					capital_scope = { 
+						has_province_modifier = renkouguoliang6
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 10
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 10
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 8
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 8
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 6
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 6
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 4
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 4
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+			OR = { 
+				owner = { 
+					ai = no
+				}
+				is_capital = yes
+				base_tax = 2
+				owner = { 
+					not = { 
+						any_owned_province = { 
+							base_tax = 2
+							not = { 
+								has_province_modifier = renkouguoliang4
+							}
+							not = { 
+								has_province_modifier = renkouguoliang5
+							}
+							not = { 
+								has_province_modifier = renkouguoliang6
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = { 
+			citysize = 3000
+			owner = { 
+				remove_country_modifier = lueduorenkou3
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

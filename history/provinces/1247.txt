@@ -1,0 +1,101 @@
+
+culture = xirong
+religion = animism
+capital = "É½´¨Æ½Ô­"
+trade_goods = iron
+hre = no
+base_tax = 7
+manpower = 0
+native_size = 190
+native_ferocity = 8
+native_hostileness = 10
+1960.1.1 = { 
+	discovered_by = PAP
+}
+2060.1.1 = { 
+	owner = LHR
+	controller = LHR
+	citysize = 18000
+	native_size = 0
+	fort1 = yes
+	add_core = LHR
+}
+2173.9.24 = { 
+	owner = JIN
+	controller = JIN
+}
+2203.1.1 = { 
+	add_core = JIN
+}
+2222.1.1 = { 
+	citysize = 58000
+	fort2 = yes
+	fort3 = yes
+}
+2233.1.1 = { 
+	culture = zhongyuan
+	religion = liyuejiaohua
+}
+2244.1.1 = { 
+	owner = ZXS
+	controller = ZXS
+	add_core = ZXS
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = ZXS
+}
+2245.1.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+	remove_core = JIN
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	owner = GUO
+	controller = GUO
+	add_core = ZXS
+	add_core = GUO
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2 = {
+        citysize = 48000
+    }
+2246.1.3 = {
+        citysize = 58000
+    }
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+}
+2300.1.1 = { 
+	religion = fajia
+}
+2391.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2421.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = SCW
+	controller = SCW
+	add_core = SCW
+}
+2492.10.1 = { 
+	owner = HNW
+	controller = HNW
+}

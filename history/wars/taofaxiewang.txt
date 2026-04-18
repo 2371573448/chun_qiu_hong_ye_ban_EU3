@@ -1,0 +1,10 @@
+name = "Ğ¯ÍõÌÖ·¥Õ½"
+casus_belli = cb_trade_league #ÌÖÄæ
+
+
+1938.12.31 = {
+	rem_attacker = PAP
+	rem_attacker = JIN
+	rem_defender = ZHG
+	rem_defender = GUO
+}

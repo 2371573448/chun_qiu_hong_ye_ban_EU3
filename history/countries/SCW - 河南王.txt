@@ -1,0 +1,38 @@
+government = enlightened_despotism
+aristocracy_plutocracy = 4
+centralization_decentralization = -4
+innovative_narrowminded = -4
+mercantilism_freetrade = 4
+offensive_defensive = 4
+land_naval = -5
+quality_quantity = 4
+serfdom_freesubjects = 5
+technology_group = chinese
+religion = fajia
+primary_culture = zhongyuan
+capital = 351
+unit_type = hanguo
+2400.1.1 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+	set_country_flag = fengjunzhidu
+	set_country_flag = hujizhidu
+	set_country_flag = guanliaozhidu
+}
+2492.2.1 = { 
+	monarch = { 
+		name = "—Ù"
+		dynasty = "…Í"
+		adm = 6
+		dip = 4
+		mil = 5
+	}
+
+}

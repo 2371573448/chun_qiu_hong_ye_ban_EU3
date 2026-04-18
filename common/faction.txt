@@ -1,0 +1,42 @@
+# 8 : -4
+
+temples = { 
+	rule = { 
+		can_not_build_colonies = yes
+	}
+	modifier = { 
+		land_morale = 0.4
+		discipline = 0.04
+		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = 0.15
+		artillery_cost = -0.1
+		merchant_cost = 0.5
+		build_cost = 0.5
+		production_efficiency = -0.1
+	}
+}
+enuchs = { 
+	rule = { }
+	modifier = { 
+		global_tax_modifier = 0.1
+		diplomats = 0.5
+		stability_cost_modifier = 0.1
+		officials = -0.25
+		spies = -0.25
+	}
+}
+bureaucrats = { 
+	rule = { 
+		can_not_build_missionaries = yes
+	}
+	modifier = { 
+		build_cost = -0.25
+		merchants = 1
+		production_efficiency = 0.08
+		badboy = -0.2
+		stability_cost_modifier = -0.05
+		land_forcelimit_modifier = -0.2
+		legitimacy = -0.02
+		land_morale = -0.35
+	}
+}

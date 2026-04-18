@@ -1,0 +1,19 @@
+#著名的历史学家和著作人
+
+advisor ={
+name ="左丘明" 
+location =275
+skill =5
+type =naval_organiser
+date =2216.1.1
+death_date =2276.1.1
+}
+
+advisor ={
+name ="董狐"  
+location =74
+skill =3
+type =naval_organiser
+date =2070.1.1
+death_date =2100.1.1
+}

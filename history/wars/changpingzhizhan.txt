@@ -1,0 +1,12 @@
+name = "长平之战"
+casus_belli = cb_core #收复失地
+
+2438.1.1 = {
+	add_attacker = QIN
+	add_defender = ZHO
+}
+
+2439.1.1 = {
+	rem_attacker =  QIN
+	rem_defender = ZHO
+}

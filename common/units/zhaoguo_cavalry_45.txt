@@ -1,0 +1,12 @@
+#±ßÈûÆï±ø
+
+type = cavalry
+unit_type = zhaoguo
+
+maneuver = 3
+offensive_fire = 6
+defensive_fire = 5
+offensive_shock = 6
+defensive_shock = 6
+offensive_morale = 5
+defensive_morale = 5

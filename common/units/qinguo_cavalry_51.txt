@@ -1,0 +1,12 @@
+#¾ü¹¦ÆïÊ¿
+
+type = cavalry
+unit_type = qinguo
+
+maneuver = 3
+offensive_fire = 6
+defensive_fire = 6
+offensive_shock = 7
+defensive_shock = 7
+offensive_morale = 7
+defensive_morale = 7

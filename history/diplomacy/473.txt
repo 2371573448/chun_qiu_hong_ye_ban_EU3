@@ -1,0 +1,6 @@
+alliance={
+	first=YGO
+	second=LUG
+	start_date=2225.1.1
+	end_date=2226.1.1
+}

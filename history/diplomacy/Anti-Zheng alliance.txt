@@ -1,0 +1,32 @@
+alliance= {
+	first=WEG
+	second=SON
+	start_date=1979.1.1
+	end_date=1988.6.18
+}
+alliance= {
+	first=WEG
+	second=CHE
+	start_date=1979.1.1
+	end_date=1997.1.1
+}
+alliance= {
+	first=WEG
+	second=CAI
+	start_date=1979.1.1
+	end_date=1997.1.1
+}
+
+alliance= {
+	first=ZGO
+	second=QIG
+	start_date=1991.1.1
+	end_date=1997.1.1
+}
+
+vassal={
+	first=ZGO
+	second=XUG
+	start_date=1986.7.1
+	end_date=2001.1.1
+}

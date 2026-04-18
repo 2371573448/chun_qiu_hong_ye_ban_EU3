@@ -1,0 +1,14 @@
+cultural_decisions = { 
+	goumaishijie = {
+		potential = { 
+			ai = no
+		}
+		allow = {
+			treasury = 75
+		}
+		effect = {
+			treasury = -75
+			diplomats = 2
+		}
+	}
+}

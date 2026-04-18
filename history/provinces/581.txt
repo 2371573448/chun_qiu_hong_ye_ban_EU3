@@ -1,0 +1,28 @@
+
+culture = yuezhi
+religion = animism
+capital = "¾ÆÈª"
+trade_goods = wine
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2246.1.1 = { 
+	owner = YUE
+	controller = YUE
+	citysize = 6000
+	add_core = YUE
+	fort1 = yes
+}
+2247.1.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	citysize = 0
+	controller = XXX
+	remove_core = YUE
+	fort1 = no
+}

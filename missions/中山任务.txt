@@ -1,0 +1,154 @@
+zhongshankaijiangkuotu = {
+	type = country
+	allow = {
+		tag = ZHS
+		or = {
+	 		not = { owns = 34 }
+	 		not = { owns = 38 }
+	 		not = { owns = 39 }
+	 		not = { owns = 95 }
+	 		not = { owns = 96 }
+	 		not = { owns = 97 }
+	 		not = { owns = 98 }
+	 		not = { owns = 101 }
+	 		not = { owns = 102 }
+	 		not = { owns = 954 }
+	 		not = { owns = 956 }
+	 		not = { owns = 957 }
+	 		not = { owns = 958 }
+		}
+	}
+	abort = { 
+	}
+	success = {
+	 	owns = 34
+	 	owns = 38
+	 	owns = 39
+	 	owns = 95
+	 	owns = 96
+	 	owns = 97
+	 	owns = 98
+	 	owns = 101
+	 	owns = 102
+	 	owns = 954
+	 	owns = 956
+	 	owns = 957
+	 	owns = 958
+	}
+	chance = { 
+		factor = 2000
+	}
+	immediate = {
+	 	add_temp_claim = 34
+	 	add_temp_claim = 38
+	 	add_temp_claim = 39
+	 	add_temp_claim = 95
+	 	add_temp_claim = 96
+	 	add_temp_claim = 97
+	 	add_temp_claim = 98
+	 	add_temp_claim = 101
+	 	add_temp_claim = 102
+	 	add_temp_claim = 954
+	 	add_temp_claim = 956
+	 	add_temp_claim = 957
+	 	add_temp_claim = 958
+	}
+	effect = {
+	 	add_core = 34
+	 	add_core = 38
+	 	add_core = 39
+	 	add_core = 95
+	 	add_core = 96
+	 	add_core = 97
+	 	add_core = 98
+	 	add_core = 101
+	 	add_core = 102
+	 	add_core = 954
+	 	add_core = 956
+	 	add_core = 957
+	 	add_core = 958
+		treasury = 1000
+		manpower = 100
+	}
+}
+chongjianchidi = {
+	type = country
+	allow = {
+		tag = ZHS
+	 	owns = 34
+	 	owns = 38
+	 	owns = 39
+	 	owns = 95
+	 	owns = 96
+	 	owns = 97
+	 	owns = 98
+	 	owns = 101
+	 	owns = 102
+	 	owns = 954
+	 	owns = 956
+	 	owns = 957
+	 	owns = 958
+		not = {
+			exists = CHI
+		}
+		not = {
+			has_country_flag = chongjianchidi
+		}
+	}
+	abort = { 
+	}
+	success = {
+		controls = 81
+		controls = 82
+		controls = 84
+		controls = 85
+		controls = 89
+		controls = 90
+		controls = 1106
+		controls = 1107
+		controls = 1108
+		controls = 1109
+	}
+	chance = { 
+		factor = 2000
+	}
+	immediate = {
+		add_temp_claim = 81
+		add_temp_claim = 82
+		add_temp_claim = 84
+		add_temp_claim = 85
+		add_temp_claim = 89
+		add_temp_claim = 90
+		add_temp_claim = 1106
+		add_temp_claim = 1107
+		add_temp_claim = 1108
+		add_temp_claim = 1109
+	}
+	effect = {
+		set_country_flag = chongjianchidi
+		81 = { secede_province = CHI add_core = CHI }
+		82 = { secede_province = CHI add_core = CHI }
+		84 = { secede_province = CHI add_core = CHI religion = liyuebadao }
+		85 = { secede_province = CHI add_core = CHI }
+		89 = { secede_province = CHI add_core = CHI }
+		90 = { secede_province = CHI add_core = CHI }
+		1106 = { secede_province = CHI add_core = CHI }
+		1107 = { secede_province = CHI add_core = CHI }
+		1108 = { secede_province = CHI add_core = CHI }
+		1109 = { secede_province = CHI add_core = CHI }
+		ZHS = {
+			vassalize = CHI
+		}
+		create_alliance = CHI
+		CHI = {
+			add_country_modifier = { 
+				name = "zongjiaozhuanbian"
+				duration = 10950
+			}
+			religion = liyuebadao
+			treasury = 1000
+			manpower = 30
+			government = enlightened_despotism
+		}
+	}
+}

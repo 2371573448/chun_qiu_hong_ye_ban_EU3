@@ -1,0 +1,591 @@
+######################################
+#   events 1316 - 1343   #
+######################################
+country_event = { 
+	id = 1316
+	trigger = { 
+		idea = grand_navy
+		not = { 
+			centralization_decentralization = -3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1316"
+	desc = "EVTDESC1316"
+	option = { 
+		name = "EVTOPTA1316"
+		stability = 1
+	}
+}
+country_event = { 
+	id = 1317
+	trigger = { 
+		idea = bureaucracy
+		centralization_decentralization = 4
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1317"
+	desc = "EVTDESC1317"
+	option = { 
+		name = "EVTOPTA1317"
+		random_list = { 
+			10 = { 
+				define_advisor = { 
+					type = treasurer
+					skill = 5
+				}
+			}
+			10 = { 
+				define_advisor = { 
+					type = alderman
+					skill = 5
+				}
+			}
+			10 = { 
+				define_advisor = { 
+					type = collector
+					skill = 5
+				}
+			}
+			10 = { 
+				define_advisor = { 
+					type = colonial_governor
+					skill = 5
+				}
+			}
+			10 = { 
+				define_advisor = { 
+					type = naval_reformer
+					skill = 5
+				}
+			}
+			10 = { 
+				define_advisor = { 
+					type = rear_admiral
+					skill = 5
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 1318
+	trigger = { 
+		idea = glorious_arms
+		not = { 
+			aristocracy_plutocracy = -3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1318"
+	desc = "EVTDESC1318"
+	option = { 
+		name = "EVTOPTA1318"
+		army_tradition = 0.1
+	}
+}
+province_event = { 
+	id = 1319
+	trigger = { 
+		idea = shrewd_commerce_practise
+		centralization_decentralization = 5
+	}
+	mean_time_to_happen = { 
+		months = 1200
+		modifier = { 
+			factor = 0.15
+			has_province_modifier = vassal_territory
+		}
+		modifier = { 
+			factor = 0.2
+			has_province_modifier = noble_territory
+		}
+	}
+	title = "EVTNAME1319"
+	desc = "EVTDESC1319"
+	option = { 
+		name = "EVTOPTA1319"
+		random_owned = { 
+			base_tax = 1
+		}
+	}
+}
+country_event = { 
+	id = 1320
+	trigger = { 
+		idea = smithian_economics
+		not = { 
+			innovative_narrowminded = -3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1320"
+	desc = "EVTDESC1320"
+	option = { 
+		name = "EVTOPTA1320"
+		add_country_modifier = { 
+			name = "science_improvement"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 1321
+	trigger = { 
+		idea = vetting
+		innovative_narrowminded = 4
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1321"
+	desc = "EVTDESC1321"
+	option = { 
+		name = "EVTOPTA1321"
+		legitimacy = 0.1
+	}
+}
+country_event = { 
+	id = 1322
+	trigger = { 
+		idea = colonial_ventures
+		not = { 
+			mercantilism_freetrade = -3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1322"
+	desc = "EVTDESC1322"
+	option = { 
+		name = "EVTOPTA1322"
+		treasury = 100
+	}
+}
+country_event = { 
+	id = 1323
+	trigger = { 
+		idea = merchant_adventures
+		mercantilism_freetrade = 4
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1323"
+	desc = "EVTDESC1323"
+	option = { 
+		name = "EVTOPTA1323"
+		merchants = 1
+	}
+}
+country_event = { 
+	id = 1324
+	trigger = { 
+		idea = press_gangs
+		not = { 
+			land_naval = -3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1324"
+	desc = "EVTDESC1324"
+	option = { 
+		name = "EVTOPTA1324"
+		any_neighbor_country = { 
+			relation = { 
+				who = THIS
+				value = 50
+			}
+		}
+	}
+}
+country_event = { 
+	id = 1325
+	trigger = { 
+		idea = quest_for_the_new_world
+		land_naval = 4
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1325"
+	desc = "EVTDESC1325"
+	option = { 
+		name = "EVTOPTA1325"
+		colonists = 1
+	}
+}
+country_event = { 
+	id = 1326
+	trigger = { 
+		idea = regimental_system
+		not = { 
+			quality_quantity = -3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1326"
+	desc = "EVTDESC1326"
+	option = { 
+		name = "EVTOPTA1326"
+		add_country_modifier = { 
+			name = "army_improvement"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 1327
+	trigger = { 
+		idea = military_drill
+		quality_quantity = 4
+	}
+	mean_time_to_happen = { 
+		months = 1200
+	}
+	title = "EVTNAME1327"
+	desc = "EVTDESC1327"
+	option = { 
+		name = "EVTOPTA1327"
+		manpower = 0.1
+	}
+}
+country_event = { 
+	id = 1328
+	trigger = { 
+		idea = shrewd_commerce_practise
+		not = { 
+			centralization_decentralization = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1328"
+	desc = "EVTDESC1328"
+	option = { 
+		name = "EVTOPTA1328"
+		stability = -1
+	}
+}
+country_event = { 
+	id = 1329
+	trigger = { 
+		idea = national_bank
+		centralization_decentralization = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1329"
+	desc = "EVTDESC1329"
+	option = { 
+		name = "EVTOPTA1329"
+		add_country_modifier = { 
+			name = "tax_decrease"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 1330
+	trigger = { 
+		idea = engineer_corps
+		not = { 
+			aristocracy_plutocracy = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1330"
+	desc = "EVTDESC1330"
+	option = { 
+		name = "EVTOPTA1330"
+		random_owned = { 
+			spawn_rebels = { 
+				type = noble_rebels
+				size = 6
+			}
+		}
+	}
+}
+country_event = { 
+	id = 1331
+	trigger = { 
+		idea = vetting
+		aristocracy_plutocracy = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1331"
+	desc = "EVTDESC1331"
+	option = { 
+		name = "EVTOPTA1331"
+		cultural_tradition = -0.2
+	}
+}
+country_event = { 
+	id = 1332
+	trigger = { 
+		idea = divine_supremacy
+		not = { 
+			serfdom_freesubjects = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1332"
+	desc = "EVTDESC1332"
+	option = { 
+		name = "EVTOPTA1332"
+		stability = -1
+	}
+}
+country_event = { 
+	id = 1333
+	trigger = { 
+		idea = scientific_revolution
+		not = { 
+			mercantilism_freetrade = 3
+		}
+		serfdom_freesubjects = 3
+	}
+	mean_time_to_happen = { 
+		months = 24
+	}
+	title = "EVTNAME1333"
+	desc = "EVTDESC1333"
+	option = { 
+		name = "EVTOPTA1333"
+		random_owned = { 
+			multiply_citysize = 0.8
+		}
+	}
+}
+country_event = { 
+	id = 1334
+	trigger = { 
+		idea = patron_of_art
+		not = { 
+			innovative_narrowminded = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1334"
+	desc = "EVTDESC1334"
+	option = { 
+		name = "EVTOPTA1334"
+		government_tech = -0.1
+	}
+}
+country_event = { 
+	id = 1335
+	trigger = { 
+		idea = church_attendance_duty
+		innovative_narrowminded = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1335"
+	desc = "EVTDESC1335"
+	option = { 
+		name = "EVTOPTA1335"
+		legitimacy = -0.2
+	}
+}
+country_event = { 
+	id = 1336
+	trigger = { 
+		idea = merchant_adventures
+		not = { 
+			mercantilism_freetrade = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1336"
+	desc = "EVTDESC1336"
+	option = { 
+		name = "EVTOPTA1336"
+		random_center_of_trade = { 
+			limit = { 
+				placed_merchants = 1
+				NOT = { 
+					owned_by = THIS
+				}
+			}
+			remove_merchant = THIS
+		}
+		random_center_of_trade = { 
+			limit = { 
+				placed_merchants = 1
+				NOT = { 
+					owned_by = THIS
+				}
+			}
+			remove_merchant = THIS
+		}
+	}
+}
+country_event = { 
+	id = 1337
+	trigger = { 
+		idea = national_trade_policy
+		mercantilism_freetrade = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1337"
+	desc = "EVTDESC1337"
+	option = { 
+		name = "EVTOPTA1337"
+		stability = -1
+	}
+}
+country_event = { 
+	id = 1338
+	trigger = { 
+		idea = sea_hawks
+		not = { 
+			offensive_defensive = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1338"
+	desc = "EVTDESC1338"
+	option = { 
+		name = "EVTOPTA1338"
+		army_tradition = -0.2
+	}
+}
+country_event = { 
+	id = 1339
+	trigger = { 
+		idea = naval_fighting_instruction
+		offensive_defensive = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1339"
+	desc = "EVTDESC1339"
+	option = { 
+		name = "EVTOPTA1339"
+		badboy = 3
+	}
+}
+country_event = { 
+	id = 1340
+	trigger = { 
+		idea = grand_army
+		not = { 
+			land_naval = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1340"
+	desc = "EVTDESC1340"
+	option = { 
+		name = "EVTOPTA1340"
+		manpower = -0.25
+	}
+}
+country_event = { 
+	id = 1341
+	trigger = { 
+		idea = espionage
+		land_naval = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1341"
+	desc = "EVTDESC1341"
+	option = { 
+		name = "EVTOPTA1341"
+		add_country_modifier = { 
+			name = "colony_decrease"
+			duration = 1825
+		}
+	}
+}
+country_event = { 
+	id = 1342
+	trigger = { 
+		idea = battlefield_commisions
+		not = { 
+			quality_quantity = -2
+		}
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1342"
+	desc = "EVTDESC1342"
+	option = { 
+		name = "EVTOPTA1342"
+		random_owned = { 
+			pretender_rebels = 3
+		}
+	}
+}
+country_event = { 
+	id = 1343
+	trigger = { 
+		idea = deus_vult
+		quality_quantity = 3
+	}
+	mean_time_to_happen = { 
+		months = 600
+	}
+	title = "EVTNAME1343"
+	desc = "EVTDESC1343"
+	option = { 
+		name = "EVTOPTA1343"
+		war_exhaustion = 3
+	}
+}
+country_event = { 
+	id = 12911
+	trigger = { 
+		NOT = { 
+			has_country_flag = weiduojunzi
+		}
+		idea = national_trade_policy
+		mercantilism_freetrade = 1
+	}
+	mean_time_to_happen = { 
+		months = 24
+	}
+	title = "EVTNAME12911"
+	desc = "EVTDESC12911"
+	option = { 
+		name = "EVTOPTA12911"
+		stability = -1
+	}
+}

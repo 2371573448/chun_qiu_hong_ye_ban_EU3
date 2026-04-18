@@ -1,0 +1,95 @@
+owner = JIE
+controller = JIE
+culture = laiyi
+religion = animism
+capital = "½é¸ù"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 18000
+fort1 = yes
+add_core = JIE
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2098.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2128.1.1 = { 
+	add_core = QIG
+	culture = qilu
+	remove_core = JIE
+	religion = liyuejiaohua
+}
+2222.1.1 = { 
+	citysize = 25000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = JIE
+	controller = JIE
+	add_core = JIE
+	remove_core = QIG
+}
+2244.1.2 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = JIE
+}
+2246.1.2 = { religion = liyuebadao
+	owner = JIE
+	controller = JIE
+	add_core = JIE
+	remove_core = QIG
+}
+2247.1.1 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = JIE
+}
+2414.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2419.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2477.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.1.1 = { 
+	revolt = { }
+	controller = QIG
+	owner = QIG
+}
+2492.2.1 = { 
+	owner = JDW
+	controller = JDW
+	add_core = JDW
+}
+2492.7.1 = { 
+	owner = QIG
+	controller = QIG
+}

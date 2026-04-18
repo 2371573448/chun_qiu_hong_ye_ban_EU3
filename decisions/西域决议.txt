@@ -1,0 +1,179 @@
+country_decisions = { 
+	nanxiyu = {
+		#南西域统一
+		potential = {
+			primary_culture = xiyu
+			any_owned_province = {
+				region = nanxiyu
+				not = { is_core = yes }
+			}
+		}
+		allow = {
+			not = {
+				any_country = { 
+					not = { tag = this }
+					any_owned_province = { 
+						region = nanxiyu
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 1
+			treasury = 1000
+			nanxiyu = { add_core = THIS }
+			change_tag = XYD
+			set_country_flag = nanxiyu
+		}
+	}
+	beixiyu = {
+		#北西域统一
+		potential = {
+			primary_culture = xiyu
+			any_owned_province = {
+				region = beixiyu
+				not = { is_core = yes }
+			}
+		}
+		allow = {
+			not = {
+				any_country = { 
+					not = { tag = this }
+					any_owned_province = { 
+						region = beixiyu
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 1
+			treasury = 1000
+			beixiyu = { add_core = THIS }
+			change_tag = XYE
+			set_country_flag = beixiyu
+		}
+	}
+	xiyubaohu = {
+		potential = {
+			primary_culture = xiyu
+			not = { tag = XYA }
+			not = { tag = XYB }
+			not = { tag = XYC }
+		}
+		allow = {
+			not = {
+				XNU = { ai = no }
+				YUE = { ai = no }
+			}
+			any_country = { 
+				war_with = THIS
+				or = {
+					tag = XNU 
+					tag = YUE
+				}
+			}
+		}
+		effect = {
+			any_country = { 
+				limit = { 
+					war_with = THIS
+					or = {
+						tag = XNU
+						tag = YUE
+					}
+				}
+				relation = { 
+					who = THIS
+					value = -4000
+				}
+				white_peace = THIS
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}
+province_decisions = { 
+	diguoxiyukuozhang = {
+		potential = {
+			owner = {
+				tag = XYA
+			}
+			not = { is_core = this }
+			nationalism = 1
+		}
+		allow = {
+			owner = {
+				prestige = 0.5
+				treasury = 100
+				manpower = -3
+				officials = 1
+				diplomats = 1
+			}
+		}
+		effect = {
+			owner = {
+				prestige = -0.1
+				treasury = -100
+				manpower = -3
+				officials = -1
+				diplomats = -1
+			}
+			nationalism = -100
+			base_tax = 1
+		}
+	}
+	gonghexiyukuozhang = {
+		potential = {
+			owner = {
+				tag = XYB
+			}
+			not = { is_core = this }
+		}
+		allow = {
+			owner = {
+				treasury = 500
+				merchants = 1
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -500
+				merchants = -1
+			}
+			add_core = this
+		}
+	}
+	youmuxiyukuozhang = {
+		potential = {
+			owner = {
+				tag = XYC
+			}
+			or = {
+				not = { is_core = this }
+				not = { culture = THIS }
+				not = { has_owner_religion = yes }
+			}
+		}
+		allow = {
+			units_in_province = 4
+		}
+		effect = {
+			owner = {
+				treasury = 100
+			}
+			any_core = { 
+				limit = { 
+					ai = yes
+				}
+				remove_core = this
+			}
+			add_core = this
+			culture = THIS
+			religion = CAPITAL
+			multiply_citysize = 0
+			base_tax = -2
+		}
+	}
+}

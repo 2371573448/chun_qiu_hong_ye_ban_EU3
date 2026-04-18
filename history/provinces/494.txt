@@ -1,0 +1,81 @@
+
+culture = li
+religion = ancestor
+capital = "∫‚…Ω"
+trade_goods = tea
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2180.1.1 = { 
+	discovered_by = CHU
+}
+2244.1.1 = { 
+	owner = YNG
+	controller = YNG
+	add_core = YNG
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = YNG
+}
+2245.1.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+	remove_core = CHU
+}
+2246.1.1 = { 
+	owner = MIA
+	controller = MIA
+	add_core = MIA
+	citysize = 18000
+	religion = liyuebadao
+	fort1 = yes
+}
+2246.1.2 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	remove_core = MIA
+}
+2247.1.1 = { 
+	citysize = 0
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+	remove_core = MIA
+	remove_core = JJW
+}
+2300.1.1 = { 
+	owner = CHU
+	controller = CHU
+	citysize = 16000
+	fort1 = yes
+}
+2330.1.1 = { 
+	add_core = CHU
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.11.1 = { 
+	owner = LJW
+	controller = LJW
+}

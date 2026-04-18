@@ -1,0 +1,55 @@
+#诸子百家中非开创性的的重要人物
+
+advisor ={
+name ="惠施" 
+location =312
+skill =5
+type =philosopher
+date =2330.1.1
+death_date =2381.1.1
+}
+
+advisor ={
+name ="杨朱" 
+location =201
+skill =4
+type =philosopher
+date =2250.1.1
+death_date =2310.1.1
+}
+
+advisor ={
+name ="庄周" 
+location =327
+skill =6
+type =philosopher
+date =2350.1.1
+death_date =2412.1.1
+}
+
+advisor ={
+name =公孙龙 
+location =59
+skill =5
+type =philosopher
+date =2398.1.1
+death_date =2448.1.1
+}
+
+advisor ={
+name ="列御寇" 
+location =355
+skill =5
+type =philosopher
+date =2290.1.1
+death_date =2345.1.1
+}
+
+advisor ={
+name ="伊文" 
+location =266
+skill =4
+type =philosopher
+date =2358.1.1
+death_date =2418.1.1
+}

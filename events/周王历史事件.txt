@@ -1,0 +1,124 @@
+##周郑交涉
+country_event = { 
+	# 周郑交质
+	id = 10011
+	major = yes
+	trigger = { 
+		tag = PAP
+		year = 1948
+		NOT = { 
+			year = 2008
+		}
+		NOT = { 
+			has_country_flag = zhouzhengjiaozhi
+		}
+		NOT = { 
+			relation = { 
+				who = ZGO
+				value = 50
+			}
+		}
+		NOT = { alliance_with = ZGO }
+	}
+	mean_time_to_happen = { 
+		months = 60
+	}
+	title = "EVTNAME10011"
+	desc = "EVTDESC10011"
+	option = { 
+		name = "EVTOPTA10011"
+		prestige = -0.10
+		relation = { 
+			who = ZGO
+			value = 100
+		}
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = zhouzhengjiaozhi
+	}
+	option = { 
+		name = "EVTOPTB10011"
+		prestige = 0.10
+		relation = { 
+			who = ZGO
+			value = -100
+		}
+		ai_chance = {
+			factor = 5
+		}
+		set_country_flag = zhouzhengjiaozhi
+	}
+}
+
+country_event = { 
+	# 繻葛之战
+	id = 10013
+	major = yes
+	is_triggered_only = yes
+
+	title = "EVTNAME10013"
+	desc = "EVTDESC10013"
+	option = { 
+		name = "EVTOPTA10013"
+		prestige = 0.10
+		casus_belli = { 
+			target = ZGO
+			type = jap_civil_war
+			months = 60
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { 
+		name = "EVTOPTB10013"
+		prestige = -0.10
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+##周王还都
+country_event = { 
+	# 周王还都
+	id = 10014
+	trigger = { 
+		ai = yes
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		not = { 
+			has_global_flag = liyuebenghuai3
+		}
+		hre = yes
+		religion_group = christian
+		owns = 351
+		OR = { 
+			NOT = { 
+				is_core = 351
+			}
+			NOT = { 
+				exists = PAP
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME10014"
+	desc = "EVTDESC10014"
+	option = { 
+		name = "EVTOPTA10014"
+		prestige = -0.05
+		badboy = -2
+		351 = { 
+			add_core = PAP
+			secede_province = PAP
+		}
+		PAP = { 
+			capital = 351
+		}
+	}
+}

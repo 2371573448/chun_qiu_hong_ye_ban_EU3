@@ -1,0 +1,46 @@
+# 在科学或技术上做出突破的人物
+
+advisor ={
+name ="禽滑釐" 
+location =77
+skill =3
+type =natural_scientist
+date =2260.1.1
+death_date =2342.1.1
+}
+
+advisor ={
+name ="李冰" 
+location =182
+skill =5
+type =natural_scientist
+date =2420.1.1
+death_date =2470.1.1
+}
+
+advisor ={
+name ="鲁班" 
+location =307
+skill =5
+type =natural_scientist
+date =2211.1.1
+death_date =2254.1.1
+}
+
+advisor ={
+name ="甘德" 
+location =318
+skill =3
+type =natural_scientist
+date =2320.1.1
+death_date =2370.1.1
+}
+
+advisor ={
+name ="石申" 
+location =363
+skill =3
+type =natural_scientist
+date =2330.1.1
+death_date =2380.1.1
+}

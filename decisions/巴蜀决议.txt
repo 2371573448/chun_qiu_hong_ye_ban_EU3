@@ -1,0 +1,151 @@
+country_decisions = { 
+	jisishangdi = { 
+		# ####祭祀上帝#####
+		potential = { 
+			not = { 
+				has_country_modifier = jisishangdi
+			}
+			tag = QIN
+		}
+		allow = { 
+			officials = 1
+			treasury = 100
+		}
+		effect = { 
+			officials = -1
+			treasury = -100
+			add_country_modifier = { 
+				name = "jisishangdi"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	baihuzhilv = { 
+		# ####白虎之族#####
+		potential = { 
+			not = { 
+				has_country_modifier = baihuzhilv
+			}
+			tag = BAG
+		}
+		allow = { 
+			officials = 4
+		}
+		effect = { 
+			officials = -4
+			add_country_modifier = { 
+				name = "baihuzhilv"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	wangcongyijiao = { 
+		# ####望丛遗教#####
+		potential = { 
+			not = { 
+				has_country_modifier = wangcongyijiao
+			}
+			tag = SGU
+		}
+		allow = { 
+			officials = 2
+		}
+		effect = { 
+			officials = -2
+			add_country_modifier = { 
+				name = "wangcongyijiao"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	shuguoyiming = { 
+		# ####接受蜀国遗民#####
+		potential = { 
+			not = { 
+				has_country_modifier = shuguoyiming
+			}
+			has_global_flag = zhanguokaishi
+			tag = LUY
+		}
+		allow = { 
+			officials = 1
+			treasury = 100
+		}
+		effect = { 
+			treasury = -100
+			officials = -1
+			add_country_modifier = { 
+				name = "shuguoyiming"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jianlishuhan = { 
+		# ####建立蜀汉#####
+		potential = { 
+			has_global_flag = zhanguokaishi
+			not = { 
+				has_country_flag = jianlishuhan
+			}
+			tag = SGU
+		}
+		allow = { 
+			officials = 1
+		}
+		effect = {
+			officials = -1
+			set_country_flag = jianlishuhan
+			technology_group = chinese
+			centralization_decentralization = -4
+			define_ruler = { 
+				name = "雪地"
+				female = no
+				DIP = 7
+				MIL = 7
+				ADM = 7
+			}
+                inherit = BAG
+		shujun = {
+                    add_core = SGU
+		 }
+		bajun = {
+                    add_core = SGU
+		 }
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	bashuzhiquan = { 
+		# ####建立蜀汉，是否改为君主集权#####
+		potential = { 
+			tag = SGU
+			has_country_flag = jianlishuhan
+			not = { 
+				has_country_flag = bashujiquan
+			}
+		}
+		allow = { 
+
+		}
+		effect = { 
+			government = enlightened_despotism
+			set_country_flag = bashujiquan
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

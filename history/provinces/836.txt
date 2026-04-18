@@ -1,0 +1,39 @@
+
+owner = JSG
+controller = JSG
+culture = chaoxian
+religion = animism
+capital = "ทฌบน"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 6000
+fort1 = yes
+add_core = JSG
+1928.1.1 = { 
+	discovered_by = JSG
+}
+2300.1.1 = { 
+	discovered_by = YAN
+}
+2403.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2433.1.1 = { 
+	add_core = YAN
+	remove_core = JSG
+	religion = liyuejiaohua
+}
+2476.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = XXX
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	remove_core = QIN
+}

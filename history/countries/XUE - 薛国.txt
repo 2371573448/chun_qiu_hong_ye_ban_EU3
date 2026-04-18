@@ -1,0 +1,40 @@
+government =fengjian
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = dongyi
+capital = 297
+
+1900.1.1={monarch={name="安兴" dynasty="任" adm=3 dip=5 mil=3}}
+1944.1.1={monarch={name="箱" dynasty="任" adm=6 dip=5 mil=6}}
+1971.1.1={monarch={name="尚" dynasty="任" adm=3 dip=3 mil=6}}
+1994.1.1={monarch={name="魏" dynasty="任" adm=5 dip=3 mil=5}}
+2013.1.1={monarch={name="勤" dynasty="任" adm=5 dip=5 mil=6}}
+2039.1.1={monarch={name="文欢" dynasty="任" adm=3 dip=4 mil=3}}
+2094.1.1={monarch={name="夷黄" dynasty="任" adm=4 dip=4 mil=5}}
+2100.1.1 = { decision = tuposanjunguizhi }
+2108.1.1={monarch={name="英" dynasty="任" adm=5 dip=5 mil=3}}
+2120.1.1={monarch={name="定" dynasty="任" adm=5 dip=3 mil=5}}
+2141.1.1={monarch={name="俱" dynasty="任" adm=6 dip=6 mil=4}}
+2176.1.1={monarch={name="清" dynasty="任" adm=3 dip=5 mil=5}}
+2187.1.1={monarch={name="定" dynasty="任" adm=5 dip=3 mil=4}}
+2197.1.1={monarch={name="洪" dynasty="任" adm=4 dip=6 mil=4}}
+2200.1.1={monarch={name="比君" dynasty="任" adm=6 dip=6 mil=5}}
+#灭于齐
+2201.1.1={monarch={name="夷" dynasty="任" adm=6 dip=3 mil=6}}
+#田文罢相于齐，回封国薛，中立于诸侯。
+2398.1.1={
+  primary_culture = dongtu
+  monarch={
+    name="文" dynasty="田" adm=6 dip=9 mil=3
+  }
+}
+
+

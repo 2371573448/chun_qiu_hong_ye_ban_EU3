@@ -1,0 +1,80 @@
+xof 0303txt 0032
+template XSkinMeshHeader {
+ <3cf169ce-ff7c-44ab-93c0-f78f62d172e2>
+ WORD nMaxSkinWeightsPerVertex;
+ WORD nMaxSkinWeightsPerFace;
+ WORD nBones;
+}
+
+template VertexDuplicationIndices {
+ <b8d65549-d7c9-4995-89cf-53a9a8b031e3>
+ DWORD nIndices;
+ DWORD nOriginalVertices;
+ array DWORD indices[nIndices];
+}
+
+template SkinWeights {
+ <6f0d123b-bad2-4167-a0d0-80224f25fabb>
+ STRING transformNodeName;
+ DWORD nWeights;
+ array DWORD vertexIndices[nWeights];
+ array FLOAT weights[nWeights];
+ Matrix4x4 matrixOffset;
+}
+
+
+Frame SCENE_ROOT {
+ 
+
+ FrameTransformMatrix {
+  1.000000,0.000000,0.000000,0.000000,0.000000,1.000000,0.000000,0.000000,0.000000,0.000000,-1.000000,0.000000,0.000000,0.000000,0.000000,1.000000;;
+ }
+
+ Frame groundPlane_transform {
+  
+
+  FrameTransformMatrix {
+   1200.000000,0.000000,0.000000,0.000000,0.000000,0.000000,1200.000000,0.000000,0.000000,-1.000000,0.000000,0.000000,0.000000,0.000000,0.000000,1.000000;;
+  }
+ }
+
+ Frame persp {
+  
+
+  FrameTransformMatrix {
+   0.999945,0.000000,0.010472,0.000000,0.005477,0.852290,-0.523041,0.000000,-0.008925,0.523069,0.852243,0.000000,-91.696861,3945.659912,5905.180176,1.000000;;
+  }
+ }
+
+ Frame top {
+  
+
+  FrameTransformMatrix {
+   1.000000,0.000000,0.000000,0.000000,0.000000,0.000000,-1.000000,0.000000,0.000000,1.000000,0.000000,0.000000,459.807312,6514.094238,156.848999,1.000000;;
+  }
+ }
+
+ Frame front {
+  
+
+  FrameTransformMatrix {
+   1.000000,0.000000,0.000000,0.000000,0.000000,1.000000,0.000000,0.000000,0.000000,0.000000,1.000000,0.000000,-560.020447,1174.333862,5533.646484,1.000000;;
+  }
+ }
+
+ Frame side {
+  
+
+  FrameTransformMatrix {
+   0.000000,0.000000,-1.000000,0.000000,0.000000,1.000000,0.000000,0.000000,1.000000,0.000000,0.000000,0.000000,5650.147461,480.575012,713.510376,1.000000;;
+  }
+ }
+
+ Frame camera_constable {
+  
+
+  FrameTransformMatrix {
+   1.000000,0.000000,0.000000,0.000000,0.000000,1.000000,0.000000,0.000000,0.000000,0.000000,1.000000,0.000000,0.000000,0.000000,0.000000,1.000000;;
+  }
+ }
+}

@@ -1,0 +1,364 @@
+guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_religion"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+		iconType =
+		{
+			name ="illustration_religion"
+			spriteType = "GFX_illustration_religion_cathlic"
+			position = { x= 250 y = 142 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="religion_bg"
+			spriteType = "GFX_religion_bg"
+			position = { x= 18 y = 142 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_ourreligion"
+			position = { x = 70 y = 149 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 180
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "label_decisions"
+			position = { x = 40 y = 191 }
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = "RELIGIOUS_DECISIONS"	
+			maxWidth = 150
+			maxHeight = 14	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		listboxType = 
+		{
+			name ="decisions_listbox"
+			position = { x = 50 y = 209 }
+			backGround=""
+			size = { x=247 y =161}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		windowType = {
+			name = "tolerance_window"
+			backGround=""
+			position = { x=322 y =196}
+			size = { x=100 y=116 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+		
+			instantTextBoxType = {
+				name = "label_tolerance"
+				position = { x = 0 y = 0 }
+	
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 4 y = 4}
+				text = "TOLERANCE"	
+				maxWidth = 100
+				maxHeight = 20	
+				Orientation = "UPPER_LEFT"
+			}
+			iconType =
+			{
+				name ="icon_tolerance_own"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 0 y = 20 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "val_tolerance_own"
+				position = { x = 38 y = 26 }
+				font = "Main_24"
+				borderSize = {x = 0 y = 0}
+				text = "5"	
+				maxWidth = 20
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = right
+			}
+			iconType =
+			{
+				name ="icon_tolerance_heretic"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 0 y = 52 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "val_tolerance_heretic"
+				position = { x = 38 y = 58 }
+				font = "Main_24"
+				borderSize = {x = 0 y = 0}
+				text = "5"	
+				maxWidth = 20
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = right
+			}
+			iconType =
+			{
+				name ="icon_tolerance_heathen"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 0 y = 90 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "val_tolerance_heathen"
+				position = { x = 38 y = 96 }
+				font = "Main_24"
+				borderSize = {x = 0 y = 0}
+				text = "5"	
+				maxWidth = 20
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = right
+			}
+		}
+		
+		windowType = {
+			name = "defender_window"
+			backGround=""
+			position = { x=332 y =338 }
+			size = { x=220 y=64 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			guiButtonType = {
+				name = "shield_button"
+				position = { x=0 y = 0 }
+				quadTextureSprite ="GFX_minishield"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = ""
+			}
+			
+			
+			
+			instantTextBoxType = {
+				name = "label_defender"
+				position = { x = 48 y = 0 }
+	
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 1 y = 1}
+				text = ""	
+				maxWidth = 220
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+	
+				format = left
+			}
+		}
+		
+		guiButtonType = {
+			name = "defender_of_the_faith_button"
+			position = { x=332 y =338 }
+			quadTextureSprite ="button_defender_of_faith"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+		windowType = {
+			name = "rebel_window"
+			backGround=""
+			position = { x=41 y =391 }
+			size = { x=400 y=64 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			iconType = {
+			name = "rebel_bg"
+			spriteType ="GFX_rebel_bg"	
+			position = { x=42 y =21}
+			orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "label_rebels"
+				position = { x = 0 y = 0 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 1 y = 1}
+				text = "REBEL_FACTIONS"	
+				maxWidth = 300
+				maxHeight = 14
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = 
+			{
+				name ="rebel_listbox"
+				position = { x = 0 y = 16 }
+				backGround=""
+				size = { x = 358 y = 143 }
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0}
+			}
+		}
+		
+	}
+
+
+	windowType = {
+		name = "conversion_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=32 y=32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType =
+		{
+			name ="domestic_religion_icon"
+			position = { x=0 y = 0 }
+			quadTextureSprite = "GFX_icon_religion_small"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+	windowType = {
+		name = "rebel_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType = {
+			name = "rebel_banner"
+			spriteType ="GFX_rebel_banner"	
+			position = { x=-34 y =4}
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=0 y =11}
+			name = "name"
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 180
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_rebel_regiments"	
+			position = { x=228 y =6}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=264 y =8}
+			quadTextureSprite ="GFX_accept_rebel_terms"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+	}
+	
+	windowType = {
+		name = "religion_decision_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "religion_decision_banner"
+			spriteType ="GFX_religion_decision_banner"	
+			position = { x=-19 y =0 }
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=0 y =13}
+			name = "name"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 180
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_info_decision"	
+			position = { x=180 y =10}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=218 y =9}
+			quadTextureSprite ="GFX_execute_decision"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+	}
+
+}

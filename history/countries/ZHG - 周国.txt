@@ -1,0 +1,27 @@
+government =fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 4
+innovative_narrowminded = 4
+mercantilism_freetrade = -5
+offensive_defensive = 4
+land_naval = -4
+quality_quantity = -4
+serfdom_freesubjects = -4
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = guanzhong
+capital = 191
+
+1928.1.1 = {
+	monarch = {
+		name = "”‡≥º"
+               dynasty = "ºß"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+1928.1.1 = { 
+	elector = yes
+}
+2100.1.1 = { decision = tuposanjunguizhi }

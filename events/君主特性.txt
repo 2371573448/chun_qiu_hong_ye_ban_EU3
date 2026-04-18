@@ -1,0 +1,3688 @@
+country_event = { 
+	id = 901
+	trigger = { 
+		ADM = 6
+		DIP = 6
+		MIL = 6
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 902
+	trigger = { 
+		ADM = 6
+		DIP = 6
+		NOT = { 
+			MIL = 6
+		}
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 903
+	trigger = { 
+		ADM = 6
+		NOT = { 
+			DIP = 6
+		}
+		MIL = 6
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 904
+	trigger = { 
+		ADM = 6
+		NOT = { 
+			DIP = 6
+		}
+		NOT = { 
+			MIL = 6
+		}
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			100 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 905
+	trigger = { 
+		NOT = { 
+			ADM = 6
+		}
+		NOT = { 
+			DIP = 6
+		}
+		NOT = { 
+			MIL = 6
+		}
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 906
+	trigger = { 
+		NOT = { 
+			ADM = 6
+		}
+		NOT = { 
+			DIP = 6
+		}
+		MIL = 6
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 907
+	trigger = { 
+		NOT = { 
+			ADM = 6
+		}
+		DIP = 6
+		NOT = { 
+			MIL = 6
+		}
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 908
+	trigger = { 
+		NOT = { 
+			ADM = 6
+		}
+		DIP = 6
+		MIL = 6
+		NOT = { 
+			has_country_flag = monarch_character
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	option = { 
+		name = "EVTOPTA901"
+		set_country_flag = monarch_character
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+		random_list = { 
+			2 = { 
+				add_country_modifier = { 
+					name = "conghuiguoren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yudunwuzhi"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "leilifengxing"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jinxiaoshenwei"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qinjianzichi"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "qiongshejiyu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhirenshanren"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jixianduneng"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "bujinnvse"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "huangyinwudu"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "renaiqinxia"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "gaoaolengku"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "gongzhengyanming"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "piansixiaai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "kuakuaqitan"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "shoukouruping"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "jianyibuqu"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "nuoruodanqie"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "yongwuhaodou"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "qianrangrennai"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xiongxinwanzhang"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "zhizuchangle"
+					duration = -1
+				}
+			}
+			100 = { 
+				add_country_modifier = { 
+					name = "xinjinance"
+					duration = -1
+				}
+			}
+			2 = { 
+				add_country_modifier = { 
+					name = "chengshitanran"
+					duration = -1
+				}
+			}
+		}
+	}
+}

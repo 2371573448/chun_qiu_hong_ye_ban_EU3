@@ -1,0 +1,90 @@
+owner = SON
+controller = SON
+culture = dongtu
+religion = liyuejiaohua
+capital = "Õ‚ª∆"
+trade_goods = grain
+hre = yes
+base_tax = 7
+manpower = 0
+citysize = 28000
+fort1 = yes
+add_core = SON
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2222.1.1 = { 
+	citysize = 26000
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2 = { 
+	owner = SON
+	controller = SON
+        add_core = DAG
+	add_core = SON
+	remove_core = ZGO
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { add_core = SON
+	owner = SON
+	controller = SON
+             remove_core = DAG
+           }
+2340.1.1 = { 
+	religion = mojia
+}
+2413.1.1 = { 
+	owner = WEI
+	controller = WEI
+}
+2442.1.1 = { 
+	add_core = WEI
+}
+2450.1.1 = { 
+	religion = fajia
+}
+2473.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	revolt = { 
+		type = nationalist_rebels
+		size = 1
+	}
+	controller = REB
+}
+2490.1.1 = { 
+	revolt = { }
+	controller = WEI
+	owner = WEI
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}
+2494.11.1 = { 
+	owner = WEI
+	controller = WEI
+}

@@ -1,0 +1,23 @@
+
+culture = xirong
+religion = animism
+capital = "Î‘—‹"
+trade_goods = coffee
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2247.1.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+	remove_core = BAI
+}

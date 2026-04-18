@@ -1,0 +1,46 @@
+owner = TEN
+controller = TEN
+culture = dongtu
+religion = liyuejiaohua
+capital = "КњСъ"
+trade_goods = cotton
+hre = yes
+base_tax = 7
+manpower = 0
+citysize = 36000
+fort1 = yes
+add_core = TEN
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2222.1.1 = { citysize = 44000 }
+2245.1.1 = { hre = no }
+2246.1.2 = {
+        citysize = 34000
+    }
+2246.1.3 = {
+        citysize = 44000
+    }
+2247.1.1 = { 
+	hre = no
+}
+2260.1.1 = { religion = rujia }
+2396.1.1  = {	owner = SON
+		controller = SON
+	    }
+2412.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2414.1.1  = {	owner = CHU
+		controller = CHU
+	    }
+2444.1.1  = {  add_core = CHU }
+2472.1.1  = {	owner = QIN
+		controller = QIN remove_core=TEN  
+	    }
+
+2490.6.1={ owner=CHU controller=CHU }
+2492.2.1={owner=XCW controller=XCW add_core=XCW}

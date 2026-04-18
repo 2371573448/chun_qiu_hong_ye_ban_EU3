@@ -1,0 +1,1040 @@
+guiTypes = {
+
+
+	instantTextBoxType = {
+		name = "TableHeaderText"
+		position = { x = 333 y = 333 }
+		textureFile = ""
+		font = "ledger_headline"
+		borderSize = {x = 1 y = 1}
+		text = ""	
+		maxWidth = 150
+		maxHeight = 30
+
+		Orientation = "UPPER_LEFT"	
+		format = left
+
+
+	}
+
+
+#iconType =
+#	{
+#		name ="ledger_building_overlay"
+#		spriteType = "GFX_building_overlay"
+#		position = { x= 0 y = 0 }
+#		Orientation = "UPPER_LEFT"
+#	}
+
+	iconType =
+	# Status indicator over buidling button... 1 = insufficient tech 2 = built  3 = in progress 4 = clear
+	{
+		name ="ledger_building_overlay"
+		spriteType = "GFX_ledger_building_overlay"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}
+
+
+	instantTextBoxType = {
+		name = "TableItemText"
+		position = { x = 333 y = 333 }
+		textureFile = ""
+		font = "ledger"
+		borderSize = {x = 1 y = 1}
+		text = ""	
+		maxWidth = 150
+		maxHeight = 20
+
+		Orientation = "UPPER_LEFT"	
+		format = left
+
+		fixedsize = yes
+	}
+
+	guiButtonType = {
+		name = "ledger_build_building_button"
+		position = { x=0 y =184}
+		quadTextureSprite ="GFX_building_category_strip2"	
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = " "
+		buttonFont = "Main_14_black"
+		}
+
+########################## Pie chart###########################################
+	instantTextBoxType = {
+			name = "pie_text"
+			position = { x = -300 y = -100 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 0 y = 0 }
+			text = ""	
+			format = left
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 140
+			maxHeight = 16
+			}
+	instantTextBoxType = {
+			name = "pie_heading"
+			position = { x = -300 y = -100 }
+			textureFile = ""
+			font = "pie_headline_20"
+			borderSize = {x = 0 y = 0 }
+			text = ""	
+			format = left
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 140
+			maxHeight = 30
+			}
+
+
+#############################################################################################
+
+
+	
+
+
+
+	windowType = {
+		name = "ledger"
+		backGround=""
+		position = { x=-512 y=-384 }	
+		size = { x=1024 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "CENTER"
+
+
+
+
+
+
+		iconType =
+		{
+			name ="ledger_bg"
+			spriteType = "GFX_ledger"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="ledger_overlay"
+			spriteType = "GFX_ledger_overlay"
+			position = { x= 0 y = 184 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="ledger_overlay_small"
+			spriteType = "GFX_ledger_overlay_small"
+			position = { x= 0 y = 184 }
+			Orientation = "UPPER_LEFT"
+		}
+
+ 	
+	windowType = {
+		name = "no_graph_data"
+		backGround=""
+		position = { x=200 y=160 }	
+		size = { x=640 y=400 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+
+
+
+
+
+		instantTextBoxType={
+		     position = {x = 220 y = 180 }
+		     name = "no_data_text"
+		     font = "Main_16"
+		     borderSize = {x = 0 y = 0} 
+		     maxWidth = 200
+		     maxHeight = 40
+		     text = "LEDGER_NO_GRAPH_DATA" 
+		     orientation = "UPPER_LEFT"
+		     format = centre
+		    }
+	}
+
+	#### Graph background #############################
+
+	windowType = {
+		name = "graph_background"
+		backGround=""
+		position = { x=200 y=160 }	
+		size = { x=640 y=400 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+
+
+
+
+
+		instantTextBoxType={
+		     position = {x = 240 y = 0 }
+		     name = "graph_label"
+		     font = "Main_14_black"
+		     borderSize = {x = 0 y = 0} 
+		     maxWidth = 172
+		     maxHeight = 18
+		     text = "" 
+		     orientation = "UPPER_LEFT"
+		     format = centre
+		    }
+ 
+#		instantTextBoxType={
+#		     position = {x = 30 y = 29 }
+#		     name = "resolution_value"
+#		     font = "Main_16"
+#		     borderSize = {x = 0 y = 0} 
+#		     maxWidth = 172
+#		     maxHeight = 18
+#		     text = "" 
+#		     orientation = "UPPER_LEFT"
+#		     format = centre
+#		    }
+ 
+		guiButtonType = {
+		     name = "prev_graph_button"
+		     position = { x = 240 y = -10 }
+		     quadTextureSprite ="button_left" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		    }
+ 
+
+		guiButtonType = {
+		     name = "next_graph_button"
+		     position = { x = 375 y = -10 }
+		     quadTextureSprite ="button_right" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		    } 
+
+		
+
+
+
+
+		iconType =
+		{
+			name ="graph_vertical_bar"
+			spriteType = "GFX_graph_vertical_bar"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="graph_horizontal_bar"
+			spriteType = "GFX_graph_horizontal_bar"
+			position = { x= 0 y = 400 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		instantTextBoxType = {
+			name ="vertical_1"
+			position = { x = -105 y = 0 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = right
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 100
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="vertical_2"
+			position = { x = -105 y = 100 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = right
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 100
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="vertical_3"
+			position = { x = -105 y = 200 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = right
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 100
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="vertical_4"
+			position = { x = -105 y = 300 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = right
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 100
+			maxHeight = 30
+		}
+
+		
+		instantTextBoxType = {
+			name ="horizontal_1"
+			position = { x = -100 y = 385 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = centre
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="horizontal_2"
+			position = { x = 60 y = 385 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = centre
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="horizontal_3"
+			position = { x = 220 y = 385 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = centre
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="horizontal_4"
+			position = { x = 380 y = 385 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = centre
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="horizontal_5"
+			position = { x = 540 y = 385 }
+			textureFile = ""
+			font = "Micro"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = centre
+			Orientation = "UPPER_LEFT"
+
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+
+		windowType = {
+			name = "graph_entry"
+			backGround=""
+			position = { x=0 y=401 }	
+			size = { x=180 y=22 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "UPPER_LEFT"
+
+		
+			checkboxType = {
+					name = "checkbox"
+					position = { x = 0 y = 0 }
+					quadTextureSprite ="GFX_checkbox"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = ""
+					buttonFont = "Main_14_black"
+	
+				}
+
+			instantTextBoxType = {
+				name ="legend_label"
+				position = { x = 32 y = 10 }
+				textureFile = ""
+				font = "Main_14_black"
+				borderSize = {x = 0 y = 0 }
+				text = ""	
+				format = left
+				Orientation = "UPPER_LEFT"
+
+				maxWidth = 140
+				maxHeight = 30
+			}
+
+	}
+
+
+
+	}
+
+	####################################
+
+
+
+		instantTextBoxType = {
+
+				name ="header"
+				position = { x = 350 y = 126 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				format = centre
+				Orientation = "UPPER_LEFT"
+
+				maxWidth = 340
+				maxHeight = 30
+			}
+
+
+		instantTextBoxType = {
+
+				name ="page_number"
+				position = { x = 494 y = 620 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				format = centre
+				Orientation = "UPPER_LEFT"
+
+				maxWidth =  30
+				maxHeight = 30
+			}
+
+
+
+		guiButtonType = {
+				name = "previous_button"
+				position = { x = 150 y = 615 }
+				quadTextureSprite ="button_type_1"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "LEDGER_PREVIOUS"
+				buttonFont = "Main_14_black"
+
+				shortcut = "LEFT"
+				Orientation = "UPPER_LEFT"
+			}
+
+		guiButtonType = {
+				name = "next_button"
+				position = { x = 750 y = 615 }
+				quadTextureSprite ="button_type_1"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "LEDGER_NEXT"
+				buttonFont = "Main_14_black"
+
+				shortcut = "RIGHT"
+				Orientation = "UPPER_LEFT"
+			}
+
+		checkboxType = {
+				name = "checkbox_autosend"
+				position = { x = 170 y = 578 }
+				quadTextureSprite ="GFX_checkbox"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+	
+				}
+		instantTextBoxType = {
+
+				name ="textbox_autosend"
+				position = { x = 200 y = 585 }
+				textureFile = ""
+				font = "Main_16_black"
+				borderSize = {x = 1 y = 1}
+				text = ""	
+				format = left
+				Orientation = "UPPER_LEFT"
+
+				maxWidth =  200
+				maxHeight = 30
+			}
+
+		guiButtonType = {
+				name = "close_button"
+				position = { x = 885 y = 112 }
+				quadTextureSprite ="GFX_closebutton"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				#buttonText = "LEDGER_CLOSE"
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_LEFT"
+				clicksound = close_window
+			}
+
+
+		guiButtonType = {
+		     name = "ledger_national_statistics"
+		     position = { x = 476  y = 100 }
+		     quadTextureSprite ="ledger_national_stastistics" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		} 
+
+		guiButtonType = {
+		     name = "ledger_national_comparison"
+		     position = { x = 446 y = 100 }
+		     quadTextureSprite ="ledger_national_comparison" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		} 
+
+		guiButtonType = {
+		     name = "ledger_economics"
+		     position = { x = 536 y = 100 }
+		     quadTextureSprite ="ledger_economics" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		} 
+		
+		guiButtonType = {
+		     name = "ledger_military_statistics"
+		     position = { x = 506 y = 100 }
+		     quadTextureSprite ="ledger_military_statistics" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		}
+
+		guiButtonType = {
+		     name = "ledger_relations"
+		     position = { x = 566 y = 100 }
+		     quadTextureSprite ="ledger_relations" 
+		     tooltip = ""
+		     tooltipText =""
+		     delayedTooltipText = ""
+		}
+
+
+	}
+
+
+
+	positionType = {
+		name = "pie_UL"
+		position = { x = 200 y = 30 }
+	}
+
+	
+	positionType = {
+		name = "pie_LR"
+		position = { x = 270 y = 100 }
+	}
+
+
+
+
+
+	positionType = {
+		name = "ledger_UL"
+		position = { x = 310 y = 220 }
+	}
+
+
+	positionType = {
+		name = "ledger_LR"
+		position = { x = 620 y = 430 }
+	}
+
+	positionType = {
+		name = "graph_entry_center"
+		position = { x = 320 y = 401 }
+	}
+
+	 scrollbarType = {
+	   name = "	" 
+	   slider = "table_ledger_slider"
+	   track= "listboxTrackButton"
+	   leftbutton = "upButton"
+	   rightbutton = "downButton"
+	   size = {x =16 y = 16 }
+	   position = {x= 0 y =0}
+	   priority = 100   
+	   borderSize = {x = 24 y = 24} 
+	   maxValue =1
+	   minValue =0
+	   stepSize =0.01
+	   startValue = 0
+	   horizontal = 0
+ 
+
+	   guiButtonType = {
+		    name = "listboxSliderButton" 
+		    quadTextureSprite = "slider_slider"
+		    tooltip = ""
+		    tooltipText ="" 
+		    delayedTooltipText = ""
+		    position = { x=0 y =0}
+	   }
+ 
+	   guiButtonType = {
+		    name = "listboxTrackButton"
+		    quadTextureSprite = "slider_background"
+		    position = { x=24 y =24} 
+		    tooltip = ""
+		    tooltipText =""
+		    delayedTooltipText = "" 
+	 
+	   } 
+ 
+	   guiButtonType = {
+		    parent = "listboxSliderButton"
+		    name = "upButton"
+		    quadTextureSprite = "slider_downbutton"
+		    position = { x=0 y =0} 
+	   }
+   
+	   guiButtonType = {
+		    parent = "listboxSliderButton"
+		    name = "downButton"
+		    quadTextureSprite = "slider_upbutton"
+		    position = { x=0 y =120} 
+	   }
+	 } 
+
+
+	iconType =
+	{
+		name ="ledger_o-shock"
+		spriteType = "GFX_ledger_o_shock"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_d-shock"
+		spriteType = "GFX_ledger_d_shock"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+
+	iconType =
+	{
+		name ="ledger_o-fire"
+		spriteType = "GFX_ledger_o_fire"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_d-fire"
+		spriteType = "GFX_ledger_d_fire"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+
+	iconType =
+	{
+		name ="ledger_o-morale"
+		spriteType = "GFX_ledger_o_morale"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_d-morale"
+		spriteType = "GFX_ledger_d_morale"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+
+	iconType =
+	{
+		name ="ledger_manuever"
+		spriteType = "GFX_ledger_maneuver"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_no_building"
+		spriteType = "ledger_build_hammer"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_building"
+		spriteType = "GFX_yes"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_friendly_relations"
+		spriteType = "GFX_yes"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_friendly_relations_lesser"
+		spriteType = "GFX_yes"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_CB_left"
+		spriteType = "ledger_CB_A"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_truce"
+		spriteType = "ledger_truce"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_CB_right"
+		spriteType = "ledger_CB"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+
+
+	iconType =
+	{
+		name ="ledger_Embargo_left"
+		spriteType = "ledger_trade_embargo_a"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_Embargo_right"
+		spriteType = "ledger_trade_embargo_b"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+
+
+
+	iconType =
+	{
+		name ="ledger_hostile_marker"
+		spriteType = "GFX_no"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_temple"
+		spriteType = "GFX_ledger_buildings"
+		frame = 1
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+
+	iconType =
+	{
+		name ="ledger_buildings_workshop"
+		spriteType = "GFX_ledger_buildings"
+		frame = 2
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_regimental_camp"
+		spriteType = "GFX_ledger_buildings"
+		frame = 3
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_shipyard"
+		spriteType = "GFX_ledger_buildings"
+		frame = 4
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_constable"
+		spriteType = "GFX_ledger_buildings"
+		frame = 5
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_courthouse"
+		spriteType = "GFX_ledger_buildings"
+		frame = 6
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_marketplace"
+		spriteType = "GFX_ledger_buildings"
+		frame = 7
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_tax_assessor"
+		spriteType = "GFX_ledger_buildings"
+		frame = 8
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+	iconType =
+	{
+		name ="ledger_buildings_war_college"
+		spriteType = "GFX_ledger_buildings"
+		frame = 9
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_admiralty"
+		spriteType = "GFX_ledger_buildings"
+		frame = 10
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_buildings_customs_house"
+		spriteType = "GFX_ledger_buildings"
+		frame = 11
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	guiButtonType = {
+				name = "ledger_COT_sendmerchant"
+				position = { x = 00 y = 0 }
+				quadTextureSprite ="button_type_6"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "SEND"
+				buttonFont = "Main_14_black"
+				Orientation = "UPPER_LEFT"
+			}
+	
+	iconType =
+	{
+		name ="ledger_COT_placement_cost"
+		spriteType = "ledger_placement_cost"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_COT_number_merchants"
+		spriteType = "ledger_number_merhcants"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+	
+	iconType =
+	{
+		name ="ledger_COT_monopoly"
+		spriteType = "ledger_monopoly"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}
+
+
+
+	iconType =
+	{
+		name ="ledger_autosend_priorities_small_none"
+		spriteType = "GFX_autosend_priorities_small"
+		position = { x= 0 y = -10 }
+		Orientation = "UPPER_LEFT"
+		frame = 1
+	}	
+	iconType =
+	{
+		name ="ledger_autosend_priorities_small_low"
+		spriteType = "GFX_autosend_priorities_small"
+		position = { x= 0 y = -10 }
+		Orientation = "UPPER_LEFT"
+		frame = 2
+	}	
+	iconType =
+	{
+		name ="ledger_autosend_priorities_small_medium"
+		spriteType = "GFX_autosend_priorities_small"
+		position = { x= 0 y = -10 }
+		Orientation = "UPPER_LEFT"
+		frame = 3
+	}	
+	iconType =
+	{
+		name ="ledger_autosend_priorities_small_high"
+		spriteType = "GFX_autosend_priorities_small"
+		position = { x= 0 y = -10 }
+		Orientation = "UPPER_LEFT"
+		frame = 4
+	}	
+	iconType =
+	{
+		name ="ledger_COT_autosend"
+		spriteType = "ledger_autosend"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}		
+
+	iconType =
+	{
+		name ="ledger_COT_merchant_enroute"
+		spriteType = "ledger_merchant_enroute"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+	
+	iconType =
+	{
+		name ="ledger_COT_stagnation"
+		spriteType = "ledger_cot_stagnation"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}	
+
+	iconType =
+	{
+		name ="ledger_COT_free_slot"
+		spriteType = "ledger_free_slot"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}
+
+	iconType =
+	{
+		name ="ledger_COT_chance"
+		spriteType = "ledger_chance"
+		position = { x= 0 y = 0 }
+		Orientation = "UPPER_LEFT"
+	}
+	
+	guiButtonType = {
+		name = "ledger_decision"
+		position = { x=0 y =0 }
+		quadTextureSprite ="GFX_execute_decision"	
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = ""
+	}
+
+
+
+
+}

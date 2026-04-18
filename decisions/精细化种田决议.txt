@@ -1,0 +1,1854 @@
+country_decisions = { 
+	#开关
+	kaiqijingxihuazhongtian = { 
+		potential = { 
+			has_global_flag = jingxihuadlc
+			not = { 
+				has_country_flag = kaiqijingxihuazhongtian
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = kaiqijingxihuazhongtian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	guanbijingxihuazhongtian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtian
+		}
+		allow = { 
+		}
+		effect = { 
+			clr_country_flag = kaiqijingxihuazhongtian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	kaiqijingxihuazhongtianxunhuan = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtian
+			not = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = kaiqijingxihuazhongtianxunhuan
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	guanbijingxihuazhongtianxunhuan = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtianxunhuan
+		}
+		allow = { 
+		}
+		effect = { 
+			clr_country_flag = kaiqijingxihuazhongtianxunhuan
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	kaiqijingxihuazhongtiangaojian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtian
+			not = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = kaiqijingxihuazhongtiangaojian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	guanbijingxihuazhongtiangaojian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtiangaojian
+		}
+		allow = { 
+		}
+		effect = { 
+			clr_country_flag = kaiqijingxihuazhongtiangaojian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	kaiqijingxihuazhongtiansujian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtian
+			not = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = kaiqijingxihuazhongtiansujian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	guanbijingxihuazhongtiansujian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtiansujian
+		}
+		allow = { 
+		}
+		effect = { 
+			clr_country_flag = kaiqijingxihuazhongtiansujian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	kaiqijingxihuazhongtiankuojian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtian
+			not = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = kaiqijingxihuazhongtiankuojian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	guanbijingxihuazhongtiankuojian = { 
+		potential = { 
+			has_country_flag = kaiqijingxihuazhongtiankuojian
+		}
+		allow = { 
+		}
+		effect = { 
+			clr_country_flag = kaiqijingxihuazhongtiankuojian
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}
+province_decisions = { 
+	#循环
+	jingxihuazhongtiannongzhengxunhuan = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			has_building = town_hall
+			owner = { 
+				officials = 5
+				treasury = 500
+				or = {
+					idea = improved_foraging
+					advisor = lord_proprietor
+					serfdom_freesubjects = 1
+				}
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = nongzhengjianshe
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtianjunshixunhuan = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			has_building = regimental_camp
+			owner = { 
+				officials = 5
+				treasury = 500
+				or = {
+					idea = military_drill
+					advisor = recruitmaster
+					not = {
+						centralization_decentralization = 0
+					}
+				}
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = junshijianshe
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtianwenhuaxunhuan = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			has_building = grand_shipyard
+			owner = { 
+				officials = 5
+				treasury = 500
+				or = {
+					idea = ecumenism
+					advisor = navigator 
+					not = {
+						innovative_narrowminded = 0
+					}
+				}
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = wenhuajianshe
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiangongyexunhuan = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			has_building = treasury_office
+			owner = { 
+				officials = 5
+				treasury = 500
+				or = {
+					idea = shrewd_commerce_practise
+					advisor = alderman
+					not = {
+						mercantilism_freetrade = 0
+					}
+				}
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gongyejianshe
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtianshangyexunhuan = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			has_building = road_network
+			owner = { 
+				officials = 5
+				treasury = 500
+				or = {
+					idea = glorious_arms
+					advisor = trader
+					mercantilism_freetrade = 1
+				}
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = shangyejianshe
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtianyaosaixunhuan = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtianxunhuan
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			has_building = fort4
+			owner = { 
+				officials = 5
+				treasury = 500
+				or = {
+					idea = deus_vult
+					advisor = fortification_expert
+					offensive_defensive = 1
+				}
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = yaosaijianshe
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	#高建
+	jingxihuazhongtiangaojijianzhunongzheng = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+			not = {has_building = college }
+			or = {
+				not = {
+					or = {
+						and = {
+							or = {
+								has_building = college
+								has_building = arsenal
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = mint
+							}
+							or = {
+								has_building = post_office
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = mint
+							}
+							or = {
+								has_building = arsenal
+								has_building = post_office
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = fort5
+							}
+							or = {
+								has_building = arsenal
+								has_building = naval_arsenal
+							}
+							or = {
+								has_building = mint
+								has_building = post_office
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 5
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = fort5 }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 10
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 15
+					or = {
+						not = {has_building = college }
+						not = {has_building = arsenal }
+						not = {has_building = naval_arsenal }
+						not = {has_building = mint }
+						not = {has_building = post_office }
+						not = {has_building = fort5 }
+					}
+				}
+			}
+		}
+		allow = { 
+			has_building = town_hall
+			owner = { 
+				officials = 5
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gaojijianzhunongzheng
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiangaojijianzhujunshi = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+			not = {has_building = arsenal }
+			or = {
+				not = {
+					or = {
+						and = {
+							or = {
+								has_building = college
+								has_building = arsenal
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = mint
+							}
+							or = {
+								has_building = post_office
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = mint
+							}
+							or = {
+								has_building = arsenal
+								has_building = post_office
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = fort5
+							}
+							or = {
+								has_building = arsenal
+								has_building = naval_arsenal
+							}
+							or = {
+								has_building = mint
+								has_building = post_office
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 5
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = fort5 }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 10
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 15
+					or = {
+						not = {has_building = college }
+						not = {has_building = arsenal }
+						not = {has_building = naval_arsenal }
+						not = {has_building = mint }
+						not = {has_building = post_office }
+						not = {has_building = fort5 }
+					}
+				}
+			}
+		}
+		allow = { 
+			has_building = regimental_camp
+			owner = { 
+				officials = 5
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gaojijianzhujunshi
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiangaojijianzhuwenhua = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+			not = {has_building = naval_arsenal }
+			or = {
+				not = {
+					or = {
+						and = {
+							or = {
+								has_building = college
+								has_building = arsenal
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = mint
+							}
+							or = {
+								has_building = post_office
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = mint
+							}
+							or = {
+								has_building = arsenal
+								has_building = post_office
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = fort5
+							}
+							or = {
+								has_building = arsenal
+								has_building = naval_arsenal
+							}
+							or = {
+								has_building = mint
+								has_building = post_office
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 5
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = fort5 }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 10
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 15
+					or = {
+						not = {has_building = college }
+						not = {has_building = arsenal }
+						not = {has_building = naval_arsenal }
+						not = {has_building = mint }
+						not = {has_building = post_office }
+						not = {has_building = fort5 }
+					}
+				}
+			}
+		}
+		allow = { 
+			has_building = grand_shipyard
+			owner = { 
+				officials = 5
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gaojijianzhuwenhua
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiangaojijianzhugongye = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+			not = {has_building = mint }
+			or = {
+				not = {
+					or = {
+						and = {
+							or = {
+								has_building = college
+								has_building = arsenal
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = mint
+							}
+							or = {
+								has_building = post_office
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = mint
+							}
+							or = {
+								has_building = arsenal
+								has_building = post_office
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = fort5
+							}
+							or = {
+								has_building = arsenal
+								has_building = naval_arsenal
+							}
+							or = {
+								has_building = mint
+								has_building = post_office
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 5
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = fort5 }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 10
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 15
+					or = {
+						not = {has_building = college }
+						not = {has_building = arsenal }
+						not = {has_building = naval_arsenal }
+						not = {has_building = mint }
+						not = {has_building = post_office }
+						not = {has_building = fort5 }
+					}
+				}
+			}
+		}
+		allow = { 
+			has_building = treasury_office
+			owner = { 
+				officials = 5
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gaojijianzhugongye
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiangaojijianzhushangye = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+			not = {has_building = post_office }
+			or = {
+				not = {
+					or = {
+						and = {
+							or = {
+								has_building = college
+								has_building = arsenal
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = mint
+							}
+							or = {
+								has_building = post_office
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = mint
+							}
+							or = {
+								has_building = arsenal
+								has_building = post_office
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = fort5
+							}
+							or = {
+								has_building = arsenal
+								has_building = naval_arsenal
+							}
+							or = {
+								has_building = mint
+								has_building = post_office
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 5
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = fort5 }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 10
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 15
+					or = {
+						not = {has_building = college }
+						not = {has_building = arsenal }
+						not = {has_building = naval_arsenal }
+						not = {has_building = mint }
+						not = {has_building = post_office }
+						not = {has_building = fort5 }
+					}
+				}
+			}
+		}
+		allow = { 
+			has_building = road_network
+			owner = { 
+				officials = 5
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gaojijianzhushangye
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiangaojijianzhuyaosai = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiangaojian
+			}
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+			not = {has_building = fort5 }
+			or = {
+				not = {
+					or = {
+						and = {
+							or = {
+								has_building = college
+								has_building = arsenal
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = mint
+							}
+							or = {
+								has_building = post_office
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = mint
+							}
+							or = {
+								has_building = arsenal
+								has_building = post_office
+							}
+							or = {
+								has_building = naval_arsenal
+								has_building = fort5
+							}
+						}
+						and = {
+							or = {
+								has_building = college
+								has_building = fort5
+							}
+							or = {
+								has_building = arsenal
+								has_building = naval_arsenal
+							}
+							or = {
+								has_building = mint
+								has_building = post_office
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 5
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = fort5 }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 10
+					or = {
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = naval_arsenal }
+							}
+							or = {
+								not = {has_building = mint }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+							}
+							or = {
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+								not = {has_building = fort5 }
+							}
+						}
+						and = {
+							or = {
+								not = {has_building = college }
+								not = {has_building = arsenal }
+								not = {has_building = mint }
+							}
+							or = {
+								not = {has_building = naval_arsenal }
+								not = {has_building = post_office }
+								not = {has_building = fort5 }
+							}
+						}
+					}
+				}
+				and = {
+					base_tax = 15
+					or = {
+						not = {has_building = college }
+						not = {has_building = arsenal }
+						not = {has_building = naval_arsenal }
+						not = {has_building = mint }
+						not = {has_building = post_office }
+						not = {has_building = fort5 }
+					}
+				}
+			}
+		}
+		allow = { 
+			has_building = fort4
+			owner = { 
+				officials = 5
+				treasury = 500
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -500
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 1825
+			}
+			set_province_flag = gaojijianzhuyaosai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	#速建
+	jingxihuazhongtiansujiannongzheng = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+			not = {
+				has_building = town_hall
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_building = town_hall
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	jingxihuazhongtiansujianjunshi = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+			not = {
+				has_building = regimental_camp
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_building = regimental_camp
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	jingxihuazhongtiansujianwenhua = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+			not = {
+				has_building = grand_shipyard
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_building = grand_shipyard
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	jingxihuazhongtiansujiangongye = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+			not = {
+				has_building = treasury_office
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_building = treasury_office
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	jingxihuazhongtiansujianshangye = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+			not = {
+				has_building = road_network
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_building = road_network
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	jingxihuazhongtiansujianyaosai = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiansujian
+			}
+			not = {
+				has_building = fort4
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_building = fort4
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	#唯一建筑
+	jingxihuazhongtiankuojianneishi = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = tax_assessor
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojianneishi
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojianxingrenshu = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = embassy
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojianxingrenshu
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojiantaimiao = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = glorious_monument
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojiantaimiao
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojianguanai = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = march
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojianguanai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojianyinglei = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = grain_depot
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojianyinglei
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojianwanggong = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = royal_palace
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojianwanggong
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojianxiwutai = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = war_college
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojianxiwutai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	jingxihuazhongtiankuojiansiwencao = { 
+		potential = { 
+			owner = { 
+				has_country_flag = kaiqijingxihuazhongtiankuojian
+			}
+			has_building = admiralty
+			not = {
+				has_province_modifier = zhengzaijianshe
+			}
+		}
+		allow = { 
+			owner = { 
+				officials = 5
+				treasury = 1000
+			}
+		}
+		effect = { 
+			owner = {
+				officials = -5
+				treasury = -1000
+			}
+			add_province_modifier = {
+				name = "zhengzaijianshe"
+				duration = 3650
+			}
+			set_province_flag = kuojiansiwencao
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

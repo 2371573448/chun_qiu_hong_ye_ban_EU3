@@ -1,0 +1,37 @@
+owner = YYG
+controller = YYG
+culture = yangyue
+religion = ancestor
+capital = "дор╟"
+trade_goods = tobacco
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 12000
+fort1 = yes
+add_core = YYG
+cot = no
+2380.1.1 = { 
+	discovered_by = QIN
+}
+2484.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.6.1={ owner=CHU controller=CHU }
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

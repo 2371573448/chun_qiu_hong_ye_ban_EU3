@@ -1,0 +1,77 @@
+culture = qilu
+religion = animism
+capital = "ÄÏÆ¤"
+trade_goods = grain
+hre = no
+base_tax = 6
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2035.1.1 = { citysize = 10000
+             fort1 = yes 
+             owner = QIG 
+             controller = QIG
+           }
+2035.1.1 = { add_core = QIG }
+2095.1.1 = { religion = liyuejiaohua }
+2222.1.1 = { citysize = 28000 }
+2244.1.1 = { 
+	hre = no
+}
+2244.1.2 = { 
+	hre = yes
+}
+2244.1.1 = { 
+	owner = CHA
+	controller = CHA
+	add_core = CHA
+	remove_core = QIG
+}
+2244.1.2 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = CHA
+}
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	owner = CHA
+	controller = CHA
+	add_core = CHA
+	remove_core = QIG
+}
+2247.1.1 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = CHA
+}
+2414.1.1  = {	owner = ZHO
+		controller = ZHO
+	    }
+2430.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2477.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2492.2.1 = { 
+	owner = JBW
+	controller = JBW
+	add_core = JBW
+}
+2492.7.1 = { 
+	owner = QIG
+	controller = QIG
+}

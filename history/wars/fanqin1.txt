@@ -1,0 +1,13 @@
+name = "楚复国之战"
+casus_belli = cb_core #
+
+2489.7.1 = {
+  # 陈胜吴广揭竿而起，至陈自立为王
+	add_attacker = CHU
+	add_defender = QIN
+}
+2492.2.1 = {
+	# 秦亡，战争结束
+	rem_attacker = CHU
+	rem_defender = QIN
+}

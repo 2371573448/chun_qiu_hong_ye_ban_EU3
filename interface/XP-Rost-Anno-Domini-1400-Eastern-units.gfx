@@ -1,0 +1,168 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "easterngfx_infantry_1"
+		actorfile = "gfx\anims\Generic_Eastern_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Eastern_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "RUS_infantry_1"
+		actorfile = "gfx\anims\Russian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "POL_infantry_1"
+		actorfile = "gfx\anims\Polish_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MOS_infantry_1"
+		actorfile = "gfx\anims\Moscovite_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "NOV_infantry_1"
+		actorfile = "gfx\anims\Novgorodian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "LIT_infantry_1"
+		actorfile = "gfx\anims\Lithuanian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "RIG_infantry_1"
+		actorfile = "gfx\anims\Riga_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HUN_infantry_1"
+		actorfile = "gfx\anims\Hungarian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "RYA_infantry_1"
+		actorfile = "gfx\anims\Ryazan_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "PSK_infantry_1"
+		actorfile = "gfx\anims\Pskovian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BYZ_infantry_1"
+		actorfile = "gfx\anims\Byzantine_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "TVE_infantry_1"
+		actorfile = "gfx\anims\Tverian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "YAR_infantry_1"
+		actorfile = "gfx\anims\Yaroslavlian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MAZ_infantry_1"
+		actorfile = "gfx\anims\Mazovian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SER_infantry_1"
+		actorfile = "gfx\anims\Serbian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BOS_infantry_1"
+		actorfile = "gfx\anims\Bosnian_1400.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1400_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1400_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1400_Attack.xsm"
+		scale = 7.8
+	}
+}
+
+
+
+
+
+

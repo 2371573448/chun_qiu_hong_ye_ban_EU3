@@ -1,0 +1,82 @@
+#历史上著名的统帅人物，尤其是重要战争中的总指挥
+
+advisor ={
+name ="荀林父" 
+location =87
+skill =3
+type =army_organiser
+date =2062.1.1
+death_date =2117.1.1
+}
+
+advisor ={
+name ="匡章" 
+location =272
+skill =4
+type =army_organiser
+date =2360.1.1
+death_date =2400.1.1
+}
+
+advisor ={
+name ="廉颇" 
+location =56
+skill =5
+type =army_organiser
+date =2391.1.1
+death_date =2455.1.1
+}
+
+advisor ={
+name ="庞涓" 
+location =78
+skill =4
+type =army_organiser
+date =2345.1.1
+death_date =2356.1.1
+}
+
+advisor ={
+name ="韩信" 
+location =328
+skill =6
+type =army_organiser
+date =2489.1.1
+death_date =2502.1.1
+}
+
+advisor ={
+name ="李牧"
+location =55
+skill =5
+type =army_organiser
+date =2445.1.1
+death_date =2469.1.1
+}
+
+advisor ={
+name ="白起" 
+location =180
+skill =6
+type =army_organiser
+date =2395.1.1
+death_date =2441.1.1
+}
+
+advisor ={
+name ="成得臣"
+location =466
+skill =5
+type =army_organiser
+date =2041.1.1
+death_date =2066.1.1
+}
+
+advisor ={
+name ="王翦" 
+location =179
+skill =5
+type =army_organiser
+date =2455.1.1
+death_date =2485.1.1
+}

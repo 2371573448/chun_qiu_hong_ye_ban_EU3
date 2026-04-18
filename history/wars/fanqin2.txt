@@ -1,0 +1,13 @@
+name = "齐复国之战"
+casus_belli = cb_core #
+
+2490.1.1 = {
+  # 田儋反秦，攻取齐地
+	add_attacker = QIG
+	add_defender = QIN
+}
+2492.2.1 = {
+	# 秦亡，战争结束
+	rem_attacker = QIG
+	rem_defender = QIN
+}

@@ -1,0 +1,162 @@
+#征服东郡
+
+CAO_annex_dongjun = {
+	
+	type = country
+
+	allow = {
+		NOT = { owns = 360 }
+		year = 2248
+		not = {
+			and = { 
+				tag = SON
+				not = { year = 2266 }
+			}
+		}
+		OR = {
+			any_owned_province  = {
+			region = dongjun
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = dongjun }
+			}
+		}
+                                        OR = {
+                                        NOT = { owns = 360 }
+                                        NOT = { owns = 361 }
+                                        NOT = { owns = 362 }
+                                        NOT = { owns = 363 }
+                                        }
+	}
+	abort = {
+
+	}
+	success = {  
+    		owns = 360
+    		owns = 361   
+    		owns = 362
+    		owns = 363
+	}
+	chance = {
+		factor = 200
+	}
+	immediate = {
+    		add_temp_claim = 262  
+    		add_temp_claim = 273
+    		add_temp_claim = 302
+    		add_temp_claim = 311
+    		add_temp_claim = 313
+    		add_temp_claim = 320
+    		add_temp_claim = 359
+    		add_temp_claim = 360
+    		add_temp_claim = 361   
+    		add_temp_claim = 362
+    		add_temp_claim = 363
+	}
+	abort_effect = {
+
+	}
+	effect = {
+		dongjun = { add_core = THIS }
+	}
+}
+
+#征服南燕
+CAO_annex_NYA = {
+	type = country
+	allow = {
+		tag = CAO
+		exists = NYA
+		is_lesser_in_union = no
+		is_subject = no
+		NYA = {
+			owns = 361
+			neighbour = this
+			not = { vassal_of = CAO }
+		}
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = NYA }
+				not = { owns = 361 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 866
+		owns = 867
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	  	add_temp_claim = 867
+	  	add_temp_claim = 868
+	  	add_temp_claim = 866
+	  	add_temp_claim = 362
+	  	add_temp_claim = 361
+	  	add_temp_claim = 869
+	  	add_temp_claim = 870
+	  	add_temp_claim = 871
+	}
+	abort_effect = {
+	}
+	effect = {
+	 	add_core = 867
+	 	add_core = 868
+	 	add_core = 866
+	 	add_core = 362
+	 	add_core = 361
+	 	add_core = 869
+	 	add_core = 870
+	 	add_core = 871
+	}
+}
+
+#征服须句
+CAO_annex_DXU = {
+	type = country
+	allow = {
+		tag = CAO
+		exists = DXU
+		is_lesser_in_union = no
+		is_subject = no
+		DXU = {
+			owns = 311
+			not = { vassal_of = CAO }
+		}
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = DXU }
+				not = { owns = 311 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 883
+		owns = 882
+		owns = 311
+	}
+	chance = {
+		factor = 300
+	}
+	immediate = {
+	  	add_temp_claim = 883
+	  	add_temp_claim = 882
+	  	add_temp_claim = 311
+	}
+	abort_effect = {
+	}
+	effect = {
+	 	add_core = 883
+	 	add_core = 882
+	 	add_core = 311
+	}
+}

@@ -1,0 +1,41 @@
+owner = YAN
+controller = YAN
+culture = hebei
+religion = liyuejiaohua
+capital = "Î÷Ïç"
+trade_goods = slaves
+hre = yes
+base_tax = 7
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = YAN
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2222.1.1 = { citysize = 28000 }
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2360.1.1 = { religion = mojia }
+2384.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2386.1.1  = {	owner = YAN
+		controller = YAN
+	    }
+2390.1.1 = { religion = fajia }
+2472.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1 = { 
+	owner = YAN
+	controller = YAN
+}

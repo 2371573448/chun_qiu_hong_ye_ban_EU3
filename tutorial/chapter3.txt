@@ -1,0 +1,329 @@
+tutorial =
+{
+	title = "TUTORIAL_2"
+	desc = "TUTORIAL_2_DESC"
+	tutorial_window = "TUTORIAL_WINDOW_1"	# default window
+	exclusive = yes
+
+	country = FRA
+
+
+	# page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_1"
+	#	window = "economy"
+	#	window = "arrow_economy"
+	#	exclusive = no
+	#}
+	#page =
+	#{
+	#	tutorial_window = "TUTORIAL_WINDOW_2"
+	#	text1 = "TUTORIAL_TEXT_2_2"
+	#}
+	#page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_3"
+	#	close_window = all
+	#}
+	#page =
+	#{
+	#	text1 = "TUTORIAL_TEXT_2_4"
+	#	window = court
+	#}
+
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_1"
+		text2 = "tut_1c_2"
+
+		window = "arrow_1"
+		window_position = { 60 60 }
+
+
+		window = "highlight"
+		window_position = {-100 -100}
+		window_size = {256 256}
+	}
+
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_3"
+		text2 = "tut_1c_4"
+		domestic_panel = "overview"
+
+
+		window = "arrow_2"
+		window_position = { 60 00 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_5"
+
+		#window = "arrow_2"
+		#window_position = { 100 00 }
+
+		window = "highlight"
+		window_position = {0 330}
+		window_size = {420 280}
+	}
+	
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_7"
+		text2 = "tut_1c_8"
+		domestic_panel = "court"
+
+		window = "arrow_2"
+		window_position = { 100 00 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_9"
+
+		#window = "arrow_2"
+		#window_position = { 140 00 }
+
+		window = "highlight"
+		window_position = {0 300}
+		window_size = {420 280}
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_10"
+		text2 = "tut_1c_11"
+		domestic_panel = "economy"
+
+		window = "arrow_2"
+		window_position = { 140 00 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_12"
+
+		#window = "arrow_2"
+		#window_position = { 185 00 }
+
+		window = "highlight"
+		window_position = {200 135}
+		window_size = {200 400}
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_13"
+
+		#window = "arrow_2"
+		#window_position = { 185 00 }
+
+		window = "highlight"
+		window_position = {200 135}
+		window_size = {200 400}
+
+
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }	
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_14"
+
+		#window = "arrow_2"
+		#window_position = { 185 00 }
+
+		window = "arrow_1"
+		window_position = { 285 440 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_15"
+
+		#window = "arrow_2"
+		#window_position = { 185 00 }
+
+		window = "arrow_1"
+		window_position = { 150 480 }
+		window = "arrow_1"
+		window_position = { 245 520 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_16"
+		text2 = "tut_1c_17"
+		domestic_panel = "military"
+
+		window = "arrow_2"
+		window_position = { 180 00 }
+
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_18"
+
+		#window = "arrow_2"
+		#window_position = { 230 00 }
+
+		window = "highlight"
+		window_position = {0 340}
+		window_size = {420 240}
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_19"
+		text2 = "tut_1c_20"
+		domestic_panel = "religion"
+
+		window = "arrow_2"
+		window_position = { 210 00 }
+	}
+
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_21"
+		text2 = "tut_1c_22"
+		domestic_panel = "policies"
+
+
+		window = "arrow_2"
+		window_position = { 260 00 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_23"
+
+
+		#window = "arrow_2"
+		#window_position = { 310 00 }
+
+		window = "highlight"
+		window_position = {0 180}
+		window_size = {420 220}
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_24"
+
+
+		#window = "arrow_2"
+		#window_position = { 310 00 }
+
+		window = "highlight"
+		window_position = {0 350}
+		window_size = {420 240}
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_25"
+		text2 = "tut_1c_26"
+		domestic_panel = "leader"
+
+
+		window = "arrow_2"
+		window_position = { 300 00 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_27"
+
+
+		#window = "arrow_2"
+		#window_position = { 350 00 }
+
+		window = "arrow_1"
+		window_position = { 200 320 }
+	}
+
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_30"
+		text2 = "tut_1c_31"
+		domestic_panel = "culture"
+
+
+		window = "arrow_2"
+		window_position = { 340 00 }
+	}
+	
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text3 = "tut_1c_32"
+
+		window = "highlight"
+		window_position = {0 350}
+		window_size = {420 240}
+	}
+	
+	
+	page =
+	{
+		tutorial_window_position = { 450 100 }
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_33"
+		text2 = "tut_1c_34"
+		domestic_panel = "missions"
+
+
+		window = "arrow_2"
+		window_position = { 380 00 }
+	}
+	
+	page =
+	{
+		tutorial_window = "TUTORIAL_WINDOW_1"
+		text1 = "tut_1c_28"
+		text2 = "tut_1c_29"
+		close_window = all
+	}
+
+}

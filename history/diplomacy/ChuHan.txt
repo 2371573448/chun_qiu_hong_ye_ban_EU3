@@ -1,0 +1,218 @@
+# 项羽以前外交关系
+alliance={
+	first=CHU
+	second=ZHO
+	start_date=2489.10.1
+	end_date=2492.2.1
+}
+# 项羽十八诸侯与西楚关系
+alliance={
+	first=XCW
+	second=YOW
+	start_date=2492.2.1
+	end_date=2493.6.1
+  # 刘邦破废丘，雍国亡
+}
+alliance={
+	first=XCW
+	second=SAI
+	start_date=2492.2.1
+	end_date=2492.8.1
+  # 刘邦出秦，塞翟附汉
+}
+alliance={
+	first=XCW
+	second=DIW
+	start_date=2492.2.1
+	end_date=2492.8.1
+  # 刘邦出秦，塞翟附汉
+}
+alliance={
+	first=XCW
+	second=HNW
+	start_date=2492.2.1
+	end_date=2492.7.1
+  # 刘邦出秦
+}
+alliance={
+	first=XCW
+	second=CSW
+	start_date=2492.2.1
+	end_date=2492.11.1
+  # 陈余取赵
+}
+alliance={
+	first=XCW
+	second=YNW
+	start_date=2492.2.1
+	end_date=2493.1.1
+  # 殷国附汉
+}
+alliance={
+	first=XCW
+	second=JDW
+	start_date=2492.2.1
+	end_date=2492.7.1
+  # 田荣攻并三齐，胶东、济北亡
+}
+alliance={
+	first=XCW
+	second=JBW
+	start_date=2492.2.1
+	end_date=2492.7.1
+  # 田荣攻并三齐，胶东、济北亡
+}
+alliance={
+	first=XCW
+	second=JJW
+	start_date=2492.2.1
+	end_date=2493.6.1
+  # 随和说英布，九江叛西楚
+}
+alliance={
+	first=XCW
+	second=LJW
+	start_date=2492.2.1
+	end_date=2492.7.1
+  # 田荣攻并三齐，胶东、济北亡
+}
+alliance={
+	first=XCW
+	second=YAN
+	start_date=2492.2.1
+	end_date=2493.11.1
+  # 韩信张耳平赵，燕王臧荼附汉
+}
+alliance={
+	first=XCW
+	second=LJW
+	start_date=2492.2.1
+	end_date=2495.12.1
+  # 垓下之战，项王死，不久临江国灭
+}
+
+#非与西楚关系
+alliance={
+	first=HNW
+	second=HAN
+	start_date=2492.10.1
+  # 汉定韩地，立韩信都为韩王
+	end_date=2496.1.1
+}
+alliance={
+	first=ZHO
+	second=DAI
+	start_date=2492.11.1
+  # 陈余逐张耳，复立赵王歇
+	end_date=2493.9.1
+  # 汉灭代
+}
+vassal={
+	first=ZHO
+	second=DAI
+	start_date=2492.11.1
+  # 陈余逐张耳，复立赵王歇
+	end_date=2493.9.1
+  # 汉灭代
+}
+alliance={
+	first=HNW
+	second=WEI
+	start_date=2493.1.1
+  # 魏豹附汉
+	end_date=2493.5.1
+  # 彭城之败，西魏叛汉
+}
+alliance={
+	first=HNW
+	second=ZHO
+	start_date=2493.1.1
+  # 魏豹附汉
+	end_date=2493.5.1
+  # 彭城之败，赵代叛汉
+}
+alliance={
+	first=HNW
+	second=JJW
+	start_date=2493.6.1
+  # 随和说英布叛项归汉
+	end_date=2493.11.1
+  # 项王破九江，英布只身投汉
+}
+vassal={
+	first=HNW
+	second=ZHO
+	start_date=2493.11.1
+  # 张耳为赵王，附汉
+	end_date=2496.1.1
+}
+alliance={
+	first=HNW
+	second=ZHO
+	start_date=2493.11.1
+  # 张耳为赵王，附汉
+	end_date=2496.1.1
+}
+alliance={
+	first=HNW
+	second=YAN
+	start_date=2493.11.1
+  # 汉平赵，燕王臧荼附汉
+	end_date=2496.1.1
+}
+vassal={
+	first=HNW
+	second=QIG
+	start_date=2494.11.1
+  # 韩信为齐王
+	end_date=2496.1.1
+}
+alliance={
+	first=HNW
+	second=QIG
+	start_date=2494.11.1
+  # 韩信为齐王
+	end_date=2496.1.1
+}
+vassal={
+	first=HNW
+	second=JJW
+	start_date=2495.6.1
+  # 英布为淮南王
+	end_date=2496.1.1
+}
+alliance={
+	first=HNW
+	second=JJW
+	start_date=2495.6.1
+  # 英布为淮南王
+	end_date=2496.1.1
+}
+vassal={
+	first=HNW
+	second=HAN
+	start_date=2492.10.1
+  # 韩王信都为韩王
+	end_date=2496.1.1
+}
+alliance={
+	first=HNW
+	second=HAN
+	start_date=2492.10.1
+  # 韩王信都为韩王
+	end_date=2496.1.1
+}
+vassal={
+	first=HNW
+	second=WEI
+	start_date=2494.11.1
+  # 彭越为梁王
+	end_date=2496.1.1
+}
+alliance={
+	first=HNW
+	second=WEI
+	start_date=2494.11.1
+  # 彭越为梁王
+	end_date=2496.1.1
+}

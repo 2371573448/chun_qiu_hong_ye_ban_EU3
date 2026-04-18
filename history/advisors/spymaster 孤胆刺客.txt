@@ -1,0 +1,55 @@
+#著名的刺客或杀手
+
+advisor ={
+name ="豫让" 
+location =72
+skill =4
+type =spymaster
+date =2240.1.1
+death_date =2455.1.1
+}
+
+advisor ={
+name ="曹沫" 
+location =306
+skill =3
+type =spymaster
+date =2005.1.1
+death_date =2036.1.1
+}
+
+advisor ={
+name ="荆轲" 
+location =24
+skill =4
+type =spymaster
+date =2160.1.1
+death_date =2471.1.1
+}
+
+advisor ={
+name ="要离" 
+location =431
+skill =4
+type =spymaster
+date =2140.1.1
+death_date =2160.1.1
+}
+
+advisor ={
+name ="要离" 
+location =420
+skill =4
+type =spymaster
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="项庄" 
+location =328
+skill =3
+type =spymaster
+date =2489.1.1
+death_date =2520.1.1
+}

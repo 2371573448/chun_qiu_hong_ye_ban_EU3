@@ -1,0 +1,104 @@
+owner = HUG
+controller = HUG
+culture = jianghan
+religion = liyuejiaohua
+capital = "ºú"
+trade_goods = copper
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = HUG
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2167.11.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2169.6.15 = { 
+	owner = HUG
+	controller = HUG
+}
+2203.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2222.1.1 = { 
+	citysize = 30000
+}
+2233.1.1 = { 
+	add_core = CHU
+}
+2244.1.1 = { 
+	owner = CHE
+	controller = CHE
+	add_core = CHE
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = CHE
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.1 = { 
+	owner = SON
+	controller = SON
+	add_core = SON
+	remove_core = CHU
+}
+2246.1.2 = { 
+	owner = HUG
+	controller = HUG
+	add_core = CHE
+	add_core = HUG
+	remove_core = SON
+}
+
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = SON
+}
+2263.1.1 = { 
+	culture = nanchu
+	religion = liyuebadao
+}
+2474.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.7.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

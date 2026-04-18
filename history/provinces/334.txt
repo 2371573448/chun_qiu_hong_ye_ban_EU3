@@ -1,0 +1,100 @@
+owner = HYI
+controller = HYI
+culture = huaiyi
+religion = animism
+capital = "ëÔ"
+trade_goods = tea
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 18000
+fort1 = yes
+add_core = HYI
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2222.1.1 = { 
+	citysize = 26000
+}
+2225.1.1 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+}
+2244.1.1 = { 
+	owner = JUG
+	controller = JUG
+	add_core = JUG
+	remove_core = YGO
+}
+2244.1.2 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+	remove_core = JUG
+}
+2246.1.1 = { 
+	owner = LUG
+	controller = LUG
+	add_core = LUG
+	religion = rujia
+	remove_core = YGO
+}
+2246.1.2 = { 
+	religion = liyuebadao
+	owner =JUG
+	controller = JUG
+	add_core = JUG
+	remove_core = WEG
+	remove_core = LUG
+        fort2 = yes
+}
+2247.1.1 = { 
+	owner = YGO
+	controller = YGO
+	add_core = YGO
+	remove_core = LUG
+}
+2322.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2352.1.1 = { 
+	add_core = QIG
+	culture = qilu
+}
+2360.1.1 = { 
+	religion = liyuejiaohua
+}
+2414.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	culture = nanchu
+}
+2474.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

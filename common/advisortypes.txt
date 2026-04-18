@@ -1,0 +1,328 @@
+# If you add advisortypes, and use those tags, do not change them without changing everywhere they are used.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+
+######################################################
+#诸子百家
+philosopher = { 
+	prestige = 0.015
+	cultural_tradition_decay = -0.015
+	cultural_tradition_cost = 0.25
+}
+######################################################
+#能工巧匠
+natural_scientist = { 
+	colonists = 0.06
+	production_tech_investment = 3.0
+	production_tech_cost_modifier = -0.02
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#仙雅乐师
+artist = { 
+	diplomats = 0.4
+	stability_investment = 3.0
+	prestige = 0.005
+	stability_cost_modifier = -0.04
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#一代名相
+statesman = { 
+	officials = 0.5
+	government_tech_investment = 2.5
+	government_tech_cost_modifier = -0.02
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#商宦监理
+treasurer = { 
+	trade_tech_investment = 3.5
+	trade_tech_cost_modifier = -0.02
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#布衣门客
+naval_reformer = { 
+	missionaries = 0.1
+	naval_tech_investment = 2
+	naval_tech_cost_modifier = -0.02
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#新军领袖
+army_reformer = { 
+	land_tech_investment = 2.5
+	land_morale = 0.05
+	land_tech_cost_modifier = -0.02
+	army_tradition_cost = 0.08
+	cultural_tradition_cost = 0.12
+}
+######################################################
+#商人巨贾
+trader = { 
+	merchant_compete_chance = 0.02
+	trade_efficiency = 0.02
+	production_efficiency = -0.01
+	interest = -0.01
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#布道学究
+theologian = {
+	missionary_placement_chance = 0.015
+	missionaries = 0.2
+	cultural_tradition_cost = 0.2
+
+}
+ 
+######################################################
+#孤胆刺客
+spymaster = { 
+	spy_efficiency = 0.04
+	global_spy_defence = 0.005
+	badboy = 0.02
+	army_tradition_cost = 0.05
+	cultural_tradition_cost = 0.15
+}
+######################################################
+#内臣谋士
+colonial_governor = {
+	government_tech_investment = 2.2
+	stability_investment = 2.2
+	government_tech_cost_modifier = -0.01
+	stability_cost_modifier = -0.02
+	cultural_tradition_cost = 0.2
+	
+}
+
+######################################################
+#纵横之士
+diplomat = {
+	badboy = -0.12
+	prestige = 0.004
+	cultural_tradition_cost = 0.2
+
+}
+
+######################################################
+#内政精英
+sheriff = {
+	global_tax_modifier = 0.05
+	inflation_reduction = 0.009
+	cultural_tradition_cost = 0.2
+}
+
+######################################################
+#先贤巨子
+high_judge = {
+	global_revolt_risk = -1
+	stability_cost_modifier = -0.02
+	cultural_tradition_cost = 0.2
+}
+
+######################################################
+#当政公卿
+alderman = {
+	build_cost = -0.02
+	production_efficiency = 0.02
+	trade_efficiency = -0.01
+	production_tech_investment = 1.75
+	cultural_tradition_cost = 0.2
+}
+
+######################################################
+#统兵之将
+colonel = {
+	merc_maintenance_modifier = -0.10
+	land_maintenance_modifier = -0.05
+	reinforce_speed = 0.04
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+
+######################################################
+#文人骚客
+collector = {
+	cultural_tradition = 0.01
+	global_revolt_risk = -0.5
+	cultural_tradition_cost = 0.25
+}
+
+######################################################
+#伯乐之才
+master_of_mint = {
+	trade_efficiency = 0.005
+	interest = -0.01
+        artillery_cost = -0.025
+        cavalry_cost = -0.01
+	cultural_tradition_cost = 0.2
+}
+
+######################################################
+#经济之才
+banker = {
+	global_trade_income_modifier = 0.02
+	global_tax_modifier = -0.025
+	interest = -0.01
+	cultural_tradition_cost = 0.2
+}
+
+######################################################
+#山林隐逸
+lord_proprietor = {
+	global_colonial_growth = 0.10
+	production_tech_investment = 1.25
+	cultural_tradition_cost = 0.20
+}
+
+######################################################
+#蛮夷经略
+pioneer = {
+	colonists = 0.1
+	colonist_placement_chance = 0.05
+	global_colonial_growth = 0.05
+	cultural_tradition_cost = 0.20
+	
+}
+
+######################################################
+#水军提督
+grand_admiral = {
+	land_attrition = -0.02
+	navy_tradition = 0.003
+	naval_morale = 0.06
+	naval_attrition = -0.05
+	transport_cost = -0.03
+	global_ship_recruit_speed=-0.10
+	naval_tradition_cost = 0.05
+	cultural_tradition_cost = 0.15
+}
+
+######################################################
+#史家绝唱
+naval_organiser = {
+	global_revolt_risk = -1.5
+	cultural_tradition_cost = 0.20
+}
+
+######################################################
+#济世医者
+navigator = {
+	global_manpower = 0.5
+	war_exhaustion = -0.03
+	reinforce_speed = 0.04
+	cultural_tradition_cost = 0.2
+	
+}
+
+######################################################
+#改革人士
+rear_admiral = {
+	technology_cost = -0.012
+	build_cost = -0.015
+	cultural_tradition_cost = 0.2
+	
+}
+
+######################################################
+#贤达智者
+privateer = {
+        stability_investment = 2.0
+        diplomatic_skill = 1.5
+	cultural_tradition_cost = 0.2
+	
+}
+
+######################################################
+#兵法名家
+sergeant_major_general = {
+	army_tradition = 0.008
+	army_tradition_cost = 0.05
+	cultural_tradition_cost = 0.15
+	
+}
+
+######################################################
+#三军先锋
+grand_captain = {
+	leader_shock = 0.25
+	army_tradition = -0.002
+	land_morale = 0.1
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+
+######################################################
+#军事统帅
+army_organiser = {
+	leader_fire = 0.25
+	army_tradition = -0.002
+	land_forcelimit_modifier = 0.02
+	discipline = 0.01
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+
+######################################################
+#卓越将领
+commandant = {
+	discipline = 0.02
+	land_morale = 0.12
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+
+######################################################
+#军需官员
+quartermaster = {
+	leader_naval_manuever = 0.25
+	army_tradition = -0.002
+	infantry_cost = -0.015
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+
+######################################################
+#征兵官员
+recruitmaster = {
+	global_manpower_modifier = 0.04
+	reinforce_speed = 0.05
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+
+######################################################
+#防御专家
+fortification_expert = { 
+	defensiveness = 0.15
+	land_morale = -0.1
+	global_spy_defence = 0.02
+	army_tradition_cost = 0.1
+	cultural_tradition_cost = 0.1
+}
+######################################################
+#法家酷吏
+inquisitor = { 
+	global_spy_defence = 0.05
+	stability_cost_modifier = 0.05
+	missionary_placement_chance = 0.005
+	cultural_tradition_cost = 0.2
+}
+######################################################
+#舌辩之才
+ambassador = {
+	diplomatic_skill = 0.5
+	badboy = -0.12
+	cultural_tradition_cost = 0.2
+
+}
+
+######################################################
+#直言之臣
+grand_marshal = {
+	legitimacy = 0.02
+	stability_investment = 1.25
+	cultural_tradition_cost = 0.2
+}

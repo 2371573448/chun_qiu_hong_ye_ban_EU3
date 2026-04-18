@@ -1,0 +1,20 @@
+government =fengjian
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = liyuejiaohua 
+primary_culture = dongyi
+capital = 300
+
+
+2100.1.1 = { decision = tuposanjunguizhi }
+
+2246.1.2 = { 
+	religion = rujia
+}

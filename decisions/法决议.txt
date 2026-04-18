@@ -1,0 +1,43 @@
+country_decisions = { 
+	fajiawending = { 
+		potential = { 
+			religion = fajia
+			idea = espionage
+		}
+		allow = { 
+			years_of_income = 0.05
+			OR = {
+				not = {
+					has_country_flag = lianzuokaiqi
+				}
+				had_country_flag = { 
+					flag = lianzuobiaozhi
+					days = 365
+				}
+			}
+		}
+		effect = { 
+			stability = 1
+			set_country_flag = lianzuokaiqi
+			set_country_flag = lianzuobiaozhi
+			years_of_income = -0.04
+			any_owned = { 
+				limit = { 
+					has_province_modifier = monarch_territory
+				}
+				owner = {
+					treasury = -10
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+					owner = { 
+						stability = 3
+					}
+				}
+			}
+		}
+	}

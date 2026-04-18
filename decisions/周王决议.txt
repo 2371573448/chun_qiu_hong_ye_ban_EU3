@@ -1,0 +1,32 @@
+country_decisions = { 
+	#####变身周天子######
+	bianshen_PAP = { 
+		potential = { 
+			tag = ZHG
+		}
+		allow = { 
+			NOT = { 
+				exists = PAP
+			}
+			owns = 351
+			owns = 353
+			war = no
+		}
+		effect = { 
+			add_core = 351
+			add_core = 352
+			add_core = 353
+			add_core = 191
+			add_core = 207
+			add_core = 212
+			capital = 351
+			prestige = 0.25
+			change_tag = PAP
+			elector = yes
+			government = celestial_empire
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

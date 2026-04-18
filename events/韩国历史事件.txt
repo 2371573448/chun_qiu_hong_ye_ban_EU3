@@ -1,0 +1,46 @@
+#韩国吞并新郑
+country_event = {
+	id = 13111
+
+	major = yes
+
+	trigger = {
+		year = 2246
+		tag = HAN
+		controls =  356
+                                ZGO = ai
+		ZGO = { owns = 356 }
+		NOT = { has_global_flag = destoryZGO }
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	title = "EVTNAME13111"
+	desc = "EVTDESC13111"
+	
+
+	option = {
+		name = "EVTOPTA13111"
+		set_global_flag = destoryZGO
+		356 = { 	add_core = HAN
+			secede_province = HAN
+		}
+		ZGO = {
+			random_owned = {
+			limit = {
+				 region = yingchuan
+			}
+			secede_province = HAN
+			add_core = HAN
+			}
+			random_owned = {
+			limit = {
+				 region = yingchuan
+			}
+			secede_province = HAN
+			add_core = HAN
+			}
+		}
+	}
+}

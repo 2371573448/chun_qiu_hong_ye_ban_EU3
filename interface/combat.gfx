@@ -1,0 +1,123 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_may_retreat"	
+		texturefile = "gfx\\interface\\icon_noretreat.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_bg"	
+		texturefile = "gfx\\interface\\combat_bg.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_fort_icon"	
+		texturefile = "gfx\\interface\\fort_icon.tga"
+	}
+
+	
+	spriteType = {
+		name = "GFX_naval_combat_bg"	
+		texturefile = "gfx\\interface\\naval_combat_bg.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_siege_bg"	
+		texturefile = "gfx\\interface\\siege_bg.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_breach"	
+		texturefile = "gfx\\interface\\breach.tga"
+	}
+
+	spriteType = {
+		name = "GFX_assault"	
+		texturefile = "gfx\\interface\\assault.tga"
+	}
+
+	spriteType = {
+		name = "gfx_battlemodifiers"
+		texturefile = "gfx\\interface\\battle_modifiers.tga"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "gfx_counters"
+		texturefile = "gfx\\interface\\unit_counter.tga"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "gfx_siege_town"
+		texturefile = "gfx\\interface\\siege_town.tga"
+		noOfFrames = 8
+	}
+
+	progressbartype = {
+		name = "moralebar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		size = { x = 130 y = 12 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+
+	spriteType = {
+		name = "GFX_combatterrain_coniferous_forest"	
+		texturefile = "gfx\\interface\\combat_terrain_coniferous.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combatterrain_decidious_forest"	
+		texturefile = "gfx\\interface\\combat_terrain_decidious.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combatterrain_desert"	
+		texturefile = "gfx\\interface\\combat_terrain_desert.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combatterrain_farmland"	
+		texturefile = "gfx\\interface\\combat_terrain_farmland.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combatterrain_jungle"	
+		texturefile = "gfx\\interface\\combat_terrain_jungle.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combatterrain_marsh"	
+		texturefile = "gfx\\interface\\combat_terrain_marsh.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combatterrain_mountains"	
+		texturefile = "gfx\\interface\\combat_terrain_mountains.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combatterrain_plains"	
+		texturefile = "gfx\\interface\\combat_terrain_plains.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combatterrain_steppe"	
+		texturefile = "gfx\\interface\\combat_terrain_steppe.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combatdivider"	
+		texturefile = "gfx\\interface\\combat_divider.tga"
+	}
+
+	spriteType = {
+		name = "GFX_attritionicon"	
+		texturefile = "gfx\\interface\\attrition_icon.tga"
+	}
+
+
+}

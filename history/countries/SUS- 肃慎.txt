@@ -1,0 +1,36 @@
+government = tribal_federation
+aristocracy_plutocracy = -3
+centralization_decentralization = 4 
+innovative_narrowminded = 1
+mercantilism_freetrade = -4
+offensive_defensive = -2 
+land_naval = -3
+quality_quantity = 2
+serfdom_freesubjects = -2
+technology_group = nomad_group
+religion = animism 
+primary_culture = dongyi
+capital = 247	
+
+1918.1.1 = {
+	monarch = {
+		name = "ññ¼¦"
+               dynasty = "ËàÉ÷"
+		adm = 7
+		dip = 5
+		mil = 5
+	}
+}
+1923.1.23 = {
+	heir = {
+		name = "ºöº¹"
+		monarch_name = "ºöº¹"
+		dynasty = "ËàÉ÷"
+		birth_date = 1923.1.23
+		death_date = 1953.1.1
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}

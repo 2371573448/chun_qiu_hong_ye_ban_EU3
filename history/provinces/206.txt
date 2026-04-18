@@ -1,0 +1,68 @@
+
+owner = XSG
+controller = XSG
+culture = guanzhong
+religion = animism
+capital = "ºÃ®‡"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = XSG
+add_core = QIN
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+1948.1.1 = { owner = QIN
+             controller = QIN
+           }
+1978.1.1 = { add_core = QIN }
+2110.1.1 = { religion = liyuebadao }
+2222.1.1 = { citysize = 32000 }
+2244.1.1 = { 
+	hre = no
+}
+2244.1.2 = { 
+	hre = yes
+}
+2245.1.1 = { hre = no }
+2244.1.1 = { 
+	owner = XSG
+	controller = XSG
+	add_core = XSG
+	remove_core = QIN
+}
+2244.1.2 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = XSG
+}
+2246.1.2 = { 
+	remove_core = QIN
+	owner = XSG
+	controller = XSG
+	add_core = XSG
+}
+2247.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	remove_core = XSG
+}
+2360.1.1 = { religion = mojia }
+2492.2.1 = { 
+	owner = YOW
+	controller = YOW
+	add_core = YOW
+}
+2493.6.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

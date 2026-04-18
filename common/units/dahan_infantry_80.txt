@@ -1,0 +1,12 @@
+#ÎÀÇàÌú¾ü
+
+type = infantry
+unit_type = dahan
+
+maneuver = 1
+offensive_fire = 10
+defensive_fire = 10
+offensive_shock = 12
+defensive_shock = 11
+offensive_morale = 11
+defensive_morale = 10

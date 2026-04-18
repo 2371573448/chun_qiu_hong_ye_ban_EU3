@@ -1,0 +1,28 @@
+name = "召陵之战"
+casus_belli = jap_civil_war #不奉天子
+
+2042.1.1 = {
+	add_attacker = QIG
+	add_attacker = SON
+	add_attacker = ZGO
+	add_attacker = XUG
+	add_attacker = LUG
+	add_attacker = CAO
+	add_attacker = ZHU
+
+	add_defender = CAI
+	add_defender = CHU
+}
+
+2042.12.31 = {
+	rem_attacker = QIG
+	rem_attacker = SON
+	rem_attacker = ZGO
+	rem_attacker = XUG
+	rem_attacker = LUG
+	rem_attacker = CAO
+	rem_attacker = ZHU
+
+	rem_defender = CAI
+	rem_defender = CHU
+}

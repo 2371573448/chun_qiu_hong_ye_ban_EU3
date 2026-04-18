@@ -1,0 +1,115 @@
+country_event = {
+
+	id = 875
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME875"
+	desc = "EVTDESC875"
+	
+	option = {
+		name = "EVTOPTA875"	# Current ruler stays
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = "EVTOPTB875"	# An administrator type
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			ADM = 5							# 5 + random 0 to 9
+		}
+	}
+	option = {
+		name = "EVTOPTC875"	# A diplomat
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			DIP = 5							# 5 + random 0 to 9
+		}
+	}
+	option = {
+		name = "EVTOPTD875"	# A military man
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			MIL = 5							# 5 + random 0 to 9
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 876
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME875"
+	desc = "EVTDESC876"
+	
+	option = {
+		name = "EVTOPTB875"	# An administrator type
+		ai_chance = { factor = 40 }
+		define_ruler = {
+			ADM = 5							# 5 + random 0 to 9
+		}
+	}
+	option = {
+		name = "EVTOPTC875"	# A diplomat
+		ai_chance = { factor = 30 }
+		define_ruler = {
+			DIP = 5							# 5 + random 0 to 9
+		}
+	}
+	option = {
+		name = "EVTOPTD875"	# A military man
+		ai_chance = { factor = 30 }
+		define_ruler = {
+			MIL = 5							# 5 + random 0 to 9
+		}
+	}
+	
+}
+
+#外交吞并
+country_event = {
+
+	id = 877
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME877"
+	desc = "EVTDESC877"
+	
+	immediate = {
+		stability = -1
+	}
+	
+	option = {
+		name = "EVTOPTB877A"
+	}
+}
+
+# 篡位者
+country_event = { 
+	id = 878
+	is_triggered_only = yes
+	trigger = { 
+		num_of_cities = 3
+		NOT = { 
+			idea = press_gangs
+			prestige = 0.30
+		}
+	}
+	title = "EVTNAME878"
+	desc = "EVTDESC878"
+	option = { 
+		name = "EVTOPTB878A"
+		random_owned = { 
+			limit = { 
+				OR = { 
+					is_core = THIS
+					is_capital = yes
+				}
+			}
+			pretender_rebels = 2
+		}
+	}
+}

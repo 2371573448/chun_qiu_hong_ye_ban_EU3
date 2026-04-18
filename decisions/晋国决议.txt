@@ -1,0 +1,190 @@
+country_decisions = { 
+	bianshen_jin = { 
+		potential = { 
+			NOT = { 
+				exists = JIN
+			}
+			NOT = { 
+				tag = YAN
+			}
+			NOT = { 
+				tag = PAP
+			}
+			NOT = { 
+				tag = ZHO
+			}
+			NOT = { 
+				tag = WEI
+			}
+			NOT = { 
+				tag = HAN
+			}
+			NOT = { 
+				has_global_flag = zhanguokaishi
+			}
+			primary_culture = shanxi
+		}
+		allow = { 
+			owns = 72
+			owns = 73
+			owns = 75
+			owns = 79
+			is_core = 72
+			is_core = 73
+			is_core = 75
+			is_core = 79
+			war = no
+		}
+		effect = { 
+			hedong = { 
+				add_core = JIN
+			}
+			capital = 73
+			prestige = 0.05
+			change_tag = JIN
+			add_faction = temples
+			add_faction = enuchs
+			add_faction = bureaucrats
+			elector = yes
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	fuxing_jin = { 
+		potential = { 
+			NOT = { 
+				exists = JIN
+			}
+			OR = { 
+				tag = ZHO
+				tag = WEI
+				tag = HAN
+			}
+		}
+		allow = { 
+			owns = 72
+			owns = 73
+			owns = 75
+			owns = 76
+			owns = 84
+			owns = 89
+			owns = 61
+			owns = 63
+			is_core = 72
+			is_core = 73
+			is_core = 75
+			is_core = 76
+			is_core = 84
+			is_core = 89
+			is_core = 61
+			is_core = 63
+			war = no
+		}
+		effect = { 
+			hedong = { 
+				add_core = JIN
+			}
+			shangdang = { 
+				add_core = JIN
+			}
+			taiyuan = { 
+				add_core = JIN
+			}
+			capital = 73
+			prestige = 0.05
+			change_tag = JIN
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# ½úÇ¨¶¼ç­
+	make_capital_to_Jiang = { 
+		potential = { 
+			tag = JIN
+			owns = 73
+			NOT = { 
+				capital = 73
+			}
+			NOT = { 
+				exists = QUW
+			}
+			NOT = { 
+				has_country_flag = make_capital_to_Jiang
+			}
+		}
+		allow = { 
+			war = no
+			ADM = 6
+			monthly_income = 30
+		}
+		effect = { 
+			set_country_flag = make_capital_to_Jiang
+			centralization_decentralization = -1
+			stability = 1
+			capital = 73
+			add_core = 73
+			prestige = 0.10
+			73 = { 
+				base_tax = 1
+				citysize = 2000
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# ½ú_ÔªË§Ê¿Çä
+	JIN_gov1 = { 
+		potential = { 
+			tag = JIN
+			has_country_flag = jinwugongzu
+			government = fengjian
+			NOT = { 
+				government = yuanshuai
+			}
+			government_tech = 10
+			NOT = { 
+				government_tech = 13
+			}
+		}
+		allow = { 
+			stability = 0
+		}
+		effect = { 
+			government = yuanshuai
+			stability = -1
+			legitimacy = 0.25
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# ½ú_Ö´ÕþÊ¿Çä
+	JIN_gov2 = { 
+		potential = { 
+			tag = JIN
+			has_country_flag = jinwugongzu
+			government = yuanshuai
+			NOT = { 
+				government = zhizheng
+			}
+			government_tech = 16
+			NOT = { 
+				government_tech = 22
+			}
+		}
+		allow = { 
+			stability = 0
+		}
+		effect = { 
+			government = zhizheng
+			stability = -1
+			legitimacy = 0.25
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

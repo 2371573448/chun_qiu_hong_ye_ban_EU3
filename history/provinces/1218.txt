@@ -1,0 +1,101 @@
+owner = CHO
+controller = CHO
+culture = huaiyi
+religion = ancestor
+capital = "¿£åÙ"
+trade_goods = chinaware
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 15000
+fort1 = yes
+add_core = CHO
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2180.12.1 = { 
+	owner = WUG
+	controller = WUG
+}
+2222.1.1 = { 
+	citysize = 12000
+	fort2 = yes
+}
+2225.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2244.1.1 = { 
+	owner = CHO
+	controller = CHO
+	add_core = CHO
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = CHO
+}
+2246.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = CHU
+	religion = liyuebadao
+}
+2246.1.2 = { 
+	owner = CHO
+	controller = CHO
+	add_core = CHO
+	remove_core = WUG
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	remove_core = WUG
+}
+2255.1.1 = { 
+	add_core = CHU
+}
+2285.1.1 = { 
+	culture = nanchu
+	cot = yes
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.6.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	citysize = 36000
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

@@ -1,0 +1,344 @@
+government = fengjian
+aristocracy_plutocracy = 1
+centralization_decentralization = -3
+innovative_narrowminded = -2
+mercantilism_freetrade = -1
+offensive_defensive = -3
+land_naval = -3
+quality_quantity = -2
+serfdom_freesubjects = 0
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = shanxi
+capital = 71
+2050.1.1 = { 
+	set_country_flag = zongfazhidu
+}
+2100.1.1 = { 
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2150.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2245.1.1 = { 
+	capital = 71
+	government = enlightened_despotism
+}
+2245.1.1 = { 
+	monarch = { 
+		name = "虎"
+		dynasty = "韩"
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}
+2246.1.1 = { 
+	centralization_decentralization = -1
+	aristocracy_plutocracy = 3
+	serfdom_freesubjects = 1
+	innovative_narrowminded = -2
+	mercantilism_freetrade = -3
+	offensive_defensive = 0
+	land_naval = -3
+	quality_quantity = -3
+	monarch = { 
+		name = "舞"
+		dynasty = "韩"
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+	heir = {
+		name = "尻"
+		monarch_name = "尻"
+		dynasty = "韩"
+		birth_date = 2246.1.1
+		death_date = 2246.1.1
+		claim = 100
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+}
+2247.1.1 = { 
+	monarch = { 
+		name = "虎"
+		dynasty = "韩"
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}
+2250.1.1 = { 
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+}
+2274.1.1 = { 
+	monarch = { 
+		name = "启章"
+		dynasty = "韩"
+		adm = 6
+		dip = 3
+		mil = 2
+	}
+}
+2282.1.1 = { 
+	capital = 366
+}
+2290.1.1 = { 
+	leader = { 
+		name = "骉羌"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2301.1.1
+	}
+}
+2290.1.1 = { 
+	monarch = { 
+		name = "处"
+		dynasty = "韩"
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+2295.1.1 = { 
+	capital = 369
+	primary_culture = zhongyuan
+}
+2299.1.1 = { 
+	monarch = { 
+		name = "取"
+		dynasty = "韩"
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+2300.1.1 = { 
+	set_country_flag = fengjunzhidu
+}
+2312.1.1 = { 
+	monarch = { 
+		name = "文"
+		dynasty = "韩"
+		adm = 2
+		dip = 6
+		mil = 3
+	}
+}
+2322.1.1 = { 
+	monarch = { 
+		name = "哀"
+		dynasty = "韩"
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}
+2323.1.1 = { 
+	capital = 356
+}
+2324.1.1 = { 
+	monarch = { 
+		name = "若山"
+		dynasty = "韩"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+2324.1.1 = { 
+	leader = { 
+		name = "韩襄"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 5
+		siege = 1
+		death_date = 2328.1.1
+	}
+}
+2331.1.1 = { 
+	leader = { 
+		name = "韩明"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 2
+		manuever = 3
+		siege = 3
+		death_date = 2334.1.1
+	}
+}
+2336.1.1 = { 
+	monarch = { 
+		name = "武"
+		dynasty = "韩"
+		adm = 7
+		dip = 8
+		mil = 6
+	}
+}
+2343.1.1 = { 
+	# 申不害变法
+	religion = fajia
+	aristocracy_plutocracy = 2
+	innovative_narrowminded = -3
+	serfdom_freesubjects = 2
+	decision = shenbuhaibianfa3
+}
+2350.1.1 = { 
+	set_country_flag = hujizhidu
+}
+2361.1.1 = { 
+	# 申不害去世，韩国衰败
+	aristocracy_plutocracy = 1
+	centralization_decentralization = 2
+	innovative_narrowminded = 3
+	offensive_defensive = 1
+	land_naval = 0
+	quality_quantity = 1
+}
+2366.1.1 = { 
+	monarch = { 
+		name = "威"
+		dynasty = "韩"
+		adm = 3
+		dip = 4
+		mil = 6
+	}
+}
+2387.1.1 = { 
+	monarch = { 
+		name = "襄"
+		dynasty = "韩"
+		adm = 6
+		dip = 6
+		mil = 3
+	}
+}
+2399.1.1 = { 
+	leader = { 
+		name = "暴鸢"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 3
+		manuever = 2
+		siege = 2
+		death_date = 2424.1.1
+	}
+}
+2400.1.1 = { 
+	set_country_flag = guanliaozhidu
+}
+2403.1.1 = { 
+	monarch = { 
+		name = "咎"
+		dynasty = "韩"
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+}
+2426.1.1 = { 
+	monarch = { 
+		name = "桓"
+		dynasty = "韩"
+		adm = 2
+		dip = 5
+		mil = 6
+	}
+}
+2428.1.1 = { 
+	leader = { 
+		name = "靳磺"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 1
+		manuever = 4
+		siege = 2
+		death_date = 2436.1.1
+	}
+}
+2435.1.1 = { 
+	# 白起攻韩，拔野王，韩献上党求和，上党太守冯亭投赵，引发长平之战
+	offensive_defensive = 0
+	quality_quantity = 0
+}
+2436.1.1 = { 
+	leader = { 
+		name = "冯亭"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 4
+		manuever = 5
+		siege = 1
+		death_date = 2439.1.1
+	}
+}
+2458.1.1 = { 
+	leader = { 
+		name = "韩腾"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 4
+		manuever = 4
+		siege = 1
+		death_date = 2468.1.1
+	}
+}
+2460.1.1 = { 
+	monarch = { 
+		name = "安"
+		dynasty = "韩"
+		adm = 4
+		dip = 6
+		mil = 3
+	}
+}
+2492.2.1 = {
+# 项羽分封诸侯王，不使韩王就国，令己将郑昌王韩
+	monarch = { 
+		name = "昌"
+		dynasty = "郑"
+		adm = 5
+		dip = 6
+		mil = 6
+	}  
+}
+2492.1	0.1 = {
+# 汉攻取韩地，命韩宗室信都（韩王信）王韩
+	monarch = { 
+		name = "信都"
+		dynasty = "韩"
+		adm = 5
+		dip = 6
+		mil = 7
+		leader = {	
+			name = "韩王信"
+			type = general
+			rank = 0
+			fire = 4
+			shock = 3
+			manuever = 3
+			siege = 1
+		}
+	}
+}  

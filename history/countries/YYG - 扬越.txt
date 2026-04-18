@@ -1,0 +1,36 @@
+government = tribal_federation
+aristocracy_plutocracy = -3
+centralization_decentralization = 1
+innovative_narrowminded = -1
+mercantilism_freetrade = -2
+offensive_defensive = 4
+land_naval = -5
+quality_quantity = -3
+serfdom_freesubjects = 0
+technology_group = baiyue
+religion = ancestor
+primary_culture = yangyue
+capital = 530
+
+1918.1.1 = {
+	monarch = {
+		name = "ÎÀ¹­"
+               dynasty = "ØÂ"
+		adm = 7
+		dip = 5
+		mil = 5
+	}
+}
+1923.1.23 = {
+	heir = {
+		name = "æ§"
+		monarch_name = "æ§"
+		dynasty = "ØÂ"
+		birth_date = 1923.1.23
+		death_date = 1953.1.1
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}

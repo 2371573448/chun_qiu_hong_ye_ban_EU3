@@ -1,0 +1,365 @@
+province_decisions = {
+        flood_attack_355 = { #Ë®ÑÍ´óÁº
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 355
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        358 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+                        380 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+                                           358 = { owner = { war_with = this }}
+                                           380 = { owner = { war_with = this }}
+                                }
+			}
+                }
+        }
+
+        flood_attack_124 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 124
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        130 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+                        360 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+                                           130 = { owner = { war_with = this }}
+                                           360 = { owner = { war_with = this }}
+                                }
+			}
+                }
+        }
+
+        flood_attack_361 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 361
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        363 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+                        347 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+                                           363 = { owner = { war_with = this }}
+                                           347 = { owner = { war_with = this }}
+                                }
+			}
+                }
+        }
+
+       flood_attack_339 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 339
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        330 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+                                330 = { owner = { war_with = this }}
+			}
+                }
+        }
+
+        flood_attack_482 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 482
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        466 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+                                466 = { owner = { war_with = this }}
+			}
+                }
+        }
+
+        flood_attack_480 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 480
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        462= {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+                                462 = { owner = { war_with = this }}
+			}
+                }
+        }
+
+        flood_attack_65 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 65
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        61 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+                                61 = { owner = { war_with = this }}
+			}
+                }
+        }
+
+        flood_attack_346 = {
+		potential = {
+			not = { 
+				has_province_modifier = flood_made
+			}
+			province_id = 346
+		}
+		allow = {
+			owner = {
+				officials = 1
+                                treasury = 100
+                        }
+			or={
+			owner={not={has_country_flag = guanbijuehegongcheng}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				officials = -1
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "flood_made"
+				duration = 3650
+			}
+                        324 = {
+                              	add_province_modifier = {
+				        name = "flood_seige"
+				        duration = 730
+			        }
+                        }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+                                324 = { owner = { war_with = this }}
+			}
+                }
+        }
+
+}

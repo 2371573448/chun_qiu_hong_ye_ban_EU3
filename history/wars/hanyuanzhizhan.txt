@@ -1,0 +1,12 @@
+name = "º«Ô­Ö®Õ½"
+casus_belli = cb_dishonored_call #
+
+2053.1.1 = {
+	add_attacker = QIN
+	add_defender = JIN
+}
+
+2053.10.1  = {
+	rem_attacker = QIN
+	rem_defender = JIN
+}

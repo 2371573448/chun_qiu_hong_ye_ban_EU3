@@ -1,0 +1,13 @@
+
+culture = dian
+religion = ancestor
+capital = "µá³Ø"
+trade_goods = copper
+hre = no
+base_tax = 5
+manpower = 0
+owner = DGU
+controller = DGU
+citysize = 37000
+fort1 = yes
+add_core = DGU

@@ -1,0 +1,548 @@
+province_decisions = { 
+	daojiaanzhi1 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				not = {
+					has_country_modifier = daojianongju
+				}
+				not = {
+					has_country_modifier = daojianongtian
+				}
+				not = {
+					has_country_modifier = daojiafangwu
+				}
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 20
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -20
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin1"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi2 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				has_country_modifier = daojianongju
+				not = {
+					has_country_modifier = daojianongtian
+				}
+				not = {
+					has_country_modifier = daojiafangwu
+				}
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 100
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -100
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin2"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi3 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				not = {
+					has_country_modifier = daojianongju
+				}
+				has_country_modifier = daojianongtian
+				not = {
+					has_country_modifier = daojiafangwu
+				}
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 100
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -100
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin3"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi4 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				not = {
+					has_country_modifier = daojianongju
+				}
+				not = {
+					has_country_modifier = daojianongtian
+				}
+				has_country_modifier = daojiafangwu
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 100
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -100
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin4"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi5 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				has_country_modifier = daojianongju
+				has_country_modifier = daojianongtian
+				not = {
+					has_country_modifier = daojiafangwu
+				}
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 250
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -250
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin5"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi6 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				not = {
+					has_country_modifier = daojianongju
+				}
+				has_country_modifier = daojianongtian
+				has_country_modifier = daojiafangwu
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 250
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -250
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin6"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi7 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				has_country_modifier = daojianongju
+				not = {
+					has_country_modifier = daojianongtian
+				}
+				has_country_modifier = daojiafangwu
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 250
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -250
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin7"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaanzhi8 = { 
+		potential = { 
+			owner = {
+				capital_scope = {
+					has_province_modifier = daojialiumindaianzhi
+				}
+				has_country_modifier = daojianongju
+				has_country_modifier = daojianongtian
+				has_country_modifier = daojiafangwu
+			}
+			not = { has_province_modifier = daojialiumin1 }
+			not = { has_province_modifier = daojialiumin2 }
+			not = { has_province_modifier = daojialiumin3 }
+			not = { has_province_modifier = daojialiumin4 }
+			not = { has_province_modifier = daojialiumin5 }
+			not = { has_province_modifier = daojialiumin6 }
+			not = { has_province_modifier = daojialiumin7 }
+			not = { has_province_modifier = daojialiumin8 }
+		}
+		allow = { 
+			owner = { 
+				officials = 1
+				treasury = 500
+			}
+		}
+		effect = { 
+			religion = daojia
+			owner = {
+				officials = -1
+				treasury = -500
+				capital_scope = {
+					remove_province_modifier = daojialiumindaianzhi
+				}
+			}
+			citysize = 2000
+			add_province_modifier = {
+				name = "daojialiumin8"
+				duration = 3650
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}
+country_decisions = { 
+	daojiaxiyinliuminjueyikai = { 
+		potential = { 
+			religion = daojia
+			not = { 
+				has_country_modifier = daojiaxiyinliumin
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			add_country_modifier = {
+				name = "daojiaxiyinliumin"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiaxiyinliuminjueyiguan = { 
+		potential = { 
+			has_country_modifier = daojiaxiyinliumin
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			remove_country_modifier = daojiaxiyinliumin
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojianongjujueyikai = { 
+		potential = { 
+			has_country_modifier = daojiaxiyinliumin
+			not = { 
+				has_country_modifier = daojianongju
+			}
+			not = {
+				or = {
+					has_country_flag = daojialiuminfangzhigaizhengce
+					capital_scope = {
+						has_province_modifier = daojialiumindaianzhi
+					}
+				}
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			add_country_modifier = {
+				name = "daojianongju"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojianongjujueyiguan = { 
+		potential = { 
+			has_country_modifier = daojianongju
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			remove_country_modifier = daojianongju
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojianongtianjueyikai = { 
+		potential = { 
+			has_country_modifier = daojiaxiyinliumin
+			not = { 
+				has_country_modifier = daojianongtian
+			}
+			not = {
+				or = {
+					has_country_flag = daojialiuminfangzhigaizhengce
+					capital_scope = {
+						has_province_modifier = daojialiumindaianzhi
+					}
+				}
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			add_country_modifier = {
+				name = "daojianongtian"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojianongtianjueyiguan = { 
+		potential = { 
+			has_country_modifier = daojianongtian
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			remove_country_modifier = daojianongtian
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiafangwujueyikai = { 
+		potential = { 
+			has_country_modifier = daojiaxiyinliumin
+			not = { 
+				has_country_modifier = daojiafangwu
+			}
+			not = {
+				or = {
+					has_country_flag = daojialiuminfangzhigaizhengce
+					capital_scope = {
+						has_province_modifier = daojialiumindaianzhi
+					}
+				}
+			}
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			add_country_modifier = {
+				name = "daojiafangwu"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	daojiafangwujueyiguan = { 
+		potential = { 
+			has_country_modifier = daojiafangwu
+		}
+		allow = { 
+			diplomats = 1
+		}
+		effect = { 
+			diplomats = -1
+			remove_country_modifier = daojiafangwu
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

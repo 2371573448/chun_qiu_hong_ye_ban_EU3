@@ -1,0 +1,423 @@
+government = fengjian
+aristocracy_plutocracy = 0
+centralization_decentralization = -3
+innovative_narrowminded = -2
+mercantilism_freetrade = -2
+offensive_defensive = -2
+land_naval = -4
+quality_quantity = -2
+serfdom_freesubjects = 2
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = shanxi
+capital = 77
+2050.1.1 = { 
+	set_country_flag = zongfazhidu
+}
+2100.1.1 = { 
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2150.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2245.1.1 = { 
+	capital = 79
+	government = enlightened_despotism
+	set_country_flag = sitianzhidu
+}
+2245.1.1 = { 
+	set_country_flag = sitianzhidu
+	set_country_flag = junxianzhidu
+	set_country_flag = fengjunzhidu
+	monarch = { 
+		name = "驹"
+		dynasty = "魏"
+		adm = 6
+		dip = 8
+		mil = 5
+	}
+}
+2246.1.1 = { 
+	centralization_decentralization = -3
+	aristocracy_plutocracy = 2
+	serfdom_freesubjects = 2
+	innovative_narrowminded = -2
+	mercantilism_freetrade = -3
+	offensive_defensive = -2
+	land_naval = -4
+	quality_quantity = -2
+	religion = fajia
+	monarch = { 
+		name = "枫叶"
+		dynasty = "魏"
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+}
+2246.1.2 = {
+	religion = liyuejiaohua
+}
+2247.1.1 = { 
+	monarch = { 
+		name = "驹"
+		dynasty = "魏"
+		adm = 6
+		dip = 8
+		mil = 5
+	}
+}
+2250.1.1 = { 
+	set_country_flag = junxianzhidu
+}
+2253.1.1 = { 
+	# 魏文侯继位，礼贤下士，魏国开始强大
+	monarch = { 
+		name = "斯"
+		dynasty = "魏"
+		adm = 9
+		dip = 9
+		mil = 7
+	}
+	aristocracy_plutocracy = 3
+	innovative_narrowminded = -3
+}
+2268.1.1 = { 
+	leader = { 
+		name = "翟角"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2293.1.1
+	}
+}
+2280.1.1 = { 
+	# 魏文侯任李悝为相，开始变法
+	set_global_flag = fajiachuanbo
+	religion = fajia
+	government = reformed_despotism
+	centralization_decentralization = -4
+	innovative_narrowminded = -4
+	mercantilism_freetrade = -3
+	serfdom_freesubjects = 4
+}
+2288.1.1 = { 
+	leader = { 
+		name = "乐羊"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 5
+		manuever = 4
+		siege = 2
+		death_date = 2302.1.1
+	}
+}
+2288.1.1 = { 
+	# 魏文侯拜吴起为大将，攻略河西，创魏武卒
+	leader = { 
+		name = "吴起"
+		type = general
+		rank = 1
+		fire = 6
+		shock = 6
+		manuever = 6
+		siege = 3
+		death_date = 2313.1.1
+	}
+	decision = likuibianfa3
+}
+2293.1.1 = { 
+	leader = { 
+		name = "翟角"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 2298.1.1
+	}
+}
+2300.1.1 = { 
+	set_country_flag = fengjunzhidu
+}
+2303.1.1 = { 
+	monarch = { 
+		name = "击"
+		dynasty = "魏"
+		adm = 7
+		dip = 6
+		mil = 8
+	}
+}
+2313.1.1 = { 
+	leader = { 
+		name = "吴起"
+		type = general
+		rank = 1
+		fire = 6
+		shock = 6
+		manuever = 6
+		siege = 3
+		death_date = 2314.1.1
+	}
+}
+2313.1.1 = { 
+	leader = { 
+		name = "公叔痤"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 4
+		manuever = 3
+		siege = 2
+		death_date = 2338.1.1
+	}
+}
+2329.1.1 = { 
+	# 魏罃与公子缓争位，终致韩赵干涉，浊泽之战，魏国大败，幸韩赵内讧退兵，魏罃继位，是为魏惠王，然魏国经此大乱，国势转衰
+	monarch = { 
+		name = "罂"
+		dynasty = "魏"
+		adm = 7
+		dip = 4
+		mil = 6
+	}
+	primary_culture = dongtu
+}
+2329.1.1 = { 
+	government = enlightened_despotism
+	centralization_decentralization = -3
+	innovative_narrowminded = -2
+}
+2337.1.1 = { 
+	capital = 358
+	primary_culture = dongtu
+}
+2338.1.1 = { 
+	leader = { 
+		name = "庞涓"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 4
+		manuever = 3
+		siege = 3
+		death_date = 2357.1.1
+	}
+}
+2350.1.1 = { 
+	set_country_flag = hujizhidu
+}
+2357.1.1 = { 
+	# 马陵之战，魏军全军覆没，主将庞涓战死，魏国彻底衰落
+	centralization_decentralization = -1
+	innovative_narrowminded = 0
+	offensive_defensive = -1
+	land_naval = -2
+	quality_quantity = 0
+}
+2358.1.1 = { 
+	leader = { 
+		name = "龙贾"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 5
+		manuever = 4
+		siege = 2
+		death_date = 2378.1.1
+	}
+}
+2373.1.1 = { 
+	leader = { 
+		name = "公孙衍"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 4
+		siege = 1
+		death_date = 2381.1.1
+	}
+}
+2380.1.1 = { 
+	monarch = { 
+		name = "嗣"
+		dynasty = "魏"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+2393.1.1 = { 
+	leader = { 
+		name = "公孙喜"
+		type = general
+		rank = 2
+		fire = 5
+		shock = 5
+		manuever = 3
+		siege = 1
+		death_date = 2405.1.1
+	}
+}
+2400.1.1 = { 
+	set_country_flag = guanliaozhidu
+}
+2403.1.1 = { 
+	monarch = { 
+		name = "速"
+		dynasty = "魏"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+2408.1.1 = { 
+	# 魏昭王献河东四百里地于秦，开赂秦先河
+	centralization_decentralization = 1
+	innovative_narrowminded = 1
+	offensive_defensive = 0
+}
+2418.1.1 = { 
+	leader = { 
+		name = "晋鄙"
+		type = general
+		rank = 2
+		fire = 1
+		shock = 4
+		manuever = 3
+		siege = 2
+		death_date = 2442.1.1
+	}
+}
+2422.1.1 = { 
+	leader = { 
+		name = "段干崇"
+		type = general
+		rank = 2
+		fire = 3
+		shock = 1
+		manuever = 2
+		siege = 1
+		death_date = 2430.1.1
+	}
+}
+2422.1.1 = { 
+	monarch = { 
+		name = "圉"
+		dynasty = "魏"
+		adm = 7
+		dip = 7
+		mil = 8
+	}
+}
+2423.1.1 = { 
+	leader = { 
+		name = "芒卯"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 2
+		manuever = 5
+		siege = 2
+		death_date = 2426.1.1
+	}
+}
+2438.1.1 = { 
+	leader = { 
+		name = "新垣衍"
+		type = general
+		rank = 2
+		fire = 1
+		shock = 4
+		manuever = 3
+		siege = 3
+		death_date = 2448.1.1
+	}
+}
+2438.1.1 = { 
+	leader = { 
+		name = "魏无忌"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 4
+		manuever = 6
+		siege = 1
+		death_date = 2455.1.1
+	}
+}
+2455.1.1 = { 
+	# 信陵君卒，从此魏再无能抗秦之人
+	centralization_decentralization = 4
+}
+2456.1.1 = { 
+	monarch = { 
+		name = "午"
+		dynasty = "魏"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+2471.1.1 = { 
+	monarch = { 
+		name = "假"
+		dynasty = "魏"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+2489.10.1 = { 
+	monarch = { 
+		name = "咎"
+		dynasty = "魏"
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+2491.6.1 = {
+	# 章邯围临济，魏咎自杀。嗣后其弟魏豹继续抗秦 
+	monarch = { 
+		name = "豹"
+		dynasty = "魏"
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+
+2494.11.1 = { 
+	monarch = { 
+		name = "越"
+		dynasty = "彭"
+		adm = 4
+		dip = 4
+		mil = 8
+		leader = {	
+			name = "彭越"
+			type = general
+			rank = 0
+			fire = 4
+			shock = 4
+			manuever = 6
+			siege = 2
+		}
+	}
+}

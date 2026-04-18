@@ -1,0 +1,36 @@
+government = tribal_despotism
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = nomad_group
+religion = animism
+primary_culture = xiongnu
+capital = 143
+
+1918.1.1 = {
+	monarch = {
+		name = "≤Æ"
+               dynasty = "ºß"
+		adm = 7
+		dip = 5
+		mil = 5
+	}
+}
+1923.1.23 = {
+	heir = {
+		name = "÷Ÿ"
+		monarch_name = "÷Ÿ"
+		dynasty = "ºß"
+		birth_date = 1923.1.23
+		death_date = 1953.1.1
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}

@@ -1,0 +1,238 @@
+#战国开始
+country_event = { 
+	id = 60005
+	major = yes
+	trigger = { 
+		OR = { 
+			tag = PAP
+			AND = { 
+				not = { 
+					ai = yes
+				}
+				PAP = { 
+					not = { 
+						exists = yes
+					}
+				}
+			}
+		}
+		not = { 
+			has_global_flag = zhanguokaishi
+		}
+		OR = { 
+			AND = { 
+				year = 2218
+				not = { 
+					has_global_flag = daizhou_lv4
+				}
+				not = { 
+					has_global_flag = fuzhou_lv4
+				}
+			}
+			AND = { 
+				year = 2250
+				not = { 
+					has_global_flag = daizhou_lv5
+				}
+				not = { 
+					has_global_flag = fuzhou_lv5
+				}
+			}
+			AND = { 
+				year = 2280
+				not = { 
+					has_global_flag = daizhou_lv6
+				}
+				not = { 
+					has_global_flag = fuzhou_lv6
+				}
+			}
+			AND = { 
+				year = 2320
+				not = { 
+					has_global_flag = daizhou_lv7
+				}
+				not = { 
+					has_global_flag = fuzhou_lv7
+				}
+			}
+			AND = { 
+				year = 2245
+				not = { 
+					hre_size = 15
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 48
+	}
+	title = "EVTNAME60005"
+	desc = "EVTDESC60005"
+	option = { 
+		name = "EVTOPTA60005"
+		set_global_flag = zhanguokaishi
+	}
+}
+
+#统一中国
+country_event = { 
+	id = 883
+	major = yes
+	trigger = { 
+		NOT = { tag = NPC }
+		NOT = { tag = SZG }
+		NOT = { has_global_flag = tongyizhongguo }
+		num_of_cities = 300
+		NOT = { 
+			any_country = { 
+				NOT = { tag = NPC }
+				NOT = { tag = SZG }
+				NOT = { num_of_cities = 200 }
+				exists = yes
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME883"
+	desc = "EVTDESC883"
+	option = { 
+		name = "EVTOPTA883"
+		prestige = 0.50
+		set_global_flag = tongyizhongguo
+	}
+}
+
+#中原解散
+country_event = { 
+	id = 88300
+	major = yes
+	trigger = { 
+		OR = { 
+			is_emperor = yes
+			tag = PAP
+			AND = { 
+				not = { 
+					ai = yes
+				}
+				PAP = { 
+					not = { 
+						exists = yes
+					}
+				}
+			}
+		}
+		year = 2280
+		not = { 
+			has_global_flag = zhongyuanjiesan
+		}
+		has_global_flag = zhongyuanjiesan
+		not = {
+			and = {
+				is_emperor = yes
+				ai = no
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME88300"
+	desc = "EVTDESC88300"
+	option = { 
+		name = "EVTOPTA88300"
+		dismantle_hre = yes
+		set_global_flag = zhongyuanjiesan
+	}
+}
+#开局重置贸易中心
+country_event = { 
+	id = 88301
+	major = yes
+	trigger = { 
+		tag = NPC
+		not = { 
+			has_global_flag = chongzhimaoyizhongxin
+		}
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME88300"
+	desc = "EVTDESC88300"
+	option = { 
+		name = "EVTOPTA88300"
+		set_global_flag = chongzhimaoyizhongxin
+		any_country = {
+			any_owned = { 
+				limit = {
+					cot=yes
+				}
+				cot=no
+				cot=yes
+			}
+		}
+		any_country = {
+			limit = {
+				not = { mercantilism_freetrade = 4 }
+			}
+			merchants = 1
+		}
+		any_country = {
+			limit = {
+				not = { mercantilism_freetrade = 3 }
+			}
+			merchants = 1
+		}
+		any_country = {
+			limit = {
+				not = { mercantilism_freetrade = 2 }
+			}
+			merchants = 1
+		}
+		any_country = {
+			limit = {
+				not = { mercantilism_freetrade = 1 }
+			}
+			merchants = 1
+		}
+		any_country = {
+			limit = {
+				not = { mercantilism_freetrade = 0 }
+			}
+			merchants = 1
+		}
+		any_country = {
+			limit = {
+				mercantilism_freetrade = 1
+			}
+			merchants = 2
+		}
+		any_country = {
+			limit = {
+				mercantilism_freetrade = 2
+			}
+			merchants = 2
+		}
+		any_country = {
+			limit = {
+				mercantilism_freetrade = 3
+			}
+			merchants = 2
+		}
+		any_country = {
+			limit = {
+				mercantilism_freetrade = 4
+			}
+			merchants = 2
+		}
+		any_country = {
+			limit = {
+				mercantilism_freetrade = 5
+			}
+			merchants = 2
+		}
+	}
+}

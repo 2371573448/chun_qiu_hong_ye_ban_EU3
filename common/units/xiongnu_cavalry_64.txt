@@ -1,0 +1,12 @@
+#ÐÙÅ«Æï±ø
+
+type = cavalry
+unit_type = xiongnu
+
+maneuver = 3
+offensive_morale = 9
+defensive_morale = 9
+offensive_fire = 9
+defensive_fire = 8
+offensive_shock = 8
+defensive_shock = 7

@@ -1,0 +1,61 @@
+country_decisions = { 
+	# ∑‚Ï¯Ã©…Ω
+	fengshangtaishang = { 
+		potential = { 
+			technology_group = chinese
+			not = { 
+				has_global_flag = fengshangtaishang
+			}
+		}
+		allow = { 
+			treasury = 5000
+			owns = 275
+			owns = 351
+			or = { 
+				tag = PAP
+				NOT = { 
+					exists = PAP
+				}
+			}
+			num_of_cities = 150
+			any_owned_province = { 
+				region = yuzhou
+			}
+			any_owned_province = { 
+				region = yangzhou
+			}
+			any_owned_province = { 
+				region = yanzhou
+			}
+			any_owned_province = { 
+				region = xuzhou
+			}
+			any_owned_province = { 
+				region = youzhou
+			}
+			any_owned_province = { 
+				region = qingzhou
+			}
+			any_owned_province = { 
+				region = jingzhou
+			}
+			any_owned_province = { 
+				region = bingzhou
+			}
+			any_owned_province = { 
+				region = jizhou
+			}
+		}
+		effect = { 
+			treasury = -5000
+			set_global_flag = fengshangtaishang
+			add_country_modifier = { 
+				name = "fengshangtaishang"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

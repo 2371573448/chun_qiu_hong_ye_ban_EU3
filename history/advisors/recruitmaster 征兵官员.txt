@@ -1,0 +1,46 @@
+#亦将亦相的历史人物
+
+advisor ={
+name ="田忌" 
+location =256
+skill =3
+type =recruitmaster
+date =2320.1.1
+death_date =2360.1.1
+}
+
+advisor ={
+name ="魏绛" 
+location =71
+skill =4
+type =recruitmaster
+date =2126.1.1
+death_date =2146.1.1
+}
+
+advisor ={
+name ="高渠弥" 
+location =356
+skill =4
+type =recruitmaster
+date =1960.1.1
+death_date =2004.1.1
+}
+
+advisor ={
+name ="仲由" 
+location =310
+skill =4
+type =recruitmaster
+date =2176.1.1 
+death_date =2218.1.1
+}
+
+advisor ={
+name ="夏侯婴" 
+location =232
+skill =4
+type =recruitmaster
+date =2489.1.1
+death_date =2526.1.1
+}

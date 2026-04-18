@@ -1,0 +1,754 @@
+country_decisions = { 
+	# 破除旧军制
+	tuposanjunguizhi = { 
+		potential = {
+			religion_group = christian
+			not = { 
+				has_country_flag = mil_reform1
+			}
+		}
+		allow = { 
+			land_tech = 9
+			advisor = army_reformer
+			army_reformer = 2
+			MIL = 5
+		}
+		effect = { 
+			set_country_flag = mil_reform1
+			prestige = 0.1
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 习武重军
+	xiwuzhongjun = { 
+		potential = { 
+			has_country_flag = mil_reform1
+			not = { 
+				has_country_flag = mil_reform2
+			}
+		}
+		allow = { 
+			land_tech = 27
+			OR = { 
+				NOT = { 
+					offensive_defensive = -1
+				}
+				NOT = { 
+					land_naval = -1
+				}
+			}
+			MIL = 6
+		}
+		effect = { 
+			set_country_flag = mil_reform2
+			prestige = 0.1
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	guoyeyitibingfu = { 
+		# 国野一体兵赋
+		potential = { 
+			NOT = { 
+				has_country_modifier = guoyeyitibingfu
+			}
+			NOT = { 
+				has_country_modifier = wanshanguoyeyitibingfu
+			}
+			NOT = { 
+				religion = animism
+			}
+			NOT = { 
+				religion = ancestor
+			}
+			has_country_flag = tianfuzhidu
+		}
+		allow = { 
+			NOT = { 
+				centralization_decentralization = 2
+			}
+			ADM = 7
+			stability = 1
+			advisor = rear_admiral
+			rear_admiral = 4
+		}
+		effect = { 
+			stability = -2
+			add_country_modifier = { 
+				name = "guoyeyitibingfu"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	wanshanguoyeyitibingfu = { 
+		# 完善国野制
+		potential = { 
+			has_country_modifier = guoyeyitibingfu
+			NOT = { 
+				has_country_modifier = wanshanguoyeyitibingfu
+			}
+			government_tech = 37
+			production_tech = 39
+		}
+		allow = { 
+			government_tech = 40
+			production_tech = 42
+			ADM = 7
+		}
+		effect = { 
+			years_of_income = -1
+			officials = -10
+			remove_country_modifier = guoyeyitibingfu
+			add_country_modifier = { 
+				name = "wanshanguoyeyitibingfu"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 毁车为行
+	huicheweixing = { 
+		potential = { 
+			tag = JIN
+			NOT = { 
+				has_country_modifier = huicheweixing
+			}
+		}
+		allow = { 
+			government_tech = 28
+			war_exhaustion = 6
+			advisor = commandant
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "huicheweixing"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 习车战
+	xichezhan = { 
+		potential = { 
+			OR = { 
+				unit_type = wuyue1
+				unit_type = bashu1
+				unit_type = baiyue
+			}
+			NOT = { 
+				has_country_modifier = xichezhan
+			}
+		}
+		allow = { 
+			land_tech = 28
+			MIL = 6
+			OR = { 
+				spices = 1
+				any_country = { 
+					num_of_cities = 15
+					land_tech = 28
+					OR = { 
+						unit_type = chinese
+						unit_type = qinguo
+						unit_type = qiguo
+						unit_type = zhaoguo
+						unit_type = weiguo
+						unit_type = hanguo
+						unit_type = yanguo
+					}
+					relation = { who = THIS value = 150 }
+				}
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "xichezhan"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}
+cultural_decisions = { 
+	# 打开仿制兵种选项
+	copy_open = { 
+		potential = { 
+			OR = { 
+				AND = { 
+					has_country_flag = mil_reform1
+					not = { 
+						has_country_flag = copy1
+					}
+				}
+				AND = { 
+					has_country_flag = mil_reform2
+					not = { 
+						has_country_flag = copy2
+					}
+				}
+			}
+			not = { 
+				has_country_flag = open_copy
+			}
+		}
+		allow = { 
+			ai = yes
+		}
+		effect = { 
+			set_country_flag = open_copy
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 关闭仿制兵种选项
+	copy_close = { 
+		potential = { 
+			has_country_flag = open_copy
+		}
+		allow = { }
+		effect = { 
+			clr_country_flag = open_copy
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 仿制戎狄军队
+	copy_nomad_group = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform1
+			not = { 
+				has_country_flag = copy1
+			}
+			not = { 
+				unit_type = nomad_group
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 2
+			any_neighbor_country = { 
+				unit_type = nomad_group
+			}
+		}
+		effect = { 
+			stability = -2
+			unit_type = nomad_group
+			set_country_flag = copy1
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 仿制东夷军队
+	copy_dongyi1 = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform1
+			not = { 
+				has_country_flag = copy1
+			}
+			not = { 
+				unit_type = dongyi1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 2
+			any_neighbor_country = { 
+				unit_type = dongyi1
+			}
+		}
+		effect = { 
+			stability = -2
+			unit_type = dongyi1
+			set_country_flag = copy1
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 仿制吴越军队
+	copy_wuyue1 = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform1
+			not = { 
+				has_country_flag = copy1
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 2
+			any_neighbor_country = { 
+				unit_type = wuyue1
+			}
+		}
+		effect = { 
+			stability = -2
+			unit_type = wuyue1
+			set_country_flag = copy1
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 仿制巴蜀军队
+	copy_bashu1 = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform1
+			not = { 
+				has_country_flag = copy1
+			}
+			not = { 
+				unit_type = bashu1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 2
+			any_neighbor_country = { 
+				unit_type = bashu1
+			}
+		}
+		effect = { 
+			stability = -2
+			unit_type = bashu1
+			set_country_flag = copy1
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	# 仿制齐国军队
+	copy_qiguo = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = qiguo
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = qiguo
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = qiguo
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	# 仿制秦国军队
+	copy_qinguo = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = qinguo
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = qinguo
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = qinguo
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	# 仿制楚国军队
+	copy_jingchu = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = jingchu
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = jingchu
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = jingchu
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	# 仿制燕国军队
+	copy_yanguo = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = yanguo
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = yanguo
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = yanguo
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	# 仿制赵国军队
+	copy_zhaoguo = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = zhaoguo
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = zhaoguo
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = zhaoguo
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	# 仿制魏国军队
+	copy_weiguo = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = weiguo
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = weiguo
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = weiguo
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	# 仿制韩国军队
+	copy_hanguo = { 
+		potential = { 
+			has_country_flag = open_copy
+			has_country_flag = mil_reform2
+			not = { 
+				has_country_flag = copy2
+			}
+			not = { 
+				unit_type = hanguo
+			}
+			not = { 
+				unit_type = wuyue1
+			}
+		}
+		allow = { 
+			MIL = 7
+			stability = 3
+			army_tradition = 0.25
+			any_neighbor_country = { 
+				unit_type = hanguo
+			}
+			treasury = 500
+		}
+		effect = { 
+			stability = -3
+			war_exhaustion = 4
+			army_tradition = -0.25
+			treasury = -500
+			unit_type = hanguo
+			legitimacy = -0.25
+			set_country_flag = copy2
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					unit_type = chinese
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 2360
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					legitimacy = 0.9
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+}

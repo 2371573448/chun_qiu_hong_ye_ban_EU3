@@ -1,0 +1,125 @@
+#征服东胡
+
+XNU_annex_DHU = {
+	
+	type = country
+
+	allow = {
+		tag = XNU
+		exists = DHU
+		year = 2245
+		OR = {
+			any_owned_province  = {
+			region = donghu
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = donghu }
+			}
+		}
+	}
+	abort = {
+
+	}
+	success = {       
+			owns = 793
+			owns = 794
+			owns = 795
+			owns = 796
+			owns = 797
+			owns = 798
+			owns = 750
+			owns = 751
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+		add_temp_claim = 793
+	  	add_temp_claim = 794
+		add_temp_claim = 795
+		add_temp_claim = 796
+		add_temp_claim = 797
+	  	add_temp_claim = 798
+		add_temp_claim = 750
+		add_temp_claim = 751
+	}
+	abort_effect = {
+		remove_temp_claim = 793
+		remove_temp_claim = 794
+	  	remove_temp_claim = 795
+	  	remove_temp_claim = 796
+		remove_temp_claim = 797
+		remove_temp_claim = 798
+	  	remove_temp_claim = 750
+	  	remove_temp_claim = 751
+	}
+	effect = {
+	  	prestige = 0.05
+		donghu = { add_core = XNU }
+		set_global_flag = miewangdonghu
+		
+	}
+}
+#征服月氏
+
+XNU_annex_YUE = {
+	
+	type = country
+
+	allow = {
+		tag = XNU
+		exists = YUE
+		has_global_flag = miewangdonghu
+		OR = {
+			any_owned_province  = {
+			region = yuezhi
+			}
+			any_owned_province  = {
+			any_neighbor_province = { region = yuezhi }
+			}
+		}
+	}
+	abort = {
+
+	}
+	success = {                
+			owns = 578
+			owns = 579
+			owns = 580
+			owns = 581
+			owns = 582
+			owns = 583
+			owns = 584
+			owns = 585
+			owns = 586
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+		add_temp_claim = 578
+	  	add_temp_claim = 579
+		add_temp_claim = 580
+		add_temp_claim = 581
+		add_temp_claim = 582
+	  	add_temp_claim = 583
+		add_temp_claim = 584
+		add_temp_claim = 585
+		add_temp_claim = 586
+	}
+	abort_effect = {
+		remove_temp_claim = 578
+		remove_temp_claim = 579
+	  	remove_temp_claim = 580
+	  	remove_temp_claim = 581
+		remove_temp_claim = 582
+		remove_temp_claim = 583
+	  	remove_temp_claim = 584
+	  	remove_temp_claim = 585
+		remove_temp_claim = 586	
+	}
+	effect = {
+	  	prestige = 0.05
+		yuezhi = { add_core = XNU }		
+	}
+}

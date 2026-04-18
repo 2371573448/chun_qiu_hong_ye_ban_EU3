@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_MNG_bg"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\china_bg.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_china_arrow"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\china_arrow.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_china_circle_bg"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\china_circle_bg.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_china_bureaucrat"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\china_bureaucrat.tga"
+	}
+	spriteType = {
+		name = "GFX_china_temple"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\china_temple.tga"
+	}
+	spriteType = {
+		name = "GFX_china_eunuch"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\china_eunuch.tga"
+	}
+
+}

@@ -1,0 +1,52 @@
+cultural_decisions = {
+	#借贷于商
+	jiedaiyushang = {
+		potential = {
+			war = yes
+			has_country_flag = zhengshangweiguo
+			NOT = {
+				has_country_modifier = jiedai
+			}
+			NOT = {
+				has_country_flag = jiedai
+			}
+		}
+		allow = {
+			legitimacy = 0.40
+		}
+		effect = {
+			set_country_flag = jiedai
+			add_country_modifier = {
+				name = "jiedai"
+				duration = 1825
+			}
+			prestige = -0.05
+			legitimacy = -0.05
+			treasury = 500
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#还贷于商
+	huandaiyushang = {
+		potential = {
+			has_country_modifier = shanxingtianxia
+			has_country_modifier = jiedai
+			has_country_flag = jiedai
+		}
+		allow = {
+			treasury = 500
+		}
+		effect = {
+			clr_country_flag = jiedai
+			remove_country_modifier = jiedai
+			prestige = 0.05
+			legitimacy = 0.05
+			treasury = -500
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

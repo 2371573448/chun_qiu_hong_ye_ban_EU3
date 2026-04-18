@@ -1,0 +1,112 @@
+#中山专属buff
+country_event = { 
+	id = 9300
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			tag = ZHS
+			any_owned_province = { 
+				not = { 
+					has_province_modifier = chengzhongyoushan1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME9300"
+	desc = "EVTDESC9300"
+	option = { 
+		name = "EVTOPTA9300"
+		any_country = { 
+			limit = { 
+				tag = ZHS
+			}
+			any_owned = { 
+				limit = { 
+					has_building = fort4
+					not = { 
+						has_province_modifier = chengzhongyoushan1
+					}
+				}
+				add_province_modifier = { 
+					name = "chengzhongyoushan1"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#中山专属buff去除
+country_event = { 
+	id = 9301
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				tag = ZHS
+			}
+			any_owned_province = { 
+				has_province_modifier = chengzhongyoushan1
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME9301"
+	desc = "EVTDESC9301"
+	option = { 
+		name = "EVTOPTA9301"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					tag = ZHS
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = chengzhongyoushan1
+			}
+		}
+	}
+}
+#墨家buff去除
+country_event = { 
+	id = 9999
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = { 
+				religion = mojia
+			}
+			OR = {
+				has_country_modifier = shangxianshangtong
+				has_country_modifier = feiyuefeiru
+				has_country_modifier = mozhetianxia
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME9999"
+	desc = "EVTDESC9999"
+	option = { 
+		name = "EVTOPTA9999"
+		any_country = { 
+			limit = { 
+				NOT = { 
+					religion = mojia
+				}
+			}
+			any_owned = { 
+				remove_country_modifier = shangxianshangtong
+				remove_country_modifier = feiyuefeiru
+				remove_country_modifier = mozhetianxia
+			}
+		}
+	}
+}
+}

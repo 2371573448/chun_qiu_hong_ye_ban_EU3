@@ -1,0 +1,40 @@
+owner = YQU
+controller = YQU
+culture = xirong
+religion = animism
+capital = "ÄàÑô"
+trade_goods = fur
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 16000
+fort1 = yes
+add_core = YQU
+cot = no
+1827.1.1 = { 
+	discovered_by = CHA
+}
+2222.1.1 = { 
+	citysize = 28000
+}
+2246.1.1 = { religion = liyuebadao }
+2246.1.2 = { religion = animism }
+2367.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 18000
+}
+2397.1.1 = { 
+	add_core = QIN
+	culture = guanzhong
+}
+2492.2.1 = { 
+	owner = YOW
+	controller = YOW
+	add_core = YOW
+}
+2492.11.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

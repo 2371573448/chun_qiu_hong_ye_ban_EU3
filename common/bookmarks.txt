@@ -1,0 +1,491 @@
+bookmark =
+{
+	name = "CHUNQIUKAIQI_NAME"
+	desc = "CHUNQIUKAIQI_DESC"
+	date = 1928.1.1
+	
+	country = PAP
+	country = JIN
+	country = CHU
+	country = QIG
+	country = QIN
+	country = SON
+	country = YAN
+	country = SZG
+	country = ZGO
+	country = LUG
+	country = WEG
+	country = WUG
+}
+
+bookmark =
+{
+	name = "PINGWANGDONGQIAN_NAME"
+	desc = "PINGWANGDONGQIAN_DESC"
+	date = 1928.1.2
+	
+	country = PAP
+	country = JIN
+	country = QIN
+	country = WEG
+	country = ZGO
+	country = GUO
+	country = ZHG
+}
+
+bookmark =
+{
+	name = "QUWODAIYI_NAME"
+	desc = "QUWODAIYI_DESC"
+	date = 1953.1.1
+	
+	country = QUW
+	country = JIN
+	country = PAP
+}
+
+bookmark =
+{
+	name = "ZHENGBOKEDUAN_NAME"
+	desc = "ZHENGBOKEDUAN_DESC"
+	date = 1976.1.1
+	
+	country = PAP
+	country = ZGO
+	country = WEG
+	country = SON
+	country = LUG
+}
+
+bookmark =
+{
+	name = "XUGEZHIZHAN_NAME"
+	desc = "XUGEZHIZHAN_DESC"
+	date = 1991.1.1
+	
+	country = PAP
+	country = ZGO
+	country = CHE
+	country = CAI
+	country = WEG
+}
+
+bookmark =
+{
+	name = "CHANGSHAOZHIZHAN_NAME"
+	desc = "CHANGSHAOZHIZHAN_DESC"
+	date = 2014.1.1
+	
+	country = QIG
+	country = LUG
+	country = SON
+}
+
+bookmark =
+{
+	name = "JIUYANCUNWEI_NAME"
+	desc = "JIUYANCUNWEI_DESC"
+	date = 2034.1.1
+	
+	country = QIG
+	country = YAN
+	country = WEG
+	country = XGO
+}
+
+bookmark =
+{
+	name = "ZHAOLINGHUIMENG_NAME"
+	desc = "ZHAOLINGHUIMENG_DESC"
+	date = 2042.1.1
+	
+	country = QIG
+	country = CHU
+	country = CAI
+	country = JIN
+	country = GUO
+	country = YUG
+}
+
+bookmark =
+{
+	name = "QINJINZHIHAO_NAME"
+	desc = "QINJINZHIHAO_DESC"
+	date = 2053.1.1
+	
+	country = JIN
+	country = QIN
+}
+
+bookmark =
+{
+	name = "HONGSHUIZHIZHAN_NAME"
+	desc = "HONGSHUIZHIZHAN_DESC"
+	date = 2060.1.1
+	
+	country = SON
+	country = CHU
+	country = QIG
+	country = LUG
+}
+
+bookmark =
+{
+	name = "CHENGPUZHIZHAN_NAME"
+	desc = "CHENGPUZHIZHAN_DESC"
+	date = 2066.1.1
+	
+	country = JIN
+	country = CHU
+	country = CAO
+	country = WEG
+	country = QIG
+	country = SON
+	country = QIN
+	country = CHE
+	country = CAI
+}
+
+bookmark =
+{
+	name = "CHENGBAXIRONG_NAME"
+	desc = "CHENGBAXIRONG_DESC"
+	date = 2071.1.1
+	
+	country = QIN
+	country = JIN
+	country = YQU
+}
+
+bookmark =
+{
+	name = "ZHAODUNSHIJUN_NAME"
+	desc = "ZHAODUNSHIJUN_DESC"
+	date = 2091.1.1
+	
+	country = JIN
+	country = CHU
+	country = ZGO
+	country = SON
+	country = PAP
+}
+
+bookmark =
+{
+	name = "BIZHIZHAN_NAME"
+	desc = "BIZHIZHAN_DESC"
+	date = 2101.1.1
+	
+	country = CHU
+	country = QIG
+	country = ZGO
+	country = SON
+	country = CHE
+}
+
+bookmark =
+{
+	name = "ANZHIZHAN_NAME"
+	desc = "ANZHIZHAN_DESC"
+	date = 2109.1.1
+	
+	country = QIG
+	country = JIN
+	country = LUG
+	country = CHU
+}
+
+ bookmark =
+{
+	name = "YANLINGZHIZHAN_NAME"
+	desc = "YANLINGZHIZHAN_DESC"
+	date = 2123.1.1
+	
+	country = JIN
+	country = CHU
+	country = ZGO
+	country = QIG
+	country = SON
+	country = LUG
+	country = WEG
+}
+
+ bookmark =
+{
+	name = "DAOGONGFUBA_NAME"
+	desc = "DAOGONGFUBA_DESC"
+	date = 2134.1.1
+	
+	country = JIN
+	country = CHU
+	country = SON
+	country = ZGO
+	country = QIN
+	country = QIG
+	country = LUG
+	country = WUG
+}
+
+ bookmark =
+{
+	name = "MIBINGHUIMENG_NAME"
+	desc = "MIBINGHUIMENG_DESC"
+	date = 2152.1.1
+	
+	country = SON
+	country = JIN
+	country = CHU
+	country = QIG
+	country = LUG
+	country = ZGO
+	country = WEG
+	country = CHE
+	country = CAI
+
+}
+
+ bookmark =
+{
+	name = "WUYUANBENWU_NAME"
+	desc = "WUYUANBENWU_DESC"
+	date = 2176.1.1
+	
+	country = WUG
+	country = CHU
+	country = JIN
+}
+
+ bookmark =
+{
+	name = "BAIJUZHIZHAN_NAME"
+	desc = "BAIJUZHIZHAN_DESC"
+	date = 2192.1.1
+	
+	country = WUG
+	country = CHU
+	country = QIN
+	country = YGO
+
+}
+
+ bookmark =
+{
+	name = "WOXINCHANGDAN_NAME"
+	desc = "WOXINCHANGDAN_DESC"
+	date = 2216.1.1
+	
+	country = YGO
+	country = WUG
+
+}
+
+ bookmark =
+{
+	name = "YUEWANGGOUJIAN_NAME"
+	desc = "YUEWANGGOUJIAN_DESC"
+	date = 2225.1.1
+	
+	country = YGO
+	country = JIN
+	country = CHU
+	country = QIG
+	country = QIN
+	country = PAP
+
+}
+
+ bookmark =
+{
+	name = "ZHIBOZHISI_NAME"
+	desc = "ZHIBOZHISI_DESC"
+	date = 2245.1.1
+	
+	country = JIN
+	country = ZHO
+	country = WEI
+	country = HAN
+}
+
+ bookmark =
+{
+	name = "QUNXIONGZHULU_NAME"
+	desc = "QUNXIONGZHULU_DESC"
+	date = 2246.1.1
+	
+	country = CHU
+	country = ZHO
+	country = WEI
+	country = HAN
+	country = QIN
+	country = QIG
+	country = YAN
+	country = QUG
+	country = YGO
+	country = WEG
+	country = ZGO
+	country = LUG
+	country = SON
+	country = YGO
+	country = WUG
+}
+bookmark =
+{
+	name = "TIANXIAZHULU_NAME"
+	desc = "TIANXIAZHULU_DESC"
+	date = 2246.1.2
+	country = JIN	
+	country = QIG	
+	country = CHU
+	country = YAN
+	country = ZHO
+	country = WEI
+	country = HAN
+	country = QIN
+	country = ZHI
+	country = SGU
+	country = YGO
+	country = WUG
+}
+ bookmark =
+{
+	name = "SANJIAFENJIN_NAME"
+	desc = "SANJIAFENJIN_DESC"
+	date = 2295.1.1
+	
+	country = JIN
+	country = ZHO
+	country = WEI
+	country = HAN
+
+}
+
+ bookmark =
+{
+	name = "TIANSHIDAIQI_NAME"
+	desc = "TIANSHIDAIQI_DESC"
+	date = 2319.1.1
+	
+	country = QIG
+	country = QIN
+	country = WEI
+	country = CHU
+}
+
+ bookmark =
+{
+	name = "WEIWEIJIUZHAO_NAME"
+	desc = "WEIWEIJIUZHAO_DESC"
+	date = 2344.1.1
+	
+	country = WEI
+	country = QIG
+	country = QIN
+	country = ZHO
+
+}
+
+ bookmark =
+{
+	name = "WUGUOFAQIN_NAME"
+	desc = "WUGUOFAQIN_DESC"
+	date = 2380.1.1
+	
+	country = QIN
+	country = HAN
+	country = WEI
+	country = CHU
+	country = ZHO
+	country = YAN
+	country = QIG
+
+}
+
+ bookmark =
+{
+	name = "YUEYIFAQI_NAME"
+	desc = "YUEYIFAQI_DESC"
+	date = 2413.1.1
+	
+	country = YAN
+	country = QIG
+
+}
+
+ bookmark =
+{
+	name = "CHANGPINGZHIZHAN_NAME"
+	desc = "CHANGPINGZHIZHAN_DESC"
+	date = 2438.1.1
+	
+	country = QIN
+	country = ZHO
+	country = WEI
+
+}
+
+ bookmark =
+{
+	name = "YISAOLIUHE_NAME"
+	desc = "YISAOLIUHE_DESC"
+	date = 2460.1.1
+	
+	country = QIN
+	country = HAN
+	country = WEI
+	country = CHU
+	country = ZHO
+	country = YAN
+	country = QIG
+
+} 
+ bookmark =
+{
+	name = "JIEGANERQI_NAME"
+	desc = "JIEGANERQI_DESC"
+	date = 2489.10.1
+	
+	country = QIN
+	country = CHU
+
+} 
+
+bookmark =
+{
+	name = "JULUZHIZHAN_NAME"
+	desc = "JULUZHIZHAN_DESC"
+	date = 2490.11.1
+	
+	country = QIN
+	country = CHU
+	country = ZHO
+	country = NAN
+} 
+
+bookmark =
+{
+	name = "XICHUBAWANG_NAME"
+	desc = "XICHUBAWANG_DESC"
+	date = 2492.2.1
+	
+	country = XCW
+	country = HNW
+} 
+bookmark =
+{
+	name = "PENGCHENGZHIZHAN_NAME"
+	desc = "PENGCHENGZHIZHAN_DESC"
+	date = 2493.4.1
+	
+	country = XCW
+	country = HNW
+} 
+bookmark =
+{
+	name = "GAIXIAZHIZHAN_NAME"
+	desc = "GAIXIAZHIZHAN_DESC"
+	date = 2496.12.1
+	
+	country = XCW
+	country = HNW
+	country = QIG
+} 

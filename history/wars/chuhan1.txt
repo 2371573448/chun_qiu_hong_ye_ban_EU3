@@ -1,0 +1,18 @@
+name = "汉伐关中之战"
+casus_belli = cb_imperial #
+
+2492.7.2 = {
+  # 汉以攻取关中约地为名出师攻三秦
+	add_attacker = HNW
+	add_defender = YOW
+	add_defender = SAI
+  add_defender = DIW
+}
+2492.8.1 = {
+  rem_defender = SAI
+	rem_defender = DIW
+}
+2493.6.1 = {
+	rem_defender = YOW
+  rem_attacker = HNW
+}

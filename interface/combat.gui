@@ -1,0 +1,937 @@
+guiTypes = {
+
+	windowType = {
+		name = "ship_unit"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=130 y=16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+			iconType =
+			{
+				name ="navy_icon"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 0 y = 4 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}
+			
+			instantTextBoxType = {
+				name = "ship_name"
+				position = { x = 25 y =12  }
+				format = left
+	
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 65
+				maxHeight = 16
+				Orientation = "UPPER_LEFT"
+
+				fixedsize = yes			
+			}
+			instantTextBoxType = {
+				name = "ship_str"
+				position = { x = 90 y =12  }
+				format = right
+	
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 29
+				maxHeight = 16
+				Orientation = "UPPER_LEFT"
+
+				fixedsize = yes			
+			}
+		}
+
+#-----------------------------------------------------------------
+
+	windowType = {
+		name = "combat"
+		backGround=""
+		position = { x=0 y=-512 }	
+		size = { x=512 y=512 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		Orientation = "LOWER_LEFT"
+
+		
+	
+		iconType =
+		{
+			name ="combat_bg"
+			spriteType = "GFX_combat_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="combat_naval_bg"
+			spriteType = "GFX_naval_combat_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="combat_may_retreat"
+			spriteType = "GFX_may_retreat"
+			position = { x= 0 y = 115 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = {
+				name = "closebutton"
+				position = { x = 310 y = -398 }
+				quadTextureSprite ="GFX_closebutton"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_LEFT"
+				shortcut = "ESCAPE"
+				clicksound = close_window
+		}
+
+		textBoxType = {
+			name = "label_battlename"
+			position = { x = 20 y = 115 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 230
+			maxHeight = 24
+			fixedsize = yes	
+		}
+
+
+		
+
+		iconType =
+		{
+			name ="combat_terrain1"
+			spriteType = "GFX_combatterrain_plains"
+			position = { x= 0 y = 263 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="combat_terrain2"
+			spriteType = "GFX_combatterrain_plains"
+			position = { x= 0 y = 327 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		textBoxType = {
+			name = "phase_name"
+			position = { x = 120 y = 315 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 80
+			maxHeight = 32
+
+			format = centre	
+		}
+
+		windowType = {
+			name = "naval"
+			backGround=""
+			position = { x=00 y=263 }	
+			size = { x=256 y=320 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+			
+				listboxType = 
+				{
+					name ="left_side"
+					position = { x = 0 y = 10 }
+					backGround=""
+					size = { x= 120 y = 100}
+					Orientation = "UPPER_LEFT"
+					horisontal = 0
+					spacing = 1
+					scrollbartype = "standardlistbox_noslider"
+					borderSize = {x = 0 y = 0}
+				}
+				
+				listboxType = 
+				{
+					name ="right_side"
+					position = { x = 190 y = 10 }
+					backGround=""
+					size = { x= 120 y = 100}
+					Orientation = "UPPER_LEFT"
+					horisontal = 0
+					spacing = 1
+					scrollbartype = "standardlistbox_noslider"
+					borderSize = {x = 0 y = 0}
+				}			
+			
+			}
+
+		windowType = {
+			name = "attacker"
+			backGround=""
+			position = { x=00 y=150 }	
+			size = { x=256 y=160 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+
+			iconType =
+			{
+				name ="shield"
+				spriteType = "GFX_thinshield"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+			iconType =
+			{
+				name ="leader_icon"
+				spriteType = "GFX_leader_types"
+				position = { x= 64 y = -2 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			textBoxType = {
+				name = "leader_name"
+				position = { x = 100 y = 5 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 200
+				maxHeight = 32	
+			}
+
+
+
+			iconType =
+			{
+				name ="morale"
+				spriteType = "moralebar"
+				position = { x= 70 y = 90 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+			textBoxType = {
+				name = "position_info"
+				position = { x = 0 y = 68 }
+				textureFile = ""
+				font = "Main_14_grey"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 64
+				maxHeight = 32	
+
+				format=centre
+			}
+			
+
+			textBoxType = {
+				name = "morale_label"
+				position = { x = 0 y = 88 }
+				textureFile = ""
+				font = "Main_14_grey"
+				borderSize = {x = 0 y = 0}
+				text = "COMBAT_MORALE"	
+				maxWidth = 64
+				maxHeight = 32	
+
+				format=centre
+			}
+
+
+
+
+			iconType =
+			{
+				name ="divider"
+				spriteType = "GFX_combatdivider"
+				position = { x= 210 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="divider2"
+				spriteType = "GFX_combatdivider"
+				position = { x= 210 y = 248 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="unit_type_1"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="unit_type_2"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 25 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="unit_type_3"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="unit_type_4"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 75 }
+				Orientation = "UPPER_LEFT"
+			}
+			textBoxType = {
+				name = "unit_type_1_value"
+				position = { x = 240 y = 20 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+
+			textBoxType = {
+				name = "unit_type_2_value"
+				position = { x = 240 y = 45 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+
+			textBoxType = {
+				name = "unit_type_3_value"
+				position = { x = 240 y = 70 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+			textBoxType = {
+				name = "unit_type_4_value"
+				position = { x = 240 y = 95 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}			
+
+
+
+		}
+
+
+
+
+
+
+		###### This window is a copy of the "attacker" window
+
+		windowType = {
+			name = "defender"
+			backGround=""
+			position = { x=00 y=394 }	
+			size = { x=256 y=160 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+
+			iconType =
+			{
+				name ="shield"
+				spriteType = "GFX_thinshield"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+			iconType =
+			{
+				name ="leader_icon"
+				spriteType = "GFX_leader_types"
+				position = { x= 64 y = -2 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			textBoxType = {
+				name = "leader_name"
+				position = { x = 100 y = 5 }
+				textureFile = ""
+				font = "Main_14_bold"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 200
+				maxHeight = 32	
+			}
+
+
+
+			iconType =
+			{
+				name ="morale"
+				spriteType = "moralebar"
+				position = { x= 70 y = 90 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			textBoxType = {
+				name = "position_info"
+				position = { x = 0 y = 68 }
+				textureFile = ""
+				font = "Main_14_grey"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 64
+				maxHeight = 32	
+
+				format=centre
+			}			
+
+			textBoxType = {
+				name = "morale_label"
+				position = { x = 0 y = 88 }
+				textureFile = ""
+				font = "Main_14_grey"
+				borderSize = {x = 0 y = 0}
+				text = "COMBAT_MORALE"	
+				maxWidth = 64
+				maxHeight = 32	
+
+				format=centre
+			}
+
+
+
+			iconType =
+			{
+				name ="unit_type_1"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="unit_type_2"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 25 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType =
+			{
+				name ="unit_type_3"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType =
+			{
+				name ="unit_type_4"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 220 y = 75 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			textBoxType = {
+				name = "unit_type_1_value"
+				position = { x = 240 y = 20 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+
+			textBoxType = {
+				name = "unit_type_2_value"
+				position = { x = 240 y = 45 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+
+			textBoxType = {
+				name = "unit_type_3_value"
+				position = { x = 240 y = 70 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+			textBoxType = {
+				name = "unit_type_4_value"
+				position = { x = 240 y = 95 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 70
+				maxHeight = 32	
+
+				format=right
+			}
+			
+
+
+
+		}
+
+	}
+
+
+
+	iconType =
+		{
+			name ="counter"
+			spriteType = "gfx_counters"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+	positionType = {
+		name = "counter_offset"
+		position = { x = 10 y = -16 }
+	}
+
+	positionType = {
+		name = "counter_start"
+		position = { x = 10 y = 148 }
+	}
+
+	positionType = {
+		name = "counter_start2"
+		position = { x = 10 y = -48 }
+	}
+
+	positionType = {
+		name = "counter_offset2"
+		position = { x = 10 y = 16 }
+	}
+	positionType = {
+		name = "modifier_offset"
+		position = { x = 24 y = 0 }
+	}
+
+	positionType = {
+		name = "modifier_start"
+		position = { x = 70 y = 30 }
+	}
+
+
+	windowType = {
+			name = "combat_modifier"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=256 y=160 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+
+			iconType =
+			{
+				name ="modifier_icon"
+				spriteType = "gfx_battlemodifiers"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			textBoxType = {
+				name = "modifier_value"
+				position = { x = 0 y = 34 }
+				textureFile = ""
+				font = "Main_16"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 24
+				maxHeight = 32	
+
+				format=centre
+			}
+		}
+
+
+	###### Siege interface 
+	
+
+	windowType = {
+		name = "siege"
+		backGround=""
+		position = { x=0 y=-512 }	
+		size = { x=360 y=512 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		Orientation = "LOWER_LEFT"
+	
+		iconType =
+		{
+			name ="siege_bg"
+			spriteType = "GFX_siege_bg"
+			position = { x= 0 y = 62 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = {
+				name = "closebutton"
+				position = { x = 310 y = -336 }
+				quadTextureSprite ="GFX_closebutton"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_LEFT"
+				shortcut = "ESCAPE"
+				clicksound = close_window
+			}
+
+		textBoxType = {
+			name = "label_siegename"
+			position = { x = 20 y = 177 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 230
+			maxHeight = 24
+			fixedsize = yes	
+		}
+
+
+		iconType =
+			{
+				name ="siege_town"
+				spriteType = "gfx_siege_town"
+				position = { x= 32 y = 210 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="has_assault"
+				spriteType = "GFX_assault"
+				position = { x= 32 y = 210 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="has_breach"
+				spriteType = "GFX_breach"
+				position = { x= 32 y = 210 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="attacker_shield"
+				spriteType = "GFX_thinshield"
+				position = { x= 30 y = 420 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="defender_shield"
+				spriteType = "GFX_thinshield"
+				position = { x= 265 y = 204	 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="attacker_attrition_icon"
+				spriteType = "GFX_attritionicon"
+				position = { x= 226 y = 487 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+			name = "attacker_attrition_value"
+			position = { x = 242 y = 488 }
+			textureFile = ""
+			font = "Main_14_red"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 14	
+			
+			format = left
+
+		}
+
+
+
+		iconType =
+			{
+				name ="attacker_morale"
+				spriteType = "moralebar"
+				position = { x= 90 y = 490 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+			name = "attacker_morale_text"
+			position = { x = 90 y = 488 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "COMBAT_BREAKING"	
+			maxWidth = 130
+			maxHeight = 14	
+			
+			format = centre
+
+		}	
+
+
+		textBoxType = {
+			name = "wall_size"
+			position = { x = 60 y = 350 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 4}
+			text = ""	
+			maxWidth = 120
+			maxHeight = 50	
+			
+			format = left
+
+		}
+		
+	
+		iconType =
+			{
+				name ="defender_morale"
+				spriteType = "moralebar"
+				position = { x= 160 y = 355 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+			name = "defender_morale_text"
+			position = { x = 160 y = 353 }
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = "COMBAT_BREAKING"	
+			maxWidth = 130
+			maxHeight = 14	
+			
+			format = centre
+
+		}
+
+		iconType =
+			{
+				name ="fort_icon"
+				spriteType = "GFX_fort_icon"
+				position = { x= 30 y = 350 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		iconType =
+			{
+				name ="defender_unit_type_1"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 70 y = 334 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="unit_type_1"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 100 y = 420 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="unit_type_2"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 170 y = 420 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="unit_type_3"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 240 y = 420 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		textBoxType = {
+			name = "attacker_unit1_value"
+			position = { x = 96 y = 460 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 60
+			maxHeight = 32	
+			
+			format = centre
+
+		}
+
+		textBoxType = {
+			name = "attacker_unit2_value"
+			position = { x = 166 y = 460 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 60
+			maxHeight = 32	
+			
+			format = centre
+
+		}
+
+		textBoxType = {
+			name = "attacker_unit3_value"
+			position = { x = 236 y = 460 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 60
+			maxHeight = 32	
+			
+			format = centre
+
+		}
+
+		textBoxType = {
+			name = "garrison_value"
+			position = { x = 110 y = 350 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 60
+			maxHeight = 32	
+			
+			format = left
+		}
+
+		textBoxType = {
+			name = "defender_status"
+			position = { x = 0 y = 322 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 320
+			maxHeight = 32	
+			
+			format = centre
+		}
+
+		
+
+		
+			
+			
+		guiButtonType = {
+				name = "assault_button"
+				position = { x = 52 y = 386 }
+				quadTextureSprite ="button_type_4"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "COMBAT_ASSAULT"
+				buttonFont = "Main_14_black"
+
+			}
+
+
+
+
+
+
+		}
+
+		###### End siege 
+
+	
+}

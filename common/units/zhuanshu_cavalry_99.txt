@@ -1,0 +1,12 @@
+#战神骑兵
+
+type = cavalry
+unit_type = zhuanshu
+
+maneuver = 30
+offensive_fire = 11
+defensive_fire = 11
+offensive_shock = 11
+defensive_shock = 11
+offensive_morale = 11
+defensive_morale = 9

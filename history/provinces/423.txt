@@ -1,0 +1,106 @@
+owner = LAO
+controller = LAO
+culture = huaiyi
+religion = liyuejiaohua
+capital = "Ëö"
+trade_goods = wine
+hre = no
+base_tax = 4
+manpower = 0
+citysize = 14000
+fort1 = yes
+add_core = LAO
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2076.12.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2106.1.1 = { 
+	add_core = CHU
+}
+2136.1.1 = { 
+	culture = nanchu
+	religion = liyuebadao
+}
+2192.11.1 = { 
+	owner = WUG
+	controller = WUG
+}
+2222.1.1 = { 
+	citysize = 18000
+}
+2225.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2244.1.1 = { 
+	owner = LAO
+	controller = LAO
+	add_core = LAO
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = LAO
+}
+2246.1.1 = { 
+	owner = WUG
+	controller = WUG
+	add_core = WUG
+	remove_core = CHU
+}
+2246.1.2 = { 
+	owner = LAO
+	controller = LAO
+	add_core = LAO
+	remove_core = WUG
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = WUG
+}
+2380.1.1 = { 
+	religion = rujia
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2490.6.1 = { 
+	revolt = { }
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = JJW
+	controller = JJW
+	add_core = JJW
+	citysize = 26000
+}
+2493.11.1 = { 
+	owner = XCW
+	controller = XCW
+}
+2495.6.1 = { 
+	owner = JJW
+	controller = JJW
+}

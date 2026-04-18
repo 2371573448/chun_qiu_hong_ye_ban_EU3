@@ -1,0 +1,19 @@
+#著名的医生
+
+advisor ={
+name ="扁鹊" 
+location =266
+skill =6
+type =navigator
+date =2311.1.1
+death_date =2388.1.1
+}
+
+advisor ={
+name ="医缓" 
+location =197
+skill =5
+type =navigator
+date =2138.1.1
+death_date =2188.1.1
+}

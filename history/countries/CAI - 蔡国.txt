@@ -1,0 +1,166 @@
+government = fengjian
+aristocracy_plutocracy = -4
+centralization_decentralization = 2
+innovative_narrowminded = -2
+mercantilism_freetrade = 2
+offensive_defensive = 0
+land_naval = 2
+quality_quantity = 0
+serfdom_freesubjects = -4
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = jianghan
+capital = 388
+1928.1.1 = { 
+	monarch = { 
+		name = "´ë¸¸"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 6
+	}
+}
+1928.1.1 = { 
+	elector = yes
+}
+1983.1.1 = { 
+	monarch = { 
+		name = "·âÈË"
+		dynasty = "¼§"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+2000.1.1 = { 
+	monarch = { 
+		name = "Ï×Îè"
+		dynasty = "¼§"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+2018.1.1 = { 
+	elector = yes
+}
+2020.1.1 = { 
+	monarch = { 
+		name = "ÃZ"
+		dynasty = "¼§"
+		adm = 4
+		dip = 6
+		mil = 5
+	}
+}
+2049.1.1 = { 
+	monarch = { 
+		name = "¼×Îç"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2082.1.1 = { 
+	monarch = { 
+		name = "ÎÄ"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2100.1.1 = { 
+	decision = tuposanjunguizhi
+}
+2102.1.1 = { 
+	monarch = { 
+		name = "¹Ì"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2131.1.1 = { 
+	monarch = { 
+		name = "Áé"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2141.1.1 = { 
+	monarch = { 
+		name = "Â®"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2152.1.1 = { 
+	monarch = { 
+		name = "¶«¹ú"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2155.1.1 = { 
+	monarch = { 
+		name = "Éê"
+		dynasty = "¼§"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+2170.1.1 = { 
+	capital = 389
+}
+2183.1.1 = { 
+	monarch = { 
+		name = "Ë·"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2202.1.1 = { 
+	monarch = { 
+		name = "²ú"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2205.1.1 = { 
+	capital = 341
+}
+2217.1.1 = { 
+	monarch = { 
+		name = "Ôª"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2223.1.1 = { 
+	monarch = { 
+		name = "Æë"
+		dynasty = "¼§"
+		adm = 5
+		dip = 6
+		mil = 5
+	}
+}
+2245.1.1 = { 
+	elector = no
+}

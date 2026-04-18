@@ -1,0 +1,53 @@
+;;;;;;;;;;X
+anti_tax_rebels_title;奴隶起义军;;;;;;;;;;X
+anti_tax_rebels_name; $COUNTRY$奴隶起义军;;;;;;;;;;X
+anti_tax_rebels_desc;奴隶起义军受够了压迫和剥削，揭竿而起。他们装备很差，缺少训练， 基本以步兵为主。他们没有明确的政治目标， 只是单纯的寻求个人解放。;;;;;;;;;;X
+anti_tax_rebels_army;奴隶起义军;;;;;;;;;;X
+tax_revolt;奴隶起义;;;;;;;;;;X
+severe_tax_reduction;经历洗劫;;;;;;;;;;X
+desc_severe_tax_reduction;这里不久前曾经遭受奴隶起义军的洗劫，目前生产仍然在缓慢的恢复过程中。;;;;;;;;;;X
+desc_tax_revolt;叛乱的奴隶军队已经占领了省份，政府已经失去了对于当地的控制权，生产和税收完全陷入停滞。 ;;;;;;;;;;X
+particularist_rebels_title;士卿叛军;;;;;;;;;;X
+particularist_rebels_name; $COUNTRY$ 士卿叛军;;;;;;;;;;X
+particularist_rebels_desc;士卿叛军向往世卿政治，反对公家政治，他们是后起的贵族势力，拥有自己的封地和强大的军事武装。;;;;;;;;;;X
+particularist_rebels_army;士卿叛军;;;;;;;;;;X
+nationalist_rebels_title;故国遗民;;;;;;;;;;X
+nationalist_rebels_name;$INDEP$国遗民;;;;;;;;;;X
+nationalist_rebels_desc;遗民希望恢复自己祖国的统治，反对当前统治者，拥有较好的武装力量。;;;;;;;;;;X
+nationalist_rebels_army;$INDEP$复国军;;;;;;;;;;X
+local_autonomy;地方自治;;;;;;;;;;X
+desc_local_autonomy;我们已经授予该城地方自治权.在此期间我们将很难从该省获得人力补充和税收。;;;;;;;;;;X
+patriot_rebels_title;民族叛军;;;;;;;;;;X
+patriot_rebels_name;$CULTURE$民族叛军;;;;;;;;;;X
+patriot_rebels_desc;民族叛军渴望着自己文化的统一，他们的武装较为落后，有很大的倾向叛逃他国. ;;;;;;;;;;X
+patriot_rebels_army;$CULTURE$民族叛军;;;;;;;;;;X
+colonial_rebels_title;地方豪强;;;;;;;;;;X
+colonial_rebels_name;地方豪强叛军;;;;;;;;;;X
+colonial_rebels_desc;地方豪强是一些边远地区具有绝对话语权的贵族或富豪，有的时候他们个人的意志会引导整个城邑走向背叛。 ;;;;;;;;;;X
+colonial_rebels_army;地方豪强武装力量;;;;;;;;;;X
+colonial_tensions;县邑动荡;;;;;;;;;;X
+desc_colonial_tensions;受迫于中央强硬政策, 一些当地德高望重的豪强代表齐聚一堂商谈对策, 他们恐怕会密谋反叛, 带领整个城邑反对我们的统治。 ;;;;;;;;;;X
+noble_rebels_title;公家叛军;;;;;;;;;;X
+noble_rebels_name;公家叛军;;;;;;;;;;X
+noble_rebels_desc;公家叛军希望由公家控制国家，他们的装备非常精良，极具作战经验，不达目的誓不罢休。;;;;;;;;;;X
+noble_rebels_army;公家叛军;;;;;;;;;;X
+religious_rebels_title;墨者;;;;;;;;;;X
+religious_rebels_name; $COUNTRY$墨者;;;;;;;;;X
+religious_rebels_desc;墨者会在所有的国家控制的省份起义. 他们希望传播自己的信仰,建立墨家的理想国. ;;;;;;;;;;X
+religious_rebels_army;巨子墨军;;;;;;;;;;X
+forced_conversion;墨家狂热;;;;;;;;;;X
+desc_forced_conversion;墨者已经占据这座城市，现在这里听命于巨子而不是王侯。;;;;;;;;;;X
+heretic_rebels_title;异端人士;;;;;;;;;;X
+heretic_rebels_name;$HERETIC$异端人士;;;;;;;;;;X
+heretic_rebels_desc;异端人士传播百家思想中的不同学说。;;;;;;;;;;X
+heretic_rebels_army;异端人士;;;;;;;;;;X
+pretender_rebels_title;篡位叛军;;;;;;;;;;X
+pretender_rebels_name; $COUNTRY$篡位叛军;;;;;;;;;;X
+pretender_rebels_desc;篡位叛军想要谋朝篡位，夺取君主的位置。;;;;;;;;;;X
+pretender_rebels_army;篡位叛军;;;;;;;;;;X
+reactionary_rebels_title;反动叛军;;;;;;;;;;X
+reactionary_rebels_name; $COUNTRY$反动叛军;;;;;;;;;;X
+reactionary_rebels_desc;反动叛军反对改革。;;;;;;;;;;X
+barbarian_rebels_title;蛮夷;;;;;;;;;;X
+barbarian_rebels_name;蛮夷入侵部落;;;;;;;;;;X
+barbarian_rebels_desc;蛮夷部落散居于中原大地之上，他们缺少生产，不时入侵劫掠财富，是华夏各国的严重威胁。;;;;;;;;;;X

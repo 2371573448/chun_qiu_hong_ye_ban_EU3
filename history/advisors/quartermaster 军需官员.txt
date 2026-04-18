@@ -1,0 +1,55 @@
+#历史上负责后勤的重要官员，或在军备制造上有成就者
+
+advisor ={
+name ="狐偃" 
+location =67
+skill =4
+type =quartermaster
+date =2003.1.1
+death_date =2069.1.1
+}
+
+advisor ={
+name ="孙阳" 
+location =173
+skill =6
+type =quartermaster
+date =2020.1.1
+death_date =2070.1.1
+}
+
+advisor ={
+name ="隰朋" 
+location =257
+skill =3
+type =quartermaster
+date =2015.1.1
+death_date =2055.1.1
+}
+
+advisor ={
+name ="欧冶子"
+location =442
+skill =6
+type =quartermaster
+date =2175.1.1
+death_date =2200.1.1
+}
+
+advisor ={
+name ="风胡子" 
+location =462
+skill =4
+type =quartermaster
+date =2182.1.1
+death_date =2222.1.1
+}
+
+advisor ={
+name =干将 
+location =429
+skill =4
+type =quartermaster
+date =2182.1.1
+death_date =2222.1.1
+}

@@ -1,0 +1,59 @@
+owner = WUZ
+controller = WUZ
+culture = shanrong
+religion = animism
+capital = "Œﬁ÷’"
+trade_goods = grain
+hre = no
+base_tax = 6
+manpower = 0
+citysize = 18000
+fort1 = yes
+add_core = WUZ
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2150.1.1 = {  owner = YAN  
+              controller = YAN 
+           }
+2180.1.1 = {  add_core = YAN 
+            }
+2210.1.1 = { culture = hebei
+             religion = liyuejiaohua 
+           }
+2222.1.1 = { citysize = 32000 }
+2244.1.1 = { 
+	owner = WUZ
+	controller = WUZ
+	add_core = WUZ
+	remove_core = YAN
+}
+2244.1.2 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+	remove_core = WUZ
+}
+2246.1.2 = { citysize = 32000
+	owner = WUZ
+	controller = WUZ
+	add_core = WUZ
+	culture = shanrong 
+	religion = animism
+}
+2247.1.1 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+}
+
+2472.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2489.10.1 = { 
+	owner = YAN
+	controller = YAN
+}

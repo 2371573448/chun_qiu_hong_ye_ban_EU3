@@ -1,0 +1,58 @@
+#¸½Ó¹¼Ö¡¢Ü÷
+vassal = {
+	first=JIN
+	second=JIA
+	start_date=1928.1.1
+	end_date=2020.12.1
+}
+vassal = {
+	first=JIN
+	second=XUN
+	start_date=1928.1.1
+	end_date=2020.12.1
+}
+alliance= {
+	first=JIN
+	second=JIA
+	start_date=1928.1.1
+	end_date=2020.12.1
+}
+alliance= {
+	first=JIN
+	second=XUN
+	start_date=1928.1.1
+	end_date=2020.12.1
+}
+#·Ö·âÇúÎÖ
+vassal = {
+	first=JIN
+	second=QUW
+	start_date=1953.1.1
+	end_date=1959.1.1
+}
+#ÇúÎÖÁªÃËÖ£ĞÏ
+alliance={
+	first=ZGO
+	second=QUW
+	start_date=1976.1.1
+	end_date=1982.1.1
+	}
+alliance={
+	first=XGO
+	second=QUW
+	start_date=1976.1.1
+	end_date=1982.1.1
+	}
+#Óë´óÈÖÁªÒö
+alliance={
+	first=QUW
+	second=DAR
+	start_date=1991.1.1
+	end_date=2020.12.1
+}
+alliance={
+	first=JIN
+	second=DAR
+	start_date=2020.12.1
+	end_date=2021.7.1
+}

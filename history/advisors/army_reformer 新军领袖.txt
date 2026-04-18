@@ -1,0 +1,73 @@
+#军事上进行革新或改制的人物
+
+advisor ={
+name ="蒙恬" 
+location =173
+skill =4
+type =army_reformer
+date =2450.1.1
+death_date =2488.1.1
+}
+
+advisor ={
+name ="吴起" 
+location =359
+skill =6
+type =army_reformer
+date =2285.1.1
+death_date =2317.1.1
+}
+
+advisor ={
+name ="吴起" 
+location =359
+skill =6
+type =army_reformer
+date =2246.1.1
+death_date =2246.1.1
+}
+
+advisor ={
+name ="乐毅" 
+location =32
+skill =5
+type =army_reformer
+date =2400.1.1
+death_date =2430.1.1
+}
+
+advisor ={
+name ="乐毅" 
+location =32
+skill =5
+type =army_reformer
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="赵奢" 
+location =113
+skill =4
+type =army_reformer
+date =2413.1.1
+death_date =2475.1.1
+}
+
+advisor ={
+name ="尉缭" 
+location =182
+skill =4
+type =army_reformer
+date =2461.1.1
+death_date =2485.1.1
+}
+
+advisor ={
+name ="剧辛" 
+location =115
+skill =3
+type =army_reformer
+date =2405.1.1
+death_date =2455.1.1
+}

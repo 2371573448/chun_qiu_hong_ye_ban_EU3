@@ -1,0 +1,108 @@
+#ÁªÃË³¤µÒ
+
+lianmengchangdi = {
+	type = country
+	allow = {
+		tag = CHI
+		exists = CHA
+		not = { alliance_with = CHA }
+	}
+	abort = {
+		not = { exists = CHA }
+	}
+	success = {
+		controls = 83
+		controls = 116
+		or = { 
+			alliance_with = CHA
+			relation = { who = CHA value = 200 }
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		83 = { secede_province = CHI }
+		116 = { secede_province = CHA }
+		inherit = LIO
+		add_core = 83
+		CHA = { add_core = 116 }
+	  	prestige = 0.20
+		create_marriage = CHA
+		create_alliance = CHA
+		vassalize = CHA
+	}
+}
+lianmenggaoluoshi = {
+	type = country
+	allow = {
+		tag = CHI
+		exists = GAL
+		not = { alliance_with = GAL }
+	}
+	abort = {
+		not = { exists = GAL }
+	}
+	success = {
+		controls = 83
+		controls = 116
+		or = { 
+			alliance_with = GAL
+			relation = { who = GAL value = 200 }
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		1102 = { secede_province = CHI }
+		88 = { secede_province = GAL }
+		inherit = LIR
+		GAL = { add_core = 88 }
+		add_core = 1102
+	  	prestige = 0.20
+		create_marriage = GAL
+		create_alliance = GAL
+		vassalize = GAL
+	}
+}
+lianmengqiangjiuru = {
+	type = country
+	allow = {
+		tag = CHI
+		exists = QJR
+		not = { alliance_with = QJR }
+	}
+	abort = {
+		not = { exists = QJR }
+	}
+	success = {
+		war_with = BER
+		QJR = { war_with = BER }
+		or = { 
+			alliance_with = QJR
+			relation = { who = QJR value = 200 }
+		}
+	}
+	chance = {
+		factor = 5000
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+	  	prestige = 0.20
+		create_marriage = QJR
+		create_alliance = QJR
+		vassalize = QJR
+	}
+}

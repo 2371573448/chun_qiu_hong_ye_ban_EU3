@@ -1,0 +1,151 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+# Armies get a combined arms bonus when the ratio cav / (inf+cav) is _less_ than "cav_to_inf_ratio". This applies for the "unit_type" of a country.
+
+#groups must be defined BEFORE tables.
+
+
+groups = {
+	tianjie = {
+		modifier = 0.88
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 5
+	}
+tianjie = {
+		modifier = 0.88
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 5
+	}
+
+xiongnu = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 2.0
+		slow_limit = 6
+	}
+	chinese = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 5
+	}
+	jingchu = {
+		modifier = 1.0
+		start_level = 4
+		cav_to_inf_ratio = 0.4
+		slow_limit = 5
+	}
+	nomad_group = {
+		modifier = 1
+		start_level = 4
+		cav_to_inf_ratio = 1.0
+		slow_limit = 5
+	}
+	dongyi1 = {
+		modifier = 1
+		start_level = 5
+		cav_to_inf_ratio = 0.4
+		slow_limit = 5
+	}
+	wuyue1 = {
+		modifier = 1
+		start_level = 4
+		cav_to_inf_ratio = 0.4
+		slow_limit = 5
+	}
+	bashu1 = {
+		modifier = 1
+		start_level = 6
+		cav_to_inf_ratio = 0.4
+		slow_limit = 5
+	}
+	baiyue = {
+		modifier = 0.70
+		start_level = 3
+		cav_to_inf_ratio = 0.3
+		slow_limit = 4
+	}
+	qinguo= {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 6
+	}
+	qiguo = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 6
+	}
+	zhaoguo = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.65
+		slow_limit = 6
+	}
+	weiguo = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 6
+	}
+	hanguo = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 6
+	}
+	yanguo = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 6
+	}
+	wuyue2 = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 6
+	}
+	yinshang = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.3
+		slow_limit = 4
+	}
+	dahan = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+		slow_limit = 4
+	}
+	mojia = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 0.3
+		slow_limit = 4
+	}
+	xiyu = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 1
+		slow_limit = 4
+	}
+	zhuanshu = {
+		modifier = 1.0
+		start_level = 5
+		cav_to_inf_ratio = 1
+		slow_limit = 4
+	}
+}
+
+tables = {
+	land_tech = "technologies/land.txt"
+	naval_tech = "technologies/naval.txt"
+	trade_tech = "technologies/trade.txt"
+	production_tech = "technologies/production.txt"
+	government_tech = "technologies/government.txt"
+}

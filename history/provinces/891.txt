@@ -1,0 +1,107 @@
+owner = MOU
+controller = MOU
+culture = dongyi
+religion = liyuejiaohua
+capital = "Æ½ÖÞ"
+trade_goods = wool
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 18000
+fort1 = yes
+add_core = MOU
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2198.1.1 = { 
+	owner = QIG
+	controller = QIG
+        add_core = QIG
+}
+2222.1.1 = { 
+	citysize = 26000
+	culture = dongtu
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = MOU
+	controller = MOU
+	add_core = MOU
+	remove_core = QIG
+}
+2244.1.2 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = MOU
+}
+2245.1.1 = { 
+	hre = no
+	culture = qilu
+}
+2246.1.1 = { 
+	owner = LUG
+	controller = LUG
+	add_core = LUG
+	religion = rujia
+	remove_core = WEG
+}
+2246.1.2 = { 
+	owner = MOU
+	controller = MOU
+	add_core = MOU
+	religion = liyuejiaohua
+	remove_core = WEG
+	remove_core = LUG
+	remove_core = QIG
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = LUG
+}
+2414.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2419.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2477.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2490.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2492.2.1 = { 
+	owner = JBW
+	controller = JBW
+	add_core = JBW
+}
+2492.7.1 = { 
+	owner = QIG
+	controller = QIG
+}

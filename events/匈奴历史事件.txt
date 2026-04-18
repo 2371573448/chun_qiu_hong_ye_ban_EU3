@@ -1,0 +1,147 @@
+#匈奴进军阴山
+country_event = {
+	id = 12017
+
+	major = yes
+
+	trigger = {
+		tag = XNU
+		year = 2276
+		has_global_flag = miewangdonghu
+		NOT = { has_global_flag = jinjunyinshan }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12017"
+	desc = "EVTDESC12017"
+	
+
+	option = {
+		name = "EVTOPTA12017"	
+		set_global_flag = jinjunyinshan
+		prestige = 0.10
+		784 = {
+		    citysize = 10000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		792 = {
+		    citysize = 11000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		143 = { add_core = XNU }
+		144 = { add_core = XNU }
+		137 = { add_core = XNU }
+		138 = { add_core = XNU }
+		139 = { add_core = XNU }
+		140 = { add_core = XNU }
+		manpower = 0.2
+	}
+}
+#匈奴进军贺兰山
+country_event = {
+	id = 12018
+
+	major = yes
+
+	trigger = {
+		tag = XNU
+		has_global_flag = jinjunyinshan
+		owns = 143
+		owns = 144
+		owns = 137
+		owns = 138
+		owns = 139
+		owns = 140
+		NOT = { has_global_flag = jinjunhelanshan }
+			any_country = { 
+	    		NOT = { tag = this }
+	    		OR = { 
+				NOT = { owns = 774 }
+				NOT = { owns = 161 }
+				NOT = { owns = 157 }
+				NOT = { owns = 158 }
+				NOT = { owns = 141 }
+				NOT = { owns = 142 }
+				NOT = { owns = 145 }
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME12018"
+	desc = "EVTDESC12018"
+	
+
+	option = {
+		name = "EVTOPTA12018"	
+		set_global_flag = jinjunhelanshan
+		prestige = 0.10
+		774 = {
+		    citysize = 6000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		161 = {
+		    citysize = 3000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		157 = {
+		    citysize = 4000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		158 = {
+		    citysize = 6000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		141 = {
+		    citysize = 4000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		142 = {
+		    citysize = 8000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		145 = {
+		    citysize = 4000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		155 = {
+		    citysize = 6000
+                    add_core = XNU
+		    change_controller = XNU
+                    secede_province = XNU
+		    add_building = fort1
+		 }
+		manpower = 0.3
+	}
+}

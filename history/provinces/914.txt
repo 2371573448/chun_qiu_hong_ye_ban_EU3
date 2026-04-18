@@ -1,0 +1,73 @@
+
+owner = YGG
+controller = YGG
+culture = dongyi
+religion = liyuejiaohua
+capital = "Ñô"
+trade_goods = ivory
+hre = yes
+base_tax = 6
+manpower = 0
+citysize = 22000
+fort1 = yes
+add_core = YGG
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+2098.1.1 = {owner =LUG controller =LUG}
+2128.1.1 = {add_core =LUG }
+2222.1.1 = { citysize = 30000 remove_core=YGG }
+2244.1.1 = { 
+	owner = YGG
+	controller = YGG
+	add_core = YGG
+	remove_core = LUG
+}
+2244.1.2 = { 
+	owner = LUG
+	controller = LUG
+	add_core = LUG
+	religion = rujia
+	remove_core = YGG
+}
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	owner = YGG
+	controller = YGG
+	add_core = YGG
+}
+2246.1.2 = { 
+	hre = yes
+}
+2246.1.2 = { 
+	religion = rujia
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = LUG
+	controller = LUG
+	add_core = LUG
+}
+2322.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2352.1.1 = {    add_core = QIG remove_core=LUG   culture=qilu }
+2414.1.1  = {	owner = YAN
+		controller = YAN
+	    }
+2419.1.1  = {	owner = QIG
+		controller = QIG
+	    }
+2477.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2490.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2492.2.1={owner=QIG controller=QIG}

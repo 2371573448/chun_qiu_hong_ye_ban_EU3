@@ -1,0 +1,532 @@
+government = fengjian
+aristocracy_plutocracy = -3
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = 0
+offensive_defensive = 2
+land_naval = 0
+quality_quantity = 2
+serfdom_freesubjects = -3
+technology_group = chinese
+religion = liyuejiaohua
+primary_culture = hebei
+capital = 37
+1908.1.1 = { 
+	monarch = { 
+		name = "顷"
+		dynasty = "姬"
+		adm = 6
+		dip = 3
+		mil = 6
+	}
+}
+1932.1.1 = { 
+	monarch = { 
+		name = "哀"
+		dynasty = "姬"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+1934.1.1 = { 
+	monarch = { 
+		name = "郑"
+		dynasty = "姬"
+		adm = 4
+		dip = 2
+		mil = 6
+	}
+}
+1970.1.1 = { 
+	monarch = { 
+		name = "穆"
+		dynasty = "姬"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+1988.1.1 = { 
+	monarch = { 
+		name = "宣"
+		dynasty = "姬"
+		adm = 6
+		dip = 2
+		mil = 2
+	}
+}
+2001.1.1 = { 
+	monarch = { 
+		name = "桓"
+		dynasty = "姬"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+2008.1.1 = { 
+	monarch = { 
+		name = "庄"
+		dynasty = "姬"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+2034.1.1 = { 
+	# 齐桓救燕
+	government = absolute_monarchy
+	offensive_defensive = 3
+}
+2041.1.1 = { 
+	monarch = { 
+		name = "襄"
+		dynasty = "姬"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+2041.1.1 = { 
+	capital = 32
+}
+2050.1.1 = { 
+	set_country_flag = zongfazhidu
+}
+2081.1.1 = { 
+	monarch = { 
+		name = "桓"
+		dynasty = "姬"
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+2097.1.1 = { 
+	monarch = { 
+		name = "宣"
+		dynasty = "姬"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+2100.1.1 = { 
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+}
+2112.1.1 = { 
+	monarch = { 
+		name = "昭"
+		dynasty = "姬"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+2125.1.1 = { 
+	monarch = { 
+		name = "武"
+		dynasty = "姬"
+		adm = 2
+		dip = 6
+		mil = 4
+	}
+}
+2144.1.1 = { 
+	monarch = { 
+		name = "文"
+		dynasty = "姬"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+2150.1.1 = { 
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+}
+2150.1.1 = { 
+	monarch = { 
+		name = "懿"
+		dynasty = "姬"
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+2154.1.1 = { 
+	monarch = { 
+		name = "款"
+		dynasty = "姬"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+2163.1.1 = { 
+	monarch = { 
+		name = "悼"
+		dynasty = "姬"
+		adm = 6
+		dip = 2
+		mil = 5
+	}
+}
+2170.1.1 = { 
+	monarch = { 
+		name = "共"
+		dynasty = "姬"
+		adm = 6
+		dip = 3
+		mil = 6
+	}
+}
+2175.1.1 = { 
+	monarch = { 
+		name = "平"
+		dynasty = "姬"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+2194.1.1 = { 
+	monarch = { 
+		name = "简"
+		dynasty = "姬"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+2200.1.1 = { 
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+}
+2206.1.1 = { 
+	monarch = { 
+		name = "孝"
+		dynasty = "姬"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+2244.1.1 = { 
+	monarch = { 
+		name = "载"
+		dynasty = "姬"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+2246.1.1 = { 
+	government = enlightened_despotism
+	centralization_decentralization = 1
+	aristocracy_plutocracy = 0
+	serfdom_freesubjects = 2
+	innovative_narrowminded = -1
+	mercantilism_freetrade = -1
+	offensive_defensive = -2
+	land_naval = 3
+	quality_quantity = 2
+	monarch = { 
+		name = "运"
+		dynasty = "姬"
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+	heir = {
+		name = "威"
+		monarch_name = "威"
+		dynasty = "姬"
+		birth_date = 2246.1.1
+		death_date = 2246.1.1
+		claim = 100
+		adm = 7
+		dip = 7
+		mil = 7
+	}
+}
+2247.1.1 = { 
+	monarch = { 
+		name = "载"
+		dynasty = "姬"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+2250.1.1 = { 
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+}
+2260.1.1 = { 
+	monarch = { 
+		name = "闵"
+		dynasty = "姬"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+2284.1.1 = { 
+	monarch = { 
+		name = "简"
+		dynasty = "姬"
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+2300.1.1 = { 
+	set_country_flag = fengjunzhidu
+}
+2326.1.1 = { 
+	monarch = { 
+		name = "桓"
+		dynasty = "姬"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+2337.1.1 = { 
+	monarch = { 
+		name = "文"
+		dynasty = "姬"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+2350.1.1 = { 
+	set_country_flag = hujizhidu
+}
+2366.1.1 = { 
+	monarch = { 
+		name = "脮"
+		dynasty = "姬"
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+2367.1.1 = { 
+	capital = 38
+}
+2378.1.1 = { 
+	monarch = { 
+		name = "哙"
+		dynasty = "姬"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+2378.1.1 = { 
+	leader = { 
+		name = "秦开"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 3
+		manuever = 4
+		siege = 1
+		death_date = 2403.1.1
+	}
+}
+2378.1.1 = { 
+	leader = { 
+		name = "市被"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 4
+		manuever = 2
+		siege = 1
+		death_date = 2384.1.1
+	}
+}
+2381.1.1 = { 
+	# 燕王哙让国
+	monarch = { 
+		name = "子之"
+		dynasty = "姬"
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+	government = enlightened_despotism
+	aristocracy_plutocracy = 3
+	centralization_decentralization = 4
+}
+2384.1.1 = { 
+	# 太子平之乱
+	centralization_decentralization = 5
+}
+2385.1.1 = { 
+	# 齐宣王伐燕，杀燕王哙与子之，幸得诸侯出兵干涉，燕得以不亡，国人拥立公子职，是为燕昭王，昭王千金买骨，一时“士争趋燕”
+	monarch = { 
+		name = "职"
+		dynasty = "姬"
+		adm = 9
+		dip = 9
+		mil = 6
+	}
+	government = reformed_despotism
+	centralization_decentralization = -3
+	innovative_narrowminded = -3
+	offensive_defensive = -5
+	land_naval = 5
+	serfdom_freesubjects = 2
+	decision = zhaowangtuqiang3
+}
+2398.1.1 = { 
+	# 秦开破东胡，伐箕子朝鲜，拓地千里
+	centralization_decentralization = -4
+	land_naval = -5
+}
+2400.1.1 = { 
+	set_country_flag = guanliaozhidu
+}
+2408.1.1 = { 
+	leader = { 
+		name = "乐毅"
+		type = general
+		rank = 1
+		fire = 6
+		shock = 5
+		manuever = 6
+		siege = 3
+		death_date = 2420.1.1
+	}
+}
+2420.1.1 = { 
+	leader = { 
+		name = "骑劫"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 2
+		manuever = 2
+		siege = 3
+		death_date = 2421.1.1
+	}
+}
+2420.1.1 = { 
+	# 燕惠王继位，中田单反间计，以骑劫代乐毅，致燕军大败于即墨，国势由此衰落
+	monarch = { 
+		name = "戎人"
+		dynasty = "姬"
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+2420.1.1 = { 
+	government = enlightened_despotism
+	centralization_decentralization = 3
+	innovative_narrowminded = 3
+	offensive_defensive = -1
+	land_naval = -1
+}
+2423.1.1 = { 
+	leader = { 
+		name = "乐间"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 1
+		manuever = 3
+		siege = 2
+		death_date = 2448.1.1
+	}
+}
+2427.1.1 = { 
+	monarch = { 
+		name = "武成"
+		dynasty = "姬"
+		adm = 3
+		dip = 6
+		mil = 4
+	}
+}
+2438.1.1 = { 
+	leader = { 
+		name = "庆秦"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 1
+		manuever = 5
+		siege = 1
+		death_date = 2448.1.1
+	}
+}
+2438.1.1 = { 
+	leader = { 
+		name = "栗腹"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 2
+		manuever = 4
+		siege = 1
+		death_date = 2448.1.1
+	}
+}
+2441.1.1 = { 
+	monarch = { 
+		name = "孝"
+		dynasty = "姬"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+2444.1.1 = { 
+	monarch = { 
+		name = "喜"
+		dynasty = "姬"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+2453.1.1 = { 
+	leader = { 
+		name = "剧辛"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 5
+		manuever = 2
+		siege = 2
+		death_date = 2456.1.1
+	}
+}
+2489.8.20 = { 
+	#赵王武臣命原赵国上谷郡吏韩广平燕地，韩广受燕国贵族立为燕王
+	monarch = { 
+		name = "广"
+		dynasty = "韩"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+2492.2.1 = { 
+	#项羽封燕将臧荼为燕王，徙韩广为辽东王
+	monarch = { 
+		name = "荼"
+		dynasty = "臧"
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}

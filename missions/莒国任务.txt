@@ -1,0 +1,44 @@
+#征服向邑
+JUG_annex_XNG = {
+	type = country
+	allow = {
+		tag = JUG
+		exists = XNG
+		is_lesser_in_union = no
+		is_subject = no
+		XNG = {
+			owns = 308
+			neighbour = this
+			not = { vassal_of = JUG }
+		}
+	}
+	abort = {
+		or = {
+			and = {
+				not = { exists = XNG }
+				not = { owns = 308 }
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 308
+		owns = 990
+	}
+	chance = {
+		factor = 100
+	}
+	immediate = {
+	  	add_temp_claim = 308
+	  	add_temp_claim = 990
+	}
+	abort_effect = {
+	  	remove_temp_claim = 308
+	  	remove_temp_claim = 990
+	}
+	effect = {
+	 	add_core = 308
+	 	add_core = 990
+	}
+}

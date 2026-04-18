@@ -1,0 +1,38 @@
+#在文学或写作上有传世著作的人
+
+advisor ={
+name ="屈原" 
+location =466
+skill =6
+type =collector
+date =2378.1.1
+death_date =2420.5.5
+}
+
+advisor ={
+name ="屈原" 
+location =466
+skill =6
+type =collector
+date =2246.1.1
+death_date =2247.5.5
+}
+
+advisor ={
+name ="吕相" 
+location =72
+skill =3
+type =collector
+date =2060.1.1
+death_date =2125.1.1
+}
+
+advisor ={
+name ="宋玉" 
+location =462
+skill =4
+type =collector
+date =2420.1.1
+death_date =1486.1.1
+}
+

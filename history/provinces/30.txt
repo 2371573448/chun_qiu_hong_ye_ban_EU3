@@ -1,0 +1,77 @@
+
+culture = shanrong
+religion = animism
+capital = "¾ÚÑô"
+trade_goods = coffee
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2100.1.1 = { 
+	owner = WUZ
+	controller = WUZ
+	citysize = 8000
+	fort1 = yes
+}
+2130.1.1 = { 
+	add_core = WUZ
+}
+2190.1.1 = { discovered_by = YAN }
+2222.1.1 = { 
+	citysize = 16000
+}
+2228.1.1 = { 
+	owner = JIN
+	controller = JIN
+}
+2244.1.1 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = YAN
+}
+2245.1.1 = { 
+	owner = YAN
+	controller = YAN
+	remove_core = JIN
+}
+2246.1.1 = { 
+	owner = YAN
+	controller = YAN
+	add_core = YAN
+	religion = liyuejiaohua
+}
+2247.1.1 = { 
+	religion = animism
+}
+2275.1.1 = { 
+	add_core = YAN
+	culture = hebei
+	religion = liyuejiaohua
+}
+2380.1.1 = { 
+	religion = mojia
+}
+2454.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2470.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = YAN
+	controller = YAN
+}

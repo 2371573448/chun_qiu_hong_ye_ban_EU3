@@ -1,0 +1,429 @@
+*;NOT USED;;;;;;;;;;X
+arctic;北极;;;;;;;;;;X
+farmlands;农田;;;;;;;;;;X
+forest;森林;;;;;;;;;;X
+woods;树林;;;;;;;;;;X
+mountain;山脉;;;;;;;;;;X
+coastal_desert;沙漠;;;;;;;;;;X
+IS_VASSAL_SPHERE;$COUNTRY$ 的附庸国;;;;;;;;;;X
+sphere;从势力范围中得到;;;;;;;;;;X
+SPHEREMASTER_TO_CULTURAL;我们只有$VAL$文化传统,而$WHO$有$WHOVAL$.;;;;;;;;;;X
+WT_NOT_NOMADS;只与游牧民族交战时,你不能征收战争税.;;;;;;;;;;X
+NO_NOMAD_NO_COLONY;游牧民族不能移民.;;;;;;;;;;X
+IS_LESS_THAN_X_TECH_AHEAD;相距少于$VAL$级科技.;;;;;;;;;;X
+IS_AT_LEAST_X_TECH_AHEAD;相距至少$VAL$级科技.;;;;;;;;;;X
+HAS_LEADER_WITH_STATS;有至少一个$TYPE$有 $DETAILS$.;;;;;;;;;;X
+HAS_NOT_LEADER_WITH_STATS;没有$TYPE$ 有 $DETAILS$.;;;;;;;;;;X
+LEADER_STAT_DETAIL;$TYPE$至少达到$VAL$.;;;;;;;;;;X
+LAND_MORALE_LESS_THAN;陆军士气低于;;;;;;;;;;X
+LAND_MORALE_THAN;陆军士气至少;;;;;;;;;;X
+NAVAL_MORALE_LESS_THAN;海军士气低于;;;;;;;;;;X
+NAVAL_MORALE_THAN;海军士气至少;;;;;;;;;;X
+ikko_ikkis_title;一向一揆;;;;;;;;;;X
+ronin_rebels_title;浪人;;;;;;;;;;X
+LOG_SETTING_ICON;图标;;;;;;;;;;X
+LESS_THAN_DAIMYOS;现存少于$VAL$个大名.;;;;;;;;;;X
+MORE_THAN_DAIMYOS;现存至少$VAL$个大名.;;;;;;;;;;X
+IS_NOT_SHOGUN;$COUNTRY$ 不是将军.;;;;;;;;;;X
+IS_SHOGUN;$COUNTRY$ 是将军.;;;;;;;;;;X
+IS_NOT_KAMPAKU;$COUNTRY$ 不是关白.;;;;;;;;;;X
+IS_KAMPAKU;$COUNTRY$ 是关白.;;;;;;;;;;X
+IS_NOT_DAIMYO;$COUNTRY$ 不是大名.;;;;;;;;;;X
+IS_DAIMYO;$COUNTRY$ 是大名.;;;;;;;;;;X
+SHOGUN_EXISTS;存在将军.;;;;;;;;;;X
+NO_SHOGUN;不存在将军.;;;;;;;;;;X
+KAMPAKU_EXISTS;存在关白.;;;;;;;;;;X
+NO_KAMPAKU;不存在关白.;;;;;;;;;;X
+LESS_THAN_SHOGUN_INFLUENCE;将军的影响力少于$VAL$.;;;;;;;;;;X
+MORE_THAN_SHOGUN_INFLUENCE;将军的影响力至少$VAL$.;;;;;;;;;;X
+SHOGUNATE_CIVIL_WAR;大名正处于内战中.;;;;;;;;;;X
+NO_SHOGUNATE_CIVIL_WAR;大名处于和平状态.;;;;;;;;;;X
+ADD_SHOGUN_INFLUENCE;将军的影响力增加了$VAL$.\n;;;;;;;;;;X
+REMOVE_SHOGUN_INFLUENCE;将军的影响力降低了$VAL$.\n;;;;;;;;;;X
+BECOME_SHOGUN;成为幕府将军.\n;;;;;;;;;;X
+LOSE_SHOGUN;失去幕府将军.\n;;;;;;;;;;X
+BECOME_KAMPAKU;成为关白.\n;;;;;;;;;;X
+LOSE_KAMPAKU;失去关白.\n;;;;;;;;;;X
+ENDORSE_KAMPAKU;拥护关白成为将军.\n;;;;;;;;;;X
+STOP_ENDORSE_KAMPAKU;停止拥护关白成为将军.\n;;;;;;;;;;X
+REQUEST_PEACE_DAIMYO;只能与太阁议和,不能与大名或者天皇.现在的太阁是$TAIKO$.;;;;;;;;;;X
+DAIMYO_REQUEST_PEACE;只有太阁能与外国议和.;;;;;;;;;;X
+FACTION_RULE;$FACTION$ 将不会允许这样做.;;;;;;;;;;X
+FACTION_FORCE_LIMIT;$FACTION$ 不允许我们超过军队上限;;;;;;;;;;X
+M_FACTION_BUTTON;派系;;;;;;;;;;X
+FACTIONS_TITLE;派系;;;;;;;;;;X
+HAVE_FACTIONS_TRIGGER;有派系;;;;;;;;;;X
+HAVE_NO_FACTIONS_TRIGGER;没有派系;;;;;;;;;;X
+HAS_FACTION;有 $FACTION$;;;;;;;;;;X
+HAS_NOT_FACTION;没有 $FACTION$;;;;;;;;;;X
+western_embassy_mission;西方外交使团;;;;;;;;;;X
+desc_western_embassy_mission;我们派遣了一只外交使团到欧洲,以增强我们与西方国家的外交联系.;;;;;;;;;;X
+send_western_embassy_mission_title;西方外交使团;;;;;;;;;;X
+send_western_embassy_mission_desc;通过派遣外交使团到西方,我们可以学到这片陌生的外国土地的很多东西.;;;;;;;;;;X
+IS_TOP_FACTION;$FACTION$ 是最强有力的派系.;;;;;;;;;;X
+IS_NOT_TOP_FACTION;$FACTION$ 不是最强有力的派系.;;;;;;;;;;X
+FACTION_INFLUENCE_GAIN;$FACTION$得到$INFLUENCE$点影响.;;;;;;;;;;X
+SHOGUNATE;幕府;;;;;;;;;;X
+EMPEROR;天皇;;;;;;;;;;X
+SHOGUN_INFLUENCE;将军影响力;;;;;;;;;;X
+SHOGUNATE_DECISIONS;幕府决议;;;;;;;;;;X
+FACTION_INFLUENCE;派系影响力: $INF$;;;;;;;;;;X
+DAIMYO;大名;;;;;;;;;;X
+KAMPAKU;关白;;;;;;;;;;X
+TAIKUN;太阁;;;;;;;;;;X
+SHOGUN;将军;;;;;;;;;;X
+CAN_NOT_BUILD_COLONIES;可以兴建新垦区;;;;;;;;;;X
+CAN_NOT_BUILD_BUILDINGS;可以修建建筑物;;;;;;;;;;X
+CAN_NOT_BUILD_MISSIONARIES;可以派遣布道者;;;;;;;;;;X
+CAN_NOT_DECLARE_WAR;可以宣战;;;;;;;;;;X
+CAN_NOT_SEND_MERCHANTS;可以派遣商贾;;;;;;;;;;X
+CAPED_BY_FORCELIMIT;可以超过军队上限;;;;;;;;;;X
+NEWFACTION_SETUP;当一个新派系得势.;;;;;;;;;;X
+NEWFACTION_HEADER;$MESSENGER$;;;;;;;;;;X
+NEWFACTION_1;新派系当权!;;;;;;;;;;X
+NEWFACTION_2;$MONARCHTITLE$,;;;;;;;;;;X
+NEWFACTION_3;$FACTION$;;;;;;;;;;X
+NEWFACTION_4;获得了我国的统治地位.;;;;;;;;;;X
+NEWFACTION_5;这将意味着政策的改变:;;;;;;;;;;X
+NEWFACTION_6;$VALUES$;;;;;;;;;;X
+NEWFACTION_LOG;$FACTION$ 当权!;;;;;;;;;;X
+NEWFACTION_BTN1;好的;;;;;;;;;;X
+NEWFACTION_BTN2;好的;;;;;;;;;;X
+NEWFACTION_MAP; ;;;;;;;;;;X
+FACTION_INFLUENCE_GREATER_THAN;$FACTION$ 影响力大于 $VALUE$.;;;;;;;;;;X
+FACTION_INFLUENCE_NOT_GREATER_THAN;$FACTION$ 影响力小于 $VALUE$;;;;;;;;;;X
+PDC_NOT_LOGGED_IN;你尚未连接到Paradox网络.\n点击这里连接.;;;;;;;;;;X
+PDC_LOGGED_IN;你已经连接到Paradox网络.\n点击这里查看你的成就.;;;;;;;;;;X
+PDC_DESC;通过连接到Paradox网络你可以在游戏中完成一大批成就.你需要一个Paradox论坛的帐号来连接.;;;;;;;;;;X
+STARTDATE_GREATER_THAN;游戏开始于$DATE$或之前;;;;;;;;;;X
+STARTDATE_NOT_GREATER_THAN;游戏开始于 $DATE$之后;;;;;;;;;;X
+ADD_FACTION_EFFECT;得到 $FACTION$.;;;;;;;;;;X
+REMOVE_FACTION_EFFECT;失去 $FACTION$.;;;;;;;;;;X
+DEMAND_PROVINCE_TOOLTIP;$PROVINCE$ 成为 $COUNTRY$的一部分.;;;;;;;;;;X
+REVOKE_CORE_TOOLTIP;$COUNTRY$ 不再认为 $PROVINCE$是核心领土. 该省属于 $OWNER$.;;;;;;;;;;X
+RELEASE_VASSAL_TOOLTIP;$VASSAL$ 不再是 $OVERLORD$的附庸国.;;;;;;;;;;X
+ENDORSE_SHOGUN;$WHO$ 拥护 $KAMPAKU$ 成为将军.;;;;;;;;;;X
+PO_BECOME_KAMPAKU;$WHO$ 将取代 $KAMPAKU$成为关白.;;;;;;;;;;X
+STOP_ENDORSE_SHOGUN;$WHO$ 不再拥护 $KAMPAKU$ 成为将军.;;;;;;;;;;X
+PEACE_BECOME_KAMPAKU;成为关白;;;;;;;;;;X
+PEACE_ENDORSE_SHOGUN;拥护将军;;;;;;;;;;X
+PEACE_STOP_ENDORSE_SHOGUN;停止拥护将军;;;;;;;;;;X
+STRENGTHENSHOGUNATE_NOCASH;你无力承担宫廷中繁文缛节的费用.;;;;;;;;;;X
+STRENGTHENSHOGUNATE_DESC;增强幕府在皇宫中的威望.;;;;;;;;;;X
+STRENGTHENSHOGUNATE_TITLE;增强幕府威望 ($COST$?;;;;;;;;;;X
+STRENGTHENSHOGUNATENEWDESC;你要增强幕府在皇宫中的威望吗? 这将花费 $COST$?;;;;;;;;;;X
+STRENGTHENSHOGUNATE;增强幕府威望;;;;;;;;;;X
+WEAKENSHOGUNATE_NO_CASH;你没有足够的威望.;;;;;;;;;;X
+WEAKENSHOGUNATE_DESC;削弱幕府在皇宫中的威望.消耗 $COST$ 威望以降低 $CHANGE$ 影响力.;;;;;;;;;;X
+WEAKENSHOGUNATE_TITLE;削弱幕府威望;;;;;;;;;;X
+WEAKENSHOGUNATENEWDESC;你要削弱幕府在皇宫的威望吗? 这将花费 $COST$ 威望.;;;;;;;;;;X
+WEAKENSHOGUNATE;削弱幕府威望;;;;;;;;;;X
+M_SHOGUNATE_BUTTON;幕府;;;;;;;;;;X
+SIDEMENU_msg_combat;军事消息;;;;;;;;;;X
+SIDEMENU_msg_diplo;外交消息;;;;;;;;;;X
+SIDEMENU_msg_trade;贸易消息;;;;;;;;;;X
+SIDEMENU_msg_government;行政消息;;;;;;;;;;X
+SIDEMENU_msg_event;事件消息;;;;;;;;;;X
+NO_WAR_ON_DAIMYO;不能向大名宣战,只能向天皇宣战.;;;;;;;;;;X
+IS_BACKING_FOR_SHOGUN;正在拥护$WHO$;;;;;;;;;;X
+found_hall_of_worthies_title;创立集贤殿;;;;;;;;;;X
+found_hall_of_worthies_desc;将这个国家所有明智的贤人聚集到一个屋顶下。;;;;;;;;;;X
+introduce_hangul_writing_system_title;谚文书写系统;;;;;;;;;;X
+introduce_hangul_writing_system_desc;引入谚文书写系统。;;;;;;;;;;X
+establish_border_patrol_title;边境巡逻;;;;;;;;;;X
+establish_border_patrol_desc;通过进行边境巡逻来提高我们在北部边境对游牧民族的防御。;;;;;;;;;;X
+establish_coastal_defense_title;海岸防御;;;;;;;;;;X
+establish_coastal_defense_desc;通过在整个省份设置大量防御点来提高我们的海岸防御。;;;;;;;;;;X
+ACHIEVEMENTS_DISABLED;游戏存档属于其它用户或被编辑过。成就系统不可用。;;;;;;;;;;X
+ACHIEVEMENTS_ENABLED;成就系统可用。;;;;;;;;;;X
+NOMAD_NO_DIPLO;神不与凡人交谈;;;;;;;;;;X
+NOMADWARSTART_SETUP;当游牧民族成为威胁.;;;;;;;;;;X
+NOMADWARSTART_HEADER;$MESSENGER$;;;;;;;;;;X
+NOMADWARSTART_1;游牧民族出现!;;;;;;;;;;X
+NOMADWARSTART_2;$MONARCHTITLE$,;;;;;;;;;;X
+NOMADWARSTART_3;$ENEMY$;;;;;;;;;;X
+NOMADWARSTART_4;在我国边境出现!;;;;;;;;;;X
+NOMADWARSTART_5;游牧大军随时可能越过国境,我们必须战斗或者纳贡.;;;;;;;;;;X
+NOMADWARSTART_6; ;;;;;;;;;;X
+NOMADWARSTART_LOG;$ENEMY$的游牧大军出现在我国边境!;;;;;;;;;;X
+NOMADWARSTART_BTN1;好的;;;;;;;;;;X
+NOMADWARSTART_BTN2;好的;;;;;;;;;;X
+NOMADWARSTART_BTN3;转到;;;;;;;;;;X
+NOMADWARSTART_MAP; ;;;;;;;;;;X
+NOMADWAREND_SETUP;当游牧民族不再威胁我们.;;;;;;;;;;X
+NOMADWAREND_HEADER;$MESSENGER$;;;;;;;;;;X
+NOMADWAREND_1;游牧民族撤退!;;;;;;;;;;X
+NOMADWAREND_2;$MONARCHTITLE$,;;;;;;;;;;X
+NOMADWAREND_3;$ENEMY$;;;;;;;;;;X
+NOMADWAREND_4;不再对我们构成威胁.;;;;;;;;;;X
+NOMADWAREND_5;他们的游牧民一定找到了别的更好的牧场;;;;;;;;;;X
+NOMADWAREND_6; ;;;;;;;;;;X
+NOMADWAREND_LOG;$ENEMY$的游牧大军离开我国边境.;;;;;;;;;;X
+NOMADWAREND_BTN1;好的;;;;;;;;;;X
+NOMADWAREND_BTN2;好的;;;;;;;;;;X
+NOMADWAREND_BTN3;转到;;;;;;;;;;X
+NOMADWAREND_MAP; ;;;;;;;;;;X
+WEAKLINGSTART_SETUP;当我们与文明国家接壤.;;;;;;;;;;X
+WEAKLINGSTART_HEADER;$MESSENGER$;;;;;;;;;;X
+WEAKLINGSTART_1;新的羔羊!;;;;;;;;;;X
+WEAKLINGSTART_2;$MONARCHTITLE$,我们的斥候发现了;;;;;;;;;;X
+WEAKLINGSTART_3;$ENEMY$;;;;;;;;;;X
+WEAKLINGSTART_4;定居使他们变得软弱!;;;;;;;;;;X
+WEAKLINGSTART_5;我们要奴役他们并倾听他们女人的哀号.;;;;;;;;;;X
+WEAKLINGSTART_6; ;;;;;;;;;;X
+WEAKLINGSTART_LOG;$ENEMY$ 与我们接壤!;;;;;;;;;;X
+WEAKLINGSTART_BTN1;好的;;;;;;;;;;X
+WEAKLINGSTART_BTN2;好的;;;;;;;;;;X
+WEAKLINGSTART_BTN3;转到;;;;;;;;;;X
+WEAKLINGSTART_MAP; ;;;;;;;;;;X
+WEAKLINGEND_SETUP;当我们不再与文明国家接壤.;;;;;;;;;;X
+WEAKLINGEND_HEADER;$MESSENGER$;;;;;;;;;;X
+WEAKLINGEND_1;不再与文明国家接壤!;;;;;;;;;;X
+WEAKLINGEND_2;$MONARCHTITLE$,;;;;;;;;;;X
+WEAKLINGEND_3;$ENEMY$;;;;;;;;;;X
+WEAKLINGEND_4;不在斥候的侦察范围之内了.;;;;;;;;;;X
+WEAKLINGEND_5;我们一定烧毁了他们最后一块农田并抢走了他们最后一个女人!;;;;;;;;;;X
+WEAKLINGEND_6; ;;;;;;;;;;X
+WEAKLINGEND_LOG;$ENEMY$ 不再与我们接壤.;;;;;;;;;;X
+WEAKLINGEND_BTN1;好的;;;;;;;;;;X
+WEAKLINGEND_BTN2;好的;;;;;;;;;;X
+WEAKLINGEND_BTN3;转到;;;;;;;;;;X
+WEAKLINGEND_MAP; ;;;;;;;;;;X
+MODIFIER_LOCAL_SHIP_COST;当地造船花费;;;;;;;;;;X
+MODIFIER_LOCAL_SHIP_REPAIR;当地船只修理速度;;;;;;;;;;X
+MODIFIER_LOCAL_REGIMENT_COST;当地募兵花费;;;;;;;;;;X
+MODIFIER_LOCAL_MOVEMENT_SPEED;当地移动速度;;;;;;;;;;X
+NOMAD_PEACE_ACTOR;我们是游牧民族.我们拒绝一切和约,除了进贡和彻底臣服!;;;;;;;;;;X
+NOMAD_PEACE_RECIPIENT;我们的敌人是游牧民族,他们唯一懂得的和约是进贡或者毁灭!;;;;;;;;;;X
+NOMAD_DEMAND_TRIBUTE;强迫进贡;;;;;;;;;;X
+NOMAD_OFFER_TRIBUTE;提供进贡;;;;;;;;;;X
+NOMAD_DEMAND_SUBMISSION;要求投降;;;;;;;;;;X
+NOMAD_DEMAND_TRIBUTE_DESC;$WHO$ 将每月进贡 $NUM$?.;;;;;;;;;;X
+NOMAD_DEMAND_SUBMISSION_DESC;要求投降;;;;;;;;;;X
+NOMADS_NO_SUBMISSION;游牧民族必须控制所有省份才能要求投降.;;;;;;;;;;X
+THEY_NOT_NOMADS;他们不是游牧民族;;;;;;;;;;X
+WE_NOT_NOMADS;我们不是游牧民族;;;;;;;;;;X
+CONFIRM_BUILDING_DESTROY_TITLE;摧毁建筑;;;;;;;;;;X
+CONFIRM_BUILDING_DESTROY;你确定要摧毁位于 $PROVINCE$ 的 $BUILDING$ 吗？;;;;;;;;;;X
+BUILDING_COST;花费: $AMOUNT$ 金钱与 $MAGISTRATES$ 事务官\n建造时间: $TIME$ 个月;;;;;;;;;;X
+PEACE_NAME;名称;;;;;;;;;;X
+INCOME_TRIBUTE;贡金收入;;;;;;;;;;X
+EXPENSE_TRIBUTE;贡金支出;;;;;;;;;;X
+COLONY_TO_REMOTE;这个区域太过荒凉偏僻而永远不可开发。;;;;;;;;;;X
+NOMAD_OTHER_COLONIST;其他国家在此地已经拥有一个移民点。;;;;;;;;;;X
+NOMAD_SEND_COLONIST;建设移民点;;;;;;;;;;X
+NOMAD_SEND_COLONIST_DESC;拓荒队可以被派遣到外国土地上建立移民点。当你的移民点达到1000人口，该省份将会叛逃到你的国家。请注意，省份的拥有者随时可以烧毁你的移民点。;;;;;;;;;;X
+NOMAD_COLONY_COST;花费: $VAL$?;;;;;;;;;;X
+NOMAD_COLONY_TIME;耗时: $VAL$ 天;;;;;;;;;;X
+NOMAD_COLONY_CHANCE;成功机会: $VAL$%;;;;;;;;;;X
+NOMAD_COLONIST_NATION;$NATION$ 在这里拥有一个移民点;;;;;;;;;;X
+NOMAD_SETTLEMENT_NUM;外国移民点拥有 $VAL$ 人口;;;;;;;;;;X
+alert_foreign_settlement_instant;我们的国土上出现了外国移民点;;;;;;;;;;X
+alert_foreign_settlement_delayed;外国移民出现在以下省份:\n$LIST$;;;;;;;;;;X
+NOMAD_NOT_NEIGHBOUR;这些种类的移民点只能修建于邻近省份。;;;;;;;;;;X
+PEACE_COST;花费;;;;;;;;;;X
+DESTROY_BUILDING;摧毁 $BUILDING$;;;;;;;;;;X
+BUILDING_COST_DESC;花费: $AMOUNT$? $MAGISTRATES$ 事务官。;;;;;;;;;;X
+NEED_TECHNOLOGY;需要研究 $TECHNOLOGY$ $LEVEL$;;;;;;;;;;X
+ONE_PER_COUNTRY;每个国家只能拥有一个，现在在 $PROVINCE$ 已经拥有;;;;;;;;;;X
+BUILDING_REQUIRED;必须拥有 $BUILDING$;;;;;;;;;;X
+BUILDING_ONLY_ONE_HIGH_LEVEL;省份内只能拥有一个高等级建筑;;;;;;;;;;X
+UNIQUE_BUILDING_BEING_CONSTRUCTED;已经在国内建造;;;;;;;;;;X
+BUILD_MANUFACTORY;建造工厂;;;;;;;;;;X
+IS_NOT_NOMAD; 不是游牧民族;;;;;;;;;;X
+IS_NOMAD; 是游牧民族;;;;;;;;;;X
+nomad_neighbours;邻接游牧民族;;;;;;;;;;X
+desc_nomad_neighbours;我们的一个邻国是游牧民族;;;;;;;;;;X
+colonize_horde_territory_header;*;;;;;;;;;;X
+colonize_horde_territory_title;移民 $PROVINCENAME$;;;;;;;;;;X
+colonize_horde_territory_desc;由于游牧民族处于我们家门口，我们不得不分出一个缓冲区域来保护我们有价值的核心省份。派遣拓荒队到 $PROVINCENAME$ 可以增加将其纳入我们控制的机会。;;;;;;;;;;X
+NOMAD_NO_NATION;没有国家;;;;;;;;;;X
+TRADETOFAR;贸易中心距离我们最近的省份 $VAL$ 。我们最远的贸易距离为 $MAX$ 。;;;;;;;;;;X
+MODIFIER_TRADE_RANGE;贸易距离;;;;;;;;;;X
+MODIFIER_PROVINCE_OWNER_TRADE_CHANCE;国内商人竞争成功率;;;;;;;;;;X
+OWNED_PROVICES_COMPETE;我们拥有 $FRAC$% 的贸易值: $VAL$%;;;;;;;;;;X
+THEIR_OWNED_PROVICES_COMPETE;他们拥有 $FRAC$% 的贸易值: $VAL$%;;;;;;;;;;X
+COUNTRY_STARTS;任何国家;;;;;;;;;;X
+LEDGER_BUILDING_LEVEL;建筑;;;;;;;;;;X
+UNIQUE_BUILDINGS;唯一;;;;;;;;;;X
+HAVE_LESS_UNITS_OF_TYPE;拥有少于 $NUM$ 的 $TYPE$。;;;;;;;;;;X
+HAVE_MORE_UNITS_OF_TYPE;拥有至少 $NUM$ 的 $TYPE$。;;;;;;;;;;X
+GOODS_TRADED_IN; 世界上 $VAL$% 的 $GOOD$ 都在此交易。;;;;;;;;;;X
+LEDGER_TRADE_GOOD;贸易货物;;;;;;;;;;X
+BUILDING_CATEGORY_7;工厂;;;;;;;;;;X
+BUILDING_CATEGORY_8;唯一;;;;;;;;;;X
+GOODS_WE_TRADE; 我们获得了全球 $VAL$% 的 $GOOD$ 供应 ;;;;;;;;;;X
+DAIMYO_NO_WAR_ON_EMPEROR;作为大名你无法向天皇宣战。;;;;;;;;;;X
+PEACE_TREATIES;条约;;;;;;;;;;X
+CONTROL_BONUS_HEAD;在贸易中心交易了全球供应的 $VAL$% :;;;;;;;;;;X
+ITEMS_TRADED_OF_WORLD;这些货物在此交易(占全球市场的百分比):;;;;;;;;;;X
+GOODS_WE_TRADE_OF_LIMIT;我们获得了全球供应的 $VAL$% ，我们需要获得 $VAL2$% :;;;;;;;;;;X
+TRADING_IN;交易 $GOOD$ :;;;;;;;;;;X
+TRADE_LEADER_THEY_DESC;$LEADER$ 是贸易主导者。 (他们: $THEIR$% 我们: $OUR$)%:;;;;;;;;;;X
+TRADE_LEADER_WE_DESC;我们是贸易主导者 ($OUR$)%:;;;;;;;;;;X
+PRODUCTION_LEADER_THEY_DESC;$LEADER$ 是主要生产者。 (他们: $THEIR$% 我们: $OUR$%):;;;;;;;;;;X
+PRODUCTION_LEADER_WE_DESC;我们是主要生产者。 ($OUR$%):;;;;;;;;;;X
+IS_NOT_TRADE_LEADER;我们不是 $GOOD$ 的贸易主导者。;;;;;;;;;;X
+IS_TRADE_LEADER;我们是 $GOOD$ 的贸易主导者。;;;;;;;;;;X
+IS_NOT_PRODUCTION_LEADER;我们不是 $GOOD$ 的主要生产者。;;;;;;;;;;X
+IS_PRODUCTION_LEADER;我们是 $GOOD$ 的主要生产者。;;;;;;;;;;X
+HAS_PRODUCTION_BONUS;交易足够的 $GOOD$ 以获得额外奖励。;;;;;;;;;;X
+NOT_PRODUCION_BONUS;未交易足够的 $GOOD$ 以获得额外奖励。;;;;;;;;;;X
+WE_HAVE_TRADE_TRIGGER;获得了全球 $GOOD$ 市场上的 $VAL$% 。;;;;;;;;;;X
+WE_HAVE_NOT_TRADE_TRIGGER;未获得全球 $GOOD$ 市场上的 $VAL$% 。;;;;;;;;;;X
+NOT_HORDE_NEIGHBOUR;游牧民族无法与并非邻国的国家作战;;;;;;;;;;X
+LEDGER_CASUS_BELLI;宣战理由;;;;;;;;;;X
+LEDGER_CASUS_BELLI_HEADER;宣战理由;;;;;;;;;;X
+LEDGER_CB_TARGET;目标;;;;;;;;;;X
+LEDGER_CB_DURATION;期限;;;;;;;;;;X
+EVTNAME757;$PROVINCENAME$ 发生叛乱！;;;;;;;;;;X
+EVTDESC757;忠诚的 $COUNTRY$ 国民长期以来负担着 $MONARCHTITLE$ 持续进行战争的重压而毫无怨言。这种日子一去不复返了……\n\n因为 $MONARCH$ 看起来并不想听听理由， $PROVINCENAME$ 的民众决定拿起武器！;;;;;;;;;;X
+EVTOPTA757;我知道了……;;;;;;;;;;X
+EVTNAME758;我们被选中了！;;;;;;;;;;X
+EVTDESC758;好消息，我的 $MONARCHTITLE$ ！霸主陛下给予了我们巨大的荣誉：举办本年度的帝国议会。\n\n这将极大地增加我们在帝国内的威望。让所有代表敬畏得不敢呼吸地步入我们伟大的首都 $PROVINCECAPITAL$ 吧！;;;;;;;;;;X
+EVTOPTA758;太好了！;;;;;;;;;;X
+EVTNAME773;商人被害！;;;;;;;;;;X
+EVTDESC773;一些国家明显不满我们的外交政策，他们决定通过暗杀我们的商人来进行报复，试图打击我们的财政！\n\n令人震惊的是它甚至会发生在我们拥有的贸易中心……;;;;;;;;;;X
+EVTOPTA773;摇摇脑袋！还好不是我……;;;;;;;;;;X
+shogunate_bonus;将军;;;;;;;;;;X
+desc_shogunate_bonus;获得将军头衔可以增加我们的威望并使征召士兵变得更加容易。;;;;;;;;;;X
+powerful_shogun;强力的大将军;;;;;;;;;;X
+desc_powerful_shogun;一位强力的大将军有助于他麾下部队的士气，并吸引更多的士兵加入他的军队。;;;;;;;;;;X
+IS_RULING_FACTION;$FACTION$ 是执政的派系。;;;;;;;;;;X
+IS_NOT_RULING_FACTION;$FACTION$ 不是执政的派系。;;;;;;;;;;X
+NOMAD_COLONIST_PEACE;你必须与此地拥有者保持和平才能将拓荒队派遣到这里;;;;;;;;;;X
+FACTION_CANNOT_BUILD_BUILDINGS;当前执政的派系不允许修建建筑。;;;;;;;;;;X
+WT_NOMADS_WARTAX;战争税？对游牧民族来说，所有税收都是战争税！;;;;;;;;;;X
+LEADING_IN_UNION_SINCE;自 $SINCE$ 起开始对 $OTHER$ 的联合统治;;;;;;;;;;X
+LESSER_IN_UNION_SINCE;自 $SINCE$ 起接受 $OTHER$ 的联合统治;;;;;;;;;;X
+alert_blockade_instant;你有港口被封锁！;;;;;;;;;;X
+alert_blockade_delayed;总共 $TOTAL$ 港口中的 $NUMBER$ 个被封锁了。\n$LIST$;;;;;;;;;;X
+TECH_NEXT_LEVEL;等级 ;;;;;;;;;;X
+EVTNAME763;当地使节;;;;;;;;;;X
+EVTDESC763;我们长久以来荣耀地作为教皇的代表—— 当地使节 ——在阿尔卑斯山以北。\n\n如此一个权威头衔需要与之匹配的尊贵地位，必须保证我们的威望和与教皇的关系不会下降得太低。;;;;;;;;;;X
+EVTOPTA763;一切都在上帝手中。;;;;;;;;;;X
+EVTNAME764;失去当地使节的头衔;;;;;;;;;;X
+EVTDESC764;近来我们在帝国内的地位和与教皇的关系下降了。教皇对支持我们担当他在帝国的代表这一角色不再抱有信心，并且不幸地决定取消我们的头衔。;;;;;;;;;;X
+EVTOPTA764;我想一切还控制在我手中吧……;;;;;;;;;;X
+EVTNAME765;天子的使节;;;;;;;;;;X
+EVTDESC765;好消息！我们被天子选中，获得了 当地使节 这一权威头衔——他在阿尔卑斯山以北的代表——在上一位持有者失宠之后。;;;;;;;;;;X
+EVTOPTA765;佛晓的光辉照耀进来了吗？;;;;;;;;;;X
+EVTOPTB765;我们必须郑重地谢绝。;;;;;;;;;;X
+CALL_ALL_ALLIES;自动召集盟友。;;;;;;;;;;X
+PERC_OF_MARKET;% 在市场。;;;;;;;;;;X
+INTEGRATETITLE;合并;;;;;;;;;;X
+INTEGRATENEWDESC;你是否希望将 $COUNTRY$ 纳入你的国家？;;;;;;;;;;X
+INTEGRATEDESC;要求将他们完全纳入你的国家;;;;;;;;;;X
+INTEGRATEINVALID;你只能合并满足如下条件的国家： 1) 处于你的联合统治至少 50 年。 2) 与你的关系超过 190 。;;;;;;;;;;X
+NUM_TRADE_LEADER;是超过 $NUM$ 种货物的贸易主导者。;;;;;;;;;;X
+NUM_NOT_TRADE_LEADER;是少于 $NUM$ 种货物的贸易主导者。;;;;;;;;;;X
+daimyo_navy;海军规模受限;;;;;;;;;;X
+desc_daimyo_navy;作为大名，我们的海军规模受到限制。;;;;;;;;;;X
+MODIFIERS_STRATEGIC_EFFECTS;已触发的修正效果;;;;;;;;;;X
+CB_BECOME_KAMPAKU;成为关白;;;;;;;;;;X
+CB_ENDORSE_SHOGUN;支持将军;;;;;;;;;;X
+CB_STOP_ENDORSE_SHOGUN;停止支持将军;;;;;;;;;;X
+tut_1b_35;当你控制了这个省份，你将在左边看到该省的建筑界面。在外国省份，这里则是外交界面。外交界面包含了关于该国的各种信息以及进行外交行动的按钮。;;;;;;;;;;X
+tut_1b_37;在省份界面有四个按钮用于建造，每个按钮都会指向一个单独的界面。第一个按钮用于执行省份决议，第二个用于组建军队，第三个用于建造船只，最后一个用于征募私募兵部队。;;;;;;;;;;X
+tut_1b_48;事务官用于执行决议;;;;;;;;;;X
+tut_1b_25;在小地图上方是用于切换地图模式的按钮。一共有十一种地图模式，默认的地图是地形模式。模式一共有如下几种：地形，政治，宗教，中原，贸易，外交，地域，文化，势力范围，叛乱与移民。在各种模式之间多次切换非常有助于你了解世界形势。;;;;;;;;;;X
+tut_1b_27;请注意，地图上的一些部分是完全空白的。这代表了你的国家所不知道的未知土地。要进入这些区域，你必须拥有由探险家或征服者所率领的陆军或海军。不过，你的陆军同样可以进入由敌人控制的未知省份。;;;;;;;;;;X
+tut_3a_4;尽管叛乱看起来都是因为一些随机事件，但同样有许多方式可以察觉并避免。两个最为重要的因素是本地叛乱风险和国家稳定度。本地叛乱风险主要取决于不同宗教与文化之间的容忍度，以及民族主义。国家稳定度取决于许多不同的因素，但可以通过改变财政上对稳定的投资来进行操纵。;;;;;;;;;;X
+tut_3a_17;正如之前曾提到的一样，你对异端及异教徒的容忍度是这个游戏不可分割的一部分。在一个省份，较低容忍度的宗教会造成较低的税收和较高的叛乱风险。此外，稳定投资的花费也会增加。派遣布道者可以让省份皈依你的国教，这会持续消耗金钱，直到他成功为止。;;;;;;;;;;X
+tut_3a_26;当你向其他国家宣战时你最好拥有一个战争的合适理由，一个宣战理由，从而避开遭到较低稳定度、恶化的关系及恶名惩罚。你在省份的核心代表了这些省份被认可是你国家的一部分，无论现在是谁实际控制它们。常见的优秀宣战理由正是当你有一个核心省份处于其他国家控制之下时。;;;;;;;;;;X
+tut_3a_27;拥有高恶名的国家最终多半被认为是所有国家的敌人，所以请好好注意你的名声。;;;;;;;;;;X
+PDC_INCORRECT_CHECKSUM;当前无法登陆Paradox主机，请确认你拥有最新的版本并禁用了所有模组。;;;;;;;;;;X
+LEDGER_MARKET_SHARE;市场份额;;;;;;;;;;X
+LEDGER_TRADE_LEADER;贸易主导者;;;;;;;;;;X
+LEDGER_PRODUCTION_LEADER;主要生产者;;;;;;;;;;X
+LEDGER_BONUS;战略效果;;;;;;;;;;X
+LEDGER_STRATEGIC_GOODS;战略物资;;;;;;;;;;X
+REMOVED_SHOGUNATE_PLAYER_SHOGUN;作为将军,你要增强幕府在皇宫中的影响力来保证自己的地位.;;;;;;;;;;X
+REMOVED_SHOGUNATE_OTHER_SHOGUN;通过削弱幕府在皇宫中的影响力来打击幕府.;;;;;;;;;;X
+SHOGUNATE_NO_SHOGUN;要成为将军，你必须先前往京都让天皇任命你为关白。;;;;;;;;;;X
+SHOGUNATE_PLAYER_KAMPAKU;要成为将军，必须确保所有大名都支持你成为新的将军。这可以作为和平谈判的条件。;;;;;;;;;;X
+SHOGUNATE_OTHER_KAMPAKU;要成为将军，请击败当前的关白并迫使他在和平谈判时放弃其宣称权。;;;;;;;;;;X
+NOT_IN_SPHERE_TRADE_RANGE;他们离我们太远了。这个距离取决于你的贸易距离 (请参考“势力范围”地图模式。);;;;;;;;;;X
+NOMAD_NO_OCCUPATION;你必须先占领这个省份。;;;;;;;;;;X
+MESSAGE_IS_ICON;这种类型的消息当前 $TRUTH$ 显示为信息图标 (如果可能) 。;;;;;;;;;;X
+MESSAGE_IS_POPUPPAUSE;这种类型的消息当前 $TRUTH$ 显示为信息窗口并且 $TRUTH$ 暂停游戏。;;;;;;;;;;X
+become_king_of_gonder_title;成为贡德尔国王;;;;;;;;;;X
+HISTORY_SETTLED;已由 $NEW$ 建立定居点。;;;;;;;;;;X
+HISTORY_DEFECTED;叛逃到了 $NEW$ 。;;;;;;;;;;X
+ALLY_JOIN_CHANCE;$NAME$: $VAL$;;;;;;;;;;X
+NO_NOMAD_CALL;与游牧民族作战时无法召集盟友;;;;;;;;;;X
+ALLREADY_IN_WAR_CALL;他们已经加入了这场战争。;;;;;;;;;;X
+ALLREADY_ALIGNED_WITH_ENEMY;他们在这场战争中与我们的敌人站在同一边。;;;;;;;;;;X
+DIPLOMACY_JOIN_WAR;将会加入战争;;;;;;;;;;X
+DIPLOMACY_CHANCE_JOIN_WAR;加入战争可能性: $VAL$;;;;;;;;;;X
+AUTO_CALL_ALLY;自动召集所有盟友;;;;;;;;;;X
+build_the_forbidden_city_title;建造紫禁城;;;;;;;;;;X
+build_the_forbidden_city_desc;一旦完成了这个建筑，它将祝福我们的国家，增加我们的威望和稳定。然而这项工程估计将会花上五年时间并需要雇佣大量的劳工。;;;;;;;;;;X
+construct_the_forbidden_city;建造紫禁城;;;;;;;;;;X
+desc_construct_the_forbidden_city;这项工程估计将会花上五年时间并需要雇佣大量的劳工。;;;;;;;;;;X
+the_forbidden_city;紫禁城;;;;;;;;;;X
+desc_the_forbidden_city;这座纪念性的建筑物是我们伟大国家的真正财富！;;;;;;;;;;X
+enforce_sakoku_law_title;执行锁国令;;;;;;;;;;X
+enforce_sakoku_law_desc;外国人所带来的移民及宗教影响看起来似乎是对我们国家的威胁。执行锁国令可以禁止外国人进入以及日本人离开，这样便能有效地隔离这个国家。;;;;;;;;;;X
+allow_western_trade_title;允许西方贸易;;;;;;;;;;X
+allow_western_trade_desc;向外国贸易者打开国门也许可以让我们获得针对邻国的优势;;;;;;;;;;X
+trade_leader;贸易主导者;;;;;;;;;;X
+production_leader;主要生产者;;;;;;;;;;X
+OL_SETTLERS_DESC;我们的拓荒队有 $CHANCE$% 机会成功。定居点当前拥有 $NUM$ 移民者。;;;;;;;;;;X
+nomad_neighbour_bonus;邻近游牧民族;;;;;;;;;;X
+nomad_neighbour;邻近游牧民族;;;;;;;;;;X
+PROV_UNIQUE_BUILDINGS;唯一建筑;;;;;;;;;;X
+MANUFACTORY;工厂;;;;;;;;;;X
+SHOGUNATE_CAN_TAKE;当将军影响力处于 $MIN$ 到 $MAX$ 之间时可以采取行动，当前为 $VALID$$INFLUENCE$ 。;;;;;;;;;;X
+fort_in_disrepair;荒废的要塞;;;;;;;;;;X
+desc_fort_in_disrepair;缺乏维护造成了这个要塞非常难以防御。;;;;;;;;;;X
+eng_corps_boost_title;改善要塞防御;;;;;;;;;;X
+eng_corps_boost_desc;在和平时期我们可以雇佣工程队伍改良我们省份的防御工事。;;;;;;;;;;X
+eng_corps_repair_title;修复要塞;;;;;;;;;;X
+eng_corps_repair_desc;在和平时期我们的工程队伍可以修复那些被长期忽视的要塞。;;;;;;;;;;X
+EVTDESC6197;我们支持扩充国内官僚体系的政策获得了真正的回报。每天都有新的官员完成培训并前往我们光荣的行政部门担任职务！;;;;;;;;;;X
+EVTOPTA6197;太好了！;;;;;;;;;;X
+EVTDESC6198;一个如此规模的帝国需要大量的官僚，也许提供就业奖金可以刺激他们的人数上升？;;;;;;;;;;X
+EVTOPTA6198;无论它需要什么;;;;;;;;;;X
+EVTOPTB6198;不是现在;;;;;;;;;;X
+WCRD_SPHERE;他们是我们势力范围的一部分。;;;;;;;;;;X
+MONTHLY_SHOGUN_INFLUENCE;每月将军影响力;;;;;;;;;;X
+desc_good_shogun_relation;关系良好;;;;;;;;;;X
+desc_bad_shogun_relation;关系恶劣;;;;;;;;;;X
+desc_shogun_influence;将军影响力;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_SETUP;当我们削弱幕府;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_HEADER;$MESSENGER$;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_1;削弱幕府;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_2;$MONARCHTITLE$，;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_3;我们使将军影响力降低了 $CHANGE$ ;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_4;代价是 $VALUE$ 威望。;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_5;*;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_6;*;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_LOG;幕府已被削弱;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_BTN1;好的;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_BTN2;好的;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_BTN3;转到;;;;;;;;;;X
+WE_WEAKEN_SHOGUNATE_MAP;*;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_SETUP;当有人削弱幕府;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_HEADER;$MESSENGER$;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_1;削弱幕府;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_2;$MONARCHTITLE$，;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_3;$ACTOR$ 已经使将军影响力降低了 $CHANGE$ ;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_4;*;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_5;*;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_6;*;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_LOG;幕府已被削弱;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_BTN1;好的;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_BTN2;好的;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_BTN3;转到;;;;;;;;;;X
+OTHER_WEAKEN_SHOGUNATE_MAP;*;;;;;;;;;;X
+SHOGUN_LAST_MONTH;上个月: ;;;;;;;;;;X
+SHOGUN_BATTLES;战斗: ;;;;;;;;;;X
+SHOGUN_RELATION;与将军的关系: $VAL$ ;;;;;;;;;;X
+SHOGUN_MONTHLY;每月影响力改变: ;;;;;;;;;;X
+SHOGUN_BONUS;将军获得:\n;;;;;;;;;;X
+bad_relation_daimyo;关系恶劣;;;;;;;;;;X
+good_relation_daimyo;关系良好;;;;;;;;;;X
+shogun_influence;将军影响力;;;;;;;;;;X
+MENU_ACHIEVEMENT;成就;;;;;;;;;;X
+SERVER_LOST_DESC;服务器的连接已中断. \n游戏将结束. ;;;;;;;;;;X

@@ -1,0 +1,86 @@
+owner = KUI
+controller = KUI
+culture = nanchu
+religion = ancestor
+capital = "µ±Ñô"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 11000
+fort1 = yes
+add_core = KUI
+add_core = CHU
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2064.9.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2094.9.1 = { 
+	add_core = CHU
+	religion = liyuebadao
+}
+2192.11.1 = { 
+	owner = WUG
+	controller = WUG
+}
+2193.7.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2222.1.1 = { 
+	citysize = 20000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = KUI
+	controller = KUI
+	add_core = KUI
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = KUI
+}
+2246.1.2 = { 
+	owner = KUI
+	controller = KUI
+	add_core = KUI
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2350.1.1 = { 
+	religion = daojia
+}
+2420.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2450.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}

@@ -1,0 +1,17 @@
+name = "Èý½ú·¥Æë"
+casus_belli = cb_insult_zb
+
+2295.1.1= {
+	add_attacker = WEI
+	add_attacker = ZHO
+	add_attacker = HAN
+	add_attacker = YGO
+	add_defender = QIG
+}
+2295.8.1={
+	rem_attacker = WEI
+	rem_attacker = ZHO
+	rem_attacker = HAN
+	rem_attacker = YGO
+	rem_defender = QIG
+}

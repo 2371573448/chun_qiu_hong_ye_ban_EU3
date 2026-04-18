@@ -1,0 +1,11 @@
+
+culture = kunxi
+religion = ancestor
+capital = "บบั๔"
+trade_goods = chinaware
+hre = no
+base_tax = 5
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10

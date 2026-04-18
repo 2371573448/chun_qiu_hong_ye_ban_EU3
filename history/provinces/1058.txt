@@ -1,0 +1,58 @@
+
+owner = JIN
+controller = JIN
+culture = shanxi
+religion = liyuejiaohua
+capital = "зѓви"
+trade_goods = chinaware
+hre = yes
+base_tax = 7
+manpower = 0
+citysize = 28000
+fort1 = yes
+add_core = JIN
+cot = no
+1827.1.1 = { discovered_by = PAP }
+1827.1.1 = { discovered_by = WUG }
+1827.1.1 = { discovered_by = SGU }
+1827.1.1 = { discovered_by = CHA }
+1827.1.1 = { discovered_by = YXU }
+1953.1.1 = { owner = QUW
+             controller = QUW 
+             add_core = QUW
+           }
+2020.12.1 = { owner = JIN
+             controller = JIN
+             remove_core = QUW
+           }
+2222.1.1 = { citysize = 32000 }
+2245.1.1 = { hre = no }
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2322.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2360.1.1 = { religion = mojia }
+2408.1.1  = {	owner = QIN
+		controller = QIN
+	    }
+2435.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN  }
+2492.2.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2493.8.1 = { 
+	owner = HNW
+	controller = HNW
+	add_core = HNW
+}

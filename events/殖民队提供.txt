@@ -1,0 +1,722 @@
+country_event = { 
+	id = 61001
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 10000
+				not = { 
+					citysize = 20000
+				}
+				not = { 
+					has_province_modifier = capital1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 10000
+					not = { 
+						citysize = 20000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital1"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61002
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 20000
+				not = { 
+					citysize = 30000
+				}
+				not = { 
+					has_province_modifier = capital2
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 20000
+					not = { 
+						citysize = 30000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital2"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61003
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 30000
+				not = { 
+					citysize = 40000
+				}
+				not = { 
+					has_province_modifier = capital3
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 30000
+					not = { 
+						citysize = 40000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital3"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61004
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 40000
+				not = { 
+					citysize = 50000
+				}
+				not = { 
+					has_province_modifier = capital4
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 40000
+					not = { 
+						citysize = 50000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital4"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61005
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 50000
+				not = { 
+					citysize = 60000
+				}
+				not = { 
+					has_province_modifier = capital5
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 50000
+					not = { 
+						citysize = 60000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital5"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61006
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 60000
+				not = { 
+					citysize = 70000
+				}
+				not = { 
+					has_province_modifier = capital6
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 60000
+					not = { 
+						citysize = 70000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital6"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61007
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 70000
+				not = { 
+					citysize = 80000
+				}
+				not = { 
+					has_province_modifier = capital7
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 70000
+					not = { 
+						citysize = 80000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital7"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61008
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 80000
+				not = { 
+					citysize = 90000
+				}
+				not = { 
+					has_province_modifier = capital8
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 80000
+					not = { 
+						citysize = 90000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital8"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61009
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 90000
+				not = { 
+					citysize = 100000
+				}
+				not = { 
+					has_province_modifier = capital9
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 90000
+					not = { 
+						citysize = 100000
+					}
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital10
+				add_province_modifier = { 
+					name = "capital9"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61010
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			capital_scope = {
+				citysize = 100000
+				not = { 
+					has_province_modifier = capital10
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61001"
+	desc = "EVTDESC61001"
+	option = { 
+		name = "EVTOPTA61001"
+		any_country = { 
+			limit = { 
+				capital_scope = {
+					citysize = 100000
+				}
+			}
+			any_owned = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				remove_province_modifier = capital10
+			}
+			capital_scope = { 
+				remove_province_modifier = capital1
+				remove_province_modifier = capital2
+				remove_province_modifier = capital3
+				remove_province_modifier = capital4
+				remove_province_modifier = capital5
+				remove_province_modifier = capital6
+				remove_province_modifier = capital7
+				remove_province_modifier = capital8
+				remove_province_modifier = capital9
+				add_province_modifier = { 
+					name = "capital10"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61011
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			idea = vice_roys
+			any_owned_province = { 
+				has_empty_adjacent_province = yes
+				not = { 
+					has_province_modifier = empty_colonists
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61011"
+	desc = "EVTDESC61011"
+	option = { 
+		name = "EVTOPTA61011"
+		any_country = { 
+			limit = { 
+				idea = vice_roys
+			}
+			any_owned = { 
+				limit = { 
+					has_empty_adjacent_province = yes
+					not = { 
+						has_province_modifier = empty_colonists
+					}
+				}
+				add_province_modifier = { 
+					name = "empty_colonists"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61012
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			idea = vice_roys
+			any_owned_province = { 
+				NOT = { has_empty_adjacent_province = yes }
+				has_province_modifier = empty_colonists
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61011"
+	desc = "EVTDESC61011"
+	option = { 
+		name = "EVTOPTA61011"
+		any_country = { 
+			limit = { 
+				idea = vice_roys
+			}
+			any_owned = { 
+				limit = { 
+					NOT = { has_empty_adjacent_province = yes }
+					has_province_modifier = empty_colonists
+				}
+				remove_province_modifier = empty_colonists
+			}
+		}
+	}
+}
+country_event = { 
+	id = 61013
+	trigger = { 
+		tag = NPC
+		any_country = { 
+			NOT = {
+				idea = vice_roys
+			}
+			any_owned_province = { 
+				has_province_modifier = empty_colonists
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME61011"
+	desc = "EVTDESC61011"
+	option = { 
+		name = "EVTOPTA61011"
+		any_country = { 
+			limit = { 
+				NOT = {
+					idea = vice_roys
+				}
+			}
+			any_owned = { 
+				limit = { 
+					has_province_modifier = empty_colonists
+				}
+				remove_province_modifier = empty_colonists
+			}
+		}
+	}
+}

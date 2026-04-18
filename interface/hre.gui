@@ -1,0 +1,383 @@
+guiTypes = {
+
+	windowType = {
+		name = "hre_window"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+
+
+
+
+		iconType =
+		{
+			name ="hre_bg"
+			spriteType = "GFX_hre_bg"
+			position = { x= -290 y = -323 }
+			Orientation = "CENTER"
+		}
+
+
+		textBoxType = {
+			name = "hre_label"
+			position = { x = 0 y =-295 }
+			format = centre
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = "HRE_HRE"	
+			maxWidth = 400
+			maxHeight = 32	
+			
+			Orientation = "CENTER"
+
+			
+		}
+		
+		textBoxType = {
+			name = "emperor_label"
+			position = { x = 0 y =-125 }
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "HRE_EMPEROR"	
+			maxWidth = 450
+			maxHeight = 128	
+			format = centre
+			Orientation = "CENTER"
+
+			
+		}
+
+		textBoxType = {
+			name = "electors_label"
+			position = { x = 0 y =-87 }
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "HRE_ELECTORS"	
+			maxWidth = 400
+			maxHeight = 32	
+			format = centre
+			Orientation = "CENTER"
+
+			
+		}
+
+		textBoxType = {
+			name = "members_label"
+			position = { x = 0 y = 12 }
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = "HRE_MEMBER_STAT"	
+			maxWidth = 400
+			maxHeight = 32	
+			format = centre
+			Orientation = "CENTER"
+
+			
+		}
+		
+		#### AUTHORITY
+		textBoxType = {
+			name = "influence_label"
+			position = { x = -160 y =-130 }
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 0}
+			text = "HRE_INFLUENCE"	
+			maxWidth = 400
+			maxHeight = 32	
+			format = centre
+			Orientation = "CENTER"
+		}
+		
+		textBoxType = {
+			name = "influence_value"
+			position = { x = -160 y = -180 }
+
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 400
+			maxHeight = 32	
+			format = centre
+			Orientation = "CENTER"
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "emperor_mods_box"
+			position = { x = -265 y = -155 }
+			size = { x = 250 y= 48 }
+			Orientation = "CENTER"
+			format = centre
+			spacing = 1
+		}
+		
+		guiButtonType = 
+			{
+				name ="emperor_shield"
+				quadTextureSprite = "GFX_thinshield"
+				position = { x= -30 y = -216 }
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Main_14_black"
+				Orientation = "CENTER"
+			}
+			
+		#### REFORM DECISIONS
+		instantTextBoxType = {
+			name = "decisions_label"
+			position = { x = 48 y = -257 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 0}
+			text = "HRE_DECISIONS"
+			maxWidth = 320
+			maxHeight = 16	
+			Orientation = "CENTER"
+		}
+			
+		listboxType =  {
+			name ="decisions_listbox"
+			position = { x = 80 y = -234 }
+			backGround=""
+			size = { x = 190 y = 100}
+			Orientation = "CENTER"
+			horisontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+			
+		guiButtonType = {
+				name = "close_button"
+				position = { x=80 y =210}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "HRE_CLOSE"
+				buttonFont = "Main_14_black"
+
+				Orientation = "CENTER"
+				clicksound = close_window
+				shortcut = "ESCAPE"
+			}
+
+
+		guiButtonType = {
+				name = "dismantel_button"
+				position = { x= -100 y = 210}
+				quadTextureSprite ="button_type_1"	
+
+				buttonText = "HRE_DISMANTLE"
+				buttonFont = "Main_14_black"
+
+				Orientation = "CENTER"
+
+			}
+		guiButtonType = {
+				name = "leave_button"
+				position = { x= -240 y = 210}
+				quadTextureSprite ="button_type_1"	
+
+				buttonText = "HRE_LEAVE"
+				buttonFont = "Main_14_black"
+
+				Orientation = "CENTER"
+
+		}
+	}
+
+
+
+
+	guiButtonType = 
+	{
+		name ="elector_shield"
+		quadTextureSprite = "GFX_thinshield"
+		position = { x= -32 y = -64 }
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = "Main_14_black"
+		Orientation = "CENTER"
+	}
+	guiButtonType = 
+	{
+		name ="elector_vote_shield"
+		quadTextureSprite = "GFX_minishield"
+		position = { x= 0 y = -22 }
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = "Main_14_black"
+		Orientation = "CENTER"
+	}
+	
+	guiButtonType =
+	{
+		name ="member_shield"
+		quadTextureSprite = "GFX_minishield"
+		position = { x= -16 y = 4 }
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = "Main_14_black"
+		Orientation = "CENTER"
+	}
+	
+	guiButtonType = 
+	{
+		name ="we_are_elector_button"
+		quadTextureSprite = "GFX_we_are_hre_elector"
+		position = { x= 0 y = 0 }
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = "Main_14_black"
+		Orientation = "CENTER"
+	}
+
+
+	positionType = {
+		name = "elector_shield_position"
+		position = { x = -32 y = -70 }
+	}
+
+	positionType = {
+		name = "elector_vote_position"
+		position = { x = 0 y = -22 }
+	}
+
+	positionType = {
+		name = "member_shield_position"
+		position = { x = -16 y = 30 }
+	}
+	
+	positionType = {
+		name = "we_are_elector_position"
+		position = { x = 0 y = -27 }
+	}
+
+
+	positionType = {
+		name = "elector_shield_offset"
+		position = { x = 55 y = 0 }
+	}
+
+	positionType = {
+		name = "member_shield_offset"
+		position = { x = 30 y = 0 }
+	}
+	
+	positionType = {
+		name = "elector_relation_position"
+		position = { x = 28 y = -10 }
+	}
+	
+	textBoxType = {
+			name = "relation"
+			position = { x = 0 y = 0 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "HRE_MEMBER_STATES"	
+			maxWidth = 48
+			maxHeight = 32	
+			format = centre
+			Orientation = "CENTER"			
+		}
+		
+	### EMPEROR MODIFIER ENTRY
+	windowType = {
+		name = "emperor_mod_entry"
+		backGround =""
+		position = { x=0 y=0 }
+		size = { x=48 y=48 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="strip_temp_mods"
+			spriteType = "GFX_modifier_icons"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+	}
+	
+### REFORMS ENTRY	
+	windowType = {
+		name = "hre_decision_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 20 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "nation_decisions_banner"
+			spriteType ="GFX_hre_decision_banner"	
+			position = { x= -26 y = -21 }
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=-10 y =-10}
+			name = "name"
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_info_decision"	
+			position = { x=123 y =-13}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=153 y =-14}
+			quadTextureSprite ="GFX_execute_decision"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+	}
+
+}

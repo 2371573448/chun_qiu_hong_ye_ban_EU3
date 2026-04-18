@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_papacy_bg"
+		texturefile = "gfx\\interface\\vatican_bg.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_cardinal_banner"
+		texturefile = "gfx\\interface\\cardinal_banner.tga"
+		loadType = "INGAME"
+	}
+	
+	maskedShieldType = {
+		name = "GFX_crusade_target_shield"
+		textureFile1 = "gfx\\interface\\in_nomine_interface\\crusade_target_shield.tga"
+		textureFile2 = "gfx\\interface\\minimask.tga"
+		effectFile = "gfx\\FX\\maskedflag.fx"
+	}
+
+}

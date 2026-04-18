@@ -1,0 +1,120 @@
+government = enlightened_despotism
+aristocracy_plutocracy = -3
+centralization_decentralization = -3
+innovative_narrowminded = 2
+mercantilism_freetrade = -2
+offensive_defensive = -1
+land_naval = -4
+quality_quantity = -2
+serfdom_freesubjects = 0
+technology_group = chinese
+religion = liyuebadao
+primary_culture = nanchu
+capital = 328
+unit_type = wuyue1
+2246.1.2 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+	set_country_flag = mil_reform2
+	monarch = { 
+		name = "¼®"
+		dynasty = "Ïî"
+		adm = 5
+		dip = 4
+		mil = 9
+		leader = {	
+			name = "ÏîÓğ"
+			type = general
+			rank = 0
+			fire = 7
+			shock = 9
+			manuever = 9
+			siege = 5
+		}
+	}
+}
+2400.1.1 = { 
+	set_country_flag = zongfazhidu
+	set_country_flag = dubizhidu
+	set_country_flag = mil_reform1
+	set_country_flag = shiguanzhidu
+	set_country_flag = tianfuzhidu
+	set_country_flag = falvzhidu
+	set_country_flag = mil_reform2
+	set_country_flag = junxianzhidu
+	set_country_flag = sitianzhidu
+	set_country_flag = fengjunzhidu
+	set_country_flag = hujizhidu
+	set_country_flag = guanliaozhidu
+}
+2492.2.1 = { 
+	monarch = { 
+		name = "¼®"
+		dynasty = "Ïî"
+		adm = 5
+		dip = 4
+		mil = 9
+		leader = {	
+			name = "ÏîÓğ"
+			type = general
+			rank = 0
+			fire = 7
+			shock = 9
+			manuever = 9
+			siege = 5
+		}
+	}
+  leader = { 
+		name = "ÁúÇÒ"
+		type = general
+		rank = 1
+		fire = 5
+		shock = 5
+		manuever = 2
+		siege = 2
+		death_date = 2494.10.1
+	}
+  leader = { 
+		name = "¼¾²¼"
+		type = general
+		rank = 2
+		fire = 3
+		shock = 3
+		manuever = 6
+		siege = 2
+		death_date = 2494.11.1
+	}
+  leader = { 
+		name = "ÖÓÀëÃÁ"
+		type = general
+		rank = 2
+		fire = 3
+		shock = 5
+		manuever = 2
+		siege = 2
+		death_date = 2494.11.1
+	}
+  leader = { 
+		name = "ÏîÉù"
+		type = general
+		rank = 1
+		fire = 4
+		shock = 4
+		manuever = 3
+		siege = 1
+		death_date = 2494.10.1
+	}
+  leader = { 
+		name = "ÖÜÒó"
+		type = general
+		rank = 1
+		fire = 3
+		shock = 3
+		manuever = 2
+		siege = 1
+		death_date = 2494.10.1  
+	}
+}

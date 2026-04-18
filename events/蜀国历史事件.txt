@@ -1,0 +1,38 @@
+#½øÎ»ººÍõ
+country_event = {
+	id = 12008
+
+	major = yes
+
+	trigger = {
+		tag = SGU
+		owns = 219
+		NOT = { exists = HNW }
+		NOT = { has_global_flag = jinweihanwang }
+		has_country_modifier = chengwang
+		
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	title = "EVTNAME12008"
+	desc = "EVTDESC12008"
+	
+
+	option = {
+		name = "EVTOPTA12008"
+	
+
+		set_global_flag = jinweihanwang
+		prestige = 0.30
+		change_tag = HNW
+		unit_type = dahan
+		technology_group = dahan
+		capital = 219
+		hanzhong = {
+                    add_core = HNW
+		 }
+		religion = daojia
+	}
+}

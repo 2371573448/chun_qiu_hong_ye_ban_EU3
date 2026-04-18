@@ -1,0 +1,81 @@
+government = god_kingdom
+aristocracy_plutocracy = 0
+centralization_decentralization = 0
+innovative_narrowminded = 0
+mercantilism_freetrade = 0
+offensive_defensive = 0
+land_naval = 0
+quality_quantity = 0
+serfdom_freesubjects = 0
+primary_culture = zhongyuan
+religion = liyuejiaohua 
+technology_group = tianjie
+capital = 744
+
+1928.1.1 = { 
+	monarch = { 
+		name = "管理员"
+		dynasty = "系统"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+2190.1.1 = { 
+	set_global_flag = sunzibingfa
+	set_global_flag = simafa
+}
+
+2210.1.1 = { 
+	set_global_flag = shijing
+	set_global_flag = chunqiu
+}
+
+
+2230.1.1 = { 
+	set_global_flag = shangshu
+	set_global_flag = yijing
+}
+
+2250.1.1 = { 
+	set_global_flag = liji
+	set_global_flag = lunyu
+}
+
+2290.1.1 = { 
+	set_global_flag = liutao
+	set_global_flag = wuzi
+	set_global_flag = laozi
+	set_global_flag = huangdisijing
+	set_global_flag = yangzhu
+}
+
+2310.1.1 = { 
+	set_global_flag = guangzi
+	set_global_flag = fajing
+	set_global_flag = zhuangzi
+}
+
+2340.1.1 = { 
+	set_global_flag = shenzi1
+	set_global_flag = shenzi2
+	set_global_flag = shangjunshu
+	set_global_flag = mozi
+	set_global_flag = sunbinbingfa
+}
+
+2380.1.1 = { 
+	set_global_flag = mengzi
+}
+
+2430.1.1 = { 
+	set_global_flag = xunzi
+	set_global_flag = hanfeizi
+}
+
+2470.1.1 = { 
+	set_global_flag = weiliaozi
+	set_global_flag = lvshichunqiu
+	set_global_flag = chuci
+}

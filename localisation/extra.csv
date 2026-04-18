@@ -1,0 +1,76 @@
+;;;;;;;;;;X
+WEWAR;我们正处于战争状态;;;;;;;;;;X
+policy_restricted;政策受限;;;;;;;;;;X
+LOAD_CAPACITY_LABEL;可运载$NUM$支团队. ;;;;;;;;;;X
+tutorial_completed;教程的这一章结束了. ;;;;;;;;;;X
+CVIEW_PRESTIGE_GAIN;每年增加:;;;;;;;;;;X
+CVIEW_PRESTIGE_DECAY;每年减少:;;;;;;;;;;X
+NAVY_CORE_ONLY;你只能在本国控制的核心省份建造舰队. ;;;;;;;;;;X
+ARMY_CORE_ONLY;你只能在本国控制的核心省份组建军队. ;;;;;;;;;;X
+THEYDECLINESELLPROV_SETUP;当我们出售省份的建议被拒绝.;;;;;;;;;;X
+THEYDECLINESELLPROV_HEADER;$MESSENGER$;;;;;;;;;;X
+THEYDECLINESELLPROV_1;出让提议遭拒绝;;;;;;;;;;X
+THEYDECLINESELLPROV_2;$MONARCHTITLE$, $RECIPIENT$;;;;;;;;;;X
+THEYDECLINESELLPROV_3;已经拒绝了我们;;;;;;;;;;X
+THEYDECLINESELLPROV_4;出让富饶的省份;;;;;;;;;;X
+THEYDECLINESELLPROV_5;$PROVINCE$;;;;;;;;;;X
+THEYDECLINESELLPROV_6;的提议;;;;;;;;;;X
+THEYDECLINESELLPROV_LOG;$RECIPIENT$拒绝了我国出让$PROV$的提议;;;;;;;;;;X
+THEYDECLINESELLPROV_BTN1;确定;;;;;;;;;;X
+THEYDECLINESELLPROV_BTN2;确定;;;;;;;;;;X
+THEYDECLINESELLPROV_BTN3;前往;;;;;;;;;;X
+THEYDECLINESELLPROV_MAP;;;;;;;;;;;X
+CANCELWARSUBDESC;你确定要取消给予 $COUNTRY$ 的战争资助吗? \n这将会终止每月给他们提供金币. ;;;;;;;;;;X
+NO_HORSE;我们尚无法组建骑兵. ;;;;;;;;;;X
+NAVALATTACKTHEM_SETUP;当我国舰队进攻敌人;;;;;;;;;;X
+NAVALATTACKTHEM_HEADER;$MESSENGER$;;;;;;;;;;X
+NAVALATTACKTHEM_1;我们正与敌人交战! ;;;;;;;;;;X
+NAVALATTACKTHEM_2;$MONARCHTITLE$, 我们荣耀的舰队在;;;;;;;;;;X
+NAVALATTACKTHEM_3;$PROV$;;;;;;;;;;X
+NAVALATTACKTHEM_4;进攻懦弱的;;;;;;;;;;X
+NAVALATTACKTHEM_5;$DEFENDER$;;;;;;;;;;X
+NAVALATTACKTHEM_6;他们将会被$ATTACKER$的舰队给碾碎;;;;;;;;;;X
+NAVALATTACKTHEM_LOG;我们在$PROV$进攻敌人. ;;;;;;;;;;X
+NAVALATTACKTHEM_BTN1;确定;;;;;;;;;;X
+NAVALATTACKTHEM_BTN2;确定;;;;;;;;;;X
+NAVALATTACKTHEM_BTN3;前往;;;;;;;;;;X
+NAVALATTACKTHEM_MAP; ;;;;;;;;;;X
+NAVALATTACKUS_SETUP;当我国舰队遭到敌人攻击;;;;;;;;;;X
+NAVALATTACKUS_HEADER;$MESSENGER$;;;;;;;;;;X
+NAVALATTACKUS_1;我们舰队遭到攻击! ;;;;;;;;;;X
+NAVALATTACKUS_2;$MONARCHTITLE$, 我们荣耀的舰队在;;;;;;;;;;X
+NAVALATTACKUS_3;$PROV$;;;;;;;;;;X
+NAVALATTACKUS_4;遭到懦弱的;;;;;;;;;;X
+NAVALATTACKUS_5;$ATTACKER$攻击;;;;;;;;;;X
+NAVALATTACKUS_6;他们将会被$DEFENDER$的舰队送到海底. ;;;;;;;;;;X
+NAVALATTACKUS_LOG;我们在$PROV$遭到攻击. ;;;;;;;;;;X
+NAVALATTACKUS_BTN1;确定;;;;;;;;;;X
+NAVALATTACKUS_BTN2;确定;;;;;;;;;;X
+NAVALATTACKUS_BTN3;前往;;;;;;;;;;X
+NAVALATTACKUS_MAP; ;;;;;;;;;;X
+MERCHANT_FOREIGN_COMPETE_CHANCE;外贸竞争成功率;;;;;;;;;;X
+COLONIES;新垦区;;;;;;;;;;X
+theology;神学家;;;;;;;;;;X
+colonial;移民总督;;;;;;;;;;X
+spy;间谍首脑;;;;;;;;;;X
+trade;商人;;;;;;;;;;X
+desc_theology;我们的神学家声名远播. 有这样的人, 我国政\n府真是太幸运了. ;;;;;;;;;;X
+desc_colonial;我们的移民总督声名远播. 有这样的人, 我国\n政府真是太幸运了. ;;;;;;;;;;X
+desc_spy;我们的间谍首脑声名远播. 有这样的人, 我国\n政府真是太幸运了. ;;;;;;;;;;X
+STABHIT_FROM_MIL_ACCESS;拥有军事通行权;;;;;;;;;;X
+THEYATWAR;对方处于战争状态, 无法提此提议. ;;;;;;;;;;X
+MAY_LOWER_N_ATTRITION;舰队损耗减少;;;;;;;;;;X
+positive_stability;正稳定;;;;;;;;;;X
+negative_stability;负稳定;;;;;;;;;;X
+MS_BAD_VERSION;版本错误, 请下载最新补丁. ;;;;;;;;;;X
+maneuver;机动;;;;;;;;;;X
+siege;围攻;;;;;;;;;;X
+fire;远程;;;;;;;;;;X
+shock;近战;;;;;;;;;;X
+dice;命数;;;;;;;;;;X
+crossing;跨河;;;;;;;;;;X
+terrain;地形;;;;;;;;;;X
+NO_LEADER;无将领;;;;;;;;;;X
+NO_ADVISOR;无臣属;;;;;;;;;;X
+CONVREL_KINGFORCED;我们被迫改变宗教, 且在现任统治者治下无法\n再次改变宗教. ;;;;;;;;;;X
+OFFENSEDESCR; ;;;;;;;;;;X

@@ -1,0 +1,38 @@
+xxxx;;;;;;;;;;;;;;x
+LEDGER_NATIONAL_STATISTICS;国家统计;;;;;;;;;;;;;x
+Nation Statistics;国家统计;;;;;;;;;;;;;x
+EXIT;退出;;;;;;;;;;;;;x
+Days;天数;;;;;;;;;;;;;x
+Chance;机会;;;;;;;;;;;;;x
+Cost;花费;;;;;;;;;;;;;x
+SUCCEEDED;移民成功;;;;;;;;;;;;;x
+GOTO;转到;;;;;;;;;;;;;x
+SEND;派遣;;;;;;;;;;;;;x
+P;威望;;;;;;;;;;;;;x
+T;传统;;;;;;;;;;;;;x
+Blockade;封锁;;;;;;;;;;;;;x
+Compressing Data...;压缩数据...;;;;;;;;;;;;;x
+Creating texture for Quad;创建建筑物;;;;;;;;;;;;;x
+TIME_AHEAD;当前年份早于此级科技设定时间$NUMBER$年, \n因过于超前而难以获得. ;;;;;;;;;;X
+CHAT_NONE;无;;;;;;;;;;X
+ABANDON_GAME;放弃游戏;;;;;;;;;;X
+LOCAL_TRADE_INCOME_MODIFIER;地区贸易收入修正;;;;;;;;;;X
+GLOBAL_TRADE_INCOME_MODIFIER;国家贸易收入修正;;;;;;;;;;X
+UV_MANPOWER;人力:;;;;;;;;;;X
+UV_REGIMENTS;团队:;;;;;;;;;;X
+CONVERT_RULER_NOT_POSSIBLE_4_IRO;你正在被联合统治. ;;;;;;;;;;X
+CONVERT_RULER_NOT_POSSIBLE_4_DRO;仅主导联合统治的一方拥有完全统治权\n以及军队指挥权;;;;;;;;;;X
+NOT_BROKEN;对方军队尚未被完全击败;;;;;;;;;;X
+EVTDESC6337;我们的一个地方官指出, 在我们目前的地方分权政策下他可\n以关心自己的利益了. 他似乎没有意识到他所建立的军队太\n弱小而不可能支持他的要求的事实;;;;;;;;;;X
+EVTOPTA6337;一两股叛军不足为虑;;;;;;;;;;X
+PW_OUR_SPY_EFF;我们的间谍效率:;;;;;;;;;;X
+PW_OUR_SPY_DEF;我们的间谍防御效率:;;;;;;;;;;X
+PW_THEIR_SPY_EFF;他们的间谍效率:;;;;;;;;;;X
+PW_THEIR_SPY_DEF;他们的间谍防御效率:;;;;;;;;;;X
+COTLEDGER_COT_STAGNATION_S;停滞度;;;;;;;;;;X
+COTLEDGER_COT_STAGNATION_L;如果贸易额太低, 或者少有国家派商人前来, \n贸易中心会渐渐的变得不景气, 过于停滞的贸易中心会被摧毁. ;;;;;;;;;;X
+IS_NOT_OVERLORD_OF;不是此地的领主 ;;;;;;;;;;X
+IS_OVERLORD_OF;是此地的领主 ;;;;;;;;;;X
+TRIGGER_COUNTRY;国家;;;;;;;;;;X
+WASTELAND;荒凉之地;;;;;;;;;;X
+WASTELAND_DESC;无法通过或移民;;;;;;;;;;X

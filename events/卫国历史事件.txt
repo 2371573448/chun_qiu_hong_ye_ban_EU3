@@ -1,0 +1,85 @@
+##州吁之乱
+country_event = { 
+	# 周吁之乱
+	id = 10004
+	major = yes
+	trigger = { 
+		tag = WEG
+		government = monarchy
+		year = 1949
+		NOT = { 
+			year = 2009
+		}
+		NOT = { 
+			has_country_flag = zhouxuzhiluan
+		}
+	}
+	mean_time_to_happen = { 
+		months = 360
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10004"
+	desc = "EVTDESC10004"
+	option = { 
+		name = "EVTOPTA10004"
+		prestige = -0.10
+		stability = -1
+		badboy = 2
+		define_ruler = { 
+			name = "周吁"
+			dynasty = "姬"
+			regent = no
+			female = no
+			DIP = 2
+			MIL = 7
+			ADM = 4
+		}
+		add_country_modifier = { 
+			name = "cuanweizhijun"
+			duration = 3650
+		}
+		set_country_flag = zhouxuzhiluan
+	}
+}
+country_event = { 
+	# 大义灭亲
+	id = 10006
+
+	is_triggered_only = yes
+
+	title = "EVTNAME10006"
+	desc = "EVTDESC10006"
+	option = { 
+		name = "EVTOPTA10006"
+		prestige = 0.10
+		stability = 2
+		badboy = 2
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { 
+		name = "EVTOPTB10006"
+		badboy = -2
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

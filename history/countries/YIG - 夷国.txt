@@ -1,0 +1,25 @@
+government = tribal_despotism
+aristocracy_plutocracy = -2
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = -3
+land_naval = 1
+quality_quantity = 0
+serfdom_freesubjects = -3
+technology_group = dongyi1
+religion = animism 
+primary_culture = laiyi
+capital = 287
+
+1927.1.1 = {
+	monarch = {
+		name = "²®À³"
+               dynasty = "Šu"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+2246.1.2 = { religion = liyuebadao  }

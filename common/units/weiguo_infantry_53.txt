@@ -1,0 +1,12 @@
+#Îº¹úÎäÊ¿
+
+type = infantry
+unit_type = weiguo
+
+maneuver = 1
+offensive_fire = 7
+defensive_fire = 7
+offensive_shock = 7
+defensive_shock = 8
+offensive_morale = 8
+defensive_morale = 7

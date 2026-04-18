@@ -1,0 +1,266 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new policies, make sure they are uniquely named.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+#########################################################
+# Centralisation <----> Decentralisation 君主集权/封邦建国
+#########################################################
+centralization_decentralization = 
+{
+	max_war_exhaustion = -0.6
+        global_revolt_risk = -0.2
+        global_tax_modifier = -0.04
+        stability_cost_modifier = -0.02       
+	left_specific = {
+		inflation_reduction = 0.008
+		officials = 0.25
+       
+	}
+	right_specific = {
+		global_manpower_modifier = -0.02
+		cultural_tradition = 0.004		
+		temples_influence = 0.2
+		bureaucrats_influence = 0.2
+		defensiveness = 0.02
+	}
+	on_left = {
+		10 = 801 # 广开兵源 (+)
+		10 = 802 # 地方起义 (-)
+		10 = 803 # 朝野震动 (-)	
+		10 = 872 # 政改不利 (-) 
+	}
+	on_right = {
+		10 = 804 # 统治稳定 (+) 
+		10 = 805 # 税收流失 (-)
+		10 = 806 # 户口藏匿 (-)
+		10 = 872 # 政改不利 (-) 
+	}
+}
+#########################################################
+# Aristocracy <----> Plutocracy 公家政治/士卿政治
+#########################################################
+aristocracy_plutocracy = {
+
+	temples_influence = -0.3
+	bureaucrats_influence = 0.3
+	left_specific = {
+		spies = 0.10
+		army_tradition = 0.002
+		leader_shock = 0.2
+		global_regiment_cost = -0.015
+		global_revolt_risk = 0.25
+		stability_cost_modifier = 0.02
+		artillery_cost = -0.01
+	}
+	right_specific = {
+		trade_efficiency = 0.005
+		diplomats = 0.3
+		spies = 0.25
+		merchants = 0.25
+		officials = 0.12
+		cultural_tradition = 0.004
+	}
+	on_left = {
+		10 = 807 #贵族荣耀 (+)
+		10 = 808 #王权危机 (-)
+		10 = 809 #谋朝篡位 (-)
+		10 = 872 # 政改不利 (-) 
+	}
+	on_right = {
+		10 = 810 # 广纳贤才 (+)
+		10 = 811 # 公家不满 (-)
+		10 = 812 # 庶人主政 (-)
+		10 = 872 # 政改不利 (-) 
+	}
+}
+#########################################################
+# Serfdom <----> Free Subjects 井田蓄奴/私田耕作
+#########################################################
+serfdom_freesubjects = {
+	
+	global_tax_modifier = 0.04	
+	global_spy_defence = -0.02
+	temples_influence = -0.15
+	bureaucrats_influence = 0.15	
+	left_specific = {
+		stability_cost_modifier = -0.04
+		inflation_reduction = 0.006
+	}
+	right_specific = {
+		production_efficiency = 0.005  
+		land_morale = 0.03 
+		global_manpower_modifier = 0.04 		
+	}
+	on_left = {
+		10 = 813 # 财政管制 (+)
+		10 = 814 # 奴隶起义 (-)
+		10 = 815 # 国人暴动 (-) 
+		 5 = 873 # 政治危机 (-) 
+	}
+	on_right = {
+		10 = 816 # 财政改革 (+)
+		10 = 817 # 滥发金钱 (-)
+		10 = 818 # 变农为商 (-)
+		 5 = 873 # 政治危机 (-) 
+	}
+}
+
+#########################################################
+# Innovative <----> Narrowminded 尚今思新/祭祖崇古
+#########################################################
+innovative_narrowminded = {
+	
+	max_war_exhaustion = -0.4
+	technology_cost = 0.02
+	papal_influence = 0.03	
+	left_specific = {
+		stability_cost_modifier = 0.04
+		production_efficiency = 0.004
+	}	
+	right_specific = {
+		cultural_tradition = 0.002
+		legitimacy = 0.003
+		global_spy_defence = 0.02
+		missionaries = 0.2
+		stability_cost_modifier = -0.04	     
+	}
+	on_left = {
+		10 = 819 # 伟大哲人 (+)
+		10 = 820 # 失信天下 (-) 
+		10 = 821 # 局势变革 (-)
+		 5 = 873 # 政治危机 (-) 
+	}
+	on_right = {
+		10 = 822 # 圣人再临 (+)
+		10 = 823 # 社会逆流 (-) 
+		10 = 824 # 异端邪说 (-)
+		 5 = 873 # 政治危机 (-) 
+	}	
+}
+#########################################################
+# Mercantilism <----> Free Trade 盐铁均输/四海通商
+#########################################################
+mercantilism_freetrade = {
+	merchant_cost = -0.06
+	left_specific = {
+		production_efficiency = 0.01
+		inflation_reduction = 0.005
+		merchant_compete_chance = -0.05
+		modifier_province_owner_trade_chance = 0.12
+		global_cot_gravity = 0.01
+		trade_tech_cost_modifier = 0.02
+	}	
+	right_specific = {
+		merchant_compete_chance = 0.05
+		modifier_province_owner_trade_chance = -0.05
+		trade_range_modifier = 0.05
+		merchants = 0.25
+		stability_cost_modifier = 0.012
+	}	
+	on_left = {
+		10 = 825 # 竞争不利 (-)
+		10 = 826 # 商业衰退 (-)
+		10 = 827 # 广开贸易 (+)
+	}
+	on_right = {
+		10 = 828 # 外商涌入 (-)
+		10 = 829 # 商人外出 (-)
+		10 = 830 # 商贾巨头 (+)
+	}	
+}
+
+#########################################################
+# Offensive <----> Defensive 开疆拓土/持盈守成
+#########################################################
+offensive_defensive = {
+	land_morale = -0.03
+	defensiveness = 0.06
+	left_specific = {
+	 	leader_shock = 0.2
+	 	cavalry_cost = -0.04
+		artillery_cost = -0.02
+	}
+	right_specific = {
+		badboy = -0.04
+		war_exhaustion = -0.006  
+		global_regiment_cost = 0.01  
+		leader_siege = 0.2                     
+	}
+	on_left = {
+		10 = 831 # 反对出征 (-)
+		10 = 832 # 反抗征召 (-)
+		10 = 833 # 陆军荣耀 (+)
+		 5 = 873 # 政治危机 (-) 
+	}
+	on_right = {
+		10 = 834 # 民不思战 (-)
+		10 = 835 # 反抗劳役 (-)
+		10 = 836 # 固若金汤 (+)
+		 5 = 873 # 政治危机 (-) 
+	}	
+}
+
+#########################################################
+# Land <----> Naval 问鼎中原/开拓不毛
+#########################################################
+land_naval = {	
+	left_specific = {
+		land_morale = 0.05
+		global_manpower_modifier = 0.04
+		badboy_limit = 0.75
+		land_forcelimit_modifier = 0.02
+	}
+	right_specific = {
+		colonists = 0.20
+		colonist_cost = -0.16
+		land_attrition = -0.02
+		reinforce_speed = 0.02
+		land_maintenance_modifier = -0.02
+		global_colonial_growth = 0.3
+	}
+	on_left = {
+		10 = 837 # 水军裁员 (-)
+		10 = 838 # 舟船荒置 (-)
+		10 = 839 # 三军上卿 (+)
+		 5 = 873 # 政治危机 (-) 
+	}
+	on_right = {
+		10 = 840 # 陆军裁员 (-)
+		10 = 841 # 车马荒置 (-)
+		10 = 842 # 舟师统领 (+)
+		 5 = 873 # 政治危机 (-) 
+	}		
+}
+
+#########################################################
+# Quality <----> Quantity 精兵强将/千军万马
+#########################################################
+quality_quantity = {
+	land_forcelimit_modifier = 0.04
+	global_manpower_modifier = 0.04
+	land_maintenance_modifier = -0.04	
+	left_specific = {
+		leader_fire = 0.25
+		discipline = 0.04
+		land_morale = 0.06
+	}
+	right_specific = {  
+		land_forcelimit_modifier = -0.01
+		reinforce_speed = 0.05
+		global_regiment_cost = -0.02
+	}
+	on_left = {
+		10 = 843 # 裁撤冗员 (-)
+		10 = 844 # 军队哗变 (-)
+		10 = 845 # 一代名将 (+)
+		 5 = 873 # 政治危机 (-) 
+	}
+	on_right = {
+		10 = 846 # 阅兵耻辱 (-)
+		10 = 847 # 民不习战 (-) 
+		10 = 848 # 地方武装 (+)
+		 5 = 873 # 政治危机 (-) 
+	}		
+}
+

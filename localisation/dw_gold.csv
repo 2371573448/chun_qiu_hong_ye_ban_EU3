@@ -1,0 +1,30 @@
+;;;;;;;;;;X
+OPEN_LOG;记录;;;;;;;;;;X
+LAG_PAUSE;$PLAYER$ 处于延迟, 暂停游戏?;;;;;;;;;;X
+LAG_DECREASE_SPEED;$PLAYER$ 处于延迟, 降低速度.;;;;;;;;;;X
+PAUSED_BY;$PLAYER$暂停.;;;;;;;;;;X
+ACHIEVEMENTS_DISABLED_OPTION;成就已被禁用， \n由于游戏存档属于他人的文件 \n或者游戏文件已被自定义;;;;;;;;;;X
+CAN_ONLY_HAVE_ONE;在任何时候我们只能雇佣一个 $TYPE$ .;;;;;;;;;;X
+POSITION_INFO;这里显示在战斗中舰队部署情况的好坏.这由将领的机动能力和舰队平均航速决定. 舰队规模越大,最大值越小. 这支舰队的部署值最大为$CAP$.;;;;;;;;;;X
+GETTING_TRIBUTE;  $LIST$ 向我国进贡.;;;;;;;;;;X
+PAYING_TRIBUTE_TO;我国向 $LIST$ 进贡.;;;;;;;;;;X
+PLAYER_WAS_ANNEXED;$COUNTRY$不复存在!;;;;;;;;;;X
+BUILDING_NO_TRIGGER;如果以下要求无法满足, 这个建筑将消失.;;;;;;;;;;X
+ENEMYMILALLHONOUR_HEADER;使者来自;;;;;;;;;;X
+ENEMYMILALLHONOUR_1;$RECIPIENT$;;;;;;;;;;X
+ENEMYMILALLHONOUR_2;$MONARCHTITLE$, $RECIPIENT$ 遵守了;;;;;;;;;;X
+ENEMYMILALLHONOUR_3;与$ACTOR$的军事同盟;;;;;;;;;;X
+ENEMYMILALLHONOUR_4; ;;;;;;;;;;X
+ENEMYMILALLHONOUR_5; ;;;;;;;;;;X
+ENEMYMILALLHONOUR_6;他们现在正在和 $TARGETLIST$ 交战.;;;;;;;;;;X
+ENEMYMILALLHONOUR_LOG;$RECIPIENT$ 加入 $ACTOR$ 在战争中对抗 $TARGETLIST$.;;;;;;;;;;X
+ENEMYMILALLHONOUR_BTN1;好的;;;;;;;;;;X
+ENEMYMILALLHONOUR_BTN2;好的;;;;;;;;;;X
+ENEMYMILALLHONOUR_BTN3;转到;;;;;;;;;;X
+ENEMYMILALLHONOUR_MAP; ;;;;;;;;;;X
+ENEMYMILALLHONOUR_SETUP;当一个国家加入你对敌人的战争.;;;;;;;;;;X
+ATPEACE_HORDE;尔等凡人，妄犯天界，其心可诛，罪无可恕！;;;;;;;;;;X
+ATWAR_HORDE;游牧侵扰.;;;;;;;;;;X
+SHOGUNATE_PLAYER_SHOGUN;作为幕府, 通过保持高威望和维护与大名们的关系来稳定你的位置.;;;;;;;;;;X
+SHOGUNATE_OTHER_SHOGUN;推翻这个幕府, \n通过降低威望来削弱它的影响, \n或者派遣间谍破坏它和大名们的关系.;;;;;;;;;;X
+MILACC_OFFER_REQ_DESC;$COUNTRY$ 向我们提供军事通行. \n接受将允许我们将部队和船只移动到它们的国境.;;;;;;;;;;X

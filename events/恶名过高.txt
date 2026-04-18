@@ -1,0 +1,479 @@
+#######################################################
+# War is going badly events...    ie, sign peace now!
+#######################################################
+
+country_event = {
+
+	id = 743
+	trigger = {
+		war_exhaustion = 15
+		stability = -2
+		war = yes
+		NOT = { war_score = -10 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+	}
+
+	title = "EVTNAME743"
+	desc = "EVTDESC743"
+		
+	option = {
+		name = "EVTOPTA743"
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 744
+	trigger = {
+		war_exhaustion = 15
+		war = yes
+		prestige = -0.5
+		NOT = { war_score = -10 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+	}
+
+	title = "EVTNAME744"
+	desc = "EVTDESC744"
+		
+	option = {
+		name = "EVTOPTA744"
+		prestige = -0.1
+	}
+}
+
+country_event = {
+
+	id = 745
+	trigger = {
+		war_exhaustion = 15
+		war = yes
+		regency = no
+		NOT = { war_score = -10 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+	}
+
+	title = "EVTNAME745"
+	desc = "EVTDESC745"
+		
+	option = {
+		name = "EVTOPTA745"
+		random_owned = {
+			limit = {
+				controlled_by = owner
+				is_overseas = no
+			}
+			pretender_rebels = 1
+		}
+	}
+}
+
+#############################################
+# a few evil if you are a big badboy.
+#############################################
+country_event = {
+
+	id = 748
+	trigger = {
+		war = yes
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME748"
+	desc = "EVTDESC748"
+		
+	option = {
+		name = "EVTOPTA748"
+		war_exhaustion = 1
+		manpower = -0.05
+	}
+}
+	
+country_event = {
+
+	id = 749
+	trigger = {
+		stability = -2
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME749"
+	desc = "EVTDESC749"
+		
+	option = {
+		name = "EVTOPTA749"
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 750
+	trigger = {
+		prestige = 0
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME750"
+	desc = "EVTDESC750"
+		
+	option = {
+		name = "EVTOPTA750"
+		prestige = -0.25
+	}
+}
+
+country_event = {
+
+	id = 751
+	trigger = {
+		NOT = { inflation = 12 }
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME751"
+	desc = "EVTDESC751"
+		
+	option = {
+		name = "EVTOPTA751"
+		inflation = 3
+	}
+}
+
+country_event = {
+
+	id = 752
+	trigger = {
+		army_tradition = 0.1
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME752"
+	desc = "EVTDESC752"
+
+	option = {
+		name = "EVTOPTA752"
+		army_tradition = -0.1		
+	}
+}
+
+country_event = {
+
+	id = 753
+	trigger = {
+		placed_merchants = 1
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME753"
+	desc = "EVTDESC753"
+
+	option = {
+		name = "EVTOPTA753"
+		random_center_of_trade = {
+			limit = { NOT = { owned_by = THIS } placed_merchants = 1 }
+			remove_merchant = THIS
+			remove_merchant = THIS
+			remove_merchant = THIS
+		}
+	}
+}
+
+country_event = {
+
+	id = 773
+	trigger = {
+		placed_merchants = 1
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME773"
+	desc = "EVTDESC773"
+
+	option = {
+		name = "EVTOPTA773"
+		random_center_of_trade = {
+			limit = { owned_by = THIS placed_merchants = 1 }
+			remove_merchant = THIS
+			remove_merchant = THIS
+			remove_merchant = THIS
+		}
+	}
+}
+
+country_event = {
+
+	id = 754
+	trigger = {
+		legitimacy = 0.15
+		badboy = 1.25
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME754"
+	desc = "EVTDESC754"
+		
+	option = {
+		name = "EVTOPTA754"
+		legitimacy = -0.15
+	}
+}
+
+country_event = {
+
+	id = 755
+	trigger = {
+		officials = 1
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME755"
+	desc = "EVTDESC755"
+
+	immediate = {
+		# For all you cheaters who would delay clicking the button until
+		# you'd already spent all your magistrates... Yes, you!
+		set_country_flag = hidden_tooltip
+		any_country = {
+			limit = { has_country_flag = hidden_tooltip }
+			officials = -5
+		}
+		clr_country_flag = hidden_tooltip
+	}
+
+	option = {
+		name = "EVTOPTA755"
+	}
+}
+
+country_event = {
+
+	id = 756
+	trigger = {
+		OR = {
+			advisor = philosopher
+			advisor = natural_scientist
+			advisor = artist
+			advisor = statesman
+		}
+		badboy = 1.25
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+		modifier = {
+			factor = 0.25
+			badboy = 2.0
+		}		
+	}
+
+	title = "EVTNAME756"
+	desc = "EVTDESC756"
+		
+	option = {
+		name = "EVTOPTA756"
+		remove_advisor = natural_scientist
+		remove_advisor = artist
+		remove_advisor = philosopher
+		remove_advisor = statesman
+	}
+}
+
+# High Infamy - Patriots and Nationalists seize the day
+province_event = {
+
+	id = 884
+	
+	trigger = {
+		owner = { infamy = 0.8 }
+		NOT = { has_province_modifier = rebel_sentiment }
+		is_colony = no
+		OR = {
+			likely_rebels = patriot_rebels
+			likely_rebels = nationalist_rebels
+			likely_rebels = colonial_rebels
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 480
+
+		modifier = {
+			factor = 0.5
+			owner = { infamy = 1.0 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { infamy = 1.5 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { owner = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { owner = { stability = -1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { legitimacy = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { owner = { infamy = 1.0 } }
+		}
+	}
+	
+	title = "EVTNAME884"
+	desc = "EVTDESC884"
+	
+	option = {
+		name = "EVTOPTA884" # A minor inconvenience
+		add_province_modifier = {
+			name = "rebel_sentiment"
+			duration = 1095
+		}
+	}
+	
+}

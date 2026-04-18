@@ -1,0 +1,25 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_shogunate_bg"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\shogunate_bg.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_shogunate_decision_bg"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\shogunate_decision_bg.tga"
+		transparencecheck = yes
+	}
+	maskedShieldType = {
+		name = "GFX_round_shield"
+		textureFile1 = "gfx\\interface\\divine_wind_interface\\round_shield_frame.tga"
+		textureFile2 = "gfx\\interface\\divine_wind_interface\\round_shield_mask.tga"
+		effectFile = "gfx\\FX\\maskedflag.fx"
+	}
+	spriteType = {
+		name = "GFX_shogunate_strip"	
+		texturefile = "gfx\\interface\\divine_wind_interface\\shogunate_strip.tga"
+		noOfFrames = 5
+	}
+
+}

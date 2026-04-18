@@ -1,0 +1,37 @@
+alliance={
+	first=JIN
+	second=CHE
+	start_date=2090.1.1
+	end_date=2092.1.1
+}
+alliance={
+	first=JIN
+	second=SON
+	start_date=2090.1.1
+	end_date=2092.1.1
+}
+alliance={
+	first=JIN
+	second=LUG
+	start_date=2090.1.1
+	end_date=2092.1.1
+}
+alliance={
+	first=JIN
+	second=WEG
+	start_date=2090.1.1
+	end_date=2092.1.1
+}
+
+alliance={
+	first=CHU
+	second=ZGO
+	start_date=2090.1.1
+	end_date=2092.1.1
+}
+alliance={
+	first=CHU
+	second=QIN
+	start_date=2090.1.1
+	end_date=2210.1.1
+}

@@ -1,0 +1,73 @@
+owner = QUA
+controller = QUA
+culture = nanchu
+religion = ancestor
+capital = "È¨³Ç"
+trade_goods = wine
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 17000
+fort1 = yes
+add_core = QUA
+add_core = CHU
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+1988.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2018.1.1 = { 
+	add_core = CHU
+}
+2035.1.1 = { 
+	religion = liyuebadao
+}
+2192.11.1 = { 
+	owner = WUG
+	controller = WUG
+}
+2193.7.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2222.1.1 = { 
+	citysize = 26000
+}
+2247.1.1 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2360.1.1 = { 
+	religion = mojia
+}
+2420.1.1 = { 
+	religion = rujia
+}
+2420.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2450.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}

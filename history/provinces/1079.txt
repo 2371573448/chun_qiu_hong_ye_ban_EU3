@@ -1,0 +1,95 @@
+owner = DEG
+controller = DEG
+culture = jianghan
+religion = liyuejiaohua
+capital = "œÂ—Ù"
+trade_goods = tobacco
+hre = yes
+base_tax = 11
+manpower = 0
+citysize = 3000
+fort1 = yes
+add_core = DEG
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2020.7.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2050.7.1 = { 
+	add_core = CHU
+}
+2080.1.1 = { 
+	culture = nanchu
+}
+2090.1.1 = { 
+	religion = liyuebadao
+}
+2222.1.1 = { 
+	citysize = 28000
+	fort2 = yes
+}
+2244.1.1 = { 
+	owner = DEG
+	controller = DEG
+	add_core = DEG
+	remove_core = CHU
+}
+2244.1.2 = { 
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+	remove_core = DEG
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	religion = liyuejiaohua
+	owner = DEG
+	controller = DEG
+	add_core = DEG
+	remove_core = CHU
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	religion = liyuebadao
+	owner = CHU
+	controller = CHU
+	add_core = CHU
+}
+2407.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2437.1.1 = { 
+	add_core = QIN
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}
+2492.11.1 = { 
+	owner = HNW
+	controller = HNW
+}

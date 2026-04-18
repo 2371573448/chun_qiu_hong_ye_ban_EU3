@@ -1,0 +1,58 @@
+discovered_by = XNU
+owner = XNU
+controller = XNU
+culture = xiongnu
+religion = animism
+capital = "БъіЗ"
+trade_goods = spices
+hre = no
+base_tax = 10
+manpower = 10
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+discovered_by = XNU
+citysize = 80000
+add_core = XNU
+2245.1.1 = { 
+	discovered_by = XNU
+}
+2246.1.1 = { 
+	discovered_by = XNU
+	owner = XNU
+	controller = XNU
+	citysize = 80000
+	add_core = XNU
+	cot = yes
+	fort4 = yes
+}
+2246.1.2 = {
+        citysize = 70000
+    }
+2246.1.3 = {
+        citysize = 80000
+    }
+2247.1.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	citysize = 0
+	controller = XXX
+	remove_core = XNU
+	cot = no
+	fort1 = no
+}
+2380.1.1 = { 
+	discovered_by = XNU
+	owner = XNU
+	controller = XNU
+	citysize = 80000
+	add_core = XNU
+	cot = yes
+	fort4 = yes
+}
+
+
+
+

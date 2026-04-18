@@ -1,0 +1,37 @@
+#开拓外夷，殖民或征服新地区的人
+
+advisor ={
+name ="许行" 
+location =466
+skill =4
+type =pioneer
+date =2346.1.1
+death_date =2409.1.1
+}
+
+advisor ={
+name ="由余" 
+location =178
+skill =4
+type =pioneer
+date =2039.1.1
+death_date =2065.1.1
+}
+
+advisor ={
+name ="赵佗" 
+location =181
+skill =5
+type =pioneer
+date =2475.1.1
+death_date =2494.1.1
+}
+
+advisor ={
+name ="秦开" 
+location =25
+skill =4
+type =pioneer
+date =2398.1.1
+death_date =2425.1.1
+}

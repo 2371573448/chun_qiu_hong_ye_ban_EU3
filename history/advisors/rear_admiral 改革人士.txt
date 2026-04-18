@@ -1,0 +1,73 @@
+#著名的和政治改革家和立法者
+
+advisor ={
+name ="管仲" 
+location =265
+skill =6 
+type =rear_admiral
+date =1995.1.1
+death_date =2053.1.1
+}
+
+advisor ={
+name ="管仲" 
+location =265
+skill =6 
+type =rear_admiral
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="商鞅" 
+location =182
+skill =6
+type =rear_admiral
+date =2320.1.1
+death_date =2360.1.1
+}
+
+advisor ={
+name ="商鞅" 
+location =359
+skill =6
+type =rear_admiral
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="李悝"
+location =79
+skill =5
+type =rear_admiral
+date =2263.1.1
+death_date =2303.1.1
+}
+
+advisor ={
+name ="李悝"
+location =79
+skill =5
+type =rear_admiral
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="申不害" 
+location =366
+skill =5
+type =rear_admiral
+date =2333.1.1
+death_date =2361.1.1
+}
+
+advisor ={
+name ="申不害" 
+location =366
+skill =5
+type =rear_admiral
+date =2246.1.1
+death_date =2247.1.1
+}

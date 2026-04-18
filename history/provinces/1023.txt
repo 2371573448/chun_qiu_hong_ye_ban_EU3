@@ -1,0 +1,75 @@
+
+owner = ZGO
+controller = ZGO
+culture = zhongyuan
+religion = liyuejiaohua
+capital = "۳"
+trade_goods = coffee
+hre = yes
+base_tax = 10
+manpower = 0
+citysize = 35000
+fort1 = yes
+add_core = ZGO
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2222.1.1 = { 
+	citysize = 30000
+}
+2240.1.1 = { 
+	religion = daojia
+}
+2245.1.1 = { 
+	hre = no
+	religion = liyuejiaohua
+}
+2246.1.2 = { 
+	hre = yes
+}
+2247.1.1 = { 
+	hre = no
+	religion = daojia
+}
+2326.1.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+	remove_core = ZGO
+}
+2340.1.1 = { 
+	religion = fajia
+}
+2456.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2486.1.1 = { 
+	add_core = QIN
+}
+2489.10.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2489.12.1 = { 
+	controller = QIN
+	owner = QIN
+}
+2492.2.1 = { 
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+}

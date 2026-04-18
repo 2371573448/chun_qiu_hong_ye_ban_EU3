@@ -1,0 +1,576 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "latingfx_infantry_2"
+		actorfile = "gfx\anims\Generic_Western_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "FRA_infantry_2"
+		actorfile = "gfx\anims\French_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "ENG_infantry_2"
+		actorfile = "gfx\anims\English_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "POR_infantry_2"
+		actorfile = "gfx\anims\Portuguese_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "PRU_infantry_2"
+		actorfile = "gfx\anims\Prussian_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SWE_infantry_2"
+		actorfile = "gfx\anims\Swedish_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "VEN_infantry_2"
+		actorfile = "gfx\anims\Venetian_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SCA_infantry_2"						
+		actorfile = "gfx\anims\Scandinavian_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HOL_infantry_2"
+		actorfile = "gfx\anims\Dutch_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SPA_infantry_2"
+		actorfile = "gfx\anims\Spanish_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "GBR_infantry_2"
+		actorfile = "gfx\anims\British_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "DAN_infantry_2"
+		actorfile = "gfx\anims\Danish_1500.xac"
+		
+		idle   = "gfx\anims\Generic_Western_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_Western_1500_Move.xsm"
+		attack = "gfx\anims\Generic_Western_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SCO_infantry_2"
+		actorfile = "gfx\anims\Scottish_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HAB_infantry_2"
+		actorfile = "gfx\anims\Habsburgian_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "AAC_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "ANH_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "ANS_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "AUG_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BAD_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BAV_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BOH_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BRA_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BRE_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "BRU_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "FRN_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "GER_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HAM_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HES_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "HRE_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "KLE_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "KOL_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "LAU_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "LOR_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "LUN_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MAG_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MAI_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MEI_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MKL_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "MUN_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "OLD_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "PAL_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "POM_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SAX_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SIL_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SLZ_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "STY_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SWI_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "THU_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "TIR_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "TRI_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "ULM_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "WBG_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "WES_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "WUR_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "SHL_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "ALS_infantry_2"
+		actorfile = "gfx\anims\Generic_German_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+	EMFXActorType = {
+		name = "NED_infantry_2"
+		actorfile = "gfx\anims\NEDDutch_1500.xac"
+		
+		idle   = "gfx\anims\Generic_German_1500_Idle.xsm"
+		move   = "gfx\anims\Generic_German_1500_Move.xsm"
+		attack = "gfx\anims\Generic_German_1500_Attack.xsm"
+		scale = 7.8
+	}
+
+}
+
+
+

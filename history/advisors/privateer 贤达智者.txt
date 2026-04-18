@@ -1,0 +1,38 @@
+# 具有政治洞察力和仙剑的人
+
+advisor ={
+name ="言偃" 
+location =449
+skill =5
+type =privateer
+date =2212.1.1
+death_date =2255.1.1
+}
+
+advisor ={
+name ="孟轲" 
+location =295
+skill =6
+type =privateer
+date =2346.1.1
+death_date =2409.1.1
+}
+
+advisor ={
+name ="蹇叔" 
+location =173
+skill =5
+type =privateer
+date =2044.1.1
+death_date =2064.1.1
+}
+
+
+advisor ={
+name ="李左车" 
+location =112
+skill =3
+type =privateer
+date =2489.1.1
+death_date =2520.1.1
+}

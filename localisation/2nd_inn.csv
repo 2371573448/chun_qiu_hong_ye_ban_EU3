@@ -1,0 +1,120 @@
+;;;;;;;;;;X
+CRUSADE_TOO_DISTANT;对于进行十字军东征, \n这些异教徒是太遥远的目标. ;;;;;;;;;;X
+EXCOM_NOT_LESSER_UNION;在联合统治中, \n你只能针对那些资深伙伴. ;;;;;;;;;;X
+UNION_TAG_DESC;由于 $COUNTRY$ 是一个所有 $GROUP$ 文化的集合, \n这些文化是完全集成并没有受到处罚. ;;;;;;;;;;X
+PEACEACCEPTENEMY_SETUP;当敌对国家与另一个国家接受和平条约;;;;;;;;;;X
+PEACEACCEPTENEMY_HEADER;使者来自;;;;;;;;;;X
+PEACEACCEPTENEMY_1;$RECIPIENT$;;;;;;;;;;X
+PEACEACCEPTENEMY_2;$MONARCHTITLE$, $RECIPIENT$;;;;;;;;;;X
+PEACEACCEPTENEMY_3;接受和平;;;;;;;;;;X
+PEACEACCEPTENEMY_4;和他们之前的敌人;;;;;;;;;;X
+PEACEACCEPTENEMY_5;$ACTOR$;;;;;;;;;;X
+PEACEACCEPTENEMY_6;就以下条款:\n $TERMS$;;;;;;;;;;X
+PEACEACCEPTENEMY_LOG;$RECIPIENT$ 已经接受和$ACTOR$ 的和平条约关于以下条款: \n$TERMS$;;;;;;;;;;X
+PEACEACCEPTENEMY_BTN1;令人不安;;;;;;;;;;X
+PEACEACCEPTENEMY_BTN2;令人不安;;;;;;;;;;X
+PEACEACCEPTENEMY_BTN3;跳转到;;;;;;;;;;X
+PEACEACCEPTENEMY_MAP;和平! ;;;;;;;;;;X
+CCOT_NEIGHBOUR;这个省份太接近$WHO$\n所以他不能成为新的中心. ;;;;;;;;;;X
+STAGNATION;圣 ;;;;;;;;;;X
+solidify_our_papal_relations_title;巩固我们和天子的关系;;;;;;;;;;X
+solidify_our_papal_relations_desc;我们是正统的中原国家, \n但是此刻却远离和天子保持热切的关系. \n我们需要改善它, 否则我们将会远离那个唯一的信仰. ;;;;;;;;;;X
+keep_rival_out_of_italy_title;保持把 $COUNTRY$ 排斥在意大利之外! ;;;;;;;;;;X
+keep_rival_out_of_italy_desc;我们不能让 $COUNTRY$ 出现在意大利. \n他们是我们的劲敌之一, 而这里是我们的势力范围. \n意大利应该是我们的版图. ;;;;;;;;;;X
+HAVE_LESS_MEN_THAN;军队少于;;;;;;;;;;X
+HAVE_MORE_MEN_THAN;军队至少等于;;;;;;;;;;X
+HAVE_LESS_SHIP_THAN;舰队少于;;;;;;;;;;X
+HAVE_MORE_SHIP_THAN;舰队至少等于;;;;;;;;;;X
+RIVAL_COUNTRY_STARTS;天敌;;;;;;;;;;X
+THREAT_COUNTRY_STARTS;感到威胁;;;;;;;;;;X
+CW_WARNOVERLORD;他们从属于 $COUNTRY$ , \n这将使他们被保护并无法议和;;;;;;;;;;X
+CW_WARNOVERLORD2;$ENEMY$从属于 $COUNTRY$ , \n这将使他们被保护并无法议和;;;;;;;;;;X
+WECANTHEIRMIL_SETUP;当我们取消别国给予的军事通行权. ;;;;;;;;;;X
+WECANTHEIRMIL_HEADER;使者来自;;;;;;;;;;X
+WECANTHEIRMIL_1;$ACTOR$;;;;;;;;;;X
+WECANTHEIRMIL_2;$MONARCHTITLE$, \n我们对通往他们国土的路不再感兴趣;;;;;;;;;;X
+WECANTHEIRMIL_3;$RECIPIENT$;;;;;;;;;;X
+WECANTHEIRMIL_4;因此, 我们必须取消其军事通行权. ;;;;;;;;;;X
+WECANTHEIRMIL_5;*;;;;;;;;;;X
+WECANTHEIRMIL_6;$ACTOR$的人民因这个消息而感到高兴. ;;;;;;;;;;X
+WECANTHEIRMIL_LOG;$ACTOR$已经取消了$RECIPIENT$给予的军事通行权. ;;;;;;;;;;X
+WECANTHEIRMIL_BTN1;好的;;;;;;;;;;X
+WECANTHEIRMIL_BTN2;好的;;;;;;;;;;X
+WECANTHEIRMIL_BTN3;转到;;;;;;;;;;X
+WECANTHEIRMIL_MAP;*;;;;;;;;;;X
+SUCCESSIONWAR_SETUP;当涉及其他国家的继承权战争爆发;;;;;;;;;;X
+SUCCESSIONWAR_HEADER;$MESSENGER$;;;;;;;;;;X
+SUCCESSIONWAR_1;$TARGET$的继承战争! ;;;;;;;;;;X
+SUCCESSIONWAR_2;$MONARCHTITLE$, \n$SECOND$已经开始作战和;;;;;;;;;;X
+SUCCESSIONWAR_3;$FIRST$;;;;;;;;;;X
+SUCCESSIONWAR_4;$NATION$的老国王\n想在死后将王位传给$FIRST$. \n然而;;;;;;;;;;X
+SUCCESSIONWAR_5;$SECOND$;;;;;;;;;;X
+SUCCESSIONWAR_6;声称那是老国王不正确的决定, \n他们应该继承$NATION$的王位. \n这可能是一个漫长和血腥的斗争. ;;;;;;;;;;X
+SUCCESSIONWAR_LOG;$TARGET$的继承权战争在$FIRST$和$SECOND$之间爆发. ;;;;;;;;;;X
+SUCCESSIONWAR_BTN1;好的;;;;;;;;;;X
+SUCCESSIONWAR_BTN2;好的;;;;;;;;;;X
+SUCCESSIONWAR_BTN3;转到;;;;;;;;;;X
+SUCCESSIONWAR_MAP;*;;;;;;;;;;X
+SUCCESSIONWARUS_SETUP;当涉及我们的继承权战争爆发;;;;;;;;;;X
+SUCCESSIONWARUS_HEADER;$MESSENGER$;;;;;;;;;;X
+SUCCESSIONWARUS_1;$TARGET$的继承权战争! ;;;;;;;;;;X
+SUCCESSIONWARUS_2;$MONARCHTITLE$, \n$SECOND$不得不开始作战, 和;;;;;;;;;;X
+SUCCESSIONWARUS_3;$FIRST$;;;;;;;;;;X
+SUCCESSIONWARUS_4;$NATION$的老国王\n想在死后将王位传给$FIRST$. 然而;;;;;;;;;;X
+SUCCESSIONWARUS_5;$SECOND$;;;;;;;;;;X
+SUCCESSIONWARUS_6;声称那是老国王不正确的决定, \n他们应该继承$NATION$的王位. \n这可能是一个漫长和血腥的斗争. ;;;;;;;;;;X
+SUCCESSIONWARUS_LOG;$TARGET$ 的继承权战争在 $FIRST$ 和 $SECOND$之间爆发. ;;;;;;;;;;X
+SUCCESSIONWARUS_BTN1;好的;;;;;;;;;;X
+SUCCESSIONWARUS_BTN2;好的;;;;;;;;;;X
+SUCCESSIONWARUS_BTN3;转到;;;;;;;;;;X
+SUCCESSIONWARUS_MAP;*;;;;;;;;;;X
+LEDGER_PROVINCE_DECISIONS;省份决议;;;;;;;;;;X
+IS_NOT_VOTING_FOR1;没有投票赞成;;;;;;;;;;X
+IS_NOT_VOTING_FOR2;作为霸主;;;;;;;;;;X
+IS_VOTING_FOR1;将会来;;;;;;;;;;X
+IS_VOTING_FOR2;成为霸主. ;;;;;;;;;;X
+HAVE_LESS_TARIFF_THAN;关税效率小于;;;;;;;;;;X
+HAVE_MORE_TARIFF_THAN;关税效率至少;;;;;;;;;;X
+convince_elector_title;使 $COUNTRY$ 投票赞成我们! ;;;;;;;;;;X
+convince_elector_desc; $COUNTRY$ 是中原的选民, 但可惜\n他们不同意我们成为霸主的抱负. \n我们必须改变这一状况, 用许诺, 威胁和黄金! ;;;;;;;;;;X
+improve_tariff_mission_title;保持航线;;;;;;;;;;X
+improve_tariff_mission_desc;我们的新垦区需要稳定的航线, \n因此, 我们必须建立我们的海军, \n以支持我们的移民主义的野心. \n桨帆战舰和运输船对我们来说是没用的. ;;;;;;;;;;X
+IS_NOT_RIVAL_WITH;不是他们天敌之一;;;;;;;;;;X
+IS_RIVAL_WITH;是他们的天敌;;;;;;;;;;X
+IS_THREAT1;视;;;;;;;;;;X
+IS_THREAT2;为威胁. ;;;;;;;;;;X
+IS_NOT_THREAT1;不视;;;;;;;;;;X
+IS_NOT_THREAT2;为威胁. ;;;;;;;;;;X
+uncontested_cores;未能控制的核心领土;;;;;;;;;;X
+PUENDMASTER_SETUP;当一个国家结束了与我们联合统治. ;;;;;;;;;;X
+PUENDMASTER_HEADER;联合统治结束;;;;;;;;;;X
+PUENDMASTER_1;联合统治结束了;;;;;;;;;;X
+PUENDMASTER_2;和;;;;;;;;;;X
+PUENDMASTER_3; $COUNTRY$ 的联合统治结束了;;;;;;;;;;X
+PUENDMASTER_4; $COUNTRY$ 的叛乱贵族被推举为他们自己的国王. ;;;;;;;;;;X
+PUENDMASTER_5;*;;;;;;;;;;X
+PUENDMASTER_6;*;;;;;;;;;;X
+PUENDMASTER_LOG;和 $COUNTRY$ 的联合统治结束了. ;;;;;;;;;;X
+PUENDMASTER_BTN1;好的;;;;;;;;;;X
+PUENDMASTER_BTN2;好的;;;;;;;;;;X
+PUENDMASTER_BTN3;转到;;;;;;;;;;X
+PUENDMASTER_MAP;*;;;;;;;;;;X
+PRIVATEER_NAME;$WHOS$私掠船;;;;;;;;;;X
+CANT_NEGOTIATE;这要求是完全不能接受的\n原因如下:;;;;;;;;;;X
+ON_ACTION_CHANCE;我们朝着这个方向发展可能会引发如下事件. ;;;;;;;;;;X
+NOTHING_OA;Nothing;;;;;;;;;;X
+ledger_marketplace;市场增加省份产品收入. 这样既提高了全省\n税收收入, 也提高了当地CoT贸易所产生的\n价值. 在产品收入较多的省份建立一个\n市场非常有助于你控制的CoT的经营. \n 此外, 由于市场有助于改善本省货物的价值, \n它对异国产品或新垦区产品特别有用, \n如茶叶, 香料, 象牙, 等等. ;;;;;;;;;;X
+CANT_SPAWN_REBELS;当地无效的叛乱类型: ;;;;;;;;;;X
+CAN_SPAWN_REBELS;当地有效的叛乱类型: ;;;;;;;;;;X
+GARRISON_LESS_THAN;驻军小于;;;;;;;;;;X
+GARRISON_MORE_THAN;驻军至少;;;;;;;;;;X
+WARSCORE_LESS_THAN;战争评分低于;;;;;;;;;;X
+WARSCORE_MORE_THAN;战争评分高于;;;;;;;;;;X
+SPONSORED_BY;这是被赞助的;;;;;;;;;;X
+capital_city;首都城市;;;;;;;;;;X
+center_of_trade_level;贸易中心等级;;;;;;;;;;X
+TIME_UNTIL_CORE;获得 $COUNTRY$ 核心的日期是  $DATE$. ;;;;;;;;;;X
+INAUGURATED_ON;举行典礼的日子是$DATE$. ;;;;;;;;;;X
+UNION_NO_CANCEL;被联合统治国无法退出联盟. ;;;;;;;;;;X
+THEY_SUBJECT;他们是被联合统治的国家\n不能和他们联盟. ;;;;;;;;;;X
+LEDGER_HR_EMPERORS;中原霸主;;;;;;;;;;X

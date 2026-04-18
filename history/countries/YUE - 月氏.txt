@@ -1,0 +1,33 @@
+government = steppe_horde
+aristocracy_plutocracy = -3
+centralization_decentralization = 4
+innovative_narrowminded = -2
+mercantilism_freetrade = -1
+offensive_defensive = -3
+land_naval = -3
+quality_quantity = 2
+serfdom_freesubjects = -2
+technology_group = xiongnu
+religion = animism 
+unit_type = nomad_group
+primary_culture = yuezhi
+capital = 580
+
+1918.1.1 = {
+	monarch = {
+		name = "Ø®"
+		dynasty="ÔÂÊÏ"
+		adm = 7
+		dip = 5
+		mil = 5
+	}
+}
+2246.1.1 = {
+	monarch = {
+		name = "Ø®"
+		dynasty="ÔÂÊÏ"
+		adm = 7
+		dip = 5
+		mil = 5
+	}
+}

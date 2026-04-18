@@ -1,0 +1,145 @@
+objectTypes =
+{ 
+	flareType =
+	{
+		name = "siege_fire"
+		textureFile = { 
+				"gfx\\FX\\textures\\fire_0.dds" "gfx\\FX\\textures\\fire_1.dds"
+				 "gfx\\FX\\textures\\fire_2.dds" "gfx\\FX\\textures\\fire_3.dds"
+				 "gfx\\FX\\textures\\fire_4.dds" "gfx\\FX\\textures\\fire_5.dds"
+				  "gfx\\FX\\textures\\fire_6.dds" "gfx\\FX\\textures\\fire_7.dds"
+				
+				"gfx\\FX\\textures\\fire_8.dds" "gfx\\FX\\textures\\fire_9.dds"
+				 "gfx\\FX\\textures\\fire_10.dds" "gfx\\FX\\textures\\fire_11.dds"
+				 "gfx\\FX\\textures\\fire_12.dds" "gfx\\FX\\textures\\fire_13.dds"
+				  "gfx\\FX\\textures\\fire_14.dds" "gfx\\FX\\textures\\fire_15.dds"
+				  "gfx\\FX\\textures\\fire_16.dds" "gfx\\FX\\textures\\fire_17.dds"
+				  "gfx\\FX\\textures\\fire_18.dds" "gfx\\FX\\textures\\fire_19.dds"
+				  "gfx\\FX\\textures\\fire_20.dds" "gfx\\FX\\textures\\fire_21.dds"
+				  "gfx\\FX\\textures\\fire_22.dds" "gfx\\FX\\textures\\fire_23.dds"
+			}
+
+
+	
+	}
+
+
+	flareType =
+	{
+		name = "looted_smoke"
+
+		textureFile = { 
+				"gfx\\FX\\textures\\smoke_0.dds" "gfx\\FX\\textures\\smoke_1.dds"
+				 "gfx\\FX\\textures\\smoke_2.dds" "gfx\\FX\\textures\\smoke_3.dds"
+				 "gfx\\FX\\textures\\smoke_4.dds" "gfx\\FX\\textures\\smoke_5.dds"
+				  "gfx\\FX\\textures\\smoke_6.dds" "gfx\\FX\\textures\\smoke_7.dds"
+				
+				"gfx\\FX\\textures\\smoke_8.dds" "gfx\\FX\\textures\\smoke_9.dds"
+				 "gfx\\FX\\textures\\smoke_10.dds" "gfx\\FX\\textures\\smoke_11.dds"
+				 "gfx\\FX\\textures\\smoke_12.dds" "gfx\\FX\\textures\\smoke_13.dds"
+				  "gfx\\FX\\textures\\smoke_14.dds" "gfx\\FX\\textures\\smoke_15.dds"
+				  "gfx\\FX\\textures\\smoke_16.dds" "gfx\\FX\\textures\\smoke_17.dds"
+				  "gfx\\FX\\textures\\smoke_18.dds" "gfx\\FX\\textures\\smoke_19.dds"
+				  "gfx\\FX\\textures\\smoke_20.dds" "gfx\\FX\\textures\\smoke_21.dds"
+				  "gfx\\FX\\textures\\smoke_22.dds" "gfx\\FX\\textures\\smoke_23.dds"
+			}
+
+
+
+
+	}
+
+	flareType =
+	{
+		name = "siege_smoke"
+
+		textureFile = { 
+				"gfx\\FX\\textures\\smoke_0.dds" "gfx\\FX\\textures\\smoke_1.dds"
+				 "gfx\\FX\\textures\\smoke_2.dds" "gfx\\FX\\textures\\smoke_3.dds"
+				 "gfx\\FX\\textures\\smoke_4.dds" "gfx\\FX\\textures\\smoke_5.dds"
+				  "gfx\\FX\\textures\\smoke_6.dds" "gfx\\FX\\textures\\smoke_7.dds"
+				
+				"gfx\\FX\\textures\\smoke_8.dds" "gfx\\FX\\textures\\smoke_9.dds"
+				 "gfx\\FX\\textures\\smoke_10.dds" "gfx\\FX\\textures\\smoke_11.dds"
+				 "gfx\\FX\\textures\\smoke_12.dds" "gfx\\FX\\textures\\smoke_13.dds"
+				  "gfx\\FX\\textures\\smoke_14.dds" "gfx\\FX\\textures\\smoke_15.dds"
+				  "gfx\\FX\\textures\\smoke_16.dds" "gfx\\FX\\textures\\smoke_17.dds"
+				  "gfx\\FX\\textures\\smoke_18.dds" "gfx\\FX\\textures\\smoke_19.dds"
+				  "gfx\\FX\\textures\\smoke_20.dds" "gfx\\FX\\textures\\smoke_21.dds"
+				  "gfx\\FX\\textures\\smoke_22.dds" "gfx\\FX\\textures\\smoke_23.dds"
+			}
+
+
+
+
+	}
+
+
+	
+	flareType =
+	{
+		name = "gun_smoke"
+
+		textureFile = { 
+				"gfx\\FX\\textures\\smoke_0.dds" "gfx\\FX\\textures\\smoke_1.dds"
+				 "gfx\\FX\\textures\\smoke_2.dds" "gfx\\FX\\textures\\smoke_3.dds"
+				 "gfx\\FX\\textures\\smoke_4.dds" "gfx\\FX\\textures\\smoke_5.dds"
+				  "gfx\\FX\\textures\\smoke_6.dds" "gfx\\FX\\textures\\smoke_7.dds"
+				
+				"gfx\\FX\\textures\\smoke_8.dds" "gfx\\FX\\textures\\smoke_9.dds"
+				 "gfx\\FX\\textures\\smoke_10.dds" "gfx\\FX\\textures\\smoke_11.dds"
+				 "gfx\\FX\\textures\\smoke_12.dds" "gfx\\FX\\textures\\smoke_13.dds"
+				  "gfx\\FX\\textures\\smoke_14.dds" "gfx\\FX\\textures\\smoke_15.dds"
+				  "gfx\\FX\\textures\\smoke_16.dds" "gfx\\FX\\textures\\smoke_17.dds"
+				  "gfx\\FX\\textures\\smoke_18.dds" "gfx\\FX\\textures\\smoke_19.dds"
+				  "gfx\\FX\\textures\\smoke_20.dds" "gfx\\FX\\textures\\smoke_21.dds"
+				  "gfx\\FX\\textures\\smoke_22.dds" "gfx\\FX\\textures\\smoke_23.dds"
+			}
+
+
+
+
+	}
+
+
+
+	flareType =
+	{
+		name = "naval_gun_smoke"
+
+		textureFile = { 
+				"gfx\\FX\\textures\\smoke_fire_0.dds" "gfx\\FX\\textures\\smoke_fire_1.dds"
+				 "gfx\\FX\\textures\\smoke_fire_2.dds" "gfx\\FX\\textures\\smoke_fire_3.dds"
+				 "gfx\\FX\\textures\\smoke_fire_4.dds" "gfx\\FX\\textures\\smoke_fire_5.dds"
+				  "gfx\\FX\\textures\\smoke_fire_6.dds" "gfx\\FX\\textures\\smoke_fire_7.dds"
+				
+				"gfx\\FX\\textures\\smoke_fire_8.dds" "gfx\\FX\\textures\\smoke_fire_9.dds"
+				 "gfx\\FX\\textures\\smoke_fire_10.dds" "gfx\\FX\\textures\\smoke_fire_11.dds"
+				 "gfx\\FX\\textures\\smoke_fire_12.dds" "gfx\\FX\\textures\\smoke_fire_13.dds"
+				  "gfx\\FX\\textures\\smoke_fire_14.dds" "gfx\\FX\\textures\\smoke_fire_15.dds"
+				  "gfx\\FX\\textures\\smoke_fire_16.dds" "gfx\\FX\\textures\\smoke_fire_17.dds"
+				  "gfx\\FX\\textures\\smoke_fire_18.dds" "gfx\\FX\\textures\\smoke_fire_19.dds"
+				  "gfx\\FX\\textures\\smoke_fire_20.dds" "gfx\\FX\\textures\\smoke_fire_21.dds"
+				  "gfx\\FX\\textures\\smoke_fire_22.dds" "gfx\\FX\\textures\\smoke_fire_23.dds"
+			}
+
+
+
+
+	}
+	flareType =
+	{
+		name = "naval_gun_fire"
+
+		textureFile = { 
+				"gfx\\FX\\textures\\blast_0.dds" "gfx\\FX\\textures\\blast_1.dds"
+		 		"gfx\\FX\\textures\\blast_10.dds" "gfx\\FX\\textures\\blast_12.dds"
+				 "gfx\\FX\\textures\\blast_20.dds" "gfx\\FX\\textures\\blast_21.dds"
+				
+			}
+
+
+
+
+	}
+}

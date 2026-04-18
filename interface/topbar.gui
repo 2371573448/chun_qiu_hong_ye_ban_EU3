@@ -1,0 +1,398 @@
+guiTypes = {
+
+	windowType = {
+		name = "topbar"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=2048 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+
+
+
+################################################### test area
+
+
+
+	
+
+####################################################
+
+		
+
+
+		iconType =
+		{
+			name ="topbar_1"
+			spriteType = "GFX_topbar2_bg"
+			position = { x= 512 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="topbar_2"
+			spriteType = "GFX_topbar2_bg"
+			position = { x= 1024 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+	
+		iconType =
+		{
+			name ="topbar_3"
+			spriteType = "GFX_topbar2_bg"
+			position = { x= 1532 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="topbar_upper_left_bg"
+			spriteType = "GFX_topbar_bg"
+			position = { x= 0 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+
+
+		
+
+
+		guiButtonType = {
+			name = "player_shield"
+			quadTextureSprite ="GFX_largeshield"
+			position = { x = -17 y = -3 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			shortcut = "F1"
+		}
+		
+		iconType =
+		{
+			name ="icon_manpower"
+			spriteType = "GFX_icon_manpower"
+			position = { x= 80 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		textBoxType = {
+			name = "text_manpower"
+			position = { x = 104 y = 3 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		
+		
+		iconType =
+		{
+			name ="icon_stability"
+			spriteType = "GFX_icon_stability"
+			position = { x= 154 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		textBoxType = {
+			name = "text_stability"
+			position = { x = 178 y = 3 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		
+		iconType =
+		{
+			name ="icon_gold"
+			spriteType = "GFX_icon_gold"
+			position = { x= 210 y = 3 }
+			Orientation = "UPPER_LEFT"
+		}
+		textBoxType = {
+			name = "text_gold"
+			position = { x = 229 y = 3 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		
+		iconType =
+		{
+			name ="icon_prestige"
+			spriteType = "GFX_icon_prestige"
+			position = { x= 271 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+		textBoxType = {
+			name = "text_prestige"
+			position = { x = 288 y = 3 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		
+		
+		iconType =
+		{
+			name ="icon_infamy"
+			spriteType = "GFX_icon_infamy"
+			position = { x= 319 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+		textBoxType = {
+			name = "text_infamy"
+			position = { x = 341 y = 3 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		
+		iconType =
+		{
+			name ="icon_leg"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= 375 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+		textBoxType = {
+			name = "text_leg"
+			position = { x = 397 y = 3 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		
+		
+
+		
+
+		
+
+		textBoxType = {
+			name = "text_merchants"
+			position = { x = 469 y = 3 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		iconType =
+		{
+			name ="icon_merchant"
+			spriteType = "GFX_icon_merchant"
+			position = { x= 444 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+
+		textBoxType = {
+			name = "text_settlers"
+			position = { x = 518 y = 3 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		iconType =
+		{
+			name ="icon_settler"
+			spriteType = "GFX_icon_settler"
+			position = { x= 493 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+		textBoxType = {
+			name = "text_diplomats"
+			position = { x = 567 y = 3 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		iconType =
+		{
+			name ="icon_diplomat"
+			spriteType = "GFX_icon_diplomat"
+			position = { x= 542 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+		textBoxType = {
+			name = "text_missionaries"
+			position = { x = 616 y = 3 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		iconType =
+		{
+			name ="icon_missionary"
+			spriteType = "GFX_icon_missionary"
+			position = { x= 591 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+		textBoxType = {
+			name = "text_spies"
+			position = { x = 662 y = 3 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		iconType =
+		{
+			name ="icon_spy"
+			spriteType = "GFX_icon_spy"
+			position = { x= 637 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		textBoxType = {
+			name = "text_bureaucrat"
+			position = { x = 709 y = 3 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 4 y = 4}
+			text = "5"	
+			maxWidth = 64
+			maxHeight = 32	
+		}
+		iconType =
+		{
+			name ="icon_bureaucrat"
+			spriteType = "GFX_icon_bureaucrat"
+			position = { x= 684 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+		
+		
+
+		
+
+
+
+		textBoxType = {
+			name = "PlayerNationText"
+			position = { x = 140 y = 35 }
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 256
+			maxHeight = 32	
+		}
+
+
+
+		guiButtonType = {
+			name = "button_pause"
+			quadTextureSprite ="GFX_button_pause"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x = 734 y = 5 }
+		}
+
+
+		guiButtonType = {
+			name = "button_speedup"
+			quadTextureSprite ="GFX_button_speedup"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x = 940 y = 5 }
+		}
+
+		guiButtonType = {
+			name = "button_speeddown"
+			quadTextureSprite ="GFX_button_speeddown"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x = 940 y = 17 }
+		}
+
+		textBoxType = { 
+			name = "DateText"
+			position = { x = 736 y = 5 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 4}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+			format = right
+		}
+
+
+
+
+		iconType =
+		{
+			name ="speed_indicator"
+			spriteType = "GFX_speed_indicator"
+			position = { x= 965 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		
+
+		guiButtonType = {
+			name = "button_outliner"
+			quadTextureSprite ="GFX_button_outliner"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x = -49 y = 5 }
+
+			Orientation = "UPPER_RIGHT"
+		}
+
+
+	}
+
+
+}

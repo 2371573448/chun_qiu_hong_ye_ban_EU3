@@ -1,0 +1,242 @@
+province_decisions = { 
+	promote_cultural_unity = { 
+		#文化统一
+		potential = { 
+			not = { has_global_flag = guanbixiaochuwenhua }
+			has_owner_religion = yes
+			any_core = { 
+				exists = no
+				NOT = { 
+					tag = QIG
+				}
+				NOT = { 
+					tag = QIN
+				}
+				NOT = { 
+					tag = JIN
+				}
+				NOT = { 
+					tag = CHU
+				}
+				NOT = { 
+					tag = PAP
+				}
+				NOT = { 
+					tag = SON
+				}
+			}
+		}
+		allow = { 
+			has_national_focus = yes
+			is_core = this
+			NOT = { 
+				nationalism = 1
+			}
+			owner = { 
+				diplomats = 2
+			}
+		}
+		effect = { 
+			any_core = { 
+				limit = { 
+					exists = no
+					NOT = { 
+						tag = QIG
+					}
+					NOT = { 
+						tag = QIN
+					}
+					NOT = { 
+						tag = JIN
+					}
+					NOT = { 
+						tag = CHU
+					}
+					NOT = { 
+						tag = PAP
+					}
+					NOT = { 
+						tag = SON
+					}
+				}
+				remove_core = THIS
+			}
+			owner = { 
+				diplomats = -2
+				prestige = -0.05
+			}
+			random_list = { 
+				10 = { 
+					owner = { 
+						stability = -1
+					}
+				}
+				10 = { 
+					owner = { 
+						badboy = 1
+					}
+				}
+				80 = { }
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				NOT = { 
+					owner = { 
+						stability = 2
+						NOT = { 
+							badboy = 0.5
+						}
+						prestige = 0.33
+						legitimacy = 0.75
+						officials = 5
+					}
+				}
+			}
+		}
+	}
+
+	enact_settlement_policy = {
+		#推行移民政策
+		potential = {
+			not = { 
+				has_province_modifier = settlement_policy
+			}
+			has_owner_culture = no
+                        
+		}
+		allow = {
+			owner = {
+				diplomats = 1
+			}
+			has_national_focus = yes
+			or={
+			owner={not={has_country_flag = guanbifengditiaojie}}
+			owner={ai=yes}
+			}
+		}
+		effect = {
+			owner = {
+				diplomats = -1
+			}
+			add_province_modifier = {
+				name = "settlement_policy"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				owner = { infamy = 10 }
+			}
+			modifier = {
+				factor = 0
+				cot = no
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					owner = { officials = 3 }
+				}
+			}
+		}
+	}
+	
+	revoke_settlement_policy = {
+		potential = {
+			has_province_modifier = settlement_policy
+		}
+		allow = { }
+		effect = {
+			remove_province_modifier = settlement_policy
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	zhongdiandiqu = { 
+		#移动重点地区
+		potential = { 
+			owner = {
+				ai = no
+				years_of_income = 0.1
+			}
+		}
+		allow = { 
+			owner = {
+				years_of_income = 0.1
+			}
+		}
+		effect = { 
+			owner = {
+				years_of_income = -0.1
+				national_focus = this
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}	
+}
+
+#文化转变
+country_decisions = { 
+	cultural_shift = { 
+		potential = { 
+			capital_scope = { 
+				NOT = { 
+					culture = THIS
+				}
+			}
+			NOT = { 
+				tag = PAP
+			}
+			NOT = { 
+				tag = YAN
+			}
+			NOT = { 
+				tag = CHU
+			}
+			NOT = { 
+				tag = JIN
+			}
+			NOT = { 
+				tag = QIN
+			}
+			NOT = { 
+				tag = ZHO
+			}
+			NOT = { 
+				tag = WEI
+			}
+			NOT = { 
+				tag = YGO
+			}
+			NOT = { 
+				tag = HAN
+			}
+			NOT = { 
+				tag = WUG
+			}
+			NOT = { 
+				tag = QIG
+			}
+		}
+		allow = { 
+			dominant_culture = CAPITAL
+			stability = 1
+			war = no
+			is_subject = false
+		}
+		effect = { 
+			primary_culture = CAPITAL
+			stability = -5
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

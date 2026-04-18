@@ -1,0 +1,322 @@
+country_event = { 
+	id = 500100
+	trigger = { 
+		tag = PAP
+		NOT = { 
+			has_country_flag = jiudingtianjia
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME500100"
+	desc = "EVTDESC500100"
+	option = { 
+		name = "EVTOPTA500100"
+		set_country_flag = jiudingtianjia
+		set_country_flag = jizhouding
+		set_country_flag = youzhouding
+		set_country_flag = qingzhouding
+		set_country_flag = xuzhouding
+		set_country_flag = yangzhouding
+		set_country_flag = jingzhouding
+		set_country_flag = yizhouding
+		set_country_flag = liangzhouding
+		set_country_flag = bingzhouding
+	}
+}
+country_event = { 
+	id = 500101
+	trigger = { 
+		tag = PAP
+	}
+	is_triggered_only = yes
+	title = "EVTNAME50010"
+	desc = "EVTDESC50010"
+	option = { 
+		name = "EVTOPTA500101"
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 10
+				FROM = { 
+					relation = { 
+						who = THIS
+						value = 0
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				351 = { controlled_by = FROM }
+			}
+		}
+		treasury = 1000
+		FROM = {
+			clr_country_flag = wenjizhouding
+			clr_country_flag = wenyouzhouding
+			clr_country_flag = wenqingzhouding
+			clr_country_flag = wenxuzhouding
+			clr_country_flag = wenyangzhouding
+			clr_country_flag = wenjingzhouding
+			clr_country_flag = wenyizhouding
+			clr_country_flag = wenliangzhouding
+			clr_country_flag = wenbingzhouding
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				months = 120
+				target = THIS
+			}
+			treasury = 4000
+			prestige = -0.5
+		}
+	}
+	option = { 
+		name = "EVTOPTB500101"
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 2
+				FROM = { 
+					relation = { 
+						who = THIS
+						value = 190
+					}
+				}
+			}
+		}
+		treasury = 5000
+		prestige = -0.5
+		any_country = { 
+			limit = { 
+				has_country_flag = wenjizhouding
+			}
+			clr_country_flag = wenjizhouding
+			add_country_flag = jizhouding
+			jizhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenyouzhouding
+			}
+			clr_country_flag = wenyouzhouding
+			add_country_flag = youzhouding
+			youzhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenqingzhouding
+			}
+			clr_country_flag = wenqingzhouding
+			add_country_flag = qingzhouding
+			qingzhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenxuzhouding
+			}
+			clr_country_flag = wenxuzhouding
+			add_country_flag = xuzhouding
+			xuzhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenyangzhouding
+			}
+			clr_country_flag = wenyangzhouding
+			add_country_flag = yangzhouding
+			yangzhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenjingzhouding
+			}
+			clr_country_flag = wenjingzhouding
+			add_country_flag = jingzhouding
+			jingzhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenyizhouding
+			}
+			clr_country_flag = wenyizhouding
+			add_country_flag = yizhouding
+			yizhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenliangzhouding
+			}
+			clr_country_flag = wenliangzhouding
+			add_country_flag = liangzhouding
+			liangzhou = { add_core = this }
+		}
+		any_country = { 
+			limit = { 
+				has_country_flag = wenbingzhouding
+			}
+			clr_country_flag = wenbingzhouding
+			add_country_flag = bingzhouding
+			bingzhou = { add_core = this }
+		}
+	}
+}
+country_event = { 
+	id = 500102
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME500102"
+	desc = "EVTDESC500102"
+	option = { 
+		name = "EVTOPTA500102"
+		any_country = { 
+			limit = { 
+				has_country_modifier = xuzhouding
+			}
+			any_owned = { 
+				add_province_modifier = { 
+					name = "xuzhoudingshengfen"
+					duration = 3650
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = yangzhouding
+			}
+			any_owned = { 
+				limit = { 
+					culture = wuyue
+				}
+				owner = {
+					add_accepted_culture = wuyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					culture = gouwu
+				}
+				owner = {
+					add_accepted_culture = gouwu
+				}
+			}
+			any_owned = { 
+				limit = { 
+					culture = ouyue
+				}
+				owner = {
+					add_accepted_culture = ouyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					culture = minyue
+				}
+				owner = {
+					add_accepted_culture = minyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					culture = nanyue
+				}
+				owner = {
+					add_accepted_culture = nanyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					culture = yangyue
+				}
+				owner = {
+					add_accepted_culture = yangyue
+				}
+			}
+			any_owned = { 
+				limit = { 
+					culture = boliao
+				}
+				owner = {
+					add_accepted_culture = boliao
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = yizhouding
+			}
+			any_owned = { 
+				limit = { 
+					trade_goods = grain
+					trade_goods = cloth
+					trade_goods = salt
+				}
+				add_province_modifier = { 
+					name = "yizhoudingshengfen1"
+					duration = 3650
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = yizhouding
+			}
+			any_owned = { 
+				limit = { 
+					controlled_by = owner
+					not = { has_siege = yes }
+					not = {
+						any_neighbor_province = {
+							or = {
+								not = { controlled_by = owner }
+								has_siege = yes
+							}
+						}
+					}
+				}
+				add_province_modifier = { 
+					name = "yizhoudingshengfen2"
+					duration = 3650
+				}
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = yizhouding
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						not = { controlled_by = owner }
+						has_siege = yes
+						any_neighbor_province = {
+							or = {
+								not = { controlled_by = owner }
+								has_siege = yes
+							}
+						}
+					}
+				}
+				remove_province_modifier = yizhoudingshengfen2
+			}
+		}
+		any_country = { 
+			limit = { 
+				has_country_modifier = liangzhouding
+			}
+			any_owned = { 
+				limit = { 
+					region = liangzhou
+				}
+				add_province_modifier = { 
+					name = "liangzhoudingshengfen"
+					duration = 3650
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,640 @@
+	guiTypes = {
+
+	windowType = {
+		name = "domesticpanel_overview"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes	
+
+
+		iconType =
+		{
+			name ="overview_bg"
+			spriteType = "GFX_overview_bg"
+			position = { x= 32 y = 150 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType ={
+				name = "shield_hre"
+				position = { x=255 y =226}
+				spriteType ="GFX_shield_hre"	
+				
+			}
+
+		iconType ={
+				name = "shield_vatican"
+				position = { x=80  y =220}
+				spriteType ="GFX_shield_vatican"	
+				
+			}
+
+		#guiButtonType = {
+		#		name = "shield_hre"
+		#		position = { x=255 y =226}
+		#		quadTextureSprite ="GFX_shield_hre"	
+		#		tooltip = ""
+		#		tooltipText =""
+		#		delayedTooltipText = ""
+		#		buttonText = ""
+		#		buttonFont = "Main_14_black"
+		#	}
+
+		#guiButtonType = {
+		#		name = "shield_vatican"
+		#		position = { x=80  y =220}
+		#		quadTextureSprite ="GFX_shield_vatican"	
+		#		tooltip = ""
+		#		tooltipText =""
+		#		delayedTooltipText = ""
+		#		buttonText = ""
+		#		buttonFont = "Main_14_black"
+		#	}
+
+		instantTextBoxType = {
+			name = "domestictext_typeofgov"
+			position = { x = 6 y =162 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 400
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_ruler"
+			position = { x = 260 y =186 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 90
+			maxHeight = 40	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_victorypoints"
+			position = { x = 169 y =224 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_24"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "domestictext_ranking"
+			position = { x = 169 y =280 }
+			format = centre
+
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 64
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		
+
+
+		iconType =
+		{
+			name ="overview_religion_icon"
+			spriteType = "GFX_icon_religion"
+			position = { x= 330 y = 250 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		instantTextBoxType = {
+			name = "domestictext_culture"
+			position = { x = 70 y = 186 }
+			textureFile = ""
+			font = "Main_14_black"
+			borderSize = {x = 4 y = 4}
+			text = "CULTURE"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		OverlappingElementsBoxType = {
+				name = "temp_mods_box"
+				position = { x = 12 y = 316 }
+				size = { x=310 y= 48 }
+				Orientation = "UPPER_LEFT"
+				format = centre
+				spacing = 1
+		}
+		guiButtonType = {
+				name = "modifiers_button"
+				position = { x=300 y =316}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_MODIFIERS"
+				buttonFont = "Main_14_black"
+		}
+			
+		instantTextBoxType = {
+			name = "domestictext_reputation"
+			position = { x = 32 y = 342 }
+			textureFile = ""
+			font = "Main_14_orange"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 330
+			maxHeight = 16	
+			format = left
+			Orientation = "UPPER_LEFT"
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "domestictext_diplostatus"
+			position = { x = 32 y = 370 }
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 180
+			maxHeight = 148	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+
+		guiButtonType = {
+				name = "vassalls_button"
+				position = { x=64 y =520}
+				quadTextureSprite ="button_type_1"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_CREATE_VASSALLS"
+				buttonFont = "Main_14_black"
+			}
+
+
+
+
+		windowType = {
+			name = "domesticpanel_vassal_select"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = yes
+
+			iconType =
+			{
+				name ="domesticpanel_overlay"
+				spriteType = "GFX_domesticpanel_overlay"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			guiButtonType = {
+				name = "back_button"
+				position = { x=180 y =550}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "BACK"
+				buttonFont = "Main_14_black"
+			}
+	
+			
+			listboxType = 
+				{
+				name ="domesticpanel_vassal_select_list"
+				position = { x=58 y =150}
+				backGround=""
+				size = { x=300 y =340}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+
+
+
+
+			instantTextBoxType = {
+				name = "description"
+				position = { x = 0 y =124 }
+				format = centre
+				font = "Main_14"
+				maxWidth = 420
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				text = "DOMESTIC_RELEASE_VASSALL"	
+			}
+
+			iconType =
+			{
+				name ="divider"
+				spriteType = "GFX_divider"
+				position = { x= 0 y = 150 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+		}
+
+		windowType = {
+			name = "countrymodifiers_overview"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=1024 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = yes	
+		
+			iconType =
+			{
+				name ="domesticpanel_overlay"
+				spriteType = "GFX_domesticpanel_overlay"
+				position = { x= 0 y = -1 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = 
+			{
+				name ="countrymodifiers_list"
+				position = { x=34 y =100}
+				backGround=""
+				size = { x=320 y =430}
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+			guiButtonType = {
+				name = "back_button"
+				position = { x=180 y =550}
+				quadTextureSprite ="button_type_2"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "BACK"
+				buttonFont = "Main_14_black"
+			}
+		}
+
+
+		guiButtonType = {
+				name = "sortby_nation_button"
+				position = { x=240 y =360}
+				quadTextureSprite ="mini_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_NATION"
+				buttonFont = "Main_14_plain"
+			}
+
+		guiButtonType = {
+				name = "sortby_relation_button"
+				position = { x=330 y =360}
+				quadTextureSprite ="mini_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_RELATION"
+				buttonFont = "Main_14_plain"
+			}
+
+
+		listboxType = 
+			{
+			name ="domestictext_relationlist"
+			position = { x = 244 y = 376 }
+			backGround=""
+			size = { x=130 y =180}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+
+
+		listboxType = 
+			{
+			name ="domestictext_textlist"
+			position = { x = 57 y = 376 }
+			backGround=""
+			size = { x= 160 y =140}
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+
+
+
+	}
+
+
+	windowType = {
+		name = "domestic_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=128 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+
+	#checkboxType = {
+	#		name = "game"
+	#		position = { x=-20 y =0}
+	#		quadTextureSprite ="GFX_list_button"
+	#		tooltip = ""
+	#		tooltipText =""
+	#		delayedTooltipText = ""
+	#		buttonText = ""
+	#		buttonFont = "Main_14_black"
+	#	}
+
+
+
+		instantTextBoxType={
+			position = { x=-20 y =0}
+			name = "text"
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 180
+			maxHeight = 16
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+
+
+
+
+	}
+
+
+
+	#entry for listbox when selecting new...
+	windowType = {
+		name = "domesticpanel_relation_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 0 y =0 }
+			format = left
+			font = "garamond_14"
+			##font = "Main_14"
+			maxWidth = 100
+			maxHeight = 16	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "value"
+			position = { x = 105 y =0 }
+			format = left
+			font = "Main_14_bold"
+			maxWidth = 64
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+
+	}
+
+	windowType = {
+		name = "domesticpanel_vassal_selection_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 80 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+		iconType =
+		{
+			name ="divider"
+			spriteType = "GFX_divider"
+			position = { x= -70 y = 70 }
+			Orientation = "UPPER_LEFT"
+		}
+			
+
+		instantTextBoxType = {
+				name = "provinces"
+				position = { x = 80 y = 24 }
+				textureFile = ""
+				font = "Main_14"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 180
+				maxHeight = 130	
+				Orientation = "UPPER_LEFT"			
+			}
+
+
+		guiButtonType =
+		{
+			name ="vassal_selection_button"
+			quadTextureSprite= "GFX_thinshield"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+		
+
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 80 y =0 }
+
+			format = left
+
+			textureFile = ""
+			font = "Main_14_bold"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 124
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		
+		}
+	}
+
+	### TEMPORARY MODIFIER ENTRY
+	windowType = {
+		name = "overview_tempmod_entry"
+		backGround =""
+		position = { x=0 y=0 }
+		size = { x=48 y=48 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="strip_temp_mods"
+			spriteType = "GFX_modifier_icons"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+	}
+
+	iconType =
+		{
+			name ="modifier_icon"
+			spriteType = "GFX_modifier_icons"
+			position = { x= 190 y = 314 }
+			Orientation = "UPPER_LEFT"
+		}
+
+	positionType = {
+		name = "modifier_icon_offset"
+		position = { x = 32 y = 0 }
+	}
+	positionType = {
+		name = "modifier_icon_start"
+		position = { x = 190 y = 314 }
+	}
+	
+	### Modifiers screen
+	
+	windowType = {
+		name = "countrymodifier_entry"
+		backGround =""
+		position = { x=0 y=0 }
+		size = { x=330 y=80 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="divider"
+			spriteType = "GFX_divider"
+			position = { x= -70 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="modifier_icon"
+			spriteType = "GFX_modifier_icons"
+			position = { x = 0 y = 8 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+		
+		iconType =
+		{
+			name ="resource_icon"
+			spriteType = "GFX_resource_icon"
+			position = { x = 0 y = 8 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 40 y = 4 }
+			format = left
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 275
+			maxHeight = 20
+			fixedsize = yes
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "effects"
+			position = { x = 40 y = 20 }
+			format = left
+			textureFile = ""
+			font = "Main_14"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 250
+			maxHeight = 60	
+			Orientation = "UPPER_LEFT"
+		}
+	}
+}

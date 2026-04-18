@@ -1,0 +1,6 @@
+#жавэ
+type = galley
+
+hull_size = 23
+base_cannons = 12
+sail_speed = 7

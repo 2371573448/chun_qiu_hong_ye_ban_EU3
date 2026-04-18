@@ -1,0 +1,46 @@
+# 为君主承担基础管理和决策的卿士
+
+advisor ={
+name ="宫之奇" 
+location =78
+skill =4
+type =alderman
+date =2025.1.1
+death_date =2045.1.1
+}
+
+advisor ={
+name ="子鱼" 
+location =324
+skill =4
+type =alderman
+date =2047.1.1
+death_date =2090.1.1
+}
+
+advisor ={
+name ="子鱼" 
+location =324
+skill =4
+type =alderman
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="曹参" 
+location =232
+skill =5
+type =alderman
+date =2489.1.1
+death_date =2508.1.1
+}
+
+advisor ={
+name ="里克" 
+location =71
+skill =4
+type =alderman
+date =2005.1.1
+death_date =2048.1.1
+}

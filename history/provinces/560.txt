@@ -1,0 +1,11 @@
+
+culture = dian
+religion = ancestor
+capital = "²»Î¤"
+trade_goods = fur
+hre = no
+base_tax = 4
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10

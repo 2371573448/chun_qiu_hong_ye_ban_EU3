@@ -1,0 +1,89 @@
+
+culture = hebei
+religion = animism
+capital = "·¶Ñô"
+trade_goods = cloth
+base_tax = 7
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+1928.1.1 = { 
+	discovered_by = DAI
+}
+2090.1.1 = { discovered_by = YAN }
+2244.1.1 = { 
+	owner = JIW
+	controller = JIW
+	add_core = JIW
+	remove_core = ZHO
+}
+2244.1.2 = { 
+	religion = animism
+	remove_core = YAN
+	citysize = 0
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+2246.1.1 = { 
+	owner = YAN
+	controller = YAN
+	citysize = 32000
+	fort1 = yes
+	add_core = YAN
+	religion = liyuejiaohua
+}
+2246.1.2 = { 
+	owner = JIW
+	controller = JIW
+	add_core = JIW
+	remove_core = QIG
+}
+2247.1.1 = { 
+	religion = animism
+	remove_core = YAN
+	citysize = 0
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+2250.1.1 = { 
+	owner = YAN
+	controller = YAN
+	citysize = 32000
+	fort1 = yes
+}
+2280.1.1 = { 
+	add_core = YAN
+	religion = liyuejiaohua
+}
+2380.1.1 = { 
+	religion = rujia
+}
+2384.1.1 = { 
+	owner = ZHS
+	controller = ZHS
+}
+2393.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2460.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2470.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = YAN
+	controller = YAN
+}

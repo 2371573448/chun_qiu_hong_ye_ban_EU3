@@ -1,0 +1,37 @@
+#能够安定国家，讽谏君主的人
+
+advisor ={
+name ="赵衰" 
+location =73
+skill =5
+type =grand_marshal
+date =2035.1.1
+death_date =2076.1.1
+}
+
+advisor ={
+name ="邹衍" 
+location =265
+skill =4
+type =grand_marshal
+date =2394.1.1
+death_date =2448.1.1
+}
+
+advisor ={
+name ="触龙" 
+location =114
+skill =3
+type =grand_marshal
+date =2030.1.1
+death_date =2050.1.1
+}
+
+advisor ={
+name ="王陵" 
+location =232
+skill =4
+type =grand_marshal
+date =2489.1.1
+death_date =2517.1.1
+}

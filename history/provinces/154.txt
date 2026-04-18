@@ -1,0 +1,37 @@
+owner = YQU
+controller = YQU
+add_core = YQU
+culture = xirong
+religion = animism
+capital = "ÉÝÑÓ"
+trade_goods = fur
+hre = no
+base_tax = 2
+manpower = 0
+citysize = 8000
+fort1 = yes
+1928.1.1 = { 
+	discovered_by = DAI
+}
+1928.1.1 = { 
+	discovered_by = YQU
+}
+2222.1.1 = { 
+	citysize = 18000
+}
+2428.1.1 = { 
+	owner = QIN
+	controller = QIN
+	citysize = 8000
+}
+2458.1.1 = { 
+	add_core = QIN
+}
+2489.10.1 = { 
+	native_size = 30
+	native_ferocity = 8
+	native_hostileness = 10
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}

@@ -1,0 +1,102 @@
+owner = TAN
+controller = TAN
+culture = qilu
+religion = liyuejiaohua
+capital = "Ì·³Ç"
+trade_goods = wine
+hre = yes
+base_tax = 5
+manpower = 0
+citysize = 22000
+fort1 = yes
+add_core = TAN
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2014.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2044.1.1 = { 
+	add_core = QIG
+	culture = qilu
+	remove_core = TAN
+}
+2222.1.1 = { 
+	citysize = 28000
+}
+2244.1.1 = { 
+	owner = TAN
+	controller = TAN
+	add_core = TAN
+	remove_core = QIG
+}
+2244.1.2 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+	remove_core = TAN
+}
+2245.1.1 = { 
+	hre = no
+}
+2246.1.2 = { 
+	owner = TAN
+	controller = TAN
+	add_core = TAN
+	remove_core = LUG
+}
+2246.1.2 = { 
+	hre = yes
+	religion = rujia
+}
+2247.1.1 = { 
+	hre = no
+}
+2247.1.1 = { 
+	owner = QIG
+	controller = QIG
+	add_core = QIG
+}
+2414.1.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2419.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2477.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	controller = REB
+}
+2490.1.1 = { 
+	revolt = { }
+	controller = QIG
+	owner = QIG
+}
+2492.2.1 = { 
+	owner = JBW
+	controller = JBW
+	add_core = JBW
+}
+2492.7.1 = { 
+	owner = QIG
+	controller = QIG
+}

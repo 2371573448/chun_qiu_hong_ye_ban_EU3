@@ -1,0 +1,451 @@
+country_event = { 
+	id = 60067
+	is_triggered_only = yes
+	title = "EVTNAME60067"
+	desc = "EVTDESC60067"
+	option = { 
+		name = "EVTOPTA60067"
+		ai_chance = { 
+			factor = 75
+			modifier = { 
+				factor = 0.8
+				emperor = { 
+					not = { 
+						religion = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.8
+				emperor = { 
+					badboy = 0.5
+				}
+			}
+			modifier = { 
+				factor = 0.8
+				emperor = { 
+					badboy = 1
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				imperial_influence = 50
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = daizhou_lv2
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = daizhou_lv4
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = daizhou_lv6
+			}
+			modifier = { 
+				factor = 1.5
+				has_global_flag = daizhou_lv8
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 5
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 10
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 15
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 10
+				}
+			}
+		}
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = 25
+			}
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 5
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 10
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 20
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 30
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 40
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 50
+			}
+			emperor = { 
+				treasury = 5
+			}
+			treasury = -5
+		}
+	}
+	option = { 
+		name = "EVTOPTB60067"
+		ai_chance = { 
+			factor = 25
+			modifier = { 
+				factor = 2
+				emperor = { 
+					not = { 
+						num_of_cities = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				emperor = { 
+					not = { 
+						army = 30
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				emperor = { 
+					not = { 
+						army = 20
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.35
+				emperor = { 
+					not = { 
+						army = 10
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				emperor = { 
+					not = { 
+						army = THIS
+					}
+				}
+			}
+		}
+		prestige = 0.05
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = -50
+			}
+		}
+		emperor = { 
+			casus_belli = { 
+				target = THIS
+				type = cb_insult
+				months = 60
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 60068
+	is_triggered_only = yes
+	title = "EVTNAME60068"
+	desc = "EVTDESC60068"
+	option = { 
+		name = "EVTOPTA60068"
+		ai_chance = { 
+			factor = 80
+			modifier = { 
+				factor = 0.8
+				emperor = { 
+					not = { 
+						religion = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.8
+				emperor = { 
+					badboy = 0.5
+				}
+			}
+			modifier = { 
+				factor = 0.8
+				emperor = { 
+					badboy = 1
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				imperial_influence = 30
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = fuzhou_lv2
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = fuzhou_lv4
+			}
+			modifier = { 
+				factor = 1.2
+				has_global_flag = fuzhou_lv6
+			}
+			modifier = { 
+				factor = 1.5
+				has_global_flag = fuzhou_lv8
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 3
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 6
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				not = { 
+					army = 10
+				}
+			}
+			modifier = { 
+				factor = 0
+				not = { 
+					treasury = 10
+				}
+			}
+		}
+		badboy = -1
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = 25
+			}
+		}
+		PAP = { 
+			relation = { 
+				who = THIS
+				value = 25
+			}
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+			}
+			PAP = { 
+				treasury = 3
+			}
+			emperor = { 
+				treasury = 3
+			}
+			treasury = -6
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 5
+			}
+			PAP = { 
+				treasury = 3
+			}
+			emperor = { 
+				treasury = 3
+			}
+			treasury = -6
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 10
+			}
+			PAP = { 
+				treasury = 3
+			}
+			emperor = { 
+				treasury = 3
+			}
+			treasury = -6
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 20
+			}
+			PAP = { 
+				treasury = 3
+			}
+			emperor = { 
+				treasury = 3
+			}
+			treasury = -6
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 30
+			}
+			PAP = { 
+				treasury = 3
+			}
+			emperor = { 
+				treasury = 3
+			}
+			treasury = -6
+		}
+		any_country = { 
+			limit = { 
+				tag = THIS
+				monthly_income = 50
+			}
+			PAP = { 
+				treasury = 3
+			}
+			emperor = { 
+				treasury = 3
+			}
+			treasury = -6
+		}
+	}
+	option = { 
+		name = "EVTOPTB60068"
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 1.5
+				emperor = { 
+					not = { 
+						num_of_cities = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				emperor = { 
+					not = { 
+						army = 30
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.2
+				emperor = { 
+					not = { 
+						army = 20
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.35
+				emperor = { 
+					not = { 
+						army = 10
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				emperor = { 
+					not = { 
+						army = THIS
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.75
+				relation = { 
+					who = PAP
+					value = 100
+				}
+			}
+		}
+		badboy = 1
+		emperor = { 
+			relation = { 
+				who = THIS
+				value = -60
+			}
+		}
+		PAP = { 
+			relation = { 
+				who = THIS
+				value = -60
+			}
+		}
+		emperor = { 
+			casus_belli = { 
+				target = THIS
+				type = jap_civil_war
+				months = 60
+			}
+		}
+	}
+}

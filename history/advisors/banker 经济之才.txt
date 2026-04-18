@@ -1,0 +1,28 @@
+#在经济改革上作出重要贡献的人
+
+advisor ={
+name ="李斯" 
+location =197
+skill =5
+type =banker
+date =2440.1.1
+death_date =2490.1.1
+}
+
+advisor ={
+name ="李斯" 
+location =197
+skill =5
+type =banker
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="百里奚" 
+location =179
+skill =5
+type =banker
+date =2043.1.1
+death_date =2065.1.1
+}

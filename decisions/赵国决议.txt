@@ -1,0 +1,84 @@
+country_decisions = { 
+	#迁都邯郸
+	qianduhandan = { 
+		potential = { 
+			owns = 112
+			NOT = { capital = 112 }
+			NOT = { 
+				has_country_flag = qianduhandan
+			}
+			tag = ZHO
+			has_global_flag = zhanguokaishi
+		}
+		allow = { 
+			stability = 1
+			is_core = 112
+			war = no
+		}
+		effect = { 
+			capital = 112
+			112 = { 
+				base_tax = 2
+			}
+			set_country_flag = qianduhandan
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	# 赵国天赋——赵氏不绝
+	zhaoshibujue = { 
+		potential = { 
+			government = monarchy
+			tag = ZHO
+			OR = { 
+				NOT = { 
+					dynasty = "赵"
+				}
+				has_heir = no
+			}
+		}
+		allow = { 
+			treasury = 50
+		}
+		effect = { 
+			treasury = -50
+			define_heir = { 
+				claim = 100
+				dynasty = "赵"
+				female = no
+				DIP = 5
+				MIL = 5
+				ADM = 5
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}
+country_decisions = { 
+	#推选盟主
+	sanjinlianhe = { 
+		potential = { 
+			NOT = { 
+				has_country_flag = sanjinlianhe
+			}
+			tag = WEI
+			has_global_flag = zhanguokaishi
+		}
+		allow = { 
+			relation = { who = ZHO value = 150 }
+			relation = { who = HAN value = 150 }
+			war = no
+		}
+		effect = { 
+			set_country_flag = sanjinlianhe
+			treasury = -50
+			prestige = 0.1
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

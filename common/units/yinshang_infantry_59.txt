@@ -1,0 +1,12 @@
+#“Û…Ã∂ºŒ¿
+
+type = infantry
+unit_type = yinshang
+
+maneuver = 2
+offensive_fire = 7
+defensive_fire = 6
+offensive_shock = 9
+defensive_shock = 9
+offensive_morale = 7
+defensive_morale = 10

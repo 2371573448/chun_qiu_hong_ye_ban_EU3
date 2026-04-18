@@ -1,0 +1,349 @@
+##÷£≤ÆøÀ∂Œ”⁄€≥
+country_event = { 
+	# ∑÷∑‚ Â∂Œ
+	id = 10001
+	trigger = { 
+		tag = ZGO
+		government = monarchy
+		year = 1946
+		NOT = { 
+			year = 2006
+		}
+		NOT = { 
+			has_country_flag = zhengbokeduanyuyan1
+		}
+	}
+	mean_time_to_happen = { 
+		months = 360
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10001"
+	desc = "EVTDESC10001"
+	option = { 
+		name = "EVTOPTA10001"
+		badboy = 1
+		prestige = 0.05
+		add_country_modifier = { 
+			name = "taihoubuman"
+			duration = 1825
+		}
+		set_country_flag = zhengbokeduanyuyan1
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { 
+		name = "EVTOPTB10001"
+		badboy = -1
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = noble_territory
+				}
+				is_capital = no
+			}
+			add_country_modifier = { 
+				name = "noble_territory"
+				duration = -1
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = vassal_territory
+		}
+		set_country_flag = zhengbokeduanyuyan1
+		set_country_flag = zhengbokeduanyuyan3
+		ai_chance = {
+			factor = 5
+		}
+	}
+	option = { 
+		name = "EVTOPTC10001"
+		badboy = -1
+		random_owned = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = noble_territory
+				}
+				is_capital = no
+			}
+			add_country_modifier = { 
+				name = "noble_territory"
+				duration = -1
+			}
+			remove_province_modifier = monarch_territory
+			remove_province_modifier = vassal_territory
+		}
+		set_country_flag = zhengbokeduanyuyan1
+		set_country_flag = zhengbokeduanyuyan2
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+country_event = { 
+	# ∑÷∑‚ Â∂Œ
+	id = 10002
+	trigger = { 
+		tag = ZGO
+		has_country_flag = zhengbokeduanyuyan2
+		NOT = { 
+			has_country_flag = zhengbokeduanyuyan3
+		}
+	}
+	mean_time_to_happen = { 
+		months = 60
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10002"
+	desc = "EVTDESC10002"
+	option = { 
+		name = "EVTOPTA10002"
+		stability = 1
+		prestige = -0.10
+		clr_country_flag = zhengbokeduanyuyan2
+		set_country_flag = zhengbokeduanyuyan3
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { 
+		name = "EVTOPTB10002"
+		stability = -1
+		random_owned = { 
+			pretender_rebels = 5
+		}
+		clr_country_flag = zhengbokeduanyuyan2
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+country_event = { 
+	# øÀ∂Œ”⁄€≥
+	id = 10003
+	major = yes
+	trigger = { 
+		tag = ZGO
+		has_country_flag = zhengbokeduanyuyan3
+	}
+	mean_time_to_happen = { 
+		months = 24
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10003"
+	desc = "EVTDESC10003"
+	option = { 
+		name = "EVTOPTA10003"
+		prestige = 0.05
+		clr_country_flag = zhengbokeduanyuyan3
+		random_owned = { 
+			pretender_rebels = 4
+		}
+	}
+}
+
+##÷‹÷£Ωª∂Ò
+country_event = { 
+	# ÷‹÷£Ωª∂Ò
+	id = 10012
+	trigger = { 
+		tag = ZGO
+		year = 1953
+		NOT = { 
+			year = 2013
+		}
+		NOT = { 
+			has_country_flag = zhouzhengjiaowu
+		}
+		is_emperor = yes
+	}
+	mean_time_to_happen = { 
+		months = 240
+	}
+	title = "EVTNAME10012"
+	desc = "EVTDESC10012"
+	option = { 
+		name = "EVTOPTA10012"
+		prestige = -0.10
+		add_imperial_influence = -20
+		relation = { 
+			who = PAP
+			value = 50
+		}
+		ai_chance = {
+			factor = 2
+		}
+		set_country_flag = zhouzhengjiaowu
+	}
+	option = { 
+		name = "EVTOPTB10012"
+		prestige = 0.10
+		add_imperial_influence = 10
+		relation = { 
+			who = PAP
+			value = -150
+		}
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = zhouzhengjiaowu
+		PAP = {
+			country_event = 10013
+		}
+	}
+}
+
+##÷£π˙÷–À•
+country_event = { 
+	# ÀŒπ˙±∆∆»
+	id = 10042
+	is_triggered_only = yes
+	trigger = { 
+		tag = ZGO
+		year = 1968
+		NOT = { 
+			year = 2028
+		}
+		NOT = { 
+			has_country_flag = zhengguozhongshuai1
+		}
+		is_emperor = yes
+	}
+	title = "EVTNAME10042"
+	desc = "EVTDESC10042"
+	option = { 
+		name = "EVTOPTA10042"
+		prestige = -0.10
+		add_imperial_influence = -20
+		relation = { 
+			who = SON
+			value = 50
+		}
+		define_ruler = { 
+			name = "Õª"
+			dynasty = "ºß"
+			regent = no
+			female = no
+			DIP = 4
+			MIL = 5
+			ADM = 4
+		}
+		ai_chance = {
+			factor = 80
+		}
+		set_country_flag = zhengguozhongshuai1
+		set_country_flag = zhengguozhongshuai2
+	}
+	option = { 
+		name = "EVTOPTB10042"
+		add_imperial_influence = -5
+		relation = { 
+			who = SON
+			value = -100
+		}
+		ai_chance = {
+			factor = 20
+		}
+		set_country_flag = zhengguozhongshuai1
+	}
+}
+country_event = { 
+	# º¿÷Ÿ÷Æ¬“
+	id = 10043
+	major = yes
+	trigger = { 
+		tag = ZGO
+		has_country_flag = zhengguozhongshuai2
+		NOT = { 
+			year = 2028
+		}
+	}
+	mean_time_to_happen = { 
+		months = 60
+		modifier = { 
+			factor = 0.8
+			NOT = { 
+				prestige = 0
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.66
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				legitimacy = 0.33
+			}
+		}
+	}
+	title = "EVTNAME10043"
+	desc = "EVTDESC10043"
+	option = { 
+		name = "EVTOPTA10043"
+		define_ruler = { 
+			name = "∫ˆ"
+			dynasty = "ºß"
+			regent = no
+			female = no
+			DIP = 3
+			MIL = 2
+			ADM = 5
+		}
+		stability = -1
+		legitimacy = -0.30
+		clr_country_flag = zhengguozhongshuai2
+	}
+}

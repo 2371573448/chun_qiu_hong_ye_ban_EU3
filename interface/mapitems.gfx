@@ -1,0 +1,748 @@
+objectTypes = {
+
+	unitstatsBillboardType = {
+		name = "unit_status"
+		textureFile = "gfx\\interface\\divine_wind_interface\\unit_ui_diffuse.dds"
+		mask = "gfx\\interface\\divine_wind_interface\\unit_ui_mask.dds"
+		effectFile = "gfx\\fx\\unitstats_billboard.fx"
+		scale = 1.9
+		noOfFrames = 1
+		font_size = 11
+		font = "Main_16_2"
+	}
+	
+	unitstatsBillboardType = {
+		name = "unit_status_naval"
+		textureFile = "gfx\\interface\\divine_wind_interface\\unit_ui_diffuse.dds"
+		mask = "gfx\\interface\\divine_wind_interface\\unit_ui_mask.dds"
+		effectFile = "gfx\\fx\\unitstats_billboard.fx"
+		scale = 1.5
+		noOfFrames = 1
+		font_size = 11
+		font = "Main_16"
+	}
+
+	meshType = {
+		name = "capital"	
+		xfile = "gfx\\mapitems\capital.x"
+	}
+	
+	meshType = {
+		name = "national_focus"	
+		xfile = "gfx\\mapitems\nationalfocus.x"
+	}
+
+
+	meshType = {
+		name = "latingfx_tradingpost"	
+		xfile = "gfx\\mapitems\latingfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "latingfx_colony_1"	
+		xfile = "gfx\\mapitems\latingfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "latingfx_colony_2"	
+		xfile = "gfx\\mapitems\latingfx_colony_2.x"
+	}
+
+	meshType = {
+		name = "latingfx_city_1"	
+		xfile = "gfx\\mapitems\latingfx_city_1.x"
+	}
+
+	meshType = {
+		name = "latingfx_city_2"	
+		xfile = "gfx\\mapitems\latingfx_city_3.x"
+	}
+
+	meshType = {
+		name = "latingfx_city_3"	
+		xfile = "gfx\\mapitems\latingfx_city_3.x"
+	}
+
+
+
+
+
+	meshType = {
+		name = "latingfx_wall_1"	
+		xfile = "gfx\\mapitems\latingfx_wall_5.x"
+	}
+
+	meshType = {
+		name = "latingfx_wall_2"	
+		xfile = "gfx\\mapitems\latingfx_wall_2.x"
+	}
+	
+	meshType = {
+		name = "latingfx_wall_3"	
+		xfile = "gfx\\mapitems\latingfx_wall_3.x"
+	}
+
+	meshType = {
+		name = "latingfx_wall_4"	
+		xfile = "gfx\\mapitems\latingfx_wall_4.x"
+	}
+
+	meshType = {
+		name = "latingfx_wall_5"	
+		xfile = "gfx\\mapitems\latingfx_wall_5.x"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "latingfx_city_1_1"	
+		xfile = "gfx\\mapitems\latingfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "latingfx_city_1_2"	
+		xfile = "gfx\\mapitems\latingfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "latingfx_city_1_3"	
+		xfile = "gfx\\mapitems\latingfx_city_1_3.x"
+	}
+
+
+
+
+
+	meshType = {
+		name = "latingfx_city_2_1"	
+		xfile = "gfx\\mapitems\latingfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "latingfx_city_2_2"	
+		xfile = "gfx\\mapitems\latingfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "latingfx_city_2_3"	
+		xfile = "gfx\\mapitems\latingfx_city_2_3.x"
+	}
+
+
+
+	meshType = {
+		name = "latingfx_city_3_1"	
+		xfile = "gfx\\mapitems\latingfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "latingfx_city_3_2"	
+		xfile = "gfx\\mapitems\latingfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "latingfx_city_3_3"	
+		xfile = "gfx\\mapitems\latingfx_city_3_3.x"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "muslimgfx_tradingpost"	
+		xfile = "gfx\\mapitems\muslimgfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "muslimgfx_colony_1"	
+		xfile = "gfx\\mapitems\muslimgfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "muslimgfx_colony_2"	
+		xfile = "gfx\\mapitems\muslimgfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "muslimgfx_city_3_1"	
+		xfile = "gfx\\mapitems\muslimgfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "muslimgfx_city_3_2"	
+		xfile = "gfx\\mapitems\muslimgfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "muslimgfx_city_3_3"	
+		xfile = "gfx\\mapitems\muslimgfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "muslimgfx_city_2_1"	
+		xfile = "gfx\\mapitems\muslimgfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "muslimgfx_city_2_2"	
+		xfile = "gfx\\mapitems\muslimgfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "muslimgfx_city_2_3"	
+		xfile = "gfx\\mapitems\muslimgfx_city_2_3.x"
+	}
+	meshType = {
+		name = "muslimgfx_city_1_1"	
+		xfile = "gfx\\mapitems\muslimgfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "muslimgfx_city_1_2"	
+		xfile = "gfx\\mapitems\muslimgfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "muslimgfx_city_1_3"	
+		xfile = "gfx\\mapitems\muslimgfx_city_1_3.x"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "easterngfx_tradingpost"	
+		xfile = "gfx\\mapitems\easterngfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "easterngfx_colony_1"	
+		xfile = "gfx\\mapitems\easterngfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "easterngfx_colony_2"	
+		xfile = "gfx\\mapitems\easterngfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "easterngfx_city_3_1"	
+		xfile = "gfx\\mapitems\easterngfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "easterngfx_city_3_2"	
+		xfile = "gfx\\mapitems\easterngfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "easterngfx_city_3_3"	
+		xfile = "gfx\\mapitems\easterngfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "easterngfx_city_2_1"	
+		xfile = "gfx\\mapitems\easterngfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "easterngfx_city_2_2"	
+		xfile = "gfx\\mapitems\easterngfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "easterngfx_city_2_3"	
+		xfile = "gfx\\mapitems\easterngfx_city_2_3.x"
+	}
+	meshType = {
+		name = "easterngfx_city_1_1"	
+		xfile = "gfx\\mapitems\easterngfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "easterngfx_city_1_2"	
+		xfile = "gfx\\mapitems\easterngfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "easterngfx_city_1_3"	
+		xfile = "gfx\\mapitems\easterngfx_city_1_3.x"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "indiangfx_tradingpost"	
+		xfile = "gfx\\mapitems\indiangfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "indiangfx_colony_1"	
+		xfile = "gfx\\mapitems\indiangfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "indiangfx_colony_2"	
+		xfile = "gfx\\mapitems\indiangfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "indiangfx_city_3_1"	
+		xfile = "gfx\\mapitems\indiangfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "indiangfx_city_3_2"	
+		xfile = "gfx\\mapitems\indiangfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "indiangfx_city_3_3"	
+		xfile = "gfx\\mapitems\indiangfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "indiangfx_city_2_1"	
+		xfile = "gfx\\mapitems\indiangfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "indiangfx_city_2_2"	
+		xfile = "gfx\\mapitems\indiangfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "indiangfx_city_2_3"	
+		xfile = "gfx\\mapitems\indiangfx_city_2_3.x"
+	}
+	meshType = {
+		name = "indiangfx_city_1_1"	
+		xfile = "gfx\\mapitems\indiangfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "indiangfx_city_1_2"	
+		xfile = "gfx\\mapitems\indiangfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "indiangfx_city_1_3"	
+		xfile = "gfx\\mapitems\indiangfx_city_1_3.x"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "southamericagfx_tradingpost"	
+		xfile = "gfx\\mapitems\southamericagfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "southamericagfx_colony_1"	
+		xfile = "gfx\\mapitems\southamericagfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "southamericagfx_colony_2"	
+		xfile = "gfx\\mapitems\southamericagfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "southamericagfx_city_3_1"	
+		xfile = "gfx\\mapitems\southamericagfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "southamericagfx_city_3_2"	
+		xfile = "gfx\\mapitems\southamericagfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "southamericagfx_city_3_3"	
+		xfile = "gfx\\mapitems\southamericagfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "southamericagfx_city_2_1"	
+		xfile = "gfx\\mapitems\southamericagfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "southamericagfx_city_2_2"	
+		xfile = "gfx\\mapitems\southamericagfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "southamericagfx_city_2_3"	
+		xfile = "gfx\\mapitems\southamericagfx_city_2_3.x"
+	}
+	meshType = {
+		name = "southamericagfx_city_1_1"	
+		xfile = "gfx\\mapitems\southamericagfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "southamericagfx_city_1_2"	
+		xfile = "gfx\\mapitems\southamericagfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "southamericagfx_city_1_3"	
+		xfile = "gfx\\mapitems\southamericagfx_city_1_3.x"
+	}
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "chinesegfx_tradingpost"	
+		xfile = "gfx\\mapitems\chinesegfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "chinesegfx_colony_1"	
+		xfile = "gfx\\mapitems\chinesegfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "chinesegfx_colony_2"	
+		xfile = "gfx\\mapitems\chinesegfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "chinesegfx_city_3_1"	
+		xfile = "gfx\\mapitems\chinesegfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "chinesegfx_city_3_2"	
+		xfile = "gfx\\mapitems\chinesegfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "chinesegfx_city_3_3"	
+		xfile = "gfx\\mapitems\chinesegfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "chinesegfx_city_2_1"	
+		xfile = "gfx\\mapitems\chinesegfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "chinesegfx_city_2_2"	
+		xfile = "gfx\\mapitems\chinesegfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "chinesegfx_city_2_3"	
+		xfile = "gfx\\mapitems\chinesegfx_city_2_3.x"
+	}
+	meshType = {
+		name = "chinesegfx_city_1_1"	
+		xfile = "gfx\\mapitems\chinesegfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "chinesegfx_city_1_2"	
+		xfile = "gfx\\mapitems\chinesegfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "chinesegfx_city_1_3"	
+		xfile = "gfx\\mapitems\chinesegfx_city_1_3.x"
+	}
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "africangfx_tradingpost"	
+		xfile = "gfx\\mapitems\africangfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "africangfx_colony_1"	
+		xfile = "gfx\\mapitems\africangfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "africangfx_colony_2"	
+		xfile = "gfx\\mapitems\africangfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "africangfx_city_3_1"	
+		xfile = "gfx\\mapitems\africangfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "africangfx_city_3_2"	
+		xfile = "gfx\\mapitems\africangfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "africangfx_city_3_3"	
+		xfile = "gfx\\mapitems\africangfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "africangfx_city_2_1"	
+		xfile = "gfx\\mapitems\africangfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "africangfx_city_2_2"	
+		xfile = "gfx\\mapitems\africangfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "africangfx_city_2_3"	
+		xfile = "gfx\\mapitems\africangfx_city_2_3.x"
+	}
+	meshType = {
+		name = "africangfx_city_1_1"	
+		xfile = "gfx\\mapitems\africangfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "africangfx_city_1_2"	
+		xfile = "gfx\\mapitems\africangfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "africangfx_city_1_3"	
+		xfile = "gfx\\mapitems\africangfx_city_1_3.x"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	meshType = {
+		name = "northamericagfx_tradingpost"	
+		xfile = "gfx\\mapitems\northamericagfx_tradingpost.x"
+	}
+
+	meshType = {
+		name = "northamericagfx_colony_1"	
+		xfile = "gfx\\mapitems\northamericagfx_colony_1.x"
+	}
+
+	meshType = {
+		name = "northamericagfx_colony_2"	
+		xfile = "gfx\\mapitems\northamericagfx_colony_2.x"
+	}
+
+
+
+	meshType = {
+		name = "northamericagfx_city_3_1"	
+		xfile = "gfx\\mapitems\northamericagfx_city_3_1.x"
+	}
+
+
+	meshType = {
+		name = "northamericagfx_city_3_2"	
+		xfile = "gfx\\mapitems\northamericagfx_city_3_2.x"
+	}
+
+	meshType = {
+		name = "northamericagfx_city_3_3"	
+		xfile = "gfx\\mapitems\northamericagfx_city_3_3.x"
+	}
+
+	meshType = {
+		name = "northamericagfx_city_2_1"	
+		xfile = "gfx\\mapitems\northamericagfx_city_2_1.x"
+	}
+
+
+	meshType = {
+		name = "northamericagfx_city_2_2"	
+		xfile = "gfx\\mapitems\northamericagfx_city_2_2.x"
+	}
+
+	meshType = {
+		name = "northamericagfx_city_2_3"	
+		xfile = "gfx\\mapitems\northamericagfx_city_2_3.x"
+	}
+	meshType = {
+		name = "northamericagfx_city_1_1"	
+		xfile = "gfx\\mapitems\northamericagfx_city_1_1.x"
+	}
+
+
+	meshType = {
+		name = "northamericagfx_city_1_2"	
+		xfile = "gfx\\mapitems\northamericagfx_city_1_2.x"
+	}
+
+	meshType = {
+		name = "northamericagfx_city_1_3"	
+		xfile = "gfx\\mapitems\northamericagfx_city_1_3.x"
+	}
+
+	
+	projectionType = {
+		name = "selection_projection"
+		textureFile = "gfx\\test\\selection.tga"
+		size = 14
+		spin = 0.3
+		pulsating = yes
+		pulseLowest = 0.4
+		pulseSpeed = 3
+		additative = no
+		expanding = 0.3
+	}
+
+	projectionType = {
+		name = "illegal_selection_projection"
+		textureFile = "gfx\\test\\illegal.tga"
+		size = 4
+		spin = 0
+		pulsating = yes
+		pulseLowest = 0.8
+		pulseSpeed = 1
+		additative = no
+		expanding = 0.3
+
+		duration = 4
+		fadeout = 1
+	}
+
+	projectionType = {
+		name = "legal_selection_projection"
+		textureFile = "gfx\\test\\legal.tga"
+		size = 4
+		spin = 0
+		pulsating = yes
+		pulseLowest = 0.8
+		pulseSpeed = 1
+		additative = no
+		expanding = 0.3
+
+		duration = 4
+		fadeout = 1
+	}
+
+
+
+	progressbar3dType = {
+		name = "construction_bar"
+		color = { 0.0 0.8 0.0 }
+		colortwo = { 0.8 0.0 0.0 }
+		size = { x = 250 y = 30 }
+		effectFile = "gfx\\FX\\progress.fx"
+		vertical = no
+		borderSize = 10
+	}
+
+
+}

@@ -1,0 +1,23 @@
+government = republican_dictatorship
+aristocracy_plutocracy = -3
+centralization_decentralization = 4 
+innovative_narrowminded = 1
+mercantilism_freetrade = -4
+offensive_defensive = -2 
+land_naval = -3
+quality_quantity = 2
+serfdom_freesubjects = -2
+technology_group = baiyue
+religion = ancestor
+primary_culture = dian
+capital = 562
+
+1928.1.1 = {
+	monarch = {
+		name = "ÜF"
+                dynasty="×¯"
+		adm = 7
+		dip = 6
+		mil = 5
+	}
+}

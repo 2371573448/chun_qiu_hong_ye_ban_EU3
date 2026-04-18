@@ -1,0 +1,1161 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new spy actions, make sure they are uniquely named.
+
+#首都有效
+
+lijianji = {
+	# 离间计
+	cost = 50
+	difficulty = 2
+	prestige = -0.05
+	badboy = 1
+	capital = yes
+	trigger = { 
+		owner = { has_advisor = yes }
+		THIS = { 
+			or = {
+				has_country_modifier = "bingquanmou1"
+				has_country_modifier = "bingquanmou2"
+				has_country_modifier = "bingquanmou3"
+				has_country_modifier = "bingquanmou4"
+			}
+		}
+	}
+	effect = {
+		remove_advisor = random
+	}
+}
+
+incite_against_merchant = { 
+	# 打击商人行会
+	cost = 50
+	difficulty = 1
+	prestige = -0.05
+	badboy = 0
+	capital = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_country_modifier = "merchants_despised"
+			}
+		}
+		THIS = { trade_tech = 10 }
+	}
+	effect = { 
+		add_country_modifier = { 
+			name = "merchants_despised"
+			duration = 180
+		}
+	}
+}
+
+tarnish_reputation = { 
+	# 打击声望
+	cost = 25
+	difficulty = 3
+	badboy = 0
+	prestige = -0.05
+	capital = yes
+	trigger = { 
+	}
+	effect = { 
+		prestige = -0.1
+		legitimacy = -0.05
+	}
+}
+
+infiltrate_administration = { 
+	# 全面密探渗透
+	cost = 30
+	difficulty = 3
+	prestige = -0.01
+	badboy = 0
+	capital = yes
+	trigger = { 
+		remove_fow = no
+	}
+	effect = { 
+		remove_fow = 24
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+}
+
+sow_discontent = {
+	# 挑动不满
+	cost = 125
+	difficulty = 5
+	prestige = -0.05
+	badboy	= 0
+	capital = yes
+
+	trigger = {
+		THIS = { government_tech = 15 }
+		owner = { NOT = { has_country_modifier = "discontent_sowed" } }
+	}
+
+	effect = {
+		stability = -1
+		add_country_modifier = {
+			name = "discontent_sowed"
+			duration = 365
+		}
+	}
+}
+
+sabotage_reputation = {
+	# 败坏名声
+	cost = 125
+	difficulty = 6
+	prestige = -0.1
+	badboy	= 1
+	capital = yes
+	trigger = {
+		owner = { 
+			not = { war_with = THIS }
+			or = {
+				NOT = { has_country_flag = beiwumie }
+				had_country_flag = { 
+					#flag = beiwumie
+					#days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		set_country_flag = beiwumi
+		set_country_flag = emingbiaoji
+		badboy = 2
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 0.2
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 0.4
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 0.6
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 0.8
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 1.0
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 1.2
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 1.4
+			}
+			badboy = 1
+		}
+		any_country = {
+			limit = {
+				has_country_flag = emingbiaoji
+				infamy = 1.6
+			}
+			badboy = 1
+		}
+		clr_country_flag = emingbiaoji
+	}
+}
+
+counterfeit_currency = {
+	# 贿赂官员
+	cost = 175
+	difficulty = 4
+	prestige = -0.05
+	badboy = 0.25
+
+	capital = yes
+	trigger = {
+		THIS = { trade_tech = 23 }
+		owner = { 
+			not = {
+				has_country_modifier = huiluguanyuan
+			}
+		}
+	}
+	effect = {
+		inflation = 1
+		add_country_modifier = { 
+			name = "huiluguanyuan"
+			duration = 3650
+		}
+	}
+}
+
+assassinate_advisor = {
+	# 刺杀重臣
+	cost = 50
+	difficulty = 5
+	prestige = -0.05
+	badboy	= 1
+	capital = yes
+	trigger = { 
+		owner = { has_advisor = yes }
+	}
+	effect = {
+		remove_advisor = random
+	}
+}
+
+hezonglianheng_reputation = { 
+	# 合纵连横
+	cost = 200
+	difficulty = 1
+	capital = yes
+	ai_will_do = {
+		factor = 0
+	}
+
+	trigger = { 
+		THIS = { government_tech = 25 }
+		owner = { 
+			num_of_cities = 5
+		}
+	}
+	effect = { 
+		THIS = { spies = 0.5 }
+		owner = { 
+			country_event = 3301
+		}
+	}
+}
+
+spy_ring_infiltration = { 
+	# 安插宫中亲信
+	cost = 30
+	difficulty = 5
+	prestige = -0.01
+	badboy = 0.25
+	capital = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				has_country_modifier = "spies_infiltrated"
+			}
+		}
+		THIS = { idea = bureaucracy }
+	}
+	effect = { 
+		add_country_modifier = { 
+			name = "spies_infiltrated"
+			duration = 365
+		}
+	}
+}
+
+kill_the_monarch = { 
+	# 刺杀君主
+	cost = 250
+	difficulty = 8
+	prestige = -0.1
+	badboy = 1
+	capital = yes
+	ai_will_do = { 
+		factor = 0
+	}
+	trigger = { 
+		owner = { 
+			is_lesser_in_union = no
+		}
+		owner = { 
+			NOT = { 
+				regency = yes
+			}
+		}
+	}
+	effect = { 
+		owner = { 
+			kill_ruler = yes
+		}
+		THIS = { 
+			infamy = 2
+		}
+	}
+}
+
+kill_heir = { 
+	# 刺杀储君
+	cost = 200
+	difficulty = 6
+	prestige = -0.05
+	badboy = 1
+	capital = yes
+	ai_will_do = { 
+		factor = 0
+	}
+	trigger = { 
+		owner = { 
+			government = monarchy
+		}
+		owner = { 
+			has_heir = yes
+		}
+		owner = { 
+			is_lesser_in_union = no
+		}
+	}
+	effect = { 
+		owner = { 
+			kill_heir = yes
+		}
+		THIS = { 
+			infamy = 1
+		}
+	}
+}
+
+gudongdudi_reputation = { 
+	# 策反附庸
+	cost = 400
+	difficulty = 5
+	prestige = -0.01
+	badboy = 0
+	capital = yes
+	trigger = { 
+		owner = { 
+			NOT = { 
+				vassal_of = THIS
+			}
+			is_subject = yes
+		}
+	}
+	effect = { 
+		owner = { 
+			country_event = 1514
+		}
+	}
+}
+
+tech_steal = { 
+	# 窃取技术
+	cost = 250
+	difficulty = 4
+	prestige = -0.01
+	badboy = 0
+	capital = yes
+	ai_will_do = { 
+		factor = 0
+	}
+	trigger = { 
+		owner = { 
+			tech_difference = 5
+		}
+	}
+	effect = { 
+		THIS = { 
+			land_tech = 500
+			naval_tech = 500
+			trade_tech = 500
+			production_tech = 500
+			government_tech = 500
+			random_list = { 
+				1 = { 
+					land_tech = 0.1
+				}
+				1 = { 
+					naval_tech = 0.1
+				}
+				1 = { 
+					trade_tech = 0.1
+				}
+				1 = { 
+					production_tech = 0.1
+				}
+				1 = { 
+					government_tech = 0.1
+				}
+			}
+		}
+	}
+}
+
+heqin = { 
+	# 和亲
+	cost = 250
+	difficulty = 4
+	prestige = -0.10
+	badboy = 0
+	capital = yes
+	ai_will_do = { 
+		factor = 0
+	}
+	trigger = { 
+		this = {
+			OR = {
+				not = {
+					has_country_flag = heqinguo
+				}
+				had_country_flag = { 
+					flag = heqinguo
+					days = 365
+				}
+			}
+		}
+		owner = { 
+			war_with = THIS
+		}
+	}
+	effect = { 
+		this = {
+			set_country_flag = heqinguo
+			legitimacy = -50
+		}
+		owner = { 
+			country_event = 500
+		}
+	}
+}
+
+meirenji = { 
+	# 美人计
+	cost = 250
+	difficulty = 7
+	prestige = -0.10
+	badboy = 0
+	capital = yes
+	ai_will_do = { 
+		factor = 0
+	}
+	trigger = { 
+		owner = { 
+			not = { has_country_modifier = zhonglemeirenji }
+			or = {
+				not = { ADM = 6 }
+				not = { DIP = 6 }
+				not = { MIL = 6 }
+			}
+		}
+	}
+	effect = { 
+		owner = { 
+			add_country_modifier = { 
+				name = "zhonglemeirenji"
+				duration = -1
+			}
+			inflation = 0.5
+			legitimacy = -0.2
+			prestige = -0.4
+		}
+	}
+}
+
+# 任意省份有效
+
+bribe_defenders = {
+	# 细作入城
+	cost = 30
+	difficulty = 3
+	badboy	= 0
+	trigger = {
+		has_siege = yes
+	}
+	effect = {
+		change_siege = 4
+	}
+}
+
+support_revolt = {
+	# 策划叛乱
+	cost = 30
+	difficulty = 2
+	prestige = -0.01
+	badboy	= 0
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			pure_revolt_risk = 1
+		}
+	}
+
+	trigger = {
+		this = { ai = no }
+		NOT = { has_province_modifier = "foreign_support_for_rebels" }
+	}
+	effect = {
+		add_province_modifier = {
+			name = "foreign_support_for_rebels"
+			duration = 365
+		}
+		random_list = {
+			60 = { }
+			30 = { create_revolt = 5 }
+			10 = { create_revolt = 10 }
+		}
+	}
+}
+
+incite_troop_desertion = {
+	# 鼓动哗变
+	cost = 75
+	difficulty = 4
+	prestige = -0.01
+	badboy	= 0
+	ai_will_do = {
+		factor = 1
+	}
+	trigger = {
+		NOT = { has_province_modifier = "troop_desertions" }
+	}
+	effect = {
+		add_province_modifier = {
+			name = "troop_desertions"
+			duration = 365
+		}
+	}
+}
+
+sponsor_patriots = {
+	# 资助复国叛军
+	cost = 200
+	difficulty = 2
+	prestige = -0.05
+	badboy	= 0
+	ai_will_do = {
+		factor = 1
+	}
+
+	trigger = {
+		this = { ai = no }
+		can_spawn_rebels = patriot_rebels
+	}
+	effect = {
+		spawn_rebels = {
+			type = patriot_rebels
+			size = 5
+			friend = THIS
+		}
+	}
+}
+
+sponsor_pretender = {
+	# 资助篡位者
+	cost = 250
+	difficulty = 4
+	prestige = -0.05
+	badboy	= 0
+	ai_will_do = {
+		factor = 1
+	}
+
+	trigger = {
+		this = { ai = no }
+		can_spawn_rebels = pretender_rebels
+		OR = {
+			NOT = { owner = { stability = 0 } }
+			owner = { regency = yes }
+		}
+	}
+	effect = {
+		spawn_rebels = {
+			type = pretender_rebels
+			size = 5
+			friend = THIS
+		}
+	}
+}
+
+shaoshanhuilin = {
+	# 烧山毁林
+	cost = 250
+	difficulty = 2
+	prestige = -0.05
+	badboy	= 1
+	ai_will_do = {
+		factor = 0
+	}
+
+	trigger = {
+		not = { has_province_modifier = shaoshanhuilin }
+	}
+	effect = {
+		base_tax = -1
+		add_province_modifier = {
+			name = "shaoshanhuilin"
+			duration = 365
+		}
+	}
+}
+
+dajishengchan = {
+	# 打击生产
+	cost = 50
+	difficulty = 2
+	prestige = -0.05
+	badboy	= 1
+	ai_will_do = {
+		factor = 0
+	}
+
+	trigger = {
+		not = { has_province_modifier = dajishengchan }
+	}
+	effect = {
+		add_province_modifier = {
+			name = "dajishengchan"
+			duration = 3650
+		}
+	}
+}
+
+sanbowenyi = {
+	# 散播瘟疫
+	cost = 250
+	difficulty = 8
+	prestige = -0.05
+	badboy	= 1
+	ai_will_do = {
+		factor = 0
+	}
+
+	trigger = {
+	}
+	effect = {
+		province_event = 4501
+	}
+}
+
+jieduanliangdao = {
+	# 截断粮道
+	cost = 250
+	difficulty = 4
+	prestige = -0.05
+	badboy	= 1
+	ai_will_do = {
+		factor = 0
+	}
+
+	trigger = {
+		not = { has_province_modifier = jieduanliangdao }
+	}
+	effect = {
+		add_province_modifier = {
+			name = "jieduanliangdao"
+			duration = 182
+		}
+	}
+}
+
+#针对其它
+#强迫结盟
+qpjm = {
+	cost = 200
+	difficulty = 4
+	prestige = 0.2
+	badboy	= 1.0
+	capital = yes
+	trigger = {
+		controlled_by = this
+		owner = {
+			is_subject = no
+			is_emperor = no
+			relation = { who = this value = 50 }
+			not = { prestige = 0.50 }
+		}
+		or = {
+			owner = {
+				not = {
+				ADM = 6
+				DIP = 6
+				MIL = 6
+				}
+			}
+			this = {
+				ADM = 6
+				DIP = 6
+				MIL = 6
+			}
+		}
+	}
+	effect = {
+		owner = { 
+			white_peace = this
+			create_marriage = this
+			create_alliance = this
+			treasury = 100
+			relation = { who = this value = 100 }
+		}
+		this = {
+			prestige = -0.20
+		}
+	}
+}
+
+#针对势力圈
+#劝说退兵
+qstb = {
+	cost = 100
+	difficulty = 3
+	prestige = 0.05
+	badboy	= 0
+	capital = yes
+	trigger = {
+		owner = {
+			war_with = this
+			is_subject = no
+			is_emperor = no
+			in_sphere = this
+			relation = { who = this value = 150 }
+		}
+	}
+	effect = {
+		owner = { 
+			white_peace = this
+			treasury = 50
+		}
+	}
+}
+
+#针对附庸国
+#移交土地
+yjtd = {
+	cost = 100
+	difficulty = 1
+	prestige = -0.1
+	badboy	= 2.0
+	capital = no
+	trigger = {
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+			num_of_cities = 2
+		}
+	}
+	effect = {
+		secede_province = this
+		owner = { 
+			treasury = 50
+			relation = { who = this value = -150 }
+		}
+		this = {
+			prestige = -0.20
+		}
+	}
+}
+
+#收回土地
+shtd = {
+	cost = 50
+	difficulty = 1
+	prestige = -0.1
+	badboy	= 1.0
+	capital = no
+	trigger = {
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+			num_of_cities = 2
+		}
+		is_core = this 
+	}
+	effect = {
+			secede_province = this
+		owner = { 
+			relation = { who = this value = -100 }
+		}
+		this = {
+			prestige = -0.20
+		}
+	}
+}
+
+#强迫关闭贸易中心
+qpgb = {
+	cost = 200
+	difficulty = 1
+	prestige = -0.3
+	badboy	= 1.0
+	capital = no
+	trigger = {
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+		}
+		cot=yes
+	}
+	effect = {
+		cot=no
+		owner = { 
+			treasury = 100
+			relation = { who = this value = -100 }
+			stability = -1
+			prestige = -0.20
+		}
+	}
+}
+
+#强迫转变礼乐教化
+lyjh = {
+	cost = 200
+	difficulty = 3
+	prestige = 0.1
+	badboy	= 1.0
+	capital = yes
+	trigger = {
+		this = { 
+			religion = liyuejiaohua
+		}
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+			not = { religion = liyuejiaohua }
+			stability = 3
+			not = { has_country_modifier = qpzb }
+		}
+	}
+	effect = {
+		owner = { 
+			treasury = 100
+			relation = { who = this value = -100 }
+			religion = liyuejiaohua
+			stability = -6
+			prestige = -2.00
+			add_country_modifier = {
+				name = "qpzb"
+				duration = 3650
+			}
+		}
+	}
+}
+
+#强迫转变礼乐霸道
+lybd = {
+	cost = 200
+	difficulty = 3
+	prestige = 0.1
+	badboy	= 2.0
+	capital = yes
+	trigger = {
+		this = { 
+			religion = liyuebadao
+		}
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+			not = { religion = liyuebadao }
+			stability = 3
+			not = { has_country_modifier = qpzb }
+		}
+	}
+	effect = {
+		owner = { 
+			treasury = 100
+			relation = { who = this value = -100 }
+			religion = liyuebadao
+			stability = -6
+			prestige = -2.00
+			add_country_modifier = {
+				name = "qpzb"
+				duration = 3650
+			}
+		}
+	}
+}
+
+#强迫转变军事化国家
+jsgj = {
+	cost = 200
+	difficulty =3
+	prestige = 0.1
+	badboy	= 3.0
+	capital = yes
+	trigger = {
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+			stability = 3
+			not = { has_country_modifier = qpzb }
+		}
+	}
+	effect = {
+		owner = { 
+		treasury = 100
+		relation = { who = this value = -100 }
+		stability = -6
+		prestige = -2.00
+		aristocracy_plutocracy = -10
+		centralization_decentralization = -10
+		innovative_narrowminded = 10
+		mercantilism_freetrade = 10
+		offensive_defensive = -10
+		land_naval = -10
+		quality_quantity = -10
+		serfdom_freesubjects = 10
+		remove_idea = press_gangs
+		remove_idea = grand_navy
+		remove_idea = sea_hawks
+		remove_idea = superior_seamanship
+		remove_idea = naval_glory
+		remove_idea = excellent_shipwrights
+		remove_idea = naval_fighting_instruction 
+		remove_idea = naval_provisioning 
+		remove_idea = grand_army
+		remove_idea = military_drill
+		remove_idea = engineer_corps
+		remove_idea = battlefield_commisions
+		remove_idea = glorious_arms
+		remove_idea = national_conscripts
+		remove_idea = regimental_system
+		remove_idea = napoleonic_warfare
+		remove_idea = land_of_opportunity 
+		remove_idea = merchant_adventures 
+		remove_idea = colonial_ventures
+		remove_idea = shrewd_commerce_practise 
+		remove_idea = vice_roys  
+		remove_idea = quest_for_the_new_world	
+		remove_idea = scientific_revolution 
+		remove_idea = improved_foraging 
+		remove_idea = vetting 
+		remove_idea = bureaucracy
+		remove_idea = national_bank
+		remove_idea = national_trade_policy 
+		remove_idea = espionage  
+		remove_idea = bill_of_rights 
+		remove_idea = smithian_economics
+		remove_idea = liberty_egalite_fraternity 
+		remove_idea = ecumenism
+		remove_idea = church_attendance_duty
+		remove_idea = divine_supremacy
+		remove_idea = patron_of_art 
+		remove_idea = deus_vult
+		remove_idea = humanist_tolerance
+		remove_idea = cabinet
+		remove_idea = revolution_and_counter
+		add_idea = military_drill
+		add_idea = engineer_corps
+		add_idea = regimental_system
+		add_country_modifier = {
+			name = "qpzb"
+			duration = 3650
+		}
+		}
+	}
+}
+
+#强迫转变为开荒国家
+khgj = {
+	cost = 200
+	difficulty =3
+	prestige = 0.1
+	badboy	= 3.0
+	capital = yes
+	trigger = {
+		owner = { 
+			vassal_of = this
+			relation = { who = this value = 190 }
+			stability = 3
+			not = { has_country_modifier = qpzb }
+		}
+	}
+	effect = {
+		owner = { 
+		treasury = 100
+		relation = { who = this value = -100 }
+		stability = -6
+		prestige = -2.00
+		aristocracy_plutocracy = -10
+		centralization_decentralization = 10
+		innovative_narrowminded = 10
+		mercantilism_freetrade = 10
+		offensive_defensive = -10
+		land_naval = 10
+		quality_quantity = 10
+		serfdom_freesubjects = 10
+		remove_idea = press_gangs
+		remove_idea = grand_navy
+		remove_idea = sea_hawks
+		remove_idea = superior_seamanship
+		remove_idea = naval_glory
+		remove_idea = excellent_shipwrights
+		remove_idea = naval_fighting_instruction 
+		remove_idea = naval_provisioning 
+		remove_idea = grand_army
+		remove_idea = military_drill
+		remove_idea = engineer_corps
+		remove_idea = battlefield_commisions
+		remove_idea = glorious_arms
+		remove_idea = national_conscripts
+		remove_idea = regimental_system
+		remove_idea = napoleonic_warfare
+		remove_idea = land_of_opportunity 
+		remove_idea = merchant_adventures 
+		remove_idea = colonial_ventures
+		remove_idea = shrewd_commerce_practise 
+		remove_idea = vice_roys  
+		remove_idea = quest_for_the_new_world	
+		remove_idea = scientific_revolution 
+		remove_idea = improved_foraging 
+		remove_idea = vetting 
+		remove_idea = bureaucracy
+		remove_idea = national_bank
+		remove_idea = national_trade_policy 
+		remove_idea = espionage  
+		remove_idea = bill_of_rights 
+		remove_idea = smithian_economics
+		remove_idea = liberty_egalite_fraternity 
+		remove_idea = ecumenism
+		remove_idea = church_attendance_duty
+		remove_idea = divine_supremacy
+		remove_idea = patron_of_art 
+		remove_idea = deus_vult
+		remove_idea = humanist_tolerance
+		remove_idea = cabinet
+		remove_idea = revolution_and_counter
+		add_idea = vice_roys
+		add_idea = improved_foraging
+		add_idea = divine_supremacy
+		add_country_modifier = {
+			name = "qpzb"
+			duration = 3650
+		}
+		}
+	}
+}
+
+#兵权谋
+
+shangbingfamou = {
+	# 上兵伐谋
+	cost = 500
+	difficulty = 5
+	prestige = -0.05
+	badboy = 1
+	capital = yes
+	trigger = { 
+		this = {
+			check_variable = {
+				which = quanmouzhi
+				value = 1
+			}
+		}
+	}
+	effect = {
+		this = {
+			change_variable = {
+				which = quanmouzhi
+				value = -5
+			}
+		}
+		owner = {
+			merchants = -20
+			colonists = -20
+			diplomats = -20
+			missionaries = -20
+			spies = -20
+			officials = -20
+		}
+	}
+}
+qicifajiao = {
+	# 其次伐交
+	cost = 1000
+	difficulty = 4
+	prestige = -0.05
+	badboy = 1
+	capital = yes
+	trigger = { 
+		this = {
+			check_variable = {
+				which = quanmouzhi
+				value = 1
+			}
+		}
+	}
+	effect = {
+		this = {
+			change_variable = {
+				which = quanmouzhi
+				value = -10
+			}
+		}
+		owner = { 
+			country_event = 501
+		}
+	}
+}
+qicifabing = {
+	# 其次伐兵
+	cost = 2000
+	difficulty = 6
+	prestige = -0.05
+	badboy = 1
+	capital = yes
+	trigger = { 
+		this = {
+			check_variable = {
+				which = quanmouzhi
+				value = 1
+			}
+		}
+	}
+	effect = {
+		this = {
+			change_variable = {
+				which = quanmouzhi
+				value = -20
+			}
+		}
+		add_country_modifier = { 
+			name = "quanmoufabing"
+			duration = 3650
+		}
+	}
+}
+qixiagongcheng = {
+	# 其下攻城
+	cost = 100
+	difficulty = 1
+	prestige = -0.05
+	badboy = 1
+	trigger = { 
+		this = {
+			check_variable = {
+				which = quanmouzhi
+				value = 1
+			}
+		}
+	}
+	effect = {
+		this = {
+			change_variable = {
+				which = quanmouzhi
+				value = -1
+			}
+		}
+		change_siege = 10
+		any_neighbor_province = { 
+			change_siege = 10
+		}
+	}
+}
+

@@ -1,0 +1,50 @@
+
+culture = wuyue
+religion = ancestor
+capital = "ð®¾ä¶«"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 0
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+2090.1.1 = { 
+	discovered_by = YGO
+}
+2090.1.1 = { 
+	discovered_by = QIG
+}
+2155.1.1 = { 
+	owner = YGO
+	controller = YGO
+	citysize = 6000
+}
+2185.1.1 = { 
+	add_core = YGO
+}
+2210.1.1 = { 
+	religion = liyuebadao
+}
+2222.1.1 = { 
+	citysize = 10000
+}
+2360.1.1 = { 
+	religion = mojia
+}
+2475.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = {
+	controller = REB
+}
+2490.6.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

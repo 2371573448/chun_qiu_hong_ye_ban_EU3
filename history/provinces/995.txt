@@ -1,0 +1,92 @@
+owner = TAG
+controller = TAG
+culture = dongyi
+religion = animism
+capital = "Á¼"
+trade_goods = tea
+hre = no
+base_tax = 6
+manpower = 0
+citysize = 20000
+fort1 = yes
+add_core = TAG
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = WUG
+}
+1827.1.1 = { 
+	discovered_by = SGU
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2222.1.1 = { 
+	citysize = 34000
+}
+2246.1.1 = { 
+	owner = LUG
+	controller = LUG
+	add_core = LUG
+	remove_core = TAG
+}
+2246.1.2 = { 
+	owner = TAG
+	controller = TAG
+	add_core = TAG
+	remove_core = LUG
+}
+2246.1.1 = { 
+	religion = rujia
+}
+2247.1.1 = { 
+	religion = animism
+}
+2247.1.1 = { 
+	owner = TAG
+	controller = TAG
+	add_core = TAG
+	remove_core = LUG
+}
+2280.1.1 = { 
+	religion = rujia
+}
+2285.1.1 = { 
+	owner = YGO
+	controller = YGO
+}
+2290.1.1 = { 
+	owner = QIG
+	controller = QIG
+}
+2320.1.1 = { 
+	add_core = QIG
+	culture = qilu
+	remove_core = TAG
+}
+2414.1.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2444.1.1 = { 
+	add_core = CHU
+	culture = nanchu
+}
+2474.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = CHU
+	controller = CHU
+}
+2492.2.1 = { 
+	owner = XCW
+	controller = XCW
+	add_core = XCW
+}

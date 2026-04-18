@@ -1,0 +1,100 @@
+owner = TUH
+controller = TUH
+culture = shanrong
+religion = animism
+capital = "œ’‰¬"
+trade_goods = copper
+hre = no
+base_tax = 3
+manpower = 0
+citysize = 6000
+fort1 = yes
+add_core = TUH
+cot = no
+1827.1.1 = { 
+	discovered_by = PAP
+}
+1827.1.1 = { 
+	discovered_by = CHA
+}
+1827.1.1 = { 
+	discovered_by = YXU
+}
+2035.1.1 = { 
+	citysize = 0
+	native_size = 100
+	native_ferocity = 4
+	native_hostileness = 5
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+2244.1.1 = { 
+	owner = TUH
+	controller = TUH
+	add_core = TUH
+	remove_core = YAN
+}
+2244.1.2 = { 
+	religion = animism
+	citysize = 0
+	native_size = 100
+	native_ferocity = 4
+	native_hostileness = 5
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+2246.1.1 = { 
+	owner = YAN
+	controller = YAN
+	citysize = 16000
+	fort1 = yes
+	religion = liyuejiaohua
+}
+2246.1.2 = { religion = animism
+	owner = TUH
+	controller = TUH
+	remove_core = YAN
+}
+2247.1.1 = { 
+	religion = animism
+	citysize = 0
+	native_size = 100
+	native_ferocity = 4
+	native_hostileness = 5
+	owner = XXX
+	controller = XXX
+	fort1 = no
+}
+2300.1.1 = { 
+	discovered_by = YAN
+}
+2398.1.1 = { 
+	owner = YAN
+	controller = YAN
+	citysize = 8000
+	fort1 = yes
+}
+2433.1.1 = { 
+	add_core = YAN
+	culture = hebei
+	religion = liyuejiaohua
+}
+2476.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2489.10.1 = { 
+	owner = YAN
+	controller = YAN
+}
+2492.2.1 = { 
+	owner = LDW
+	controller = LDW
+	add_core = LDW
+}
+2492.5.1 = { 
+	owner = YAN
+	controller = YAN
+}

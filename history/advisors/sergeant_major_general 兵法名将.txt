@@ -1,0 +1,39 @@
+#著名的军事家，尤其是有兵法传世的
+
+advisor ={
+name ="孙膑" 
+location =265
+skill =6
+type =sergeant_major_general
+date =2350.1.1
+death_date =2375.1.1
+}
+
+advisor ={
+name ="孙膑" 
+location =265
+skill =6
+type =sergeant_major_general
+date =2246.1.1
+death_date =2247.1.1
+}
+
+advisor ={
+name ="孙武" 
+location =434
+skill =6
+type =sergeant_major_general
+date =2183.1.1
+death_date =2228.1.1
+}
+
+advisor ={
+name ="司马穰苴" 
+location =259
+skill =4
+type =sergeant_major_general
+date =2156.1.1
+death_date =2185.1.1
+}
+
+

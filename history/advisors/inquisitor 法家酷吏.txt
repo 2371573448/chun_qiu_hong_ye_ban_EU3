@@ -1,0 +1,19 @@
+#严格立法或者执行法律的人
+
+advisor ={
+name ="赵盾" 
+location =75
+skill =5
+type =inquisitor
+date =2040.1.1
+death_date =2097.1.1
+}
+
+advisor ={
+name ="朱英" 
+location =458
+skill =3
+type =inquisitor
+date =2425.1.1
+death_date =2480.1.1
+}

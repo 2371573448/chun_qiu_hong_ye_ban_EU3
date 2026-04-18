@@ -1,0 +1,29 @@
+country_decisions = { 
+	#«®∂º¥Û¡∫
+	qiandudaliang = { 
+		potential = { 
+			owns = 358
+			NOT = { capital = 358 }
+			NOT = { 
+				has_country_flag = qiandudaliang
+			}
+			tag = WEI
+			has_global_flag = zhanguokaishi
+		}
+		allow = { 
+			stability = 1
+			is_core = 358
+			war = no
+		}
+		effect = { 
+			capital = 358
+			358 = { 
+				base_tax = 2
+			}
+			set_country_flag = qiandudaliang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

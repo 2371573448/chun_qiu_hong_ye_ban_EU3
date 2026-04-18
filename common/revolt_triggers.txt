@@ -1,0 +1,70 @@
+#系统国
+SZG= {
+	always = no
+}
+NPC= {
+	always = no
+}
+#灭亡国
+YSG= {
+	always = no
+}
+BEI= {
+	always = no
+}
+GAN= {
+	always = no
+}
+#三晋
+ZHO= {
+	has_global_flag = zhanguokaishi
+}
+WEI= {
+	has_global_flag = zhanguokaishi
+}
+HAN= {
+	has_global_flag = zhanguokaishi
+}
+#十八诸侯
+HNW= {
+	year = 2480
+}
+XCW= {
+	year = 2480
+}
+YOW= {
+	year = 2480
+}
+SAI= {
+	year = 2480
+}
+DIW= {
+	year = 2480
+}
+SCW= {
+	year = 2480
+}
+LJW= {
+	year = 2480
+}
+JJW= {
+	year = 2480
+}
+YNW= {
+	year = 2480
+}
+CSW= {
+	year = 2480
+}
+HSW= {
+	year = 2480
+}
+JDW= {
+	year = 2480
+}
+JBW= {
+	year = 2480
+}
+LDW= {
+	year = 2480
+}

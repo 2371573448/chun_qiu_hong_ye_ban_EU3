@@ -1,0 +1,99 @@
+
+owner = BER
+controller = BER
+culture = baidi
+religion = animism
+capital = "É½´¨Æ½Ô­"
+trade_goods = slaves
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 14000
+fort1 = yes
+add_core = BER
+cot = no
+1827.1.1 = { 
+	discovered_by = CHA
+}
+2118.1.1 = { 
+	owner = BAI
+	controller = BAI
+	culture = baidi
+	add_core = BAI
+}
+2157.1.1 = { 
+	owner = QIY
+	controller = QIY
+	add_core = QIY
+}
+2222.1.1 = { 
+	citysize = 58000
+}
+2239.10.1 = { 
+	owner = JIN
+	controller = JIN
+}
+2244.1.1 = { 
+	owner = ZHI
+	controller = ZHI
+	add_core = ZHI
+	remove_core = JIN
+}
+2244.1.2 = { 
+	owner = JIN
+	controller = JIN
+	add_core = JIN
+	remove_core = ZHI
+}
+2245.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	culture = shanxi
+	remove_core = BER
+	remove_core = BAI
+	remove_core = QIY
+	remove_core = JIN
+}
+2246.1.1 = { religion = liyuejiaohua }
+2246.1.2 = { 
+	owner = QIY
+	controller = QIY
+	add_core = QIY
+	add_core = ZHI
+	add_core = ZHO
+	remove_core = JIN
+}
+2246.1.3 = { 
+	owner = ZHO
+	controller = ZHO
+	add_core = ZHO
+	remove_core = JIN
+}
+2246.1.2 = {
+        citysize = 48000
+    }
+2246.1.3 = {
+        citysize = 58000
+    }
+2439.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2441.1.1 = { 
+	owner = ZHO
+	controller = ZHO
+}
+2462.1.1 = { 
+	owner = QIN
+	controller = QIN
+}
+2492.2.1 = { 
+	owner = WEI
+	controller = WEI
+	add_core = WEI
+}
+2493.8.1 = { 
+	owner = HNW
+	controller = HNW
+}

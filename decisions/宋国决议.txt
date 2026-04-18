@@ -1,0 +1,117 @@
+country_decisions = { 
+	# 五千乘之劲宋
+	wuqiansheng = { 
+		potential = { 
+			tag = SON
+			NOT = { 
+				has_country_modifier = wuqiansheng
+			}
+		}
+		allow = { 
+			MIL = 6
+			num_of_cities = 25
+			infamy = 0.3
+			owns = 297
+			owns = 296
+			has_country_modifier = daiyanzhisong
+		}
+		effect = { 
+			prestige = 0.1
+			add_country_modifier = { 
+				name = "wuqiansheng"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+	# 桀宋
+	jiesong = { 
+		potential = { 
+			tag = SON
+			NOT = { 
+				has_country_modifier = jiesong
+			}
+		}
+		allow = { 
+			has_country_modifier = wuqiansheng
+			MIL = 6
+			NOT = { 
+				centralization_decentralization = -2
+			}
+			or = { 
+				and = { 
+					num_of_cities = 30
+					infamy = 0.7
+				}
+				and = { 
+					num_of_cities = 25
+					infamy = 0.8
+				}
+			}
+			stability = 1
+		}
+		effect = { 
+			stability = -2
+			add_country_modifier = { 
+				name = "jiesong"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+	# 仁宋
+	rensong = { 
+		potential = { 
+			NOT = { 
+				has_country_modifier = rensong
+			}
+			tag = SON
+		}
+		allow = { 
+			war = no
+			cultural_tradition = 0.80
+			DIP = 7
+			any_owned_province = { 
+				has_building = glorious_monument
+			}
+			NOT = { 
+				badboy = 0.5
+			}
+			has_country_modifier = daiyanzhisong
+		}
+		effect = { 
+			badboy = -1
+			add_country_modifier = { 
+				name = "rensong"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+	daiyanzhiquan = { 
+# 戴偃之宋—是否改为君主集权
+		potential = { 
+			tag = SON
+			has_country_modifier = daiyanzhisong
+			not = { 
+				has_country_flag = daiyanjiquan
+			}
+		}
+		allow = { 
+
+		}
+		effect = { 
+			government = enlightened_despotism
+			set_country_flag = daiyanjiquan
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+}

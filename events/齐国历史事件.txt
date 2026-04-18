@@ -1,0 +1,32 @@
+#ÃÔ œ¥˙∆Î
+country_event = { 
+	id = 12009
+	trigger = { 
+		year = 2312
+		government = monarchy
+		tag = QIG
+		NOT = { 
+			has_country_flag = tianshidaiqi
+		}				
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME12009"
+	desc = "EVTDESC12009"
+	option = { 
+		name = "EVTOPTA12009"
+		define_ruler = { 
+			name = "∫Õ"
+			dynasty = "ÃÔ"
+			adm = 6
+			dip = 6
+			mil = 7
+		}	
+		kill_heir = THIS
+		prestige = 0.2	
+		stability = -2
+		legitimacy = -0.2
+		set_country_flag = tianshidaiqi
+	}
+}

@@ -1,0 +1,24 @@
+
+owner = LUY
+controller = LUY
+culture = nanyue
+religion = ancestor
+capital = "Бъ±а"
+trade_goods = fish
+hre = no
+base_tax = 5
+manpower = 0
+citysize = 12000
+fort1 = yes
+add_core = LUY
+cot = no
+
+2380.1.1 = { 
+	discovered_by = QIN
+}
+2489.10.1 = { 
+	owner = NAN
+	controller = NAN
+	add_core = NAN
+	citysize = 16000
+}

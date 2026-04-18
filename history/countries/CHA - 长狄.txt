@@ -1,0 +1,112 @@
+government = tribal_federation
+aristocracy_plutocracy = -4
+centralization_decentralization = 5
+innovative_narrowminded = -2
+mercantilism_freetrade = -1
+offensive_defensive = -5
+land_naval = -4
+quality_quantity = 3
+serfdom_freesubjects = 3
+technology_group = nomad_group
+religion = animism
+primary_culture = changdi
+capital = 122
+1928.1.1 = { 
+	# ÀŒŒ‰π´÷Æ ¿
+	monarch = { 
+		name = "‘µÀπ"
+		dynasty = "∆·"
+		adm = 5
+		dip = 6
+		mil = 7
+		leader = {	
+			name = "‘µÀπ"
+			type = general
+			rank = 0
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 1
+		}
+	}
+}
+2052.1.1 = { 
+	monarch = { 
+		name = "«»»Á"
+		dynasty = "∆·"
+		adm = 6
+		dip = 5
+		mil = 8
+	}
+}
+2052.1.1 = { 
+	leader = { 
+		name = "±™"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 4
+		manuever = 3
+		siege = 0
+		death_date = 2077.1.1
+	}
+}
+2062.1.1 = { 
+	leader = { 
+		name = "Ú≥"
+		type = general
+		rank = 1
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 0
+		death_date = 2082.1.1
+	}
+}
+2077.1.1 = { 
+	leader = { 
+		name = "±™"
+		type = general
+		rank = 1
+		fire = 1
+		shock = 4
+		manuever = 3
+		siege = 0
+		death_date = 2082.1.1
+	}
+}
+2082.1.1 = { 
+	monarch = { 
+		name = "∑Ÿ»Á"
+		dynasty = "∆·"
+		adm = 5
+		dip = 8
+		mil = 6
+	}
+}
+2104.1.1 = { 
+	monarch = { 
+		name = "»Ÿ»Á"
+		dynasty = "∆·"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+2105.1.1 = { 
+	monarch = { 
+		name = "ºÚ»Á"
+		dynasty = "∆·"
+		adm = 3
+		dip = 4
+		mil = 6
+	}
+}
+2246.1.2 = { 
+	religion = liyuejiaohua
+	technology_group =xiongnu
+	unit_type = nomad_group	
+}
+2246.1.3 = { 
+	religion = animism
+}

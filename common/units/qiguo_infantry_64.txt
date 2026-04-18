@@ -1,0 +1,12 @@
+#มูือฮไมฆ
+
+type = infantry
+unit_type = qiguo
+
+maneuver = 1
+offensive_fire = 9
+defensive_fire = 8
+offensive_shock = 9
+defensive_shock = 9
+offensive_morale = 8
+defensive_morale = 8

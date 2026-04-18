@@ -1,0 +1,12 @@
+#ÉÌ÷±ÐÂ¾ü
+
+type = infantry
+unit_type = qinguo
+
+maneuver = 1
+offensive_fire = 8
+defensive_fire = 7
+offensive_shock = 8
+defensive_shock = 7
+offensive_morale = 8
+defensive_morale = 8
