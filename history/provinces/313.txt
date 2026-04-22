@@ -2,7 +2,7 @@ owner = CAO
 controller = CAO
 culture = dongtu
 religion = liyuejiaohua
-capital = "³ÉÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = grain
 hre = yes
 base_tax = 9
@@ -40,7 +40,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 80000
-	fort2 = yes
+	
 }
 2241.1.1 = { 
 	add_core = QIG

@@ -2,7 +2,7 @@ owner = CAO
 controller = CAO
 culture = dongtu
 religion = liyuejiaohua
-capital = "óÏäÂ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = wine
 hre = yes
 base_tax = 6
@@ -32,7 +32,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 72000
-	fort2 = yes
+	
 }
 2241.1.1 = { 
 	add_core = SON

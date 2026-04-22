@@ -2,7 +2,7 @@ owner = QIN
 controller = QIN
 culture = guanzhong
 religion = animism
-capital = "›FÎ¼Ö®»á"
+capital = "ï¿½FÎ¼Ö®ï¿½ï¿½"
 trade_goods = grain
 hre = yes
 base_tax = 9
@@ -34,7 +34,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 24000
-	fort2 = yes
+	
 }
 2245.1.1 = { 
 	hre = no

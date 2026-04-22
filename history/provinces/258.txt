@@ -2,7 +2,7 @@ owner = CHA
 controller = CHA
 culture = changdi
 religion = animism
-capital = "平原邑"
+capital = "平原锟斤拷"
 trade_goods = wine
 hre = no
 base_tax = 8
@@ -44,7 +44,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 39000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = CHA

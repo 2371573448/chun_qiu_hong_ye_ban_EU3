@@ -3,7 +3,7 @@ owner = BAO
 controller = BAO
 culture = guanzhong
 religion = ancestor
-capital = "ãæÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = sugar
 hre = no
 base_tax = 5
@@ -17,8 +17,8 @@ cot = no
 1928.1.1 = { discovered_by = BAO }
 2222.1.1 = { 
 	citysize = 36000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2246.1.1 = { religion = liyuebadao }
 2246.1.2 = { 

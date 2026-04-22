@@ -2,7 +2,7 @@ owner = YQU
 controller = YQU
 culture = xirong
 religion = animism
-capital = "山川平原"
+capital = "山锟斤拷平原"
 trade_goods = coffee
 hre = no
 base_tax = 7
@@ -16,7 +16,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 44000
-	fort2 = yes
+	
 }
 2246.1.2 = {
         citysize = 34000

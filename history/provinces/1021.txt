@@ -2,7 +2,7 @@ owner = ZGO
 controller = ZGO
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "—’"
+capital = "ï¿½ï¿½"
 trade_goods = copper
 hre = yes
 base_tax = 7
@@ -36,8 +36,8 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 64000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2245.1.1 = { 
 	hre = no

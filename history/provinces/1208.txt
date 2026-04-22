@@ -1,7 +1,7 @@
 
 culture = nanchu
 religion = ancestor
-capital = "Ñ°Ñô"
+capital = "Ñ°ï¿½ï¿½"
 trade_goods = grain
 hre = no
 base_tax = 3
@@ -33,7 +33,7 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 16000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = HUA

@@ -2,7 +2,7 @@ owner = CHA
 controller = CHA
 culture = changdi
 religion = animism
-capital = "иоз╓"
+capital = "О©╫О©╫з╓"
 trade_goods = cloth
 hre = no
 base_tax = 7
@@ -44,7 +44,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 38000
-	fort2 = yes
+	
 }
 2237.1.1 = { 
 	add_core = QIG

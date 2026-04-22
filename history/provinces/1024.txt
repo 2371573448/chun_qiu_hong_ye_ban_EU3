@@ -2,7 +2,7 @@ owner = XUG
 controller = XUG
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "Í©Çð"
+capital = "Í©ï¿½ï¿½"
 trade_goods = cotton
 hre = yes
 base_tax = 5
@@ -35,7 +35,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 38000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = XUG

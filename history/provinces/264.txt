@@ -2,7 +2,7 @@ owner = MOU
 controller = MOU
 culture = dongyi
 religion = liyuejiaohua
-capital = "Ä²³Ç"
+capital = "Ä²ï¿½ï¿½"
 trade_goods = grain
 hre = yes
 base_tax = 5
@@ -34,7 +34,7 @@ cot = no
 2222.1.1 = { 
 	citysize = 26000
 	culture = dongtu
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = MOU

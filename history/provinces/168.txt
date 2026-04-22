@@ -2,7 +2,7 @@ owner = WUS
 controller = WUS
 culture = xirong
 religion = animism
-capital = "¸ßÆ½"
+capital = "ï¿½ï¿½Æ½"
 trade_goods = ivory
 hre = no
 base_tax = 5
@@ -16,7 +16,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 22000
-	fort2 = yes
+	
 }
 2246.1.1 = { religion = liyuebadao }
 2361.1.1 = { 

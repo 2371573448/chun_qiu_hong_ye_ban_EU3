@@ -1,4 +1,99 @@
-#入蜀
+#攻入咸阳
+HNW_annex_xianyang = {
+	
+	type = country
+
+	allow = {
+		tag = HNW
+		or = {
+			not = { owns = 191 }
+			not = { owns = 195 }
+			not = { owns = 197 }
+		}
+		not = { has_country_flag = HAN_gongruxianyang }
+	}
+	abort = {
+	}
+	chance = {
+		factor = 10000
+	}
+	immediate = {
+		add_temp_claim = 191
+		add_temp_claim = 195
+		add_temp_claim = 197
+	}
+	abort_effect = {
+		remove_temp_claim = 191
+		remove_temp_claim = 195
+		remove_temp_claim = 197
+	}
+	success = {
+		owns = 191
+		owns = 195
+		owns = 197
+	}
+	effect = {
+		add_core = 191
+		add_core = 195
+		add_core = 197
+		set_country_flag = HAN_gongruxianyang
+	}
+}
+#攻入天赋（吞并苴国）
+HNW_annex_juu = {
+	
+	type = country
+
+	allow = {
+		tag = HNW
+		exists = JUU
+		JUU = {
+			neighbour = this
+		}
+	}
+	abort = {
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 10000
+			has_country_flag = HAN_gongruxianyang
+		}
+	}
+	immediate = {
+		any_province = {
+			limit = {
+				owner = { tag = JUU }
+			}
+			add_temp_claim = current
+		}
+	}
+	abort_effect = {
+		any_province = {
+			limit = {
+				owner = { tag = JUU }
+			}
+			romove_temp_claim = current
+		}
+	}
+	success = {
+		not = { exists = JUU }
+	}
+	effect = {
+		any_province = {
+			limit = {
+				any_core = { 
+					exists = no
+					tag = JUU
+				}
+			}
+			add_core = HNW
+			}
+		}
+	}
+}
+
+#攻入天赋（吞并蜀国）
 HNW_annex_shu = {
 	
 	type = country
@@ -7,62 +102,44 @@ HNW_annex_shu = {
 		tag = HNW
 		exists = SGU
 		SGU = {
-			or = {
-				owns = 234
-				owns = 241
-		  		owns = 231
-				owns = 240
-				owns = 235
-		  		owns = 232
-		  		owns = 233
-				owns = 236
-			}
 			neighbour = this
-			not = { vassal_of = QIN }
 		}
-		year = 2275
-		NOT = { year = 2563 }
 	}
 	abort = {
-	  	or = {
-			and = {
-				not = { exists = SGU }
-				not = { owns = 234 }
-				not = { owns = 241 }
-				not = { owns = 231 }
-				not = { owns = 240 }
-				not = { owns = 235 }
-				not = { owns = 232 }
-				not = { owns = 233 }
-				not = { owns = 236 }
-			}
-			is_subject = yes
-		}
 	}
 	chance = {
 		factor = 1000
+		modifier = {
+			factor = 10000
+			has_country_flag = HAN_gongruxianyang
+		}
 	}
 	immediate = {
-		shu = { add_temp_claim = current }
+		any_province = {
+			limit = {
+				owner = { tag = SGU }
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		shu = { remove_temp_claim = current }
+		any_province = {
+			limit = {
+				owner = { tag = SGU }
+			}
+			romove_temp_claim = current
+		}
 	}
 	success = {
-		owns = 234
-	 	owns = 241
-		owns = 231
-		owns = 240
-		owns = 235
-		owns = 232
-		owns = 233
-		owns = 236
+		not = { exists = SGU }
 	}
 	effect = {
 		shujun = { add_core = this }
+		shujun = { remove_temp_claim = current }
 	}
 }
-#入巴
+
+#攻入天赋（吞并巴国）
 HNW_annex_ba = {
 	
 	type = country
@@ -71,112 +148,39 @@ HNW_annex_ba = {
 		tag = HNW
 		exists = BAG
 		BAG = {
-			or = {
-				owns = 234
-				owns = 241
-		  		owns = 231
-				owns = 240
-				owns = 235
-		  		owns = 232
-		  		owns = 233
-				owns = 236
-			}
 			neighbour = this
-			not = { vassal_of = QIN }
 		}
-		year = 2275
-		NOT = { year = 2563 }
 	}
 	abort = {
-	  	or = {
-			and = {
-				not = { exists = BAG }
-				not = { owns = 234 }
-				not = { owns = 241 }
-				not = { owns = 231 }
-				not = { owns = 240 }
-				not = { owns = 235 }
-				not = { owns = 232 }
-				not = { owns = 233 }
-				not = { owns = 236 }
-			}
-			is_subject = yes
-		}
 	}
 	chance = {
 		factor = 1000
+		modifier = {
+			factor = 10000
+			has_country_flag = HAN_gongruxianyang
+		}
 	}
 	immediate = {
-		bajun = { add_temp_claim = current }
+		any_province = {
+			limit = {
+				owner = { tag = BAG }
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		bajun = { remove_temp_claim = current }
+		any_province = {
+			limit = {
+				owner = { tag = BAG }
+			}
+			romove_temp_claim = current
+		}
 	}
 	success = {
-		owns = 234
-	 	owns = 241
-		owns = 231
-		owns = 240
-		owns = 235
-		owns = 232
-		owns = 233
-		owns = 236
+		not = { exists = BAG }
 	}
 	effect = {
 		bajun = { add_core = this }
-	}
-}
-
-#平定三秦
-HNW_annex_sanqin = {
-	
-	type = country
-
-	allow = {
-		tag = HNW
-		exists = BAG
-		or = {
-			not = { owns = 173 }
-			not = { owns = 180 }
-			not = { owns = 192 }
-			not = { owns = 197 }
-		  	not = { owns = 1006 }
-			not = { owns = 1007 }
-		  	not = { owns = 1089 }
-		  	not = { owns = 1090 }
-		}
-	}
-	abort = {
-	}
-	chance = {
-		factor = 1000
-	}
-	immediate = {
-		longxi = { add_temp_claim = current }
-		fufeng = { add_temp_claim = current }
-		fengyi = { add_temp_claim = current }
-		shangjun = { add_temp_claim = current }
-	}
-	abort_effect = {
-		longxi = { remove_temp_claim = current }
-		fufeng = { remove_temp_claim = current }
-		fengyi = { remove_temp_claim = current }
-		shangjun = { remove_temp_claim = current }
-	}
-	success = {
-		owns = 173
-		owns = 180
-		owns = 192
-		owns = 197
-		owns = 1806
-		owns = 1807
-		owns = 1089
-		owns = 1090
-	}
-	effect = {
-		longxi = { add_core = this }
-		fufeng = { add_core = this }
-		fengyi = { add_core = this }
-		shangjun = { add_core = this }
+		bajun = { remove_temp_claim = current }
 	}
 }

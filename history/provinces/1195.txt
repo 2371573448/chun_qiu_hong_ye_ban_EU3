@@ -2,7 +2,7 @@ owner = LNG
 controller = LNG
 culture = guanzhong
 religion = liyuejiaohua
-capital = "¼®¹Ã"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = coffee
 hre = yes
 base_tax = 5
@@ -51,7 +51,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 29000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = WEI

@@ -2,7 +2,7 @@ owner = YON
 controller = YON
 culture = yong
 religion = ancestor
-capital = "Î÷³Ç"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = ivory
 hre = no
 base_tax = 5
@@ -24,7 +24,7 @@ cot = no
              religion = liyuebadao
            }
 2222.1.1 = { citysize = 24000 }
-2222.1.1 = { fort2 = yes }
+2222.1.1 = {  }
 2244.1.1 = { 
 	owner = YON
 	controller = YON

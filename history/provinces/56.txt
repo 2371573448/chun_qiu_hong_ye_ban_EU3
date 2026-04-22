@@ -3,7 +3,7 @@ culture = beidi
 owner = BER
 controller = BER
 religion = animism
-capital = "·ÚÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = coffee
 hre = no
 base_tax = 7
@@ -30,7 +30,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 38000
-	fort2 = yes
+	
 }
 2225.1.1 = { 
 	culture = shanxi

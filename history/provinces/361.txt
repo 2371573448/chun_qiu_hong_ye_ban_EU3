@@ -2,7 +2,7 @@ owner = NYA
 controller = NYA
 culture = yinyi
 religion = liyuejiaohua
-capital = "дояЮ"
+capital = "О©╫О©╫О©╫О©╫"
 trade_goods = cloth
 hre = yes
 base_tax = 5
@@ -39,7 +39,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = DGG

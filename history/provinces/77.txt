@@ -2,7 +2,7 @@ owner = WEO
 controller = WEO
 culture = shanxi
 religion = liyuejiaohua
-capital = "Îº³Ç"
+capital = "Îºï¿½ï¿½"
 trade_goods = wool
 hre = yes
 base_tax = 7
@@ -37,7 +37,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 43000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = WEI

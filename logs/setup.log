@@ -840,7 +840,7 @@
 [mission.cpp:629]: Missions loaded missions\楚国任务.txt' #31
 [mission.cpp:629]: Missions loaded missions\代国任务.txt' #2
 [mission.cpp:629]: Missions loaded missions\韩国任务.txt' #7
-[mission.cpp:629]: Missions loaded missions\汉国任务.txt' #3
+[mission.cpp:629]: Missions loaded missions\汉国任务.txt' #4
 [mission.cpp:629]: Missions loaded missions\晋国任务.txt' #29
 [mission.cpp:629]: Missions loaded missions\鲁国任务.txt' #8
 [mission.cpp:629]: Missions loaded missions\齐国任务.txt' #15
@@ -876,6 +876,7 @@
 [decision.cpp:325]: Decisions loaded decisions\封禅泰山.txt' #1
 [decision.cpp:325]: Decisions loaded decisions\公家士卿.txt' #10
 [decision.cpp:325]: Decisions loaded decisions\国家简介.txt' #195
+[decision.cpp:325]: Decisions loaded decisions\国家专属.txt' #2
 [decision.cpp:325]: Decisions loaded decisions\韩国决议.txt' #1
 [decision.cpp:325]: Decisions loaded decisions\华夏化.txt' #2
 [decision.cpp:325]: Decisions loaded decisions\建筑.txt' #9
@@ -902,18 +903,16 @@
 [decision.cpp:325]: Decisions loaded decisions\卫国决议.txt' #1
 [decision.cpp:325]: Decisions loaded decisions\文化决议.txt' #8
 [decision.cpp:325]: Decisions loaded decisions\文化统一.txt' #5
-[decision.cpp:325]: Decisions loaded decisions\问鼎.txt' #10
 [decision.cpp:325]: Decisions loaded decisions\吴越决议.txt' #6
 [decision.cpp:325]: Decisions loaded decisions\西楚决议.txt' #1
 [decision.cpp:325]: Decisions loaded decisions\西域决议.txt' #6
 [decision.cpp:325]: Decisions loaded decisions\西域天赋决议.txt' #30
-[decision.cpp:325]: Decisions loaded decisions\新建文本文档.txt' #1
-[decision.cpp:325]: Decisions loaded decisions\新宗教决议.txt' #16
+[decision.cpp:325]: Decisions loaded decisions\新宗教决议.txt' #17
 [decision.cpp:325]: Decisions loaded decisions\匈奴决议.txt' #2
 [decision.cpp:325]: Decisions loaded decisions\燕国决议.txt' #6
 [decision.cpp:325]: Decisions loaded decisions\殷商决议.txt' #9
 [decision.cpp:325]: Decisions loaded decisions\越国决议.txt' #1
-[decision.cpp:325]: Decisions loaded decisions\战国军改.txt' #27
+[decision.cpp:325]: Decisions loaded decisions\战国军改.txt' #29
 [decision.cpp:325]: Decisions loaded decisions\赵国决议.txt' #3
 [decision.cpp:325]: Decisions loaded decisions\政经改革.txt' #37
 [decision.cpp:325]: Decisions loaded decisions\政体转换.txt' #5
@@ -1057,7 +1056,7 @@
 [history.cpp:822]: History loaded 4 advisors from 'history\Advisors\trader 商人巨贾.txt' #4
 [history.cpp:822]: History loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4
 [eu3application.cpp:1213]: History Initialized
-[eu3application.cpp:726]: Checksum is EU3 v5.2 (JIHZ)    -1982631153
+[eu3application.cpp:726]: Checksum is EU3 v5.2 (HWCX)    -1708395865
 [provincemanager.cpp:472]: CEU3MapCache creation.
 [provincemanager.cpp:627]: Creating beach manager.
 [provincemanager.cpp:638]: Creating province collision data.
@@ -1066,40 +1065,4 @@
 [natives.cpp:158]: NativeType #1 tag = natives_american name = 美洲原住民 provinces = 606
 [natives.cpp:158]: NativeType #2 tag = natives_african name = 非洲原住民 provinces = 0
 [natives.cpp:158]: NativeType #3 tag = natives_asian name = 亚洲原住民 provinces = 0
-[natives.cpp:158]: Nati[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\alderman 当政公卿.txt' #5
-[history.cpp:822]: History loaded 11 advisors from 'history\Advisors\ambassador 舌辩之才.txt' #11
-[history.cpp:822]: History loaded 9 advisors from 'history\Advisors\army_organiser 军事统帅.txt' #9
-[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\army_reformer 新军领袖.txt' #8
-[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\artist 先雅乐师.txt' #6
-[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\banker 经济之才.txt' #3
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\collector 文人骚客.txt' #4
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\colonel 统兵之将.txt' #4
-[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\colonial_governor 内臣谋士.txt' #6
-[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\commandant 卓越将领.txt' #6
-[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\diplomat 纵横之士.txt' #8
-[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\fortification_expert 防御专家.txt' #3
-[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\grand_admiral 水军提督.txt' #2
-[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\grand_captain 三军先锋.txt' #5
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\grand_marshal 直言之臣.txt' #4
-[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\high_judge 先贤巨子.txt' #5
-[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\inquisitor 法家酷吏.txt' #2
-[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\lord_proprietor 山林隐逸.txt' #3
-[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\master_of_mint 聚贤贵族.txt' #8
-[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\natural_scientst 科学先驱.txt' #5
-[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\naval_organiser 史家绝唱.txt' #2
-[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\naval_reformer 布衣门客.txt' #3
-[history.cpp:822]: History loaded 2 advisors from 'history\Advisors\navigator 济世医者.txt' #2
-[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\philosopher 诸子百家.txt' #6
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\pioneer 蛮夷经略.txt' #4
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\privateer 贤达智者.txt' #4
-[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\quartermaster 军需官员.txt' #6
-[history.cpp:822]: History loaded 8 advisors from 'history\Advisors\rear_admiral 改革人士.txt' #8
-[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\recruitmaster 征兵官员.txt' #5
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\sergeant_major_general 兵法名将.txt' #4
-[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\sheriff 内政精英.txt' #5
-[history.cpp:822]: History loaded 6 advisors from 'history\Advisors\spymaster 孤胆刺客.txt' #6
-[history.cpp:822]: History loaded 5 advisors from 'history\Advisors\statesman 一代名相.txt' #5
-[history.cpp:822]: History loaded 3 advisors from 'history\Advisors\theologian 布道学究.txt' #3
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\trader 商人巨贾.txt' #4
-[history.cpp:822]: History loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4
- loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4
+[natives.cpp:158]: NativeType #4 tag = natives_siberian name = 西伯利亚原住民 provinces = 0

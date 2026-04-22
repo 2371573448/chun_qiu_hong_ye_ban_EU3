@@ -2,7 +2,7 @@ owner = SON
 controller = SON
 culture = yinyi
 religion = liyuejiaohua
-capital = "ºÁ"
+capital = "ï¿½ï¿½"
 trade_goods = slaves
 hre = yes
 base_tax = 7
@@ -28,7 +28,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 36000
-	fort2 = yes
+	
 }
 2245.1.1 = { 
 	hre = no

@@ -2,7 +2,7 @@ owner = YXU
 controller = YXU
 culture = huaiyi
 religion = ancestor
-capital = "Þ­³Ç"
+capital = "Þ­ï¿½ï¿½"
 trade_goods = wool
 hre = no
 base_tax = 5
@@ -65,7 +65,7 @@ cot = no
 	controller = YXU
 	add_core = YXU
 	remove_core = SON
-        fort2 = yes
+        
 }
 2247.1.1 = { 
 	owner = SON

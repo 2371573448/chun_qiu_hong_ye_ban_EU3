@@ -1,6 +1,6 @@
 culture = changdi
 religion = animism
-capital = "ºÓ¼ä"
+capital = "ï¿½Ó¼ï¿½"
 trade_goods = grain
 hre = no
 base_tax = 6
@@ -25,7 +25,7 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 34000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = ZHS

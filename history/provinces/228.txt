@@ -3,7 +3,7 @@ owner = JUN
 controller = JUN
 culture = yong
 religion = ancestor
-capital = "ÔÇ¹Ø"
+capital = "ï¿½Ç¹ï¿½"
 trade_goods = naval_supplies
 hre = no
 base_tax = 4
@@ -41,7 +41,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 22000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = JUN

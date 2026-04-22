@@ -1,6 +1,6 @@
 culture = xirong
 religion = animism
-capital = "山川平原"
+capital = "山锟斤拷平原"
 trade_goods = grain
 hre = no
 base_tax = 6
@@ -38,7 +38,7 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 38000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = RUO

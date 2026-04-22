@@ -1,6 +1,6 @@
 culture = huaiyi
 religion = ancestor
-capital = "ËÞÖÝ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = coffee
 hre = no
 base_tax = 6
@@ -31,7 +31,7 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 34000
-	fort2 = yes
+	
 }
 2225.1.1 = { 
 	owner = SON

@@ -3,7 +3,7 @@ owner = XIG
 controller = XIG
 culture = jianghan
 religion = liyuejiaohua
-capital = "ор"
+capital = "О©╫О©╫"
 trade_goods = fur
 hre = yes
 base_tax = 4
@@ -40,7 +40,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 38000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = XIG

@@ -2,7 +2,7 @@ owner = BER
 controller = BER
 culture = baidi
 religion = animism
-capital = "й╞рь"
+capital = "й╞О©╫О©╫"
 trade_goods = iron
 hre = no
 base_tax = 3
@@ -21,7 +21,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 12000
-	fort2 = yes
+	
 }
 2226.1.1 = { 
 	owner = ZHS

@@ -2,7 +2,7 @@ owner = CHO
 controller = CHO
 culture = huaiyi
 religion = ancestor
-capital = "¿£åÙ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = chinaware
 hre = no
 base_tax = 3
@@ -31,7 +31,7 @@ add_core = CHO
 }
 2222.1.1 = { 
 	citysize = 12000
-	fort2 = yes
+	
 }
 2225.1.1 = { 
 	owner = CHU

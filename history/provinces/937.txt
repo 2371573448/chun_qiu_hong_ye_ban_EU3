@@ -2,7 +2,7 @@ owner = TAN
 controller = TAN
 culture = qilu
 religion = liyuejiaohua
-capital = "±«"
+capital = "ï¿½ï¿½"
 trade_goods = copper
 hre = yes
 base_tax = 4
@@ -37,7 +37,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 29000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = TAN

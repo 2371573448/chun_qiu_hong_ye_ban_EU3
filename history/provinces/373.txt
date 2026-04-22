@@ -2,7 +2,7 @@ owner = YLR
 controller = YLR
 culture = xirong
 religion = liyuejiaohua
-capital = "ÄÏÁº"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = cloth
 hre = no
 base_tax = 5
@@ -34,7 +34,7 @@ add_core = YLR
 }
 2222.1.1 = { 
 	citysize = 26000
-	fort2 = yes
+	
 }
 2237.5.1 = { 
 	add_core = CHU

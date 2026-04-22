@@ -3,7 +3,7 @@ owner = JUG
 controller = JUG
 culture = dongyi
 religion = liyuejiaohua
-capital = "¶«Û©"
+capital = "ï¿½ï¿½Û©"
 trade_goods = iron
 hre = yes
 base_tax = 4
@@ -64,7 +64,7 @@ cot = no
 	controller = JUG
 	add_core = JUG
 	remove_core = LUG
-         fort2 = yes
+         
 }
 2246.1.2 = { 
 	hre = yes

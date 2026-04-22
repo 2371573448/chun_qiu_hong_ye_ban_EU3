@@ -3,7 +3,7 @@ owner = CHU
 controller = CHU
 culture = nanchu
 religion = ancestor
-capital = "Ò±¸¸"
+capital = "Ò±ï¿½ï¿½"
 trade_goods = grain
 hre = no
 base_tax = 4
@@ -29,7 +29,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 34000
-	fort3 = yes
+	
 }
 2420.1.1 = { 
 	owner = QIN

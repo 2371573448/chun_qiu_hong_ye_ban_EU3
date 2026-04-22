@@ -46,11 +46,21 @@ province_event = {
 			is_core = this
 		}
 		owner = { 
-			OR = { idea = naval_glory}
+			OR = { idea = naval_glory }
 		}
 	}
 	mean_time_to_happen = { 
 		months = 420
+		modifier = { 
+			factor = 0.1
+			owner = { has_country_modifier = yuefasanzhang }
+			or = {
+				region = longxi
+				region = fufeng
+				region = fengyi
+				region = shangjun
+			}
+		}
 	}
 	title = "EVTNAME1002"
 	desc = "EVTDESC1002"

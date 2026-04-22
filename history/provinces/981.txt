@@ -1,7 +1,7 @@
 
 culture = baidi
 religion = animism
-capital = "Íû¶¼"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = spices
 hre = no
 base_tax = 6
@@ -21,7 +21,7 @@ native_hostileness = 10
 	citysize = 32000
 	add_core = ZHS
 	fort1 = yes
-	fort2 = yes
+	
 }
 2246.1.1 = { religion = liyuebadao }
 2246.1.2 = { 

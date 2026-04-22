@@ -2,7 +2,7 @@ owner = XIY
 controller = XIY
 culture = baidi
 religion = animism
-capital = "ÁéÊÙ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = naval_supplies
 hre = no
 base_tax = 7
@@ -22,7 +22,7 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 40000
-	fort2 = yes
+	
 }
 2226.1.1 = { 
 	owner = ZHS

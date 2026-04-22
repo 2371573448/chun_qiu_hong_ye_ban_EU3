@@ -3,7 +3,7 @@ owner = XNU
 controller = XNU
 culture = xiongnu
 religion = animism
-capital = "Áú³Ç"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = spices
 hre = no
 base_tax = 10
@@ -24,7 +24,7 @@ add_core = XNU
 	citysize = 80000
 	add_core = XNU
 	cot = yes
-	fort4 = yes
+	
 }
 2246.1.2 = {
         citysize = 70000
@@ -50,7 +50,7 @@ add_core = XNU
 	citysize = 80000
 	add_core = XNU
 	cot = yes
-	fort4 = yes
+	
 }
 
 

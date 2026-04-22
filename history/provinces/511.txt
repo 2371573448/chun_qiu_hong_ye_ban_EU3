@@ -1,7 +1,7 @@
 
 culture = nanchu
 religion = ancestor
-capital = "²ñÉ£"
+capital = "ï¿½ï¿½É£"
 trade_goods = fish
 hre = no
 base_tax = 4
@@ -20,7 +20,7 @@ native_hostileness = 10
 }
 2220.1.1 = { 
 	add_core = CHU
-	fort2 = yes
+	
 }
 2240.1.1 = { 
 	religion = liyuebadao

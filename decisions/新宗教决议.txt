@@ -791,3 +791,41 @@ religion_decisions = {
 		}
 	}
 }
+province_decisions = { 
+	# Ä«¼Ò¹¤·»
+	mojiagongfang = { 
+		potential = { 
+			owner = { 
+				has_country_flag = mojiazhuanjing
+				OR = {
+					not = {
+						has_country_flag = mojiagongfangjishiqi_2
+					}
+					had_country_flag = { 
+						flag = mojiagongfangjishiqi_2
+						days = 3650
+					}
+				}
+			}
+			NOT = { 
+				has_province_flag = mojiagongfang
+			}
+		}
+		allow = { 
+			owner = { 
+				treasury = 1000
+				officials = 5
+			}
+		}
+		effect = { 
+			owner = { 
+				set_country_flag = mojiagongfangjishiqi_2
+				treasury = -1000
+				officials = -5
+			}
+			set_province_flag = mojiagongfang
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}

@@ -1,6 +1,6 @@
 culture = qilu
 religion = animism
-capital = "убнД"
+capital = "О©╫О©╫О©╫О©╫"
 trade_goods = salt
 hre = no
 base_tax = 6
@@ -35,7 +35,7 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 32000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = CHA

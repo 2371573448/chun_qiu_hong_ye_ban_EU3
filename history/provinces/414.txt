@@ -2,7 +2,7 @@ owner = HNX
 controller = HNX
 culture = gouwu
 religion = ancestor
-capital = "ÕÑ¹Ø"
+capital = "ï¿½Ñ¹ï¿½"
 trade_goods = fish
 hre = no
 base_tax = 2
@@ -33,7 +33,7 @@ add_core = HNX
 }
 2222.1.1 = { 
 	citysize = 12000
-	fort2 = yes
+	
 }
 2225.1.1 = { 
 	owner = YGO

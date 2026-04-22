@@ -2,6 +2,7 @@ country_event = {
 	id = 500100
 	trigger = { 
 		tag = PAP
+		not = { tag = PAP }
 		NOT = { 
 			has_country_flag = jiudingtianjia
 		}

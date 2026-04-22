@@ -2,7 +2,7 @@ owner = XUN
 controller = XUN
 culture = shanxi
 religion = liyuejiaohua
-capital = "¾ÊË¥"
+capital = "ï¿½ï¿½Ë¥"
 trade_goods = cloth
 hre = yes
 base_tax = 6
@@ -83,7 +83,7 @@ cot = no
 }
 2280.1.1 = { 
 	religion = fajia
-	fort2 = yes
+	
 }
 2346.1.1 = { 
 	owner = QIN

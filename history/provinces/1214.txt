@@ -3,7 +3,7 @@ owner = ZHL
 controller = ZHL
 culture = huaiyi
 religion = ancestor
-capital = "ÒõÁê"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = tea
 hre = no
 base_tax = 3
@@ -40,7 +40,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 16000
-	fort2 = yes
+	
 }
 2225.1.1 = { 
 	owner = CHU

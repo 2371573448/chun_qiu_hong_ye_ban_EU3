@@ -1,7 +1,7 @@
 
 culture = wuyue
 religion = ancestor
-capital = "¹ÃÃï"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = ivory
 hre = no
 base_tax = 3
@@ -26,7 +26,7 @@ manpower = 0
 }
 2222.1.1 = { 
 	citysize = 20000
-	fort2 = yes
+	
 }
 2475.1.1 = { 
 	owner = QIN

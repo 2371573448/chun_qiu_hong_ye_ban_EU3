@@ -3,7 +3,7 @@ owner = YXU
 controller = YXU
 culture = huaiyi
 religion = animism
-capital = "ÇúÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = cloth
 hre = no
 base_tax = 4
@@ -69,7 +69,7 @@ cot = no
 	add_core = YXU
 	religion = liyuebadao
 	remove_core = LUG
-        fort2 = yes
+        
 }
 2247.1.1 = { 
 	owner = YGO

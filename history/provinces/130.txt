@@ -2,7 +2,7 @@ owner = WEG
 controller = WEG
 culture = yinyi
 religion = liyuejiaohua
-capital = "°²Ñô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = cotton
 hre = yes
 base_tax = 7
@@ -44,7 +44,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 41000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = FAS

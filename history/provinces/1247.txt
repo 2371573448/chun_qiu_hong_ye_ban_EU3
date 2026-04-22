@@ -1,7 +1,7 @@
 
 culture = xirong
 religion = animism
-capital = "山川平原"
+capital = "山锟斤拷平原"
 trade_goods = iron
 hre = no
 base_tax = 7
@@ -29,8 +29,8 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 58000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2233.1.1 = { 
 	culture = zhongyuan

@@ -1,6 +1,6 @@
 
 culture = beidi
-capital = "¾çÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 religion = animism
 trade_goods = spices
 hre = no
@@ -15,7 +15,7 @@ native_hostileness = 10
 1928.1.1 = { discovered_by = LOU }
 2120.1.1 = { discovered_by = JIN }
 2120.1.1 = { 
-	fort2 = yes
+	
 }
 2223.1.1  = {	owner = JIN
 		controller = JIN

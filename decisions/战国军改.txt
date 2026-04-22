@@ -958,11 +958,12 @@ country_decisions = {
 				has_country_flag = mil_reform3
 			}
 			NOT = { tag = XNU }
-			NOT= {  
-			OR =  {   government = tribal_federation
-		                             government = tribal_despotism
-			         }
-		          	 }
+			NOT= {
+				OR =  {
+					government = tribal_federation
+					government = tribal_despotism
+				}
+			}
 		}
 		allow = {
 			idea=scientific_revolution
@@ -993,6 +994,35 @@ country_decisions = {
 			}
 			remove_country_modifier=xicezhan
 			set_country_flag = mil_reform3
+			add_temp_claim = 124
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	fuguyinshang_2 ={
+		potential = {
+			owns = 124
+			remove_country_modifier = yinshanggaige
+			not = { tag = YSG }
+		}
+		allow = {
+			treasury = 100
+		}
+		effect = {
+			treasury = -100
+			change_tag = YSG
+			124 = {
+				any_neighbor_province = {
+					any_neighbor_province = {
+						any_neighbor_province = {
+							any_neighbor_province = {
+								add_core = YSG
+							}
+						}
+					}
+				}
+			}
 		}
 		ai_will_do = { 
 			factor = 1
@@ -1032,19 +1062,42 @@ country_decisions = {
 		}
 	}
 	# ×Ü¶¯Ô±
+	qiangzheng = { 
+		potential = { 
+			has_country_flag = mil_reform2
+			NOT = { has_country_modifier = qiangzheng }
+		}
+		allow = { 
+			stability = 1
+			war = yes
+		}
+		effect = { 
+			stability = -1
+			manpower = 20
+			manpower = 0.2
+			add_country_modifier = {
+				name = "qiangzheng"
+				duration = 1825
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
 	total_war = { 
 		potential = { 
 			has_country_flag = mil_reform2
 			not = { 
 				has_country_modifier = total_war
 			}
+			has_country_modifier = qiangzheng
 			NOT = { has_country_modifier = zhiyejundui }
 		}
 		allow = { 
 			stability = 1
 			war = yes
 			NOT = { 
-				manpower_percentage = 0.50
+				manpower_percentage = 0.30
 			}
 		}
 		effect = { 
@@ -1054,7 +1107,8 @@ country_decisions = {
 			any_owned = { 
 				multiply_citysize = 0.9
 			}
-			manpower = 0.5
+			manpower = 40
+			manpower = 0.6
 			add_country_modifier = {
 				name = "total_war"
 				duration = 3650

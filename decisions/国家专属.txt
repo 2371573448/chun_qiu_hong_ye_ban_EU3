@@ -1,0 +1,76 @@
+country_decisions = { 
+	#汉
+	#约法三章
+	yuefasanzhang = { 
+		potential = {
+			has_country_flag = HAN_gongruxianyang
+			not = { has_country_modifier = yuefasanzhang }
+		}
+		allow = {
+			advisor = statesman
+			statesman = 5
+			owns = 197
+			diplomats = 10
+			treasury = 500
+		}
+		effect = { 
+			diplomats = -10
+			treasury = -500
+			add_country_modifier = { 
+				name = "yuefasanzhang"
+				duration = -1
+			}
+			longxi = { add_temp_claim = current }
+			fufeng = { add_temp_claim = current }
+			fengyi = { add_temp_claim = current }
+			shangjun = { add_temp_claim = current }
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	#关中王
+	guanzhongwang = { 
+		potential = {
+			has_country_modifier = yuefasanzhang
+			not = { has_country_modifier = guanzhongwang }
+		}
+		allow = {
+	  		NOT = {
+				any_country = {
+					num_of_cities = 3
+					any_owned_province = {
+						or = {
+							region = longxi
+							region = fufeng
+							region = fengyi
+							region = shangjun
+						}
+						is_capital = yes
+					}
+				}
+			}
+	  		NOT = {
+				hexi = {
+					is_capital = yes
+					owner = { num_of_cities = 3 }
+				}
+			}
+		}
+		effect = { 
+			romove_country_modifier = yuefasanzhang
+			romove_country_modifier = chengwang
+			add_country_modifier = { 
+				name = "guanzhongwang"
+				duration = -1
+			}
+			longxi = { add_core = this }
+			fufeng = { add_core = this }
+			fengyi = { add_core = this }
+			shangjun = { add_core = this }
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

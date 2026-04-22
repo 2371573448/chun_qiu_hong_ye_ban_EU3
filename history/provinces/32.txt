@@ -3,7 +3,7 @@ owner = YAN
 controller = YAN
 culture = hebei
 religion = liyuejiaohua
-capital = "¼»"
+capital = "ï¿½ï¿½"
 trade_goods = grain
 hre = yes
 base_tax = 12
@@ -19,8 +19,8 @@ cot = yes
 1827.1.1 = { discovered_by = YXU }
 2222.1.1 = { 
 	citysize = 72000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2245.1.1 = { 
 	hre = no

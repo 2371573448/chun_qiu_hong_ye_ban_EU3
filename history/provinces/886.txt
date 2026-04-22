@@ -3,7 +3,7 @@ owner = SUG
 controller = SUG
 culture = dongyi
 religion = liyuejiaohua
-capital = "¾©×È"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = naval_supplies
 hre = yes
 base_tax = 4
@@ -69,7 +69,7 @@ cot = no
 2222.1.1 = { 
 	citysize = 34000
 	culture = qilu
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = SUG

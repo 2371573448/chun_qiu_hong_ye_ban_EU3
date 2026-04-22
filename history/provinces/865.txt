@@ -2,7 +2,7 @@ owner = WEG
 controller = WEG
 culture = dongtu
 religion = liyuejiaohua
-capital = "ÌúÇð"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = spices
 hre = yes
 base_tax = 5
@@ -53,7 +53,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 32000
-	fort2 = yes
+	
 }
 2245.1.1 = { 
 	hre = no

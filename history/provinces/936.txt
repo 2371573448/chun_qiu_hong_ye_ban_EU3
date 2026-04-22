@@ -2,7 +2,7 @@ owner = QIG
 controller = QIG
 culture = qilu
 religion = liyuejiaohua
-capital = "À³×õ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = fur
 hre = yes
 base_tax = 7
@@ -18,8 +18,8 @@ cot = no
 1827.1.1 = { discovered_by = YXU }
 2222.1.1 = { 
 	citysize = 148000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2245.1.1 = { 
 	hre = no

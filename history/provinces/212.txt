@@ -2,7 +2,7 @@ owner = LSS
 controller = LSS
 culture = guanzhong
 religion = animism
-capital = "æêÉ½"
+capital = "ï¿½ï¿½É½"
 trade_goods = naval_supplies
 hre = no
 base_tax = 5
@@ -43,7 +43,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 18000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	hre = no

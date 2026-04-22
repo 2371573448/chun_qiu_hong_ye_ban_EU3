@@ -776,7 +776,7 @@ country_event = {
 				has_country_flag = daojiazhuanjing
 			}
 			any_owned = { 
-				citysize = 50
+				citysize = 25
 			}
 		}
 		any_country = {
@@ -785,7 +785,7 @@ country_event = {
 				stability = 1
 			}
 			any_owned = { 
-				citysize = 50
+				citysize = 25
 			}
 		}
 		any_country = {
@@ -794,7 +794,7 @@ country_event = {
 				stability = 2
 			}
 			any_owned = { 
-				citysize = 50
+				citysize = 25
 			}
 		}
 		any_country = {
@@ -803,7 +803,7 @@ country_event = {
 				stability = 3
 			}
 			any_owned = { 
-				citysize = 50
+				citysize = 25
 			}
 		}
 	}
@@ -939,21 +939,19 @@ country_event = {
 		}
 	}
 }
-province_event = { 
+country_event = { 
 	id = 290809
 	#墨家工坊
 	trigger = { 
 		is_capital = yes
-		owner = {
-			has_country_flag = mojiazhuanjing
-			OR = {
-				not = {
-					has_country_flag = mojiagongfangjishiqi
-				}
-				had_country_flag = { 
-					flag = mojiagongfangjishiqi
-					days = 365
-				}
+		has_country_flag = mojiazhuanjing
+		OR = {
+			not = {
+				has_country_flag = mojiagongfangjishiqi
+			}
+			had_country_flag = { 
+				flag = mojiagongfangjishiqi
+				days = 365
 			}
 		}
 	}
@@ -964,16 +962,19 @@ province_event = {
 	desc = "EVTDESC290809"
 	option = { 
 		name = "EVTOPTA290809"
-		owner = {
-			set_country_flag = mojiagongfangjishiqi
+		set_country_flag = mojiagongfangjishiqi
+		any_owned = { 
+			limit = { 
+				has_province_flag = mojiagongfang
+			}
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
+			mojia_chariot_60 = current
 		}
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
-		mojia_chariot_60 = this
 	}
 }

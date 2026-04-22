@@ -3,7 +3,7 @@ owner = JIW
 controller = JIW
 culture = hebei
 religion = liyuejiaohua
-capital = "äÃ"
+capital = "ï¿½ï¿½"
 trade_goods = grain
 hre = yes
 base_tax = 7
@@ -26,7 +26,7 @@ cot = no
 	add_core = YAN
 }
 2222.1.1 = { 
-	fort2 = yes
+	
 	citysize = 40000
 }
 2244.1.1 = { 

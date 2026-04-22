@@ -1,7 +1,7 @@
 
 culture = shu
 religion = ancestor
-capital = "ÝçÃÈ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = grain
 hre = no
 base_tax = 3
@@ -19,7 +19,7 @@ cot = no
 	controller = SGU
 	citysize = 30000
 	fort1 = yes
-	fort2 = yes
+	
 }
 
 2244.1.1 = { 

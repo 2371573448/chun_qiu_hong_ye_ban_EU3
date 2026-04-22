@@ -161,93 +161,14 @@ country_event = {
 	trigger = { 
 		tag = QIG
 		DIP = 7
+		prestige = 0.5
 		idea = press_gangs
 		NOT = { 
 			has_country_flag = jiuhezhuhou
 			has_country_flag = jiuhezhuhou2
 		}
 		has_global_flag = zhanguokaishi
-		OR = {
-			NOT = {
-				SON = { ai = yes }
-			}
-			relation = { 
-				who = SON
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				YGO = { ai = yes }
-			}
-			relation = { 
-				who = YGO
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				QIN = { ai = yes }
-			}
-			relation = { 
-				who = QIN
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				HAN = { ai = yes }
-			}
-			relation = { 
-				who = HAN
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				WEI = { ai = yes }
-			}
-			relation = { 
-				who = WEI
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				ZGO = { ai = yes }
-			}
-			relation = { 
-				who = ZGO
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				CHU = { ai = yes }
-			}
-			relation = { 
-				who = CHU
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				WUG = { ai = yes }
-			}
-			relation = { 
-				who = WUG
-				value = 60
-			}
-		}
-		OR = {
-			NOT = {
-				WEG = { ai = yes }
-			}
-			relation = { 
-				who = WEG
-				value = 60
-			}
-		}
+	}
 	mean_time_to_happen = { 
 		months = 1
 	}

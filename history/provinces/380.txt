@@ -2,7 +2,7 @@ owner = KUA
 controller = KUA
 culture = yinyi
 religion = liyuejiaohua
-capital = "ÎäÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = wine
 hre = yes
 base_tax = 7
@@ -37,7 +37,7 @@ cot = no
 2222.1.1 = { 
 	citysize = 34000
 	culture = zhongyuan
-	fort2 = yes
+	
 }
 2245.1.1 = { 
 	hre = no

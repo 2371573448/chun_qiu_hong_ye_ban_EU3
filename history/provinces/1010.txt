@@ -2,7 +2,7 @@ owner = CAI
 controller = CAI
 culture = jianghan
 religion = liyuejiaohua
-capital = "θέ"
+capital = "οΏ½οΏ½"
 trade_goods = iron
 hre = yes
 base_tax = 6
@@ -40,7 +40,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 46000
-	fort2 = yes
+	
 }
 2235.1.1 = { 
 	add_core = CHU

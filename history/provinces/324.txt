@@ -2,7 +2,7 @@ owner = SON
 controller = SON
 culture = yinyi
 religion = liyuejiaohua
-capital = "илгП"
+capital = "О©╫О©╫О©╫О©╫"
 trade_goods = copper
 hre = yes
 base_tax = 12
@@ -28,8 +28,8 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 56000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2245.1.1 = { 
 	hre = no

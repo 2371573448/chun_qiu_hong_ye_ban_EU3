@@ -2,7 +2,7 @@ owner = JUG
 controller = JUG
 culture = dongyi
 religion = animism
-capital = "¸ÓÓÜ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = fish
 hre = no
 base_tax = 4
@@ -60,7 +60,7 @@ cot = no
 	add_core = JUG
 	remove_core = WEG
 	remove_core = LUG
-        fort2 = yes
+        
 }
 2247.1.1 = { 
 	owner = YGO

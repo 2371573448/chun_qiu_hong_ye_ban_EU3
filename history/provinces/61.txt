@@ -3,7 +3,7 @@ owner = QJR
 controller = QJR
 culture = chidi
 religion = animism
-capital = "½úÑô"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = grain
 hre = no
 base_tax = 12
@@ -36,8 +36,8 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 69000
-	fort2 = yes
-	fort3 = yes
+	
+	
 }
 2244.1.1 = { 
 	hre = yes

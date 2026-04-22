@@ -2,7 +2,7 @@ owner = ZHU
 controller = ZHU
 culture = dongyi
 religion = liyuejiaohua
-capital = "Òï"
+capital = "ï¿½ï¿½"
 trade_goods = ivory
 hre = yes
 base_tax = 8
@@ -31,7 +31,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 48000
-	fort2 = yes
+	
 }
 2245.1.1 = { 
 	hre = no

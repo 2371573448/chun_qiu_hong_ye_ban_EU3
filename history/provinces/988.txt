@@ -2,7 +2,7 @@ owner = JUG
 controller = JUG
 culture = dongyi
 religion = animism
-capital = "ÆÑºò"
+capital = "ï¿½Ñºï¿½"
 trade_goods = spices
 hre = no
 base_tax = 5
@@ -31,7 +31,7 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 39000
-	fort2 = yes
+	
 }
 2246.1.1 = { 
 	owner = LUG

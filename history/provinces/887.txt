@@ -2,7 +2,7 @@ owner = CHG
 controller = CHG
 culture = dongtu
 religion = liyuejiaohua
-capital = "Öý"
+capital = "ï¿½ï¿½"
 trade_goods = sugar
 hre = yes
 base_tax = 5
@@ -37,7 +37,7 @@ cot = no
 2222.1.1 = { 
 	citysize = 32000
 	remove_core = CHG
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = CHG

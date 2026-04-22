@@ -391,6 +391,11 @@ junqishuzui = {
 	discipline = 0.02
 	icon = 7
 }
+qiangzheng = {
+	global_tax_modifier = -0.20
+	war_exhaustion = 0.01
+	global_manpower_modifier = 0.1
+}
 zhiyejundui = {
 	global_regiment_recruit_speed = 0.30
 	reinforce_speed = -0.20
@@ -1092,6 +1097,8 @@ xinguishen = {
 #罢黜百家
 bachubaijia = {
 	tolerance_own = 2
+	missionaries = 2
+	missionary_placement_chance = 0.05
 	icon = 9
 }
 #海纳百川
@@ -1184,8 +1191,8 @@ fajiazhuanjingshengfenjian10 = {
 }
 #节俭治国
 daojiazhuanjing = {
-	inflation_reduction = -0.08
-	production_efficiency = 0.05
+	inflation_reduction = -0.04
+	production_efficiency = 0.025
 	icon = 9
 }
 daojiazhuanjingshengfen = {
@@ -2136,7 +2143,7 @@ menkezhi = {
 junzhi = {
 	officials = -0.50
 	direct_tax_percentage = 0.10
-	fort_level = 2
+	local_defensiveness = 2
 	local_regiment_cost = -0.10
 	icon = 3
 }
@@ -2473,6 +2480,24 @@ MIJ_buff1 = {
 XSJ_buff1 = {
 	icon = 3
 }
+#汉
+yuefasanzhang = {
+	diplomatic_skill = 4
+	badboy = -0.2
+	global_revolt_risk = -2
+	land_maintenance_modifier = 0.1
+	global_tax_modifier = -0.2
+}
+guanzhongwang = {
+	#特殊称王：关中王
+	badboy_limit = 8
+	legitimacy = 0.03
+	diplomatic_skill = 8
+	badboy = -0.3
+	global_revolt_risk = -3
+	global_tax_modifier = -0.1
+	icon = 13
+}
 lianzuobuff = {
 	stability_cost_modifier = -0.2
 	global_spy_defence = 0.1
@@ -2700,14 +2725,15 @@ YONGBINGTAGUO_debuff = {
 }
 #黄老之术
 dahan_buff1 = {
-	discipline = -0.05
-	land_morale = -0.2
-	government_tech_cost_modifier = 0.08
-	land_tech_cost_modifier = 0.08
+	discipline = -0.02
+	land_morale = -0.1
+	government_tech_cost_modifier = 0.04
+	land_tech_cost_modifier = 0.04
 	production_efficiency = 0.10
-	land_forcelimit_modifier = -0.3
+	land_forcelimit_modifier = -0.15
 	global_revolt_risk = -2
-	officials = -1
+	officials = -0.5
+	population_growth = 0.03
 	icon = 7
 }
 #孔孟之道
@@ -2729,7 +2755,7 @@ qinzhiruishi = {
 }
 #黄老之术人口buff
 dahan_buff3 = {
-	population_growth = 0.05
+	population_growth = 0.03
 	icon = 7
 }
 #游牧帝国

@@ -88,7 +88,7 @@ cot = no
 }
 2280.1.1 = { 
 	religion = fajia
-	fort2 = yes
+	
 }
 2346.1.1 = { 
 	owner = QIN

@@ -2,7 +2,7 @@ owner = ZHG
 controller = ZHG
 culture = guanzhong
 religion = liyuejiaohua
-capital = "山川平原"
+capital = "山锟斤拷平原"
 trade_goods = grain
 hre = yes
 base_tax = 4
@@ -56,7 +56,7 @@ add_core = ZHG
 }
 2222.1.1 = { 
 	citysize = 34000
-	fort2 = yes
+	
 }
 2244.1.1 = { 
 	owner = ZHI

@@ -2,7 +2,7 @@ owner = DAI
 controller = DAI
 culture = shanrong
 religion = animism
-capital = "°àÊÏ"
+capital = "ï¿½ï¿½ï¿½ï¿½"
 trade_goods = grain
 hre = no
 base_tax = 6
@@ -18,7 +18,7 @@ cot = no
 	discovered_by = JIN
 }
 2120.1.1 = { 
-	fort2 = yes
+	
 }
 2222.1.1 = { 
 	citysize = 38000
