@@ -2,7 +2,7 @@ owner = JIN
 controller = JIN
 culture = shanxi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "Íõ¹Ù"
 trade_goods = grain
 hre = yes
 base_tax = 7
@@ -38,8 +38,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 48000
-	
-	
 }
 2244.1.1 = { 
 	owner = WEI
@@ -106,3 +104,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

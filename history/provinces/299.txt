@@ -2,7 +2,7 @@ owner = FEG
 controller = FEG
 culture = dongtu
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "·Ñ"
 trade_goods = grain
 hre = yes
 base_tax = 5
@@ -33,7 +33,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 40000
-	
 }
 2244.1.1 = { 
 	owner = FEG
@@ -100,3 +99,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

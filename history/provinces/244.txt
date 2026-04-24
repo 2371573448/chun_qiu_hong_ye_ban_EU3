@@ -1,7 +1,7 @@
 
 culture = ba
 religion = ancestor
-capital = "ï¿½ï¿½"
+capital = "Î×"
 trade_goods = salt
 hre = no
 base_tax = 4
@@ -28,7 +28,6 @@ cot = no
 
 2222.1.1 = { 
 	citysize = 24000
-	
 }
 2244.1.1 = { 
 	native_size = 30

@@ -1,7 +1,7 @@
 
 culture = jingman
 religion = ancestor
-capital = "�޼ٹ�"
+capital = "�޼ٹ�"
 trade_goods = grain
 hre = no
 base_tax = 3
@@ -29,7 +29,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 9000
-	
 }
 2246.1.1 = { 
 	owner = CHU

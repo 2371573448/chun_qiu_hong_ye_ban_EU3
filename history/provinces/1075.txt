@@ -2,7 +2,7 @@ owner = SHE
 controller = SHE
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÃÚÑô"
 trade_goods = cloth
 hre = yes
 base_tax = 5
@@ -39,8 +39,6 @@ cot = no
 2222.1.1 = { 
 	citysize = 54000
 	remove_core = SHE
-	
-	
 }
 2244.1.1 = { 
 	owner = SHE
@@ -118,3 +116,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

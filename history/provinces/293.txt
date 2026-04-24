@@ -2,7 +2,7 @@ owner = LUG
 controller = LUG
 culture = dongtu
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "Çú¸·"
 trade_goods = cloth
 hre = yes
 base_tax = 9
@@ -31,8 +31,6 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 66000
-	
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -70,3 +68,4 @@ cot = yes
 	controller = XCW
 	add_core = XCW
 }
+

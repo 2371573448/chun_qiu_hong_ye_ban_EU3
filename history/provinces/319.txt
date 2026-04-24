@@ -2,14 +2,13 @@ owner = BIY
 controller = BIY
 culture = dongyi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "±ÆÑô"
 trade_goods = grain
 hre = yes
 base_tax = 6
 manpower = 0
 citysize = 16000
 fort1 = yes
-
 add_core = BIY
 cot = no
 1827.1.1 = { 
@@ -38,7 +37,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 24000
-	
 }
 2244.1.1 = { 
 	owner = BIY
@@ -114,3 +112,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

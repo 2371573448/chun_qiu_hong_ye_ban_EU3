@@ -2,7 +2,7 @@ owner = ZLA
 controller = ZLA
 culture = huaiyi
 religion = ancestor
-capital = "О©╫б╡О©╫"
+capital = "об╡л"
 trade_goods = grain
 hre = no
 base_tax = 7
@@ -46,7 +46,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 40000
-	
 }
 2244.1.1 = { 
 	owner = HUG
@@ -106,3 +105,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

@@ -190,7 +190,7 @@ country_decisions = {
 			}
 		}
 		allow = { 
-			innovative_narrowminded = 1
+			#innovative_narrowminded = 1
 		}
 		effect = { 
 			add_country_modifier = { 

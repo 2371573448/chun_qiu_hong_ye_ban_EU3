@@ -3,7 +3,7 @@ owner = RGO
 controller = RGO
 culture = guanzhong
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "»³µÂ"
 trade_goods = cloth
 hre = yes
 base_tax = 4
@@ -47,7 +47,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2236.7.1 = { 
 	owner = QIN

@@ -1,7 +1,7 @@
 
 culture = chaoxian
 religion = animism
-capital = "Ç°Äª"
+capital = "?¨©"
 trade_goods = coffee
 hre = no
 base_tax = 3

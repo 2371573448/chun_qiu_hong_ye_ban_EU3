@@ -115,3 +115,4 @@ add_core = CHE
 	controller = XCW
 	add_core = XCW
 }
+

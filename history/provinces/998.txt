@@ -104,3 +104,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

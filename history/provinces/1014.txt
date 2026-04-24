@@ -3,7 +3,7 @@ owner = JAG
 controller = JAG
 culture = huaiyi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "µÀ"
 trade_goods = coffee
 hre = yes
 base_tax = 5
@@ -41,7 +41,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 22000
-	
 }
 2244.1.1 = { 
 	owner = CAI
@@ -101,3 +100,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

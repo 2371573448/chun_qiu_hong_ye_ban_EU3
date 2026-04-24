@@ -88,7 +88,6 @@ cot = no
 }
 2280.1.1 = { 
 	religion = fajia
-	
 }
 2346.1.1 = { 
 	owner = QIN
@@ -126,3 +125,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

@@ -12,3 +12,4 @@ citysize = 10000
 fort1 = yes
 add_core = QIA
 cot = no
+

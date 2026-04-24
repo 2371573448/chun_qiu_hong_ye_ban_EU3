@@ -1,6 +1,6 @@
 culture = huaiyi
 religion = ancestor
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "·ûÀë"
 trade_goods = naval_supplies
 hre = no
 base_tax = 6
@@ -31,7 +31,6 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 34000
-	
 }
 2225.1.1 = { 
 	owner = SON
@@ -97,3 +96,4 @@ native_hostileness = 10
 	controller = XCW
 	add_core = XCW
 }
+

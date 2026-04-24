@@ -2,7 +2,7 @@ owner = XGO
 controller = XGO
 culture = hebei
 religion = liyuejiaohua
-capital = "О©╫О©╫"
+capital = "по"
 trade_goods = iron
 hre = yes
 base_tax = 9
@@ -43,7 +43,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 51000
-	
 }
 2244.1.1 = { 
 	owner = ZHO
@@ -112,3 +111,4 @@ cot = no
 	owner = ZHO
 	controller = ZHO
 }
+

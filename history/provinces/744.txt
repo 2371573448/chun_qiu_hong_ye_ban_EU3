@@ -3,12 +3,12 @@ owner = NPC
 controller = NPC
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "Ö÷»ú"
 trade_goods = naval_supplies
 hre = no
 base_tax = 2
 manpower = 0
 citysize = 10000
 fort1 = yes
-
 add_core = NPC
+

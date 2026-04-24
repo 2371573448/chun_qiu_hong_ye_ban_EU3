@@ -11,3 +11,4 @@ native_hostileness = 10
 2300.1.1 = { 
 	discovered_by = CHU
 }
+

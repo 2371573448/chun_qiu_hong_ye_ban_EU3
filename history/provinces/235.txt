@@ -47,3 +47,4 @@ cot = no
 	add_core = HNW
 	religion = daojia
 }
+

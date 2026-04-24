@@ -85,3 +85,4 @@ native_hostileness = 4
 	controller = XCW
 	add_core = XCW
 }
+

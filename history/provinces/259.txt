@@ -2,7 +2,7 @@ owner = QIG
 controller = QIG
 culture = qilu
 religion = liyuejiaohua
-capital = "Ç§ï¿½ï¿½"
+capital = "Ç§³Ë"
 trade_goods = grain
 hre = yes
 base_tax = 7
@@ -28,7 +28,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 48000
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -73,3 +72,4 @@ cot = no
 	owner = QIG
 	controller = QIG
 }
+

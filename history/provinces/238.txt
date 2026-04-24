@@ -46,3 +46,4 @@ native_hostileness = 10
 	add_core = HNW
 	citysize = 30000
 }
+

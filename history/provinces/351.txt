@@ -3,7 +3,7 @@ owner = PAP
 controller = PAP
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "Íõ³Ç"
 trade_goods = copper
 hre = yes
 base_tax = 15
@@ -29,8 +29,6 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 70000
-	
-	
 }
 2245.1.1 = { 
 	#hre = no
@@ -63,3 +61,4 @@ cot = yes
 	owner = HNW
 	controller = HNW
 }
+

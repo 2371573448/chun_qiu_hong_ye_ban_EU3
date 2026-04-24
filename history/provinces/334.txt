@@ -2,7 +2,7 @@ owner = HYI
 controller = HYI
 culture = huaiyi
 religion = animism
-capital = "ï¿½ï¿½"
+capital = "ëÔ"
 trade_goods = tea
 hre = no
 base_tax = 5
@@ -60,7 +60,6 @@ cot = no
 	add_core = JUG
 	remove_core = WEG
 	remove_core = LUG
-        
 }
 2247.1.1 = { 
 	owner = YGO
@@ -98,3 +97,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

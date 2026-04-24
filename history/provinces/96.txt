@@ -3,7 +3,7 @@ owner = FEI
 controller = FEI
 culture = baidi
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÎôÑô"
 trade_goods = grain
 hre = no
 base_tax = 4
@@ -30,7 +30,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 26000
-	
 }
 2226.1.1 = { 
 	owner = ZHS
@@ -104,3 +103,4 @@ cot = no
 	owner = ZHO
 	controller = ZHO
 }
+

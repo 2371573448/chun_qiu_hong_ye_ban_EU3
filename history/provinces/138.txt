@@ -34,3 +34,4 @@ native_hostileness = 10
 	controller = XXX
 	fort1 = no
 }
+

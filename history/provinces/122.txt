@@ -2,7 +2,7 @@ owner = CHA
 controller = CHA
 culture = changdi
 religion = animism
-capital = "ï¿½ï¿½ï¿½"
+capital = "ÇåºÓ"
 trade_goods = wool
 hre = no
 base_tax = 6
@@ -39,7 +39,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2244.1.1 = { 
 	owner = ZXS
@@ -89,3 +88,4 @@ cot = no
 	owner = ZHO
 	controller = ZHO
 }
+

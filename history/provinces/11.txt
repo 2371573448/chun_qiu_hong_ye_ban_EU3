@@ -3,7 +3,7 @@ owner = GUZ
 controller = GUZ
 culture = shanrong
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "¹ÂÖñ"
 trade_goods = naval_supplies
 hre = no
 base_tax = 7
@@ -22,7 +22,6 @@ cot = no
 	discovered_by = YXU
 }
 2035.1.1 = { 
-	
 	owner = YAN
 	controller = YAN
 	cot = no
@@ -85,3 +84,4 @@ cot = no
 	owner = YAN
 	controller = YAN
 }
+

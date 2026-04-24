@@ -59,3 +59,4 @@ cot = yes
 	controller = HNW
 	add_core = HNW
 }
+

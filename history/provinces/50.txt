@@ -3,7 +3,7 @@ owner = LOU
 controller = LOU
 culture = beidi
 religion = animism
-capital = "Â¥ï¿½ï¿½"
+capital = "Â¥·³"
 trade_goods = coffee
 hre = no
 base_tax = 3
@@ -19,7 +19,6 @@ cot = no
 2120.1.1 = { discovered_by = JIN }
 2222.1.1 = { 
 	citysize = 18000
-	
 }
 2246.1.1 = { religion = liyuebadao 
 	add_core = ZHO
@@ -49,3 +48,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

@@ -37,3 +37,4 @@ add_core = JSG
 	native_hostileness = 10
 	remove_core = QIN
 }
+

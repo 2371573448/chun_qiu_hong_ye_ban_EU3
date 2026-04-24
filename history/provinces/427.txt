@@ -72,3 +72,4 @@ native_hostileness = 10
         }
 2490.6.1 = { owner=CHU controller=CHU }
 2492.2.1={owner=JJW controller=JJW add_core=JJW}   2493.11.1={owner=XCW controller=XCW}   2495.6.1={owner=JJW controller=JJW}
+

@@ -23,3 +23,4 @@ cot = no
 	owner = MIN
 	controller = MIN
 }
+

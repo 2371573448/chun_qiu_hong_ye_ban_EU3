@@ -2,7 +2,7 @@ owner = SON
 controller = SON
 culture = dongtu
 religion = liyuejiaohua
-capital = "Óºï¿½ï¿½"
+capital = "ÓºÇð"
 trade_goods = grain
 hre = yes
 base_tax = 5
@@ -28,7 +28,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 36000
-	
 }
 2230.1.1 = { 
 	owner = CHU
@@ -121,3 +120,4 @@ cot = no
 	owner = WEI
 	controller = WEI
 }
+

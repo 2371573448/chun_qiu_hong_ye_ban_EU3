@@ -13,3 +13,4 @@ native_hostileness = 10
 	discovered_by = JSG
 }
 
+

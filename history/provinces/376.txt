@@ -3,7 +3,7 @@ owner = YIN
 controller = YIN
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "Â³ï¿½ï¿½"
+capital = "Â³Ñô"
 trade_goods = wine
 hre = yes
 base_tax = 6
@@ -40,7 +40,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 26000
-	
 }
 2244.1.1 = { 
 	owner = YIN
@@ -115,3 +114,4 @@ cot = no
 	owner = HAN
 	controller = HAN
 }
+

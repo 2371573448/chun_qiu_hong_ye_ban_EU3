@@ -1,7 +1,7 @@
 
 culture = shanrong
 religion = animism
-capital = "ï¿½ï¿½Â¹"
+capital = "äÃÂ¹"
 trade_goods = gold
 hre = no
 base_tax = 6
@@ -19,8 +19,6 @@ native_hostileness = 10
 	owner = JIN
 	controller = JIN
 	citysize = 7500
-	
-	
 }
 2244.1.1 = { 
 	owner = YAN
@@ -71,3 +69,4 @@ native_hostileness = 10
 	owner = YAN
 	controller = YAN
 }
+

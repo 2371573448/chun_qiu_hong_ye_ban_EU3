@@ -2,7 +2,7 @@ owner = ZLA
 controller = ZLA
 culture = huaiyi
 religion = ancestor
-capital = "ï¿½Éµï¿½"
+capital = "³ÉµÂ"
 trade_goods = chinaware
 hre = no
 base_tax = 3
@@ -36,7 +36,6 @@ add_core = ZLA
 2222.1.1 = { 
 	citysize = 16000
 	remove_core = ZLA
-	
 }
 2225.1.1 = { 
 	owner = CHU
@@ -101,3 +100,4 @@ add_core = ZLA
 	owner = JJW
 	controller = JJW
 }
+

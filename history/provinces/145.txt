@@ -33,3 +33,4 @@ add_core = HZS
 	controller = XXX
 	fort1 = no
 }
+

@@ -3,7 +3,7 @@ owner = XBG
 controller = XBG
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "Ïå"
 trade_goods = iron
 hre = yes
 base_tax = 7
@@ -44,7 +44,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 34000
-	
 }
 2244.1.1 = { 
 	owner = XBG
@@ -113,3 +112,4 @@ cot = no
 	controller = HAN
 	add_core = HAN
 }
+

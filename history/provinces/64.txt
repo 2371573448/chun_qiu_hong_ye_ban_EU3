@@ -1,7 +1,7 @@
 
 culture = chidi
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "¹ÏÑÜ"
 trade_goods = chinaware
 base_tax = 7
 manpower = 0
@@ -34,7 +34,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2244.1.1 = { 
 	owner = WEI
@@ -85,3 +84,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

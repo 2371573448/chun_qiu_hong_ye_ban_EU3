@@ -93,3 +93,4 @@ fort1 = yes
 	add_core = XCW
 	citysize = 26000
 }
+

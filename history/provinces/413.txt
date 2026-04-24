@@ -2,7 +2,7 @@ owner = SUI
 controller = SUI
 culture = jianghan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "Ëæ"
 trade_goods = cotton
 hre = yes
 base_tax = 8
@@ -28,7 +28,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 40000
-	
 }
 2238.1.1 = { 
 	owner = CHU
@@ -94,3 +93,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

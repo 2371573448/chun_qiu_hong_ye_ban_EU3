@@ -3,7 +3,7 @@ owner = XIG
 controller = XIG
 culture = jianghan
 religion = liyuejiaohua
-capital = "Ï¢ï¿½ï¿½"
+capital = "Ï¢³Ç"
 trade_goods = grain
 hre = yes
 base_tax = 8
@@ -40,7 +40,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 38000
-	
 }
 2244.1.1 = { 
 	owner = XIG
@@ -109,3 +108,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

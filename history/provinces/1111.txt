@@ -2,7 +2,7 @@ owner = CHU
 controller = CHU
 culture = nanchu
 religion = ancestor
-capital = "Æ¢Ð¹"
+capital = "?§Û"
 trade_goods = cloth
 hre = no
 base_tax = 5
@@ -34,3 +34,4 @@ cot = no
 	controller = LJW
 	add_core = LJW
 }
+

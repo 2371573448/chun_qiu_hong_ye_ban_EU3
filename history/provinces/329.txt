@@ -3,7 +3,7 @@ owner = ZWG
 controller = ZWG
 culture = dongyi
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÏÂÚü"
 trade_goods = tea
 hre = no
 base_tax = 6
@@ -36,7 +36,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 36000
-	
 }
 2225.1.1 = { 
 	owner = YGO
@@ -120,3 +119,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

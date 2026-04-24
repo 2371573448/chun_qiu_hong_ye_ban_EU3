@@ -55,3 +55,4 @@ cot = no
 	controller = YAN
 }
 2492.2.1={owner=LDW controller=LDW add_core=LDW}   2492.5.1={owner=YAN controller=YAN}
+

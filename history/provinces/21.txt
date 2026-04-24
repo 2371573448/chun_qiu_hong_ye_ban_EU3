@@ -3,7 +3,7 @@ owner = WUZ
 controller = WUZ
 culture = shanrong
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÓæÑô"
 trade_goods = grain
 hre = no
 base_tax = 7
@@ -28,7 +28,6 @@ cot = no
 	discovered_by = YXU
 }
 2222.1.1 = { 
-	
 	citysize = 45000
 }
 2228.1.1 = { 
@@ -85,3 +84,4 @@ cot = no
 	owner = YAN
 	controller = YAN
 }
+

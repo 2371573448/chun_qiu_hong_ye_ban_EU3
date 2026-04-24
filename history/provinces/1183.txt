@@ -2,7 +2,7 @@ owner = SGU
 controller = SGU
 culture = shu
 religion = ancestor
-capital = "ï¿½Â¶ï¿½"
+capital = "ÐÂ¶¼"
 trade_goods = grain
 hre = no
 base_tax = 6
@@ -22,7 +22,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 48000
-	
 }
 2246.1.1 = { religion = liyuebadao 
             citysize = 38000 }
@@ -49,3 +48,4 @@ cot = no
 	religion = daojia
 	citysize = 54000
 }
+

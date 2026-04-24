@@ -19,3 +19,4 @@ native_hostileness = 10
 	add_core = DHU
 	fort1 = yes
 }
+

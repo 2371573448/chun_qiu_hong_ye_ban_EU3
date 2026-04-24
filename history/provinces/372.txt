@@ -121,3 +121,4 @@ native_hostileness = 10
 	owner = HNW
 	controller = HNW
 }
+

@@ -98,3 +98,4 @@ cot = no
 	add_core = HSW
 	citysize = 28000
 }
+

@@ -90,3 +90,4 @@ native_hostileness = 10
 	controller = ZHO
 	add_core = ZHO
 }
+

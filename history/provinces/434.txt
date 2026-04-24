@@ -1,7 +1,7 @@
 
 culture = wuyue
 religion = ancestor
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "¹ÃËÕ"
 trade_goods = grain
 hre = no
 base_tax = 15
@@ -30,7 +30,6 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 38000
-	
 }
 2225.1.1 = { 
 	add_core = YGO
@@ -79,7 +78,7 @@ cot = yes
 	revolt = { 
 		type = nationalist_rebels
 		size = 5
-		leader = "ï¿½ï¿½ï¿½ï¿½"
+		leader = "ÏîÁº"
 	}
 	controller = REB
 }
@@ -94,3 +93,4 @@ cot = yes
 	add_core = XCW
 	citysize = 48000
 }
+

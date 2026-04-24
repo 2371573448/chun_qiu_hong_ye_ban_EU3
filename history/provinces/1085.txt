@@ -2,7 +2,7 @@ owner = QIN
 controller = QIN
 culture = guanzhong
 religion = animism
-capital = "ï¿½ï¿½"
+capital = "ÕÙ"
 trade_goods = cloth
 hre = yes
 base_tax = 7
@@ -34,7 +34,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 46000
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -70,3 +69,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

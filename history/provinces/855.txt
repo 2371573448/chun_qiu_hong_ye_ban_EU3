@@ -2,7 +2,7 @@ owner = YON
 controller = YON
 culture = yong
 religion = ancestor
-capital = "ï¿½ï¿½ï¿½"
+capital = "ãæ¹Ø"
 trade_goods = salt
 hre = no
 base_tax = 7
@@ -39,8 +39,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 23000
-	
-        
 }
 2244.1.1 = { 
 	owner = YON
@@ -58,7 +56,7 @@ cot = no
 	owner = HNW
 	controller = HNW
 	add_core = HNW
-	religion = daojia
+	religion = liyuejiaohua
 	remove_core = CHU
 }
 2247.1.1 = { 
@@ -92,3 +90,4 @@ cot = no
 	add_core = HNW
 	religion = daojia
 }
+

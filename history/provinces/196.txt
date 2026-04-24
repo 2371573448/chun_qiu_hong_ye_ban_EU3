@@ -1,7 +1,7 @@
 
 culture = guanzhong
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ãþÑô"
 trade_goods = wine
 hre = no
 base_tax = 6
@@ -38,7 +38,6 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 36000
-	
 }
 2245.1.1 = { 
 	hre = no

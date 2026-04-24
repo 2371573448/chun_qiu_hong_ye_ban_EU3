@@ -38,3 +38,4 @@ add_core = XHM
 	controller = XXX
 	fort1 = no
 }
+

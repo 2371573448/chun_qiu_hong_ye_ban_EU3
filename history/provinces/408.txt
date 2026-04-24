@@ -2,7 +2,7 @@ owner = HYI
 controller = HYI
 culture = huaiyi
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "»´Òõ"
 trade_goods = salt
 hre = no
 base_tax = 7
@@ -40,7 +40,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 36000
-	
 }
 2225.1.1 = { 
 	owner = YGO
@@ -111,3 +110,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

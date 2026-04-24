@@ -41,7 +41,7 @@ cot = no
 	owner = HNW
 	controller = HNW
 	add_core = HNW
-	religion = daojia
+	religion = liyuejiaohua
 	remove_core = CHU
 }
 2247.1.1 = { 

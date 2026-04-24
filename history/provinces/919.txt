@@ -103,3 +103,4 @@ native_hostileness = 10
 	add_core = XCW
 	citysize = 40000
 }
+

@@ -40,3 +40,4 @@ native_hostileness = 10
 	owner = JJW
 	controller = JJW
 }
+

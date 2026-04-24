@@ -2,7 +2,7 @@ owner = ZZI
 controller = ZZI
 culture = yinyi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "¼À"
 trade_goods = slaves
 hre = yes
 base_tax = 8
@@ -39,7 +39,6 @@ cot = no
 2222.1.1 = { 
 	citysize = 34000
 	culture = zhongyuan
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -97,3 +96,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

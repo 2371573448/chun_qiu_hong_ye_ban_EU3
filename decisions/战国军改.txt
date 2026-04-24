@@ -1003,7 +1003,7 @@ country_decisions = {
 	fuguyinshang_2 ={
 		potential = {
 			owns = 124
-			remove_country_modifier = yinshanggaige
+			has_country_modifier = yinshanggaige
 			not = { tag = YSG }
 		}
 		allow = {

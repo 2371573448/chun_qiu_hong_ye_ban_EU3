@@ -2,7 +2,7 @@ owner = YXU
 controller = YXU
 culture = huaiyi
 religion = ancestor
-capital = "ï¿½ï¿½"
+capital = "Ðì"
 trade_goods = grain
 hre = no
 base_tax = 10
@@ -39,7 +39,6 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 80000
-	
 }
 2225.1.1 = { 
 	owner = YGO
@@ -118,3 +117,4 @@ cot = yes
 	controller = XCW
 	add_core = XCW
 }
+

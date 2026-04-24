@@ -3,7 +3,7 @@ controller = YGO
 add_core = YGO
 culture = wuyue
 religion = ancestor
-capital = "ï¿½ï¿½ï¿½"
+capital = "»á»ü"
 trade_goods = grain
 hre = no
 base_tax = 9
@@ -26,7 +26,6 @@ cot = yes
 2222.1.1 = { 
 	citysize = 40000
 	base_tax = 9
-	
 }
 2246.1.2 = {
         citysize = 30000
@@ -50,3 +49,4 @@ cot = yes
 	controller = XCW
 	add_core = XCW
 }
+

@@ -2,7 +2,7 @@ owner = ZHU
 controller = ZHU
 culture = dongyi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "×Þ"
 trade_goods = wool
 hre = yes
 base_tax = 8
@@ -31,7 +31,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 48000
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -71,3 +70,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

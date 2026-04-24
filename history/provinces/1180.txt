@@ -2,7 +2,7 @@ owner = BAO
 controller = BAO
 culture = guanzhong
 religion = ancestor
-capital = "锟斤拷锟斤拷山"
+capital = "定军山"
 trade_goods = cloth
 hre = no
 base_tax = 1
@@ -16,15 +16,13 @@ cot = no
 1928.1.1 = { discovered_by = BAO }
 2222.1.1 = { 
 	citysize = 16000
-	
-	
 }
 2246.1.1 = { religion = liyuebadao }
 2246.1.2 = { 
 	owner = HNW
 	controller = HNW
 	add_core = HNW
-	religion = daojia
+	religion = liyuejiaohua
 	remove_core = SGU
 }
 2247.1.1 = { 

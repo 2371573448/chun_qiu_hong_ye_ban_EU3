@@ -72,3 +72,4 @@ cot = no
 	controller = HSW
 	add_core = HSW
 }
+

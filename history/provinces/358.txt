@@ -2,7 +2,7 @@ owner = KUA
 controller = KUA
 culture = dongtu
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "´óÁº"
 trade_goods = grain
 hre = yes
 base_tax = 12
@@ -36,8 +36,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 78000
-	
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -91,7 +89,7 @@ cot = no
 	revolt = { 
 		type = nationalist_rebels
 		size = 4
-		leader = "ï¿½ï¿½ï¿½ï¿½"
+		leader = "ÖÜÊÐ"
 	}
 	controller = REB
 }
@@ -112,3 +110,4 @@ cot = no
 	owner = WEI
 	controller = WEI
 }
+

@@ -3,7 +3,7 @@ owner = GUO
 controller = GUO
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½Ø¹ï¿½"
+capital = "°Ø¹È"
 trade_goods = tea
 hre = yes
 base_tax = 3
@@ -43,9 +43,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 18000
-	
-	
-	
 }
 2244.1.1 = { 
 	owner = WEI
@@ -115,3 +112,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

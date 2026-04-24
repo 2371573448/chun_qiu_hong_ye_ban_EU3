@@ -2,7 +2,7 @@ owner = ANG
 controller = ANG
 culture = jianghan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "ÌÆ"
 trade_goods = wine
 hre = yes
 base_tax = 7
@@ -35,7 +35,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 28000
-	
 }
 2223.1.1 = { 
 	add_core = CHU
@@ -93,3 +92,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

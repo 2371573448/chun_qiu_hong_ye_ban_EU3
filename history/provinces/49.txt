@@ -2,7 +2,7 @@ owner = LOU
 controller = LOU
 culture = beidi
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÎäÖÜ"
 trade_goods = slaves
 hre = no
 base_tax = 7
@@ -21,7 +21,6 @@ cot = no
 	discovered_by = JIN
 }
 2120.1.1 = { 
-	
 }
 2222.1.1 = { 
 	citysize = 20000
@@ -54,3 +53,4 @@ add_core = ZHO
 	owner = HNW
 	controller = HNW
 }
+

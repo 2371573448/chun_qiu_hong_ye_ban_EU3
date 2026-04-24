@@ -1,7 +1,7 @@
 
 culture = wuyue
 religion = ancestor
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "Óù¶ù"
 trade_goods = fish
 hre = no
 base_tax = 6
@@ -37,7 +37,6 @@ native_hostileness = 4
 }
 2222.1.1 = { 
 	citysize = 24000
-	
 }
 2244.1.1 = { 
 	owner = JAG
@@ -94,3 +93,4 @@ native_hostileness = 4
 	controller = XCW
 	add_core = XCW
 }
+

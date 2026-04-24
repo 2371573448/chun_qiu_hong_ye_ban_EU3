@@ -2,7 +2,7 @@ owner = YUO
 controller = YUO
 culture = dongyi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "¿ªÑô"
 trade_goods = ivory
 hre = no
 base_tax = 4
@@ -40,7 +40,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 24000
-	
 }
 2244.1.1 = { 
 	owner = YUO
@@ -122,3 +121,4 @@ cot = no
 	owner = QIG
 	controller = QIG
 }
+

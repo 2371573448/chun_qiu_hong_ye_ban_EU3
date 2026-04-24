@@ -1,6 +1,6 @@
 culture = li
 religion = ancestor
-capital = "ï¿½ï¿½É³"
+capital = "³¤É³"
 trade_goods = grain
 hre = no
 base_tax = 7
@@ -15,7 +15,6 @@ native_hostileness = 10
 	owner = CHU
 	controller = CHU
 	citysize = 14000
-	
 }
 2244.1.1 = { 
 	owner = YNG
@@ -72,3 +71,4 @@ native_hostileness = 10
 	owner = LJW
 	controller = LJW
 }
+

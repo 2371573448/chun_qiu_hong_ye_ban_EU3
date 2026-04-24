@@ -1,7 +1,7 @@
 
 culture = nanchu
 religion = ancestor
-capital = "ï¿½ï¿½É£"
+capital = "²ñÉ£"
 trade_goods = fish
 hre = no
 base_tax = 4
@@ -20,7 +20,6 @@ native_hostileness = 10
 }
 2220.1.1 = { 
 	add_core = CHU
-	
 }
 2240.1.1 = { 
 	religion = liyuebadao
@@ -74,3 +73,4 @@ native_hostileness = 10
 	owner = JJW
 	controller = JJW
 }
+

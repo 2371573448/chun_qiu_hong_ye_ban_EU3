@@ -3,14 +3,13 @@ owner = CHU
 controller = CHU
 culture = nanchu
 religion = ancestor
-capital = "Û«ï¿½ï¿½"
+capital = "Û«¶¼"
 trade_goods = cloth
 hre = no
 base_tax = 11
 manpower = 0
 citysize = 82000
 fort1 = yes
-
 add_core = CHU
 cot = yes
 1827.1.1 = { discovered_by = PAP }
@@ -30,7 +29,6 @@ cot = yes
 }
 2222.1.1 = { 
 	citysize = 50000
-	
 }
 2246.1.2 = {
         citysize = 40000
@@ -51,3 +49,4 @@ cot = yes
 	controller = LJW
 	add_core = LJW
 }
+

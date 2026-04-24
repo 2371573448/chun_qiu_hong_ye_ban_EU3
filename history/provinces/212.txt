@@ -2,7 +2,7 @@ owner = LSS
 controller = LSS
 culture = guanzhong
 religion = animism
-capital = "ï¿½ï¿½É½"
+capital = "æêÉ½"
 trade_goods = naval_supplies
 hre = no
 base_tax = 5
@@ -43,7 +43,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 18000
-	
 }
 2244.1.1 = { 
 	hre = no
@@ -91,3 +90,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

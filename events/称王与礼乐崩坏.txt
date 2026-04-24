@@ -341,7 +341,6 @@ country_event = {
 }
 country_event = { 
 	id = 62006
-	major = yes
 	trigger = { 
 		tag = NPC
 	}

@@ -2,7 +2,7 @@ owner = NYA
 controller = NYA
 culture = yinyi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "ëÑ"
 trade_goods = wine
 base_tax = 7
 manpower = 0
@@ -38,7 +38,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2244.1.1 = { 
 	owner = DGG
@@ -120,3 +119,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

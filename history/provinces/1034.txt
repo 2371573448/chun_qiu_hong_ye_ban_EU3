@@ -3,7 +3,7 @@ owner = DGG
 controller = DGG
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "ÖÆ"
 trade_goods = spices
 hre = yes
 base_tax = 9
@@ -42,14 +42,12 @@ cot = no
 	add_core = JIN
 }
 2127.8.1 = { 
-	
 }
 2141.12.1 = { 
 	add_core = JIN
 }
 2222.1.1 = { 
 	citysize = 36000
-	
 }
 2244.1.1 = { 
 	owner = HAN
@@ -120,3 +118,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

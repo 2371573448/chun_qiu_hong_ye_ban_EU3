@@ -32,7 +32,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 72000
-	
 }
 2241.1.1 = { 
 	add_core = SON
@@ -122,3 +121,4 @@ cot = no
 	controller = WEI
 	add_core = WEI
 }
+

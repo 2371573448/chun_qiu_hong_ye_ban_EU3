@@ -113,3 +113,4 @@ cot = no
 	add_core = XCW
 	citysize = 26000
 }
+

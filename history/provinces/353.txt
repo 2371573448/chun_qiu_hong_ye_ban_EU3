@@ -3,7 +3,7 @@ owner = PAP
 controller = PAP
 culture = zhongyuan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "¹®"
 trade_goods = chinaware
 hre = yes
 base_tax = 5
@@ -29,7 +29,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 32000
-	
 }
 2240.1.1 = { 
 	religion = rujia
@@ -77,3 +76,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

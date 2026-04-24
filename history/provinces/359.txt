@@ -2,7 +2,7 @@ owner = WEG
 controller = WEG
 culture = dongtu
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½"
+capital = "å§Ñô"
 trade_goods = cloth
 hre = yes
 base_tax = 10
@@ -44,7 +44,6 @@ religion = liyuejiaohua
 }
 2222.1.1 = { 
 	citysize = 56000
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -95,3 +94,4 @@ religion = liyuejiaohua
 	owner = HNW
 	controller = HNW
 }
+

@@ -3,7 +3,7 @@ owner = JUG
 controller = JUG
 culture = dongyi
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÇþÇð"
 trade_goods = coffee
 hre = no
 base_tax = 6
@@ -52,7 +52,6 @@ cot = no
 	add_core = JUG
 	remove_core = WEG
 	remove_core = LUG
-        
 }
 2247.1.1 = { 
 	owner = YGO

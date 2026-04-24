@@ -1,7 +1,7 @@
 
 culture = wuyue
 religion = ancestor
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "·¬Ñô"
 trade_goods = grain
 hre = no
 base_tax = 6
@@ -17,7 +17,6 @@ native_hostileness = 10
 	controller = CHU
 	citysize = 8000
 	fort1 = yes
-	
 }
 2244.1.1 = { 
 	owner = HNX
@@ -66,7 +65,7 @@ native_hostileness = 10
 	revolt = { 
 		type = nationalist_rebels
 		size = 5
-		leader = "Ó¢ï¿½ï¿½"
+		leader = "Ó¢²¼"
 	}
 	controller = REB
 }
@@ -89,3 +88,4 @@ native_hostileness = 10
 	owner = JJW
 	controller = JJW
 }
+

@@ -3,7 +3,7 @@
 controller = JXY
 culture = xiyu
 religion = animism
-capital = "Î¾Í·"
+capital = "¦Î?"
 trade_goods = coffee
 hre = no
 base_tax = 3

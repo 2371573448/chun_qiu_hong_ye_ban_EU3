@@ -2,7 +2,7 @@ owner = YUG
 controller = YUG
 culture = shanxi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÏÂÑô"
 trade_goods = wine
 hre = yes
 base_tax = 5
@@ -37,7 +37,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2244.1.1 = { 
 	owner = WEI
@@ -90,3 +89,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

@@ -2,7 +2,7 @@ owner = BAO
 controller = BAO
 culture = guanzhong
 religion = ancestor
-capital = "О©╫О©╫жё"
+capital = "дожё"
 trade_goods = grain
 hre = no
 base_tax = 9
@@ -19,8 +19,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 76000
-	
-	
 }
 2246.1.1 = { religion = liyuebadao }
 2246.1.2 = { 
@@ -28,7 +26,7 @@ cot = no
 	owner = HNW
 	controller = HNW
 	add_core = HNW
-	religion = daojia
+	religion = liyuejiaohua
 	remove_core = SGU
 }
 2246.1.2 = {
@@ -72,3 +70,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

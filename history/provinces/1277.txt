@@ -36,3 +36,4 @@ citysize = 8000
 	controller = XXX
 	fort1 = no
 }
+

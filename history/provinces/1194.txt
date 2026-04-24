@@ -48,3 +48,4 @@ cot = no
 	religion = daojia
 	citysize = 32000
 }
+

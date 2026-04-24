@@ -43,7 +43,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 36000
-	
 }
 2244.1.1 = { 
 	owner = FAS
@@ -121,3 +120,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

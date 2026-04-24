@@ -3,7 +3,7 @@ owner = BOG
 controller = BOG
 culture = guanzhong
 religion = animism
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÏÌÑô"
 trade_goods = wine
 hre = no
 base_tax = 11
@@ -33,7 +33,6 @@ add_core = PAP
 2222.1.1 = { 
 	citysize = 30000
 	base_tax = 9
-	
 }
 2244.1.1 = { 
 	hre = no
@@ -77,7 +76,6 @@ add_core = PAP
 2295.1.1 = { 
 	citysize = 72000
 	base_tax = 11
-	
 }
 2340.1.1 = { 
 	religion = fajia
@@ -92,3 +90,4 @@ add_core = PAP
 	controller = HNW
 	add_core = HNW
 }
+

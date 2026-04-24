@@ -24,3 +24,4 @@ cot = no
 	controller = NAN
 	add_core = NAN
 }
+

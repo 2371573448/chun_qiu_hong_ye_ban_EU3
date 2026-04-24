@@ -2,7 +2,7 @@ owner = CHI
 controller = CHI
 culture = chidi
 religion = animism
-capital = "Âºï¿½ï¿½"
+capital = "ÂºÊÏ"
 trade_goods = grain
 hre = no
 base_tax = 9
@@ -34,7 +34,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 52000
-	
 }
 2244.1.1 = { 
 	owner = ZXS
@@ -118,3 +117,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

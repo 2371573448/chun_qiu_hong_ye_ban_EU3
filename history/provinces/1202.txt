@@ -2,7 +2,7 @@ owner = ZHG
 controller = ZHG
 culture = guanzhong
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "Òõ½ú"
 trade_goods = grain
 hre = yes
 base_tax = 3
@@ -56,7 +56,6 @@ add_core = ZHG
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2244.1.1 = { 
 	owner = ZHI

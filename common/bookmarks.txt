@@ -1,3 +1,29 @@
+
+bookmark =
+{
+	name = "TIANXIAZHULU_NAME"
+	desc = "TIANXIAZHULU_DESC"
+	date = 2246.1.2
+	country = WUG	#吴
+	country = YGO	#越
+	country = ZHI	#智
+	country = FAS	#范
+	country = ZHO	#赵
+	country = WEI	#魏
+	country = HAN	#韩
+	country = QIN	#秦
+	country = XCW	#西楚
+	country = HNW	#汉
+	country = SGU	#蜀
+	country = QIG	#齐
+	country = CHU	#楚
+	country = YAN	#燕
+	country = ZGO	#郑
+	country = SON	#宋
+	country = LUG	#鲁
+	country = WEG	#卫
+}
+
 bookmark =
 {
 	name = "CHUNQIUKAIQI_NAME"
@@ -325,24 +351,6 @@ bookmark =
 	country = ZGO
 	country = LUG
 	country = SON
-	country = YGO
-	country = WUG
-}
-bookmark =
-{
-	name = "TIANXIAZHULU_NAME"
-	desc = "TIANXIAZHULU_DESC"
-	date = 2246.1.2
-	country = JIN	
-	country = QIG	
-	country = CHU
-	country = YAN
-	country = ZHO
-	country = WEI
-	country = HAN
-	country = QIN
-	country = ZHI
-	country = SGU
 	country = YGO
 	country = WUG
 }

@@ -3,7 +3,7 @@ owner = DAI
 controller = DAI
 culture = shanrong
 religion = animism
-capital = "ï¿½ï¿½"
+capital = "´ú"
 trade_goods = sugar
 hre = no
 base_tax = 8
@@ -19,11 +19,9 @@ cot = no
 	discovered_by = JIN
 }
 2120.1.1 = { 
-	
 }
 2222.1.1 = { 
 	citysize = 66000
-	
 }
 2223.1.1 = { 
 	owner = JIN
@@ -90,3 +88,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

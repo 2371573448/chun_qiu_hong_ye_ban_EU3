@@ -1,6 +1,6 @@
 culture = gouwu
 religion = ancestor
-capital = "Ûµï¿½ï¿½"
+capital = "Ûµ³Ç"
 trade_goods = chinaware
 hre = no
 base_tax = 9
@@ -32,7 +32,6 @@ native_hostileness = 4
 }
 2222.1.1 = { 
 	citysize = 20000
-	
 }
 2225.1.1 = { 
 	religion = liyuebadao
@@ -90,3 +89,4 @@ native_hostileness = 4
 	controller = XCW
 	add_core = XCW
 }
+

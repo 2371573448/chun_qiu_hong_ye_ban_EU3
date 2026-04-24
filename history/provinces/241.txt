@@ -39,3 +39,4 @@ cot = no
 	native_hostileness = 10
 	remove_core = QIN
 }
+

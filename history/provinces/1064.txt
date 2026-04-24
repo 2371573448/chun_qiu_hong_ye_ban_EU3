@@ -2,7 +2,7 @@ owner = JIA
 controller = JIA
 culture = shanxi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "¸ßÁ»"
 trade_goods = fur
 hre = yes
 base_tax = 7
@@ -34,7 +34,6 @@ cot = no
 2222.1.1 = { 
 	citysize = 44000
 	remove_core = JIA
-	
 }
 2244.1.1 = { 
 	owner = HAN
@@ -101,3 +100,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

@@ -24,3 +24,4 @@ cot = no
 	add_core = NAN
 	citysize = 10000
 }
+

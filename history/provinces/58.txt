@@ -3,7 +3,7 @@ owner = QJR
 controller = QJR
 culture = chidi
 religion = animism
-capital = "ï¿½ï¿½Ê¯"
+capital = "ÀëÊ¯"
 trade_goods = spices
 hre = no
 base_tax = 6
@@ -37,7 +37,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 24000
-	
 }
 2244.1.1 = { 
 	owner = ZHO
@@ -76,3 +75,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+

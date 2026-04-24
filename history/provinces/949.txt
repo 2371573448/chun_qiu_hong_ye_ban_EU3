@@ -1,6 +1,6 @@
 culture = changdi
 religion = animism
-capital = "ï¿½ï¿½Ô«"
+capital = "ÎäÔ«"
 trade_goods = chinaware
 hre = no
 base_tax = 5
@@ -25,7 +25,6 @@ native_hostileness = 10
 }
 2222.1.1 = { 
 	citysize = 34000
-	
 }
 2244.1.1 = { 
 	owner = ZHS
@@ -86,3 +85,4 @@ native_hostileness = 10
 	owner = ZHO
 	controller = ZHO
 }
+

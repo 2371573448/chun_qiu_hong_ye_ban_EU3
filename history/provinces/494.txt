@@ -79,3 +79,4 @@ native_hostileness = 10
 	owner = LJW
 	controller = LJW
 }
+

@@ -80,3 +80,4 @@ fort1 = yes
 	controller = XCW
 	add_core = XCW
 }
+

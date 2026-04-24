@@ -2,7 +2,7 @@ owner = LAI
 controller = LAI
 culture = laiyi
 religion = animism
-capital = "р╧О©╫О©╫"
+capital = "р╧рь"
 trade_goods = salt
 hre = no
 base_tax = 6
@@ -39,7 +39,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 26000
-	
 }
 2244.1.1 = { 
 	owner = LAI
@@ -96,3 +95,4 @@ cot = no
 	owner = QIG
 	controller = QIG
 }
+

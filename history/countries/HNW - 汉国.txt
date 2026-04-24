@@ -8,7 +8,7 @@ land_naval = -5
 quality_quantity = 0
 serfdom_freesubjects = 5
 technology_group = chinese
-religion = daojia
+religion = liyuejiaohua
 primary_culture = nanchu
 capital = 219
 unit_type = dahan
@@ -25,6 +25,9 @@ unit_type = dahan
 		dip = 9
 		mil = 6
 	}
+}
+2246.1.4 = { 
+	religion = daojia
 }
 2400.1.1 = { 
 	set_country_flag = falvzhidu

@@ -1,7 +1,7 @@
 
 culture = xirong
 religion = animism
-capital = "Ö£ï¿½ï¿½"
+capital = "Ö£³Ç"
 trade_goods = gold
 hre = no
 base_tax = 5
@@ -50,7 +50,6 @@ add_core = PXS
 }
 2222.1.1 = { 
 	citysize = 24000
-	
 }
 2244.1.1 = { 
 	hre = no

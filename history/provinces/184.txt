@@ -30,3 +30,4 @@ native_hostileness = 10
 	controller = HNW
 	add_core = HNW
 }
+

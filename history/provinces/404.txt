@@ -66,3 +66,4 @@ cot = no
 		controller = QIN
 	    }
 2492.2.1={owner=XCW controller=XCW add_core=XCW}
+

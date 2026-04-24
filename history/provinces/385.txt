@@ -2,7 +2,7 @@ owner = CHE
 controller = CHE
 culture = jianghan
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÍðÇð"
 trade_goods = cotton
 hre = yes
 base_tax = 8
@@ -48,7 +48,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 48000
-	
 }
 2244.1.1 = { 
 	owner = CHE
@@ -117,3 +116,4 @@ cot = no
 	controller = XCW
 	add_core = XCW
 }
+

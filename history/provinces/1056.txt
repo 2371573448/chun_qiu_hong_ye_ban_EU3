@@ -2,7 +2,7 @@ owner = JIC
 controller = JIC
 culture = shanxi
 religion = liyuejiaohua
-capital = "ï¿½ï¿½"
+capital = "¼½"
 trade_goods = spices
 hre = yes
 base_tax = 5
@@ -47,7 +47,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 30000
-	
 }
 2244.1.1 = { 
 	owner = HAN
@@ -118,3 +117,4 @@ cot = no
 	controller = HNW
 	add_core = HNW
 }
+

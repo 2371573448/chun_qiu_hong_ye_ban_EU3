@@ -43,3 +43,4 @@ manpower = 0
 	controller = XCW
 	add_core = XCW
 }
+

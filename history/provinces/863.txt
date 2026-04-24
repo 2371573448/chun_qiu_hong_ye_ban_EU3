@@ -2,7 +2,7 @@ owner = WEG
 controller = WEG
 culture = dongtu
 religion = liyuejiaohua
-capital = "ï¿½ï¿½ï¿½ï¿½"
+capital = "ÇåÇð"
 trade_goods = wool
 hre = yes
 base_tax = 6
@@ -44,7 +44,6 @@ cot = no
 }
 2222.1.1 = { 
 	citysize = 56000
-	
 }
 2245.1.1 = { 
 	hre = no
@@ -95,3 +94,4 @@ cot = no
 	owner = HNW
 	controller = HNW
 }
+
