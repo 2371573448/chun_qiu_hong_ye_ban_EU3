@@ -424,7 +424,6 @@ country_event = {
 }
 province_event = { 
 	id = 4508
-	major = yes
 	is_triggered_only = yes
 	title = "EVTNAME4508"
 	desc = "EVTDESC4508"

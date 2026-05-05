@@ -1,9 +1,6 @@
 #义渠科技加成
 country_event = {
 	id = 12020
-
-	major = yes
-
 	trigger = {
 		year = 2246.1.2
 		NOT = {  year = 2247.1.1 }
@@ -33,9 +30,6 @@ country_event = {
 #义渠科技消除
 country_event = {
 	id = 12021
-
-	major = yes
-
 	trigger = {
 		tag = YQU
 		
@@ -62,9 +56,6 @@ country_event = {
 #长狄科技加成
 country_event = {
 	id = 12022
-
-	major = yes
-
 	trigger = {
 		year = 2246.1.2
 		NOT = {  year = 2247.1.1 }
@@ -94,9 +85,6 @@ country_event = {
 #长狄科技消除
 country_event = {
 	id = 12023
-
-	major = yes
-
 	trigger = {
 		tag = CHA
 		

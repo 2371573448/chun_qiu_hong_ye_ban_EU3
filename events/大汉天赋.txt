@@ -1,9 +1,6 @@
 #黄老之术
 country_event = {
 	id = 12010
-
-	major = yes
-
 	trigger = {
 		tag = HNW
 		religion = daojia
@@ -29,9 +26,6 @@ country_event = {
 #孔孟之道
 country_event = {
 	id = 12012
-
-	major = yes
-
 	trigger = {
 		tag = HNW
 		religion = rujia
@@ -57,9 +51,6 @@ country_event = {
 #黄老之术移除
 country_event = {
 	id = 12011
-
-	major = yes
-
 	trigger = {
 		tag = HNW
 		NOT = { religion = daojia }
@@ -81,9 +72,6 @@ country_event = {
 #孔孟之道移除
 country_event = {
 	id = 12013
-
-	major = yes
-
 	trigger = {
 		tag = HNW
 		NOT = { religion = rujia}

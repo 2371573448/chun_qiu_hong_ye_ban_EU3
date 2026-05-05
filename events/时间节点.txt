@@ -114,13 +114,9 @@ country_event = {
 			is_emperor = yes
 			tag = PAP
 			AND = { 
-				not = { 
-					ai = yes
-				}
+				ai = no
 				PAP = { 
-					not = { 
-						exists = yes
-					}
+					exists = no
 				}
 			}
 		}
@@ -160,10 +156,10 @@ country_event = {
 	mean_time_to_happen = { 
 		months = 0
 	}
-	title = "EVTNAME88300"
-	desc = "EVTDESC88300"
+	title = "EVTNAME88301"
+	desc = "EVTDESC88301"
 	option = { 
-		name = "EVTOPTA88300"
+		name = "EVTOPTA88301"
 		set_global_flag = chongzhimaoyizhongxin
 		any_country = {
 			any_owned = { 

@@ -2,6 +2,7 @@
 fenglangjuxu = { 
 	type = country
 	allow = { 
+		tag =XNU
 		not = { tag =XNU }
 		exists = XNU
 		XNU = {
