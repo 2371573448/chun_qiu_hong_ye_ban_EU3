@@ -2,6 +2,7 @@ country_decisions = {
 	#大蒐礼jueyi
 	dasoulijueyi = {         
                                         potential = {
+			has_country_flag = xianyinjueyi_linian
 		idea = sea_hawks
 		}
 		allow = {          

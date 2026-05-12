@@ -202,6 +202,7 @@ cultural_decisions = {
 			not = { 
 				has_country_flag = open_copy
 			}
+			ai = yes
 		}
 		allow = { 
 			ai = yes

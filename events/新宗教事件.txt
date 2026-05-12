@@ -268,30 +268,244 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				has_country_flag = rujiazhuanjing
+				or= {
+					has_country_modifier = rujiazhuanjing_junziliuyi_yu
+					has_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+				}
+				any_owned_province = { 
+					not = { has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen1 }
+				}
 			}
 			any_owned = { 
 				limit = {
-					religion = rujia
+					not = { has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen1 }
 				}
 				add_province_modifier = { 
-					name = "rujiazhuanjingshengfen"
+					name = "rujiazhuanjing_junziliuyi_yu_shengfen1"
 					duration = -1
 				}
-			}
-			any_owned = { 
-				limit = {
-					not = { religion = rujia }
-				}
-				remove_province_modifier = rujiazhuanjingshengfen
 			}
 		}
 		any_country = {
 			limit = {
-				not = { has_country_flag = rujiazhuanjing }
+				not = {
+					or= {
+						has_country_modifier = rujiazhuanjing_junziliuyi_yu
+						has_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+					}
+				}
+				any_owned_province = { 
+					has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen1
+				}
 			}
 			any_owned = { 
-				remove_province_modifier = rujiazhuanjingshengfen
+				limit = {
+					has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen1
+				}
+				remove_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen1
+			}
+		}
+		any_country = {
+			limit = {
+				or= {
+					has_country_modifier = rujiazhuanjing_junziliuyi_junheng
+					has_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+					has_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+					has_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+					has_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+					has_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+				}
+				any_owned_province = { 
+					not = { has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen2 }
+				}
+			}
+			any_owned = { 
+				limit = {
+					not = { has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen2 }
+				}
+				add_province_modifier = { 
+					name = "rujiazhuanjing_junziliuyi_yu_shengfen2"
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				not = {
+					or= {
+						has_country_modifier = rujiazhuanjing_junziliuyi_junheng
+						has_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+						has_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+						has_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+						has_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+						has_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+					}
+				}
+				any_owned_province = { 
+					has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen2
+				}
+			}
+			any_owned = { 
+				limit = {
+					has_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen2
+				}
+				remove_province_modifier = rujiazhuanjing_junziliuyi_yu_shengfen2
+			}
+		}
+		any_country = {
+			limit = {
+				has_country_flag = mojiazhuanjing
+				any_owned_province = { 
+					or = {
+						and = {
+							has_building = fort1
+							not = { has_province_modifier = mojiazhuanjing_fort1
+						}
+						and = {
+							has_building = fort2
+							not = { has_province_modifier = mojiazhuanjing_fort2
+						}
+						and = {
+							has_building = fort3
+							not = { has_province_modifier = mojiazhuanjing_fort3
+						}
+						and = {
+							has_building = fort4
+							not = { has_province_modifier = mojiazhuanjing_fort4
+						}
+						and = {
+							has_building = fort5
+							not = { has_province_modifier = mojiazhuanjing_fort5
+						}
+						and = {
+							has_building = fort6
+							not = { has_province_modifier = mojiazhuanjing_fort6
+						}
+					}
+				}
+			}
+			any_owned = { 
+				limit = {
+					has_building = fort1
+					not = { has_province_modifier = mojiazhuanjing_fort1 }
+				}
+				add_province_modifier = { 
+					name = "mojiazhuanjing_fort1"
+					duration = -1
+				}
+				remove_province_modifier = mojiazhuanjing_fort2
+				remove_province_modifier = mojiazhuanjing_fort3
+				remove_province_modifier = mojiazhuanjing_fort4
+				remove_province_modifier = mojiazhuanjing_fort5
+				remove_province_modifier = mojiazhuanjing_fort6
+			}
+			any_owned = { 
+				limit = {
+					has_building = fort2
+					not = { has_province_modifier = mojiazhuanjing_fort2 }
+				}
+				add_province_modifier = { 
+					name = "mojiazhuanjing_fort2"
+					duration = -1
+				}
+				remove_province_modifier = mojiazhuanjing_fort1
+				remove_province_modifier = mojiazhuanjing_fort3
+				remove_province_modifier = mojiazhuanjing_fort4
+				remove_province_modifier = mojiazhuanjing_fort5
+				remove_province_modifier = mojiazhuanjing_fort6
+			}
+			any_owned = { 
+				limit = {
+					has_building = fort3
+					not = { has_province_modifier = mojiazhuanjing_fort3 }
+				}
+				add_province_modifier = { 
+					name = "mojiazhuanjing_fort3"
+					duration = -1
+				}
+				remove_province_modifier = mojiazhuanjing_fort1
+				remove_province_modifier = mojiazhuanjing_fort2
+				remove_province_modifier = mojiazhuanjing_fort4
+				remove_province_modifier = mojiazhuanjing_fort5
+				remove_province_modifier = mojiazhuanjing_fort6
+			}
+			any_owned = { 
+				limit = {
+					has_building = fort4
+					not = { has_province_modifier = mojiazhuanjing_fort4 }
+				}
+				add_province_modifier = { 
+					name = "mojiazhuanjing_fort4"
+					duration = -1
+				}
+				remove_province_modifier = mojiazhuanjing_fort1
+				remove_province_modifier = mojiazhuanjing_fort2
+				remove_province_modifier = mojiazhuanjing_fort3
+				remove_province_modifier = mojiazhuanjing_fort5
+				remove_province_modifier = mojiazhuanjing_fort6
+			}
+			any_owned = { 
+				limit = {
+					has_building = fort5
+					not = { has_province_modifier = mojiazhuanjing_fort5 }
+				}
+				add_province_modifier = { 
+					name = "mojiazhuanjing_fort5"
+					duration = -1
+				}
+				remove_province_modifier = mojiazhuanjing_fort1
+				remove_province_modifier = mojiazhuanjing_fort2
+				remove_province_modifier = mojiazhuanjing_fort3
+				remove_province_modifier = mojiazhuanjing_fort4
+				remove_province_modifier = mojiazhuanjing_fort6
+			}
+			any_owned = { 
+				limit = {
+					has_building = fort6
+					not = { has_province_modifier = mojiazhuanjing_fort6 }
+				}
+				add_province_modifier = { 
+					name = "mojiazhuanjing_fort6"
+					duration = -1
+				}
+				remove_province_modifier = mojiazhuanjing_fort1
+				remove_province_modifier = mojiazhuanjing_fort2
+				remove_province_modifier = mojiazhuanjing_fort3
+				remove_province_modifier = mojiazhuanjing_fort4
+				remove_province_modifier = mojiazhuanjing_fort5
+			}
+		}
+		any_country = {
+			limit = {
+				not = { has_country_flag = mojiazhuanjing }
+				any_owned_province = { 
+					or = {
+						has_province_modifier = mojiazhuanjing_fort1
+						has_province_modifier = mojiazhuanjing_fort2
+						has_province_modifier = mojiazhuanjing_fort3
+						has_province_modifier = mojiazhuanjing_fort4
+						has_province_modifier = mojiazhuanjing_fort5
+						has_province_modifier = mojiazhuanjing_fort6
+					}
+				}
+			}
+			any_owned = { 
+				limit = {
+					or = {
+						has_province_modifier = mojiazhuanjing_fort1
+						has_province_modifier = mojiazhuanjing_fort2
+						has_province_modifier = mojiazhuanjing_fort3
+						has_province_modifier = mojiazhuanjing_fort4
+						has_province_modifier = mojiazhuanjing_fort5
+						has_province_modifier = mojiazhuanjing_fort6
+					}
+				}
+				remove_province_modifier = mojiazhuanjing_fort1
+				remove_province_modifier = mojiazhuanjing_fort2
+				remove_province_modifier = mojiazhuanjing_fort3
+				remove_province_modifier = mojiazhuanjing_fort4
+				remove_province_modifier = mojiazhuanjing_fort5
+				remove_province_modifier = mojiazhuanjing_fort6
 			}
 		}
 	}
@@ -300,6 +514,9 @@ country_event = {
 	id = 290804
 	trigger = { 
 		tag = NPC
+		any_country = {
+			has_country_flag = fajiazhuanjing
+		}
 	}
 	mean_time_to_happen = { 
 		months = 0
@@ -312,118 +529,16 @@ country_event = {
 			limit = {
 				has_country_flag = fajiazhuanjing
 			}
+			# ---------- 叛乱精准区间 + 无冗余添加 ----------
+			# 负叛乱 -1 ~ -10 对应正面buff1~10
 			any_owned = { 
 				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen9
-				}
-				remove_province_modifier = fajiazhuanjingshengfen9
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen10"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen8
-				}
-				remove_province_modifier = fajiazhuanjingshengfen8
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen9"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen7
-				}
-				remove_province_modifier = fajiazhuanjingshengfen7
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen8"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen6
-				}
-				remove_province_modifier = fajiazhuanjingshengfen6
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen7"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen5
-				}
-				remove_province_modifier = fajiazhuanjingshengfen5
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen6"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen4
-				}
-				remove_province_modifier = fajiazhuanjingshengfen4
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen5"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen3
-				}
-				remove_province_modifier = fajiazhuanjingshengfen3
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen4"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen2
-				}
-				remove_province_modifier = fajiazhuanjingshengfen2
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen3"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
-					has_province_modifier = fajiazhuanjingshengfen1
-				}
-				remove_province_modifier = fajiazhuanjingshengfen1
-				add_province_modifier = { 
-					name = "fajiazhuanjingshengfen2"
-					duration = -1
-				}
-			}
-			any_owned = { 
-				limit = {
-					not = { revolt_risk = 1 }
+					pure_revolt_risk = -1
+					not = { pure_revolt_risk = 0 }
 					not = { has_province_modifier = fajiazhuanjingshengfen1 }
-					not = { has_province_modifier = fajiazhuanjingshengfen2 }
-					not = { has_province_modifier = fajiazhuanjingshengfen3 }
-					not = { has_province_modifier = fajiazhuanjingshengfen4 }
-					not = { has_province_modifier = fajiazhuanjingshengfen5 }
-					not = { has_province_modifier = fajiazhuanjingshengfen6 }
-					not = { has_province_modifier = fajiazhuanjingshengfen7 }
-					not = { has_province_modifier = fajiazhuanjingshengfen8 }
-					not = { has_province_modifier = fajiazhuanjingshengfen9 }
-					not = { has_province_modifier = fajiazhuanjingshengfen10 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfen1"
@@ -432,48 +547,141 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 2
+					pure_revolt_risk = -2
+					not = { pure_revolt_risk = -1 }
+					not = { has_province_modifier = fajiazhuanjingshengfen2 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfen1
-				remove_province_modifier = fajiazhuanjingshengfen2
-				remove_province_modifier = fajiazhuanjingshengfen3
-				remove_province_modifier = fajiazhuanjingshengfen4
-				remove_province_modifier = fajiazhuanjingshengfen5
-				remove_province_modifier = fajiazhuanjingshengfen6
-				remove_province_modifier = fajiazhuanjingshengfen7
-				remove_province_modifier = fajiazhuanjingshengfen8
-				remove_province_modifier = fajiazhuanjingshengfen9
-				remove_province_modifier = fajiazhuanjingshengfen10
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen2"
+					duration = -1
+				}
 			}
 			any_owned = { 
 				limit = {
-					not = { revolt_risk = 2 }
+					pure_revolt_risk = -3
+					not = { pure_revolt_risk = -2 }
+					not = { has_province_modifier = fajiazhuanjingshengfen3 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen3"
+					duration = -1
+				}
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 2
-					not = { revolt_risk = 3 }
+					pure_revolt_risk = -4
+					not = { pure_revolt_risk = -3 }
+					not = { has_province_modifier = fajiazhuanjingshengfen4 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen4"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = -5
+					not = { pure_revolt_risk = -4 }
+					not = { has_province_modifier = fajiazhuanjingshengfen5 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen5"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = -6
+					not = { pure_revolt_risk = -5 }
+					not = { has_province_modifier = fajiazhuanjingshengfen6 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen6"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = -7
+					not = { pure_revolt_risk = -6 }
+					not = { has_province_modifier = fajiazhuanjingshengfen7 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen7"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = -8
+					not = { pure_revolt_risk = -7 }
+					not = { has_province_modifier = fajiazhuanjingshengfen8 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen8"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = -9
+					not = { pure_revolt_risk = -8 }
+					not = { has_province_modifier = fajiazhuanjingshengfen9 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen9"
+					duration = -1
+				}
+			}
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = -10
+					not = { pure_revolt_risk = -9 }
+					not = { has_province_modifier = fajiazhuanjingshengfen10 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				add_province_modifier = { 
+					name = "fajiazhuanjingshengfen10"
+					duration = -1
+				}
+			}
+
+			# 正叛乱 1~10 对应负面buffjian1~10
+			any_owned = { 
+				limit = {
+					pure_revolt_risk = 1
+					not = { pure_revolt_risk = 2 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian1 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian1"
 					duration = -1
@@ -481,18 +689,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 3
-					not = { revolt_risk = 4 }
+					pure_revolt_risk = 2
+					not = { pure_revolt_risk = 3 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian2 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian2"
 					duration = -1
@@ -500,18 +703,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 4
-					not = { revolt_risk = 5 }
+					pure_revolt_risk = 3
+					not = { pure_revolt_risk = 4 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian3 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian3"
 					duration = -1
@@ -519,18 +717,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 5
-					not = { revolt_risk = 6 }
+					pure_revolt_risk = 4
+					not = { pure_revolt_risk = 5 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian4 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian4"
 					duration = -1
@@ -538,18 +731,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 6
-					not = { revolt_risk = 7 }
+					pure_revolt_risk = 5
+					not = { pure_revolt_risk = 6 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian5 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian5"
 					duration = -1
@@ -557,18 +745,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 7
-					not = { revolt_risk = 8 }
+					pure_revolt_risk = 6
+					not = { pure_revolt_risk = 7 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian6 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian6"
 					duration = -1
@@ -576,17 +759,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 8
-					not = { revolt_risk = 9 }
+					pure_revolt_risk = 7
+					not = { pure_revolt_risk = 8 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian7 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian7"
 					duration = -1
@@ -594,18 +773,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 9
-					not = { revolt_risk = 10 }
+					pure_revolt_risk = 8
+					not = { pure_revolt_risk = 9 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian8 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian9
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian8"
 					duration = -1
@@ -613,18 +787,13 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 10
-					not = { revolt_risk = 11 }
+					pure_revolt_risk = 9
+					not = { pure_revolt_risk = 10 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian9 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian10
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian9"
 					duration = -1
@@ -632,21 +801,320 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					revolt_risk = 11
+					pure_revolt_risk = 10
+					not = { pure_revolt_risk = 11 }
+					not = { has_province_modifier = fajiazhuanjingshengfenjian10 }
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
 				}
-				remove_province_modifier = fajiazhuanjingshengfenjian1
-				remove_province_modifier = fajiazhuanjingshengfenjian2
-				remove_province_modifier = fajiazhuanjingshengfenjian3
-				remove_province_modifier = fajiazhuanjingshengfenjian4
-				remove_province_modifier = fajiazhuanjingshengfenjian5
-				remove_province_modifier = fajiazhuanjingshengfenjian6
-				remove_province_modifier = fajiazhuanjingshengfenjian7
-				remove_province_modifier = fajiazhuanjingshengfenjian8
-				remove_province_modifier = fajiazhuanjingshengfenjian9
 				add_province_modifier = { 
 					name = "fajiazhuanjingshengfenjian10"
 					duration = -1
 				}
+			}
+
+			# ---------- 不在对应区间 且 有buff 则删除 ----------
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -1
+							not = { pure_revolt_risk = 0 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen1
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen1
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -2
+							not = { pure_revolt_risk = -1 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen2
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen2
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -3
+							not = { pure_revolt_risk = -2 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen3
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen3
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -4
+							not = { pure_revolt_risk = -3 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen4
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen4
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -5
+							not = { pure_revolt_risk = -4 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen5
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen5
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -6
+							not = { pure_revolt_risk = -5 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen6
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen6
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -7
+							not = { pure_revolt_risk = -6 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen7
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen7
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -8
+							not = { pure_revolt_risk = -7 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen8
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen8
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -9
+							not = { pure_revolt_risk = -8 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen9
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen9
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = -10
+							not = { pure_revolt_risk = -9 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfen10
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfen10
+			}
+
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 1
+							not = { pure_revolt_risk = 2 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian1
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian1
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 2
+							not = { pure_revolt_risk = 3 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian2
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian2
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 3
+							not = { pure_revolt_risk = 4 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian3
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian3
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 4
+							not = { pure_revolt_risk = 5 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian4
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian4
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 5
+							not = { pure_revolt_risk = 6 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian5
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian5
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 6
+							not = { pure_revolt_risk = 7 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian6
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian6
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 7
+							not = { pure_revolt_risk = 8 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian7
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian7
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 8
+							not = { pure_revolt_risk = 9 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian8
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian8
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 9
+							not = { pure_revolt_risk = 10 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian9
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian9
+			}
+			any_owned = {
+				limit = {
+					not = {
+						and = {
+							pure_revolt_risk = 10
+							not = { pure_revolt_risk = 11 }
+						}
+					}
+					has_province_modifier = fajiazhuanjingshengfenjian10
+					has_province_modifier = monarch_territory
+					is_core = this
+					religion = fajia
+				}
+				remove_province_modifier = fajiazhuanjingshengfenjian10
 			}
 		}
 	}
@@ -943,7 +1411,6 @@ country_event = {
 	id = 290809
 	#墨家工坊
 	trigger = { 
-		is_capital = yes
 		has_country_flag = mojiazhuanjing
 		OR = {
 			not = {
@@ -966,6 +1433,65 @@ country_event = {
 		any_owned = { 
 			limit = { 
 				has_province_flag = mojiagongfang
+				owner = {
+					or = {
+						not = { unit_type = mojia }
+						not = { land_tech = 46 }
+					}
+				}
+			}
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+			mojia_chariot_46 = current
+		}
+		any_owned = { 
+			limit = { 
+				has_province_flag = mojiagongfang
+				owner = {
+					unit_type = mojia
+					land_tech = 46
+					not = { land_tech = 50 }
+				}
+			}
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+			mojia_chariot_50 = current
+		}
+		any_owned = { 
+			limit = { 
+				has_province_flag = mojiagongfang
+				owner = {
+					unit_type = mojia
+					land_tech = 50
+					not = { land_tech = 55 }
+				}
+			}
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+			mojia_chariot_55 = current
+		}
+		any_owned = { 
+			limit = { 
+				has_province_flag = mojiagongfang
+				owner = {
+					unit_type = mojia
+					land_tech = 55
+				}
 			}
 			mojia_chariot_60 = current
 			mojia_chariot_60 = current
@@ -975,6 +1501,113 @@ country_event = {
 			mojia_chariot_60 = current
 			mojia_chariot_60 = current
 			mojia_chariot_60 = current
+		}
+	}
+}
+country_event = { 
+	id = 290810
+	#君子六艺进阶
+	trigger = { 
+		has_country_flag = rujiazhuanjing
+		not = { has_country_flag = rujiazhuanjing_jinjie }
+		num_of_religion = { religion = rujia value = 100 } 
+	}
+	mean_time_to_happen = { 
+		months = 0
+	}
+	title = "EVTNAME290810"
+	desc = "EVTDESC290810"
+	option = { 
+		name = "EVTOPTA290810"
+		set_country_flag = rujiazhuanjing_jinjie
+		remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+		remove_country_modifier = rujiazhuanjing_junziliuyi_li
+		remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+		remove_country_modifier = rujiazhuanjing_junziliuyi_she
+		remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+		remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+		remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+	}
+}
+province_event = { 
+	id = 290811
+	#墨家要塞
+	trigger = { 
+		#owner = { has_country_flag = mojiazhuanjing }
+		not = { has_building = fort4 }
+	}
+	mean_time_to_happen = { 
+		months = 120
+		modifier = {
+			factor = 0.8
+			offensive_defensive = 1
+		}
+		modifier = {
+			factor = 0.8
+			offensive_defensive = 2
+		}
+		modifier = {
+			factor = 0.8
+			offensive_defensive = 3
+		}
+		modifier = {
+			factor = 0.8
+			offensive_defensive = 4
+		}
+		modifier = {
+			factor = 0.8
+			offensive_defensive = 5
+		}
+	}
+	title = "EVTNAME290811"
+	desc = "EVTDESC290811"
+	immediate = {
+		set_province_flag = mojiazhuanjing_yaosaibiaoji
+	}
+	option = { 
+		name = "EVTOPTA290811"
+		owner = {
+			any_owned = { 
+				limit = { 
+					has_province_flag = mojiazhuanjing_yaosaibiaoji
+					has_building = fort3
+					not = { has_building = fort4 }
+				}
+				add_building = fort4
+				clr_province_flag = mojiazhuanjing_yaosaibiaoji
+			}
+		}
+		owner = {
+			any_owned = { 
+				limit = { 
+					has_province_flag = mojiazhuanjing_yaosaibiaoji
+					has_building = fort2
+					not = { has_building = fort3 }
+				}
+				add_building = fort3
+				clr_province_flag = mojiazhuanjing_yaosaibiaoji
+			}
+		}
+		owner = {
+			any_owned = { 
+				limit = { 
+					has_province_flag = mojiazhuanjing_yaosaibiaoji
+					has_building = fort1
+					not = { has_building = fort2 }
+				}
+				add_building = fort2
+				clr_province_flag = mojiazhuanjing_yaosaibiaoji
+			}
+		}
+		owner = {
+			any_owned = { 
+				limit = { 
+					has_province_flag = mojiazhuanjing_yaosaibiaoji
+					not = { has_building = fort1 }
+				}
+				add_building = fort1
+				clr_province_flag = mojiazhuanjing_yaosaibiaoji
+			}
 		}
 	}
 }

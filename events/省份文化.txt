@@ -170,6 +170,24 @@ province_event = {
 				has_owner_culture = yes
 			}
 		}
+		modifier = {
+			factor = 0.16
+			or = {
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie }
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_shu }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			or = {
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_junheng }
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie }
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie }
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie }
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie }
+				owner = { has_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie }
+			}
+		}
 	}
 
 	title = "EVTNAME869"

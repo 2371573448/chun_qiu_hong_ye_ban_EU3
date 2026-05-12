@@ -3,6 +3,7 @@ cultural_decisions = {
 	#公子成人礼
 	chengrenli = {
 		potential = {
+			has_country_flag = xianyinjueyi_wenhua
 			has_heir = yes
 			heir_age = 12
 			not = {
@@ -31,6 +32,7 @@ cultural_decisions = {
 	#编写国史
 	bianxieguoshi = {
 		potential = {
+			has_country_flag = xianyinjueyi_wenhua
 			not = {
 				has_country_modifier = guoshi
 			}
@@ -56,6 +58,7 @@ cultural_decisions = {
 	#收容周朝移民
 	court_byzantine_refugees = {
 		potential = {
+			has_country_flag = xianyinjueyi_wenhua
 			NOT = {
 				has_country_modifier = zhouchaoyimin
 			}
@@ -84,6 +87,7 @@ cultural_decisions = {
 	#杂技百戏
 	zajibaixi = {
 		potential = {
+			has_country_flag = xianyinjueyi_wenhua
 			not = {
 				has_country_modifier = zajibaixi
 			}
@@ -112,6 +116,7 @@ cultural_decisions = {
 	#投资青铜器铸造
 	touzizhuzao = {
 		potential = {
+			has_country_flag = xianyinjueyi_wenhua
 			religion_group = christian
 			not = {
 				has_country_modifier = touzizhuzao
@@ -143,8 +148,9 @@ cultural_decisions = {
 	#编钟文化
 	bianzhong = {
 		potential = {
+			has_country_flag = xianyinjueyi_wenhua
 			religion_group = christian
-                        not = {
+			not = {
 				has_country_modifier = bianzhong
 			}
 		}
@@ -173,6 +179,7 @@ cultural_decisions = {
 	#广开言路
 	guangkaiyanlu = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_zhongyang
 			has_country_flag = shiguanzhidu
 			NOT = { has_country_modifier = guangkaiyanlu }
 		}
@@ -198,6 +205,7 @@ cultural_decisions = {
 	#广纳贤臣
 	guangnaxianchen = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_zhongyang
 			has_country_flag = shiguanzhidu
 		}
 		allow = { 

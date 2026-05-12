@@ -20,3 +20,7 @@ Malformed token: {, near line: 72
 " in file: "history\Countries\xnu - пые╚.txt" near line: 22
 [persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
 " in file: "history\Countries\xnu - пые╚.txt" near line: 22
+[persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
+" in file: "history\Countries\xnu - пые╚.txt" near line: 22
+[persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
+" in file: "history\Countries\xnu - пые╚.txt" near line: 22

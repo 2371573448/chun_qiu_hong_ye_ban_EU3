@@ -2089,3 +2089,34 @@ country_event = {
 		}
 	}
 }
+country_event = { 
+	id = 3912
+	trigger = { 
+		tag = NPC
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	title = "EVTNAME3912"
+	desc = "EVTDESC3912"
+	option = { 
+		name = "EVTOPTA3912"
+		any_country = {
+			set_variable = {
+				which = quanguorenkou
+				value = 0
+			}
+			any_owned = { 
+				limit = { 
+					religion = daojia
+				}
+				owner = {
+					change_variable = {
+						which = quanguorenkou
+						value = 0.5
+					}
+				}
+			}
+		}
+	}
+}

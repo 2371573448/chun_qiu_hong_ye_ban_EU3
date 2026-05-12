@@ -1,0 +1,615 @@
+cultural_decisions = { 
+	# 一键全开（开启总开关及所有子功能）
+	xianyinjueyi_quankai = {
+		potential = {
+			or = {
+				not = { has_country_flag = xianyinjueyi_zongkaiguan }
+				not = { has_country_flag = xianyinjueyi_guanchamanzu }
+				not = { has_country_flag = xianyinjueyi_qianyizhongdian }
+				not = { has_country_flag = xianyinjueyi_xiyinyimin }
+				not = { has_country_flag = xianyinjueyi_yimintonghua }
+				not = { has_country_flag = xianyinjueyi_kaifamanhuang }
+				not = { has_country_flag = xianyinjueyi_wenhuajianzhu }
+				not = { has_country_flag = xianyinjueyi_shelijunzhi }
+				not = { has_country_flag = xianyinjueyi_lingdiguanli }
+				not = { has_country_flag = xianyinjueyi_guanbizhongxin }
+				not = { has_country_flag = xianyinjueyi_anzhirenkou }
+				not = { has_country_flag = xianyinjueyi_anzhiliumin }
+				not = { has_country_flag = xianyinjueyi_wenhua }
+				not = { has_country_flag = xianyinjueyi_zhongyang }
+				not = { has_country_flag = xianyinjueyi_jungai }
+				not = { has_country_flag = xianyinjueyi_gaige }
+				not = { has_country_flag = xianyinjueyi_linian }
+				not = { has_country_flag = xianyinjueyi_xingdong }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_zongkaiguan
+			set_country_flag = xianyinjueyi_guanchamanzu
+			set_country_flag = xianyinjueyi_qianyizhongdian
+			set_country_flag = xianyinjueyi_xiyinyimin
+			set_country_flag = xianyinjueyi_yimintonghua
+			set_country_flag = xianyinjueyi_kaifamanhuang
+			set_country_flag = xianyinjueyi_wenhuajianzhu
+			set_country_flag = xianyinjueyi_shelijunzhi
+			set_country_flag = xianyinjueyi_lingdiguanli
+			set_country_flag = xianyinjueyi_guanbizhongxin
+			set_country_flag = xianyinjueyi_anzhirenkou
+			set_country_flag = xianyinjueyi_anzhiliumin
+			set_country_flag = xianyinjueyi_wenhua
+			set_country_flag = xianyinjueyi_zhongyang
+			set_country_flag = xianyinjueyi_jungai
+			set_country_flag = xianyinjueyi_gaige
+			set_country_flag = xianyinjueyi_linian
+			set_country_flag = xianyinjueyi_xingdong
+		}
+		ai_will_do = { 
+			factor = 10
+		}
+	}
+	# 一键全关（关闭总开关及所有子功能）
+	xianyinjueyi_quanguan = {
+		potential = {
+			ai = no
+			or = {
+				has_country_flag = xianyinjueyi_zongkaiguan
+				has_country_flag = xianyinjueyi_guanchamanzu
+				has_country_flag = xianyinjueyi_qianyizhongdian
+				has_country_flag = xianyinjueyi_xiyinyimin
+				has_country_flag = xianyinjueyi_yimintonghua
+				has_country_flag = xianyinjueyi_kaifamanhuang
+				has_country_flag = xianyinjueyi_wenhuajianzhu
+				has_country_flag = xianyinjueyi_shelijunzhi
+				has_country_flag = xianyinjueyi_lingdiguanli
+				has_country_flag = xianyinjueyi_guanbizhongxin
+				has_country_flag = xianyinjueyi_anzhirenkou
+				has_country_flag = xianyinjueyi_anzhiliumin
+				has_country_flag = xianyinjueyi_wenhua
+				has_country_flag = xianyinjueyi_zhongyang
+				has_country_flag = xianyinjueyi_jungai
+				has_country_flag = xianyinjueyi_gaige
+				has_country_flag = xianyinjueyi_linian
+				has_country_flag = xianyinjueyi_xingdong
+			}
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_zongkaiguan
+			clr_country_flag = xianyinjueyi_guanchamanzu
+			clr_country_flag = xianyinjueyi_qianyizhongdian
+			clr_country_flag = xianyinjueyi_xiyinyimin
+			clr_country_flag = xianyinjueyi_yimintonghua
+			clr_country_flag = xianyinjueyi_kaifamanhuang
+			clr_country_flag = xianyinjueyi_wenhuajianzhu
+			clr_country_flag = xianyinjueyi_shelijunzhi
+			clr_country_flag = xianyinjueyi_lingdiguanli
+			clr_country_flag = xianyinjueyi_guanbizhongxin
+			clr_country_flag = xianyinjueyi_anzhirenkou
+			clr_country_flag = xianyinjueyi_anzhiliumin
+			clr_country_flag = xianyinjueyi_wenhua
+			clr_country_flag = xianyinjueyi_zhongyang
+			clr_country_flag = xianyinjueyi_jungai
+			clr_country_flag = xianyinjueyi_gaige
+			clr_country_flag = xianyinjueyi_linian
+			clr_country_flag = xianyinjueyi_xingdong
+		}
+	}
+	# 总开关
+	xianyinjueyi_zongkaiguan_kai = {
+		potential = {
+			ai = no
+			not = { 
+				has_country_flag = xianyinjueyi_zongkaiguan
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_zongkaiguan
+		}
+	}
+	xianyinjueyi_zongkaiguan_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_zongkaiguan
+		}
+	}
+	# 宗教决议
+	# 君子六艺
+	xianyinjueyi_junziliuyi_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_junziliuyi
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_junziliuyi
+		}
+	}
+	xianyinjueyi_junziliuyi_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_junziliuyi
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_junziliuyi
+		}
+	}
+	# 中央决议
+	# 文化
+	xianyinjueyi_wenhua_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_wenhua
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_wenhua
+		}
+	}
+	xianyinjueyi_wenhua_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_wenhua
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_wenhua
+		}
+	}
+	# 中央
+	xianyinjueyi_zhongyang_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_zhongyang
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_zhongyang
+		}
+	}
+	xianyinjueyi_zhongyang_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_zhongyang
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_zhongyang
+		}
+	}
+	# 国家决议
+	# 军改
+	xianyinjueyi_jungai_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_jungai
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_jungai
+		}
+	}
+	xianyinjueyi_jungai_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_jungai
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_jungai
+		}
+	}
+	# 改革
+	xianyinjueyi_gaige_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_gaige
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_gaige
+		}
+	}
+	xianyinjueyi_gaige_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_gaige
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_gaige
+		}
+	}
+	# 理念
+	xianyinjueyi_linian_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_linian
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_linian
+		}
+	}
+	xianyinjueyi_linian_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_linian
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_linian
+		}
+	}
+	# 行动
+	xianyinjueyi_xingdong_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_xingdong
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_xingdong
+		}
+	}
+	xianyinjueyi_xingdong_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_xingdong
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_xingdong
+		}
+	}
+	# 省份决议
+	# 观察蛮族
+	xianyinjueyi_guanchamanzu_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_guanchamanzu
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_guanchamanzu
+		}
+	}
+	xianyinjueyi_guanchamanzu_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_guanchamanzu
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_guanchamanzu
+		}
+	}
+	# 迁移重点
+	xianyinjueyi_qianyizhongdian_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_qianyizhongdian
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_qianyizhongdian
+		}
+	}
+	xianyinjueyi_qianyizhongdian_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_qianyizhongdian
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_qianyizhongdian
+		}
+	}
+	# 吸引移民
+	xianyinjueyi_xiyinyimin_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_xiyinyimin
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_xiyinyimin
+		}
+	}
+	xianyinjueyi_xiyinyimin_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_xiyinyimin
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_xiyinyimin
+		}
+	}
+	# 移民同化
+	xianyinjueyi_yimintonghua_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_yimintonghua
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_yimintonghua
+		}
+	}
+	xianyinjueyi_yimintonghua_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_yimintonghua
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_yimintonghua
+		}
+	}
+	# 开发蛮荒
+	xianyinjueyi_kaifamanhuang_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_kaifamanhuang
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_kaifamanhuang
+		}
+	}
+	xianyinjueyi_kaifamanhuang_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_kaifamanhuang
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_kaifamanhuang
+		}
+	}
+	# 文化建筑
+	xianyinjueyi_wenhuajianzhu_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_wenhuajianzhu
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_wenhuajianzhu
+		}
+	}
+	xianyinjueyi_wenhuajianzhu_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_wenhuajianzhu
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_wenhuajianzhu
+		}
+	}
+	# 设立郡治
+	xianyinjueyi_shelijunzhi_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_shelijunzhi
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_shelijunzhi
+		}
+	}
+	xianyinjueyi_shelijunzhi_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_shelijunzhi
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_shelijunzhi
+		}
+	}
+	# 领地管理
+	xianyinjueyi_lingdiguanli_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_lingdiguanli
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_lingdiguanli
+		}
+	}
+	xianyinjueyi_lingdiguanli_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_lingdiguanli
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_lingdiguanli
+		}
+	}
+	# 关闭中心
+	xianyinjueyi_guanbizhongxin_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_guanbizhongxin
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_guanbizhongxin
+		}
+	}
+	xianyinjueyi_guanbizhongxin_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_guanbizhongxin
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_guanbizhongxin
+		}
+	}
+	# 安置人口
+	xianyinjueyi_anzhirenkou_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_anzhirenkou
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_anzhirenkou
+		}
+	}
+	xianyinjueyi_anzhirenkou_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_anzhirenkou
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_anzhirenkou
+		}
+	}
+	# 安置流民
+	xianyinjueyi_anzhiliumin_kai = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			not = { 
+				has_country_flag = xianyinjueyi_anzhiliumin
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = xianyinjueyi_anzhiliumin
+		}
+	}
+	xianyinjueyi_anzhiliumin_guan = {
+		potential = {
+			ai = no
+			has_country_flag = xianyinjueyi_zongkaiguan
+			has_country_flag = xianyinjueyi_anzhiliumin
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = xianyinjueyi_anzhiliumin
+		}
+	}
+}

@@ -1062,6 +1062,7 @@ ivory_three = {
 guodujiquan = { 
 	potential = { 
 		ai = no
+		not = { has_country_flag = fajiazhuanjing }
 	}
 	trigger = { 
 		or = { 
@@ -8073,6 +8074,7 @@ WY_buff2 = {
 JUNZILIUYI_buff = {
 	potential = { 
 		religion = rujia    
+		not = { religion = rujia }
 	}
 	trigger = {   idea = vetting
                                           religion = rujia  

@@ -2,6 +2,7 @@ province_decisions = {
 	# ¹ÄÀøÒÆÃñ
 	imguliyimin = { 
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_xiyinyimin }
 			not = { 
 				has_province_modifier = imguliyimin
 			}
@@ -63,6 +64,7 @@ province_decisions = {
 	set_sacked_pop1 = { 
 		potential = { 
 			owner = { 
+				has_country_flag = xianyinjueyi_anzhirenkou
 				has_country_modifier = lueduorenkou1
 			}
 			citysize = 750
@@ -250,6 +252,7 @@ province_decisions = {
 	set_sacked_pop2 = { 
 		potential = { 
 			owner = { 
+				has_country_flag = xianyinjueyi_anzhirenkou
 				has_country_modifier = lueduorenkou2
 			}
 			citysize = 1500
@@ -437,6 +440,7 @@ province_decisions = {
 	set_sacked_pop3 = { 
 		potential = { 
 			owner = { 
+				has_country_flag = xianyinjueyi_anzhirenkou
 				has_country_modifier = lueduorenkou3
 			}
 			citysize = 3000

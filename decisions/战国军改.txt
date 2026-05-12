@@ -2,6 +2,7 @@ country_decisions = {
 	# 李悝变法
 	likuibianfa1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -54,6 +55,7 @@ country_decisions = {
 	# 李悝变法
 	likuibianfa2 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -89,6 +91,7 @@ country_decisions = {
 	# AI李悝变法
 	likuibianfa3 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -120,6 +123,7 @@ country_decisions = {
 	# 吴起变法
 	wuqibianfa1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -178,6 +182,7 @@ country_decisions = {
 	# 吴起变法
 	wuqibianfa2 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -234,6 +239,7 @@ country_decisions = {
 	# AI吴起变法
 	wuqibianfa3 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -264,6 +270,7 @@ country_decisions = {
 	# 孙膑治军
 	sunbinzhijun1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -306,6 +313,7 @@ country_decisions = {
 	# 孙膑治军
 	sunbinzhijun2 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -345,6 +353,7 @@ country_decisions = {
 	# AI孙膑治军
 	sunbinzhijun3 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -376,6 +385,7 @@ country_decisions = {
 	# 申不害变法
 	shenbuhaibianfa1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -418,6 +428,7 @@ country_decisions = {
 	# 申不害变法
 	shenbuhaibianfa2 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -456,6 +467,7 @@ country_decisions = {
 	# AI申不害变法
 	shenbuhaibianfa3 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -486,6 +498,7 @@ country_decisions = {
 	# 商鞅变法
 	shangyangbianfa1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -539,6 +552,7 @@ country_decisions = {
 	# 商鞅变法
 	shangyangbianfa2 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -591,6 +605,7 @@ country_decisions = {
 	# AI商鞅变法
 	shangyangbianfa3 = {
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -620,6 +635,7 @@ country_decisions = {
 	# 胡服骑射
 	hufuqishe1 = {
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -681,6 +697,7 @@ country_decisions = {
 	# 胡服骑射
 	hufuqishe2 = {
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -740,6 +757,7 @@ country_decisions = {
 	# AI胡服骑射
 	hufuqishe3 = {
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -774,6 +792,7 @@ country_decisions = {
 	# 昭王图强
 	zhaowangtuqiang1 ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -815,6 +834,7 @@ country_decisions = {
 	# 昭王图强
 	zhaowangtuqiang2 ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -850,6 +870,7 @@ country_decisions = {
 	# 昭王图强
 	zhaowangtuqiang3 ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			has_country_flag = sitianzhidu
 			NOT = { 
@@ -880,6 +901,7 @@ country_decisions = {
 	# 卧薪尝胆
 	woxinchangdan1 ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			#has_country_flag = sitianzhidu
 			NOT = { 
@@ -917,6 +939,7 @@ country_decisions = {
 	}
 	tongzhougongji = { 
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_country_modifier = yiyidailao
 			not = { has_country_modifier = tongzhougongji }
 		}
@@ -935,6 +958,7 @@ country_decisions = {
 	}
 	shuangyonggongjian = { 
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_country_modifier = yiyidailao
 		}
 		allow = {
@@ -952,6 +976,7 @@ country_decisions = {
 	# 殷商军改
 	fuguyinshang ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			#has_country_flag = sitianzhidu
 			NOT = { 
@@ -1002,6 +1027,7 @@ country_decisions = {
 	}
 	fuguyinshang_2 ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			owns = 124
 			has_country_modifier = yinshanggaige
 			not = { tag = YSG }
@@ -1031,6 +1057,7 @@ country_decisions = {
 	# 墨家军改
 	mojiajungai ={
 		potential = {
+			has_country_flag = xianyinjueyi_jungai
 			has_global_flag = zhanguokaishi
 			#has_country_flag = sitianzhidu
 			NOT = { 
@@ -1064,6 +1091,7 @@ country_decisions = {
 	# 总动员
 	qiangzheng = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_xingdong
 			has_country_flag = mil_reform2
 			NOT = { has_country_modifier = qiangzheng }
 		}
@@ -1086,6 +1114,7 @@ country_decisions = {
 	}
 	total_war = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_xingdong
 			has_country_flag = mil_reform2
 			not = { 
 				has_country_modifier = total_war

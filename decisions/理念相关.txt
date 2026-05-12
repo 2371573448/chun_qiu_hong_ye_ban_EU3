@@ -2,6 +2,7 @@ cultural_decisions = {
 	# 游说诸侯
 	youshui = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			idea = press_gangs
 		}
 		allow = { 
@@ -25,6 +26,7 @@ cultural_decisions = {
 country_decisions = { 
 	jianchagongjia = {
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			or = {
 				idea = national_bank
 				idea = shrewd_commerce_practise
@@ -46,6 +48,7 @@ country_decisions = {
 	}
 	jianchashiqing = {
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			or = {
 				idea = national_bank
 				idea = shrewd_commerce_practise
@@ -67,6 +70,7 @@ country_decisions = {
 	}
 	jianchazhixia = {
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			or = {
 				idea = national_bank
 				idea = shrewd_commerce_practise
@@ -88,6 +92,7 @@ country_decisions = {
 	}
 	jianchaguoduzhixia = {
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			or = {
 				idea = national_bank
 				idea = shrewd_commerce_practise
@@ -110,6 +115,7 @@ country_decisions = {
 	dizhangjicheng = { 
 	#嫡长继承
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			idea = grand_navy
 			government = monarchy
 			is_lesser_in_union = no
@@ -139,6 +145,7 @@ country_decisions = {
 	guangfanyoushui = { 
 		# 广泛游说诸侯
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			OR = { 
 				year = 2150
 				AND = { 
@@ -183,6 +190,7 @@ country_decisions = {
 	dongyuansimubudui = { 
 	# 动员私募部队
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			idea = battlefield_commisions
 			government = monarchy
 			NOT = { 
@@ -256,6 +264,7 @@ country_decisions = {
 country_decisions = { 
 	ruiyibianfakai = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			ai=no
 			not = { 
 				has_country_flag = ruiyigaige
@@ -276,6 +285,7 @@ country_decisions = {
 country_decisions = { 
 	ruiyibianfaguan = {
 		potential = {
+			has_country_flag = xianyinjueyi_linian
 			ai=no
 			has_country_flag = ruiyigaige
 		}
@@ -729,6 +739,7 @@ country_decisions = {
 country_decisions = { 
 	touziguanxuekai = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			idea = ecumenism
 			NOT = { 
 				has_country_modifier = touziguanxue
@@ -748,6 +759,7 @@ country_decisions = {
 	}
 	touziguanxueguan = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			idea = ecumenism
 			has_country_modifier = touziguanxue
 		}
@@ -762,6 +774,7 @@ country_decisions = {
 province_decisions = { 
 	mofeiwangtu = {
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_linian }
 			idea = naval_glory
 			not = { idea = naval_glory }
 		}

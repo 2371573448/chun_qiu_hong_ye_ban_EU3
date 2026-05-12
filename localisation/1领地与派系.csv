@@ -146,6 +146,8 @@ set_monarch_territory_title;没收封臣封地;;;;;;;;;;X
 set_monarch_territory_desc;国家将实行更加强硬的集权措施，以失德或过失的理由没收这封地，将有利于这一政策的施行;;;;;;;;;;X
 set_monarch_territory2_title;没收封臣封地;;;;;;;;;;X
 set_monarch_territory2_desc;国家将实行更加强硬的集权措施，以失德或过失的理由没收这封地，将有利于这一政策的施行;;;;;;;;;;X
+set_monarch_territory3_title;没收封臣封地;;;;;;;;;;X
+set_monarch_territory3_desc;国家将实行更加强硬的集权措施，以失德或过失的理由没收这封地，将有利于这一政策的施行;;;;;;;;;;X
 shiqingzhuanhua_title;士卿转化;;;;;;;;;;X
 shiqingzhuanhua_desc;此地贵族已不符合我国利益，君主可改变这一切;;;;;;;;;;X
 gongjiazhuanhua_title;公家转化;;;;;;;;;;X

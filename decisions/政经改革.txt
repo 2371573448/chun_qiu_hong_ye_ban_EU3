@@ -3,6 +3,7 @@ country_decisions = {
 	zongfazhidu1 = { 
 		# 宗法制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = zongfazhidu
 			}
@@ -51,6 +52,7 @@ country_decisions = {
 	zongfazhidu2 = { 
 		# 宗法制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = zongfazhidu
 			}
@@ -93,6 +95,7 @@ country_decisions = {
 	shiguanzhidu1 = { 
 		# 世官制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = shiguanzhidu
 			}
@@ -140,6 +143,7 @@ country_decisions = {
 	shiguanzhidu2 = { 
 		# 世官制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = shiguanzhidu
 			}
@@ -185,6 +189,7 @@ country_decisions = {
 	fengjunzhidu1 = { 
 		# 封君制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = fengjunzhidu
 			}
@@ -237,6 +242,7 @@ country_decisions = {
 	fengjunzhidu2 = { 
 		# 封君制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = fengjunzhidu
 			}
@@ -287,6 +293,7 @@ country_decisions = {
 	falvzhidu1 = { 
 		# 法律制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = falvzhidu
 			}
@@ -337,6 +344,7 @@ country_decisions = {
 	falvzhidu2 = { 
 		# 法律制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = falvzhidu
 			}
@@ -385,6 +393,7 @@ country_decisions = {
 	dubizhidu1 = { 
 		# 都鄙制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = dubizhidu
 			}
@@ -429,6 +438,7 @@ country_decisions = {
 	dubizhidu2 = { 
 		# 都鄙制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = dubizhidu
 			}
@@ -470,6 +480,7 @@ country_decisions = {
 	junxianzhidu1 = { 
 		# 郡县制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = junxianzhidu
 			}
@@ -529,6 +540,7 @@ country_decisions = {
 	junxianzhidu2 = { 
 		# 郡县制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = junxianzhidu
 			}
@@ -586,6 +598,7 @@ country_decisions = {
 	hujizhidu1 = { 
 		# 户籍制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = hujizhidu
 			}
@@ -652,6 +665,7 @@ country_decisions = {
 	hujizhidu2 = { 
 		# 户籍制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = hujizhidu
 			}
@@ -711,6 +725,7 @@ country_decisions = {
 	guanliaozhidu1 = { 
 		# 官僚制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = guanliaozhidu
 			}
@@ -769,6 +784,7 @@ country_decisions = {
 	guanliaozhidu2 = { 
 		# 官僚制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = guanliaozhidu
 			}
@@ -825,6 +841,7 @@ country_decisions = {
 	tianfuzhidu1 = { 
 		# 田赋制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = tianfuzhidu
 			}
@@ -850,6 +867,7 @@ country_decisions = {
 	tianfuzhidu2 = { 
 		# 田赋制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = tianfuzhidu
 			}
@@ -885,6 +903,7 @@ country_decisions = {
 	sitianzhidu1 = { 
 		# 私田制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = sitianzhidu
 			}
@@ -911,6 +930,7 @@ country_decisions = {
 	sitianzhidu2 = { 
 		# 私田制度
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			not = { 
 				has_country_flag = sitianzhidu
 			}
@@ -936,6 +956,7 @@ country_decisions = {
 	#制定成文法
 	zhidingchengwenfa = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			has_country_flag = falvzhidu
 			government_tech = 24
 			NOT = { has_country_modifier = chengwenfa }
@@ -961,6 +982,7 @@ country_decisions = {
 	#整顿吏治
 	zhengdunlizhi = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_xingdong
 			nomad = no
 			has_country_flag = falvzhidu
 			not = { 
@@ -994,6 +1016,7 @@ country_decisions = {
 	#军器赎罪	
 	junqishuzui = { 
 		potential = {
+			has_country_flag = xianyinjueyi_gaige
 			has_country_flag = falvzhidu
 			NOT = { has_country_modifier = junqishuzui }
 			NOT = { has_country_modifier = zhiyejundui }
@@ -1018,6 +1041,7 @@ country_decisions = {
 	#废除军器赎罪	
 	feichujunqishuzui = { 
 		potential = {
+			has_country_flag = xianyinjueyi_gaige
 			has_country_modifier = junqishuzui
 			or = {
 				not = { ADM = 6 }
@@ -1040,6 +1064,7 @@ country_decisions = {
 	#军队职业化
 	junduizhiyehua = { 
 		potential = {
+			has_country_flag = xianyinjueyi_gaige
 			has_country_flag = junxianzhidu
 			NOT = { has_country_modifier = zhiyejundui }
 			NOT = { quality_quantity = -3 }
@@ -1071,6 +1096,7 @@ country_decisions = {
 	#推广铁器
 	tuiguangtieqi = { 
 		potential = {
+			has_country_flag = xianyinjueyi_gaige
 			trade_tech = 36
 			production_tech = 39
 		}
@@ -1095,6 +1121,7 @@ country_decisions = {
 	# 军国保甲
 	junguobaojia = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			has_country_flag = junxianzhidu
 			NOT = { 
 				has_country_modifier = junguobaojia
@@ -1120,6 +1147,7 @@ country_decisions = {
 	# 大赏境内
 	dashangjinnei = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_xingdong
 			has_country_flag = junxianzhidu
 			not = { 
 				has_country_modifier = dashangjinnei
@@ -1148,6 +1176,7 @@ country_decisions = {
 	# 终结世官制度
 	zhongjieshiguanzhidu = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			has_country_flag = guanliaozhidu
 			has_country_flag = shiguanzhidu
 			NOT ={ has_country_modifier = shoujiushili2 }
@@ -1177,6 +1206,7 @@ province_decisions = {
 	menkezhi = { 
 		potential = { 
 			owner = { 
+				has_country_flag = xianyinjueyi_gaige
 				has_country_flag = fengjunzhidu
 			}
 			NOT = { 
@@ -1217,6 +1247,7 @@ province_decisions = {
 	# 设立郡治
 	shelijunzhi = { 
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_shelijunzhi }
 			owner = { 
 				has_country_flag = dubizhidu
 			}
@@ -1266,6 +1297,7 @@ province_decisions = {
 	# 取消郡治
 	quxiaojunzhi = { 
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_shelijunzhi }
 			owner = { 
 				has_country_flag = dubizhidu
 			}
@@ -1313,6 +1345,7 @@ province_decisions = {
 	formalize_measures = {
 		potential = {
 			owner = {
+				has_country_flag = xianyinjueyi_gaige
 				has_country_flag = hujizhidu
 			}
 			NOT = {
@@ -1346,6 +1379,7 @@ province_decisions = {
 	jianchahukou = {
 		potential = {
 			owner = {
+				has_country_flag = xianyinjueyi_xingdong
 				has_country_flag = hujizhidu
 			}
 			has_province_modifier = junzhi
@@ -1400,6 +1434,7 @@ province_decisions = {
 	expand_bureaucracy = {
 		potential = {
 			owner = {
+				has_country_flag = xianyinjueyi_gaige
 				has_country_flag = guanliaozhidu
 			}
 			NOT = {
@@ -1432,6 +1467,7 @@ province_decisions = {
 	shangjizhidu = {
 		potential = {
 			owner = {
+				has_country_flag = xianyinjueyi_xingdong
 				has_country_flag = guanliaozhidu
 			}
 			or = {
@@ -1468,6 +1504,7 @@ province_decisions = {
 	kaifahuangman = {
 		potential = {
 			owner = {
+				has_country_flag = xianyinjueyi_xingdong
 				has_country_flag = sitianzhidu
 			}
 			has_province_modifier = huangmannanzhi

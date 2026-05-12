@@ -2,6 +2,7 @@ cultural_decisions = {
 	#########支持公家##########
 	zhichigongjia = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_lingdiguanli
 			NOT = { 
 				government = tribal_federation
 			}
@@ -42,6 +43,7 @@ cultural_decisions = {
 	#########支持士卿##########
 	zhichishiqing = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_lingdiguanli
 			NOT = { 
 				government = tribal_federation
 			}
@@ -82,6 +84,7 @@ cultural_decisions = {
 	#########强行支持公家##########
 	zhichigongjia1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_lingdiguanli
 			NOT = { 
 				government = tribal_federation
 			}
@@ -118,6 +121,7 @@ cultural_decisions = {
 	#########强行支持士卿##########
 	zhichishiqing1 = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_lingdiguanli
 			NOT = { 
 				government = tribal_federation
 			}
@@ -157,6 +161,7 @@ province_decisions = {
 	# 分封公家
 	set_noble_territory = { 
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
 			is_capital = no
 			owner = { 
 				has_country_modifier = zhichigongjia
@@ -195,7 +200,7 @@ province_decisions = {
 	# 分封士卿
 	set_vassal_territory = { 
 		potential = { 
-
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
 			is_capital = no
 			or={
 			owner = { tag=JIN  }
@@ -234,6 +239,7 @@ province_decisions = {
 	# 没收封地
 	set_monarch_territory = { 
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
 			owner = { 
 				has_country_flag = fengjunzhidu
 				NOT = { idea = national_bank }
@@ -241,6 +247,15 @@ province_decisions = {
 			OR = { 
 				has_province_modifier = vassal_territory
 				has_province_modifier = noble_territory
+			}
+			not = {
+				and = {
+					owner = { has_country_flag = fajiazhuanjing }
+					OR = { 
+						has_province_modifier = vassal_discontent
+						has_province_modifier = noble_discontent
+					}
+				}
 			}
 		}
 		allow = { 
@@ -281,6 +296,7 @@ province_decisions = {
 	}
 	set_monarch_territory2 = { 
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
 			owner = { 
 				has_country_flag = fengjunzhidu
 				idea = national_bank
@@ -288,6 +304,15 @@ province_decisions = {
 			OR = { 
 				has_province_modifier = vassal_territory
 				has_province_modifier = noble_territory
+			}
+			not = {
+				and = {
+					owner = { has_country_flag = fajiazhuanjing }
+					OR = { 
+						has_province_modifier = vassal_discontent
+						has_province_modifier = noble_discontent
+					}
+				}
 			}
 		}
 		allow = { 
@@ -319,8 +344,42 @@ province_decisions = {
 			factor = 0
 		}
 	}
+	set_monarch_territory3 = { 
+		potential = { 
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
+			owner = { 
+				has_country_flag = fengjunzhidu
+			}
+			OR = { 
+				has_province_modifier = vassal_territory
+				has_province_modifier = noble_territory
+			}
+			owner = { has_country_flag = fajiazhuanjing }
+			OR = { 
+				has_province_modifier = vassal_discontent
+				has_province_modifier = noble_discontent
+			}
+		}
+		allow = { 
+		}
+		effect = { 
+			owner = { 
+				treasury = 30
+			}
+			remove_province_modifier = vassal_territory
+			remove_province_modifier = noble_territory
+			add_province_modifier = { 
+				name = "monarch_territory"
+				duration = -1
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
 	shiqingzhuanhua = {
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
 			owner = { 
 				has_country_flag = fengjunzhidu
 				idea = shrewd_commerce_practise
@@ -346,6 +405,7 @@ province_decisions = {
 	}
 	gongjiazhuanhua = {
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_lingdiguanli }
 			owner = { 
 				has_country_flag = fengjunzhidu
 				idea = shrewd_commerce_practise

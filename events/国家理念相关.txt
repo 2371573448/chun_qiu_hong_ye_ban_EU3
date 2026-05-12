@@ -576,6 +576,10 @@ province_event = {
 	}
 	mean_time_to_happen = { 
 		months = 163
+		modifier = { 
+			factor = 0.5
+			has_country_flag = fajiazhuanjing
+		}
 	}
 	title = "EVTNAME100500"
 	desc = "EVTDESC100500"

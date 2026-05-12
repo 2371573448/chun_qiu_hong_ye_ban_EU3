@@ -3,6 +3,7 @@ province_decisions = {
 
         qiangxingguanbimaoyizhongxin = { #强行关闭贸易中心
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanbizhongxin }
 			cot=yes
 			owner = {
 			ai=no

@@ -2,6 +2,7 @@ country_decisions = {
 	# ·âìøÌ©É½
 	fengshangtaishang = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_gaige
 			technology_group = chinese
 			not = { 
 				has_global_flag = fengshangtaishang

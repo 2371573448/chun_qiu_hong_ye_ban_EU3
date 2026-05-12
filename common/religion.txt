@@ -76,6 +76,9 @@ christian = {
 		province = {
 			direct_tax_percentage = 0.15
 			stability_cost = 10
+			#全国效果
+			officials = 0.1
+			cultural_tradition = 0.001
 		}
 		country = {
 			tolerance_own = 2
@@ -100,8 +103,11 @@ christian = {
 
 		province = {
 			local_manpower_modifier = 0.20
-			land_forcelimit = 1
+			local_manpower = 0.050
 			stability_cost = 15
+			#全国效果
+			officials = 0.1
+			global_tax_modifier = 0.01
 		}
 		country = {
 			tolerance_own = 2
@@ -131,6 +137,9 @@ christian = {
 			local_production_efficiency = 0.10
 			local_defensiveness = 0.50
 			stability_cost = 15
+			#全国效果
+			land_forcelimit = 1
+			production_efficiency = 0.003
 		}
 		country = {
 			tolerance_own = 2

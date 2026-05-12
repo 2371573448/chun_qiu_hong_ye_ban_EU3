@@ -2,6 +2,7 @@ province_decisions = {
 	promote_cultural_unity = { 
 		#文化统一
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_yimintonghua }
 			not = { has_global_flag = guanbixiaochuwenhua }
 			has_owner_religion = yes
 			any_core = { 
@@ -101,6 +102,7 @@ province_decisions = {
 	enact_settlement_policy = {
 		#推行移民政策
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_yimintonghua }
 			not = { 
 				has_province_modifier = settlement_policy
 			}
@@ -147,6 +149,7 @@ province_decisions = {
 	
 	revoke_settlement_policy = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_yimintonghua }
 			has_province_modifier = settlement_policy
 		}
 		allow = { }
@@ -161,6 +164,7 @@ province_decisions = {
 		#移动重点地区
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_qianyizhongdian
 				ai = no
 				years_of_income = 0.1
 			}

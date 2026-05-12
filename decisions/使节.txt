@@ -1,6 +1,7 @@
 cultural_decisions = { 
 	goumaishijie = {
 		potential = { 
+			has_country_flag = xianyinjueyi_zhongyang
 			ai = no
 		}
 		allow = {

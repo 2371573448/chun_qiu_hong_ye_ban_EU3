@@ -117,6 +117,7 @@ religion_decisions = {
 			treasury = -2000
 			missionaries = -10
 			set_country_flag = mojiazhuanjing
+			offensive_defensive = 3
 		}
 		ai_will_do = { 
 			factor = 1
@@ -787,6 +788,338 @@ religion_decisions = {
 				20 = {
 					government_tech = 0.999
 				}
+			}
+		}
+	}
+	rujia_junziliuyi_junheng = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_junheng }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_junheng
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_shu_math = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_shu_math }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_shu_math
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_shu = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_shu }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_shu
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_yu = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_yu }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_yu
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_she = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_she }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_she
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_yue = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_yue }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_yue
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_li = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			not = { has_country_flag = rujiazhuanjing_jinjie }
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_li }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_junheng
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_li
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_shu_math_jinjie = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			has_country_flag = rujiazhuanjing_jinjie
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_shu_math_jinjie
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_shu_jinjie = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			has_country_flag = rujiazhuanjing_jinjie
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_shu_jinjie
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_yu_jinjie = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			has_country_flag = rujiazhuanjing_jinjie
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_yu_jinjie
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_she_jinjie = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			has_country_flag = rujiazhuanjing_jinjie
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_she_jinjie
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_yue_jinjie = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			has_country_flag = rujiazhuanjing_jinjie
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_yue_jinjie
+				duration = -1
+			}
+		}
+	}
+	rujia_junziliuyi_li_jinjie = {
+		potential = {
+			has_country_flag = xianyinjueyi_junziliuyi
+			has_country_flag = rujiazhuanjing
+			has_country_flag = rujiazhuanjing_jinjie
+			not = { has_country_modifier = rujiazhuanjing_junziliuyi_li_jinjie }
+		}
+		allow = {
+			years_of_income = 0.25
+			cultural_tradition = 0.05
+		}
+		effect = {
+			years_of_income = -0.25
+			cultural_tradition = -0.05
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yue_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_she_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_yu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_jinjie
+			remove_country_modifier = rujiazhuanjing_junziliuyi_shu_math_jinjie
+			add_country_modifier = {
+				name = rujiazhuanjing_junziliuyi_li_jinjie
+				duration = -1
 			}
 		}
 	}

@@ -3,6 +3,7 @@ province_decisions = {
 	#防御蛮族
 	fangyumanzu = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			not = { has_province_modifier = afangyumanzu }
 			has_province_modifier = manzusaodong
 
@@ -42,6 +43,7 @@ province_decisions = {
 	#巡视边疆
 	xunshibianjiang = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			not = { has_province_modifier = rangrenshiwangdexunshi }
 			not = { has_province_modifier = meiyoufaxiandexunshi }
 			has_province_modifier = manzusaodong
@@ -103,6 +105,7 @@ province_decisions = {
 	#与小股蛮族谈判
 	xiaogumanzutanpan = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			NOT = {
 				check_variable = {
 					which = manzusaodong
@@ -184,6 +187,7 @@ province_decisions = {
 	#与较多蛮族谈判
 	jiaoduomanzutanpan = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			NOT = {
 				check_variable = {
 					which = manzusaodong
@@ -264,6 +268,7 @@ province_decisions = {
 	#与大量蛮族谈判
 	daliangmanzutanpan = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			NOT = {
 				check_variable = {
 					which = manzusaodong
@@ -335,6 +340,7 @@ province_decisions = {
 	#与蛮族和解
 	yumanzuhejie = {
 		potential = {
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			has_empty_adjacent_province = yes
 			NOT = {
 				has_province_modifier = manzusaodong
@@ -385,6 +391,7 @@ province_decisions = {
 
 	qiangdu1 = {
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 			owner={not={has_country_flag = guanbiguangchamanyi}}
 		}
 		allow = {
@@ -408,6 +415,7 @@ province_decisions = {
 
 	qiangdu2 = {
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 				owner={not={has_country_flag = guanbiguangchamanyi}}
 		}
 		allow = {
@@ -432,6 +440,7 @@ province_decisions = {
 
 	qiangdu3 = {
 		potential = { 
+			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
 				owner={not={has_country_flag = guanbiguangchamanyi}}
 		}
 		allow = {

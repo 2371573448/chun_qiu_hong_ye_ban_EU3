@@ -2,6 +2,7 @@
 cultural_decisions = { 
 	feichutaizi = {
 		potential = {
+			has_country_flag = xianyinjueyi_zhongyang
 			regency = no
 			has_heir = yes
 		}
@@ -30,6 +31,7 @@ cultural_decisions = {
 	}
 	zuijizao= {
 		potential = {
+			has_country_flag = xianyinjueyi_zhongyang
 			regency = no
 			has_heir = yes
 		}
@@ -61,6 +63,9 @@ cultural_decisions = {
 #文化传统
 cultural_decisions = { 
 	goumaiwenhua = {
+		potential = {
+			has_country_flag = xianyinjueyi_wenhua
+		}
 		allow = {
 			officials = 1
 			treasury = 50
@@ -74,3 +79,4 @@ cultural_decisions = {
 			factor = 0
 		}
 	}
+}

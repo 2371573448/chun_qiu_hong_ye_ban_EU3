@@ -2,6 +2,7 @@ province_decisions = {
 	daojiaanzhi1 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -52,6 +53,7 @@ province_decisions = {
 	daojiaanzhi2 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -100,6 +102,7 @@ province_decisions = {
 	daojiaanzhi3 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -148,6 +151,7 @@ province_decisions = {
 	daojiaanzhi4 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -196,6 +200,7 @@ province_decisions = {
 	daojiaanzhi5 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -242,6 +247,7 @@ province_decisions = {
 	daojiaanzhi6 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -288,6 +294,7 @@ province_decisions = {
 	daojiaanzhi7 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}
@@ -334,6 +341,7 @@ province_decisions = {
 	daojiaanzhi8 = { 
 		potential = { 
 			owner = {
+				has_country_flag = xianyinjueyi_anzhiliumin
 				capital_scope = {
 					has_province_modifier = daojialiumindaianzhi
 				}

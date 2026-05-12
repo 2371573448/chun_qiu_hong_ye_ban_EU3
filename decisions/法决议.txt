@@ -1,6 +1,7 @@
 country_decisions = { 
 	fajiawending = { 
 		potential = { 
+			has_country_flag = xianyinjueyi_linian
 			religion = fajia
 			idea = espionage
 		}

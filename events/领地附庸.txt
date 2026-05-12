@@ -6885,6 +6885,7 @@ province_event = {
 	# 公家转化为直辖
 	id = 1504
 	trigger = { 
+		not = { has_country_flag = fajiazhuanjing }
 		has_province_modifier = noble_territory
 	}
 	mean_time_to_happen = { 
@@ -7009,6 +7010,129 @@ province_event = {
 		owner = { 
 			badboy = -0.15
 			legitimacy = 0.05
+		}
+	}
+}
+
+province_event = { 
+	# 公家转化为直辖
+	id = 61504
+	trigger = { 
+		has_country_flag = fajiazhuanjing
+		has_province_modifier = noble_territory
+	}
+	mean_time_to_happen = { 
+		months = 600
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -4
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					num_of_cities = 6
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					num_of_cities = 12
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 30
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 60
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 120
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 30
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 40
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 50
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 60
+			}
+		}
+	}
+	title = "EVTNAME1504"
+	desc = "EVTDESC1504"
+	option = { 
+		name = "EVTOPTA1504"
+		ai_chance = {
+			factor = 50
+		}
+		owner = { 
+			badboy = 0.25
+			prestige = 0.02
+		}
+		remove_province_modifier = noble_territory
+		add_province_modifier = { 
+			name = "monarch_territory"
+			duration = -1
+		}
+		change_variable = { 
+			which = "monarch_territory_number"
+			value = 1
 		}
 	}
 }
@@ -7142,6 +7266,7 @@ province_event = {
 	# 士卿转化为直辖
 	id = 1506
 	trigger = { 
+		not = { has_country_flag = fajiazhuanjing }
 		has_province_modifier = vassal_territory
 	}
 	mean_time_to_happen = { 
@@ -7249,6 +7374,113 @@ province_event = {
 		}
 		owner = { 
 			badboy = -0.15
+		}
+	}
+}
+
+province_event = { 
+	# 士卿转化为直辖
+	id = 61506
+	trigger = { 
+		has_country_flag = fajiazhuanjing
+		has_province_modifier = vassal_territory
+	}
+	mean_time_to_happen = { 
+		months = 600
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 0
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -2
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.8
+			owner = { 
+				NOT = { 
+					centralization_decentralization = -4
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 30
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 60
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cities = 120
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 30
+			}
+		}
+		modifier = { 
+			factor = 0.95
+			owner = { 
+				government_tech = 40
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 50
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			owner = { 
+				government_tech = 60
+			}
+		}
+	}
+	title = "EVTNAME1506"
+	desc = "EVTDESC1506"
+	option = { 
+		name = "EVTOPTA1506"
+		ai_chance = { 
+			factor = 50
+		}
+		owner = { 
+			badboy = 0.25
+			prestige = 0.05
+		}
+		remove_province_modifier = vassal_territory
+		add_province_modifier = { 
+			name = "monarch_territory"
+			duration = -1
+		}
+		change_variable = { 
+			which = "monarch_territory_number"
+			value = 1
 		}
 	}
 }
@@ -7572,6 +7804,7 @@ country_event = {
 	# 公家控制朝廷
 	id = 1510
 	trigger = { 
+		not = { has_country_flag = fajiazhuanjing }
 		or = { 
 			and = { 
 				centralization_decentralization = 4
@@ -7629,6 +7862,7 @@ country_event = {
 	# 士卿控制朝廷
 	id = 1511
 	trigger = { 
+		not = { has_country_flag = fajiazhuanjing }
 		or = { 
 			and = { 
 				centralization_decentralization = 4
