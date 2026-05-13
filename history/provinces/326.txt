@@ -75,9 +75,11 @@ cot = no
 }
 2246.1.2 = { 
 	hre = yes
+	culture = jianghan
 }
 2247.1.1 = { 
 	hre = no
+	culture = nanchu
 	religion = liyuebadao
 }
 2247.1.1 = { 

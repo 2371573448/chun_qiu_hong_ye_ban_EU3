@@ -1,5 +1,5 @@
 [systemsettings.cpp:180]: System memory:   2048MB
-[systemsettings.cpp:182]: CPU speed:       3600MHz
+[systemsettings.cpp:182]: CPU speed:       3599MHz
 [systemsettings.cpp:189]: Number of processors: 8
 [systemsettings.cpp:200]: CPU type: x86
 [systemsettings.cpp:232]: OS: Unknown     Build: 9200

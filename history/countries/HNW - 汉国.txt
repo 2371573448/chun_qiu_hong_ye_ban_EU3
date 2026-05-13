@@ -25,6 +25,7 @@ unit_type = dahan
 		dip = 9
 		mil = 6
 	}
+	primary_culture = guanzhong
 }
 2246.1.4 = { 
 	religion = daojia

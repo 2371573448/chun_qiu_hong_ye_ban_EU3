@@ -3396,6 +3396,7 @@ province_event = {#三晋初始军队
 	id = 7004
 
 	trigger = { 
+		owner = { not = { has_global_flag = zhanguokaishi } }
 		OR = { 
 			owner = { tag = ZHO }
 			owner = { tag = WEI }

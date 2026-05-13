@@ -398,7 +398,7 @@ cb_zhulu = {
 	
 	mutual = yes
 
-	badboy_factor = 0.5
+	badboy_factor = 0.6
 	prestige_factor = 1
 	peace_cost_factor = 0.40
 	nomad = no

@@ -3,7 +3,6 @@ cultural_decisions = {
 	xianyinjueyi_quankai = {
 		potential = {
 			or = {
-				not = { has_country_flag = xianyinjueyi_zongkaiguan }
 				not = { has_country_flag = xianyinjueyi_guanchamanzu }
 				not = { has_country_flag = xianyinjueyi_qianyizhongdian }
 				not = { has_country_flag = xianyinjueyi_xiyinyimin }
@@ -26,7 +25,6 @@ cultural_decisions = {
 		allow = {
 		}
 		effect = {
-			set_country_flag = xianyinjueyi_zongkaiguan
 			set_country_flag = xianyinjueyi_guanchamanzu
 			set_country_flag = xianyinjueyi_qianyizhongdian
 			set_country_flag = xianyinjueyi_xiyinyimin

@@ -15,12 +15,3 @@ Malformed token: {, near line: 72
 [spritetype.cpp:278]: Texture gfx\\interface\\unit_types_strip.tga have forbidden compression, have you tried DXT3?
 [spritetype.cpp:278]: Texture gfx\\interface\\unit_types_strip.tga have forbidden compression, have you tried DXT3?
 [spritetype.cpp:278]: Texture gfx\\interface\\button_embarked.tga have forbidden compression, have you tried DXT3?
-[spritetype.cpp:464]: Texture gfx\\interface\\domesticpanel_bg.tga have forbidden compression, have you tried DXT3?
-[persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
-" in file: "history\Countries\xnu - пые╚.txt" near line: 22
-[persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
-" in file: "history\Countries\xnu - пые╚.txt" near line: 22
-[persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
-" in file: "history\Countries\xnu - пые╚.txt" near line: 22
-[persistent.cpp:39]: Error: "Unexpected token: death_date, near line: 21
-" in file: "history\Countries\xnu - пые╚.txt" near line: 22

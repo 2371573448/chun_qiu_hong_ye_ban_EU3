@@ -65,9 +65,11 @@ cot = no
 	remove_core = CHU
 }
 2246.1.2 = { 
+	culture = jianghan
 	hre = yes
 }
 2247.1.1 = { 
+	culture = nanchu
 	hre = no
 }
 2247.1.1 = { 

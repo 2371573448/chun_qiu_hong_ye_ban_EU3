@@ -70,19 +70,17 @@ cot = no
 	controller = CHE
 	add_core = CHE
 	religion = daojia
+	culture = jianghan
 	remove_core = SON
-}
-2246.1.2 = { 
 	hre = yes
-}
-2247.1.1 = { 
-	hre = no
 }
 2247.1.1 = { 
 	owner = CHU
 	controller = CHU
 	add_core = CHU
 	remove_core = SON
+	culture = nanchu
+	hre = no
 }
 2280.1.1 = { 
 	religion = rujia
