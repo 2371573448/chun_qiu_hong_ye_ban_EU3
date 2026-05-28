@@ -497,7 +497,6 @@ country_decisions = {
 			}
 		}
 		allow = { 
-			NOT = { centralization_decentralization = -1 }
 			ADM = 7
 			idea = national_bank
 			OR = { 
@@ -506,6 +505,26 @@ country_decisions = {
 			}
 			OR = { 
 				government_tech = 28
+				AND = { 
+					government_tech = 27
+					NOT = { centralization_decentralization = 0 }
+				}
+				AND = { 
+					government_tech = 26
+					NOT = { centralization_decentralization = -1 }
+				}
+				AND = { 
+					government_tech = 25
+					NOT = { centralization_decentralization = -2 }
+				}
+				AND = { 
+					government_tech = 24
+					NOT = { centralization_decentralization = -3 }
+				}
+				AND = { 
+					government_tech = 23
+					NOT = { centralization_decentralization = -4 }
+				}
 				AND = { 
 					tag = WEI
 					government_tech = 25
@@ -555,7 +574,6 @@ country_decisions = {
 			year = 2200
 		}
 		allow = { 
-			NOT = { centralization_decentralization = 0 }
 			ADM = 6
 			OR = { 
 				legitimacy = 0.75
@@ -563,6 +581,26 @@ country_decisions = {
 			}
 			OR = { 
 				government_tech = 25
+				AND = { 
+					government_tech = 24
+					NOT = { centralization_decentralization = 0 }
+				}
+				AND = { 
+					government_tech = 23
+					NOT = { centralization_decentralization = -1 }
+				}
+				AND = { 
+					government_tech = 22
+					NOT = { centralization_decentralization = -2 }
+				}
+				AND = { 
+					government_tech = 21
+					NOT = { centralization_decentralization = -3 }
+				}
+				AND = { 
+					government_tech = 20
+					NOT = { centralization_decentralization = -4 }
+				}
 				AND = { 
 					tag = WEI
 					government_tech = 23
@@ -612,7 +650,6 @@ country_decisions = {
 			}
 		}
 		allow = { 
-			NOT = { centralization_decentralization = -3 }
 			ADM = 7
 			OR = { 
 				legitimacy = 0.9
@@ -620,6 +657,26 @@ country_decisions = {
 			}
 			OR = { 
 				trade_tech = 39
+				AND = { 
+					trade_tech = 38
+					NOT = { centralization_decentralization = 0 }
+				}
+				AND = { 
+					trade_tech = 37
+					NOT = { centralization_decentralization = -1 }
+				}
+				AND = { 
+					trade_tech = 36
+					NOT = { centralization_decentralization = -2 }
+				}
+				AND = { 
+					trade_tech = 35
+					NOT = { centralization_decentralization = -3 }
+				}
+				AND = { 
+					trade_tech = 34
+					NOT = { centralization_decentralization = -4 }
+				}
 				AND = { 
 					tag = WEI
 					trade_tech = 36
@@ -677,10 +734,29 @@ country_decisions = {
 			year = 2300
 		}
 		allow = { 
-			NOT = { centralization_decentralization = -2 }
 			ADM = 6
 			OR = { 
 				trade_tech = 36
+				AND = { 
+					trade_tech = 35
+					NOT = { centralization_decentralization = 0 }
+				}
+				AND = { 
+					trade_tech = 34
+					NOT = { centralization_decentralization = -1 }
+				}
+				AND = { 
+					trade_tech = 33
+					NOT = { centralization_decentralization = -2 }
+				}
+				AND = { 
+					trade_tech = 32
+					NOT = { centralization_decentralization = -3 }
+				}
+				AND = { 
+					trade_tech = 31
+					NOT = { centralization_decentralization = -4 }
+				}
 				AND = { 
 					tag = WEI
 					trade_tech = 33
@@ -742,7 +818,6 @@ country_decisions = {
 			}
 		}
 		allow = { 
-			NOT = { centralization_decentralization = -3 }
 			ADM = 7
 			OR = { 
 				legitimacy = 0.5
@@ -750,6 +825,26 @@ country_decisions = {
 			}
 			OR = { 
 				government_tech = 45
+				AND = { 
+					government_tech = 44
+					NOT = { centralization_decentralization = 0 }
+				}
+				AND = { 
+					government_tech = 43
+					NOT = { centralization_decentralization = -1 }
+				}
+				AND = { 
+					government_tech = 42
+					NOT = { centralization_decentralization = -2 }
+				}
+				AND = { 
+					government_tech = 41
+					NOT = { centralization_decentralization = -3 }
+				}
+				AND = { 
+					government_tech = 40
+					NOT = { centralization_decentralization = -4 }
+				}
 				AND = { 
 					tag = WEI
 					government_tech = 42
@@ -799,7 +894,6 @@ country_decisions = {
 			year = 2350
 		}
 		allow = { 
-			NOT = { centralization_decentralization = -3 }
 			ADM = 7
 			idea = smithian_economics
 			OR = { 
@@ -808,6 +902,26 @@ country_decisions = {
 			}
 			OR = { 
 				government_tech = 45
+				AND = { 
+					government_tech = 44
+					NOT = { centralization_decentralization = 0 }
+				}
+				AND = { 
+					government_tech = 43
+					NOT = { centralization_decentralization = -1 }
+				}
+				AND = { 
+					government_tech = 42
+					NOT = { centralization_decentralization = -2 }
+				}
+				AND = { 
+					government_tech = 41
+					NOT = { centralization_decentralization = -3 }
+				}
+				AND = { 
+					government_tech = 40
+					NOT = { centralization_decentralization = -4 }
+				}
 				AND = { 
 					tag = WEI
 					government_tech = 42
@@ -1003,7 +1117,7 @@ country_decisions = {
 			officials = -10
 			years_of_income = -1
 			stability = -1
-			inflation = -2
+			inflation = -1
 			add_country_modifier = { 
 				name = "zhengdunlizhi"
 				duration = 1825
@@ -1099,6 +1213,7 @@ country_decisions = {
 			has_country_flag = xianyinjueyi_gaige
 			trade_tech = 36
 			production_tech = 39
+			NOT = { has_country_modifier = tuiguangtieqi }
 		}
 		allow = {
 			trade_tech = 39

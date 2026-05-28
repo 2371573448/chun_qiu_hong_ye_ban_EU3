@@ -135,8 +135,9 @@ zhengtongrenhe = {
 }
 zhengtongrenhefajia = { 
 	population_growth = 0.02
-	officials = 0.2
 	local_revolt_risk = -3
+	#全国修正
+	#officials = 0.2
 	icon = 5
 }
 zengshou = { 
@@ -272,15 +273,16 @@ shanlinrenkou6 = {
 #省份领地类型
 monarch_territory = { 
 	# 君主直辖
-	officials = 0.03
-	stability_investment = -2
-	production_tech_investment = 0.5
-	naval_tech_investment = 0.5
-	land_tech_investment = 0.5
-	trade_tech_investment = 0.5
-	government_tech_investment = 0.5
 	tax_income = 2
 	local_production_efficiency = 0.20
+	#全国修正
+	#officials = 0.03
+	#stability_investment = -2
+	#production_tech_investment = 0.5
+	#naval_tech_investment = 0.5
+	#land_tech_investment = 0.5
+	#trade_tech_investment = 0.5
+	#government_tech_investment = 0.5
 	icon = 15
 }
 noble_territory = { 
@@ -289,8 +291,9 @@ noble_territory = {
 	direct_tax_percentage = -0.20
 	local_manpower = 0.025
 	stability_cost = -10
-	discipline = 0.002
-	global_manpower_modifier = 0.01
+	#全国修正
+	#discipline = 0.002
+	#global_manpower_modifier = 0.01
 	icon = 17
 }
 gongjiachengjian = {
@@ -399,7 +402,6 @@ qiangzheng = {
 zhiyejundui = {
 	global_regiment_recruit_speed = 0.30
 	reinforce_speed = -0.20
-	tolerance_own = 10
 	land_morale = 0.50
 	discipline = 0.10
 	army_tradition = 0.01
@@ -708,6 +710,106 @@ quanguorenkou_253 = { population_growth = 0.253 } quanguorenkou_-253 = { populat
 quanguorenkou_254 = { population_growth = 0.254 } quanguorenkou_-254 = { population_growth = -0.254 }
 quanguorenkou_255 = { population_growth = 0.255 } quanguorenkou_-255 = { population_growth = -0.255 }
 quanguorenkou_256 = { population_growth = 0.256 } quanguorenkou_-256 = { population_growth = -0.256 }
+renkouchaozai_1 = { population_growth = -0.01 stability_cost = 10 technology_cost = 0.001 }
+renkouchaozai_2 = { population_growth = -0.02 stability_cost = 20 technology_cost = 0.002 }
+renkouchaozai_3 = { population_growth = -0.03 stability_cost = 30 technology_cost = 0.003 }
+renkouchaozai_4 = { population_growth = -0.04 stability_cost = 40 technology_cost = 0.004 }
+renkouchaozai_5 = { population_growth = -0.05 stability_cost = 50 technology_cost = 0.005 }
+renkouchaozai_6 = { population_growth = -0.06 stability_cost = 60 technology_cost = 0.006 }
+renkouchaozai_7 = { population_growth = -0.07 stability_cost = 70 technology_cost = 0.007 }
+renkouchaozai_8 = { population_growth = -0.08 stability_cost = 80 technology_cost = 0.008 }
+renkouchaozai_9 = { population_growth = -0.09 stability_cost = 90 technology_cost = 0.009 }
+renkouchaozai_10 = { population_growth = -0.1 stability_cost = 100 technology_cost = 0.01 }
+renkouchaozai_11 = { population_growth = -0.11 stability_cost = 110 technology_cost = 0.011 }
+renkouchaozai_12 = { population_growth = -0.12 stability_cost = 120 technology_cost = 0.012 }
+renkouchaozai_13 = { population_growth = -0.13 stability_cost = 130 technology_cost = 0.013 }
+renkouchaozai_14 = { population_growth = -0.14 stability_cost = 140 technology_cost = 0.014 }
+renkouchaozai_15 = { population_growth = -0.15 stability_cost = 150 technology_cost = 0.015 }
+renkouchaozai_16 = { population_growth = -0.16 stability_cost = 160 technology_cost = 0.016 }
+renkouchaozai_17 = { population_growth = -0.17 stability_cost = 170 technology_cost = 0.017 }
+renkouchaozai_18 = { population_growth = -0.18 stability_cost = 180 technology_cost = 0.018 }
+renkouchaozai_19 = { population_growth = -0.19 stability_cost = 190 technology_cost = 0.019 }
+renkouchaozai_20 = { population_growth = -0.2 stability_cost = 200 technology_cost = 0.02 }
+renkouchaozai_21 = { population_growth = -0.21 stability_cost = 210 technology_cost = 0.021 }
+renkouchaozai_22 = { population_growth = -0.22 stability_cost = 220 technology_cost = 0.022 }
+renkouchaozai_23 = { population_growth = -0.23 stability_cost = 230 technology_cost = 0.023 }
+renkouchaozai_24 = { population_growth = -0.24 stability_cost = 240 technology_cost = 0.024 }
+renkouchaozai_25 = { population_growth = -0.25 stability_cost = 250 technology_cost = 0.025 }
+renkouchaozai_26 = { population_growth = -0.26 stability_cost = 260 technology_cost = 0.026 }
+renkouchaozai_27 = { population_growth = -0.27 stability_cost = 270 technology_cost = 0.027 }
+renkouchaozai_28 = { population_growth = -0.28 stability_cost = 280 technology_cost = 0.028 }
+renkouchaozai_29 = { population_growth = -0.29 stability_cost = 290 technology_cost = 0.029 }
+renkouchaozai_30 = { population_growth = -0.3 stability_cost = 300 technology_cost = 0.03 }
+renkouchaozai_31 = { population_growth = -0.31 stability_cost = 310 technology_cost = 0.031 }
+renkouchaozai_32 = { population_growth = -0.32 stability_cost = 320 technology_cost = 0.032 }
+renkouchaozai_33 = { population_growth = -0.33 stability_cost = 330 technology_cost = 0.033 }
+renkouchaozai_34 = { population_growth = -0.34 stability_cost = 340 technology_cost = 0.034 }
+renkouchaozai_35 = { population_growth = -0.35 stability_cost = 350 technology_cost = 0.035 }
+renkouchaozai_36 = { population_growth = -0.36 stability_cost = 360 technology_cost = 0.036 }
+renkouchaozai_37 = { population_growth = -0.37 stability_cost = 370 technology_cost = 0.037 }
+renkouchaozai_38 = { population_growth = -0.38 stability_cost = 380 technology_cost = 0.038 }
+renkouchaozai_39 = { population_growth = -0.39 stability_cost = 390 technology_cost = 0.039 }
+renkouchaozai_40 = { population_growth = -0.4 stability_cost = 400 technology_cost = 0.04 }
+renkouchaozai_41 = { population_growth = -0.41 stability_cost = 410 technology_cost = 0.041 }
+renkouchaozai_42 = { population_growth = -0.42 stability_cost = 420 technology_cost = 0.042 }
+renkouchaozai_43 = { population_growth = -0.43 stability_cost = 430 technology_cost = 0.043 }
+renkouchaozai_44 = { population_growth = -0.44 stability_cost = 440 technology_cost = 0.044 }
+renkouchaozai_45 = { population_growth = -0.45 stability_cost = 450 technology_cost = 0.045 }
+renkouchaozai_46 = { population_growth = -0.46 stability_cost = 460 technology_cost = 0.046 }
+renkouchaozai_47 = { population_growth = -0.47 stability_cost = 470 technology_cost = 0.047 }
+renkouchaozai_48 = { population_growth = -0.48 stability_cost = 480 technology_cost = 0.048 }
+renkouchaozai_49 = { population_growth = -0.49 stability_cost = 490 technology_cost = 0.049 }
+renkouchaozai_50 = { population_growth = -0.5 stability_cost = 500 technology_cost = 0.05 }
+renkouchaozai_51 = { population_growth = -0.51 stability_cost = 510 technology_cost = 0.051 }
+renkouchaozai_52 = { population_growth = -0.52 stability_cost = 520 technology_cost = 0.052 }
+renkouchaozai_53 = { population_growth = -0.53 stability_cost = 530 technology_cost = 0.053 }
+renkouchaozai_54 = { population_growth = -0.54 stability_cost = 540 technology_cost = 0.054 }
+renkouchaozai_55 = { population_growth = -0.55 stability_cost = 550 technology_cost = 0.055 }
+renkouchaozai_56 = { population_growth = -0.56 stability_cost = 560 technology_cost = 0.056 }
+renkouchaozai_57 = { population_growth = -0.57 stability_cost = 570 technology_cost = 0.057 }
+renkouchaozai_58 = { population_growth = -0.58 stability_cost = 580 technology_cost = 0.058 }
+renkouchaozai_59 = { population_growth = -0.59 stability_cost = 590 technology_cost = 0.059 }
+renkouchaozai_60 = { population_growth = -0.6 stability_cost = 600 technology_cost = 0.06 }
+renkouchaozai_61 = { population_growth = -0.61 stability_cost = 610 technology_cost = 0.061 }
+renkouchaozai_62 = { population_growth = -0.62 stability_cost = 620 technology_cost = 0.062 }
+renkouchaozai_63 = { population_growth = -0.63 stability_cost = 630 technology_cost = 0.063 }
+renkouchaozai_64 = { population_growth = -0.64 stability_cost = 640 technology_cost = 0.064 }
+renkouchaozai_65 = { population_growth = -0.65 stability_cost = 650 technology_cost = 0.065 }
+renkouchaozai_66 = { population_growth = -0.66 stability_cost = 660 technology_cost = 0.066 }
+renkouchaozai_67 = { population_growth = -0.67 stability_cost = 670 technology_cost = 0.067 }
+renkouchaozai_68 = { population_growth = -0.68 stability_cost = 680 technology_cost = 0.068 }
+renkouchaozai_69 = { population_growth = -0.69 stability_cost = 690 technology_cost = 0.069 }
+renkouchaozai_70 = { population_growth = -0.7 stability_cost = 700 technology_cost = 0.07 }
+renkouchaozai_71 = { population_growth = -0.71 stability_cost = 710 technology_cost = 0.071 }
+renkouchaozai_72 = { population_growth = -0.72 stability_cost = 720 technology_cost = 0.072 }
+renkouchaozai_73 = { population_growth = -0.73 stability_cost = 730 technology_cost = 0.073 }
+renkouchaozai_74 = { population_growth = -0.74 stability_cost = 740 technology_cost = 0.074 }
+renkouchaozai_75 = { population_growth = -0.75 stability_cost = 750 technology_cost = 0.075 }
+renkouchaozai_76 = { population_growth = -0.76 stability_cost = 760 technology_cost = 0.076 }
+renkouchaozai_77 = { population_growth = -0.77 stability_cost = 770 technology_cost = 0.077 }
+renkouchaozai_78 = { population_growth = -0.78 stability_cost = 780 technology_cost = 0.078 }
+renkouchaozai_79 = { population_growth = -0.79 stability_cost = 790 technology_cost = 0.079 }
+renkouchaozai_80 = { population_growth = -0.8 stability_cost = 800 technology_cost = 0.08 }
+renkouchaozai_81 = { population_growth = -0.81 stability_cost = 810 technology_cost = 0.081 }
+renkouchaozai_82 = { population_growth = -0.82 stability_cost = 820 technology_cost = 0.082 }
+renkouchaozai_83 = { population_growth = -0.83 stability_cost = 830 technology_cost = 0.083 }
+renkouchaozai_84 = { population_growth = -0.84 stability_cost = 840 technology_cost = 0.084 }
+renkouchaozai_85 = { population_growth = -0.85 stability_cost = 850 technology_cost = 0.085 }
+renkouchaozai_86 = { population_growth = -0.86 stability_cost = 860 technology_cost = 0.086 }
+renkouchaozai_87 = { population_growth = -0.87 stability_cost = 870 technology_cost = 0.087 }
+renkouchaozai_88 = { population_growth = -0.88 stability_cost = 880 technology_cost = 0.088 }
+renkouchaozai_89 = { population_growth = -0.89 stability_cost = 890 technology_cost = 0.089 }
+renkouchaozai_90 = { population_growth = -0.9 stability_cost = 900 technology_cost = 0.09 }
+renkouchaozai_91 = { population_growth = -0.91 stability_cost = 910 technology_cost = 0.091 }
+renkouchaozai_92 = { population_growth = -0.92 stability_cost = 920 technology_cost = 0.092 }
+renkouchaozai_93 = { population_growth = -0.93 stability_cost = 930 technology_cost = 0.093 }
+renkouchaozai_94 = { population_growth = -0.94 stability_cost = 940 technology_cost = 0.094 }
+renkouchaozai_95 = { population_growth = -0.95 stability_cost = 950 technology_cost = 0.095 }
+renkouchaozai_96 = { population_growth = -0.96 stability_cost = 960 technology_cost = 0.096 }
+renkouchaozai_97 = { population_growth = -0.97 stability_cost = 970 technology_cost = 0.097 }
+renkouchaozai_98 = { population_growth = -0.98 stability_cost = 980 technology_cost = 0.098 }
+renkouchaozai_99 = { population_growth = -0.99 stability_cost = 990 technology_cost = 0.099 }
+renkouchaozai_100 = { population_growth = -1.0 stability_cost = 1000 technology_cost = 0.1 }
 product0 = {
 	population_growth = -0.040
 	icon = 2
@@ -1377,84 +1479,84 @@ fajiazhuanjing = {
 	icon = 9
 }
 fajiazhuanjingshengfen1 = {
+	local_manpower = 0.005
+	local_manpower_modifier = 0.025
+}
+fajiazhuanjingshengfen2 = {
 	local_manpower = 0.010
 	local_manpower_modifier = 0.05
 }
-fajiazhuanjingshengfen2 = {
+fajiazhuanjingshengfen3 = {
+	local_manpower = 0.015
+	local_manpower_modifier = 0.075
+}
+fajiazhuanjingshengfen4 = {
 	local_manpower = 0.020
 	local_manpower_modifier = 0.10
 }
-fajiazhuanjingshengfen3 = {
+fajiazhuanjingshengfen5 = {
+	local_manpower = 0.025
+	local_manpower_modifier = 0.125
+}
+fajiazhuanjingshengfen6 = {
 	local_manpower = 0.030
 	local_manpower_modifier = 0.15
 }
-fajiazhuanjingshengfen4 = {
+fajiazhuanjingshengfen7 = {
+	local_manpower = 0.035
+	local_manpower_modifier = 0.175
+}
+fajiazhuanjingshengfen8 = {
 	local_manpower = 0.040
 	local_manpower_modifier = 0.20
 }
-fajiazhuanjingshengfen5 = {
+fajiazhuanjingshengfen9 = {
+	local_manpower = 0.045
+	local_manpower_modifier = 0.225
+}
+fajiazhuanjingshengfen10 = {
 	local_manpower = 0.050
 	local_manpower_modifier = 0.25
 }
-fajiazhuanjingshengfen6 = {
-	local_manpower = 0.060
-	local_manpower_modifier = 0.30
-}
-fajiazhuanjingshengfen7 = {
-	local_manpower = 0.070
-	local_manpower_modifier = 0.35
-}
-fajiazhuanjingshengfen8 = {
-	local_manpower = 0.080
-	local_manpower_modifier = 0.40
-}
-fajiazhuanjingshengfen9 = {
-	local_manpower = 0.090
-	local_manpower_modifier = 0.45
-}
-fajiazhuanjingshengfen10 = {
-	local_manpower = 0.100
-	local_manpower_modifier = 0.50
-}
 fajiazhuanjingshengfenjian1 = {
+	local_manpower = -0.005
+	local_manpower_modifier = -0.025
+}
+fajiazhuanjingshengfenjian2 = {
 	local_manpower = -0.010
 	local_manpower_modifier = -0.05
 }
-fajiazhuanjingshengfenjian2 = {
+fajiazhuanjingshengfenjian3 = {
+	local_manpower = -0.015
+	local_manpower_modifier = -0.075
+}
+fajiazhuanjingshengfenjian4 = {
 	local_manpower = -0.020
 	local_manpower_modifier = -0.10
 }
-fajiazhuanjingshengfenjian3 = {
+fajiazhuanjingshengfenjian5 = {
+	local_manpower = -0.025
+	local_manpower_modifier = -0.125
+}
+fajiazhuanjingshengfenjian6 = {
 	local_manpower = -0.030
 	local_manpower_modifier = -0.15
 }
-fajiazhuanjingshengfenjian4 = {
+fajiazhuanjingshengfenjian7 = {
+	local_manpower = -0.035
+	local_manpower_modifier = -0.175
+}
+fajiazhuanjingshengfenjian8 = {
 	local_manpower = -0.040
 	local_manpower_modifier = -0.20
 }
-fajiazhuanjingshengfenjian5 = {
-	local_manpower = -0.050
-	local_manpower_modifier = -0.25
-}
-fajiazhuanjingshengfenjian6 = {
-	local_manpower = -0.060
-	local_manpower_modifier = -0.30
-}
-fajiazhuanjingshengfenjian7 = {
-	local_manpower = -0.070
-	local_manpower_modifier = -0.35
-}
-fajiazhuanjingshengfenjian8 = {
-	local_manpower = -0.080
-	local_manpower_modifier = -0.40
-}
 fajiazhuanjingshengfenjian9 = {
-	local_manpower = -0.090
-	local_manpower_modifier = -0.45
+	local_manpower = -0.045
+	local_manpower_modifier = -0.225
 }
 fajiazhuanjingshengfenjian10 = {
-	local_manpower = -0.100
-	local_manpower_modifier = -0.50
+	local_manpower = -0.050
+	local_manpower_modifier = -0.25
 }
 #道家专精
 #节俭治国
@@ -3320,7 +3422,7 @@ daojialiumindaianzhi = {
 }
 #精细化种田
 zhengzaijianshe = {
-	icon = 2
+	icon = 13
 }
 jingxihuajianshegongye1 = {
 	local_production_efficiency = 0.15

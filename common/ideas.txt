@@ -47,7 +47,8 @@ naval_fighting_instruction = {
 #ºÏ×ÝÁ¬ºá
 naval_provisioning = {
 	trigger = { year = 2200 }
-	badboy = -1
+	badboy = -0.7
+	badboy_limit = 2
 	diplomats = 0.5
 	}
 }
@@ -119,9 +120,11 @@ land_of_opportunity = {
 	}
 #¶ËÄ¾ÒÅ·ç
 merchant_adventures = {
-	merchant_placement_chance = 0.10
+	#merchant_placement_chance = 0.10
+	merchant_compete_chance = 0.05
 	trade_efficiency = 0.10
 	merchant_cost = -0.25
+	global_cot_gravity = 10
 	}
 #ÑÎÌú×¨Âô
 colonial_ventures = {

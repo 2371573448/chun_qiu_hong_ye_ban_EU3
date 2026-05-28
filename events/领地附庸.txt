@@ -6885,7 +6885,7 @@ province_event = {
 	# 公家转化为直辖
 	id = 1504
 	trigger = { 
-		not = { has_country_flag = fajiazhuanjing }
+		owner = { not = { has_country_flag = fajiazhuanjing } }
 		has_province_modifier = noble_territory
 	}
 	mean_time_to_happen = { 
@@ -7018,7 +7018,7 @@ province_event = {
 	# 公家转化为直辖
 	id = 61504
 	trigger = { 
-		has_country_flag = fajiazhuanjing
+		owner = { has_country_flag = fajiazhuanjing }
 		has_province_modifier = noble_territory
 	}
 	mean_time_to_happen = { 
@@ -7266,7 +7266,7 @@ province_event = {
 	# 士卿转化为直辖
 	id = 1506
 	trigger = { 
-		not = { has_country_flag = fajiazhuanjing }
+		owner = { not = { has_country_flag = fajiazhuanjing } }
 		has_province_modifier = vassal_territory
 	}
 	mean_time_to_happen = { 
@@ -7382,7 +7382,7 @@ province_event = {
 	# 士卿转化为直辖
 	id = 61506
 	trigger = { 
-		has_country_flag = fajiazhuanjing
+		owner = { has_country_flag = fajiazhuanjing }
 		has_province_modifier = vassal_territory
 	}
 	mean_time_to_happen = { 
@@ -9523,14 +9523,20 @@ country_event = {
 		ai_chance = { 
 			factor = 0
 		}
+		clr_global_flag = no_history_lucky
+		clr_global_flag = history_lucky2
 		set_global_flag = history_lucky1
+		country_event = 17503
 	}
 	option = { 
 		name = "EVTOPTB1345"
 		ai_chance = { 
 			factor = 1
 		}
+		clr_global_flag = history_lucky1
+		clr_global_flag = no_history_lucky
 		set_global_flag = history_lucky2
+		country_event = 17503
 	}
 	option = { 
 		name = "EVTOPTC1345"
@@ -9540,5 +9546,6 @@ country_event = {
 		clr_global_flag = history_lucky1
 		clr_global_flag = history_lucky2
 		set_global_flag = no_history_lucky
+		country_event = 17503
 	}
 }

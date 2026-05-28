@@ -1,0 +1,151 @@
+country_decisions = { 
+	# 经济自动种田
+	zidongzhongtian_jingji_kai = {
+		potential = {
+			idea = national_bank
+			has_country_flag = xianyinjueyi_zidong
+			not = { has_country_flag = zidongzhongtian_jingji }
+		}
+		allow = { }
+		effect = {
+			set_country_flag = zidongzhongtian_jingji
+			clr_country_flag = zidongzhongtian_junshi
+			clr_country_flag = zidongzhongtian_wenhua
+		}
+	}
+	zidongzhongtian_jingji_guan = {
+		potential = {
+			has_country_flag = xianyinjueyi_zidong
+			has_country_flag = zidongzhongtian_jingji
+		}
+		allow = { }
+		effect = {
+			clr_country_flag = zidongzhongtian_jingji
+		}
+	}
+
+	# 军事自动种田
+	zidongzhongtian_junshi_kai = {
+		potential = {
+			idea = national_bank
+			has_country_flag = xianyinjueyi_zidong
+			not = { has_country_flag = zidongzhongtian_junshi }
+		}
+		allow = { }
+		effect = {
+			set_country_flag = zidongzhongtian_junshi
+			clr_country_flag = zidongzhongtian_jingji
+			clr_country_flag = zidongzhongtian_wenhua
+		}
+	}
+	zidongzhongtian_junshi_guan = {
+		potential = {
+			has_country_flag = xianyinjueyi_zidong
+			has_country_flag = zidongzhongtian_junshi
+		}
+		allow = { }
+		effect = {
+			clr_country_flag = zidongzhongtian_junshi
+		}
+	}
+
+	# 文化自动种田
+	zidongzhongtian_wenhua_kai = {
+		potential = {
+			idea = national_bank
+			has_country_flag = xianyinjueyi_zidong
+			not = { has_country_flag = zidongzhongtian_wenhua }
+		}
+		allow = { }
+		effect = {
+			set_country_flag = zidongzhongtian_wenhua
+			clr_country_flag = zidongzhongtian_jingji
+			clr_country_flag = zidongzhongtian_junshi
+		}
+	}
+	zidongzhongtian_wenhua_guan = {
+		potential = {
+			has_country_flag = xianyinjueyi_zidong
+			has_country_flag = zidongzhongtian_wenhua
+		}
+		allow = { }
+		effect = {
+			clr_country_flag = zidongzhongtian_wenhua
+		}
+	}
+
+	# 预算5000自动种田
+	zidongzhongtian_yusuan_5000_kai = {
+		potential = {
+			idea = national_bank
+			has_country_flag = xianyinjueyi_zidong
+			not = { has_country_flag = zidongzhongtian_yusuan_5000 }
+		}
+		allow = { }
+		effect = {
+			set_country_flag = zidongzhongtian_yusuan_5000
+			clr_country_flag = zidongzhongtian_yusuan_2000
+			clr_country_flag = zidongzhongtian_yusuan_700
+		}
+	}
+	zidongzhongtian_yusuan_5000_guan = {
+		potential = {
+			has_country_flag = xianyinjueyi_zidong
+			has_country_flag = zidongzhongtian_yusuan_5000
+		}
+		allow = { }
+		effect = {
+			clr_country_flag = zidongzhongtian_yusuan_5000
+		}
+	}
+
+	# 预算2000自动种田
+	zidongzhongtian_yusuan_2000_kai = {
+		potential = {
+			idea = national_bank
+			has_country_flag = xianyinjueyi_zidong
+			not = { has_country_flag = zidongzhongtian_yusuan_2000 }
+		}
+		allow = { }
+		effect = {
+			set_country_flag = zidongzhongtian_yusuan_2000
+			clr_country_flag = zidongzhongtian_yusuan_5000
+			clr_country_flag = zidongzhongtian_yusuan_700
+		}
+	}
+	zidongzhongtian_yusuan_2000_guan = {
+		potential = {
+			has_country_flag = xianyinjueyi_zidong
+			has_country_flag = zidongzhongtian_yusuan_2000
+		}
+		allow = { }
+		effect = {
+			clr_country_flag = zidongzhongtian_yusuan_2000
+		}
+	}
+
+	# 预算700自动种田
+	zidongzhongtian_yusuan_700_kai = {
+		potential = {
+			idea = national_bank
+			has_country_flag = xianyinjueyi_zidong
+			not = { has_country_flag = zidongzhongtian_yusuan_700 }
+		}
+		allow = { }
+		effect = {
+			set_country_flag = zidongzhongtian_yusuan_700
+			clr_country_flag = zidongzhongtian_yusuan_5000
+			clr_country_flag = zidongzhongtian_yusuan_2000
+		}
+	}
+	zidongzhongtian_yusuan_700_guan = {
+		potential = {
+			has_country_flag = xianyinjueyi_zidong
+			has_country_flag = zidongzhongtian_yusuan_700
+		}
+		allow = { }
+		effect = {
+			clr_country_flag = zidongzhongtian_yusuan_700
+		}
+	}
+}

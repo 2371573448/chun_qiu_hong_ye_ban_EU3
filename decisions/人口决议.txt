@@ -60,564 +60,69 @@ province_decisions = {
 			}
 		}
 	}
-	# 安置掠夺人口1
+	# 安置流民
 	set_sacked_pop1 = { 
 		potential = { 
 			owner = { 
-				has_country_flag = xianyinjueyi_anzhirenkou
-				has_country_modifier = lueduorenkou1
+				has_country_flag = xianyinjueyi_anzhiliumin
 			}
-			citysize = 750
-			not = { 
-				citysize = 50000
-			}
-			or = { 
-				and = { 
-					not = { 
-						has_province_modifier = renkouguoliang4
-					}
-					not = { 
-						has_province_modifier = renkouguoliang4
-					}
-					not = { 
-						has_province_modifier = renkouguoliang6
-					}
-				}
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
+			check_variable = { which = chengzaili value = 0 }
+			owner = { check_variable = { which = liuminliang value = 500 } }
 		}
-		allow = { 
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang4
-					}
-				}
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang5
-					}
-				}
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang6
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 10
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 10
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 8
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 8
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 6
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 6
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 4
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 4
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 2
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 2
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
+		allow = {
+			owner = { check_variable = { which = liuminliang value = 500 } }
 		}
 		effect = { 
-			citysize = 750
+			citysize = 500
 			owner = { 
-				remove_country_modifier = lueduorenkou1
+				change_variable = { which = liuminliang value = -500 }
+				treasury = -50
 			}
 		}
 		ai_will_do = { 
 			factor = 1
 		}
 	}
-	# 安置掠夺人口2
+	# 安置流民
 	set_sacked_pop2 = { 
 		potential = { 
 			owner = { 
-				has_country_flag = xianyinjueyi_anzhirenkou
-				has_country_modifier = lueduorenkou2
+				has_country_flag = xianyinjueyi_anzhiliumin
 			}
-			citysize = 1500
-			not = { 
-				citysize = 	100000
-			}
-			or = { 
-				and = { 
-					not = { 
-						has_province_modifier = renkouguoliang4
-					}
-					not = { 
-						has_province_modifier = renkouguoliang5
-					}
-					not = { 
-						has_province_modifier = renkouguoliang6
-					}
-				}
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
+			check_variable = { which = chengzaili value = 0 }
+			owner = { check_variable = { which = liuminliang value = 2000 } }
 		}
-		allow = { 
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang4
-					}
-				}
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang5
-					}
-				}
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang6
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 10
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 10
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 8
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 8
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 6
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 6
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 4
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 4
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 2
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 2
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
+		allow = {
+			owner = { check_variable = { which = liuminliang value = 2000 } }
 		}
 		effect = { 
-			citysize = 1500
+			citysize = 2000
 			owner = { 
-				remove_country_modifier = lueduorenkou2
+				change_variable = { which = liuminliang value = -2000 }
+				treasury = -200
 			}
 		}
 		ai_will_do = { 
 			factor = 1
 		}
 	}
-	# 安置掠夺人口3
+	# 安置流民
 	set_sacked_pop3 = { 
 		potential = { 
 			owner = { 
-				has_country_flag = xianyinjueyi_anzhirenkou
-				has_country_modifier = lueduorenkou3
+				has_country_flag = xianyinjueyi_anzhiliumin
 			}
-			citysize = 3000
-			not = { 
-				citysize = 200000
-			}
-			or = { 
-				and = { 
-					not = { 
-						has_province_modifier = renkouguoliang4
-					}
-					not = { 
-						has_province_modifier = renkouguoliang5
-					}
-					not = { 
-						has_province_modifier = renkouguoliang6
-					}
-				}
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
+			check_variable = { which = chengzaili value = 0 }
+			owner = { check_variable = { which = liuminliang value = 5000 } }
 		}
-		allow = { 
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang4
-					}
-				}
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang5
-					}
-				}
-				owner = { 
-					capital_scope = { 
-						has_province_modifier = renkouguoliang6
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 10
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 10
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 8
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 8
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 6
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 6
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 4
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 4
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
-			OR = { 
-				owner = { 
-					ai = no
-				}
-				is_capital = yes
-				base_tax = 2
-				owner = { 
-					not = { 
-						any_owned_province = { 
-							base_tax = 2
-							not = { 
-								has_province_modifier = renkouguoliang4
-							}
-							not = { 
-								has_province_modifier = renkouguoliang5
-							}
-							not = { 
-								has_province_modifier = renkouguoliang6
-							}
-						}
-					}
-				}
-			}
+		allow = {
+			owner = { check_variable = { which = liuminliang value = 5000 } }
 		}
 		effect = { 
-			citysize = 3000
+			citysize = 5000
 			owner = { 
-				remove_country_modifier = lueduorenkou3
+				change_variable = { which = liuminliang value = -5000 }
+				treasury = -500
 			}
 		}
 		ai_will_do = { 

@@ -1038,7 +1038,10 @@ province_decisions = {
 		potential = { 
 			hre = no
 			owner = { 
-				is_emperor = no
+				and = {
+					is_emperor = no
+					not = { has_global_flag = zhanguokaishi }
+				}
 			}
 			religion_group = christian
 			owner = { 
@@ -1123,7 +1126,10 @@ province_decisions = {
 		potential = { 
 			hre = no
 			owner = { 
-				is_emperor = yes
+				or = {
+					is_emperor = yes
+					has_global_flag = zhanguokaishi
+				}
 			}
 			owner = { 
 				religion_group = christian

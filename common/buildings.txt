@@ -11,42 +11,52 @@
 # one_per_country = yes/no # if yes, only one of these can exist in a country
 # manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
 # destroy_on_conquest = yes/no # destroy this building if conquered
+# spare_on_core = yes/no # if yes, building is kept when reconquering a core province
 # onmap = yes/no # show as a sprite on the map
 # category = x # the category used for labels and such
 
 # Government #农政
 temple = { 
 	# 农田
-	cost = 75
-	time = 24
+	cost = 100
+	time = 3
+	officials = 1
 	modifier = { 
-		supply_limit = 0.5
-		local_tax_modifier = 0.06
-		population_growth = 0.008
+		population_growth = 0.005
+		tax_income = 1
+		local_tax_modifier = 0.10
+		direct_tax_percentage = 0.10
 	}
-	destroy_on_conquest = no
+	destroy_on_conquest = yes
 	spare_on_core = yes
 	category = 1
 }
 courthouse = { 
 	# 井田
 	previous = temple
-	cost = 70
-	time = 24
+	cost = 120
+	time = 6
+	officials = 1
 	modifier = { 
-		direct_tax_percentage = 0.04
-		population_growth = 0.008
+		population_growth = 0.005
+		tax_income = 1
+		local_tax_modifier = 0.10
+		direct_tax_percentage = 0.10
 	}
-	destroy_on_conquest = no
+	destroy_on_conquest = yes
 	spare_on_core = yes
 }
 spy_agency = { 
 	# 畜场
 	previous = courthouse
-	cost = 90
-	time = 18
+	cost = 150
+	time = 9
+	officials = 1
 	modifier = { 
-		local_production_efficiency = 0.12
+		population_growth = 0.005
+		tax_income = 1
+		local_tax_modifier = 0.10
+		direct_tax_percentage = 0.10
 	}
 	destroy_on_conquest = yes
 	spare_on_core = yes
@@ -54,11 +64,14 @@ spy_agency = {
 town_hall = { 
 	# 水渠
 	previous = spy_agency
-	cost = 125
-	time = 24
+	cost = 200
+	time = 12
+	officials = 2
 	modifier = { 
+		population_growth = 0.01
 		tax_income = 2
-		local_tax_modifier = 0.10
+		local_tax_modifier = 0.20
+		direct_tax_percentage = 0.20
 	}
 	destroy_on_conquest = yes
 	spare_on_core = yes
@@ -66,407 +79,589 @@ town_hall = {
 college = { 
 	# 县治
 	previous = town_hall
-	cost = 180
+	cost = 300
 	time = 24
+	officials = 2
 	modifier = { 
-		local_spy_defence = 0.20
-		population_growth = 0.02
+		population_growth = 0.01
+		tax_income = 2
+		local_tax_modifier = 0.20
+		direct_tax_percentage = 0.20
+		supply_limit = 2
 	}
 	destroy_on_conquest = yes
 }
 cathedral = { 
 	# 社稷祭坛
 	previous = college
-	cost = 240
-	time = 30
+	cost = 500
+	time = 36
+	officials = 3
 	modifier = { 
-		stability_cost = -15
-		local_missionary_placement_chance = 0.01
+		population_growth = 0.015
+		tax_income = 3
+		local_tax_modifier = 0.30
+		direct_tax_percentage = 0.30
+		supply_limit = 3
 	}
 	destroy_on_conquest = yes
 	category = 1
 }
 
 # Land #军事
-armory = {#靶场
-	cost = 50
-	time = 12
+armory = {
+	#靶场
+	cost = 100
+	time = 3
+	officials = 1
 	modifier = {
-		regiment_recruit_speed = -0.05
-		local_regiment_cost = -0.05
-		local_manpower_modifier = 0.15
 		local_manpower = 0.010
+		local_manpower_modifier = 0.10
+		#全国效果
+		#land_forcelimit = 0.5
 	}
-	destroy_on_conquest = no
-	officials = 0
+	destroy_on_conquest = yes
+	spare_on_core = yes
 	category = 2
-	spare_on_core = yes
 }
-training_fields = {#马厩
+training_fields = {
+	#马厩
 	previous = armory
-	cost = 70
-	time = 12
+	cost = 120
+	time = 6
+	officials = 1
 	modifier = {
-		regiment_recruit_speed = -0.1
-		local_regiment_cost = -0.05
-		local_movement_speed = 0.10
-		local_manpower_modifier = 0.10
 		local_manpower = 0.010
+		local_manpower_modifier = 0.10
+		#全国效果
+		#land_forcelimit = 0.5
 	}
-	destroy_on_conquest = no
+	destroy_on_conquest = yes
 	spare_on_core = yes
 }
 
-barracks = {#车场
+barracks = {
+	#车场
 	previous = training_fields
-	cost = 90
-	time = 12
-	modifier = {
-		regiment_recruit_speed = -0.05
-		local_regiment_cost = -0.10
-		local_manpower_modifier = 0.10
-		local_manpower = 0.010
-	}
-	destroy_on_conquest = yes
-	spare_on_core = yes
-}
-
-regimental_camp = {#驰道
-	previous = barracks
-	cost = 90
-	time = 24
-	modifier = {
-		local_manpower_modifier = 0.15
-		local_manpower = 0.010
-		max_attrition = -1.5
-	}
-	destroy_on_conquest = yes
-	spare_on_core = yes
-}
-
-arsenal = {#军府
-	previous = regimental_camp
 	cost = 150
-	time = 24
+	time = 9
+	officials = 1
 	modifier = {
-		regiment_recruit_speed = -0.20
-		local_regiment_cost = -0.10
-		local_manpower_modifier = 0.25
+		local_manpower = 0.010
+		local_manpower_modifier = 0.10
+		#全国效果
+		#land_forcelimit = 0.5
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
+}
+
+regimental_camp = {
+	#驰道
+	previous = barracks
+	cost = 200
+	time = 12
+	officials = 2
+	modifier = {
 		local_manpower = 0.020
+		local_manpower_modifier = 0.20
+		#全国效果
+		#land_forcelimit = 1.0
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
+}
+
+arsenal = {
+	#军府
+	previous = regimental_camp
+	cost = 300
+	time = 24
+	officials = 2
+	modifier = {
+		local_manpower = 0.020
+		local_manpower_modifier = 0.20
+		reinforce_speed = 0.02
+		#全国效果
+		#land_forcelimit = 1.0
 	}
 	destroy_on_conquest = yes
 }
 
-conscription_center = {#校场
+conscription_center = {
+	#校场
 	previous = arsenal
-	cost = 200
-	time = 24
+	cost = 500
+	time = 36
+	officials = 3
 	modifier = {
-		local_defensiveness = 0.20
+		local_manpower = 0.030
 		local_manpower_modifier = 0.30
-		local_manpower = 0.040
-		land_forcelimit = 1
-		garrison_growth=0.25
+		reinforce_speed = 0.03
+		#全国效果
+		#land_forcelimit = 1.5
 	}
 	destroy_on_conquest = yes
 	category = 2
 }
 
 # Naval #文化
-dock = {#乡校
-	cost = 40
-	time = 12
+dock = {
+	#乡校
+	cost = 100
+	time = 3
+	officials = 1
 	modifier = {
 		local_revolt_risk = -1
+		minimum_revolt_risk = -1
+		stability_cost = -1
+		#全国效果
+		#officials = 0.1
+		#diplomats = 0.1
 	}
-	destroy_on_conquest = no
-	officials = 0
+	destroy_on_conquest = yes
 	spare_on_core = yes
- 	category = 3
+	category = 3
 }
 
-drydock = {#榭台
-        previous = dock
-	cost = 60
+drydock = {
+	#榭台
+	previous = dock
+	cost = 120
+	time = 6
+	officials = 1
+	modifier = {
+		local_revolt_risk = -1
+		minimum_revolt_risk = -1
+		stability_cost = -1
+		#全国效果
+		#officials = 0.1
+		#diplomats = 0.1
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
+}
+
+shipyard = {
+	#女闾
+	previous = drydock
+	cost = 150
+	time = 9
+	officials = 1
+	modifier = {
+		local_revolt_risk = -1
+		minimum_revolt_risk = -1
+		stability_cost = -1
+		#全国效果
+		#officials = 0.1
+		#diplomats = 0.1
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
+}
+
+grand_shipyard = {
+	#决狱所
+	previous = shipyard
+	cost = 200
 	time = 12
-	modifier = {
-		stability_cost = -5
-	}
-	destroy_on_conquest = no
- 	spare_on_core = yes
-}
-
-shipyard = {#女闾
-        previous = drydock
-	cost = 80
-	time = 12
-	modifier = {
-		local_revolt_risk = -0.5
-		local_production_efficiency = 0.05
-		local_tax_modifier = 0.10
-	}
-	destroy_on_conquest = yes
-	spare_on_core = yes
-}
-
-grand_shipyard = {#决狱所
- 	previous = shipyard
-	cost = 90
-	time = 18
-	modifier = {
-		local_spy_defence = 0.10
-		officials = 0.03
-	}
-	destroy_on_conquest = yes
-	spare_on_core = yes
-}
-
-naval_arsenal = {#学宫
- 	previous = grand_shipyard
-	cost = 160
-	time = 24
-	modifier = {
-		production_tech_investment = 0.3
-		naval_tech_investment = 0.3
-		land_tech_investment = 0.3
-		trade_tech_investment = 0.3
-		government_tech_investment = 0.3
-		local_missionary_placement_chance = 0.015
-		missionaries = 0.03
-		cultural_tradition = 0.001
-	}
-	destroy_on_conquest = yes
-}
-
-naval_base = {#明堂
- 	previous = naval_arsenal
-	cost = 250
-	time = 24
+	officials = 2
 	modifier = {
 		local_revolt_risk = -2
-		local_tax_modifier = 0.35
-		officials = 0.05
+		minimum_revolt_risk = -2
+		stability_cost = -2
+		#全国效果
+		#officials = 0.2
+		#diplomats = 0.2
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
+}
+
+naval_arsenal = {
+	#学宫
+	previous = grand_shipyard
+	cost = 300
+	time = 24
+	officials = 2
+	modifier = {
+		local_revolt_risk = -2
+		minimum_revolt_risk = -2
+		stability_cost = -2
+		#全国效果
+		#officials = 0.2
+		#diplomats = 0.2
+	}
+	destroy_on_conquest = yes
+}
+
+naval_base = {
+	#明堂
+	previous = naval_arsenal
+	cost = 500
+	time = 36
+	officials = 3
+	modifier = {
+		local_revolt_risk = -3
+		minimum_revolt_risk = -3
+		stability_cost = -3
+		#全国效果
+		#officials = 0.3
+		#diplomats = 0.3
 	}
 	destroy_on_conquest = yes
 	category = 3
 }
 
-# Production
-constable = {#机局
-	
-	cost = 45
-	time = 12
+# Production #工业
+constable = {
+	#机局
+	cost = 100
+	time = 3
+	officials = 1
 	modifier = {
-		tax_income = 1
+		trade_income = 1
+		local_production_efficiency = 0.10
 	}
-	destroy_on_conquest = no
-	officials = 0
+	destroy_on_conquest = yes
 	spare_on_core = yes
 	category = 5
 }
 
-workshop = {#农具厂
+workshop = {
+	#农具厂
 	previous = constable
-	cost = 60
-	time = 12
+	cost = 120
+	time = 6
+	officials = 1
 	modifier = {
-		local_production_efficiency = 0.08
+		trade_income = 1
+		local_production_efficiency = 0.10
 	}
-	destroy_on_conquest = no
+	destroy_on_conquest = yes
 	spare_on_core = yes
 }
 
-counting_house = {#冶炼所
+counting_house = {
+	#冶炼所
 	previous = workshop
-	cost = 80
-	time = 12
-	modifier = {
-		local_production_efficiency = 0.12
- 	}
-	destroy_on_conquest = yes
-	spare_on_core = yes
-}
-
-treasury_office = {#工师曹
-	previous = counting_house
-	cost = 100
-	time = 12
-	modifier = {
-		direct_tax_percentage = 0.06
-		regiment_recruit_speed = -0.05		 		
-	}
-	destroy_on_conquest = yes
-	spare_on_core = yes
-}
-
-mint = {#铸币所
-	previous = treasury_office
 	cost = 150
-	time = 24
+	time = 9
+	officials = 1
 	modifier = {
-		local_tax_modifier = 0.35
+		trade_income = 1
+		local_production_efficiency = 0.10
 	}
 	destroy_on_conquest = yes
+	spare_on_core = yes
 }
 
-stock_exchange = {#司空府
-	previous = mint
-	cost = 225
-	time = 24
-	modifier = {
-		tax_income = 3
-		local_production_efficiency = 0.15
-	}
-	destroy_on_conquest = yes
-}
-
-# Trade
-marketplace = {#城门
-	cost = 50
+treasury_office = {
+	#工师曹
+	previous = counting_house
+	cost = 200
 	time = 12
+	officials = 2
 	modifier = {
-		local_trade_income_modifier = 0.1
+		trade_income = 2
+		local_production_efficiency = 0.20
 	}
-	destroy_on_conquest = no
-	officials = 0
+	destroy_on_conquest = yes
+	spare_on_core = yes
+}
+
+mint = {
+	#铸币所
+	previous = treasury_office
+	cost = 300
+	time = 24
+	officials = 2
+	modifier = {
+		trade_income = 2
+		local_production_efficiency = 0.20
+	}
+	destroy_on_conquest = yes
+}
+
+stock_exchange = {
+	#司空府
+	previous = mint
+	cost = 500
+	time = 36
+	officials = 3
+	modifier = {
+		trade_income = 3
+		local_production_efficiency = 0.30
+	}
+	destroy_on_conquest = yes
+}
+
+# Trade #商业
+marketplace = {
+	#城门
+	cost = 100
+	time = 3
+	officials = 1
+	modifier = {
+		local_trade_income_modifier = 0.10
+		local_movement_speed = 0.10
+	}
+	destroy_on_conquest = yes
 	spare_on_core = yes
 	category = 6
 }
 
-trade_depot = {#街市
+trade_depot = {
+	#街市
 	previous = marketplace
-	cost = 50
-	time = 12
+	cost = 120
+	time = 6
+	officials = 1
 	modifier = {
-		trade_income = 2
+		local_trade_income_modifier = 0.10
+		local_movement_speed = 0.10
 	}
-	destroy_on_conquest = no
-	officials = 0
+	destroy_on_conquest = yes
 	spare_on_core = yes
 }
 
-canal = {#桥梁
+canal = {
+	#桥梁
 	previous = trade_depot
-	cost = 60
-	time = 12
+	cost = 150
+	time = 9
+	officials = 1
 	modifier = {
-		direct_tax_percentage = 0.04
-		local_movement_speed = 0.05
+		local_trade_income_modifier = 0.10
+		local_movement_speed = 0.10
 	}
 	destroy_on_conquest = yes
-	officials = 0
 	spare_on_core = yes
 }
 
-road_network = {#道路
+road_network = {
+	#道路
 	previous = canal
-	cost = 80
-	time = 18
+	cost = 200
+	time = 12
+	officials = 2
 	modifier = {
-		trade_income = 3
-		local_movement_speed = 0.12
+		local_trade_income_modifier = 0.20
+		local_movement_speed = 0.20
 	}
 	destroy_on_conquest = yes
-	officials = 0
 	spare_on_core = yes
 }
 
-post_office = {#运河
+post_office = {
+	#运河
 	previous = road_network
-	cost = 160
+	cost = 300
 	time = 24
+	officials = 2
 	modifier = {
-		local_trade_income_modifier = 0.50
-		merchants = 0.02
+		local_trade_income_modifier = 0.20
+		local_movement_speed = 0.20
 	}
 	destroy_on_conquest = yes
 }
 
-customs_house = {#楮师府
+customs_house = {
+	#楮师府
 	previous = post_office
-	cost = 225
-	time = 24
+	cost = 500
+	time = 36
+	officials = 3
 	modifier = {
-		trade_income = 10
-		trade_efficiency = 0.004
-		diplomats = 0.05
+		local_trade_income_modifier = 0.30
+		local_movement_speed = 0.30
 	}
 	destroy_on_conquest = yes
 }
 
-# Fortresses
+# Fortresses #要塞
 fort1 = {
-	cost = 90
-	time = 18
+	cost = 200
+	time = 3
+	officials = 1
 	modifier = {
 		fort_level = 1
+		local_defensiveness = 0.10
+		regiment_recruit_speed = -0.05
+		local_regiment_cost = -0.05
 	}
-	officials = 0
 	destroy_on_conquest = no
+	spare_on_core = yes
 	category = 4
 }
 
 fort2 = {
 	previous = fort1
-	cost = 100
-	time = 18
+	cost = 240
+	time = 6
+	officials = 1
+	trigger = {
+		has_building = courthouse
+		has_building = training_fields
+		has_building = drydock
+		has_building = workshop
+		has_building = trade_depot
+	}
 	modifier = {
 		fort_level = 1
-                                        local_defensiveness = 0.10
+		local_defensiveness = 0.10
+		regiment_recruit_speed = -0.05
+		local_regiment_cost = -0.05
 	}
-	destroy_on_conquest = no
+	destroy_on_conquest = yes
+	spare_on_core = yes
 }
 
 fort3 = {
 	previous = fort2
-	cost = 150
-	time = 24
-	modifier = {
-		supply_limit = 0.5
-		fort_level = 1
-		local_missionary_placement_chance = 0.01
-                                        local_defensiveness = 0.10
+	cost = 300
+	time = 9
+	officials = 1
+	trigger = {
+		has_building = spy_agency
+		has_building = barracks
+		has_building = shipyard
+		has_building = counting_house
+		has_building = canal
 	}
-	destroy_on_conquest = no
+	modifier = {
+		fort_level = 1
+		local_defensiveness = 0.10
+		regiment_recruit_speed = -0.05
+		local_regiment_cost = -0.05
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
 }
 
 fort4 = {
 	previous = fort3
-	cost = 200
-	time = 24
-	modifier = {
-		supply_limit = 0.5
-		fort_level = 1
-		local_revolt_risk = -0.5
-                                        local_defensiveness = 0.10
+	cost = 400
+	time = 12
+	officials = 2
+	trigger = {
+		has_building = town_hall
+		has_building = regimental_camp
+		has_building = grand_shipyard
+		has_building = treasury_office
+		has_building = road_network
 	}
-	destroy_on_conquest = no
+	modifier = {
+		fort_level = 2
+		local_defensiveness = 0.20
+		regiment_recruit_speed = -0.10
+		local_regiment_cost = -0.10
+	}
+	destroy_on_conquest = yes
+	spare_on_core = yes
 }
 
 fort5 = {
 	previous = fort4
-	cost = 300
-	time = 36
-	modifier = {
-		local_defensiveness = 0.30
-                                        local_revolt_risk = -0.5
-		local_missionary_placement_chance = 0.01
+	cost = 600
+	time = 24
+	officials = 2
+	trigger = {
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = college
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = arsenal
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = naval_arsenal
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = mint
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = post_office
+			}
+		}
 	}
-	officials = 2	
+	modifier = {
+		fort_level = 2
+		local_defensiveness = 0.20
+		regiment_recruit_speed = -0.10
+		local_regiment_cost = -0.10
+		local_spy_defence = 0.20
+	}
 	destroy_on_conquest = yes
 }
 
 fort6 = {
 	previous = fort5
-	cost = 400
+	cost = 1000
 	time = 36
-	modifier = {
-		fort_level = 1
-		local_defensiveness = 0.40
-		local_spy_defence = 0.50
-		local_missionary_placement_chance = 0.01
+	officials = 3
+	trigger = {
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = cathedral
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = conscription_center
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = naval_base
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = stock_exchange
+			}
+		}
+		any_neighbor_province = {
+			owned_by = THIS
+			any_neighbor_province = {
+				owned_by = THIS
+				has_building = customs_house
+			}
+		}
 	}
-	officials = 2	
+	modifier = {
+		fort_level = 3
+		local_defensiveness = 0.30
+		regiment_recruit_speed = -0.15
+		local_regiment_cost = -0.15
+		local_spy_defence = 0.30
+	}
 	destroy_on_conquest = yes
 }
 
@@ -497,7 +692,7 @@ embassy = {#行人署
 	
 	modifier = {
 		diplomats = 0.8
-		badboy = -0.3
+		badboy = -0.2
 		diplomatic_skill = 1
 	}
 	destroy_on_conquest = yes
@@ -593,93 +788,157 @@ admiralty = {#司闻曹
 	category = 8
 }
 
-#Manufactories
+# Manufactories #工厂
 refinery = {#伐木场
-	cost = 1000
+	cost = 2000
 	time = 36
+	officials = 10
+	trigger = {
+		OR = {
+			trade_goods = grain
+			trade_goods = slaves
+			trade_goods = ivory
+		}
+	}
 	manufactory = {
+		grain
 		slaves
 		ivory
 	}
 	modifier = {
-		production_tech_investment = 5
-		population_growth = 0.015
+		production_tech_cost_modifier = -0.01
+		population_growth = 0.02
 	}
+	destroy_on_conquest = yes
 	onmap = yes
 	category = 7
 }
 
 wharf = {#港口
-	cost = 1000
+	cost = 2000
 	time = 36
+	officials = 10
+	trigger = {
+		OR = {
+			trade_goods = fish
+			trade_goods = tobacco
+			trade_goods = sugar
+		}
+	}
 	modifier = {
-		naval_tech_investment = 5
+		naval_tech_cost_modifier = -0.01
 		population_growth = 0.02
-                                        naval_forcelimit_modifier = 0.1
 	}
 	manufactory = {
 		fish
 		tobacco
+		sugar
 	}
+	destroy_on_conquest = yes
 	onmap = yes
 	category = 7
 }
 
 weapons = {#牧场
-	cost = 1000
+	cost = 2000
 	time = 36
+	officials = 10
+	trigger = {
+		OR = {
+			trade_goods = spices
+			trade_goods = fur
+			trade_goods = coffee
+		}
+	}
 	modifier = {
-		land_tech_investment = 5
-		population_growth = 0.01
+		land_tech_cost_modifier = -0.01
+		population_growth = 0.02
 	}
 	manufactory = {
 		spices
 		fur
+		coffee
 	}
+	destroy_on_conquest = yes
 	onmap = yes	
 	category = 7
 }
 
 textile = {#矿井
-	cost = 1000
+	cost = 2000
 	time = 36
+	officials = 10
+	trigger = {
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+			trade_goods = gold
+			trade_goods = naval_supplies
+		}
+	}
 	modifier = {
-		trade_tech_investment = 5
+		trade_tech_cost_modifier = -0.01
 		population_growth = 0.02
 	}
 	manufactory = {
 		copper
 		iron
+		gold
+		naval_supplies
 	}
+	destroy_on_conquest = yes
 	onmap = yes
 	category = 7
 }
 
 fine_arts_academy = {#守藏室
-	cost = 1000
+	cost = 2000
 	time = 36
+	officials = 10
+	trigger = {
+		OR = {
+			trade_goods = cloth
+			trade_goods = wool
+			trade_goods = chinaware
+			trade_goods = cotton
+		}
+	}
 	modifier = {
-		stability_investment = 5
-		population_growth = 0.01
-		cultural_tradition = 0.005
+		stability_cost_modifier = -0.05
+		population_growth = 0.02
 	}
 	manufactory = {
 		cloth
+		wool
+		chinaware
+		cotton
 	}
+	destroy_on_conquest = yes
 	onmap = yes
 	category = 7
 }
 
 university = {#煮盐所
-	cost = 1000
+	cost = 2000
 	time = 36
+	officials = 10
+	trigger = {
+		OR = {
+			trade_goods = salt
+			trade_goods = wine
+			trade_goods = tea
+		}
+	}
 	modifier = {
-		government_tech_investment = 5
-		population_growth = 0.015
+		government_tech_cost_modifier = -0.01
+		population_growth = 0.02
 	}
 	manufactory = {
 		salt
+		wine
+		tea
 	}
+	destroy_on_conquest = yes
 	onmap = yes
 	category = 7
 }

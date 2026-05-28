@@ -522,48 +522,1729 @@ country_event = {
 		}
 	}
 }
-province_event = { 
-	id = 1005
-	trigger = { 
+province_event = {
+	id = 100598
+	trigger = {
 		owner = { idea = shrewd_commerce_practise }
 		is_capital = no
 	}
-	mean_time_to_happen = { 
+	mean_time_to_happen = {
 		months = 960
-		modifier = { 
-			factor = 0.15
-			has_province_modifier = vassal_territory
-		}
-		modifier = { 
-			factor = 0.2
-			has_province_modifier = noble_territory
-		}
-		modifier = { 
-			factor = 0.8
-			owner = { centralization_decentralization = 0 }
-		}
-		modifier = { 
-			factor = 0.85
-			owner = { centralization_decentralization = 2 }
-		}
-		modifier = { 
-			factor = 0.85
-			owner = { centralization_decentralization = 4 }
-		}
+		modifier = { factor = 0.15 has_province_modifier = vassal_territory }
+		modifier = { factor = 0.2 has_province_modifier = noble_territory }
+		modifier = { factor = 0.8 owner = { centralization_decentralization = 0 } }
+		modifier = { factor = 0.85 owner = { centralization_decentralization = 2 } }
+		modifier = { factor = 0.85 owner = { centralization_decentralization = 4 } }
 	}
 	title = "EVTNAME1005"
 	desc = "EVTDESC1005"
 	immediate = {
 		remove_province_modifier = liangcang
 	}
-	option = { 
+	option = {
 		name = "EVTOPTA1005"
-		add_province_modifier = { 
-			name = "liangcang"
-			duration = 3650
+		add_province_modifier = { name = "liangcang" duration = 3650 }
+		set_province_flag = suijizhongtian_shengfen
+
+		owner = {
+			# ----- 农业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = temple } owner = { government_tech = 10 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = courthouse } owner = { government_tech = 20 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = spy_agency } owner = { government_tech = 30 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = town_hall } owner = { government_tech = 40 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { government_tech = 45 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = college not = { has_building = cathedral } owner = { government_tech = 50 } } set_province_flag = suijizhongtian_kezhong_nongye }
+
+			# ----- 工业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = constable } owner = { production_tech = 10 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = workshop } owner = { production_tech = 20 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = counting_house } owner = { production_tech = 30 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = treasury_office } owner = { production_tech = 40 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = mint } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = post_office } not = { has_building = fort5 } owner = { production_tech = 45 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = mint not = { has_building = stock_exchange } owner = { production_tech = 50 } } set_province_flag = suijizhongtian_kezhong_gongye }
+
+			# ----- 商业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = marketplace } owner = { trade_tech = 10 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = trade_depot } owner = { trade_tech = 20 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = canal } owner = { trade_tech = 30 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = road_network } owner = { trade_tech = 40 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = post_office } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = fort5 } owner = { trade_tech = 45 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = post_office not = { has_building = customs_house } owner = { trade_tech = 50 } } set_province_flag = suijizhongtian_kezhong_shangye }
+
+			# ----- 军事线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = armory } owner = { land_tech = 10 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = training_fields } owner = { land_tech = 20 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = barracks } owner = { land_tech = 30 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = regimental_camp } owner = { land_tech = 40 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = arsenal } not = { has_building = college } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { land_tech = 45 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = arsenal not = { has_building = conscription_center } owner = { land_tech = 50 } } set_province_flag = suijizhongtian_kezhong_junshi }
+
+			# ----- 文化线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = dock } owner = { naval_tech = 10 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = drydock } owner = { naval_tech = 20 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = shipyard } owner = { naval_tech = 30 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = grand_shipyard } owner = { naval_tech = 40 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = naval_arsenal } not = { has_building = college } not = { has_building = arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { naval_tech = 45 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = naval_arsenal not = { has_building = naval_base } owner = { naval_tech = 50 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+
+			# ----- 要塞线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort1 } owner = { land_tech = 10 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort2 } has_building = courthouse has_building = training_fields has_building = drydock has_building = workshop has_building = trade_depot owner = { land_tech = 20 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort3 } has_building = spy_agency has_building = barracks has_building = shipyard has_building = counting_house has_building = canal owner = { land_tech = 30 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort4 } has_building = town_hall has_building = regimental_camp has_building = grand_shipyard has_building = treasury_office has_building = road_network owner = { land_tech = 40 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort5 } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } owner = { land_tech = 45 } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = college } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = arsenal } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = naval_arsenal } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = mint } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = post_office } } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = fort5 not = { has_building = fort6 } owner = { land_tech = 50 } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = cathedral } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = conscription_center } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = naval_base } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = stock_exchange } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = customs_house } } } set_province_flag = suijizhongtian_kezhong_yaosai }
+
+			# ----- 随机选择逻辑（保持原样） -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_nongye }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } set_province_flag = suijizhongtian_yaozhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+
+			
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = temple }
+					owner = { treasury = 50 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_temple
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -50 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = courthouse }
+					owner = { treasury = 60 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_courthouse
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -60 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = spy_agency }
+					owner = { treasury = 75 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_spy_agency
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -75 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = town_hall }
+					owner = { treasury = 100 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_town_hall
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -100 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = college }
+					owner = { treasury = 150 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_college
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -150 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = cathedral }
+					owner = { treasury = 250 officials = 3 }
+				}
+				set_province_flag = zidongzhongtian_cathedral
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -250 officials = -3 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = constable }
+					owner = { treasury = 50 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_constable
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -50 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = workshop }
+					owner = { treasury = 60 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_workshop
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -60 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = counting_house }
+					owner = { treasury = 75 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_counting_house
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -75 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = treasury_office }
+					owner = { treasury = 100 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_treasury_office
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -100 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = mint }
+					owner = { treasury = 150 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_mint
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -150 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = stock_exchange }
+					owner = { treasury = 250 officials = 3 }
+				}
+				set_province_flag = zidongzhongtian_stock_exchange
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -250 officials = -3 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = marketplace }
+					owner = { treasury = 50 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_marketplace
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -50 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = trade_depot }
+					owner = { treasury = 60 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_trade_depot
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -60 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = canal }
+					owner = { treasury = 75 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_canal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -75 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = road_network }
+					owner = { treasury = 100 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_road_network
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -100 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = post_office }
+					owner = { treasury = 150 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_post_office
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -150 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = customs_house }
+					owner = { treasury = 250 officials = 3 }
+				}
+				set_province_flag = zidongzhongtian_customs_house
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -250 officials = -3 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = armory }
+					owner = { treasury = 50 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_armory
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -50 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = training_fields }
+					owner = { treasury = 60 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_training_fields
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -60 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = barracks }
+					owner = { treasury = 75 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_barracks
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -75 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = regimental_camp }
+					owner = { treasury = 100 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_regimental_camp
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -100 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = arsenal }
+					owner = { treasury = 150 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_arsenal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -150 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = conscription_center }
+					owner = { treasury = 250 officials = 3 }
+				}
+				set_province_flag = zidongzhongtian_conscription_center
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -250 officials = -3 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = dock }
+					owner = { treasury = 50 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_dock
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -50 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = drydock }
+					owner = { treasury = 60 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_drydock
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -60 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = shipyard }
+					owner = { treasury = 75 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_shipyard
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -75 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = grand_shipyard }
+					owner = { treasury = 100 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_grand_shipyard
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -100 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = naval_arsenal }
+					owner = { treasury = 150 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_naval_arsenal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -150 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = naval_base }
+					owner = { treasury = 250 officials = 3 }
+				}
+				set_province_flag = zidongzhongtian_naval_base
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -250 officials = -3 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort1 }
+					owner = { treasury = 100 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_fort1
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -100 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort2 }
+					owner = { treasury = 120 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_fort2
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -120 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort3 }
+					owner = { treasury = 150 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_fort3
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -150 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort4 }
+					owner = { treasury = 200 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_fort4
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -200 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort5 }
+					owner = { treasury = 300 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_fort5
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -300 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort6 }
+					owner = { treasury = 500 officials = 3 }
+				}
+				set_province_flag = zidongzhongtian_fort6
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -500 officials = -3 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
 		}
+		clr_province_flag = suijizhongtian_kezhong_nongye
+		clr_province_flag = suijizhongtian_kezhong_gongye
+		clr_province_flag = suijizhongtian_kezhong_shangye
+		clr_province_flag = suijizhongtian_kezhong_junshi
+		clr_province_flag = suijizhongtian_kezhong_wenhua
+		clr_province_flag = suijizhongtian_kezhong_yaosai
+		clr_province_flag = suijizhongtian_yaozhong_nongye
+		clr_province_flag = suijizhongtian_yaozhong_gongye
+		clr_province_flag = suijizhongtian_yaozhong_shangye
+		clr_province_flag = suijizhongtian_yaozhong_junshi
+		clr_province_flag = suijizhongtian_yaozhong_wenhua
+		clr_province_flag = suijizhongtian_yaozhong_yaosai
+	}
+	option = {
+		name = "EVTOPTB1005"
+		add_province_modifier = { name = "liangcang" duration = 3650 }
+		set_province_flag = suijizhongtian_shengfen
+
+		owner = {
+			# ----- 农业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = temple } owner = { government_tech = 10 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = courthouse } owner = { government_tech = 20 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = spy_agency } owner = { government_tech = 30 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = town_hall } owner = { government_tech = 40 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { government_tech = 45 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = college not = { has_building = cathedral } owner = { government_tech = 50 } } set_province_flag = suijizhongtian_kezhong_nongye }
+
+			# ----- 工业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = constable } owner = { production_tech = 10 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = workshop } owner = { production_tech = 20 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = counting_house } owner = { production_tech = 30 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = treasury_office } owner = { production_tech = 40 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = mint } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = post_office } not = { has_building = fort5 } owner = { production_tech = 45 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = mint not = { has_building = stock_exchange } owner = { production_tech = 50 } } set_province_flag = suijizhongtian_kezhong_gongye }
+
+			# ----- 商业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = marketplace } owner = { trade_tech = 10 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = trade_depot } owner = { trade_tech = 20 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = canal } owner = { trade_tech = 30 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = road_network } owner = { trade_tech = 40 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = post_office } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = fort5 } owner = { trade_tech = 45 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = post_office not = { has_building = customs_house } owner = { trade_tech = 50 } } set_province_flag = suijizhongtian_kezhong_shangye }
+
+			# ----- 军事线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = armory } owner = { land_tech = 10 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = training_fields } owner = { land_tech = 20 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = barracks } owner = { land_tech = 30 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = regimental_camp } owner = { land_tech = 40 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = arsenal } not = { has_building = college } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { land_tech = 45 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = arsenal not = { has_building = conscription_center } owner = { land_tech = 50 } } set_province_flag = suijizhongtian_kezhong_junshi }
+
+			# ----- 文化线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = dock } owner = { naval_tech = 10 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = drydock } owner = { naval_tech = 20 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = shipyard } owner = { naval_tech = 30 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = grand_shipyard } owner = { naval_tech = 40 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = naval_arsenal } not = { has_building = college } not = { has_building = arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { naval_tech = 45 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = naval_arsenal not = { has_building = naval_base } owner = { naval_tech = 50 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+
+			# ----- 要塞线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort1 } owner = { land_tech = 10 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort2 } has_building = courthouse has_building = training_fields has_building = drydock has_building = workshop has_building = trade_depot owner = { land_tech = 20 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort3 } has_building = spy_agency has_building = barracks has_building = shipyard has_building = counting_house has_building = canal owner = { land_tech = 30 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort4 } has_building = town_hall has_building = regimental_camp has_building = grand_shipyard has_building = treasury_office has_building = road_network owner = { land_tech = 40 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort5 } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } owner = { land_tech = 45 } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = college } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = arsenal } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = naval_arsenal } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = mint } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = post_office } } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = fort5 not = { has_building = fort6 } owner = { land_tech = 50 } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = cathedral } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = conscription_center } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = naval_base } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = stock_exchange } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = customs_house } } } set_province_flag = suijizhongtian_kezhong_yaosai }
+
+			# ----- 随机选择逻辑（保持原样） -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_nongye }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } set_province_flag = suijizhongtian_yaozhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+
+			
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = temple }
+					owner = { treasury = 80 }
+				}
+				set_province_flag = zidongzhongtian_temple
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -80 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = courthouse }
+					owner = { treasury = 96 }
+				}
+				set_province_flag = zidongzhongtian_courthouse
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -96 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = spy_agency }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_spy_agency
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = town_hall }
+					owner = { treasury = 160 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_town_hall
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -160 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = college }
+					owner = { treasury = 240 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_college
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -240 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = cathedral }
+					owner = { treasury = 400 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_cathedral
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -400 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = constable }
+					owner = { treasury = 80 }
+				}
+				set_province_flag = zidongzhongtian_constable
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -80 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = workshop }
+					owner = { treasury = 96 }
+				}
+				set_province_flag = zidongzhongtian_workshop
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -96 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = counting_house }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_counting_house
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = treasury_office }
+					owner = { treasury = 160 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_treasury_office
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -160 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = mint }
+					owner = { treasury = 240 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_mint
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -240 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = stock_exchange }
+					owner = { treasury = 400 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_stock_exchange
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -400 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = marketplace }
+					owner = { treasury = 80 }
+				}
+				set_province_flag = zidongzhongtian_marketplace
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -80 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = trade_depot }
+					owner = { treasury = 96 }
+				}
+				set_province_flag = zidongzhongtian_trade_depot
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -96 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = canal }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_canal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = road_network }
+					owner = { treasury = 160 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_road_network
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -160 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = post_office }
+					owner = { treasury = 240 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_post_office
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -240 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = customs_house }
+					owner = { treasury = 400 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_customs_house
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -400 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = armory }
+					owner = { treasury = 80 }
+				}
+				set_province_flag = zidongzhongtian_armory
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -80 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = training_fields }
+					owner = { treasury = 96 }
+				}
+				set_province_flag = zidongzhongtian_training_fields
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -96 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = barracks }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_barracks
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = regimental_camp }
+					owner = { treasury = 160 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_regimental_camp
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -160 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = arsenal }
+					owner = { treasury = 240 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_arsenal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -240 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = conscription_center }
+					owner = { treasury = 400 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_conscription_center
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -400 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = dock }
+					owner = { treasury = 80 }
+				}
+				set_province_flag = zidongzhongtian_dock
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -80 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = drydock }
+					owner = { treasury = 96 }
+				}
+				set_province_flag = zidongzhongtian_drydock
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -96 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = shipyard }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_shipyard
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = grand_shipyard }
+					owner = { treasury = 160 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_grand_shipyard
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -160 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = naval_arsenal }
+					owner = { treasury = 240 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_naval_arsenal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -240 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = naval_base }
+					owner = { treasury = 400 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_naval_base
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -400 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort1 }
+					owner = { treasury = 160 }
+				}
+				set_province_flag = zidongzhongtian_fort1
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -160 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort2 }
+					owner = { treasury = 192 }
+				}
+				set_province_flag = zidongzhongtian_fort2
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -192 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort3 }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_fort3
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort4 }
+					owner = { treasury = 320 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_fort4
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -320 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort5 }
+					owner = { treasury = 480 officials = 1 }
+				}
+				set_province_flag = zidongzhongtian_fort5
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -480 officials = -1 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort6 }
+					owner = { treasury = 800 officials = 2 }
+				}
+				set_province_flag = zidongzhongtian_fort6
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -800 officials = -2 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+		}
+		clr_province_flag = suijizhongtian_kezhong_nongye
+		clr_province_flag = suijizhongtian_kezhong_gongye
+		clr_province_flag = suijizhongtian_kezhong_shangye
+		clr_province_flag = suijizhongtian_kezhong_junshi
+		clr_province_flag = suijizhongtian_kezhong_wenhua
+		clr_province_flag = suijizhongtian_kezhong_yaosai
+		clr_province_flag = suijizhongtian_yaozhong_nongye
+		clr_province_flag = suijizhongtian_yaozhong_gongye
+		clr_province_flag = suijizhongtian_yaozhong_shangye
+		clr_province_flag = suijizhongtian_yaozhong_junshi
+		clr_province_flag = suijizhongtian_yaozhong_wenhua
+		clr_province_flag = suijizhongtian_yaozhong_yaosai
+	}
+	option = {
+		name = "EVTOPTC1005"
+		add_province_modifier = { name = "liangcang" duration = 3650 }
+		set_province_flag = suijizhongtian_shengfen
+
+		owner = {
+			# ----- 农业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = temple } owner = { government_tech = 10 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = courthouse } owner = { government_tech = 20 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = spy_agency } owner = { government_tech = 30 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = town_hall } owner = { government_tech = 40 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { government_tech = 45 } } set_province_flag = suijizhongtian_kezhong_nongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = college not = { has_building = cathedral } owner = { government_tech = 50 } } set_province_flag = suijizhongtian_kezhong_nongye }
+
+			# ----- 工业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = constable } owner = { production_tech = 10 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = workshop } owner = { production_tech = 20 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = counting_house } owner = { production_tech = 30 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = treasury_office } owner = { production_tech = 40 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = mint } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = post_office } not = { has_building = fort5 } owner = { production_tech = 45 } } set_province_flag = suijizhongtian_kezhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = mint not = { has_building = stock_exchange } owner = { production_tech = 50 } } set_province_flag = suijizhongtian_kezhong_gongye }
+
+			# ----- 商业线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = marketplace } owner = { trade_tech = 10 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = trade_depot } owner = { trade_tech = 20 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = canal } owner = { trade_tech = 30 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = road_network } owner = { trade_tech = 40 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = post_office } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = fort5 } owner = { trade_tech = 45 } } set_province_flag = suijizhongtian_kezhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = post_office not = { has_building = customs_house } owner = { trade_tech = 50 } } set_province_flag = suijizhongtian_kezhong_shangye }
+
+			# ----- 军事线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = armory } owner = { land_tech = 10 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = training_fields } owner = { land_tech = 20 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = barracks } owner = { land_tech = 30 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = regimental_camp } owner = { land_tech = 40 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = arsenal } not = { has_building = college } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { land_tech = 45 } } set_province_flag = suijizhongtian_kezhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = arsenal not = { has_building = conscription_center } owner = { land_tech = 50 } } set_province_flag = suijizhongtian_kezhong_junshi }
+
+			# ----- 文化线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = dock } owner = { naval_tech = 10 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = drydock } owner = { naval_tech = 20 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = shipyard } owner = { naval_tech = 30 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = grand_shipyard } owner = { naval_tech = 40 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = naval_arsenal } not = { has_building = college } not = { has_building = arsenal } not = { has_building = mint } not = { has_building = post_office } not = { has_building = fort5 } owner = { naval_tech = 45 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = naval_arsenal not = { has_building = naval_base } owner = { naval_tech = 50 } } set_province_flag = suijizhongtian_kezhong_wenhua }
+
+			# ----- 要塞线 -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort1 } owner = { land_tech = 10 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort2 } has_building = courthouse has_building = training_fields has_building = drydock has_building = workshop has_building = trade_depot owner = { land_tech = 20 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort3 } has_building = spy_agency has_building = barracks has_building = shipyard has_building = counting_house has_building = canal owner = { land_tech = 30 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort4 } has_building = town_hall has_building = regimental_camp has_building = grand_shipyard has_building = treasury_office has_building = road_network owner = { land_tech = 40 } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } not = { has_building = fort5 } not = { has_building = college } not = { has_building = arsenal } not = { has_building = naval_arsenal } not = { has_building = mint } not = { has_building = post_office } owner = { land_tech = 45 } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = college } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = arsenal } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = naval_arsenal } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = mint } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = post_office } } } set_province_flag = suijizhongtian_kezhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_shengfen not = { has_province_flag = zhengzaijianshe } has_building = fort5 not = { has_building = fort6 } owner = { land_tech = 50 } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = cathedral } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = conscription_center } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = naval_base } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = stock_exchange } } any_neighbor_province = { owned_by = THIS any_neighbor_province = { owned_by = THIS has_building = customs_house } } } set_province_flag = suijizhongtian_kezhong_yaosai }
+
+			# ----- 随机选择逻辑（保持原样） -----
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_nongye }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_gongye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_shangye }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_junshi }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } set_province_flag = suijizhongtian_yaozhong_wenhua }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua NOT = { has_province_flag = suijizhongtian_kezhong_yaosai } } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } set_province_flag = suijizhongtian_yaozhong_yaosai }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi NOT = { has_province_flag = suijizhongtian_kezhong_wenhua } has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye NOT = { has_province_flag = suijizhongtian_kezhong_junshi } has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye NOT = { has_province_flag = suijizhongtian_kezhong_shangye } has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye NOT = { has_province_flag = suijizhongtian_kezhong_gongye } has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { NOT = { has_province_flag = suijizhongtian_kezhong_nongye } has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+			any_owned = { limit = { has_province_flag = suijizhongtian_kezhong_nongye has_province_flag = suijizhongtian_kezhong_gongye has_province_flag = suijizhongtian_kezhong_shangye has_province_flag = suijizhongtian_kezhong_junshi has_province_flag = suijizhongtian_kezhong_wenhua has_province_flag = suijizhongtian_kezhong_yaosai } random_list = { 10 = { set_province_flag = suijizhongtian_yaozhong_nongye } 10 = { set_province_flag = suijizhongtian_yaozhong_gongye } 10 = { set_province_flag = suijizhongtian_yaozhong_shangye } 10 = { set_province_flag = suijizhongtian_yaozhong_junshi } 10 = { set_province_flag = suijizhongtian_yaozhong_wenhua } 10 = { set_province_flag = suijizhongtian_yaozhong_yaosai } } }
+
+			
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = temple }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_temple
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = courthouse }
+					owner = { treasury = 144 }
+				}
+				set_province_flag = zidongzhongtian_courthouse
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -144 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = spy_agency }
+					owner = { treasury = 180 }
+				}
+				set_province_flag = zidongzhongtian_spy_agency
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -180 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = town_hall }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_town_hall
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = college }
+					owner = { treasury = 360 }
+				}
+				set_province_flag = zidongzhongtian_college
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -360 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_nongye
+					not = { has_building = cathedral }
+					owner = { treasury = 600 }
+				}
+				set_province_flag = zidongzhongtian_cathedral
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -600 }
+				clr_province_flag = suijizhongtian_yaozhong_nongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = constable }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_constable
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = workshop }
+					owner = { treasury = 144 }
+				}
+				set_province_flag = zidongzhongtian_workshop
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -144 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = counting_house }
+					owner = { treasury = 180 }
+				}
+				set_province_flag = zidongzhongtian_counting_house
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -180 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = treasury_office }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_treasury_office
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = mint }
+					owner = { treasury = 360 }
+				}
+				set_province_flag = zidongzhongtian_mint
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -360 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_gongye
+					not = { has_building = stock_exchange }
+					owner = { treasury = 600 }
+				}
+				set_province_flag = zidongzhongtian_stock_exchange
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -600 }
+				clr_province_flag = suijizhongtian_yaozhong_gongye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = marketplace }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_marketplace
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = trade_depot }
+					owner = { treasury = 144 }
+				}
+				set_province_flag = zidongzhongtian_trade_depot
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -144 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = canal }
+					owner = { treasury = 180 }
+				}
+				set_province_flag = zidongzhongtian_canal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -180 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = road_network }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_road_network
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = post_office }
+					owner = { treasury = 360 }
+				}
+				set_province_flag = zidongzhongtian_post_office
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -360 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_shangye
+					not = { has_building = customs_house }
+					owner = { treasury = 600 }
+				}
+				set_province_flag = zidongzhongtian_customs_house
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -600 }
+				clr_province_flag = suijizhongtian_yaozhong_shangye
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = armory }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_armory
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = training_fields }
+					owner = { treasury = 144 }
+				}
+				set_province_flag = zidongzhongtian_training_fields
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -144 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = barracks }
+					owner = { treasury = 180 }
+				}
+				set_province_flag = zidongzhongtian_barracks
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -180 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = regimental_camp }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_regimental_camp
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = arsenal }
+					owner = { treasury = 360 }
+				}
+				set_province_flag = zidongzhongtian_arsenal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -360 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_junshi
+					not = { has_building = conscription_center }
+					owner = { treasury = 600 }
+				}
+				set_province_flag = zidongzhongtian_conscription_center
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -600 }
+				clr_province_flag = suijizhongtian_yaozhong_junshi
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = dock }
+					owner = { treasury = 120 }
+				}
+				set_province_flag = zidongzhongtian_dock
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -120 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = drydock }
+					owner = { treasury = 144 }
+				}
+				set_province_flag = zidongzhongtian_drydock
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -144 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = shipyard }
+					owner = { treasury = 180 }
+				}
+				set_province_flag = zidongzhongtian_shipyard
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -180 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = grand_shipyard }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_grand_shipyard
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = naval_arsenal }
+					owner = { treasury = 360 }
+				}
+				set_province_flag = zidongzhongtian_naval_arsenal
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -360 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_wenhua
+					not = { has_building = naval_base }
+					owner = { treasury = 600 }
+				}
+				set_province_flag = zidongzhongtian_naval_base
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -600 }
+				clr_province_flag = suijizhongtian_yaozhong_wenhua
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort1 }
+					owner = { treasury = 240 }
+				}
+				set_province_flag = zidongzhongtian_fort1
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 90 }
+				owner = { treasury = -240 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort2 }
+					owner = { treasury = 288 }
+				}
+				set_province_flag = zidongzhongtian_fort2
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 180 }
+				owner = { treasury = -288 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort3 }
+					owner = { treasury = 360 }
+				}
+				set_province_flag = zidongzhongtian_fort3
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 270 }
+				owner = { treasury = -360 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort4 }
+					owner = { treasury = 480 }
+				}
+				set_province_flag = zidongzhongtian_fort4
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 360 }
+				owner = { treasury = -480 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort5 }
+					owner = { treasury = 720 }
+				}
+				set_province_flag = zidongzhongtian_fort5
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 720 }
+				owner = { treasury = -720 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+			any_owned = {
+				limit = {
+					has_province_flag = suijizhongtian_yaozhong_yaosai
+					not = { has_building = fort6 }
+					owner = { treasury = 1200 }
+				}
+				set_province_flag = zidongzhongtian_fort6
+				set_province_flag = zhengzaijianshe
+				add_province_modifier = { name = "zhengzaijianshe" duration = 1080 }
+				owner = { treasury = -1200 }
+				clr_province_flag = suijizhongtian_yaozhong_yaosai
+			}
+		}
+		clr_province_flag = suijizhongtian_kezhong_nongye
+		clr_province_flag = suijizhongtian_kezhong_gongye
+		clr_province_flag = suijizhongtian_kezhong_shangye
+		clr_province_flag = suijizhongtian_kezhong_junshi
+		clr_province_flag = suijizhongtian_kezhong_wenhua
+		clr_province_flag = suijizhongtian_kezhong_yaosai
+		clr_province_flag = suijizhongtian_yaozhong_nongye
+		clr_province_flag = suijizhongtian_yaozhong_gongye
+		clr_province_flag = suijizhongtian_yaozhong_shangye
+		clr_province_flag = suijizhongtian_yaozhong_junshi
+		clr_province_flag = suijizhongtian_yaozhong_wenhua
+		clr_province_flag = suijizhongtian_yaozhong_yaosai
+	}
+	option = {
+		name = "EVTOPTD1005"
+		add_province_modifier = { name = "liangcang" duration = 3650 }
 	}
 }
+
 province_event = { 
 	id = 100500
 	trigger = { 
@@ -575,7 +2256,7 @@ province_event = {
 		has_province_modifier = monarch_territory
 	}
 	mean_time_to_happen = { 
-		months = 163
+		months = 120
 		modifier = { 
 			factor = 0.5
 			has_country_flag = fajiazhuanjing
@@ -1034,15 +2715,7 @@ country_event = {
 #开局换国策
 country_event = { 
 	id = 17503
-	trigger = { 
-		ai = no
-		NOT = { 
-			has_country_flag = liniangenghuan
-		}
-	}
-	mean_time_to_happen = { 
-		years = 0
-	}
+	is_triggered_only = yes
 	title = "EVTNAME17503"
 	desc = "EVTDESC17503"
 	option = { 
@@ -1090,34 +2763,26 @@ country_event = {
 		remove_idea = humanist_tolerance
 		remove_idea = cabinet
 		remove_idea = revolution_and_counter
-		set_country_flag = liniangenghuan
+		country_event = 1750300
 	}
 	option = { 
 		name = "EVTOPTB17503"
 		ai_chance = { 
 			factor = 100
 		}
-		set_country_flag = liniangenghuan
 		legitimacy = 0.5
 		prestige = 0.5
 		stability = 3
+		country_event = 1750300
 	}
 }
 country_event = { 
 	id = 1750300
-	trigger = { 
-		ai = no
-		NOT = { 
-			has_country_flag = liniangenghuan2
-		}
-	}
-	mean_time_to_happen = { 
-		years = 0
-	}
+	is_triggered_only = yes
 	title = "EVTNAME1750300"
 	desc = "EVTDESC1750300"
 	option = { 
-		name = "EVTOPTA17503"
+		name = "EVTOPTA1750300"
 		ai_chance = { 
 			factor = 0
 		}
@@ -1199,15 +2864,69 @@ country_event = {
 			}
 			aristocracy_plutocracy = -5
 		}
-		set_country_flag = liniangenghuan2
+		country_event = 1750301
 	}
 	option = { 
-		name = "EVTOPTB17503"
+		name = "EVTOPTB1750300"
 		ai_chance = { 
 			factor = 100
 		}
-		set_country_flag = liniangenghuan2
 		prestige = 0.05
+		country_event = 1750301
+	}
+}
+country_event = { 
+	id = 1750301
+	is_triggered_only = yes
+	title = "EVTNAME1750301"
+	desc = "EVTDESC1750301"
+	option = { 
+		name = "EVTOPTA1750301"
+		ai_chance = { 
+			factor = 0
+		}
+	}
+	option = { 
+		name = "EVTOPTB1750301"
+		set_country_flag = xianyinjueyi_junziliuyi
+		set_country_flag = xianyinjueyi_wenhua
+		set_country_flag = xianyinjueyi_zhongyang
+		set_country_flag = xianyinjueyi_jungai
+		set_country_flag = xianyinjueyi_gaige
+		set_country_flag = xianyinjueyi_linian
+		set_country_flag = xianyinjueyi_xingdong
+		set_country_flag = xianyinjueyi_guanchamanzu
+		set_country_flag = xianyinjueyi_qianyizhongdian
+		set_country_flag = xianyinjueyi_xiyinyimin
+		set_country_flag = xianyinjueyi_yimintonghua
+		set_country_flag = xianyinjueyi_kaifamanhuang
+		set_country_flag = xianyinjueyi_wenhuajianzhu
+		set_country_flag = xianyinjueyi_shelijunzhi
+		set_country_flag = xianyinjueyi_lingdiguanli
+		set_country_flag = xianyinjueyi_guanbizhongxin
+		set_country_flag = xianyinjueyi_anzhiliumin
+		set_country_flag = xianyinjueyi_zidong
+		ai_chance = { 
+			factor = 100
+		}
+	}
+	option = { 
+		name = "EVTOPTC1750301"
+		set_country_flag = xianyinjueyi_wenhua
+		set_country_flag = xianyinjueyi_zhongyang
+		set_country_flag = xianyinjueyi_jungai
+		set_country_flag = xianyinjueyi_gaige
+		set_country_flag = xianyinjueyi_linian
+		set_country_flag = xianyinjueyi_xingdong
+		set_country_flag = xianyinjueyi_kaifamanhuang
+		set_country_flag = xianyinjueyi_shelijunzhi
+		set_country_flag = xianyinjueyi_lingdiguanli
+		set_country_flag = xianyinjueyi_anzhirenkou
+		set_country_flag = xianyinjueyi_anzhiliumin
+		set_country_flag = xianyinjueyi_zidong
+		ai_chance = { 
+			factor = 100
+		}
 	}
 }
 country_event = { 
@@ -1235,5 +2954,96 @@ country_event = {
 		officials = 2
 		remove_country_modifier = touziguanxue
 		clr_country_flag = touziguanxue
+	}
+}
+
+province_event = { 
+	id = 17505
+	trigger = { 
+		any_neighbor_province = {
+			is_capital = yes
+			owned_by = THIS
+		}
+		owner = {
+			check_variable = {
+				which = simubuduijishu
+				value = 20
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		days = 1
+	}
+	title = "EVTNAME17505"
+	desc = "EVTDESC17505"
+	immediate = {
+		owner = {
+			change_variable = {
+				which = simubuduijishu
+				value = -20
+			}
+		}
+		infantry = this
+		infantry = this
+		infantry = this
+		cavalry = this
+		artillery = this
+
+		infantry = this
+		infantry = this
+		infantry = this
+		cavalry = this
+		artillery = this
+
+		infantry = this
+		infantry = this
+		infantry = this
+		cavalry = this
+		artillery = this
+
+		infantry = this
+		infantry = this
+		infantry = this
+		cavalry = this
+		artillery = this
+	}
+	option = { 
+		name = "EVTOPTA17505"
+		owner = {
+			random = {
+				chance = 5
+				define_general = { 
+					name = "干练武尉" 
+					shock = 1
+					fire = 1
+					siege = 1
+					manuever = 1
+				} 
+			}
+			random = {
+				chance = 1
+				define_general = { 
+					name = "匡世英杰" 
+					shock = 3
+					fire = 3
+					siege = 1
+					manuever = 1
+				} 
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB17505"
+		owner = {
+			treasury = -10
+			prestige = 0.05
+		}
+	}
+	option = { 
+		name = "EVTOPTC17505"
+		owner = {
+			treasury = -10
+			war_exhaustion = -0.5
+		}
 	}
 }

@@ -1599,7 +1599,7 @@ country_event = {
 				owner = { 
 					change_variable = {
 						which = liangshishuliang
-						value = 0.5
+						value = 0.3
 					}
 				}
 			}
@@ -1607,7 +1607,6 @@ country_event = {
 				limit = { 
 					not = { has_province_modifier = dajishengchan }
 					or = { 
-						trade_goods = grain
 						trade_goods = fish
 						trade_goods = coffee
 					}
@@ -1616,6 +1615,90 @@ country_event = {
 				owner = { 
 					change_variable = {
 						which = liangshishuliang
+						value = 0.2
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					has_building = temple
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.01
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					has_building = courthouse
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.01
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					has_building = spy_agency
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.01
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					has_building = town_hall
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.02
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					has_building = college
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.02
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					has_building = cathedral
+				}
+				owner = { 
+					change_variable = {
+						which = liangshishuliang
+						value = 0.03
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = copper
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
 						value = 0.5
 					}
 				}
@@ -1624,11 +1707,12 @@ country_event = {
 				limit = { 
 					not = { has_province_modifier = dajishengchan }
 					trade_goods = copper
+					citysize = 10000
 				}
 				owner = { 
 					change_variable = {
 						which = tongtieshuliang
-						value = 1
+						value = 0.1
 					}
 				}
 			}
@@ -1636,13 +1720,51 @@ country_event = {
 				limit = { 
 					not = { has_province_modifier = dajishengchan }
 					trade_goods = copper
-					has_building = stock_exchange
-					has_building = textile
+					citysize = 20000
 				}
 				owner = { 
 					change_variable = {
 						which = tongtieshuliang
-						value = 1
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = copper
+					citysize = 30000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = copper
+					citysize = 40000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = copper
+					citysize = 50000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
 					}
 				}
 			}
@@ -1659,7 +1781,7 @@ country_event = {
 				owner = { 
 					change_variable = {
 						which = tongtieshuliang
-						value = 1
+						value = 0.5
 					}
 				}
 			}
@@ -1667,13 +1789,64 @@ country_event = {
 				limit = { 
 					not = { has_province_modifier = dajishengchan }
 					trade_goods = iron
-					has_building = stock_exchange
-					has_building = textile
+					citysize = 10000
 				}
 				owner = { 
 					change_variable = {
 						which = tongtieshuliang
-						value = 1
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = iron
+					citysize = 20000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = iron
+					citysize = 30000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = iron
+					citysize = 40000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					not = { has_province_modifier = dajishengchan }
+					trade_goods = iron
+					citysize = 50000
+				}
+				owner = { 
+					change_variable = {
+						which = tongtieshuliang
+						value = 0.1
 					}
 				}
 			}

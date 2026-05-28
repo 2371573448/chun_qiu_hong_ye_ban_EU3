@@ -170,7 +170,7 @@ province_decisions = {
 					has_country_modifier = shoujiushili1
 				}
 			}
-			
+			has_province_modifier = monarch_territory
 		}
 		allow = { 
 			owner = { stability = 1 }

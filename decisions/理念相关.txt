@@ -210,47 +210,105 @@ country_decisions = {
 				name = "simubuduidongyuan"
 				duration = 3650
 			}
+			any_country = {
+				limit = { 
+					tag = this
+				}
+				set_variable = {
+					which = simubuduijishu
+					value = 0
+				}
+			}
 			any_owned = { 
 				limit = { 
-					has_province_modifier = noble_territory
-					citysize = 15000
-				}
-				random_list = { 
-					50 = { 
-						infantry = current
-						add_province_modifier = { 
-							name = "dongyuansimubudui"
-							duration = 3650
-						}
+					or = {
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
 					}
-					50 = { 
-						artillery = current
-						add_province_modifier = { 
-							name = "dongyuansimubudui"
-							duration = 3650
-						}
+				}
+				owner = {
+					change_variable = {
+						which = simubuduijishu
+						value = 1
+					}
+				}
+				add_province_modifier = { 
+					name = "dongyuansimubudui"
+					duration = 3650
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
+					}
+					citysize = 10000
+				}
+				owner = {
+					change_variable = {
+						which = simubuduijishu
+						value = 1
 					}
 				}
 			}
 			any_owned = { 
 				limit = { 
-					has_province_modifier = vassal_territory
-					citysize = 15000
-				}
-				random_list = { 
-					70 = { 
-						infantry = current
-						add_province_modifier = { 
-							name = "dongyuansimubudui"
-							duration = 3650
-						}
+					or = {
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
 					}
-					30 = { 
-						artillery = current
-						add_province_modifier = { 
-							name = "dongyuansimubudui"
-							duration = 3650
-						}
+					citysize = 20000
+				}
+				owner = {
+					change_variable = {
+						which = simubuduijishu
+						value = 1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
+					}
+					citysize = 30000
+				}
+				owner = {
+					change_variable = {
+						which = simubuduijishu
+						value = 1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
+					}
+					citysize = 40000
+				}
+				owner = {
+					change_variable = {
+						which = simubuduijishu
+						value = 1
+					}
+				}
+			}
+			any_owned = { 
+				limit = { 
+					or = {
+						has_province_modifier = noble_territory
+						has_province_modifier = vassal_territory
+					}
+					citysize = 50000
+				}
+				owner = {
+					change_variable = {
+						which = simubuduijishu
+						value = 1
 					}
 				}
 			}

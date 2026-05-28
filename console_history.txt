@@ -476,3 +476,56 @@ event 272
 event 257
 event 257
 event 257
+annex QIG
+annex QIN
+cash
+cash
+event 60043
+event 60043
+event 60043
+event 60043
+event 60043
+event 202600
+event 202600
+event 202600
+event 202601
+event 202601
+annex QIN
+cash
+
+event 202601
+event 202601
+annex QIN
+cash
+event 202601
+annex QIN
+cash
+event 202601
+officials
+official
+official
+event 202601
+event 202605
+event 202605
+tag wei
+event 202605
+tag qig
+event 202605
+tag wei
+event 202605
+event 202605
+event 202601
+event 202601
+event 202601
+cash
+event 100598
+event 100598
+event 100598
+event 100598
+event 100598 2
+event 845
+event 755
+event 352
+event 352
+event 352
+event 100598

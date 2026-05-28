@@ -1,6 +1,7 @@
 country_event = { 
 	id = 60011
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			not = { 
@@ -48,6 +49,7 @@ country_event = {
 country_event = { 
 	id = 60012
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 10
@@ -97,6 +99,7 @@ country_event = {
 country_event = { 
 	id = 60013
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 20
@@ -146,6 +149,7 @@ country_event = {
 country_event = { 
 	id = 60014
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 30
@@ -195,6 +199,7 @@ country_event = {
 country_event = { 
 	id = 60015
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 40
@@ -244,6 +249,7 @@ country_event = {
 country_event = { 
 	id = 60016
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 50
@@ -293,6 +299,7 @@ country_event = {
 country_event = { 
 	id = 60017
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 60
@@ -342,6 +349,7 @@ country_event = {
 country_event = { 
 	id = 60018
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 70
@@ -391,6 +399,7 @@ country_event = {
 country_event = { 
 	id = 60019
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 80
@@ -440,6 +449,7 @@ country_event = {
 country_event = { 
 	id = 60020
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 90
@@ -489,6 +499,7 @@ country_event = {
 country_event = { 
 	id = 60021
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			production_tech = 100
@@ -565,7 +576,7 @@ country_event = {
 			}
 		}
 		FROM = { 
-			citysize = -500
+			citysize = -5000
 			add_province_modifier = { 
 				name = "wanquanzhanling"
 				duration = 1095
@@ -581,10 +592,7 @@ country_event = {
 		}
 		badboy = 0.8
 		treasury = 20
-		add_country_modifier = { 
-			name = "lueduorenkou1"
-			duration = -1
-		}
+		change_variable = { which = liuminliang value = 5000 }
 	}
 	option = { 
 		name = "EVTOPTB60024"
@@ -684,7 +692,7 @@ country_event = {
 			}
 		}
 		FROM = { 
-			citysize = -1000
+			citysize = -10000
 			add_province_modifier = { 
 				name = "wanquanzhanling"
 				duration = 1095
@@ -700,10 +708,7 @@ country_event = {
 		}
 		badboy = 1.2
 		treasury = 40
-		add_country_modifier = { 
-			name = "lueduorenkou2"
-			duration = -1
-		}
+		change_variable = { which = liuminliang value = 10000 }
 	}
 	option = { 
 		name = "EVTOPTB60024"
@@ -803,7 +808,7 @@ country_event = {
 			}
 		}
 		FROM = { 
-			citysize = -2000
+			citysize = -20000
 			add_province_modifier = { 
 				name = "wanquanzhanling"
 				duration = 1095
@@ -819,10 +824,7 @@ country_event = {
 		}
 		badboy = 1.6
 		treasury = 70
-		add_country_modifier = { 
-			name = "lueduorenkou3"
-			duration = -1
-		}
+		change_variable = { which = liuminliang value = 20000 }
 	}
 	option = { 
 		name = "EVTOPTB60024"
@@ -966,6 +968,7 @@ province_event = {
 country_event = { 
 	id = 60032
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			war = yes
@@ -1000,6 +1003,7 @@ country_event = {
 country_event = { 
 	id = 60033
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			war = no
@@ -1034,6 +1038,7 @@ country_event = {
 country_event = { 
 	id = 60034
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			stability = 1
@@ -1078,6 +1083,7 @@ country_event = {
 country_event = { 
 	id = 60035
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			stability = 2
@@ -1122,6 +1128,7 @@ country_event = {
 country_event = { 
 	id = 60036
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			stability = 3
@@ -1160,6 +1167,7 @@ country_event = {
 country_event = { 
 	id = 60037
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			stability = -1
@@ -1204,6 +1212,7 @@ country_event = {
 country_event = { 
 	id = 60038
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			stability = -2
@@ -1248,6 +1257,7 @@ country_event = {
 country_event = { 
 	id = 60039
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			not = { 
@@ -1290,6 +1300,7 @@ country_event = {
 country_event = { 
 	id = 60040
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			stability = 0
@@ -1337,15 +1348,11 @@ country_event = {
 	id = 60041
 	trigger = { 
 		tag = NPC
-		any_country = { 
-			any_owned_province = { 
-				citysize = 30000
-				not = { 
-					citysize = 50000
-				}
-				not = { 
-					has_province_modifier = renkouguoliang1
-				}
+		or = {
+			not = { has_country_flag = renkouchengzaili_jishi }
+			had_country_flag = { 
+				flag = renkouchengzaili_jishi
+				days = 365
 			}
 		}
 	}
@@ -1356,130 +1363,738 @@ country_event = {
 	desc = "EVTDESC60041"
 	option = { 
 		name = "EVTOPTA60041"
+		set_country_flag = renkouchengzaili_jishi
 		any_country = { 
 			any_owned = { 
+				set_variable = {
+					which = chengzaili
+					value = 0
+				}
+			}
+			any_owned = { limit = { base_tax = 1 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 2 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 3 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 4 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 5 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 6 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 7 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 8 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 9 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 10 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 11 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 12 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 13 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 14 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 15 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 16 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 17 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 18 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 19 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 20 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 21 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 22 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 23 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 24 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 25 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 26 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 27 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 28 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 29 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 30 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 31 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 32 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 33 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 34 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 35 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 36 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 37 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 38 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 39 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 40 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 41 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 42 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 43 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 44 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 45 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 46 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 47 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 48 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 49 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 50 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 51 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 52 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 53 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 54 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 55 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 56 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 57 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 58 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 59 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 60 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 61 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 62 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 63 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 64 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 65 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 66 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 67 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 68 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 69 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 70 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 71 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 72 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 73 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 74 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 75 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 76 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 77 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 78 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 79 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 80 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 81 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 82 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 83 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 84 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 85 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 86 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 87 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 88 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 89 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 90 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 91 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 92 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 93 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 94 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 95 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 96 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 97 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 98 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 99 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 100 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { has_building = temple } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = courthouse } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = spy_agency } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = town_hall } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = college } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = cathedral } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = armory } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = training_fields } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = barracks } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = regimental_camp } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = arsenal } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = conscription_center } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = dock } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = drydock } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = shipyard } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = grand_shipyard } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = naval_arsenal } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = naval_base } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = constable } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = workshop } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = counting_house } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = treasury_office } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = mint } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = stock_exchange } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = marketplace } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = trade_depot } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = canal } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = road_network } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = post_office } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = customs_house } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = fort1 } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = fort2 } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = fort3 } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = fort4 } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = fort5 } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { limit = { has_building = fort6 } change_variable = { which = chengzaili value = 1 } }
+			any_owned = { 
 				limit = { 
-					citysize = 30000
-					not = { 
-						citysize = 50000
+					or = {
+						has_building = refinery
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = fine_arts_academy
+						has_building = university
 					}
 				}
-				add_province_modifier = { 
-					name = "renkouguoliang1"
-					duration = -1
+				change_variable = {
+					which = chengzaili
+					value = 10
 				}
-				remove_province_modifier = renkouguoliang2
-				remove_province_modifier = renkouguoliang3
-				remove_province_modifier = renkouguoliang4
-				remove_province_modifier = renkouguoliang5
-				remove_province_modifier = renkouguoliang6
-				remove_province_modifier = renkouguoliang7
-				remove_province_modifier = renkouguoliang8
-				remove_province_modifier = renkouxishao1
-				remove_province_modifier = renkouxishao2
+			}
+			any_owned = { 
+				limit = { 
+					cot = yes
+				}
+				change_variable = {
+					which = chengzaili
+					value = 10
+				}
+			}
+			any_owned = { 
+				limit = { 
+					has_national_focus  = yes
+				}
+				change_variable = {
+					which = chengzaili
+					value = 5
+				}
+			}
+			any_owned = { 
+				limit = { 
+					is_capital = yes
+				}
+				change_variable = {
+					which = chengzaili
+					value = 10
+				}
+			}
+			any_owned = { 
+				limit = { 
+					hre = yes
+				}
+				change_variable = {
+					which = chengzaili
+					value = 10
+				}
 			}
 		}
+		any_country = { 
+			limit = { 
+				has_country_flag = daojiazhuanjing
+			}
+			any_owned = { limit = { base_tax = 1 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 2 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 3 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 4 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 5 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 6 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 7 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 8 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 9 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 10 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 11 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 12 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 13 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 14 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 15 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 16 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 17 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 18 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 19 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 20 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 21 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 22 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 23 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 24 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 25 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 26 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 27 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 28 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 29 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 30 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 31 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 32 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 33 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 34 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 35 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 36 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 37 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 38 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 39 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 40 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 41 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 42 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 43 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 44 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 45 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 46 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 47 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 48 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 49 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 50 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 51 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 52 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 53 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 54 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 55 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 56 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 57 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 58 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 59 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 60 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 61 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 62 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 63 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 64 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 65 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 66 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 67 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 68 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 69 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 70 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 71 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 72 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 73 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 74 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 75 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 76 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 77 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 78 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 79 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 80 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 81 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 82 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 83 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 84 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 85 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 86 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 87 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 88 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 89 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 90 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 91 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 92 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 93 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 94 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 95 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 96 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 97 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 98 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 99 } change_variable = { which = chengzaili value = 5 } }
+			any_owned = { limit = { base_tax = 100 } change_variable = { which = chengzaili value = 5 } }
+		}
+		country_event = 60042
 	}
 }
 country_event = { 
 	id = 60042
-	trigger = { 
-		tag = NPC
-		any_country = { 
-			any_owned_province = { 
-				citysize = 50000
-				not = { 
-					citysize = 70000
-				}
-				not = { 
-					has_province_modifier = renkouguoliang2
-				}
-			}
-		}
-	}
-	mean_time_to_happen = { 
-		months = 1
-	}
+	is_triggered_only = yes
 	title = "EVTNAME60042"
 	desc = "EVTDESC60042"
 	option = { 
 		name = "EVTOPTA60042"
 		any_country = { 
-			any_owned = { 
-				limit = { 
-					citysize = 50000
-					not = { 
-						citysize = 70000
-					}
-				}
-				add_province_modifier = { 
-					name = "renkouguoliang2"
-					duration = -1
-				}
-				remove_province_modifier = renkouguoliang1
-				remove_province_modifier = renkouguoliang3
-				remove_province_modifier = renkouguoliang4
-				remove_province_modifier = renkouguoliang5
-				remove_province_modifier = renkouguoliang6
-				remove_province_modifier = renkouguoliang7
-				remove_province_modifier = renkouguoliang8
-				remove_province_modifier = renkouxishao1
-				remove_province_modifier = renkouxishao2
-			}
+			any_owned = { limit = { citysize = 1000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 2000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 3000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 4000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 5000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 6000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 7000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 8000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 9000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 10000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 11000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 12000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 13000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 14000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 15000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 16000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 17000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 18000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 19000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 20000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 21000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 22000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 23000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 24000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 25000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 26000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 27000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 28000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 29000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 30000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 31000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 32000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 33000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 34000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 35000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 36000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 37000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 38000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 39000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 40000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 41000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 42000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 43000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 44000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 45000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 46000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 47000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 48000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 49000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 50000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 51000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 52000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 53000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 54000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 55000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 56000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 57000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 58000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 59000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 60000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 61000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 62000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 63000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 64000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 65000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 66000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 67000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 68000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 69000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 70000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 71000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 72000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 73000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 74000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 75000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 76000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 77000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 78000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 79000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 80000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 81000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 82000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 83000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 84000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 85000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 86000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 87000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 88000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 89000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 90000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 91000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 92000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 93000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 94000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 95000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 96000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 97000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 98000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 99000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 100000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 101000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 102000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 103000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 104000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 105000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 106000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 107000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 108000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 109000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 110000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 111000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 112000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 113000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 114000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 115000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 116000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 117000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 118000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 119000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 120000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 121000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 122000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 123000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 124000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 125000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 126000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 127000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 128000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 129000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 130000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 131000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 132000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 133000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 134000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 135000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 136000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 137000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 138000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 139000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 140000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 141000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 142000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 143000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 144000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 145000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 146000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 147000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 148000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 149000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 150000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 151000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 152000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 153000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 154000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 155000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 156000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 157000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 158000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 159000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 160000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 161000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 162000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 163000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 164000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 165000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 166000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 167000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 168000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 169000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 170000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 171000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 172000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 173000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 174000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 175000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 176000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 177000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 178000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 179000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 180000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 181000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 182000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 183000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 184000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 185000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 186000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 187000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 188000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 189000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 190000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 191000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 192000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 193000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 194000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 195000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 196000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 197000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 198000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 199000 } change_variable = { which = chengzaili value = -1 } }
+			any_owned = { limit = { citysize = 200000 } change_variable = { which = chengzaili value = -1 } }
 		}
+		country_event = 60043
 	}
 }
 country_event = { 
 	id = 60043
-	trigger = { 
-		tag = NPC
-		any_country = { 
-			any_owned_province = { 
-				citysize = 70000
-				not = { 
-					citysize = 90000
-				}
-				not = { 
-					has_province_modifier = renkouguoliang3
-				}
-			}
-		}
-	}
-	mean_time_to_happen = { 
-		months = 1
-	}
+	is_triggered_only = yes
 	title = "EVTNAME60043"
 	desc = "EVTDESC60043"
 	option = { 
 		name = "EVTOPTA60043"
 		any_country = { 
-			any_owned = { 
-				limit = { 
-					citysize = 70000
-					not = { 
-						citysize = 90000
-					}
-				}
-				add_province_modifier = { 
-					name = "renkouguoliang3"
-					duration = -1
-				}
-				remove_province_modifier = renkouguoliang1
-				remove_province_modifier = renkouguoliang2
-				remove_province_modifier = renkouguoliang4
-				remove_province_modifier = renkouguoliang5
-				remove_province_modifier = renkouguoliang6
-				remove_province_modifier = renkouguoliang7
-				remove_province_modifier = renkouguoliang8
-				remove_province_modifier = renkouxishao1
-				remove_province_modifier = renkouxishao2
-			}
+			any_owned = { limit = { check_variable = { which = chengzaili value = -1 } not = { check_variable = { which = chengzaili value = 0 } } not = { has_province_modifier = renkouchaozai_1 } } add_province_modifier = { name = "renkouchaozai_1" duration = -1 } citysize = -100 owner = { change_variable = { which = liuminliang value = 100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -1 } } check_variable = { which = chengzaili value = 0 } } has_province_modifier = renkouchaozai_1 } remove_province_modifier = renkouchaozai_1 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -2 } not = { check_variable = { which = chengzaili value = -1 } } not = { has_province_modifier = renkouchaozai_2 } } add_province_modifier = { name = "renkouchaozai_2" duration = -1 } citysize = -200 owner = { change_variable = { which = liuminliang value = 200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -2 } } check_variable = { which = chengzaili value = -1 } } has_province_modifier = renkouchaozai_2 } remove_province_modifier = renkouchaozai_2 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -3 } not = { check_variable = { which = chengzaili value = -2 } } not = { has_province_modifier = renkouchaozai_3 } } add_province_modifier = { name = "renkouchaozai_3" duration = -1 } citysize = -300 owner = { change_variable = { which = liuminliang value = 300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -3 } } check_variable = { which = chengzaili value = -2 } } has_province_modifier = renkouchaozai_3 } remove_province_modifier = renkouchaozai_3 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -4 } not = { check_variable = { which = chengzaili value = -3 } } not = { has_province_modifier = renkouchaozai_4 } } add_province_modifier = { name = "renkouchaozai_4" duration = -1 } citysize = -400 owner = { change_variable = { which = liuminliang value = 400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -4 } } check_variable = { which = chengzaili value = -3 } } has_province_modifier = renkouchaozai_4 } remove_province_modifier = renkouchaozai_4 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -5 } not = { check_variable = { which = chengzaili value = -4 } } not = { has_province_modifier = renkouchaozai_5 } } add_province_modifier = { name = "renkouchaozai_5" duration = -1 } citysize = -500 owner = { change_variable = { which = liuminliang value = 500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -5 } } check_variable = { which = chengzaili value = -4 } } has_province_modifier = renkouchaozai_5 } remove_province_modifier = renkouchaozai_5 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -6 } not = { check_variable = { which = chengzaili value = -5 } } not = { has_province_modifier = renkouchaozai_6 } } add_province_modifier = { name = "renkouchaozai_6" duration = -1 } citysize = -600 owner = { change_variable = { which = liuminliang value = 600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -6 } } check_variable = { which = chengzaili value = -5 } } has_province_modifier = renkouchaozai_6 } remove_province_modifier = renkouchaozai_6 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -7 } not = { check_variable = { which = chengzaili value = -6 } } not = { has_province_modifier = renkouchaozai_7 } } add_province_modifier = { name = "renkouchaozai_7" duration = -1 } citysize = -700 owner = { change_variable = { which = liuminliang value = 700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -7 } } check_variable = { which = chengzaili value = -6 } } has_province_modifier = renkouchaozai_7 } remove_province_modifier = renkouchaozai_7 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -8 } not = { check_variable = { which = chengzaili value = -7 } } not = { has_province_modifier = renkouchaozai_8 } } add_province_modifier = { name = "renkouchaozai_8" duration = -1 } citysize = -800 owner = { change_variable = { which = liuminliang value = 800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -8 } } check_variable = { which = chengzaili value = -7 } } has_province_modifier = renkouchaozai_8 } remove_province_modifier = renkouchaozai_8 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -9 } not = { check_variable = { which = chengzaili value = -8 } } not = { has_province_modifier = renkouchaozai_9 } } add_province_modifier = { name = "renkouchaozai_9" duration = -1 } citysize = -900 owner = { change_variable = { which = liuminliang value = 900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -9 } } check_variable = { which = chengzaili value = -8 } } has_province_modifier = renkouchaozai_9 } remove_province_modifier = renkouchaozai_9 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -10 } not = { check_variable = { which = chengzaili value = -9 } } not = { has_province_modifier = renkouchaozai_10 } } add_province_modifier = { name = "renkouchaozai_10" duration = -1 } citysize = -1000 owner = { change_variable = { which = liuminliang value = 1000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -10 } } check_variable = { which = chengzaili value = -9 } } has_province_modifier = renkouchaozai_10 } remove_province_modifier = renkouchaozai_10 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -11 } not = { check_variable = { which = chengzaili value = -10 } } not = { has_province_modifier = renkouchaozai_11 } } add_province_modifier = { name = "renkouchaozai_11" duration = -1 } citysize = -1100 owner = { change_variable = { which = liuminliang value = 1100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -11 } } check_variable = { which = chengzaili value = -10 } } has_province_modifier = renkouchaozai_11 } remove_province_modifier = renkouchaozai_11 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -12 } not = { check_variable = { which = chengzaili value = -11 } } not = { has_province_modifier = renkouchaozai_12 } } add_province_modifier = { name = "renkouchaozai_12" duration = -1 } citysize = -1200 owner = { change_variable = { which = liuminliang value = 1200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -12 } } check_variable = { which = chengzaili value = -11 } } has_province_modifier = renkouchaozai_12 } remove_province_modifier = renkouchaozai_12 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -13 } not = { check_variable = { which = chengzaili value = -12 } } not = { has_province_modifier = renkouchaozai_13 } } add_province_modifier = { name = "renkouchaozai_13" duration = -1 } citysize = -1300 owner = { change_variable = { which = liuminliang value = 1300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -13 } } check_variable = { which = chengzaili value = -12 } } has_province_modifier = renkouchaozai_13 } remove_province_modifier = renkouchaozai_13 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -14 } not = { check_variable = { which = chengzaili value = -13 } } not = { has_province_modifier = renkouchaozai_14 } } add_province_modifier = { name = "renkouchaozai_14" duration = -1 } citysize = -1400 owner = { change_variable = { which = liuminliang value = 1400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -14 } } check_variable = { which = chengzaili value = -13 } } has_province_modifier = renkouchaozai_14 } remove_province_modifier = renkouchaozai_14 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -15 } not = { check_variable = { which = chengzaili value = -14 } } not = { has_province_modifier = renkouchaozai_15 } } add_province_modifier = { name = "renkouchaozai_15" duration = -1 } citysize = -1500 owner = { change_variable = { which = liuminliang value = 1500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -15 } } check_variable = { which = chengzaili value = -14 } } has_province_modifier = renkouchaozai_15 } remove_province_modifier = renkouchaozai_15 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -16 } not = { check_variable = { which = chengzaili value = -15 } } not = { has_province_modifier = renkouchaozai_16 } } add_province_modifier = { name = "renkouchaozai_16" duration = -1 } citysize = -1600 owner = { change_variable = { which = liuminliang value = 1600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -16 } } check_variable = { which = chengzaili value = -15 } } has_province_modifier = renkouchaozai_16 } remove_province_modifier = renkouchaozai_16 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -17 } not = { check_variable = { which = chengzaili value = -16 } } not = { has_province_modifier = renkouchaozai_17 } } add_province_modifier = { name = "renkouchaozai_17" duration = -1 } citysize = -1700 owner = { change_variable = { which = liuminliang value = 1700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -17 } } check_variable = { which = chengzaili value = -16 } } has_province_modifier = renkouchaozai_17 } remove_province_modifier = renkouchaozai_17 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -18 } not = { check_variable = { which = chengzaili value = -17 } } not = { has_province_modifier = renkouchaozai_18 } } add_province_modifier = { name = "renkouchaozai_18" duration = -1 } citysize = -1800 owner = { change_variable = { which = liuminliang value = 1800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -18 } } check_variable = { which = chengzaili value = -17 } } has_province_modifier = renkouchaozai_18 } remove_province_modifier = renkouchaozai_18 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -19 } not = { check_variable = { which = chengzaili value = -18 } } not = { has_province_modifier = renkouchaozai_19 } } add_province_modifier = { name = "renkouchaozai_19" duration = -1 } citysize = -1900 owner = { change_variable = { which = liuminliang value = 1900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -19 } } check_variable = { which = chengzaili value = -18 } } has_province_modifier = renkouchaozai_19 } remove_province_modifier = renkouchaozai_19 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -20 } not = { check_variable = { which = chengzaili value = -19 } } not = { has_province_modifier = renkouchaozai_20 } } add_province_modifier = { name = "renkouchaozai_20" duration = -1 } citysize = -2000 owner = { change_variable = { which = liuminliang value = 2000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -20 } } check_variable = { which = chengzaili value = -19 } } has_province_modifier = renkouchaozai_20 } remove_province_modifier = renkouchaozai_20 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -21 } not = { check_variable = { which = chengzaili value = -20 } } not = { has_province_modifier = renkouchaozai_21 } } add_province_modifier = { name = "renkouchaozai_21" duration = -1 } citysize = -2100 owner = { change_variable = { which = liuminliang value = 2100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -21 } } check_variable = { which = chengzaili value = -20 } } has_province_modifier = renkouchaozai_21 } remove_province_modifier = renkouchaozai_21 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -22 } not = { check_variable = { which = chengzaili value = -21 } } not = { has_province_modifier = renkouchaozai_22 } } add_province_modifier = { name = "renkouchaozai_22" duration = -1 } citysize = -2200 owner = { change_variable = { which = liuminliang value = 2200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -22 } } check_variable = { which = chengzaili value = -21 } } has_province_modifier = renkouchaozai_22 } remove_province_modifier = renkouchaozai_22 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -23 } not = { check_variable = { which = chengzaili value = -22 } } not = { has_province_modifier = renkouchaozai_23 } } add_province_modifier = { name = "renkouchaozai_23" duration = -1 } citysize = -2300 owner = { change_variable = { which = liuminliang value = 2300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -23 } } check_variable = { which = chengzaili value = -22 } } has_province_modifier = renkouchaozai_23 } remove_province_modifier = renkouchaozai_23 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -24 } not = { check_variable = { which = chengzaili value = -23 } } not = { has_province_modifier = renkouchaozai_24 } } add_province_modifier = { name = "renkouchaozai_24" duration = -1 } citysize = -2400 owner = { change_variable = { which = liuminliang value = 2400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -24 } } check_variable = { which = chengzaili value = -23 } } has_province_modifier = renkouchaozai_24 } remove_province_modifier = renkouchaozai_24 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -25 } not = { check_variable = { which = chengzaili value = -24 } } not = { has_province_modifier = renkouchaozai_25 } } add_province_modifier = { name = "renkouchaozai_25" duration = -1 } citysize = -2500 owner = { change_variable = { which = liuminliang value = 2500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -25 } } check_variable = { which = chengzaili value = -24 } } has_province_modifier = renkouchaozai_25 } remove_province_modifier = renkouchaozai_25 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -26 } not = { check_variable = { which = chengzaili value = -25 } } not = { has_province_modifier = renkouchaozai_26 } } add_province_modifier = { name = "renkouchaozai_26" duration = -1 } citysize = -2600 owner = { change_variable = { which = liuminliang value = 2600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -26 } } check_variable = { which = chengzaili value = -25 } } has_province_modifier = renkouchaozai_26 } remove_province_modifier = renkouchaozai_26 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -27 } not = { check_variable = { which = chengzaili value = -26 } } not = { has_province_modifier = renkouchaozai_27 } } add_province_modifier = { name = "renkouchaozai_27" duration = -1 } citysize = -2700 owner = { change_variable = { which = liuminliang value = 2700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -27 } } check_variable = { which = chengzaili value = -26 } } has_province_modifier = renkouchaozai_27 } remove_province_modifier = renkouchaozai_27 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -28 } not = { check_variable = { which = chengzaili value = -27 } } not = { has_province_modifier = renkouchaozai_28 } } add_province_modifier = { name = "renkouchaozai_28" duration = -1 } citysize = -2800 owner = { change_variable = { which = liuminliang value = 2800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -28 } } check_variable = { which = chengzaili value = -27 } } has_province_modifier = renkouchaozai_28 } remove_province_modifier = renkouchaozai_28 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -29 } not = { check_variable = { which = chengzaili value = -28 } } not = { has_province_modifier = renkouchaozai_29 } } add_province_modifier = { name = "renkouchaozai_29" duration = -1 } citysize = -2900 owner = { change_variable = { which = liuminliang value = 2900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -29 } } check_variable = { which = chengzaili value = -28 } } has_province_modifier = renkouchaozai_29 } remove_province_modifier = renkouchaozai_29 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -30 } not = { check_variable = { which = chengzaili value = -29 } } not = { has_province_modifier = renkouchaozai_30 } } add_province_modifier = { name = "renkouchaozai_30" duration = -1 } citysize = -3000 owner = { change_variable = { which = liuminliang value = 3000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -30 } } check_variable = { which = chengzaili value = -29 } } has_province_modifier = renkouchaozai_30 } remove_province_modifier = renkouchaozai_30 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -31 } not = { check_variable = { which = chengzaili value = -30 } } not = { has_province_modifier = renkouchaozai_31 } } add_province_modifier = { name = "renkouchaozai_31" duration = -1 } citysize = -3100 owner = { change_variable = { which = liuminliang value = 3100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -31 } } check_variable = { which = chengzaili value = -30 } } has_province_modifier = renkouchaozai_31 } remove_province_modifier = renkouchaozai_31 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -32 } not = { check_variable = { which = chengzaili value = -31 } } not = { has_province_modifier = renkouchaozai_32 } } add_province_modifier = { name = "renkouchaozai_32" duration = -1 } citysize = -3200 owner = { change_variable = { which = liuminliang value = 3200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -32 } } check_variable = { which = chengzaili value = -31 } } has_province_modifier = renkouchaozai_32 } remove_province_modifier = renkouchaozai_32 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -33 } not = { check_variable = { which = chengzaili value = -32 } } not = { has_province_modifier = renkouchaozai_33 } } add_province_modifier = { name = "renkouchaozai_33" duration = -1 } citysize = -3300 owner = { change_variable = { which = liuminliang value = 3300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -33 } } check_variable = { which = chengzaili value = -32 } } has_province_modifier = renkouchaozai_33 } remove_province_modifier = renkouchaozai_33 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -34 } not = { check_variable = { which = chengzaili value = -33 } } not = { has_province_modifier = renkouchaozai_34 } } add_province_modifier = { name = "renkouchaozai_34" duration = -1 } citysize = -3400 owner = { change_variable = { which = liuminliang value = 3400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -34 } } check_variable = { which = chengzaili value = -33 } } has_province_modifier = renkouchaozai_34 } remove_province_modifier = renkouchaozai_34 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -35 } not = { check_variable = { which = chengzaili value = -34 } } not = { has_province_modifier = renkouchaozai_35 } } add_province_modifier = { name = "renkouchaozai_35" duration = -1 } citysize = -3500 owner = { change_variable = { which = liuminliang value = 3500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -35 } } check_variable = { which = chengzaili value = -34 } } has_province_modifier = renkouchaozai_35 } remove_province_modifier = renkouchaozai_35 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -36 } not = { check_variable = { which = chengzaili value = -35 } } not = { has_province_modifier = renkouchaozai_36 } } add_province_modifier = { name = "renkouchaozai_36" duration = -1 } citysize = -3600 owner = { change_variable = { which = liuminliang value = 3600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -36 } } check_variable = { which = chengzaili value = -35 } } has_province_modifier = renkouchaozai_36 } remove_province_modifier = renkouchaozai_36 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -37 } not = { check_variable = { which = chengzaili value = -36 } } not = { has_province_modifier = renkouchaozai_37 } } add_province_modifier = { name = "renkouchaozai_37" duration = -1 } citysize = -3700 owner = { change_variable = { which = liuminliang value = 3700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -37 } } check_variable = { which = chengzaili value = -36 } } has_province_modifier = renkouchaozai_37 } remove_province_modifier = renkouchaozai_37 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -38 } not = { check_variable = { which = chengzaili value = -37 } } not = { has_province_modifier = renkouchaozai_38 } } add_province_modifier = { name = "renkouchaozai_38" duration = -1 } citysize = -3800 owner = { change_variable = { which = liuminliang value = 3800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -38 } } check_variable = { which = chengzaili value = -37 } } has_province_modifier = renkouchaozai_38 } remove_province_modifier = renkouchaozai_38 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -39 } not = { check_variable = { which = chengzaili value = -38 } } not = { has_province_modifier = renkouchaozai_39 } } add_province_modifier = { name = "renkouchaozai_39" duration = -1 } citysize = -3900 owner = { change_variable = { which = liuminliang value = 3900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -39 } } check_variable = { which = chengzaili value = -38 } } has_province_modifier = renkouchaozai_39 } remove_province_modifier = renkouchaozai_39 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -40 } not = { check_variable = { which = chengzaili value = -39 } } not = { has_province_modifier = renkouchaozai_40 } } add_province_modifier = { name = "renkouchaozai_40" duration = -1 } citysize = -4000 owner = { change_variable = { which = liuminliang value = 4000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -40 } } check_variable = { which = chengzaili value = -39 } } has_province_modifier = renkouchaozai_40 } remove_province_modifier = renkouchaozai_40 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -41 } not = { check_variable = { which = chengzaili value = -40 } } not = { has_province_modifier = renkouchaozai_41 } } add_province_modifier = { name = "renkouchaozai_41" duration = -1 } citysize = -4100 owner = { change_variable = { which = liuminliang value = 4100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -41 } } check_variable = { which = chengzaili value = -40 } } has_province_modifier = renkouchaozai_41 } remove_province_modifier = renkouchaozai_41 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -42 } not = { check_variable = { which = chengzaili value = -41 } } not = { has_province_modifier = renkouchaozai_42 } } add_province_modifier = { name = "renkouchaozai_42" duration = -1 } citysize = -4200 owner = { change_variable = { which = liuminliang value = 4200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -42 } } check_variable = { which = chengzaili value = -41 } } has_province_modifier = renkouchaozai_42 } remove_province_modifier = renkouchaozai_42 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -43 } not = { check_variable = { which = chengzaili value = -42 } } not = { has_province_modifier = renkouchaozai_43 } } add_province_modifier = { name = "renkouchaozai_43" duration = -1 } citysize = -4300 owner = { change_variable = { which = liuminliang value = 4300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -43 } } check_variable = { which = chengzaili value = -42 } } has_province_modifier = renkouchaozai_43 } remove_province_modifier = renkouchaozai_43 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -44 } not = { check_variable = { which = chengzaili value = -43 } } not = { has_province_modifier = renkouchaozai_44 } } add_province_modifier = { name = "renkouchaozai_44" duration = -1 } citysize = -4400 owner = { change_variable = { which = liuminliang value = 4400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -44 } } check_variable = { which = chengzaili value = -43 } } has_province_modifier = renkouchaozai_44 } remove_province_modifier = renkouchaozai_44 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -45 } not = { check_variable = { which = chengzaili value = -44 } } not = { has_province_modifier = renkouchaozai_45 } } add_province_modifier = { name = "renkouchaozai_45" duration = -1 } citysize = -4500 owner = { change_variable = { which = liuminliang value = 4500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -45 } } check_variable = { which = chengzaili value = -44 } } has_province_modifier = renkouchaozai_45 } remove_province_modifier = renkouchaozai_45 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -46 } not = { check_variable = { which = chengzaili value = -45 } } not = { has_province_modifier = renkouchaozai_46 } } add_province_modifier = { name = "renkouchaozai_46" duration = -1 } citysize = -4600 owner = { change_variable = { which = liuminliang value = 4600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -46 } } check_variable = { which = chengzaili value = -45 } } has_province_modifier = renkouchaozai_46 } remove_province_modifier = renkouchaozai_46 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -47 } not = { check_variable = { which = chengzaili value = -46 } } not = { has_province_modifier = renkouchaozai_47 } } add_province_modifier = { name = "renkouchaozai_47" duration = -1 } citysize = -4700 owner = { change_variable = { which = liuminliang value = 4700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -47 } } check_variable = { which = chengzaili value = -46 } } has_province_modifier = renkouchaozai_47 } remove_province_modifier = renkouchaozai_47 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -48 } not = { check_variable = { which = chengzaili value = -47 } } not = { has_province_modifier = renkouchaozai_48 } } add_province_modifier = { name = "renkouchaozai_48" duration = -1 } citysize = -4800 owner = { change_variable = { which = liuminliang value = 4800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -48 } } check_variable = { which = chengzaili value = -47 } } has_province_modifier = renkouchaozai_48 } remove_province_modifier = renkouchaozai_48 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -49 } not = { check_variable = { which = chengzaili value = -48 } } not = { has_province_modifier = renkouchaozai_49 } } add_province_modifier = { name = "renkouchaozai_49" duration = -1 } citysize = -4900 owner = { change_variable = { which = liuminliang value = 4900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -49 } } check_variable = { which = chengzaili value = -48 } } has_province_modifier = renkouchaozai_49 } remove_province_modifier = renkouchaozai_49 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -50 } not = { check_variable = { which = chengzaili value = -49 } } not = { has_province_modifier = renkouchaozai_50 } } add_province_modifier = { name = "renkouchaozai_50" duration = -1 } citysize = -5000 owner = { change_variable = { which = liuminliang value = 5000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -50 } } check_variable = { which = chengzaili value = -49 } } has_province_modifier = renkouchaozai_50 } remove_province_modifier = renkouchaozai_50 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -51 } not = { check_variable = { which = chengzaili value = -50 } } not = { has_province_modifier = renkouchaozai_51 } } add_province_modifier = { name = "renkouchaozai_51" duration = -1 } citysize = -5100 owner = { change_variable = { which = liuminliang value = 5100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -51 } } check_variable = { which = chengzaili value = -50 } } has_province_modifier = renkouchaozai_51 } remove_province_modifier = renkouchaozai_51 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -52 } not = { check_variable = { which = chengzaili value = -51 } } not = { has_province_modifier = renkouchaozai_52 } } add_province_modifier = { name = "renkouchaozai_52" duration = -1 } citysize = -5200 owner = { change_variable = { which = liuminliang value = 5200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -52 } } check_variable = { which = chengzaili value = -51 } } has_province_modifier = renkouchaozai_52 } remove_province_modifier = renkouchaozai_52 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -53 } not = { check_variable = { which = chengzaili value = -52 } } not = { has_province_modifier = renkouchaozai_53 } } add_province_modifier = { name = "renkouchaozai_53" duration = -1 } citysize = -5300 owner = { change_variable = { which = liuminliang value = 5300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -53 } } check_variable = { which = chengzaili value = -52 } } has_province_modifier = renkouchaozai_53 } remove_province_modifier = renkouchaozai_53 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -54 } not = { check_variable = { which = chengzaili value = -53 } } not = { has_province_modifier = renkouchaozai_54 } } add_province_modifier = { name = "renkouchaozai_54" duration = -1 } citysize = -5400 owner = { change_variable = { which = liuminliang value = 5400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -54 } } check_variable = { which = chengzaili value = -53 } } has_province_modifier = renkouchaozai_54 } remove_province_modifier = renkouchaozai_54 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -55 } not = { check_variable = { which = chengzaili value = -54 } } not = { has_province_modifier = renkouchaozai_55 } } add_province_modifier = { name = "renkouchaozai_55" duration = -1 } citysize = -5500 owner = { change_variable = { which = liuminliang value = 5500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -55 } } check_variable = { which = chengzaili value = -54 } } has_province_modifier = renkouchaozai_55 } remove_province_modifier = renkouchaozai_55 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -56 } not = { check_variable = { which = chengzaili value = -55 } } not = { has_province_modifier = renkouchaozai_56 } } add_province_modifier = { name = "renkouchaozai_56" duration = -1 } citysize = -5600 owner = { change_variable = { which = liuminliang value = 5600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -56 } } check_variable = { which = chengzaili value = -55 } } has_province_modifier = renkouchaozai_56 } remove_province_modifier = renkouchaozai_56 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -57 } not = { check_variable = { which = chengzaili value = -56 } } not = { has_province_modifier = renkouchaozai_57 } } add_province_modifier = { name = "renkouchaozai_57" duration = -1 } citysize = -5700 owner = { change_variable = { which = liuminliang value = 5700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -57 } } check_variable = { which = chengzaili value = -56 } } has_province_modifier = renkouchaozai_57 } remove_province_modifier = renkouchaozai_57 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -58 } not = { check_variable = { which = chengzaili value = -57 } } not = { has_province_modifier = renkouchaozai_58 } } add_province_modifier = { name = "renkouchaozai_58" duration = -1 } citysize = -5800 owner = { change_variable = { which = liuminliang value = 5800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -58 } } check_variable = { which = chengzaili value = -57 } } has_province_modifier = renkouchaozai_58 } remove_province_modifier = renkouchaozai_58 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -59 } not = { check_variable = { which = chengzaili value = -58 } } not = { has_province_modifier = renkouchaozai_59 } } add_province_modifier = { name = "renkouchaozai_59" duration = -1 } citysize = -5900 owner = { change_variable = { which = liuminliang value = 5900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -59 } } check_variable = { which = chengzaili value = -58 } } has_province_modifier = renkouchaozai_59 } remove_province_modifier = renkouchaozai_59 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -60 } not = { check_variable = { which = chengzaili value = -59 } } not = { has_province_modifier = renkouchaozai_60 } } add_province_modifier = { name = "renkouchaozai_60" duration = -1 } citysize = -6000 owner = { change_variable = { which = liuminliang value = 6000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -60 } } check_variable = { which = chengzaili value = -59 } } has_province_modifier = renkouchaozai_60 } remove_province_modifier = renkouchaozai_60 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -61 } not = { check_variable = { which = chengzaili value = -60 } } not = { has_province_modifier = renkouchaozai_61 } } add_province_modifier = { name = "renkouchaozai_61" duration = -1 } citysize = -6100 owner = { change_variable = { which = liuminliang value = 6100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -61 } } check_variable = { which = chengzaili value = -60 } } has_province_modifier = renkouchaozai_61 } remove_province_modifier = renkouchaozai_61 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -62 } not = { check_variable = { which = chengzaili value = -61 } } not = { has_province_modifier = renkouchaozai_62 } } add_province_modifier = { name = "renkouchaozai_62" duration = -1 } citysize = -6200 owner = { change_variable = { which = liuminliang value = 6200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -62 } } check_variable = { which = chengzaili value = -61 } } has_province_modifier = renkouchaozai_62 } remove_province_modifier = renkouchaozai_62 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -63 } not = { check_variable = { which = chengzaili value = -62 } } not = { has_province_modifier = renkouchaozai_63 } } add_province_modifier = { name = "renkouchaozai_63" duration = -1 } citysize = -6300 owner = { change_variable = { which = liuminliang value = 6300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -63 } } check_variable = { which = chengzaili value = -62 } } has_province_modifier = renkouchaozai_63 } remove_province_modifier = renkouchaozai_63 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -64 } not = { check_variable = { which = chengzaili value = -63 } } not = { has_province_modifier = renkouchaozai_64 } } add_province_modifier = { name = "renkouchaozai_64" duration = -1 } citysize = -6400 owner = { change_variable = { which = liuminliang value = 6400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -64 } } check_variable = { which = chengzaili value = -63 } } has_province_modifier = renkouchaozai_64 } remove_province_modifier = renkouchaozai_64 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -65 } not = { check_variable = { which = chengzaili value = -64 } } not = { has_province_modifier = renkouchaozai_65 } } add_province_modifier = { name = "renkouchaozai_65" duration = -1 } citysize = -6500 owner = { change_variable = { which = liuminliang value = 6500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -65 } } check_variable = { which = chengzaili value = -64 } } has_province_modifier = renkouchaozai_65 } remove_province_modifier = renkouchaozai_65 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -66 } not = { check_variable = { which = chengzaili value = -65 } } not = { has_province_modifier = renkouchaozai_66 } } add_province_modifier = { name = "renkouchaozai_66" duration = -1 } citysize = -6600 owner = { change_variable = { which = liuminliang value = 6600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -66 } } check_variable = { which = chengzaili value = -65 } } has_province_modifier = renkouchaozai_66 } remove_province_modifier = renkouchaozai_66 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -67 } not = { check_variable = { which = chengzaili value = -66 } } not = { has_province_modifier = renkouchaozai_67 } } add_province_modifier = { name = "renkouchaozai_67" duration = -1 } citysize = -6700 owner = { change_variable = { which = liuminliang value = 6700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -67 } } check_variable = { which = chengzaili value = -66 } } has_province_modifier = renkouchaozai_67 } remove_province_modifier = renkouchaozai_67 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -68 } not = { check_variable = { which = chengzaili value = -67 } } not = { has_province_modifier = renkouchaozai_68 } } add_province_modifier = { name = "renkouchaozai_68" duration = -1 } citysize = -6800 owner = { change_variable = { which = liuminliang value = 6800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -68 } } check_variable = { which = chengzaili value = -67 } } has_province_modifier = renkouchaozai_68 } remove_province_modifier = renkouchaozai_68 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -69 } not = { check_variable = { which = chengzaili value = -68 } } not = { has_province_modifier = renkouchaozai_69 } } add_province_modifier = { name = "renkouchaozai_69" duration = -1 } citysize = -6900 owner = { change_variable = { which = liuminliang value = 6900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -69 } } check_variable = { which = chengzaili value = -68 } } has_province_modifier = renkouchaozai_69 } remove_province_modifier = renkouchaozai_69 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -70 } not = { check_variable = { which = chengzaili value = -69 } } not = { has_province_modifier = renkouchaozai_70 } } add_province_modifier = { name = "renkouchaozai_70" duration = -1 } citysize = -7000 owner = { change_variable = { which = liuminliang value = 7000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -70 } } check_variable = { which = chengzaili value = -69 } } has_province_modifier = renkouchaozai_70 } remove_province_modifier = renkouchaozai_70 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -71 } not = { check_variable = { which = chengzaili value = -70 } } not = { has_province_modifier = renkouchaozai_71 } } add_province_modifier = { name = "renkouchaozai_71" duration = -1 } citysize = -7100 owner = { change_variable = { which = liuminliang value = 7100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -71 } } check_variable = { which = chengzaili value = -70 } } has_province_modifier = renkouchaozai_71 } remove_province_modifier = renkouchaozai_71 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -72 } not = { check_variable = { which = chengzaili value = -71 } } not = { has_province_modifier = renkouchaozai_72 } } add_province_modifier = { name = "renkouchaozai_72" duration = -1 } citysize = -7200 owner = { change_variable = { which = liuminliang value = 7200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -72 } } check_variable = { which = chengzaili value = -71 } } has_province_modifier = renkouchaozai_72 } remove_province_modifier = renkouchaozai_72 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -73 } not = { check_variable = { which = chengzaili value = -72 } } not = { has_province_modifier = renkouchaozai_73 } } add_province_modifier = { name = "renkouchaozai_73" duration = -1 } citysize = -7300 owner = { change_variable = { which = liuminliang value = 7300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -73 } } check_variable = { which = chengzaili value = -72 } } has_province_modifier = renkouchaozai_73 } remove_province_modifier = renkouchaozai_73 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -74 } not = { check_variable = { which = chengzaili value = -73 } } not = { has_province_modifier = renkouchaozai_74 } } add_province_modifier = { name = "renkouchaozai_74" duration = -1 } citysize = -7400 owner = { change_variable = { which = liuminliang value = 7400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -74 } } check_variable = { which = chengzaili value = -73 } } has_province_modifier = renkouchaozai_74 } remove_province_modifier = renkouchaozai_74 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -75 } not = { check_variable = { which = chengzaili value = -74 } } not = { has_province_modifier = renkouchaozai_75 } } add_province_modifier = { name = "renkouchaozai_75" duration = -1 } citysize = -7500 owner = { change_variable = { which = liuminliang value = 7500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -75 } } check_variable = { which = chengzaili value = -74 } } has_province_modifier = renkouchaozai_75 } remove_province_modifier = renkouchaozai_75 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -76 } not = { check_variable = { which = chengzaili value = -75 } } not = { has_province_modifier = renkouchaozai_76 } } add_province_modifier = { name = "renkouchaozai_76" duration = -1 } citysize = -7600 owner = { change_variable = { which = liuminliang value = 7600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -76 } } check_variable = { which = chengzaili value = -75 } } has_province_modifier = renkouchaozai_76 } remove_province_modifier = renkouchaozai_76 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -77 } not = { check_variable = { which = chengzaili value = -76 } } not = { has_province_modifier = renkouchaozai_77 } } add_province_modifier = { name = "renkouchaozai_77" duration = -1 } citysize = -7700 owner = { change_variable = { which = liuminliang value = 7700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -77 } } check_variable = { which = chengzaili value = -76 } } has_province_modifier = renkouchaozai_77 } remove_province_modifier = renkouchaozai_77 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -78 } not = { check_variable = { which = chengzaili value = -77 } } not = { has_province_modifier = renkouchaozai_78 } } add_province_modifier = { name = "renkouchaozai_78" duration = -1 } citysize = -7800 owner = { change_variable = { which = liuminliang value = 7800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -78 } } check_variable = { which = chengzaili value = -77 } } has_province_modifier = renkouchaozai_78 } remove_province_modifier = renkouchaozai_78 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -79 } not = { check_variable = { which = chengzaili value = -78 } } not = { has_province_modifier = renkouchaozai_79 } } add_province_modifier = { name = "renkouchaozai_79" duration = -1 } citysize = -7900 owner = { change_variable = { which = liuminliang value = 7900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -79 } } check_variable = { which = chengzaili value = -78 } } has_province_modifier = renkouchaozai_79 } remove_province_modifier = renkouchaozai_79 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -80 } not = { check_variable = { which = chengzaili value = -79 } } not = { has_province_modifier = renkouchaozai_80 } } add_province_modifier = { name = "renkouchaozai_80" duration = -1 } citysize = -8000 owner = { change_variable = { which = liuminliang value = 8000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -80 } } check_variable = { which = chengzaili value = -79 } } has_province_modifier = renkouchaozai_80 } remove_province_modifier = renkouchaozai_80 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -81 } not = { check_variable = { which = chengzaili value = -80 } } not = { has_province_modifier = renkouchaozai_81 } } add_province_modifier = { name = "renkouchaozai_81" duration = -1 } citysize = -8100 owner = { change_variable = { which = liuminliang value = 8100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -81 } } check_variable = { which = chengzaili value = -80 } } has_province_modifier = renkouchaozai_81 } remove_province_modifier = renkouchaozai_81 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -82 } not = { check_variable = { which = chengzaili value = -81 } } not = { has_province_modifier = renkouchaozai_82 } } add_province_modifier = { name = "renkouchaozai_82" duration = -1 } citysize = -8200 owner = { change_variable = { which = liuminliang value = 8200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -82 } } check_variable = { which = chengzaili value = -81 } } has_province_modifier = renkouchaozai_82 } remove_province_modifier = renkouchaozai_82 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -83 } not = { check_variable = { which = chengzaili value = -82 } } not = { has_province_modifier = renkouchaozai_83 } } add_province_modifier = { name = "renkouchaozai_83" duration = -1 } citysize = -8300 owner = { change_variable = { which = liuminliang value = 8300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -83 } } check_variable = { which = chengzaili value = -82 } } has_province_modifier = renkouchaozai_83 } remove_province_modifier = renkouchaozai_83 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -84 } not = { check_variable = { which = chengzaili value = -83 } } not = { has_province_modifier = renkouchaozai_84 } } add_province_modifier = { name = "renkouchaozai_84" duration = -1 } citysize = -8400 owner = { change_variable = { which = liuminliang value = 8400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -84 } } check_variable = { which = chengzaili value = -83 } } has_province_modifier = renkouchaozai_84 } remove_province_modifier = renkouchaozai_84 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -85 } not = { check_variable = { which = chengzaili value = -84 } } not = { has_province_modifier = renkouchaozai_85 } } add_province_modifier = { name = "renkouchaozai_85" duration = -1 } citysize = -8500 owner = { change_variable = { which = liuminliang value = 8500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -85 } } check_variable = { which = chengzaili value = -84 } } has_province_modifier = renkouchaozai_85 } remove_province_modifier = renkouchaozai_85 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -86 } not = { check_variable = { which = chengzaili value = -85 } } not = { has_province_modifier = renkouchaozai_86 } } add_province_modifier = { name = "renkouchaozai_86" duration = -1 } citysize = -8600 owner = { change_variable = { which = liuminliang value = 8600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -86 } } check_variable = { which = chengzaili value = -85 } } has_province_modifier = renkouchaozai_86 } remove_province_modifier = renkouchaozai_86 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -87 } not = { check_variable = { which = chengzaili value = -86 } } not = { has_province_modifier = renkouchaozai_87 } } add_province_modifier = { name = "renkouchaozai_87" duration = -1 } citysize = -8700 owner = { change_variable = { which = liuminliang value = 8700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -87 } } check_variable = { which = chengzaili value = -86 } } has_province_modifier = renkouchaozai_87 } remove_province_modifier = renkouchaozai_87 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -88 } not = { check_variable = { which = chengzaili value = -87 } } not = { has_province_modifier = renkouchaozai_88 } } add_province_modifier = { name = "renkouchaozai_88" duration = -1 } citysize = -8800 owner = { change_variable = { which = liuminliang value = 8800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -88 } } check_variable = { which = chengzaili value = -87 } } has_province_modifier = renkouchaozai_88 } remove_province_modifier = renkouchaozai_88 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -89 } not = { check_variable = { which = chengzaili value = -88 } } not = { has_province_modifier = renkouchaozai_89 } } add_province_modifier = { name = "renkouchaozai_89" duration = -1 } citysize = -8900 owner = { change_variable = { which = liuminliang value = 8900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -89 } } check_variable = { which = chengzaili value = -88 } } has_province_modifier = renkouchaozai_89 } remove_province_modifier = renkouchaozai_89 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -90 } not = { check_variable = { which = chengzaili value = -89 } } not = { has_province_modifier = renkouchaozai_90 } } add_province_modifier = { name = "renkouchaozai_90" duration = -1 } citysize = -9000 owner = { change_variable = { which = liuminliang value = 9000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -90 } } check_variable = { which = chengzaili value = -89 } } has_province_modifier = renkouchaozai_90 } remove_province_modifier = renkouchaozai_90 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -91 } not = { check_variable = { which = chengzaili value = -90 } } not = { has_province_modifier = renkouchaozai_91 } } add_province_modifier = { name = "renkouchaozai_91" duration = -1 } citysize = -9100 owner = { change_variable = { which = liuminliang value = 9100 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -91 } } check_variable = { which = chengzaili value = -90 } } has_province_modifier = renkouchaozai_91 } remove_province_modifier = renkouchaozai_91 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -92 } not = { check_variable = { which = chengzaili value = -91 } } not = { has_province_modifier = renkouchaozai_92 } } add_province_modifier = { name = "renkouchaozai_92" duration = -1 } citysize = -9200 owner = { change_variable = { which = liuminliang value = 9200 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -92 } } check_variable = { which = chengzaili value = -91 } } has_province_modifier = renkouchaozai_92 } remove_province_modifier = renkouchaozai_92 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -93 } not = { check_variable = { which = chengzaili value = -92 } } not = { has_province_modifier = renkouchaozai_93 } } add_province_modifier = { name = "renkouchaozai_93" duration = -1 } citysize = -9300 owner = { change_variable = { which = liuminliang value = 9300 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -93 } } check_variable = { which = chengzaili value = -92 } } has_province_modifier = renkouchaozai_93 } remove_province_modifier = renkouchaozai_93 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -94 } not = { check_variable = { which = chengzaili value = -93 } } not = { has_province_modifier = renkouchaozai_94 } } add_province_modifier = { name = "renkouchaozai_94" duration = -1 } citysize = -9400 owner = { change_variable = { which = liuminliang value = 9400 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -94 } } check_variable = { which = chengzaili value = -93 } } has_province_modifier = renkouchaozai_94 } remove_province_modifier = renkouchaozai_94 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -95 } not = { check_variable = { which = chengzaili value = -94 } } not = { has_province_modifier = renkouchaozai_95 } } add_province_modifier = { name = "renkouchaozai_95" duration = -1 } citysize = -9500 owner = { change_variable = { which = liuminliang value = 9500 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -95 } } check_variable = { which = chengzaili value = -94 } } has_province_modifier = renkouchaozai_95 } remove_province_modifier = renkouchaozai_95 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -96 } not = { check_variable = { which = chengzaili value = -95 } } not = { has_province_modifier = renkouchaozai_96 } } add_province_modifier = { name = "renkouchaozai_96" duration = -1 } citysize = -9600 owner = { change_variable = { which = liuminliang value = 9600 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -96 } } check_variable = { which = chengzaili value = -95 } } has_province_modifier = renkouchaozai_96 } remove_province_modifier = renkouchaozai_96 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -97 } not = { check_variable = { which = chengzaili value = -96 } } not = { has_province_modifier = renkouchaozai_97 } } add_province_modifier = { name = "renkouchaozai_97" duration = -1 } citysize = -9700 owner = { change_variable = { which = liuminliang value = 9700 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -97 } } check_variable = { which = chengzaili value = -96 } } has_province_modifier = renkouchaozai_97 } remove_province_modifier = renkouchaozai_97 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -98 } not = { check_variable = { which = chengzaili value = -97 } } not = { has_province_modifier = renkouchaozai_98 } } add_province_modifier = { name = "renkouchaozai_98" duration = -1 } citysize = -9800 owner = { change_variable = { which = liuminliang value = 9800 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -98 } } check_variable = { which = chengzaili value = -97 } } has_province_modifier = renkouchaozai_98 } remove_province_modifier = renkouchaozai_98 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -99 } not = { check_variable = { which = chengzaili value = -98 } } not = { has_province_modifier = renkouchaozai_99 } } add_province_modifier = { name = "renkouchaozai_99" duration = -1 } citysize = -9900 owner = { change_variable = { which = liuminliang value = 9900 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -99 } } check_variable = { which = chengzaili value = -98 } } has_province_modifier = renkouchaozai_99 } remove_province_modifier = renkouchaozai_99 }
+			any_owned = { limit = { check_variable = { which = chengzaili value = -100 } not = { check_variable = { which = chengzaili value = -99 } } not = { has_province_modifier = renkouchaozai_100 } } add_province_modifier = { name = "renkouchaozai_100" duration = -1 } citysize = -10000 owner = { change_variable = { which = liuminliang value = 10000 } } }
+			any_owned = { limit = { or = { not = { check_variable = { which = chengzaili value = -100 } } check_variable = { which = chengzaili value = -99 } } has_province_modifier = renkouchaozai_100 } remove_province_modifier = renkouchaozai_100 }
 		}
 	}
 }
 country_event = { 
 	id = 60044
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1528,6 +2143,7 @@ country_event = {
 country_event = { 
 	id = 60045
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1576,6 +2192,7 @@ country_event = {
 country_event = { 
 	id = 60046
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1624,6 +2241,7 @@ country_event = {
 country_event = { 
 	id = 60089
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1672,6 +2290,7 @@ country_event = {
 country_event = { 
 	id = 60090
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1714,6 +2333,7 @@ country_event = {
 country_event = { 
 	id = 60047
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1758,6 +2378,7 @@ country_event = {
 country_event = { 
 	id = 60048
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -1804,6 +2425,7 @@ country_event = {
 country_event = { 
 	id = 60088
 	trigger = { 
+		always = no
 		tag = NPC
 		any_country = { 
 			any_owned_province = { 
@@ -2106,6 +2728,13 @@ country_event = {
 				which = quanguorenkou
 				value = 0
 			}
+		}
+		any_country = {
+			limit = { 
+				any_owned_province = {
+					religion = daojia
+				}
+			}
 			any_owned = { 
 				limit = { 
 					religion = daojia
@@ -2118,5 +2747,168 @@ country_event = {
 				}
 			}
 		}
+		any_country = { 
+			limit = { 
+				war = yes
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = -50
+			}
+		}
+		any_country = { 
+			limit = { 
+				stability = 1
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = 5
+			}
+		}
+		any_country = { 
+			limit = { 
+				stability = 2
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = 5
+			}
+		}
+		any_country = { 
+			limit = { 
+				stability = 3
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = 5
+			}
+		}
+		any_country = { 
+			limit = { 
+				not = { stability = -0 }
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = -5
+			}
+		}
+		any_country = { 
+			limit = { 
+				not = { stability = -1 }
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = -5
+			}
+		}
+		any_country = { 
+			limit = { 
+				not = { stability = -2 }
+			}
+			change_variable = {
+				which = quanguorenkou
+				value = -5
+			}
+		}
+		any_country = { limit = { production_tech = 1 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 2 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 3 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 4 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 5 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 6 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 7 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 8 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 9 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 10 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 11 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 12 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 13 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 14 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 15 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 16 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 17 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 18 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 19 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 20 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 21 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 22 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 23 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 24 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 25 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 26 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 27 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 28 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 29 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 30 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 31 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 32 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 33 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 34 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 35 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 36 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 37 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 38 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 39 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 40 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 41 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 42 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 43 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 44 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 45 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 46 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 47 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 48 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 49 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 50 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 51 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 52 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 53 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 54 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 55 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 56 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 57 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 58 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 59 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 60 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 61 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 62 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 63 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 64 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 65 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 66 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 67 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 68 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 69 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 70 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 71 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 72 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 73 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 74 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 75 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 76 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 77 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 78 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 79 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 80 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 81 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 82 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 83 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 84 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 85 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 86 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 87 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 88 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 89 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 90 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 91 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 92 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 93 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 94 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 95 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 96 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 97 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 98 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 99 } change_variable = { which = quanguorenkou value = 1 } }
+		any_country = { limit = { production_tech = 100 } change_variable = { which = quanguorenkou value = 1 } }
 	}
 }

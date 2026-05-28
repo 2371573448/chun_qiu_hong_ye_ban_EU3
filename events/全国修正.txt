@@ -1,0 +1,234 @@
+country_event = {
+	id = 300800
+	trigger = {
+		tag = NPC
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	title = "EVTNAME290800"
+	desc = "EVTDESC290800"
+	option = {
+		name = "EVTOPTA290800"
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = monarch_territory
+				}
+			}
+			set_variable = {
+				which = jishu_quanguoxiuzheng_monarch_territory
+				value = 0
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = monarch_territory
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_monarch_territory
+						value = 1
+					}
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = zhengtongrenhe
+				}
+			}
+			set_variable = {
+				which = jishu_quanguoxiuzheng_zhengtongrenhe
+				value = 0
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = zhengtongrenhe
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_zhengtongrenhe
+						value = 1
+					}
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = noble_territory
+				}
+			}
+			set_variable = {
+				which = jishu_quanguoxiuzheng_noble_territory
+				value = 0
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = noble_territory
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_noble_territory
+						value = 1
+					}
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_building = armory
+				}
+			}
+			set_variable = {
+				which = jishu_quanguoxiuzheng_junshi
+				value = 0
+			}
+			any_owned = {
+				limit = {
+					has_building = armory
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_junshi
+						value = 0.1
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = training_fields
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_junshi
+						value = 0.1
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = barracks
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_junshi
+						value = 0.1
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = regimental_camp
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_junshi
+						value = 0.2
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = arsenal
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_junshi
+						value = 0.2
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = conscription_center
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_junshi
+						value = 0.3
+					}
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_building = dock
+				}
+			}
+			set_variable = {
+				which = jishu_quanguoxiuzheng_wenhua
+				value = 0
+			}
+			any_owned = {
+				limit = {
+					has_building = dock
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_wenhua
+						value = 1
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = drydock
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_wenhua
+						value = 1
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = shipyard
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_wenhua
+						value = 1
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = grand_shipyard
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_wenhua
+						value = 2
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = naval_arsenal
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_wenhua
+						value = 2
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					has_building = naval_base
+				}
+				owner = {
+					change_variable = {
+						which = jishu_quanguoxiuzheng_wenhua
+						value = 3
+					}
+				}
+			}
+		}
+	}
+}

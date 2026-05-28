@@ -392,7 +392,11 @@ province_decisions = {
 	qiangdu1 = {
 		potential = { 
 			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
-			owner={not={has_country_flag = guanbiguangchamanyi}}
+			owner = { not = { has_country_flag = guanbiguangchamanyi } }
+			check_variable = {
+				which = manzusaodong
+				value = 1
+			}
 		}
 		allow = {
 			NOT = {
@@ -416,7 +420,11 @@ province_decisions = {
 	qiangdu2 = {
 		potential = { 
 			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
-				owner={not={has_country_flag = guanbiguangchamanyi}}
+			owner= { not = { has_country_flag = guanbiguangchamanyi } }
+			check_variable = {
+				which = manzusaodong
+				value = 1
+			}
 		}
 		allow = {
 			NOT = {
@@ -441,7 +449,11 @@ province_decisions = {
 	qiangdu3 = {
 		potential = { 
 			owner = { has_country_flag = xianyinjueyi_guanchamanzu }
-				owner={not={has_country_flag = guanbiguangchamanyi}}
+			owner = { not = { has_country_flag = guanbiguangchamanyi } }
+			check_variable = {
+				which = manzusaodong
+				value = 1
+			}
 		}
 		allow = {
 			NOT = {

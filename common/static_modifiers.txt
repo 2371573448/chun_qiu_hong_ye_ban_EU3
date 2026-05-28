@@ -165,9 +165,10 @@ sea_zone = {
 
 land_province = {
 	max_attrition = 5			#Maximum Attrition is 5
-	stability_cost = 4			#stability cost
+	stability_cost = 19			#stability cost
 	garrison_growth = 0.1			#10% base growth
 	direct_tax_percentage = 0.05		#10% base minimum
+	local_production_efficiency = -1
 }
 
 
@@ -228,7 +229,7 @@ city_population = {
 	local_manpower = 0.005
 	tax_income = 0.2
 	stability_cost = 0.15
-	local_production_efficiency = 0.008	 #每1万人增加省份工业效率3%
+	#local_production_efficiency = 0.008	 #每1万人增加省份工业效率3%
 }
 
 capital_city = {
@@ -247,9 +248,12 @@ national_focus = {
 	tax_income = 0.4					#Extra income bonus
 	garrison_growth = 0.1				#10% bonus on garrison growth
 	local_colonial_growth = 0.5
-	local_missionary_placement_chance = 0.05
+	local_missionary_placement_chance = 0.25
 	local_revolt_risk = -2
 	minimum_revolt_risk = -2
+	local_production_efficiency = 0.10
+	local_trade_income_modifier = 0.10
+	direct_tax_percentage = 0.10
 }
 
 # Applied to foreign provinces bordering your national focus, unless it is in your capital
@@ -283,8 +287,8 @@ native_aggressiveness = {
 
 core = {
 	local_tax_modifier = 0.6
-	local_production_efficiency = 0.20
-	direct_tax_percentage = 0.23
+	#local_production_efficiency = 0.20
+	direct_tax_percentage = 0.20
 }
 
 
@@ -313,30 +317,30 @@ non_accepted_culture_republic = {
 
 has_inland_center_of_trade = {
 	population_growth = 0.02		#1% base population growth
-	merchants = 0.5							#0.5 merchant for each cot.
+	merchants = 2							#0.5 merchant for each cot.
 	colonists = 0.06							#0.1 colonist from naval activity.
 }
 
 has_coastal_center_of_trade = {
 	population_growth = 0.02		#1% base population growth
-	merchants = 0.5							#0.5 merchant for each cot.
+	merchants = 2							#0.5 merchant for each cot.
 	colonists = 0.06						#0.1 colonist from naval activity.
 }
 
 # Each full 100 gold worth of trade is one level
 center_of_trade_level = {
-	tax_income = 0.6					#extra income bonus
+	tax_income = 1					#extra income bonus
 	local_manpower_modifier = 0.03   	                #10% bonus on manpower.
 }
 
 occupied = {
 	local_revolt_risk = 1			#1% revolt risk for each year occupied.
 	garrison_growth = -0.05			#1% penalty on growth if occupied.
-	population_growth = 0.006
+	#population_growth = 0.006
 }
 
 under_siege = {
-	population_growth = -0.08		#4% penalty if occupied by enemies
+	population_growth = -0.20		#4% penalty if occupied by enemies
 	supply_limit = -0.5
 }
 
@@ -417,11 +421,14 @@ base_values = {
 	navy_tradition_decay = 0.03
 	cultural_tradition_decay = 0.04
 	prestige_decay = 0.075
-	tolerance_own = 2
+	tolerance_own = 4
+	tolerance_heretic = -3
 	tolerance_heathen = -2.5
-	tolerance_heretic = -1
 	officials = 0.3
 	mercenary_cost = 0.5
+	colonist_placement_chance = 0.10
+	missionaries = 0.2
+	missionary_placement_chance = 0.06
 }
 
 war_taxes = {
@@ -507,6 +514,8 @@ war = {
 	cultural_tradition_decay = 0.04
 	cultural_tradition = -0.004
 	badboy = 0.2
+	global_trade_income_modifier = -0.2
+	trade_efficiency = -0.05
 }
 
 peace = {
@@ -580,7 +589,7 @@ production_efficiency = {
 }
 
 trade_refusal = {
-	trade_efficiency = -0.05		#3% penalty for each.
+	trade_efficiency = -0.01		#3% penalty for each.
 	trade_tech_investment = -5		#-2$ for each.
 }
 
@@ -710,7 +719,7 @@ controlled_cardinals = {			#bonuses for each controlled cardinal
 
 placed_merchants = {
 	merchant_compete_chance = -0.01		#-20% at 40 placed.
-	merchants = -0.1
+	merchants = -0.4
 }
 
 total_occupation = {
@@ -727,12 +736,12 @@ uncontested_cores = {
 
 trade_leader = 
 {
-	local_trade_income_modifier = 0.05
+	local_trade_income_modifier = 0.20
 }
 
 production_leader = 
 {
-	local_production_efficiency = 0.03
+	local_production_efficiency = 0.10
 }
 
 #Applied for max 5 provinces

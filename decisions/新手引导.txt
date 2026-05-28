@@ -1,0 +1,38 @@
+religion_decisions = { 
+	xinshouwaigua = { 
+		potential = { 
+			ai = no
+			not = { year = 2247 }
+			not = { month = 2 }
+		}
+		allow = { 
+			not = { year = 2247 }
+			not = { month = 1 }
+		}
+		effect = {
+			set_country_flag = xinshouwaigua_kai
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	xinshouwaigua_guojiazhuangtai = { 
+		potential = { 
+			ai = no
+			has_country_flag = xinshouwaigua_kai
+		}
+		allow = { 
+		}
+		effect = { 
+			treasury = 1000
+			stability = 6
+			inflation = -10
+			prestige = 2
+			war_exhaustion = -10
+			manpower = 1000
+			legitimacy = 1
+			loan_size = 1000
+			diplomats = 20
+		}
+	}
+}

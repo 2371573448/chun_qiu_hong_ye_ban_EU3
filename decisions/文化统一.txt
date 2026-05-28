@@ -168,6 +168,7 @@ province_decisions = {
 				ai = no
 				years_of_income = 0.1
 			}
+			not = { national_focus = this }
 		}
 		allow = { 
 			owner = {

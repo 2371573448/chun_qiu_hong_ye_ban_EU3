@@ -2623,6 +2623,7 @@ improve_economical_mismanagement = {
 	}
 	effect = { 
 		inflation = -1
+		years_of_income = -0.5
 	}
 }
 

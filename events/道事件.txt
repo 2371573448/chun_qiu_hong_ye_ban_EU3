@@ -115,11 +115,12 @@ country_event = {
 		name = "liuminyuanlai3"
 		treasury = -50
 		badboy = -0.5
-		capital_scope = {
-			add_province_modifier = {
-				name = "daojialiumindaianzhi"
-				duration = -1
+		change_variable = { which = liuminliang value = 5000 }
+		random_country = {
+			limit = { 
+				check_variable = { which = liuminliang value = 5000 }
 			}
+			change_variable = { which = liuminliang value = -5000 }
 		}
 		clr_country_flag = daojialiuminfangzhigaizhengce
 	}
@@ -129,6 +130,12 @@ country_event = {
 		treasury = -10
 		random_owned = {
 			citysize = 2000
+		}
+		random_country = {
+			limit = { 
+				check_variable = { which = liuminliang value = 2000 }
+			}
+			change_variable = { which = liuminliang value = -2000 }
 		}
 		clr_country_flag = daojialiuminfangzhigaizhengce
 	}
