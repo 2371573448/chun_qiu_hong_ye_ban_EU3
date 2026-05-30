@@ -459,29 +459,29 @@ xianyinjueyi_junziliuyi_guan_title;关闭君子六艺;;;;;;;;;;X
 xianyinjueyi_junziliuyi_guan_desc;禁用君子六艺相关功能。;;;;;;;;;;X
 xianyinjueyi_yushe_title;推荐预设;;;;;;;;;;X
 xianyinjueyi_yushe_desc;预设模板：在全关时选这个，这是制作者工厂预期的开局所需的决议。;;;;;;;;;;X
-zidongzhongtian_jingji_kai;开启 经济自动种田;;;;;;;;;;X
+zidongzhongtian_jingji_kai_title;开启 经济自动种田;;;;;;;;;;X
 zidongzhongtian_jingji_kai_desc;专注经济发展，自动提升国家经济实力，关闭军事/文化自动种田。;;;;;;;;;;X
-zidongzhongtian_jingji_guan;关闭 经济自动种田;;;;;;;;;;X
+zidongzhongtian_jingji_guan_title;关闭 经济自动种田;;;;;;;;;;X
 zidongzhongtian_jingji_guan_desc;停止经济自动种田逻辑。;;;;;;;;;;X
-zidongzhongtian_junshi_kai;开启 军事自动种田;;;;;;;;;;X
+zidongzhongtian_junshi_kai_title;开启 军事自动种田;;;;;;;;;;X
 zidongzhongtian_junshi_kai_desc;专注军事建设，自动强化军队与国防，关闭经济/文化自动种田。;;;;;;;;;;X
-zidongzhongtian_junshi_guan;关闭 军事自动种田;;;;;;;;;;X
+zidongzhongtian_junshi_guan_title;关闭 军事自动种田;;;;;;;;;;X
 zidongzhongtian_junshi_guan_desc;停止军事自动种田逻辑。;;;;;;;;;;X
-zidongzhongtian_wenhua_kai;开启 文化自动种田;;;;;;;;;;X
+zidongzhongtian_wenhua_kai_title;开启 文化自动种田;;;;;;;;;;X
 zidongzhongtian_wenhua_kai_desc;专注文化发展，自动提升科技与国民素质，关闭经济/军事自动种田。;;;;;;;;;;X
-zidongzhongtian_wenhua_guan;关闭 文化自动种田;;;;;;;;;;X
+zidongzhongtian_wenhua_guan_title;关闭 文化自动种田;;;;;;;;;;X
 zidongzhongtian_wenhua_guan_desc;停止文化自动种田逻辑。;;;;;;;;;;X
-zidongzhongtian_yusuan_5000_kai;开启 预算5000 自动种田;;;;;;;;;;X
+zidongzhongtian_yusuan_5000_kai_title;开启 预算5000 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_5000_kai_desc;使用5000预算自动发展，关闭2000/700预算模式。;;;;;;;;;;X
-zidongzhongtian_yusuan_5000_guan;关闭 预算5000 自动种田;;;;;;;;;;X
+zidongzhongtian_yusuan_5000_guan_title;关闭 预算5000 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_5000_guan_desc;停止预算5000自动种田。;;;;;;;;;;X
-zidongzhongtian_yusuan_2000_kai;开启 预算2000 自动种田;;;;;;;;;;X
+zidongzhongtian_yusuan_2000_kai_title;开启 预算2000 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_2000_kai_desc;使用2000预算自动发展，关闭5000/700预算模式。;;;;;;;;;;X
-zidongzhongtian_yusuan_2000_guan;关闭 预算2000 自动种田;;;;;;;;;;X
+zidongzhongtian_yusuan_2000_guan_title;关闭 预算2000 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_2000_guan_desc;停止预算2000自动种田。;;;;;;;;;;X
-zidongzhongtian_yusuan_700_kai;开启 预算700 自动种田;;;;;;;;;;X
+zidongzhongtian_yusuan_700_kai_title;开启 预算700 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_700_kai_desc;使用700预算自动发展，关闭5000/2000预算模式。;;;;;;;;;;X
-zidongzhongtian_yusuan_700_guan;关闭 预算700 自动种田;;;;;;;;;;X
+zidongzhongtian_yusuan_700_guan_title;关闭 预算700 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_700_guan_desc;停止预算700自动种田。;;;;;;;;;;X
-xinshouwaigua;秘策初启;;;;;;;;;;X
-xinshouwaigua_guojiazhuangtai;天赐国运;;;;;;;;;;X
+xinshouwaigua_title;秘策初启;;;;;;;;;;X
+xinshouwaigua_guojiazhuangtai_title;天赐国运;;;;;;;;;;X

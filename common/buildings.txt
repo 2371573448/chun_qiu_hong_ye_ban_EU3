@@ -790,7 +790,7 @@ admiralty = {#司闻曹
 
 # Manufactories #工厂
 refinery = {#伐木场
-	cost = 2000
+	cost = 500
 	time = 36
 	officials = 10
 	trigger = {
@@ -815,7 +815,7 @@ refinery = {#伐木场
 }
 
 wharf = {#港口
-	cost = 2000
+	cost = 500
 	time = 36
 	officials = 10
 	trigger = {
@@ -840,7 +840,7 @@ wharf = {#港口
 }
 
 weapons = {#牧场
-	cost = 2000
+	cost = 500
 	time = 36
 	officials = 10
 	trigger = {
@@ -865,7 +865,7 @@ weapons = {#牧场
 }
 
 textile = {#矿井
-	cost = 2000
+	cost = 500
 	time = 36
 	officials = 10
 	trigger = {
@@ -892,7 +892,7 @@ textile = {#矿井
 }
 
 fine_arts_academy = {#守藏室
-	cost = 2000
+	cost = 500
 	time = 36
 	officials = 10
 	trigger = {
@@ -919,7 +919,7 @@ fine_arts_academy = {#守藏室
 }
 
 university = {#煮盐所
-	cost = 2000
+	cost = 500
 	time = 36
 	officials = 10
 	trigger = {
