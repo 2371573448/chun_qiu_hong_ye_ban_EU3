@@ -29,10 +29,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_temple
+					not = { has_building = temple }
 				}
 				clr_province_flag = zidongzhongtian_temple
 				clr_province_flag = zhengzaijianshe
 				add_building = temple
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_temple
+					has_building = temple
+				}
+				clr_province_flag = zidongzhongtian_temple
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 100 officials = 1 }
 			}
 		}
 
@@ -48,10 +59,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_courthouse
+					not = { has_building = courthouse }
 				}
 				clr_province_flag = zidongzhongtian_courthouse
 				clr_province_flag = zhengzaijianshe
 				add_building = courthouse
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_courthouse
+					has_building = courthouse
+				}
+				clr_province_flag = zidongzhongtian_courthouse
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 120 officials = 1 }
 			}
 		}
 
@@ -67,10 +89,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_spy_agency
+					not = { has_building = spy_agency }
 				}
 				clr_province_flag = zidongzhongtian_spy_agency
 				clr_province_flag = zhengzaijianshe
 				add_building = spy_agency
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_spy_agency
+					has_building = spy_agency
+				}
+				clr_province_flag = zidongzhongtian_spy_agency
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 150 officials = 1 }
 			}
 		}
 
@@ -86,10 +119,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_town_hall
+					not = { has_building = town_hall }
 				}
 				clr_province_flag = zidongzhongtian_town_hall
 				clr_province_flag = zhengzaijianshe
 				add_building = town_hall
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_town_hall
+					has_building = town_hall
+				}
+				clr_province_flag = zidongzhongtian_town_hall
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 200 officials = 2 }
 			}
 		}
 
@@ -105,10 +149,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_college
+					not = { has_building = college }
 				}
 				clr_province_flag = zidongzhongtian_college
 				clr_province_flag = zhengzaijianshe
 				add_building = college
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_college
+					has_building = college
+				}
+				clr_province_flag = zidongzhongtian_college
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 300 officials = 2 }
 			}
 		}
 
@@ -124,10 +179,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_cathedral
+					not = { has_building = cathedral }
 				}
 				clr_province_flag = zidongzhongtian_cathedral
 				clr_province_flag = zhengzaijianshe
 				add_building = cathedral
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_cathedral
+					has_building = cathedral
+				}
+				clr_province_flag = zidongzhongtian_cathedral
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 500 officials = 3 }
 			}
 		}
 
@@ -143,10 +209,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_armory
+					not = { has_building = armory }
 				}
 				clr_province_flag = zidongzhongtian_armory
 				clr_province_flag = zhengzaijianshe
 				add_building = armory
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_armory
+					has_building = armory
+				}
+				clr_province_flag = zidongzhongtian_armory
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 100 officials = 1 }
 			}
 		}
 
@@ -162,10 +239,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_training_fields
+					not = { has_building = training_fields }
 				}
 				clr_province_flag = zidongzhongtian_training_fields
 				clr_province_flag = zhengzaijianshe
 				add_building = training_fields
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_training_fields
+					has_building = training_fields
+				}
+				clr_province_flag = zidongzhongtian_training_fields
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 120 officials = 1 }
 			}
 		}
 
@@ -181,10 +269,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_barracks
+					not = { has_building = barracks }
 				}
 				clr_province_flag = zidongzhongtian_barracks
 				clr_province_flag = zhengzaijianshe
 				add_building = barracks
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_barracks
+					has_building = barracks
+				}
+				clr_province_flag = zidongzhongtian_barracks
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 150 officials = 1 }
 			}
 		}
 
@@ -200,10 +299,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_regimental_camp
+					not = { has_building = regimental_camp }
 				}
 				clr_province_flag = zidongzhongtian_regimental_camp
 				clr_province_flag = zhengzaijianshe
 				add_building = regimental_camp
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_regimental_camp
+					has_building = regimental_camp
+				}
+				clr_province_flag = zidongzhongtian_regimental_camp
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 200 officials = 2 }
 			}
 		}
 
@@ -219,10 +329,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_arsenal
+					not = { has_building = arsenal }
 				}
 				clr_province_flag = zidongzhongtian_arsenal
 				clr_province_flag = zhengzaijianshe
 				add_building = arsenal
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_arsenal
+					has_building = arsenal
+				}
+				clr_province_flag = zidongzhongtian_arsenal
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 300 officials = 2 }
 			}
 		}
 
@@ -238,10 +359,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_conscription_center
+					not = { has_building = conscription_center }
 				}
 				clr_province_flag = zidongzhongtian_conscription_center
 				clr_province_flag = zhengzaijianshe
 				add_building = conscription_center
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_conscription_center
+					has_building = conscription_center
+				}
+				clr_province_flag = zidongzhongtian_conscription_center
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 500 officials = 3 }
 			}
 		}
 
@@ -257,10 +389,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_dock
+					not = { has_building = dock }
 				}
 				clr_province_flag = zidongzhongtian_dock
 				clr_province_flag = zhengzaijianshe
 				add_building = dock
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_dock
+					has_building = dock
+				}
+				clr_province_flag = zidongzhongtian_dock
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 100 officials = 1 }
 			}
 		}
 
@@ -276,10 +419,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_drydock
+					not = { has_building = drydock }
 				}
 				clr_province_flag = zidongzhongtian_drydock
 				clr_province_flag = zhengzaijianshe
 				add_building = drydock
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_drydock
+					has_building = drydock
+				}
+				clr_province_flag = zidongzhongtian_drydock
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 120 officials = 1 }
 			}
 		}
 
@@ -295,10 +449,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_shipyard
+					not = { has_building = shipyard }
 				}
 				clr_province_flag = zidongzhongtian_shipyard
 				clr_province_flag = zhengzaijianshe
 				add_building = shipyard
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_shipyard
+					has_building = shipyard
+				}
+				clr_province_flag = zidongzhongtian_shipyard
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 150 officials = 1 }
 			}
 		}
 
@@ -314,10 +479,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_grand_shipyard
+					not = { has_building = grand_shipyard }
 				}
 				clr_province_flag = zidongzhongtian_grand_shipyard
 				clr_province_flag = zhengzaijianshe
 				add_building = grand_shipyard
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_grand_shipyard
+					has_building = grand_shipyard
+				}
+				clr_province_flag = zidongzhongtian_grand_shipyard
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 200 officials = 2 }
 			}
 		}
 
@@ -333,10 +509,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_naval_arsenal
+					not = { has_building = naval_arsenal }
 				}
 				clr_province_flag = zidongzhongtian_naval_arsenal
 				clr_province_flag = zhengzaijianshe
 				add_building = naval_arsenal
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_naval_arsenal
+					has_building = naval_arsenal
+				}
+				clr_province_flag = zidongzhongtian_naval_arsenal
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 300 officials = 2 }
 			}
 		}
 
@@ -352,10 +539,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_naval_base
+					not = { has_building = naval_base }
 				}
 				clr_province_flag = zidongzhongtian_naval_base
 				clr_province_flag = zhengzaijianshe
 				add_building = naval_base
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_naval_base
+					has_building = naval_base
+				}
+				clr_province_flag = zidongzhongtian_naval_base
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 500 officials = 3 }
 			}
 		}
 
@@ -371,10 +569,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_constable
+					not = { has_building = constable }
 				}
 				clr_province_flag = zidongzhongtian_constable
 				clr_province_flag = zhengzaijianshe
 				add_building = constable
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_constable
+					has_building = constable
+				}
+				clr_province_flag = zidongzhongtian_constable
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 100 officials = 1 }
 			}
 		}
 
@@ -390,10 +599,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_workshop
+					not = { has_building = workshop }
 				}
 				clr_province_flag = zidongzhongtian_workshop
 				clr_province_flag = zhengzaijianshe
 				add_building = workshop
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_workshop
+					has_building = workshop
+				}
+				clr_province_flag = zidongzhongtian_workshop
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 120 officials = 1 }
 			}
 		}
 
@@ -409,10 +629,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_counting_house
+					not = { has_building = counting_house }
 				}
 				clr_province_flag = zidongzhongtian_counting_house
 				clr_province_flag = zhengzaijianshe
 				add_building = counting_house
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_counting_house
+					has_building = counting_house
+				}
+				clr_province_flag = zidongzhongtian_counting_house
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 150 officials = 1 }
 			}
 		}
 
@@ -428,10 +659,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_treasury_office
+					not = { has_building = treasury_office }
 				}
 				clr_province_flag = zidongzhongtian_treasury_office
 				clr_province_flag = zhengzaijianshe
 				add_building = treasury_office
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_treasury_office
+					has_building = treasury_office
+				}
+				clr_province_flag = zidongzhongtian_treasury_office
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 200 officials = 2 }
 			}
 		}
 
@@ -447,10 +689,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_mint
+					not = { has_building = mint }
 				}
 				clr_province_flag = zidongzhongtian_mint
 				clr_province_flag = zhengzaijianshe
 				add_building = mint
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_mint
+					has_building = mint
+				}
+				clr_province_flag = zidongzhongtian_mint
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 300 officials = 2 }
 			}
 		}
 
@@ -466,10 +719,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_stock_exchange
+					not = { has_building = stock_exchange }
 				}
 				clr_province_flag = zidongzhongtian_stock_exchange
 				clr_province_flag = zhengzaijianshe
 				add_building = stock_exchange
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_stock_exchange
+					has_building = stock_exchange
+				}
+				clr_province_flag = zidongzhongtian_stock_exchange
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 500 officials = 3 }
 			}
 		}
 
@@ -485,10 +749,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_marketplace
+					not = { has_building = marketplace }
 				}
 				clr_province_flag = zidongzhongtian_marketplace
 				clr_province_flag = zhengzaijianshe
 				add_building = marketplace
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_marketplace
+					has_building = marketplace
+				}
+				clr_province_flag = zidongzhongtian_marketplace
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 100 officials = 1 }
 			}
 		}
 
@@ -504,10 +779,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_trade_depot
+					not = { has_building = trade_depot }
 				}
 				clr_province_flag = zidongzhongtian_trade_depot
 				clr_province_flag = zhengzaijianshe
 				add_building = trade_depot
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_trade_depot
+					has_building = trade_depot
+				}
+				clr_province_flag = zidongzhongtian_trade_depot
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 120 officials = 1 }
 			}
 		}
 
@@ -523,10 +809,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_canal
+					not = { has_building = canal }
 				}
 				clr_province_flag = zidongzhongtian_canal
 				clr_province_flag = zhengzaijianshe
 				add_building = canal
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_canal
+					has_building = canal
+				}
+				clr_province_flag = zidongzhongtian_canal
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 150 officials = 1 }
 			}
 		}
 
@@ -542,10 +839,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_road_network
+					not = { has_building = road_network }
 				}
 				clr_province_flag = zidongzhongtian_road_network
 				clr_province_flag = zhengzaijianshe
 				add_building = road_network
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_road_network
+					has_building = road_network
+				}
+				clr_province_flag = zidongzhongtian_road_network
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 200 officials = 2 }
 			}
 		}
 
@@ -561,10 +869,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_post_office
+					not = { has_building = post_office }
 				}
 				clr_province_flag = zidongzhongtian_post_office
 				clr_province_flag = zhengzaijianshe
 				add_building = post_office
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_post_office
+					has_building = post_office
+				}
+				clr_province_flag = zidongzhongtian_post_office
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 300 officials = 2 }
 			}
 		}
 
@@ -580,10 +899,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_customs_house
+					not = { has_building = customs_house }
 				}
 				clr_province_flag = zidongzhongtian_customs_house
 				clr_province_flag = zhengzaijianshe
 				add_building = customs_house
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_customs_house
+					has_building = customs_house
+				}
+				clr_province_flag = zidongzhongtian_customs_house
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 500 officials = 3 }
 			}
 		}
 
@@ -599,10 +929,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_fort1
+					not = { has_building = fort1 }
 				}
 				clr_province_flag = zidongzhongtian_fort1
 				clr_province_flag = zhengzaijianshe
 				add_building = fort1
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_fort1
+					has_building = fort1
+				}
+				clr_province_flag = zidongzhongtian_fort1
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 200 officials = 1 }
 			}
 		}
 
@@ -618,10 +959,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_fort2
+					not = { has_building = fort2 }
 				}
 				clr_province_flag = zidongzhongtian_fort2
 				clr_province_flag = zhengzaijianshe
 				add_building = fort2
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_fort2
+					has_building = fort2
+				}
+				clr_province_flag = zidongzhongtian_fort2
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 240 officials = 1 }
 			}
 		}
 
@@ -637,10 +989,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_fort3
+					not = { has_building = fort3 }
 				}
 				clr_province_flag = zidongzhongtian_fort3
 				clr_province_flag = zhengzaijianshe
 				add_building = fort3
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_fort3
+					has_building = fort3
+				}
+				clr_province_flag = zidongzhongtian_fort3
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 300 officials = 1 }
 			}
 		}
 
@@ -656,10 +1019,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_fort4
+					not = { has_building = fort4 }
 				}
 				clr_province_flag = zidongzhongtian_fort4
 				clr_province_flag = zhengzaijianshe
 				add_building = fort4
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_fort4
+					has_building = fort4
+				}
+				clr_province_flag = zidongzhongtian_fort4
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 400 officials = 2 }
 			}
 		}
 
@@ -675,10 +1049,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_fort5
+					not = { has_building = fort5 }
 				}
 				clr_province_flag = zidongzhongtian_fort5
 				clr_province_flag = zhengzaijianshe
 				add_building = fort5
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_fort5
+					has_building = fort5
+				}
+				clr_province_flag = zidongzhongtian_fort5
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 600 officials = 2 }
 			}
 		}
 
@@ -694,10 +1079,21 @@ country_event = {
 				limit = {
 					not = { has_province_modifier = zhengzaijianshe }
 					has_province_flag = zidongzhongtian_fort6
+					not = { has_building = fort6 }
 				}
 				clr_province_flag = zidongzhongtian_fort6
 				clr_province_flag = zhengzaijianshe
 				add_building = fort6
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = zhengzaijianshe }
+					has_province_flag = zidongzhongtian_fort6
+					has_building = fort6
+				}
+				clr_province_flag = zidongzhongtian_fort6
+				clr_province_flag = zhengzaijianshe
+				owner = { treasury = 1000 officials = 3 }
 			}
 		}
 	}

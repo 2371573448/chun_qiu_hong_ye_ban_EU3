@@ -2602,6 +2602,7 @@ recover_negative_stability = {
 improve_economical_mismanagement = { 
 	type = country
 	allow = { 
+		inflation = 2
 		number_of_loans = 1
 		is_bankrupt = no
 	}
@@ -2623,7 +2624,6 @@ improve_economical_mismanagement = {
 	}
 	effect = { 
 		inflation = -1
-		years_of_income = -0.5
 	}
 }
 

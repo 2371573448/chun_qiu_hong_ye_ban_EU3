@@ -21,6 +21,9 @@ temple = {
 	cost = 100
 	time = 3
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_temple }
+	}
 	modifier = { 
 		population_growth = 0.005
 		tax_income = 1
@@ -37,6 +40,9 @@ courthouse = {
 	cost = 120
 	time = 6
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_courthouse }
+	}
 	modifier = { 
 		population_growth = 0.005
 		tax_income = 1
@@ -52,6 +58,9 @@ spy_agency = {
 	cost = 150
 	time = 9
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_spy_agency }
+	}
 	modifier = { 
 		population_growth = 0.005
 		tax_income = 1
@@ -67,6 +76,9 @@ town_hall = {
 	cost = 200
 	time = 12
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_town_hall }
+	}
 	modifier = { 
 		population_growth = 0.01
 		tax_income = 2
@@ -82,6 +94,9 @@ college = {
 	cost = 300
 	time = 24
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_college }
+	}
 	modifier = { 
 		population_growth = 0.01
 		tax_income = 2
@@ -97,6 +112,9 @@ cathedral = {
 	cost = 500
 	time = 36
 	officials = 3
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_cathedral }
+	}
 	modifier = { 
 		population_growth = 0.015
 		tax_income = 3
@@ -114,6 +132,9 @@ armory = {
 	cost = 100
 	time = 3
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_armory }
+	}
 	modifier = {
 		local_manpower = 0.010
 		local_manpower_modifier = 0.10
@@ -130,6 +151,9 @@ training_fields = {
 	cost = 120
 	time = 6
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_training_fields }
+	}
 	modifier = {
 		local_manpower = 0.010
 		local_manpower_modifier = 0.10
@@ -146,6 +170,9 @@ barracks = {
 	cost = 150
 	time = 9
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_barracks }
+	}
 	modifier = {
 		local_manpower = 0.010
 		local_manpower_modifier = 0.10
@@ -162,6 +189,9 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_regimental_camp }
+	}
 	modifier = {
 		local_manpower = 0.020
 		local_manpower_modifier = 0.20
@@ -178,6 +208,9 @@ arsenal = {
 	cost = 300
 	time = 24
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_arsenal }
+	}
 	modifier = {
 		local_manpower = 0.020
 		local_manpower_modifier = 0.20
@@ -194,6 +227,9 @@ conscription_center = {
 	cost = 500
 	time = 36
 	officials = 3
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_conscription_center }
+	}
 	modifier = {
 		local_manpower = 0.030
 		local_manpower_modifier = 0.30
@@ -211,13 +247,14 @@ dock = {
 	cost = 100
 	time = 3
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_dock }
+	}
 	modifier = {
 		local_revolt_risk = -1
 		minimum_revolt_risk = -1
-		stability_cost = -1
+		stability_cost = -3
 		#全国效果
-		#officials = 0.1
-		#diplomats = 0.1
 	}
 	destroy_on_conquest = yes
 	spare_on_core = yes
@@ -230,13 +267,14 @@ drydock = {
 	cost = 120
 	time = 6
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_drydock }
+	}
 	modifier = {
 		local_revolt_risk = -1
 		minimum_revolt_risk = -1
-		stability_cost = -1
+		stability_cost = -3
 		#全国效果
-		#officials = 0.1
-		#diplomats = 0.1
 	}
 	destroy_on_conquest = yes
 	spare_on_core = yes
@@ -248,13 +286,14 @@ shipyard = {
 	cost = 150
 	time = 9
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_shipyard }
+	}
 	modifier = {
 		local_revolt_risk = -1
 		minimum_revolt_risk = -1
-		stability_cost = -1
+		stability_cost = -3
 		#全国效果
-		#officials = 0.1
-		#diplomats = 0.1
 	}
 	destroy_on_conquest = yes
 	spare_on_core = yes
@@ -266,13 +305,14 @@ grand_shipyard = {
 	cost = 200
 	time = 12
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_grand_shipyard }
+	}
 	modifier = {
 		local_revolt_risk = -2
 		minimum_revolt_risk = -2
-		stability_cost = -2
+		stability_cost = -6
 		#全国效果
-		#officials = 0.2
-		#diplomats = 0.2
 	}
 	destroy_on_conquest = yes
 	spare_on_core = yes
@@ -284,13 +324,16 @@ naval_arsenal = {
 	cost = 300
 	time = 24
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_naval_arsenal }
+	}
 	modifier = {
 		local_revolt_risk = -2
 		minimum_revolt_risk = -2
-		stability_cost = -2
+		stability_cost = -6
 		#全国效果
-		#officials = 0.2
-		#diplomats = 0.2
+		#officials = 0.4
+		#diplomats = 0.4
 	}
 	destroy_on_conquest = yes
 }
@@ -301,13 +344,16 @@ naval_base = {
 	cost = 500
 	time = 36
 	officials = 3
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_naval_base }
+	}
 	modifier = {
 		local_revolt_risk = -3
 		minimum_revolt_risk = -3
-		stability_cost = -3
+		stability_cost = -9
 		#全国效果
-		#officials = 0.3
-		#diplomats = 0.3
+		#officials = 0.6
+		#diplomats = 0.6
 	}
 	destroy_on_conquest = yes
 	category = 3
@@ -319,6 +365,9 @@ constable = {
 	cost = 100
 	time = 3
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_constable }
+	}
 	modifier = {
 		trade_income = 1
 		local_production_efficiency = 0.10
@@ -334,6 +383,9 @@ workshop = {
 	cost = 120
 	time = 6
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_workshop }
+	}
 	modifier = {
 		trade_income = 1
 		local_production_efficiency = 0.10
@@ -348,6 +400,9 @@ counting_house = {
 	cost = 150
 	time = 9
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_counting_house }
+	}
 	modifier = {
 		trade_income = 1
 		local_production_efficiency = 0.10
@@ -362,6 +417,9 @@ treasury_office = {
 	cost = 200
 	time = 12
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_treasury_office }
+	}
 	modifier = {
 		trade_income = 2
 		local_production_efficiency = 0.20
@@ -376,6 +434,9 @@ mint = {
 	cost = 300
 	time = 24
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_mint }
+	}
 	modifier = {
 		trade_income = 2
 		local_production_efficiency = 0.20
@@ -389,6 +450,9 @@ stock_exchange = {
 	cost = 500
 	time = 36
 	officials = 3
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_stock_exchange }
+	}
 	modifier = {
 		trade_income = 3
 		local_production_efficiency = 0.30
@@ -402,6 +466,9 @@ marketplace = {
 	cost = 100
 	time = 3
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_marketplace }
+	}
 	modifier = {
 		local_trade_income_modifier = 0.10
 		local_movement_speed = 0.10
@@ -417,6 +484,9 @@ trade_depot = {
 	cost = 120
 	time = 6
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_trade_depot }
+	}
 	modifier = {
 		local_trade_income_modifier = 0.10
 		local_movement_speed = 0.10
@@ -431,6 +501,9 @@ canal = {
 	cost = 150
 	time = 9
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_canal }
+	}
 	modifier = {
 		local_trade_income_modifier = 0.10
 		local_movement_speed = 0.10
@@ -445,6 +518,9 @@ road_network = {
 	cost = 200
 	time = 12
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_road_network }
+	}
 	modifier = {
 		local_trade_income_modifier = 0.20
 		local_movement_speed = 0.20
@@ -459,6 +535,9 @@ post_office = {
 	cost = 300
 	time = 24
 	officials = 2
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_post_office }
+	}
 	modifier = {
 		local_trade_income_modifier = 0.20
 		local_movement_speed = 0.20
@@ -472,6 +551,9 @@ customs_house = {
 	cost = 500
 	time = 36
 	officials = 3
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_customs_house }
+	}
 	modifier = {
 		local_trade_income_modifier = 0.30
 		local_movement_speed = 0.30
@@ -484,6 +566,9 @@ fort1 = {
 	cost = 200
 	time = 3
 	officials = 1
+	trigger = {
+		not = { has_province_flag = zidongzhongtian_fort1 }
+	}
 	modifier = {
 		fort_level = 1
 		local_defensiveness = 0.10
@@ -501,11 +586,14 @@ fort2 = {
 	time = 6
 	officials = 1
 	trigger = {
-		has_building = courthouse
-		has_building = training_fields
-		has_building = drydock
-		has_building = workshop
-		has_building = trade_depot
+		and = {
+			not = { has_province_flag = zidongzhongtian_fort2 }
+			has_building = courthouse
+			has_building = training_fields
+			has_building = drydock
+			has_building = workshop
+			has_building = trade_depot
+		}
 	}
 	modifier = {
 		fort_level = 1
@@ -523,11 +611,14 @@ fort3 = {
 	time = 9
 	officials = 1
 	trigger = {
-		has_building = spy_agency
-		has_building = barracks
-		has_building = shipyard
-		has_building = counting_house
-		has_building = canal
+		and = {
+			not = { has_province_flag = zidongzhongtian_fort3 }
+			has_building = spy_agency
+			has_building = barracks
+			has_building = shipyard
+			has_building = counting_house
+			has_building = canal
+		}
 	}
 	modifier = {
 		fort_level = 1
@@ -545,11 +636,14 @@ fort4 = {
 	time = 12
 	officials = 2
 	trigger = {
-		has_building = town_hall
-		has_building = regimental_camp
-		has_building = grand_shipyard
-		has_building = treasury_office
-		has_building = road_network
+		and = {
+			not = { has_province_flag = zidongzhongtian_fort4 }
+			has_building = town_hall
+			has_building = regimental_camp
+			has_building = grand_shipyard
+			has_building = treasury_office
+			has_building = road_network
+		}
 	}
 	modifier = {
 		fort_level = 2
@@ -567,39 +661,42 @@ fort5 = {
 	time = 24
 	officials = 2
 	trigger = {
-		any_neighbor_province = {
-			owned_by = THIS
+		and = {
+			not = { has_province_flag = zidongzhongtian_fort5 }
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = college
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = college
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = arsenal
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = arsenal
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = naval_arsenal
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = naval_arsenal
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = mint
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = mint
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = post_office
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = post_office
+				}
 			}
 		}
 	}
@@ -619,39 +716,42 @@ fort6 = {
 	time = 36
 	officials = 3
 	trigger = {
-		any_neighbor_province = {
-			owned_by = THIS
+		and = {
+			not = { has_province_flag = zidongzhongtian_fort6 }
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = cathedral
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = cathedral
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = conscription_center
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = conscription_center
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = naval_base
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = naval_base
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = stock_exchange
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = stock_exchange
+				}
 			}
-		}
-		any_neighbor_province = {
-			owned_by = THIS
 			any_neighbor_province = {
 				owned_by = THIS
-				has_building = customs_house
+				any_neighbor_province = {
+					owned_by = THIS
+					has_building = customs_house
+				}
 			}
 		}
 	}

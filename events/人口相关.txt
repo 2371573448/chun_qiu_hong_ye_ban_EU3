@@ -1347,6 +1347,7 @@ country_event = {
 country_event = { 
 	id = 60041
 	trigger = { 
+		always = no
 		tag = NPC
 		or = {
 			not = { has_country_flag = renkouchengzaili_jishi }

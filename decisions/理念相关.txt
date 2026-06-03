@@ -216,7 +216,7 @@ country_decisions = {
 				}
 				set_variable = {
 					which = simubuduijishu
-					value = 0
+					value = 20
 				}
 			}
 			any_owned = { 
@@ -229,7 +229,7 @@ country_decisions = {
 				owner = {
 					change_variable = {
 						which = simubuduijishu
-						value = 1
+						value = 0.5
 					}
 				}
 				add_province_modifier = { 
@@ -248,7 +248,7 @@ country_decisions = {
 				owner = {
 					change_variable = {
 						which = simubuduijishu
-						value = 1
+						value = 0.1
 					}
 				}
 			}
@@ -263,7 +263,7 @@ country_decisions = {
 				owner = {
 					change_variable = {
 						which = simubuduijishu
-						value = 1
+						value = 0.1
 					}
 				}
 			}
@@ -278,7 +278,7 @@ country_decisions = {
 				owner = {
 					change_variable = {
 						which = simubuduijishu
-						value = 1
+						value = 0.1
 					}
 				}
 			}
@@ -293,7 +293,7 @@ country_decisions = {
 				owner = {
 					change_variable = {
 						which = simubuduijishu
-						value = 1
+						value = 0.1
 					}
 				}
 			}
@@ -308,7 +308,7 @@ country_decisions = {
 				owner = {
 					change_variable = {
 						which = simubuduijishu
-						value = 1
+						value = 0.1
 					}
 				}
 			}

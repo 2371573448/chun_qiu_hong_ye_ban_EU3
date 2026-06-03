@@ -165,56 +165,12 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					has_building = dock
-				}
-				owner = {
-					change_variable = {
-						which = jishu_quanguoxiuzheng_wenhua
-						value = 1
-					}
-				}
-			}
-			any_owned = {
-				limit = {
-					has_building = drydock
-				}
-				owner = {
-					change_variable = {
-						which = jishu_quanguoxiuzheng_wenhua
-						value = 1
-					}
-				}
-			}
-			any_owned = {
-				limit = {
-					has_building = shipyard
-				}
-				owner = {
-					change_variable = {
-						which = jishu_quanguoxiuzheng_wenhua
-						value = 1
-					}
-				}
-			}
-			any_owned = {
-				limit = {
-					has_building = grand_shipyard
-				}
-				owner = {
-					change_variable = {
-						which = jishu_quanguoxiuzheng_wenhua
-						value = 2
-					}
-				}
-			}
-			any_owned = {
-				limit = {
 					has_building = naval_arsenal
 				}
 				owner = {
 					change_variable = {
 						which = jishu_quanguoxiuzheng_wenhua
-						value = 2
+						value = 4
 					}
 				}
 			}
@@ -225,7 +181,7 @@ country_event = {
 				owner = {
 					change_variable = {
 						which = jishu_quanguoxiuzheng_wenhua
-						value = 3
+						value = 6
 					}
 				}
 			}
