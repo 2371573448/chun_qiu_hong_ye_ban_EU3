@@ -485,3 +485,14 @@ zidongzhongtian_yusuan_700_guan_title;关闭 预算700 自动种田;;;;;;;;;;X
 zidongzhongtian_yusuan_700_guan_desc;停止预算700自动种田。;;;;;;;;;;X
 xinshouwaigua_title;秘策初启;;;;;;;;;;X
 xinshouwaigua_guojiazhuangtai_title;天赐国运;;;;;;;;;;X
+wushangjiyuan_title;长夜藏晖暗，蕴无上机缘;;;;;;;;;;X,,
+wushangjiyuan_desc;长夜沉沉，万籁俱寂，却有微光深藏其间。于晦暗之中暗藏天眷，于沉寂之时悄生福运，一朝际遇开启，便得无上机缘，前路豁然开朗。;;;;;;;;;;X,,
+EVTNAME87530;吾国机缘;;;;;;;;;;X,,
+EVTDESC87530;三选一，一次性效果;;;;;;;;;;X,,
+EVTOPTA87530;军队驰援;;;;;;;;;;X,,
+EVTOPTB87530;经济驰援;;;;;;;;;;X,,
+EVTOPTC87530;消除恶名;;;;;;;;;;X,,
+EVTOPTD87530;我牛逼，不需要;;;;;;;;;;X,,
+EVTNAME87531;大神来了;;;;;;;;;;X,,
+EVTDESC87531;怎么会有人选这个？;;;;;;;;;;X,,
+EVTOPTA87531;牛逼;;;;;;;;;;X,,

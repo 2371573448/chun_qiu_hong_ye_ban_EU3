@@ -1,0 +1,16 @@
+country_decisions = { 
+	wushangjiyuan = { 
+		potential = { 
+			not = { 
+				has_country_flag = wushangjiyuan
+			}
+			ai = no
+		}
+		allow = { 
+		}
+		effect = { 
+			set_country_flag = wushangjiyuan
+			country_event = 87530
+		}
+	}
+}

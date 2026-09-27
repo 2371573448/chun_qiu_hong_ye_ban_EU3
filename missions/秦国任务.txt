@@ -1,104 +1,3 @@
-#征服芮国
-annex_RGO = {
-	
-	type = country
-
-	allow = {
-		tag = QIN
-		or =  {
-	  		not = { owns = 216 }
-		  	not = { owns = 202 }
-		}
-		exists = RGO
-		RGO = {
-			or = {
-				owns = 216
-				owns = 202
-			}
-			neighbour = this
-			not = { vassal_of = QIN }
-		}
-		year = 1957
-		NOT = { year = 2207 }
-	}
-	abort = {
-	  	or = {
-		  	is_subject = yes
-		  	is_lesser_in_union = yes
-			and = {
-				not = { exists = RGO }
-				not = { owns = 202 }
-				not = { owns = 216 }
-			}
-		}
-	}
-	success = {
-		owns = 216
-		owns = 202
-	}
-	chance = {
-		factor = 100
-	}
-	immediate = {
-	 	add_temp_claim = 216
-	 	add_temp_claim = 202
-	}
-	abort_effect = {
-	 	remove_temp_claim = 216
-	 	remove_temp_claim = 202
-	  	prestige = -0.05
-	}
-	effect = {
-	  	add_core = 216
-	  	add_core = 202
-	}
-}
-
-#征服梁国
-annex_LNG = {
-	
-	type = country
-
-	allow = {
-		tag = QIN
-		not = { owns = 201 }
-		exists = LNG
-		LNG = {
-			owns = 201
-			neighbour = this
-			not = { vassal_of = QIN }
-		}
-		year = 1957
-		
-	}
-	abort = {
-	  	or = {
-		  	is_subject = yes
-		  	is_lesser_in_union = yes
-			and = {
-				not = { exists = LNG }
-				not = { owns = 201 }
-			}
-		}
-	}
-	chance = {
-		factor = 100
-	}
-	immediate = {
-	 	add_temp_claim = 201
-	}
-	abort_effect = {
-		remove_temp_claim = 201
-	}
-	success = {
-		owns = 201
-	}
-	effect = {
-		add_core = 201
-	}
-}
-
-
 #收复岐山
 shoufuqishan = {
 	
@@ -125,10 +24,10 @@ shoufuqishan = {
 	}
 	chance = {
 		factor = 100
-		modifier = { 
-			factor = 10000
-			year = 2246
-		}
+		#modifier = { 
+		#	factor = 10000
+		#	year = 2246
+		#}
 	}
 	immediate = {
 	 	add_temp_claim = 192
@@ -164,7 +63,6 @@ annex_LHR = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian1
 		tag = QIN
 		is_subject = no
 		is_lesser_in_union = no
@@ -230,8 +128,8 @@ annex_BOG = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian2
 		tag = QIN
+		not = { tag = QIN }
 		or = {
 			not = { owns = 197 }
 			not = { owns = 195 }
@@ -294,7 +192,6 @@ annex_LSS = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian3
 		tag = QIN
 		or = {
 			not = { owns = 198 }
@@ -358,7 +255,6 @@ annex_PXS = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian4
 		tag = QIN
 		or = {
 			not = { owns = 203 }
@@ -430,11 +326,10 @@ The_conquest_of_liangzhou = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian5
 		tag = QIN
       		not = { owns = 170 }
       		not = { owns = 165 }
-		year = 2147
+		year = 2256
 		NOT = { year = 2397 }
 	}
 	abort = {
@@ -486,10 +381,7 @@ The_conquest_of_hanzhong = {
 
 	allow = {
 		or = {
-			and = {
-				has_country_flag = renwuxian6
-				tag = QIN
-			}
+			tag = QIN
 			tag = CHU
 		}
       		not = { owns = 219 }
@@ -573,7 +465,6 @@ annex_bashu2 = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian7
 		tag = QIN
 		or = {
 			not = { owns = 234 }
@@ -651,7 +542,6 @@ annex_bashu1 = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian8
 		tag = QIN
 		or = {
 			not = { owns = 250 }
@@ -672,7 +562,7 @@ annex_bashu1 = {
 			neighbour = this
 			not = { vassal_of = QIN }
 		}
-		year = 2290
+		year = 2280
 		NOT = { year = 2532 }
 	}
 	abort = {
@@ -717,13 +607,12 @@ zhengfuqianzhong = {
 	type = country
 
 	allow = {
-		has_country_flag = renwuxian9
 		tag = QIN
 		NOT = { owns = 488 }
     		owns = 248
     		owns = 232
 		NOT = { year = 2500 }
-		year = 2290
+		year = 2300
 	}
 	abort = {
 
@@ -757,9 +646,8 @@ The_conquest_of_hexi = {
 	
 	type = country
 	allow = {
-		has_country_flag = renwuxian5
 		tag = QIN
-		year = 2266
+		year = 2300
 		is_subject = no
 		is_lesser_in_union = no
 	  	any_country = {
@@ -808,8 +696,8 @@ The_conquest_of_hexi = {
 #征服上洛
 QIN_zhengfu_shangluo = {
 	allow = {
-		has_country_flag = 1_renwuxian1
 		tag = QIN
+		year = 2285
 		not = { owns = 214 }
 		not = { owns = 1202 }
 		not = { owns = 1266 }
@@ -843,8 +731,8 @@ QIN_zhengfu_shangluo = {
 #征服函谷
 QIN_zhengfu_hangu = {
 	allow = {
-		has_country_flag = 1_renwuxian2
 		tag = QIN
+		year = 2290
 		not = { owns = 349 }
 		not = { owns = 1044 }
 		not = { owns = 1045 }
@@ -878,8 +766,8 @@ QIN_zhengfu_hangu = {
 #征服武关
 QIN_zhengfu_wuguan = {
 	allow = {
-		has_country_flag = 1_renwuxian3
 		tag = QIN
+		year = 2290
 		not = { owns = 208 }
 		not = { owns = 217 }
 		not = { owns = 1267 }
@@ -910,95 +798,5 @@ QIN_zhengfu_wuguan = {
 		add_core = 217
 		add_core = 1267
 		add_core = 1268
-	}
-}
-
-#纳芈八子
-namibazi = {
-	allow = {
-		tag = QIN
-		CHU = {
-			neighbour = this
-		}
-	}
-	abort = {
-	}
-	success = {
-		CHU = { relation = { who = THIS value = 150 } }
-	}
-	chance = {
-		factor = 300
-	}
-	immediate = {
-	}
-	abort_effect = {
-	  	prestige = -0.05
-	}
-	effect = {
-		add_country_modifier = { 
-			name = "mibazi"
-			duration = 18250
-		}
-	}
-}
-
-#太后摄政
-taihoushezheng = {
-	allow = {
-		has_country_flag = 2_renwuxian1
-		tag = QIN
-	}
-	abort = {
-	}
-	success = {
-		revolt_percentage = 0.05
-	}
-	chance = {
-		factor = 300
-	}
-	immediate = {
-	}
-	abort_effect = {
-	  	prestige = -0.05
-	}
-	effect = {
-		set_country_flag = 2_renwuxian2
-		define_heir = { 
-			name = "稷"
-			claim = 50
-			dynasty = "嬴"
-			DIP = 8
-			MIL = 8
-			ADM = 8
-		}
-		kill_ruler = QIN
-	}
-}
-
-#睡服义渠
-shuifuyiqu = {
-	allow = {
-		has_country_flag = 2_renwuxian2
-		tag = QIN
-		exists = YQU
-	}
-	abort = {
-	}
-	success = {
-		YQU = { relation = { who = THIS value = 150 } }
-	}
-	chance = {
-		factor = 300
-	}
-	immediate = {
-	}
-	abort_effect = {
-	  	prestige = -0.05
-	}
-	effect = {
-		inherit = YQU
-		badboy = 10
-		add_core = 186
-		add_core = 187
 	}
 }

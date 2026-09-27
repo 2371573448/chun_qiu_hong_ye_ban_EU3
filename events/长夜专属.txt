@@ -1,0 +1,59 @@
+country_event = {
+	id = 87530
+	is_triggered_only = yes
+	title = "EVTNAME87530"
+	desc = "EVTDESC87530"
+	option = {
+		name = "EVTOPTA87530"
+		any_owned = {
+			limit = { 
+				is_capital = yes
+			}
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+			infantry = current
+		}
+		treasury = 100
+	}
+	option = {
+		name = "EVTOPTB87530"
+		inflation = -1
+	}
+	option = {
+		name = "EVTOPTC87530"
+		badboy = -5
+	}
+	option = {
+		name = "EVTOPTD87530"
+		set_country_flag = dashenguo
+		any_country = { 
+			limit = { 
+				ai = no
+				not = { tag = this }
+			}
+			country_event = 87531
+		}
+	}
+}
+country_event = {
+	id = 87531
+	is_triggered_only = yes
+	title = "EVTNAME87531"
+	desc = "EVTDESC87531"
+	option = {
+		name = "EVTOPTA87531"
+		any_country = { 
+			limit = { 
+				ai = no
+				not = { tag = this }
+				has_country_flag = dashenguo
+			}
+			prestige = 0.01
+		}
+	}
+}
