@@ -845,25 +845,20 @@ QIG_annex_langya = {
 		factor = 1000
 	}
 	immediate = {
-	 	add_temp_claim = 285
-	 	add_temp_claim = 294
-	 	add_temp_claim = 298
-	 	add_temp_claim = 300
-	 	add_temp_claim = 306
-	 	add_temp_claim = 308
-	 	add_temp_claim = 316
-	 	add_temp_claim = 317
-	 	add_temp_claim = 333
-    		add_temp_claim = 914   
-    		add_temp_claim = 915
-    		add_temp_claim = 985
-    		add_temp_claim = 986
-    		add_temp_claim = 987
-    		add_temp_claim = 988
-    		add_temp_claim = 989
-    		add_temp_claim = 990 
+		any_province = {
+			limit = {
+				region = langya
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
+		any_province = {
+			limit = {
+				region = langya
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		add_accepted_culture = dongyi

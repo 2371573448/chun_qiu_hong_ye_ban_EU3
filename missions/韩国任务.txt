@@ -36,18 +36,24 @@ HAN_annex_ZGO = {
 		factor = 500
 	}
 	immediate = {
-	  	add_temp_claim = 369
+		any_province = {
+			limit = {
+				region = yingchuang
+			}
+			add_temp_claim = current
+		}
 		add_temp_claim = 355
-	  	add_temp_claim = 357
-		add_temp_claim = 356
 		add_temp_claim = 380
 	}
 	abort_effect = {
-	  	remove_temp_claim = 369
+		any_province = {
+			limit = {
+				region = yingchuang
+			}
+			remove_temp_claim = current
+		}
 		remove_temp_claim = 355
-		remove_temp_claim = 357
-	  	remove_temp_claim = 356
-	  	remove_temp_claim = 380
+		remove_temp_claim = 380
 	}
 	effect = {
 		add_accepted_culture = zhongyuan

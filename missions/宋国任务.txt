@@ -446,24 +446,20 @@ SON_annex_donghai = {
 		factor = 300
 	}
 	immediate = {
-		add_temp_claim = 301	 
-		add_temp_claim = 305
-	 	add_temp_claim = 319
-	 	add_temp_claim = 329
-	 	add_temp_claim = 330
-	 	add_temp_claim = 331
-	 	add_temp_claim = 334
-	 	add_temp_claim = 336
-	 	add_temp_claim = 337
-	 	add_temp_claim = 343
-	 	add_temp_claim = 908
-	 	add_temp_claim = 909
-	 	add_temp_claim = 910
-	 	add_temp_claim = 991
-	 	add_temp_claim = 992
-	 	add_temp_claim = 995
+		any_province = {
+			limit = {
+				region = donghai
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
+		any_province = {
+			limit = {
+				region = donghai
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		donghai = { add_core = SON }

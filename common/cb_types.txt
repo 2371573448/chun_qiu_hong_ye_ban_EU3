@@ -162,7 +162,7 @@ cb_conquest = {#Õ÷·şÈÎÎñ
 
 	badboy_factor = 0.5
 	prestige_factor = 1.25
-	peace_cost_factor = 0.9
+	peace_cost_factor = 0.4
 	nomad = no
 	
 	prerequisites = {

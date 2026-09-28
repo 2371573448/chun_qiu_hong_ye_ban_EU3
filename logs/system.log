@@ -1,5 +1,5 @@
 [systemsettings.cpp:180]: System memory:   2048MB
-[systemsettings.cpp:182]: CPU speed:       3599MHz
+[systemsettings.cpp:182]: CPU speed:       3600MHz
 [systemsettings.cpp:189]: Number of processors: 8
 [systemsettings.cpp:200]: CPU type: x86
 [systemsettings.cpp:232]: OS: Unknown     Build: 9200
@@ -14,18 +14,18 @@
 [graphicssettings.cpp:184]: Succeeded to create a device [D3DCREATE_HARDWARE_VERTEXPROCESSING].
 [graphicssettings.cpp:226]: Graphics device: Intel(R) UHD Graphics 630
 [graphicssettings.cpp:227]: Graphics driver: igdumdim32.dll
-[graphicssettings.cpp:232]:  Driver version: 2115
+[graphicssettings.cpp:232]:  Driver version: 2140
 [graphicssettings.cpp:249]: 
 
 
 Dumping all gfx info:
-DeviceIdentifier:	{D7B78E66-D888-11CF-B07B-F1A6ACC2D235}
+DeviceIdentifier:	{D7B78E66-D888-11CF-AF7B-F1A6ACC2D235}
 VendorId:	32902
 DeviceId:	39880
 SubSysId:	-2037116861
 Revision:	3
 DriverVersion.HighPart:	2031616
-DriverVersion.LowPart:	6621251
+DriverVersion.LowPart:	6621276
 
 
 [graphicssettings.cpp:299]: Instancing supported.

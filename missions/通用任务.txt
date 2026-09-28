@@ -3201,31 +3201,20 @@ zhengfuxuejun = {
 		factor = 500
 	}
 	immediate = {
-	 	add_temp_claim = 315
-	 	add_temp_claim = 322
-	 	add_temp_claim = 303
-	 	add_temp_claim = 304
-	 	add_temp_claim = 310
-	 	add_temp_claim = 293
-	 	add_temp_claim = 295
-	 	add_temp_claim = 318
-	 	add_temp_claim = 307
-	 	add_temp_claim = 296
-	 	add_temp_claim = 299
+		any_province = {
+			limit = {
+				region = xuejun
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 315
-	 	remove_temp_claim = 322
-	 	remove_temp_claim = 303
-	 	remove_temp_claim = 304
-	 	remove_temp_claim = 310
-	 	remove_temp_claim = 293
-	 	remove_temp_claim = 295
-	 	remove_temp_claim = 318
-	 	remove_temp_claim = 307
-	 	remove_temp_claim = 296
-	 	remove_temp_claim = 299
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = xuejun
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		xuejun = { add_core = this }
@@ -3344,18 +3333,20 @@ shoufuhedongJIN = {
 		factor = 300
 	}
 	immediate = {
-	  	add_temp_claim = 73
-	  	add_temp_claim = 79
-		add_temp_claim = 77
-	  	add_temp_claim = 72
-		add_temp_claim = 75
+		any_province = {
+			limit = {
+				region = hedong
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 73
-	  	remove_temp_claim = 79
-		remove_temp_claim = 77
-	  	remove_temp_claim = 72
-		remove_temp_claim = 75
+		any_province = {
+			limit = {
+				region = hedong
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 	 	add_core = 73

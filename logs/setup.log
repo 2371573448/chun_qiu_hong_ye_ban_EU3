@@ -2234,7 +2234,7 @@
 [mission.cpp:629]: Missions loaded missions\晋国任务.txt' #29
 [mission.cpp:629]: Missions loaded missions\鲁国任务.txt' #8
 [mission.cpp:629]: Missions loaded missions\齐国任务.txt' #15
-[mission.cpp:629]: Missions loaded missions\秦国任务.txt' #19
+[mission.cpp:629]: Missions loaded missions\秦国任务.txt' #14
 [mission.cpp:629]: Missions loaded missions\宋国任务.txt' #10
 [mission.cpp:629]: Missions loaded missions\通用任务.txt' #56
 [mission.cpp:629]: Missions loaded missions\魏国任务.txt' #10
@@ -2257,6 +2257,7 @@
 [decision.cpp:325]: Decisions loaded decisions\霸主弭兵.txt' #8
 [decision.cpp:325]: Decisions loaded decisions\兵家派系决议.txt' #20
 [decision.cpp:325]: Decisions loaded decisions\曹国决议.txt' #1
+[decision.cpp:325]: Decisions loaded decisions\长夜专属.txt' #1
 [decision.cpp:325]: Decisions loaded decisions\朝鲜决议.txt' #2
 [decision.cpp:325]: Decisions loaded decisions\赤狄决议.txt' #1
 [decision.cpp:325]: Decisions loaded decisions\楚国决议.txt' #1
@@ -2449,7 +2450,7 @@
 [history.cpp:822]: History loaded 4 advisors from 'history\Advisors\trader 商人巨贾.txt' #4
 [history.cpp:822]: History loaded 4 advisors from 'history\Advisors\treasurer 商宦监理.txt' #4
 [eu3application.cpp:1213]: History Initialized
-[eu3application.cpp:726]: Checksum is EU3 v5.2 (KNEG)    1139215386
+[eu3application.cpp:726]: Checksum is EU3 v5.2 (GWPS)    -483881560
 [provincemanager.cpp:472]: CEU3MapCache creation.
 [provincemanager.cpp:627]: Creating beach manager.
 [provincemanager.cpp:638]: Creating province collision data.

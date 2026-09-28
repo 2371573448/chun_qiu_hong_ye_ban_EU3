@@ -181,11 +181,20 @@ zhengfuchenjun = {
 		factor = 1000
 	}
 	immediate = {
-    		add_temp_claim = 388
+		any_province = {
+			limit = {
+				region = chenjun
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-    		remove_temp_claim = 388
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = chenjun
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		set_country_flag = zhengfuchenjun

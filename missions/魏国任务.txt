@@ -152,26 +152,23 @@ shoufuhedong = {
 		factor = 700
 	}
 	immediate = {
-	  	add_temp_claim = 73
-	  	add_temp_claim = 79
-		add_temp_claim = 77
-	  	add_temp_claim = 72
-		add_temp_claim = 75
+		any_province = {
+			limit = {
+				region = hedong
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 73
-	  	remove_temp_claim = 79
-		remove_temp_claim = 77
-	  	remove_temp_claim = 72
-		remove_temp_claim = 75
+		any_province = {
+			limit = {
+				region = hedong
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
-	 	add_core = 73
-		add_core = 79
-	 	add_core = 77
-		add_core = 72
-	 	add_core = 75
-                                       hedong = { add_core = WEI }
+		hedong = { add_core = WEI }
 		prestige = 0.1
 	}
 }
@@ -426,18 +423,20 @@ zhengfuhenei = {
 		factor = 500
 	}
 	immediate = {
-	  	add_temp_claim = 118
-	  	add_temp_claim = 124
-		add_temp_claim = 126
-	  	add_temp_claim = 130
-		add_temp_claim = 131
+		any_province = {
+			limit = {
+				region = henei
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 118
-	  	remove_temp_claim = 124
-		remove_temp_claim = 126
-	  	remove_temp_claim = 130
-		remove_temp_claim = 131
+		any_province = {
+			limit = {
+				region = henei
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 	 	add_core = 118
@@ -520,33 +519,20 @@ zhengfudangjun = {
 		factor = 1000
 	}
 	immediate = {
-	 	add_temp_claim = 312
-	 	add_temp_claim = 314
-	 	add_temp_claim = 321
-	 	add_temp_claim = 323
-	 	add_temp_claim = 324
-	 	add_temp_claim = 325
-	 	add_temp_claim = 326
-	 	add_temp_claim = 335
-	 	add_temp_claim = 345
-	 	add_temp_claim = 346
-	 	add_temp_claim = 347
-	 	add_temp_claim = 358
+		any_province = {
+			limit = {
+				region = dangjun
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 312
-	 	remove_temp_claim = 314
-	 	remove_temp_claim = 321
-	 	remove_temp_claim = 323
-	 	remove_temp_claim = 324
-	 	remove_temp_claim = 325
-	 	remove_temp_claim = 326
-	 	remove_temp_claim = 335
-	 	remove_temp_claim = 345
-	 	remove_temp_claim = 346
-	 	remove_temp_claim = 347
-	 	remove_temp_claim = 358
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = dangjun
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		dangjun = { add_core = WEI }
