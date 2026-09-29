@@ -28,8 +28,20 @@ annex_XGO = {
 		factor = 75
 	}
 	immediate = {
+		any_province = {
+			limit = {
+				owner = { tag = XGO }
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
+		any_province = {
+			limit = {
+				owner = { tag = XGO }
+			}
+			romove_temp_claim = current
+		}
 	}
 	effect = { 
 		any_owned = { 

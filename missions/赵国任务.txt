@@ -1,19 +1,18 @@
 #征服代郡
 
 ZHO_annex_daijun = {
-	
 	type = country
 
 	allow = {
 		tag = ZHO
 		or = {
-		 	NOT = { owns = 45 }
+			NOT = { owns = 45 }
 			NOT = { owns = 51 }
 		}
-	  	or = { 
+		or = {
 			45 = { any_neighbor_province = { owned_by = this } }
-	    		51 = { any_neighbor_province = { owned_by = this } }
-	  	}
+			51 = { any_neighbor_province = { owned_by = this } }
+		}
 	}
 	abort = {
 	}
@@ -25,68 +24,96 @@ ZHO_annex_daijun = {
 		factor = 1000
 	}
 	immediate = {
-	  	add_temp_claim = 45
+		add_temp_claim = 45
 		add_temp_claim = 51
+		any_province = {
+			limit = {
+				region = daijun
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
 		remove_temp_claim = 45
-	  	remove_temp_claim = 51
+		remove_temp_claim = 51
+		any_province = {
+			limit = {
+				region = daijun
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
-	  	#prestige = 0.05
+		#prestige = 0.05
 		add_accepted_culture = baidi
-                                        daijun = { add_core = ZHO }
+		daijun = { add_core = ZHO }
 	}
 }
 
 #征服娄烦
 
 ZHO_annex_loufan = {
-	
 	type = country
 
 	allow = {
 		tag = ZHO
-		exists = LOU 
+		exists = LOU
 		NOT = { owns = 48 }
 	}
 	abort = {
 	}
 	success = {
 		owns = 48
-		not = { exists = LOU }
+		NOT = { exists = LOU }
 	}
 	chance = {
 		factor = 1000
 	}
 	immediate = {
-	  add_temp_claim = 48
+		add_temp_claim = 47
+		add_temp_claim = 48
+		add_temp_claim = 49
+		add_temp_claim = 50
+		any_province = {
+			limit = {
+				region = yanmen
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	  	remove_temp_claim = 48
+		remove_temp_claim = 47
+		remove_temp_claim = 48
+		remove_temp_claim = 49
+		remove_temp_claim = 50
+		any_province = {
+			limit = {
+				region = yanmen
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		add_accepted_culture = beidi
-	  	prestige = 0.1
+		prestige = 0.1
 		stability = 1
 		add_core = 47
 		add_core = 48
 		add_core = 49
 		add_core = 50
-                                        yanmen = { add_core = ZHO }
+		yanmen = { add_core = ZHO }
 	}
 }
 
 #征服云中
 
 ZHO_annex_yunzhong = {
-	
 	type = country
 
 	allow = {
 		tag = ZHO
 		NOT = { owns = 138 }
-                                        year = 2247
+		year = 2247
 	}
 	abort = {
 	}
@@ -97,29 +124,42 @@ ZHO_annex_yunzhong = {
 		factor = 500
 	}
 	immediate = {
-	  	add_temp_claim = 138
+		add_temp_claim = 137
+		add_temp_claim = 138
+		any_province = {
+			limit = {
+				region = yunzhong
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	  	remove_temp_claim = 138
+		remove_temp_claim = 137
+		remove_temp_claim = 138
+		any_province = {
+			limit = {
+				region = yunzhong
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		add_accepted_culture = xiongnu
-	  	add_core = 137
+		add_core = 137
 		add_core = 138
-                                        yunzhong = { add_core = ZHO }
+		yunzhong = { add_core = ZHO }
 	}
 }
 
 #征服九原
 
 ZHO_annex_jiuyuan = {
-	
 	type = country
 
 	allow = {
 		tag = ZHO
 		NOT = { owns = 141 }
-                                        year = 2247
+		year = 2247
 	}
 	abort = {
 	}
@@ -130,24 +170,37 @@ ZHO_annex_jiuyuan = {
 		factor = 500
 	}
 	immediate = {
-	  	add_temp_claim = 141
+		add_temp_claim = 149
+		add_temp_claim = 141
+		any_province = {
+			limit = {
+				region = jiuyuan
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	  	remove_temp_claim = 141
+		remove_temp_claim = 149
+		remove_temp_claim = 141
+		any_province = {
+			limit = {
+				region = jiuyuan
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		add_accepted_culture = xiongnu
-	  	add_core = 149
+		add_core = 149
 		add_core = 141
 		stability = 1
-                                        jiuyuan = { add_core = ZHO }
+		jiuyuan = { add_core = ZHO }
 	}
 }
 
 #征服中山
 
 ZHO_annex_ZHS = {
-	
 	type = country
 
 	allow = {
@@ -156,12 +209,12 @@ ZHO_annex_ZHS = {
 			tag = YAN
 		}
 		NOT = { owns = 95 }
-                                        year = 2256
+		year = 2256
 	}
 	abort = {
 	}
 	success = {
-		or = { 
+		or = {
 			and = {
 				tag = ZHO
 				owns = 96
@@ -189,35 +242,62 @@ ZHO_annex_ZHS = {
 		add_temp_claim = 100
 		add_temp_claim = 101
 		add_temp_claim = 108
+		add_temp_claim = 954
+		add_temp_claim = 955
+		add_temp_claim = 956
+		add_temp_claim = 957
+		add_temp_claim = 958
+		add_temp_claim = 965
 		add_temp_claim = 981
+		any_province = {
+			limit = {
+				region = hengshan
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 98
+		remove_temp_claim = 91
 		remove_temp_claim = 95
 		remove_temp_claim = 96
 		remove_temp_claim = 97
+		remove_temp_claim = 98
+		remove_temp_claim = 99
 		remove_temp_claim = 100
 		remove_temp_claim = 101
 		remove_temp_claim = 108
+		remove_temp_claim = 954
+		remove_temp_claim = 955
+		remove_temp_claim = 956
+		remove_temp_claim = 957
+		remove_temp_claim = 958
+		remove_temp_claim = 965
+		remove_temp_claim = 981
+		any_province = {
+			limit = {
+				region = hengshan
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		add_accepted_culture = baidi
-	  	add_core = 91
+		add_core = 91
 		add_core = 95
-	  	add_core = 96
+		add_core = 96
 		add_core = 97
-	  	add_core = 98
-	  	add_core = 99
-	  	add_core = 100
+		add_core = 98
+		add_core = 99
+		add_core = 100
 		add_core = 101
 		add_core = 108
-	  	add_core = 956
+		add_core = 956
 		add_core = 958
-	  	add_core = 965
+		add_core = 965
 		add_core = 957
-	  	add_core = 954
+		add_core = 954
 		add_core = 955
-	  	add_core = 981	  	
+		add_core = 981
 		prestige = 0.1
 		hengshan = { add_core = this }
 	}
@@ -226,7 +306,6 @@ ZHO_annex_ZHS = {
 #占据长平
 
 ZHO_annex_changping = {
-	
 	type = country
 
 	allow = {
@@ -243,92 +322,108 @@ ZHO_annex_changping = {
 		factor = 500
 	}
 	immediate = {
-	  	add_temp_claim = 86
+		add_temp_claim = 83
+		add_temp_claim = 86
+		add_temp_claim = 90
 	}
 	abort_effect = {
-	  	remove_temp_claim = 86
+		remove_temp_claim = 83
+		remove_temp_claim = 86
+		remove_temp_claim = 90
 	}
 	effect = {
-	  	add_core = 83
+		add_core = 83
 		add_core = 86
-	  	add_core = 90
+		add_core = 90
 		prestige = 0.15
 	}
 }
 
 #邯郸氏
+
 handanshi = {
-	
 	type = country
 
 	allow = {
-		OR = {
-			any_owned_province  = {
-			region = handan
+		or = {
+			any_owned_province = {
+				region = handan
 			}
-			any_neighbor_province = { region = handan }
+			any_neighbor_province = {
+				region = handan
+			}
 		}
-                                        year = 2253
+		year = 2253
 		NOT = { year = 2543 }
-                                        OR = {
-                                        NOT = { owns = 112 }
-                                        NOT = { owns = 113 }
-                                        NOT = { owns = 114 }
-                                        NOT = { owns = 115 }
-                                        NOT = { owns = 116 }
-                                        NOT = { owns = 117 }
-                                        NOT = { owns = 118 }
-                                        NOT = { owns = 119 }
-                                        NOT = { owns = 120 }
-                                        NOT = { owns = 121 }
-                                        NOT = { owns = 123 }
-                                        }
+		or = {
+			NOT = { owns = 112 }
+			NOT = { owns = 113 }
+			NOT = { owns = 114 }
+			NOT = { owns = 115 }
+			NOT = { owns = 116 }
+			NOT = { owns = 117 }
+			NOT = { owns = 118 }
+			NOT = { owns = 119 }
+			NOT = { owns = 120 }
+			NOT = { owns = 121 }
+			NOT = { owns = 123 }
+		}
 	}
 	abort = {
-
 	}
 	success = {
-    		owns = 112
-    		owns = 113
-    		owns = 114
-    		owns = 115
-    		owns = 116
-    		owns = 117
-    		owns = 118
-    		owns = 119
-    		owns = 120
-    		owns = 121
-    		owns = 123
+		owns = 112
+		owns = 113
+		owns = 114
+		owns = 115
+		owns = 116
+		owns = 117
+		owns = 118
+		owns = 119
+		owns = 120
+		owns = 121
+		owns = 123
 	}
 	chance = {
 		factor = 500
 	}
 	immediate = {
-    		add_temp_claim = 112
-    		add_temp_claim = 113
-    		add_temp_claim = 114
-    		add_temp_claim = 115
-    		add_temp_claim = 116
-    		add_temp_claim = 117
-    		add_temp_claim = 118
-    		add_temp_claim = 119
-    		add_temp_claim = 120
-    		add_temp_claim = 121
-    		add_temp_claim = 123
+		add_temp_claim = 112
+		add_temp_claim = 113
+		add_temp_claim = 114
+		add_temp_claim = 115
+		add_temp_claim = 116
+		add_temp_claim = 117
+		add_temp_claim = 118
+		add_temp_claim = 119
+		add_temp_claim = 120
+		add_temp_claim = 121
+		add_temp_claim = 123
+		any_province = {
+			limit = {
+				region = handan
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-    		remove_temp_claim = 112
-    		remove_temp_claim = 113
-    		remove_temp_claim = 114
-    		remove_temp_claim = 115
-    		remove_temp_claim = 116
-    		remove_temp_claim = 117
-    		remove_temp_claim = 118
-    		remove_temp_claim = 119
-    		remove_temp_claim = 120
-    		remove_temp_claim = 121
-    		remove_temp_claim = 123
-	  	prestige = -0.05
+		remove_temp_claim = 112
+		remove_temp_claim = 113
+		remove_temp_claim = 114
+		remove_temp_claim = 115
+		remove_temp_claim = 116
+		remove_temp_claim = 117
+		remove_temp_claim = 118
+		remove_temp_claim = 119
+		remove_temp_claim = 120
+		remove_temp_claim = 121
+		remove_temp_claim = 123
+		any_province = {
+			limit = {
+				region = handan
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		handan = { add_core = this }

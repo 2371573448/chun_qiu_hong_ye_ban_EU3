@@ -2987,27 +2987,20 @@ kaituojulu = {
 		factor = 50
 	}
 	immediate = {
-	 	add_temp_claim = 274
-	 	add_temp_claim = 122
-	 	add_temp_claim = 106
-	 	add_temp_claim = 107
-	 	add_temp_claim = 108
-	 	add_temp_claim = 103
-	 	add_temp_claim = 104
-	 	add_temp_claim = 102
-	 	add_temp_claim = 109
+		any_province = {
+			limit = {
+				region = julu
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 274
-	 	remove_temp_claim = 122
-	 	remove_temp_claim = 106
-	 	remove_temp_claim = 107
-	 	remove_temp_claim = 108
-	 	remove_temp_claim = 103
-	 	remove_temp_claim = 104
-	 	remove_temp_claim = 102
-	 	remove_temp_claim = 109
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = julu
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		julu = { add_core = this }
@@ -3057,24 +3050,20 @@ zhengfudonghai = {
 		factor = 300
 	}
 	immediate = {
-		add_temp_claim = 301	 
-		add_temp_claim = 305
-	 	add_temp_claim = 319
-	 	add_temp_claim = 329
-	 	add_temp_claim = 330
-	 	add_temp_claim = 331
-	 	add_temp_claim = 334
-	 	add_temp_claim = 336
-	 	add_temp_claim = 337
-	 	add_temp_claim = 343
-	 	add_temp_claim = 908
-	 	add_temp_claim = 909
-	 	add_temp_claim = 910
-	 	add_temp_claim = 991
-	 	add_temp_claim = 992
-	 	add_temp_claim = 995
+		any_province = {
+			limit = {
+				region = donghai
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
+		any_province = {
+			limit = {
+				region = donghai
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		donghai = { add_core = this }
@@ -3127,41 +3116,20 @@ zhengfuhengshan = {
 		factor = 25
 	}
 	immediate = {
-	 	add_temp_claim = 386
-	 	add_temp_claim = 402
-	 	add_temp_claim = 479
-	 	add_temp_claim = 422
-	 	add_temp_claim = 412
-	 	add_temp_claim = 415
-	 	add_temp_claim = 418
-	 	add_temp_claim = 426
-	 	add_temp_claim = 478
-	 	add_temp_claim = 476
-	 	add_temp_claim = 1205
-	 	add_temp_claim = 1206
-	 	add_temp_claim = 1207
-	 	add_temp_claim = 1208
-	 	add_temp_claim = 1209
-	 	add_temp_claim = 1210
+		any_province = {
+			limit = {
+				region = hengshan
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 386
-	 	remove_temp_claim = 402
-	 	remove_temp_claim = 479
-	 	remove_temp_claim = 422
-	 	remove_temp_claim = 412
-	 	remove_temp_claim = 415
-	 	remove_temp_claim = 418
-	 	remove_temp_claim = 426
-	 	remove_temp_claim = 478
-	 	remove_temp_claim = 476
-	 	remove_temp_claim = 1205
-	 	remove_temp_claim = 1206
-	 	remove_temp_claim = 1207
-	 	remove_temp_claim = 1208
-	 	remove_temp_claim = 1209
-	 	remove_temp_claim = 1210
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = hengshan
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		hengshan2 = { add_core = this }
@@ -3349,12 +3317,7 @@ shoufuhedongJIN = {
 		}
 	}
 	effect = {
-	 	add_core = 73
-		add_core = 79
-	 	add_core = 77
-		add_core = 72
-	 	add_core = 75
-                                       hedong = { add_core = this }
+		hedong = { add_core = this }
 		prestige = 0.1
 	}
 }

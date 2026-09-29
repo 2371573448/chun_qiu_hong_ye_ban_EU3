@@ -34,24 +34,20 @@ XNU_annex_DHU = {
 		factor = 1000
 	}
 	immediate = {
-		add_temp_claim = 793
-	  	add_temp_claim = 794
-		add_temp_claim = 795
-		add_temp_claim = 796
-		add_temp_claim = 797
-	  	add_temp_claim = 798
-		add_temp_claim = 750
-		add_temp_claim = 751
+		any_province = {
+			limit = {
+				region = donghu
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 793
-		remove_temp_claim = 794
-	  	remove_temp_claim = 795
-	  	remove_temp_claim = 796
-		remove_temp_claim = 797
-		remove_temp_claim = 798
-	  	remove_temp_claim = 750
-	  	remove_temp_claim = 751
+		any_province = {
+			limit = {
+				region = donghu
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 	  	prestige = 0.05
@@ -97,26 +93,20 @@ XNU_annex_YUE = {
 		factor = 1000
 	}
 	immediate = {
-		add_temp_claim = 578
-	  	add_temp_claim = 579
-		add_temp_claim = 580
-		add_temp_claim = 581
-		add_temp_claim = 582
-	  	add_temp_claim = 583
-		add_temp_claim = 584
-		add_temp_claim = 585
-		add_temp_claim = 586
+		any_province = {
+			limit = {
+				region = yuezhi
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 578
-		remove_temp_claim = 579
-	  	remove_temp_claim = 580
-	  	remove_temp_claim = 581
-		remove_temp_claim = 582
-		remove_temp_claim = 583
-	  	remove_temp_claim = 584
-	  	remove_temp_claim = 585
-		remove_temp_claim = 586	
+		any_province = {
+			limit = {
+				region = yuezhi
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 	  	prestige = 0.05

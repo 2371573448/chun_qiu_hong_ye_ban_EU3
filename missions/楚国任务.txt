@@ -1276,26 +1276,20 @@ CHUannex_danyang = {
 		factor = 300
 	}
 	immediate = {
-	 	add_temp_claim = 428
-	 	add_temp_claim = 444
-	 	add_temp_claim = 445
-	 	add_temp_claim = 446
-	 	add_temp_claim = 447
-	 	add_temp_claim = 448
-	 	add_temp_claim = 455
-	 	add_temp_claim = 456
-	 	add_temp_claim = 457
+		any_province = {
+			limit = {
+				region = danyang
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 428
-	 	remove_temp_claim = 444
-	 	remove_temp_claim = 445
-	 	remove_temp_claim = 446
-	 	remove_temp_claim = 447
-	 	remove_temp_claim = 455
-	 	remove_temp_claim = 456
-	 	remove_temp_claim = 457
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = danyang
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		danyang = { add_core = this }
@@ -1333,21 +1327,20 @@ zhengfujiujiang = {
 		factor = 300
 	}
 	immediate = {
-	 	add_temp_claim = 407
-	 	add_temp_claim = 411
-	 	add_temp_claim = 414
-	 	add_temp_claim = 416
-	 	add_temp_claim = 417
-	 	add_temp_claim = 420
+		any_province = {
+			limit = {
+				region = jiujiang
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 407
-	 	remove_temp_claim = 411
-	 	remove_temp_claim = 414
-	 	remove_temp_claim = 416
-	 	remove_temp_claim = 417
-	 	remove_temp_claim = 420
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = jiujiang
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		jiujiang = { add_core = this }
@@ -1408,10 +1401,21 @@ zhiminqianzhong = {
 	chance = { 
 		factor = 1000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = qianzhong
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = qianzhong
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1508,10 +1512,21 @@ zhiminchangsha = {
 	chance = { 
 		factor = 10000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = changsha
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = changsha
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1598,10 +1613,21 @@ zhiminlujiang = {
 	chance = { 
 		factor = 10000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = lujiang
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = lujiang
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1669,10 +1695,21 @@ zhiminminzhong = {
 	chance = { 
 		factor = 10000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = minzhong
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = minzhong
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1724,10 +1761,21 @@ zhiminnanhai = {
 	chance = { 
 		factor = 10000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = nanhai
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = nanhai
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1795,10 +1843,21 @@ zhiminguilin = {
 	chance = { 
 		factor = 10000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = guilin
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = guilin
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1838,10 +1897,21 @@ zhiminjiaozhi = {
 	chance = { 
 		factor = 1000
 	}
-	immediate = { 
+	immediate = {
+		any_province = {
+			limit = {
+				region = jiaozhi
+			}
+			add_temp_claim = current
+		}
 	}
-	abort_effect = { 
-		prestige = -0.05
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = jiaozhi
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = { 
 		land_naval = 1
@@ -1878,9 +1948,13 @@ zhiminhainan = {
 		factor = 10000
 	}
 	immediate = { 
+		add_temp_claim = 541
+		add_temp_claim = 542
 	}
 	abort_effect = { 
 		prestige = -0.05
+		remove_temp_claim = 541
+		remove_temp_claim = 542
 	}
 	effect = { 
 		add_core = 541
@@ -1914,9 +1988,13 @@ zhimintaiwan = {
 		factor = 10000
 	}
 	immediate = { 
+		add_temp_claim = 525
+		add_temp_claim = 526
 	}
 	abort_effect = { 
 		prestige = -0.05
+		remove_temp_claim = 525
+		remove_temp_claim = 526
 	}
 	effect = { 
 		add_core = 525

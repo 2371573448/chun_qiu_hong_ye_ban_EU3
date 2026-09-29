@@ -1106,6 +1106,7 @@ province_event = {
 		clr_province_flag = suijizhongtian_yaozhong_junshi
 		clr_province_flag = suijizhongtian_yaozhong_wenhua
 		clr_province_flag = suijizhongtian_yaozhong_yaosai
+		clr_province_flag = suijizhongtian_shengfen
 	}
 	option = {
 		name = "EVTOPTB1005"
@@ -1672,6 +1673,7 @@ province_event = {
 		clr_province_flag = suijizhongtian_yaozhong_junshi
 		clr_province_flag = suijizhongtian_yaozhong_wenhua
 		clr_province_flag = suijizhongtian_yaozhong_yaosai
+		clr_province_flag = suijizhongtian_shengfen
 	}
 	option = {
 		name = "EVTOPTC1005"
@@ -2238,6 +2240,7 @@ province_event = {
 		clr_province_flag = suijizhongtian_yaozhong_junshi
 		clr_province_flag = suijizhongtian_yaozhong_wenhua
 		clr_province_flag = suijizhongtian_yaozhong_yaosai
+		clr_province_flag = suijizhongtian_shengfen
 	}
 	option = {
 		name = "EVTOPTD1005"

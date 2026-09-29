@@ -32,8 +32,12 @@ kaituozhejiang = {
 		factor = 100
 	}
 	immediate = {
+		add_temp_claim = 452
+		add_temp_claim = 437
 	}
 	abort_effect = {
+		remove_temp_claim = 452
+		remove_temp_claim = 437
 	}
 	effect = {
 	  	452 = { add_core = this }

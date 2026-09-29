@@ -239,8 +239,18 @@ kaituosishang = {
 		factor = 100
 	}
 	immediate = {
+       		add_temp_claim = 328
+       		add_temp_claim = 342
+       		add_temp_claim = 919
+       		add_temp_claim = 920
+       		add_temp_claim = 921
 	}
 	abort_effect = {
+       		remove_temp_claim = 328
+       		remove_temp_claim = 342
+       		remove_temp_claim = 919
+       		remove_temp_claim = 920
+       		remove_temp_claim = 921
 	}
 	effect = {
 	  	328 = { add_core = this }
@@ -390,7 +400,7 @@ client_ten = {
 	abort_effect = {
 	 	remove_temp_claim = 296
 	 	remove_temp_claim = 297
-	 	remove_temp_claim = 299
+	 	remove_temp_claim = 899
 	 	remove_temp_claim = 911
 	  	 prestige = -0.05
 	}

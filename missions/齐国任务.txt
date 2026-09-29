@@ -221,11 +221,19 @@ annex_JIG3 = {
 	 	add_temp_claim = 984
 	 	add_temp_claim = 279
 	 	add_temp_claim = 282
+	 	add_temp_claim = 983
+	 	add_temp_claim = 982
+	 	add_temp_claim = 277
+	 	add_temp_claim = 272
 	}
 	abort_effect = {
 	 	remove_temp_claim = 984
 	 	remove_temp_claim = 279
 	 	remove_temp_claim = 282
+	 	remove_temp_claim = 983
+	 	remove_temp_claim = 982
+	 	remove_temp_claim = 277
+	 	remove_temp_claim = 272
 	}
 	effect = {
 	  	add_core = 984

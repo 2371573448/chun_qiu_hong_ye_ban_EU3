@@ -148,10 +148,20 @@ HAN_annex_nanyang = {
 		factor = 300
 	}
 	immediate = {
-		add_temp_claim = 384	 
-
+		any_province = {
+			limit = {
+				region = nanyang
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
+		any_province = {
+			limit = {
+				region = nanyang
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		add_accepted_culture = zhongyuan

@@ -112,6 +112,8 @@ bashuhebing = {
 		add_temp_claim = 248
 		add_temp_claim = 247
 		add_temp_claim = 253
+		add_temp_claim = 244
+		add_temp_claim = 246
 	}
 	abort_effect = {
 		remove_temp_claim = 250
@@ -119,6 +121,8 @@ bashuhebing = {
 		remove_temp_claim = 248
 		remove_temp_claim = 247
 		remove_temp_claim = 253
+		remove_temp_claim = 244
+		remove_temp_claim = 246
 	  	prestige = -0.05
 	}
 	effect = {
@@ -152,16 +156,20 @@ SGU_annex_hanzhong = {
 		factor = 1000
 	}
 	immediate = {
-		add_temp_claim = 219
-		add_temp_claim = 1116
-		add_temp_claim = 1177
-		add_temp_claim = 1180
+		any_province = {
+			limit = {
+				region = hanzhong
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-		remove_temp_claim = 219
-		remove_temp_claim = 1116
-		remove_temp_claim = 1177
-		remove_temp_claim = 1180
+		any_province = {
+			limit = {
+				region = hanzhong
+			}
+			remove_temp_claim = current
+		}
 	}
 	success = {
 		owns = 219
@@ -193,16 +201,28 @@ SGU_annex_yizhou = {
 	chance = {
 		factor = 1000
 	}
-	immediate = {
-	}
-	abort_effect = {
-	}
 	success = {
 		owns = 490
 		owns = 548
 		owns = 554
 		owns = 555
 		owns = 567
+	}
+	immediate = {
+		any_province = {
+			limit = {
+				region = yizhou
+			}
+			add_temp_claim = current
+		}
+	}
+	abort_effect = {
+		any_province = {
+			limit = {
+				region = yizhou
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		yizhou = { add_core = this }

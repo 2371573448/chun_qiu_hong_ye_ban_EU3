@@ -126,11 +126,17 @@ YAN_annex_WUZ = {
 	  	add_temp_claim = 17
 	  	add_temp_claim = 22
 		add_temp_claim = 21
+		add_temp_claim = 26
+		add_temp_claim = 19
+		add_temp_claim = 20
 	}
 	abort_effect = {
 	  	remove_temp_claim = 17
 		remove_temp_claim = 22
 	  	remove_temp_claim = 21
+	  	remove_temp_claim = 26
+	  	remove_temp_claim = 19
+	  	remove_temp_claim = 20
 	}
 	effect = {
 	 	add_core = 21
@@ -238,12 +244,14 @@ YAN_annex_GUZ = {
 	  	add_temp_claim = 13
 	  	add_temp_claim = 15
 	  	add_temp_claim = 1157
+	  	add_temp_claim = 1158
 	}
 	abort_effect = {
 	  	remove_temp_claim = 11
 	  	remove_temp_claim = 13
 	  	remove_temp_claim = 15
 	  	remove_temp_claim = 1157
+	  	remove_temp_claim = 1158
 	}
 	effect = {
 	  	prestige = 0.05
@@ -304,12 +312,14 @@ YAN_annex_LZG = {
 	}
 	immediate = {
 	  	add_temp_claim = 12
+	  	add_temp_claim = 14
 	  	add_temp_claim = 16
 	  	add_temp_claim = 18
 	  	add_temp_claim = 1157
 	}
 	abort_effect = {
 	  	remove_temp_claim = 12
+	  	remove_temp_claim = 14
 	  	remove_temp_claim = 16
 	  	remove_temp_claim = 18
 	  	remove_temp_claim = 1157
@@ -374,21 +384,25 @@ YAN_annex_TUH = {
 	  	add_temp_claim = 7
 	  	add_temp_claim = 8
 	  	add_temp_claim = 9
+	  	add_temp_claim = 10
 	  	add_temp_claim = 1133
 	  	add_temp_claim = 1131
 	  	add_temp_claim = 1130
 	  	add_temp_claim = 1132
 	  	add_temp_claim = 1134
+	  	add_temp_claim = 1159
 	}
 	abort_effect = {
 	  	remove_temp_claim = 7
 	  	remove_temp_claim = 8
 	  	remove_temp_claim = 9
+	  	remove_temp_claim = 10
 	  	remove_temp_claim = 1130
 	  	remove_temp_claim = 1131
 	  	remove_temp_claim = 1132
 	  	remove_temp_claim = 1133
 	  	remove_temp_claim = 1134
+	  	remove_temp_claim = 1159
 	}
 	effect = {
 	  	prestige = 0.05
@@ -437,17 +451,32 @@ kaituoliaodong = {
 		factor = 500
 	}
 	immediate = {
-	 	add_temp_claim = 2
-	 	add_temp_claim = 1123
-	 	add_temp_claim = 1124
-	 	add_temp_claim = 1125
+		any_province = {
+			limit = {
+				region = liaodong
+			}
+			add_temp_claim = current
+		}
+		any_province = {
+			limit = {
+				region = chaoxian1
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 2
-	 	remove_temp_claim = 1123
-	 	remove_temp_claim = 1124
-	 	remove_temp_claim = 1125
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = liaodong
+			}
+			remove_temp_claim = current
+		}
+		any_province = {
+			limit = {
+				region = chaoxian1
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
 		liaodong = { add_core = this }
@@ -609,34 +638,22 @@ YAN_annex_daijun = {
 		factor = 100
 	}
 	immediate = {
-	 	add_temp_claim = 40
-	 	add_temp_claim = 41
-	 	add_temp_claim = 42
-	 	add_temp_claim = 43
-	 	add_temp_claim = 44
-	 	add_temp_claim = 45
-	 	add_temp_claim = 46
-	 	add_temp_claim = 51
+		any_province = {
+			limit = {
+				region = daijun
+			}
+			add_temp_claim = current
+		}
 	}
 	abort_effect = {
-	 	remove_temp_claim = 40
-	 	remove_temp_claim = 41
-	 	remove_temp_claim = 42
-	 	remove_temp_claim = 43
-	 	remove_temp_claim = 44
-	 	remove_temp_claim = 45
-	 	remove_temp_claim = 46
-	 	remove_temp_claim = 51
-	  	prestige = -0.05
+		any_province = {
+			limit = {
+				region = daijun
+			}
+			remove_temp_claim = current
+		}
 	}
 	effect = {
-		add_core = 40
-		add_core = 41
-	 	add_core = 42
-		add_core = 43
-		add_core = 44
-	 	add_core = 45
-		add_core = 46
-	 	add_core = 51
+		daijun = { add_core = this }
 	}
 }

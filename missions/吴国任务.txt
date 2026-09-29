@@ -28,9 +28,14 @@ kaituojiangdong1 = {
 	chance = {
 		factor = 300
 	}
-	immediate = {
+	immediate = { 
+		add_temp_claim = 433
+		add_temp_claim = 434
 	}
-	abort_effect = {
+	abort_effect = { 
+		prestige = -0.05
+		remove_temp_claim = 433
+		remove_temp_claim = 434
 	}
 	effect = {
 	  	433 = { add_core = this }
@@ -298,9 +303,16 @@ kaituojiangdong2 = {
 	chance = {
 		factor = 300
 	}
-	immediate = {
+	immediate = { 
+		add_temp_claim = 445
+		add_temp_claim = 455
+		add_temp_claim = 428
 	}
-	abort_effect = {
+	abort_effect = { 
+		prestige = -0.05
+		remove_temp_claim = 445
+		remove_temp_claim = 455
+		remove_temp_claim = 428
 	}
 	effect = {
 	  	445 = { add_core = this }
@@ -420,9 +432,14 @@ kaituojiangdong3 = {
 	chance = {
 		factor = 300
 	}
-	immediate = {
+	immediate = { 
+		add_temp_claim = 435
+		add_temp_claim = 436
 	}
-	abort_effect = {
+	abort_effect = { 
+		prestige = -0.05
+		remove_temp_claim = 435
+		remove_temp_claim = 436
 	}
 	effect = {
 	  	435 = { add_core = this }
@@ -460,9 +477,14 @@ kaituojiangdong4 = {
 	chance = {
 		factor = 300
 	}
-	immediate = {
+	immediate = { 
+		add_temp_claim = 444
+		add_temp_claim = 446
 	}
-	abort_effect = {
+	abort_effect = { 
+		prestige = -0.05
+		remove_temp_claim = 444
+		remove_temp_claim = 446
 	}
 	effect = {
 	  	444 = { add_core = this }

@@ -96,8 +96,10 @@ yangmadi1 = {
 		factor = 100
 	}
 	immediate = {
+	 	add_temp_claim = 52
 	}
 	abort_effect = {
+	 	remove_temp_claim = 52
 	}
 	effect = {
 	  	52 = { add_core = this }
